@@ -1,5 +1,6 @@
 """Validated transcript input and conservative sentence-level provenance."""
 
+from copy import deepcopy
 from dataclasses import dataclass
 import math
 import re
@@ -19,6 +20,9 @@ class Transcript:
     id: str
     segments: tuple[Segment, ...]
     text: str | None = None
+    source: str | None = None
+    language: str | None = None
+    provenance: dict | None = None
 
     @classmethod
     def from_dict(cls, value: dict) -> "Transcript":
@@ -51,7 +55,21 @@ class Transcript:
         full_text = value.get("text")
         if full_text is not None and not isinstance(full_text, str):
             raise ValueError("Optional full lecture text must be a string.")
-        return cls(str(value.get("id", "lecture")), tuple(segments), full_text)
+        for key in ("source", "language"):
+            metadata = value.get(key)
+            if metadata is not None and (not isinstance(metadata, str) or not metadata.strip()):
+                raise ValueError(f"Optional {key} must be a nonempty string.")
+        provenance = value.get("provenance")
+        if provenance is not None and not isinstance(provenance, dict):
+            raise ValueError("Optional provenance must be an object.")
+        return cls(
+            id=str(value.get("video_id", value.get("id", "lecture"))),
+            segments=tuple(segments),
+            text=full_text,
+            source=value.get("source"),
+            language=value.get("language"),
+            provenance=deepcopy(provenance),
+        )
 
 
 @dataclass(frozen=True)
