@@ -1,0 +1,621 @@
+{
+  "video_id": "TpGI2sbr8WY",
+  "source": "whisper",
+  "language": "en",
+  "text": "Thank you. So thanks, Walter. Hello, everybody. Welcome to today's lecture. We have a special one today dealing with sustainability and climate change. And you might wonder, but yes, this is also a topic of digital humanism. We are not only looking at the human, but we are also looking at the environment, at the entire ecosystem, because humans are embedded in this and digital humanism is also dealing with this issue. Thus, I'm happy to welcome David Rolnik. He's coming from Milner, which is the great research institute in AI and McGill University, Montreal, Canada. And he will give a talk about AI and its impact on the climate and climate change. The moderation will be done by Peter Knaes. who will then introduce David in more detail. I just want to repeat, but everybody of you knows, we have a talk for 30 minutes, then we have 30 minutes Q&A, and then we will end with a piece of music. As always, this is proposed by the speaker, so it's thanks to David who has proposed something, and Peter will manage the piece of music. Moderation, as I said, is done by Peter Knez. I will not introduce him since he's well known to the audience and he's organizing the digital humanism here at TU Wien, even at the moment he's sitting at Georgia Tech in the USA. Peter, thank you for your moderation today. I have to add that you are a little bit ill and you a little bit lost your voice. So I'm really thankful to you that you are doing. this moderation. The floor is yours, Peter. Thank you, Johannes. Yes, my voice is actually really not in best condition, so I will try to stick to the essentials. But of course, taking the necessary time to give our speaker the proper introduction. So we are very happy to have David Rolnick with us today. David is an assistant professor and Canada CIFAR AI chair at McGill University and at Mila, the Quebec AI Institute. If I may say so, he's a machine learning guy who received his PhD in applied mathematics from MIT. He's a former NSF postdoc and graduate research fellow, a Fulbright scholar, and was named to MIT Technology Review's 2021 list of 35 innovators under 35. Beyond that, he's a co-founder and chair of Climate Change AI, a global initiative aiming to have a positive impact on climate change by means of machine learning. And he also serves as scientific co-director of Sustainability in the Digital Age, a think tank that aims at using digital innovation to achieve the UN Sustainable Development Goals. Very impressive. And we are very looking forward to your talk that's dealing with the question, is AI good or bad for the climate? So, David, the floor is now yours. Please go ahead. Thank you so much. It's a pleasure to be here. I was very excited to be invited because it's a... It's a privilege to speak in front of such a broad and diverse audience coming from so many different backgrounds. I am excited for the conversation moving forward. And I hope that I have something for people from many different backgrounds. But I apologize in advance if I'm either going into not enough technical detail, too much technical detail, or otherwise. addressing things from a perspective that isn't isn't yours, but we need a lot of different perspectives weighing in here. So I don't think that the topic of climate change needs very much introduction. We're increasingly seeing its effects and they're becoming increasingly severe worldwide from droughts that affected much of Europe, Western North America, East Africa and China. over this past few months to historic flooding in Pakistan and Korea and other places as well, we are seeing climate change exponentially increasing. It's also important to remember that climate change has a disproportionate impact on already disadvantaged communities and geographies and exacerbate existing inequities that exist. But climate change is not inevitable. We have the opportunity to not stop climate change because at this point, many people have already died from climate change and many more will die regardless of what we do now. But just how catastrophic it gets depends on what we do. We need net zero greenhouse gas emissions by 2050, according to the UN's Intergovernmental Panel on Climate Change. This is a tall order. Currently, emissions continue to increase year after year with a slight blip about a year ago due to the pandemic. But not only are we not decreasing to net zero, we're actually increasing year after year. There is progress, but it is far too slow. There are two kinds of progress that are needed. There are two kinds of action. Mitigation, which is reducing greenhouse gas emissions, and adaptation, which is resilience to the consequences of climate change. I will be mostly talking about mitigation here, but I will also be talking to some extent about adaptation. Now, I don't think that the topic of AI needs that much introduction for this audience, so I'm just going to leap right in. And the structure for what I'm going to be talking about is... as follows, and following on a recent paper in Nature Climate Change on aligning artificial intelligence with climate change mitigation. So I'm going to be talking about AI applications that are relevant to climate change mitigation and adaptation and serve to accelerate climate action. And then I'm going to be talking about AI applications that increase greenhouse gas emissions, AI applications with systemic impacts, broader impacts across society. And then I'm going to be talking about the emissions impacts coming directly from AI computation and hardware. I'm going to be spending a lot of time on this first point because this is a lot of what my own group's research focuses on, but then framing it within the context of some of the ways in which AI can be very negative for climate change. So let's dive into the first point. And here I'm going to be following a taxonomy that we introduced in a paper called Tackling Climate Change with Machine Learning, which looked at many different sectors of application where machine learning and AI can be relevant in climate action, from electricity systems to buildings, transportation, climate modeling and prediction, heavy industry, land use like forestry and agriculture. There are too many applications of AI where AI is being used in these different sectors in a positive way to touch on here. But I can talk about the overall theme so you can think about why AI is a relevant ingredient in climate action. And the themes that I want to touch on are fivefold, improving operational efficiency, gathering information, forecasting, speeding up simulations and accelerating scientific discovery. First of all, let's touch on improving operational efficiency. There are many complicated systems where AI can be used to increase the efficiency of a system by optimizing or controlling many complicated parts. This works with automated systems that are already susceptible to algorithmic operation or at least algorithmic optimization. There are many examples here where AI... tools are already being used. So for example, optimizing HVAC systems, that's heating and cooling systems in buildings. Increasingly, we're seeing smart thermostats, both at the level of personal homes and at the level of larger scale commercial or industrial buildings or facilities, where the heating and cooling systems just use much less energy, thanks to AI. Those AI algorithms may not be very sophisticated. In some cases, they are. In some cases, they're quite simple. But that can actually have a huge impact upon energy use, since heating and cooling systems account for a significant fraction of global greenhouse gas emissions. Same thing with steel and cement manufacture, which together constitute between 10 and 15 percent of all global greenhouse gas emissions. Steel and cement manufacturing facilities are increasingly having emissions lowered thanks to various kinds of optimization procedures, some of which fall under the heading of AI. Gathering information. Oftentimes there is too much data out there to make sense of by labeling it manually. And often this kind of data, which might take the form of big collections of satellite imagery or big collections of text, can be parsed by AI. AI going through this big raw data set. And picking out relevant information, for example, to guide policy. This can be useful in understanding land use. So, for example, estimating carbon stock, tracking the amount of carbon which is stored in particular areas of land to help incentivize land owners to take certain steps or to monitor deforestation in real time. Again, this is already, AI is already being used in such use cases and with quite significant effect. Similarly, instead of taking satellite imagery of land, you can take a large corpora of text and you could use natural language processing to, for example, pick out climate relevant information from corporate financial disclosures. Again, we are seeing AI algorithms in this case from natural language processing being used to pull out relevant information to help guide policy. Forecasting. AI is good at making predictions from time series in certain cases. And so we see applications to, for example, forecasting electricity supply and demand. This is being done increasingly widely to understand how much power is available on the electrical grid and how much power is needed at any given point. This is particularly important with low carbon sources of electricity like solar and wind, which vary from moment to moment. So you need to make sure that the amount of power being produced, is enough to meet the demand otherwise you end up with the danger of a blackout or you end up having to produce more power than you need which typically means producing more greenhouse gas machines so we're seeing ai algorithms being used to forecast um the exact amount of sun and wind minute to minute so you know how much power is available and also to forecast the demand for electrical power which typically was was done until recently quite manually And you're seeing huge gains here. For example, the error in demand forecasting in the UK's national grid was recently cut in half thanks to new AI algorithms. So large increases in efficiency. Speeding up simulations, taking a often physics-based model that is very accurate but can be slow to run and speeding up parts of it using AI. Here we... You can see examples, for example, in climate modeling, where you can have climate models that take months to run even on supercomputers. And we'd like to have fast ability to run these models faster. Similarly for planning electricity, grid planning and scheduling on the electrical grid. Accelerating scientific discovery is the final theme that I want to touch on here, where AI can help. speed up the process of innovation in science in ways that are useful to climate action. This is not replacing the normal process of scientific experimentation, but AI can be a tool in helping guide experimentation, suggesting materials, for example, to use in batteries, solar perovskites are used in photovoltaic cells and other applications. So here one can learn the results from past experiments and use that information. to suggest new experiments that are promising to try to reduce the need for time and cost-intensive experimentation with new candidate materials. Again, if you're interested in more detail on any of these, I encourage you to check out our overview paper called Tackling Climate Change with Machine Learning. I now want to dive a little bit more into detail in some of my own group's work on these various different themes. I'm going to touch on each of the first four themes here with a very quick example, just to give a sense of some of the challenges that one encounters in working in this space and how one really needs to tailor the use case of AI to ensure that it's actually impactful and useful to society. So the first example that I want to touch on is efficient operation of electrical grids. Here we consider a problem called AC optimal power flow. And this is a non-convex optimization problem, which for the computer scientists in the room means it's hard to solve. There are no good algorithms for solving non-convex optimization problems fast. And this is the problem that has to be solved if you're going to understand how much electricity needs to be produced at each generator in an electrical grid. You need to work out how much power needs to be produced to meet demand, and also given the constraints of how power flows within an electrical grid, the topology of that network. This is what the problem looks like. It's a non-convex quadratic program. But even though it's quadratic, it is non-convex, so there's no good outcome. So given that exact solutions take too long, grid operators normally simplify this problem and waste large amounts of power. I could ask folks to mute if they're not making a comment. Fantastic. Yeah, so typically grid operators will simplify this problem in practice, and they'll come up with an approximate solution, but the approximate solution is so bad that large amounts of electrical power are wasted, corresponding to large amounts of increased greenhouse gas emissions. People have looked at using AI in these kinds of contexts, but naive AI algorithms will approximately solve the problem fast, but they will also violate these constraints, which have to do with how power flows within an electrical grid. And this will mean that what is output by an AI algorithm is not really a legal, in some sense, solution. you don't end up with something that is good enough. You end up with something that actually breaks the entire power grid and leads to a blackout. Because approximately satisfying power flow, approximately not breaking something is not the same as not breaking something. So people don't use AI algorithms in these contexts because of this issue. You need to make sure that your AI algorithm can be guaranteed to not break your entire power grid. So what my group has worked on recently is showing how to enforce these constraints, make sure that AI algorithms actually build in these kinds of constraints so that you can solve this problem approximately much faster, orders of magnitude faster than traditional methods, while ensuring that you don't run the risk of bringing down the entire power grid. This is a paper that you can look into here if you're interested, and I'm happy to talk more about that later if there are questions. The second example that I want to touch on is gathering information on biodiversity. So here we see the theme of taking some big set of data and parsing that into a form that can be useful in guiding a decision making or additional research. Here, the application isn't biodiversity monitoring. Ecosystems are collapsing as a result of climate change and other factors. And evaluating biodiversity is fundamentally important for preserving ecosystems and the ecosystem services that humans depend on, like forestry, agriculture, fisheries. But this typically requires specialized experts to monitor species. AI can help scale up ecological monitoring if it's applied thoughtfully and in conjunction. with collaboration between computer scientists and ecologists. So here we're developing automated sensors to monitor insect populations, insects representing a half of all biodiversity, together with a coalition of partner ecologists. These are what our sensors look like. They're solar powered, they attract and they photograph insects and AI algorithms then pinpoint and identify them. The data is then sent to experts for interpretation and also proofreading because it's not going to be perfect, but it can really reduce the amount of time that's needed by expert ecologists. And it can also scale up the process of actually going out into the field and collecting data because these are completely automated devices. This is what it looks like annotating, in this case, a large number of moths that have come to this trap with species and the confidence that the model has. For example, it's about 85% confident this is its particular species. I'd like to touch on another application here from forecasting. The motivation here is that forecasting crop yield is really essential to averting food insecurity in a changing climate. As weather and climate change, we're seeing crop yield very dramatically. AI can help predict agricultural yield from satellite imagery. from images like this. However, AI algorithms typically require lots of data. And data can be scarce and uneven across different locations. Data where we know exactly how much yield there is and what kind of crop is there. In order to develop algorithms to do these things, the algorithms need to learn from data and not having that data can be a significant problem. You can see here in this map from our collaborators at NASA, the orange data, which is the really high quality data, is only available in a few places around the world. Now, in collaboration with our partners, we've developed algorithms that specifically are designed to adapt well to new locations that they haven't seen before, given these data challenges. They are meta-learning algorithms. So they're algorithms that are, in some sense, designed to learn new things fast. And the way that they perform particularly well here is they leverage information about the location and the crop type. So they may know you've seen coffee in Brazil and maize in Kenya, but you've never seen maize in Brazil or coffee in Kenya. And so building in that information into the algorithms can help them perform better. Again, this is the kind of challenge that you encounter if you're using algorithms in the real world here. And then the final example that I want to touch on in more depth is speeding up climate simulations. As I mentioned, climate simulations are very accurate based on known physics, but they can be very slow based upon these complicated differential equations, sometimes months even on supercomputers. And this makes it harder to get localized predictions of climate. and also weather that help in adapting to climate change. Individual communities may not have sufficient guidance on what's going to happen precisely there in a precise time frame because the predictions may be run at course grid scales of hundreds of kilometers, like you can see here. So with Environment and Climate Change Canada, which is the Canadian agency responsible for modeling climate, we have used AI to quickly approximate a particular piece of climate models that's especially slow, called radiative transfer. We've come up with approximate calculations that can be plugged into climate models here to speed up the process dramatically. And these are currently being tested for incorporation into the official Canadian climate models. Importantly, our algorithms leverage known information about the physics. in order to improve the accuracy. And this is another theme that we see across many of these applications. However, we can build in information from the application, not just use some generic AI algorithm, but really incorporate whatever we know as much as possible. Okay, some key considerations in thinking about these kinds of applications of AI to benefit climate action before I touch on some of the other directions that I wanted to mention. Obviously, AI is not... going to magically solve climate change. It's never a silver bullet in any of these applications. It's only relevant in some applications, period. And even when it is, the only way in which it's impactful is by partnership between stakeholders with complementary expertise. One can't just plug and play some magic AI algorithm and solve everything. One really needs to think deeply about how to use AI algorithms in any particular use case. It's also important to remember that the high-impact applications are not always flashy. When here's in the news about self-driving cars, they're probably going to make climate change worse, as we'll see in a few slides. But something like predictive maintenance, pinpointing failures in railroad tracks and maintenance needs, that's extremely impactful to the transportation sector and can reduce greenhouse gas emissions significantly. This is an application, by the way, that Deutsche Bahn is already implementing in Germany. Even when working with data, sometimes simple methods work. It's very easy to get caught up in the hype surrounding AI and think that whatever the latest AI algorithm is, that's what one should be using because that's the way to make a difference in the world. That's not how it works. Typically, simple algorithms are very effective, and the latest AI algorithms are sometimes useful, but they're only useful in limited cases. One shouldn't leap to using the fanciest technology, and simpler technology will do the job. And more broadly, thinking about AI itself as a solution can be counterproductive if it distracts from simpler things. Smart buildings, which have AI-enabled sensor systems and adapt to people inside them, that can be valuable in decreasing emissions. But what's more valuable is making sure your building is in. So thinking in terms of low-hanging fruit that's maybe not technologically fancy is, very important and using new technologies in particular cases where they are relevant, but not thinking that they're always the answer. In fact, fancy technologies are often used in greenwashing to make climate strategies sound better than they are. Look at our company. We're doing so much for the planet. We even use AI. Everyone wants to talk about that, whereas something that's lower tech might not sound as good. And then there are equity considerations. Thinking about empowering diverse stakeholders to shape these kinds of tools, oftentimes digital divides prevent geographic and community diversity in who is actually able to use these tools and leverage their power. Selecting and prioritizing problems. There's a lot of energy given to a lot of funding and interest in problems like AI to fight wildfires. But oftentimes that neglects problems that are maybe equally important, like AI to fight locusts or melting glaciers. Locusts are a problem that are affected by climate change. They're increasing in East Africa, the Middle East, and India, among other places. Wildfires are particularly hitting the western side of North America, Europe, and Australia. And funding imbalances between those regions can affect how problems are prioritized, even if all these problems are important and should all be one. And then ensuring data is representative, because sometimes if your data is coming from one geography or one set of communities, then you can come up with an AI algorithm. Remember, AI algorithms leverage data. So if your algorithm was based upon data from the US, maybe it's not going to be relevant in another part of the world. Now I want to touch, I've talked about AI applications that can help accelerate climate action, but I also want to touch on AI applications that can increase greenhouse gas emissions. AI is being used in all kinds of ways, and it's being used very extensively to accelerate fossil fuel exploration and extraction. One estimate from Accenture, I believe, is that AI and advanced analytics will yield $400 billion, half a trillion dollars in additional profit by 2025 alone. And much of that is in exploration and extraction, so actually increasing the amount. of fossil fuels that are coming out of the ground. This is actively counterproductive to climate action. It's also worth noting that many of the leading technology companies such as Google, Microsoft, Amazon, IBM work explicitly with fossil fuel companies in order to optimize for activities that are run counter to climate action. There are other high emissions Activities as well that are also facilitated by AI. Fast fashion, where clothing is created for very brief use and then disposed of, is accelerated by AI technologies that enable just-on-time manufacturing, for example. So AI is actually enabling this kind of extremely high emissions activity. And also, AI is often used to optimize systems. And we even talked about this earlier, how it's good if AI can increase the efficiency of a system. But efficiency and optimization can mean different things. Sometimes an AI algorithm is used to optimize for cost, but that's not necessarily the same as optimizing for lower greenhouse gas emissions. For example, labor costs might outweigh energy costs, in which case optimizing for cost might actually be increasing greenhouse gas emissions. In the context where you might ship a product halfway across the world for processing, if the labor costs there are lower, that would actually be increasing the carbon footprint of your product. For more reading on this, I encourage checking out the Greenpeace report on oil in the cloud that's specifically focused on this first component, how AI is being used in the fossil fuel industry. There are many applications with more. systemic impacts. And these are often uncertain, harder to measure, but can be extremely significant. Many AI applications have effects on society as a whole. This is one of the reasons that AI has been celebrated in that it is a transformative technology in society. But sometimes that's good. Sometimes that's bad. I can mention applications here which are both good and bad. Systemic impacts need not just be bad. They can be good. Consumer behavior. Here's a very negative application. Advertising recommender systems. Most of online advertising is now driven by AI. And recommender systems used to drive online advertising are specifically designed to boost consumption. That is almost certainly greatly increasing greenhouse gas emissions. Again, this is the exact point of online advertising systems. Autonomous vehicles are an interesting example. They can have a positive or negative effect on climate change. It's not certain, but currently autonomous vehicles are being used very much in a personal transportation context, self-driving personal cars. That is probably going to increase emissions significantly, potentially, because it will lead to a change again in consumer behavior. By decreasing the barrier to driving, it is expected that personal self-driving cars will increase miles driven and result in more greenhouse gas emissions from transportation. However, it depends on how the technology is developed. If autonomous vehicles are designed to boost public transportation with self-driving buses, for example, that may decrease emissions. So really, the choices we're making in developing these technologies have a significant effect on their systemic impacts. I also want to talk about rebound effects. This refers to this is not necessarily it's not fully a negative. You can see AI being useful in many different sectors by improving efficiency, maybe lowering the energy required to make a product, which could be lowering greenhouse gas emissions. And that can be great. But it's worth remembering that sometimes some of those efficiency gains can be counterbalanced by corresponding increases in use. If you have a. product that is made with less energy that might lower the price and cause people to use it more so that doesn't mean that these applications are bad but it can mean that some of these applications can be less good than you might hope and then finally i want to touch on lock-in effects where applications that are facilitated by technology may become more entrenched this can be positive or negative ai is serving to accelerate and help entrench various different technologies. If this is done with personal cars, for example, with autonomous driving, that may be a bad thing. But if AI is enabling better train systems via optimized train scheduling, that can be a good thing. So lock-in effects to particular applications can have many different valences. Overall, once you think about these impacts being hard to assess, but extremely big because they affect all of society and they're generally not talked about as compared with some of the flashier applications and direct impacts of AI. Finally, I want to touch on the emissions impacts of AI computation and hardware. So here we're seeing two kinds of impacts. from operational energy and from the embodied emissions of hardware. And so overall, the ICT sector, so all of digital, contributed one to four percent of global greenhouse gas emissions in 2020, with two thirds from operational energy and one third from hardware. Estimates. You get different estimates from different places. That's big. It's actually not as big as I might have thought, given how important digital technologies are in our lives, but it's also potentially increasing. We haven't seen it increase that much because computation has also gotten more efficient, but there is the potential for that to increase. However, AI is also only some fraction of ICT. Google reports that AI, for example, is about 15% of server energy use. So that's one particular digital technology provider. That estimate may be more or less correct. So big, not that big, at least yet, but it's highly variable. You can have some algorithms that basically require no computational energy. You can see great variation here. Some algorithms. These are commonly used algorithms that just use a few grams of carbon dioxide, whereas some algorithms. have gotten extremely large and to develop those algorithms can take actually tons, literal tons of carbon dioxide emissions. And the biggest algorithms are getting bigger, but they're not used that much, or at least they're not developed that much. Typically you develop it once and then you use it many times. So this is important also to bear in mind here that at least for machine learning algorithms, there's a life cycle where developing an algorithm is extremely computationally intensive, but it's done very infrequently, whereas training that algorithm, so adapting it to data, is done more frequently, but takes a bit less energy than developing it, and then actually using it, inference time. So, you know, maybe somebody's developed an algorithm for translating languages, and you ask it a question. That doesn't take very much energy at all, but people do it a lot, and so... that can counterbalance it being very cheap. So it's important to remember when you see some of these figures that they're generally referring to the development or training phases. So when you hear really big numbers, those are probably these things, which are actually done less frequently than the computationally cheap part of it. So thinking about this overall, what should one take away from this discussion? I talked about a bunch of different factors. There's a need for impact assessment for computation related emissions, just like with the other kinds of impacts of AI. And this is particularly important because oftentimes computation in AI is done with cloud computing. And so it's difficult to pinpoint where it's happening. People do complicated emissions accounting systems where they essentially try to throw their emissions onto anybody else. And so it's not clear whether your company should count the emissions or the cloud compute provider. So that can be a bit of an issue and that should be handled in policymaking. But also it should be remembered, these effects are probably, all of computation is probably significantly smaller than the application related negative impacts. We are in danger of focusing on the easier to measure stuff. rather than the stuff that's really the elephant in the room, what these algorithms are being used for, which can be good, it can be very bad. And it's important to remember that many tech players have an incentive to focus on the efficient computation rather than evaluating what their algorithms do, because what their algorithms do is their source of profit. And it's much harder to address that than it is to use more energy efficient algorithms or use your energy for computation coming from some low carbon source. So the takeaway here is it's important to think about computation from AI, but we're in danger of building the equivalent of certified fair trade landmines where no people were harmed in the creation of the algorithm, but many people are harmed in what it's actually being used for. This has to do with the division between scope one and two and scope three emissions from a carbon accounting perspective. OK, so we've touched on all these different components. AL algorithms directly accelerate climate action, directly run counter to it, have systemic impacts that can be positive or negative, and the impacts of computation and hardware. So I want to touch on more broadly just failures in the way we're conceiving AI innovation with just an example that we looked at recently. And so AI really is continuing to be developed in a way that is very far removed from thinking about how it is positively impacting society. Often AI is developed using these kinds of benchmarks, like ImageNet is one that you may have heard of. It's designed to evaluate models. It's also designed to pre-train, so help develop algorithms for applied settings. And it's this enormous data set. These data sets are often developed from internet data, and they're developed by computer scientists without relevant experts in the room. You just have these kinds of data sets that are taken from some big mess on the internet, and then nobody who's actually involved in a downstream impactful application is involved. So we worked in the case of ImageNet with ecologists to analyze a quarter of this standard benchmark that is just about identifying wild animals. And we found that 12% of the images are flat out wrong. 12% of the categories are eternally contradictory. And so essentially, this breaks the entire purpose of developing AI algorithms using this kind of benchmark. It calls into question the accuracy of testing them on this benchmark, but it also means that using this benchmark is essentially useless in downstream applications, in biodiversity monitoring in this case, even when it purports to be useful. I should also note that the data was heavily biased towards the US. So, for example, out of 50 species of J in the world, we found that... 60% of the data was actually just this one species found only in the US and Canada. That was an example. We found that across the entire data set. And so this is really exemplary of how AI innovations are developed without the stakeholders who are relevant to ensuring that they have the relevant impact. And this is important because these algorithms are being used in downstream applications. So people are using ImageNet, for example, to develop algorithms for biodiversity monitoring without being aware that the impact was not a consideration and relevant stakeholders were not in the room to ensure that the data was even correct. So how should we think about this overall? AI can either hinder or help climate action. It really depends on how it's used. And there are many different... factors to bear in mind the overall impacts are poorly understood and it's complicated to measure them but it's really important because these effects can be significant and importantly they can be shaped it's not inevitable how ai affects the climate it's up to us and consideration of the impacts and inclusion of the relevant stakeholders has to be part of the innovation ecosystem because oftentimes people who are building ai systems Think about impact as something that's dealt with by other people, not by the people, not by them, not by the people actually building the AI systems, but by maybe social scientists, somebody outside the room. The people who are building the algorithms and shaping the new technologies have to be responsible for their impact. And more broadly, aligning AI with climate action means more than adding some AI for good applications on top of business as usual. The implicit choices matter. I wanted to touch on some policy recommendations for facilitating work at the intersection of climate change and AI. I'll touch on them really briefly because I realize we're at time. This was a report written for the Global Partnership in AI, which is an OECD initiative. Some of our recommendations fall into these different categories. We looked at data, digital infrastructure, facilitating capacity building, research innovation funding, integrating. AI into impactful use cases, international collaboration and impact assessment, among many other areas. But I will skip over some of these applications, some of these policy recommendations here. And I want to close by pointing to additional resources, if you're interested, thanks to the Climate Change and AI Initiative, which was mentioned at the start, is a nonprofit initiative that I help lead. And so we have many digital resources, reports aimed at different audiences from researchers to policymakers. We have events, our upcoming events, including workshop series at the biggest AI conference in Europe. And we have a summer school for people looking to learn more about the space. We also have funding programs. We just launched our innovation grants program to fund research at any part of this space, the intersection of climate change and AI. We have newsletters and other facilities for gaining information about recent developments in the space. And we have webinars and happy hours to learn more and meet other folks in the community. I look forward to the discussion. And thank you for your attention. Thank you very much, David. For sure, many, many interesting aspects that would require lots of... more detailed insights and considerations. Unfortunately, we don't have that much time, but thanks so much for showing us the broad spectrum of possible directions and research questions that also follow from that. We have some time, 10 minutes for questions. So if there's anyone who wants to say something, Michael Hayes from Siemens has a question, so please. Hello, thank you for the very interesting presentation. So you mentioned something that domain expertise is required. I would translate this in simple words. So the reason why I'm asking is if I meet young data analysts, they often don't want to understand the signals themselves. But they say they have their black box algorithms. The new approach of data science is just to apply these algorithms and they don't need to understand what's going on. And so I am a little bit maybe this case old fashioned. I want to understand what I'm doing because otherwise I don't know what the result is. your opinion i think both arguments have their in certain cases you can use you can use some ai tools out of the box very simple tools but oftentimes you get much more benefit from really really understanding the problem ultimately you're never going to be an ai expert is never going to be able to have an impact without understanding the problem and working with people in the relevant space. People in the relevant space, if it's a very simple AI tool, they might be able to use it themselves without really understanding the AI tools that much. But in order to work on many of these problems, you need collaboration. And in that case, you need both sides to understand a bit of where the other is coming from. And you need them to try to build bridges. And you see that in many of these applications, you have challenges, that need to be addressed by specific technical um technical means so here we're using meta learning algorithms we're adapting them to deal with a challenge that the data is really imbalanced across geographies and this is the kind of innovation that i'd like to see in the ai community more i think that this is very much aligned with what ai experts often want which is innovative cool new algorithms but the way to design those in my view is to really listen to what people need That is the way that you get the cool new algorithms, rather than by looking for an extra 0.1% improvement on ImageNet, which, as we've seen, is maybe not that valuable anyway. Thank you. I agree. Okay, another question by Erich Prehm. Yes, thanks, David. This was very interesting, really broadened my understanding of the issue as well. especially because you emphasize the application so much, which I think is rarely done. But the whole discussion, I think, comes with two problems which are related. One is it's really difficult to get the orders of magnitude right when you're trying to assess what you're doing here. So, for example, not many people understand how many motors there are in heating and ventilation systems, that there are thousands and thousands of them. and that they are usually very badly controlled, and that there is a lot we can do to improve them. And everybody keeps talking about the computational side, as you said, where we have figures and we can calculate them, forgetting also that they are improving if we do this a bit more cleverly than we have been doing it in the past. So my question is, In communicating this to either a broad public or policymakers, I find this hugely challenging because it is really difficult to get across this complicated message. And there is a real danger to get the balance. It is. I'm sure you have a similar view. It's very difficult. But the first step is impact assessment. And it has to be holistic impact assessment. It has to be considering downstream impacts. People are often very willing to count the positive impacts, but not the negative impacts. So you talk to people and they're like, oh, well, you can use AI for all these great things. And these are having this impact on climate change. And then if you talk to them about the negative use cases. They say, oh, well, that's inevitable. That's just the market. And no, it's not. We don't have to regulate away certain use cases of AI, but we can certainly choose what we're prioritizing in funding and we can choose how to shape the applications of technology. So in situations like autonomous driving, we can choose whether to push the technology more towards a high emission side or a low emission side. And that's the kind of thinking that I want to be that I want to be happening more thinking in terms of holistic impact assessment and not picking and choosing because people don't know about these things. They just they're the discourse is sort of deliberately being pushed in certain directions because it's certain certain players have an advantage in that regard. And all of these factors should be considered. But it's not it's it's it's. As you say, it's not a simple picture. And there are many factors that need to be considered, starting with impact assessment and in different cases, moving to different forms of potential policy intervention. Also, impact assessment means that traditional carbon... The traditional... carbon pricing systems can take effect, right? Where there are carbon pricing systems, they don't really know how to handle something like attribution of effect to AI. Maybe that's something we should be thinking about. Since I don't see anybody else raising their hand at the moment, I'm going to take the chance of asking a question. I'd just like to have your opinion on that because, you know, it seems like... Also research the AI models you mentioned and so on. They seem to be quite costly. We only see the results of the successful system ultimately in the papers. This is what they report. They don't report on all the failed systems. This is not what goes into the papers. So there might be even more of energy that goes into all of these things. On a more general level, in a way, this is kind of... Like, what does that mean for science in that sense? Because we always want to repeat experiments and you see over and over the same results and experiments being repeated and reported, which is kind of like the foundation to have this reproducibility aspect of it. But why would you want to? You know, like, where's the balance here? Why would we want to rerun the same things over and over again? First of all, I completely agree. And there's a paper called Green AI by Schwartz et al., which I highly encourage people to look at, which really attacks this whole paradigm of let's just get a tiny incremental improvement on some benchmark data set in order to have publishable results. That's just very... It's wasteful in every sense. It's wasteful in computation for researchers who don't have access to massive computational resources in cases where they are needed. It's wasteful of energy. It's wasteful of time because it's not really pushing the boundaries of the field. That said, research is often a drop in the bucket compared with how these things are actually being used in industry. And it's very easy to point to something that's actually not that big a factor in the scheme of things. And it should be considered. And certainly as a researcher, one should be considering how to lower one's own impact. But if one's pointing to the overall problems in AI, like considering it from a policy perspective, that's not where I would point my finger. So one should always think about how you as an individual can make your part of the pie better. But I think that the issue comes when somebody else says, oh, well, the problem is that researchers are using too much energy in AI algorithms, whereas No, the problem is that we're making half a trillion dollars for the oil and gas industry with AI algorithms. There are so many differences in orders of magnitude here. And the problem is that the tech companies are mostly having entire businesses based upon increasing consumption via AI enabled ads. These are the elephants in the room, which. should be talked about in terms of impacts of AI. And just because they're harder to measure and harder to think about doesn't mean that we shouldn't be talking about them. If anything, that means we should be talking about and assessing them more along with everything else. Thanks. Final question from Hannes Wertner. David, thanks a lot for your... At least for me, eye-opening presentation. It was excellent. And for me, the most impressive is this indirect systematic effect. So you really have a long-term, broad effect of these applications. And I think the answer, which also fits very well with this digital humanism issue, is... that it has to be a democratic societal answer. There have to be involved many or all different stakeholders. It's not a technological solution to issues. Technology is a means, but it's not the only one. And we have to think whether it makes sense or not. So this is really, thanks for this, for me, very able contribution and insight for this AI and climate. Thank you. And climate is obviously only one of the lenses through which one should think about societal impacts and systemic societal impacts. And you can see these kinds of effects like lock-in and consumer behavior. Those have many other manifestations. Climate isn't the only lens to view them through, but it's one of the lenses we should have. Thank you for that. Great. So I'm going to end the Q&A here. Thank you very much, David. Really excellent and very well balanced and considerate talk. I think there's a lot to unpack there. So that will hopefully happen soon and in other formats. And yeah, so for today, that's it. So we're coming to our musical finale. Let me just share the screen. So I'm getting to this part. I hope you can see the screen now. No, not yet. It disappeared again. Okay. Is it working now? I can see it fine. Okay, great. Then it's my mistake. Sorry, Peter. Okay, great. So David requested Antonio Rivardi's Four Seasons, specifically the summer third movement, Presto. And he suggested a very nice performance by Uriel Fischer and the Academy of St. Martin in the Fields. Before we get to it. As always, I'm announcing the next lecture on December 6th. Luke Munn of the University of Western Sydney will talk about the uselessness of AI ethics. So we can now come to the last part, to music. Thanks again, David. It was really a pleasure having you and I wish everyone a good rest of the day and hopefully see you on December 6th. And now, Ivardi. Thank you. Thanks a lot and goodbye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.384,
+      "text": "Thank you. So thanks, Walter. Hello, everybody. Welcome to today's lecture. We have a special one today dealing with sustainability and climate change. And you might wonder, but yes, this is also a topic of digital humanism. We are not only looking at the human, but we are also looking at the environment, at the entire ecosystem, because humans are embedded in this and digital humanism is also dealing with this issue."
+    },
+    {
+      "start": 28.384,
+      "end": 48.688,
+      "text": "Thus, I'm happy to welcome David Rolnik. He's coming from Milner, which is the great research institute in AI and McGill University, Montreal, Canada. And he will give a talk about AI and its impact on the climate and climate change. The moderation will be done by Peter Knaes."
+    },
+    {
+      "start": 48.816,
+      "end": 72.592,
+      "text": "who will then introduce David in more detail. I just want to repeat, but everybody of you knows, we have a talk for 30 minutes, then we have 30 minutes Q&A, and then we will end with a piece of music. As always, this is proposed by the speaker, so it's thanks to David who has proposed something, and Peter will manage the piece of music."
+    },
+    {
+      "start": 72.912,
+      "end": 102.544,
+      "text": "Moderation, as I said, is done by Peter Knez. I will not introduce him since he's well known to the audience and he's organizing the digital humanism here at TU Wien, even at the moment he's sitting at Georgia Tech in the USA. Peter, thank you for your moderation today. I have to add that you are a little bit ill and you a little bit lost your voice. So I'm really thankful to you that you are doing."
+    },
+    {
+      "start": 102.544,
+      "end": 130.592,
+      "text": "this moderation. The floor is yours, Peter. Thank you, Johannes. Yes, my voice is actually really not in best condition, so I will try to stick to the essentials. But of course, taking the necessary time to give our speaker the proper introduction. So we are very happy to have David Rolnick with us today. David is an assistant professor and Canada CIFAR AI chair at McGill University and at Mila, the Quebec AI Institute."
+    },
+    {
+      "start": 130.592,
+      "end": 157.952,
+      "text": "If I may say so, he's a machine learning guy who received his PhD in applied mathematics from MIT. He's a former NSF postdoc and graduate research fellow, a Fulbright scholar, and was named to MIT Technology Review's 2021 list of 35 innovators under 35. Beyond that, he's a co-founder and chair of Climate Change AI, a global initiative aiming to have a positive impact on climate change by means of machine learning."
+    },
+    {
+      "start": 157.952,
+      "end": 183.968,
+      "text": "And he also serves as scientific co-director of Sustainability in the Digital Age, a think tank that aims at using digital innovation to achieve the UN Sustainable Development Goals. Very impressive. And we are very looking forward to your talk that's dealing with the question, is AI good or bad for the climate? So, David, the floor is now yours. Please go ahead. Thank you so much. It's a pleasure to be here. I was very excited to be invited because it's a..."
+    },
+    {
+      "start": 183.968,
+      "end": 213.76,
+      "text": "It's a privilege to speak in front of such a broad and diverse audience coming from so many different backgrounds. I am excited for the conversation moving forward. And I hope that I have something for people from many different backgrounds. But I apologize in advance if I'm either going into not enough technical detail, too much technical detail, or otherwise."
+    },
+    {
+      "start": 213.76,
+      "end": 239.376,
+      "text": "addressing things from a perspective that isn't isn't yours, but we need a lot of different perspectives weighing in here. So I don't think that the topic of climate change needs very much introduction. We're increasingly seeing its effects and they're becoming increasingly severe worldwide from droughts that affected much of Europe, Western North America, East Africa and China."
+    },
+    {
+      "start": 239.376,
+      "end": 269.328,
+      "text": "over this past few months to historic flooding in Pakistan and Korea and other places as well, we are seeing climate change exponentially increasing. It's also important to remember that climate change has a disproportionate impact on already disadvantaged communities and geographies and exacerbate existing inequities that exist. But climate change is not inevitable."
+    },
+    {
+      "start": 269.424,
+      "end": 299.216,
+      "text": "We have the opportunity to not stop climate change because at this point, many people have already died from climate change and many more will die regardless of what we do now. But just how catastrophic it gets depends on what we do. We need net zero greenhouse gas emissions by 2050, according to the UN's Intergovernmental Panel on Climate Change. This is a tall order."
+    },
+    {
+      "start": 299.472,
+      "end": 324.384,
+      "text": "Currently, emissions continue to increase year after year with a slight blip about a year ago due to the pandemic. But not only are we not decreasing to net zero, we're actually increasing year after year. There is progress, but it is far too slow. There are two kinds of progress that are needed. There are two kinds of action."
+    },
+    {
+      "start": 324.384,
+      "end": 350.784,
+      "text": "Mitigation, which is reducing greenhouse gas emissions, and adaptation, which is resilience to the consequences of climate change. I will be mostly talking about mitigation here, but I will also be talking to some extent about adaptation. Now, I don't think that the topic of AI needs that much introduction for this audience, so I'm just going to leap right in. And the structure for what I'm going to be talking about is..."
+    },
+    {
+      "start": 350.784,
+      "end": 379.808,
+      "text": "as follows, and following on a recent paper in Nature Climate Change on aligning artificial intelligence with climate change mitigation. So I'm going to be talking about AI applications that are relevant to climate change mitigation and adaptation and serve to accelerate climate action. And then I'm going to be talking about AI applications that increase greenhouse gas emissions, AI applications with systemic impacts, broader impacts across society."
+    },
+    {
+      "start": 379.808,
+      "end": 407.664,
+      "text": "And then I'm going to be talking about the emissions impacts coming directly from AI computation and hardware. I'm going to be spending a lot of time on this first point because this is a lot of what my own group's research focuses on, but then framing it within the context of some of the ways in which AI can be very negative for climate change. So let's dive into the first point."
+    },
+    {
+      "start": 407.792,
+      "end": 433.328,
+      "text": "And here I'm going to be following a taxonomy that we introduced in a paper called Tackling Climate Change with Machine Learning, which looked at many different sectors of application where machine learning and AI can be relevant in climate action, from electricity systems to buildings, transportation, climate modeling and prediction, heavy industry, land use like forestry and agriculture."
+    },
+    {
+      "start": 433.328,
+      "end": 460.944,
+      "text": "There are too many applications of AI where AI is being used in these different sectors in a positive way to touch on here. But I can talk about the overall theme so you can think about why AI is a relevant ingredient in climate action. And the themes that I want to touch on are fivefold, improving operational efficiency, gathering information, forecasting, speeding up simulations and accelerating scientific discovery."
+    },
+    {
+      "start": 461.136,
+      "end": 489.488,
+      "text": "First of all, let's touch on improving operational efficiency. There are many complicated systems where AI can be used to increase the efficiency of a system by optimizing or controlling many complicated parts. This works with automated systems that are already susceptible to algorithmic operation or at least algorithmic optimization. There are many examples here where AI..."
+    },
+    {
+      "start": 489.488,
+      "end": 518.848,
+      "text": "tools are already being used. So for example, optimizing HVAC systems, that's heating and cooling systems in buildings. Increasingly, we're seeing smart thermostats, both at the level of personal homes and at the level of larger scale commercial or industrial buildings or facilities, where the heating and cooling systems just use much less energy, thanks to AI. Those AI algorithms may not be very sophisticated. In some cases, they are. In some cases, they're quite simple."
+    },
+    {
+      "start": 518.848,
+      "end": 548.496,
+      "text": "But that can actually have a huge impact upon energy use, since heating and cooling systems account for a significant fraction of global greenhouse gas emissions. Same thing with steel and cement manufacture, which together constitute between 10 and 15 percent of all global greenhouse gas emissions. Steel and cement manufacturing facilities are increasingly having emissions lowered thanks to various kinds of optimization procedures, some of which fall under the heading of AI."
+    },
+    {
+      "start": 549.424,
+      "end": 574.656,
+      "text": "Gathering information. Oftentimes there is too much data out there to make sense of by labeling it manually. And often this kind of data, which might take the form of big collections of satellite imagery or big collections of text, can be parsed by AI. AI going through this big raw data set."
+    },
+    {
+      "start": 574.656,
+      "end": 604.272,
+      "text": "And picking out relevant information, for example, to guide policy. This can be useful in understanding land use. So, for example, estimating carbon stock, tracking the amount of carbon which is stored in particular areas of land to help incentivize land owners to take certain steps or to monitor deforestation in real time. Again, this is already, AI is already being used in such use cases and with quite significant effect."
+    },
+    {
+      "start": 604.272,
+      "end": 633.088,
+      "text": "Similarly, instead of taking satellite imagery of land, you can take a large corpora of text and you could use natural language processing to, for example, pick out climate relevant information from corporate financial disclosures. Again, we are seeing AI algorithms in this case from natural language processing being used to pull out relevant information to help guide policy. Forecasting."
+    },
+    {
+      "start": 633.088,
+      "end": 663.04,
+      "text": "AI is good at making predictions from time series in certain cases. And so we see applications to, for example, forecasting electricity supply and demand. This is being done increasingly widely to understand how much power is available on the electrical grid and how much power is needed at any given point. This is particularly important with low carbon sources of electricity like solar and wind, which vary from moment to moment. So you need to make sure that the amount of power being produced,"
+    },
+    {
+      "start": 663.04,
+      "end": 690.512,
+      "text": "is enough to meet the demand otherwise you end up with the danger of a blackout or you end up having to produce more power than you need which typically means producing more greenhouse gas machines so we're seeing ai algorithms being used to forecast um the exact amount of sun and wind minute to minute so you know how much power is available and also to forecast the demand for electrical power which typically was was done until recently quite manually"
+    },
+    {
+      "start": 690.512,
+      "end": 716.176,
+      "text": "And you're seeing huge gains here. For example, the error in demand forecasting in the UK's national grid was recently cut in half thanks to new AI algorithms. So large increases in efficiency. Speeding up simulations, taking a often physics-based model that is very accurate but can be slow to run and speeding up parts of it using AI. Here we..."
+    },
+    {
+      "start": 716.176,
+      "end": 743.792,
+      "text": "You can see examples, for example, in climate modeling, where you can have climate models that take months to run even on supercomputers. And we'd like to have fast ability to run these models faster. Similarly for planning electricity, grid planning and scheduling on the electrical grid. Accelerating scientific discovery is the final theme that I want to touch on here, where AI can help."
+    },
+    {
+      "start": 743.792,
+      "end": 771.12,
+      "text": "speed up the process of innovation in science in ways that are useful to climate action. This is not replacing the normal process of scientific experimentation, but AI can be a tool in helping guide experimentation, suggesting materials, for example, to use in batteries, solar perovskites are used in photovoltaic cells and other applications. So here one can learn the results from past experiments and use that information."
+    },
+    {
+      "start": 771.12,
+      "end": 795.072,
+      "text": "to suggest new experiments that are promising to try to reduce the need for time and cost-intensive experimentation with new candidate materials. Again, if you're interested in more detail on any of these, I encourage you to check out our overview paper called Tackling Climate Change with Machine Learning. I now want to dive a little bit more into detail in some of my own group's work on"
+    },
+    {
+      "start": 795.072,
+      "end": 822.064,
+      "text": "these various different themes. I'm going to touch on each of the first four themes here with a very quick example, just to give a sense of some of the challenges that one encounters in working in this space and how one really needs to tailor the use case of AI to ensure that it's actually impactful and useful to society. So the first example that I want to touch on is efficient operation of electrical grids."
+    },
+    {
+      "start": 822.064,
+      "end": 849.296,
+      "text": "Here we consider a problem called AC optimal power flow. And this is a non-convex optimization problem, which for the computer scientists in the room means it's hard to solve. There are no good algorithms for solving non-convex optimization problems fast. And this is the problem that has to be solved if you're going to understand how much electricity needs to be produced at each generator in an electrical grid."
+    },
+    {
+      "start": 849.296,
+      "end": 878.688,
+      "text": "You need to work out how much power needs to be produced to meet demand, and also given the constraints of how power flows within an electrical grid, the topology of that network. This is what the problem looks like. It's a non-convex quadratic program. But even though it's quadratic, it is non-convex, so there's no good outcome. So given that exact solutions take too long, grid operators normally simplify this problem and waste large amounts of power."
+    },
+    {
+      "start": 878.688,
+      "end": 907.696,
+      "text": "I could ask folks to mute if they're not making a comment. Fantastic. Yeah, so typically grid operators will simplify this problem in practice, and they'll come up with an approximate solution, but the approximate solution is so bad that large amounts of electrical power are wasted, corresponding to large amounts of increased greenhouse gas emissions."
+    },
+    {
+      "start": 907.696,
+      "end": 930.416,
+      "text": "People have looked at using AI in these kinds of contexts, but naive AI algorithms will approximately solve the problem fast, but they will also violate these constraints, which have to do with how power flows within an electrical grid. And this will mean that what is output by an AI algorithm is not really a legal, in some sense, solution."
+    },
+    {
+      "start": 930.416,
+      "end": 960.256,
+      "text": "you don't end up with something that is good enough. You end up with something that actually breaks the entire power grid and leads to a blackout. Because approximately satisfying power flow, approximately not breaking something is not the same as not breaking something. So people don't use AI algorithms in these contexts because of this issue. You need to make sure that your AI algorithm can be guaranteed to not break your entire"
+    },
+    {
+      "start": 960.256,
+      "end": 985.248,
+      "text": "power grid. So what my group has worked on recently is showing how to enforce these constraints, make sure that AI algorithms actually build in these kinds of constraints so that you can solve this problem approximately much faster, orders of magnitude faster than traditional methods, while ensuring that you don't run the risk of bringing down the entire power grid."
+    },
+    {
+      "start": 985.248,
+      "end": 1011.2,
+      "text": "This is a paper that you can look into here if you're interested, and I'm happy to talk more about that later if there are questions. The second example that I want to touch on is gathering information on biodiversity. So here we see the theme of taking some big set of data and parsing that into a form that can be useful in guiding a decision making or additional research."
+    },
+    {
+      "start": 1011.2,
+      "end": 1040.048,
+      "text": "Here, the application isn't biodiversity monitoring. Ecosystems are collapsing as a result of climate change and other factors. And evaluating biodiversity is fundamentally important for preserving ecosystems and the ecosystem services that humans depend on, like forestry, agriculture, fisheries. But this typically requires specialized experts to monitor species. AI can help scale up ecological monitoring if it's applied thoughtfully and in conjunction."
+    },
+    {
+      "start": 1040.048,
+      "end": 1063.52,
+      "text": "with collaboration between computer scientists and ecologists. So here we're developing automated sensors to monitor insect populations, insects representing a half of all biodiversity, together with a coalition of partner ecologists. These are what our sensors look like. They're solar powered, they attract and they photograph insects and AI algorithms then pinpoint and identify them. The data"
+    },
+    {
+      "start": 1063.52,
+      "end": 1090.56,
+      "text": "is then sent to experts for interpretation and also proofreading because it's not going to be perfect, but it can really reduce the amount of time that's needed by expert ecologists. And it can also scale up the process of actually going out into the field and collecting data because these are completely automated devices. This is what it looks like annotating, in this case, a large number of moths that have come to this trap with species and"
+    },
+    {
+      "start": 1090.56,
+      "end": 1119.456,
+      "text": "the confidence that the model has. For example, it's about 85% confident this is its particular species. I'd like to touch on another application here from forecasting. The motivation here is that forecasting crop yield is really essential to averting food insecurity in a changing climate. As weather and climate change, we're seeing crop yield very dramatically. AI can help predict agricultural yield from satellite imagery."
+    },
+    {
+      "start": 1119.456,
+      "end": 1147.184,
+      "text": "from images like this. However, AI algorithms typically require lots of data. And data can be scarce and uneven across different locations. Data where we know exactly how much yield there is and what kind of crop is there. In order to develop algorithms to do these things, the algorithms need to"
+    },
+    {
+      "start": 1147.184,
+      "end": 1175.792,
+      "text": "learn from data and not having that data can be a significant problem. You can see here in this map from our collaborators at NASA, the orange data, which is the really high quality data, is only available in a few places around the world. Now, in collaboration with our partners, we've developed algorithms that specifically are designed to adapt well to new locations that they haven't seen before, given these data challenges."
+    },
+    {
+      "start": 1175.792,
+      "end": 1205.04,
+      "text": "They are meta-learning algorithms. So they're algorithms that are, in some sense, designed to learn new things fast. And the way that they perform particularly well here is they leverage information about the location and the crop type. So they may know you've seen coffee in Brazil and maize in Kenya, but you've never seen maize in Brazil or coffee in Kenya. And so building in that information into the algorithms can help them perform better."
+    },
+    {
+      "start": 1205.04,
+      "end": 1231.072,
+      "text": "Again, this is the kind of challenge that you encounter if you're using algorithms in the real world here. And then the final example that I want to touch on in more depth is speeding up climate simulations. As I mentioned, climate simulations are very accurate based on known physics, but they can be very slow based upon these complicated differential equations, sometimes months even on supercomputers. And this makes it harder to get localized predictions of climate."
+    },
+    {
+      "start": 1231.072,
+      "end": 1260.192,
+      "text": "and also weather that help in adapting to climate change. Individual communities may not have sufficient guidance on what's going to happen precisely there in a precise time frame because the predictions may be run at course grid scales of hundreds of kilometers, like you can see here. So with Environment and Climate Change Canada, which is the Canadian agency responsible for modeling climate, we have used AI to quickly approximate a particular piece"
+    },
+    {
+      "start": 1260.192,
+      "end": 1281.808,
+      "text": "of climate models that's especially slow, called radiative transfer. We've come up with approximate calculations that can be plugged into climate models here to speed up the process dramatically. And these are currently being tested for incorporation into the official Canadian climate models. Importantly, our algorithms leverage known information about the physics."
+    },
+    {
+      "start": 1281.808,
+      "end": 1310.976,
+      "text": "in order to improve the accuracy. And this is another theme that we see across many of these applications. However, we can build in information from the application, not just use some generic AI algorithm, but really incorporate whatever we know as much as possible. Okay, some key considerations in thinking about these kinds of applications of AI to benefit climate action before I touch on some of the other directions that I wanted to mention. Obviously, AI is not..."
+    },
+    {
+      "start": 1310.976,
+      "end": 1338.032,
+      "text": "going to magically solve climate change. It's never a silver bullet in any of these applications. It's only relevant in some applications, period. And even when it is, the only way in which it's impactful is by partnership between stakeholders with complementary expertise. One can't just plug and play some magic AI algorithm and solve everything. One really needs to think deeply about how to use AI algorithms in any particular use case."
+    },
+    {
+      "start": 1339.216,
+      "end": 1368.176,
+      "text": "It's also important to remember that the high-impact applications are not always flashy. When here's in the news about self-driving cars, they're probably going to make climate change worse, as we'll see in a few slides. But something like predictive maintenance, pinpointing failures in railroad tracks and maintenance needs, that's extremely impactful to the transportation sector and can reduce greenhouse gas emissions significantly. This is an application, by the way, that Deutsche Bahn is already implementing in Germany."
+    },
+    {
+      "start": 1370.704,
+      "end": 1399.824,
+      "text": "Even when working with data, sometimes simple methods work. It's very easy to get caught up in the hype surrounding AI and think that whatever the latest AI algorithm is, that's what one should be using because that's the way to make a difference in the world. That's not how it works. Typically, simple algorithms are very effective, and the latest AI algorithms are sometimes useful, but they're only useful in limited cases. One shouldn't leap to using the fanciest technology, and simpler technology will do the job."
+    },
+    {
+      "start": 1400.592,
+      "end": 1430.528,
+      "text": "And more broadly, thinking about AI itself as a solution can be counterproductive if it distracts from simpler things. Smart buildings, which have AI-enabled sensor systems and adapt to people inside them, that can be valuable in decreasing emissions. But what's more valuable is making sure your building is in. So thinking in terms of low-hanging fruit that's maybe not technologically fancy is,"
+    },
+    {
+      "start": 1430.528,
+      "end": 1459.872,
+      "text": "very important and using new technologies in particular cases where they are relevant, but not thinking that they're always the answer. In fact, fancy technologies are often used in greenwashing to make climate strategies sound better than they are. Look at our company. We're doing so much for the planet. We even use AI. Everyone wants to talk about that, whereas something that's lower tech might not sound as good. And then there are equity considerations."
+    },
+    {
+      "start": 1459.872,
+      "end": 1489.04,
+      "text": "Thinking about empowering diverse stakeholders to shape these kinds of tools, oftentimes digital divides prevent geographic and community diversity in who is actually able to use these tools and leverage their power. Selecting and prioritizing problems. There's a lot of energy given to a lot of funding and interest in problems like AI to fight wildfires. But oftentimes that neglects"
+    },
+    {
+      "start": 1489.04,
+      "end": 1517.936,
+      "text": "problems that are maybe equally important, like AI to fight locusts or melting glaciers. Locusts are a problem that are affected by climate change. They're increasing in East Africa, the Middle East, and India, among other places. Wildfires are particularly hitting the western side of North America, Europe, and Australia. And funding imbalances between those regions can affect how problems are prioritized, even if all these problems are important and should all be one."
+    },
+    {
+      "start": 1518.256,
+      "end": 1546.288,
+      "text": "And then ensuring data is representative, because sometimes if your data is coming from one geography or one set of communities, then you can come up with an AI algorithm. Remember, AI algorithms leverage data. So if your algorithm was based upon data from the US, maybe it's not going to be relevant in another part of the world. Now I want to touch, I've talked about AI applications that can help accelerate climate action, but I also want to touch on AI applications that can increase greenhouse gas emissions."
+    },
+    {
+      "start": 1548.4,
+      "end": 1577.088,
+      "text": "AI is being used in all kinds of ways, and it's being used very extensively to accelerate fossil fuel exploration and extraction. One estimate from Accenture, I believe, is that AI and advanced analytics will yield $400 billion, half a trillion dollars in additional profit by 2025 alone. And much of that is in exploration and extraction, so actually increasing the amount."
+    },
+    {
+      "start": 1577.088,
+      "end": 1606.4,
+      "text": "of fossil fuels that are coming out of the ground. This is actively counterproductive to climate action. It's also worth noting that many of the leading technology companies such as Google, Microsoft, Amazon, IBM work explicitly with fossil fuel companies in order to optimize for activities that are run counter to climate action. There are other high emissions"
+    },
+    {
+      "start": 1606.4,
+      "end": 1632.432,
+      "text": "Activities as well that are also facilitated by AI. Fast fashion, where clothing is created for very brief use and then disposed of, is accelerated by AI technologies that enable just-on-time manufacturing, for example. So AI is actually enabling this kind of extremely high emissions activity."
+    },
+    {
+      "start": 1633.968,
+      "end": 1662.096,
+      "text": "And also, AI is often used to optimize systems. And we even talked about this earlier, how it's good if AI can increase the efficiency of a system. But efficiency and optimization can mean different things. Sometimes an AI algorithm is used to optimize for cost, but that's not necessarily the same as optimizing for lower greenhouse gas emissions. For example, labor costs might outweigh energy costs, in which case optimizing for cost might actually be increasing greenhouse gas emissions."
+    },
+    {
+      "start": 1662.32,
+      "end": 1691.04,
+      "text": "In the context where you might ship a product halfway across the world for processing, if the labor costs there are lower, that would actually be increasing the carbon footprint of your product. For more reading on this, I encourage checking out the Greenpeace report on oil in the cloud that's specifically focused on this first component, how AI is being used in the fossil fuel industry. There are many applications with more."
+    },
+    {
+      "start": 1691.04,
+      "end": 1719.472,
+      "text": "systemic impacts. And these are often uncertain, harder to measure, but can be extremely significant. Many AI applications have effects on society as a whole. This is one of the reasons that AI has been celebrated in that it is a transformative technology in society. But sometimes that's good. Sometimes that's bad. I can mention applications here which are both good and bad. Systemic impacts need not just be bad. They can be good. Consumer behavior."
+    },
+    {
+      "start": 1720.912,
+      "end": 1748.848,
+      "text": "Here's a very negative application. Advertising recommender systems. Most of online advertising is now driven by AI. And recommender systems used to drive online advertising are specifically designed to boost consumption. That is almost certainly greatly increasing greenhouse gas emissions. Again, this is the exact point of online advertising systems. Autonomous vehicles are an interesting example."
+    },
+    {
+      "start": 1749.104,
+      "end": 1773.424,
+      "text": "They can have a positive or negative effect on climate change. It's not certain, but currently autonomous vehicles are being used very much in a personal transportation context, self-driving personal cars. That is probably going to increase emissions significantly, potentially, because it will lead to a change again in consumer behavior."
+    },
+    {
+      "start": 1774.864,
+      "end": 1802.224,
+      "text": "By decreasing the barrier to driving, it is expected that personal self-driving cars will increase miles driven and result in more greenhouse gas emissions from transportation. However, it depends on how the technology is developed. If autonomous vehicles are designed to boost public transportation with self-driving buses, for example, that may decrease emissions. So really, the choices we're making in developing these technologies have a significant effect on their systemic impacts."
+    },
+    {
+      "start": 1804.4,
+      "end": 1833.92,
+      "text": "I also want to talk about rebound effects. This refers to this is not necessarily it's not fully a negative. You can see AI being useful in many different sectors by improving efficiency, maybe lowering the energy required to make a product, which could be lowering greenhouse gas emissions. And that can be great. But it's worth remembering that sometimes some of those efficiency gains can be counterbalanced by corresponding increases in use. If you have a."
+    },
+    {
+      "start": 1833.92,
+      "end": 1863.376,
+      "text": "product that is made with less energy that might lower the price and cause people to use it more so that doesn't mean that these applications are bad but it can mean that some of these applications can be less good than you might hope and then finally i want to touch on lock-in effects where applications that are facilitated by technology may become more entrenched this can be positive or negative ai is"
+    },
+    {
+      "start": 1863.376,
+      "end": 1890.64,
+      "text": "serving to accelerate and help entrench various different technologies. If this is done with personal cars, for example, with autonomous driving, that may be a bad thing. But if AI is enabling better train systems via optimized train scheduling, that can be a good thing. So lock-in effects to particular applications can have many different valences."
+    },
+    {
+      "start": 1892.4,
+      "end": 1920.4,
+      "text": "Overall, once you think about these impacts being hard to assess, but extremely big because they affect all of society and they're generally not talked about as compared with some of the flashier applications and direct impacts of AI. Finally, I want to touch on the emissions impacts of AI computation and hardware. So here we're seeing two kinds of impacts."
+    },
+    {
+      "start": 1920.4,
+      "end": 1942.608,
+      "text": "from operational energy and from the embodied emissions of hardware. And so overall, the ICT sector, so all of digital, contributed one to four percent of global greenhouse gas emissions in 2020, with two thirds from operational energy and one third from hardware. Estimates. You get different estimates from different places. That's big."
+    },
+    {
+      "start": 1942.768,
+      "end": 1972.64,
+      "text": "It's actually not as big as I might have thought, given how important digital technologies are in our lives, but it's also potentially increasing. We haven't seen it increase that much because computation has also gotten more efficient, but there is the potential for that to increase. However, AI is also only some fraction of ICT. Google reports that AI, for example, is about 15% of server energy use. So that's one particular digital technology provider."
+    },
+    {
+      "start": 1972.64,
+      "end": 2001.552,
+      "text": "That estimate may be more or less correct. So big, not that big, at least yet, but it's highly variable. You can have some algorithms that basically require no computational energy. You can see great variation here. Some algorithms. These are commonly used algorithms that just use a few grams of carbon dioxide, whereas some algorithms."
+    },
+    {
+      "start": 2001.552,
+      "end": 2028.144,
+      "text": "have gotten extremely large and to develop those algorithms can take actually tons, literal tons of carbon dioxide emissions. And the biggest algorithms are getting bigger, but they're not used that much, or at least they're not developed that much. Typically you develop it once and then you use it many times. So this is important also to bear in mind here that at least for machine learning algorithms, there's a life cycle where developing an algorithm"
+    },
+    {
+      "start": 2028.144,
+      "end": 2054.976,
+      "text": "is extremely computationally intensive, but it's done very infrequently, whereas training that algorithm, so adapting it to data, is done more frequently, but takes a bit less energy than developing it, and then actually using it, inference time. So, you know, maybe somebody's developed an algorithm for translating languages, and you ask it a question. That doesn't take very much energy at all, but people do it a lot, and so..."
+    },
+    {
+      "start": 2054.976,
+      "end": 2078.544,
+      "text": "that can counterbalance it being very cheap. So it's important to remember when you see some of these figures that they're generally referring to the development or training phases. So when you hear really big numbers, those are probably these things, which are actually done less frequently than the computationally cheap part of it. So thinking about this overall, what should one take away from this discussion? I talked about a bunch of different factors."
+    },
+    {
+      "start": 2078.576,
+      "end": 2099.344,
+      "text": "There's a need for impact assessment for computation related emissions, just like with the other kinds of impacts of AI. And this is particularly important because oftentimes computation in AI is done with cloud computing. And so it's difficult to pinpoint where it's happening. People do complicated emissions accounting systems where they essentially try to throw their emissions onto anybody else."
+    },
+    {
+      "start": 2099.344,
+      "end": 2126.16,
+      "text": "And so it's not clear whether your company should count the emissions or the cloud compute provider. So that can be a bit of an issue and that should be handled in policymaking. But also it should be remembered, these effects are probably, all of computation is probably significantly smaller than the application related negative impacts. We are in danger of focusing on the easier to measure stuff."
+    },
+    {
+      "start": 2126.16,
+      "end": 2155.888,
+      "text": "rather than the stuff that's really the elephant in the room, what these algorithms are being used for, which can be good, it can be very bad. And it's important to remember that many tech players have an incentive to focus on the efficient computation rather than evaluating what their algorithms do, because what their algorithms do is their source of profit. And it's much harder to address that than it is to use more energy efficient algorithms or use your energy for computation coming from some low carbon source."
+    },
+    {
+      "start": 2156.208,
+      "end": 2183.152,
+      "text": "So the takeaway here is it's important to think about computation from AI, but we're in danger of building the equivalent of certified fair trade landmines where no people were harmed in the creation of the algorithm, but many people are harmed in what it's actually being used for. This has to do with the division between scope one and two and scope three emissions from a carbon accounting perspective."
+    },
+    {
+      "start": 2184.176,
+      "end": 2209.6,
+      "text": "OK, so we've touched on all these different components. AL algorithms directly accelerate climate action, directly run counter to it, have systemic impacts that can be positive or negative, and the impacts of computation and hardware. So I want to touch on more broadly just failures in the way we're conceiving AI innovation with just an example that we looked at recently."
+    },
+    {
+      "start": 2209.6,
+      "end": 2237.024,
+      "text": "And so AI really is continuing to be developed in a way that is very far removed from thinking about how it is positively impacting society. Often AI is developed using these kinds of benchmarks, like ImageNet is one that you may have heard of. It's designed to evaluate models. It's also designed to pre-train, so help develop algorithms for applied settings. And it's this enormous data set."
+    },
+    {
+      "start": 2237.024,
+      "end": 2259.376,
+      "text": "These data sets are often developed from internet data, and they're developed by computer scientists without relevant experts in the room. You just have these kinds of data sets that are taken from some big mess on the internet, and then nobody who's actually involved in a downstream impactful application is involved."
+    },
+    {
+      "start": 2260.24,
+      "end": 2288.304,
+      "text": "So we worked in the case of ImageNet with ecologists to analyze a quarter of this standard benchmark that is just about identifying wild animals. And we found that 12% of the images are flat out wrong. 12% of the categories are eternally contradictory. And so essentially, this breaks the entire purpose of developing AI algorithms using this kind of benchmark."
+    },
+    {
+      "start": 2288.304,
+      "end": 2313.808,
+      "text": "It calls into question the accuracy of testing them on this benchmark, but it also means that using this benchmark is essentially useless in downstream applications, in biodiversity monitoring in this case, even when it purports to be useful. I should also note that the data was heavily biased towards the US. So, for example, out of 50 species of J in the world, we found that..."
+    },
+    {
+      "start": 2313.808,
+      "end": 2338.16,
+      "text": "60% of the data was actually just this one species found only in the US and Canada. That was an example. We found that across the entire data set. And so this is really exemplary of how AI innovations are developed without the stakeholders who are relevant to ensuring that they have the relevant impact. And this is important because these algorithms are being used in downstream applications."
+    },
+    {
+      "start": 2338.192,
+      "end": 2366.624,
+      "text": "So people are using ImageNet, for example, to develop algorithms for biodiversity monitoring without being aware that the impact was not a consideration and relevant stakeholders were not in the room to ensure that the data was even correct. So how should we think about this overall? AI can either hinder or help climate action. It really depends on how it's used. And there are many different..."
+    },
+    {
+      "start": 2366.624,
+      "end": 2393.76,
+      "text": "factors to bear in mind the overall impacts are poorly understood and it's complicated to measure them but it's really important because these effects can be significant and importantly they can be shaped it's not inevitable how ai affects the climate it's up to us and consideration of the impacts and inclusion of the relevant stakeholders has to be part of the innovation ecosystem because oftentimes people who are building ai systems"
+    },
+    {
+      "start": 2393.76,
+      "end": 2421.584,
+      "text": "Think about impact as something that's dealt with by other people, not by the people, not by them, not by the people actually building the AI systems, but by maybe social scientists, somebody outside the room. The people who are building the algorithms and shaping the new technologies have to be responsible for their impact. And more broadly, aligning AI with climate action means more than adding some AI for good applications on top of business as usual. The implicit choices matter."
+    },
+    {
+      "start": 2423.344,
+      "end": 2450.272,
+      "text": "I wanted to touch on some policy recommendations for facilitating work at the intersection of climate change and AI. I'll touch on them really briefly because I realize we're at time. This was a report written for the Global Partnership in AI, which is an OECD initiative. Some of our recommendations fall into these different categories. We looked at data, digital infrastructure, facilitating capacity building, research innovation funding, integrating."
+    },
+    {
+      "start": 2450.272,
+      "end": 2479.744,
+      "text": "AI into impactful use cases, international collaboration and impact assessment, among many other areas. But I will skip over some of these applications, some of these policy recommendations here. And I want to close by pointing to additional resources, if you're interested, thanks to the Climate Change and AI Initiative, which was mentioned at the start, is a nonprofit initiative that I help lead. And so we have many digital resources, reports aimed at different audiences from researchers to policymakers."
+    },
+    {
+      "start": 2479.744,
+      "end": 2500.896,
+      "text": "We have events, our upcoming events, including workshop series at the biggest AI conference in Europe. And we have a summer school for people looking to learn more about the space. We also have funding programs. We just launched our innovation grants program to fund research at any part of this space, the intersection of climate change and AI."
+    },
+    {
+      "start": 2500.896,
+      "end": 2526.768,
+      "text": "We have newsletters and other facilities for gaining information about recent developments in the space. And we have webinars and happy hours to learn more and meet other folks in the community. I look forward to the discussion. And thank you for your attention. Thank you very much, David. For sure, many, many interesting aspects that would require lots of..."
+    },
+    {
+      "start": 2526.768,
+      "end": 2555.168,
+      "text": "more detailed insights and considerations. Unfortunately, we don't have that much time, but thanks so much for showing us the broad spectrum of possible directions and research questions that also follow from that. We have some time, 10 minutes for questions. So if there's anyone who wants to say something, Michael Hayes from Siemens has a question, so please. Hello, thank you for the very interesting presentation."
+    },
+    {
+      "start": 2555.168,
+      "end": 2584.432,
+      "text": "So you mentioned something that domain expertise is required. I would translate this in simple words. So the reason why I'm asking is if I meet young data analysts, they often don't want to understand the signals themselves. But they say they have their black box algorithms."
+    },
+    {
+      "start": 2584.88,
+      "end": 2603.488,
+      "text": "The new approach of data science is just to apply these algorithms and they don't need to understand what's going on. And so I am a little bit maybe this case old fashioned. I want to understand what I'm doing because otherwise I don't know what the result is."
+    },
+    {
+      "start": 2603.488,
+      "end": 2622.144,
+      "text": "your opinion i think both arguments have their in certain cases you can use you can use some ai tools out of the box very simple tools but oftentimes you get much more benefit from really really understanding the problem ultimately you're never going to be an ai"
+    },
+    {
+      "start": 2622.144,
+      "end": 2652.096,
+      "text": "expert is never going to be able to have an impact without understanding the problem and working with people in the relevant space. People in the relevant space, if it's a very simple AI tool, they might be able to use it themselves without really understanding the AI tools that much. But in order to work on many of these problems, you need collaboration. And in that case, you need both sides to understand a bit of where the other is coming from. And you need them to try to build bridges. And you see that in many of these applications, you have challenges,"
+    },
+    {
+      "start": 2652.096,
+      "end": 2681.92,
+      "text": "that need to be addressed by specific technical um technical means so here we're using meta learning algorithms we're adapting them to deal with a challenge that the data is really imbalanced across geographies and this is the kind of innovation that i'd like to see in the ai community more i think that this is very much aligned with what ai experts often want which is innovative cool new algorithms but the way to design those in my view is to really listen to what people need"
+    },
+    {
+      "start": 2681.92,
+      "end": 2708.56,
+      "text": "That is the way that you get the cool new algorithms, rather than by looking for an extra 0.1% improvement on ImageNet, which, as we've seen, is maybe not that valuable anyway. Thank you. I agree. Okay, another question by Erich Prehm. Yes, thanks, David. This was very interesting, really broadened my understanding of the issue as well."
+    },
+    {
+      "start": 2708.56,
+      "end": 2735.936,
+      "text": "especially because you emphasize the application so much, which I think is rarely done. But the whole discussion, I think, comes with two problems which are related. One is it's really difficult to get the orders of magnitude right when you're trying to assess what you're doing here. So, for example, not many people understand how many motors there are in heating and ventilation systems, that there are thousands and thousands of them."
+    },
+    {
+      "start": 2735.936,
+      "end": 2760.496,
+      "text": "and that they are usually very badly controlled, and that there is a lot we can do to improve them. And everybody keeps talking about the computational side, as you said, where we have figures and we can calculate them, forgetting also that they are improving if we do this a bit more cleverly than we have been doing it in the past. So my question is,"
+    },
+    {
+      "start": 2760.848,
+      "end": 2774.16,
+      "text": "In communicating this to either a broad public or policymakers, I find this hugely challenging because it is really difficult to get across this complicated message."
+    },
+    {
+      "start": 2774.16,
+      "end": 2801.984,
+      "text": "And there is a real danger to get the balance. It is. I'm sure you have a similar view. It's very difficult. But the first step is impact assessment. And it has to be holistic impact assessment. It has to be considering downstream impacts. People are often very willing to count the positive impacts, but not the negative impacts. So you talk to people and they're like, oh, well, you can use AI for all these great things. And these are having this impact on climate change. And then if you talk to them about the negative use cases."
+    },
+    {
+      "start": 2801.984,
+      "end": 2824.976,
+      "text": "They say, oh, well, that's inevitable. That's just the market. And no, it's not. We don't have to regulate away certain use cases of AI, but we can certainly choose what we're prioritizing in funding and we can choose how to shape the applications of technology. So in situations like autonomous driving, we can choose whether to push the technology more towards a high emission side or a low emission side."
+    },
+    {
+      "start": 2825.008,
+      "end": 2853.776,
+      "text": "And that's the kind of thinking that I want to be that I want to be happening more thinking in terms of holistic impact assessment and not picking and choosing because people don't know about these things. They just they're the discourse is sort of deliberately being pushed in certain directions because it's certain certain players have an advantage in that regard. And all of these factors should be considered. But it's not it's it's it's."
+    },
+    {
+      "start": 2853.776,
+      "end": 2880.464,
+      "text": "As you say, it's not a simple picture. And there are many factors that need to be considered, starting with impact assessment and in different cases, moving to different forms of potential policy intervention. Also, impact assessment means that traditional carbon... The traditional..."
+    },
+    {
+      "start": 2880.464,
+      "end": 2907.056,
+      "text": "carbon pricing systems can take effect, right? Where there are carbon pricing systems, they don't really know how to handle something like attribution of effect to AI. Maybe that's something we should be thinking about. Since I don't see anybody else raising their hand at the moment, I'm going to take the chance of asking a question. I'd just like to have your opinion on that because, you know, it seems like..."
+    },
+    {
+      "start": 2907.344,
+      "end": 2930.64,
+      "text": "Also research the AI models you mentioned and so on. They seem to be quite costly. We only see the results of the successful system ultimately in the papers. This is what they report. They don't report on all the failed systems. This is not what goes into the papers. So there might be even more of energy that goes into all of these things. On a more general level, in a way, this is kind of..."
+    },
+    {
+      "start": 2930.736,
+      "end": 2948.128,
+      "text": "Like, what does that mean for science in that sense? Because we always want to repeat experiments and you see over and over the same results and experiments being repeated and reported, which is kind of like the foundation to have this reproducibility aspect of it. But why would you want to?"
+    },
+    {
+      "start": 2948.128,
+      "end": 2968.832,
+      "text": "You know, like, where's the balance here? Why would we want to rerun the same things over and over again? First of all, I completely agree. And there's a paper called Green AI by Schwartz et al., which I highly encourage people to look at, which really attacks this whole paradigm of let's just get a tiny incremental improvement on some benchmark data set in order to have publishable results. That's just very..."
+    },
+    {
+      "start": 2968.832,
+      "end": 2998.208,
+      "text": "It's wasteful in every sense. It's wasteful in computation for researchers who don't have access to massive computational resources in cases where they are needed. It's wasteful of energy. It's wasteful of time because it's not really pushing the boundaries of the field. That said, research is often a drop in the bucket compared with how these things are actually being used in industry. And it's very easy to point to something that's actually not that big a factor in the scheme of things."
+    },
+    {
+      "start": 2998.208,
+      "end": 3028.032,
+      "text": "And it should be considered. And certainly as a researcher, one should be considering how to lower one's own impact. But if one's pointing to the overall problems in AI, like considering it from a policy perspective, that's not where I would point my finger. So one should always think about how you as an individual can make your part of the pie better. But I think that the issue comes when somebody else says, oh, well, the problem is that researchers are using too much energy in AI algorithms, whereas"
+    },
+    {
+      "start": 3028.032,
+      "end": 3052.288,
+      "text": "No, the problem is that we're making half a trillion dollars for the oil and gas industry with AI algorithms. There are so many differences in orders of magnitude here. And the problem is that the tech companies are mostly having entire businesses based upon increasing consumption via AI enabled ads. These are the elephants in the room, which."
+    },
+    {
+      "start": 3052.288,
+      "end": 3076.656,
+      "text": "should be talked about in terms of impacts of AI. And just because they're harder to measure and harder to think about doesn't mean that we shouldn't be talking about them. If anything, that means we should be talking about and assessing them more along with everything else. Thanks. Final question from Hannes Wertner. David, thanks a lot for your..."
+    },
+    {
+      "start": 3076.656,
+      "end": 3096.736,
+      "text": "At least for me, eye-opening presentation. It was excellent. And for me, the most impressive is this indirect systematic effect. So you really have a long-term, broad effect of these applications. And I think the answer, which also fits very well with this digital humanism issue, is..."
+    },
+    {
+      "start": 3096.736,
+      "end": 3120.144,
+      "text": "that it has to be a democratic societal answer. There have to be involved many or all different stakeholders. It's not a technological solution to issues. Technology is a means, but it's not the only one. And we have to think whether it makes sense or not. So this is really, thanks for this, for me, very able contribution and insight for this AI and climate."
+    },
+    {
+      "start": 3120.144,
+      "end": 3141.712,
+      "text": "Thank you. And climate is obviously only one of the lenses through which one should think about societal impacts and systemic societal impacts. And you can see these kinds of effects like lock-in and consumer behavior. Those have many other manifestations. Climate isn't the only lens to view them through, but it's one of the lenses we should have. Thank you for that."
+    },
+    {
+      "start": 3142.992,
+      "end": 3172.944,
+      "text": "Great. So I'm going to end the Q&A here. Thank you very much, David. Really excellent and very well balanced and considerate talk. I think there's a lot to unpack there. So that will hopefully happen soon and in other formats. And yeah, so for today, that's it. So we're coming to our musical finale. Let me just share the screen. So I'm getting to this part."
+    },
+    {
+      "start": 3176.016,
+      "end": 3204.176,
+      "text": "I hope you can see the screen now. No, not yet. It disappeared again. Okay. Is it working now? I can see it fine. Okay, great. Then it's my mistake. Sorry, Peter. Okay, great. So David requested Antonio Rivardi's Four Seasons, specifically the summer third movement, Presto. And he suggested a very nice performance by Uriel Fischer and the Academy of St. Martin in the Fields. Before we get to it."
+    },
+    {
+      "start": 3204.176,
+      "end": 3228.368,
+      "text": "As always, I'm announcing the next lecture on December 6th. Luke Munn of the University of Western Sydney will talk about the uselessness of AI ethics. So we can now come to the last part, to music. Thanks again, David. It was really a pleasure having you and I wish everyone a good rest of the day and hopefully see you on December 6th. And now, Ivardi. Thank you."
+    },
+    {
+      "start": 3386.8,
+      "end": 3393.456,
+      "text": "Thanks a lot and goodbye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

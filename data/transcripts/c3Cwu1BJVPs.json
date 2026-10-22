@@ -1,0 +1,876 @@
+{
+  "video_id": "c3Cwu1BJVPs",
+  "source": "whisper",
+  "language": "en",
+  "text": "Innovation and Technology and the Institute for Human Science, IWM. I welcome you to today's public lecture by Professor Edward Lee. So my name is Stefan Woltern. I will guide you through this evening. And this evening we'll start with two welcome addresses. And I'm very honored to ask Gerti Kappel, the Dean of the Faculty of Informatics, and Michael Wiesmüller from the Ministry for Climate Action for their welcome addresses now. Thank you. Thank you, Stefan. Ladies and gentlemen, it was 2016 that I was asked to talk about sustainable development goals and what the Faculty of Informatics in the area of cyber physical production systems is doing. And I have to admit, it was the first time that I have heard of the sustainable development goals. And I was looking them up. I have them here on my cheat sheet. And at that time, it was number nine, industry, innovation and infrastructure. Now, five years later, I know there is more about sustainability and digitalization. There will be no sustainability without digitalization, which is informatization. There will be not only no production of the future. There will be also no well-being, no health. without the proper digitalization. There will be, this is number three, there will be no quality education. This is number four. There will be no sustainable cities and sustainable communities, which is number 11. And I could continue. But these 17 sustainable development goals, they are missing one central goal. How to survive as humans. in a sustainable digital world. To put it in other words, they have a cross-cutting concern, all the 17 goals. And this is what, at least here at the Faculty of Informatics in Vienna and also in the rest of the world, more and more often it's called the digital humanism and the digital humanist initiative, putting the human in the center, thinking about what is our democracy. being at stake even more over the last couple of weeks and months. And it is my very pleasure to kind of re-ensure that the Faculty of Informatics has developed a cooperation program with the Institute of the Human Sciences. especially in this area of further developing the fellowship program in the area of digital humanism. And you will hear more about this. Professor Edward Lee is the first fellow, senior fellow in this fellowship program. And I think we will hear more about what we have to do as society, not only today in the evening, but also over the coming months and years. What is really... Very important today. And I'm happy that you are here or in the room and also out there in the space. Edward Lee, being an honorary doctorate of the TU Wien since a couple of days, will explain us what is not explainable. And this is I'm very much looking forward to. Thank you. Well, thank you very much. Thank you. Thank you, Madam Dean. Ladies and gentlemen, Honorable Madam Dean, dear Professor Lee, dear Stefan Voltran, head of this institute, dear guests, I just wanted to welcome you on behalf of my ministry. This is the ministry with the long name. I repeat it once. It's a ministry, I have to read it. It's the Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology, which is luckily a little part of the fact that we are here. I first want to seize the opportunity standing here in front of you to express my gratitude, to express my gratitude to various organizations and people. which were responsible for a real stream of activities in relation to digital humanism in the last month or year. One of these is the lecture here tonight, an important one. First of all, I wanted to thank the Institute for Human Sciences for partnering with us in the first place. This is, for both sides, first of a kind. We've never done this before. It wasn't even on the radar. Ten years ago, I wouldn't think of working together with this institute. And the collaboration is new to us, too. I want to thank Technical University of Vienna, which has this special, this welcome policy of the faculty towards this topic, the open doors. the networks and connections that they have offered for this program, which has already had considerable fruits in the cooperation between the faculty and the institute. I definitely want to thank Hannes Werthner for having accepted from the beginning of our initiative to be both the curator and mentor of this initiative. bringing in his own engagement, his networks, his resources, his ideas. He's definitely the father of this concept here in Vienna for digital humanism and the anchorman of the whole initiative. Finally, I want to thank our fellows. First of all, Professor Lee, thanks for accepting this, for accepting coming to Vienna a month, sharing your ideas and your... your visions with us. I wanted to thank our junior fellows. Probably you can stand up. This is Nena and Kieran. Give them an applause. Thanks for coming to Vienna. Okay, I shouldn't stop with some very few words on the motivations of the ministry with respect to this program and these initiatives. I will be very, very short and probably a little bit superficial, but well, I'm heading the department in the Ministry for Digital Technologies. I'm in the tech policy business for some time, so 20 years. And if you are looking back from today, I can see that really for decades, two decades or so, The policymakers in Europe, this is me and my peers, have been engaged at really all levels in supporting the development and rise of digital in hundreds of ways. We were opening all kinds of doors. We were doors into economy, society, individual actors, sectors into companies, into public administration, public infrastructures. Digital has always been a kind of universal, constantly transforming tool that proved in thousands of contexts the superiority over human capacities, human capabilities. Digital was a great promise for the future, indeed even a symbol of modernization itself, modernization of Europe. All those policy groups have been agents of the future. We could say we have protected the future, so to say, against the past. We have tried to remove obstacles to really help to unfold the power of these technologies. In a nutshell, we have... past an age of unrestrained affirmation of this technology, an embracement of continued undisrupted development. This is my, when I look back, this was really the atmosphere we lived in the last 20 years. I think things have changed now. It has not changed so much in the sense that the tools or the technology itself. has changed its basic characteristics they still have not stopped to impress us with their power their efficiency their supremacy over human capacity capabilities what has changed is that we have started to see more the whole picture of technology of its systemic impact that we have seen elements what we could call i don't know if this is the right word collateral damages In fact, digital technologies and all of us who are engaged in digital humanism have seen this. Digital technology has started to disrupt fundamental structures of our societies, changing economic structures, the logic of markets, the balances of power, geopolitical structures, social relationships, media and its reception. and even political structures of our democracies as such. What we thus need are different approaches to rethink digital technologies, rethink technologies as such. It seems to be a massive task since we understand only a little of it, since we have fairly worked on this topic in the past. And we will need trans and multidisciplinary efforts and approaches, joining forces between computer scientists, engineers, social scientists, and humanities. I would say the kernel aim of the program that we have set up with the Institute is to better analyze and describe these interrelationships between digital technologies and the socioeconomic spheres. value system of Western democracies, social media and political developments, economic and geopolitical polarizations. The aim is to create a basis for shaping future technological developments in a different way, all about in a way that is more human and more democratic. Okay, this was just a little sketch in some very dense words, what this is about in a long-term perspective. I really do think that this topic has enormous potential. I do think that we could be very grateful that Vienna is such a good place, that we have started with this initiative. And I do hope that in a few times, meaning in winter, we will be here back again with our second, with our... second fellow and discuss things further. Thanks a lot. Thank you very much. Thank you very much for the introducing words. Many things have already said, so I won't repeat it. Maybe just to highlight again the idea of academic exchange across disciplines, between TU Wien on the one side and the IWM on the other side is maybe at the heart of this program. And therefore, I think it's also fair enough, and I'm very happy to now ask Ludger Hagedorn, Permanent Fellow at the IWM, to say a few more words on the Digital Humanism Fellowship Program and to introduce our speaker. Thank you, Stefan. So, dear Edward Ailey, dear colleagues, dear guests, good evening to all of you. I'm yet another speaker to keep you from why you are here and why you're here is listening to Edward Ailey. So I promise I'll keep it very short. Michael Wiesner from the ministry. We are very, very grateful for the cooperation with your ministry. You have nicely introduced the program. You have introduced its main goals, its aims, its procedural setup. Very nicely done. Thank you for that. I will not repeat this. We are very grateful for the cooperation with the ministry, but we are also very grateful for the cooperation with the TU Wien, especially the Faculty of Informatics. And the dean is sitting here, Gerti Koppel, who has just welcomed you. And also to Stefan Voltran from the Center for Artificial Intelligence and Machine Learning. It has been a pleasure so far to cooperate with you. One person that should not be missed to mention tonight is Hannes Wettner. His name was already mentioned, but I think he deserves to be mentioned a second time tonight. He's the main spirit behind not only our program that he helped to initiate. about, but also the initiator of the Vienna Manifesto on Digital Humanism, where also Edward Lee from the very beginning was crucially involved. Thanks to you, Hannes. I think you deserve this. Speaking for an Institute for Human Sciences, this is what we do, something very different from what our colleagues here at the TU do. I admit when we started this project only now, a few months ago, a few weeks ago, in fact, it was a bit of a daring experiment, I have to say. I think we all weren't so fully sure where this would go. It's maybe too early to already come to a conclusion, but I can say so far it has been going very, very nicely. And I'm really, really happy. We are all very happy with how it was going so far. Our two junior fellows have already been introduced. You do not have to stand up again. I save you from that. Kieran Haggerty and Nena Mochnik. But just to give you an idea, Michael Wiesner introduced him just to give you an idea what they are doing and how we try to realize this like cooperation of the humanities and the technical sciences and engineering and computer sciences. These two are working and I will only give you the titles of their projects and you will see they like alliterations or maybe we like alliterations and that is why we picked them. Kieran Haggerty is working on a project called Deepening Digital Data. Nena Mochnik is working on a project called Moving Moms Mobile App. So you see a certain linguistic preference here. I think both of them have been very happy to be part of this project. And for both of them, the cooperation with the TU turned out to be a very valuable input to their work. Lastly, and certainly not least, Edward A. Lee. I couldn't have thought of any better. fellow to start our program than you. It has been a great pleasure to have you at the IWM for these recent three weeks that you're here already now, more or less three weeks, yes. And for you to be like one of the people to not only initiate the Vienna Manifesto on digital humanism, but also our project. I think you have been a great fellow. You have done a great deal of work on our common project. Edward A. Lee is an engineer, computer scientist by education, but has recently turned into a most successful author, I have to say. And his two very successful recent books are dealing with what he calls creative partnership of humans and technology. The first one, very catchy title, Plato and the Nerd, published in 2018. 17. And co-evolution, this is your latest book, co-evolution, following a similar path, I would say, but very much highlighting this new concept of co-evolution that you probably will also speak about tonight with your talk titled Limits of Machines, Limits of Humans. This book, co-evolution, the entwined futures of humans and machines. We are all very happy to have you here. Your honorary doctorate has already been mentioned. So please give a warm welcome to the honorary doctorate of the TU. Thank you. Thank you, Luger. Thank you, Michael. Thank you, Gerti. Thank you, Stefan. I've been to Vienna many times in the past. This is really the first time that I've actually lived in the city, though. It's usually been, you know, very quick visits and staying in hotels and not seeing anything. And I love this city. I have to say, I love your city. It's just fantastic. And I've made many new friends here. And many of you are here. You know who you are. And thank you for being here. I do want to point out this picture, which I took. this afternoon. And it's a human machine collaboration. It's taken in the National Library. And with the help of an AI, I think if you've been in the National Library, you realize that it's always full of people. Where are the people? Well, with the help of an AI, I removed them from the picture. And let's hope that this is not the main mission of AIs in our world. So Anyway, that's a little bit of an introduction. So I'm going to talk about, as Gertie said, the unexplainable and attempt to explain that, which is going to be challenging. So, first of all, I'd like to, I think probably most of you know that artificial intelligence has undergone a complete revolution in roughly the last 15 years. As with many technological revolutions, it's not actually new technology so much that changed things. It was more scaling up things that already existed and connecting them with an ecosystem that had evolved that enabled the leveraging of a vast amount of information that had become available. So I'm going to focus very much on this one branch. of artificial intelligence, which is the one that is driven by neural networks. And that's really a subset of artificial intelligence. Artificial intelligence is a big field. It's very multifaceted. And there's a lot of aspects of it that I'm not going to touch on at all. But I think that because of the enormous importance of this particular technology and the transformation in the last 15 years, I think it's worth focusing on it and reflecting on it. And I think... I have come to the conclusion that it's really important for people very broadly in society, not just the technologists, to actually understand what's going on with this. So this is a sketch of how a deep neural network is constructed. And I'd like to just walk you through it, because one of the things that most people don't realize is that it's actually conceptually extremely simple. The operations that go on. in a deep neural network are just multiply and add. And they're done with a huge number of repetitions on a huge amount of data. So the way it's structured is you have input data, which is literally just a list of numbers. And this cartoon shows four numbers. Well, it's not four numbers in practical applications. It's millions of numbers. So imagine this. box, this stack of boxes being a million boxes high, and then coming out of these boxes are a bunch of lines, and each line represents just multiplying that number by another number, a parameter. And then when these lines converge over here, those scaled numbers that have been multiplied all get added together, and then a very simple non-linear function gets applied to them, and you get a new number. And so now you've got a new stack of millions of numbers and you repeat this process in multiple layers. You take those numbers and you scale them by another very large number of parameters and you add up the results and you get another big list of numbers. And you keep doing this over over many different layers. And eventually you get a list of numbers on the output. That is your answer. All right. So your input is a representation, for example, of an image or an essay or case data. or loan application, something like that. And the output is a decision. Is the image a cat? Is it a dog? Should the loan be granted? Should the loan be denied? Now, the essential point that I would like to make is that if you explain these operations, have you really explained the decision? I think that... Many people who don't understand the technology assume that the programmer must understand how it is that the machine comes to a conclusion. But when you see this kind of structure and you really understand what's going on, which is really very simple operations being repeated a vast number of times, you start to realize that the programmer is very likely to be just as surprised as anybody else by the decisions that the machine will make. In a typical neural network, you might have tens of millions of parameters, which are the scaling numbers. OK, and those get learned from data typically or from other techniques that I'll talk about a little bit. OK, but they get learned by another rather simple process. It's actually, you know, any you could you can write these programs. you know, in your first couple of weeks of an introductory programming class. They won't be very efficient. They won't scale very well on multiple machines. There's a lot of art to making these things actually run fast. But actually, the basic operations are really quite straightforward and anyone can write these programs. But not anyone. In fact, I would argue not not anyone can really understand what they're doing. OK, and so this is what I'd like to address today. So. We ask for explanations for the decisions that these things make. Well, what do we mean by an explanation? Well, let me, there's actually a lot of different interpretations of this, and it's actually a really interesting subject. One of the things that I've really been enjoying about being at the EVM is that I'm interacting with people who come from very different backgrounds from mine, a lot of humanities people, and they teach me about questions like this, right, which are not the kind of questions that a technologist often asks. But, okay, what is an explanation? Well, let me make an attempt at this. Well, we want to answer the question, why the loan, right, for example. Well, start with the input data, that's the loan application, okay, and then give a sequence of logical deductions. from that data. The data leads to this conclusion, which leads to that conclusion, which leads to that conclusion, which then where each deduction conforms to some rules of logic, you've got to sort of follow the reasoning behind each deduction. And you've got to terminate that sequence with a conclusion that leads you to the answer that the loan should be denied or granted. If you try to do this in terms of describing what the computer is doing, in that deep neural network, it's actually not very useful, right? You're going to give an explanation in terms of billions or trillions or quadrillions of arithmetic operations, and that's not an explanation. So it's a little bit like saying, okay, you know, everything that happens in the physical world, let's assume that everything that happens in the physical world is a consequence of the basic laws of physics. So everything can be... is a consequence of electron proton interactions. So now explain to me the emergence of the Ukraine war in terms of electron proton interactions. That's absurd, right? You can't. So that's not going to be an explanation. And so let's look at this a little more closely, right? Because One of the things that I've been doing is really branching out into other disciplines. I've tried to learn a good bit about psychology and what's going on in that field. So what do we mean by a rational process? Well, I'm going to use the notion that was, I think, very, very clearly stated and codified by Herb Simon, who is I think maybe the only person to have won both a Nobel Prize and a Turing Award, which is quite a remarkable achievement. But in Herb Simon's framework, he got the Nobel Prize in economics for countering a thesis that was very prevalent in economics, which was that the agents in an economic system act rationally. And by acting rationally, what this meant... is that they make decisions through this step-by-step reasoning using clearly explicable rules of logic in order to come to a conclusion that is some optimization of some objective function. That was pretty much the established dogma. And in many ways, actually, if you take an introductory economics class in any university, that's what they're going to teach you is that model because it's a beautifully simple model. But Herb Simon said, well, you know, it's a simple model, but it doesn't have anything to do with humans. And so he introduced this notion of bounded rationality, which is simply an observation that humans are actually not very good at this. And in particular, we can only really handle very few steps. You know, maybe a really smart person can handle a dozen steps of logic before they've lost you. And the computers are performing billions. OK, so this means that we need to rethink. some of the silver bullets that get floated out there. So for example, I hear these terms, algorithmic transparency. I just explained to you the algorithms for deep neural networks, and I didn't completely explain it, but trust me, if you give me an hour, I will completely explain it. And it will not help. Knowing those algorithms is not going to help you to determine. whether a decision made by a neural network is justified. So knowing what the computer is doing is not going to be sufficient, I'm afraid. So the second thing is the right to an explanation. So we want to get an explanation for why the loan was denied by the machine. And the problem here is that if the machine gives us what we would call a rational explanation, which is the sequence of logical deductive steps that it used to come to the conclusion, it's going to be trillions of steps, and it's not going to be anything that we will accept as an explanation. So should we just give up? I don't think so. I mean, I have a very positive note on this, so please don't get depressed and run out of the room. There are huge opportunities here, and the opportunities, I think they demand multidisciplinarity. They demand crossing boundaries. That's one of the things that I love about EVAM. So, okay. So how can we find an explanation? Well, humans are actually very good at synthesizing explanations. We can explain anything. Okay. So there's a wonderful example from Daniel Kahneman's book, Thinking Fast and Slow. Kahneman didn't do this work. It was done by these folks, but I first learned it. about it when reading this book and so that's why I give him credit for it. But he reported on a study of Israeli judges and where they found that these judges were hearing parole cases and they found that there was a very high correlation between denying parole and the time since the last food break. Now imagine going to one of these judges and asking for an explanation. Why did you deny this person Parole. The judge is going to give you a very convincing explanation and it's not going to have anything at all to do with the time since the last food break. OK, psychologists have actually shown that humans are really good explanation generating machines. And the psychologists have come up with very clever experiments that show that, you know, the explanation suggests that the decision was made by the conscious mind. through a sequence of rational steps. But the psychologist can prove that it was not. That that's not how the decision was reached. So how was it reached? Well, I mean, one of the problems, of course, is that if we have enforceable laws that demand an explanation, I predict that very quickly the AI researchers are going to train a machine to give a convincing explanation for any decision. Humans are good at it. We can probably get deep neural networks to be good at it too. And is that really going to help the case? I'm not so sure. So I can explain to you, for those of you who work in this field, you'll recognize how to do this. First, you train a deep neural network so that given case data and a decision, it synthesizes an explanation. Now, with neural networks, the way this works is that when you start out building such a machine, it's really bad at it. It's going to generate nonsensical definitions. They're not going to have any value at all. But you're going to train a second machine, a deep neural network. whose job it is to discriminate between human generated explanations and machine generated explanations. OK, the data is readily available to train this machine using supervised learning. Right. And at least in certain domains, in case law, for example, there's explanations for every decision. So you've got a lot of human generated explanations. We can have a machine that will generate initially very bad. explanations but then we use a technique that has been very effective in deep neural networks that's called generative adversarial networks where we pit these two machines against each other. Okay so the one that's synthesizing explanations is trying to come up with explanations that will fool the one that is discriminating between human and non-human explanations. Now you let these things go over millions and millions and millions of operations and they start to develop a pretty good explanation generation capability. This is the technique, this generative adversarial network technique is the one that was used to train AlphaGo, which was the machine that learned to play Go, which was not trained primarily by observing human games, but rather just by pitting AIs against each other to learn how to play the game by bootstrapping. As a consequence, humans are good at this. We can probably make machines that are good at this. But even in this particular example, the study showed a correlation between the decision and the time since the last food break. But really, it would be a horrible oversimplification to say that the decision was really just caused by the time since the last food break. That's probably not a good explanation either. All right. And in some ways, the authors of the study, being themselves humans who are good at generating explanations, generated that explanation. But that probably is not a very good description of what was really going on in the judges' heads. All right. So what was going on? How do humans actually make decisions? Well, again, I'll come back to Daniel Kahneman and Daniel Kahneman in his book, Thinking Fast and Slow, makes a distinction between system one, which is the thinking fast system where humans make intuitive, quick, inexplicable decisions. All right. These are the these are the ones where you you you see something, you recognize it, you make you make a decision and. After the fact, you might come up with a logical explanation for that decision, but it wasn't the logical explanation that took you there. OK, humans also do rational decision making, which Kahneman called system two. But Kahneman pointed out that humans are actually not so good at that, that it's much harder for us. In fact, much of what we do in education is trying to teach people how to use system two more effectively. Right. So only when system two actually dominates does the true origin of the decision correspond to a rational explanation. So think carefully about what I just said. You know, we'd like to have a rational explanation. But if the decision was actually driven by system one, the rational explanation is probably a post hoc construction and not the real reason for the decision. So for system one, it could be that the only actually accurate explanation is to talk about the millions of neuron firings that were triggered by that stimulus that caused a decision to emerge. And that's not going to be a useful explanation. So unfortunately, deep neural networks are much more like system one than like system two. is a shock to people who are not so close to the field because they think of computers as just they do sequential rational decision making. So it must be a system to system. It's not really. OK. Algorithms. We talk about algorithms all the time. All right. The computers are doing algorithms. What do we mean by an algorithm? Well, you start with some input data. You follow a sequence of steps where each step follows a well-defined set of rules. And the sequence terminates with a conclusion. Okay. Technically, if you also limit the data to a discrete set, then this set of algorithms as described here is equivalent to Turing machines, which means essentially it's equivalent to what computers do. Okay. So an explanation and an algorithm look an awful lot alike here. In fact, they're virtually identical. They start with input data. They talk about sequences of logical steps. They talk about each step conforming to some rules of deduction and the sequence terminates. So what is the difference between an algorithm and an explanation? Well, an explanation is a short, typically very short algorithm. OK, it has to be very short or it won't work as an explanation because the humans can't handle it. So is system one algorithmic? The quick decision making that humans make in Kahneman's sense, is that an algorithm? Well, according to both Simon and Kahneman, they categorize it as distinctly different from the rational processes. They say these are not really step-by-step reasoning using clearly explicable rules of logic, but that might just mean that they're not short algorithms. So the question is, are they fundamentally algorithms at all? Okay. The question here can be translated into, is the brain actually algorithmic? And here we get into a potential quagmire because there's a bit of a cult. among scientific circles that everything in the universe is algorithmic, that actually everything is computation on digital data, and we just haven't figured out all the details yet about how it is. There are many people, probably many people in this room, who are absolutely devoted to that idea. In my Plato and the Nerd book in 2017, I show that this hypothesis is not testable by experiment. So according to the philosophy of science of Karl Popper, it's not a scientific thesis. It can only be taken on faith. When you're faced with a question of a thesis that is not testable by experiment, you can't choose to use it or not choose to use it on the basis of its truth. You have to choose to use it or not. choose to not use it on the basis of its usefulness. And my claim in that book is that a digital computational interpretation of the universe is actually not nearly as useful as the physical models that are actually much more prevalent, which are not digital and computational. There's a few efforts that I'd like to point to. I mean, one of them is this wonderful work done by Jeff Lichtman at Harvard. So Jeff coined the term connectomics. And this was he's a neuroscientist. And one of the hypotheses that he was trying to test was whether if we could just map all the connections in the brain, you know, using computers to help us understand the complexity, we could decipher how it works. OK, that was the premise. And he did this incredible experiment where in his group, they took a small section of mouse brain and sliced it very, very thin and put all these slices down on a tape and then scan them with a computer and then constructed a 3D model of the structure of the brain. And it is unbelievably intricate and beautiful and complex. And he has come to the conclusion that the structure doesn't tell you anything about the function. OK. And consequently, even if you could completely map the wiring of the brain, you still would not have a an explanation of how the brain comes up with these decisions. This shouldn't actually be all that surprising because many of the machines around us are actually not usefully modeled by algorithms. OK. For many machines, their essential operation is not usefully described. as a terminating sequence of discrete steps. I mean, think of any machine that its function is fundamentally an analog operation, right? It's pushing fluids through a chemical plant or something like that. These machines are just not that usefully described in terms of algorithms. But most interestingly, it turns out that possibly deep neural networks are also not algorithmic at their root. Okay, now that might seem a little bit of a surprise because they are mostly implemented on computers today, which are distinctly algorithmic. However, there's this little branch of neural network research where they've shown that you can take this entire bundle of arithmetic operations in the middle of the neural network, all these intermediate layers, and replace them with a completely random blob of physics. Okay. You can just take a random blob of carbon nanotubes, put a bunch of electrical probes into it, a bunch of sensors on the other end. Okay. And replace the whole middle of the neural network with that blob of physics, and then just train the weights on the ends. And it works. Okay. All you need from the blob of physics. is that it gives you a rich enough set of nonlinear functions from the input stimulus to the output stimulus. It just has to be rich enough and they have to be nonlinear. And people have built these kind of reservoir computing machines using the name reservoir computing actually comes from the first experiment that really got attention where they used buckets of water as the blob of physics. OK, they've gotten more effective ones later that scale up much better. Bundles of carbon nanotubes work really well. In vitro cell cultures work really well. But this suggests an interesting question, which is that it may prove that today's deep neural networks are actually brute force algorithmic simulations of processes that are not fundamentally algorithmic. One of the interesting things is this opens up a potentially very rich area of research in looking at possibly alternative machines, alternative machine structures for implementing deep neural networks that aren't going to resemble today's computers. And in fact, there is a lot of work going on in that direction currently. There's also a very intriguing provocative conjecture, which I think is probably I'm not a neuroscientist, so I can't really evaluate it, but I suspect that it's not this simple. But Tanaka, who was one of the people who introduced this reservoir computing field, has speculated that there might be large segments of the brain that are in fact just random. And they function as reservoirs in this sense. They just provide a rich enough set of input output functions that the other parts of the brain can use them effectively to learn how to do stuff. It's a provocative conjecture, but I don't know how defensible it is. So the deep neural networks are probably not going to be explainable in this direct sense of explanations. What else could we do, right? Well, I mean, here's a few more silver bullets that might be problematic. We could give the machines human-like intelligence, right? And that way, maybe we can trust them at least to the extent. That we trust other humans, right? Maybe. So this is sort of the goal of what people call artificial general intelligence, which is really about achieving human-like intelligence. And I would ask the question, well, is that a good idea? Well, let me give you an example of a success case where I think they really did achieve human-like intelligence. This was a project at Microsoft where they released a chatbot called Tay, and it was an AI. that was designed to interact with users on social media using the vernacular of young people. It learned very quickly how to do that and got very vulgar, very racist, very quickly. It exhibited human-like behavior. In fact, unfortunately, so maybe making these machines human-like isn't such a great idea. OK, well, maybe we should keep humans in the loop in all our decision making. We already have learned the hard way that humans are easily manipulated by the machines. Right. If you look at. Well, here's a few points that argue that actually there's a very fundamental reason why this has to be OK. that humans will be manipulated by machines. We already are. There's a couple of very nice articles in this book that Hannes, who has been mentioned twice, led the effort on publishing. It's an open access book. It's been downloaded more than 140,000 times. And it's a collection of essays from a tremendous variety of disciplines, very leading scholars. tremendous variety of disciplines addressing this digital humanism problem. And one of the beautiful ones is this one by Yates and Fayyad. And they argue here that actually the information flood that we are all facing, this enormous amount of information that's available to all of us, vastly more than we can possibly absorb, means that... We have to use AIs to filter that information. There's no other choice. And so they make that case that this is both necessary and inevitable. And they point out that the information economy actually will lead those AIs to manipulate the humans, inevitably, because being an economy, it's about... maximizing return in some sense. And hence, that's going to lead to manipulations. So the argument here is that human decision making is actually no longer independent of machines, where the machines are already intertwined in our human decision making. And this is not just a prediction of the future. I mean, we saw in the 2016 US election and the Brexit vote, enormous cases of machines manipulating humans. Stuart Russell, who is my colleague at Berkeley and a top expert on AI, he's a co-author on the most widely used textbook on AI. So he is really an expert on this, but he published this wonderful book called Human Compatible recently. And it says, it points out something that actually I It sort of horrified me when I first heard it, and then I realized, well, yeah, yeah, this is kind of obvious. But he pointed out that predictable humans can be reliably presented with advertisements they will click on, right? If you're a predictable human, then Facebook can figure out what ads to put in front of you so that you will click on them. He pointed out that political extremists are more predictable than moderates, okay? He pointed out the existence, therefore, of this feedback mechanism where the information that the machines are feeding you are, in fact, this information is inevitably going to be targeted towards making you more predictable in order to make the predictions that the machine is trying to do more accurate. This is an inevitable consequence of the way the machines work. So in my co-evolution book, I pointed out that this is, you know, I use the term an information apocalypse for this situation, because the reality is we, you know, a lot of people tend to focus on the fake news. Well, let's do a little thought experiment. Assume that everything on the Internet is true. Does that mean we don't have any problems? It doesn't, because what's going to happen inevitably with this information flood is that. We're going to get these islands of disjoint truths where there's this group of people that share these truths. There's this group of people that share these truths. And there's no overlap between these truths. And there's so much information out there that that's almost inevitable unless we really take action to try to prevent it. So there's a number of opportunities here. OK, so far, I've presented a pretty negative picture, but I'm going to. Try to say, OK, I think we can do this. I think we can handle this. All right. So here's some ideas. Right. Maybe instead of demanding explanations from the AIs, we should focus on kind of licensing and certifying them. So we do this with humans. Right. We we we give them low level responsibility jobs. And if they do well at that, we promote them to more responsibility. And if they do well at that, we promote them to still more responsibility. Maybe we should be thinking about doing that kind of thing. with AIs and set up some structures to work that way. One thing that we can do is use the AIs to expose human biases, right? They are actually very capable of capturing those human biases. Tay, I think, the Microsoft chatbot was very good at capturing, I think, natural human tendencies to sort of reinforce each other in a social structure, often in a very destructive way. And so we might be able to use the AIs to learn something about humans and maybe figure out how to get the humans to behave better in an ecosystem that involves a partnership with the machines and the humans. Recommender systems, these are the systems that select information for you, right? According to Bates, we have to have them. Because the information flood is such that you're just not going to be able to function in the information economy unless you have machines filtering your information. We should structure these systems that are filtering the information in ways that try to counter this tendency towards islands of disjoint truths. You know, kind of deliberately introducing into the recommender systems. surprises and noise and unexpected information flowing across the boundaries. If we can find ways to do that deliberately. We could use the machines as explanation machines, but have them explain all the possible decisions instead of just the one you're trying to argue for. That's a very natural thing to do. And then that could actually help make It could help humans make better decisions by having the machines generate explanations for the various possible decisions that one could take. We could also use AIs to expose deliberate abuse of information filtering. So ExxonMobil was recently caught presenting distinctly different ads to left-leaning people on the internet and right-leaning people. To the left. They were investing in renewables. They were reducing the carbon footprint of their production facilities. To the right, they were fighting over regulation. They were achieving energy independence. Completely different ads to different groups of people. If we, for example, pass laws that say that all advertisements online should go into a publicly readable repository, then we can have AIs analyze those ads and expose such abuses. So this would be a very positive use of AIs and something that I think is quite doable. And I really want to emphasize that we need multidisciplinary engagement. I think that we need for policy people to have a better understanding of the technology and for the technologists to have a better understanding of how society functions and to talk to sociologists, to talk to legal scholars, to talk to psychologists. There needs to be a lot more interaction if we're going to make this work. So I think that this is something, this digital humanism initiative started here in Vienna. And, you know, I'd like to point out that roughly 100 years ago, Vienna was an intellectual capital of the world, and it really had a huge impact on how science was done in the 20th century. It kind of defined the principles for the conduct of science in the 20th century. There's an opportunity to define the principles for the conduct of technology in the 21st century. And I think that we're off to a start. It's just a start, but it's a pretty good start. Just some references. Of the things that I've published, the closest to what I've actually talked about today is the only paper I have ever published in a psychology journal. It's actually in Frontiers on Psychology. But there it is. And it covers pretty well what I've talked about today. So thank you very much. Thank you very much, Edward, for this great and enlightening talk. We have time for questions and comments. So I try to check the hands. Thanks, Edward. Beautiful talk. I really enjoyed it. I have the following question. I mean, let's say previous life as an engineer. You were advocating the construction of systems in a hierarchical fashion with well-designed composition operators such that you could explain hierarchically what is going on in the system. So do you think this would be possible also for machine learning? So thank you for that question. First of all, let me say it's not a completely previous life. I actually have two personalities. I'm still very active with software technology research and doing some pretty interesting work. But I think in answer to your question, I'd actually like to point at work that you and your group have been doing, which I think is really extremely promising, right? Which is you've been using, if I understand it correctly, and please correct me if I misrepresent it, but you've been using the understanding that neuroscientists are getting about nervous systems, particularly leveraging the ones in lower animals where they're simple enough that we can start to understand a bit of their aspects. And you're using that to inspire the design of very different deep neural network structures where you build them out of components that have particular tendencies in their behavior. And then you string together these components in ways that are patterned after the problem you're trying to solve. And then you train them in the usual neural network way. And the beauty of that work is that you end up with neural networks that are much, much smaller and just as effective as the big brute force ones. And so I think that what that tells us is that There are definitely opportunities for architecture design and for building systems out of components that at least we partially understand. They have certain tendencies. We want to take advantage of those tendencies. We treat those components as components and we string them together. We're still going to want to make them adaptive and use this learning technology that has been such a revolution over the last few years. But I think that the work that you're doing is a great step in that direction. Okay, next we have Eric. Okay. Hi, and thank you for the very interesting and captivating talk. And I have a question that regards also the systems of Kahneman. So Kahneman says that we have a pretty lazy system too. And this brings us to have biases that also machine reflects. And doesn't this mean that we should probably think on how to manage systems and human systems in general and understanding accountability of the systems and especially where accountability, the accountability accent should be put, especially on a scale where we have very complex system on a large scale. And we cannot control every process. You mentioned the court that decide whether to accept or reject something according if they're angry or not. So how do we keep accountable systems and humans in general on a scale? I think that's a wonderful question. Thank you for that question. First, let me start with the question of the lazy system, too. You're absolutely right. We do have a lazy system, too. But I'd like to point out that for thousands of years, we've been using technology to enhance our system, too. When you do calculations using paper and pencil, you're using technology to enhance your system, too. And we need to keep doing that and keep learning to do that better. as we get better, more powerful technologies, we should be able to further enhance our system too. The second part of your question is more on the accountability question. And accountability is a really challenging issue. I actually have a whole chapter on accountability in the co-evolution book that approaches the problem. First of all, one of the problems with talking about accountability for the machines is that it's often very ethically value laden, right? People tend to focus on who gets the blame when something goes wrong. So in this book, I decided to, I wanted to separate out the accountability problem from the ethics problem. And so I turned the situation around and I said, well, when should we give the machines credit for what they do as opposed to giving them the blame? And in particular, I looked at the production of art, right? Can AIs produce art? And should they get credit for the art? And I start with a discussion of this rather famous artwork that was developed by this French art collective called Obvious that they put up for auction at Christie's, expected to get maybe $10,000 to $12,000 for it. They built it as the first AI-created artwork, and it sold for $432,000. In this chapter, I look at the question of, well, all right, who gets credit for something like this? And it turns out there's many different interpretations that are all valid. And one of the things that I think I came to the conclusion to is that humans really like to single out individuals to either credit or blame. And individuals, that's usually a huge distortion of what's actually going on. Individuals get hugely outsized credit, right, when they get a Nobel Prize or when they get an honorary doctorate from TU Wien or anything like that, right? It's hugely, hugely outsized credit, right? They're working within an ecosystem with a whole bunch of other people who have contributed enormously to what they have done. And we like to simplify things. and identify the individuals. And I think we need to back off from that a little bit because our ecosystem has gotten too complex and that oversimplification is a real distortion of what's actually going on. Okay, so next is Michael Stamfer, but maybe let me also mention for those people who watch us via Zoom that there's also the possibility to put the question in the chat and if it's... Smart question, Walter will select it. So I want to mention that Michel Stamfer is one of the people who really made digital humanism happen in Vienna. I give him credit for really giving a tremendous push to this effort. Thank you very much. Now I'm in a trap because if I pose a foolish question, there's no filter. And then there's this credit, many things. You brought a few bright lights at the end, and I want to put up one. This is licensing and certification, and I would like, Edward, to ask you to elaborate a little on that. thoughts are that some of the bright engineers here in the room in the next months look out for bright law and economics and behavior people and think out of some viennese made ideas how to how to bring that into into fruition thank you yeah that's an excellent question and um i um To be honest, I'm not entirely sure, but I am aware of some work that I think is very promising in this direction. For example, one of my colleagues at Berkeley, Sanjit Sesha, has been working on techniques to use formal verification to circumscribe behaviors that an AI can. can perform. And I think of it sort of analogous to what's done in flight control systems, which is a technique called flight envelope protection, where you have a natural intelligence, we call it a pilot, okay, who's doing things with the control of the aircraft. But some of those things could actually lead to problems, right? And there's actually been sort of a philosophical split between Boeing and Airbus on how to handle this. But Airbus in particular has bought into the notion of flight envelope protection, which is that they design the system to limit what the pilot can do. And they explicitly, for example, prevent the pilot from taking actions with the control of the aircraft that would take it into a stall. And Boeing argues that, no, you shouldn't put such limits on pilots because in an emergency situation, the pilot may actually need to do a maneuver like that. And there's a tradeoff there. Right. But the question then becomes, how do you how do you provide those kind of behavioral envelopes around an AI? And I think that this is a research area that we really need to invest in. And I think that Sanjay Tseshiya has been doing some very nice, very promising initial work in that direction. And I think some other people too, but it just happens to be that because he's at Berkeley, I'm more familiar with his work. I've seen a few hands in the back. So maybe, Walter, you can help me. Who was first? And then Florian. So first, Teresa. Thank you for the wonderful talk. I'm taking a bit of a devil's advocate position here because you told us about the dangers of being manipulated by AI. And I was thinking, is this truly a bad thing? Because people have been swayed by talented politicians, by artists, by cute cats on the internet even. So why AI? Is it just a scale or is it something more? Thank you for that. I love that question. And in fact, in my books, I take a much more positive view of this. And one of the things I write about in these books is that I couldn't have written these books without the help of AIs. It simply would not have been possible. leverage them extensively, right? The search engines, Wikipedia. I talk about Wikipedia's AIs that prevent vandalism on the pages in Wikipedia, that prevent destructive information from sneaking in. So I go back to this idea that technology can be a tremendous boost to our system too. And I think... As the technology gets more powerful, that boost could get even bigger, right? We just have to watch out for the dangers. So next is Florian Michaelis. Yeah, thank you for your talk. I perceived it a little bit like a roller coaster ride. So you took us down to the rabbit hole. And fortunately, there was also some uplifting in the end. So my question is now. maybe going down the rabbit hole again, and perhaps you can uplift us again. So looking at the opportunities that you provide here, I'm wondering, what's your stance on how this can be achieved? So you quoted Stuart Russell, who says, basically, there's a reward of manipulating people because then they click on the ads. And if they're more extremist, they click even more predictably. So that means there's an economic reward to actually do that. So how can we fight this? So how do we get? enough resources to implement like the more ethical approaches that you're providing here, other than all the good AI people going to the other side and making the money with clicking on ads? Yeah, I think that's a great question. And actually, I would point to Stuart Russell's work for, again, for promising directions. So one of the things that he's been pushing for is basically changing the mechanisms by which we train these AIs to change the fundamental structure of the objective functions, right? So in sort of the early days with a lot of the standard AIs that are out there, you just have a fairly straightforward objective function that you give to the AI and then it goes and tries to optimize that. Well, he's been working on techniques that are really quite different where you... I guess one analogy that he uses is that, you know, you you don't want to train an AI to want coffee. You want to train an AI to want the human to want coffee. OK, so it's about creating the structure of the objective functions by building in the human objectives rather than some, you know, more abstract. idealized utility maximization kind of objective function. And he's done some very nice work in that direction. And so I would point you to his work. Thank you, Edward. This is a continuation of the discussion we had in the lunch hall of the IWM. I come from the social sciences, the humanities, where we don't have a consensus on what comprises the human itself. The human category as also humanism is internally sort of, there are many epistemic cultural hierarchies which are embedded therein. So my question, I mean, there is a distinction between humans that belong to the first world, to the global south. Within the global south, there are epistemes of the indigenous communities, of the dominant communities, and so on. Given that the human world itself is marked by so many hierarchies, will artificial intelligence, which aims to mimic human intelligence, also be embedded with these cultural markers, cultural hierarchies? That's a wonderful question. And I think, yes, the answer simply is sure. Yeah, the AIs are going to function in our ecosystem in complex ways. And they will definitely develop these kinds of capabilities. So I can't. speak at kind of the global scale that you can, but in the process of researching for these books, I studied a lot of psychology work around the idea of embodied cognition, which says that a human mind is not just something going on in this machine. inside the skull right responding to stimulus and reacting to it but rather the human mind is the interaction of that machine with the body and its environmental ecosystem that that is what the mind is it's the interaction and i think we see that in our cultural interactions they affect our thinking in very profound ways when we interact with someone in conversation that person becomes part of our cognitive mind and we become part of their cognitive mind. And those kinds of interactions suggest that we need to be thinking about these interactions much more at much bigger scales. And particularly when you have AIs intervening with those interactions, they're going to play a significant role. Okay, thank you. Maybe let's take one question from the chat. Promise things which we do not hold. Walter, do you have a mic? So there's a question from Brian Selig. I hope I got the name right. All the opportunities that you mentioned depend on some ultimate authority, which is the source of truth or morality. Are there any that do not depend on such authority? First of all, hello, Brian. I'm delighted you're here. So I'm not sure I understand the question. Can you maybe read it again? All the opportunities that you mentioned depend on some ultimate authority, which is the source of truth or morality. Are there any that do not depend on such an authority? Oh, yes. OK, that's a wonderful question and a really hard one. I mean, certainly, you know, the first bullet item on the screen right now, licensing and certification is one that is going to depend on on an authority structure, a trusted authority structure. The others, I'm not so sure, are so dependent on it. So, for example, better recommender systems, you know, ideally. we could set up a situation where there is competition and where the competition, you know, by design tries to get people to prefer the recommender systems that bring more diversity. So there's already examples of this. So I use Spotify, for example, to listen to music. I'll never go back. Right. I mean, I have discovered music from all over the world that I never would have encountered. It just never I never would have seen it. Right. And to me, that's a recommender system that has actually really broadened my horizons rather than narrowing them. And, you know, there I think, you know, the objective functions, they're not presenting me with ads. Right. I'm a monthly subscriber. So. That creates a different objective function. And I think it's a better objective function because it means that I'm going to react to the enrichment that it provides, as opposed to having it manipulate me to click on ads. Right. And so I think that subscription systems, for example, might actually lead to better recommender systems than advertising driven systems. And maybe as a society, we could just migrate towards those. And those don't necessarily have to be, you know, top down with central authority control. All right. So before concluding this nice public lecture, let me maybe say one thing now, because today, when I read in the news, there was this daily article about a guy called Musk, Elon Musk. And there was a user comment below that one, which was now I've tried to translate in English in a proper way. So if you promise every year that within one year product X will be deployed or will work, then you will be right maybe at some point in time. But I think that's not the way how AI research should act. And I think today, thanks, Edward, we learned that we have to... take many, many things into account and that things are complicated and that we need to discuss over different disciplines. I think it was a great talk. Let me just say a quick thank you to those people behind the scenes which make these events possible. Walter Palmetshofer, Teresa Funkhaus, our secretary of administrative staff, and let me also... mentioned Clemens Heitzinger, the co-director of the Center of AI and ML. So we are running this together. And thanks to you for coming. It was great to have you here. And so two things. First of all, we can continue informal discussion during having a small snack on the buffet. And let's thank again our speaker, Edward Lee.",
+  "segments": [
+    {
+      "start": 26.128,
+      "end": 54.768,
+      "text": "Innovation and Technology and the Institute for Human Science, IWM. I welcome you to today's public lecture by Professor Edward Lee. So my name is Stefan Woltern. I will guide you through this evening. And this evening we'll start with two welcome addresses. And I'm very honored to ask Gerti Kappel, the Dean of the Faculty of Informatics, and Michael Wiesmüller from the Ministry for Climate Action for their welcome addresses now. Thank you."
+    },
+    {
+      "start": 62.768,
+      "end": 90.24,
+      "text": "Thank you, Stefan. Ladies and gentlemen, it was 2016 that I was asked to talk about sustainable development goals and what the Faculty of Informatics in the area of cyber physical production systems is doing. And I have to admit, it was the first time that I have heard of the sustainable development goals. And I was looking them up. I have them here on my cheat sheet."
+    },
+    {
+      "start": 90.24,
+      "end": 118.864,
+      "text": "And at that time, it was number nine, industry, innovation and infrastructure. Now, five years later, I know there is more about sustainability and digitalization. There will be no sustainability without digitalization, which is informatization. There will be not only no production of the future. There will be also no well-being, no health."
+    },
+    {
+      "start": 118.864,
+      "end": 147.424,
+      "text": "without the proper digitalization. There will be, this is number three, there will be no quality education. This is number four. There will be no sustainable cities and sustainable communities, which is number 11. And I could continue. But these 17 sustainable development goals, they are missing one central goal. How to survive as humans."
+    },
+    {
+      "start": 147.424,
+      "end": 176.752,
+      "text": "in a sustainable digital world. To put it in other words, they have a cross-cutting concern, all the 17 goals. And this is what, at least here at the Faculty of Informatics in Vienna and also in the rest of the world, more and more often it's called the digital humanism and the digital humanist initiative, putting the human in the center, thinking about what is our democracy."
+    },
+    {
+      "start": 176.752,
+      "end": 198.224,
+      "text": "being at stake even more over the last couple of weeks and months. And it is my very pleasure to kind of re-ensure that the Faculty of Informatics has developed a cooperation program with the Institute of the Human Sciences."
+    },
+    {
+      "start": 198.256,
+      "end": 226.256,
+      "text": "especially in this area of further developing the fellowship program in the area of digital humanism. And you will hear more about this. Professor Edward Lee is the first fellow, senior fellow in this fellowship program. And I think we will hear more about what we have to do as society, not only today in the evening, but also over the coming months and years. What is really..."
+    },
+    {
+      "start": 226.256,
+      "end": 245.904,
+      "text": "Very important today. And I'm happy that you are here or in the room and also out there in the space. Edward Lee, being an honorary doctorate of the TU Wien since a couple of days, will explain us what is not explainable. And this is I'm very much looking forward to. Thank you."
+    },
+    {
+      "start": 253.84,
+      "end": 276.592,
+      "text": "Well, thank you very much. Thank you. Thank you, Madam Dean. Ladies and gentlemen, Honorable Madam Dean, dear Professor Lee, dear Stefan Voltran, head of this institute, dear guests, I just wanted to welcome you on behalf of my ministry. This is the ministry with the long name. I repeat it once."
+    },
+    {
+      "start": 276.592,
+      "end": 302.272,
+      "text": "It's a ministry, I have to read it. It's the Ministry for Climate Action, Environment, Energy, Mobility, Innovation and Technology, which is luckily a little part of the fact that we are here. I first want to seize the opportunity standing here in front of you to express my gratitude, to express my gratitude to various organizations and people."
+    },
+    {
+      "start": 302.272,
+      "end": 329.344,
+      "text": "which were responsible for a real stream of activities in relation to digital humanism in the last month or year. One of these is the lecture here tonight, an important one. First of all, I wanted to thank the Institute for Human Sciences for partnering with us in the first place. This is, for both sides, first of a kind. We've never done this before."
+    },
+    {
+      "start": 329.344,
+      "end": 351.888,
+      "text": "It wasn't even on the radar. Ten years ago, I wouldn't think of working together with this institute. And the collaboration is new to us, too. I want to thank Technical University of Vienna, which has this special, this welcome policy of the faculty towards this topic, the open doors."
+    },
+    {
+      "start": 351.888,
+      "end": 379.072,
+      "text": "the networks and connections that they have offered for this program, which has already had considerable fruits in the cooperation between the faculty and the institute. I definitely want to thank Hannes Werthner for having accepted from the beginning of our initiative to be both the curator and mentor of this initiative."
+    },
+    {
+      "start": 379.072,
+      "end": 406.624,
+      "text": "bringing in his own engagement, his networks, his resources, his ideas. He's definitely the father of this concept here in Vienna for digital humanism and the anchorman of the whole initiative. Finally, I want to thank our fellows. First of all, Professor Lee, thanks for accepting this, for accepting coming to Vienna a month, sharing your ideas and your..."
+    },
+    {
+      "start": 406.624,
+      "end": 435.312,
+      "text": "your visions with us. I wanted to thank our junior fellows. Probably you can stand up. This is Nena and Kieran. Give them an applause. Thanks for coming to Vienna. Okay, I shouldn't stop with some very few words on the motivations of the ministry with respect to this program and these initiatives."
+    },
+    {
+      "start": 435.312,
+      "end": 463.52,
+      "text": "I will be very, very short and probably a little bit superficial, but well, I'm heading the department in the Ministry for Digital Technologies. I'm in the tech policy business for some time, so 20 years. And if you are looking back from today, I can see that really for decades, two decades or so,"
+    },
+    {
+      "start": 463.52,
+      "end": 492.432,
+      "text": "The policymakers in Europe, this is me and my peers, have been engaged at really all levels in supporting the development and rise of digital in hundreds of ways. We were opening all kinds of doors. We were doors into economy, society, individual actors, sectors into companies, into public administration, public infrastructures."
+    },
+    {
+      "start": 492.464,
+      "end": 517.872,
+      "text": "Digital has always been a kind of universal, constantly transforming tool that proved in thousands of contexts the superiority over human capacities, human capabilities. Digital was a great promise for the future, indeed even a symbol of modernization itself, modernization of Europe."
+    },
+    {
+      "start": 518.864,
+      "end": 538.864,
+      "text": "All those policy groups have been agents of the future. We could say we have protected the future, so to say, against the past. We have tried to remove obstacles to really help to unfold the power of these technologies. In a nutshell, we have..."
+    },
+    {
+      "start": 538.864,
+      "end": 564.608,
+      "text": "past an age of unrestrained affirmation of this technology, an embracement of continued undisrupted development. This is my, when I look back, this was really the atmosphere we lived in the last 20 years. I think things have changed now. It has not changed so much in the sense that the tools or the technology itself."
+    },
+    {
+      "start": 564.608,
+      "end": 593.52,
+      "text": "has changed its basic characteristics they still have not stopped to impress us with their power their efficiency their supremacy over human capacity capabilities what has changed is that we have started to see more the whole picture of technology of its systemic impact that we have seen elements what we could call i don't know if this is the right word collateral damages"
+    },
+    {
+      "start": 593.584,
+      "end": 619.552,
+      "text": "In fact, digital technologies and all of us who are engaged in digital humanism have seen this. Digital technology has started to disrupt fundamental structures of our societies, changing economic structures, the logic of markets, the balances of power, geopolitical structures, social relationships, media and its reception."
+    },
+    {
+      "start": 619.552,
+      "end": 642.592,
+      "text": "and even political structures of our democracies as such. What we thus need are different approaches to rethink digital technologies, rethink technologies as such. It seems to be a massive task since we understand only a little of it, since we have fairly worked on this topic in the past."
+    },
+    {
+      "start": 642.592,
+      "end": 671.952,
+      "text": "And we will need trans and multidisciplinary efforts and approaches, joining forces between computer scientists, engineers, social scientists, and humanities. I would say the kernel aim of the program that we have set up with the Institute is to better analyze and describe these interrelationships between digital technologies and the socioeconomic spheres."
+    },
+    {
+      "start": 671.952,
+      "end": 692.88,
+      "text": "value system of Western democracies, social media and political developments, economic and geopolitical polarizations. The aim is to create a basis for shaping future technological developments in a different way, all about in a way that is more human and more democratic."
+    },
+    {
+      "start": 693.2,
+      "end": 721.152,
+      "text": "Okay, this was just a little sketch in some very dense words, what this is about in a long-term perspective. I really do think that this topic has enormous potential. I do think that we could be very grateful that Vienna is such a good place, that we have started with this initiative. And I do hope that in a few times, meaning in winter, we will be here back again with our second, with our..."
+    },
+    {
+      "start": 721.152,
+      "end": 747.792,
+      "text": "second fellow and discuss things further. Thanks a lot. Thank you very much. Thank you very much for the introducing words. Many things have already said, so I won't repeat it. Maybe just to highlight again the idea of"
+    },
+    {
+      "start": 747.792,
+      "end": 770.672,
+      "text": "academic exchange across disciplines, between TU Wien on the one side and the IWM on the other side is maybe at the heart of this program. And therefore, I think it's also fair enough, and I'm very happy to now ask Ludger Hagedorn, Permanent Fellow at the IWM, to say a few more words on the Digital Humanism Fellowship Program and to introduce our speaker."
+    },
+    {
+      "start": 776.944,
+      "end": 794.16,
+      "text": "Thank you, Stefan. So, dear Edward Ailey, dear colleagues, dear guests, good evening to all of you. I'm yet another speaker to keep you from why you are here and why you're here is listening to Edward Ailey. So I promise I'll keep it very short."
+    },
+    {
+      "start": 794.16,
+      "end": 823.968,
+      "text": "Michael Wiesner from the ministry. We are very, very grateful for the cooperation with your ministry. You have nicely introduced the program. You have introduced its main goals, its aims, its procedural setup. Very nicely done. Thank you for that. I will not repeat this. We are very grateful for the cooperation with the ministry, but we are also very grateful for the cooperation with the TU Wien, especially the Faculty of Informatics. And the dean is sitting here, Gerti Koppel, who has just welcomed you."
+    },
+    {
+      "start": 823.968,
+      "end": 853.392,
+      "text": "And also to Stefan Voltran from the Center for Artificial Intelligence and Machine Learning. It has been a pleasure so far to cooperate with you. One person that should not be missed to mention tonight is Hannes Wettner. His name was already mentioned, but I think he deserves to be mentioned a second time tonight. He's the main spirit behind not only our program that he helped to initiate."
+    },
+    {
+      "start": 853.392,
+      "end": 881.552,
+      "text": "about, but also the initiator of the Vienna Manifesto on Digital Humanism, where also Edward Lee from the very beginning was crucially involved. Thanks to you, Hannes. I think you deserve this. Speaking for an Institute for Human Sciences, this is what we do, something very different from what our colleagues here at the TU do."
+    },
+    {
+      "start": 881.552,
+      "end": 907.472,
+      "text": "I admit when we started this project only now, a few months ago, a few weeks ago, in fact, it was a bit of a daring experiment, I have to say. I think we all weren't so fully sure where this would go. It's maybe too early to already come to a conclusion, but I can say so far it has been going very, very nicely. And I'm really, really happy. We are all very happy with how it was going so far."
+    },
+    {
+      "start": 907.472,
+      "end": 929.696,
+      "text": "Our two junior fellows have already been introduced. You do not have to stand up again. I save you from that. Kieran Haggerty and Nena Mochnik. But just to give you an idea, Michael Wiesner introduced him just to give you an idea what they are doing and how we try to realize this like cooperation of the humanities and the technical sciences and engineering and computer sciences."
+    },
+    {
+      "start": 929.696,
+      "end": 951.312,
+      "text": "These two are working and I will only give you the titles of their projects and you will see they like alliterations or maybe we like alliterations and that is why we picked them. Kieran Haggerty is working on a project called Deepening Digital Data. Nena Mochnik is working on a project called Moving Moms Mobile App."
+    },
+    {
+      "start": 951.312,
+      "end": 974.912,
+      "text": "So you see a certain linguistic preference here. I think both of them have been very happy to be part of this project. And for both of them, the cooperation with the TU turned out to be a very valuable input to their work. Lastly, and certainly not least, Edward A. Lee. I couldn't have thought of any better."
+    },
+    {
+      "start": 974.912,
+      "end": 1002.096,
+      "text": "fellow to start our program than you. It has been a great pleasure to have you at the IWM for these recent three weeks that you're here already now, more or less three weeks, yes. And for you to be like one of the people to not only initiate the Vienna Manifesto on digital humanism, but also our project. I think you have been a great fellow. You have done a great deal of work on our common project."
+    },
+    {
+      "start": 1002.384,
+      "end": 1029.968,
+      "text": "Edward A. Lee is an engineer, computer scientist by education, but has recently turned into a most successful author, I have to say. And his two very successful recent books are dealing with what he calls creative partnership of humans and technology. The first one, very catchy title, Plato and the Nerd, published in 2018."
+    },
+    {
+      "start": 1029.968,
+      "end": 1055.856,
+      "text": "17. And co-evolution, this is your latest book, co-evolution, following a similar path, I would say, but very much highlighting this new concept of co-evolution that you probably will also speak about tonight with your talk titled Limits of Machines, Limits of Humans. This book, co-evolution, the entwined futures of humans and machines."
+    },
+    {
+      "start": 1056.144,
+      "end": 1081.296,
+      "text": "We are all very happy to have you here. Your honorary doctorate has already been mentioned. So please give a warm welcome to the honorary doctorate of the TU. Thank you. Thank you, Luger. Thank you, Michael. Thank you, Gerti. Thank you, Stefan."
+    },
+    {
+      "start": 1081.296,
+      "end": 1110.672,
+      "text": "I've been to Vienna many times in the past. This is really the first time that I've actually lived in the city, though. It's usually been, you know, very quick visits and staying in hotels and not seeing anything. And I love this city. I have to say, I love your city. It's just fantastic. And I've made many new friends here. And many of you are here. You know who you are. And thank you for being here. I do want to point out this picture, which I took."
+    },
+    {
+      "start": 1110.672,
+      "end": 1139.216,
+      "text": "this afternoon. And it's a human machine collaboration. It's taken in the National Library. And with the help of an AI, I think if you've been in the National Library, you realize that it's always full of people. Where are the people? Well, with the help of an AI, I removed them from the picture. And let's hope that this is not the main mission of AIs in our world. So"
+    },
+    {
+      "start": 1139.216,
+      "end": 1167.744,
+      "text": "Anyway, that's a little bit of an introduction. So I'm going to talk about, as Gertie said, the unexplainable and attempt to explain that, which is going to be challenging. So, first of all, I'd like to, I think probably most of you know that artificial intelligence has undergone a complete revolution in roughly the last 15 years."
+    },
+    {
+      "start": 1167.744,
+      "end": 1195.136,
+      "text": "As with many technological revolutions, it's not actually new technology so much that changed things. It was more scaling up things that already existed and connecting them with an ecosystem that had evolved that enabled the leveraging of a vast amount of information that had become available. So I'm going to focus very much on this one branch."
+    },
+    {
+      "start": 1195.136,
+      "end": 1224.528,
+      "text": "of artificial intelligence, which is the one that is driven by neural networks. And that's really a subset of artificial intelligence. Artificial intelligence is a big field. It's very multifaceted. And there's a lot of aspects of it that I'm not going to touch on at all. But I think that because of the enormous importance of this particular technology and the transformation in the last 15 years, I think it's worth focusing on it and reflecting on it. And I think..."
+    },
+    {
+      "start": 1224.528,
+      "end": 1253.312,
+      "text": "I have come to the conclusion that it's really important for people very broadly in society, not just the technologists, to actually understand what's going on with this. So this is a sketch of how a deep neural network is constructed. And I'd like to just walk you through it, because one of the things that most people don't realize is that it's actually conceptually extremely simple. The operations that go on."
+    },
+    {
+      "start": 1253.312,
+      "end": 1281.072,
+      "text": "in a deep neural network are just multiply and add. And they're done with a huge number of repetitions on a huge amount of data. So the way it's structured is you have input data, which is literally just a list of numbers. And this cartoon shows four numbers. Well, it's not four numbers in practical applications. It's millions of numbers. So imagine this."
+    },
+    {
+      "start": 1281.072,
+      "end": 1309.616,
+      "text": "box, this stack of boxes being a million boxes high, and then coming out of these boxes are a bunch of lines, and each line represents just multiplying that number by another number, a parameter. And then when these lines converge over here, those scaled numbers that have been multiplied all get added together, and then a very simple non-linear function gets applied to them, and you get a new number."
+    },
+    {
+      "start": 1309.648,
+      "end": 1339.328,
+      "text": "And so now you've got a new stack of millions of numbers and you repeat this process in multiple layers. You take those numbers and you scale them by another very large number of parameters and you add up the results and you get another big list of numbers. And you keep doing this over over many different layers. And eventually you get a list of numbers on the output. That is your answer. All right. So your input is a representation, for example, of an image or an essay or case data."
+    },
+    {
+      "start": 1339.328,
+      "end": 1368.032,
+      "text": "or loan application, something like that. And the output is a decision. Is the image a cat? Is it a dog? Should the loan be granted? Should the loan be denied? Now, the essential point that I would like to make is that if you explain these operations, have you really explained the decision? I think that..."
+    },
+    {
+      "start": 1368.032,
+      "end": 1395.52,
+      "text": "Many people who don't understand the technology assume that the programmer must understand how it is that the machine comes to a conclusion. But when you see this kind of structure and you really understand what's going on, which is really very simple operations being repeated a vast number of times, you start to realize that the programmer is very likely to be just as surprised as anybody else by the decisions that the machine will make."
+    },
+    {
+      "start": 1395.52,
+      "end": 1422.032,
+      "text": "In a typical neural network, you might have tens of millions of parameters, which are the scaling numbers. OK, and those get learned from data typically or from other techniques that I'll talk about a little bit. OK, but they get learned by another rather simple process. It's actually, you know, any you could you can write these programs."
+    },
+    {
+      "start": 1422.032,
+      "end": 1451.664,
+      "text": "you know, in your first couple of weeks of an introductory programming class. They won't be very efficient. They won't scale very well on multiple machines. There's a lot of art to making these things actually run fast. But actually, the basic operations are really quite straightforward and anyone can write these programs. But not anyone. In fact, I would argue not not anyone can really understand what they're doing. OK, and so this is what I'd like to address today. So."
+    },
+    {
+      "start": 1452.336,
+      "end": 1477.184,
+      "text": "We ask for explanations for the decisions that these things make. Well, what do we mean by an explanation? Well, let me, there's actually a lot of different interpretations of this, and it's actually a really interesting subject. One of the things that I've really been enjoying about being at the EVM is that I'm interacting with people who come from very different backgrounds from mine, a lot of humanities people, and they teach me about"
+    },
+    {
+      "start": 1477.184,
+      "end": 1501.232,
+      "text": "questions like this, right, which are not the kind of questions that a technologist often asks. But, okay, what is an explanation? Well, let me make an attempt at this. Well, we want to answer the question, why the loan, right, for example. Well, start with the input data, that's the loan application, okay, and then give a sequence of logical deductions."
+    },
+    {
+      "start": 1501.232,
+      "end": 1531.152,
+      "text": "from that data. The data leads to this conclusion, which leads to that conclusion, which leads to that conclusion, which then where each deduction conforms to some rules of logic, you've got to sort of follow the reasoning behind each deduction. And you've got to terminate that sequence with a conclusion that leads you to the answer that the loan should be denied or granted. If you try to do this in terms of describing what the computer is doing,"
+    },
+    {
+      "start": 1531.152,
+      "end": 1555.728,
+      "text": "in that deep neural network, it's actually not very useful, right? You're going to give an explanation in terms of billions or trillions or quadrillions of arithmetic operations, and that's not an explanation. So it's a little bit like saying, okay, you know, everything that happens in the physical world, let's assume that everything that happens in the physical world is a consequence of the basic laws of physics. So everything can be..."
+    },
+    {
+      "start": 1555.728,
+      "end": 1576.592,
+      "text": "is a consequence of electron proton interactions. So now explain to me the emergence of the Ukraine war in terms of electron proton interactions. That's absurd, right? You can't. So that's not going to be an explanation. And so let's look at this a little more closely, right? Because"
+    },
+    {
+      "start": 1576.592,
+      "end": 1600.464,
+      "text": "One of the things that I've been doing is really branching out into other disciplines. I've tried to learn a good bit about psychology and what's going on in that field. So what do we mean by a rational process? Well, I'm going to use the notion that was, I think, very, very clearly stated and codified by Herb Simon, who is"
+    },
+    {
+      "start": 1600.464,
+      "end": 1625.712,
+      "text": "I think maybe the only person to have won both a Nobel Prize and a Turing Award, which is quite a remarkable achievement. But in Herb Simon's framework, he got the Nobel Prize in economics for countering a thesis that was very prevalent in economics, which was that the agents in an economic system act rationally. And by acting rationally, what this meant..."
+    },
+    {
+      "start": 1625.712,
+      "end": 1654.944,
+      "text": "is that they make decisions through this step-by-step reasoning using clearly explicable rules of logic in order to come to a conclusion that is some optimization of some objective function. That was pretty much the established dogma. And in many ways, actually, if you take an introductory economics class in any university, that's what they're going to teach you is that model because it's a beautifully simple model. But Herb Simon said, well, you know, it's a simple model, but it doesn't have anything to do with humans."
+    },
+    {
+      "start": 1654.944,
+      "end": 1683.376,
+      "text": "And so he introduced this notion of bounded rationality, which is simply an observation that humans are actually not very good at this. And in particular, we can only really handle very few steps. You know, maybe a really smart person can handle a dozen steps of logic before they've lost you. And the computers are performing billions. OK, so this means that we need to rethink."
+    },
+    {
+      "start": 1683.376,
+      "end": 1712.608,
+      "text": "some of the silver bullets that get floated out there. So for example, I hear these terms, algorithmic transparency. I just explained to you the algorithms for deep neural networks, and I didn't completely explain it, but trust me, if you give me an hour, I will completely explain it. And it will not help. Knowing those algorithms is not going to help you to determine."
+    },
+    {
+      "start": 1712.608,
+      "end": 1739.2,
+      "text": "whether a decision made by a neural network is justified. So knowing what the computer is doing is not going to be sufficient, I'm afraid. So the second thing is the right to an explanation. So we want to get an explanation for why the loan was denied by the machine. And the problem here is that if the machine gives us what we would call a rational"
+    },
+    {
+      "start": 1739.2,
+      "end": 1768.304,
+      "text": "explanation, which is the sequence of logical deductive steps that it used to come to the conclusion, it's going to be trillions of steps, and it's not going to be anything that we will accept as an explanation. So should we just give up? I don't think so. I mean, I have a very positive note on this, so please don't get depressed and run out of the room. There are huge opportunities here, and the opportunities, I think they demand"
+    },
+    {
+      "start": 1768.304,
+      "end": 1798.032,
+      "text": "multidisciplinarity. They demand crossing boundaries. That's one of the things that I love about EVAM. So, okay. So how can we find an explanation? Well, humans are actually very good at synthesizing explanations. We can explain anything. Okay. So there's a wonderful example from Daniel Kahneman's book, Thinking Fast and Slow. Kahneman didn't do this work. It was done by these folks, but I first learned it."
+    },
+    {
+      "start": 1798.032,
+      "end": 1827.968,
+      "text": "about it when reading this book and so that's why I give him credit for it. But he reported on a study of Israeli judges and where they found that these judges were hearing parole cases and they found that there was a very high correlation between denying parole and the time since the last food break. Now imagine going to one of these judges and asking for an explanation. Why did you deny this person"
+    },
+    {
+      "start": 1827.968,
+      "end": 1856.832,
+      "text": "Parole. The judge is going to give you a very convincing explanation and it's not going to have anything at all to do with the time since the last food break. OK, psychologists have actually shown that humans are really good explanation generating machines. And the psychologists have come up with very clever experiments that show that, you know, the explanation suggests that the decision was made by the conscious mind."
+    },
+    {
+      "start": 1856.832,
+      "end": 1885.824,
+      "text": "through a sequence of rational steps. But the psychologist can prove that it was not. That that's not how the decision was reached. So how was it reached? Well, I mean, one of the problems, of course, is that if we have enforceable laws that demand an explanation, I predict that very quickly the AI researchers"
+    },
+    {
+      "start": 1885.824,
+      "end": 1914.288,
+      "text": "are going to train a machine to give a convincing explanation for any decision. Humans are good at it. We can probably get deep neural networks to be good at it too. And is that really going to help the case? I'm not so sure. So I can explain to you, for those of you who work in this field, you'll recognize how to do this."
+    },
+    {
+      "start": 1914.288,
+      "end": 1943.152,
+      "text": "First, you train a deep neural network so that given case data and a decision, it synthesizes an explanation. Now, with neural networks, the way this works is that when you start out building such a machine, it's really bad at it. It's going to generate nonsensical definitions. They're not going to have any value at all. But you're going to train a second machine, a deep neural network."
+    },
+    {
+      "start": 1943.152,
+      "end": 1971.568,
+      "text": "whose job it is to discriminate between human generated explanations and machine generated explanations. OK, the data is readily available to train this machine using supervised learning. Right. And at least in certain domains, in case law, for example, there's explanations for every decision. So you've got a lot of human generated explanations. We can have a machine that will generate initially very bad."
+    },
+    {
+      "start": 1971.568,
+      "end": 2000.32,
+      "text": "explanations but then we use a technique that has been very effective in deep neural networks that's called generative adversarial networks where we pit these two machines against each other. Okay so the one that's synthesizing explanations is trying to come up with explanations that will fool the one that is discriminating between human and non-human explanations. Now you let these things go over millions and millions and millions of operations and they start to develop"
+    },
+    {
+      "start": 2000.32,
+      "end": 2029.136,
+      "text": "a pretty good explanation generation capability. This is the technique, this generative adversarial network technique is the one that was used to train AlphaGo, which was the machine that learned to play Go, which was not trained primarily by observing human games, but rather just by pitting AIs against each other to learn how to play the game by bootstrapping."
+    },
+    {
+      "start": 2029.136,
+      "end": 2050.848,
+      "text": "As a consequence, humans are good at this. We can probably make machines that are good at this. But even in this particular example, the study showed a correlation between the decision and the time since the last food break."
+    },
+    {
+      "start": 2050.848,
+      "end": 2080.128,
+      "text": "But really, it would be a horrible oversimplification to say that the decision was really just caused by the time since the last food break. That's probably not a good explanation either. All right. And in some ways, the authors of the study, being themselves humans who are good at generating explanations, generated that explanation. But that probably is not a very good description of what was really going on in the judges' heads."
+    },
+    {
+      "start": 2080.128,
+      "end": 2109.824,
+      "text": "All right. So what was going on? How do humans actually make decisions? Well, again, I'll come back to Daniel Kahneman and Daniel Kahneman in his book, Thinking Fast and Slow, makes a distinction between system one, which is the thinking fast system where humans make intuitive, quick, inexplicable decisions. All right. These are the these are the ones where you you you see something, you recognize it, you make you make a decision and."
+    },
+    {
+      "start": 2109.824,
+      "end": 2138.928,
+      "text": "After the fact, you might come up with a logical explanation for that decision, but it wasn't the logical explanation that took you there. OK, humans also do rational decision making, which Kahneman called system two. But Kahneman pointed out that humans are actually not so good at that, that it's much harder for us. In fact, much of what we do in education is trying to teach people how to use system two more effectively. Right."
+    },
+    {
+      "start": 2138.928,
+      "end": 2168.72,
+      "text": "So only when system two actually dominates does the true origin of the decision correspond to a rational explanation. So think carefully about what I just said. You know, we'd like to have a rational explanation. But if the decision was actually driven by system one, the rational explanation is probably a post hoc construction and not the real reason for the decision."
+    },
+    {
+      "start": 2169.584,
+      "end": 2198.0,
+      "text": "So for system one, it could be that the only actually accurate explanation is to talk about the millions of neuron firings that were triggered by that stimulus that caused a decision to emerge. And that's not going to be a useful explanation. So unfortunately, deep neural networks are much more like system one than like system two."
+    },
+    {
+      "start": 2198.0,
+      "end": 2227.792,
+      "text": "is a shock to people who are not so close to the field because they think of computers as just they do sequential rational decision making. So it must be a system to system. It's not really. OK. Algorithms. We talk about algorithms all the time. All right. The computers are doing algorithms. What do we mean by an algorithm? Well, you start with some input data. You follow a sequence of steps where each step follows a well-defined set of rules."
+    },
+    {
+      "start": 2227.792,
+      "end": 2256.768,
+      "text": "And the sequence terminates with a conclusion. Okay. Technically, if you also limit the data to a discrete set, then this set of algorithms as described here is equivalent to Turing machines, which means essentially it's equivalent to what computers do. Okay. So an explanation and an algorithm look an awful lot alike here. In fact, they're virtually identical."
+    },
+    {
+      "start": 2256.768,
+      "end": 2286.128,
+      "text": "They start with input data. They talk about sequences of logical steps. They talk about each step conforming to some rules of deduction and the sequence terminates. So what is the difference between an algorithm and an explanation? Well, an explanation is a short, typically very short algorithm. OK, it has to be very short or it won't work as an explanation because the humans can't handle it."
+    },
+    {
+      "start": 2287.376,
+      "end": 2317.024,
+      "text": "So is system one algorithmic? The quick decision making that humans make in Kahneman's sense, is that an algorithm? Well, according to both Simon and Kahneman, they categorize it as distinctly different from the rational processes. They say these are not really step-by-step reasoning using clearly explicable"
+    },
+    {
+      "start": 2317.024,
+      "end": 2345.888,
+      "text": "rules of logic, but that might just mean that they're not short algorithms. So the question is, are they fundamentally algorithms at all? Okay. The question here can be translated into, is the brain actually algorithmic? And here we get into a potential quagmire because there's a bit of a cult."
+    },
+    {
+      "start": 2345.888,
+      "end": 2372.32,
+      "text": "among scientific circles that everything in the universe is algorithmic, that actually everything is computation on digital data, and we just haven't figured out all the details yet about how it is. There are many people, probably many people in this room, who are absolutely devoted to that idea. In my Plato and the Nerd book in 2017,"
+    },
+    {
+      "start": 2372.32,
+      "end": 2401.168,
+      "text": "I show that this hypothesis is not testable by experiment. So according to the philosophy of science of Karl Popper, it's not a scientific thesis. It can only be taken on faith. When you're faced with a question of a thesis that is not testable by experiment, you can't choose to use it or not choose to use it on the basis of its truth. You have to choose to use it or not."
+    },
+    {
+      "start": 2401.168,
+      "end": 2428.992,
+      "text": "choose to not use it on the basis of its usefulness. And my claim in that book is that a digital computational interpretation of the universe is actually not nearly as useful as the physical models that are actually much more prevalent, which are not digital and computational."
+    },
+    {
+      "start": 2428.992,
+      "end": 2458.672,
+      "text": "There's a few efforts that I'd like to point to. I mean, one of them is this wonderful work done by Jeff Lichtman at Harvard. So Jeff coined the term connectomics. And this was he's a neuroscientist. And one of the hypotheses that he was trying to test was whether if we could just map all the connections in the brain, you know, using computers to help us understand the complexity, we could decipher how it works. OK, that was the premise."
+    },
+    {
+      "start": 2458.672,
+      "end": 2488.592,
+      "text": "And he did this incredible experiment where in his group, they took a small section of mouse brain and sliced it very, very thin and put all these slices down on a tape and then scan them with a computer and then constructed a 3D model of the structure of the brain. And it is unbelievably intricate and beautiful and complex. And he has come to the conclusion that the structure doesn't tell you anything about the function."
+    },
+    {
+      "start": 2489.136,
+      "end": 2516.656,
+      "text": "OK. And consequently, even if you could completely map the wiring of the brain, you still would not have a an explanation of how the brain comes up with these decisions. This shouldn't actually be all that surprising because many of the machines around us are actually not usefully modeled by algorithms. OK. For many machines, their essential operation is not usefully described."
+    },
+    {
+      "start": 2516.656,
+      "end": 2544.592,
+      "text": "as a terminating sequence of discrete steps. I mean, think of any machine that its function is fundamentally an analog operation, right? It's pushing fluids through a chemical plant or something like that. These machines are just not that usefully described in terms of algorithms. But most interestingly, it turns out that possibly deep neural networks are also not algorithmic at their root."
+    },
+    {
+      "start": 2544.784,
+      "end": 2574.384,
+      "text": "Okay, now that might seem a little bit of a surprise because they are mostly implemented on computers today, which are distinctly algorithmic. However, there's this little branch of neural network research where they've shown that you can take this entire bundle of arithmetic operations in the middle of the neural network, all these intermediate layers, and replace them with a completely random blob of physics."
+    },
+    {
+      "start": 2574.448,
+      "end": 2602.864,
+      "text": "Okay. You can just take a random blob of carbon nanotubes, put a bunch of electrical probes into it, a bunch of sensors on the other end. Okay. And replace the whole middle of the neural network with that blob of physics, and then just train the weights on the ends. And it works. Okay. All you need from the blob of physics."
+    },
+    {
+      "start": 2602.864,
+      "end": 2627.92,
+      "text": "is that it gives you a rich enough set of nonlinear functions from the input stimulus to the output stimulus. It just has to be rich enough and they have to be nonlinear. And people have built these kind of reservoir computing machines using the name reservoir computing actually comes from the first experiment that really got attention where they used buckets of water as the blob of physics."
+    },
+    {
+      "start": 2627.92,
+      "end": 2651.568,
+      "text": "OK, they've gotten more effective ones later that scale up much better. Bundles of carbon nanotubes work really well. In vitro cell cultures work really well. But this suggests an interesting question, which is that it may prove that today's deep neural networks are actually brute force algorithmic simulations of processes that are not fundamentally algorithmic."
+    },
+    {
+      "start": 2651.568,
+      "end": 2680.512,
+      "text": "One of the interesting things is this opens up a potentially very rich area of research in looking at possibly alternative machines, alternative machine structures for implementing deep neural networks that aren't going to resemble today's computers. And in fact, there is a lot of work going on in that direction currently. There's also a very intriguing provocative conjecture, which I think is probably"
+    },
+    {
+      "start": 2680.512,
+      "end": 2710.32,
+      "text": "I'm not a neuroscientist, so I can't really evaluate it, but I suspect that it's not this simple. But Tanaka, who was one of the people who introduced this reservoir computing field, has speculated that there might be large segments of the brain that are in fact just random. And they function as reservoirs in this sense. They just provide a rich enough set of input output functions that the other parts of the brain can use them effectively to learn how to do stuff."
+    },
+    {
+      "start": 2710.48,
+      "end": 2738.608,
+      "text": "It's a provocative conjecture, but I don't know how defensible it is. So the deep neural networks are probably not going to be explainable in this direct sense of explanations. What else could we do, right? Well, I mean, here's a few more silver bullets that might be problematic. We could give the machines human-like intelligence, right? And that way, maybe we can trust them at least to the extent."
+    },
+    {
+      "start": 2738.736,
+      "end": 2767.584,
+      "text": "That we trust other humans, right? Maybe. So this is sort of the goal of what people call artificial general intelligence, which is really about achieving human-like intelligence. And I would ask the question, well, is that a good idea? Well, let me give you an example of a success case where I think they really did achieve human-like intelligence. This was a project at Microsoft where they released a chatbot called Tay, and it was an AI."
+    },
+    {
+      "start": 2767.584,
+      "end": 2796.864,
+      "text": "that was designed to interact with users on social media using the vernacular of young people. It learned very quickly how to do that and got very vulgar, very racist, very quickly. It exhibited human-like behavior. In fact, unfortunately, so maybe making these machines human-like isn't such a great idea."
+    },
+    {
+      "start": 2796.864,
+      "end": 2824.288,
+      "text": "OK, well, maybe we should keep humans in the loop in all our decision making. We already have learned the hard way that humans are easily manipulated by the machines. Right. If you look at. Well, here's a few points that argue that actually there's a very fundamental reason why this has to be OK."
+    },
+    {
+      "start": 2824.288,
+      "end": 2849.648,
+      "text": "that humans will be manipulated by machines. We already are. There's a couple of very nice articles in this book that Hannes, who has been mentioned twice, led the effort on publishing. It's an open access book. It's been downloaded more than 140,000 times. And it's a collection of essays from a tremendous variety of disciplines, very leading scholars."
+    },
+    {
+      "start": 2849.648,
+      "end": 2879.472,
+      "text": "tremendous variety of disciplines addressing this digital humanism problem. And one of the beautiful ones is this one by Yates and Fayyad. And they argue here that actually the information flood that we are all facing, this enormous amount of information that's available to all of us, vastly more than we can possibly absorb, means that..."
+    },
+    {
+      "start": 2879.472,
+      "end": 2905.552,
+      "text": "We have to use AIs to filter that information. There's no other choice. And so they make that case that this is both necessary and inevitable. And they point out that the information economy actually will lead those AIs to manipulate the humans, inevitably, because being an economy, it's about..."
+    },
+    {
+      "start": 2905.552,
+      "end": 2933.456,
+      "text": "maximizing return in some sense. And hence, that's going to lead to manipulations. So the argument here is that human decision making is actually no longer independent of machines, where the machines are already intertwined in our human decision making. And this is not just a prediction of the future. I mean, we saw in the 2016 US election and the Brexit vote,"
+    },
+    {
+      "start": 2933.456,
+      "end": 2960.576,
+      "text": "enormous cases of machines manipulating humans. Stuart Russell, who is my colleague at Berkeley and a top expert on AI, he's a co-author on the most widely used textbook on AI. So he is really an expert on this, but he published this wonderful book called Human Compatible recently. And it says, it points out something that actually I"
+    },
+    {
+      "start": 2960.576,
+      "end": 2987.376,
+      "text": "It sort of horrified me when I first heard it, and then I realized, well, yeah, yeah, this is kind of obvious. But he pointed out that predictable humans can be reliably presented with advertisements they will click on, right? If you're a predictable human, then Facebook can figure out what ads to put in front of you so that you will click on them. He pointed out that political extremists are more predictable than moderates, okay?"
+    },
+    {
+      "start": 2988.464,
+      "end": 3014.48,
+      "text": "He pointed out the existence, therefore, of this feedback mechanism where the information that the machines are feeding you are, in fact, this information is inevitably going to be targeted towards making you more predictable in order to make the predictions that the machine is trying to do more accurate. This is an inevitable consequence of the way the machines work."
+    },
+    {
+      "start": 3014.512,
+      "end": 3043.248,
+      "text": "So in my co-evolution book, I pointed out that this is, you know, I use the term an information apocalypse for this situation, because the reality is we, you know, a lot of people tend to focus on the fake news. Well, let's do a little thought experiment. Assume that everything on the Internet is true. Does that mean we don't have any problems? It doesn't, because what's going to happen inevitably with this information flood is that."
+    },
+    {
+      "start": 3043.248,
+      "end": 3069.888,
+      "text": "We're going to get these islands of disjoint truths where there's this group of people that share these truths. There's this group of people that share these truths. And there's no overlap between these truths. And there's so much information out there that that's almost inevitable unless we really take action to try to prevent it. So there's a number of opportunities here. OK, so far, I've presented a pretty negative picture, but I'm going to."
+    },
+    {
+      "start": 3069.888,
+      "end": 3099.104,
+      "text": "Try to say, OK, I think we can do this. I think we can handle this. All right. So here's some ideas. Right. Maybe instead of demanding explanations from the AIs, we should focus on kind of licensing and certifying them. So we do this with humans. Right. We we we give them low level responsibility jobs. And if they do well at that, we promote them to more responsibility. And if they do well at that, we promote them to still more responsibility. Maybe we should be thinking about doing that kind of thing."
+    },
+    {
+      "start": 3099.104,
+      "end": 3126.736,
+      "text": "with AIs and set up some structures to work that way. One thing that we can do is use the AIs to expose human biases, right? They are actually very capable of capturing those human biases. Tay, I think, the Microsoft chatbot was very good at capturing, I think, natural human tendencies to sort of reinforce each other in a social structure, often in a very destructive way."
+    },
+    {
+      "start": 3126.864,
+      "end": 3151.296,
+      "text": "And so we might be able to use the AIs to learn something about humans and maybe figure out how to get the humans to behave better in an ecosystem that involves a partnership with the machines and the humans. Recommender systems, these are the systems that select information for you, right? According to Bates, we have to have them."
+    },
+    {
+      "start": 3151.296,
+      "end": 3177.424,
+      "text": "Because the information flood is such that you're just not going to be able to function in the information economy unless you have machines filtering your information. We should structure these systems that are filtering the information in ways that try to counter this tendency towards islands of disjoint truths. You know, kind of deliberately introducing into the recommender systems."
+    },
+    {
+      "start": 3177.424,
+      "end": 3204.88,
+      "text": "surprises and noise and unexpected information flowing across the boundaries. If we can find ways to do that deliberately. We could use the machines as explanation machines, but have them explain all the possible decisions instead of just the one you're trying to argue for. That's a very natural thing to do. And then that could actually help make"
+    },
+    {
+      "start": 3204.88,
+      "end": 3233.904,
+      "text": "It could help humans make better decisions by having the machines generate explanations for the various possible decisions that one could take. We could also use AIs to expose deliberate abuse of information filtering. So ExxonMobil was recently caught presenting distinctly different ads to left-leaning people on the internet and right-leaning people. To the left."
+    },
+    {
+      "start": 3233.936,
+      "end": 3263.136,
+      "text": "They were investing in renewables. They were reducing the carbon footprint of their production facilities. To the right, they were fighting over regulation. They were achieving energy independence. Completely different ads to different groups of people. If we, for example, pass laws that say that all advertisements"
+    },
+    {
+      "start": 3263.136,
+      "end": 3292.864,
+      "text": "online should go into a publicly readable repository, then we can have AIs analyze those ads and expose such abuses. So this would be a very positive use of AIs and something that I think is quite doable. And I really want to emphasize that we need multidisciplinary engagement. I think that we need for policy people to have a better understanding of the technology and for"
+    },
+    {
+      "start": 3292.864,
+      "end": 3322.688,
+      "text": "the technologists to have a better understanding of how society functions and to talk to sociologists, to talk to legal scholars, to talk to psychologists. There needs to be a lot more interaction if we're going to make this work. So I think that this is something, this digital humanism initiative started here in Vienna. And, you know, I'd like to point out that roughly 100 years ago,"
+    },
+    {
+      "start": 3322.688,
+      "end": 3351.328,
+      "text": "Vienna was an intellectual capital of the world, and it really had a huge impact on how science was done in the 20th century. It kind of defined the principles for the conduct of science in the 20th century. There's an opportunity to define the principles for the conduct of technology in the 21st century. And I think that we're off to a start. It's just a start, but it's a pretty good start."
+    },
+    {
+      "start": 3351.328,
+      "end": 3373.424,
+      "text": "Just some references. Of the things that I've published, the closest to what I've actually talked about today is the only paper I have ever published in a psychology journal. It's actually in Frontiers on Psychology. But there it is. And it covers pretty well what I've talked about today. So thank you very much."
+    },
+    {
+      "start": 3387.152,
+      "end": 3411.408,
+      "text": "Thank you very much, Edward, for this great and enlightening talk. We have time for questions and comments. So I try to check the hands. Thanks, Edward. Beautiful talk. I really enjoyed it. I have the following question. I mean, let's say previous life as an engineer."
+    },
+    {
+      "start": 3411.408,
+      "end": 3438.72,
+      "text": "You were advocating the construction of systems in a hierarchical fashion with well-designed composition operators such that you could explain hierarchically what is going on in the system. So do you think this would be possible also for machine learning? So thank you for that question. First of all, let me say it's not a completely previous life. I actually have two personalities."
+    },
+    {
+      "start": 3438.72,
+      "end": 3468.448,
+      "text": "I'm still very active with software technology research and doing some pretty interesting work. But I think in answer to your question, I'd actually like to point at work that you and your group have been doing, which I think is really extremely promising, right? Which is you've been using, if I understand it correctly, and please correct me if I misrepresent it, but you've been using the understanding that neuroscientists are getting about"
+    },
+    {
+      "start": 3468.448,
+      "end": 3487.088,
+      "text": "nervous systems, particularly leveraging the ones in lower animals where they're simple enough that we can start to understand a bit of their aspects. And you're using that to inspire the design of very different deep neural network structures where you build them out of components that have"
+    },
+    {
+      "start": 3487.088,
+      "end": 3516.384,
+      "text": "particular tendencies in their behavior. And then you string together these components in ways that are patterned after the problem you're trying to solve. And then you train them in the usual neural network way. And the beauty of that work is that you end up with neural networks that are much, much smaller and just as effective as the big brute force ones. And so I think that what that tells us is that"
+    },
+    {
+      "start": 3516.384,
+      "end": 3544.912,
+      "text": "There are definitely opportunities for architecture design and for building systems out of components that at least we partially understand. They have certain tendencies. We want to take advantage of those tendencies. We treat those components as components and we string them together. We're still going to want to make them adaptive and use this learning technology that has been such a revolution over the last few years. But I think that the work that you're doing is a great step in that direction."
+    },
+    {
+      "start": 3547.824,
+      "end": 3571.296,
+      "text": "Okay, next we have Eric. Okay. Hi, and thank you for the very interesting and captivating talk. And I have a question that regards also the systems of Kahneman. So Kahneman says that we have a"
+    },
+    {
+      "start": 3571.296,
+      "end": 3600.304,
+      "text": "pretty lazy system too. And this brings us to have biases that also machine reflects. And doesn't this mean that we should probably think on how to manage systems and human systems in general and understanding accountability of the systems and especially where accountability, the accountability accent should be put, especially on a scale where we have very complex system on a large scale."
+    },
+    {
+      "start": 3600.304,
+      "end": 3623.168,
+      "text": "And we cannot control every process. You mentioned the court that decide whether to accept or reject something according if they're angry or not. So how do we keep accountable systems and humans in general on a scale? I think that's a wonderful question. Thank you for that question."
+    },
+    {
+      "start": 3623.168,
+      "end": 3652.672,
+      "text": "First, let me start with the question of the lazy system, too. You're absolutely right. We do have a lazy system, too. But I'd like to point out that for thousands of years, we've been using technology to enhance our system, too. When you do calculations using paper and pencil, you're using technology to enhance your system, too. And we need to keep doing that and keep learning to do that better."
+    },
+    {
+      "start": 3652.672,
+      "end": 3682.32,
+      "text": "as we get better, more powerful technologies, we should be able to further enhance our system too. The second part of your question is more on the accountability question. And accountability is a really challenging issue. I actually have a whole chapter on accountability in the co-evolution book that approaches the problem. First of all, one of the problems with talking about accountability for the machines is that it's often very"
+    },
+    {
+      "start": 3682.32,
+      "end": 3710.24,
+      "text": "ethically value laden, right? People tend to focus on who gets the blame when something goes wrong. So in this book, I decided to, I wanted to separate out the accountability problem from the ethics problem. And so I turned the situation around and I said, well, when should we give the machines credit for what they do as opposed to giving them the blame? And in particular, I looked at the production of art, right? Can AIs produce art?"
+    },
+    {
+      "start": 3710.24,
+      "end": 3737.424,
+      "text": "And should they get credit for the art? And I start with a discussion of this rather famous artwork that was developed by this French art collective called Obvious that they put up for auction at Christie's, expected to get maybe $10,000 to $12,000 for it. They built it as the first AI-created artwork, and it sold for $432,000."
+    },
+    {
+      "start": 3737.424,
+      "end": 3767.344,
+      "text": "In this chapter, I look at the question of, well, all right, who gets credit for something like this? And it turns out there's many different interpretations that are all valid. And one of the things that I think I came to the conclusion to is that humans really like to single out individuals to either credit or blame. And individuals, that's usually a huge distortion of what's actually going on."
+    },
+    {
+      "start": 3767.44,
+      "end": 3795.232,
+      "text": "Individuals get hugely outsized credit, right, when they get a Nobel Prize or when they get an honorary doctorate from TU Wien or anything like that, right? It's hugely, hugely outsized credit, right? They're working within an ecosystem with a whole bunch of other people who have contributed enormously to what they have done. And we like to simplify things."
+    },
+    {
+      "start": 3795.232,
+      "end": 3822.864,
+      "text": "and identify the individuals. And I think we need to back off from that a little bit because our ecosystem has gotten too complex and that oversimplification is a real distortion of what's actually going on. Okay, so next is Michael Stamfer, but maybe let me also mention for those people who watch us via Zoom that there's also the possibility to put the question in the chat and if it's..."
+    },
+    {
+      "start": 3822.864,
+      "end": 3851.984,
+      "text": "Smart question, Walter will select it. So I want to mention that Michel Stamfer is one of the people who really made digital humanism happen in Vienna. I give him credit for really giving a tremendous push to this effort. Thank you very much. Now I'm in a trap because if I pose a foolish question, there's no filter. And then there's this credit, many things."
+    },
+    {
+      "start": 3851.984,
+      "end": 3870.4,
+      "text": "You brought a few bright lights at the end, and I want to put up one. This is licensing and certification, and I would like, Edward, to ask you to elaborate a little on that."
+    },
+    {
+      "start": 3870.4,
+      "end": 3897.376,
+      "text": "thoughts are that some of the bright engineers here in the room in the next months look out for bright law and economics and behavior people and think out of some viennese made ideas how to how to bring that into into fruition thank you yeah that's an excellent question and um i um"
+    },
+    {
+      "start": 3897.376,
+      "end": 3918.0,
+      "text": "To be honest, I'm not entirely sure, but I am aware of some work that I think is very promising in this direction. For example, one of my colleagues at Berkeley, Sanjit Sesha, has been working on techniques to use formal verification to circumscribe behaviors that an AI can."
+    },
+    {
+      "start": 3918.0,
+      "end": 3943.744,
+      "text": "can perform. And I think of it sort of analogous to what's done in flight control systems, which is a technique called flight envelope protection, where you have a natural intelligence, we call it a pilot, okay, who's doing things with the control of the aircraft. But some of those things could actually lead to problems, right? And there's actually been sort of a"
+    },
+    {
+      "start": 3943.744,
+      "end": 3968.24,
+      "text": "philosophical split between Boeing and Airbus on how to handle this. But Airbus in particular has bought into the notion of flight envelope protection, which is that they design the system to limit what the pilot can do. And they explicitly, for example, prevent the pilot from taking actions with the control of the aircraft that would take it into a stall."
+    },
+    {
+      "start": 3968.24,
+      "end": 3986.752,
+      "text": "And Boeing argues that, no, you shouldn't put such limits on pilots because in an emergency situation, the pilot may actually need to do a maneuver like that. And there's a tradeoff there. Right. But the question then becomes, how do you how do you provide those kind of behavioral envelopes around an AI?"
+    },
+    {
+      "start": 3986.752,
+      "end": 4015.536,
+      "text": "And I think that this is a research area that we really need to invest in. And I think that Sanjay Tseshiya has been doing some very nice, very promising initial work in that direction. And I think some other people too, but it just happens to be that because he's at Berkeley, I'm more familiar with his work. I've seen a few hands in the back. So maybe, Walter, you can help me. Who was first? And then Florian. So first, Teresa."
+    },
+    {
+      "start": 4016.048,
+      "end": 4044.56,
+      "text": "Thank you for the wonderful talk. I'm taking a bit of a devil's advocate position here because you told us about the dangers of being manipulated by AI. And I was thinking, is this truly a bad thing? Because people have been swayed by talented politicians, by artists, by cute cats on the internet even. So why AI? Is it just a scale or is it something more?"
+    },
+    {
+      "start": 4044.56,
+      "end": 4063.792,
+      "text": "Thank you for that. I love that question. And in fact, in my books, I take a much more positive view of this. And one of the things I write about in these books is that I couldn't have written these books without the help of AIs. It simply would not have been possible."
+    },
+    {
+      "start": 4063.792,
+      "end": 4093.072,
+      "text": "leverage them extensively, right? The search engines, Wikipedia. I talk about Wikipedia's AIs that prevent vandalism on the pages in Wikipedia, that prevent destructive information from sneaking in. So I go back to this idea that technology can be a tremendous boost to our system too. And I think..."
+    },
+    {
+      "start": 4093.264,
+      "end": 4116.272,
+      "text": "As the technology gets more powerful, that boost could get even bigger, right? We just have to watch out for the dangers. So next is Florian Michaelis. Yeah, thank you for your talk. I perceived it a little bit like a roller coaster ride. So you took us down to the rabbit hole. And fortunately, there was also some uplifting in the end. So my question is now."
+    },
+    {
+      "start": 4116.272,
+      "end": 4145.68,
+      "text": "maybe going down the rabbit hole again, and perhaps you can uplift us again. So looking at the opportunities that you provide here, I'm wondering, what's your stance on how this can be achieved? So you quoted Stuart Russell, who says, basically, there's a reward of manipulating people because then they click on the ads. And if they're more extremist, they click even more predictably. So that means there's an economic reward to actually do that. So how can we fight this? So how do we get?"
+    },
+    {
+      "start": 4145.68,
+      "end": 4169.92,
+      "text": "enough resources to implement like the more ethical approaches that you're providing here, other than all the good AI people going to the other side and making the money with clicking on ads? Yeah, I think that's a great question. And actually, I would point to Stuart Russell's work for, again, for promising directions. So one of the things that he's been pushing for is"
+    },
+    {
+      "start": 4169.92,
+      "end": 4198.112,
+      "text": "basically changing the mechanisms by which we train these AIs to change the fundamental structure of the objective functions, right? So in sort of the early days with a lot of the standard AIs that are out there, you just have a fairly straightforward objective function that you give to the AI and then it goes and tries to optimize that. Well, he's been working on techniques that are really quite different where you..."
+    },
+    {
+      "start": 4198.112,
+      "end": 4226.288,
+      "text": "I guess one analogy that he uses is that, you know, you you don't want to train an AI to want coffee. You want to train an AI to want the human to want coffee. OK, so it's about creating the structure of the objective functions by building in the human objectives rather than some, you know, more abstract."
+    },
+    {
+      "start": 4226.288,
+      "end": 4252.624,
+      "text": "idealized utility maximization kind of objective function. And he's done some very nice work in that direction. And so I would point you to his work. Thank you, Edward. This is a continuation of the discussion we had in the lunch hall of the IWM."
+    },
+    {
+      "start": 4252.624,
+      "end": 4276.0,
+      "text": "I come from the social sciences, the humanities, where we don't have a consensus on what comprises the human itself. The human category as also humanism is internally sort of, there are many epistemic cultural hierarchies which are embedded therein. So my question, I mean, there is a distinction between humans that"
+    },
+    {
+      "start": 4276.0,
+      "end": 4303.968,
+      "text": "belong to the first world, to the global south. Within the global south, there are epistemes of the indigenous communities, of the dominant communities, and so on. Given that the human world itself is marked by so many hierarchies, will artificial intelligence, which aims to mimic human intelligence, also be embedded with these"
+    },
+    {
+      "start": 4303.968,
+      "end": 4328.928,
+      "text": "cultural markers, cultural hierarchies? That's a wonderful question. And I think, yes, the answer simply is sure. Yeah, the AIs are going to function in our ecosystem in complex ways. And they will definitely develop these kinds of capabilities. So I can't."
+    },
+    {
+      "start": 4328.928,
+      "end": 4350.224,
+      "text": "speak at kind of the global scale that you can, but in the process of researching for these books, I studied a lot of psychology work around the idea of embodied cognition, which says that a human mind is not just something going on in this machine."
+    },
+    {
+      "start": 4350.224,
+      "end": 4375.984,
+      "text": "inside the skull right responding to stimulus and reacting to it but rather the human mind is the interaction of that machine with the body and its environmental ecosystem that that is what the mind is it's the interaction and i think we see that in our cultural interactions they affect our thinking in very profound ways when we interact with someone in conversation that person"
+    },
+    {
+      "start": 4375.984,
+      "end": 4403.84,
+      "text": "becomes part of our cognitive mind and we become part of their cognitive mind. And those kinds of interactions suggest that we need to be thinking about these interactions much more at much bigger scales. And particularly when you have AIs intervening with those interactions, they're going to play a significant role. Okay, thank you. Maybe let's take one question from the chat."
+    },
+    {
+      "start": 4403.84,
+      "end": 4433.312,
+      "text": "Promise things which we do not hold. Walter, do you have a mic? So there's a question from Brian Selig. I hope I got the name right. All the opportunities that you mentioned depend on some ultimate authority, which is the source of truth or morality. Are there any that do not depend on such authority? First of all, hello, Brian. I'm delighted you're here."
+    },
+    {
+      "start": 4433.312,
+      "end": 4453.408,
+      "text": "So I'm not sure I understand the question. Can you maybe read it again? All the opportunities that you mentioned depend on some ultimate authority, which is the source of truth or morality. Are there any that do not depend on such an authority?"
+    },
+    {
+      "start": 4453.408,
+      "end": 4481.84,
+      "text": "Oh, yes. OK, that's a wonderful question and a really hard one. I mean, certainly, you know, the first bullet item on the screen right now, licensing and certification is one that is going to depend on on an authority structure, a trusted authority structure. The others, I'm not so sure, are so dependent on it. So, for example, better recommender systems, you know, ideally."
+    },
+    {
+      "start": 4481.84,
+      "end": 4507.824,
+      "text": "we could set up a situation where there is competition and where the competition, you know, by design tries to get people to prefer the recommender systems that bring more diversity. So there's already examples of this. So I use Spotify, for example, to listen to music."
+    },
+    {
+      "start": 4508.048,
+      "end": 4537.328,
+      "text": "I'll never go back. Right. I mean, I have discovered music from all over the world that I never would have encountered. It just never I never would have seen it. Right. And to me, that's a recommender system that has actually really broadened my horizons rather than narrowing them. And, you know, there I think, you know, the objective functions, they're not presenting me with ads. Right. I'm a monthly subscriber. So."
+    },
+    {
+      "start": 4537.36,
+      "end": 4566.816,
+      "text": "That creates a different objective function. And I think it's a better objective function because it means that I'm going to react to the enrichment that it provides, as opposed to having it manipulate me to click on ads. Right. And so I think that subscription systems, for example, might actually lead to better recommender systems than advertising driven systems. And maybe as a society, we could just migrate towards those."
+    },
+    {
+      "start": 4566.816,
+      "end": 4594.016,
+      "text": "And those don't necessarily have to be, you know, top down with central authority control. All right. So before concluding this nice public lecture, let me maybe say one thing now, because today, when I read in the news, there was this daily article about a guy called Musk, Elon Musk."
+    },
+    {
+      "start": 4594.016,
+      "end": 4621.808,
+      "text": "And there was a user comment below that one, which was now I've tried to translate in English in a proper way. So if you promise every year that within one year product X will be deployed or will work, then you will be right maybe at some point in time. But I think that's not the way how AI research should act. And I think today, thanks, Edward, we learned that we have to..."
+    },
+    {
+      "start": 4621.808,
+      "end": 4651.184,
+      "text": "take many, many things into account and that things are complicated and that we need to discuss over different disciplines. I think it was a great talk. Let me just say a quick thank you to those people behind the scenes which make these events possible. Walter Palmetshofer, Teresa Funkhaus, our secretary of administrative staff, and let me also..."
+    },
+    {
+      "start": 4651.184,
+      "end": 4675.84,
+      "text": "mentioned Clemens Heitzinger, the co-director of the Center of AI and ML. So we are running this together. And thanks to you for coming. It was great to have you here. And so two things."
+    },
+    {
+      "start": 4675.84,
+      "end": 4685.072,
+      "text": "First of all, we can continue informal discussion during having a small snack on the buffet. And let's thank again our speaker, Edward Lee."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

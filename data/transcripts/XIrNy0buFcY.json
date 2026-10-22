@@ -1,0 +1,991 @@
+{
+  "video_id": "XIrNy0buFcY",
+  "source": "whisper",
+  "language": "en",
+  "text": "Thank you so much. It's a pleasure to be there with you virtually. Let me share my screen. Hopefully you can see it. There you go. Hopefully my slides are visible. Yes. Excellent. OK, so I will be talking about machine learning and climate change. Questions on other axes of sustainability are absolutely welcome. But this talk will be specifically about about. climate change. There's a lot of overlap with other ones of the UN SDGs, but it will be focused specifically on climate action. So I don't think that climate change needs very much introduction. We are increasingly seeing its effects and they are becoming more frequent and also more severe. It's worth emphasizing that climate change serves to exacerbate existing societal inequities and has a disproportionate impact on already disadvantaged communities generally. That is the case both across geographies, where often the countries that have contributed the least to climate change end up bearing the brunt of its effects. And even within a single geography, those communities that are most hit by climate change are often... or those that are already disadvantaged in other ways um climate change is not an on-off switch uh how bad it gets depends on what we do now many people are have already died as a result of climate change and many many more will die regardless of what we do now the best case scenario is pretty bad but the worst case scenario is absolutely catastrophic and so There is a huge amount that we can do now to shape just how bad it gets. We need net zero greenhouse gas emissions by 2050, according to the UN's Intergovernmental Panel on Climate Change. That is not a target that we are probably going to hit, but it is the target that has been set as the goal for averting the most disastrous implications. um we are reducing um we are making progress but there's a lot more progress that needs to be made currently greenhouse gas emissions are increasing year after year still they are still not decreasing towards zero and there are two kinds of action that are needed mitigation which is reducing greenhouse gas emissions and adaptation which is resilience to the consequences of climate change There's also climate science, which is sometimes thought of in a separate bucket, which is about modeling and understanding the climate and how it changes. Now, I'm going to be talking about machine learning and its intersection with climate change. There are many different aspects of this intersection, and the talk as a whole is going to start out with a very broad overview of how to think about machine learning. from the perspective as a tool in climate action. And we'll then get into some very technical aspects of particular example projects. I looked through the backgrounds of folks in the summer school. It seemed like for those in CS and machine learning, there might be interest in some more technical details. I'll try to contextualize all of that. So hopefully it will not be boring or incomprehensible to those of you who are coming from other backgrounds. um then after that we'll look at some of the ways that machine learning is making climate change worse and then we'll discuss the policy angle on all of this as well which will hopefully also then not be boring to the more technical folks so uh trying to trying to to attack this from multiple perspectives that said i am a mathematician and computer scientist so definitely i'm coming at this from more of a technical perspective Okay, so why is machine learning relevant in the fight against climate change? We wrote a big paper detailing lots of different opportunities for machine learning to be used as a tool in climate action. There are more examples than I can cover here. Such applications span electricity systems. agriculture, forestry and other land use, heavy industry, various forms of societal adaptation, etc. But I want to touch on a few overall themes with some examples from each theme for the kind of role that machine learning can play in the fight against climate change. The first theme that I want to touch on is operational efficiency. There are many situations in which we have a complex automated system that can be made more efficient. Using algorithms. Now, such algorithms can include non-machine learning approaches. Increasingly, machine learning is one tool that can be used in such contexts. For example, smart thermostats like the one pictured here are commonly used now in people's personal homes. But the control problem of how do you make the heating and cooling system and building run more efficiently is much more complex than that. And it can be extended to commercial buildings or industrial contexts like factories. And increasingly, we're seeing the optimization of HVAC systems, so heating and AC systems, being performed with a mixture of human and AI-based control. We're also seeing such control applications in industrial settings for manufacturing such as steel and cement. Steel and cement together contribute about 15 percent of all global greenhouse gas emissions. So reducing those emissions is really impactful. Even slight efficiency gains can have massive implications when it comes to reducing societal greenhouse gas emissions. The next theme that I want to touch on here is or actually before I get on to the next theme, I want to introduce a caveat here. I'll mention more later on the ways in which AI can have negative implications on greenhouse gas emissions. Here, I just want to warn that improving operational efficiency doesn't always lead to as much savings of greenhouse gas emissions as you might anticipate for two reasons. One, efficiency can be measured in multiple different ways. It can be measured in the context of... Greenhouse gas emissions or energy, which is often associated to greenhouse gas emissions, but not always. But it can also be measured in from the perspective of cost. Decreasing cost is something that an optimizing algorithm can also do, but that might actually increase emissions. For example, if labor costs are a bigger factor than energy costs, you might end up increasing the amount of energy while decreasing the cost of labor. And that could actually increase greenhouse gas emissions. Another factor is rebound effects. Or if you make something more efficient, people sometimes use it more. And that can decrease the savings that you get. Just want to note both of those things. Second theme I want to touch on, gathering information. There are many settings in which there is a vast amount of data out there, but it's not usable to guide policies or to meaningfully shape behavior. That can be, for example, if we have... satellite images of the whole world, which we do, and we would like to pick out from that information about the carbon stored in different areas of land to appropriately guide land use decisions, shape incentives, etc. So increasingly, machine learning is being used to estimate carbon stock, to track deforestation, and to overall monitor land from satellite imagery, because it's scaling up the amount of information that we have. A human couldn't go through and do that in real time. It would just be way too much work. Similarly, parsing large amounts of text, parsing financial disclosures is an application that we've seen for machine learning, increasingly taking these big reports, picking out relevant information and highlighting that. I do want to note, since everybody's really excited about GPT now, the applications there are not actually GPT. There are other kinds of natural language processing. GPT is a very unreliable tool in essentially every setting and certainly in a climate context. The picture here is from some of our own work in my group in biodiversity monitoring, which is another great example of gathering information. Here we have set up camera traps across six countries currently. and they are automatically attracting and photographing insects. You can see here the automatic labels which our AI algorithms have created for a single photograph, and in this way we can gather large amounts of information on, in this case, insect distributions, which is really important since insect populations are collapsing and insects represent one half of all global biodiversity. Forecasting is the next overarching theme that I want to touch on. Machine learning and AI tools are really good at predictions based upon past time points, what's going to happen next. That is useful in many different contexts. For example, in predicting the supply and demand of electricity, we need to know how much electricity is going to be produced at any given point in time and how much electricity is going to be used at any given point in time to make sure there's enough available to meet demand. This is particularly important with... Low carbon energy sources, which are often variable, wind and solar in particular, vary from moment to moment. The amount of sun and the amount of wind change. And so understanding how much power is available is fundamentally important to making sure that the power grid is balanced and that you aren't either over or under producing electricity. The way in which this was done historically was very manual. And there are a lot of factors which mean that it's a very hard problem. For example, in the UK. Historically, people would have timetables of the television programs because whenever a soap opera ended in the UK, this may still be the case, everybody would get up and go make a cup of tea. And there would be a 10% jump in electricity consumption as a large fraction of the country turned on their electric tea kettles. Literally a 10% bump in electricity consumption. So this is the kind of factor that you need to bear in mind if you're going to use an algorithm to predict a demand for electricity. A lot of different factors. Now, the UK's National Grid has now introduced machine learning based algorithms that have actually cut their demand forecasting error in half and have thereby increased the efficiency of the UK's electrical system significantly. Simulations. There are a lot of situations in which simulations, often based on physics, are really important in climate change. Climate modeling and weather modeling use our understanding of atmospheric physics, as well as ocean physics and terrestrial physics. And these are very well understood problems. We know how the Earth's climate works and how it is changing, at least to a very high degree of accuracy. However, these simulations take a very long time to run. They can take months even on supercomputers. That means that there's an opportunity to make them faster and more scalable so that we can get quicker predictions and more local predictions. Oftentimes, the predictions of the Earth's climate and weather are hundreds of kilometers. That's not enough. That's not local enough to really tell you how you should act if you are a particular city or region. speeding up and scaling up these models is really important. And machine learning can be used in making these models faster. There are different ways in which that works. We'll get to some of those ways in the examples later. Same thing with electrical grids, where again, the simulations are often now based upon very slow physics-based rules. Machine learning is not better than the physics, but it can be faster as a course approximation. The final theme that i want to touch on is scientific discovery there are many situations in which innovation is needed within the climate tech space and machine learning can speed up the iteration process for experimentation for example suggesting new materials to use in batteries solar cells like perovskite materials and carbon capture sorbents all of these areas need a lot of physical experimentation and machine learning won't replace that but it can suggest new experiments to try. And we'll get again into more detailed examples on that a little bit later. I want to invite the audience to ask questions now or at any point. Please feel free to raise your hand. This is going to be, this can be free form. We can take questions whenever you have. So I want to go into a little bit more detail. When we were writing this big report, analyzing different opportunities for machine learning in the climate change space, there were ways that we identified particular priority applications. Some of those I mentioned on the previous slide, but many more also exist. And these are a good set of questions to be thinking about if you're interested in thinking about climate action. And they're also relevant even if the tools that you have at your disposal are not machine learning. I don't want the takeaway from this talk to be everyone should be using machine learning and AI in climate action. The takeaway should more be thinking about problems that are really important for society to address, in particular climate action, and thinking about the tools that you have and how they can be relevant. Machine learning is not the most important tool here. So what are the various questions that we ask? Well, first of all, is the tool, in this case machine learning, needed to address the problem? There are many problems where existing tools or tools from other areas are sufficient. There's a lot of hubris in computer science. We think we have the tools that are going to solve everybody's problems. That's not the case in most settings. Generally, machine learning is not relevant or not needed to solve the problem. Even if it is relevant, maybe there are better solutions that are lower tech. What's the scope of the impact in rough terms? Now, this is a tricky one because. oftentimes you can't quantify it. And sometimes when you can quantify it, either the numbers are wrong or they really don't capture the whole picture. And also those impacts which are easy to quantify are not necessarily the biggest impacts. Sometimes you can get a very precise number on something that's small, but not a precise number on something that's big. But it's good to think in terms of the rough scale of impact. You probably want to be thinking about problems that are not decreasing the usage of plastic straws. That's not really going to have very much impact, at least from a climate perspective, probably not the best problem to focus on. I once had some people pitch me on machine learning for increasing adoption of indoor plants, and I'm a fan of indoor plants, but not really a great way to tackle climate change at scale. What is the time horizon of the impact? Oftentimes, there are really big picture solutions that seem like they're going to solve everything, but on a really long time horizon. We need faster time horizons than that. And a good way to think, you should be thinking probably of a short to medium term time horizon. And on a similar note, you should probably not be thinking of moonshots. that are going to solve the problem of climate change with a very, very low probability. You probably want a high probability of medium impact rather than a low probability of long term, very enormous impact. And that really gets at the next question. What is the likelihood that a solution can be found? You want something ideally, which is relatively. relatively likely to be useful. And that integrates both the sort of scientific uncertainties and also the difficulties involved in adoption and scaling. Sometimes something is scientifically possible, but isn't necessarily capable of being integrated into society. Can a solution feasibly be deployed? This gets into the next question. Oftentimes, there are broader consequences and side effects associated with different climate change solutions, those need to be borne in mind. Sorry, I'm getting my points out of order a bit here. With respect to deployment feasibility, sometimes something, again, is technically possible, but it's very difficult to scale up from an engineering perspective or from a societal perspective. So these are the kinds of questions which one should be thinking about in terms of understanding the kind of pathway to deployment. And in the context of side effects. Obviously, we wouldn't want to solve climate change if it meant catastrophically impacting global health, for example, and understanding that sometimes there are side effects, for example, impacts on equity that can mean that a potential pathway in climate action is less promising than one might otherwise think. Who are the relevant stakeholders who are involved in or affected by the application? It's really important, as we'll get to in a moment, to understand the full set of stakeholders involved in a particular solution. It's not just going to be machine learning. Understanding what stakeholders need is fundamentally important throughout the process. So with all of these questions in mind, let's think about broader concerns. considerations for the space of machine learning applied to climate action. First of all, as I've indicated, machine learning is not a silver bullet. It's only going to be relevant sometimes. There are many areas of climate action where it is not relevant at all, and there are many areas where it is only a small piece of the puzzle. High impact applications of machine learning are generally not the flashy ones. If you hear about Self-driving cars in the news. Those are probably going to make climate change worse. We'll talk about that later. GPT and other large language models, not really relevant in most of these contexts. They get a lot of press, but not necessarily actually useful, quite apart from all of the ways that you've heard, I think, already in the summer school that these tools are extremely ethically dubious, let's say. Interdisciplinary collaboration is fundamentally important. This is not going to be a situation where the computer scientists come and magically solve everybody's problems. It has to be a multi-stakeholder initiative from the start, involved in scoping the right problems, making sure that one's working on problems where machine learning, again, is impactful and relevant. Incorporating relevant domain information, because just throwing an algorithm at a problem is not useful unless you incorporate all the insights that people have had from working in the space for years. And shaping pathways to impact. thinking about all these deployment considerations that are necessary to bear in mind from the start if you're going to have a tool that people actually use. I can't tell you how many times people have built something and then worked out that they should have built something else because it cannot be feasibly deployed in the way that they've built it. We'll get into examples of this a bit later again. And equity considerations. There are equity considerations at multiple levels. The field of AI is not known for being especially equitable when it comes to empowering diverse stakeholders. It is extremely geographically imbalanced. It is extremely imbalanced with regard to gender. The institutions which hold power in machine learning are extremely consolidated. And they say all this as a cishet white guy at one of the leading machine learning institutes in the world. So I am part of the problem here. It is essential from the perspective of developing better solutions and also from an equity perspective overall that diverse stakeholders be empowered to work in this space, which includes everything from funding to data to the resources needed computationally to work on such problems. And from the climate change side as well, climate equity and climate justice are lenses through which one can think about the ways in which climate action is undertaken. So along those lines, selecting and prioritizing problems is a part of the pipeline where oftentimes equity is lacking. We see, for example, that there's a lot of energy, a lot of funding devoted to problems like reducing wildfires. Those are a major problem for North America, Europe and Australia in particular. And they are being made worse by climate change. I wish that similar efforts were also being devoted to locusts, which are a climate change induced risk in East Africa, the Middle East and India. But there is not necessarily the same amount of VC funding available for different geographies. All of these problems are worthy of attention. And it's worth bearing in mind that the problems one focuses on have geographic and stakeholder specific relevance. And then ensuring data is representative. There are two ways in which data inequities can manifest. One is if your data comes from very resourced geographies and communities. Oftentimes you have algorithms that were developed with data exclusively from the global north. for example, from the US and Europe. And then generalizing those algorithms to other parts of the world is a huge problem. They may just not work because the data was concentrated in particular geographies and communities. The other flip side of that is data colonialism, where there may be less regulation in certain geographies. And so people may go and take data unethically from certain geographies. And so all the data can come. from the global south in such cases, because there may be power imbalances that mean that you can essentially steal people's private data where there would be protections in place in, say, the EU. So both kinds of problems can kind of occur. OK, let's start getting into some of the technical challenges here. Having thought about the overall space. I'm a researcher in machine learning. What's in it for me? Why should I be interested from an innovation perspective? And how do I think about this tying into computer science research? So there are many common challenges that occur in climate relevant applications that actually tie in with key challenges for the field of machine learning as a whole. First one is constraints. You are not working. in the climate change space, generally with a problem where it's just some abstract data set, you are working with a real world problem where there are physics constraints on your variables, they mean something, and where sometimes there are engineering constraints. You're working with a physical system which can only operate within certain parameters. These constraints can mean that you have to build in certain information into your algorithms. We'll get to that in a moment. Distribution shift. The problem may be changing. You may be shifting across geographies, which may be different. Monitoring a forest in Brazil is going to be different from monitoring a forest in France. And it may be changing over time, too. Climate change means that the data is changing. If you're working with weather data from five years ago, that's going to be different from five years from now. How do you deal with that? Limited or imbalanced data, generally real world data, is hard to get. And if it is available, it may be very skewed towards certain geographies, but also towards certain parts of the data set. If you're looking at extreme events, for example, they're extreme. They don't occur very frequently. If you're trying to understand hurricanes, there aren't that many hurricanes to work with. Most of the time, there isn't a hurricane. How do you deal with that kind of data? Interpretability or accessibility for end users. You're not just building an algorithm in isolation that gets published in some conference venue or journal and then gets set aside. This is something where ideally your software is going to be used in practice. And that means that people will need to understand to some degree what's going on with it. Policymakers in particular are understandably cautious about using tools where there is no visibility into how the tool works. So interpretability, uncertainty quantification. broadly accessibility for end users, really relevant. And these challenges often take problem specific forms. Thinking about how you can account for constraints on variables, those constraints are going to be different in different problem contexts. And so there isn't a one size fits all approach. Using high-powered machine learning techniques naively in these contexts may not work. Oftentimes, these kinds of challenges are not what these broadly applicable techniques are designed for. You need more specifically tailored techniques for particular problems, or you need techniques that are addressing different challenges than just overall accuracy. The high-powered techniques may also work, but be overkill. Oftentimes, you want to come up with the lowest tech solution possible, recognizing that maybe linear regression will do the trick. And even if you get a slight performance boost from using transformers, you shouldn't be using transformers because they're not as accessible. That is the kind of thing that happens a lot. However, I do think there is huge scope for innovation. And this is why I, as a computer science researcher, feel like I have a role to play. There is innovation needed, but it's not the same kind of innovation that we're used to in computer science. The innovation is not in developing sort of new methodologies abstracted away and working on these toy data sets. The innovation is needed in structures for integrating powerful existing tools with domain information rather than trying to learn everything from the data. There's this paradigm in machine learning often that you just throw enough data at the problem and it works. This is generally really, really bad in actual applied domains. Both you don't have enough data to do that. And also it doesn't work. You can't throw more data at a problem and respect conservation of energy. You can't throw more data at a problem if all that data is coming from one geography and expected to generalize to another geography. And you can't throw more data at a problem and have your solution be interpretable. So engineering the kinds of system constraints and. information into your algorithm. That is really important and this is going to be a recurring theme across the particular examples that we see in the next few slides. I'm going to pause for a moment though and ask again if there are any questions. So let's look at the first example here. This is going to fall into the improving operational efficiency bucket. And the problem that we're going to look at here is in constrained deep learning, specifically for electrical grid optimization. The problem here is that if you are an electrical grid operator, you need to know how much power should be produced at every generator within your electrical grid. Every generator has certain... specifications. It can produce between a minimum and a maximum amount of power. And you need to produce power in such a way that it meets demand across the electrical grid and that power flows across the electrical grid in the appropriate way, according to known physics. This is the known physics. This represents power flow in the electrical grid. These values are complex numbers representing voltage and power, the V and the P, respectively. These are the constraints about how much voltage and power can be on the system. And this is a minimization problem. You're trying to reduce, as far as possible, the amount of power being generated sufficient to meet demand across the electrical grid. This is a non-convex optimization problem. For the computer scientists in the room, that means you know that it is hard to solve fast. Non-convex optimization problems are famously difficult. And in this case, exact solutions take too long. So typically what happens is grid operators will simplify the problem. This is a quadratic, non-convex quadratic problem. They will linearize the problem. And that means that the solutions are really bad. They're fast, but they are really bad. And that means that in practice, you end up wasting large amounts of power, especially with solar and wind. So how can we do better? How can we stop overproducing power and better integrate solar and wind into the power grid? Well, typical deep learning approaches, which would be what a computer scientist might do naively is say, oh, well, let's use deep learning to come up with an approximate solution to this problem. Try to approximately solve the non-convex optimization problem saying, oh, we're going to minimize this objective function and we're going to minimize deviation from these constraints. We can get a reasonable approximation of an answer that way. The problem with that is that if you even slightly violate the constraints, you violate the system physics and there is a blackout on the power grid. Everything fails and people die. Nobody would ever use an algorithm that could have even a slight infeasibility, a slight deviation from the constraints. So how do you deal with this problem? Well, we design a deep learning approach, but it's one that builds in system physics and engineering. to approximately solve the non-convex optimization problem while satisfying these constraints. This is joint work co-led with Priya Dhonti at MIT. And so here, technically speaking, what we're doing is we're learning a mapping from parameters x to y, where x is the parameters defining a family of optimization problems, and y is the variable being optimized for. You're trying to ensure that you predict as close to an optimal y as possible while satisfying these inequality and equality constraints. So what we're going to do is we're going to use a deep learning approach. We're going to throw a neural network at it. We're going to do it in a clever way. We're going to predict only some of the variables complete to the other variables, then correct the solution so that it satisfies the inequality constraints and then train the entire thing end to end. Let's look at each piece of this. First, if you have inequality and equality constraints, you don't have full degrees of freedom. Your equality constraints mean that only some of the variables are free parameters. You can predict some of the variables and then solve for the remaining ones using the equality constraints. If you have five equality constraints, then you predict five fewer variables and you solve for them because they're determined by the variables that you've already predicted. That means that you're satisfying the equality constraints. Now, I'm glossing over an important part here. How do you actually solve for those variables? Well, there are ways to do so. using, for example, Newton's method that are just numerical methods that really work regardless of what your constraints are, typically. However, This is a non-differentiable procedure for those who aren't in deep learning. Don't worry about this. But for those in deep learning, you should be worried now because Newton's method is non-differentiable. How do you actually do the training of this process? How do you train the entire thing end to end? Well, it turns out that you can use the implicit function theorem. You can calculate the derivatives that you need implicitly to train the neural network. And that means that because you have these constraints, you can actually work out the derivatives of these variables with respect to these variables. And that enables you to train your algorithm. Now, the next step is we've ensured that we're satisfying the equality constraints. What about the inequality constraints? Well, we're going to actually perturb our solution so that it satisfies the inequality constraints. We're going to take our initial solution, which we know satisfies the equality constraints, that this green manifold is going to represent the space of solutions that satisfy the equality constraints. We want it to satisfy the inequality constraints, too, which is this blue region within the green. And we can take steps towards this blue region. We can take steps by gradient descent. This is gradient descent not on the parameters of the neural network, which is what you may be used to. It's gradient descent on the outputs. And this is what it looks like formally. We're taking steps along the green manifold to get within the blue region. Now, all of this is trainable end to end. You can back propagate through it, calculate derivatives and train your neural network. This is the loss we use. The loss is mostly just minimizing the objective function. And it's also just as an aid to optimization. It's also minimizing any deviation from the constraints, though mostly that's dealt with by completion and correction. So, again, what we've done is we've predicted some of the variables, used the equality constraints to predict the remaining ones, corrected for any deviations from the inequality constraints and trained the entire thing end to end. And this works. Blue is our method. The classic method is shown at the top. Let's look at all the various different deep learning methods that we might be interested in, starting with a standard neural network that uses a soft loss, which I mentioned at the beginning. Slight penalties for violation of the constraints. This does not work. You don't. end up you end up still violating the constraints same thing if you used supervised learning where you have a bunch of past data points and you're trying to recreate the patterns that you've seen in the past none of these work i'll skip over the different ablations of our method um and move straight to the optimizer this is the the approach that people would would might use in practice it is a um a custom built optimizer from matt power or high power which, as you can see, takes orders of magnitude more time than our method. We are 10 times faster than the optimizer while being essentially as accurate. And we're actually probably 100 times faster or even higher if you allow for parallelization on the GPU. Deep learning means it's easy to parallelize the algorithms. So you probably get several orders of magnitude improvement in practice. Yeah. So that's the first example that I want to touch on. Second example, this will touch on both of these themes of gathering information and forecast. The problem is in agriculture. Mapping crops and forecasting crop yield are essential problems as climate change threatens food security. Extreme weather events are changing the food supply for large sections of the world. We need to understand how it's changing in real time. However. The data required to inform approaches for mapping crops and forecasting yield are very sparse. Traditionally, machine learning approaches, which are starting to be used increasingly in agriculture, need large amounts of data. So we really like to be able to use machine learning in this context, but the data is limited. It's limited in two ways. There's not very much data and it's very imbalanced geographically. Here you can see the orange points represent points where we know what crop is there in a common data set used called Crop Harvest, which was developed by our partners at NASA Harvest. Now, you can see that most of the world does not have orange. We do not know what crops are in most of the world, at least in this data set. And so if we're going to be working to predict agricultural yield or predict crops, we would really not, we don't have very much data out there. We do have satellite imagery for most of the world. And so there is unlabeled data available on crops, but there isn't labeled data where we know on the ground what's there. So we'd like to be able to generalize from satellite imagery in one location to satellite imagery in another location. And what we're going to do is we're going to develop meta learning algorithms that are designed specifically to generalize across different crops and locations. This is work led by my student, Gabby Tseng. So some background on meta learning, technical background, just one slide. Meta learning refers to learning in such a way that the model can adapt quickly to a new task with new data. A particularly popular framework is called MAML, model agnostic meta learning. And here there is a neural network that is trained specifically to adapt quickly. Normally in a neural network, you're moving the parameters to minimize the loss. Here you're moving the parameters theta to minimize not the loss now, but the loss if you were to take another step. the goal is to go to a place here in parameter space where you can adapt quickly if you see data from task one you can adapt to parameter setting one if you see the data from task two you can adapt quickly to parameter setting two and if you see data from task three you can adapt quickly to parameter setting three so the objective function is to be adaptable this is a training paradigm so it can run across different neural network architectures and different tasks in our task-informed meta-learning setup We incorporate geographical and crop information, or more broadly task information, into the meta-learning paradigm. This is a paradigm that can be added to a meta-learning framework. We have two components of this. One is an auxiliary neural network, which takes task metadata like the geographic location and the crop to modulate the hidden representations inside the meta-learner. It just learns an embedding that then modulates these representations. Then there's forgetfulness. Since the data is really imbalanced across geographies, we want to not overfit to any particular geography or crop. And so we're going to take tasks that the model has memorized, is performing really well on, and we're going to drop them on from training dynamically so that we get more focus on the other regimes. Together, these two things are really, really useful. And so what kinds of things are we looking at? We're looking at kinds of tasks where, for example, and go back to this picture here. Suppose that you've seen coffee in Brazil and you've seen maize in Kenya. Can you generalize to maize in Brazil or coffee in Kenya? Can you generalize to coffee in Ethiopia where you might not have any data? And we can do this. We can generalize to many different geographies, many different tasks. This figure is just a bunch of numbers. This is comparison against various other methods. You can see that the task-informed meta-learning framework is outperforming the other methods. But I want to move on to this next figure, which really shows the value of the method. Here you can see the amount of new data that you need in order to get to a good performance. For a standard approach like MAML, The accuracy is not very good until you've seen quite a lot of data. These curves increase. For our approach, you don't need to see really any data. You can actually do zero-shot learning in a new geography, in this case Togo, where the model is able to generalize without seeing new data because it has this contextual information to draw from. This is for classification task. Is it a crop or is it not a crop? Here it's a classification task. Is it maize or is it not maize? And here are similar results for crop yield prediction where this is a regression task instead of a classification task. And again, we perform really well. OK, moving on to the next example I want to touch on. This is gathering information again. And this is really focusing on broad. technologies for remote sensing across many different areas agriculture forestry other things many climate relevant applications of machine learning involve remote sensing from satellite imagery and here we see how the field of machine learning has been shaped by the priorities of certain benchmark data sets what was easy what was assumed to be the natural problem to work on where the natural problem was maybe more about data available on the internet and instead of problems that people cared about in practice. So machine learning algorithms are very well tuned to computer vision with natural images, where natural images might be pictures of cats or pictures of people or images of objects around a house. These are the kinds of things which occur frequently in the ImageNet database, the MSCOCO database, all these problems that machine learning people typically work on. And so the algorithms have been developed to work very well in those contexts, but that means that they haven't been developed to work with other kinds of imagery, like satellite imagery. If you try using standard computer vision approaches that were designed for tasks like ImageNet, you find that in the remote sensing context, they're often not generalizable, very computationally intensive. And they don't actually fit the kinds of imagery that we have, which, for example, could include other types of sensors like near infrared. If you've trained on RGB images, there's nothing you can do with near infrared or elevation data or other things like that. They're not really designed for the problem. So how do we design algorithms that are really intended for remote sensing? And this is another paper led by Gabi Tseng together with our collaborators at, again, NASA ACRES in this case. So the insight is that remote sensing images are not the same as pictures of cats. They have lots of other structure. They have many different sensors. It's multimodal data. And they're temporally structured. The world changes. The Earth changes. And you see an entire time series of data points. You don't just see a single one. So we're going to use the structure. We're going to take lots of different sources of data, satellite imagery in RGB, but also elevation maps, precipitation, other variables, derived data products. And we're going to stack all these features together as our input. And then we're also going to incorporate time. So we're going to consider each pixel as a time series, many different sessions. And then what we're going to do is something called masked auto encoding. We're going to. throw away part of this data, and we're going to ask an algorithm, in this case, a neural network based on a transformer, to reconstruct the remainder of the data. We're going to throw out some of the time points, mask out different time points, and we're going to ask it to reconstruct the rest. We're going to throw out some of the features. We're going to throw out the elevation, ask it to reconstruct the rest. We're going to throw out the red channel and ask it to reconstruct the red channel, or indeed, throw out all of RGB data and ask it to reconstruct RGB data. And by doing this, we're going to get an algorithm that can operate with any number of sensors, any number of time pumps. And we're actually going to do this in such a way that it doesn't include the spatial structure of the image at all. It's going to operate on individual pixels because that's actually where the most data is available. We mostly don't have image structured data, at least not labeled data. We mostly have just individual pixels, practical applications. And then what we do. is we train an algorithm to try to reconstruct all of the data and then we use its representations as capturing some useful information about the data. A master autoencoder framework has an encoder which produces a hidden representation and a decoder which reconstructs the input. And we use this hidden representation, this encoding, in order to derive whatever we want in terms of an end task. And so at the inference stage, we take this self-supervised trained network and we perform regression or random forest on its internal encodings in order to predict something else. This is a very lightweight training. If we're trying to predict something over an entire image, we just average the pixel-wise predictions over the entire image. So an example of something we might be looking to do is we might be looking to predict the particular species of trees in this image. And so we're going to take, we have an algorithm that's been trained on lots and lots of images, lots and lots of data. And we're going to then, but it's been trained in an unsupervised or a self-supervised way. And then we're going to actually add some labels for trees. And we're just going to train the regression to predict from the encodings what the tree is. And these encodings are good enough. that you can actually reconstruct the tree species. We do this with various different kinds of tasks. We do this with agriculture tasks, tree tasks, overall satellite imagery tasks, fuel moisture, algae blooms, other tasks aligned with land monitoring. So fuel moisture has to do with wildfires, for example. We do this across lots of different geographies, many different... kinds of data, some data that's time series data, some data that's not, many different kinds of sensors, et cetera. And we find that it outperforms larger models, more specific, more computationally intensive models. We find that it outperforms them significantly while being significantly more computationally lightweight. So here you can see, for example, this is our algorithm called Presto compared against some state-of-the-art algorithms. which have many, this is the number of parameters, the amount of computation required. Ours is computationally much cheaper, but it's significantly more accurate. And this matters because both we have a more accurate algorithm and also because we have something that's so lightweight that it can be used by people with low computational resources. It can adapt to somebody's particular problem with low data. It's self-supervised. And it's just a regression problem. Anyone can use it. You can train it on a laptop. Same thing for the EUROSAT low-res task, where we're vastly smaller, a thousand times smaller than the state-of-the-art algorithms. And at least on the low-res version of EUROSAT, we outperform the computer vision-based approaches, which are considered to be safe here. Okay. So the next set of problems that I want to talk about is in speeding up simulations. Here, we want to have better climate models, higher resolution. Accurate climate predictions are really important in responding to climate change and in motivating emissions reduction across society as well. Understanding, for example, that the city of Phoenix is going to warm significantly more than the surrounding area. Phoenix needs to take particularly aggressive adaptation measures in order to respond to climate change. That's really important. Physics-based climate models, the traditional way of simulating the climate, they're very accurate, they're computationally intensive. And so the predictions are often very coarse-grained. You can see the sizes of these grid cells. They include entire countries. It's not very helpful in guiding local response. Machine learning can help by downscaling. In the computer vision field, that's called super resolution, downscaling or super resolution of low resolution predictions to make high resolution, make the resolution of this image, make it be more more accurate at a local scale. So I'm going to be talking quickly about two papers, one led by Chi Dong, who is an intern in my group and now at MIT. And Paolo is an incoming postdoc in my group. So the first ingredient that we have is incorporating physics. into super resolution algorithms. So there are traditional super resolution algorithms that people use to take a fuzzy image and make it high res. But if you're working with something like climate models, you need to include the physics. There are rules like conservation of mass, energy and momentum. If you have... this coarse pixel, you'd like to subdivide it into pixels that actually mean something. If this is representing water mass, then the subpixels that you're dividing it into have to represent water mass that adds up to the original water mass. Otherwise, you're violating conservation of mass. So how do you deal with this? Well, oh, and sorry, the reason you need to do this is to both improve accuracy and also enforce plausibility. If you come up with something that's not physically accurate, nobody's going to want to use it. And so we include this constraint. It's a hard constraint where we've constrained the final predictions. We've changed the final prediction so that they have to sum up to the original value. And this is just a softmax scaled by the original pixel value. That is the first ingredient that we incorporate. And we'll see that it greatly improves accuracy. in certain cases. And the second ingredient is we would like to be able to increase the resolution of images as much as we want. And the way we're going to do this is by using a functional operator framework. A functional operator is a map between functions. And you can think of an image instead of as an image where it has certain pixel values, you can think of it as a discretization of a function. The function is in some sense the ground truth, the real world infinite resolution version of the image. So, for example, my hand, if you take an image of my hand, it has discrete pixels. But the actual hand is a continuous thing where there aren't individual sort of pixels. It's not pixels. It's infinitely high resolution. So Fourier neural operators are a way to use a neural network to learn a functional operator, to learn a map between different functions. And they work in the Fourier domain, which is just another way that you might consider different functions if you aren't familiar with Fourier decompositions. So the way that people use these things has typically been to learn infinite resolution solutions to differential equations, to simulate things like the Navier-Stokes equations, which govern fluid flow. The reason why people often work with fluids is because the Fourier domain is very well suited to this. And so we're going to use this framework for doing super resolution, for doing downscaling. We're going to take the input as a low resolution image and the output as an infinite resolution image, a function. We're going to try to learn a function. We're going to try to take the discrete image. We're kind of trying to get a function out. So something that is arbitrarily high resolution. And what we're going to do is we're going to take a neural network and we're going to process our original image. We're going to then do discretization inversion to interpolate that to a function. And then we're going to have another neural network that maps this function to another function. And this is the Fourier neural operator. I'm not going to really go into details here. But the point is that We actually map not just from an image to a high resolution image. We map from an image to something that can be any resolution. We can increase the resolution by 100 times this way or a thousand times. It may not be very good if you asked it for a thousand times resolution increase. It would not be especially accurate, but it would be more accurate than anything we've seen in the past because it is learning a function, not learning an image. And it actually. doesn't just have this infinite resolution ability. It actually improves upon downscaling at a fixed resolution. It can take the predictions of a... It can improve even in the fixed resolution setting. It can improve the kind of super resolution that you get even upon state-of-the-art there. I'm going to gloss over these figures in the interests of time, but the really quick version is that our approach, the downscaling for a neural operator, is better across different tasks significantly than every prior algorithm that's been used in this context. And it's better both at the task it was trained on, in this case, two times downscaling, two times super resolution. That's in blue. It's better at that task, but it's also better at the green task, which is four times downscaling, which is a thing that it had never seen before. It's better than the algorithms that were trained on four times downscaling, even though it's doing zero-shot generalization to this regime. More technical details are necessary. The final example that I want to touch on is in scientific discovery. And here the problem is that we need to decarbonize a lot of... sectors that are reliant on fossil fuels in a way that isn't just about electricity. Heavy industry and transportation rely on fossil fuels being a really dense source of power. Aviation, for example, you can't use batteries in aviation. You need fuel. You need a liquid fuel that can store energy really well. And in these contexts, There is a need for converting electricity, which ideally will be created more and more by low carbon sources like solar and wind. There's a need to convert such low carbon electricity into fuels that can be used in place of fossil fuels like hydrogen. Electrocatalysts are being designed across materials science, but they require quantum chemistry simulations. that are very computationally expensive. So increasingly, we're seeing machine learning algorithms being used to help design new electrocatalysts to save the time of the exact quantum chemistry simulation of density functional theory. So we work specifically on graph neural networks, which are a common technique for analyzing the properties of molecules and non-molecular compounds. But the problem with existing methods is that they are still quite time intensive, quite computationally complicated. These are papers led by Alex Duval, Victor Schmidt, and Alex Fernandez-Garcia. And we're working specifically on electrocatalysts for low carbon energy applications, what's called the open catalyst dataset. A key challenge in materials modeling is invariance and equivariance. But the same configuration of atoms, if you rotate it or translate it, it should have the same underlying properties. We want any kind of algorithm that's predicting properties of molecules to be able to ignore the spatial configuration. And the ways in which this has been... Oh, sorry, there are two words here I should define. Invariance means that... the output is preserved under transformation of the input. For example, predicting energy, which doesn't change if you rotate the input. Equivariance means that if you rotate the input, the output is rotated too. For example, force is a vector quantity, not a scalar quantity. If you rotate the input, you want the output to be equivariant. You want it to rotate as well. A common solution is really complicated mathematically. Bessel basis functions, the Clebsch-Gordon tensor product. I don't even know what these things are in all cases. They're basically mathematicians just being really excited that we get to use complicated math. And we come up with a much lighter weight, much less complicated and much quicker solution, which is to outsource the equivariance and invariance to the data. I'm going to gloss over the details again for the sake of time, but it's basically a data augmentation procedure where we transform the input in various different ways, average it, and show that you can get output that is guaranteed to be invariant or equivariant up to transformation using this thing called frame average. The point being that we can get an output that is extremely fast. speed. So we are as fast as the fastest algorithms. Oh, sorry, this is, sorry, speed is the other way. You want to be as far to the right as possible here. The number of samples per second. So we're as fast as the fastest algorithm here, but as accurate as the most accurate algorithm, which is, you can see these algorithms here. So we have lower error, but higher speed. And same thing on this other task, which is a standard materials property prediction task. So by integrating, in this case, the challenges of the physics and chemistry into the algorithm in a clever way, we can attack the challenge that people actually have, which is both preserving invariance and equivariance, but also having a fast algorithm that can be used readily in practice. I want to touch on one other example project from our group to illustrate something at a broader level. And this is really the way in which machine learning innovation isn't designed for impact. It's designed for novelty. Machine learning continues to rely on benchmarks like the ImageNet database, which is used both to evaluate models. And to pre-train models to provide an initial training step that will then be adapted to a downstream setting. There have been many problems that have been identified with ImageNet and other data sets, but they continue to be used because they are built into the culture of machine learning. Such benchmarks were derived generally from Internet data and they were generally chosen. and labeled without relevant experts in the room. They were generally chosen by computer scientists using frameworks that weren't geared towards relevant applications. This has also meant that they've perpetuated huge biases in terms of, for example, misogyny, racial bias, geographic bias that has been identified already. For example, ImageNet images of CEOs are biased towards men. And this ends up having a downstream effect on machine learning algorithms. We analyze this from a perspective that hadn't been looked at before, which is suppose you're interested in a downstream application like ecology, monitoring wildlife. About a quarter of ImageNet is actually wild animals, and ImageNet is commonly used to develop ecology applications. How do you recognize different animals, for example, in camera trap monitoring or in analyzing the photos taken by people, citizen scientists? We find that actually ImageNet, since it wasn't designed with any ecologists in the room, is just flat out wrong for ecology purposes. 12 percent of the images are wrong, which is a stunning amount, given that typically. You can get a publication out of getting a 0.1% improvement on ImageNet, but 12% of the data is just wrong. 12% of the categories are contradictory. These categories don't make sense from an ecology perspective. And again, the data is heavily biased, including in insidious ways. Like here, for example, are images of the birds called jays. This is probably the bird that you're most familiar with in Europe. It's the Eurasian jay. This is a J found in Mexico. This is a J found in China. This is a J found in North America and Canada, in the US and Canada specifically. And that J out of the 50 species of Js worldwide is responsible for about two thirds of all the images. Most of the Js are not represented at all. And so if you were trying to develop an algorithm for relevance in China or Mexico. The data just wouldn't cut it. You would have implicitly designed it for the US and to a lesser extent, Europe. So there were inaccuracies and biases which are concealed within the design of the data set, which is itself shaping machine learning innovation. And this really stresses how machine learning innovations need to have stakeholders in the room who can speak to the ultimate societal impact. We've seen a lot about how machine learning applications can be used in climate positive applications. What about the ways in which machine learning hurts the climate? The first way in which machine learning hurts the climate is computation. This gets actually a lot of press. Machine learning algorithms, they're very energy hungry sometimes. And the hardware has embodied emissions. It takes carbon, it takes water to produce servers. And these effects are considerable sometimes, but they do vary considerably across different algorithms. Most of the algorithms that my group uses are very lightweight. Many of them could run on a laptop. By contrast, something like GPT requires vast amounts of computation. And the scale of such very large AI algorithms has grown. So it's important to recognize this is a major factor, but it's a major factor for only some aspects of the AI ecosystem. However, there are bigger factors out there. There are the immediate impacts of applications. Machine learning and AI algorithms are not just used in applications that make the climate better. many applications in fossil fuel exploration and extraction specifically. These applications are very, very big. They are estimated to contribute about half a trillion dollars in additional profit to the fossil fuel industry just by 2025, and to lead in some cases to a 5% increase in production of fossil fuels. So while we can think about how the algorithms are designed, We can also think about what they're being used for. And ultimately, a lot of the impact of a hammer is what it is hammering, not how it is built. There are also the systemic impacts of applications. And these are even bigger, arguably. There are rebound effects, which I mentioned, where if you design for something being more efficient, it can increase the demand for that. For example, if you make a product more energy efficient to produce, maybe it will become cheaper and people will use it a bit more. But the really big ones are in consumer behavior. In particular, machine learning is being used across society in advertising systems. Most of the profit of Google, for example, is derived from advertising. And what is advertising doing? It's designed to increase societal consumption. So if you think about the. huge amount of attention being devoted across the tech industry and across society to ML-enabled advertising systems, the way in which those ML algorithms are actually consuming energy, that's a drop in the bucket. What they're doing is designed to increase consumption of resources. It has a huge magnifying effect. And then there's luck as well, which can be good or bad. By using a technology like AI to make a particular aspect of society more appealing, you can induce lock-in to that particular mode of doing things, like self-driving cars. Self-driving cars are expected to significantly impact climate change in a negative way. They're going to make climate change worse because they will reinforce our reliance on personal vehicles. They will also make driving a little bit easier. And so people will end up driving more. And this is really a way in which we see the implicit choices in technology design. Technologists have made an implicit choice. We're going to prioritize self-driving personal vehicles. They could have made the choice of prioritizing self-driving buses or self-driving trucks that integrate with train systems for low carbon and multimodal transportation. That is not the way that most of the self-driving vehicle industry has gone. Mostly it's gone towards reinforcing our existing dependence upon personal vehicles. And these kinds of choices really make us see that it's not about how we add good applications of machine learning on top of business as usual. AI for good is about shaping all applications of AI. AI to be better for society, which includes working on AI for monitoring agriculture, but it also includes taking the way that our existing systems are built and slanting them to be more positive for society. If we are in the setting of building autonomous driving technologies, are we designing them for buses or are we designing them for cars? One is much better for the planet. So some takeaways on the broader climate change impacts of machine learning. If you are a machine learning practitioner, there are many different ways that you should think about this. You should definitely be thinking about the computational aspects of your algorithms. Measure the energy used by your algorithms with tools like CarbonTracker, CodeCarbon, etc. There are tools specifically designed for Azure and HuggingFace if you're running your models on there. And reduce your impacts. You can choose more efficient models, lighter weight models, in particular if you're working with something really big like large language. But remember that that is only one piece of the puzzle. And something I also didn't mention, it's almost deliberately only one piece of the puzzle. If you think about who stands to gain by people thinking about this and not thinking about this, it's all the tech companies that are making all of their profit from working with the fossil fuel industry and from advertising systems. So there's a reason why the discourse in society is focused on, oh, we're going to make more efficient AI algorithms or think about using low carbon energy for powering AI systems. That is only a drop in the bucket. It's good to be focusing on more efficient AI algorithms. We also should be thinking about what we're using them for. So how do you think about that? Well, quantify and evaluate the application impacts where possible. Think about what your algorithms are being used to do. That's the case even if you're working on sort of. blue sky methods development, there are ways that you can foresee your algorithms being used. Be transparent about the impacts in publications and with stakeholders, both quantitatively and qualitatively. Sometimes you can't measure the greenhouse gas emissions associated with an application directly, but you can still think about what those impacts are going to be and talk about them. And then consider the system level impacts of your work. Remember, every machine learning application is going to affect the climate, often in multiple different ways, sometimes some good ways and sometimes some bad ways. You can choose to some extent what you work on. Obviously, this is not a luxury that everybody has, but there is sometimes flexibility within that. Suppose you work on autonomous driving. You can choose to work on self-driving public transportation, not self-driving personal vehicles. Maybe or maybe not. In such cases, you can build climate considerations into how you build an application. Or you can initiate company-wide policies to think about the ways in which products are being developed and realized. There are many different levers here. And it's also important that climate change is not the only lens here. There are other environmental impacts like heavy metals, like water use, other social impacts as well. There are many ways to get involved in the machine learning and climate change space from the computer science side. which i sort of touched on so there is the directly working on climate change include climate relevant applications and the set of problems that motivate your work and i hope i've shown you that there are some interesting machine learning challenges in that space and collaborate with the relevant domain experts to make sure you're solving relevant problems building in domain information and incorporating a pathway to impact Especially for students, a good way to do this is to think about being a bridge between two different fields. There is so much demand for people who can speak the language of AI and also the language of agriculture or the language of energy. There are very few bridges out there. Think about how you can be a bridge in a special intersection of areas. That is really, really useful and really hireable as well. There are many job opportunities in the space. Everything from mainstream computer science research. to focused research institutes, but also so many startups in climate tech. The downturn in the tech industry recently has actually not been felt nearly as much in the climate tech industry because people are recognizing that climate change is going to be a major driver of economic activity moving forward. Major tech companies are increasingly working on this and other companies outside of tech are as well. So many of these innovations are not happening in the Googles of the world. They're happening in the power system operators. of the world or the heavy industry companies. And then public sector initiatives. Students often forget that it's not just academia or the private sector. There's great work being done in remote sensing agencies, for example, and in funding agencies. Working explicitly on climate problems, however, is not the only way to help. Think about how to better align your existing projects with climate goals. We've talked about that a bit. And then outside machine learning, of course, we are individuals who may be able to advance broader actions by our employer or society. Sometimes we don't have the ability to use our work in the context of climate action. That is fine. There are other ways to make our voices heard and to influence climate action. The final thing I want to talk about is for the policy folks in the room and talk about where policy falls in this picture. So this is based upon a report that we wrote for the Global Partnership on AI, which is the OECD's body that coordinates AI policy across different countries. And we looked at many different aspects of policy as they relate to the space of AI in climate action. And the first set of bottlenecks that we identified and problems were in data and digital infrastructure. that there is a need to ensure the availability of data and infrastructure on which AI algorithms depend. Oftentimes, relevant data to work on climate-relevant applications do not exist, or more commonly, they do exist, but they're unequally distributed. They exist in some places, but not in others. They are not shared appropriately. They're siloed in private institutions. They have formatting issues where... The formatting of the data is inconsistent across entities, which means you can't actually work with it in any convenient way. The data quality is often low. There aren't standards for how good the data is or what it should be. And then, in addition to data bottlenecks, computing infrastructure is often a bottleneck. Oftentimes, if you want to work on machine learning, you need to pay an arm and a leg for cloud computing. Or you need to be a major tech company, neither of which really lends itself to the kind of applications that we need, where small private and public entities are able to use these tools in really democratizing ways. So as a case study here, this is the kind of application that I'd like to see more. The UN. satellite center, UNASAT, has a flood AI system that delivers high frequency flood reports for those impacted by flooding in the zone of the Indian Ocean monsoon. And these have improved disaster response over the past couple of years by targeting it towards particularly heavily impacted areas. This is only possible because the UN has the resources to have massive amounts of data and massive amounts of computation. And they highlighted this when we talked to them as the key driver of their success here. But most organizations don't have the resources of the UN Satellite Center. Selected recommendations. Establish data task forces and platforms, data collection standards and sharing climate critical sectors. We hope that this will be a priority for governments moving forward to ensure that the data that exists is benefiting the public and that it is. being designed and used in the most responsible way. Support the availability of compute and data storage also for researchers, civil society, and smaller scale enterprises to really level the playing field here and make possible the kinds of applications that will really drive impact. The funding landscape is the next thing that we looked at. Understanding that there is often funding for AI that is focused on new cool methods rather than actual impact on society. And from a climate funding perspective, often it's sector specific and it's not informed by what the relevant funding bodies don't necessarily have the ability to understand AI technology. So you end up either with climate funding thinking that all of AI is hogwash or jumping at something that sounds really fancy, but isn't actually useful in practice. So neither side really has the tools to support. intersectional uh innovation this is also a lack of prioritization and oftentimes the uh funding and support is focused on really flashy projects rather than less flashy low-hanging fruit for example um there's going to be a lot of press around again something like self-driving cars but not predictive maintenance of railroads imbalanced funding geographically often the priorities are also driven by the global north implicitly as we talked about so some recommendations here ensuring support for ai projects that is impact driven in addition to methods driven funding and also thinking about the pathways to deployment so that one's really supporting projects that aren't just pure research but also really connected to impact ensuring capacity for expert evaluation of projects across different funding bodies so it's not just being evaluated by people without the relevant expertise and then In some cases, developing key grand challenges to really motivate support for AI and climate change. The next theme that we touch on is integrating innovation into deployment and systems. There's a need for investment that is really designed to accelerate commercialization in a very thoughtful way. Understanding, though, that some private sector incentives don't actually cover all the impactful applications. There are some public benefit applications where the incentives may be misaligned with the private sector and they should receive public sector support. There are also barriers to adoption in many sectors from an organizational culture perspective. Areas like heavy industry may be very resistant to change for good reasons as well as for bad reasons. For good reasons, if the system works, why change it? And also, if your system is security critical or liable to be hazardous, if it fails, then I can understand why you want to have a lot of system guarantees in place and be really slow to adopt new flashy sounding technology. There also may be legacy infrastructure like old operating systems or software that really don't interoperate with new technology. And then there may be a need for reliability or security guarantees in some sectors. So some recommendations here are really to develop cross-sectoral innovation centers that can incubate projects, bring the different stakeholders together to ensure the projects are being innovated on in a way that bears in mind deployment considerations. A great example here is the Learning to Run a Power Network competition, which brings together grid operators, in particular RTE from France. in order to validate the use of reinforcement learning approaches in power grid optimization. And since it was designed by power grid operators, the innovation is shaped by what they will actually be using. And there's a need to develop and maintain non-commercial public interest applications, like using satellite imagery to track deforestation or greenhouse gas emissions, like the climate trace initiative. And these are... necessary to ensure the broad scope of applications in this area support. I've touched a bit on reducing AI's negative impacts on the climate from a policy perspective. We need to make climate change a central consideration in fostering the development of AI-enabled technologies in general, not just explicitly AI for good applications. The language that we drafted on this has been integrated into the tentative language of the EU AI Act. We need to see that being incorporated into other AI acts and we need to see it actually being deployed in a meaningful way. And then we also need to set reporting requirements for the lifecycle emissions associated with the development and use of AI, not just energy from computation. That is a major thing, but also what it's being used to do, really recognizing that it's a full lifecycle. And then capacity building. I'll go through this really quickly, but we need capacity across lots of entities which don't have AI expertise. We need to implement upskilling programs to train folks in the public and private sectors, give them AI literacy to work with these tools because they're going to be engaging with them. They need to know where they are relevant, not relevant, how to think critically. And there need to be secondment programs to encourage AI experts to go into climate relevant sectors. And there needs to be also support for trusted solutions providers and auditors. who can support work in this area. Right now, often people turn to the big tech companies because that's all they know. But there are, there should be more of, and there already are lots of small focused solutions providers who are focused on local or regional needs and focused on sector specific needs. And that's the kind of broad ecosystem of innovation that we need. Okay, so that's some policy considerations. I want to end by giving folks resources for learning more. I am a co-founder and chair of Climate Change AI, which is a global nonprofit that catalyzes impactful work at the intersection of climate change and AI. We provide various forms of resources, reports for everybody from researchers to policymakers. The reports that I touched on are from Climate Change AI. We run conferences and other events at the major AI conferences and at the UN Climate Change Conference, the COP. We also have a summer school, which is open to applications from any field, not just from computer science. We specifically bring in cross-disciplinary and cross-sectoral cohorts. There's a virtual component to the summer school, as well as an in-person component. You can do the virtual component or the in-person component. Stay tuned on that for next year. We have funding programs where we've already given away many millions of dollars to innovation in this area. We have a newsletter, which I would highly encourage anybody to sign up for who is interested in news within the area, whether it's job postings in relevant bodies, new papers, data sets, et cetera. We host various other events like webinars, And I encourage you to check out more of our resources on the website or on our social media. There are other organizations as well that focus on specific elements of this space. I'll let folks look really quickly over this, maybe take a photo if you want to, and I'll share my slides afterwards if I can. These are just for specific communities, like if you're interested in AI and energy or AI and biodiversity. And as usual, there is more info. in our newsletter at Climate Change AI, where we try to provide jumping off points for these various different other communities. There are also datasets and challenges for getting started in the space if you are looking to try some machine learning algorithms on a problem in biodiversity or land use, et cetera. Check these out. And thank you for your attention. I look forward to a few questions as there is time. Thank you, David, for A, this super concise reality check at the beginning, then the cutting-edge insight, or insights into the cutting-edge machine learning research, but also the action items, the recommendations. That's really great. I think it shows very much how much is done, how much can be done. We're already pretty short on time, but I think if there's any questions, we can maybe take one or two. So I would open the room still for questions. Is there anything? Very short question. All right. Please introduce yourself. My name is Stefan from Vienna. I was wondering, since you said that the PDE functions or PDE methods that would be usually used to get exact methods are usually very computationally intensive. It seems like a good idea to use the machine learning approaches that you said. But on the other hand, if we use it on things like smart grid, and there is like a blackout because of those machine learning algorithms that we use, then we seem to have no accountability for anything that may happen. For example, a large scale blackout in Austria would also mean like a disruption in water supply to Vienna, a city of two million people. And how would you see these kinds of things? So this is why we try to build guarantees into algorithms that are being used on the electrical grid so that we know that they're not going to lead to a blackout. I would also note, however, that there isn't actually any guarantee in ACOPF that the solution is going to be feasible either. In the methods that are typically used, this is getting a little bit technical, but the way in which people typically solve ACOPF is that they change it to DCOPF. But the DCOPF approximation isn't necessarily going to be feasible either. So they still have to test that. In these cases, people, AI is just a better heuristic. People are... are often already using heuristics because the exact solutions are too slow. And so in some sense, AI is just a better heuristic than the heuristics which are being used. But of course, yes, we want to build guarantees into the AI systems, and that's what we're doing. So I think it's two things, recognizing that the existing systems don't necessarily have the guarantees that we would like either, and second, building those guarantees into the AI systems. Thanks. I think a very, very interesting research direction in general for machine learning. But we're out of time. So thanks again, David. And a round of applause for David, please. Thank you very much. Please feel free to send me any questions. You can find my contact info very readily on my website.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.576,
+      "text": "Thank you so much. It's a pleasure to be there with you virtually. Let me share my screen. Hopefully you can see it. There you go. Hopefully my slides are visible. Yes. Excellent. OK, so I will be talking about machine learning and climate change. Questions on other axes of sustainability are absolutely welcome. But this talk will be specifically about about."
+    },
+    {
+      "start": 28.576,
+      "end": 46.08,
+      "text": "climate change. There's a lot of overlap with other ones of the UN SDGs, but it will be focused specifically on climate action. So I don't think that climate change needs very much introduction. We are increasingly seeing its effects and they are becoming more frequent and also more severe."
+    },
+    {
+      "start": 46.08,
+      "end": 72.896,
+      "text": "It's worth emphasizing that climate change serves to exacerbate existing societal inequities and has a disproportionate impact on already disadvantaged communities generally. That is the case both across geographies, where often the countries that have contributed the least to climate change end up bearing the brunt of its effects. And even within a single geography, those communities that are most hit by climate change are often..."
+    },
+    {
+      "start": 72.896,
+      "end": 101.392,
+      "text": "or those that are already disadvantaged in other ways um climate change is not an on-off switch uh how bad it gets depends on what we do now many people are have already died as a result of climate change and many many more will die regardless of what we do now the best case scenario is pretty bad but the worst case scenario is absolutely catastrophic and so"
+    },
+    {
+      "start": 101.392,
+      "end": 128.048,
+      "text": "There is a huge amount that we can do now to shape just how bad it gets. We need net zero greenhouse gas emissions by 2050, according to the UN's Intergovernmental Panel on Climate Change. That is not a target that we are probably going to hit, but it is the target that has been set as the goal for averting the most disastrous implications."
+    },
+    {
+      "start": 128.048,
+      "end": 154.032,
+      "text": "um we are reducing um we are making progress but there's a lot more progress that needs to be made currently greenhouse gas emissions are increasing year after year still they are still not decreasing towards zero and there are two kinds of action that are needed mitigation which is reducing greenhouse gas emissions and adaptation which is resilience to the consequences of climate change"
+    },
+    {
+      "start": 154.032,
+      "end": 183.744,
+      "text": "There's also climate science, which is sometimes thought of in a separate bucket, which is about modeling and understanding the climate and how it changes. Now, I'm going to be talking about machine learning and its intersection with climate change. There are many different aspects of this intersection, and the talk as a whole is going to start out with a very broad overview of how to think about machine learning."
+    },
+    {
+      "start": 183.744,
+      "end": 209.216,
+      "text": "from the perspective as a tool in climate action. And we'll then get into some very technical aspects of particular example projects. I looked through the backgrounds of folks in the summer school. It seemed like for those in CS and machine learning, there might be interest in some more technical details. I'll try to contextualize all of that. So hopefully it will not be boring or incomprehensible to those of you who are coming from other backgrounds."
+    },
+    {
+      "start": 209.216,
+      "end": 233.968,
+      "text": "um then after that we'll look at some of the ways that machine learning is making climate change worse and then we'll discuss the policy angle on all of this as well which will hopefully also then not be boring to the more technical folks so uh trying to trying to to attack this from multiple perspectives that said i am a mathematician and computer scientist so definitely i'm coming at this from more of a technical perspective"
+    },
+    {
+      "start": 234.192,
+      "end": 258.816,
+      "text": "Okay, so why is machine learning relevant in the fight against climate change? We wrote a big paper detailing lots of different opportunities for machine learning to be used as a tool in climate action. There are more examples than I can cover here. Such applications span electricity systems."
+    },
+    {
+      "start": 258.816,
+      "end": 288.08,
+      "text": "agriculture, forestry and other land use, heavy industry, various forms of societal adaptation, etc. But I want to touch on a few overall themes with some examples from each theme for the kind of role that machine learning can play in the fight against climate change. The first theme that I want to touch on is operational efficiency. There are many situations in which we have a complex automated system that can be made more efficient."
+    },
+    {
+      "start": 288.08,
+      "end": 317.136,
+      "text": "Using algorithms. Now, such algorithms can include non-machine learning approaches. Increasingly, machine learning is one tool that can be used in such contexts. For example, smart thermostats like the one pictured here are commonly used now in people's personal homes. But the control problem of how do you make the heating and cooling system and building run more efficiently is much more complex than that. And it can be extended to commercial buildings or industrial contexts like factories."
+    },
+    {
+      "start": 317.136,
+      "end": 340.672,
+      "text": "And increasingly, we're seeing the optimization of HVAC systems, so heating and AC systems, being performed with a mixture of human and AI-based control. We're also seeing such control applications in industrial settings for manufacturing such as steel and cement."
+    },
+    {
+      "start": 340.672,
+      "end": 367.072,
+      "text": "Steel and cement together contribute about 15 percent of all global greenhouse gas emissions. So reducing those emissions is really impactful. Even slight efficiency gains can have massive implications when it comes to reducing societal greenhouse gas emissions. The next theme that I want to touch on here is or actually before I get on to the next theme, I want to introduce a caveat here."
+    },
+    {
+      "start": 367.072,
+      "end": 389.568,
+      "text": "I'll mention more later on the ways in which AI can have negative implications on greenhouse gas emissions. Here, I just want to warn that improving operational efficiency doesn't always lead to as much savings of greenhouse gas emissions as you might anticipate for two reasons. One, efficiency can be measured in multiple different ways. It can be measured in the context of..."
+    },
+    {
+      "start": 389.568,
+      "end": 417.952,
+      "text": "Greenhouse gas emissions or energy, which is often associated to greenhouse gas emissions, but not always. But it can also be measured in from the perspective of cost. Decreasing cost is something that an optimizing algorithm can also do, but that might actually increase emissions. For example, if labor costs are a bigger factor than energy costs, you might end up increasing the amount of energy while decreasing the cost of labor. And that could actually increase greenhouse gas emissions. Another factor is rebound effects."
+    },
+    {
+      "start": 417.952,
+      "end": 445.36,
+      "text": "Or if you make something more efficient, people sometimes use it more. And that can decrease the savings that you get. Just want to note both of those things. Second theme I want to touch on, gathering information. There are many settings in which there is a vast amount of data out there, but it's not usable to guide policies or to meaningfully shape behavior. That can be, for example, if we have..."
+    },
+    {
+      "start": 445.36,
+      "end": 473.776,
+      "text": "satellite images of the whole world, which we do, and we would like to pick out from that information about the carbon stored in different areas of land to appropriately guide land use decisions, shape incentives, etc. So increasingly, machine learning is being used to estimate carbon stock, to track deforestation, and to overall monitor land from satellite imagery, because it's scaling up the amount of information that we have. A human couldn't go through and do that in real time."
+    },
+    {
+      "start": 473.776,
+      "end": 499.456,
+      "text": "It would just be way too much work. Similarly, parsing large amounts of text, parsing financial disclosures is an application that we've seen for machine learning, increasingly taking these big reports, picking out relevant information and highlighting that. I do want to note, since everybody's really excited about GPT now, the applications there are not actually GPT. There are other kinds of natural language processing."
+    },
+    {
+      "start": 499.456,
+      "end": 524.32,
+      "text": "GPT is a very unreliable tool in essentially every setting and certainly in a climate context. The picture here is from some of our own work in my group in biodiversity monitoring, which is another great example of gathering information. Here we have set up camera traps across six countries currently."
+    },
+    {
+      "start": 524.32,
+      "end": 552.992,
+      "text": "and they are automatically attracting and photographing insects. You can see here the automatic labels which our AI algorithms have created for a single photograph, and in this way we can gather large amounts of information on, in this case, insect distributions, which is really important since insect populations are collapsing and insects represent one half of all global biodiversity. Forecasting is the next overarching theme that I want to touch on."
+    },
+    {
+      "start": 552.992,
+      "end": 582.288,
+      "text": "Machine learning and AI tools are really good at predictions based upon past time points, what's going to happen next. That is useful in many different contexts. For example, in predicting the supply and demand of electricity, we need to know how much electricity is going to be produced at any given point in time and how much electricity is going to be used at any given point in time to make sure there's enough available to meet demand. This is particularly important with..."
+    },
+    {
+      "start": 582.288,
+      "end": 611.536,
+      "text": "Low carbon energy sources, which are often variable, wind and solar in particular, vary from moment to moment. The amount of sun and the amount of wind change. And so understanding how much power is available is fundamentally important to making sure that the power grid is balanced and that you aren't either over or under producing electricity. The way in which this was done historically was very manual. And there are a lot of factors which mean that it's a very hard problem. For example, in the UK."
+    },
+    {
+      "start": 612.08,
+      "end": 635.888,
+      "text": "Historically, people would have timetables of the television programs because whenever a soap opera ended in the UK, this may still be the case, everybody would get up and go make a cup of tea. And there would be a 10% jump in electricity consumption as a large fraction of the country turned on their electric tea kettles."
+    },
+    {
+      "start": 635.888,
+      "end": 665.552,
+      "text": "Literally a 10% bump in electricity consumption. So this is the kind of factor that you need to bear in mind if you're going to use an algorithm to predict a demand for electricity. A lot of different factors. Now, the UK's National Grid has now introduced machine learning based algorithms that have actually cut their demand forecasting error in half and have thereby increased the efficiency of the UK's electrical system significantly. Simulations."
+    },
+    {
+      "start": 665.552,
+      "end": 692.592,
+      "text": "There are a lot of situations in which simulations, often based on physics, are really important in climate change. Climate modeling and weather modeling use our understanding of atmospheric physics, as well as ocean physics and terrestrial physics. And these are very well understood problems. We know how the Earth's climate works and how it is changing, at least to a very high degree of accuracy. However, these simulations take a very long time to run."
+    },
+    {
+      "start": 692.592,
+      "end": 721.488,
+      "text": "They can take months even on supercomputers. That means that there's an opportunity to make them faster and more scalable so that we can get quicker predictions and more local predictions. Oftentimes, the predictions of the Earth's climate and weather are hundreds of kilometers. That's not enough. That's not local enough to really tell you how you should act if you are a particular city or region."
+    },
+    {
+      "start": 722.288,
+      "end": 750.704,
+      "text": "speeding up and scaling up these models is really important. And machine learning can be used in making these models faster. There are different ways in which that works. We'll get to some of those ways in the examples later. Same thing with electrical grids, where again, the simulations are often now based upon very slow physics-based rules. Machine learning is not better than the physics, but it can be faster as a course approximation. The final"
+    },
+    {
+      "start": 750.704,
+      "end": 778.0,
+      "text": "theme that i want to touch on is scientific discovery there are many situations in which innovation is needed within the climate tech space and machine learning can speed up the iteration process for experimentation for example suggesting new materials to use in batteries solar cells like perovskite materials and carbon capture sorbents all of these areas need a lot of physical experimentation and machine learning won't replace that but it can"
+    },
+    {
+      "start": 778.0,
+      "end": 802.256,
+      "text": "suggest new experiments to try. And we'll get again into more detailed examples on that a little bit later. I want to invite the audience to ask questions now or at any point. Please feel free to raise your hand. This is going to be, this can be free form. We can take questions whenever you have. So I want to"
+    },
+    {
+      "start": 803.44,
+      "end": 830.416,
+      "text": "go into a little bit more detail. When we were writing this big report, analyzing different opportunities for machine learning in the climate change space, there were ways that we identified particular priority applications. Some of those I mentioned on the previous slide, but many more also exist. And these are a good set of questions to be thinking about if you're interested in thinking about climate action. And they're also relevant even if"
+    },
+    {
+      "start": 830.416,
+      "end": 859.824,
+      "text": "the tools that you have at your disposal are not machine learning. I don't want the takeaway from this talk to be everyone should be using machine learning and AI in climate action. The takeaway should more be thinking about problems that are really important for society to address, in particular climate action, and thinking about the tools that you have and how they can be relevant. Machine learning is not the most important tool here. So what are the various questions that we ask? Well, first of all, is the tool, in this case machine learning, needed to address the problem?"
+    },
+    {
+      "start": 859.824,
+      "end": 889.2,
+      "text": "There are many problems where existing tools or tools from other areas are sufficient. There's a lot of hubris in computer science. We think we have the tools that are going to solve everybody's problems. That's not the case in most settings. Generally, machine learning is not relevant or not needed to solve the problem. Even if it is relevant, maybe there are better solutions that are lower tech. What's the scope of the impact in rough terms? Now, this is a tricky one because."
+    },
+    {
+      "start": 889.2,
+      "end": 918.784,
+      "text": "oftentimes you can't quantify it. And sometimes when you can quantify it, either the numbers are wrong or they really don't capture the whole picture. And also those impacts which are easy to quantify are not necessarily the biggest impacts. Sometimes you can get a very precise number on something that's small, but not a precise number on something that's big. But it's good to think in terms of the rough scale of impact. You probably want to be thinking about problems that are"
+    },
+    {
+      "start": 918.784,
+      "end": 948.24,
+      "text": "not decreasing the usage of plastic straws. That's not really going to have very much impact, at least from a climate perspective, probably not the best problem to focus on. I once had some people pitch me on machine learning for increasing adoption of indoor plants, and I'm a fan of indoor plants, but not really a great way to tackle climate change at scale. What is the time horizon of the impact?"
+    },
+    {
+      "start": 948.72,
+      "end": 975.456,
+      "text": "Oftentimes, there are really big picture solutions that seem like they're going to solve everything, but on a really long time horizon. We need faster time horizons than that. And a good way to think, you should be thinking probably of a short to medium term time horizon. And on a similar note, you should probably not be thinking of moonshots."
+    },
+    {
+      "start": 975.456,
+      "end": 1002.048,
+      "text": "that are going to solve the problem of climate change with a very, very low probability. You probably want a high probability of medium impact rather than a low probability of long term, very enormous impact. And that really gets at the next question. What is the likelihood that a solution can be found? You want something ideally, which is relatively."
+    },
+    {
+      "start": 1002.048,
+      "end": 1031.52,
+      "text": "relatively likely to be useful. And that integrates both the sort of scientific uncertainties and also the difficulties involved in adoption and scaling. Sometimes something is scientifically possible, but isn't necessarily capable of being integrated into society. Can a solution feasibly be deployed? This gets into the next question. Oftentimes, there are"
+    },
+    {
+      "start": 1031.52,
+      "end": 1043.68,
+      "text": "broader consequences and side effects associated with different climate change solutions, those need to be borne in mind."
+    },
+    {
+      "start": 1043.68,
+      "end": 1068.816,
+      "text": "Sorry, I'm getting my points out of order a bit here. With respect to deployment feasibility, sometimes something, again, is technically possible, but it's very difficult to scale up from an engineering perspective or from a societal perspective. So these are the kinds of questions which one should be thinking about in terms of understanding the kind of pathway to deployment. And in the context of side effects."
+    },
+    {
+      "start": 1068.816,
+      "end": 1094.064,
+      "text": "Obviously, we wouldn't want to solve climate change if it meant catastrophically impacting global health, for example, and understanding that sometimes there are side effects, for example, impacts on equity that can mean that a potential pathway in climate action is less promising than one might otherwise think."
+    },
+    {
+      "start": 1094.512,
+      "end": 1122.768,
+      "text": "Who are the relevant stakeholders who are involved in or affected by the application? It's really important, as we'll get to in a moment, to understand the full set of stakeholders involved in a particular solution. It's not just going to be machine learning. Understanding what stakeholders need is fundamentally important throughout the process. So with all of these questions in mind, let's think about broader concerns."
+    },
+    {
+      "start": 1122.768,
+      "end": 1151.76,
+      "text": "considerations for the space of machine learning applied to climate action. First of all, as I've indicated, machine learning is not a silver bullet. It's only going to be relevant sometimes. There are many areas of climate action where it is not relevant at all, and there are many areas where it is only a small piece of the puzzle. High impact applications of machine learning are generally not the flashy ones. If you hear about"
+    },
+    {
+      "start": 1151.952,
+      "end": 1181.456,
+      "text": "Self-driving cars in the news. Those are probably going to make climate change worse. We'll talk about that later. GPT and other large language models, not really relevant in most of these contexts. They get a lot of press, but not necessarily actually useful, quite apart from all of the ways that you've heard, I think, already in the summer school that these tools are extremely ethically dubious, let's say. Interdisciplinary collaboration is fundamentally important."
+    },
+    {
+      "start": 1181.456,
+      "end": 1210.576,
+      "text": "This is not going to be a situation where the computer scientists come and magically solve everybody's problems. It has to be a multi-stakeholder initiative from the start, involved in scoping the right problems, making sure that one's working on problems where machine learning, again, is impactful and relevant. Incorporating relevant domain information, because just throwing an algorithm at a problem is not useful unless you incorporate all the insights that people have had from working in the space for years. And shaping pathways to impact."
+    },
+    {
+      "start": 1210.576,
+      "end": 1238.256,
+      "text": "thinking about all these deployment considerations that are necessary to bear in mind from the start if you're going to have a tool that people actually use. I can't tell you how many times people have built something and then worked out that they should have built something else because it cannot be feasibly deployed in the way that they've built it. We'll get into examples of this a bit later again. And equity considerations. There are equity considerations at multiple levels."
+    },
+    {
+      "start": 1238.384,
+      "end": 1267.664,
+      "text": "The field of AI is not known for being especially equitable when it comes to empowering diverse stakeholders. It is extremely geographically imbalanced. It is extremely imbalanced with regard to gender. The institutions which hold power in machine learning are extremely consolidated. And they say all this as a cishet white guy at one of the leading machine learning institutes in the world. So I am part of the problem here."
+    },
+    {
+      "start": 1267.664,
+      "end": 1295.888,
+      "text": "It is essential from the perspective of developing better solutions and also from an equity perspective overall that diverse stakeholders be empowered to work in this space, which includes everything from funding to data to the resources needed computationally to work on such problems. And from the climate change side as well, climate equity and climate justice are"
+    },
+    {
+      "start": 1295.888,
+      "end": 1323.792,
+      "text": "lenses through which one can think about the ways in which climate action is undertaken. So along those lines, selecting and prioritizing problems is a part of the pipeline where oftentimes equity is lacking. We see, for example, that there's a lot of energy, a lot of funding devoted to problems like reducing wildfires."
+    },
+    {
+      "start": 1323.792,
+      "end": 1352.336,
+      "text": "Those are a major problem for North America, Europe and Australia in particular. And they are being made worse by climate change. I wish that similar efforts were also being devoted to locusts, which are a climate change induced risk in East Africa, the Middle East and India. But there is not necessarily the same amount of VC funding available for different geographies. All of these problems are worthy of attention."
+    },
+    {
+      "start": 1352.336,
+      "end": 1381.552,
+      "text": "And it's worth bearing in mind that the problems one focuses on have geographic and stakeholder specific relevance. And then ensuring data is representative. There are two ways in which data inequities can manifest. One is if your data comes from very resourced geographies and communities. Oftentimes you have algorithms that were developed with data exclusively from the global north."
+    },
+    {
+      "start": 1381.552,
+      "end": 1410.976,
+      "text": "for example, from the US and Europe. And then generalizing those algorithms to other parts of the world is a huge problem. They may just not work because the data was concentrated in particular geographies and communities. The other flip side of that is data colonialism, where there may be less regulation in certain geographies. And so people may go and take data unethically from certain geographies. And so all the data can come."
+    },
+    {
+      "start": 1410.976,
+      "end": 1440.08,
+      "text": "from the global south in such cases, because there may be power imbalances that mean that you can essentially steal people's private data where there would be protections in place in, say, the EU. So both kinds of problems can kind of occur. OK, let's start getting into some of the technical challenges here. Having thought about the overall space."
+    },
+    {
+      "start": 1440.272,
+      "end": 1466.656,
+      "text": "I'm a researcher in machine learning. What's in it for me? Why should I be interested from an innovation perspective? And how do I think about this tying into computer science research? So there are many common challenges that occur in climate relevant applications that actually tie in with key challenges for the field of machine learning as a whole. First one is constraints. You are not working."
+    },
+    {
+      "start": 1466.656,
+      "end": 1495.28,
+      "text": "in the climate change space, generally with a problem where it's just some abstract data set, you are working with a real world problem where there are physics constraints on your variables, they mean something, and where sometimes there are engineering constraints. You're working with a physical system which can only operate within certain parameters. These constraints can mean that you have to build in certain information into your algorithms. We'll get to that in a moment."
+    },
+    {
+      "start": 1495.28,
+      "end": 1521.968,
+      "text": "Distribution shift. The problem may be changing. You may be shifting across geographies, which may be different. Monitoring a forest in Brazil is going to be different from monitoring a forest in France. And it may be changing over time, too. Climate change means that the data is changing. If you're working with weather data from five years ago, that's going to be different from five years from now. How do you deal with that? Limited or imbalanced data, generally real world data, is hard to get."
+    },
+    {
+      "start": 1522.032,
+      "end": 1547.744,
+      "text": "And if it is available, it may be very skewed towards certain geographies, but also towards certain parts of the data set. If you're looking at extreme events, for example, they're extreme. They don't occur very frequently. If you're trying to understand hurricanes, there aren't that many hurricanes to work with. Most of the time, there isn't a hurricane. How do you deal with that kind of data? Interpretability or accessibility for end users."
+    },
+    {
+      "start": 1547.744,
+      "end": 1576.304,
+      "text": "You're not just building an algorithm in isolation that gets published in some conference venue or journal and then gets set aside. This is something where ideally your software is going to be used in practice. And that means that people will need to understand to some degree what's going on with it. Policymakers in particular are understandably cautious about using tools where there is no visibility into how the tool works. So interpretability, uncertainty quantification."
+    },
+    {
+      "start": 1576.304,
+      "end": 1599.888,
+      "text": "broadly accessibility for end users, really relevant. And these challenges often take problem specific forms. Thinking about how you can account for constraints on variables, those constraints are going to be different in different problem contexts. And so there isn't a one size fits all approach."
+    },
+    {
+      "start": 1601.776,
+      "end": 1631.184,
+      "text": "Using high-powered machine learning techniques naively in these contexts may not work. Oftentimes, these kinds of challenges are not what these broadly applicable techniques are designed for. You need more specifically tailored techniques for particular problems, or you need techniques that are addressing different challenges than just overall accuracy. The high-powered techniques may also work, but be overkill. Oftentimes,"
+    },
+    {
+      "start": 1631.184,
+      "end": 1658.064,
+      "text": "you want to come up with the lowest tech solution possible, recognizing that maybe linear regression will do the trick. And even if you get a slight performance boost from using transformers, you shouldn't be using transformers because they're not as accessible. That is the kind of thing that happens a lot. However, I do think there is huge scope for innovation. And this is why I, as a computer science researcher, feel like I have a role to play."
+    },
+    {
+      "start": 1658.064,
+      "end": 1685.328,
+      "text": "There is innovation needed, but it's not the same kind of innovation that we're used to in computer science. The innovation is not in developing sort of new methodologies abstracted away and working on these toy data sets. The innovation is needed in structures for integrating powerful existing tools with domain information rather than trying to learn everything from the data. There's this paradigm in machine learning often that you just throw enough data at the problem and it works."
+    },
+    {
+      "start": 1685.328,
+      "end": 1713.504,
+      "text": "This is generally really, really bad in actual applied domains. Both you don't have enough data to do that. And also it doesn't work. You can't throw more data at a problem and respect conservation of energy. You can't throw more data at a problem if all that data is coming from one geography and expected to generalize to another geography. And you can't throw more data at a problem and have your solution be interpretable. So engineering the kinds of system constraints and."
+    },
+    {
+      "start": 1713.504,
+      "end": 1739.28,
+      "text": "information into your algorithm. That is really important and this is going to be a recurring theme across the particular examples that we see in the next few slides. I'm going to pause for a moment though and ask again if there are any questions. So let's look at the first example here. This is going to fall into the improving operational efficiency bucket."
+    },
+    {
+      "start": 1739.28,
+      "end": 1760.496,
+      "text": "And the problem that we're going to look at here is in constrained deep learning, specifically for electrical grid optimization. The problem here is that if you are an electrical grid operator, you need to know how much power should be produced at every generator within your electrical grid. Every generator has certain..."
+    },
+    {
+      "start": 1760.496,
+      "end": 1789.84,
+      "text": "specifications. It can produce between a minimum and a maximum amount of power. And you need to produce power in such a way that it meets demand across the electrical grid and that power flows across the electrical grid in the appropriate way, according to known physics. This is the known physics. This represents power flow in the electrical grid. These values are complex numbers representing voltage and power, the V and the P, respectively. These are the constraints about how much voltage and power can"
+    },
+    {
+      "start": 1789.904,
+      "end": 1818.976,
+      "text": "be on the system. And this is a minimization problem. You're trying to reduce, as far as possible, the amount of power being generated sufficient to meet demand across the electrical grid. This is a non-convex optimization problem. For the computer scientists in the room, that means you know that it is hard to solve fast. Non-convex optimization problems are famously difficult. And in this case, exact solutions take too long."
+    },
+    {
+      "start": 1818.976,
+      "end": 1847.6,
+      "text": "So typically what happens is grid operators will simplify the problem. This is a quadratic, non-convex quadratic problem. They will linearize the problem. And that means that the solutions are really bad. They're fast, but they are really bad. And that means that in practice, you end up wasting large amounts of power, especially with solar and wind. So how can we do better? How can we stop overproducing power and better integrate solar and wind into the power grid?"
+    },
+    {
+      "start": 1847.856,
+      "end": 1875.44,
+      "text": "Well, typical deep learning approaches, which would be what a computer scientist might do naively is say, oh, well, let's use deep learning to come up with an approximate solution to this problem. Try to approximately solve the non-convex optimization problem saying, oh, we're going to minimize this objective function and we're going to minimize deviation from these constraints. We can get a reasonable approximation of an answer that way."
+    },
+    {
+      "start": 1875.984,
+      "end": 1904.176,
+      "text": "The problem with that is that if you even slightly violate the constraints, you violate the system physics and there is a blackout on the power grid. Everything fails and people die. Nobody would ever use an algorithm that could have even a slight infeasibility, a slight deviation from the constraints. So how do you deal with this problem? Well, we design a deep learning approach, but it's one that builds in system physics and engineering."
+    },
+    {
+      "start": 1904.176,
+      "end": 1932.912,
+      "text": "to approximately solve the non-convex optimization problem while satisfying these constraints. This is joint work co-led with Priya Dhonti at MIT. And so here, technically speaking, what we're doing is we're learning a mapping from parameters x to y, where x is the parameters defining a family of optimization problems, and y is the variable being optimized for. You're trying to ensure that you predict as close to an optimal y as possible while satisfying these inequality and equality constraints."
+    },
+    {
+      "start": 1935.888,
+      "end": 1959.968,
+      "text": "So what we're going to do is we're going to use a deep learning approach. We're going to throw a neural network at it. We're going to do it in a clever way. We're going to predict only some of the variables complete to the other variables, then correct the solution so that it satisfies the inequality constraints and then train the entire thing end to end. Let's look at each piece of this. First, if you have inequality and equality constraints, you don't have full degrees of freedom."
+    },
+    {
+      "start": 1959.968,
+      "end": 1988.048,
+      "text": "Your equality constraints mean that only some of the variables are free parameters. You can predict some of the variables and then solve for the remaining ones using the equality constraints. If you have five equality constraints, then you predict five fewer variables and you solve for them because they're determined by the variables that you've already predicted. That means that you're satisfying the equality constraints. Now, I'm glossing over an important part here. How do you actually solve for those variables? Well, there are ways to do so."
+    },
+    {
+      "start": 1988.048,
+      "end": 1997.92,
+      "text": "using, for example, Newton's method that are just numerical methods that really work regardless of what your constraints are, typically. However,"
+    },
+    {
+      "start": 1997.92,
+      "end": 2025.008,
+      "text": "This is a non-differentiable procedure for those who aren't in deep learning. Don't worry about this. But for those in deep learning, you should be worried now because Newton's method is non-differentiable. How do you actually do the training of this process? How do you train the entire thing end to end? Well, it turns out that you can use the implicit function theorem. You can calculate the derivatives that you need implicitly to train the neural network. And that means that because you have these constraints, you can actually work out the derivatives of these variables with respect to these variables. And that enables you to train your algorithm."
+    },
+    {
+      "start": 2026.352,
+      "end": 2053.168,
+      "text": "Now, the next step is we've ensured that we're satisfying the equality constraints. What about the inequality constraints? Well, we're going to actually perturb our solution so that it satisfies the inequality constraints. We're going to take our initial solution, which we know satisfies the equality constraints, that this green manifold is going to represent the space of solutions that satisfy the equality constraints. We want it to satisfy the inequality constraints, too, which is this blue region within the green."
+    },
+    {
+      "start": 2053.168,
+      "end": 2071.28,
+      "text": "And we can take steps towards this blue region. We can take steps by gradient descent. This is gradient descent not on the parameters of the neural network, which is what you may be used to. It's gradient descent on the outputs. And this is what it looks like formally. We're taking steps along the green manifold to get within the blue region."
+    },
+    {
+      "start": 2072.656,
+      "end": 2102.32,
+      "text": "Now, all of this is trainable end to end. You can back propagate through it, calculate derivatives and train your neural network. This is the loss we use. The loss is mostly just minimizing the objective function. And it's also just as an aid to optimization. It's also minimizing any deviation from the constraints, though mostly that's dealt with by completion and correction. So, again, what we've done is we've predicted some of the variables, used the equality constraints to predict the remaining ones, corrected for any deviations from the inequality constraints and trained the entire thing end to end."
+    },
+    {
+      "start": 2102.32,
+      "end": 2123.488,
+      "text": "And this works. Blue is our method. The classic method is shown at the top. Let's look at all the various different deep learning methods that we might be interested in, starting with a standard neural network that uses a soft loss, which I mentioned at the beginning. Slight penalties for violation of the constraints. This does not work. You don't."
+    },
+    {
+      "start": 2123.488,
+      "end": 2151.136,
+      "text": "end up you end up still violating the constraints same thing if you used supervised learning where you have a bunch of past data points and you're trying to recreate the patterns that you've seen in the past none of these work i'll skip over the different ablations of our method um and move straight to the optimizer this is the the approach that people would would might use in practice it is a um a custom built optimizer from matt power or high power"
+    },
+    {
+      "start": 2151.136,
+      "end": 2180.688,
+      "text": "which, as you can see, takes orders of magnitude more time than our method. We are 10 times faster than the optimizer while being essentially as accurate. And we're actually probably 100 times faster or even higher if you allow for parallelization on the GPU. Deep learning means it's easy to parallelize the algorithms. So you probably get several orders of magnitude improvement in practice. Yeah. So that's the first example that I want to touch on."
+    },
+    {
+      "start": 2181.104,
+      "end": 2209.296,
+      "text": "Second example, this will touch on both of these themes of gathering information and forecast. The problem is in agriculture. Mapping crops and forecasting crop yield are essential problems as climate change threatens food security. Extreme weather events are changing the food supply for large sections of the world. We need to understand how it's changing in real time. However."
+    },
+    {
+      "start": 2209.296,
+      "end": 2232.816,
+      "text": "The data required to inform approaches for mapping crops and forecasting yield are very sparse. Traditionally, machine learning approaches, which are starting to be used increasingly in agriculture, need large amounts of data. So we really like to be able to use machine learning in this context, but the data is limited."
+    },
+    {
+      "start": 2232.816,
+      "end": 2262.736,
+      "text": "It's limited in two ways. There's not very much data and it's very imbalanced geographically. Here you can see the orange points represent points where we know what crop is there in a common data set used called Crop Harvest, which was developed by our partners at NASA Harvest. Now, you can see that most of the world does not have orange. We do not know what crops are in most of the world, at least in this data set. And so if we're going to be working to predict agricultural yield or predict crops,"
+    },
+    {
+      "start": 2262.736,
+      "end": 2286.656,
+      "text": "we would really not, we don't have very much data out there. We do have satellite imagery for most of the world. And so there is unlabeled data available on crops, but there isn't labeled data where we know on the ground what's there. So we'd like to be able to generalize from satellite imagery in one location to satellite imagery in another location."
+    },
+    {
+      "start": 2286.656,
+      "end": 2314.528,
+      "text": "And what we're going to do is we're going to develop meta learning algorithms that are designed specifically to generalize across different crops and locations. This is work led by my student, Gabby Tseng. So some background on meta learning, technical background, just one slide. Meta learning refers to learning in such a way that the model can adapt quickly to a new task with new data. A particularly popular framework is called MAML, model agnostic meta learning."
+    },
+    {
+      "start": 2314.528,
+      "end": 2332.4,
+      "text": "And here there is a neural network that is trained specifically to adapt quickly. Normally in a neural network, you're moving the parameters to minimize the loss. Here you're moving the parameters theta to minimize not the loss now, but the loss if you were to take another step."
+    },
+    {
+      "start": 2332.4,
+      "end": 2360.592,
+      "text": "the goal is to go to a place here in parameter space where you can adapt quickly if you see data from task one you can adapt to parameter setting one if you see the data from task two you can adapt quickly to parameter setting two and if you see data from task three you can adapt quickly to parameter setting three so the objective function is to be adaptable this is a training paradigm so it can run across different neural network architectures and different tasks in our task-informed meta-learning setup"
+    },
+    {
+      "start": 2360.592,
+      "end": 2387.664,
+      "text": "We incorporate geographical and crop information, or more broadly task information, into the meta-learning paradigm. This is a paradigm that can be added to a meta-learning framework. We have two components of this. One is an auxiliary neural network, which takes task metadata like the geographic location and the crop to modulate the hidden representations inside the meta-learner. It just learns an embedding that then modulates these representations."
+    },
+    {
+      "start": 2388.976,
+      "end": 2413.056,
+      "text": "Then there's forgetfulness. Since the data is really imbalanced across geographies, we want to not overfit to any particular geography or crop. And so we're going to take tasks that the model has memorized, is performing really well on, and we're going to drop them on from training dynamically so that we get more focus on the other regimes. Together, these two things are really, really useful."
+    },
+    {
+      "start": 2413.056,
+      "end": 2442.8,
+      "text": "And so what kinds of things are we looking at? We're looking at kinds of tasks where, for example, and go back to this picture here. Suppose that you've seen coffee in Brazil and you've seen maize in Kenya. Can you generalize to maize in Brazil or coffee in Kenya? Can you generalize to coffee in Ethiopia where you might not have any data? And we can do this."
+    },
+    {
+      "start": 2444.24,
+      "end": 2474.16,
+      "text": "We can generalize to many different geographies, many different tasks. This figure is just a bunch of numbers. This is comparison against various other methods. You can see that the task-informed meta-learning framework is outperforming the other methods. But I want to move on to this next figure, which really shows the value of the method. Here you can see the amount of new data that you need in order to get to a good performance. For a standard approach like MAML,"
+    },
+    {
+      "start": 2474.16,
+      "end": 2498.608,
+      "text": "The accuracy is not very good until you've seen quite a lot of data. These curves increase. For our approach, you don't need to see really any data. You can actually do zero-shot learning in a new geography, in this case Togo, where the model is able to generalize without seeing new data because it has this contextual information to draw from."
+    },
+    {
+      "start": 2499.12,
+      "end": 2527.072,
+      "text": "This is for classification task. Is it a crop or is it not a crop? Here it's a classification task. Is it maize or is it not maize? And here are similar results for crop yield prediction where this is a regression task instead of a classification task. And again, we perform really well. OK, moving on to the next example I want to touch on. This is gathering information again. And this is really focusing on broad."
+    },
+    {
+      "start": 2527.072,
+      "end": 2554.848,
+      "text": "technologies for remote sensing across many different areas agriculture forestry other things many climate relevant applications of machine learning involve remote sensing from satellite imagery and here we see how the field of machine learning has been shaped by the priorities of certain benchmark data sets what was easy what was assumed to be the natural problem to work on"
+    },
+    {
+      "start": 2554.848,
+      "end": 2582.384,
+      "text": "where the natural problem was maybe more about data available on the internet and instead of problems that people cared about in practice. So machine learning algorithms are very well tuned to computer vision with natural images, where natural images might be pictures of cats or pictures of people or images of objects around a house. These are the kinds of things which"
+    },
+    {
+      "start": 2582.384,
+      "end": 2610.832,
+      "text": "occur frequently in the ImageNet database, the MSCOCO database, all these problems that machine learning people typically work on. And so the algorithms have been developed to work very well in those contexts, but that means that they haven't been developed to work with other kinds of imagery, like satellite imagery. If you try using standard computer vision approaches that were designed for tasks like ImageNet, you find that in the remote sensing context, they're often not generalizable, very computationally intensive."
+    },
+    {
+      "start": 2610.832,
+      "end": 2635.536,
+      "text": "And they don't actually fit the kinds of imagery that we have, which, for example, could include other types of sensors like near infrared. If you've trained on RGB images, there's nothing you can do with near infrared or elevation data or other things like that. They're not really designed for the problem. So how do we design algorithms that are really intended for remote sensing?"
+    },
+    {
+      "start": 2635.952,
+      "end": 2663.888,
+      "text": "And this is another paper led by Gabi Tseng together with our collaborators at, again, NASA ACRES in this case. So the insight is that remote sensing images are not the same as pictures of cats. They have lots of other structure. They have many different sensors. It's multimodal data. And they're temporally structured. The world changes. The Earth changes. And you see an entire time series of data points. You don't just see a single one."
+    },
+    {
+      "start": 2664.336,
+      "end": 2693.248,
+      "text": "So we're going to use the structure. We're going to take lots of different sources of data, satellite imagery in RGB, but also elevation maps, precipitation, other variables, derived data products. And we're going to stack all these features together as our input. And then we're also going to incorporate time. So we're going to consider each pixel as a time series, many different sessions. And then what we're going to do is something called masked auto encoding. We're going to."
+    },
+    {
+      "start": 2693.248,
+      "end": 2722.672,
+      "text": "throw away part of this data, and we're going to ask an algorithm, in this case, a neural network based on a transformer, to reconstruct the remainder of the data. We're going to throw out some of the time points, mask out different time points, and we're going to ask it to reconstruct the rest. We're going to throw out some of the features. We're going to throw out the elevation, ask it to reconstruct the rest. We're going to throw out the red channel and ask it to reconstruct the red channel, or indeed, throw out all of RGB data and ask it to reconstruct RGB data."
+    },
+    {
+      "start": 2722.672,
+      "end": 2750.992,
+      "text": "And by doing this, we're going to get an algorithm that can operate with any number of sensors, any number of time pumps. And we're actually going to do this in such a way that it doesn't include the spatial structure of the image at all. It's going to operate on individual pixels because that's actually where the most data is available. We mostly don't have image structured data, at least not labeled data. We mostly have just individual pixels, practical applications. And then what we do."
+    },
+    {
+      "start": 2750.992,
+      "end": 2779.104,
+      "text": "is we train an algorithm to try to reconstruct all of the data and then we use its representations as capturing some useful information about the data. A master autoencoder framework has an encoder which produces a hidden representation and a decoder which reconstructs the input. And we use this hidden representation, this encoding, in order to derive whatever we want"
+    },
+    {
+      "start": 2779.104,
+      "end": 2805.52,
+      "text": "in terms of an end task. And so at the inference stage, we take this self-supervised trained network and we perform regression or random forest on its internal encodings in order to predict something else. This is a very lightweight training. If we're trying to predict something over an entire image, we just average the pixel-wise predictions over the entire image. So an example of something we might be looking to do"
+    },
+    {
+      "start": 2805.52,
+      "end": 2833.792,
+      "text": "is we might be looking to predict the particular species of trees in this image. And so we're going to take, we have an algorithm that's been trained on lots and lots of images, lots and lots of data. And we're going to then, but it's been trained in an unsupervised or a self-supervised way. And then we're going to actually add some labels for trees. And we're just going to train the regression to predict from the encodings what the tree is. And these encodings are good enough."
+    },
+    {
+      "start": 2833.792,
+      "end": 2858.224,
+      "text": "that you can actually reconstruct the tree species. We do this with various different kinds of tasks. We do this with agriculture tasks, tree tasks, overall satellite imagery tasks, fuel moisture, algae blooms, other tasks aligned with land monitoring. So fuel moisture has to do with wildfires, for example. We do this across lots of different geographies, many different..."
+    },
+    {
+      "start": 2858.224,
+      "end": 2887.776,
+      "text": "kinds of data, some data that's time series data, some data that's not, many different kinds of sensors, et cetera. And we find that it outperforms larger models, more specific, more computationally intensive models. We find that it outperforms them significantly while being significantly more computationally lightweight. So here you can see, for example, this is our algorithm called Presto compared against some state-of-the-art algorithms."
+    },
+    {
+      "start": 2887.776,
+      "end": 2909.152,
+      "text": "which have many, this is the number of parameters, the amount of computation required. Ours is computationally much cheaper, but it's significantly more accurate. And this matters because both we have a more accurate algorithm and also because we have something that's so lightweight that it can be used by people with low computational resources."
+    },
+    {
+      "start": 2909.152,
+      "end": 2936.752,
+      "text": "It can adapt to somebody's particular problem with low data. It's self-supervised. And it's just a regression problem. Anyone can use it. You can train it on a laptop. Same thing for the EUROSAT low-res task, where we're vastly smaller, a thousand times smaller than the state-of-the-art algorithms. And at least on the low-res version of EUROSAT, we outperform the computer vision-based approaches, which are considered to be safe here. Okay."
+    },
+    {
+      "start": 2936.752,
+      "end": 2960.944,
+      "text": "So the next set of problems that I want to talk about is in speeding up simulations. Here, we want to have better climate models, higher resolution. Accurate climate predictions are really important in responding to climate change and in motivating emissions reduction across society as well. Understanding, for example, that the city of Phoenix is going to warm significantly more than the surrounding area."
+    },
+    {
+      "start": 2960.944,
+      "end": 2988.48,
+      "text": "Phoenix needs to take particularly aggressive adaptation measures in order to respond to climate change. That's really important. Physics-based climate models, the traditional way of simulating the climate, they're very accurate, they're computationally intensive. And so the predictions are often very coarse-grained. You can see the sizes of these grid cells. They include entire countries. It's not very helpful in guiding local response. Machine learning can help by downscaling."
+    },
+    {
+      "start": 2988.48,
+      "end": 3018.48,
+      "text": "In the computer vision field, that's called super resolution, downscaling or super resolution of low resolution predictions to make high resolution, make the resolution of this image, make it be more more accurate at a local scale. So I'm going to be talking quickly about two papers, one led by Chi Dong, who is an intern in my group and now at MIT. And Paolo is an incoming postdoc in my group. So the first ingredient that we have is incorporating physics."
+    },
+    {
+      "start": 3018.48,
+      "end": 3035.968,
+      "text": "into super resolution algorithms. So there are traditional super resolution algorithms that people use to take a fuzzy image and make it high res. But if you're working with something like climate models, you need to include the physics. There are rules like conservation of mass, energy and momentum. If you have..."
+    },
+    {
+      "start": 3035.968,
+      "end": 3063.392,
+      "text": "this coarse pixel, you'd like to subdivide it into pixels that actually mean something. If this is representing water mass, then the subpixels that you're dividing it into have to represent water mass that adds up to the original water mass. Otherwise, you're violating conservation of mass. So how do you deal with this? Well, oh, and sorry, the reason you need to do this is to both improve accuracy and also enforce plausibility. If you come up with something that's not physically accurate, nobody's going to want to use it."
+    },
+    {
+      "start": 3063.392,
+      "end": 3089.728,
+      "text": "And so we include this constraint. It's a hard constraint where we've constrained the final predictions. We've changed the final prediction so that they have to sum up to the original value. And this is just a softmax scaled by the original pixel value. That is the first ingredient that we incorporate. And we'll see that it greatly improves accuracy."
+    },
+    {
+      "start": 3089.728,
+      "end": 3106.512,
+      "text": "in certain cases. And the second ingredient is we would like to be able to increase the resolution of images as much as we want. And the way we're going to do this is by using a functional operator framework."
+    },
+    {
+      "start": 3106.512,
+      "end": 3135.952,
+      "text": "A functional operator is a map between functions. And you can think of an image instead of as an image where it has certain pixel values, you can think of it as a discretization of a function. The function is in some sense the ground truth, the real world infinite resolution version of the image. So, for example, my hand, if you take an image of my hand, it has discrete pixels. But the actual hand is a continuous thing where there aren't individual sort of pixels. It's not pixels. It's infinitely high resolution."
+    },
+    {
+      "start": 3135.984,
+      "end": 3165.056,
+      "text": "So Fourier neural operators are a way to use a neural network to learn a functional operator, to learn a map between different functions. And they work in the Fourier domain, which is just another way that you might consider different functions if you aren't familiar with Fourier decompositions. So the way that people use these things has typically been to"
+    },
+    {
+      "start": 3165.056,
+      "end": 3192.752,
+      "text": "learn infinite resolution solutions to differential equations, to simulate things like the Navier-Stokes equations, which govern fluid flow. The reason why people often work with fluids is because the Fourier domain is very well suited to this. And so we're going to use this framework for doing super resolution, for doing downscaling. We're going to take the input as a low resolution image and the output as an infinite resolution image, a function."
+    },
+    {
+      "start": 3192.752,
+      "end": 3221.44,
+      "text": "We're going to try to learn a function. We're going to try to take the discrete image. We're kind of trying to get a function out. So something that is arbitrarily high resolution. And what we're going to do is we're going to take a neural network and we're going to process our original image. We're going to then do discretization inversion to interpolate that to a function. And then we're going to have another neural network that maps this function to another function. And this is the Fourier neural operator. I'm not going to really go into details here. But the point is that"
+    },
+    {
+      "start": 3221.44,
+      "end": 3250.304,
+      "text": "We actually map not just from an image to a high resolution image. We map from an image to something that can be any resolution. We can increase the resolution by 100 times this way or a thousand times. It may not be very good if you asked it for a thousand times resolution increase. It would not be especially accurate, but it would be more accurate than anything we've seen in the past because it is learning a function, not learning an image. And it actually."
+    },
+    {
+      "start": 3250.304,
+      "end": 3276.272,
+      "text": "doesn't just have this infinite resolution ability. It actually improves upon downscaling at a fixed resolution. It can take the predictions of a... It can improve even in the fixed resolution setting. It can improve the kind of super resolution that you get even upon state-of-the-art there."
+    },
+    {
+      "start": 3276.272,
+      "end": 3305.712,
+      "text": "I'm going to gloss over these figures in the interests of time, but the really quick version is that our approach, the downscaling for a neural operator, is better across different tasks significantly than every prior algorithm that's been used in this context. And it's better both at the task it was trained on, in this case, two times downscaling, two times super resolution."
+    },
+    {
+      "start": 3305.712,
+      "end": 3335.408,
+      "text": "That's in blue. It's better at that task, but it's also better at the green task, which is four times downscaling, which is a thing that it had never seen before. It's better than the algorithms that were trained on four times downscaling, even though it's doing zero-shot generalization to this regime. More technical details are necessary. The final example that I want to touch on is in scientific discovery. And here the problem is that we need to decarbonize a lot of..."
+    },
+    {
+      "start": 3335.408,
+      "end": 3364.784,
+      "text": "sectors that are reliant on fossil fuels in a way that isn't just about electricity. Heavy industry and transportation rely on fossil fuels being a really dense source of power. Aviation, for example, you can't use batteries in aviation. You need fuel. You need a liquid fuel that can store energy really well. And in these contexts,"
+    },
+    {
+      "start": 3364.784,
+      "end": 3393.12,
+      "text": "There is a need for converting electricity, which ideally will be created more and more by low carbon sources like solar and wind. There's a need to convert such low carbon electricity into fuels that can be used in place of fossil fuels like hydrogen. Electrocatalysts are being designed across materials science, but they require quantum chemistry simulations."
+    },
+    {
+      "start": 3393.12,
+      "end": 3423.056,
+      "text": "that are very computationally expensive. So increasingly, we're seeing machine learning algorithms being used to help design new electrocatalysts to save the time of the exact quantum chemistry simulation of density functional theory. So we work specifically on graph neural networks, which are a common technique for analyzing the properties of molecules and"
+    },
+    {
+      "start": 3423.056,
+      "end": 3453.024,
+      "text": "non-molecular compounds. But the problem with existing methods is that they are still quite time intensive, quite computationally complicated. These are papers led by Alex Duval, Victor Schmidt, and Alex Fernandez-Garcia. And we're working specifically on electrocatalysts for low carbon energy applications, what's called the open catalyst dataset."
+    },
+    {
+      "start": 3453.024,
+      "end": 3481.664,
+      "text": "A key challenge in materials modeling is invariance and equivariance. But the same configuration of atoms, if you rotate it or translate it, it should have the same underlying properties. We want any kind of algorithm that's predicting properties of molecules to be able to ignore the spatial configuration. And the ways in which this has been... Oh, sorry, there are two words here I should define. Invariance means that..."
+    },
+    {
+      "start": 3481.664,
+      "end": 3501.584,
+      "text": "the output is preserved under transformation of the input. For example, predicting energy, which doesn't change if you rotate the input. Equivariance means that if you rotate the input, the output is rotated too. For example, force is a vector quantity, not a scalar quantity. If you rotate the input, you want the output to be equivariant. You want it to rotate as well."
+    },
+    {
+      "start": 3502.32,
+      "end": 3530.784,
+      "text": "A common solution is really complicated mathematically. Bessel basis functions, the Clebsch-Gordon tensor product. I don't even know what these things are in all cases. They're basically mathematicians just being really excited that we get to use complicated math. And we come up with a much lighter weight, much less complicated and much quicker solution, which is to outsource the equivariance and invariance to the data."
+    },
+    {
+      "start": 3530.784,
+      "end": 3559.504,
+      "text": "I'm going to gloss over the details again for the sake of time, but it's basically a data augmentation procedure where we transform the input in various different ways, average it, and show that you can get output that is guaranteed to be invariant or equivariant up to transformation using this thing called frame average. The point being that we can get an output that is extremely fast."
+    },
+    {
+      "start": 3559.504,
+      "end": 3585.68,
+      "text": "speed. So we are as fast as the fastest algorithms. Oh, sorry, this is, sorry, speed is the other way. You want to be as far to the right as possible here. The number of samples per second. So we're as fast as the fastest algorithm here, but as accurate as the most accurate algorithm, which is, you can see these algorithms here. So we have lower error, but higher speed."
+    },
+    {
+      "start": 3585.808,
+      "end": 3612.272,
+      "text": "And same thing on this other task, which is a standard materials property prediction task. So by integrating, in this case, the challenges of the physics and chemistry into the algorithm in a clever way, we can attack the challenge that people actually have, which is both preserving invariance and equivariance, but also having a fast algorithm that can be used readily in practice."
+    },
+    {
+      "start": 3614.064,
+      "end": 3640.528,
+      "text": "I want to touch on one other example project from our group to illustrate something at a broader level. And this is really the way in which machine learning innovation isn't designed for impact. It's designed for novelty. Machine learning continues to rely on benchmarks like the ImageNet database, which is used both to evaluate models."
+    },
+    {
+      "start": 3640.528,
+      "end": 3668.784,
+      "text": "And to pre-train models to provide an initial training step that will then be adapted to a downstream setting. There have been many problems that have been identified with ImageNet and other data sets, but they continue to be used because they are built into the culture of machine learning. Such benchmarks were derived generally from Internet data and they were generally chosen."
+    },
+    {
+      "start": 3668.784,
+      "end": 3696.912,
+      "text": "and labeled without relevant experts in the room. They were generally chosen by computer scientists using frameworks that weren't geared towards relevant applications. This has also meant that they've perpetuated huge biases in terms of, for example, misogyny, racial bias, geographic bias that has been identified already. For example, ImageNet images of CEOs are biased towards men."
+    },
+    {
+      "start": 3698.32,
+      "end": 3719.888,
+      "text": "And this ends up having a downstream effect on machine learning algorithms. We analyze this from a perspective that hadn't been looked at before, which is suppose you're interested in a downstream application like ecology, monitoring wildlife. About a quarter of ImageNet is actually wild animals, and ImageNet is commonly used to develop ecology applications."
+    },
+    {
+      "start": 3721.232,
+      "end": 3746.912,
+      "text": "How do you recognize different animals, for example, in camera trap monitoring or in analyzing the photos taken by people, citizen scientists? We find that actually ImageNet, since it wasn't designed with any ecologists in the room, is just flat out wrong for ecology purposes. 12 percent of the images are wrong, which is a stunning amount, given that typically."
+    },
+    {
+      "start": 3746.912,
+      "end": 3775.472,
+      "text": "You can get a publication out of getting a 0.1% improvement on ImageNet, but 12% of the data is just wrong. 12% of the categories are contradictory. These categories don't make sense from an ecology perspective. And again, the data is heavily biased, including in insidious ways. Like here, for example, are images of the birds called jays. This is probably the bird that you're most familiar with in Europe. It's the Eurasian jay."
+    },
+    {
+      "start": 3775.504,
+      "end": 3805.056,
+      "text": "This is a J found in Mexico. This is a J found in China. This is a J found in North America and Canada, in the US and Canada specifically. And that J out of the 50 species of Js worldwide is responsible for about two thirds of all the images. Most of the Js are not represented at all. And so if you were trying to develop an algorithm for relevance in China or Mexico."
+    },
+    {
+      "start": 3805.056,
+      "end": 3829.52,
+      "text": "The data just wouldn't cut it. You would have implicitly designed it for the US and to a lesser extent, Europe. So there were inaccuracies and biases which are concealed within the design of the data set, which is itself shaping machine learning innovation. And this really stresses how machine learning innovations need to have stakeholders in the room who can speak to the ultimate societal impact."
+    },
+    {
+      "start": 3832.176,
+      "end": 3861.52,
+      "text": "We've seen a lot about how machine learning applications can be used in climate positive applications. What about the ways in which machine learning hurts the climate? The first way in which machine learning hurts the climate is computation. This gets actually a lot of press. Machine learning algorithms, they're very energy hungry sometimes. And the hardware has embodied emissions. It takes carbon, it takes water to produce servers."
+    },
+    {
+      "start": 3861.808,
+      "end": 3885.648,
+      "text": "And these effects are considerable sometimes, but they do vary considerably across different algorithms. Most of the algorithms that my group uses are very lightweight. Many of them could run on a laptop. By contrast, something like GPT requires vast amounts of computation."
+    },
+    {
+      "start": 3885.648,
+      "end": 3915.616,
+      "text": "And the scale of such very large AI algorithms has grown. So it's important to recognize this is a major factor, but it's a major factor for only some aspects of the AI ecosystem. However, there are bigger factors out there. There are the immediate impacts of applications. Machine learning and AI algorithms are not just used in applications that make the climate better."
+    },
+    {
+      "start": 3915.616,
+      "end": 3944.528,
+      "text": "many applications in fossil fuel exploration and extraction specifically. These applications are very, very big. They are estimated to contribute about half a trillion dollars in additional profit to the fossil fuel industry just by 2025, and to lead in some cases to a 5% increase in production of fossil fuels. So while we can think about how the algorithms are designed,"
+    },
+    {
+      "start": 3944.528,
+      "end": 3967.552,
+      "text": "We can also think about what they're being used for. And ultimately, a lot of the impact of a hammer is what it is hammering, not how it is built. There are also the systemic impacts of applications. And these are even bigger, arguably. There are rebound effects, which I mentioned, where if you design for something being more efficient, it can increase the demand for that."
+    },
+    {
+      "start": 3967.552,
+      "end": 3994.848,
+      "text": "For example, if you make a product more energy efficient to produce, maybe it will become cheaper and people will use it a bit more. But the really big ones are in consumer behavior. In particular, machine learning is being used across society in advertising systems. Most of the profit of Google, for example, is derived from advertising. And what is advertising doing? It's designed to increase societal consumption. So if you think about the."
+    },
+    {
+      "start": 3994.848,
+      "end": 4024.8,
+      "text": "huge amount of attention being devoted across the tech industry and across society to ML-enabled advertising systems, the way in which those ML algorithms are actually consuming energy, that's a drop in the bucket. What they're doing is designed to increase consumption of resources. It has a huge magnifying effect. And then there's luck as well, which can be good or bad. By using a technology like AI to"
+    },
+    {
+      "start": 4024.8,
+      "end": 4052.144,
+      "text": "make a particular aspect of society more appealing, you can induce lock-in to that particular mode of doing things, like self-driving cars. Self-driving cars are expected to significantly impact climate change in a negative way. They're going to make climate change worse because they will reinforce our reliance on personal vehicles. They will also make"
+    },
+    {
+      "start": 4052.144,
+      "end": 4078.384,
+      "text": "driving a little bit easier. And so people will end up driving more. And this is really a way in which we see the implicit choices in technology design. Technologists have made an implicit choice. We're going to prioritize self-driving personal vehicles. They could have made the choice of prioritizing self-driving buses or self-driving trucks that integrate with train systems for low carbon and multimodal transportation."
+    },
+    {
+      "start": 4078.384,
+      "end": 4105.152,
+      "text": "That is not the way that most of the self-driving vehicle industry has gone. Mostly it's gone towards reinforcing our existing dependence upon personal vehicles. And these kinds of choices really make us see that it's not about how we add good applications of machine learning on top of business as usual. AI for good is about shaping all applications of AI."
+    },
+    {
+      "start": 4105.152,
+      "end": 4134.272,
+      "text": "AI to be better for society, which includes working on AI for monitoring agriculture, but it also includes taking the way that our existing systems are built and slanting them to be more positive for society. If we are in the setting of building autonomous driving technologies, are we designing them for buses or are we designing them for cars? One is much better for the planet. So some takeaways on the broader climate change impacts of machine learning."
+    },
+    {
+      "start": 4134.272,
+      "end": 4163.728,
+      "text": "If you are a machine learning practitioner, there are many different ways that you should think about this. You should definitely be thinking about the computational aspects of your algorithms. Measure the energy used by your algorithms with tools like CarbonTracker, CodeCarbon, etc. There are tools specifically designed for Azure and HuggingFace if you're running your models on there. And reduce your impacts. You can choose more efficient models, lighter weight models, in particular if you're working with something really big like large language."
+    },
+    {
+      "start": 4165.168,
+      "end": 4185.664,
+      "text": "But remember that that is only one piece of the puzzle. And something I also didn't mention, it's almost deliberately only one piece of the puzzle. If you think about who stands to gain by people thinking about this and not thinking about this, it's all the tech companies that are making all of their profit from working with the fossil fuel industry and from advertising systems."
+    },
+    {
+      "start": 4185.664,
+      "end": 4213.952,
+      "text": "So there's a reason why the discourse in society is focused on, oh, we're going to make more efficient AI algorithms or think about using low carbon energy for powering AI systems. That is only a drop in the bucket. It's good to be focusing on more efficient AI algorithms. We also should be thinking about what we're using them for. So how do you think about that? Well, quantify and evaluate the application impacts where possible. Think about what your algorithms are being used to do. That's the case even if you're working on sort of."
+    },
+    {
+      "start": 4213.952,
+      "end": 4241.248,
+      "text": "blue sky methods development, there are ways that you can foresee your algorithms being used. Be transparent about the impacts in publications and with stakeholders, both quantitatively and qualitatively. Sometimes you can't measure the greenhouse gas emissions associated with an application directly, but you can still think about what those impacts are going to be and talk about them. And then consider the system level impacts of your work."
+    },
+    {
+      "start": 4241.248,
+      "end": 4271.232,
+      "text": "Remember, every machine learning application is going to affect the climate, often in multiple different ways, sometimes some good ways and sometimes some bad ways. You can choose to some extent what you work on. Obviously, this is not a luxury that everybody has, but there is sometimes flexibility within that. Suppose you work on autonomous driving. You can choose to work on self-driving public transportation, not self-driving personal vehicles. Maybe or maybe not. In such cases, you can build climate considerations into how you build an application."
+    },
+    {
+      "start": 4271.232,
+      "end": 4300.992,
+      "text": "Or you can initiate company-wide policies to think about the ways in which products are being developed and realized. There are many different levers here. And it's also important that climate change is not the only lens here. There are other environmental impacts like heavy metals, like water use, other social impacts as well. There are many ways to get involved in the machine learning and climate change space from the computer science side."
+    },
+    {
+      "start": 4300.992,
+      "end": 4322.032,
+      "text": "which i sort of touched on so there is the directly working on climate change include climate relevant applications and the set of problems that motivate your work and i hope i've shown you that there are some interesting machine learning challenges in that space and collaborate with the relevant domain experts to make sure you're solving relevant problems building in domain information and incorporating a pathway to impact"
+    },
+    {
+      "start": 4322.576,
+      "end": 4350.24,
+      "text": "Especially for students, a good way to do this is to think about being a bridge between two different fields. There is so much demand for people who can speak the language of AI and also the language of agriculture or the language of energy. There are very few bridges out there. Think about how you can be a bridge in a special intersection of areas. That is really, really useful and really hireable as well. There are many job opportunities in the space. Everything from mainstream computer science research."
+    },
+    {
+      "start": 4350.24,
+      "end": 4379.984,
+      "text": "to focused research institutes, but also so many startups in climate tech. The downturn in the tech industry recently has actually not been felt nearly as much in the climate tech industry because people are recognizing that climate change is going to be a major driver of economic activity moving forward. Major tech companies are increasingly working on this and other companies outside of tech are as well. So many of these innovations are not happening in the Googles of the world. They're happening in the power system operators."
+    },
+    {
+      "start": 4379.984,
+      "end": 4409.568,
+      "text": "of the world or the heavy industry companies. And then public sector initiatives. Students often forget that it's not just academia or the private sector. There's great work being done in remote sensing agencies, for example, and in funding agencies. Working explicitly on climate problems, however, is not the only way to help. Think about how to better align your existing projects with climate goals. We've talked about that a bit. And then outside machine learning, of course, we are"
+    },
+    {
+      "start": 4409.568,
+      "end": 4438.944,
+      "text": "individuals who may be able to advance broader actions by our employer or society. Sometimes we don't have the ability to use our work in the context of climate action. That is fine. There are other ways to make our voices heard and to influence climate action. The final thing I want to talk about is for the policy folks in the room and talk about where policy falls in this picture. So this is based upon a report that we wrote for the Global Partnership on AI, which is the OECD's"
+    },
+    {
+      "start": 4438.944,
+      "end": 4464.624,
+      "text": "body that coordinates AI policy across different countries. And we looked at many different aspects of policy as they relate to the space of AI in climate action. And the first set of bottlenecks that we identified and problems were in data and digital infrastructure."
+    },
+    {
+      "start": 4464.624,
+      "end": 4491.344,
+      "text": "that there is a need to ensure the availability of data and infrastructure on which AI algorithms depend. Oftentimes, relevant data to work on climate-relevant applications do not exist, or more commonly, they do exist, but they're unequally distributed. They exist in some places, but not in others. They are not shared appropriately. They're siloed in private institutions. They have formatting issues where..."
+    },
+    {
+      "start": 4491.344,
+      "end": 4519.024,
+      "text": "The formatting of the data is inconsistent across entities, which means you can't actually work with it in any convenient way. The data quality is often low. There aren't standards for how good the data is or what it should be. And then, in addition to data bottlenecks, computing infrastructure is often a bottleneck. Oftentimes, if you want to work on machine learning, you need to pay an arm and a leg for cloud computing."
+    },
+    {
+      "start": 4519.216,
+      "end": 4545.152,
+      "text": "Or you need to be a major tech company, neither of which really lends itself to the kind of applications that we need, where small private and public entities are able to use these tools in really democratizing ways. So as a case study here, this is the kind of application that I'd like to see more. The UN."
+    },
+    {
+      "start": 4545.152,
+      "end": 4574.304,
+      "text": "satellite center, UNASAT, has a flood AI system that delivers high frequency flood reports for those impacted by flooding in the zone of the Indian Ocean monsoon. And these have improved disaster response over the past couple of years by targeting it towards particularly heavily impacted areas. This is only possible because the UN has the resources to have massive amounts of data and massive amounts of computation."
+    },
+    {
+      "start": 4574.304,
+      "end": 4603.632,
+      "text": "And they highlighted this when we talked to them as the key driver of their success here. But most organizations don't have the resources of the UN Satellite Center. Selected recommendations. Establish data task forces and platforms, data collection standards and sharing climate critical sectors. We hope that this will be a priority for governments moving forward to ensure that the data that exists is benefiting the public and that it is."
+    },
+    {
+      "start": 4603.632,
+      "end": 4633.136,
+      "text": "being designed and used in the most responsible way. Support the availability of compute and data storage also for researchers, civil society, and smaller scale enterprises to really level the playing field here and make possible the kinds of applications that will really drive impact. The funding landscape is the next thing that we looked at. Understanding that there is often funding for AI that is focused on new cool methods rather than"
+    },
+    {
+      "start": 4633.136,
+      "end": 4662.656,
+      "text": "actual impact on society. And from a climate funding perspective, often it's sector specific and it's not informed by what the relevant funding bodies don't necessarily have the ability to understand AI technology. So you end up either with climate funding thinking that all of AI is hogwash or jumping at something that sounds really fancy, but isn't actually useful in practice. So neither side really has the tools to support."
+    },
+    {
+      "start": 4662.656,
+      "end": 4690.928,
+      "text": "intersectional uh innovation this is also a lack of prioritization and oftentimes the uh funding and support is focused on really flashy projects rather than less flashy low-hanging fruit for example um there's going to be a lot of press around again something like self-driving cars but not predictive maintenance of railroads imbalanced funding geographically often the priorities are also driven by the global north"
+    },
+    {
+      "start": 4690.928,
+      "end": 4718.352,
+      "text": "implicitly as we talked about so some recommendations here ensuring support for ai projects that is impact driven in addition to methods driven funding and also thinking about the pathways to deployment so that one's really supporting projects that aren't just pure research but also really connected to impact ensuring capacity for expert evaluation of projects across different funding bodies so it's not just being evaluated by people without the relevant expertise and then"
+    },
+    {
+      "start": 4718.352,
+      "end": 4746.832,
+      "text": "In some cases, developing key grand challenges to really motivate support for AI and climate change. The next theme that we touch on is integrating innovation into deployment and systems. There's a need for investment that is really designed to accelerate commercialization in a very thoughtful way. Understanding, though, that some private sector incentives don't actually cover all the impactful applications."
+    },
+    {
+      "start": 4746.96,
+      "end": 4766.048,
+      "text": "There are some public benefit applications where the incentives may be misaligned with the private sector and they should receive public sector support. There are also barriers to adoption in many sectors from an organizational culture perspective."
+    },
+    {
+      "start": 4766.048,
+      "end": 4794.512,
+      "text": "Areas like heavy industry may be very resistant to change for good reasons as well as for bad reasons. For good reasons, if the system works, why change it? And also, if your system is security critical or liable to be hazardous, if it fails, then I can understand why you want to have a lot of system guarantees in place and be really slow to adopt new flashy sounding technology. There also may be legacy infrastructure like old operating systems or software that really don't interoperate with new technology."
+    },
+    {
+      "start": 4795.248,
+      "end": 4821.888,
+      "text": "And then there may be a need for reliability or security guarantees in some sectors. So some recommendations here are really to develop cross-sectoral innovation centers that can incubate projects, bring the different stakeholders together to ensure the projects are being innovated on in a way that bears in mind deployment considerations. A great example here is the Learning to Run a Power Network competition, which brings together grid operators, in particular RTE from France."
+    },
+    {
+      "start": 4821.888,
+      "end": 4848.752,
+      "text": "in order to validate the use of reinforcement learning approaches in power grid optimization. And since it was designed by power grid operators, the innovation is shaped by what they will actually be using. And there's a need to develop and maintain non-commercial public interest applications, like using satellite imagery to track deforestation or greenhouse gas emissions, like the climate trace initiative. And these are..."
+    },
+    {
+      "start": 4848.752,
+      "end": 4875.312,
+      "text": "necessary to ensure the broad scope of applications in this area support. I've touched a bit on reducing AI's negative impacts on the climate from a policy perspective. We need to make climate change a central consideration in fostering the development of AI-enabled technologies in general, not just explicitly AI for good applications. The language that we drafted on this has been integrated into the tentative language of the EU AI Act."
+    },
+    {
+      "start": 4875.312,
+      "end": 4904.752,
+      "text": "We need to see that being incorporated into other AI acts and we need to see it actually being deployed in a meaningful way. And then we also need to set reporting requirements for the lifecycle emissions associated with the development and use of AI, not just energy from computation. That is a major thing, but also what it's being used to do, really recognizing that it's a full lifecycle. And then capacity building. I'll go through this really quickly, but we need capacity across lots of entities which don't have AI expertise."
+    },
+    {
+      "start": 4905.072,
+      "end": 4930.848,
+      "text": "We need to implement upskilling programs to train folks in the public and private sectors, give them AI literacy to work with these tools because they're going to be engaging with them. They need to know where they are relevant, not relevant, how to think critically. And there need to be secondment programs to encourage AI experts to go into climate relevant sectors. And there needs to be also support for trusted solutions providers and auditors."
+    },
+    {
+      "start": 4930.848,
+      "end": 4959.216,
+      "text": "who can support work in this area. Right now, often people turn to the big tech companies because that's all they know. But there are, there should be more of, and there already are lots of small focused solutions providers who are focused on local or regional needs and focused on sector specific needs. And that's the kind of broad ecosystem of innovation that we need. Okay, so that's some policy considerations."
+    },
+    {
+      "start": 4959.216,
+      "end": 4981.824,
+      "text": "I want to end by giving folks resources for learning more. I am a co-founder and chair of Climate Change AI, which is a global nonprofit that catalyzes impactful work at the intersection of climate change and AI. We provide various forms of resources, reports for everybody from researchers to policymakers. The reports that I touched on are from Climate Change AI."
+    },
+    {
+      "start": 4981.824,
+      "end": 5010.432,
+      "text": "We run conferences and other events at the major AI conferences and at the UN Climate Change Conference, the COP. We also have a summer school, which is open to applications from any field, not just from computer science. We specifically bring in cross-disciplinary and cross-sectoral cohorts. There's a virtual component to the summer school, as well as an in-person component. You can do the virtual component or the in-person component."
+    },
+    {
+      "start": 5010.432,
+      "end": 5040.384,
+      "text": "Stay tuned on that for next year. We have funding programs where we've already given away many millions of dollars to innovation in this area. We have a newsletter, which I would highly encourage anybody to sign up for who is interested in news within the area, whether it's job postings in relevant bodies, new papers, data sets, et cetera. We host various other events like webinars,"
+    },
+    {
+      "start": 5040.384,
+      "end": 5067.632,
+      "text": "And I encourage you to check out more of our resources on the website or on our social media. There are other organizations as well that focus on specific elements of this space. I'll let folks look really quickly over this, maybe take a photo if you want to, and I'll share my slides afterwards if I can. These are just for specific communities, like if you're interested in AI and energy or AI and biodiversity. And as usual, there is more info."
+    },
+    {
+      "start": 5067.632,
+      "end": 5091.28,
+      "text": "in our newsletter at Climate Change AI, where we try to provide jumping off points for these various different other communities. There are also datasets and challenges for getting started in the space if you are looking to try some machine learning algorithms on a problem in biodiversity or land use, et cetera. Check these out. And thank you for your attention. I look forward to a few questions as there is time."
+    },
+    {
+      "start": 5096.752,
+      "end": 5124.528,
+      "text": "Thank you, David, for A, this super concise reality check at the beginning, then the cutting-edge insight, or insights into the cutting-edge machine learning research, but also the action items, the recommendations. That's really great. I think it shows very much how much is done, how much can be done. We're already pretty short on time, but I think if there's any questions, we can maybe take one or two. So I would open the room still for questions. Is there anything?"
+    },
+    {
+      "start": 5124.88,
+      "end": 5154.656,
+      "text": "Very short question. All right. Please introduce yourself. My name is Stefan from Vienna. I was wondering, since you said that the PDE functions or PDE methods that would be usually used to get exact methods are usually very computationally intensive. It seems like a good idea to use the machine learning approaches that you said."
+    },
+    {
+      "start": 5154.656,
+      "end": 5183.952,
+      "text": "But on the other hand, if we use it on things like smart grid, and there is like a blackout because of those machine learning algorithms that we use, then we seem to have no accountability for anything that may happen. For example, a large scale blackout in Austria would also mean like a disruption in water supply to Vienna, a city of two million people. And how would you see these kinds of things?"
+    },
+    {
+      "start": 5183.952,
+      "end": 5210.768,
+      "text": "So this is why we try to build guarantees into algorithms that are being used on the electrical grid so that we know that they're not going to lead to a blackout. I would also note, however, that there isn't actually any guarantee in ACOPF that the solution is going to be feasible either. In the methods that are typically used, this is getting a little bit technical, but the way in which people typically solve ACOPF is that they change it to DCOPF."
+    },
+    {
+      "start": 5210.768,
+      "end": 5222.72,
+      "text": "But the DCOPF approximation isn't necessarily going to be feasible either. So they still have to test that. In these cases, people, AI is just a better heuristic. People are..."
+    },
+    {
+      "start": 5222.72,
+      "end": 5251.712,
+      "text": "are often already using heuristics because the exact solutions are too slow. And so in some sense, AI is just a better heuristic than the heuristics which are being used. But of course, yes, we want to build guarantees into the AI systems, and that's what we're doing. So I think it's two things, recognizing that the existing systems don't necessarily have the guarantees that we would like either, and second, building those guarantees into the AI systems. Thanks."
+    },
+    {
+      "start": 5251.712,
+      "end": 5267.656,
+      "text": "I think a very, very interesting research direction in general for machine learning. But we're out of time. So thanks again, David. And a round of applause for David, please. Thank you very much. Please feel free to send me any questions. You can find my contact info very readily on my website."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

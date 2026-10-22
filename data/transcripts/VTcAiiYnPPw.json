@@ -1,0 +1,356 @@
+{
+  "video_id": "VTcAiiYnPPw",
+  "source": "whisper",
+  "language": "en",
+  "text": "I hand over to Linda for the second on this informatics in managing the crisis. And just very shortly, Linda is both a professor at the University of Utrecht and she is also a research manager for strategy in the Centrum Viscum de Informatica in Amsterdam. I think I made many mistakes in spelling it now. She's she's active in visualization, human computer interaction and also AI. And she is a previous president of Informatics Europe, which is the Association of European Computer Science Department. Linda, now it's your floor to moderate the next session. Sure. Thank you very much, Hannes. And thank you very much for inviting me. I'm on my turn. I'm delighted to welcome our next speaker, Niki Popper. Nicky is coordinator of the Centre for Computational Complex Systems at the Technical University in Vienna. I shall keep to the English of this. He's also chair of the COMET-K project, Decision Support for Healthy Policy and Planning, which is dedicated to the development of models and to efficient and safe use of data for decision making in health systems. So we're very, very grateful that he's able to join us today. And he will talk, I hope, for about 15 to 20 minutes on real-time simulation-based decision supports in healthcare systems, the COVID-19 crisis. Over to you, Niki. Thank you very much. Thank you for the invitation. I hope you can already see my slides. Yes. Great. Okay. So thank you very much, Linda, for this introduction. Yes, as a matter of fact, I'm working at the Technical University and at the moment we are supporting the government in Austria to find hopefully good decisions how to take care with the COVID-19 crisis. And in my talk, I want to point out more or less two things. So what are models like? which are tackling these questions. And do we have only one choice of model? And the second question is how the way we ask questions defines how we use models and how we should integrate models in decision support processes. So what was the starting point? As a matter of fact, you can see here a map of the small town of Vienna. in the center of Europe. And the big thing was in January when nobody thought about it in Europe, they said, okay, what might happen if we have one point here in red with an active COVID-19 infection? And then we said, okay, yes, we will try to find out with our model where we have an agent-based model, where we have contact networks in the city. And the good thing was, and I think that's a very important thing for usage of models and simulation tools in the 21st century, not to start thinking of the model when the question arrives, but to have already a modular system of basic components. I will show it in this talk, how our model approach is built up with different modules. The basic thing is we are modeling since a long time on population models, on the way we can rebuild a virtual population. So we have digital humans in our simulation and they can live their life and we can have more insights what happens to our real world population if something happens. So the first impact was of course COVID-19 arrived in Europe and the second impact are the measures. where we have very strong measures in Austria compared to other countries. And what does this mean for us as population, as humans and in a real world? So probably you are not very familiar with the things what happened in Austria, so I made a very short timeline what happened and what was our answer or the answer of the modeling and simulation community. So we started in January with first scenarios to calibrate our model, our agent-based model, more or less a month before the first confirmed cases were reported in Austria, which happened in Innsbruck. And we started those days with possible scenarios, what might happen after this. What might happen after this is, you can see here Innsbruck was the first case. And then we've started to do different approaches where we have the non-detected cases and the detected cases. And we have a contact network over Europe, over Austria. And in this example, we had standard impact in Vienna. It's the biggest city of Austria. And of course, this was not a real prediction. It was in February. There were no, only two cases in Austria. But what you can already see is a qualitative. curve, where you see a first peak, and then you have seen some of these wibbering curves and peaks in the following year. And what we see now is that at the moment we think that it might be like this. I'm not focusing on the concrete numbers, but the qualitative behavior might be that it will be like this, at least in Austria. We already see, okay, we started with only calibrating our model with data which came from the United States, for example, where we said, okay, 60% of the population will get the disease. And then moving on to this first impact analysis. At the beginning of March, at the 10th of March, the government set the first measures in Austria. And so our approach changes. At this time, we said, OK, we have to compute what would a decrease of the contact between the population benefit for the for the highness of the peak. And you can see this flatten the curve curve. We did this, of course, also for Austria. And we said, OK, we have a nonlinear effect if we can use these things. What happened with this model, it was strongly communicated by the government to the population. just to show, okay, if you do something, it would benefit. It would not only benefit in a linear way, it would really benefit increased. And so what happened was we were really successful with this and continued. A totally different question of what I mentioned is, what is the worst case scenario? So for example, in the city of Vienna, the hospital group here in Vienna, said, okay, we need a process, a description where we have the idea, what is the worst case? What do we have to obey for resource management? And so we said, okay, with the worst case scenario, you will need 6,500 beds here in Vienna. And so the reaction was that they made at Messe Wien, so it's an exhibition area, additional beds. So you can see we have two days, three days, and we have really... implemented the model, the simulation and the reaction of the policy. So what we are experiencing here is a fundamental difference of everything I ever seen in my life. If you do some simulation results and policies reacting within two days, at least in Austria, it's not very normal. Normal is you do something and then you wait 10 years and then politicians said, oh yes, we might have done something. So that's the normal process. So we're experiencing really very, very exciting things from the simulation. So from the 13th, the same day, big measures were taken in Austria. Schools were closed, shops were closed, more or less all. And we computed, of course, then... Really, the first time, a really quantitative prediction. Why? Because we had now more information on the disease, we had more information on the contact networks, and we had the information on the measures. And we said, okay, the number of increase of new cases will reduce by 50%. This day, on the 13th of March, we had an increase of 30% every day. And we will say, okay, it will decrease in one week to 20%. To be honest, of course, you need luck with this. We were exactly right. One week later, we had the reduction of this 50% from the doubling time of 2.3 days to a doubling time of 5.5 or so. But in real world, in change management, it's not always good. If you're right, it not only works. One week later, we had additional measures. We said, okay, it will work. But government said, no, we believe we need more things. So masks were introduced in Austria. It's just to show it's not always the thing that every politician and all the decision makers believe us. And I think it's also a very important thing that you have two different sides. You have, on the one hand, experts who can add, hopefully, evidence-based and not biased information. On the other hand, you have politicians who have to decide, including other things I'm not responsible for or we are not responsible for. The story continues, and I stop here. From April in Austria, the situation is more or less good, and now we are computing a lot of scenarios of the reduction of the measures and containment strategies, of course. Okay, so what is the basic thing? We have now, in this case, two months of modeling and simulation, more or less with one approach, and we have totally different questions. In the first step, we had the calibration and a priori analysis. Then we had qualitative analysis. Then we had analysis of measures based on condensed assumptions. So if you decrease of 25% of conflicts, what will be the impact of the hospitalization of the spread? Then we had resource planning where we have to include worst case scenarios and such things. And then starting with quantitative prediction. And now being in a state where we say, okay, we make analysis of measures based on detailed assumptions. So what will happen if we open schools again, which happens in Austria, as a matter of fact, on Monday. So we have now three days and we are pretty much excited what we will see as the evidence, especially for the spread in schools is very limited at the moment, also in international literature. So a lot of different questions. Can we answer this always with one model? What are the approaches? I think that's very interesting. So the basic thing is the government said, okay, we don't want to have this scenario on the left-hand side. We want this one on the right side where you have in blue the consumption of the hospital beds. And we want very little spread and very little usage of hospitals. And what our approach always is, we say, okay, we have different things where we have to decide what are the methods. and what we can answer. It's always the kind of the research question is the question for quantitative prognosis, is it for qualitative comparing of strategies or whatever. Then the thing is how much system knowledge do we have and how good is the data. And this is like a feedback loop where we have to always decide okay I cannot answer a detailed question if I don't have data and I don't make causal models if I have no system knowledge. And so this is an iterative process. I did in my PhD thesis a lot of work on this, how to find the best solution and also how to find the best modeling approach. I don't want to go in too much detail in the next 10 minutes, but I want to point out a little what our model approach is and what are the differences. So in the first step, of course, you can have data-driven approaches in causal models. I don't have to go in detail in this community what are data-driven models. We can using machine learning and statistical methods and doing a curve fit and fitting recent data compared with different countries and so on. It's of course a very important strategy which can help us to compare, for example, international strategies, excessive death rates and so on. But we are focusing on causal models. Of course, we use also a lot of data, but we try to integrate causality. So we want to generate some benefit by the prognosis and by the question, what are dependencies in our system? Of course, not very surprising, it's the classical SER model where we have susceptible, infectious and recovered person or resistant persons. It's the classical Kermit McKendrick approach from the 1920s of the 20th century. So it's the approach a lot of research groups in the world are also taking. You have more or less these aggregated numbers of persons. As a matter of fact, for the COVID-19 disease, you have to improve this approach. It's also more or less classical already. It's an S-E-E-R strategy where you have also the exposed persons. In principle, one of the important things of COVID-19 that you have persons which are already infected and or infectious but have no symptoms. So you have an epidemic behavior with time delay. This, for example, is very important if you compute the famous error zero number for the basic reproduction number. And then you have to go on with the definition of model parts, of course, with disease. You have the asymptomatic infection, you have the quarantine at home, and of course, very important for decision makers, and that are the most important numbers all around the world, are the hospitalized persons with severe cases, and of course, the ICU needs, so the intensive care. And as you can see, a lot of information is needed. A lot of data is needed and a lot of going into more detail with the model. So our approach is a microscopic model where we really have all inhabitants in this case of Austria. It's about nine million where we have this coverage of the status for every person. So you have an infectious status and susceptible status and so on. What is the important thing for both strategies? There is no free lunch. Why? All approaches have advantages and disadvantages. So if you have a classical SER model, you have only three parameters you can try to calibrate, which you have to parametrize. It's a very pure model where you can have a very detailed view on what happens if I change. As a matter of fact, the basic thing is for real world illnesses, you have the bias of the information in aggregating these three parameters by including a thousand of real world parameters. With our microscopic approach, we have the other way around. We have a lot of parameters for every step, for the latency time, for the incubation time, for the... severity of the illness for various population groups, depending on age and comorbidities. And of course you have here the problem that you might have an overfitting and the question, can I believe what my model is doing? I think especially important in today's complex simulation models is the separation of model-driven errors and data-driven errors. We have a huge sensitivity of these models. which is based on the system knowledge, on the way this illness is working. If it starts to spread, we have a very vivid and a very dynamic behavior. It's very sensitive to, for example, measures. That's the one thing. The second thing is, especially in Austria, we have a big problem to get qualitative data. It starts from the number of ill persons on the testing strategy and a lot of different things. So in Austria, we have at the moment a very intensive discussion between privacy. When is it allowed to use health data from persons? And on the other hand, the way we make policy decisions and the way researchers can use data from the health system. So a very brief overview only for five minutes of our model. As I mentioned, I think today, if we make decision support with simulation models, we need a highly quality assured structure of these models. So we develop modules. And the good thing in our case was the population model, the conflict model, and some kinds of disease modules were already developed in the last 10 years. So we had only to adapt the disease model and to include also the policy model. Population model, very brief. We have a generic population concept where we can apply all the development and the status quo of the inhabitants. Where we have different toolboxes, it depends if we make an epidemic like COVID-19 or if we analyze diabetes. which we need to analyze over 30 years. And this model can be reused. What are the features? We generate based on the real population, a digital population, which includes in the first step only age and sex and the region. But we can adapt depending on the research question, the living, the education, if the medical the medical record or smoker or non-smoker, whatever. So you live then in a real area and you have, we are able to trace this virtual population. So it's from the birth to death. If you come from Germany and leave again, everything is possible. So what is the benefit? The benefit is these persons can then have contact with other persons and if they are ill they have their process through the system. So as a matter of fact we can go in detail as much as we want in this case for example we can say okay it's not only statistical in an area but they're really their living place because it's important how far are they away from hospitals and other things. Contact model, to go not too much into detail, is based on a European Union study. It's the Pullingwood study, which we use. And the good thing is, and that's the one thing I wanted to point out on the contact model, it is based not only on age and sex, how much contacts do you have with which other groups, but it's also separated into households, schools, workplaces, and so on. Why is this important? It's on the one hand important that we have the possibility to include the context on the different processes and we can directly include the measures which were set. For example, in Austria schools were closed, so it was very easy and very fast possible to close the schools and also to reopen it. So that's also important. Could I ask you to round up in just a few minutes? Yeah, yeah, only three minutes. And so this is on a modular basis. Contacts are also between municipalities and districts and federal states and countries. And in this case, it's the same. You have to include it in the first hand. Then you can now, for example, include the measures when in Austria it was not allowed to leave, for example, different countries to go on. OK, so. I will go over this. You have then the possibility that the illnesses are doing hospitalization where you come, depending on the age and the sex. And you can include the policy, lifting policies and introducing policies. So what are the results? And I'm trying to point out, you have to be able to answer different questions. So, for example, one thing we are doing is we recompute the history. with our virtual agent. So what you can see here is the dark curve in dark blue are the collected positive tests. This is the number we can calibrate on for the time. The red numbers are the hospitalizations. What we have as additional benefit from a simulation tool is the not evaluated versions like in dark blue for example the pre-symptomatic cases. and in yellow the asymptomatic cases. So what we can benefit with this is with the virtual, with the digital population, we can recompute, for example, the first wave we have seen now in Austria in March and April and make additional analysis with virologists and so on. Second thing is, of course, we can now help to make this analysis for different scenarios. So, for example, at the moment, one thing we are doing is if you have the darker curves in blue and in orange here, this is the reopening now of measures. So if you open schools and working places and in the light color, the light blue and yellow curve is if we make tracing and if we make a containment strategy. And so we can point out, OK, until what amount of reopening can containment help? So totally different questions, but possible with both models. I think the most important thing at all is at the end, two things that we have different models, only two sentences. In Austria, we have a combination of our university with the medical university and the state agency where we use three models for computing the every week prognosis, which is always published on Friday. Why? Because comparison of models is very important. And nevertheless, if we have micro and macro models, we have a lot of parameters we are looking for. One is, for example, the ICU usage. It's very different in countries because of the system. I mean, Austria is very different to Italy or Germany. And that's the basic thing we are lacking at the moment. We, for example, do this for Austria, but we have too little approach to services. So what we identified is... a better usage and a quality assured reuse of models as a lessons learned and the second is we need much better processes for use in international and sharing of data not for public because in health normally it's not allowed to use it as public but with highly professionalized processes where research group can use data also if it's not anonymized for clearly defined, ethical approved research questions and where we can share this data in this COVID-19 crisis is a really call for action to improve the processes here. Thank you very much. Thank you very much indeed, Nicky. I feel we're lacking communal clapping on these digital platforms. I would like to say to our audience, if you have access to the Q&A tool, to type in some questions there or perhaps just type in a brief question and we can have you actually pose your question audibly to our speaker. If any members of the panel would like to ask a question then please attract my attention in whichever way you feel is appropriate. While you all think about questions, I of course was very inspired by your talk. and have enough questions to fill the time but i do not want to take all that time so i'm very aware of some of my colleagues in the netherlands who are working with our national government to look at how the spread of corona is developing and i was wondering at the moment because everyone's so i won't say panicking everyone's so very focused on what's going on in their own country Are there already models and data being swapped among countries to do comparisons of the types of data that want to be collected and the performance of the models that you have? Yeah. So, for example, the Society for Medical Decision Making is doing a platform where they're collecting models for different countries. Last week, we also had a talk to the ECDC. ECDC is... is collecting on the one hand models for different countries to compare them and they are making one overall model approach to compare different countries. Additionally there are some interesting approaches by colleagues here in Vienna which are connected to the States and to Singapore where they collect for example measures which were taken in different countries and they're working at the moment on an algorithm where you can say okay this measure had an outcome of a decrease of error effective or doubling times of X. And so they have a huge database, which is public, where you can compare the measures with an algorithm on the outcome. So I think it happens a lot when we live in a totally rapid scientific process where we have to review papers every day, which change, for example, the infectivity of kids. which is at the moment a very big discussion. Okay, thank you very much. I have a question from Bridget Ratzer. Can she ask this live or is that not possible? We had several questions regarding the slides. I think we can collect all the slides and put it on our website. So we will have, if the speakers agree. we can have all the slides published, depending on the speakers, okay? Okay, yes, I can answer this question, I think. I've read it already. Oh, great, thank you. Yes, it's a big discussion in Austria, but I think in all countries over the world, how much has the Scientific Advisory Board heard? In Austria, we were sometimes heard, we were sometimes not heard. I think there are two things on that. The one thing is, it's a lot of different aspects. In Austria, we have the discussion. In March, we had a very much focus on the epidemic curve, on what is the replication rate, what is the impact in the hospitals, and very little on the collateral damage in hospital, in social areas, from working places, and so on. This was okay in March, and then they started to say, okay, we have to also include other things. So that's a little bit decrease of the importance of the scientific advisory board. And the second thing, of course, to be honest, in the scientific community, there are at the moment a lot models fleeing around. And there are some better and there are some not so good. And of course, there is a transparent interaction and everybody can publish models. And so they can decide which model they believe. And this is at the moment, of course, from the scientific point of view, an important time where we have to stick on scientific good practices by reviewing by good quality. That's also a challenge at the moment. I think these points are at the moment a little complicated. There's an affiliated question from an anonymous attendee, unfortunately, asking other international standards for these models. Yeah, that's a good one. That's the focus of our research group and a lot of research groups. There is, for example, an activity of the ISPOIR, which the International Society for Pharmaco-Economical Outcome Research and the Society for Medical Decision Making. They are focusing especially on good modeling practices. So the question is, what model can I use for what question? It also continues to optimization and various aspects. So it's a big deal in the community to think on. What models can I use for questions? And we are doing a lot in the education of our younger students. Because I think a big problem is persons who learned at the university one approach. I don't know, they learned Petri nets or system dynamics and they say, okay, I can solve everything. I can build a Mars rocket with system dynamics. And we believe there are different approaches. For God's sake, in health systems research, there are standards, but there's a lot of work to do in publications on how to decide which model is best. It depends always on data, system knowledge, and the research question. Thank you very much.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 25.664,
+      "text": "I hand over to Linda for the second on this informatics in managing the crisis. And just very shortly, Linda is both a professor at the University of Utrecht and she is also a research manager for strategy in the Centrum Viscum de Informatica in Amsterdam. I think I made many mistakes in spelling it now."
+    },
+    {
+      "start": 25.664,
+      "end": 53.84,
+      "text": "She's she's active in visualization, human computer interaction and also AI. And she is a previous president of Informatics Europe, which is the Association of European Computer Science Department. Linda, now it's your floor to moderate the next session. Sure. Thank you very much, Hannes. And thank you very much for inviting me. I'm on my turn. I'm delighted to welcome our next speaker, Niki Popper."
+    },
+    {
+      "start": 53.84,
+      "end": 81.472,
+      "text": "Nicky is coordinator of the Centre for Computational Complex Systems at the Technical University in Vienna. I shall keep to the English of this. He's also chair of the COMET-K project, Decision Support for Healthy Policy and Planning, which is dedicated to the development of models and to efficient and safe use of data for decision making in health systems. So we're very, very grateful that he's able to join us today."
+    },
+    {
+      "start": 81.472,
+      "end": 105.12,
+      "text": "And he will talk, I hope, for about 15 to 20 minutes on real-time simulation-based decision supports in healthcare systems, the COVID-19 crisis. Over to you, Niki. Thank you very much. Thank you for the invitation. I hope you can already see my slides. Yes."
+    },
+    {
+      "start": 105.12,
+      "end": 133.664,
+      "text": "Great. Okay. So thank you very much, Linda, for this introduction. Yes, as a matter of fact, I'm working at the Technical University and at the moment we are supporting the government in Austria to find hopefully good decisions how to take care with the COVID-19 crisis. And in my talk, I want to point out more or less two things. So what are models like?"
+    },
+    {
+      "start": 133.664,
+      "end": 163.152,
+      "text": "which are tackling these questions. And do we have only one choice of model? And the second question is how the way we ask questions defines how we use models and how we should integrate models in decision support processes. So what was the starting point? As a matter of fact, you can see here a map of the small town of Vienna."
+    },
+    {
+      "start": 163.152,
+      "end": 188.816,
+      "text": "in the center of Europe. And the big thing was in January when nobody thought about it in Europe, they said, okay, what might happen if we have one point here in red with an active COVID-19 infection? And then we said, okay, yes, we will try to find out with our model where we have an agent-based model, where we have contact networks in the city."
+    },
+    {
+      "start": 188.816,
+      "end": 214.096,
+      "text": "And the good thing was, and I think that's a very important thing for usage of models and simulation tools in the 21st century, not to start thinking of the model when the question arrives, but to have already a modular system of basic components. I will show it in this talk, how our model approach is built up with different modules."
+    },
+    {
+      "start": 214.096,
+      "end": 241.712,
+      "text": "The basic thing is we are modeling since a long time on population models, on the way we can rebuild a virtual population. So we have digital humans in our simulation and they can live their life and we can have more insights what happens to our real world population if something happens. So the first impact was of course COVID-19 arrived in Europe and the second impact are the measures."
+    },
+    {
+      "start": 241.712,
+      "end": 268.24,
+      "text": "where we have very strong measures in Austria compared to other countries. And what does this mean for us as population, as humans and in a real world? So probably you are not very familiar with the things what happened in Austria, so I made a very short timeline what happened and what was our answer or the answer of the modeling and simulation community."
+    },
+    {
+      "start": 268.24,
+      "end": 296.144,
+      "text": "So we started in January with first scenarios to calibrate our model, our agent-based model, more or less a month before the first confirmed cases were reported in Austria, which happened in Innsbruck. And we started those days with possible scenarios, what might happen after this. What might happen after this is, you can see here Innsbruck was the first case."
+    },
+    {
+      "start": 296.144,
+      "end": 325.44,
+      "text": "And then we've started to do different approaches where we have the non-detected cases and the detected cases. And we have a contact network over Europe, over Austria. And in this example, we had standard impact in Vienna. It's the biggest city of Austria. And of course, this was not a real prediction. It was in February. There were no, only two cases in Austria. But what you can already see is a qualitative."
+    },
+    {
+      "start": 325.44,
+      "end": 351.632,
+      "text": "curve, where you see a first peak, and then you have seen some of these wibbering curves and peaks in the following year. And what we see now is that at the moment we think that it might be like this. I'm not focusing on the concrete numbers, but the qualitative behavior might be that it will be like this, at least in Austria."
+    },
+    {
+      "start": 351.632,
+      "end": 378.416,
+      "text": "We already see, okay, we started with only calibrating our model with data which came from the United States, for example, where we said, okay, 60% of the population will get the disease. And then moving on to this first impact analysis. At the beginning of March, at the 10th of March, the government set the first measures in Austria. And so our approach changes."
+    },
+    {
+      "start": 378.416,
+      "end": 406.528,
+      "text": "At this time, we said, OK, we have to compute what would a decrease of the contact between the population benefit for the for the highness of the peak. And you can see this flatten the curve curve. We did this, of course, also for Austria. And we said, OK, we have a nonlinear effect if we can use these things. What happened with this model, it was strongly communicated by the government to the population."
+    },
+    {
+      "start": 406.528,
+      "end": 435.648,
+      "text": "just to show, okay, if you do something, it would benefit. It would not only benefit in a linear way, it would really benefit increased. And so what happened was we were really successful with this and continued. A totally different question of what I mentioned is, what is the worst case scenario? So for example, in the city of Vienna, the hospital group here in Vienna,"
+    },
+    {
+      "start": 435.648,
+      "end": 465.36,
+      "text": "said, okay, we need a process, a description where we have the idea, what is the worst case? What do we have to obey for resource management? And so we said, okay, with the worst case scenario, you will need 6,500 beds here in Vienna. And so the reaction was that they made at Messe Wien, so it's an exhibition area, additional beds. So you can see we have two days, three days, and we have really..."
+    },
+    {
+      "start": 465.36,
+      "end": 490.192,
+      "text": "implemented the model, the simulation and the reaction of the policy. So what we are experiencing here is a fundamental difference of everything I ever seen in my life. If you do some simulation results and policies reacting within two days, at least in Austria, it's not very normal. Normal is you do something and then you wait 10 years and then politicians said, oh yes, we might have done something."
+    },
+    {
+      "start": 490.192,
+      "end": 511.152,
+      "text": "So that's the normal process. So we're experiencing really very, very exciting things from the simulation. So from the 13th, the same day, big measures were taken in Austria. Schools were closed, shops were closed, more or less all. And we computed, of course, then..."
+    },
+    {
+      "start": 511.152,
+      "end": 538.656,
+      "text": "Really, the first time, a really quantitative prediction. Why? Because we had now more information on the disease, we had more information on the contact networks, and we had the information on the measures. And we said, okay, the number of increase of new cases will reduce by 50%. This day, on the 13th of March, we had an increase of 30% every day. And we will say, okay, it will decrease in one week to 20%."
+    },
+    {
+      "start": 538.656,
+      "end": 567.856,
+      "text": "To be honest, of course, you need luck with this. We were exactly right. One week later, we had the reduction of this 50% from the doubling time of 2.3 days to a doubling time of 5.5 or so. But in real world, in change management, it's not always good. If you're right, it not only works. One week later, we had additional measures. We said, okay, it will work."
+    },
+    {
+      "start": 567.856,
+      "end": 597.616,
+      "text": "But government said, no, we believe we need more things. So masks were introduced in Austria. It's just to show it's not always the thing that every politician and all the decision makers believe us. And I think it's also a very important thing that you have two different sides. You have, on the one hand, experts who can add, hopefully, evidence-based and not biased information. On the other hand, you have politicians who have to decide, including other things I'm not responsible for or we are not responsible for."
+    },
+    {
+      "start": 597.904,
+      "end": 626.832,
+      "text": "The story continues, and I stop here. From April in Austria, the situation is more or less good, and now we are computing a lot of scenarios of the reduction of the measures and containment strategies, of course. Okay, so what is the basic thing? We have now, in this case, two months of modeling and simulation, more or less with one approach, and we have totally different questions."
+    },
+    {
+      "start": 626.832,
+      "end": 655.056,
+      "text": "In the first step, we had the calibration and a priori analysis. Then we had qualitative analysis. Then we had analysis of measures based on condensed assumptions. So if you decrease of 25% of conflicts, what will be the impact of the hospitalization of the spread? Then we had resource planning where we have to include worst case scenarios and such things. And then starting with quantitative prediction."
+    },
+    {
+      "start": 655.056,
+      "end": 681.264,
+      "text": "And now being in a state where we say, okay, we make analysis of measures based on detailed assumptions. So what will happen if we open schools again, which happens in Austria, as a matter of fact, on Monday. So we have now three days and we are pretty much excited what we will see as the evidence, especially for the spread in schools is very limited at the moment, also in international literature. So a lot of different questions."
+    },
+    {
+      "start": 681.264,
+      "end": 710.304,
+      "text": "Can we answer this always with one model? What are the approaches? I think that's very interesting. So the basic thing is the government said, okay, we don't want to have this scenario on the left-hand side. We want this one on the right side where you have in blue the consumption of the hospital beds. And we want very little spread and very little usage of hospitals. And what our approach always is, we say, okay, we have different things where we have to decide what are the methods."
+    },
+    {
+      "start": 710.304,
+      "end": 739.088,
+      "text": "and what we can answer. It's always the kind of the research question is the question for quantitative prognosis, is it for qualitative comparing of strategies or whatever. Then the thing is how much system knowledge do we have and how good is the data. And this is like a feedback loop where we have to always decide okay I cannot answer a detailed question if I don't have data and I don't make causal models if I have no system knowledge."
+    },
+    {
+      "start": 739.088,
+      "end": 769.072,
+      "text": "And so this is an iterative process. I did in my PhD thesis a lot of work on this, how to find the best solution and also how to find the best modeling approach. I don't want to go in too much detail in the next 10 minutes, but I want to point out a little what our model approach is and what are the differences. So in the first step, of course, you can have data-driven approaches in causal models. I don't have to go in detail in this community what are data-driven models. We can"
+    },
+    {
+      "start": 769.072,
+      "end": 797.52,
+      "text": "using machine learning and statistical methods and doing a curve fit and fitting recent data compared with different countries and so on. It's of course a very important strategy which can help us to compare, for example, international strategies, excessive death rates and so on. But we are focusing on causal models. Of course, we use also a lot of data, but we try to integrate causality."
+    },
+    {
+      "start": 797.52,
+      "end": 822.752,
+      "text": "So we want to generate some benefit by the prognosis and by the question, what are dependencies in our system? Of course, not very surprising, it's the classical SER model where we have susceptible, infectious and recovered person or resistant persons."
+    },
+    {
+      "start": 822.752,
+      "end": 852.08,
+      "text": "It's the classical Kermit McKendrick approach from the 1920s of the 20th century. So it's the approach a lot of research groups in the world are also taking. You have more or less these aggregated numbers of persons. As a matter of fact, for the COVID-19 disease, you have to improve this approach. It's also more or less classical already. It's an S-E-E-R strategy where you have also the exposed persons."
+    },
+    {
+      "start": 852.08,
+      "end": 881.424,
+      "text": "In principle, one of the important things of COVID-19 that you have persons which are already infected and or infectious but have no symptoms. So you have an epidemic behavior with time delay. This, for example, is very important if you compute the famous error zero number for the basic reproduction number. And then you have to"
+    },
+    {
+      "start": 881.616,
+      "end": 910.848,
+      "text": "go on with the definition of model parts, of course, with disease. You have the asymptomatic infection, you have the quarantine at home, and of course, very important for decision makers, and that are the most important numbers all around the world, are the hospitalized persons with severe cases, and of course, the ICU needs, so the intensive care."
+    },
+    {
+      "start": 910.848,
+      "end": 937.856,
+      "text": "And as you can see, a lot of information is needed. A lot of data is needed and a lot of going into more detail with the model. So our approach is a microscopic model where we really have all inhabitants in this case of Austria. It's about nine million where we have this coverage of the status for every person. So you have an infectious status and susceptible status and so on."
+    },
+    {
+      "start": 937.856,
+      "end": 964.976,
+      "text": "What is the important thing for both strategies? There is no free lunch. Why? All approaches have advantages and disadvantages. So if you have a classical SER model, you have only three parameters you can try to calibrate, which you have to parametrize. It's a very pure model where you can have a very detailed view on what happens if I change."
+    },
+    {
+      "start": 965.104,
+      "end": 990.352,
+      "text": "As a matter of fact, the basic thing is for real world illnesses, you have the bias of the information in aggregating these three parameters by including a thousand of real world parameters. With our microscopic approach, we have the other way around. We have a lot of parameters for every step, for the latency time, for the incubation time, for the..."
+    },
+    {
+      "start": 990.352,
+      "end": 1018.016,
+      "text": "severity of the illness for various population groups, depending on age and comorbidities. And of course you have here the problem that you might have an overfitting and the question, can I believe what my model is doing? I think especially important in today's complex simulation models is the separation of model-driven errors and data-driven errors. We have a huge sensitivity of these models."
+    },
+    {
+      "start": 1018.016,
+      "end": 1039.52,
+      "text": "which is based on the system knowledge, on the way this illness is working. If it starts to spread, we have a very vivid and a very dynamic behavior. It's very sensitive to, for example, measures. That's the one thing. The second thing is, especially in Austria, we have a big problem to get qualitative data."
+    },
+    {
+      "start": 1039.52,
+      "end": 1065.936,
+      "text": "It starts from the number of ill persons on the testing strategy and a lot of different things. So in Austria, we have at the moment a very intensive discussion between privacy. When is it allowed to use health data from persons? And on the other hand, the way we make policy decisions and the way researchers can use data from the health system."
+    },
+    {
+      "start": 1066.224,
+      "end": 1093.072,
+      "text": "So a very brief overview only for five minutes of our model. As I mentioned, I think today, if we make decision support with simulation models, we need a highly quality assured structure of these models. So we develop modules. And the good thing in our case was the population model, the conflict model, and some kinds of disease modules were already developed in the last 10 years."
+    },
+    {
+      "start": 1093.104,
+      "end": 1120.96,
+      "text": "So we had only to adapt the disease model and to include also the policy model. Population model, very brief. We have a generic population concept where we can apply all the development and the status quo of the inhabitants. Where we have different toolboxes, it depends if we make an epidemic like COVID-19 or if we analyze diabetes."
+    },
+    {
+      "start": 1120.96,
+      "end": 1150.64,
+      "text": "which we need to analyze over 30 years. And this model can be reused. What are the features? We generate based on the real population, a digital population, which includes in the first step only age and sex and the region. But we can adapt depending on the research question, the living, the education, if the medical"
+    },
+    {
+      "start": 1150.64,
+      "end": 1177.888,
+      "text": "the medical record or smoker or non-smoker, whatever. So you live then in a real area and you have, we are able to trace this virtual population. So it's from the birth to death. If you come from Germany and leave again, everything is possible. So what is the benefit? The benefit is these persons can then have"
+    },
+    {
+      "start": 1177.888,
+      "end": 1202.864,
+      "text": "contact with other persons and if they are ill they have their process through the system. So as a matter of fact we can go in detail as much as we want in this case for example we can say okay it's not only statistical in an area but they're really their living place because it's important how far are they away from hospitals and other things."
+    },
+    {
+      "start": 1202.928,
+      "end": 1232.768,
+      "text": "Contact model, to go not too much into detail, is based on a European Union study. It's the Pullingwood study, which we use. And the good thing is, and that's the one thing I wanted to point out on the contact model, it is based not only on age and sex, how much contacts do you have with which other groups, but it's also separated into households, schools, workplaces, and so on. Why is this important? It's on the one hand important that we have the possibility"
+    },
+    {
+      "start": 1232.768,
+      "end": 1255.408,
+      "text": "to include the context on the different processes and we can directly include the measures which were set. For example, in Austria schools were closed, so it was very easy and very fast possible to close the schools and also to reopen it. So that's also important. Could I ask you to round up in just a few minutes? Yeah, yeah, only three minutes."
+    },
+    {
+      "start": 1255.44,
+      "end": 1277.072,
+      "text": "And so this is on a modular basis. Contacts are also between municipalities and districts and federal states and countries. And in this case, it's the same. You have to include it in the first hand. Then you can now, for example, include the measures when in Austria it was not allowed to leave, for example, different countries to go on. OK, so."
+    },
+    {
+      "start": 1277.072,
+      "end": 1303.728,
+      "text": "I will go over this. You have then the possibility that the illnesses are doing hospitalization where you come, depending on the age and the sex. And you can include the policy, lifting policies and introducing policies. So what are the results? And I'm trying to point out, you have to be able to answer different questions. So, for example, one thing we are doing is we recompute the history."
+    },
+    {
+      "start": 1303.728,
+      "end": 1331.568,
+      "text": "with our virtual agent. So what you can see here is the dark curve in dark blue are the collected positive tests. This is the number we can calibrate on for the time. The red numbers are the hospitalizations. What we have as additional benefit from a simulation tool is the not evaluated versions like in dark blue for example the pre-symptomatic cases."
+    },
+    {
+      "start": 1331.568,
+      "end": 1359.12,
+      "text": "and in yellow the asymptomatic cases. So what we can benefit with this is with the virtual, with the digital population, we can recompute, for example, the first wave we have seen now in Austria in March and April and make additional analysis with virologists and so on. Second thing is, of course, we can now help to make this analysis for different scenarios."
+    },
+    {
+      "start": 1359.12,
+      "end": 1386.224,
+      "text": "So, for example, at the moment, one thing we are doing is if you have the darker curves in blue and in orange here, this is the reopening now of measures. So if you open schools and working places and in the light color, the light blue and yellow curve is if we make tracing and if we make a containment strategy. And so we can point out, OK, until what amount of reopening can containment help?"
+    },
+    {
+      "start": 1386.288,
+      "end": 1415.168,
+      "text": "So totally different questions, but possible with both models. I think the most important thing at all is at the end, two things that we have different models, only two sentences. In Austria, we have a combination of our university with the medical university and the state agency where we use three models for computing the every week prognosis, which is always published on Friday."
+    },
+    {
+      "start": 1415.168,
+      "end": 1444.576,
+      "text": "Why? Because comparison of models is very important. And nevertheless, if we have micro and macro models, we have a lot of parameters we are looking for. One is, for example, the ICU usage. It's very different in countries because of the system. I mean, Austria is very different to Italy or Germany. And that's the basic thing we are lacking at the moment. We, for example, do this for Austria, but we have too little approach to services. So what we identified is..."
+    },
+    {
+      "start": 1444.576,
+      "end": 1469.648,
+      "text": "a better usage and a quality assured reuse of models as a lessons learned and the second is we need much better processes for use in international and sharing of data not for public because in health normally it's not allowed to use it as public but with highly professionalized processes where research group can use data also if it's not anonymized for"
+    },
+    {
+      "start": 1469.648,
+      "end": 1498.816,
+      "text": "clearly defined, ethical approved research questions and where we can share this data in this COVID-19 crisis is a really call for action to improve the processes here. Thank you very much. Thank you very much indeed, Nicky. I feel we're lacking communal clapping on these digital platforms. I would like to say to our audience, if you have access to the Q&A tool,"
+    },
+    {
+      "start": 1498.816,
+      "end": 1524.592,
+      "text": "to type in some questions there or perhaps just type in a brief question and we can have you actually pose your question audibly to our speaker. If any members of the panel would like to ask a question then please attract my attention in whichever way you feel is appropriate. While you all think about questions, I of course was very inspired by your talk."
+    },
+    {
+      "start": 1524.592,
+      "end": 1550.944,
+      "text": "and have enough questions to fill the time but i do not want to take all that time so i'm very aware of some of my colleagues in the netherlands who are working with our national government to look at how the spread of corona is developing and i was wondering at the moment because everyone's so i won't say panicking everyone's so very focused on what's going on in their own country"
+    },
+    {
+      "start": 1550.944,
+      "end": 1577.424,
+      "text": "Are there already models and data being swapped among countries to do comparisons of the types of data that want to be collected and the performance of the models that you have? Yeah. So, for example, the Society for Medical Decision Making is doing a platform where they're collecting models for different countries. Last week, we also had a talk to the ECDC. ECDC is..."
+    },
+    {
+      "start": 1577.424,
+      "end": 1606.752,
+      "text": "is collecting on the one hand models for different countries to compare them and they are making one overall model approach to compare different countries. Additionally there are some interesting approaches by colleagues here in Vienna which are connected to the States and to Singapore where they collect for example measures which were taken in different countries and they're working at the moment on an algorithm where you can say okay this measure"
+    },
+    {
+      "start": 1606.752,
+      "end": 1634.848,
+      "text": "had an outcome of a decrease of error effective or doubling times of X. And so they have a huge database, which is public, where you can compare the measures with an algorithm on the outcome. So I think it happens a lot when we live in a totally rapid scientific process where we have to review papers every day, which change, for example, the infectivity of kids."
+    },
+    {
+      "start": 1634.848,
+      "end": 1661.952,
+      "text": "which is at the moment a very big discussion. Okay, thank you very much. I have a question from Bridget Ratzer. Can she ask this live or is that not possible? We had several questions regarding the slides. I think we can collect all the slides and put it on our website. So we will have, if the speakers agree."
+    },
+    {
+      "start": 1661.952,
+      "end": 1691.136,
+      "text": "we can have all the slides published, depending on the speakers, okay? Okay, yes, I can answer this question, I think. I've read it already. Oh, great, thank you. Yes, it's a big discussion in Austria, but I think in all countries over the world, how much has the Scientific Advisory Board heard? In Austria, we were sometimes heard, we were sometimes not heard. I think there are two things on that."
+    },
+    {
+      "start": 1691.136,
+      "end": 1717.856,
+      "text": "The one thing is, it's a lot of different aspects. In Austria, we have the discussion. In March, we had a very much focus on the epidemic curve, on what is the replication rate, what is the impact in the hospitals, and very little on the collateral damage in hospital, in social areas, from working places, and so on."
+    },
+    {
+      "start": 1717.856,
+      "end": 1745.376,
+      "text": "This was okay in March, and then they started to say, okay, we have to also include other things. So that's a little bit decrease of the importance of the scientific advisory board. And the second thing, of course, to be honest, in the scientific community, there are at the moment a lot models fleeing around. And there are some better and there are some not so good. And of course, there is a transparent interaction and everybody can publish models."
+    },
+    {
+      "start": 1745.376,
+      "end": 1773.472,
+      "text": "And so they can decide which model they believe. And this is at the moment, of course, from the scientific point of view, an important time where we have to stick on scientific good practices by reviewing by good quality. That's also a challenge at the moment. I think these points are at the moment a little complicated. There's an affiliated question from an anonymous attendee, unfortunately, asking other international standards for these models."
+    },
+    {
+      "start": 1773.472,
+      "end": 1802.752,
+      "text": "Yeah, that's a good one. That's the focus of our research group and a lot of research groups. There is, for example, an activity of the ISPOIR, which the International Society for Pharmaco-Economical Outcome Research and the Society for Medical Decision Making. They are focusing especially on good modeling practices. So the question is, what model can I use for what question? It also continues to optimization and various aspects. So it's a big deal in the community to think on."
+    },
+    {
+      "start": 1802.752,
+      "end": 1828.32,
+      "text": "What models can I use for questions? And we are doing a lot in the education of our younger students. Because I think a big problem is persons who learned at the university one approach. I don't know, they learned Petri nets or system dynamics and they say, okay, I can solve everything. I can build a Mars rocket with system dynamics. And we believe there are different approaches."
+    },
+    {
+      "start": 1828.32,
+      "end": 1844.756,
+      "text": "For God's sake, in health systems research, there are standards, but there's a lot of work to do in publications on how to decide which model is best. It depends always on data, system knowledge, and the research question. Thank you very much."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

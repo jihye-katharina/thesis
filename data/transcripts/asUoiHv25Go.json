@@ -1,0 +1,666 @@
+{
+  "video_id": "asUoiHv25Go",
+  "source": "whisper",
+  "language": "en",
+  "text": "Okay, so hello everybody, welcome to a further digital humanism lecture now in 2024. Excuse, but this time it's one hour later than normal, but this is due to teaching obligations of our speaker. And today it's again about AI, but about AI in the different direction AI may take. I am particularly grateful to welcome today a special and renowned speaker. It's Daron Achimoglu from MIT. He's a well-known economist, but he also has quite an expertise in technology and technology politics. So we are very looking forward to your talk. The moderator of today is Moshe Wadi, who will then introduce Daron in more detail. Very short, the core choreography is as always, we have a talk for 30 minutes and then up to 30 minutes Q&A, moderated by Moshe. And at the end, this is already a tradition of digital humanism. We have a short piece of music proposed by Taro. Welcome to Moshe. Also, thanks Moshe for moderating. And the floor is yours. Thank you. So today we're going to hear from Darren Achamoglu about all human AI and all human technology is really the central theme of the Digital Humanism Initiative. Technology with humans in the center. And I'm particularly pleased to welcome Darren here. He's Institute Professor of Economics at MIT, which is the highest professorial rank at MIT. And he's one of my favorite economists because he understands that economics sits in a bigger context that has societal dimensions, political dimensions. And his recent work looks at the issue of technology. and progress and power. And if you may remember when we had the workshop on technology and democracy, the conclusion was it's not so much about the democracy, about technology, it's about power. And that's what we're going to hear from Darren today. He is recipient of many awards. I won't enumerate all of them. I will just say that his name is mentioned. I'm hearing his name mentioned as a candidate for the Nobel Prize. So I'm putting the vibes out there. So, one book that I've read, another book that I've read from Darwin some years ago was Why Nations Fail. That's where I really learned about his work. And again, it's putting economics in a broader context of society, politics, which is very often missing when we have the techno-utopianism, just focus on technology. Darwin, the floor is yours. Thank you very much, Moshe and Hannes, for the invitation. It's my pleasure and honor to be able to talk a little bit about what I see as the possibilities and the challenges of pro worker AI. And what I'm going to talk about today is based on joint work. or a joint book with Simon Johnson, Power and Progress. I'll mention the book, but it goes beyond that in the context of thinking about AI. I don't think I need to tell this audience about the advances in generative AI, except that the amount of investment and computational power is truly mind-boggling. And this is just one aspect of what we are seeing as the potential boom for AI. And if you listen to experts in the industry, there are several promises from this massive investment. And the most interesting one is that generative AI and in particular large language models, but not just limited to large language models, will provide intelligent, flexible, and easily usable tools that are potentially complementary to human decision making in technical work and creative tasks. I think this is a very bold claim, and three or four years ago, I would have been more tempted to say that it was complete obfuscation of other things that AI was going to do. Whereas I think the advances of the last two years as background, I have come to believe that this is a possibility, but it's a very distant possibility. And the reason why I think it is a possibility, but a distant one, is going to be the topic of my talk. Why do I believe that, in fact, this insider claim might have some truth? And why I actually can argue on the basis of historical work, some of my empirical work, and other evidence that this is not where we are currently heading. So this promise is there. But I think there are four major roadblocks, which mean that it's currently impossible for us to reach that promise. And that if we, in fact, believe that that promise was there and it was desirable, then we would need fundamental reform and changes in policies as well as changes in the tech industry. And these four roadblocks is what I'm going to spend most of my talk on. I'm going to talk about excessive automation, which is a lot of... my focus in past work, but now adapted to the AI context, loss of informational diversity, a type of human AI misalignment, which I'll explain is not the standard alignment problem in AI, but a different one that I think is much more mundane, but much more fundamental, and the threat of monopolized control of information. Okay, so without further ado, let me just jump into The talk, the rest of the talk. And I think in interpreting a lot of what's going on in AI and the promise and why that promise is actually unlikely to be a reality anytime soon, it might be useful to consider the two forming, defining philosophies of computer science, digital technologies and AI that go back to, you know, the 1940s. And I think. This history is known to many of you, but its significance may be perhaps not properly appreciated. One of the thesis of my work and the book with Simon Johnson is that you cannot understand technologies in abstraction from the guiding visions of powerful players. And in the area of digital technologies, there are... two visions that have often been in a clash. The first one, which goes back to the work of this brilliant mathematician, of course, Alan Turing, is the desire of autonomous machine intelligence. How the mind works, how computers can imitate it, and the desire for autonomy, meaning that this can be done in a self-acting manner. This was not just Alan Turing's brilliant mathematical work and his philosophical interpretation of that mathematical work, which I think is less brilliant than his mathematical work, but also the guiding principle of the early AI pioneers, including this group of people who were the initiators of the Dartmouth Project and the christeners of the field of artificial intelligence. This was from the very beginning countered by a very different vision, which I think is first articulated by Norbert Wiener, which I call or Simon and I call machine usefulness rather than machine intelligence, meaning that from the very beginning, there was a concern that autonomous machine intelligence or capabilities, high level capabilities is not what you want, but you want a metric of judging the success of digital machines and how useful they are to humans. This leads to a very different. type of approach and a different way of measuring a metric for success. And I think when this vision was more powerful, it was truly important in spearheading a lot of innovation. So many things that we take for granted today, for example, the computer mouse, hyperlink, hypertext, menu-driven computers, came out of Douglas Engelbart's work in the 1960s and his students' works, which was very much driven by this approach and many of the internet related advances was also quite strongly linked to JCR Licklider's work which was driven by the same sort of vision. And it was this idea that machines and computers would create a symbiosis and what people like Engelbart and JCR Licklider meant by this is not like brain implants, but that machines would be able to provide better information and better computational capabilities to humans for them to perform their own tasks, essentially something you can see in Norbert Wiener's work as well. So, for example, in this paper written more than 60 years ago, J.C.R. Licklider wrote, the hope is that in not too many years, human brains and computing machines will be coupled together very tightly and the resulting partnership will think as no human brain has ever thought and process data in a way that approached by the information handling machines we know today. So this was a dream. And I think the Internet and the protocols that came out of this work were one step towards it, but it remained a dream. I think the Internet. provided information, but it did not provide useful and real-time information. I think the hope of the promise of generative AI is related to this. And I think in the industry and in the media, you hear a lot about creative artists and so on, but I think actually the real promise is much more widespread if you can make it happen. Imagine, for example, electricians. Today's electricians, most of the problems that they are dealing with are becoming more and more complex. It's a series of problem-solving tasks. And as in many other fields, the problem is that information is abundant. So if you're dealing with something on the new electrical grid or a new equipment, somebody has dealt with it before. You're not the first person to do it. But useful information is scarce, meaning that you don't have access and you don't know how you can access that expertise that has been built by... past practitioners of the same sort of economic and technical activities. So the promise of generative AI is to provide in real time that sort of expertise to a variety of people in offices, in manual tasks, in skilled crafts occupations such as electricians and plumbers. And this is not a complete pipe dream, although the proof of concept we have is a little less. directed and less precise than what I would like given this sort of potential set of issues. But a number of papers show that the right combination of human decision makers and large language models can be useful. Three papers, for example, one by Sida Peng, Mert Demirer, and collaborators show that engineers with GitHub Copilot can be, you know, 30% to 50% faster than people who don't have access to Copilot. Two of our students here, my students at MIT, Shiket Noy and Whitney Zhang, did a randomized control trial online for white-collar simple writing tasks, and they showed that access to ChatGPT. can improve performance. And a related paper by my former colleague, Eric Brynjolfsson, Danielle Lee, and Lindsay Raymond shows the same thing in improvements in worker productivity in simple customer service tasks. Now, one interesting aspect that you see in these things, which I summarize with the pictures here, is that this improvement in the, for example, in the Noyan Zhang paper, This is the control group. This is before the treatment. The control group doesn't get any treatment and they improve the quality of their riding a little bit just with time. But this is the treatment group. They have a much bigger improvement. And if you see where this improvement comes from, it comes from previously lower and middle performing. So they are the lower expertise worker. They were having trouble, they were slower, and they were not writing very well or summarizing the content very well. So having access to ChatGPT helps them. So you see now this is the inequality of the quality as graded by other humans in the treatment group, and this is the control group. So there's a significant decline in inequality of performance in terms of quality. Now, the problem in all of these things is that it's a combination of task automation versus providing information. So, for example, in Peng et al., you know, the GitHub copilot writes a draft of some of the code and then humans build on it. It's not complete automation because the code that machines write at the moment is not, doesn't work. So the humans have to troubleshoot it. But it is. It has an element of, you know, some of the tasks that humans were doing is now being done by machines. And you don't always see this information provision that I'm emphasizing. But at least the hope is there. But there are four related but distinct roadblocks, as I mentioned. So let me go through each one of them. Excessive automation, I think, is a very severe one, because if you go back to this machine intelligence vision. It creates an almost direct pathway to automation. If what you are trying to achieve. successfully or unsuccessfully, by the way. But if you're what we are trying to achieve is autonomous machine intelligence, then you should let the machines perform some of the tasks that humans do. And in fact, people motivated by this perspective, not only dream of artificial general intelligence, but also use things like reaching human parity in a number of tasks as a metric for success. So that creates a very natural. pathway from AI to automation. But if you do automation, then you're really not in the path to creating this complementarity between humans and this promise of providing machines that are useful to humans. This has been the historical pattern in the United States. There has been a lot of automation, both in factories and offices. Emphasis of automation, I have argued in my academic work with Pasquale Restrepo and in the book with Simon Johnson, has been a critical part of the breakdown of shared prosperity during the era of digital technologies. This picture here is maybe familiar to some of you, but it's truly striking. What I'm doing here is I'm showing you the real... wages for 10 demographic groups distinguished by men and by gender and education all the way from workers without a high school degree in orange high school degree all the way to workers with a postgraduate degree and same thing for women and if you look at the period from 1963 to the late 1970s you see that these curves are all on top of each other and some and some of them you cannot even see the curve because there's so much shadowed by the other ones and and And that's signaling both shared prosperity, real wages, inflation adjusted wages are growing in tandem. And the rate of growth here is very striking. It's about two and a half percentage points every year, meaning that if you enjoy this type of wage growth in 20 years, you're going to double your real income. And this is not only true from 1960s onwards. These data are available from 1960s onwards. But if you go with other data sources to 1950, you see the same pattern. But then around 1980, you have a sea change, a very different pattern. Now you have a major fanning out. The top postgraduate workers are still enjoying rather rapid wage growth, but median wages stagnate and workers with low education, especially men, but also to some extent women. are experiencing very significant declines in their real wages. There has been no other period in U.S. history that we know of where real incomes have fallen for 40 years. This is really a remarkable period. And this is, you know, bang in the middle of the digital age. Is this caused by digital technologies? Well, there are many other things going on and many of them do play a role. But my work highlights that. automation is an important factor. And here, to just give you an idea of why automation not only creates the tensions with this promise of the generative AI, but also is really a big barrier to shared prosperity, let me show one graph from my work with Pasquale Restrepo. And what this picture here on the right depicts is Similar information to the one in the previous picture. Now, each circle corresponds to a more detailed demographic group distinguished not just by gender and education, but also age and ethnicity. You see the big circles are the ones that are big groups and the color coding tells you the education. But now I am zeroing in on that critical period from 1980 to 2016, 2017. So it's the cumulative hourly real wage change from. 1980 to 2016. You see many of those groups are below zero. Those are the ones that have lost real income since 1980, as I emphasize. But the key variable here is on the horizontal axis. That's the measure of automation that Pasquale Restrepo and I have. It's our estimate of what fraction of tasks a demographic group used to perform in 1980 that have since been automated. So some of these groups that have two years college, just a high school degree or high school dropouts have experienced, because of blue collar automation and some office automation, about 20, 15 to 20 percent of the tasks that they used to perform are no longer done by human workers. The remarkable thing, of course, is the very strong relationship. You know, pretty much all of this real wage declines are explained by. groups that have been subject to a lot of automation and a lot of other things that Pascual and I do bolster the case that this is a causal effect. But moreover, also, a lot of this automation has disappointed in terms of the productivity benefits. Now, this is not a unique event. Sometimes people talk whether this time is different or not in the context of AI. I find a lot of that discussion to be confused, but I don't have time to get into it. But suffice it to say, that the tensions that I am sort of highlighting here are present throughout recent history and even some distant history. And that's the topic of my work with Simon Johnson in Power and Progress. The automation and excessive control over workers deepening inequality. You see that in many different episodes. There is a struggle over these technologies, hence the subtitle struggle over technology and prosperity. And very interestingly, contrary to some tech leaders and economists, history doesn't provide any evidence suggesting that there is an automatic correction mechanism such that you get some declines in real wages for some groups. But then there is an arc that bends towards shared prosperity and everything's going to work out by itself. You see that, for example, in the Industrial Revolution, where the first 100 years were truly awful for worker wages, worker welfare, worker health, and the second phase was better, but there was nothing automatic about it. It was a result of fundamental political reform, labor organization, and a completely different trajectory, a completely different conceptualization of technology. Now, we don't know for generative AI, it's too recent a technology, but in work that I've done with Pasquale Restrepo, Joe Hazel, and David Autor, for the pre-generative AI, artificial intelligence, what we find is that a lot of AI was purely targeting automation. So if you heard the same sort of human complementary speech in 2019, that's the one that you should not have believed. Now, perhaps I'm not learning from history, and now I'm saying perhaps there is a possibility with generative AI, but I think... These AI technologies were much more primitive, so at least we should be open to the possibility. But what we find is that a lot of AI was adopted precisely by establishments that had tasks to be automated, such as self-checkout or customer service or simple IT security tasks. And moreover, it was associated with a decline in hiring. And again, not much evidence that it led to a productivity revolution. Now, better AI is very much. possible precisely because of this machine usefulness perspective. And again, this is not a unique thing to the AI age. If you look at other historical episodes, you see that the type of technological use that led to more productivity gains as well as some possibility for shared prosperity really had the had to focus on new tasks, new human tasks. So one example that we discuss a lot in our work is the Ford Motor Factories. You know, Henry Ford was at the forefront of automation with the introduction of electrification, decentralized power sources, first the interchangeable power system and then the assembly line. But his factories were also leaders in introducing new human tasks. So not surprisingly, you see a lot of workers performing technical tasks. There were a lot of new things related to precision work, new machinery, new tools, as well as inspection, design and control. And a huge white collar workforce was also expanding in the auto industry. As a result, from the time of Henry Ford's first factory, to the 1940s, the workforce that was employed in automobile manufacturing increased tenfold. So this was not a purely labor-replacing type of technology. And I think there are many things along the lines of better tools for workers and better information for workers, as I've emphasized. Now, since time is running short, let me go a little bit fast on this one because I think it's very interesting. Probably some of you have thought about this a little bit. I think one major challenge whenever you have a technology that provides information is that it could destroy the very diversity that was critical for human learning and perhaps its own training. So, in other words, you know, what do we want from? information provision from machines. I mean, there are higher order effects, but the simplest thing is that, you know, I might be going left and Moshe is going right. One is right, the other one is wrong. And then we both get advice from the machine and it says, Moshe was right. You should both be going left. And then I change my behavior from right to left. That's the simplest thing that you can think of information provision achieves. But what if my going Right. Was actually part of the human learning process that the diversity somebody needed to experiment with the right. So there is always this danger that you may overcorrect that you in the process, you may actually destroy the diversity. And there are plenty of examples that from more primitive technologies where we see that happening. Even the wonderful GPS system seems to have generated some aspect of that, that everybody using GPS rather than improving. traffic in some cities has led to worse traffic because everybody uses the same high latency, minor roads. And then that, of course, leads to a direct extension of time as a result of this conformity. Now, in the case of AI, it's actually worse because by doing this, you don't just have static effects. and dynamic effects on human learning, but dynamic effects on collective knowledge. And you see that actually from that GitHub co-pilot that I mentioned. So, you know, in the Peng et al study that I mentioned, you know, GitHub co-pilot was writing code. How was it able to do that? You know, how does GPT-4 write code? It's not because GPT-4 is really smart and understands that, you know, in C++ you should program this way. No, there's a very simple reason. There was a very good website used for math and computer stack overflow where there were large amounts of information curated in a very nice form when people asked each other advice and this was upvoted or downvoted and it was in a very usable form. GPT-4 essentially sweeped all of that website, learned all of the coding in the common languages such as Java, iPhone, et cetera. And then for simple routines, it just essentially finds something from that library to give you. But here's the problem. Very nice paper that came out a couple of months ago by Del Trio Chanona and co-authors shows that when this happens, you see a very striking pattern. Let me focus on this one, which is that once chat GPT becomes live and people have access to ask simple. or questions to Chuck GPT, traffic on stock overflow collapses. And we know or we suspect this is really related to Chuck GPT because you don't see a similar collapse in math overflow and you don't see a similar collapse in Russian and Chinese stock overflow because those countries banned. chat GPT. So people with IP addresses from these two countries did not have access to GitHub co-pilot type of programming advice. Now, I think this is the tip of the iceberg that by destroying human diversity, these machines could really lead to real degradation in human knowledge. So any attempts to really turn generative AI into a pro-human tool will have to overcome A the threat against diversity and B the paucity of information or creative information upon which future models of large language models will have to be trained. To me there is a deeper issue here which I've called AI human misalignment. And by this, I do not mean the alignment problem that is often emphasized, for example, dreams of artificial general intelligence. Will the machines be aligned with us when they are so powerful? It's a much more mundane and much more important thing. So if a machine is giving you an advice, go left. There are three things you can do. One is you can completely ignore it, in which case it's not useful. Second, You can always unconditionally follow it, which is horrible. We should never do that. Third, then you need to understand what the machine really has in mind or what information it's filtering and which additional perspective you can bring to the problem. But that is currently impossible because all of these AI models are highly black box and there is no... possibility for people to understand why a particular recommendation is coming from. And you see this in a number of settings, in policing and medical settings, leading to very bad outcomes. And let me just mention the medical one since the policing one is a bit longer to explain. This is work by my colleagues, Nikila Garwal, Tobias Saltz, and co-authors. So they do a wonderful study of AI recommendations to physicians. and using chat GPT. And what they find is that it actually doesn't lead to any improvements. And the reason is because physicians don't understand why a particular recommendation is coming. And as a result, they think that the specific tacit knowledge that they have about the patient is not in the system. So they overweight that and they ignore the new aspects of the. that might actually exist in the information that's automated. So that's what I mean by human AI misalignment. In particular, the threat that humans will not understand what's in the machine and the machines will not properly interface with humans in terms of providing information, at least in the current architecture of generative AI. And then the final one, it's very much more political as well as economic and as well as technical, is about control of information. Throughout the ages, every political regime has tried to control information. Book bannings go back to or actually execution of book writers goes back to at least the Qin Dynasty 2,500 years ago, 2,300 years ago. And issues of who controls information has been central. And I think large language models and other generative AI tools are raising new challenges in terms of monopolized control of information because information is becoming centralized and how it's going to be presented to people is very much determined by such things as the reinforcement learning that happens about what is and what is not allowed speech and what are and what are not correct interpretations of the very large. amount of training data and the tokens and the parameters that these models have. And I think this monopolized control of information will have implications both about how work is organized and how politics is organized and I think, you know, social media's problems in terms of misinformation or manipulation may be the tip of the iceberg because with generative AI, there's going to be the possibility of truly individualized manipulative messages. And again, this is not a pure economic problem, although it has an economic ramification. You can get purely manipulative individualized advertisements, but you can also get purely manipulative political messages. And I think this really shakes the very core of in a way that Hannah Arendt foresaw, again, about four decades ago. If everybody lies to you, the consequence is not that you believe the lies, but rather nobody believes anything any longer. What that means is that the shared understanding that is the basis of democracy may collapse. Is there any self-correction mechanism? No, I think the industry is very much in the grips of the... Incorrect vision of autonomous artificial general intelligence and its monetization sources are all distorted, either based on digital ads or pure automation. And if you look at research in this area, it's almost completely dominated by the industry. So if you need the redirection of technology, it's not going to come. Academic research in the area of AI is now a very small minority. And even this is very strongly affected by industry funding and industry priorities. A lot of it is now just in the industry or academic industry collaboration. But I think if we do indeed believe that there is a better direction for generative AI along the lines of the promise of human complementarity, there are many potential policy levers, no silver bullet, but potential policy levers. I have explored this in a number of publications and also in the book. Since time is short, let me not dwell on them. But I think refocusing away from automation, there are some fiscal things like reforming tax policy, data ownership, digital ad taxes, certain types of subsidy programs that are necessary and new norms and regulations. But potentially even more radically, we may need a new architecture for generative AI related to this issue of human. uh ai misalignment that i've mentioned as well as other ways in which useful information can be best presented to humans let me stop here and i look forward to your comments and discussions thank you darren that was fantastic and now we are opening for questions so i will take the my privileges moderator and ask the first question So in the book, you talked about technology and progress in the past, and you mentioned that one of the things that made the change in the later part, for example, of 19th century was empowerment of workers. Should we also consider the other side, the weakening of billionaires? How do we, you know, I mean, to empower workers, there are people with power who, will fight to keep their power. Absolutely. I think you're right, Moshe. You need to have a balance. Different cultures and different institutional setups have achieved that empowerment differently. But you are right that if a handful of individuals become amazingly powerful, It might make it very difficult for different centers to have voice. And perhaps in the U.S. we are there. But, you know, that doesn't mean we should not have multimillionaires and we should not have large corporations. At least the corporatist models that Scandinavian countries or Nordic countries developed, starting with Denmark, then much more thoroughly Norway. Sweden, and then later Finland, those have this corporatist negotiation between large corporations, as well as corporations, as well as associations of businesses and unions. So the two poles being strong is actually not that bad if you can make it work. Now, I don't think U.S. is going to go corporatist any time. But in the context of the current U.S. issues, actually business associations may be useful. One of the major problems in the U.S. is that establish the bargaining and any type of negotiations are at the establishment level. So this creates the very bad dynamic that if as a boss or a manager, I can. prevent unionization or I can be tough against workers, that's going to create an advantage for me relative to my competitors. And so it makes the management labor relations much more adversarial. So, in fact, actually, funny enough, in the U.S., I think if you have business associations do the bargaining with Federation of Unions. You know, there are some legal issues there that might actually facilitate worker voice in some ways. But I think the details are going to be very much where the devil will show up its head. Thank you. Linda. Mr. Asimoglu, thank you for your talk. I very much appreciate it. And also, I got the chance to read your latest book, Power and Progress, which I find very... Eye-opening and also an enjoyable reading. Thank you for that. And my question is in the context of the book and also in the context of inequalities. So as I understood from reading your book, historically, there were many critical periods in which technology followed the vision of a powerful elite. It kind of draws on to the last question where productivity growth did not translate. into the improvement in the lives of the majority of the population. So if you had to point out two most important points or strategies for today to improve the decrease in inequality or to foster equality, what would be your two most important points today? Thank you very much, Linda. That was an excellent summary of a very large chunk of the book. And the question is critical. And I would say that redirecting technological change towards things that are useful for workers, especially new tasks, has to be a very important part of it. And let me build on Moshe's question and explain why I think that's even more important than just worker power. Because imagine today we keep the trajectory of technology the same in the U.S. And we just, say, increase minimum wages or empower a few unions to ask for higher wages. What would happen? Well, it would actually immediately be countered by employers by even more automation. Because the direction of technology is going more and more in an automation direction. And you're faced with higher wages. So your response would be, let us automate even more. So you really need the ecosystem to be such that there are factors that push employers towards more shared prosperity, but at the same time also give them more tools for doing so while sort of balancing between new tasks and automation. And that's where the promise of generative AI, if it were really real, would come in. Because A, it can be. source of new tasks, and B, if it really helps workers with low and middle expertise, that's actually an equalizing force. And again, I don't think that's where we're heading. I'm not making this as a prediction of where we are likely to go, but as a possibility. So imagine that, you know, we have the kind of tools that I've just outlined. So for instance, you have a generative AI powered handheld tool that you can give to all electricians that helps them be better at diagnosing problems and troubleshooting problems. And believe me, I've dealt with enough electricians who couldn't troubleshoot problems. So I know it's a real issue. Who do you think would benefit most from that? If you're the best electrician in the United States, you don't need that. You can already solve these problems. But if you're a middle of the road electrician, that's really useful for you. So that's the sense in which. There is an equalizing element to the generative AI, but not if generative AI goes more into, you know, search engines to be monetized via digital ads or leads to more automation. Then everybody's going to be the loser. Every worker is going to be the loser. Thank you, Linda. Thank you so much. Ricardo. Thank you. Great talk, Baron. It's very well aligned with many things I say in my responsibly I talk. So I have two questions. One, the shortest is that I would like to push on your roadblock too, because I believe also we are losing skills. Like how many people can find the place without the GPS? And I saw a meme that was a joke, but maybe two in the future. Basically, you will be able to say that you can write by hand in your CV. But it's not about writing, it's about thinking. The second question is related to your last answer. Are we also basically in some sense promoting mediocrity because of this kind of tools? These are the two questions. Let me... Say on the mediocrity. Thank you very much. Those are excellent questions on the mediocrity. I think that's an interesting question. But, you know, whenever you help. Middle of the road workers. There is an element that you are closing the gap between the very best. Now, the question is, I think the question is whether that will discourage the very best to become even better. And I don't know that will depend on the organization. I think it relates to your first question and your first question. I completely. uh aligned with that and in fact i have uh written an a small essay in the past about education and the use of ai in education because i think the use of ai in education perfectly illustrates the two paths and how we are taking the wrong path so the more human complementary path would be to better to Continue to leverage the fact that most students learn very well with human contact, but that some students are falling behind, especially those from low socioeconomic backgrounds. You give better tools to teachers. You make them better trained to recognize and develop some, you know, cost effective way of personalized education. And that would be. something that's technically feasible. Actually, there are some labs that have essentially prototype technologies, but nobody's investing in it. On the other hand, the bad path would be more and more automation education that takes the teacher out of the equation. We're doing that in the name of cost saving. And then even worse would be to unleash ChatGPT on students who, instead of the teachers or their peers, they're now learning from ChatGPT. And imagine, you know, the bad use of chat GPT. Of course, again, large language models, as I said, are useful if you can utilize them in this good way. But imagine that when we first made health calculators available, we told students, you can use these health calculators. You don't need to learn arithmetic or calculus. You know, then you would have. generated, you know, created one or two generations that were completely devoid of mathematical skills. Instead, we were lucky enough that, you know, at the time, hand calculators were viewed as a complement to individual mathematical learning. And a lot of individuals have improved their mathematical understanding while also using hand calculators. So that's the question. And I think with these large language models and the automation obsession, we're very much going in the opposite direction. Thank you. Hannes. Daron, thanks for your excellent talk. I have two questions. One is related to this redirection of technological development. And there I think we could link this digital world or AI world also with sustainability. I think this is from a technological point of view and also political point of view. I think these two things should be thought and designed together. Somehow they are interlinked. more comment or also question how you think about it and the second one is related to geopolitics okay because we are not you already mentioning this with the european countries and the us but we also have china and we have a worldwide competition and race here for let's say different use of ai and this makes it really complicated and um and we still have The answer not yet there, but one of the possible answers is the European AI Act, which is now decided and it was agreed. We still have to wait for the implementation. And what do you think about this AI Act in Europe? Could it serve as a, let's say, as a template for a, let's say, worldwide agreement on, let's say, dealing with AI? It's not about redirection. It's, let's say, reducing risk, but it could be a first step. So these are my two questions. Thank you, Hannes. Let me start from the latter. And yes, very much so. I think the international dimension is important and there are some challenges and opportunities. I think the biggest opportunity is that the European Union is far ahead of the US in terms of regulation. And we have seen that the tech industry has to abide by all sorts of EU regulations because it's a huge market. I mean, you know, not to be too cynical, but there's a very good reason why Europeans are much better on regulation because they don't have any of the large. tech companies so they're not captured their politicians are not captured by it and uh but that has also created a real opening and i think the eu is playing a real leadership role the question is you know how will the u.s follow i think the eu act the uai act as well as uh their uh uh competition policy antitrust policy i think are much better than what the u.s has at the moment but uh we are seeing some sort of changes in the U.S. as well. Now, the challenge comes from China, and I don't think we should exaggerate the challenge. I sometimes say if China did not exist, the tech industry would have invented it because it's the most powerful argument against regulation in the United States. If we regulate AI, then China will have the lead, as is mentioned in every meeting I have been to with tech leaders. And I think it should not be exaggerated. There are dimensions in which, you know, China has its own agenda, for example, in facial recognition, and I don't think that's going to change. But in many other areas, China is a follower of the technological frontier. And if the US were to change direction, China would follow. And the other thing is that China is actually, you know, shows. possibility of very robust regulation of tech companies. It has done it for a very different set of objectives to keep control and to keep ideological control, but they have been very good at bringing the largest tech companies to listen to what the government regulators say. So again, that has happened without a tremendous slowdown in tech investments in China. So I think the right international context would would enable robust AI regulation. Now, in terms of sustainability, yes and no. Absolutely, for example, the electrification of the grid can be helped by generative AI, but I think a lot of the calls for AI is going to solve the climate challenge problem. I think, are counterproductive. First of all, AI has very little to do with reducing carbon emissions except for the electrical grid and some sort of small control of equipment issues. And second, I think we have the basic tools for dealing with climate change already in the form of renewable energy, and we just need to double down on them. I don't think we need AI. And in fact, AI... if it goes in the wrong direction, could massively increase our energy needs. So I think I wouldn't pin my hopes on AI for sustainability. Thank you. We have a question on the chat from one of our YouTube watchers. Do you have any data about the business case for jobs which will be replaced by AI? What is the cost and benefit of of replacing humans with AI? So I don't have any data for generative AI. It's not massively used yet to have that, or if it exists, it's not available to me yet. But A, my collaborators and I have designed the largest AI. the largest survey of technologies in the United States, which is part of the Census Bureau's annual business survey. And we know that in 2019, AI was used by less than 2% of U.S. companies. So it's very much in its infancy yet. And from that and other studies, we also know that so far, AI is not having a massive productivity boost. And part of the reason is, you know, if you use it for automation and it's very slowly spreading, it's not going to create a productivity revolution. Now, there are some aspects of AI that could lead to a very big boost in productivity. But I think it's not something we're going to see in the next five years, let alone the next five to 10 years would be. I wouldn't expect to see it. For example, the biggest one would be, you know, what people like DeepMind co-founder Demis Aceves is emphasizing. But I think it's, again, he's being way too optimistic. It's that AI and generative AI change the technology of science. So if we can do much better science in every dimension, then, of course, that would create a huge boost to productivity. Right now. We know there are a few things like discovering folding of proteins or some new compounds that DeepMind is working on. But those are very, very idiosyncratic things. So if within the next 10 years you see a complete change in how you use AI and science, that could have massive productivity effects. But from automation, we don't expect it. And that's what the work that I've done on. Regenerative AI technologies shows both in terms of productivity and wage inequality, like the data I depicted earlier. So let me ask the last question. So you've been, if I can simplify your argument, we should focus technology on instead of replacing humans, augmenting humans. But let's suppose that we do accomplish massive productivity in Crete. It's not obvious to me. that workers automatically benefit from productivity increase. Because it could mean somebody say, I need fewer workers because I'm more productive. Well, that's very, very important. And that's where a lot of the technical work that I have done really focuses on. And if indeed, that's why I don't use the word augmentation. Because augmentation could mean exactly that what you're doing is you're making the workers more productive. And indeed, in that case... It's a little different from automation, but it doesn't necessarily lead to a greater demand for humans. But it's completely different when you create new tasks. Because, you know, if, you know, previously, you know, Linda, Ricardo and you were all working as, you know, office workers doing inventory control. And now I suddenly create new tasks. And in one of those new tasks is, you know. Thinking about organizational design and another one is much better quality control. Now, I cannot say, oh, I'm only going to keep one of you because Linda needs to do the better quality control and Ricardo needs to do the inspection and you need to do the organization. So so by creating new tasks, you're both changing the production structure in a more productive direction and also creating these new. functions that are going to require labor. Of course, at the end of the day, if the productivity increases so large, you know, Linda might say, okay, now I'm rich. So I want to work four days a week rather than five days a week. That's fine. But it's very different from Linda saying, I want to work five days a week, but there are no jobs for me. So that's the latter scenario that I'm trying to avoid. Okay. I don't see any more hands. So let's thank Darren for a fantastic talk. And we are going now, I believe, move to the music phase of the program. Thank you. Okay, I'm happy to take over. Darren, do you want to say a few words before I share the screen? Well, please go ahead. And this is an example of what I think AI is not going to achieve in the next several decades. if you see the music the choreography the imagery i think it's purely human That would be good. We don't show the choreography and the imagery, unfortunately. I shared the video, so it's just the music you're going to hear then. Very true. But I encourage everyone to watch the video on YouTube of the Rolling Stones' Sympathy for the Devil. And there's a particular performance, right? So this is from the Rock and Roll Circus in 68 with lots of other... guests and and stars and it's really really something so i think it's a very very special um performance of of uh of sympathy for the devil so um this is what you're gonna hear um and the one thing um i have to um make people aware before i started is that this is not a short piece of music as hannes was mentioning before but this is an 8 minute 30 performance but we're going to listen to all of it so you know Lean back. Enjoy it. I'll just make the announcement for the next event that we're going to have in two weeks on February 27th. Again, at our usual time at 5 p.m. Central European time. Henry Farrell of Johns Hopkins University will talk about geopolitics, national security and economics. In his talk, America's underground empire and economic security state. and paul timos uh will moderate actually uh i think lyrics wise that would have been a good song also simple for the devil for for geopolitics right that could have been could have been a reference there as well um okay so um i'm gonna play it so thanks darren uh thanks moshe thanks all see you in two weeks and now enjoy sympathy for the devil See you next time.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.84,
+      "text": "Okay, so hello everybody, welcome to a further digital humanism lecture now in 2024. Excuse, but this time it's one hour later than normal, but this is due to teaching obligations of our speaker. And today it's again about AI, but about AI in the different direction AI may take. I am particularly grateful to welcome today a special and renowned speaker. It's Daron Achimoglu from MIT."
+    },
+    {
+      "start": 29.84,
+      "end": 57.792,
+      "text": "He's a well-known economist, but he also has quite an expertise in technology and technology politics. So we are very looking forward to your talk. The moderator of today is Moshe Wadi, who will then introduce Daron in more detail. Very short, the core choreography is as always, we have a talk for 30 minutes and then up to 30 minutes Q&A, moderated by Moshe. And at the end, this is already a tradition of digital humanism."
+    },
+    {
+      "start": 57.792,
+      "end": 85.808,
+      "text": "We have a short piece of music proposed by Taro. Welcome to Moshe. Also, thanks Moshe for moderating. And the floor is yours. Thank you. So today we're going to hear from Darren Achamoglu about all human AI and all human technology is really the central theme of the Digital Humanism Initiative. Technology with humans in the center."
+    },
+    {
+      "start": 85.808,
+      "end": 113.872,
+      "text": "And I'm particularly pleased to welcome Darren here. He's Institute Professor of Economics at MIT, which is the highest professorial rank at MIT. And he's one of my favorite economists because he understands that economics sits in a bigger context that has societal dimensions, political dimensions. And his recent work looks at the issue of technology."
+    },
+    {
+      "start": 114.096,
+      "end": 144.048,
+      "text": "and progress and power. And if you may remember when we had the workshop on technology and democracy, the conclusion was it's not so much about the democracy, about technology, it's about power. And that's what we're going to hear from Darren today. He is recipient of many awards. I won't enumerate all of them. I will just say that his name is mentioned. I'm hearing his name mentioned as a candidate for the Nobel Prize. So I'm putting the vibes out there."
+    },
+    {
+      "start": 144.496,
+      "end": 172.4,
+      "text": "So, one book that I've read, another book that I've read from Darwin some years ago was Why Nations Fail. That's where I really learned about his work. And again, it's putting economics in a broader context of society, politics, which is very often missing when we have the techno-utopianism, just focus on technology. Darwin, the floor is yours."
+    },
+    {
+      "start": 173.072,
+      "end": 197.936,
+      "text": "Thank you very much, Moshe and Hannes, for the invitation. It's my pleasure and honor to be able to talk a little bit about what I see as the possibilities and the challenges of pro worker AI. And what I'm going to talk about today is based on joint work."
+    },
+    {
+      "start": 197.936,
+      "end": 218.72,
+      "text": "or a joint book with Simon Johnson, Power and Progress. I'll mention the book, but it goes beyond that in the context of thinking about AI. I don't think I need to tell this audience about the advances in generative AI, except that the amount of investment and"
+    },
+    {
+      "start": 218.72,
+      "end": 247.6,
+      "text": "computational power is truly mind-boggling. And this is just one aspect of what we are seeing as the potential boom for AI. And if you listen to experts in the industry, there are several promises from this massive investment. And the most interesting one is that generative AI"
+    },
+    {
+      "start": 247.6,
+      "end": 276.384,
+      "text": "and in particular large language models, but not just limited to large language models, will provide intelligent, flexible, and easily usable tools that are potentially complementary to human decision making in technical work and creative tasks. I think this is a very bold claim, and three or four years ago,"
+    },
+    {
+      "start": 276.384,
+      "end": 306.08,
+      "text": "I would have been more tempted to say that it was complete obfuscation of other things that AI was going to do. Whereas I think the advances of the last two years as background, I have come to believe that this is a possibility, but it's a very distant possibility."
+    },
+    {
+      "start": 306.08,
+      "end": 335.6,
+      "text": "And the reason why I think it is a possibility, but a distant one, is going to be the topic of my talk. Why do I believe that, in fact, this insider claim might have some truth? And why I actually can argue on the basis of historical work, some of my empirical work, and other evidence that this is not where we are currently heading. So this promise is there."
+    },
+    {
+      "start": 335.6,
+      "end": 364.592,
+      "text": "But I think there are four major roadblocks, which mean that it's currently impossible for us to reach that promise. And that if we, in fact, believe that that promise was there and it was desirable, then we would need fundamental reform and changes in policies as well as changes in the tech industry. And these four roadblocks is what I'm going to spend most of my talk on. I'm going to talk about excessive automation, which is a lot of..."
+    },
+    {
+      "start": 364.592,
+      "end": 394.576,
+      "text": "my focus in past work, but now adapted to the AI context, loss of informational diversity, a type of human AI misalignment, which I'll explain is not the standard alignment problem in AI, but a different one that I think is much more mundane, but much more fundamental, and the threat of monopolized control of information. Okay, so without further ado, let me just jump into"
+    },
+    {
+      "start": 394.576,
+      "end": 423.648,
+      "text": "The talk, the rest of the talk. And I think in interpreting a lot of what's going on in AI and the promise and why that promise is actually unlikely to be a reality anytime soon, it might be useful to consider the two forming, defining philosophies of computer science, digital technologies and AI that go back to, you know, the 1940s. And I think."
+    },
+    {
+      "start": 423.648,
+      "end": 452.992,
+      "text": "This history is known to many of you, but its significance may be perhaps not properly appreciated. One of the thesis of my work and the book with Simon Johnson is that you cannot understand technologies in abstraction from the guiding visions of powerful players. And in the area of digital technologies, there are..."
+    },
+    {
+      "start": 452.992,
+      "end": 482.656,
+      "text": "two visions that have often been in a clash. The first one, which goes back to the work of this brilliant mathematician, of course, Alan Turing, is the desire of autonomous machine intelligence. How the mind works, how computers can imitate it, and the desire for autonomy, meaning that this can be done in a self-acting manner. This was not just Alan Turing's brilliant mathematical work and his philosophical"
+    },
+    {
+      "start": 482.656,
+      "end": 510.864,
+      "text": "interpretation of that mathematical work, which I think is less brilliant than his mathematical work, but also the guiding principle of the early AI pioneers, including this group of people who were the initiators of the Dartmouth Project and the christeners of the field of artificial intelligence. This was from the very beginning countered by a very different vision, which I think is first"
+    },
+    {
+      "start": 510.864,
+      "end": 538.368,
+      "text": "articulated by Norbert Wiener, which I call or Simon and I call machine usefulness rather than machine intelligence, meaning that from the very beginning, there was a concern that autonomous machine intelligence or capabilities, high level capabilities is not what you want, but you want a metric of judging the success of digital machines and how useful they are to humans. This leads to a very different."
+    },
+    {
+      "start": 538.368,
+      "end": 566.384,
+      "text": "type of approach and a different way of measuring a metric for success. And I think when this vision was more powerful, it was truly important in spearheading a lot of innovation. So many things that we take for granted today, for example, the computer mouse, hyperlink, hypertext, menu-driven computers, came out of Douglas Engelbart's work in the 1960s and his students' works, which"
+    },
+    {
+      "start": 566.384,
+      "end": 596.288,
+      "text": "was very much driven by this approach and many of the internet related advances was also quite strongly linked to JCR Licklider's work which was driven by the same sort of vision. And it was this idea that machines and computers would create a symbiosis and what people like Engelbart and JCR Licklider meant by this is not"
+    },
+    {
+      "start": 596.288,
+      "end": 614.256,
+      "text": "like brain implants, but that machines would be able to provide better information and better computational capabilities to humans for them to perform their own tasks, essentially something you can see in Norbert Wiener's work as well. So, for example, in this paper written more than 60 years ago,"
+    },
+    {
+      "start": 614.256,
+      "end": 641.184,
+      "text": "J.C.R. Licklider wrote, the hope is that in not too many years, human brains and computing machines will be coupled together very tightly and the resulting partnership will think as no human brain has ever thought and process data in a way that approached by the information handling machines we know today. So this was a dream. And I think the Internet and the protocols that came out of this work were one step towards it, but it remained a dream. I think the Internet."
+    },
+    {
+      "start": 641.184,
+      "end": 670.112,
+      "text": "provided information, but it did not provide useful and real-time information. I think the hope of the promise of generative AI is related to this. And I think in the industry and in the media, you hear a lot about creative artists and so on, but I think actually the real promise is much more widespread if you can make it happen. Imagine, for example, electricians. Today's electricians, most of the problems that they are dealing with"
+    },
+    {
+      "start": 670.112,
+      "end": 699.2,
+      "text": "are becoming more and more complex. It's a series of problem-solving tasks. And as in many other fields, the problem is that information is abundant. So if you're dealing with something on the new electrical grid or a new equipment, somebody has dealt with it before. You're not the first person to do it. But useful information is scarce, meaning that you don't have access and you don't know how you can access that expertise that has been built by..."
+    },
+    {
+      "start": 699.2,
+      "end": 726.336,
+      "text": "past practitioners of the same sort of economic and technical activities. So the promise of generative AI is to provide in real time that sort of expertise to a variety of people in offices, in manual tasks, in skilled crafts occupations such as electricians and plumbers. And this is not a complete pipe dream, although the proof of concept we have is a little less."
+    },
+    {
+      "start": 726.336,
+      "end": 755.36,
+      "text": "directed and less precise than what I would like given this sort of potential set of issues. But a number of papers show that the right combination of human decision makers and large language models can be useful. Three papers, for example, one by Sida Peng, Mert Demirer, and collaborators show that engineers with GitHub Copilot can be, you know,"
+    },
+    {
+      "start": 755.36,
+      "end": 781.6,
+      "text": "30% to 50% faster than people who don't have access to Copilot. Two of our students here, my students at MIT, Shiket Noy and Whitney Zhang, did a randomized control trial online for white-collar simple writing tasks, and they showed that access to ChatGPT."
+    },
+    {
+      "start": 781.6,
+      "end": 810.736,
+      "text": "can improve performance. And a related paper by my former colleague, Eric Brynjolfsson, Danielle Lee, and Lindsay Raymond shows the same thing in improvements in worker productivity in simple customer service tasks. Now, one interesting aspect that you see in these things, which I summarize with the pictures here, is that this improvement in the, for example, in the Noyan Zhang paper,"
+    },
+    {
+      "start": 810.736,
+      "end": 831.52,
+      "text": "This is the control group. This is before the treatment. The control group doesn't get any treatment and they improve the quality of their riding a little bit just with time. But this is the treatment group. They have a much bigger improvement. And if you see where this improvement comes from, it comes from previously lower and middle performing."
+    },
+    {
+      "start": 831.52,
+      "end": 856.08,
+      "text": "So they are the lower expertise worker. They were having trouble, they were slower, and they were not writing very well or summarizing the content very well. So having access to ChatGPT helps them. So you see now this is the inequality of the quality as graded by other humans in the treatment group, and this is the control group. So there's a significant decline in inequality of performance in terms of quality."
+    },
+    {
+      "start": 858.544,
+      "end": 887.936,
+      "text": "Now, the problem in all of these things is that it's a combination of task automation versus providing information. So, for example, in Peng et al., you know, the GitHub copilot writes a draft of some of the code and then humans build on it. It's not complete automation because the code that machines write at the moment is not, doesn't work. So the humans have to troubleshoot it. But it is."
+    },
+    {
+      "start": 887.936,
+      "end": 917.136,
+      "text": "It has an element of, you know, some of the tasks that humans were doing is now being done by machines. And you don't always see this information provision that I'm emphasizing. But at least the hope is there. But there are four related but distinct roadblocks, as I mentioned. So let me go through each one of them. Excessive automation, I think, is a very severe one, because if you go back to this machine intelligence vision."
+    },
+    {
+      "start": 917.392,
+      "end": 927.6,
+      "text": "It creates an almost direct pathway to automation. If what you are trying to achieve."
+    },
+    {
+      "start": 927.696,
+      "end": 951.76,
+      "text": "successfully or unsuccessfully, by the way. But if you're what we are trying to achieve is autonomous machine intelligence, then you should let the machines perform some of the tasks that humans do. And in fact, people motivated by this perspective, not only dream of artificial general intelligence, but also use things like reaching human parity in a number of tasks as a metric for success. So that creates a very natural."
+    },
+    {
+      "start": 951.76,
+      "end": 978.16,
+      "text": "pathway from AI to automation. But if you do automation, then you're really not in the path to creating this complementarity between humans and this promise of providing machines that are useful to humans. This has been the historical pattern in the United States. There has been a lot of automation, both in factories and offices."
+    },
+    {
+      "start": 978.608,
+      "end": 1005.568,
+      "text": "Emphasis of automation, I have argued in my academic work with Pasquale Restrepo and in the book with Simon Johnson, has been a critical part of the breakdown of shared prosperity during the era of digital technologies. This picture here is maybe familiar to some of you, but it's truly striking. What I'm doing here is I'm showing you the real..."
+    },
+    {
+      "start": 1005.568,
+      "end": 1034.096,
+      "text": "wages for 10 demographic groups distinguished by men and by gender and education all the way from workers without a high school degree in orange high school degree all the way to workers with a postgraduate degree and same thing for women and if you look at the period from 1963 to the late 1970s you see that these curves are all on top of each other and some and some of them you cannot even see the curve because there's so much shadowed by the other ones and and"
+    },
+    {
+      "start": 1034.64,
+      "end": 1063.376,
+      "text": "And that's signaling both shared prosperity, real wages, inflation adjusted wages are growing in tandem. And the rate of growth here is very striking. It's about two and a half percentage points every year, meaning that if you enjoy this type of wage growth in 20 years, you're going to double your real income. And this is not only true from 1960s onwards. These data are available from 1960s onwards. But if you go with other data sources to 1950, you see the same pattern."
+    },
+    {
+      "start": 1063.792,
+      "end": 1088.928,
+      "text": "But then around 1980, you have a sea change, a very different pattern. Now you have a major fanning out. The top postgraduate workers are still enjoying rather rapid wage growth, but median wages stagnate and workers with low education, especially men, but also to some extent women."
+    },
+    {
+      "start": 1088.928,
+      "end": 1114.784,
+      "text": "are experiencing very significant declines in their real wages. There has been no other period in U.S. history that we know of where real incomes have fallen for 40 years. This is really a remarkable period. And this is, you know, bang in the middle of the digital age. Is this caused by digital technologies? Well, there are many other things going on and many of them do play a role. But my work highlights that."
+    },
+    {
+      "start": 1114.784,
+      "end": 1143.76,
+      "text": "automation is an important factor. And here, to just give you an idea of why automation not only creates the tensions with this promise of the generative AI, but also is really a big barrier to shared prosperity, let me show one graph from my work with Pasquale Restrepo. And what this picture here on the right depicts is"
+    },
+    {
+      "start": 1143.76,
+      "end": 1171.36,
+      "text": "Similar information to the one in the previous picture. Now, each circle corresponds to a more detailed demographic group distinguished not just by gender and education, but also age and ethnicity. You see the big circles are the ones that are big groups and the color coding tells you the education. But now I am zeroing in on that critical period from 1980 to 2016, 2017. So it's the cumulative hourly real wage change from."
+    },
+    {
+      "start": 1171.36,
+      "end": 1200.464,
+      "text": "1980 to 2016. You see many of those groups are below zero. Those are the ones that have lost real income since 1980, as I emphasize. But the key variable here is on the horizontal axis. That's the measure of automation that Pasquale Restrepo and I have. It's our estimate of what fraction of tasks a demographic group used to perform in 1980 that have since been automated."
+    },
+    {
+      "start": 1200.944,
+      "end": 1228.144,
+      "text": "So some of these groups that have two years college, just a high school degree or high school dropouts have experienced, because of blue collar automation and some office automation, about 20, 15 to 20 percent of the tasks that they used to perform are no longer done by human workers. The remarkable thing, of course, is the very strong relationship. You know, pretty much all of this real wage declines are explained by."
+    },
+    {
+      "start": 1228.144,
+      "end": 1257.328,
+      "text": "groups that have been subject to a lot of automation and a lot of other things that Pascual and I do bolster the case that this is a causal effect. But moreover, also, a lot of this automation has disappointed in terms of the productivity benefits. Now, this is not a unique event. Sometimes people talk whether this time is different or not in the context of AI. I find a lot of that discussion to be confused, but I don't have time to get into it. But suffice it to say,"
+    },
+    {
+      "start": 1257.328,
+      "end": 1280.0,
+      "text": "that the tensions that I am sort of highlighting here are present throughout recent history and even some distant history. And that's the topic of my work with Simon Johnson in Power and Progress. The automation and excessive control over workers deepening inequality. You see that in many different episodes."
+    },
+    {
+      "start": 1280.0,
+      "end": 1305.472,
+      "text": "There is a struggle over these technologies, hence the subtitle struggle over technology and prosperity. And very interestingly, contrary to some tech leaders and economists, history doesn't provide any evidence suggesting that there is an automatic correction mechanism such that you get some declines in real wages for some groups. But then there is an arc that bends towards shared prosperity and everything's going to work out by itself."
+    },
+    {
+      "start": 1305.472,
+      "end": 1335.376,
+      "text": "You see that, for example, in the Industrial Revolution, where the first 100 years were truly awful for worker wages, worker welfare, worker health, and the second phase was better, but there was nothing automatic about it. It was a result of fundamental political reform, labor organization, and a completely different trajectory, a completely different conceptualization of technology. Now, we don't know for generative AI, it's too recent a technology, but in work that I've done with Pasquale Restrepo, Joe Hazel, and David Autor,"
+    },
+    {
+      "start": 1335.376,
+      "end": 1363.232,
+      "text": "for the pre-generative AI, artificial intelligence, what we find is that a lot of AI was purely targeting automation. So if you heard the same sort of human complementary speech in 2019, that's the one that you should not have believed. Now, perhaps I'm not learning from history, and now I'm saying perhaps there is a possibility with generative AI, but I think..."
+    },
+    {
+      "start": 1363.232,
+      "end": 1391.824,
+      "text": "These AI technologies were much more primitive, so at least we should be open to the possibility. But what we find is that a lot of AI was adopted precisely by establishments that had tasks to be automated, such as self-checkout or customer service or simple IT security tasks. And moreover, it was associated with a decline in hiring. And again, not much evidence that it led to a productivity revolution. Now, better AI is very much."
+    },
+    {
+      "start": 1392.464,
+      "end": 1418.208,
+      "text": "possible precisely because of this machine usefulness perspective. And again, this is not a unique thing to the AI age. If you look at other historical episodes, you see that the type of technological use that led to more productivity gains as well as some possibility for shared prosperity really had the"
+    },
+    {
+      "start": 1418.208,
+      "end": 1440.4,
+      "text": "had to focus on new tasks, new human tasks. So one example that we discuss a lot in our work is the Ford Motor Factories. You know, Henry Ford was at the forefront of automation with the introduction of electrification, decentralized power sources, first the interchangeable power system and then the assembly line."
+    },
+    {
+      "start": 1440.4,
+      "end": 1467.104,
+      "text": "But his factories were also leaders in introducing new human tasks. So not surprisingly, you see a lot of workers performing technical tasks. There were a lot of new things related to precision work, new machinery, new tools, as well as inspection, design and control. And a huge white collar workforce was also expanding in the auto industry. As a result, from the time of Henry Ford's first factory,"
+    },
+    {
+      "start": 1467.104,
+      "end": 1496.752,
+      "text": "to the 1940s, the workforce that was employed in automobile manufacturing increased tenfold. So this was not a purely labor-replacing type of technology. And I think there are many things along the lines of better tools for workers and better information for workers, as I've emphasized. Now, since time is running short, let me go a little bit fast on this one because I think it's very interesting."
+    },
+    {
+      "start": 1496.752,
+      "end": 1526.672,
+      "text": "Probably some of you have thought about this a little bit. I think one major challenge whenever you have a technology that provides information is that it could destroy the very diversity that was critical for human learning and perhaps its own training. So, in other words, you know, what do we want from?"
+    },
+    {
+      "start": 1526.8,
+      "end": 1554.528,
+      "text": "information provision from machines. I mean, there are higher order effects, but the simplest thing is that, you know, I might be going left and Moshe is going right. One is right, the other one is wrong. And then we both get advice from the machine and it says, Moshe was right. You should both be going left. And then I change my behavior from right to left. That's the simplest thing that you can think of information provision achieves. But what if my going"
+    },
+    {
+      "start": 1554.528,
+      "end": 1583.52,
+      "text": "Right. Was actually part of the human learning process that the diversity somebody needed to experiment with the right. So there is always this danger that you may overcorrect that you in the process, you may actually destroy the diversity. And there are plenty of examples that from more primitive technologies where we see that happening. Even the wonderful GPS system seems to have generated some aspect of that, that everybody using GPS rather than improving."
+    },
+    {
+      "start": 1583.52,
+      "end": 1609.792,
+      "text": "traffic in some cities has led to worse traffic because everybody uses the same high latency, minor roads. And then that, of course, leads to a direct extension of time as a result of this conformity. Now, in the case of AI, it's actually worse because by doing this, you don't just have static effects."
+    },
+    {
+      "start": 1609.792,
+      "end": 1638.048,
+      "text": "and dynamic effects on human learning, but dynamic effects on collective knowledge. And you see that actually from that GitHub co-pilot that I mentioned. So, you know, in the Peng et al study that I mentioned, you know, GitHub co-pilot was writing code. How was it able to do that? You know, how does GPT-4 write code? It's not because GPT-4 is really smart and understands that, you know, in C++ you should program this way. No, there's a very simple reason."
+    },
+    {
+      "start": 1638.048,
+      "end": 1667.696,
+      "text": "There was a very good website used for math and computer stack overflow where there were large amounts of information curated in a very nice form when people asked each other advice and this was upvoted or downvoted and it was in a very usable form. GPT-4 essentially sweeped all of that website, learned all of the coding in the common languages such as Java,"
+    },
+    {
+      "start": 1667.696,
+      "end": 1695.232,
+      "text": "iPhone, et cetera. And then for simple routines, it just essentially finds something from that library to give you. But here's the problem. Very nice paper that came out a couple of months ago by Del Trio Chanona and co-authors shows that when this happens, you see a very striking pattern. Let me focus on this one, which is that once chat GPT becomes live and people have access to ask simple."
+    },
+    {
+      "start": 1695.232,
+      "end": 1717.552,
+      "text": "or questions to Chuck GPT, traffic on stock overflow collapses. And we know or we suspect this is really related to Chuck GPT because you don't see a similar collapse in math overflow and you don't see a similar collapse in Russian and Chinese stock overflow because those countries banned."
+    },
+    {
+      "start": 1717.552,
+      "end": 1746.704,
+      "text": "chat GPT. So people with IP addresses from these two countries did not have access to GitHub co-pilot type of programming advice. Now, I think this is the tip of the iceberg that by destroying human diversity, these machines could really lead to real degradation in human knowledge. So any attempts to really turn"
+    },
+    {
+      "start": 1746.704,
+      "end": 1776.56,
+      "text": "generative AI into a pro-human tool will have to overcome A the threat against diversity and B the paucity of information or creative information upon which future models of large language models will have to be trained. To me there is a deeper issue here which"
+    },
+    {
+      "start": 1776.56,
+      "end": 1804.784,
+      "text": "I've called AI human misalignment. And by this, I do not mean the alignment problem that is often emphasized, for example, dreams of artificial general intelligence. Will the machines be aligned with us when they are so powerful? It's a much more mundane and much more important thing. So if a machine is giving you an advice, go left. There are three things you can do. One is you can completely ignore it, in which case it's not useful. Second,"
+    },
+    {
+      "start": 1804.784,
+      "end": 1828.256,
+      "text": "You can always unconditionally follow it, which is horrible. We should never do that. Third, then you need to understand what the machine really has in mind or what information it's filtering and which additional perspective you can bring to the problem. But that is currently impossible because all of these AI models are highly black box and there is no..."
+    },
+    {
+      "start": 1828.256,
+      "end": 1855.856,
+      "text": "possibility for people to understand why a particular recommendation is coming from. And you see this in a number of settings, in policing and medical settings, leading to very bad outcomes. And let me just mention the medical one since the policing one is a bit longer to explain. This is work by my colleagues, Nikila Garwal, Tobias Saltz, and co-authors. So they do a wonderful study of AI recommendations to physicians."
+    },
+    {
+      "start": 1855.856,
+      "end": 1881.808,
+      "text": "and using chat GPT. And what they find is that it actually doesn't lead to any improvements. And the reason is because physicians don't understand why a particular recommendation is coming. And as a result, they think that the specific tacit knowledge that they have about the patient is not in the system. So they overweight that and they ignore the new aspects of the."
+    },
+    {
+      "start": 1881.808,
+      "end": 1910.352,
+      "text": "that might actually exist in the information that's automated. So that's what I mean by human AI misalignment. In particular, the threat that humans will not understand what's in the machine and the machines will not properly interface with humans in terms of providing information, at least in the current architecture of generative AI."
+    },
+    {
+      "start": 1910.352,
+      "end": 1938.32,
+      "text": "And then the final one, it's very much more political as well as economic and as well as technical, is about control of information. Throughout the ages, every political regime has tried to control information. Book bannings go back to or actually execution of book writers goes back to at least the Qin Dynasty 2,500 years ago, 2,300 years ago."
+    },
+    {
+      "start": 1938.32,
+      "end": 1967.664,
+      "text": "And issues of who controls information has been central. And I think large language models and other generative AI tools are raising new challenges in terms of monopolized control of information because information is becoming centralized and how it's going to be presented to people is very much determined by such things as the reinforcement learning that happens about what is and what is not allowed speech and what are and what are not correct interpretations of the very large."
+    },
+    {
+      "start": 1967.664,
+      "end": 1989.44,
+      "text": "amount of training data and the tokens and the parameters that these models have. And I think this monopolized control of information will have implications both about how work is organized and how politics is organized and I think, you know, social media's problems in terms of"
+    },
+    {
+      "start": 1989.44,
+      "end": 2018.16,
+      "text": "misinformation or manipulation may be the tip of the iceberg because with generative AI, there's going to be the possibility of truly individualized manipulative messages. And again, this is not a pure economic problem, although it has an economic ramification. You can get purely manipulative individualized advertisements, but you can also get purely manipulative political messages. And I think this really shakes the very core of"
+    },
+    {
+      "start": 2018.16,
+      "end": 2044.512,
+      "text": "in a way that Hannah Arendt foresaw, again, about four decades ago. If everybody lies to you, the consequence is not that you believe the lies, but rather nobody believes anything any longer. What that means is that the shared understanding that is the basis of democracy may collapse. Is there any self-correction mechanism? No, I think the industry is very much in the grips of the..."
+    },
+    {
+      "start": 2044.512,
+      "end": 2074.416,
+      "text": "Incorrect vision of autonomous artificial general intelligence and its monetization sources are all distorted, either based on digital ads or pure automation. And if you look at research in this area, it's almost completely dominated by the industry. So if you need the redirection of technology, it's not going to come. Academic research in the area of AI is now a very small minority. And even this is very strongly affected by industry funding and industry priorities. A lot of it is now just in the industry or academic industry collaboration."
+    },
+    {
+      "start": 2074.736,
+      "end": 2098.48,
+      "text": "But I think if we do indeed believe that there is a better direction for generative AI along the lines of the promise of human complementarity, there are many potential policy levers, no silver bullet, but potential policy levers. I have explored this in a number of publications and also in the book. Since time is short, let me not dwell on them."
+    },
+    {
+      "start": 2098.48,
+      "end": 2121.056,
+      "text": "But I think refocusing away from automation, there are some fiscal things like reforming tax policy, data ownership, digital ad taxes, certain types of subsidy programs that are necessary and new norms and regulations. But potentially even more radically, we may need a new architecture for generative AI related to this issue of human."
+    },
+    {
+      "start": 2121.056,
+      "end": 2149.168,
+      "text": "uh ai misalignment that i've mentioned as well as other ways in which useful information can be best presented to humans let me stop here and i look forward to your comments and discussions thank you darren that was fantastic and now we are opening for questions so i will take the my privileges moderator and ask the first question"
+    },
+    {
+      "start": 2149.936,
+      "end": 2179.888,
+      "text": "So in the book, you talked about technology and progress in the past, and you mentioned that one of the things that made the change in the later part, for example, of 19th century was empowerment of workers. Should we also consider the other side, the weakening of billionaires? How do we, you know, I mean, to empower workers, there are people with power who,"
+    },
+    {
+      "start": 2179.888,
+      "end": 2207.408,
+      "text": "will fight to keep their power. Absolutely. I think you're right, Moshe. You need to have a balance. Different cultures and different institutional setups have achieved that empowerment differently. But you are right that if a handful of individuals become amazingly powerful,"
+    },
+    {
+      "start": 2207.408,
+      "end": 2236.08,
+      "text": "It might make it very difficult for different centers to have voice. And perhaps in the U.S. we are there. But, you know, that doesn't mean we should not have multimillionaires and we should not have large corporations. At least the corporatist models that Scandinavian countries or Nordic countries developed, starting with Denmark, then much more thoroughly Norway."
+    },
+    {
+      "start": 2236.08,
+      "end": 2265.136,
+      "text": "Sweden, and then later Finland, those have this corporatist negotiation between large corporations, as well as corporations, as well as associations of businesses and unions. So the two poles being strong is actually not that bad if you can make it work. Now, I don't think U.S. is going to go corporatist any time."
+    },
+    {
+      "start": 2265.136,
+      "end": 2294.064,
+      "text": "But in the context of the current U.S. issues, actually business associations may be useful. One of the major problems in the U.S. is that establish the bargaining and any type of negotiations are at the establishment level. So this creates the very bad dynamic that if as a boss or a manager, I can."
+    },
+    {
+      "start": 2294.064,
+      "end": 2316.608,
+      "text": "prevent unionization or I can be tough against workers, that's going to create an advantage for me relative to my competitors. And so it makes the management labor relations much more adversarial. So, in fact, actually, funny enough, in the U.S., I think if you have business associations do the bargaining with Federation of Unions."
+    },
+    {
+      "start": 2316.608,
+      "end": 2344.784,
+      "text": "You know, there are some legal issues there that might actually facilitate worker voice in some ways. But I think the details are going to be very much where the devil will show up its head. Thank you. Linda. Mr. Asimoglu, thank you for your talk. I very much appreciate it. And also, I got the chance to read your latest book, Power and Progress, which I find very..."
+    },
+    {
+      "start": 2344.784,
+      "end": 2371.072,
+      "text": "Eye-opening and also an enjoyable reading. Thank you for that. And my question is in the context of the book and also in the context of inequalities. So as I understood from reading your book, historically, there were many critical periods in which technology followed the vision of a powerful elite. It kind of draws on to the last question where productivity growth did not translate."
+    },
+    {
+      "start": 2371.072,
+      "end": 2400.768,
+      "text": "into the improvement in the lives of the majority of the population. So if you had to point out two most important points or strategies for today to improve the decrease in inequality or to foster equality, what would be your two most important points today? Thank you very much, Linda. That was an excellent summary of a very large chunk of the book."
+    },
+    {
+      "start": 2400.768,
+      "end": 2428.752,
+      "text": "And the question is critical. And I would say that redirecting technological change towards things that are useful for workers, especially new tasks, has to be a very important part of it. And let me build on Moshe's question and explain why I think that's even more important than just worker power."
+    },
+    {
+      "start": 2428.752,
+      "end": 2457.424,
+      "text": "Because imagine today we keep the trajectory of technology the same in the U.S. And we just, say, increase minimum wages or empower a few unions to ask for higher wages. What would happen? Well, it would actually immediately be countered by employers by even more automation. Because the direction of technology is going more and more in an automation direction. And you're faced with higher wages. So your response would be, let us automate even more."
+    },
+    {
+      "start": 2457.584,
+      "end": 2487.088,
+      "text": "So you really need the ecosystem to be such that there are factors that push employers towards more shared prosperity, but at the same time also give them more tools for doing so while sort of balancing between new tasks and automation. And that's where the promise of generative AI, if it were really real, would come in. Because A, it can be."
+    },
+    {
+      "start": 2487.088,
+      "end": 2513.056,
+      "text": "source of new tasks, and B, if it really helps workers with low and middle expertise, that's actually an equalizing force. And again, I don't think that's where we're heading. I'm not making this as a prediction of where we are likely to go, but as a possibility. So imagine that, you know, we have the kind of tools that I've just outlined. So for instance, you have a generative AI powered"
+    },
+    {
+      "start": 2513.056,
+      "end": 2540.656,
+      "text": "handheld tool that you can give to all electricians that helps them be better at diagnosing problems and troubleshooting problems. And believe me, I've dealt with enough electricians who couldn't troubleshoot problems. So I know it's a real issue. Who do you think would benefit most from that? If you're the best electrician in the United States, you don't need that. You can already solve these problems. But if you're a middle of the road electrician, that's really useful for you. So that's the sense in which."
+    },
+    {
+      "start": 2540.656,
+      "end": 2570.256,
+      "text": "There is an equalizing element to the generative AI, but not if generative AI goes more into, you know, search engines to be monetized via digital ads or leads to more automation. Then everybody's going to be the loser. Every worker is going to be the loser. Thank you, Linda. Thank you so much. Ricardo. Thank you. Great talk, Baron. It's very well aligned with many things I say in my responsibly I talk."
+    },
+    {
+      "start": 2570.32,
+      "end": 2597.664,
+      "text": "So I have two questions. One, the shortest is that I would like to push on your roadblock too, because I believe also we are losing skills. Like how many people can find the place without the GPS? And I saw a meme that was a joke, but maybe two in the future. Basically, you will be able to say that you can write by hand in your CV."
+    },
+    {
+      "start": 2597.664,
+      "end": 2623.904,
+      "text": "But it's not about writing, it's about thinking. The second question is related to your last answer. Are we also basically in some sense promoting mediocrity because of this kind of tools? These are the two questions. Let me..."
+    },
+    {
+      "start": 2623.904,
+      "end": 2652.72,
+      "text": "Say on the mediocrity. Thank you very much. Those are excellent questions on the mediocrity. I think that's an interesting question. But, you know, whenever you help. Middle of the road workers. There is an element that you are closing the gap between the very best. Now, the question is, I think the question is whether that will discourage the very best to become even better. And I don't know that will depend on the organization. I think it relates to your first question and your first question. I completely."
+    },
+    {
+      "start": 2652.944,
+      "end": 2675.04,
+      "text": "uh aligned with that and in fact i have uh written an a small essay in the past about education and the use of ai in education because i think the use of ai in education perfectly illustrates the two paths and how we are taking the wrong path so the more human complementary path would be to better to"
+    },
+    {
+      "start": 2675.04,
+      "end": 2694.128,
+      "text": "Continue to leverage the fact that most students learn very well with human contact, but that some students are falling behind, especially those from low socioeconomic backgrounds. You give better tools to teachers. You make them better trained to recognize and develop some, you know, cost effective way of personalized education. And that would be."
+    },
+    {
+      "start": 2694.128,
+      "end": 2718.256,
+      "text": "something that's technically feasible. Actually, there are some labs that have essentially prototype technologies, but nobody's investing in it. On the other hand, the bad path would be more and more automation education that takes the teacher out of the equation. We're doing that in the name of cost saving. And then even worse would be to unleash ChatGPT on students who, instead of the teachers or their peers, they're now learning from ChatGPT."
+    },
+    {
+      "start": 2718.256,
+      "end": 2740.56,
+      "text": "And imagine, you know, the bad use of chat GPT. Of course, again, large language models, as I said, are useful if you can utilize them in this good way. But imagine that when we first made health calculators available, we told students, you can use these health calculators. You don't need to learn arithmetic or calculus. You know, then you would have."
+    },
+    {
+      "start": 2740.56,
+      "end": 2769.744,
+      "text": "generated, you know, created one or two generations that were completely devoid of mathematical skills. Instead, we were lucky enough that, you know, at the time, hand calculators were viewed as a complement to individual mathematical learning. And a lot of individuals have improved their mathematical understanding while also using hand calculators. So that's the question. And I think with these large language models and the automation obsession, we're very much going in the opposite direction."
+    },
+    {
+      "start": 2772.432,
+      "end": 2801.2,
+      "text": "Thank you. Hannes. Daron, thanks for your excellent talk. I have two questions. One is related to this redirection of technological development. And there I think we could link this digital world or AI world also with sustainability. I think this is from a technological point of view and also political point of view. I think these two things should be thought and designed together. Somehow they are interlinked."
+    },
+    {
+      "start": 2801.2,
+      "end": 2825.856,
+      "text": "more comment or also question how you think about it and the second one is related to geopolitics okay because we are not you already mentioning this with the european countries and the us but we also have china and we have a worldwide competition and race here for let's say different use of ai and this makes it really complicated and um and we still have"
+    },
+    {
+      "start": 2825.856,
+      "end": 2854.608,
+      "text": "The answer not yet there, but one of the possible answers is the European AI Act, which is now decided and it was agreed. We still have to wait for the implementation. And what do you think about this AI Act in Europe? Could it serve as a, let's say, as a template for a, let's say, worldwide agreement on, let's say, dealing with AI? It's not about redirection. It's, let's say, reducing risk, but it could be a first step. So these are my two questions."
+    },
+    {
+      "start": 2854.608,
+      "end": 2883.952,
+      "text": "Thank you, Hannes. Let me start from the latter. And yes, very much so. I think the international dimension is important and there are some challenges and opportunities. I think the biggest opportunity is that the European Union is far ahead of the US in terms of regulation. And we have seen that the tech industry has to abide by all sorts of EU regulations because it's a huge market. I mean, you know, not to be too cynical, but there's a very good reason why Europeans are much better on regulation because they don't have any of the large."
+    },
+    {
+      "start": 2884.048,
+      "end": 2911.92,
+      "text": "tech companies so they're not captured their politicians are not captured by it and uh but that has also created a real opening and i think the eu is playing a real leadership role the question is you know how will the u.s follow i think the eu act the uai act as well as uh their uh uh competition policy antitrust policy i think are much better than what the u.s has at the moment but uh we are seeing some"
+    },
+    {
+      "start": 2911.92,
+      "end": 2939.472,
+      "text": "sort of changes in the U.S. as well. Now, the challenge comes from China, and I don't think we should exaggerate the challenge. I sometimes say if China did not exist, the tech industry would have invented it because it's the most powerful argument against regulation in the United States. If we regulate AI, then China will have the lead, as is mentioned in every meeting I have been to with tech leaders. And I think it should not be exaggerated. There are dimensions in which, you know,"
+    },
+    {
+      "start": 2939.728,
+      "end": 2958.352,
+      "text": "China has its own agenda, for example, in facial recognition, and I don't think that's going to change. But in many other areas, China is a follower of the technological frontier. And if the US were to change direction, China would follow. And the other thing is that China is actually, you know, shows."
+    },
+    {
+      "start": 2958.352,
+      "end": 2988.144,
+      "text": "possibility of very robust regulation of tech companies. It has done it for a very different set of objectives to keep control and to keep ideological control, but they have been very good at bringing the largest tech companies to listen to what the government regulators say. So again, that has happened without a tremendous slowdown in tech investments in China. So I think the right international context would"
+    },
+    {
+      "start": 2988.144,
+      "end": 3013.872,
+      "text": "would enable robust AI regulation. Now, in terms of sustainability, yes and no. Absolutely, for example, the electrification of the grid can be helped by generative AI, but I think a lot of the calls for AI is going to solve the climate challenge problem."
+    },
+    {
+      "start": 3013.872,
+      "end": 3038.912,
+      "text": "I think, are counterproductive. First of all, AI has very little to do with reducing carbon emissions except for the electrical grid and some sort of small control of equipment issues. And second, I think we have the basic tools for dealing with climate change already in the form of renewable energy, and we just need to double down on them. I don't think we need AI. And in fact, AI..."
+    },
+    {
+      "start": 3038.912,
+      "end": 3068.832,
+      "text": "if it goes in the wrong direction, could massively increase our energy needs. So I think I wouldn't pin my hopes on AI for sustainability. Thank you. We have a question on the chat from one of our YouTube watchers. Do you have any data about the business case for jobs which will be replaced by AI? What is the cost and benefit of"
+    },
+    {
+      "start": 3068.832,
+      "end": 3098.112,
+      "text": "of replacing humans with AI? So I don't have any data for generative AI. It's not massively used yet to have that, or if it exists, it's not available to me yet. But A, my collaborators and I have designed the largest AI."
+    },
+    {
+      "start": 3098.112,
+      "end": 3125.472,
+      "text": "the largest survey of technologies in the United States, which is part of the Census Bureau's annual business survey. And we know that in 2019, AI was used by less than 2% of U.S. companies. So it's very much in its infancy yet. And from that and other studies, we also know that so far, AI is not having a massive productivity boost."
+    },
+    {
+      "start": 3125.472,
+      "end": 3149.92,
+      "text": "And part of the reason is, you know, if you use it for automation and it's very slowly spreading, it's not going to create a productivity revolution. Now, there are some aspects of AI that could lead to a very big boost in productivity. But I think it's not something we're going to see in the next five years, let alone the next five to 10 years would be."
+    },
+    {
+      "start": 3149.92,
+      "end": 3178.144,
+      "text": "I wouldn't expect to see it. For example, the biggest one would be, you know, what people like DeepMind co-founder Demis Aceves is emphasizing. But I think it's, again, he's being way too optimistic. It's that AI and generative AI change the technology of science. So if we can do much better science in every dimension, then, of course, that would create a huge boost to productivity. Right now."
+    },
+    {
+      "start": 3178.144,
+      "end": 3206.176,
+      "text": "We know there are a few things like discovering folding of proteins or some new compounds that DeepMind is working on. But those are very, very idiosyncratic things. So if within the next 10 years you see a complete change in how you use AI and science, that could have massive productivity effects. But from automation, we don't expect it. And that's what the work that I've done on."
+    },
+    {
+      "start": 3206.176,
+      "end": 3233.616,
+      "text": "Regenerative AI technologies shows both in terms of productivity and wage inequality, like the data I depicted earlier. So let me ask the last question. So you've been, if I can simplify your argument, we should focus technology on instead of replacing humans, augmenting humans. But let's suppose that we do accomplish massive productivity in Crete. It's not obvious to me."
+    },
+    {
+      "start": 3233.616,
+      "end": 3260.992,
+      "text": "that workers automatically benefit from productivity increase. Because it could mean somebody say, I need fewer workers because I'm more productive. Well, that's very, very important. And that's where a lot of the technical work that I have done really focuses on. And if indeed, that's why I don't use the word augmentation. Because augmentation could mean exactly that what you're doing is you're making the workers more productive. And indeed, in that case..."
+    },
+    {
+      "start": 3260.992,
+      "end": 3288.032,
+      "text": "It's a little different from automation, but it doesn't necessarily lead to a greater demand for humans. But it's completely different when you create new tasks. Because, you know, if, you know, previously, you know, Linda, Ricardo and you were all working as, you know, office workers doing inventory control. And now I suddenly create new tasks. And in one of those new tasks is, you know."
+    },
+    {
+      "start": 3288.032,
+      "end": 3314.624,
+      "text": "Thinking about organizational design and another one is much better quality control. Now, I cannot say, oh, I'm only going to keep one of you because Linda needs to do the better quality control and Ricardo needs to do the inspection and you need to do the organization. So so by creating new tasks, you're both changing the production structure in a more productive direction and also creating these new."
+    },
+    {
+      "start": 3314.624,
+      "end": 3343.664,
+      "text": "functions that are going to require labor. Of course, at the end of the day, if the productivity increases so large, you know, Linda might say, okay, now I'm rich. So I want to work four days a week rather than five days a week. That's fine. But it's very different from Linda saying, I want to work five days a week, but there are no jobs for me. So that's the latter scenario that I'm trying to avoid. Okay. I don't see any more hands. So let's thank Darren for a fantastic talk."
+    },
+    {
+      "start": 3344.08,
+      "end": 3371.616,
+      "text": "And we are going now, I believe, move to the music phase of the program. Thank you. Okay, I'm happy to take over. Darren, do you want to say a few words before I share the screen? Well, please go ahead. And this is an example of what I think AI is not going to achieve in the next several decades."
+    },
+    {
+      "start": 3371.616,
+      "end": 3379.344,
+      "text": "if you see the music the choreography the imagery i think it's purely human"
+    },
+    {
+      "start": 3380.464,
+      "end": 3402.992,
+      "text": "That would be good. We don't show the choreography and the imagery, unfortunately. I shared the video, so it's just the music you're going to hear then. Very true. But I encourage everyone to watch the video on YouTube of the Rolling Stones' Sympathy for the Devil. And there's a particular performance, right? So this is from the Rock and Roll Circus in 68 with lots of other..."
+    },
+    {
+      "start": 3402.992,
+      "end": 3428.272,
+      "text": "guests and and stars and it's really really something so i think it's a very very special um performance of of uh of sympathy for the devil so um this is what you're gonna hear um and the one thing um i have to um make people aware before i started is that this is not a short piece of music as hannes was mentioning before but this is an 8 minute 30 performance but we're going to listen to all of it so you know"
+    },
+    {
+      "start": 3428.272,
+      "end": 3452.768,
+      "text": "Lean back. Enjoy it. I'll just make the announcement for the next event that we're going to have in two weeks on February 27th. Again, at our usual time at 5 p.m. Central European time. Henry Farrell of Johns Hopkins University will talk about geopolitics, national security and economics. In his talk, America's underground empire and economic security state."
+    },
+    {
+      "start": 3452.768,
+      "end": 3471.664,
+      "text": "and paul timos uh will moderate actually uh i think lyrics wise that would have been a good song also simple for the devil for for geopolitics right that could have been could have been a reference there as well um okay so um i'm gonna play it so thanks darren uh thanks moshe thanks all see you in two weeks and now enjoy sympathy for the devil"
+    },
+    {
+      "start": 3983.568,
+      "end": 3984.496,
+      "text": "See you next time."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

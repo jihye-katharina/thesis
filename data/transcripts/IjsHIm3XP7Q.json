@@ -1,0 +1,731 @@
+{
+  "video_id": "IjsHIm3XP7Q",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome, everybody. Welcome to today's lecture. Before moving to our guest, I'm happy to tell you that yesterday TU Wien celebrated the inauguration of our UNESCO chair. It's a professorship chair branded by UNESCO, and it will be hold by Peter Knies and his co-chair by Julia Neidhardt. So this is a very good news and congratulations to both of them, especially also as the ceremony was well attended, especially by official guests like the Austrian Minister of Science, the City Council of Vienna and representatives, official representatives of several Austrian ministries. So this is demonstrate that digital humanism is becoming a topic. So it's also becoming a major topic and somehow the things come together. Just this is, let's say, a starting message to those who are participating frequently to our Tuesday lectures. I'm happy to welcome a special guest today, Alexander Brechner. He's from TU Munich and also from the Bavarian Research Institute for Digital Transformation. And he is speaking on ethics and software development. So I'm really happy that we have a talk also about software in general and not only on air. He will be introduced in more detail and CV by Carlo Ghezzi, who will act as a moderator of today. The choreography is as always. First, we have the 30 minutes presentation by Alexander. Then we have Q&A. And at the end, we have a piece of music. And today this is managed by Walter Palmetshofer. And I'm especially grateful to Walter for taking care. not only of the music, but also from all the technical issues during the Zoom conferences. I welcome our moderator, Carlo. And I'm not going to introduce you, Carlo. You are well known to our community. I just want to mention that you have been with us from the early beginning, even before the first workshop in 2019. You have been one of the guys behind this initiative. And for this, I'm really grateful to you. Carlo, there. Flora is yours. Thank you, Hannes. I'm very glad to introduce the seminar today by Alexander Prechner. Alex is a professor of software and systems engineering at Technical University of Munich and founding director of BIDT, the Interdisciplinary Bavarian Research Institute for Digital Transformation. and the scientific director of Fortis, Bavaria's research and transfer institute for software intensive systems. His research interests include all aspects of software engineering with a focus on testing and accountability. Before joining Technical University of Munich, Alex was a professor in Karlsruhe Institute of Technology. group manager at Fraunhofer IESE and adjunct associate professor in Kaiserslautern and a senior researcher at ETH Zurich. He got his PhD from Technical University of Munich and the master degree in computer science from Aachen and from the University of Kansas. Alex, I'm very glad to listen to your presentation today on software development and the ethical issues arising in software development. Again, now the real floor is yours. Yeah. Thank you very much, Carlo. Thank you very much. Can you see my screen? Yes, we can. And do you see it in full screen mode? Does that work? Yes. we see it yes okay good then then once again thank you very much carlo thank you very much hannes for for um having me it's a great pleasure for me to to talk about um yeah the problem of how to embed values into software engineering and i have decided to pick um a special kind of software engine which is agile software engineering and as i'm a computer scientist and i'm a software person i understand more about agility than about ethics. Yeah. But this project, fortunately, is done with a few ethicists around me. You know Julian Nieder-Rümelin, who is one of the founding fathers of that idea of digital humanism. And we have Jan Gogol, who is an economy ethicist. We have Nina Zuber, who is also an ethicist, and Severin, who is a software engineer. So we have an interesting, I think, mix of... disciplines here, and I think we have the necessary expertise to talk about that topic. I understand that I'm going to talk about that topic for about 30 minutes, and then we go into a discussion. Good. We are collaborating in an institution that is called the Bavarian Research Institute for Digital Transformation. Carlo was so kind to mention that. Also Hannes mentioned it. That's a special kind of institute. It's something that is for good reasons, located not at a university, but within or in between universities here in Munich. The purpose of it is to understand and help design digital transformation society. And there's, of course, plenty of things going on there. We have something like 35 people sitting here in Munich in a physical location. But the idea is to network in Bavaria and to have... Yeah, multiple parties, universities, University of the Applied Sciences to cooperate on all things related to digital transformation in society. If you're interested in that, have a look at our website. It's in German currently, but I think you can get the gist. OK, now the message. will be the following. The background that we are located in is digital humanism. The question is, of course, what is digital humanism? We had a discussion last year with Walter and with Hannes, and we said, hey, digital humanism is more than being good. And of course, it is more than being good. And one facet that is particularly important to me is the question of how... responsible a machine can be. And for me, there is no question about that. Machines cannot be responsible, only humans can be responsible. And that also, by the way, translates into the work that was mentioned before that we have done in terms of accountability. So the idea is that as an engineer, I cannot offload responsibility to others or to what maybe Niklas Luhmann would have called the system. But of course, we need to put that in context with innovation, with money, and a few things that we're going to talk about. later on. What I think as a software engineer is particularly important, and Carlo has made that point before, is ethics is not an AI concern, or it's not an AI concern only. And I'm really surprised at seeing that everybody seems to suggest that ethics is an AI problem. It's not. I'm going to give you examples of why that is not the case. But I really want to hammer that point. Ethics is much more general than just ethics of AI. And we'll have a quick glimpse at what that means for regulation later on. Good. And within that realm, the question is, what can we do? Well, we can educate people. I'm a university professor. So this is, of course, one set of one strand of activities that we can follow. I'm quickly going to talk about that. We can look at ethics in research in a specific way. We can talk about certification. And I will quickly talk about certification, certification of humans, certification of organizations, certification of processes. I personally think there are some dangerous developments going on. And I will also talk about that. But my main topic will be the development. Right. And we know that there's internal review boards that may have taken care of that kind of considerations in the past. And I'm going to focus on ethical deliberation in agile development. Now, what you see here is a stream of people putting away responsibility. And I've stolen that picture in a slightly different form from Hannah Wallach, who said, well, we have researchers who come up with ideas and we have applied scientists who somehow make that scale. And we have product teams who turn that into products and we have marketing communications and so on. And then we have people that use these systems and everybody is pointing to each other by saying, hey. Responsibility lies not with me, but rather with the others. And it's interesting to see that now with the EU regulation, specifically when it comes to high risk only AI applications, people start to see, hey, the organizations that are building these systems, of course, are responsible. Now, if you consider ethics in software engineering, then an experience that some of us will have made before is. Ethical people or ethics people, philosophers sometimes are confronted with a statement of the kind, hey, what you do is useless because you can't tell me what I have to do, which is true, by the way, for good reasons that we are going to look at. And conversely, I, as a software engineer, am frequently confronted with the idea that, hey, what you do there is pink, soft, fluffy stuff. That is not informatics anymore. What the hell are you doing? Why don't you do the real software engineering, which is about technology? I couldn't disagree more. But hey, that's what we are getting. And unfortunately, there's some arguments here. And what everybody in this room has seen is codes of conduct, codes of ethics. There's something like 120 around. I'm sure that some of your organizations have come up with codes of conduct as well. and that relate to how to develop AI based systems, software systems, systems in general. And if you look at them, you'll find, hey, they are not particularly useful because they don't effectively tell the developer how to develop a system in the right way, which, of course, is what we as developers would like to have. And there's a good reason for that. And the reason is that we cannot expect that to happen because the software is context specific. And that means that software engineering is context specific and the values and specifically the trade-offs and the decisions that we need to take, the trade-offs in between values are also context specific. And I've written down a few elements of these contexts that I think we have as researchers failed to understand, not just in terms of codes of conduct being applied, but in terms of software engineering more general. There's very few general laws in software engineering, forgive me if I say that, Maybe I can tell you three or four that would more or less be universally true, but most laws that we have are not universally true. Good. And now here is an example of the variety of different software systems that we are seeing. So we have face recognition. We have data integration platforms. Think Palantir, for instance. We are talking about care robots. We are talking about analyzers for CVs, for resumes. And all these systems, of course, involve some AI. But now... I have made the point before that ethics is about more than AI. It's about software. Think about computer games such as ego shooters. Think about Corona or COVID warm apps. No AI involved. Think about file sharing platforms such as BitTorrent. Think about Telegram. Think about Bitcoin. Think about cookie consent policies that you're confronted with when opening a website. There is zero AI in these systems or maybe just a little AI. And yet. The ethical problems there are obvious. Or think about Volkswagen and Dieselgate, right? No AI involved in these systems at all. Now, if you take that perspective, then you will come to the conclusion that the generosity of these codes of conduct is necessary because of the context specificity. Well, we cannot really expect to be more precise than having these values in general. And that's just one way out of that. And that is, well, we need to come up with a deliberation schema that can structure us, that can guide us in terms of making these systems. So what you see here is some examples of these codes of conduct. And on the right hand side, I've picked an arbitrary list of values where everybody would agree, yes, these make sense. Odd before can certainly is a good idea. Fairness is certainly a good idea. Responsibility is a good idea. But hey, how to implement that? And then we have another problem that is prevalent in these codes of conduct. In addition to the non. context specificity that cannot be there. And that is, these codes of conduct don't tell you what to do if you have conflicting values. In most cases, values are simple to implement if they don't interact, if they don't conflict with any other values. But in most cases, that is the case. And just think about privacy and transparency. Think about privacy and accountability. These are fundamental conflicts that have nothing to do with AI, once again, by the way, but that show you that there are conflicts that we need to resolve. And because software is context-specific, these conflicts, these trade-offs are context-specific, and we need to decide on them. And by the way, that's what engineers do every day. That is our job. We decide on trade-offs. Here is a figure that is unfortunately a bit old now, but what you see here at the important part is the black box in the middle, because that is the box that indicates the amount of machine learning code that we have in a system and then the amount of traditional algorithmic code that we have around it. And what that graphic, what that picture is supposed to suggest is, hey. Software is the concern, not AI, because AI is just a very small part. And of course, I acknowledge that there's special concerns that we need to cater to when talking about AI. But really, we are talking about software systems. Think once again about the Corona one app. And there's so many ethical considerations that we need to look into that have nothing to do with machine learning. And of course, there's plenty of other examples. Good. Now. Because we have that problem of values being generic in most cases and software being context specific at the same time, somehow we need to bridge that gap. And there's only one way of bridging that gap. And that may be a bit disappointing, but hey, that's the way it is. Well, we need to reflect on the values and how we can implement these values. And what we have done is developed a schema. a deliberation schema for how to perform that kind of ethical deliberation. Consequently, it's called EDAB, Ethical Deliberation in Agile Development Processes. And when preparing that talk, I was facing two possibilities. One possibility was to just walk you through one example, but that alone takes half an hour. So I wouldn't have been able to talk about the other more conceptual ideas behind that. So what I'm going to do today is rather explain very roughly what the idea is. And then in the second half of today's presentation, if you want us to talk about examples, we can do that. The basic idea is that we somehow start with values and there's different sources for these values. There's different ethics that will provide us with these these values. And the idea is that. Since we are in an agile software development where we can make use of the dynamics of agile software development, we can iterate on these values. And then the second idea is, well, as we implement or as we think about these values, we can think about how to implement them. And I think this really is a very constructive and positive way of looking at things, because sometimes you get the impression that ethics is about saying yes or no. Should we do one or should we do the other? That is sometimes the case. But in most cases, it's not. In most cases, you can think about mechanisms that allow you to implement a specific choice while respecting certain values, while respecting certain residual risks. So it's more than just saying yes or no. It now turns out that the characteristics, or at least what I think are the salient characteristics of agility, blend particularly well with that idea. And these are planning, incrementality, empowerment and learning. And I now spend maybe three to five minutes to talk about these characteristics of agile software engineering. Specifically, I'm going to talk about Scrum and just to make sure that everybody here is on the same page. Scrum is a software development process that essentially had the goal of giving power back to the programmers. And I'll have a word on empowerment later on. The idea is that we have a list of requirements that we call. the product backlog. And there is an entity called the product owner that is responsible for filling requirements into the product backlog. That's what you can see here on the left. And these requirements are refined over time, and that is suggested here by these refinement lines that you are seeing. And then there is a team, a team of developers, and the team is picking some In fact, it's the product owner who is telling the team, hey, I want these features, these requirements to be implemented. And then the team decides how they do that, how many of these requirements they are going to implement. The prioritization is done by the product owner. Then we have the sprint backlog, which is a list of things to be implemented. by the team. The team implements that in a two-week rhythm, essentially. And then there's two things that are really important. One is once a sprint is done, people consider what they have done in terms of the product. That's called the sprint review. And the product is called an increment. And they also reflect on how the process has worked. So this builds in some cybernetic loop in terms of thinking about how to learn. within an organization. And then that cycle repeats. Okay. I hope most of you have seen that kind of things. That was also very rough what I've said, but that's the idea of agile development. And now in terms of adding value to these ideas, there's two things where we can do that. One is we can put values into the product backlog. Remember, that is that list of requirements. And we can also think about mechanisms that implement these values. Now, these mechanisms are rarely purely technological but often enough they are socio-technical if you think about accountability infrastructures for instance then you will have certain procedures in place that an organization must adhere to in order for these infrastructures to work so that's why it's socio-technical and the second place where values and ethical considerations come into the game is by the program think about the values and to think about how to implement these values later on. So how can an accountability infrastructure be implemented? How can we make sure that certain privacy concerns are addressed? How can we make sure that chat UPT is not talking about indecent topics with a child? That's the kind of considerations. that we are seeing and that's very roughly the idea and things are a bit more complex than that i'm going to show you how they are a bit more complex but that is basically the idea of that that schema now what we need to remember is that software development is just one one part inside is scrum That is the development process. And then we have a product owner and the product owner is responsible for the requirements. So the product owner interacts with a bunch of different people on the left hand side that are responsible for product management. And these people in product management in turn are communicating with many other different stakeholders, which, by the way, is also something that the PO, that the product owner is doing. And why am I showing you that? Because the question is, where do the values that we are going to implement come from? outside the team they come from interactions of the product owner with various stakeholders with people on the product management team and why did i mention that here specifically because you may have wondered as a software person before where is requirements engineering happening in agile software development but it's happening here right that's the idea good now why do i think that These ideas blend particularly well with agility. Well, I'd like to mention three or four basic tenets or salient features that, in my opinion, really characterize agility. The first one is the undoing of the separation of design and production. In 1968, we had a conference here in Garmisch where software engineering was brought to life, if you wish. organized by Fritz Bauer, by the way, who's the grandfather on the chair that I'm having here at the Technical University of Munich. There was a time when people unbundled software from hardware and they thought about, hey, how can we develop software without knowing what that was? What do you do if you have to do something where you have no idea how to do it? Well, you look into related disciplines. How are systems developed in the hardware world? You think you design about, you think about the system, you design a system, then you have the design documents and you give it to somebody to develop that. So there's a distinction between design and production. And in fact, design documents always are planning documents because they allow you to give specific parts of the system to specific teams, for instance. Planning is a fundamental concern in agile software development. The long-term planning is not taken as prominently as in traditional software development processes because people have realized that that doesn't work, right? Those who are around a bit longer in the software area here will remember the Standish report and catastrophic reports on the software crisis and so on. And the idea was here as well. We are planning something that is inherently unplannable. We can't plan it. So maybe we shouldn't really do the long term planning. Now, if you take that idea and that relates to a comment that I've made before, then you quickly come to the idea of empowerment. Because if you have this iterative development that I'm going to have a word on in one second, then who is really running the show? It's the programmers. It's not the designers anymore. In fact, the designers, the software designers, the architects. maybe don't really exist anymore. That's a longer story that we can discuss, but it's interesting that this role doesn't really exist. So there's empowerment to the programmers. They decide what they do. They are given high-level requirements, user stories in most cases, and they come up with an idea of how to implement that, which is totally different from a waterfall-ish perspective, where you have the software design and then give it to the code monkeys, if you wish. So empowerment is important. And of course, empowerment would be the key to implement ethical values, because if people are empowered to do something, then they are also responsible for developing software in an agile, excuse me, in an ethical way. The third idea is incrementality. The idea in agile software development is not that you take 10 functionalities at the time and develop all of them incrementally, but rather you take one. functionality one piece of functionality you finish it off completely then you take the next piece of functionality you finish it off completely and then you integrate that okay and that solves many technical problems that we used to have in terms of integration in terms of systems integration why is that important in our context here because We can and we must implement mechanisms as full fledged pieces of functionalities at one moment in time. Of course, we may have to touch them later on, but we build these mechanisms for implementing ethical values rather than say, hey, this is something that we are going to push forward to the end of the system. And then there's that idea of cybernetic loops of self-learning systems, which I think is absolutely crucial for agile development, which also. explains why often enough that doesn't really work in practice because there is that built-in loop of thinking about what we have done how we have done it if we should do it again or if we got it the right way So basically, that's my understanding of what agile software development is. You may not think that I'm a religious proponent of agility. I'm certainly not. I think there's many problems with scaling up that kind of process. There's problems with cyber physical systems and that kind of process. So there's plenty of things to be discussed here. But basically, that's the idea. And for pure software systems, that works comparatively. Now, one important part that I'd like to emphasize again is that idea of empowerment. You may have realized that agile software development often enough doesn't work in hierarchical organizations, namely in corporations. And I could mention five organizations here from the Munich area that have somehow gotten rid of these agile software development ideas because they couldn't get it running. And the reason for that, the deeper reason for that is that the structure of these organizations is incompatible with that idea of having programmers. decide on relevant parts. Hierarchy means that somebody on top decides what to do rather than those at the bottom decide what to do. And if your organization doesn't fit that kind of agile structure, then maybe there's a problem with implementing agility. Why? Because that means that people may not necessarily be empowered. And in my opinion, that is also then a stumbling block. for implementing ethical considerations in terms of software. Good. Now that schema that we have developed works in five activities. We used to call that phases. Now I'm calling it activities. We start by understanding what the system is supposed to do, essentially. And then we think about different values. And of course, the question is, where do these values come from? Hey, a first good idea would be to pick one code of conduct and take the first 10 values that you find there. But then there's more than that, right? There is usually values that a company has. There is professional ethics, such as of our ACM or IEEE. Then there's techno-generic values, values that apply to all kinds of technologies, such as privacy or safety. We have values that particularly perform to data, that captures to the machine learning part that we have seen before. Then you have domain ethics, right? We are going to talk about a chat GPT doll later on. And then the question is, well, if I have a doll that is powered by chat GPT and if it interacts with small children, what's the kind of ethical considerations that we need to look into? It turns out there is an ethics that takes care of that kind of problems, advocatory ethics, and that helps you with understanding what can be done, what can't be done. And then, of course, we have one specific product where we need to think about what the values are. Good. Once we have identified the values that are relevant and we have agreed on the values that are relevant and maybe we have even weighed the values that are relevant, we now can get into the technicalities. We can start the deliberation of how to turn these values into software. How, for instance, do we make sure that a certain level of privacy is adhered to? How do we make sure that a certain accountability is possible? How do we make sure when building software for military applications that soldiers don't think, hey, this is a computer game. An important consideration, by the way. So we take the transition from values to requirements and then to the mechanisms, socio-technical mechanisms, I've mentioned that before, that implement them. And then we have to do a review of our system. We need to think about if our values are really implemented, if we got that right. And then we need to verify. So if you're interested, there is a bunch of papers that we have written on these topics that detail out all these different ideas. And now let me get back to a picture, to our picture here of Scrum. And I understand it's a slightly different schema, but basically you have the same idea as before. You have the different activities. You have the different things that are going on within these different sprints. And we now have different forms. of ethical deliberation at different moments in the process. When the product owner communicates with product management and with the stakeholders, this is what we call a disclosive mode of deliberation. Here we think about what are the values that should really be relevant. Then the product owner needs to decide on a priority. of these values. Or maybe they decide that all values are equally important. That's the second part here. That's the weighing mode of a deliberation that we call applicative mode of deliberations. They think about how to implement the values in terms of specific mechanisms. And then during the reflective parts of a sprint, cycle, the review and the retrospective. Well, we evaluate the work that we have done and we evaluate the product that we have developed and we do that in cycles. And I think that shows how very nicely these different ideas on ethical deliberation blend with that specific way of developing. So good. Now, to be a bit more concrete, here is a problem for you. Think about a pizza delivery app. Or think about a chat GPT doll, right? You know, these, yeah. Or just assume you have a doll and that doll is connected to the internet, it's connected to chat GPT, and it can talk to you, it can talk to children. If you develop such a system, well, there's a bunch of different values, of course, that we need to consider and that we need to take into consideration. And I'm going just to give you a few ideas here. What about talking about sexuality, for instance? What about talking about does Santa Claus exist? What do we do if a child is shouting at the doll or is destroying the doll? How do we cope with that kind of situations? And that very nicely explains the different values or suggests the different values that we need to take into consideration. Second example is once again totally without any form of AI. It's a pizza delivery app. Is there anything ethical about a pizza delivery app? Well, maybe it is, right? And look at me, I'm overweight. Should I be given nudges that I should get another pizza because my last pizza has been 48 hours ago? Well, maybe yes, maybe no. Maybe for me as an adult man, that's my problem. Maybe for others, that's not so easy. Should teenagers get that kind of nudges? Or if you think about the back end of that system, what kind of functionality do you build in? when it comes to understanding how fast or how efficient the delivery people for the pizza are. And I guess everybody here has heard somewhat unpleasant stories about how these people are treated. So this is just giving you an example, or this is just giving you an idea of what the different values are. And I think you can imagine how we can develop that while walking through the software development process. Okay, let me come to an end. So the question now is who is responsible? And of course, it's a shared responsibility. Society as such is responsible. The users or operators of a system are responsible. But of course, the developers and the organization are also. responsible. And what I have talked about today really is the idea of developers being responsible, organizations being responsible. And what you see on the right-hand side is a tribute to the figure that I've shown before, where I've shown you Scrum in context. Because there is, of course, not just software development, but there's a context within which that software development takes place. And we are just, of course, picking one small part here. And again, for me, the specific problem that I'm addressing, specific concern that I'm addressing is ethical software development. Almost my last slide. Should we have certification? Well, the question is, what could we certify? We could think about certifying products. Turns out to be difficult because we can't even do that in terms of normal quality for a product. Unfortunately, we don't know how to really do that, which explains why most of the standards, the certification for software quality in the automotive industries or in the avionics industries or in the medical domain really talk about the process rather than about the product. Very few standards talk about the product. There's IFIP standards that talk about cryptographic devices. So that doesn't really work because we don't really know how to do that. Should we certify people? Should we certify developers? I know that in Vienna specifically, some people are thinking that's a great idea. I personally think it's not a great idea because we have too few software engineers anyway. Plus, if we have software engineers building software, shouldn't we start by certifying them with respect to their technical abilities? So I think that is not really an excellent idea, maybe beyond making money. So what remains is certifying the process or certifying all processes and then the organization. And I think we shouldn't be too strict here. And we are currently having that debate about the EU AI Act. And I think we may be overdoing things there. And I'd be a bit more careful in terms of how to regulate that development. And why does that relate to what I've said here? Or what I'm saying here is because that schema that I've shown you is extremely lightweight. Agile software development is meant to be extremely lightweight. And I hope I could give you a glimpse of how that... flows into that system. Okay, good. Now, from a philosophical perspective, you may wonder, hey, is there a difference between software and a hammer? Because I can use a hammer and hit Carlo on the head. Is there any difference with software? And the answer is, of course, yes. Because we don't see software. Software is everywhere. Software is being changed. Many people are involved. not just users and operators, but all other kinds of people. These software systems are networked and they are interacting with everything. It is a fundamental difference with respect to tools that we have seen in the past and on the philosophical side, that is a debate, of course, that people are having. What's the big deal here? Our experience is that ethics can be nicely intertwined with teaching software engineering classes. It's not too heavyweight. We just tell people essentially, hey, apply that schema. Think about some of the values. Does that make a difference? I am sometimes told, hey, what you want is just compliance. We have sets of values. So why can't we just be compliant with them? I think compliance is a totally different beast because with compliance. The basic assumption is that people are a risk, that they are mean. In agile software development, that's not the idea. In agile software development, the idea is to empower people. A further assumption that I have made is that programmers do have the power to do what they want and also maybe to say, no, this is not what I want. And I think we are living in times where that is indeed the case. Everybody as a programmer, as an IT person, can get a new job the next day. Not everybody, but most of us can. So there is a certain power that lies with the programmers. They can say, hey, if we don't do it that way, then I'm going to leave. And that, of course, is a prerequisite for what we are doing here. If we had the typical employer-employee power asymmetry, then these ideas wouldn't work. I should mention that these ideas here apply to a variety of things. They apply to program logic. They specifically also apply to UIs. And I have mentioned the example of military applications before. And it also applies to machine learning because machine learning can be seen as one, if you wish, virtual sprint within the development of these systems. And of course, AI is a different beast. Machine learning is a different beast because things change over time. We have different fluidities that are playing a role. And let me conclude by maybe a small provocation. After all that. talk about ethics in software development. Is it really a first order problem? Or shouldn't we maybe start specifically here in Europe to export products rather than values? Thank you very much for your attention. I'm looking forward to the discussion. Carlo, we can hear you. Sorry. Thank you very much, Alex, for your passionate presentation and provocative at many points. I already see a hand raised by Moshe, so I immediately give the floor to Moshe for his comment or question. Thank you for this very passionate presentation, very intriguing presentation. I'd like to inject two phrases that I think need to be part of this discussion. One is diffusion of responsibility and accountability. So I have friends working for some companies that I think are destroying the world, like Facebook. When you talk to them, you know, I have someone who is involved in software testing, you know, finding bugs. And he says, how can letting bugs proliferate be a good thing? So, of course, I'm doing a good thing by eliminating bugs. If you have bugs, your account is vulnerable. You're subject to hacking, so I'm doing a good thing. And everybody there deals with a small piece of the picture. So no one feels responsible for the overall thing, which is the, we can go at length about the damage that Facebook has done to society. Everybody feels they are designing a better washer for the screw underneath the nut, and therefore they don't feel responsible and they don't feel accountable. The second phrase that I think we need to remember is profit maximization. This whole business is driven by corporations and there is business not to be ethical. They don't like too much ethical, bad publicity. So ethic does translate sometimes to money in some indirect way. But first and foremost, it's about maximizing profits. So for someone to run this very ethical procedure described, They basically have to decide that ethics trumps profits. And I'm just not seeing it happening in our society in the at least near future. Yeah. Thank you. Thank you very much for these ideas. So the point about diffusion of responsibility, in fact, was the first point that I was making on my first slides, I believe. I didn't really talk about individual developers, but I talked about the different parties that are involved in developing the product. And of course, that is precisely the problem. Now, what I have looked into today is the responsibility of developers because they can say, hey, let's just diffuse responsibility. We are not responsible. That's precisely the idea here. And the second point is, well, if you use the approach, the schema that we have played with here, that I've introduced here, then of course, they need to be buy-in from the organization that does it. If you don't have the buy-in from the organization, then that obviously is not going to work. But we have been in touch with quite a few organizations for who that does matter, for whom it is important to think about these concerns. So I agree with what you're saying, but I think there are companies that are aware of the... power of the tools, of the software tools that they are developing, that are also aware of what could potentially go wrong. In terms of the second point that you have made about capitalism or money ruling the world, and you phrased it, of course, much more elegantly than I did, I agree. And that's why many people in Europe here say, hey, this is why we need to regulate these things. Because if we leave that to the market, then money will always trump everything and it's not going to happen. And here is, I think, a good indication why that idea may be correct. Think about privacy by design. You have been around for quite some time. You know that in the early 2000s, people said, oh, privacy by design, that's the big thing. And we're going to make tremendous amounts of money with privacy by design. Did we? No. Nobody ever did. Right. It's a very similar concern here. But then 15 years later, GDPR showed up and all of a sudden people did take that seriously. So this may indeed mean that sometimes we need to regulate things in a specific way. Unfortunately, I'm not sure that the way we are regulating things or we are about to regulate things in Europe is exactly heading in the right direction, because I think we are overdoing things here. There has been a recent study by one institute here at Technical University of Munich where startups were asked, well, look at the applications, AI startups were asked, look at the applications that you are building. And the EU AI Act is thinking about that idea of a five-class risk assessment. How risky are the systems that you are building? And 40%, 40% said, hey, my... system is a risk class one system. The idea initially was in between 5% and 15%. So that means that maybe that kind of regulation is going to be too harsh. And we have plenty of software engineers around us here who are really afraid of what is going on there. Now, how does that answer your question? I think if you really want to do it, you need to do it by regulation. Should we do it as harshly as we do with the UAI Act? I'm not so sure. Thank you very much. Just a quick comment. A few months ago, we have Eric Horvitz speaking on this series, essentially about responsible product development. And it would be very ironic today to look back at this talk just a few months ago and see what Microsoft has done more recently with Big Chat. And so I think that Eric was very sincere when he talked to us, but then big money showed up. And responsibility was flushed down the toilet. Can I add to this conversation with with my point? You know, if you look at let me take an example. If you look at the food industry, you know, there's, of course, the money driven food industry, which is producing, you know, junk food and making money out of that. But there is also a more responsible approach. To that, you know, for example, in Italy, we have the slow food movement and the rediscovery of niche production and small producers who produce quality products. And there is a new business around this and there is more awareness that there is good in that. So maybe, you know, by also raising awareness. And, you know, from the general public, you know, from society that, you know, we need different software. We need software that is, you know, compliant with human values. And we don't have it now. It will drive, you know, production. of a new kind of software that goes in this direction will drive certification of software that solves those problems. And so maybe this is part of the future that we can look at. Just a comment. What do you think? Well, what can I say? Yes, that is going to happen. We'll see if these companies are driven out of business or if they are not driven out of business, right? It's like organic meat, organic vegetable. There is a niche probably for that. Is that going to take over without regulation? We'll have to see. I'm not so sure. But I do see the parallel, of course, certainly. Okay. There is Edward next. Excuse me. Hi, Alexander. Thanks for inspiring talk. One of the issues that I think you sort of hinted at, but I'd like to try to highlight the agile development is partly a recognition that products cannot be designed up front before they are implemented. And I think we've seen. this phenomenon rather dramatically with the rise of the large language models, where I think that pretty much everyone I know who works in the AI technology is astonished by what has happened in the last year and a half. Nobody expected this. And I think that there's actually a lot of history where software systems get... and their properties emerge. They aren't designed. They come into existence slowly and in a very evolutionary way. And that suggests that the software designers are really not very much in control of this process, that it's a more evolutionary process and that the capabilities of the technology are emergent phenomenon. And the scary part about that is that you could interpret this to mean that we have a system where even if everybody behaves ethically and applies the highest ethics to their individual contributions, you still will get bad outcomes because the bad outcomes are potentially emergent properties that nobody anticipated during the process of technology development. Thanks. Very, very good and deep question. And of course, you're right. But I don't think there is the contradiction that you are insinuating there is. Because I don't think the world is black and white. We do have some properties that we can think about beforehand. We can think about chat GPT being racist or misogynist or talking to children or something. That's something that we can do today. And of course, there will be properties that we haven't thought about. But then we need to solve these problems later on. So I don't really see that clear cut distinction. I can give you an example for that idea. Airbnb, right? Airbnb has had negative externalities in terms of rental markets being destroyed because there is no original rental market anymore, but it's now rented to tourists. We've seen that, I think, in New York. We've seen that in Paris and in a few other cities. Now, should the developers of software, of the software of Airbnb 10 years ago, should they have catered to that eventuality? I don't think so. And that means that some of the problems will be problems that we can solve up front, that we shouldn't solve up front. And we should, I may say so, rather than take the American perspective and saying, hey, let's cross that bridge once we are in front of that. And what you're suggesting then otherwise would be to say, hey, let's think about all possibilities and that could potentially happen. That is a very European perspective that sometimes drives me crazy. So I think what you're saying is absolutely correct. But I think we can be a bit courageous and I don't want to avoid all kinds of problems. I don't want to avoid all kinds of risks, but I want to have some kind of risk aware development process. Thank you. Hannes, you're next. First of all, thanks for your. Excellent talk. And I had a similar questions to Edwards. It's that software is and you mentioned it to this HR development. It's a living entity and it's developing with the context and it's changing the context. So it's somehow a dialectic relationship and you cannot foresee all those different applications. And let's say changes in the software and together with the environment. What's coming up to me is. How is the user or how could the user be, let's say, brought into this process, especially if we think also, and this is a principal problem, how could a future user could be brought into that? This is very similar to the question already previously, but I'm always thinking about that because we have an impact. The impact is coming this time. Context is changing and we have to take care of that. And we have to also take care of. let's say future user, and how could this in such a process be respected or let's say repressed? So I think that's two parts of your question or two parts of your comment. And I think agility as such is the response to what you're saying. So in fact, Software systems evolve over time, but this is precisely the idea that I've tried to suggest here, that as we continue the development of a system, we should continue the consideration of values. We should embed that into the agile development process. It's precisely not the case that I start with the values at one moment in time, and then I think I'm done with it. No, we do that continuously as the system is evolving over time. So this is precisely the idea that we can cater to these new developments. Of course, we may think about, or we may, that's what Edward was saying, we may forget about applications that can happen in the future, or we can foresee them, but that's perfectly fine. And the second part of your question as well, how do we incorporate the users or maybe also operators of the system? Well, that is also very much the idea of agile software development, that you take these folks into account when you build the software. Because the idea is if I build software, I want to build software that is useful to the users. So I must be in touch with them when I build the system. And that is exactly the job of the product owner who needs to find some way of interacting with users or representatives of users or proxies for users. I think that is precisely the strength of this idea, that it allows you to perform that kind of interactions. Thank you. There is another question or comment coming from Seis Lanting. This is my name. OK, thank you, Alexander, for this very interesting talk. OK, you mentioned the issue of risks and I assume that. how much risk you can tolerate will depend on the domain of application. Because I think in the medical domain, in the domain of autonomous vehicles, in aeronautics and probably also in military, you can tolerate very little risk. So how do you make that distinction? And okay, let me add a remark. I'm always a bit taken aback by these kind of studies that want to tell us what an autonomous vehicle should decide when it drives around a turn and then has to choose between an old lady and a young lady with a child and something like that. In my view, there are two answers to that. Number one is an autonomous vehicle should never do this because otherwise it's violating the code of the road. And secondly, I think most people don't seem to realize that what the autonomous vehicle sees is not what we see. It will see movable objects and not people. Okay, thank you. Yeah, so that's a very, very good question. So essentially what you are asking is, hey, how do we really cope with that risk assessment? And depending on the domain that we are living in, we may have different answers. Now, if you talk about regulated domains such as avionics or the medical domain or to a certain extent also the automotive domain, you will see that you are not even allowed to do agile software development because the idea is that you have requirements, that you have specifications, that you have traceability in between them. So this idea here doesn't really fit with that kind of regulation. But of course, some of the ideas could be implemented there nonetheless, right? That idea of eliciting values, thinking about values, thinking about implementations for these values, that is something that could be done there as well. Now, in terms of serious risk assessments, to be honest, I think that is really the key question for which I don't have an answer. And the problem is that with software, we don't really know what the residual risk is. And in safety, We have some experience with doing that, right? We may not be able to quantify the residual risk, but we do have mechanisms in place that tell us, hey, I do a HARA, I do a HAZOP, I have specific kinds of techniques that I can use to make sure that my system is reasonably safe. I may not be able to quantify that if software is involved, but hey, I'm sufficiently good. I think for other... I don't know how to really do that. I start not to understand how to do that for privacy, right? So you may say, hey, I have a big system and now let's use K-anonymity for whatever reason. And we know that K-anonymity isn't the greatest thing to do. It has potential flaws. But we may decide to do it anyway because it's better than something else. And the question is, how big is the risk if we do it? Don't know. I don't know how even that kind of assessment would look like. And of course, these things become more complex when it comes to values. So my understanding is currently what we are seeing in the partnerships that we are engaged in, it's more a matter of gut fear, right? Is it risky? Is it not risky? Then you have that EU AI regulation in terms of specifying what is a high risk class. I think that really is the biggest question that I don't really have an answer to. So sorry for disappointing you. Not at all. Thank you, Alex. I think we are basically at the end of the time slot that is assigned for the seminar. So I really want to thank you again for your really interesting and passionate seminar and for all the questions that were raised and the answers. So it's probably now time to switch. to a piece of wonderful music that is coming from my favorite composer, which was chosen actually by Alex. So I'm very glad that, you know, we agree on, you know, something that is really beautiful in terms of music. OK, thank you very much for attending and happy music listening to all of you. Thank you. Franz Schubert and it's called Tod und das Mädchen. In English it's The Death of the Main. It was composed 1826 in his most difficult time in Vienna and he died by 31 and had like 600 compositions. This piece is in the style of like total music so by definition the piece itself has nothing to do with the poem itself. Although Alex chose the piece because it fits the scary erotic relationship between ethics and the machines in the debate. And the question is like, when we talk about AI, it's not clear who has which role. So is the role of the society that of the main or that of the death or ethics and regulators that of the death and that of the main? So we'll start the music now. And one quick remark, the next lecture is planned for June 13th with Jason Steinhauser. And the topic is History Disrupted, How Social Media and the World Wide Web Have Changed the Past. And I'm sharing now the piece. Walter, we can't hear anything. So I just saw that you did not receive the sound. Is that correct? Yes. Hold on one second. Check the Zoom sharing again. Let's try once more. Otherwise, just go to Spotify. for some reason i don't get the sound over on the right if it does not work i think we have to there's a youtube link from alex in the chat i think when you share your screen you have to say separately that you also want to share the sound use the audio yesterday but did that thanks for the hint but that's uh So sorry, I have to leave. I have to teach now, unfortunately. Thank you very much. Doesn't really matter. Play the YouTube link. It's a fantastic piece of music, even for says who doesn't like Schubert. But you are not the enemy. Thank you very much, everybody. Thank you very much. I think we can. Walter, let's stop here. I think we are not going to play this music. I think we can put it at the next time when we have our next lecture. I think we can put Schubert on the next lecture's evening. I would like to thank you all for your participation of these lectures. Thanks also to Walter for trying hard that we can hear. that we should hear Schubert, but sometimes technology does not work. This is why we are here to tell the technology does not always work properly. So even in the cases like this and agile software development might not help even in this case. I thank you all for your participation and I wish you.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 23.856,
+      "text": "Welcome, everybody. Welcome to today's lecture. Before moving to our guest, I'm happy to tell you that yesterday TU Wien celebrated the inauguration of our UNESCO chair. It's a professorship chair branded by UNESCO, and it will be hold by Peter Knies and his co-chair by Julia Neidhardt."
+    },
+    {
+      "start": 23.856,
+      "end": 52.928,
+      "text": "So this is a very good news and congratulations to both of them, especially also as the ceremony was well attended, especially by official guests like the Austrian Minister of Science, the City Council of Vienna and representatives, official representatives of several Austrian ministries. So this is demonstrate that digital humanism is becoming a topic. So it's also becoming a major topic and somehow the things come together."
+    },
+    {
+      "start": 52.928,
+      "end": 82.16,
+      "text": "Just this is, let's say, a starting message to those who are participating frequently to our Tuesday lectures. I'm happy to welcome a special guest today, Alexander Brechner. He's from TU Munich and also from the Bavarian Research Institute for Digital Transformation. And he is speaking on ethics and software development. So I'm really happy that we have a talk also about software in general and not only on air."
+    },
+    {
+      "start": 82.32,
+      "end": 109.04,
+      "text": "He will be introduced in more detail and CV by Carlo Ghezzi, who will act as a moderator of today. The choreography is as always. First, we have the 30 minutes presentation by Alexander. Then we have Q&A. And at the end, we have a piece of music. And today this is managed by Walter Palmetshofer. And I'm especially grateful to Walter for taking care."
+    },
+    {
+      "start": 109.04,
+      "end": 137.904,
+      "text": "not only of the music, but also from all the technical issues during the Zoom conferences. I welcome our moderator, Carlo. And I'm not going to introduce you, Carlo. You are well known to our community. I just want to mention that you have been with us from the early beginning, even before the first workshop in 2019. You have been one of the guys behind this initiative. And for this, I'm really grateful to you. Carlo, there."
+    },
+    {
+      "start": 137.904,
+      "end": 164.208,
+      "text": "Flora is yours. Thank you, Hannes. I'm very glad to introduce the seminar today by Alexander Prechner. Alex is a professor of software and systems engineering at Technical University of Munich and founding director of BIDT, the Interdisciplinary Bavarian Research Institute for Digital Transformation."
+    },
+    {
+      "start": 164.208,
+      "end": 192.976,
+      "text": "and the scientific director of Fortis, Bavaria's research and transfer institute for software intensive systems. His research interests include all aspects of software engineering with a focus on testing and accountability. Before joining Technical University of Munich, Alex was a professor in Karlsruhe Institute of Technology."
+    },
+    {
+      "start": 192.976,
+      "end": 214.288,
+      "text": "group manager at Fraunhofer IESE and adjunct associate professor in Kaiserslautern and a senior researcher at ETH Zurich. He got his PhD from Technical University of Munich and the master degree in computer science from Aachen and from the University of Kansas."
+    },
+    {
+      "start": 214.288,
+      "end": 243.936,
+      "text": "Alex, I'm very glad to listen to your presentation today on software development and the ethical issues arising in software development. Again, now the real floor is yours. Yeah. Thank you very much, Carlo. Thank you very much. Can you see my screen? Yes, we can. And do you see it in full screen mode? Does that work? Yes."
+    },
+    {
+      "start": 243.936,
+      "end": 271.696,
+      "text": "we see it yes okay good then then once again thank you very much carlo thank you very much hannes for for um having me it's a great pleasure for me to to talk about um yeah the problem of how to embed values into software engineering and i have decided to pick um a special kind of software engine which is agile software engineering and as i'm a computer scientist and i'm a software person i understand"
+    },
+    {
+      "start": 271.696,
+      "end": 300.448,
+      "text": "more about agility than about ethics. Yeah. But this project, fortunately, is done with a few ethicists around me. You know Julian Nieder-Rümelin, who is one of the founding fathers of that idea of digital humanism. And we have Jan Gogol, who is an economy ethicist. We have Nina Zuber, who is also an ethicist, and Severin, who is a software engineer. So we have an interesting, I think, mix of..."
+    },
+    {
+      "start": 300.448,
+      "end": 327.36,
+      "text": "disciplines here, and I think we have the necessary expertise to talk about that topic. I understand that I'm going to talk about that topic for about 30 minutes, and then we go into a discussion. Good. We are collaborating in an institution that is called the Bavarian Research Institute for Digital Transformation. Carlo was so kind to mention that. Also Hannes mentioned it. That's a special kind of institute. It's something that is"
+    },
+    {
+      "start": 327.36,
+      "end": 352.672,
+      "text": "for good reasons, located not at a university, but within or in between universities here in Munich. The purpose of it is to understand and help design digital transformation society. And there's, of course, plenty of things going on there. We have something like 35 people sitting here in Munich in a physical location. But the idea is to network in Bavaria and to have..."
+    },
+    {
+      "start": 352.672,
+      "end": 376.128,
+      "text": "Yeah, multiple parties, universities, University of the Applied Sciences to cooperate on all things related to digital transformation in society. If you're interested in that, have a look at our website. It's in German currently, but I think you can get the gist. OK, now the message."
+    },
+    {
+      "start": 376.128,
+      "end": 402.512,
+      "text": "will be the following. The background that we are located in is digital humanism. The question is, of course, what is digital humanism? We had a discussion last year with Walter and with Hannes, and we said, hey, digital humanism is more than being good. And of course, it is more than being good. And one facet that is particularly important to me is the question of how..."
+    },
+    {
+      "start": 402.512,
+      "end": 431.888,
+      "text": "responsible a machine can be. And for me, there is no question about that. Machines cannot be responsible, only humans can be responsible. And that also, by the way, translates into the work that was mentioned before that we have done in terms of accountability. So the idea is that as an engineer, I cannot offload responsibility to others or to what maybe Niklas Luhmann would have called the system. But of course, we need to put that in context with innovation, with money, and a few things that we're going to talk about."
+    },
+    {
+      "start": 431.888,
+      "end": 460.448,
+      "text": "later on. What I think as a software engineer is particularly important, and Carlo has made that point before, is ethics is not an AI concern, or it's not an AI concern only. And I'm really surprised at seeing that everybody seems to suggest that ethics is an AI problem. It's not. I'm going to give you examples of why that is not the case. But I really want to hammer that point. Ethics is much more general than just ethics of AI."
+    },
+    {
+      "start": 460.448,
+      "end": 487.232,
+      "text": "And we'll have a quick glimpse at what that means for regulation later on. Good. And within that realm, the question is, what can we do? Well, we can educate people. I'm a university professor. So this is, of course, one set of one strand of activities that we can follow. I'm quickly going to talk about that. We can look at ethics in research in a specific way. We can talk about certification."
+    },
+    {
+      "start": 487.232,
+      "end": 516.624,
+      "text": "And I will quickly talk about certification, certification of humans, certification of organizations, certification of processes. I personally think there are some dangerous developments going on. And I will also talk about that. But my main topic will be the development. Right. And we know that there's internal review boards that may have taken care of that kind of considerations in the past. And I'm going to focus on ethical deliberation in agile development."
+    },
+    {
+      "start": 516.624,
+      "end": 543.648,
+      "text": "Now, what you see here is a stream of people putting away responsibility. And I've stolen that picture in a slightly different form from Hannah Wallach, who said, well, we have researchers who come up with ideas and we have applied scientists who somehow make that scale. And we have product teams who turn that into products and we have marketing communications and so on. And then we have people that use these systems and everybody is pointing to each other by saying, hey."
+    },
+    {
+      "start": 543.648,
+      "end": 571.424,
+      "text": "Responsibility lies not with me, but rather with the others. And it's interesting to see that now with the EU regulation, specifically when it comes to high risk only AI applications, people start to see, hey, the organizations that are building these systems, of course, are responsible. Now, if you consider ethics in software engineering, then an experience that some of us will have made before is."
+    },
+    {
+      "start": 571.424,
+      "end": 594.976,
+      "text": "Ethical people or ethics people, philosophers sometimes are confronted with a statement of the kind, hey, what you do is useless because you can't tell me what I have to do, which is true, by the way, for good reasons that we are going to look at. And conversely, I, as a software engineer, am frequently confronted with the idea that, hey, what you do there is pink, soft, fluffy stuff."
+    },
+    {
+      "start": 594.976,
+      "end": 623.168,
+      "text": "That is not informatics anymore. What the hell are you doing? Why don't you do the real software engineering, which is about technology? I couldn't disagree more. But hey, that's what we are getting. And unfortunately, there's some arguments here. And what everybody in this room has seen is codes of conduct, codes of ethics. There's something like 120 around. I'm sure that some of your organizations have come up with codes of conduct as well."
+    },
+    {
+      "start": 623.168,
+      "end": 648.416,
+      "text": "and that relate to how to develop AI based systems, software systems, systems in general. And if you look at them, you'll find, hey, they are not particularly useful because they don't effectively tell the developer how to develop a system in the right way, which, of course, is what we as developers would like to have. And there's a good reason for that. And the reason is that we cannot expect that to happen because the software is context specific."
+    },
+    {
+      "start": 648.416,
+      "end": 676.272,
+      "text": "And that means that software engineering is context specific and the values and specifically the trade-offs and the decisions that we need to take, the trade-offs in between values are also context specific. And I've written down a few elements of these contexts that I think we have as researchers failed to understand, not just in terms of codes of conduct being applied, but in terms of software engineering more general. There's very few general laws in software engineering, forgive me if I say that,"
+    },
+    {
+      "start": 676.272,
+      "end": 706.144,
+      "text": "Maybe I can tell you three or four that would more or less be universally true, but most laws that we have are not universally true. Good. And now here is an example of the variety of different software systems that we are seeing. So we have face recognition. We have data integration platforms. Think Palantir, for instance. We are talking about care robots. We are talking about analyzers for CVs, for resumes. And all these systems, of course, involve some AI. But now..."
+    },
+    {
+      "start": 706.144,
+      "end": 735.776,
+      "text": "I have made the point before that ethics is about more than AI. It's about software. Think about computer games such as ego shooters. Think about Corona or COVID warm apps. No AI involved. Think about file sharing platforms such as BitTorrent. Think about Telegram. Think about Bitcoin. Think about cookie consent policies that you're confronted with when opening a website. There is zero AI in these systems or maybe just a little AI. And yet."
+    },
+    {
+      "start": 735.776,
+      "end": 762.88,
+      "text": "The ethical problems there are obvious. Or think about Volkswagen and Dieselgate, right? No AI involved in these systems at all. Now, if you take that perspective, then you will come to the conclusion that the generosity of these codes of conduct is necessary because of the context specificity. Well, we cannot really expect to be more precise than having these values in general. And that's just one way out of that."
+    },
+    {
+      "start": 762.88,
+      "end": 772.512,
+      "text": "And that is, well, we need to come up with a deliberation schema that can structure us, that can guide us in terms of making these systems."
+    },
+    {
+      "start": 772.512,
+      "end": 800.48,
+      "text": "So what you see here is some examples of these codes of conduct. And on the right hand side, I've picked an arbitrary list of values where everybody would agree, yes, these make sense. Odd before can certainly is a good idea. Fairness is certainly a good idea. Responsibility is a good idea. But hey, how to implement that? And then we have another problem that is prevalent in these codes of conduct. In addition to the non."
+    },
+    {
+      "start": 800.48,
+      "end": 819.328,
+      "text": "context specificity that cannot be there. And that is, these codes of conduct don't tell you what to do if you have conflicting values. In most cases, values are simple to implement if they don't interact, if they don't conflict with any other values. But in most cases, that is the case."
+    },
+    {
+      "start": 819.328,
+      "end": 846.192,
+      "text": "And just think about privacy and transparency. Think about privacy and accountability. These are fundamental conflicts that have nothing to do with AI, once again, by the way, but that show you that there are conflicts that we need to resolve. And because software is context-specific, these conflicts, these trade-offs are context-specific, and we need to decide on them. And by the way, that's what engineers do every day. That is our job. We decide on trade-offs."
+    },
+    {
+      "start": 846.512,
+      "end": 871.392,
+      "text": "Here is a figure that is unfortunately a bit old now, but what you see here at the important part is the black box in the middle, because that is the box that indicates the amount of machine learning code that we have in a system and then the amount of traditional algorithmic code that we have around it. And what that graphic, what that picture is supposed to suggest is, hey."
+    },
+    {
+      "start": 871.392,
+      "end": 897.088,
+      "text": "Software is the concern, not AI, because AI is just a very small part. And of course, I acknowledge that there's special concerns that we need to cater to when talking about AI. But really, we are talking about software systems. Think once again about the Corona one app. And there's so many ethical considerations that we need to look into that have nothing to do with machine learning. And of course, there's plenty of other examples. Good. Now."
+    },
+    {
+      "start": 897.088,
+      "end": 920.912,
+      "text": "Because we have that problem of values being generic in most cases and software being context specific at the same time, somehow we need to bridge that gap. And there's only one way of bridging that gap. And that may be a bit disappointing, but hey, that's the way it is. Well, we need to reflect on the values and how we can implement these values. And what we have done is developed a schema."
+    },
+    {
+      "start": 920.912,
+      "end": 948.176,
+      "text": "a deliberation schema for how to perform that kind of ethical deliberation. Consequently, it's called EDAB, Ethical Deliberation in Agile Development Processes. And when preparing that talk, I was facing two possibilities. One possibility was to just walk you through one example, but that alone takes half an hour. So I wouldn't have been able to talk about the other more conceptual ideas behind that."
+    },
+    {
+      "start": 948.176,
+      "end": 970.016,
+      "text": "So what I'm going to do today is rather explain very roughly what the idea is. And then in the second half of today's presentation, if you want us to talk about examples, we can do that. The basic idea is that we somehow start with values and there's different sources for these values. There's different ethics that will provide us with these these values. And the idea is that."
+    },
+    {
+      "start": 970.016,
+      "end": 987.248,
+      "text": "Since we are in an agile software development where we can make use of the dynamics of agile software development, we can iterate on these values. And then the second idea is, well, as we implement or as we think about these values, we can think about how to implement them."
+    },
+    {
+      "start": 987.248,
+      "end": 1015.024,
+      "text": "And I think this really is a very constructive and positive way of looking at things, because sometimes you get the impression that ethics is about saying yes or no. Should we do one or should we do the other? That is sometimes the case. But in most cases, it's not. In most cases, you can think about mechanisms that allow you to implement a specific choice while respecting certain values, while respecting certain residual risks. So it's more than just saying yes or no."
+    },
+    {
+      "start": 1015.024,
+      "end": 1036.096,
+      "text": "It now turns out that the characteristics, or at least what I think are the salient characteristics of agility, blend particularly well with that idea. And these are planning, incrementality, empowerment and learning. And I now spend maybe three to five minutes to talk about these characteristics of agile software engineering."
+    },
+    {
+      "start": 1036.096,
+      "end": 1057.504,
+      "text": "Specifically, I'm going to talk about Scrum and just to make sure that everybody here is on the same page. Scrum is a software development process that essentially had the goal of giving power back to the programmers. And I'll have a word on empowerment later on. The idea is that we have a list of requirements that we call."
+    },
+    {
+      "start": 1057.504,
+      "end": 1085.712,
+      "text": "the product backlog. And there is an entity called the product owner that is responsible for filling requirements into the product backlog. That's what you can see here on the left. And these requirements are refined over time, and that is suggested here by these refinement lines that you are seeing. And then there is a team, a team of developers, and the team is picking some"
+    },
+    {
+      "start": 1085.936,
+      "end": 1106.0,
+      "text": "In fact, it's the product owner who is telling the team, hey, I want these features, these requirements to be implemented. And then the team decides how they do that, how many of these requirements they are going to implement. The prioritization is done by the product owner. Then we have the sprint backlog, which is a list of things to be implemented."
+    },
+    {
+      "start": 1106.0,
+      "end": 1135.568,
+      "text": "by the team. The team implements that in a two-week rhythm, essentially. And then there's two things that are really important. One is once a sprint is done, people consider what they have done in terms of the product. That's called the sprint review. And the product is called an increment. And they also reflect on how the process has worked. So this builds in some cybernetic loop in terms of thinking about how to learn."
+    },
+    {
+      "start": 1135.568,
+      "end": 1163.936,
+      "text": "within an organization. And then that cycle repeats. Okay. I hope most of you have seen that kind of things. That was also very rough what I've said, but that's the idea of agile development. And now in terms of adding value to these ideas, there's two things where we can do that. One is we can put values into the product backlog. Remember, that is that list of requirements. And we can also think about mechanisms that implement these values. Now, these mechanisms"
+    },
+    {
+      "start": 1163.936,
+      "end": 1187.92,
+      "text": "are rarely purely technological but often enough they are socio-technical if you think about accountability infrastructures for instance then you will have certain procedures in place that an organization must adhere to in order for these infrastructures to work so that's why it's socio-technical and the second place where values and ethical considerations come into the game is by the program"
+    },
+    {
+      "start": 1188.368,
+      "end": 1210.048,
+      "text": "think about the values and to think about how to implement these values later on. So how can an accountability infrastructure be implemented? How can we make sure that certain privacy concerns are addressed? How can we make sure that chat UPT is not talking about indecent topics with a child? That's the kind of considerations."
+    },
+    {
+      "start": 1210.048,
+      "end": 1228.128,
+      "text": "that we are seeing and that's very roughly the idea and things are a bit more complex than that i'm going to show you how they are a bit more complex but that is basically the idea of that that schema now what we need to remember is that software development is just one one part inside is scrum"
+    },
+    {
+      "start": 1228.128,
+      "end": 1258.128,
+      "text": "That is the development process. And then we have a product owner and the product owner is responsible for the requirements. So the product owner interacts with a bunch of different people on the left hand side that are responsible for product management. And these people in product management in turn are communicating with many other different stakeholders, which, by the way, is also something that the PO, that the product owner is doing. And why am I showing you that? Because the question is, where do the values that we are going to implement come from?"
+    },
+    {
+      "start": 1258.128,
+      "end": 1284.928,
+      "text": "outside the team they come from interactions of the product owner with various stakeholders with people on the product management team and why did i mention that here specifically because you may have wondered as a software person before where is requirements engineering happening in agile software development but it's happening here right that's the idea good now why do i think that"
+    },
+    {
+      "start": 1284.928,
+      "end": 1313.104,
+      "text": "These ideas blend particularly well with agility. Well, I'd like to mention three or four basic tenets or salient features that, in my opinion, really characterize agility. The first one is the undoing of the separation of design and production. In 1968, we had a conference here in Garmisch where software engineering was brought to life, if you wish."
+    },
+    {
+      "start": 1313.104,
+      "end": 1338.8,
+      "text": "organized by Fritz Bauer, by the way, who's the grandfather on the chair that I'm having here at the Technical University of Munich. There was a time when people unbundled software from hardware and they thought about, hey, how can we develop software without knowing what that was? What do you do if you have to do something where you have no idea how to do it? Well, you look into related disciplines. How are systems developed in the hardware world?"
+    },
+    {
+      "start": 1338.8,
+      "end": 1367.104,
+      "text": "You think you design about, you think about the system, you design a system, then you have the design documents and you give it to somebody to develop that. So there's a distinction between design and production. And in fact, design documents always are planning documents because they allow you to give specific parts of the system to specific teams, for instance. Planning is a fundamental concern in agile software development."
+    },
+    {
+      "start": 1367.104,
+      "end": 1391.104,
+      "text": "The long-term planning is not taken as prominently as in traditional software development processes because people have realized that that doesn't work, right? Those who are around a bit longer in the software area here will remember the Standish report and catastrophic reports on the software crisis and so on. And the idea was here as well."
+    },
+    {
+      "start": 1391.104,
+      "end": 1419.6,
+      "text": "We are planning something that is inherently unplannable. We can't plan it. So maybe we shouldn't really do the long term planning. Now, if you take that idea and that relates to a comment that I've made before, then you quickly come to the idea of empowerment. Because if you have this iterative development that I'm going to have a word on in one second, then who is really running the show? It's the programmers. It's not the designers anymore. In fact, the designers, the software designers, the architects."
+    },
+    {
+      "start": 1419.6,
+      "end": 1445.744,
+      "text": "maybe don't really exist anymore. That's a longer story that we can discuss, but it's interesting that this role doesn't really exist. So there's empowerment to the programmers. They decide what they do. They are given high-level requirements, user stories in most cases, and they come up with an idea of how to implement that, which is totally different from a waterfall-ish perspective, where you have the software design and then give it to the code monkeys, if you wish."
+    },
+    {
+      "start": 1445.744,
+      "end": 1472.896,
+      "text": "So empowerment is important. And of course, empowerment would be the key to implement ethical values, because if people are empowered to do something, then they are also responsible for developing software in an agile, excuse me, in an ethical way. The third idea is incrementality. The idea in agile software development is not that you take 10 functionalities at the time and develop all of them incrementally, but rather you take one."
+    },
+    {
+      "start": 1472.896,
+      "end": 1492.32,
+      "text": "functionality one piece of functionality you finish it off completely then you take the next piece of functionality you finish it off completely and then you integrate that okay and that solves many technical problems that we used to have in terms of integration in terms of systems integration why is that important in our context here because"
+    },
+    {
+      "start": 1492.32,
+      "end": 1519.84,
+      "text": "We can and we must implement mechanisms as full fledged pieces of functionalities at one moment in time. Of course, we may have to touch them later on, but we build these mechanisms for implementing ethical values rather than say, hey, this is something that we are going to push forward to the end of the system. And then there's that idea of cybernetic loops of self-learning systems, which I think is absolutely crucial for agile development, which also."
+    },
+    {
+      "start": 1519.84,
+      "end": 1532.96,
+      "text": "explains why often enough that doesn't really work in practice because there is that built-in loop of thinking about what we have done how we have done it if we should do it again or if we got it the right way"
+    },
+    {
+      "start": 1532.96,
+      "end": 1562.8,
+      "text": "So basically, that's my understanding of what agile software development is. You may not think that I'm a religious proponent of agility. I'm certainly not. I think there's many problems with scaling up that kind of process. There's problems with cyber physical systems and that kind of process. So there's plenty of things to be discussed here. But basically, that's the idea. And for pure software systems, that works comparatively. Now, one important part that I'd like to emphasize again is that idea of empowerment."
+    },
+    {
+      "start": 1562.8,
+      "end": 1590.224,
+      "text": "You may have realized that agile software development often enough doesn't work in hierarchical organizations, namely in corporations. And I could mention five organizations here from the Munich area that have somehow gotten rid of these agile software development ideas because they couldn't get it running. And the reason for that, the deeper reason for that is that the structure of these organizations is incompatible with that idea of having programmers."
+    },
+    {
+      "start": 1590.224,
+      "end": 1618.48,
+      "text": "decide on relevant parts. Hierarchy means that somebody on top decides what to do rather than those at the bottom decide what to do. And if your organization doesn't fit that kind of agile structure, then maybe there's a problem with implementing agility. Why? Because that means that people may not necessarily be empowered. And in my opinion, that is also then a stumbling block."
+    },
+    {
+      "start": 1618.48,
+      "end": 1648.352,
+      "text": "for implementing ethical considerations in terms of software. Good. Now that schema that we have developed works in five activities. We used to call that phases. Now I'm calling it activities. We start by understanding what the system is supposed to do, essentially. And then we think about different values. And of course, the question is, where do these values come from? Hey, a first good idea would be to pick one code of conduct and take the first 10 values that you find there."
+    },
+    {
+      "start": 1648.352,
+      "end": 1677.744,
+      "text": "But then there's more than that, right? There is usually values that a company has. There is professional ethics, such as of our ACM or IEEE. Then there's techno-generic values, values that apply to all kinds of technologies, such as privacy or safety. We have values that particularly perform to data, that captures to the machine learning part that we have seen before. Then you have domain ethics, right? We are going to talk about a chat GPT doll later on."
+    },
+    {
+      "start": 1677.744,
+      "end": 1702.928,
+      "text": "And then the question is, well, if I have a doll that is powered by chat GPT and if it interacts with small children, what's the kind of ethical considerations that we need to look into? It turns out there is an ethics that takes care of that kind of problems, advocatory ethics, and that helps you with understanding what can be done, what can't be done. And then, of course, we have one specific product where we need to think about what the values are."
+    },
+    {
+      "start": 1702.928,
+      "end": 1730.336,
+      "text": "Good. Once we have identified the values that are relevant and we have agreed on the values that are relevant and maybe we have even weighed the values that are relevant, we now can get into the technicalities. We can start the deliberation of how to turn these values into software. How, for instance, do we make sure that a certain level of privacy is adhered to? How do we make sure that a certain accountability is possible? How do we make sure when building"
+    },
+    {
+      "start": 1730.336,
+      "end": 1757.52,
+      "text": "software for military applications that soldiers don't think, hey, this is a computer game. An important consideration, by the way. So we take the transition from values to requirements and then to the mechanisms, socio-technical mechanisms, I've mentioned that before, that implement them. And then we have to do a review of our system. We need to think about if our values are really implemented, if we got that right. And then we need to verify."
+    },
+    {
+      "start": 1757.52,
+      "end": 1787.472,
+      "text": "So if you're interested, there is a bunch of papers that we have written on these topics that detail out all these different ideas. And now let me get back to a picture, to our picture here of Scrum. And I understand it's a slightly different schema, but basically you have the same idea as before. You have the different activities. You have the different things that are going on within these different sprints. And we now have different forms."
+    },
+    {
+      "start": 1787.472,
+      "end": 1809.504,
+      "text": "of ethical deliberation at different moments in the process. When the product owner communicates with product management and with the stakeholders, this is what we call a disclosive mode of deliberation. Here we think about what are the values that should really be relevant. Then the product owner needs to decide on a priority."
+    },
+    {
+      "start": 1809.504,
+      "end": 1834.368,
+      "text": "of these values. Or maybe they decide that all values are equally important. That's the second part here. That's the weighing mode of a deliberation that we call applicative mode of deliberations. They think about how to implement the values in terms of specific mechanisms. And then during the reflective parts of a sprint,"
+    },
+    {
+      "start": 1834.368,
+      "end": 1862.56,
+      "text": "cycle, the review and the retrospective. Well, we evaluate the work that we have done and we evaluate the product that we have developed and we do that in cycles. And I think that shows how very nicely these different ideas on ethical deliberation blend with that specific way of developing. So good. Now, to be a bit more concrete, here is a problem for you. Think about a pizza delivery app."
+    },
+    {
+      "start": 1862.56,
+      "end": 1890.928,
+      "text": "Or think about a chat GPT doll, right? You know, these, yeah. Or just assume you have a doll and that doll is connected to the internet, it's connected to chat GPT, and it can talk to you, it can talk to children. If you develop such a system, well, there's a bunch of different values, of course, that we need to consider and that we need to take into consideration. And I'm going just to give you a few ideas here. What about talking about sexuality, for instance?"
+    },
+    {
+      "start": 1890.928,
+      "end": 1919.952,
+      "text": "What about talking about does Santa Claus exist? What do we do if a child is shouting at the doll or is destroying the doll? How do we cope with that kind of situations? And that very nicely explains the different values or suggests the different values that we need to take into consideration. Second example is once again totally without any form of AI. It's a pizza delivery app. Is there anything ethical about a pizza delivery app?"
+    },
+    {
+      "start": 1919.952,
+      "end": 1949.472,
+      "text": "Well, maybe it is, right? And look at me, I'm overweight. Should I be given nudges that I should get another pizza because my last pizza has been 48 hours ago? Well, maybe yes, maybe no. Maybe for me as an adult man, that's my problem. Maybe for others, that's not so easy. Should teenagers get that kind of nudges? Or if you think about the back end of that system, what kind of functionality do you build in?"
+    },
+    {
+      "start": 1949.472,
+      "end": 1977.152,
+      "text": "when it comes to understanding how fast or how efficient the delivery people for the pizza are. And I guess everybody here has heard somewhat unpleasant stories about how these people are treated. So this is just giving you an example, or this is just giving you an idea of what the different values are. And I think you can imagine how we can develop that while walking through the software development process. Okay, let me come to an end."
+    },
+    {
+      "start": 1977.152,
+      "end": 1991.616,
+      "text": "So the question now is who is responsible? And of course, it's a shared responsibility. Society as such is responsible. The users or operators of a system are responsible. But of course, the developers and the organization are also."
+    },
+    {
+      "start": 1991.616,
+      "end": 2019.792,
+      "text": "responsible. And what I have talked about today really is the idea of developers being responsible, organizations being responsible. And what you see on the right-hand side is a tribute to the figure that I've shown before, where I've shown you Scrum in context. Because there is, of course, not just software development, but there's a context within which that software development takes place. And we are just, of course, picking one small part here. And again, for me, the specific"
+    },
+    {
+      "start": 2019.792,
+      "end": 2045.264,
+      "text": "problem that I'm addressing, specific concern that I'm addressing is ethical software development. Almost my last slide. Should we have certification? Well, the question is, what could we certify? We could think about certifying products. Turns out to be difficult because we can't even do that in terms of normal quality for a product."
+    },
+    {
+      "start": 2045.264,
+      "end": 2073.408,
+      "text": "Unfortunately, we don't know how to really do that, which explains why most of the standards, the certification for software quality in the automotive industries or in the avionics industries or in the medical domain really talk about the process rather than about the product. Very few standards talk about the product. There's IFIP standards that talk about cryptographic devices. So that doesn't really work because we don't really know how to do that. Should we certify people? Should we certify developers?"
+    },
+    {
+      "start": 2073.408,
+      "end": 2102.096,
+      "text": "I know that in Vienna specifically, some people are thinking that's a great idea. I personally think it's not a great idea because we have too few software engineers anyway. Plus, if we have software engineers building software, shouldn't we start by certifying them with respect to their technical abilities? So I think that is not really an excellent idea, maybe beyond making money. So what remains is certifying the process or certifying all processes and then the organization."
+    },
+    {
+      "start": 2102.096,
+      "end": 2131.984,
+      "text": "And I think we shouldn't be too strict here. And we are currently having that debate about the EU AI Act. And I think we may be overdoing things there. And I'd be a bit more careful in terms of how to regulate that development. And why does that relate to what I've said here? Or what I'm saying here is because that schema that I've shown you is extremely lightweight. Agile software development is meant to be extremely lightweight. And I hope I could give you a glimpse of how that..."
+    },
+    {
+      "start": 2131.984,
+      "end": 2160.704,
+      "text": "flows into that system. Okay, good. Now, from a philosophical perspective, you may wonder, hey, is there a difference between software and a hammer? Because I can use a hammer and hit Carlo on the head. Is there any difference with software? And the answer is, of course, yes. Because we don't see software. Software is everywhere. Software is being changed. Many people are involved."
+    },
+    {
+      "start": 2160.704,
+      "end": 2177.904,
+      "text": "not just users and operators, but all other kinds of people. These software systems are networked and they are interacting with everything. It is a fundamental difference with respect to tools that we have seen in the past and on the philosophical side, that is a debate, of course, that people are having. What's the big deal here?"
+    },
+    {
+      "start": 2177.904,
+      "end": 2205.776,
+      "text": "Our experience is that ethics can be nicely intertwined with teaching software engineering classes. It's not too heavyweight. We just tell people essentially, hey, apply that schema. Think about some of the values. Does that make a difference? I am sometimes told, hey, what you want is just compliance. We have sets of values. So why can't we just be compliant with them? I think compliance is a totally different beast because with compliance."
+    },
+    {
+      "start": 2205.776,
+      "end": 2232.176,
+      "text": "The basic assumption is that people are a risk, that they are mean. In agile software development, that's not the idea. In agile software development, the idea is to empower people. A further assumption that I have made is that programmers do have the power to do what they want and also maybe to say, no, this is not what I want. And I think we are living in times where that is indeed the case."
+    },
+    {
+      "start": 2232.176,
+      "end": 2259.808,
+      "text": "Everybody as a programmer, as an IT person, can get a new job the next day. Not everybody, but most of us can. So there is a certain power that lies with the programmers. They can say, hey, if we don't do it that way, then I'm going to leave. And that, of course, is a prerequisite for what we are doing here. If we had the typical employer-employee power asymmetry, then these ideas wouldn't work. I should mention that these ideas here apply to a variety of things. They apply to program logic."
+    },
+    {
+      "start": 2259.808,
+      "end": 2288.16,
+      "text": "They specifically also apply to UIs. And I have mentioned the example of military applications before. And it also applies to machine learning because machine learning can be seen as one, if you wish, virtual sprint within the development of these systems. And of course, AI is a different beast. Machine learning is a different beast because things change over time. We have different fluidities that are playing a role. And let me conclude by maybe a small provocation. After all that."
+    },
+    {
+      "start": 2288.16,
+      "end": 2317.2,
+      "text": "talk about ethics in software development. Is it really a first order problem? Or shouldn't we maybe start specifically here in Europe to export products rather than values? Thank you very much for your attention. I'm looking forward to the discussion. Carlo, we can hear you."
+    },
+    {
+      "start": 2318.544,
+      "end": 2346.16,
+      "text": "Sorry. Thank you very much, Alex, for your passionate presentation and provocative at many points. I already see a hand raised by Moshe, so I immediately give the floor to Moshe for his comment or question. Thank you for this very passionate presentation, very intriguing presentation. I'd like to inject two phrases that I think need to be part of this discussion."
+    },
+    {
+      "start": 2346.288,
+      "end": 2375.856,
+      "text": "One is diffusion of responsibility and accountability. So I have friends working for some companies that I think are destroying the world, like Facebook. When you talk to them, you know, I have someone who is involved in software testing, you know, finding bugs. And he says, how can letting bugs proliferate be a good thing? So, of course, I'm doing a good thing by eliminating bugs. If you have bugs, your account is vulnerable."
+    },
+    {
+      "start": 2375.856,
+      "end": 2404.912,
+      "text": "You're subject to hacking, so I'm doing a good thing. And everybody there deals with a small piece of the picture. So no one feels responsible for the overall thing, which is the, we can go at length about the damage that Facebook has done to society. Everybody feels they are designing a better washer for the screw underneath the nut, and therefore they don't feel responsible and they don't feel accountable."
+    },
+    {
+      "start": 2404.944,
+      "end": 2434.384,
+      "text": "The second phrase that I think we need to remember is profit maximization. This whole business is driven by corporations and there is business not to be ethical. They don't like too much ethical, bad publicity. So ethic does translate sometimes to money in some indirect way. But first and foremost, it's about maximizing profits. So for someone to run this very ethical procedure described,"
+    },
+    {
+      "start": 2434.416,
+      "end": 2456.544,
+      "text": "They basically have to decide that ethics trumps profits. And I'm just not seeing it happening in our society in the at least near future. Yeah. Thank you. Thank you very much for these ideas. So the point about diffusion of responsibility, in fact, was the first point that I was making on my first slides, I believe."
+    },
+    {
+      "start": 2456.544,
+      "end": 2486.448,
+      "text": "I didn't really talk about individual developers, but I talked about the different parties that are involved in developing the product. And of course, that is precisely the problem. Now, what I have looked into today is the responsibility of developers because they can say, hey, let's just diffuse responsibility. We are not responsible. That's precisely the idea here. And the second point is, well, if you use the approach, the schema that we have played with here, that I've introduced here, then of course, they need to be buy-in from the organization that does it."
+    },
+    {
+      "start": 2486.448,
+      "end": 2513.04,
+      "text": "If you don't have the buy-in from the organization, then that obviously is not going to work. But we have been in touch with quite a few organizations for who that does matter, for whom it is important to think about these concerns. So I agree with what you're saying, but I think there are companies that are aware of the..."
+    },
+    {
+      "start": 2513.04,
+      "end": 2540.464,
+      "text": "power of the tools, of the software tools that they are developing, that are also aware of what could potentially go wrong. In terms of the second point that you have made about capitalism or money ruling the world, and you phrased it, of course, much more elegantly than I did, I agree. And that's why many people in Europe here say, hey, this is why we need to regulate these things. Because if we leave that to the market,"
+    },
+    {
+      "start": 2540.464,
+      "end": 2565.136,
+      "text": "then money will always trump everything and it's not going to happen. And here is, I think, a good indication why that idea may be correct. Think about privacy by design. You have been around for quite some time. You know that in the early 2000s, people said, oh, privacy by design, that's the big thing. And we're going to make tremendous amounts of money with privacy by design. Did we? No."
+    },
+    {
+      "start": 2565.136,
+      "end": 2591.28,
+      "text": "Nobody ever did. Right. It's a very similar concern here. But then 15 years later, GDPR showed up and all of a sudden people did take that seriously. So this may indeed mean that sometimes we need to regulate things in a specific way. Unfortunately, I'm not sure that the way we are regulating things or we are about to regulate things in Europe is exactly heading in the right direction, because I think we are overdoing things here."
+    },
+    {
+      "start": 2591.632,
+      "end": 2619.152,
+      "text": "There has been a recent study by one institute here at Technical University of Munich where startups were asked, well, look at the applications, AI startups were asked, look at the applications that you are building. And the EU AI Act is thinking about that idea of a five-class risk assessment. How risky are the systems that you are building? And 40%, 40% said, hey, my..."
+    },
+    {
+      "start": 2619.152,
+      "end": 2647.664,
+      "text": "system is a risk class one system. The idea initially was in between 5% and 15%. So that means that maybe that kind of regulation is going to be too harsh. And we have plenty of software engineers around us here who are really afraid of what is going on there. Now, how does that answer your question? I think if you really want to do it, you need to do it by regulation. Should we do it as harshly as we do with the UAI Act? I'm not so sure."
+    },
+    {
+      "start": 2649.328,
+      "end": 2678.256,
+      "text": "Thank you very much. Just a quick comment. A few months ago, we have Eric Horvitz speaking on this series, essentially about responsible product development. And it would be very ironic today to look back at this talk just a few months ago and see what Microsoft has done more recently with Big Chat. And so I think that Eric was very sincere when he talked to us, but then big money showed up."
+    },
+    {
+      "start": 2678.48,
+      "end": 2707.68,
+      "text": "And responsibility was flushed down the toilet. Can I add to this conversation with with my point? You know, if you look at let me take an example. If you look at the food industry, you know, there's, of course, the money driven food industry, which is producing, you know, junk food and making money out of that. But there is also a more responsible approach."
+    },
+    {
+      "start": 2707.68,
+      "end": 2731.072,
+      "text": "To that, you know, for example, in Italy, we have the slow food movement and the rediscovery of niche production and small producers who produce quality products. And there is a new business around this and there is more awareness that there is good in that. So maybe, you know, by also raising awareness."
+    },
+    {
+      "start": 2731.072,
+      "end": 2750.608,
+      "text": "And, you know, from the general public, you know, from society that, you know, we need different software. We need software that is, you know, compliant with human values. And we don't have it now. It will drive, you know, production."
+    },
+    {
+      "start": 2750.608,
+      "end": 2765.808,
+      "text": "of a new kind of software that goes in this direction will drive certification of software that solves those problems. And so maybe this is part of the future that we can look at. Just a comment. What do you think?"
+    },
+    {
+      "start": 2769.52,
+      "end": 2798.992,
+      "text": "Well, what can I say? Yes, that is going to happen. We'll see if these companies are driven out of business or if they are not driven out of business, right? It's like organic meat, organic vegetable. There is a niche probably for that. Is that going to take over without regulation? We'll have to see. I'm not so sure. But I do see the parallel, of course, certainly. Okay. There is Edward next."
+    },
+    {
+      "start": 2799.728,
+      "end": 2828.576,
+      "text": "Excuse me. Hi, Alexander. Thanks for inspiring talk. One of the issues that I think you sort of hinted at, but I'd like to try to highlight the agile development is partly a recognition that products cannot be designed up front before they are implemented. And I think we've seen."
+    },
+    {
+      "start": 2828.576,
+      "end": 2857.44,
+      "text": "this phenomenon rather dramatically with the rise of the large language models, where I think that pretty much everyone I know who works in the AI technology is astonished by what has happened in the last year and a half. Nobody expected this. And I think that there's actually a lot of history where software systems get..."
+    },
+    {
+      "start": 2857.44,
+      "end": 2887.184,
+      "text": "and their properties emerge. They aren't designed. They come into existence slowly and in a very evolutionary way. And that suggests that the software designers are really not very much in control of this process, that it's a more evolutionary process and that the capabilities of the technology are emergent phenomenon."
+    },
+    {
+      "start": 2887.184,
+      "end": 2914.672,
+      "text": "And the scary part about that is that you could interpret this to mean that we have a system where even if everybody behaves ethically and applies the highest ethics to their individual contributions, you still will get bad outcomes because the bad outcomes are potentially emergent properties that nobody anticipated during the process of technology development."
+    },
+    {
+      "start": 2914.672,
+      "end": 2926.768,
+      "text": "Thanks. Very, very good and deep question. And of course, you're right. But I don't think there is the contradiction that you are insinuating there is."
+    },
+    {
+      "start": 2926.768,
+      "end": 2953.056,
+      "text": "Because I don't think the world is black and white. We do have some properties that we can think about beforehand. We can think about chat GPT being racist or misogynist or talking to children or something. That's something that we can do today. And of course, there will be properties that we haven't thought about. But then we need to solve these problems later on. So I don't really see that clear cut distinction."
+    },
+    {
+      "start": 2953.056,
+      "end": 2982.512,
+      "text": "I can give you an example for that idea. Airbnb, right? Airbnb has had negative externalities in terms of rental markets being destroyed because there is no original rental market anymore, but it's now rented to tourists. We've seen that, I think, in New York. We've seen that in Paris and in a few other cities. Now, should the developers of software, of the software of Airbnb 10 years ago, should they have catered to that eventuality?"
+    },
+    {
+      "start": 2982.928,
+      "end": 3007.136,
+      "text": "I don't think so. And that means that some of the problems will be problems that we can solve up front, that we shouldn't solve up front. And we should, I may say so, rather than take the American perspective and saying, hey, let's cross that bridge once we are in front of that. And what you're suggesting then otherwise would be to say, hey, let's think about all possibilities and that could potentially happen."
+    },
+    {
+      "start": 3007.136,
+      "end": 3033.648,
+      "text": "That is a very European perspective that sometimes drives me crazy. So I think what you're saying is absolutely correct. But I think we can be a bit courageous and I don't want to avoid all kinds of problems. I don't want to avoid all kinds of risks, but I want to have some kind of risk aware development process. Thank you. Hannes, you're next. First of all, thanks for your."
+    },
+    {
+      "start": 3033.648,
+      "end": 3062.384,
+      "text": "Excellent talk. And I had a similar questions to Edwards. It's that software is and you mentioned it to this HR development. It's a living entity and it's developing with the context and it's changing the context. So it's somehow a dialectic relationship and you cannot foresee all those different applications. And let's say changes in the software and together with the environment. What's coming up to me is."
+    },
+    {
+      "start": 3063.024,
+      "end": 3090.624,
+      "text": "How is the user or how could the user be, let's say, brought into this process, especially if we think also, and this is a principal problem, how could a future user could be brought into that? This is very similar to the question already previously, but I'm always thinking about that because we have an impact. The impact is coming this time. Context is changing and we have to take care of that. And we have to also take care of."
+    },
+    {
+      "start": 3090.624,
+      "end": 3111.472,
+      "text": "let's say future user, and how could this in such a process be respected or let's say repressed? So I think that's two parts of your question or two parts of your comment. And I think agility as such is the response to what you're saying. So in fact,"
+    },
+    {
+      "start": 3111.472,
+      "end": 3136.56,
+      "text": "Software systems evolve over time, but this is precisely the idea that I've tried to suggest here, that as we continue the development of a system, we should continue the consideration of values. We should embed that into the agile development process. It's precisely not the case that I start with the values at one moment in time, and then I think I'm done with it. No, we do that continuously as the system is evolving over time."
+    },
+    {
+      "start": 3136.56,
+      "end": 3161.312,
+      "text": "So this is precisely the idea that we can cater to these new developments. Of course, we may think about, or we may, that's what Edward was saying, we may forget about applications that can happen in the future, or we can foresee them, but that's perfectly fine. And the second part of your question as well, how do we incorporate the users or maybe also operators of the system? Well, that is also very much the idea of agile software development, that you take these"
+    },
+    {
+      "start": 3161.312,
+      "end": 3189.008,
+      "text": "folks into account when you build the software. Because the idea is if I build software, I want to build software that is useful to the users. So I must be in touch with them when I build the system. And that is exactly the job of the product owner who needs to find some way of interacting with users or representatives of users or proxies for users. I think that is precisely the strength of this idea, that it allows you to perform that kind of interactions."
+    },
+    {
+      "start": 3190.704,
+      "end": 3211.664,
+      "text": "Thank you. There is another question or comment coming from Seis Lanting. This is my name. OK, thank you, Alexander, for this very interesting talk. OK, you mentioned the issue of risks and I assume that."
+    },
+    {
+      "start": 3211.664,
+      "end": 3235.968,
+      "text": "how much risk you can tolerate will depend on the domain of application. Because I think in the medical domain, in the domain of autonomous vehicles, in aeronautics and probably also in military, you can tolerate very little risk. So how do you make that distinction? And okay, let me add a remark."
+    },
+    {
+      "start": 3235.968,
+      "end": 3255.568,
+      "text": "I'm always a bit taken aback by these kind of studies that want to tell us what an autonomous vehicle should decide when it drives around a turn and then has to choose between an old lady and a young lady with a child and something like that."
+    },
+    {
+      "start": 3255.568,
+      "end": 3279.008,
+      "text": "In my view, there are two answers to that. Number one is an autonomous vehicle should never do this because otherwise it's violating the code of the road. And secondly, I think most people don't seem to realize that what the autonomous vehicle sees is not what we see. It will see movable objects and not people. Okay, thank you."
+    },
+    {
+      "start": 3279.008,
+      "end": 3291.488,
+      "text": "Yeah, so that's a very, very good question. So essentially what you are asking is, hey, how do we really cope with that risk assessment? And depending on the domain that we are living in, we may have different answers."
+    },
+    {
+      "start": 3291.488,
+      "end": 3315.344,
+      "text": "Now, if you talk about regulated domains such as avionics or the medical domain or to a certain extent also the automotive domain, you will see that you are not even allowed to do agile software development because the idea is that you have requirements, that you have specifications, that you have traceability in between them. So this idea here doesn't really fit with that kind of regulation."
+    },
+    {
+      "start": 3315.344,
+      "end": 3345.312,
+      "text": "But of course, some of the ideas could be implemented there nonetheless, right? That idea of eliciting values, thinking about values, thinking about implementations for these values, that is something that could be done there as well. Now, in terms of serious risk assessments, to be honest, I think that is really the key question for which I don't have an answer. And the problem is that with software, we don't really know what the residual risk is. And in safety,"
+    },
+    {
+      "start": 3345.312,
+      "end": 3370.736,
+      "text": "We have some experience with doing that, right? We may not be able to quantify the residual risk, but we do have mechanisms in place that tell us, hey, I do a HARA, I do a HAZOP, I have specific kinds of techniques that I can use to make sure that my system is reasonably safe. I may not be able to quantify that if software is involved, but hey, I'm sufficiently good. I think for other..."
+    },
+    {
+      "start": 3370.736,
+      "end": 3396.0,
+      "text": "I don't know how to really do that. I start not to understand how to do that for privacy, right? So you may say, hey, I have a big system and now let's use K-anonymity for whatever reason. And we know that K-anonymity isn't the greatest thing to do. It has potential flaws. But we may decide to do it anyway because it's better than something else. And the question is, how big is the risk if we do it?"
+    },
+    {
+      "start": 3396.0,
+      "end": 3425.936,
+      "text": "Don't know. I don't know how even that kind of assessment would look like. And of course, these things become more complex when it comes to values. So my understanding is currently what we are seeing in the partnerships that we are engaged in, it's more a matter of gut fear, right? Is it risky? Is it not risky? Then you have that EU AI regulation in terms of specifying what is a high risk class. I think that really is the biggest question that I don't really have an answer to."
+    },
+    {
+      "start": 3425.936,
+      "end": 3454.432,
+      "text": "So sorry for disappointing you. Not at all. Thank you, Alex. I think we are basically at the end of the time slot that is assigned for the seminar. So I really want to thank you again for your really interesting and passionate seminar and for all the questions that were raised and the answers. So it's probably now time to switch."
+    },
+    {
+      "start": 3454.432,
+      "end": 3483.584,
+      "text": "to a piece of wonderful music that is coming from my favorite composer, which was chosen actually by Alex. So I'm very glad that, you know, we agree on, you know, something that is really beautiful in terms of music. OK, thank you very much for attending and happy music listening to all of you. Thank you."
+    },
+    {
+      "start": 3483.584,
+      "end": 3510.768,
+      "text": "Franz Schubert and it's called Tod und das Mädchen. In English it's The Death of the Main. It was composed 1826 in his most difficult time in Vienna and he died by 31 and had like 600 compositions. This piece is in the style of like total music so by definition the piece itself has nothing to do with the poem itself."
+    },
+    {
+      "start": 3510.768,
+      "end": 3538.928,
+      "text": "Although Alex chose the piece because it fits the scary erotic relationship between ethics and the machines in the debate. And the question is like, when we talk about AI, it's not clear who has which role. So is the role of the society that of the main or that of the death or ethics and regulators that of the death and that of the main?"
+    },
+    {
+      "start": 3538.992,
+      "end": 3561.104,
+      "text": "So we'll start the music now. And one quick remark, the next lecture is planned for June 13th with Jason Steinhauser. And the topic is History Disrupted, How Social Media and the World Wide Web Have Changed the Past. And I'm sharing now the piece."
+    },
+    {
+      "start": 3616.656,
+      "end": 3646.384,
+      "text": "Walter, we can't hear anything. So I just saw that you did not receive the sound. Is that correct? Yes. Hold on one second."
+    },
+    {
+      "start": 3646.384,
+      "end": 3663.984,
+      "text": "Check the Zoom sharing again. Let's try once more. Otherwise, just go to Spotify."
+    },
+    {
+      "start": 3730.0,
+      "end": 3756.528,
+      "text": "for some reason i don't get the sound over on the right if it does not work i think we have to there's a youtube link from alex in the chat i think when you share your screen you have to say separately that you also want to share the sound use the audio yesterday but did that thanks for the hint but that's uh"
+    },
+    {
+      "start": 3773.264,
+      "end": 3795.952,
+      "text": "So sorry, I have to leave. I have to teach now, unfortunately. Thank you very much. Doesn't really matter. Play the YouTube link. It's a fantastic piece of music, even for says who doesn't like Schubert. But you are not the enemy. Thank you very much, everybody. Thank you very much. I think we can."
+    },
+    {
+      "start": 3797.776,
+      "end": 3822.336,
+      "text": "Walter, let's stop here. I think we are not going to play this music. I think we can put it at the next time when we have our next lecture. I think we can put Schubert on the next lecture's evening. I would like to thank you all for your participation of these lectures. Thanks also to Walter for trying hard that we can hear."
+    },
+    {
+      "start": 3822.336,
+      "end": 3842.717,
+      "text": "that we should hear Schubert, but sometimes technology does not work. This is why we are here to tell the technology does not always work properly. So even in the cases like this and agile software development might not help even in this case. I thank you all for your participation and I wish you."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

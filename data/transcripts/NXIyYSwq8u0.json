@@ -1,0 +1,701 @@
+{
+  "video_id": "NXIyYSwq8u0",
+  "source": "whisper",
+  "language": "en",
+  "text": "So hello, everybody. Welcome to the lecture of today. Remember, this is the last lecture before the summer break, and we will continue in October, or also for those who are interested, we will continue in September with our one-week summer school on digital humanism. So just remember that. You will get an invitation. Today we welcome a very special speaker, and we are, I think, Eric Horvitz. He's the chief scientific officer of Microsoft for joining us. He will speak on an issue we have already discussed several times. It's on responsibility and governance with respect to Eric. Thanks for being with us. Moderation will be done by Moshe, who will also then introduce Eric in some more detail. Sure to our procedure and to remember, we have 30 minutes of presentation and talk, and then we have 30 minutes Q&A. Q&A moderated by Moshe. And remember, after the end, we have a piece of music. This time it's proposed by Eric, who will also say a few words about the piece of music. But also thanks to Peter Knies, who is managing this entire music track. I will not introduce before handing over to Moshe. I will not introduce the moderator, Moshe Vati. You know him very well. He is one of the initiators or key persons of our initiative. With his input and commitment, he really keeps us on track and shows where we should go. And Moshe, you are also a good friend. And for this, I thank you very much. And I thank you for being with us. And the floor is yours. Thank you, Hannes. and it gives me a distinct pleasure to introduce today's speaker, Eric Horowitz. I'm not going to go over his bio because it will take too much time from what he would like to talk about. Just a few highlights. I mentioned the chief scientific officer of Microsoft. He's really one of the technical and thought leaders in AI. He's been well-recognized both by awards such as the Feigenbaum Prize and the Al-Anual Prize. He is a member of the The President Council of Advisors on Science and Technology. It's a very high-level body. It advised the President on PCAST. It's advised the President on the S&T issue. He was a Commissioner of the National Security Commission on AI. He was the President of AAAI. He was on numerous advisory boards. He co-founded the 100-Year Study on AI and the Partnership on AI. They both tried to look at the long-term trajectory of AI. and start to think about the issue of responsibility so he's a member of of many august bodies the nae american academy of arts and science american philosophical society and so on and so forth and today he's going to talk about a topic that has been clearly emerged as a central topic when we talk about a digital humanism which is the role of corporations so eric the floor is yours Thanks so much, Moshe, for that kind introduction. Thanks, Hannes and Moshe, for the invitation to presenting your series. It's a pleasure to join you all today. I'd like to share reflections on directions with the responsibilities and the governance of AI with a particular focus on experiences and reflections about work at Microsoft, where we've been exploring corporate responsibilities with AI technologies over five to six years now. and executing on a model of corporate governance of AI that today guides how Microsoft develops and fields these technologies across our divisions. So I'll share over the next half hour or so some about our experiment and progress to date and look forward to your questions and discussion. First, I'd like to reflect with you about some of the surprises on jumps in capabilities in AI, surprises even to long-term research scientists in the field. Now, there's much to do. And I and other scientists remain mystified by the powers of human intellect versus what we can do with AI systems to date. But we're seeing advances with wedges of capabilities, wedges that are largely viewed as narrowly focused, but powerful capabilities. These abilities, as measured by specific sets of metrics, show remarkable gains in performance and continuing growth with the size of training data and with. ongoing increasing allocations of computation. So the continuing climb in accuracies, particularly in the realms of automated vision and language, is quite remarkable. The annual AI index contains rich information on trends. And here's a chart drawn from the 2022 AI index that shows advances in automated object recognition. This is the ImageNet Top 5 Challenge, showing a surpassing of human baseline, which is the dashed purple line here. and a continuation of refinement over time. So we see similar trends and surpassing of human baselines in a variety of natural language tasks, like the SQuAD task, which is the automated analysis of text, followed by answering sets of questions. And there are now many curves like this, and I refer people to the 2022 AI Index for more details. Perhaps even more interesting and relevant to reflections about governance are what I see as disruptive breakthroughs in applications. This is like leveraging new gains that we're seeing on those curves across different sets of advances to create fundamentally new kinds of capabilities. And these include advances like the creation of a system that can perform like speech-to-speech translation across many languages. Other disruptive applications include the co-pilot system that leverages GPT-3. the language model to help programmers by automatically providing assistance with computer programming. We just released this, Microsoft released a service for general use just last week. And in private, we've been seeing tremendous uptake by developers with a significant portion of programs being written by the system. Another technology is the application of deep learning in the sciences, in material science, chemistry, and biology. We've been working closely with David Baker's lab at the University of Washington. We're seeing incredible new tools for protein design. So stepping back, as we're hearing today, these rising capabilities and disruptive breakthroughs are providing new forms of automation. And they're also reaching into domains and realms that have been the provenance of human intellect until now. And these are leading to important concerns about the downsides and rough edges of AI in terms of specific failures, as well as malevolent uses, and broader influences of applications on people in society, including challenges with fairness and bias, understandability, reliability, safety, privacy, and human agency. pace of applications and their uses and these technologies becoming available and maturing much faster than the speed at which laws and regulations are coming to the fore that might moderate a potential costly influences, we have to think about multiple approaches to governance. Now, I've had the fortune to work, to engage closely at Microsoft as well as other sectors. for my service on advisory board roles across the spectrum of organizations and government agencies. All of these will have important roles to play with regards to understanding the influences and developing best practices and regulations. Now I say why I've worked on issues around policies and governance of AI in government and civil society, I believe it's important to start locally in one's own home. In my case, one of the largest companies in the world, Microsoft, to explore what tech companies can do with self-regulation to share best practices and tools, for example, via multi-party stakeholder groups like the AI partnership. With corporate self-governance and regulation, company leaders take on responsibility based on the realization that laws and regulations and understandings of the technology by citizenry and governments are not keeping up. with the advances and the impacts. But important roles will be played by other bodies, including professional organizations. For example, ISO and IEEE have developed applicable safety standards. And also government agencies like in the US, NIST and the OSTP, and international efforts like UN and OECD and so on. So our story at Microsoft with AI governance starts in 2016 with a meeting I had with our chief legal counsel, Brad Smith. Now, I was then a leader in AI at the company and director of Microsoft's main research lab in Redmond. And I proposed to Brad that we should put together a panel of advisors who would develop points of view and processes for making decisions about AI technologies that Microsoft builds. And he agreed and worked to form a cross division. Legal Advisory Committee, I call it Microsoft Research Plus Legal folks, named the ETHER Committee. ETHER is an acronym for AI Ethics and Effects in Engineering and Research. Now, shortly after that conversation, Satya Nadella, our company's CEO, reached out to a small group. I was fortunate to be part of that small group to formulate a set of principles for responsible development of AI. He led the conversation and he asked. What are our values around AI systems? What do we care about? What values should guide us? Now, the interesting thing is that this discussion was kicked off and led by our CEO. We landed on a set of six principles that have stood the test of time for Microsoft. Reliability, privacy and security, transparency, fairness, inclusiveness, accountability. And we define what we meant by these principles in a manuscript called The Future Computed that's freely available on the web. Now, with these values as guides, we pushed forward with the Ether Committee as a cross-company coordinated hub of top thinkers and also divisional leads from the major divisions that make up Microsoft. And these divisional leads were nominated by their executive vice presidents. Beyond the main committee, we set up a set of topically focused working groups, each co-chaired by top people in respective areas. And the topical areas here are defined largely in terms of our six. AI values. Now, I found that, and this is probably true at any company, depends on the top leadership, what we do with governance, regulation, and so on, self-regulation. It was extremely useful to have our CEO support in a very strong way. Shortly after standing up Ether, Satya Nadella sent this note to all of Microsoft in an all-hands email message. You know, talking about we need to ensure that we're doing so responsibly. We've established the AI and Ethics Engineering Committee. And it's going to basically formulate policies on how we respond to specific issues in a responsible way. Now, importantly, beyond the. the topic focus groups, we set up a special process-centric group called the Ether Sensitive Uses Program. The Sensitive Uses Committee is comprised of several AI scientists along with ethicists, lawyers, and policy experts. We work to define a set of attributes of how, you know, what is a sensitive use of AI that would require special deliberation and special review. And we set up a company-wide intake program and review process. Korea, for sensitive uses, has stood the test of time. We defined a sensitive use as a technology that would have a significant risk of harm, a denial of consequential services to people, or that would infringe on human rights. This has been standing true for nearly six years now, where we can look up and say, well, what do we mean by these definitions in our standard, which we'll get to in a few minutes. For example, the consequential impact on legal position or life opportunities. How does the use or misuse of the AI system affect individuals' legal status, legal rights, access to credit, employment, health care, and so on, as well as threats to human rights? You can see sort of what we list here internally at Microsoft in thinking about the impact of an AI system. Here's a screenshot of one of our intake sites for sensitive uses. As of today, over 500 cases have come into the sensitive uses process, spanning multiple challenges, including risks to human rights and civil liberties, challenges with fairness, issues around health and safety, disclosure of automation, and the potential for malevolent uses. I thought I'd give you a sense with a chart here, and this is an older chart from a period of time between January 2018 and June 2019, 18 months. 177 cases were reviewed. Notice that 113 of these cases were allowed to proceed with guidance or constraints. 11 were canceled and there was a do not proceed recommendation followed by the company. Here's a view by chief sector of the application area of the AI system. Again, for the same period of time as a few years ago. Again, calling out the gold portions of the bars here. Proceed with specific guidance and constraints. And the pink here, do not proceed. Here's an example of an outcome of a case. Each case is quite rich. I'd like to see a corpus of these deliberations shared publicly. And we're working to do that. Here's an example of, again, guidance with proceed with constraints. This was the case of a citywide public safety system that Microsoft produces being pursued by the government of a country with a poor human rights record. The first request to deploy the base system was rejected, but the sales team came back with a more narrowly scoped request to use the system at a museum of antiquities. This would not fly either. But the sensitive uses committee allowed a limited controlled version of the software with these restrictions. And that was okayed in the contract accepted by the customer. Microsoft will not design, develop, or deliver advanced analytics, including when we talk about correlation of data, audio or video detection of age, gender, or ethnicity, facial recognition techniques, or the use of machine learning or other predictive analytics to predict future events. or to classify people or situations. And probably the first time in a contract, this kind of AI-oriented constraint was placed. Now, what we call our responsible AI ecosystem has evolved and matured over five years. Ether stood up a responsible AI chance program, kind of like people in every division who would help folks recognize sensitive uses and use the portal. bringing up a company-wide participation. Two years ago, our audit team, which looks at all of our processes, reporting to our board of directors, evaluated what Ether was doing, and they wanted even more. Recommendation was to stand up a formal compliance and policy body within our legal division, which we call the Office of Responsible AI, Aura. Now we have Ether and Aura. Other requirements were to oversee company-wide annual meetings, Sorry, annual trainings of people with videos and challenge problems. And importantly, to introduce a responsible AI standard for the company, you know, and require compliance with it. Ether's chief counsel, Natasha Crampton, moved over to become the director of the Office of Responsible AI, our chief responsible AI officer a year later or so. We ended up moving Ether Sensitive Uses Program from Ether into Aura. Now, the Response BI standard sets out our best thinking on how we build AI systems to uphold our six AI values. It provides what I would say is specific, actionable guidance for our teams that goes beyond high-level principles. As we all know, high-level principles have dominated the AI landscape to date. There's like 25 sets that have been talked about in various reviews, 20, 25. We've certainly seen numerous sets of high-level principles. To disagree with, we need to ground these principles and concrete requirements and processes. So the standard details concrete goals or outcomes structured by each principle. Each goal is aligned with a set of requirements, which are steps teams must take to ensure that AI systems meet the goals throughout the system lifecycle. And finally, the standard recommends tools and practices to specific requirements so that Microsoft's team. implementing and have resources to help them succeed. Now, we made our evolving standard public just last week. It's now online. I invite people to look at it and provide us feedback. We also made available related tools that are called out on our requirements, like the impact assessment we ask Microsoft teams to do before they start a new AI project. Here are a few pages of the transparency section of the standard, enumerating sets of goals that are coded with a letter and number, each associated with practices and tools. For example, here is a page T2, communication to stakeholders. Here's a T3, disclosure of AI interaction, for example, requiring disclosing the basis of systems that could impersonate humans that need to be disclosed to people. And tools and practices are also called out, like referring people to use our guidelines for human interaction and the toolkit named Interpret ML. One practice called out that we're using across Microsoft now is called the transparency note. Transparency note for an AI system contains recommended fields for clear disclosure of limitations that are shared with external people and organizations and users. This is the transparency note that is attached to Microsoft facial recognition software. And you see here the way we structure it in terms of the language, the background, how it's what the intention is, stakeholder concerns and so on. Here's a tool required in some of the standard Fairlearn called out. It's used for exploring and visualizing behaviors of a classifier. to consider different demographic groups. We ask people to employ this tool as a recommended practice to document metrics and interventions on fairness of products and services. Here's InterpretML, a whole suite of tools for visualizing how models work by feature, dimension, by class. And this is a tool called error analysis, which really helps people understand beyond average failure rates. detailed air terrain of how a system works and its accuracies across different groups and sub-problems. All available on... Eric, we lost you there for a minute. Excuse me? Okay, okay, I can hear you now, yeah. Sorry, I want to pop up a level. in thinking about experiences with building and fielding AI systems in a responsible manner. I've noted the rise of an important process, I'll call it a cycle, that comes amidst growing sensitivities to the socio-technical influences of AI technologies. So teams at Microsoft working within their rising sensitivities to these values and principles and the standard now, think deeply about modifying their AI applications in response to guidance and learning how to build more reliable, responsible, trustworthy applications. I'll call it innovation prime here, which is distinct from the initial innovation of the AI technologies itself. Then there's kind of thinking about, you know, updated governance and responsibilities given the updated technology. And then as we go to field technologies, thinking about monitoring and updating our approach over time. Now, of course, it gets easier or more concrete if we go from high-level values to specific goals, requirements, practices, metrics, and tools, for example, as listed in our AI standard here. And people can really go through and, you know, per requirements, understand and responsibly, including engaging with our sensitive uses program, how to field these applications according to Microsoft's requirements. Now, I thought I would end by just talking about a couple of disruptive capabilities and how they're being handled. I mentioned Copilot earlier. Copilot assists programmers via code generation. In a private preview of Copilot launched last fall, we found those tremendous interest and usage. with surprisingly large percentages of coding projects based in Copilot automated generation. So before going into general availability, Copilot went through two special responsible AI studies. And these were multi-month work streams that identified surprising security vulnerabilities and human factors issues, including over-reliance. Over 30 mitigations were recommended to the GitHub team. GitHub is the Microsoft division that ships Copilot. And action was taken in advance of general availability, which happened just last week, by the way. So these new safety and user experience features were introduced in advance of shipping. And there's more to come because we did a long term and short term requirements coming out of the panel. Now, a key technology, a key recommendation was to build out more intensive monitoring and analysis so as to keep an eye on the technology. Another disruptive capability is synthetic voice. This is Microsoft's custom neural voice product and service. This came into sensitive uses review. The technology is stunning. You speak a few sentences to the system. And it learns your voice and prosody so well, the system could call a loved one and ask them to send out a money order. Obviously, this technology brings up many important issues based in well-intentioned and also malevolent uses. The general distribution of technology was blocked by sensitive uses and uses came under severe restrictions. This and other technologies over time led us to adopt a layered control framework we call a restricted customer access program. The limitations and concerns are communicated with a transparency note and a code of conduct. Let me just play for you a public video, give you a sense for what you go through now coming out of our Responsible AI program. Custom Neural Voice from Microsoft Azure creates highly natural synthetic voices using self-provided speech data. A unique digital voice can create a recognizable identity that matches your brand. The voiceover of this video is provided by Ginny, a Microsoft Azure Neural Voice. Custom Neural Voice is powered by artificial intelligence. At Microsoft, We are deeply committed to advancing AI with ethical principles that put people first. To ensure these lifelike voices are used responsibly, we are limiting access to vetted users. To apply to use Custom Mural Voice, you must be subscribed to Microsoft Azure Services and fill out the application form in detail. Only approved customers can access the service. Once approved, there are requirements that all customers must follow. Never use text-to-speech integrations to deceive or misinform anyone. Only use the service within the use case they describe. Have written permission from voice talent prior to creating a voice model. Communicate the synthetic nature of the service to the listener. And, be transparent about the capabilities and limitations of the service and provide additional support. Please fill every part of the intake form in detail. As every application is reviewed fully, custom neural voice... You see that we've done quite a detailed analysis and study about taking a dangerous technology that's also very valuable, for example, people that lose their voices with ALS, narration with the voice by... programs that commercial entities want to narrate without human beings, but to really lock it down in a way that we feel we can get the benefits without the concerns. Another disruptive capability is AI-generated synthetic media, deep fakes. We made a decision, it's easy to come to this conclusion, that AI would not be able to detect deep fakes. In the near future, given that they're generated by generative adversarial networks, they're created by the same method that would be used to detect them. It would be a neck and neck forever. So we basically worked to create a technology we call media provenance technology where you can certify the bits coming from the light sensitive surface of cameras all the way to the pixels on your display. Pushed and worked with partners, BBC, Intel, TruePic, to set up a coalition, working with Congress, which now has a deep fake task force act and so on. But really, the technology now outside of AI is required, which is cryptographic, to have a manifest that travels along with imagery and video. And pushed. These ideas into products, Adobe now and Microsoft have products in this space and we're seeing broadcasters like BBC quite involved. Finally, I'll mention this multimodal generative capability that's disruptive. If you've played with DALI or seen how it works, it's very impressive how you can just take language prompts and generate rich imagery. With remarkable powers of composition and generation, I recently generated these figures while brainstorming about combining solar electricity generating cells with solar pool heating with the same surface area. As I've been wrestling with the design of a pool and its heating, I've been stunned by results like these that really capture constraints in the physics of the situation and context. Here's where I said, you know, let's say do it, do it in a line drawing, for example, and seeing new ideas this way. It's very, very powerful and interesting. You could imagine how these technologies can be quite concerning in terms of their ability to generate misleading, offensive content, the issues with privacy leak, IP and so on. So moving forward, I think we can expect disruptive innovations capabilities as we see very fast paced. development of AI systems, and then applications of these systems in disruptive ways with whole new kinds of capabilities. We have to invest in understanding and addressing failures, costs, and surprises, pursue mitigations, best practices, and regulations. And there's a tight interleaving with innovations and responsibilities and governance where a bunch of effort has to go into not just the core technology, but making it safe, reliable, and addressing the concerns. And as we go, we're going to have to, we'll need people from multiple demographics and sectors to weigh in, also to engage and find appropriate structures and organizations that will help us to shape where the technology goes, whether it be in corporate self-regulation, societies, professional standards bodies, federal and state government legislation and regulation, and multinational. understandings, coordinations, and treaties. Now, I'm quite optimistic about the fruits of AI, and I think the fruits will way outweigh the costs and rough edges, but it's going to take work. Thanks a lot. I'd love to hear your comments. Thank you. Thank you, Eric, for the most thorough report I've heard about a corporation trying to take its technical responsibility and ethical responsibility seriously. As a moderator, I'll take the privilege of the first question. So for over 30 years now, Silicon Valley kind of brushed away privacy. Privacy is dead. If you have nothing to hide, then what are you trying to hide? Et cetera, et cetera. And suddenly now with the repeal of Roe v. Wade, suddenly people are realizing, well... Maybe I have something to hide. Maybe this is something that I don't want to share with the world and with governments. But in the meantime, we have a whole ecosystem that just harvests and analyzes our data. And that, to me, is the biggest application of AI these days, is analyzing our data. So how is Microsoft going to deal with now? I think privacy is suddenly going to jump into the front of everybody's attention. Let me talk more broadly than Microsoft. I mean, the Partnership on AI issued an immediate statement about concerns across the civil society and corporate members that it has sharing their concerns for privacy and what that would mean now, given in the United States, the patchwork of states and laws now about some basic, what people see are basic rights human beings have. John Crum, a colleague on my team for many years, just published a paper that shows how chilling just anybody can get any entity, commercial or government, can buy now location data. And he showed just how easy it is to figure out where exactly everybody is, even from across basic overlays. At Microsoft, we continue to be very concerned about. powers of AI to do surveillance of various kinds in ways that people don't understand or even that we could understand. We were shocked with facial recognition in terms of what it could mean. Stories out of China were pointing a camera at a large stadium of 22,000 people and pulling somebody out and charging them with financial crimes. in-hole camera, those kinds of technologies didn't exist even in the book 1984. And so, you know, working deeply with colleagues about what we mean just not by at companies, but also across society and governments with, for example, powers of facial recognition and privacy will be ever so more important. Now, there are some hopeful directions, privacy preserving machine learning, differential privacy, encryption of various kinds. But I think We have to really be cautious now, and we could be in a situation where no matter what we try technically and no matter what laws we have in place, people have to be more cautious with all their data. That's one of my concerns. Thank you. Alison. Hi, Alison. Hello, Eric. Thanks for your usual great talk. I have a ton of questions, but I'll try to limit them to two. First, could you say a little bit more about Microsoft's outreach to government and to other companies? Because in academia in the United States, I think Microsoft is now considered the good guys in this space. And I'm just wondering what's happening in those outreach efforts. And second, a more specific question. Has there been any blind testing of Dolly with art experts? In other words, having Dolly recreate? works of art in a particular style and fooling the experts? Like Dali. She also mentioned Dali. Yeah, by the way, Dali is just, I call it a breakthrough because it's this kind of stunning and unexpected coalescence of a number of technologies. pull together now and you say wow what does this mean for society people yeah um and we'll come to that in my song actually the song that i've chosen today but um let me just say that um i don't know of that kind of study but it's a really interesting recommendation and i can i can engage with our open ai colleagues immediately on that we're having a meeting today actually we were doing a very deep dive on we called we call uh generative we call our m&m uh uh RAI Workstream multimodal neural models. We're looking at cost benefits and recommendations right now as you speak of the form we did for Copilot. Those questions are coming up about, let me say a spectrum of questions, including ones that you allude to when it comes to art being generated in the style of someone who is has their own style and is quite prideful about how they work and their uniqueness. It's just amazing to just take a prompt and add in the style of X to Dahlia and you get this beautiful oil painting that looks like a Miro or that looks like, you know, Picasso. So it's pretty impressive. And I've been playing with this and I'd love to share more. I might create a whole set of slides about this because each one raises lots of questions, including if I send my. My my famous solar plus water heating patented a fixed method with its piping and so on that Dolly has created for me to the patent office, along with I even said, you know, I tried this out in the style of a patent sketch. Boom. I said, OK, just submit this right now. Ready to rock and roll. I tried this for certain a number of compositional inventions that and the results were in some in some cases to me were surprising. So I. mentioned the colleagues like to study the use of dolly in expanding human creativity because you see directions you hadn't thought about for like doing for example adding brakes to a rollerblading you know i do inline skating allison you probably know you know how would you add a braking system to that just do a prompt and you go well i hadn't thought of that before anyway sorry but a great question and well Yeah. Yeah. Really briefly. Look, it's we share. We just had a briefing at the partnership with all the other major companies and civil society groups. And we share what we're doing. We heard what other companies do. And so there's there are sharing mechanisms. I've been at workshops with with folks from Google and Meta. And when we talk about our various approaches, hopefully we'll see the rise of the bar of. quality and standards as to how we move forward. On the government side, Allison, Microsoft has worked quite intensively with local, state, and federal leadership. We worked very closely in Washington state with staffers to help push through a facial recognition set of laws that align with what we called our facial recognition principles for Washington state and have worked federally as well. All I can say is that one company can only do so much, but we try. And by making our standard public is a really good step to have it out there in all its detail. And maybe other companies will say, well, if Microsoft is requiring this of their systems, maybe we should start thinking about what. And maybe we're doing and say publicly whether it's over the top or it's too much or too little along all these dimensions, according to their own values. Oh, thank you, Eric. Nikhil? Hello. That was really an excellent talk. And I would like to echo what Moshe said. The first time I've heard a detailed accounting and overview of what a company is doing internally for managing all the risks of AI. So thank you very much for that. There were two phrases towards the end of your talk, which, you know, I trust this of Microsoft. very scared because not all companies are Microsoft. So one phrase was certified provenance for when you talked about videos, for example. And here we are 50 years into email and we still cannot certify provenance of email because there are a lot of powerful forces who oppose doing anything about it. And another phrase you used was only vetted customers. And for the last several years, we've been hearing stories from the NSO group in... the iPhone hacking people who also use the same phrase, only vetted customers. And we've seen how that has worked out. So I'm very nervous about any single company and particularly testing a company like Microsoft to manage this. First say that the vetted customers was one piece of a long pipeline of many checkpoints in using custom neural voice and other technologies. On authentication of media provenance, let me just say that we immediately worked with partners to form the Coalition of Content Provenance and Authenticity, C2PA, which is a Linux Foundation standards body, which involves quite a few companies and civil society groups and expanding. We really see, if you look... Look at the Ukraine situation and disinformation campaigns. Microsoft security folks gave a briefing at the Reagan Institute last week in D.C. It's really impressive. I've been working hard personally and with my organization and with colleagues out in the world, Microsoft, to avoid being in a post-epistemic world. quickly coming up against um and i the only way to handle um i i see no other way to handle uh deep fakes or synthetic media more more generally and uh it's going to be it's going to it's going to get become interactive by the way i think even yesterday there was an interactive claim of an interactive interview with something with the mayor of of of kiev uh that was synthetic uh It's going to get multi-point, not just one deep fake, but several of them, and setting up a causal story to convince people what's going on in the world when it's not happening that way. They'll be back and forth with these kinds of models by adversaries with each other. If we don't lock down and come up with methods to trust the source of video, even going all the way out to reality, which is another technical direction, we're going to be in big trouble for our democracies and for our citizens in understanding what's happening in the world. Eric? I guess that's me, Eric, right? Yeah, Eric Graham. Right. Okay. Many thanks for the very good and interesting talk. Very insightful as well. Especially because I think Microsoft, without any doubt, is a leader. So whenever Microsoft makes certain decisions... I think it impacts the whole field to some extent, such as the face recognition decisions. I think this has made huge impact. You mentioned two things which I find particularly interesting. One is principles and tools is the other. The principles you mentioned, I think, are unsurprising. They have been around in the literature for some time. And of course, one challenge in principles is that they come as a set. There is no hierarchy. So whenever you have a conflict between principles, you need to weigh them one against the other. And without any doubt, your coders, programmers, computer scientists will have to make decisions and maybe use the tools. But the tools, again, they are under development. I mean, explanations for AI is a whole subfield of machine learning nowadays. So you must have a huge challenge of letting your computer. programmers and computer scientists make these decisions. My question would be, how do you train them? How do you make sure they make the right decisions in those cases still? Because computer scientists are usually not philosophers. They don't have a legal background. How does this work in practice? Or are you hoping over time to establish certain prototypes, prototypical situations? Eric, it's a great question, and there are several pieces to the answer in my mind. Of course, I call Microsoft's approach to AI right now, per the rough edges potentially, I call it an experiment, and we're learning a lot. We're also learning how the company reacts when they see this document now online. And they go, oh, my God, I'm thinking of this application to do inference about productivity. And oh, my gosh. Oh, my gosh. Like I and it gets down to details about what we happen to require today. Where a bunch of these endpoints in the tree of what you need to do and is in documentation and reflection, like write down what happened. Here's the metric. What does this mean? And it goes to the Office of Responsible AI for review. And there's a decision. Does this need a sensitive uses review, which is a whole panel, which can hopefully identify tradeoffs and conflicts and people not misunderstanding and needing their own philosophical approach, for example. So I think we're still in the process of learning. There's an openness in the document we published this last week. I kept on adding evolvable standard, evolvable, evolving, living document, because we can't assume we have it right. And even now, I just say that. Even the first version, this is version two. Version one, we saw grumpiness. Microsoft responded and we said, okay, let's not push too hard because we don't want to have antibodies against this whole process. Let's work with the teams and learn from the situation. And then we came up with a much more, you know, maybe procedural and goal-oriented better versus identifying all harms in advance. So it's a learning process and your questions get at really piqued my interest in terms of. all the things we need to track and refine over time. George. Thank you, Eric, and thanks on my part as well. My question is, to what extent is the European AI Act, which is under development now and which is also the subject of EU-US discussion by the appropriate working group in the Trade Committee. To what extent is that already being factored in the Microsoft corporate AI policy? Let me say that most of – almost my sense is all of what I've talked about today was over five years. Of course, we were very interested in the commission's proposal, the AI Act. We'll see how that all goes with the European Union as they deliberate about it. It's a great document. I had a chance to interview – One of the leaders, Margareta Vestager, last summer about it, and I questioned her about some of what was being stated because some of the statements in the EC's, originally IACT, didn't make a lot of sense. You must have this be absolutely fair. There's no degree, for example. I said, well, how could you have a... It made me ask questions about whether they were impedance matched with reality at some points. On the other hand, It's a leading edge document. It shows really great thinking. And Microsoft has we provided lots of comments. I was one of the co-authors of our response to the request for information to help make it better. And I think it will be a great a great it's a great stand and a great set of ideas. And I think companies will be complying and doing their best to comply and also helping with definitions. Like what does it mean to be a service? Like who's who's responsible? You can find our public reaction to the RFI, to the European Commission AI Act online, in terms of all our concerns and hopefully helpful guidance as to how it might shape up in the various countries. Any other questions? Well, then we've managed to make up for the time lost. Oh, there is something on the chat. Let me just take a quick look at the chat. I see that my old colleague, Maria Zemankov is with us. Yeah, yeah. Let's see, two questions on the chat. Let's see. Let me first say, Tanu, would you like to ask a question? Sure. Yeah, first, awesome talk. I think I was particularly struck by the towards the end when you were talking about all the disruptive technology and how Microsoft is thinking about bringing the responsibility principles. My question was like, how do you ensure that kind of continued future compliance? And especially, you know, with certain use cases which are really difficult to predict, how others, unforeseen stakeholders might show up. So what's the process in terms of thinking those unforeseen future misuses and compliance? Yeah, and this is why I had that little diagram of monitoring and feedback because, like, for example, with Copilot, we're monitoring it. The committee that reviewed this said we need to get sensors in place to understand how it's being used and how it's affecting code, for example. Will it open up security holes? Will it be used to generate malware more efficiently, for example? With our limited access framework, we're really laying down what we believe about acceptable uses and the process by which we make certain technologies that we consider sensitive available. That could change over time how we work. There's a there's the prospect that if technology is out there, let's say customer voice and it's not used in accordance with the agreements, it's cut off, especially you can do that now with cloud services. So stuff is never let out. It's a service that we can turn right off and, you know, engage with the end user when it comes to general ideas. And like, you know, AI is like electricity, right? We can't control where things go, but. with laws, regulations, and international conventions and norms. I'm hoping we can do our best to limit some of the downsides. This is why, and with technology, like I think that media provenance is going to be the only thing I can think of right now, besides throwing people who create disruptive defakes in jail. So it's going to be an ongoing reflection, Tanu. Thank you. Maria, would you like to ask a question? OK, just I'm a fuzzy person. My research was in management of uncertainty. Therefore, my question. Therefore, the question about the nature of these principles, et cetera, they really are not binary. So it's the matter of degree. So I think it's going to be very difficult to determine what is acceptable or when a principle is satisfied or not. For example, I see a lot of benefits from facial recognition, such as you have Amber Alert yet and you try to find missing children. Over the years, as the face might change, these are fantastic uses of facial recognition versus tracking everybody. Right. So I think it's going to the degree to which a principle or should be applied is going to be difficult. I agree. But let me say that this what the standard tends to do, what our standard does and are also our writings in the future computed. We try to define the borders of what we mean by these things and where we stand in that multidimensional space of what a concept means. The standard, we actually get down to the actual basics. Do these end things? And what do you find and write up the document where you are with this? I've never been a fan of the simple idea of like banning facial recognition. It's incredible. Incredible uses. The question is, how do we thread the needle in a way that we can get the most value and limit the costs? Now, you can imagine like we'd all agree that giving powers of facial recognition with unlimited uses to an authoritarian regime is not a good idea. That's such a bad idea and such a bad outcome for human beings and their civil liberties that we'd be willing to give up going faster through the lines and customs. We'd be willing to say no. And in this country, no, we don't want it being used in any way. And we make that trade. So it comes down to deliberation and committees that will consider, for example, for us, those three gating attributes about what is sensitive and why. Yeah. Well, thank you for really working on it because it's needed. Yeah, thanks. It's been interesting. Well, we are running a little late, but we started a bit late. So I'll take. I apologize with my great button. Yeah. Yeah. But I'll take one more question. Luis. Thank you. Thank you for your talk. My question is about public administration. I don't see much even in the European AI Act. about national public administrations using their tender abilities and influence for AI ethics. So my question is, what is Microsoft doing about logging or influencing the... The American public administration, please. And you mean the government, the government agency, the government? Yes. Yeah. Well, I guess I is we have an office in D.C. where very much we engage with senators with the I sit on PCAS, not that I have direct access to President Biden on a daily basis, but we do. But there are meetings like this. We're very close with the OSTP, Lynn Parker. There's lots of engagement between government agencies and industry right now and thinkers in academia. There's a rising awareness and interest in various government agencies. Even the U.S. DOD has a whole office called the JAIC, the Joint AI Center. We're seeing a rise of interest and working with the Jake over the last couple of years, they were very excited about our standard and what we were doing. We give them previews and we saw these principles showing up there. Got to be cautious with like this just random diffusion. But I think there is awareness, interest and engagement right now on multiple levels. Thank you. OK, Joseph, if you have a question, why don't you shoot me an email and I'll forward it to Eric because we need to. to finish. I'm sorry I cannot let you not do it. Let's move to the music part. Eric, you want to share the screen again and tell us a little bit? A couple of slides of background I think will help frame, you know, I think, you know, your staff said, well, why did you pick this song? And let me just bring up, now that I think I'm working with my ability. While you're doing that, can I just briefly announce the next talks? Yes, sure. I'll fiddle while you're doing that. all right perfect so yeah so um since you're gonna introduce i will i will just do that um so let me just oh wait a second that has changed my screen now um all right yeah so there's two events that i um i'd like to announce so the uh first one as already mentioned at the beginning was um the digital humanism summer school uh that will take place in vienna from september 19th to 23rd um so yeah we have really a fantastic list of speakers and registration is open So please consider participating or forward to anyone who might be interested, your students, whoever you think would benefit from attending. Really check out the program. It's worth your time. And hopefully we're going to see you in Vienna for this. And then the other thing, the next thing on October 18th, we will have the next talk in this lecture series. And we're super excited that Kate Crawford of USC Annenberg will give a talk. And again, Moshe will be our moderator then. So thanks, Moshe, for the commitment today and always. And then, well, thanks to Eric for the insights shared so far. And actually, I'm looking very much forward to the insights now. I'm curious to learn about the song today. Before that, let me take the opportunity to wish you all a great summer, and I will start the music as soon as you explain to us why the song and what it's about. So given my challenges earlier, are you seeing my main slide right now? No, you have to share. You need to share. Click share. I thought I did click share. Hang on a second. Oh, look at this. Okay. And let me go into my main projection mode here. Can you see this? Yeah. Yeah. Great. So at Microsoft, we have something called the disruptive technology review. Every year, a research leader gets together and puts together a set of talks from across Microsoft to present to the main leadership team, the SLT at Microsoft, to show us where things are going, what might disrupt the world in terms of new technologies. In 2017, I organized the meeting and we had a session on. Using AI to generate art. And part of that session was a presentation by our Beijing lab on songs that could be created by scanning and creating a large database of songs, music, music plus lyrics. And this was an example that was played. And this is not my music, but I'll just mention this was played at that meeting to everybody. It's a love song about lost love and memories about it. I'm going to play this briefly before I get to my song. completely done by an AI system. So my reaction to this was, wow. I felt like I wasn't comfortable hearing, you know, a, we'll say that music. created by an AI system when it gets into, it was catchy, but when it gets into notions of human empathy, sharing of experiences and feelings, genuine human connection, for example. And let me say that that night while driving home, I heard the song that we're going to play now on the radio, Dixieland Delight. We'll play it for you now. Thanks. But for the practice and the focus of this series and in the context of the AI created love song, I found. That the sharing of experiences by this songwriter, Ronnie Rogers, that I heard on the radio going home that night, really captured what I was getting at. And, you know, I later looked up the song and I discovered that Ronnie Rogers was driving down Highway 11W in Rutledge, Tennessee, when these experiences streamed into his mind that he sings about. And you could actually go to the map and see this small stretch of where he had to be. You can go to, you know, the Street View and see what he was looking at per his experiences and the scenes from Rutledge. And so I thought the idea of overtime in a world of automation and rising automation, the idea of human essence coming to the fore will be more and more important. People will seek out art and music. That really allows people to share experiences that AI systems cannot possibly share, even if they sing about love from a large corpus and many corpora of lyrics about romance. So let's roll this song and we'll hear about Ronnie Rogers' own beautiful experiences, what being human means to him. I thought this would be a great way to end my song and maybe end the season for the Digital Humanism series. Rolling down a backwoods Tennessee byway One arm on the wheel Holding my lover It's all southern thrill. Worked hard all week. Got a little jingle on a Tennessee Saturday night. Couldn't feel better. I'm together with my Dixieland tonight. all of you goodbye have a nice summer thank you eric great talk thanks eric thank you bye everyone it's great bye",
+  "segments": [
+    {
+      "start": 10.096,
+      "end": 39.696,
+      "text": "So hello, everybody. Welcome to the lecture of today. Remember, this is the last lecture before the summer break, and we will continue in October, or also for those who are interested, we will continue in September with our one-week summer school on digital humanism. So just remember that. You will get an invitation. Today we welcome a very special speaker, and we are, I think, Eric Horvitz. He's the chief scientific officer of Microsoft for joining us."
+    },
+    {
+      "start": 39.696,
+      "end": 65.952,
+      "text": "He will speak on an issue we have already discussed several times. It's on responsibility and governance with respect to Eric. Thanks for being with us. Moderation will be done by Moshe, who will also then introduce Eric in some more detail. Sure to our procedure and to remember, we have 30 minutes of presentation and talk, and then we have 30 minutes Q&A."
+    },
+    {
+      "start": 65.952,
+      "end": 84.176,
+      "text": "Q&A moderated by Moshe. And remember, after the end, we have a piece of music. This time it's proposed by Eric, who will also say a few words about the piece of music. But also thanks to Peter Knies, who is managing this entire music track."
+    },
+    {
+      "start": 84.176,
+      "end": 112.592,
+      "text": "I will not introduce before handing over to Moshe. I will not introduce the moderator, Moshe Vati. You know him very well. He is one of the initiators or key persons of our initiative. With his input and commitment, he really keeps us on track and shows where we should go. And Moshe, you are also a good friend. And for this, I thank you very much. And I thank you for being with us. And the floor is yours. Thank you, Hannes."
+    },
+    {
+      "start": 112.592,
+      "end": 142.352,
+      "text": "and it gives me a distinct pleasure to introduce today's speaker, Eric Horowitz. I'm not going to go over his bio because it will take too much time from what he would like to talk about. Just a few highlights. I mentioned the chief scientific officer of Microsoft. He's really one of the technical and thought leaders in AI. He's been well-recognized both by awards such as the Feigenbaum Prize and the Al-Anual Prize. He is a member of the"
+    },
+    {
+      "start": 142.352,
+      "end": 171.2,
+      "text": "The President Council of Advisors on Science and Technology. It's a very high-level body. It advised the President on PCAST. It's advised the President on the S&T issue. He was a Commissioner of the National Security Commission on AI. He was the President of AAAI. He was on numerous advisory boards. He co-founded the 100-Year Study on AI and the Partnership on AI. They both tried to look at the long-term trajectory of AI."
+    },
+    {
+      "start": 171.2,
+      "end": 196.48,
+      "text": "and start to think about the issue of responsibility so he's a member of of many august bodies the nae american academy of arts and science american philosophical society and so on and so forth and today he's going to talk about a topic that has been clearly emerged as a central topic when we talk about a digital humanism which is the role of corporations so eric the floor is yours"
+    },
+    {
+      "start": 196.48,
+      "end": 221.2,
+      "text": "Thanks so much, Moshe, for that kind introduction. Thanks, Hannes and Moshe, for the invitation to presenting your series. It's a pleasure to join you all today. I'd like to share reflections on directions with the responsibilities and the governance of AI with a particular focus on experiences and reflections about work at Microsoft, where we've been exploring corporate responsibilities with AI technologies over five to six years now."
+    },
+    {
+      "start": 221.2,
+      "end": 249.84,
+      "text": "and executing on a model of corporate governance of AI that today guides how Microsoft develops and fields these technologies across our divisions. So I'll share over the next half hour or so some about our experiment and progress to date and look forward to your questions and discussion. First, I'd like to reflect with you about some of the surprises on jumps in capabilities in AI, surprises even to long-term research scientists in the field."
+    },
+    {
+      "start": 249.84,
+      "end": 279.12,
+      "text": "Now, there's much to do. And I and other scientists remain mystified by the powers of human intellect versus what we can do with AI systems to date. But we're seeing advances with wedges of capabilities, wedges that are largely viewed as narrowly focused, but powerful capabilities. These abilities, as measured by specific sets of metrics, show remarkable gains in performance and continuing growth with the size of training data and with."
+    },
+    {
+      "start": 279.12,
+      "end": 308.704,
+      "text": "ongoing increasing allocations of computation. So the continuing climb in accuracies, particularly in the realms of automated vision and language, is quite remarkable. The annual AI index contains rich information on trends. And here's a chart drawn from the 2022 AI index that shows advances in automated object recognition. This is the ImageNet Top 5 Challenge, showing a surpassing of human baseline, which is the dashed purple line here."
+    },
+    {
+      "start": 308.704,
+      "end": 335.104,
+      "text": "and a continuation of refinement over time. So we see similar trends and surpassing of human baselines in a variety of natural language tasks, like the SQuAD task, which is the automated analysis of text, followed by answering sets of questions. And there are now many curves like this, and I refer people to the 2022 AI Index for more details. Perhaps even more interesting and relevant"
+    },
+    {
+      "start": 335.104,
+      "end": 362.064,
+      "text": "to reflections about governance are what I see as disruptive breakthroughs in applications. This is like leveraging new gains that we're seeing on those curves across different sets of advances to create fundamentally new kinds of capabilities. And these include advances like the creation of a system that can perform like speech-to-speech translation across many languages. Other disruptive applications include the co-pilot system that leverages GPT-3."
+    },
+    {
+      "start": 362.064,
+      "end": 381.136,
+      "text": "the language model to help programmers by automatically providing assistance with computer programming. We just released this, Microsoft released a service for general use just last week. And in private, we've been seeing tremendous uptake by developers with a significant portion of programs being written by the system."
+    },
+    {
+      "start": 381.36,
+      "end": 407.632,
+      "text": "Another technology is the application of deep learning in the sciences, in material science, chemistry, and biology. We've been working closely with David Baker's lab at the University of Washington. We're seeing incredible new tools for protein design. So stepping back, as we're hearing today, these rising capabilities and disruptive breakthroughs are providing new forms of automation."
+    },
+    {
+      "start": 407.632,
+      "end": 437.296,
+      "text": "And they're also reaching into domains and realms that have been the provenance of human intellect until now. And these are leading to important concerns about the downsides and rough edges of AI in terms of specific failures, as well as malevolent uses, and broader influences of applications on people in society, including challenges with fairness and bias, understandability, reliability, safety, privacy, and human agency."
+    },
+    {
+      "start": 437.296,
+      "end": 462.944,
+      "text": "pace of applications and their uses and these technologies becoming available and maturing much faster than the speed at which laws and regulations are coming to the fore that might moderate a potential costly influences, we have to think about multiple approaches to governance. Now, I've had the fortune to work, to engage closely at Microsoft as well as other sectors."
+    },
+    {
+      "start": 462.944,
+      "end": 487.28,
+      "text": "for my service on advisory board roles across the spectrum of organizations and government agencies. All of these will have important roles to play with regards to understanding the influences and developing best practices and regulations. Now I say why I've worked on issues around policies and governance of AI in government and civil society, I believe it's important to start locally in one's own home."
+    },
+    {
+      "start": 487.28,
+      "end": 515.968,
+      "text": "In my case, one of the largest companies in the world, Microsoft, to explore what tech companies can do with self-regulation to share best practices and tools, for example, via multi-party stakeholder groups like the AI partnership. With corporate self-governance and regulation, company leaders take on responsibility based on the realization that laws and regulations and understandings of the technology by citizenry and governments are not keeping up."
+    },
+    {
+      "start": 515.968,
+      "end": 537.424,
+      "text": "with the advances and the impacts. But important roles will be played by other bodies, including professional organizations. For example, ISO and IEEE have developed applicable safety standards. And also government agencies like in the US, NIST and the OSTP, and international efforts like UN and OECD and so on."
+    },
+    {
+      "start": 540.72,
+      "end": 569.264,
+      "text": "So our story at Microsoft with AI governance starts in 2016 with a meeting I had with our chief legal counsel, Brad Smith. Now, I was then a leader in AI at the company and director of Microsoft's main research lab in Redmond. And I proposed to Brad that we should put together a panel of advisors who would develop points of view and processes for making decisions about AI technologies that Microsoft builds. And he agreed and worked to form a cross division."
+    },
+    {
+      "start": 569.264,
+      "end": 596.88,
+      "text": "Legal Advisory Committee, I call it Microsoft Research Plus Legal folks, named the ETHER Committee. ETHER is an acronym for AI Ethics and Effects in Engineering and Research. Now, shortly after that conversation, Satya Nadella, our company's CEO, reached out to a small group. I was fortunate to be part of that small group to formulate a set of principles for responsible development of AI. He led the conversation and he asked."
+    },
+    {
+      "start": 596.88,
+      "end": 626.704,
+      "text": "What are our values around AI systems? What do we care about? What values should guide us? Now, the interesting thing is that this discussion was kicked off and led by our CEO. We landed on a set of six principles that have stood the test of time for Microsoft. Reliability, privacy and security, transparency, fairness, inclusiveness, accountability. And we define what we meant by these principles in a manuscript called The Future Computed that's freely available on the web."
+    },
+    {
+      "start": 626.704,
+      "end": 656.416,
+      "text": "Now, with these values as guides, we pushed forward with the Ether Committee as a cross-company coordinated hub of top thinkers and also divisional leads from the major divisions that make up Microsoft. And these divisional leads were nominated by their executive vice presidents. Beyond the main committee, we set up a set of topically focused working groups, each co-chaired by top people in respective areas. And the topical areas here are defined largely in terms of our six."
+    },
+    {
+      "start": 656.416,
+      "end": 681.44,
+      "text": "AI values. Now, I found that, and this is probably true at any company, depends on the top leadership, what we do with governance, regulation, and so on, self-regulation. It was extremely useful to have our CEO support in a very strong way. Shortly after standing up Ether, Satya Nadella sent this note to all of Microsoft in an all-hands email message."
+    },
+    {
+      "start": 681.44,
+      "end": 701.184,
+      "text": "You know, talking about we need to ensure that we're doing so responsibly. We've established the AI and Ethics Engineering Committee. And it's going to basically formulate policies on how we respond to specific issues in a responsible way. Now, importantly, beyond the."
+    },
+    {
+      "start": 701.184,
+      "end": 728.368,
+      "text": "the topic focus groups, we set up a special process-centric group called the Ether Sensitive Uses Program. The Sensitive Uses Committee is comprised of several AI scientists along with ethicists, lawyers, and policy experts. We work to define a set of attributes of how, you know, what is a sensitive use of AI that would require special deliberation and special review. And we set up a company-wide intake program and review process."
+    },
+    {
+      "start": 728.592,
+      "end": 756.432,
+      "text": "Korea, for sensitive uses, has stood the test of time. We defined a sensitive use as a technology that would have a significant risk of harm, a denial of consequential services to people, or that would infringe on human rights. This has been standing true for nearly six years now, where we can look up and say, well, what do we mean by these definitions in our standard, which we'll get to in a few minutes."
+    },
+    {
+      "start": 756.432,
+      "end": 785.04,
+      "text": "For example, the consequential impact on legal position or life opportunities. How does the use or misuse of the AI system affect individuals' legal status, legal rights, access to credit, employment, health care, and so on, as well as threats to human rights? You can see sort of what we list here internally at Microsoft in thinking about the impact of an AI system. Here's a screenshot of one of our intake sites for sensitive uses."
+    },
+    {
+      "start": 785.04,
+      "end": 812.704,
+      "text": "As of today, over 500 cases have come into the sensitive uses process, spanning multiple challenges, including risks to human rights and civil liberties, challenges with fairness, issues around health and safety, disclosure of automation, and the potential for malevolent uses. I thought I'd give you a sense with a chart here, and this is an older chart from a period of time between January 2018 and June 2019, 18 months."
+    },
+    {
+      "start": 812.704,
+      "end": 832.272,
+      "text": "177 cases were reviewed. Notice that 113 of these cases were allowed to proceed with guidance or constraints. 11 were canceled and there was a do not proceed recommendation followed by the company."
+    },
+    {
+      "start": 833.424,
+      "end": 863.072,
+      "text": "Here's a view by chief sector of the application area of the AI system. Again, for the same period of time as a few years ago. Again, calling out the gold portions of the bars here. Proceed with specific guidance and constraints. And the pink here, do not proceed. Here's an example of an outcome of a case. Each case is quite rich. I'd like to see a corpus of these deliberations shared publicly. And we're working to do that."
+    },
+    {
+      "start": 863.072,
+      "end": 889.344,
+      "text": "Here's an example of, again, guidance with proceed with constraints. This was the case of a citywide public safety system that Microsoft produces being pursued by the government of a country with a poor human rights record. The first request to deploy the base system was rejected, but the sales team came back with a more narrowly scoped request to use the system at a museum of antiquities. This would not fly either."
+    },
+    {
+      "start": 889.344,
+      "end": 915.168,
+      "text": "But the sensitive uses committee allowed a limited controlled version of the software with these restrictions. And that was okayed in the contract accepted by the customer. Microsoft will not design, develop, or deliver advanced analytics, including when we talk about correlation of data, audio or video detection of age, gender, or ethnicity, facial recognition techniques, or the use of machine learning or other predictive analytics to predict future events."
+    },
+    {
+      "start": 915.168,
+      "end": 939.872,
+      "text": "or to classify people or situations. And probably the first time in a contract, this kind of AI-oriented constraint was placed. Now, what we call our responsible AI ecosystem has evolved and matured over five years. Ether stood up a responsible AI chance program, kind of like people in every division who would help folks recognize sensitive uses and use the portal."
+    },
+    {
+      "start": 939.872,
+      "end": 969.84,
+      "text": "bringing up a company-wide participation. Two years ago, our audit team, which looks at all of our processes, reporting to our board of directors, evaluated what Ether was doing, and they wanted even more. Recommendation was to stand up a formal compliance and policy body within our legal division, which we call the Office of Responsible AI, Aura. Now we have Ether and Aura. Other requirements were to oversee company-wide annual meetings,"
+    },
+    {
+      "start": 969.84,
+      "end": 998.832,
+      "text": "Sorry, annual trainings of people with videos and challenge problems. And importantly, to introduce a responsible AI standard for the company, you know, and require compliance with it. Ether's chief counsel, Natasha Crampton, moved over to become the director of the Office of Responsible AI, our chief responsible AI officer a year later or so. We ended up moving Ether Sensitive Uses Program from Ether into Aura."
+    },
+    {
+      "start": 1000.016,
+      "end": 1028.56,
+      "text": "Now, the Response BI standard sets out our best thinking on how we build AI systems to uphold our six AI values. It provides what I would say is specific, actionable guidance for our teams that goes beyond high-level principles. As we all know, high-level principles have dominated the AI landscape to date. There's like 25 sets that have been talked about in various reviews, 20, 25. We've certainly seen numerous sets of high-level principles."
+    },
+    {
+      "start": 1028.848,
+      "end": 1058.384,
+      "text": "To disagree with, we need to ground these principles and concrete requirements and processes. So the standard details concrete goals or outcomes structured by each principle. Each goal is aligned with a set of requirements, which are steps teams must take to ensure that AI systems meet the goals throughout the system lifecycle. And finally, the standard recommends tools and practices to specific requirements so that Microsoft's team."
+    },
+    {
+      "start": 1058.384,
+      "end": 1082.32,
+      "text": "implementing and have resources to help them succeed. Now, we made our evolving standard public just last week. It's now online. I invite people to look at it and provide us feedback. We also made available related tools that are called out on our requirements, like the impact assessment we ask Microsoft teams to do before they start a new AI project."
+    },
+    {
+      "start": 1084.336,
+      "end": 1113.648,
+      "text": "Here are a few pages of the transparency section of the standard, enumerating sets of goals that are coded with a letter and number, each associated with practices and tools. For example, here is a page T2, communication to stakeholders. Here's a T3, disclosure of AI interaction, for example, requiring disclosing the basis of systems that could impersonate humans that need to be disclosed to people."
+    },
+    {
+      "start": 1113.808,
+      "end": 1142.624,
+      "text": "And tools and practices are also called out, like referring people to use our guidelines for human interaction and the toolkit named Interpret ML. One practice called out that we're using across Microsoft now is called the transparency note. Transparency note for an AI system contains recommended fields for clear disclosure of limitations that are shared with external people and organizations and users."
+    },
+    {
+      "start": 1142.624,
+      "end": 1170.064,
+      "text": "This is the transparency note that is attached to Microsoft facial recognition software. And you see here the way we structure it in terms of the language, the background, how it's what the intention is, stakeholder concerns and so on. Here's a tool required in some of the standard Fairlearn called out. It's used for exploring and visualizing behaviors of a classifier."
+    },
+    {
+      "start": 1170.064,
+      "end": 1197.28,
+      "text": "to consider different demographic groups. We ask people to employ this tool as a recommended practice to document metrics and interventions on fairness of products and services. Here's InterpretML, a whole suite of tools for visualizing how models work by feature, dimension, by class. And this is a tool called error analysis, which really helps people understand beyond average failure rates."
+    },
+    {
+      "start": 1197.28,
+      "end": 1222.304,
+      "text": "detailed air terrain of how a system works and its accuracies across different groups and sub-problems. All available on... Eric, we lost you there for a minute. Excuse me? Okay, okay, I can hear you now, yeah. Sorry, I want to pop up a level."
+    },
+    {
+      "start": 1222.304,
+      "end": 1248.752,
+      "text": "in thinking about experiences with building and fielding AI systems in a responsible manner. I've noted the rise of an important process, I'll call it a cycle, that comes amidst growing sensitivities to the socio-technical influences of AI technologies. So teams at Microsoft working within their rising sensitivities to these values and principles and the standard now, think deeply about"
+    },
+    {
+      "start": 1248.816,
+      "end": 1277.584,
+      "text": "modifying their AI applications in response to guidance and learning how to build more reliable, responsible, trustworthy applications. I'll call it innovation prime here, which is distinct from the initial innovation of the AI technologies itself. Then there's kind of thinking about, you know, updated governance and responsibilities given the updated technology. And then as we go to field technologies, thinking about monitoring and updating our approach over time."
+    },
+    {
+      "start": 1278.128,
+      "end": 1305.392,
+      "text": "Now, of course, it gets easier or more concrete if we go from high-level values to specific goals, requirements, practices, metrics, and tools, for example, as listed in our AI standard here. And people can really go through and, you know, per requirements, understand and responsibly, including engaging with our sensitive uses program, how to field these applications according to Microsoft's requirements."
+    },
+    {
+      "start": 1307.92,
+      "end": 1332.144,
+      "text": "Now, I thought I would end by just talking about a couple of disruptive capabilities and how they're being handled. I mentioned Copilot earlier. Copilot assists programmers via code generation. In a private preview of Copilot launched last fall, we found those tremendous interest and usage."
+    },
+    {
+      "start": 1332.144,
+      "end": 1360.112,
+      "text": "with surprisingly large percentages of coding projects based in Copilot automated generation. So before going into general availability, Copilot went through two special responsible AI studies. And these were multi-month work streams that identified surprising security vulnerabilities and human factors issues, including over-reliance."
+    },
+    {
+      "start": 1360.336,
+      "end": 1385.424,
+      "text": "Over 30 mitigations were recommended to the GitHub team. GitHub is the Microsoft division that ships Copilot. And action was taken in advance of general availability, which happened just last week, by the way. So these new safety and user experience features were introduced in advance of shipping. And there's more to come because we did a long term and short term requirements coming out of the panel."
+    },
+    {
+      "start": 1385.52,
+      "end": 1412.4,
+      "text": "Now, a key technology, a key recommendation was to build out more intensive monitoring and analysis so as to keep an eye on the technology. Another disruptive capability is synthetic voice. This is Microsoft's custom neural voice product and service. This came into sensitive uses review. The technology is stunning. You speak a few sentences to the system."
+    },
+    {
+      "start": 1412.592,
+      "end": 1439.824,
+      "text": "And it learns your voice and prosody so well, the system could call a loved one and ask them to send out a money order. Obviously, this technology brings up many important issues based in well-intentioned and also malevolent uses. The general distribution of technology was blocked by sensitive uses and uses came under severe restrictions."
+    },
+    {
+      "start": 1439.824,
+      "end": 1464.688,
+      "text": "This and other technologies over time led us to adopt a layered control framework we call a restricted customer access program. The limitations and concerns are communicated with a transparency note and a code of conduct. Let me just play for you a public video, give you a sense for what you go through now coming out of our Responsible AI program."
+    },
+    {
+      "start": 1466.032,
+      "end": 1491.2,
+      "text": "Custom Neural Voice from Microsoft Azure creates highly natural synthetic voices using self-provided speech data. A unique digital voice can create a recognizable identity that matches your brand. The voiceover of this video is provided by Ginny, a Microsoft Azure Neural Voice. Custom Neural Voice is powered by artificial intelligence. At Microsoft,"
+    },
+    {
+      "start": 1491.2,
+      "end": 1515.904,
+      "text": "We are deeply committed to advancing AI with ethical principles that put people first. To ensure these lifelike voices are used responsibly, we are limiting access to vetted users. To apply to use Custom Mural Voice, you must be subscribed to Microsoft Azure Services and fill out the application form in detail. Only approved customers can access the service."
+    },
+    {
+      "start": 1515.904,
+      "end": 1545.52,
+      "text": "Once approved, there are requirements that all customers must follow. Never use text-to-speech integrations to deceive or misinform anyone. Only use the service within the use case they describe. Have written permission from voice talent prior to creating a voice model. Communicate the synthetic nature of the service to the listener. And, be transparent about the capabilities and limitations of the service and provide additional support. Please fill every part of the intake form in detail."
+    },
+    {
+      "start": 1545.52,
+      "end": 1565.088,
+      "text": "As every application is reviewed fully, custom neural voice... You see that we've done quite a detailed analysis and study about taking a dangerous technology that's also very valuable, for example, people that lose their voices with ALS, narration with the voice by..."
+    },
+    {
+      "start": 1565.088,
+      "end": 1591.04,
+      "text": "programs that commercial entities want to narrate without human beings, but to really lock it down in a way that we feel we can get the benefits without the concerns. Another disruptive capability is AI-generated synthetic media, deep fakes. We made a decision, it's easy to come to this conclusion, that AI would not be able to detect deep fakes."
+    },
+    {
+      "start": 1591.04,
+      "end": 1616.112,
+      "text": "In the near future, given that they're generated by generative adversarial networks, they're created by the same method that would be used to detect them. It would be a neck and neck forever. So we basically worked to create a technology we call media provenance technology where you can certify the bits coming from the light sensitive surface of cameras all the way to the pixels on your display."
+    },
+    {
+      "start": 1616.112,
+      "end": 1640.736,
+      "text": "Pushed and worked with partners, BBC, Intel, TruePic, to set up a coalition, working with Congress, which now has a deep fake task force act and so on. But really, the technology now outside of AI is required, which is cryptographic, to have a manifest that travels along with imagery and video. And pushed."
+    },
+    {
+      "start": 1640.736,
+      "end": 1667.92,
+      "text": "These ideas into products, Adobe now and Microsoft have products in this space and we're seeing broadcasters like BBC quite involved. Finally, I'll mention this multimodal generative capability that's disruptive. If you've played with DALI or seen how it works, it's very impressive how you can just take language prompts and generate rich imagery."
+    },
+    {
+      "start": 1667.92,
+      "end": 1697.824,
+      "text": "With remarkable powers of composition and generation, I recently generated these figures while brainstorming about combining solar electricity generating cells with solar pool heating with the same surface area. As I've been wrestling with the design of a pool and its heating, I've been stunned by results like these that really capture constraints in the physics of the situation and context. Here's where I said, you know, let's say do it, do it in a line drawing, for example, and seeing new ideas this way. It's very, very powerful and interesting."
+    },
+    {
+      "start": 1697.824,
+      "end": 1724.816,
+      "text": "You could imagine how these technologies can be quite concerning in terms of their ability to generate misleading, offensive content, the issues with privacy leak, IP and so on. So moving forward, I think we can expect disruptive innovations capabilities as we see very fast paced."
+    },
+    {
+      "start": 1724.816,
+      "end": 1749.728,
+      "text": "development of AI systems, and then applications of these systems in disruptive ways with whole new kinds of capabilities. We have to invest in understanding and addressing failures, costs, and surprises, pursue mitigations, best practices, and regulations. And there's a tight interleaving with innovations and responsibilities and governance where a bunch of effort has to go into not just"
+    },
+    {
+      "start": 1749.728,
+      "end": 1777.84,
+      "text": "the core technology, but making it safe, reliable, and addressing the concerns. And as we go, we're going to have to, we'll need people from multiple demographics and sectors to weigh in, also to engage and find appropriate structures and organizations that will help us to shape where the technology goes, whether it be in corporate self-regulation, societies, professional standards bodies, federal and state government legislation and regulation, and multinational."
+    },
+    {
+      "start": 1777.84,
+      "end": 1807.632,
+      "text": "understandings, coordinations, and treaties. Now, I'm quite optimistic about the fruits of AI, and I think the fruits will way outweigh the costs and rough edges, but it's going to take work. Thanks a lot. I'd love to hear your comments. Thank you. Thank you, Eric, for the most thorough report I've heard about a corporation trying to take its technical responsibility and ethical responsibility seriously."
+    },
+    {
+      "start": 1807.632,
+      "end": 1831.872,
+      "text": "As a moderator, I'll take the privilege of the first question. So for over 30 years now, Silicon Valley kind of brushed away privacy. Privacy is dead. If you have nothing to hide, then what are you trying to hide? Et cetera, et cetera. And suddenly now with the repeal of Roe v. Wade, suddenly people are realizing, well..."
+    },
+    {
+      "start": 1831.872,
+      "end": 1860.368,
+      "text": "Maybe I have something to hide. Maybe this is something that I don't want to share with the world and with governments. But in the meantime, we have a whole ecosystem that just harvests and analyzes our data. And that, to me, is the biggest application of AI these days, is analyzing our data. So how is Microsoft going to deal with now? I think privacy is suddenly going to jump into the front of everybody's attention."
+    },
+    {
+      "start": 1861.616,
+      "end": 1890.832,
+      "text": "Let me talk more broadly than Microsoft. I mean, the Partnership on AI issued an immediate statement about concerns across the civil society and corporate members that it has sharing their concerns for privacy and what that would mean now, given in the United States, the patchwork of states and laws now about some basic, what people see are basic rights human beings have."
+    },
+    {
+      "start": 1890.832,
+      "end": 1920.528,
+      "text": "John Crum, a colleague on my team for many years, just published a paper that shows how chilling just anybody can get any entity, commercial or government, can buy now location data. And he showed just how easy it is to figure out where exactly everybody is, even from across basic overlays. At Microsoft, we continue to be very concerned about."
+    },
+    {
+      "start": 1920.528,
+      "end": 1944.112,
+      "text": "powers of AI to do surveillance of various kinds in ways that people don't understand or even that we could understand. We were shocked with facial recognition in terms of what it could mean. Stories out of China were pointing a camera at a large stadium of 22,000 people and pulling somebody out and charging them with financial crimes."
+    },
+    {
+      "start": 1944.272,
+      "end": 1972.96,
+      "text": "in-hole camera, those kinds of technologies didn't exist even in the book 1984. And so, you know, working deeply with colleagues about what we mean just not by at companies, but also across society and governments with, for example, powers of facial recognition and privacy will be ever so more important. Now, there are some hopeful directions, privacy preserving machine learning, differential privacy, encryption of various kinds. But I think"
+    },
+    {
+      "start": 1972.96,
+      "end": 2002.752,
+      "text": "We have to really be cautious now, and we could be in a situation where no matter what we try technically and no matter what laws we have in place, people have to be more cautious with all their data. That's one of my concerns. Thank you. Alison. Hi, Alison. Hello, Eric. Thanks for your usual great talk. I have a ton of questions, but I'll try to limit them to two."
+    },
+    {
+      "start": 2002.752,
+      "end": 2029.696,
+      "text": "First, could you say a little bit more about Microsoft's outreach to government and to other companies? Because in academia in the United States, I think Microsoft is now considered the good guys in this space. And I'm just wondering what's happening in those outreach efforts. And second, a more specific question. Has there been any blind testing of Dolly with art experts? In other words, having Dolly recreate?"
+    },
+    {
+      "start": 2029.696,
+      "end": 2047.12,
+      "text": "works of art in a particular style and fooling the experts? Like Dali. She also mentioned Dali. Yeah, by the way, Dali is just, I call it a breakthrough because it's this kind of stunning and unexpected coalescence of a number of technologies."
+    },
+    {
+      "start": 2047.12,
+      "end": 2073.472,
+      "text": "pull together now and you say wow what does this mean for society people yeah um and we'll come to that in my song actually the song that i've chosen today but um let me just say that um i don't know of that kind of study but it's a really interesting recommendation and i can i can engage with our open ai colleagues immediately on that we're having a meeting today actually we were doing a very deep dive on we called we call uh generative we call our m&m uh uh"
+    },
+    {
+      "start": 2073.472,
+      "end": 2099.76,
+      "text": "RAI Workstream multimodal neural models. We're looking at cost benefits and recommendations right now as you speak of the form we did for Copilot. Those questions are coming up about, let me say a spectrum of questions, including ones that you allude to when it comes to art being generated in the style of someone who is"
+    },
+    {
+      "start": 2099.76,
+      "end": 2128.512,
+      "text": "has their own style and is quite prideful about how they work and their uniqueness. It's just amazing to just take a prompt and add in the style of X to Dahlia and you get this beautiful oil painting that looks like a Miro or that looks like, you know, Picasso. So it's pretty impressive. And I've been playing with this and I'd love to share more. I might create a whole set of slides about this because each one raises lots of questions, including if I send my."
+    },
+    {
+      "start": 2128.512,
+      "end": 2157.2,
+      "text": "My my famous solar plus water heating patented a fixed method with its piping and so on that Dolly has created for me to the patent office, along with I even said, you know, I tried this out in the style of a patent sketch. Boom. I said, OK, just submit this right now. Ready to rock and roll. I tried this for certain a number of compositional inventions that and the results were in some in some cases to me were surprising. So I."
+    },
+    {
+      "start": 2157.2,
+      "end": 2184.064,
+      "text": "mentioned the colleagues like to study the use of dolly in expanding human creativity because you see directions you hadn't thought about for like doing for example adding brakes to a rollerblading you know i do inline skating allison you probably know you know how would you add a braking system to that just do a prompt and you go well i hadn't thought of that before anyway sorry but a great question and well"
+    },
+    {
+      "start": 2184.064,
+      "end": 2212.096,
+      "text": "Yeah. Yeah. Really briefly. Look, it's we share. We just had a briefing at the partnership with all the other major companies and civil society groups. And we share what we're doing. We heard what other companies do. And so there's there are sharing mechanisms. I've been at workshops with with folks from Google and Meta. And when we talk about our various approaches, hopefully we'll see the rise of the bar of."
+    },
+    {
+      "start": 2212.096,
+      "end": 2238.896,
+      "text": "quality and standards as to how we move forward. On the government side, Allison, Microsoft has worked quite intensively with local, state, and federal leadership. We worked very closely in Washington state with staffers to help push through a facial recognition set of laws that align with what we called our facial recognition principles for Washington state and have worked federally as well."
+    },
+    {
+      "start": 2238.896,
+      "end": 2267.056,
+      "text": "All I can say is that one company can only do so much, but we try. And by making our standard public is a really good step to have it out there in all its detail. And maybe other companies will say, well, if Microsoft is requiring this of their systems, maybe we should start thinking about what. And maybe we're doing and say publicly whether it's over the top or it's too much or too little along all these dimensions, according to their own values."
+    },
+    {
+      "start": 2269.904,
+      "end": 2297.152,
+      "text": "Oh, thank you, Eric. Nikhil? Hello. That was really an excellent talk. And I would like to echo what Moshe said. The first time I've heard a detailed accounting and overview of what a company is doing internally for managing all the risks of AI. So thank you very much for that. There were two phrases towards the end of your talk, which, you know, I trust this of Microsoft."
+    },
+    {
+      "start": 2297.152,
+      "end": 2326.448,
+      "text": "very scared because not all companies are Microsoft. So one phrase was certified provenance for when you talked about videos, for example. And here we are 50 years into email and we still cannot certify provenance of email because there are a lot of powerful forces who oppose doing anything about it. And another phrase you used was only vetted customers. And for the last several years, we've been hearing stories from the NSO group in..."
+    },
+    {
+      "start": 2326.448,
+      "end": 2356.272,
+      "text": "the iPhone hacking people who also use the same phrase, only vetted customers. And we've seen how that has worked out. So I'm very nervous about any single company and particularly testing a company like Microsoft to manage this. First say that the vetted customers was one piece of a long pipeline of many checkpoints in using custom neural voice and other technologies."
+    },
+    {
+      "start": 2356.272,
+      "end": 2383.808,
+      "text": "On authentication of media provenance, let me just say that we immediately worked with partners to form the Coalition of Content Provenance and Authenticity, C2PA, which is a Linux Foundation standards body, which involves quite a few companies and civil society groups and expanding. We really see, if you look..."
+    },
+    {
+      "start": 2383.808,
+      "end": 2408.736,
+      "text": "Look at the Ukraine situation and disinformation campaigns. Microsoft security folks gave a briefing at the Reagan Institute last week in D.C. It's really impressive. I've been working hard personally and with my organization and with colleagues out in the world, Microsoft, to avoid being in a post-epistemic world."
+    },
+    {
+      "start": 2408.736,
+      "end": 2433.344,
+      "text": "quickly coming up against um and i the only way to handle um i i see no other way to handle uh deep fakes or synthetic media more more generally and uh it's going to be it's going to it's going to get become interactive by the way i think even yesterday there was an interactive claim of an interactive interview with something with the mayor of of of kiev uh that was synthetic uh"
+    },
+    {
+      "start": 2433.344,
+      "end": 2462.736,
+      "text": "It's going to get multi-point, not just one deep fake, but several of them, and setting up a causal story to convince people what's going on in the world when it's not happening that way. They'll be back and forth with these kinds of models by adversaries with each other. If we don't lock down and come up with methods to trust the source of video, even going all the way out to reality, which is another technical direction, we're going to be in big trouble for our democracies and for our citizens in understanding what's happening in the world."
+    },
+    {
+      "start": 2467.536,
+      "end": 2491.36,
+      "text": "Eric? I guess that's me, Eric, right? Yeah, Eric Graham. Right. Okay. Many thanks for the very good and interesting talk. Very insightful as well. Especially because I think Microsoft, without any doubt, is a leader. So whenever Microsoft makes certain decisions..."
+    },
+    {
+      "start": 2491.36,
+      "end": 2518.768,
+      "text": "I think it impacts the whole field to some extent, such as the face recognition decisions. I think this has made huge impact. You mentioned two things which I find particularly interesting. One is principles and tools is the other. The principles you mentioned, I think, are unsurprising. They have been around in the literature for some time. And of course, one challenge in principles is that they come as a set. There is no hierarchy."
+    },
+    {
+      "start": 2518.768,
+      "end": 2545.984,
+      "text": "So whenever you have a conflict between principles, you need to weigh them one against the other. And without any doubt, your coders, programmers, computer scientists will have to make decisions and maybe use the tools. But the tools, again, they are under development. I mean, explanations for AI is a whole subfield of machine learning nowadays. So you must have a huge challenge of letting your computer."
+    },
+    {
+      "start": 2545.984,
+      "end": 2571.344,
+      "text": "programmers and computer scientists make these decisions. My question would be, how do you train them? How do you make sure they make the right decisions in those cases still? Because computer scientists are usually not philosophers. They don't have a legal background. How does this work in practice? Or are you hoping over time to establish certain prototypes, prototypical situations?"
+    },
+    {
+      "start": 2571.344,
+      "end": 2592.064,
+      "text": "Eric, it's a great question, and there are several pieces to the answer in my mind. Of course, I call Microsoft's approach to AI right now, per the rough edges potentially, I call it an experiment, and we're learning a lot. We're also learning how the company reacts when they see this document now online."
+    },
+    {
+      "start": 2592.064,
+      "end": 2620.592,
+      "text": "And they go, oh, my God, I'm thinking of this application to do inference about productivity. And oh, my gosh. Oh, my gosh. Like I and it gets down to details about what we happen to require today. Where a bunch of these endpoints in the tree of what you need to do and is in documentation and reflection, like write down what happened. Here's the metric. What does this mean? And it goes to the Office of Responsible AI for review. And there's a decision."
+    },
+    {
+      "start": 2620.592,
+      "end": 2647.056,
+      "text": "Does this need a sensitive uses review, which is a whole panel, which can hopefully identify tradeoffs and conflicts and people not misunderstanding and needing their own philosophical approach, for example. So I think we're still in the process of learning. There's an openness in the document we published this last week. I kept on adding evolvable standard, evolvable, evolving, living document, because we can't assume we have it right. And even now, I just say that."
+    },
+    {
+      "start": 2647.056,
+      "end": 2675.664,
+      "text": "Even the first version, this is version two. Version one, we saw grumpiness. Microsoft responded and we said, okay, let's not push too hard because we don't want to have antibodies against this whole process. Let's work with the teams and learn from the situation. And then we came up with a much more, you know, maybe procedural and goal-oriented better versus identifying all harms in advance. So it's a learning process and your questions get at really piqued my interest in terms of."
+    },
+    {
+      "start": 2675.664,
+      "end": 2698.304,
+      "text": "all the things we need to track and refine over time. George. Thank you, Eric, and thanks on my part as well. My question is, to what extent"
+    },
+    {
+      "start": 2698.304,
+      "end": 2723.408,
+      "text": "is the European AI Act, which is under development now and which is also the subject of EU-US discussion by the appropriate working group in the Trade Committee. To what extent is that already being factored in the Microsoft corporate AI policy?"
+    },
+    {
+      "start": 2724.176,
+      "end": 2746.096,
+      "text": "Let me say that most of – almost my sense is all of what I've talked about today was over five years. Of course, we were very interested in the commission's proposal, the AI Act. We'll see how that all goes with the European Union as they deliberate about it. It's a great document. I had a chance to interview –"
+    },
+    {
+      "start": 2746.096,
+      "end": 2774.016,
+      "text": "One of the leaders, Margareta Vestager, last summer about it, and I questioned her about some of what was being stated because some of the statements in the EC's, originally IACT, didn't make a lot of sense. You must have this be absolutely fair. There's no degree, for example. I said, well, how could you have a... It made me ask questions about whether they were impedance matched with reality at some points. On the other hand,"
+    },
+    {
+      "start": 2774.016,
+      "end": 2801.232,
+      "text": "It's a leading edge document. It shows really great thinking. And Microsoft has we provided lots of comments. I was one of the co-authors of our response to the request for information to help make it better. And I think it will be a great a great it's a great stand and a great set of ideas. And I think companies will be complying and doing their best to comply and also helping with definitions. Like what does it mean to be a service? Like who's who's responsible?"
+    },
+    {
+      "start": 2801.232,
+      "end": 2820.816,
+      "text": "You can find our public reaction to the RFI, to the European Commission AI Act online, in terms of all our concerns and hopefully helpful guidance as to how it might shape up in the various countries. Any other questions?"
+    },
+    {
+      "start": 2824.08,
+      "end": 2848.432,
+      "text": "Well, then we've managed to make up for the time lost. Oh, there is something on the chat. Let me just take a quick look at the chat. I see that my old colleague, Maria Zemankov is with us. Yeah, yeah. Let's see, two questions on the chat. Let's see. Let me first say, Tanu, would you like to ask a question?"
+    },
+    {
+      "start": 2850.416,
+      "end": 2867.776,
+      "text": "Sure. Yeah, first, awesome talk. I think I was particularly struck by the towards the end when you were talking about all the disruptive technology and how Microsoft is thinking about bringing the responsibility principles. My question was like, how do you ensure that kind of continued future compliance?"
+    },
+    {
+      "start": 2867.776,
+      "end": 2890.48,
+      "text": "And especially, you know, with certain use cases which are really difficult to predict, how others, unforeseen stakeholders might show up. So what's the process in terms of thinking those unforeseen future misuses and compliance? Yeah, and this is why I had that little diagram of monitoring and feedback because, like, for example, with Copilot, we're monitoring it."
+    },
+    {
+      "start": 2890.48,
+      "end": 2920.32,
+      "text": "The committee that reviewed this said we need to get sensors in place to understand how it's being used and how it's affecting code, for example. Will it open up security holes? Will it be used to generate malware more efficiently, for example? With our limited access framework, we're really laying down what we believe about acceptable uses and the process by which we make certain technologies that we consider sensitive available."
+    },
+    {
+      "start": 2920.32,
+      "end": 2947.888,
+      "text": "That could change over time how we work. There's a there's the prospect that if technology is out there, let's say customer voice and it's not used in accordance with the agreements, it's cut off, especially you can do that now with cloud services. So stuff is never let out. It's a service that we can turn right off and, you know, engage with the end user when it comes to general ideas. And like, you know, AI is like electricity, right? We can't control where things go, but."
+    },
+    {
+      "start": 2947.888,
+      "end": 2975.984,
+      "text": "with laws, regulations, and international conventions and norms. I'm hoping we can do our best to limit some of the downsides. This is why, and with technology, like I think that media provenance is going to be the only thing I can think of right now, besides throwing people who create disruptive defakes in jail. So it's going to be an ongoing reflection, Tanu. Thank you."
+    },
+    {
+      "start": 2977.168,
+      "end": 3004.768,
+      "text": "Maria, would you like to ask a question? OK, just I'm a fuzzy person. My research was in management of uncertainty. Therefore, my question. Therefore, the question about the nature of these principles, et cetera, they really are not binary. So it's the matter of degree."
+    },
+    {
+      "start": 3004.768,
+      "end": 3030.832,
+      "text": "So I think it's going to be very difficult to determine what is acceptable or when a principle is satisfied or not. For example, I see a lot of benefits from facial recognition, such as you have Amber Alert yet and you try to find missing children. Over the years, as the face might change, these are fantastic uses of facial recognition versus tracking everybody."
+    },
+    {
+      "start": 3030.832,
+      "end": 3058.8,
+      "text": "Right. So I think it's going to the degree to which a principle or should be applied is going to be difficult. I agree. But let me say that this what the standard tends to do, what our standard does and are also our writings in the future computed. We try to define the borders of what we mean by these things and where we stand in that multidimensional space of what a concept means. The standard, we actually get down to the actual basics. Do these end things?"
+    },
+    {
+      "start": 3058.8,
+      "end": 3088.464,
+      "text": "And what do you find and write up the document where you are with this? I've never been a fan of the simple idea of like banning facial recognition. It's incredible. Incredible uses. The question is, how do we thread the needle in a way that we can get the most value and limit the costs? Now, you can imagine like we'd all agree that giving powers of facial recognition with unlimited uses to an authoritarian regime is not a good idea."
+    },
+    {
+      "start": 3088.464,
+      "end": 3115.888,
+      "text": "That's such a bad idea and such a bad outcome for human beings and their civil liberties that we'd be willing to give up going faster through the lines and customs. We'd be willing to say no. And in this country, no, we don't want it being used in any way. And we make that trade. So it comes down to deliberation and committees that will consider, for example, for us, those three gating attributes about what is sensitive and why. Yeah."
+    },
+    {
+      "start": 3116.016,
+      "end": 3145.44,
+      "text": "Well, thank you for really working on it because it's needed. Yeah, thanks. It's been interesting. Well, we are running a little late, but we started a bit late. So I'll take. I apologize with my great button. Yeah. Yeah. But I'll take one more question. Luis. Thank you. Thank you for your talk. My question is about public administration. I don't see much even in the European AI Act."
+    },
+    {
+      "start": 3145.44,
+      "end": 3172.416,
+      "text": "about national public administrations using their tender abilities and influence for AI ethics. So my question is, what is Microsoft doing about logging or influencing the..."
+    },
+    {
+      "start": 3172.416,
+      "end": 3193.376,
+      "text": "The American public administration, please. And you mean the government, the government agency, the government? Yes. Yeah. Well, I guess I is we have an office in D.C. where very much we engage with senators with the I sit on PCAS, not that I have direct access to President Biden on a daily basis, but we do."
+    },
+    {
+      "start": 3193.376,
+      "end": 3221.776,
+      "text": "But there are meetings like this. We're very close with the OSTP, Lynn Parker. There's lots of engagement between government agencies and industry right now and thinkers in academia. There's a rising awareness and interest in various government agencies. Even the U.S. DOD has a whole office called the JAIC, the Joint AI Center."
+    },
+    {
+      "start": 3221.776,
+      "end": 3250.832,
+      "text": "We're seeing a rise of interest and working with the Jake over the last couple of years, they were very excited about our standard and what we were doing. We give them previews and we saw these principles showing up there. Got to be cautious with like this just random diffusion. But I think there is awareness, interest and engagement right now on multiple levels. Thank you. OK, Joseph, if you have a question, why don't you shoot me an email and I'll forward it to Eric because we need to."
+    },
+    {
+      "start": 3250.832,
+      "end": 3279.44,
+      "text": "to finish. I'm sorry I cannot let you not do it. Let's move to the music part. Eric, you want to share the screen again and tell us a little bit? A couple of slides of background I think will help frame, you know, I think, you know, your staff said, well, why did you pick this song? And let me just bring up, now that I think I'm working with my ability. While you're doing that, can I just briefly announce the next talks? Yes, sure. I'll fiddle while you're doing that."
+    },
+    {
+      "start": 3279.44,
+      "end": 3309.344,
+      "text": "all right perfect so yeah so um since you're gonna introduce i will i will just do that um so let me just oh wait a second that has changed my screen now um all right yeah so there's two events that i um i'd like to announce so the uh first one as already mentioned at the beginning was um the digital humanism summer school uh that will take place in vienna from september 19th to 23rd um so yeah we have really a fantastic list of speakers and registration is open"
+    },
+    {
+      "start": 3309.344,
+      "end": 3337.632,
+      "text": "So please consider participating or forward to anyone who might be interested, your students, whoever you think would benefit from attending. Really check out the program. It's worth your time. And hopefully we're going to see you in Vienna for this. And then the other thing, the next thing on October 18th, we will have the next talk in this lecture series. And we're super excited that Kate Crawford of USC Annenberg will give a talk."
+    },
+    {
+      "start": 3337.632,
+      "end": 3357.504,
+      "text": "And again, Moshe will be our moderator then. So thanks, Moshe, for the commitment today and always. And then, well, thanks to Eric for the insights shared so far. And actually, I'm looking very much forward to the insights now. I'm curious to learn about the song today."
+    },
+    {
+      "start": 3357.504,
+      "end": 3385.264,
+      "text": "Before that, let me take the opportunity to wish you all a great summer, and I will start the music as soon as you explain to us why the song and what it's about. So given my challenges earlier, are you seeing my main slide right now? No, you have to share. You need to share. Click share. I thought I did click share. Hang on a second. Oh, look at this. Okay. And let me go into my main projection mode here."
+    },
+    {
+      "start": 3391.952,
+      "end": 3421.52,
+      "text": "Can you see this? Yeah. Yeah. Great. So at Microsoft, we have something called the disruptive technology review. Every year, a research leader gets together and puts together a set of talks from across Microsoft to present to the main leadership team, the SLT at Microsoft, to show us where things are going, what might disrupt the world in terms of new technologies. In 2017, I organized the meeting and we had a session on."
+    },
+    {
+      "start": 3421.52,
+      "end": 3451.28,
+      "text": "Using AI to generate art. And part of that session was a presentation by our Beijing lab on songs that could be created by scanning and creating a large database of songs, music, music plus lyrics. And this was an example that was played. And this is not my music, but I'll just mention this was played at that meeting to everybody. It's a love song about lost love and memories about it. I'm going to play this briefly before I get to my song."
+    },
+    {
+      "start": 3454.672,
+      "end": 3482.736,
+      "text": "completely done by an AI system. So my reaction to this was, wow."
+    },
+    {
+      "start": 3482.864,
+      "end": 3498.4,
+      "text": "I felt like I wasn't comfortable hearing, you know, a, we'll say that music."
+    },
+    {
+      "start": 3498.4,
+      "end": 3527.456,
+      "text": "created by an AI system when it gets into, it was catchy, but when it gets into notions of human empathy, sharing of experiences and feelings, genuine human connection, for example. And let me say that that night while driving home, I heard the song that we're going to play now on the radio, Dixieland Delight. We'll play it for you now. Thanks. But for the practice and the focus of this series and in the context of the AI created love song, I found."
+    },
+    {
+      "start": 3527.456,
+      "end": 3556.608,
+      "text": "That the sharing of experiences by this songwriter, Ronnie Rogers, that I heard on the radio going home that night, really captured what I was getting at. And, you know, I later looked up the song and I discovered that Ronnie Rogers was driving down Highway 11W in Rutledge, Tennessee, when these experiences streamed into his mind that he sings about. And you could actually go to the map and see this small stretch of where he had to be."
+    },
+    {
+      "start": 3556.608,
+      "end": 3586.0,
+      "text": "You can go to, you know, the Street View and see what he was looking at per his experiences and the scenes from Rutledge. And so I thought the idea of overtime in a world of automation and rising automation, the idea of human essence coming to the fore will be more and more important. People will seek out art and music."
+    },
+    {
+      "start": 3586.0,
+      "end": 3615.888,
+      "text": "That really allows people to share experiences that AI systems cannot possibly share, even if they sing about love from a large corpus and many corpora of lyrics about romance. So let's roll this song and we'll hear about Ronnie Rogers' own beautiful experiences, what being human means to him. I thought this would be a great way to end my song and maybe end the season for the Digital Humanism series."
+    },
+    {
+      "start": 3616.016,
+      "end": 3645.52,
+      "text": "Rolling down a backwoods Tennessee byway One arm on the wheel Holding my lover"
+    },
+    {
+      "start": 3650.448,
+      "end": 3675.952,
+      "text": "It's all southern thrill. Worked hard all week. Got a little jingle on a Tennessee Saturday night. Couldn't feel better. I'm together with my Dixieland tonight."
+    },
+    {
+      "start": 3859.088,
+      "end": 3870.032,
+      "text": "all of you goodbye have a nice summer thank you eric great talk thanks eric thank you bye everyone it's great bye"
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

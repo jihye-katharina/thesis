@@ -1,0 +1,746 @@
+{
+  "video_id": "apVRH0fbQcQ",
+  "source": "whisper",
+  "language": "en",
+  "text": "Good evening, good morning, or wherever you are. Welcome with some delay to our digital humanism lectures. And thank you for joining and also waiting a little bit because we had some problems connecting with the west coast of the United States. But there is some connectivity still with the US. And thank you for joining our discussion, how not to destroy the world. I hope you had, we see us after the summer break. I hope you had some relaxing days. And now in fall, we are continuing our digital humanism lectures and we plan to have a 14 days schedule. At least we have now a program up to November. Every 14 days, we have some presentations, talks or panel discussions. And for... Previous talks, you can have a look at our YouTube channel. And for the announcement of future lectures, you can have a look at our website. You see that Stuart is already preparing his presentation. But OK. Before handing over to Helga Novotny, who will moderate the session, some organizational issues we have. 30 minutes talk by Stuart, then we have 30 minutes moderated discussion. The moderation will be done by Helga Norbertni. All the presentation and the discussion will also be streamed via YouTube and recorded via YouTube. So others who do not see today our talks can listen afterwards to our YouTube channel. For all the participants, I ask you to mute your phone. So that we have no disturbing rumor, background noise. And in the discussion, we ask you to raise your hand so you can raise your hand and then you will be activated and to have your comments. Before doing so, we ask you to tell your name so that we know who is asking a question or giving a comment. Before going to Stuart, I'm happy to introduce Helga Novotny. She will chair today's session. Helga is well known in the academic world. She is professor emerita from the ETH Zurich. She is the previous chair president of the European Research Council. She has a PhD from Columbia in sociology and a doctorate PhD in law from the University of Vienna. She has many a honorary doctorate from different universities. And she's also in the advisory boards of many international organizations. So I'm not going to list them since we already had some time. We have to save some time. I just want to mention two of her books, which she published in 2015 and 2017. And the last one is An Orderly Mess, which is a contradiction in itself in the title, but it's a very interesting book and I recommend it. to everybody to read it. So Helga, the floor is yours. And thank you all. Thanks again for joining and also for waiting these 10 minutes on having our connectivity restored over the Atlantic. Okay, Helga, it's yours. Thank you, Hannes, and welcome to everyone in this evening or morning session. of digital humanism you're all aware we have now on a two weekly basis these very interesting presentations and discussions and i greatly look forward and a warm welcome to stuart russell he is a professor of computer science at the university of california in berkeley He has received several awards, and between 2012 and 2014, he also helped declare Blaise Pascal Chair in Paris. Stuart's last book is called Human Compatible. He's also the director of his center. that deals with human compatible and I take it that how not to destroy the world has something to do with what you wrote in this very interesting book about human compatible. I saw also from your abstract that you are going to speak about autonomous weapons and I just wanted to remind everyone that quite recently there was a simulated dog fight between an F-14 pilot and an AI and the AI beat the pilot five to one. Stuart, the floor is yours. Thank you very much, Helga. And I apologize for my part in the delay to the start of this meeting. So let me just bring up my slides. Okay, so I chose this rather boring title. to prepare you for the very dry material that is going to be in the talk. I've actually deleted most of the mathematics. So let me begin with Alan Turing. So as many of you know, Alan Turing was really the founder of computer science and artificial intelligence. And in 1950, He wrote a seminal paper, the paper that includes what we now call the Turing Test, along with ideas about how to create artificial intelligence, including machine learning, and set out many of the subfields of artificial intelligence for the next seven years. But fewer people know that in 1951, he gave us radio. about the future prospects for the field. And in that talk, he said, it seems probable that once the machine thinking method had started, I'm doing the accent a little bit, it would not take long to outstrip our feeble powers. At some stage, therefore, we should have to expect machines to take control. So he says this with really no mitigation. There's a sense of resignation. And this is just really a prediction of how the future is going to evolve. So I would like to understand why, and I would like to understand if we can prevent this particular future from taking place. So now fast forward 60 or 70 years, and we have seen a lot of the progress that Turing promised, perhaps not quite as fast as he thought, but... in the same order of magnitude, for sure. So we see self-driving cars, we see well-beating Go programs. And the momentum behind artificial intelligence is enormous. So I want to try to explain why the momentum is enormous, besides curiosity. And I want you to cast your mind back. to 1800. And suppose you wanted to get to Australia in 1800. So you'd have to launch an enormous project. In present day terms, it would probably cost around a billion dollars. You'd have to have multiple ships, hundreds, if not thousands of people. And it would take you about 10 years from the time you started the project until the time you got there. And you'd probably be dead. But now we have something called travel as a service, which means that travel is available in sort of the same way that electricity and the Internet are available. You take out your phone, you go tap, tap, tap. And for essentially no money and in essentially no time, you're in Australia. So this is what I mean by travel as a service. But there are still lots of things that. are expensive in our world, especially for people in less developed countries. So the idea of everything as a service is that we would apply the same technological approach to everything that we have done to travel. So it might be organizing, running a large conference. It might be building houses, schools, hospitals, roads. It might be teaching children, training surgeons. All of these things with general purpose artificial intelligence can become services like travel is today. And when we think about what that would look like, it's not going to look like individual robots, each of which is itself a giant brain. It's going to look like the cloud, a global or regional. AI system that happens to have physical extensions that can get work done in the real world, whether they're legged robots for moving around inside people's houses or wheeled robots for transporting vast quantities of raw materials. So a conservative estimate of what you could do with that, so leaving out the science fiction, you know, curing cancer and reaching the stars, but just Getting the living standards of everyone on Earth to a respectable level. And I paid that respectable level at the 80th percentile of the US living standards. That gives you a tenfold increase in the GDP of the world. And the net present value of that is 13.5 quadrillion dollars. So that's a very crude estimate of the value of, in just simple monetary terms, the value of achieving general purpose artificial intelligence. So that gives you some idea of why there's a lot of momentum. And then when you look at these vast numbers, like, you know, the Chinese government talking about $150 billion of investment in artificial intelligence, which, you know, That's probably more than has been invested in AI in its entire history. That number then starts to look absolutely minuscule. It's a drop in the ocean compared to the size of the prize. And if we have this technology, which is essentially able to generate wealth on request, then arguing over who has more would be like. over who has more copies of the digital news, it becomes completely mean. And so although we will still find other reasons to kill each other, at least we're taking away one of the major reasons in history that people have killed each other. At the same time, if you have it, then expect that. AI systems will be able to make better real-world decisions than humans. Just as we already expect that AI systems will make better decisions on the chessboard or the go board, they will make better decisions in the real world. And that brings us back to Turing's point. Entities that are more powerful than humans. So how do we expect to have power over those entities forever? And that's what I'm going to talk about. And so Stephen Hawking and Max Tegmark and Frank Wilczek and I wrote an editorial in 2014 trying to remind people in some sense of what you're and this is the way it's put in. We cannot hear you now. The sound has disappeared. We cannot hear you. Okay. I don't know. It's all about control over the machine. It's still, can you hear me now? Yes, you're back in control. But now there is silence. Now we can see you. Can we also hear you if you say something? I hope so. Can you hear me now? Yes. All right. Sorry, that was a glitch, I think, on the internet on my end. Okay, let me resume. I think I have to share my screen again. All right. So first we have to understand the source of the problem. And the source lies within the way we have been thinking about artificial intelligence. So I'll call it the standard model. And this standard model is not just the standard model for AI. It's a standard model for control theory and statistics and operations research. some branches of economics as well. We create machinery that optimizes an exogenously specified objective. And the problem is we cannot specify those objectives completely and correctly. So then we create a machine that's pursuing an incorrectly specified objective. And if it's more powerful than us, then in some sense, by definition, it achieves the objective and we don't. Now, this is not a new story, right? We know that King Midas specified the objective that everything he touched should turn to gold. And the gods implemented this objective for him. He didn't have AI, but he had gods. Food and his drink and his family all turn to gold and he dies in misery and starvation. Goethe's story of the sorcerer's apprentice. The young apprentice tells the brooms to fetch water, but he doesn't specify the objective correctly. And so they fetch an unbounded amount of water, which causes a huge problem for him. And if you rub a lamp and a genie appears and grants you three wishes. then your third wish is always to please undo the first two wishes because you've ruined everything. And many, many, many cultures have the same proverb, story, legend, myth, telling humans, be careful what you ask for. So we can actually see this happening in real time. for example, in social media. So social media platforms determine what billions of people see, read, listen to for most of their waking lives. And in that sense, they have more power than any propaganda ministry, any ministry of information has ever had in the history of... of the human race and roughly speaking those algorithms were set up to maximize click-through and so that's the objective and they have done a pretty good job of it and you might think okay well maximizing click-through in order to get people to click on things they have to learn what people want and then send it to them right that seems like a fairly logical thing to do Unfortunately, that's not how these learning algorithms actually work. What they do is they learn to take actions to modify the state of the world to maximize the reward. For example, if they're banded algorithms or reinforcement learning algorithms, that's how they're set up. And the state of the world is your brain. So they take actions to modify the state of your brain. to get what they want which is to have you click on things um so what they is that you are predictable care what um but they want you to be to be predictable uh because that's how they maximize their awards they learned to turn people into various kinds to be predictable in their click behavior. And we are unable to switch off the machine because it's generating so much money. The voice is disappearing again. Okay, I'm having a bit more problems. We can read but not hear you. Are you still with us? Stuart? Stuart, are you still with us? I think we have lost our speaker. So can you hear us? We see you again. We see you again. Yes, I can hear you. Unfortunately, it's the beginning of school and all my children got online. So I have to switch to a different network and move to a different part of the house, which I am doing right now. Okay. Is that better? It's better, but in order to save time, maybe you speed up a bit. I will do that. Very good. Okay. All right. So we established that. social media platforms are optimizing the objective and that's having negative consequences. In fact, the better they do it, the worse the outcome is going to be. And this is a common problem with the standard model of AI, except in the special case where the objective that we specify happens to be exactly correct. So in all other cases, The better the AI, the worse the outcome is going to be because it's going to make more of a mess of the rest of the world in order to optimize the objective that we've given it. Now, when we think about how we got here, right, it actually made a lot of sense. When in the 40s, when we were thinking about what we meant by artificial intelligence. What we meant was an artificial version of human intelligence and human intelligence. We had at that time, both from philosophy and from economics, from von Neumann, Morgenstern, etc. The idea of the perfectly rational entity, the entity that acts in order to achieve its objectives. And so this was the idealized notion for human intelligence and the natural definition for artificial intelligence then would be machines. are intelligent to the extent that their actions can be expected to achieve their objectives. And we've seen that this way of setting it up then requires us to supply the objectives, which then causes the problem that we face. So I would argue that this standard model is actually an extremely poorly suited methodology for real world deployment of intelligent systems. But we can actually just change a couple of words in this way of thinking. What we really want are machines that are beneficial, meaning beneficial to us, meaning that their actions can be expected to achieve our objectives. So rather than sort of creating this autonomous intelligent machine that is out there in the world just pursuing its objectives. We want technology that is in some sense coupled to us, that it's beneficial to us, not to cockroaches, not to aliens, but it's a human-directed technology. The difficulty with this, of course, is that our objectives are in us. They're not in the machines. And so how is the machine supposed to choose actions that are beneficial to us when the objectives are in us and not in them? So that's a more difficult problem, but it is actually solvable. So I've been calling this provably beneficial AI. And the basic principles are that the robot's objective is to satisfy human preferences, but it doesn't know what those preferences are because they're in us and we are unable to explicate them completely and correctly. There has to be a grounding of the latent variable, if you like, that references human preferences. And that grounding comes through human behavior. That behavior provides evidence of what our preferences are. It does so imperfectly and noisily through our human cognitive architecture. which often makes mistakes, et cetera, et cetera, as we all know. But that is the source of evidence for human preferences. I mean, technically, I suppose you could use MRI if we ever understood how to read people's brains properly. You could get the preferences directly that way. But for now, it's human behavior. So you can take those principles and define what we call an assistance game, which is just a. In game theory, a mathematically defined problem with two, in simple case, two entities, a human and a machine. And the machine has to solve its half of the assistance game. And when you look at the solutions of the assistance game, you find that the machine will automatically defer to the human because the human's instructions or requests or prohibitions. are evidence about our preferences, and therefore they have force, so to speak. The machine will, if it comes up with a plan that affects parts of the world where it doesn't know your preferences, then it has a motivation to ask permission in order to avoid, shall we say, damaging the world. And in the extreme case, it will allow itself to be switched off. Roughly speaking, in this model of artificial intelligence, the better the AI, the better the outcome, because the AI system will, first of all, be better able to interpret your preferences and also better able to carry out plans that achieve your preferences. So that's good. So let me just illustrate that point about the machine allowing itself to be switched off, because I think this is really the core of the control. problem, right? If we can't switch off our machines, then we've lost. It's game over. So here's, just to illustrate, here's the robot from our lab. It has a big red off switch on the back. And in the classical view, the standard model of AI, you would typically give it some objective, like fetching the coffee. And then assuming that it has sufficient level of intelligence, it can immediately deduce that it can't fetch the coffee if it's dead. Therefore, it has to disable its off switch. And so this is not a built-in self-preservation instinct. This is simply a consequence of having an objective in the classical sense. It's a prerequisite for a plan that is guaranteed. to succeed in achieving the objective. And so it might take other actions like tasering the customers in the Starbucks. And all of this is because it's pursuing this objective of fetching the coffee as if this is its sole mission in life, because that is how we define things in the standard model of AI. So in the new model, the thinking goes quite differently. The human might switch me off, but only if I'm doing something wrong. Okay, now by the first principle, whatever we mean by wrong, the machine knows that it doesn't want to do it. By the second principle, it may not know what actions it might take that are wrong. But the human in switching the machine off is preventing these actions that the robot does not want to take. And therefore, the robot has an incentive to allow the human to switch it off. And that incentive comes directly from the uncertainty about human preferences. And in fact, as that uncertainty goes away, then the incentive to allow itself to be switched off goes away because then it knows what it's supposed to be doing and it believes that any action it takes is beneficial and therefore being switched off would be harmful. This this kind of reasoning actually can be turned into mathematics in the usual way by writing it in Greek And then you get a theorem right that the robot designed according to this This model is provably beneficial to the human So there's a lot more work to do which I'm not going to go into but I'm sure you're all thinking fast As I'm talking and coming up with all kinds of objections, and I just want to reassure you, at least in most cases, we've thought about those objections and we're working on them. So the first important area is how we deal with many humans. Not so much because those many humans have a variety of preferences. That's actually perfectly fine. The problem is what action does one take when acting on behalf of multiple humans? There are always going to be tradeoffs among the preferences of the individuals, even if those preferences are all identical. For example, if everyone wants to be ruler of the universe, well, not everyone can be ruler of the universe. So there's going to be tradeoffs among preferences of humans. And this is, of course, something that moral philosophy has studied for thousands of years and economics has studied for hundreds of years. And a variant of preference utilitarianism. looks like a plausible way forward. There are still questions about, you know, the validity of interpersonal comparisons of preferences. There are questions about variable population sizes, actions that bring into existence or prevent the existence of human beings. I'm sorry for interrupting. Will this be your last slide? Can we concentrate on this? Pretty much. This is the last content slide. Yes. The second topic is how we deal with humans whose behavior is imperfect, which is all of us. So we need to invert human behavior to get at underlying preferences. And so this means developing, I think it means developing models of human cognition so that it can be inverted accurately. There's a lot of technical foundational research to do because what I'm proposing. is to eliminate the assumption that the objective be fixed and known. But every branch of artificial intelligence makes that assumption. And so every branch of artificial intelligence, search, planning, reinforcement learning, and so on, needs to be fixed to allow for uncertainty about the objective and to allow for some type of interaction with the human, with the possessor of the objective, in order that successful behavior should result. And finally, lots and lots of applications are needed merely, I think, mainly to convince industry that these kinds of systems are not just safer, but they are better. They are the kinds of AI systems that people will actually want, as well as the kinds of AI systems that won't destroy the world. So all of those topics and more are summarized in a book that came out last year in English. called Human Compatible, has the same title in German, but it's now available in German as well. So to summarize, I've argued that the standard model for AI is a disaster because as we make AI systems more and more powerful, the outcomes become worse and worse, and eventually we would lose control. I proposed another model for AI called provably beneficial AI. which I believe is not just possible, but it's actually the kind of AI systems that you would really want. And so I want to make this point in red that this is not just about ethics. And I don't want it to be the case that the AI community continues business as usual, while there's an AI ethics community that... develops all these theories, this actually has to become the way we do AI itself, right? Just as we build bridges that don't fall down and we don't have to keep saying, oh, I build bridges that don't fall down. We just say, I build bridges, right? When we say I build AI, it should be AI that is beneficial and safe. There are two other major problems that I haven't talked about. One, of course, is misuse, right? Why? Why should Dr. Evil actually use the safe and beneficial version of AI if he wants to take over the world? And I think that's a serious issue we're already seeing with cybercrime. And the other one is overuse. And this is much more insidious that as we develop the possibility for handing over the management of our civilization to machines, we lose the incentive to know how to do it ourselves. And this is a point made by E.M. Forster in his science fiction story, The Machine Stops in 1909, which if you haven't read it, I highly recommend. And it's not an AI problem. This is this is a problem for our culture. And it may become one of the biggest problems that we face. So with that, I'll say thank you. OK. Thank you, Stuart. Can we get rid of your slide, please? Switch it off? Sure. Thanks. Thanks. So I think you took us through a journey between what you call the standard model to the proposal you make about a provable beneficial AI. And it reminded me of similar journeys that economists had to travel when they started out in believing, as you mentioned, you know, the perfect rational man as the model. And it was in the 50s that Herb Simon came up with the concept of satisficing. In other words, to find not the perfect solution, but rather adequate solutions. And this gave a big, big boost to economists how to think about also trade-offs, which are incompatible objectives. in the real world that exists. And we have to grapple with that. And also approximation in mathematics is a big field. And so I think what you mentioned for AI goes through a number of other disciplines and ways of thinking and approaching the world. Now, as you rightly pointed out, the problem is that you still need to specify. the objectives and how to find the kind of bridges between the objectives and ours. But it might also, it just occurred to me, it might also force us to be much more clearer in terms of our own preferences. I mean, you mentioned behavioral traces, but if you think of policymaking, for instance, You know, there are objectives that are in contradiction to each other. Our preferences, even our values are contradictory very often. And it also forces us to think more clearly about what we can achieve and what we cannot achieve or to reach compromises, which is what part of the real world, especially in politics and policy, also consists of. OK, with this short reaction on my part, I would like to open the discussion. I don't see who wants to speak. It's Ramon Hassani. He was raising the hand. Yes. I mean, Hassani, is it you? I'm just looking up who is raising their hand. Yeah. Thank you. Thank you. Because I don't see. Actually, I wasn't raising hand. I was just clapping for the presentation. Thank you. So it was a comment. Well, it was approval, a sign of approval. Let's leave it at that. So who wants to make a comment or ask a question? Clemens Arbessa, you have. Okay. Yes. Thank you, Professor. That was a very interesting talk. I was wondering. You mentioned that in certain cases, the machine might want to defer to the humans. And doesn't that limit the usefulness of the machine? Because eventually there will be problems that are too hard for humans to solve. And if the machine just defers to the human, then it will make bad decisions because humans wouldn't be able to solve the problem. Yeah, that could happen. When I say defer to the human, meaning that the human is intervening and saying, stop, for example, right? Because the machine is doing something that is violating human preferences. But, you know, we use machines that solve problems that are too hard for us to solve all the time. And that, you know, most of the time that doesn't cause a problem yet because the, problems that we have the machine solve are purely computational right we're not in most cases we're not handing over uh real world authority to machines right we're using them as as in some sense electronic calculators uh a vast capability but we're not handing over control but in areas like social media we are handing over control right It isn't that the social media algorithm is reporting back to Facebook what Clemens should see next, and then Facebook decides what Clemens should see next. The algorithm itself is deciding what you should see next on social media. And this happens over and over and over again, that as soon as you disintermediate the human, machines are doing things that are making people very unhappy. Next question or comment. Can I have a question, Han, as you're speaking here? Since you refer to the, let's say, human objectives and how they can be defined, I think it's strongly linked what we are doing in digital humanism, because we are arguing for integration or combination of social science and humanities, which is somehow a prerequisite for. really discussing and defining such objectives. And the second observation I have is if I really can switch off the machine, I think you don't have real autonomous systems anymore because autonomy really would imply that they are self-sufficient and there is no intervention from the outside. So these are the two comments I have to make. Yeah. I think we don't want real autonomous machines. In fact, I think the more important thing actually is that we humans retain autonomy. And this is an important part of our preference structure. So you could imagine a sequence of states of the world which might be perfectly reasonable, but autonomy for humans means that counterfactually, we have the ability to turn off from that sequence of states and do something different. So even though we might like that sequence of states, we also want to retain the option for deviating from it. And so machines... You know, this is one possible solution to the overuse problem, the Wall-E example, right? Machines may at some point say to us, you know, we're asking the machines to do something and the machines will say no. Just as when a child asks the parents to tie their shoelaces to go to school, at some point the parent says, no, you have to tie your own shoelaces. And so. We have to get used to the idea that the machines may say no and give us autonomy. Because if we lose the autonomy, then we lose our civilization. We almost lose what it means to be human at all. Can I just continue here? If you are saying the ultimate goal should be that the humans retain autonomy over the machine. Where in the process do you see the largest obstacles to actually realizing this? I mean, to have a robot that can be switched off is one thing, but as your previous answer to claimants showed, I mean, if you have a huge... algorithmic machine being set up that controls what you're going to see, that changes the preferences, etc. You know, we're in this entire system that we are creating. Do we have to step on the brake and say, you know, we need new rules here? We need the possibility of keeping autonomy at different levels and at different steps in the process. So I think this is the governance question, right? So it's one thing for me to write papers and so on, but that doesn't translate into changes in the real world unless there are real regulations about how AI systems are designed. And I wouldn't say that we're ready yet to stipulate and promulgate those regulations, but in other areas, such as nuclear power or even electricity. There are laws and regulations and standards that have been developed over decades and decades, and those have force in the real world in terms of what the commercial actors can do and what the government actors do. And it's inevitable that with a technology as powerful as AI, there are going to have to be rules that have real teeth. And the IT industry has operated for decades by saying, don't regulate us, don't kill the goose that lays the golden egg. And they're now by far the most powerful. non-governmental entities in the world I mean I think it's eight of the top 10 companies in the world are IT companies but if we want to retain human autonomy there has to be the ability for governments to regulate and I think one place to start that I like and I think there's some support in the UN for this is that there should be a human right to know whether you're interacting with a machine or a person. This is one part of it, but, you know, maybe this is worth for another discussion. Hannes, are there other questions that you see? Yes. So let's start with Peter Micho. I think he was first and then Eric. Please do your questions short. So because I think slowly we are running out of time. Okay, so I think we should not talk about one machine, but the whole system, the cloud, or the society. I mean, we humans have different wishes, and we don't want that the whole system just goes over reasonable wishes. So democracy, for example, is such a thing. And it should take wishes of single persons, wishes of groups, but it should not be the tyranny of the majority. And the whole machine system must take care of this. So I think just playing a beneficial game for one machine only is not enough. One must play this game for the whole system, I think. Yes. Yeah. Yeah. No way. So when I say one machine, this is just an example. The general definition of assistance games includes arbitrary numbers of people and arbitrary numbers of machines. But having said that, machines have the capability to merge in ways that we don't think of humans as being able to do. So in a real sense, you could have a single machine. It simply requires that there be enough communication bandwidth. that the perceptions of individual physical extensions of the machine can be shared fast enough to achieve a global state estimate. But yeah, I think the practical issues, I mean, the points you make about individual preferences, sure. There's not one preference model. There are eight billion preference models. That's completely fine. And there's no need for a tyranny of the majority. Individual preferences can be respected as long as they're not damaging the preferences of lots of other people. That's completely fine. I think the problem comes when you have machines that are. They're sort of entering the system designed by, you know, unknown groups for unknown reasons where you can no longer rely on certain safety properties of those machines. So achieving agreement among heterogeneous machines where when you have no reliable assumptions can be made about the software of the other machine, that's pretty difficult. And you get into all kinds of prisoner's dilemma problems when you solve those games. So this is one reason I think why you want strict regulation on the design and machine. So just as in the app store, your app is not allowed to be sold, is not allowed to appear in the app store unless it passes a whole set of software checks to make sure that it doesn't freeze up your phone or steal data from the other apps and so on and so forth. you would have regulations that say software systems do not get to connect to the internet and they cannot be sold unless they meet a whole set of software checks. Okay, I think it is helpful also to think in terms of complexity. It's a highly complex system we are dealing with and depending on the different component parts and how they come together. I mean, it answers, I think, also Peter's question. Eric, you want it? Yeah. Many thanks, Stuart, for this discussion. I very much appreciate the focus and shift towards human values. However, at the same time, I think when human values become central to what you're trying to achieve, You have to point out that the notion of human values is extremely contested, both in psychology and philosophy. It's not clear whether human values exist or they are just attributed. And I think the example you have given for content moderation in social networks is a good one. Today, we do not even... know what would be a good discourse in social media. It's far from clear what this should look like. All you would get is the preference of a million people and then probably you would get what people are trying to avoid on that very medium. So I think this is very unclear. And maybe another comment coming from a school of embodied AI would be that The important aspect of these machines would be that they can learn and deduce human values from observing people, basically. And that must involve their bodily movements. And we are back to, I guess, Dreyfus' criticism of it is virtually impossible. And basically, you would end up having to educate people in the way that nowadays we try to do with our young. and as they become responsible members of society. Okay, so you made a number of points. I think one important point is that, no, we are not trying to build a definition of human values into the machine. There is no definition of human values. As you know, of course, everyone has different preferences. So think of it this way. Right. If I could lay out two futures. In as much detail as you want and you can spend as much time as you want looking at those futures and you can come back at the end and you can say, you know, I like future A. I'm much better than future B. Right. That's all I mean. And. So eight billion. preference models, one for each person, which says, okay, what future does that person prefer or not prefer? That's all. So I'm not saying, okay, we're going to build Christian values or Confucian values or any other kind of values into the machine. And your preferences about the future include your values. And that's fine. And to the extent that your your values conflict with other people's, then there has to be some trade-off resolution. So there's nothing magical happening here, but it's also at the same time not a problem. But the other point I think was illustrated, that you were saying that there isn't a clear definition of what we want, the online... dialogue, our content selection to look like. That's precisely the point. We don't know what the objective exactly should be. And so we want machines, therefore, that actually behave more cautiously, that try to learn more about what makes sense. And don't mess with parts of the world where they don't know how we would like it to be arranged. We have Christina. No. No question. Let me raise my hand. Sorry. OK, no. Just because you were on my screen, I thought you were waiting. Sorry, Gabor Rechke is asking a question. Gabor? Yes, thank you. And thank you, Professor Russell, for a very interesting talk. Just one short question. The assumption that the best thing we can do for AI is to make sure that it never becomes truly autonomous. Isn't that influenced very much by the assumption that this intelligence that will one day be superior to ours will be just as unreliable in deciding things for us as we have proved to be unreliable in deciding things for creatures with inferior intelligences. I understand the assumption, but is it not a pessimistic one? So it's not pessimistic. And I think we could certainly come to the conclusion over decades that really we'd be better off having all the major decisions being made by machines. And that's fine. So we would still, in some sense, retain but we just wouldn't be using it. But you're speaking about a future generation, not about us right now, because I don't think we want, you know, the kind of Leviathan machine. We cannot speak about what future generations will want and will be ready to accept. Hannes, are there more questions? I would like to ask a question, if it's possible. I keep writing. My name is Alec B. Balascescu. Can you hear me? If I'm an anthropologist, then I write about those things sporadically. So, Professor Russell, thank you very much. I'm a big admirer of your work. I did read your book and the edited book with a collection of writers. on artificial intelligence and um as an anthropologist i would like to ask you do you think that somehow artificial intelligence is a misnomer because we don't know what artificial is a category that is created by humans in order to separate ourselves from the supposedly nature whereas we are part of nature but this created a lot of problems in the last 400 years this separation And second of all, intelligence, we don't really know what that is either. But by projecting this ideal type, like almost like a Platonist, an ideal type of intelligence, we expect too much from the machines and we forgot to relate to them as tools. So my impression is that we are like a three-year-old person with a hammer. Everything becomes a nail. So I was wondering if you can briefly comment on that. at the current stage? Yeah, it's an interesting question as to whether the name artificial intelligence helped to cement the standard model of the autonomous intelligent entity pursuing its objectives separate from humans. And yeah, that's probably true. I'm not sure what name we would have used back in the 50s in order to get a better outcome. But it's interesting when you look back at the history, there was a lot of debate about what the field should be called. And I think there were issues to do with not wanting to just be subsumed within control theory, of wanting to... you know, escape from behaviorist psychology. There were various forces that led it to be called artificial intelligence, partly just, you know, thinking that it would be attractive from the point of view of funding. So I don't yet have a good name for the new version that I'm trying to bring about. So I've been calling it provably beneficial. And the word beneficial is intended to sort of couple it to humans, right? That's beneficial to whom? Well, to us. But maybe there's another name you could come up with and please send me suggestions. I think these names are not one person's decision or one group's decision in the end. They are accepted by the wider community. Do they resonate? Sometimes they turn out to be a misnomer. But then we have another model in mind to which we compare it. And I think by opening up the discussion, you make us think and others make us think, what would indeed, what would be a better way to capture them? meaning of what we are trying to say. I think we have to look at the timing. Maybe one more question. It was Jeff who was raising the hand. Jeff, I think it was you. So let's take this last question, Helga. It's Jeff Kramer. Thanks very much for your talk, Stuart. It was very interesting. What I actually wanted to ask you was related to regulation. You've mentioned regulation as one of the aspects that may relate to and how we deal with AI. And I'm very unclear, I have to admit, as to how governments, bodies such as your own government or the EU or actually how we should be trying to advise them as to what kind of regulation should be introduced in order to ensure that this kind of autonomy. is maintained, let's say, in the hands of individuals or people, rather than given over to the Facebooks and Googles and everyone else who seem to actually have a rather large control over what goes on at the moment. Is there anything you could or would wish to advise as to how we should go about, as I said, introducing regulation? Yeah, that's a great question. And I would say not yet. So as I mentioned before, I do believe that one could write rules about the design of software and say all AI systems that are deployed have to conform to various templates that have provably safe properties. But the other question is really about where is the control? And at the moment, if you take out your phone and just look at it, you have 50 representatives of giant corporations sitting in your pocket, listening to you, reading your email, listening to your text, reading your text, et cetera, et cetera. I mean, everything on your phone is there to extract money from you and to give other people power over you. So I think there needs to be a sort of a... change in the structure of the industry so that effectively your phone is a device that's working on your behalf and somewhere else are the corporations and the services they can provide and the software on your phone is negotiating with them on your behalf to get favorable conditions to say what you're willing to listen to in the way of advertising or not, how much of your information, if any. can never migrate off your phone into their databases and so on. So it would be very much, you know, rather than starting from we own everything and you have no say to I own everything and you can ask my permission and my agent will discuss it with you, right? And so that requires a kind of a sea change. in the structure of the industry and I think the EU is the most likely place to bring that about. But it also shows, if I may end this very interesting session that we had today, it also shows that in the end it's also about power and power, how it is distributed, how it is structured between humans. So one thing is to say humans should be in control, but we also have to look at who controls the controllers and similar kind of questions. And this brings back the ball into society. So now I would like to turn. Thank you very much, Russell. And thanks, everyone who participated in the discussion. Now it is Peter Knies. And those of you who have not participated before, we always end these sessions with a short musical greeting. And tonight it's Peter Kness who has selected it together with Carlo Ghezzi. Peter. Thank you very much, Helga. And also thank you very much, Stuart. So yeah, I decided to call this final segment Final Notes. Maybe that will stick. Let's see. But for the... Final notes, today we will play a human computer co-performed piece by Dan Tapfer, in which he added an algorithmic dimension of inversion and therefore defamiliarization to the Goldberg variations by Johann Sebastian Bach. And as you said, the piece was proposed by Carlo Ghezzi. I don't think he's here at the moment, because in that case I would ask him to briefly introduce it. But if he's not here, I will quickly say a few words why I think it's interesting. I gladly included it to be played in the context of digital humanism, as it's partly computer-generated music. However, the human part and the contribution is still clear. And what happens is that Dan Tapfer plays the Goldberg Variations, and we will listen to Variation 1, on a disc clavier. And after finishing, his interpretation is chromatically inverted and automatically generating a new piece, which is at the same time familiar and unfamiliar. I will play it next, but before, let me remind you of our next event on the 22nd of September with the talk, NAI and Computer Science Dilemma, Could I, Should I? by Barbara Gross from Harvard University. So while I'm setting up the, or sharing the screen, I thank you for joining us today and look forward to seeing you next time. And let's see if this works. Thank you. Thank you all. And we will see us on September 22nd at 5 p.m. with Barbara Cross. Goodbye. Bye. Bye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.552,
+      "text": "Good evening, good morning, or wherever you are. Welcome with some delay to our digital humanism lectures. And thank you for joining and also waiting a little bit because we had some problems connecting with the west coast of the United States. But there is some connectivity still with the US. And thank you for joining our discussion, how not to destroy the world."
+    },
+    {
+      "start": 27.552,
+      "end": 55.344,
+      "text": "I hope you had, we see us after the summer break. I hope you had some relaxing days. And now in fall, we are continuing our digital humanism lectures and we plan to have a 14 days schedule. At least we have now a program up to November. Every 14 days, we have some presentations, talks or panel discussions. And for..."
+    },
+    {
+      "start": 55.344,
+      "end": 85.12,
+      "text": "Previous talks, you can have a look at our YouTube channel. And for the announcement of future lectures, you can have a look at our website. You see that Stuart is already preparing his presentation. But OK. Before handing over to Helga Novotny, who will moderate the session, some organizational issues we have."
+    },
+    {
+      "start": 85.12,
+      "end": 113.984,
+      "text": "30 minutes talk by Stuart, then we have 30 minutes moderated discussion. The moderation will be done by Helga Norbertni. All the presentation and the discussion will also be streamed via YouTube and recorded via YouTube. So others who do not see today our talks can listen afterwards to our YouTube channel. For all the participants, I ask you to mute your phone."
+    },
+    {
+      "start": 113.984,
+      "end": 137.536,
+      "text": "So that we have no disturbing rumor, background noise. And in the discussion, we ask you to raise your hand so you can raise your hand and then you will be activated and to have your comments. Before doing so, we ask you to tell your name so that we know who is asking a question or giving a comment."
+    },
+    {
+      "start": 137.536,
+      "end": 167.44,
+      "text": "Before going to Stuart, I'm happy to introduce Helga Novotny. She will chair today's session. Helga is well known in the academic world. She is professor emerita from the ETH Zurich. She is the previous chair president of the European Research Council. She has a PhD from Columbia in sociology and a doctorate PhD in law from the University of Vienna. She has many"
+    },
+    {
+      "start": 167.44,
+      "end": 197.312,
+      "text": "a honorary doctorate from different universities. And she's also in the advisory boards of many international organizations. So I'm not going to list them since we already had some time. We have to save some time. I just want to mention two of her books, which she published in 2015 and 2017. And the last one is An Orderly Mess, which is a contradiction in itself in the title, but it's a very interesting book and I recommend it."
+    },
+    {
+      "start": 197.312,
+      "end": 220.784,
+      "text": "to everybody to read it. So Helga, the floor is yours. And thank you all. Thanks again for joining and also for waiting these 10 minutes on having our connectivity restored over the Atlantic. Okay, Helga, it's yours. Thank you, Hannes, and welcome to everyone in this evening or morning session."
+    },
+    {
+      "start": 220.784,
+      "end": 244.384,
+      "text": "of digital humanism you're all aware we have now on a two weekly basis these very interesting presentations and discussions and i greatly look forward and a warm welcome to stuart russell he is a professor of computer science at the university of california in berkeley"
+    },
+    {
+      "start": 244.384,
+      "end": 266.704,
+      "text": "He has received several awards, and between 2012 and 2014, he also helped declare Blaise Pascal Chair in Paris. Stuart's last book is called Human Compatible. He's also the director of his center."
+    },
+    {
+      "start": 266.704,
+      "end": 287.696,
+      "text": "that deals with human compatible and I take it that how not to destroy the world has something to do with what you wrote in this very interesting book about human compatible. I saw also from your abstract that you are going to speak"
+    },
+    {
+      "start": 287.696,
+      "end": 314.736,
+      "text": "about autonomous weapons and I just wanted to remind everyone that quite recently there was a simulated dog fight between an F-14 pilot and an AI and the AI beat the pilot five to one. Stuart, the floor is yours."
+    },
+    {
+      "start": 316.112,
+      "end": 339.664,
+      "text": "Thank you very much, Helga. And I apologize for my part in the delay to the start of this meeting. So let me just bring up my slides. Okay, so I chose this rather boring title."
+    },
+    {
+      "start": 341.712,
+      "end": 369.712,
+      "text": "to prepare you for the very dry material that is going to be in the talk. I've actually deleted most of the mathematics. So let me begin with Alan Turing. So as many of you know, Alan Turing was really the founder of computer science and artificial intelligence. And in 1950,"
+    },
+    {
+      "start": 369.712,
+      "end": 399.696,
+      "text": "He wrote a seminal paper, the paper that includes what we now call the Turing Test, along with ideas about how to create artificial intelligence, including machine learning, and set out many of the subfields of artificial intelligence for the next seven years. But fewer people know that in 1951, he gave us radio."
+    },
+    {
+      "start": 399.696,
+      "end": 429.04,
+      "text": "about the future prospects for the field. And in that talk, he said, it seems probable that once the machine thinking method had started, I'm doing the accent a little bit, it would not take long to outstrip our feeble powers. At some stage, therefore, we should have to expect machines to take control. So he says this with really no mitigation. There's a sense of resignation."
+    },
+    {
+      "start": 429.264,
+      "end": 458.16,
+      "text": "And this is just really a prediction of how the future is going to evolve. So I would like to understand why, and I would like to understand if we can prevent this particular future from taking place. So now fast forward 60 or 70 years, and we have seen a lot of the progress that Turing promised, perhaps not quite as fast as he thought, but..."
+    },
+    {
+      "start": 458.16,
+      "end": 487.984,
+      "text": "in the same order of magnitude, for sure. So we see self-driving cars, we see well-beating Go programs. And the momentum behind artificial intelligence is enormous. So I want to try to explain why the momentum is enormous, besides curiosity. And I want you to cast your mind back."
+    },
+    {
+      "start": 487.984,
+      "end": 517.456,
+      "text": "to 1800. And suppose you wanted to get to Australia in 1800. So you'd have to launch an enormous project. In present day terms, it would probably cost around a billion dollars. You'd have to have multiple ships, hundreds, if not thousands of people. And it would take you about 10 years from the time you started the project until the time you got there. And you'd probably be dead."
+    },
+    {
+      "start": 518.416,
+      "end": 545.536,
+      "text": "But now we have something called travel as a service, which means that travel is available in sort of the same way that electricity and the Internet are available. You take out your phone, you go tap, tap, tap. And for essentially no money and in essentially no time, you're in Australia. So this is what I mean by travel as a service. But there are still lots of things that."
+    },
+    {
+      "start": 545.536,
+      "end": 573.056,
+      "text": "are expensive in our world, especially for people in less developed countries. So the idea of everything as a service is that we would apply the same technological approach to everything that we have done to travel. So it might be organizing, running a large conference. It might be building houses, schools, hospitals, roads. It might be teaching children, training surgeons."
+    },
+    {
+      "start": 573.056,
+      "end": 602.304,
+      "text": "All of these things with general purpose artificial intelligence can become services like travel is today. And when we think about what that would look like, it's not going to look like individual robots, each of which is itself a giant brain. It's going to look like the cloud, a global or regional."
+    },
+    {
+      "start": 602.304,
+      "end": 631.824,
+      "text": "AI system that happens to have physical extensions that can get work done in the real world, whether they're legged robots for moving around inside people's houses or wheeled robots for transporting vast quantities of raw materials. So a conservative estimate of what you could do with that, so leaving out the science fiction, you know, curing cancer and reaching the stars, but just"
+    },
+    {
+      "start": 631.824,
+      "end": 655.696,
+      "text": "Getting the living standards of everyone on Earth to a respectable level. And I paid that respectable level at the 80th percentile of the US living standards. That gives you a tenfold increase in the GDP of the world. And the net present value of that is 13.5 quadrillion dollars."
+    },
+    {
+      "start": 655.696,
+      "end": 683.168,
+      "text": "So that's a very crude estimate of the value of, in just simple monetary terms, the value of achieving general purpose artificial intelligence. So that gives you some idea of why there's a lot of momentum. And then when you look at these vast numbers, like, you know, the Chinese government talking about $150 billion of investment in artificial intelligence, which, you know,"
+    },
+    {
+      "start": 683.168,
+      "end": 710.768,
+      "text": "That's probably more than has been invested in AI in its entire history. That number then starts to look absolutely minuscule. It's a drop in the ocean compared to the size of the prize. And if we have this technology, which is essentially able to generate wealth on request, then arguing over who has more would be like."
+    },
+    {
+      "start": 711.952,
+      "end": 737.232,
+      "text": "over who has more copies of the digital news, it becomes completely mean. And so although we will still find other reasons to kill each other, at least we're taking away one of the major reasons in history that people have killed each other. At the same time, if you have it, then expect that."
+    },
+    {
+      "start": 737.232,
+      "end": 763.904,
+      "text": "AI systems will be able to make better real-world decisions than humans. Just as we already expect that AI systems will make better decisions on the chessboard or the go board, they will make better decisions in the real world. And that brings us back to Turing's point. Entities that are more powerful than humans."
+    },
+    {
+      "start": 763.904,
+      "end": 793.696,
+      "text": "So how do we expect to have power over those entities forever? And that's what I'm going to talk about. And so Stephen Hawking and Max Tegmark and Frank Wilczek and I wrote an editorial in 2014 trying to remind people in some sense of what you're and this is the way it's put in."
+    },
+    {
+      "start": 793.696,
+      "end": 822.192,
+      "text": "We cannot hear you now. The sound has disappeared. We cannot hear you. Okay. I don't know."
+    },
+    {
+      "start": 822.928,
+      "end": 849.392,
+      "text": "It's all about control over the machine. It's still, can you hear me now? Yes, you're back in control. But now there is silence."
+    },
+    {
+      "start": 866.128,
+      "end": 886.576,
+      "text": "Now we can see you. Can we also hear you if you say something? I hope so. Can you hear me now? Yes. All right. Sorry, that was a glitch, I think, on the internet on my end. Okay, let me resume. I think I have to share my screen again."
+    },
+    {
+      "start": 900.432,
+      "end": 930.336,
+      "text": "All right. So first we have to understand the source of the problem. And the source lies within the way we have been thinking about artificial intelligence. So I'll call it the standard model. And this standard model is not just the standard model for AI. It's a standard model for control theory and statistics and operations research."
+    },
+    {
+      "start": 930.336,
+      "end": 958.048,
+      "text": "some branches of economics as well. We create machinery that optimizes an exogenously specified objective. And the problem is we cannot specify those objectives completely and correctly. So then we create a machine that's pursuing an incorrectly specified objective."
+    },
+    {
+      "start": 958.048,
+      "end": 987.424,
+      "text": "And if it's more powerful than us, then in some sense, by definition, it achieves the objective and we don't. Now, this is not a new story, right? We know that King Midas specified the objective that everything he touched should turn to gold. And the gods implemented this objective for him. He didn't have AI, but he had gods."
+    },
+    {
+      "start": 987.424,
+      "end": 1016.544,
+      "text": "Food and his drink and his family all turn to gold and he dies in misery and starvation. Goethe's story of the sorcerer's apprentice. The young apprentice tells the brooms to fetch water, but he doesn't specify the objective correctly. And so they fetch an unbounded amount of water, which causes a huge problem for him. And if you rub a lamp and a genie appears and grants you three wishes."
+    },
+    {
+      "start": 1016.544,
+      "end": 1045.52,
+      "text": "then your third wish is always to please undo the first two wishes because you've ruined everything. And many, many, many cultures have the same proverb, story, legend, myth, telling humans, be careful what you ask for. So we can actually see this happening in real time."
+    },
+    {
+      "start": 1045.52,
+      "end": 1075.408,
+      "text": "for example, in social media. So social media platforms determine what billions of people see, read, listen to for most of their waking lives. And in that sense, they have more power than any propaganda ministry, any ministry of information has ever had in the history of..."
+    },
+    {
+      "start": 1075.504,
+      "end": 1101.84,
+      "text": "of the human race and roughly speaking those algorithms were set up to maximize click-through and so that's the objective and they have done a pretty good job of it and you might think okay well maximizing click-through in order to get people to click on things they have to learn what people want and then send it to them right that seems like a fairly logical thing to do"
+    },
+    {
+      "start": 1101.904,
+      "end": 1130.72,
+      "text": "Unfortunately, that's not how these learning algorithms actually work. What they do is they learn to take actions to modify the state of the world to maximize the reward. For example, if they're banded algorithms or reinforcement learning algorithms, that's how they're set up. And the state of the world is your brain. So they take actions to modify the state of your brain."
+    },
+    {
+      "start": 1130.72,
+      "end": 1160.416,
+      "text": "to get what they want which is to have you click on things um so what they is that you are predictable care what um but they want you to be to be predictable uh because that's how they maximize their awards they learned to turn people"
+    },
+    {
+      "start": 1160.416,
+      "end": 1181.904,
+      "text": "into various kinds to be predictable in their click behavior. And we are unable to switch off the machine because it's generating so much money. The voice is disappearing again. Okay, I'm having a bit more problems."
+    },
+    {
+      "start": 1205.84,
+      "end": 1228.496,
+      "text": "We can read but not hear you. Are you still with us? Stuart?"
+    },
+    {
+      "start": 1257.36,
+      "end": 1270.928,
+      "text": "Stuart, are you still with us? I think we have lost our speaker."
+    },
+    {
+      "start": 1292.528,
+      "end": 1314.448,
+      "text": "So can you hear us? We see you again. We see you again. Yes, I can hear you. Unfortunately, it's the beginning of school and all my children got online. So I have to switch to a different network and move to a different part of the house, which I am doing right now."
+    },
+    {
+      "start": 1338.256,
+      "end": 1367.312,
+      "text": "Okay. Is that better? It's better, but in order to save time, maybe you speed up a bit. I will do that. Very good. Okay. All right. So we established that."
+    },
+    {
+      "start": 1367.312,
+      "end": 1394.864,
+      "text": "social media platforms are optimizing the objective and that's having negative consequences. In fact, the better they do it, the worse the outcome is going to be. And this is a common problem with the standard model of AI, except in the special case where the objective that we specify happens to be exactly correct. So in all other cases,"
+    },
+    {
+      "start": 1394.864,
+      "end": 1421.056,
+      "text": "The better the AI, the worse the outcome is going to be because it's going to make more of a mess of the rest of the world in order to optimize the objective that we've given it. Now, when we think about how we got here, right, it actually made a lot of sense. When in the 40s, when we were thinking about what we meant by artificial intelligence."
+    },
+    {
+      "start": 1421.056,
+      "end": 1450.0,
+      "text": "What we meant was an artificial version of human intelligence and human intelligence. We had at that time, both from philosophy and from economics, from von Neumann, Morgenstern, etc. The idea of the perfectly rational entity, the entity that acts in order to achieve its objectives. And so this was the idealized notion for human intelligence and the natural definition for artificial intelligence then would be machines."
+    },
+    {
+      "start": 1450.0,
+      "end": 1478.352,
+      "text": "are intelligent to the extent that their actions can be expected to achieve their objectives. And we've seen that this way of setting it up then requires us to supply the objectives, which then causes the problem that we face. So I would argue that this standard model is actually an extremely poorly suited methodology for real world deployment of intelligent systems."
+    },
+    {
+      "start": 1479.024,
+      "end": 1507.12,
+      "text": "But we can actually just change a couple of words in this way of thinking. What we really want are machines that are beneficial, meaning beneficial to us, meaning that their actions can be expected to achieve our objectives. So rather than sort of creating this autonomous intelligent machine that is out there in the world just pursuing its objectives."
+    },
+    {
+      "start": 1507.12,
+      "end": 1536.704,
+      "text": "We want technology that is in some sense coupled to us, that it's beneficial to us, not to cockroaches, not to aliens, but it's a human-directed technology. The difficulty with this, of course, is that our objectives are in us. They're not in the machines. And so how is the machine supposed to choose actions that are beneficial to us when the objectives are in us and not in them?"
+    },
+    {
+      "start": 1536.704,
+      "end": 1565.04,
+      "text": "So that's a more difficult problem, but it is actually solvable. So I've been calling this provably beneficial AI. And the basic principles are that the robot's objective is to satisfy human preferences, but it doesn't know what those preferences are because they're in us and we are unable to explicate them completely and correctly."
+    },
+    {
+      "start": 1565.68,
+      "end": 1592.384,
+      "text": "There has to be a grounding of the latent variable, if you like, that references human preferences. And that grounding comes through human behavior. That behavior provides evidence of what our preferences are. It does so imperfectly and noisily through our human cognitive architecture."
+    },
+    {
+      "start": 1592.384,
+      "end": 1620.576,
+      "text": "which often makes mistakes, et cetera, et cetera, as we all know. But that is the source of evidence for human preferences. I mean, technically, I suppose you could use MRI if we ever understood how to read people's brains properly. You could get the preferences directly that way. But for now, it's human behavior. So you can take those principles and define what we call an assistance game, which is just a."
+    },
+    {
+      "start": 1620.576,
+      "end": 1649.328,
+      "text": "In game theory, a mathematically defined problem with two, in simple case, two entities, a human and a machine. And the machine has to solve its half of the assistance game. And when you look at the solutions of the assistance game, you find that the machine will automatically defer to the human because the human's instructions or requests or prohibitions."
+    },
+    {
+      "start": 1649.328,
+      "end": 1678.224,
+      "text": "are evidence about our preferences, and therefore they have force, so to speak. The machine will, if it comes up with a plan that affects parts of the world where it doesn't know your preferences, then it has a motivation to ask permission in order to avoid, shall we say, damaging the world. And in the extreme case, it will allow itself to be switched off."
+    },
+    {
+      "start": 1678.896,
+      "end": 1708.672,
+      "text": "Roughly speaking, in this model of artificial intelligence, the better the AI, the better the outcome, because the AI system will, first of all, be better able to interpret your preferences and also better able to carry out plans that achieve your preferences. So that's good. So let me just illustrate that point about the machine allowing itself to be switched off, because I think this is really the core of the control."
+    },
+    {
+      "start": 1708.672,
+      "end": 1737.456,
+      "text": "problem, right? If we can't switch off our machines, then we've lost. It's game over. So here's, just to illustrate, here's the robot from our lab. It has a big red off switch on the back. And in the classical view, the standard model of AI, you would typically give it some objective, like fetching the coffee. And then assuming that it has sufficient level of intelligence,"
+    },
+    {
+      "start": 1737.456,
+      "end": 1765.792,
+      "text": "it can immediately deduce that it can't fetch the coffee if it's dead. Therefore, it has to disable its off switch. And so this is not a built-in self-preservation instinct. This is simply a consequence of having an objective in the classical sense. It's a prerequisite for a plan that is guaranteed."
+    },
+    {
+      "start": 1765.792,
+      "end": 1793.808,
+      "text": "to succeed in achieving the objective. And so it might take other actions like tasering the customers in the Starbucks. And all of this is because it's pursuing this objective of fetching the coffee as if this is its sole mission in life, because that is how we define things in the standard model of AI. So in the new model, the thinking goes quite differently. The human might switch me off, but only if I'm doing something wrong."
+    },
+    {
+      "start": 1794.672,
+      "end": 1823.024,
+      "text": "Okay, now by the first principle, whatever we mean by wrong, the machine knows that it doesn't want to do it. By the second principle, it may not know what actions it might take that are wrong. But the human in switching the machine off is preventing these actions that the robot does not want to take. And therefore, the robot has an incentive to allow the human to switch it off."
+    },
+    {
+      "start": 1823.824,
+      "end": 1849.84,
+      "text": "And that incentive comes directly from the uncertainty about human preferences. And in fact, as that uncertainty goes away, then the incentive to allow itself to be switched off goes away because then it knows what it's supposed to be doing and it believes that any action it takes is beneficial and therefore being switched off would be harmful."
+    },
+    {
+      "start": 1850.672,
+      "end": 1876.96,
+      "text": "This this kind of reasoning actually can be turned into mathematics in the usual way by writing it in Greek And then you get a theorem right that the robot designed according to this This model is provably beneficial to the human So there's a lot more work to do which I'm not going to go into but I'm sure you're all thinking fast"
+    },
+    {
+      "start": 1876.96,
+      "end": 1906.512,
+      "text": "As I'm talking and coming up with all kinds of objections, and I just want to reassure you, at least in most cases, we've thought about those objections and we're working on them. So the first important area is how we deal with many humans. Not so much because those many humans have a variety of preferences. That's actually perfectly fine. The problem is what action does one take when acting on behalf of multiple humans?"
+    },
+    {
+      "start": 1906.512,
+      "end": 1935.232,
+      "text": "There are always going to be tradeoffs among the preferences of the individuals, even if those preferences are all identical. For example, if everyone wants to be ruler of the universe, well, not everyone can be ruler of the universe. So there's going to be tradeoffs among preferences of humans. And this is, of course, something that moral philosophy has studied for thousands of years and economics has studied for hundreds of years. And a variant of preference utilitarianism."
+    },
+    {
+      "start": 1935.232,
+      "end": 1965.232,
+      "text": "looks like a plausible way forward. There are still questions about, you know, the validity of interpersonal comparisons of preferences. There are questions about variable population sizes, actions that bring into existence or prevent the existence of human beings. I'm sorry for interrupting. Will this be your last slide? Can we concentrate on this? Pretty much. This is the last content slide. Yes."
+    },
+    {
+      "start": 1965.68,
+      "end": 1994.976,
+      "text": "The second topic is how we deal with humans whose behavior is imperfect, which is all of us. So we need to invert human behavior to get at underlying preferences. And so this means developing, I think it means developing models of human cognition so that it can be inverted accurately. There's a lot of technical foundational research to do because what I'm proposing."
+    },
+    {
+      "start": 1994.976,
+      "end": 2024.896,
+      "text": "is to eliminate the assumption that the objective be fixed and known. But every branch of artificial intelligence makes that assumption. And so every branch of artificial intelligence, search, planning, reinforcement learning, and so on, needs to be fixed to allow for uncertainty about the objective and to allow for some type of interaction with the human, with the possessor of the objective, in order that successful behavior should result."
+    },
+    {
+      "start": 2024.896,
+      "end": 2053.68,
+      "text": "And finally, lots and lots of applications are needed merely, I think, mainly to convince industry that these kinds of systems are not just safer, but they are better. They are the kinds of AI systems that people will actually want, as well as the kinds of AI systems that won't destroy the world. So all of those topics and more are summarized in a book that came out last year in English."
+    },
+    {
+      "start": 2053.68,
+      "end": 2082.768,
+      "text": "called Human Compatible, has the same title in German, but it's now available in German as well. So to summarize, I've argued that the standard model for AI is a disaster because as we make AI systems more and more powerful, the outcomes become worse and worse, and eventually we would lose control. I proposed another model for AI called provably beneficial AI."
+    },
+    {
+      "start": 2082.768,
+      "end": 2109.248,
+      "text": "which I believe is not just possible, but it's actually the kind of AI systems that you would really want. And so I want to make this point in red that this is not just about ethics. And I don't want it to be the case that the AI community continues business as usual, while there's an AI ethics community that..."
+    },
+    {
+      "start": 2109.248,
+      "end": 2138.288,
+      "text": "develops all these theories, this actually has to become the way we do AI itself, right? Just as we build bridges that don't fall down and we don't have to keep saying, oh, I build bridges that don't fall down. We just say, I build bridges, right? When we say I build AI, it should be AI that is beneficial and safe. There are two other major problems that I haven't talked about. One, of course, is misuse, right? Why?"
+    },
+    {
+      "start": 2138.288,
+      "end": 2166.048,
+      "text": "Why should Dr. Evil actually use the safe and beneficial version of AI if he wants to take over the world? And I think that's a serious issue we're already seeing with cybercrime. And the other one is overuse. And this is much more insidious that as we develop the possibility for handing over the management of our civilization to machines, we lose the incentive to know how to do it ourselves."
+    },
+    {
+      "start": 2166.048,
+      "end": 2193.36,
+      "text": "And this is a point made by E.M. Forster in his science fiction story, The Machine Stops in 1909, which if you haven't read it, I highly recommend. And it's not an AI problem. This is this is a problem for our culture. And it may become one of the biggest problems that we face. So with that, I'll say thank you. OK."
+    },
+    {
+      "start": 2193.36,
+      "end": 2218.016,
+      "text": "Thank you, Stuart. Can we get rid of your slide, please? Switch it off? Sure. Thanks. Thanks. So I think you took us through a journey between what you call the standard model to the proposal you make about a provable beneficial AI."
+    },
+    {
+      "start": 2218.016,
+      "end": 2232.416,
+      "text": "And it reminded me of similar journeys that economists had to travel when they started out in believing, as you mentioned, you know, the perfect rational man as the model."
+    },
+    {
+      "start": 2232.416,
+      "end": 2257.6,
+      "text": "And it was in the 50s that Herb Simon came up with the concept of satisficing. In other words, to find not the perfect solution, but rather adequate solutions. And this gave a big, big boost to economists how to think about also trade-offs, which are incompatible objectives."
+    },
+    {
+      "start": 2257.6,
+      "end": 2285.584,
+      "text": "in the real world that exists. And we have to grapple with that. And also approximation in mathematics is a big field. And so I think what you mentioned for AI goes through a number of other disciplines and ways of thinking and approaching the world. Now, as you rightly pointed out, the problem is that you still need to specify."
+    },
+    {
+      "start": 2285.584,
+      "end": 2313.76,
+      "text": "the objectives and how to find the kind of bridges between the objectives and ours. But it might also, it just occurred to me, it might also force us to be much more clearer in terms of our own preferences. I mean, you mentioned behavioral traces, but if you think of policymaking, for instance,"
+    },
+    {
+      "start": 2313.76,
+      "end": 2340.768,
+      "text": "You know, there are objectives that are in contradiction to each other. Our preferences, even our values are contradictory very often. And it also forces us to think more clearly about what we can achieve and what we cannot achieve or to reach compromises, which is what part of the real world, especially in politics and policy, also consists of."
+    },
+    {
+      "start": 2340.768,
+      "end": 2365.648,
+      "text": "OK, with this short reaction on my part, I would like to open the discussion. I don't see who wants to speak. It's Ramon Hassani. He was raising the hand. Yes. I mean, Hassani, is it you? I'm just looking up who is raising their hand. Yeah. Thank you. Thank you. Because I don't see."
+    },
+    {
+      "start": 2365.648,
+      "end": 2395.008,
+      "text": "Actually, I wasn't raising hand. I was just clapping for the presentation. Thank you. So it was a comment. Well, it was approval, a sign of approval. Let's leave it at that. So who wants to make a comment or ask a question? Clemens Arbessa, you have. Okay. Yes. Thank you, Professor. That was a very interesting talk. I was wondering."
+    },
+    {
+      "start": 2395.008,
+      "end": 2424.896,
+      "text": "You mentioned that in certain cases, the machine might want to defer to the humans. And doesn't that limit the usefulness of the machine? Because eventually there will be problems that are too hard for humans to solve. And if the machine just defers to the human, then it will make bad decisions because humans wouldn't be able to solve the problem. Yeah, that could happen. When I say defer to the human, meaning that"
+    },
+    {
+      "start": 2424.896,
+      "end": 2454.448,
+      "text": "the human is intervening and saying, stop, for example, right? Because the machine is doing something that is violating human preferences. But, you know, we use machines that solve problems that are too hard for us to solve all the time. And that, you know, most of the time that doesn't cause a problem yet because the,"
+    },
+    {
+      "start": 2454.448,
+      "end": 2480.496,
+      "text": "problems that we have the machine solve are purely computational right we're not in most cases we're not handing over uh real world authority to machines right we're using them as as in some sense electronic calculators uh a vast capability but we're not handing over control but in areas like social media we are handing over control right"
+    },
+    {
+      "start": 2480.496,
+      "end": 2509.344,
+      "text": "It isn't that the social media algorithm is reporting back to Facebook what Clemens should see next, and then Facebook decides what Clemens should see next. The algorithm itself is deciding what you should see next on social media. And this happens over and over and over again, that as soon as you disintermediate the human, machines are doing things that are making people very unhappy."
+    },
+    {
+      "start": 2509.344,
+      "end": 2538.544,
+      "text": "Next question or comment. Can I have a question, Han, as you're speaking here? Since you refer to the, let's say, human objectives and how they can be defined, I think it's strongly linked what we are doing in digital humanism, because we are arguing for integration or combination of social science and humanities, which is somehow a prerequisite for."
+    },
+    {
+      "start": 2538.544,
+      "end": 2566.144,
+      "text": "really discussing and defining such objectives. And the second observation I have is if I really can switch off the machine, I think you don't have real autonomous systems anymore because autonomy really would imply that they are self-sufficient and there is no intervention from the outside. So these are the two comments I have to make. Yeah."
+    },
+    {
+      "start": 2566.144,
+      "end": 2595.12,
+      "text": "I think we don't want real autonomous machines. In fact, I think the more important thing actually is that we humans retain autonomy. And this is an important part of our preference structure. So you could imagine a sequence of states of the world which might be perfectly reasonable, but autonomy for humans means that"
+    },
+    {
+      "start": 2595.536,
+      "end": 2620.144,
+      "text": "counterfactually, we have the ability to turn off from that sequence of states and do something different. So even though we might like that sequence of states, we also want to retain the option for deviating from it. And so machines..."
+    },
+    {
+      "start": 2620.144,
+      "end": 2647.856,
+      "text": "You know, this is one possible solution to the overuse problem, the Wall-E example, right? Machines may at some point say to us, you know, we're asking the machines to do something and the machines will say no. Just as when a child asks the parents to tie their shoelaces to go to school, at some point the parent says, no, you have to tie your own shoelaces. And so."
+    },
+    {
+      "start": 2647.888,
+      "end": 2677.36,
+      "text": "We have to get used to the idea that the machines may say no and give us autonomy. Because if we lose the autonomy, then we lose our civilization. We almost lose what it means to be human at all. Can I just continue here? If you are saying the ultimate goal should be that the humans retain autonomy over the machine."
+    },
+    {
+      "start": 2677.744,
+      "end": 2697.168,
+      "text": "Where in the process do you see the largest obstacles to actually realizing this? I mean, to have a robot that can be switched off is one thing, but as your previous answer to claimants showed, I mean, if you have a huge..."
+    },
+    {
+      "start": 2697.168,
+      "end": 2725.872,
+      "text": "algorithmic machine being set up that controls what you're going to see, that changes the preferences, etc. You know, we're in this entire system that we are creating. Do we have to step on the brake and say, you know, we need new rules here? We need the possibility of keeping autonomy at different levels and at different steps in the process."
+    },
+    {
+      "start": 2727.184,
+      "end": 2757.024,
+      "text": "So I think this is the governance question, right? So it's one thing for me to write papers and so on, but that doesn't translate into changes in the real world unless there are real regulations about how AI systems are designed. And I wouldn't say that we're ready yet to stipulate and promulgate those regulations, but in other areas,"
+    },
+    {
+      "start": 2757.024,
+      "end": 2785.872,
+      "text": "such as nuclear power or even electricity. There are laws and regulations and standards that have been developed over decades and decades, and those have force in the real world in terms of what the commercial actors can do and what the government actors do. And it's inevitable that with a technology as powerful as AI,"
+    },
+    {
+      "start": 2785.872,
+      "end": 2812.832,
+      "text": "there are going to have to be rules that have real teeth. And the IT industry has operated for decades by saying, don't regulate us, don't kill the goose that lays the golden egg. And they're now by far the most powerful."
+    },
+    {
+      "start": 2812.832,
+      "end": 2840.128,
+      "text": "non-governmental entities in the world I mean I think it's eight of the top 10 companies in the world are IT companies but if we want to retain human autonomy there has to be the ability for governments to regulate and I think one place to start that I like and I think there's some support in the UN for this is that there should be a human right to know"
+    },
+    {
+      "start": 2840.128,
+      "end": 2869.808,
+      "text": "whether you're interacting with a machine or a person. This is one part of it, but, you know, maybe this is worth for another discussion. Hannes, are there other questions that you see? Yes. So let's start with Peter Micho. I think he was first and then Eric. Please do your questions short. So because I think slowly we are running out of time."
+    },
+    {
+      "start": 2870.672,
+      "end": 2896.576,
+      "text": "Okay, so I think we should not talk about one machine, but the whole system, the cloud, or the society. I mean, we humans have different wishes, and we don't want that the whole system just goes over reasonable wishes. So democracy, for example, is such a thing."
+    },
+    {
+      "start": 2896.576,
+      "end": 2909.568,
+      "text": "And it should take wishes of single persons, wishes of groups, but it should not be the tyranny of the majority."
+    },
+    {
+      "start": 2909.568,
+      "end": 2934.912,
+      "text": "And the whole machine system must take care of this. So I think just playing a beneficial game for one machine only is not enough. One must play this game for the whole system, I think. Yes. Yeah. Yeah. No way. So when I say one machine, this is just an example."
+    },
+    {
+      "start": 2934.912,
+      "end": 2964.768,
+      "text": "The general definition of assistance games includes arbitrary numbers of people and arbitrary numbers of machines. But having said that, machines have the capability to merge in ways that we don't think of humans as being able to do. So in a real sense, you could have a single machine. It simply requires that there be enough communication bandwidth."
+    },
+    {
+      "start": 2964.768,
+      "end": 2990.576,
+      "text": "that the perceptions of individual physical extensions of the machine can be shared fast enough to achieve a global state estimate. But yeah, I think the practical issues, I mean, the points you make about individual preferences, sure."
+    },
+    {
+      "start": 2991.248,
+      "end": 3020.848,
+      "text": "There's not one preference model. There are eight billion preference models. That's completely fine. And there's no need for a tyranny of the majority. Individual preferences can be respected as long as they're not damaging the preferences of lots of other people. That's completely fine. I think the problem comes when you have machines that are."
+    },
+    {
+      "start": 3021.52,
+      "end": 3050.944,
+      "text": "They're sort of entering the system designed by, you know, unknown groups for unknown reasons where you can no longer rely on certain safety properties of those machines. So achieving agreement among heterogeneous machines where when you have no reliable assumptions can be made about the software of the other machine, that's pretty difficult."
+    },
+    {
+      "start": 3050.944,
+      "end": 3080.448,
+      "text": "And you get into all kinds of prisoner's dilemma problems when you solve those games. So this is one reason I think why you want strict regulation on the design and machine. So just as in the app store, your app is not allowed to be sold, is not allowed to appear in the app store unless it passes a whole set of software checks to make sure that it doesn't freeze up your phone or steal data from the other apps and so on and so forth."
+    },
+    {
+      "start": 3080.448,
+      "end": 3106.432,
+      "text": "you would have regulations that say software systems do not get to connect to the internet and they cannot be sold unless they meet a whole set of software checks. Okay, I think it is helpful also to think in terms of complexity. It's a highly complex system we are dealing with and depending on the different component parts and how they come together."
+    },
+    {
+      "start": 3106.432,
+      "end": 3134.16,
+      "text": "I mean, it answers, I think, also Peter's question. Eric, you want it? Yeah. Many thanks, Stuart, for this discussion. I very much appreciate the focus and shift towards human values. However, at the same time, I think when human values become central to what you're trying to achieve,"
+    },
+    {
+      "start": 3134.16,
+      "end": 3161.872,
+      "text": "You have to point out that the notion of human values is extremely contested, both in psychology and philosophy. It's not clear whether human values exist or they are just attributed. And I think the example you have given for content moderation in social networks is a good one. Today, we do not even..."
+    },
+    {
+      "start": 3161.872,
+      "end": 3189.888,
+      "text": "know what would be a good discourse in social media. It's far from clear what this should look like. All you would get is the preference of a million people and then probably you would get what people are trying to avoid on that very medium. So I think this is very unclear. And maybe another comment coming from a school of embodied AI would be that"
+    },
+    {
+      "start": 3189.888,
+      "end": 3218.688,
+      "text": "The important aspect of these machines would be that they can learn and deduce human values from observing people, basically. And that must involve their bodily movements. And we are back to, I guess, Dreyfus' criticism of it is virtually impossible. And basically, you would end up having to educate people in the way that nowadays we try to do with our young."
+    },
+    {
+      "start": 3218.688,
+      "end": 3248.176,
+      "text": "and as they become responsible members of society. Okay, so you made a number of points. I think one important point is that, no, we are not trying to build a definition of human values into the machine. There is no definition of human values."
+    },
+    {
+      "start": 3248.4,
+      "end": 3276.752,
+      "text": "As you know, of course, everyone has different preferences. So think of it this way. Right. If I could lay out two futures. In as much detail as you want and you can spend as much time as you want looking at those futures and you can come back at the end and you can say, you know, I like future A. I'm much better than future B. Right. That's all I mean. And. So eight billion."
+    },
+    {
+      "start": 3276.88,
+      "end": 3306.288,
+      "text": "preference models, one for each person, which says, okay, what future does that person prefer or not prefer? That's all. So I'm not saying, okay, we're going to build Christian values or Confucian values or any other kind of values into the machine. And your preferences about the future include your values. And that's fine. And to the extent that your"
+    },
+    {
+      "start": 3306.288,
+      "end": 3333.776,
+      "text": "your values conflict with other people's, then there has to be some trade-off resolution. So there's nothing magical happening here, but it's also at the same time not a problem. But the other point I think was illustrated, that you were saying that there isn't a clear definition of what we want, the online..."
+    },
+    {
+      "start": 3333.776,
+      "end": 3361.024,
+      "text": "dialogue, our content selection to look like. That's precisely the point. We don't know what the objective exactly should be. And so we want machines, therefore, that actually behave more cautiously, that try to learn more about what makes sense."
+    },
+    {
+      "start": 3361.024,
+      "end": 3386.16,
+      "text": "And don't mess with parts of the world where they don't know how we would like it to be arranged. We have Christina. No. No question. Let me raise my hand. Sorry. OK, no. Just because you were on my screen, I thought you were waiting."
+    },
+    {
+      "start": 3387.856,
+      "end": 3417.056,
+      "text": "Sorry, Gabor Rechke is asking a question. Gabor? Yes, thank you. And thank you, Professor Russell, for a very interesting talk. Just one short question. The assumption that the best thing we can do for AI is to make sure that it never becomes truly autonomous. Isn't that influenced very much by the assumption that"
+    },
+    {
+      "start": 3417.056,
+      "end": 3444.848,
+      "text": "this intelligence that will one day be superior to ours will be just as unreliable in deciding things for us as we have proved to be unreliable in deciding things for creatures with inferior intelligences. I understand the assumption, but is it not a pessimistic one?"
+    },
+    {
+      "start": 3447.088,
+      "end": 3475.632,
+      "text": "So it's not pessimistic. And I think we could certainly come to the conclusion over decades that really we'd be better off having all the major decisions being made by machines. And that's fine. So we would still, in some sense, retain"
+    },
+    {
+      "start": 3476.016,
+      "end": 3503.056,
+      "text": "but we just wouldn't be using it. But you're speaking about a future generation, not about us right now, because I don't think we want, you know, the kind of Leviathan machine. We cannot speak about what future generations will want and will be ready to accept. Hannes, are there more questions?"
+    },
+    {
+      "start": 3503.056,
+      "end": 3532.448,
+      "text": "I would like to ask a question, if it's possible. I keep writing. My name is Alec B. Balascescu. Can you hear me? If I'm an anthropologist, then I write about those things sporadically. So, Professor Russell, thank you very much. I'm a big admirer of your work. I did read your book and the edited book with a collection of writers."
+    },
+    {
+      "start": 3532.448,
+      "end": 3560.256,
+      "text": "on artificial intelligence and um as an anthropologist i would like to ask you do you think that somehow artificial intelligence is a misnomer because we don't know what artificial is a category that is created by humans in order to separate ourselves from the supposedly nature whereas we are part of nature but this created a lot of problems in the last 400 years this separation"
+    },
+    {
+      "start": 3560.256,
+      "end": 3589.152,
+      "text": "And second of all, intelligence, we don't really know what that is either. But by projecting this ideal type, like almost like a Platonist, an ideal type of intelligence, we expect too much from the machines and we forgot to relate to them as tools. So my impression is that we are like a three-year-old person with a hammer. Everything becomes a nail. So I was wondering if you can briefly comment on that."
+    },
+    {
+      "start": 3589.152,
+      "end": 3616.624,
+      "text": "at the current stage? Yeah, it's an interesting question as to whether the name artificial intelligence helped to cement the standard model of the autonomous intelligent entity pursuing its objectives separate from humans. And yeah, that's probably true. I'm not sure what name we would have"
+    },
+    {
+      "start": 3616.912,
+      "end": 3644.304,
+      "text": "used back in the 50s in order to get a better outcome. But it's interesting when you look back at the history, there was a lot of debate about what the field should be called. And I think there were issues to do with not wanting to just be subsumed within control theory, of wanting to..."
+    },
+    {
+      "start": 3644.304,
+      "end": 3673.392,
+      "text": "you know, escape from behaviorist psychology. There were various forces that led it to be called artificial intelligence, partly just, you know, thinking that it would be attractive from the point of view of funding. So I don't yet have a good name for the new version that I'm trying to bring about. So I've been calling it provably beneficial."
+    },
+    {
+      "start": 3673.552,
+      "end": 3688.96,
+      "text": "And the word beneficial is intended to sort of couple it to humans, right? That's beneficial to whom? Well, to us. But maybe there's another name you could come up with and please send me suggestions."
+    },
+    {
+      "start": 3688.96,
+      "end": 3718.544,
+      "text": "I think these names are not one person's decision or one group's decision in the end. They are accepted by the wider community. Do they resonate? Sometimes they turn out to be a misnomer. But then we have another model in mind to which we compare it. And I think by opening up the discussion, you make us think and others make us think, what would indeed, what would be a better way to capture them?"
+    },
+    {
+      "start": 3718.544,
+      "end": 3746.72,
+      "text": "meaning of what we are trying to say. I think we have to look at the timing. Maybe one more question. It was Jeff who was raising the hand. Jeff, I think it was you. So let's take this last question, Helga. It's Jeff Kramer. Thanks very much for your talk, Stuart. It was very interesting. What I actually wanted to ask you was related to regulation."
+    },
+    {
+      "start": 3746.72,
+      "end": 3775.776,
+      "text": "You've mentioned regulation as one of the aspects that may relate to and how we deal with AI. And I'm very unclear, I have to admit, as to how governments, bodies such as your own government or the EU or actually how we should be trying to advise them as to what kind of regulation should be introduced in order to ensure that this kind of autonomy."
+    },
+    {
+      "start": 3775.776,
+      "end": 3804.192,
+      "text": "is maintained, let's say, in the hands of individuals or people, rather than given over to the Facebooks and Googles and everyone else who seem to actually have a rather large control over what goes on at the moment. Is there anything you could or would wish to advise as to how we should go about, as I said, introducing regulation? Yeah, that's a great question."
+    },
+    {
+      "start": 3804.192,
+      "end": 3831.792,
+      "text": "And I would say not yet. So as I mentioned before, I do believe that one could write rules about the design of software and say all AI systems that are deployed have to conform to various templates that have provably safe properties. But the other question is really about where is the control?"
+    },
+    {
+      "start": 3831.888,
+      "end": 3858.992,
+      "text": "And at the moment, if you take out your phone and just look at it, you have 50 representatives of giant corporations sitting in your pocket, listening to you, reading your email, listening to your text, reading your text, et cetera, et cetera. I mean, everything on your phone is there to extract money from you and to give other people power over you. So I think there needs to be a sort of a..."
+    },
+    {
+      "start": 3858.992,
+      "end": 3888.016,
+      "text": "change in the structure of the industry so that effectively your phone is a device that's working on your behalf and somewhere else are the corporations and the services they can provide and the software on your phone is negotiating with them on your behalf to get favorable conditions to say what you're willing to listen to in the way of advertising or not, how much of your information, if any."
+    },
+    {
+      "start": 3888.016,
+      "end": 3914.336,
+      "text": "can never migrate off your phone into their databases and so on. So it would be very much, you know, rather than starting from we own everything and you have no say to I own everything and you can ask my permission and my agent will discuss it with you, right? And so that requires a kind of a sea change."
+    },
+    {
+      "start": 3914.336,
+      "end": 3939.296,
+      "text": "in the structure of the industry and I think the EU is the most likely place to bring that about. But it also shows, if I may end this very interesting session that we had today, it also shows that in the end it's also about power and power, how it is distributed, how it is structured between humans."
+    },
+    {
+      "start": 3939.296,
+      "end": 3963.504,
+      "text": "So one thing is to say humans should be in control, but we also have to look at who controls the controllers and similar kind of questions. And this brings back the ball into society. So now I would like to turn. Thank you very much, Russell. And thanks, everyone who participated in the discussion. Now it is Peter Knies."
+    },
+    {
+      "start": 3963.504,
+      "end": 3990.976,
+      "text": "And those of you who have not participated before, we always end these sessions with a short musical greeting. And tonight it's Peter Kness who has selected it together with Carlo Ghezzi. Peter. Thank you very much, Helga. And also thank you very much, Stuart. So yeah, I decided to call this final segment Final Notes. Maybe that will stick. Let's see. But for the..."
+    },
+    {
+      "start": 3990.976,
+      "end": 4019.904,
+      "text": "Final notes, today we will play a human computer co-performed piece by Dan Tapfer, in which he added an algorithmic dimension of inversion and therefore defamiliarization to the Goldberg variations by Johann Sebastian Bach. And as you said, the piece was proposed by Carlo Ghezzi. I don't think he's here at the moment, because in that case I would ask him to briefly introduce it. But if he's not here, I will quickly say a few words why I think it's interesting."
+    },
+    {
+      "start": 4019.904,
+      "end": 4048.352,
+      "text": "I gladly included it to be played in the context of digital humanism, as it's partly computer-generated music. However, the human part and the contribution is still clear. And what happens is that Dan Tapfer plays the Goldberg Variations, and we will listen to Variation 1, on a disc clavier. And after finishing, his interpretation is chromatically inverted and automatically generating a new piece, which is at the same time familiar and unfamiliar."
+    },
+    {
+      "start": 4048.352,
+      "end": 4077.264,
+      "text": "I will play it next, but before, let me remind you of our next event on the 22nd of September with the talk, NAI and Computer Science Dilemma, Could I, Should I? by Barbara Gross from Harvard University. So while I'm setting up the, or sharing the screen, I thank you for joining us today and look forward to seeing you next time. And let's see if this works."
+    },
+    {
+      "start": 4105.712,
+      "end": 4121.264,
+      "text": "Thank you."
+    },
+    {
+      "start": 4192.4,
+      "end": 4202.8,
+      "text": "Thank you all. And we will see us on September 22nd at 5 p.m. with Barbara Cross. Goodbye. Bye. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

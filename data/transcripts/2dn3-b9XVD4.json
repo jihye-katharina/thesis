@@ -1,0 +1,196 @@
+{
+  "video_id": "2dn3-b9XVD4",
+  "source": "whisper",
+  "language": "en",
+  "text": "So, good morning. Welcome. Welcome to this workshop on digital humanism. And also welcome to this new lecture hall. It's the first event in this lecture hall. It was just redone. and reopened two weeks ago. So this is really the first bigger event we have here. My name is Hannes Wertner. I'm the organizer, or one of the organizers, of this event. And at the same time, I'm the Dean of the Faculty of Informatics here at TU Wien. Thanks for coming. Thanks to the speakers. and for your fast responses to the respective invitations. Obviously, it's a hot topic. Thanks to the participants, and I'm looking forward to your participation in the discussion. We have participants from all over Europe, so it's not just a Viennese-American event. It's a European-American event with this respect. I also thank the co-organizers and sponsors. which is the municipal department 23 on economic affairs, labor, and statistics with Mr. Himperle. He will give a short introduction afterwards. And the Vienna Science and Technology Fund, Mr. Stampfer, who will also give a short intro. And he somehow had the initial idea, I have to confess, so it's the funding agency pushing us forward, and I'm thanking him for this impact. I would also like to thank the team organizing this event, and I will introduce them afterwards, since all of them, they have specific tasks during this event, so I will present them afterwards. The topic is hot. Computer science is diffusing our artifacts, either in methods or, let's say, programs all over. We change the world, we say, or we participate in changing the world. As Moshe said, we should think about who has the will. And we are changing the world. We are co-changers in some sense to the good and the bad. And we have to reflect on that. We have to reflect as a community, computer science community, academics, but not only academics. And for this reflection, we also need other disciplines. We are not enough for having this reflection. speaking about the political level. I'm really speaking about the intellectual level where we need other disciplines and to discuss these different issues. So it's also an experiment, this workshop. I hope it's only the first in a line of several workshops where we are coming from different disciplines and there will be one experiment whether or not we speak the same language. Syntactically, I'm quite sure, but semantically... Sometimes we have our doubts. Final remark. Content-wise, we will have a proposal to you on Friday afternoon as a wrap-up, some form of a declaration or a memorandum or something on the results of this workshop and maybe possible next steps into the future. And we want to discuss this with you at the end of this two-day workshop. With this, I come to the technical issues, which are also important, not only the content, so that we feel well during these two days. It's a dense program, so speakers will not be introduced explicitly because everything is on the website, so you can look it up, please, so that we have saved some time. We have 35 minutes presentation and then 15 to 20 minutes discussion. Every two presentations will be a break, either coffee break or lunch. There will be coffee served this morning, this afternoon, tomorrow morning, afternoon, and there are two lunch outside. You saw the tables, and we have a social dinner tonight. Regarding these coffee breaks and lunch, we ask you not to bring the glasses and cups into the lecture hall because we have to wash them while you are. We have the other presentations. We only have, yeah, we are, let's say, a university department and have some limited coffee cups, okay? We have a lot, but not so many, so we cannot serve two breaks in a line. So this is a question to you. There will be recording by the Austria Broadcasting Corporation Radio. And she asks for your permission that this is used also in her transmission. So if you do not agree with that, please, before your presentation, tell us. And she will use all of this for some respective interviews. And I'm happy that they're here because it also gives us some outside impact. So we are not only academics here. For this, I also ask you to use the mic so that also the questions can be recorded. In the breaks, you could have a look at the exhibition. I don't know who of you has already seen. Outside, we as a faculty, and then I really stop because I'm too long already. We have an exhibition which is called Adventure Informatics, Abenteuer Informatics. This big, big, big, how do you say? Something where you can have a look at it. Sometimes it's hard to find the ink. Posters, yeah, posters. And it's especially for pupils of secondary schools. And the objective is to bring all pupils of Vienna to our department so they can have a look at this very well-done exhibition. So you can have a look afterwards. It's a bit, it's only in German, but you will understand because it's principles of informatics. Wireless LAN is available. So if you have Eduroam, you can directly. If not Eduroam, Ms. Vugovic, she's the lady at the registration. She has passwords for you. So if you do not have access via Eduroam, you can go to her and she will give you the password to have the respective access. Mete, standing here, and also Julia, sitting here. And Peter, they are supporting in the technical stuff and also content-wise. And if you need something for a coffee, you ask me. Okay? Thanks again for coming. And now I ask Mr. Himpele for his short words of introduction. And I would like to thank them again for co-organizing and also co-funding this event. Thank you. Yeah, thank you, Hannes. Ladies and gentlemen, dear guests, very welcome on behalf of the city of Vienna and at the same time a warm thanks to Hannes Wörtner for organizing this special event. The city of Vienna is proud to support this special event because it's really, as you mentioned before, a hot topic. My name is Clemens Himpeler, as mentioned by Hannes. I'm the head of the department, municipal department 23, which is in charge of economic affairs, labor and statistics, and also in charge of the innovation strategy of the city of Vienna. And innovation has always played a key role in Vienna's success stories in the past, let's say, 100 years with interruptions. This year, Vienna and Austria celebrates more than one centenaries. 100 years of democracy of all levels of government in Austria after the collapse of the Austro-Hungarian Empire after World War I in 1918. 100 years of women's right to vote in Austria. And 100 years of innovation. Innovation in social terms, meaning giving more rights to the people, building a better future for people through innovation. One major innovation in Vienna is world famous, I would say. The worst problem after World War I in Vienna was indeed precarious housing situation for the people living here. Vienna then new elected government started at that point an initiative to build 65,000 flats for the Viennese people. And this innovation completely changed the situation in the city of Vienna and for hundreds of thousands of people living here. I'm talking about the Viennese model of Gemeindebauten, of social housing, and up to today, 60% of the Viennese live either in a social housing project or in a cooperative housing project, which I think is a single number of all cities, at least in the European Union, but probably around the world. And these buildings still offer affordable housing for the population. And earlier this year, just two or three weeks ago, the city of Vienna was judged to offer the best quality of living as a city by the consulting group Mercer the 10th year in a row. The question is, why do I tell you this? We are in the midst, and Hannes Wertner mentioned this, we are in the midst of the digital transformation of our society. Almost everybody is organizing his and her life around the omnipresent smartphone. Artificial intelligence, big data and robotics open doors to new and enriching possibilities in medicine, industry and other kinds of services. We are at a crossroads for our future and the issue is how to put the human... at the center and how to combine technological with social innovation in a democratic process. Vienna has always been a place to start thinking anew, finding innovative ways with the human at the center. And this is why I think that Vienna is the ideal place to think anew on the topic of digital humanism. So let us start and thank you for coming again. Michael, the term is yours. Michael Stampfer is the head of the Vienna Science and Technology Fund. And standing in the way to the first real speaker, thanks to all of you to have organized this impressive workshop and that you agreed to come to Vienna. A few months ago, we had a discussion in the advisory board of the faculty, and I brought in this crazy idea and thought these guys will throw me out in five minutes, and now we are here, so quick reaction time from all sides. Many thanks. We may throw you out at the end. Okay. No problem with that, but that's already on a higher level, so we have made some progress here. Our ideas about branding Vienna, about giving Vienna a special position in this discussion date back around two years or so, where in first rounds we have evolved such ideas. that Vienna with its tradition, Clemens has talked about it, also the tradition of reinventing modernity 100 years ago in various intellectual circles might be revived somehow for these pressing and topical questions. And our main aim is, of course, to help make society better, but as a first step to... help you computer scientists to be more context aware. Some of you have harsher words for context awareness, but Moshe and others will come forward with that. But also for the social sciences and humanities to be more engaged in this digital debate. because there are also some islands of ignorance in the social sciences still for the digital world. And people like ourselves, we just have to get out of the bubble of feeling of feeling that we do the right things anyway, we have to change and speed up. WWTF, Vienna Science and Technology Fund, is a small foundation close to the city of Vienna. We are already preparing some initiatives on digital humanism, but the city itself is on the way with the first pilot program. acting now and we will feed what you tell us today and tomorrow directly into the preparation of first funding initiatives. Our very first contribution will be that we will order a few hundred coffee mugs with digital humanism printed on it so everybody has it in the morning before his or her eyes. Vienna is a strong and inclusive city. What Clemens told about social housing in the last century, we are doing with a very inclusive smart city approach now. We are continuing that. And innovation is never in Vienna an affair of elites only, but an affair of broad social inclusion. with us together evolve today and tomorrow will immediately feed into these processes and help us in staying the best city in the world. Many thanks. Thank you, Michael. I forgot to thank those who brought forward the ideas for the speakers and who put together the program. It's the International Advisory Board of the Faculty of Computer Science, which we established three years ago. It's Nadja Talman. She cannot be here. She's from Singapore, and she couldn't make the travel. It's Hans Ackermans from the Freie University of Amsterdam. It's Carlo Gezzi from Politecnico di Milano. He's the chair of the board. It's Moshe Wadi from the Rice University. And it's Edward Lee, who will moderate the first session. Edward is coming from the University of Berkeley. He's a thinker of Plato and the nerds, which is maybe one of his major contributions to the philosophy of computer science. The word is yours. Thank you.",
+  "segments": [
+    {
+      "start": 1.648,
+      "end": 31.376,
+      "text": "So, good morning. Welcome. Welcome to this workshop on digital humanism. And also welcome to this new lecture hall. It's the first event in this lecture hall. It was just redone."
+    },
+    {
+      "start": 31.376,
+      "end": 58.208,
+      "text": "and reopened two weeks ago. So this is really the first bigger event we have here. My name is Hannes Wertner. I'm the organizer, or one of the organizers, of this event. And at the same time, I'm the Dean of the Faculty of Informatics here at TU Wien. Thanks for coming. Thanks to the speakers."
+    },
+    {
+      "start": 58.208,
+      "end": 87.712,
+      "text": "and for your fast responses to the respective invitations. Obviously, it's a hot topic. Thanks to the participants, and I'm looking forward to your participation in the discussion. We have participants from all over Europe, so it's not just a Viennese-American event. It's a European-American event with this respect. I also thank the co-organizers and sponsors."
+    },
+    {
+      "start": 87.712,
+      "end": 117.312,
+      "text": "which is the municipal department 23 on economic affairs, labor, and statistics with Mr. Himperle. He will give a short introduction afterwards. And the Vienna Science and Technology Fund, Mr. Stampfer, who will also give a short intro. And he somehow had the initial idea, I have to confess, so it's the funding agency pushing us forward, and I'm thanking him for this impact."
+    },
+    {
+      "start": 117.312,
+      "end": 144.848,
+      "text": "I would also like to thank the team organizing this event, and I will introduce them afterwards, since all of them, they have specific tasks during this event, so I will present them afterwards. The topic is hot. Computer science is diffusing our artifacts, either in methods or, let's say, programs all over. We change the world, we say, or we participate in changing the world."
+    },
+    {
+      "start": 144.848,
+      "end": 171.872,
+      "text": "As Moshe said, we should think about who has the will. And we are changing the world. We are co-changers in some sense to the good and the bad. And we have to reflect on that. We have to reflect as a community, computer science community, academics, but not only academics. And for this reflection, we also need other disciplines. We are not enough for having this reflection."
+    },
+    {
+      "start": 171.872,
+      "end": 199.872,
+      "text": "speaking about the political level. I'm really speaking about the intellectual level where we need other disciplines and to discuss these different issues. So it's also an experiment, this workshop. I hope it's only the first in a line of several workshops where we are coming from different disciplines and there will be one experiment whether or not we speak the same language. Syntactically, I'm quite sure, but semantically..."
+    },
+    {
+      "start": 199.872,
+      "end": 228.592,
+      "text": "Sometimes we have our doubts. Final remark. Content-wise, we will have a proposal to you on Friday afternoon as a wrap-up, some form of a declaration or a memorandum or something on the results of this workshop and maybe possible next steps into the future. And we want to discuss this with you at the end of this two-day workshop."
+    },
+    {
+      "start": 229.392,
+      "end": 258.896,
+      "text": "With this, I come to the technical issues, which are also important, not only the content, so that we feel well during these two days. It's a dense program, so speakers will not be introduced explicitly because everything is on the website, so you can look it up, please, so that we have saved some time. We have 35 minutes presentation and then 15 to 20 minutes discussion."
+    },
+    {
+      "start": 258.896,
+      "end": 288.736,
+      "text": "Every two presentations will be a break, either coffee break or lunch. There will be coffee served this morning, this afternoon, tomorrow morning, afternoon, and there are two lunch outside. You saw the tables, and we have a social dinner tonight. Regarding these coffee breaks and lunch, we ask you not to bring the glasses and cups into the lecture hall because we have to wash them while you are."
+    },
+    {
+      "start": 288.736,
+      "end": 313.84,
+      "text": "We have the other presentations. We only have, yeah, we are, let's say, a university department and have some limited coffee cups, okay? We have a lot, but not so many, so we cannot serve two breaks in a line. So this is a question to you. There will be recording by the Austria Broadcasting Corporation Radio."
+    },
+    {
+      "start": 313.872,
+      "end": 342.96,
+      "text": "And she asks for your permission that this is used also in her transmission. So if you do not agree with that, please, before your presentation, tell us. And she will use all of this for some respective interviews. And I'm happy that they're here because it also gives us some outside impact. So we are not only academics here. For this, I also ask you to use the mic so that also the questions can be recorded."
+    },
+    {
+      "start": 342.96,
+      "end": 371.216,
+      "text": "In the breaks, you could have a look at the exhibition. I don't know who of you has already seen. Outside, we as a faculty, and then I really stop because I'm too long already. We have an exhibition which is called Adventure Informatics, Abenteuer Informatics. This big, big, big, how do you say? Something where you can have a look at it."
+    },
+    {
+      "start": 371.216,
+      "end": 396.8,
+      "text": "Sometimes it's hard to find the ink. Posters, yeah, posters. And it's especially for pupils of secondary schools. And the objective is to bring all pupils of Vienna to our department so they can have a look at this very well-done exhibition. So you can have a look afterwards. It's a bit, it's only in German, but you will understand because it's principles of informatics."
+    },
+    {
+      "start": 396.8,
+      "end": 419.456,
+      "text": "Wireless LAN is available. So if you have Eduroam, you can directly. If not Eduroam, Ms. Vugovic, she's the lady at the registration. She has passwords for you. So if you do not have access via Eduroam, you can go to her and she will give you the password to have the respective access."
+    },
+    {
+      "start": 419.456,
+      "end": 447.44,
+      "text": "Mete, standing here, and also Julia, sitting here. And Peter, they are supporting in the technical stuff and also content-wise. And if you need something for a coffee, you ask me. Okay? Thanks again for coming. And now I ask Mr. Himpele for his short words of introduction. And I would like to thank them again for co-organizing and also co-funding this event. Thank you. Yeah, thank you, Hannes."
+    },
+    {
+      "start": 450.48,
+      "end": 469.04,
+      "text": "Ladies and gentlemen, dear guests, very welcome on behalf of the city of Vienna and at the same time a warm thanks to Hannes Wörtner for organizing this special event. The city of Vienna is proud to support this special event because it's really, as you mentioned before, a hot topic."
+    },
+    {
+      "start": 469.04,
+      "end": 496.4,
+      "text": "My name is Clemens Himpeler, as mentioned by Hannes. I'm the head of the department, municipal department 23, which is in charge of economic affairs, labor and statistics, and also in charge of the innovation strategy of the city of Vienna. And innovation has always played a key role in Vienna's success stories in the past, let's say, 100 years with interruptions. This year, Vienna and Austria celebrates more than one centenaries."
+    },
+    {
+      "start": 496.4,
+      "end": 522.256,
+      "text": "100 years of democracy of all levels of government in Austria after the collapse of the Austro-Hungarian Empire after World War I in 1918. 100 years of women's right to vote in Austria. And 100 years of innovation. Innovation in social terms, meaning giving more rights to the people, building a better future for people through innovation."
+    },
+    {
+      "start": 522.608,
+      "end": 547.04,
+      "text": "One major innovation in Vienna is world famous, I would say. The worst problem after World War I in Vienna was indeed precarious housing situation for the people living here. Vienna then new elected government started at that point an initiative to build 65,000 flats for the Viennese people."
+    },
+    {
+      "start": 547.04,
+      "end": 573.616,
+      "text": "And this innovation completely changed the situation in the city of Vienna and for hundreds of thousands of people living here. I'm talking about the Viennese model of Gemeindebauten, of social housing, and up to today, 60% of the Viennese live either in a social housing project or in a cooperative housing project, which I think is a single number of all cities, at least in the European Union, but probably around the world."
+    },
+    {
+      "start": 574.032,
+      "end": 599.36,
+      "text": "And these buildings still offer affordable housing for the population. And earlier this year, just two or three weeks ago, the city of Vienna was judged to offer the best quality of living as a city by the consulting group Mercer the 10th year in a row. The question is, why do I tell you this? We are in the midst, and Hannes Wertner mentioned this, we are in the midst of the digital transformation of our society."
+    },
+    {
+      "start": 599.36,
+      "end": 625.44,
+      "text": "Almost everybody is organizing his and her life around the omnipresent smartphone. Artificial intelligence, big data and robotics open doors to new and enriching possibilities in medicine, industry and other kinds of services. We are at a crossroads for our future and the issue is how to put the human..."
+    },
+    {
+      "start": 625.44,
+      "end": 653.072,
+      "text": "at the center and how to combine technological with social innovation in a democratic process. Vienna has always been a place to start thinking anew, finding innovative ways with the human at the center. And this is why I think that Vienna is the ideal place to think anew on the topic of digital humanism. So let us start and thank you for coming again."
+    },
+    {
+      "start": 658.032,
+      "end": 684.48,
+      "text": "Michael, the term is yours. Michael Stampfer is the head of the Vienna Science and Technology Fund. And standing in the way to the first real speaker, thanks to all of you to have organized this impressive workshop and that you agreed to come to Vienna."
+    },
+    {
+      "start": 684.48,
+      "end": 712.832,
+      "text": "A few months ago, we had a discussion in the advisory board of the faculty, and I brought in this crazy idea and thought these guys will throw me out in five minutes, and now we are here, so quick reaction time from all sides. Many thanks. We may throw you out at the end. Okay."
+    },
+    {
+      "start": 712.832,
+      "end": 742.592,
+      "text": "No problem with that, but that's already on a higher level, so we have made some progress here. Our ideas about branding Vienna, about giving Vienna a special position in this discussion date back around two years or so, where in first rounds we have evolved such ideas."
+    },
+    {
+      "start": 742.592,
+      "end": 771.04,
+      "text": "that Vienna with its tradition, Clemens has talked about it, also the tradition of reinventing modernity 100 years ago in various intellectual circles might be revived somehow for these pressing and topical questions. And our main aim is, of course, to help make society better, but as a first step to..."
+    },
+    {
+      "start": 771.04,
+      "end": 795.392,
+      "text": "help you computer scientists to be more context aware. Some of you have harsher words for context awareness, but Moshe and others will come forward with that. But also for the social sciences and humanities to be more engaged in this digital debate."
+    },
+    {
+      "start": 795.392,
+      "end": 817.872,
+      "text": "because there are also some islands of ignorance in the social sciences still for the digital world. And people like ourselves, we just have to get out of the bubble of feeling"
+    },
+    {
+      "start": 818.224,
+      "end": 844.128,
+      "text": "of feeling that we do the right things anyway, we have to change and speed up. WWTF, Vienna Science and Technology Fund, is a small foundation close to the city of Vienna. We are already preparing some initiatives on digital humanism, but the city itself is on the way with the first pilot program."
+    },
+    {
+      "start": 844.128,
+      "end": 870.704,
+      "text": "acting now and we will feed what you tell us today and tomorrow directly into the preparation of first funding initiatives. Our very first contribution will be that we will order a few hundred coffee mugs with digital humanism printed on it so everybody has it in the morning before his or her eyes."
+    },
+    {
+      "start": 870.704,
+      "end": 899.936,
+      "text": "Vienna is a strong and inclusive city. What Clemens told about social housing in the last century, we are doing with a very inclusive smart city approach now. We are continuing that. And innovation is never in Vienna an affair of elites only, but an affair of broad social inclusion."
+    },
+    {
+      "start": 899.936,
+      "end": 925.28,
+      "text": "with us together evolve today and tomorrow will immediately feed into these processes and help us in staying the best city in the world. Many thanks. Thank you, Michael. I forgot to thank those who brought forward the ideas for the speakers and who put together the program."
+    },
+    {
+      "start": 925.28,
+      "end": 954.672,
+      "text": "It's the International Advisory Board of the Faculty of Computer Science, which we established three years ago. It's Nadja Talman. She cannot be here. She's from Singapore, and she couldn't make the travel. It's Hans Ackermans from the Freie University of Amsterdam. It's Carlo Gezzi from Politecnico di Milano. He's the chair of the board. It's Moshe Wadi from the Rice University. And it's Edward Lee, who will moderate the first session. Edward is coming from the University of Berkeley."
+    },
+    {
+      "start": 954.672,
+      "end": 964.812,
+      "text": "He's a thinker of Plato and the nerds, which is maybe one of his major contributions to the philosophy of computer science. The word is yours. Thank you."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

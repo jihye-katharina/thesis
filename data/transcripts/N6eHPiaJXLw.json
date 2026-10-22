@@ -1,0 +1,726 @@
+{
+  "video_id": "N6eHPiaJXLw",
+  "source": "whisper",
+  "language": "en",
+  "text": "The finger is not the right expression. Lift your finger. Thank you. That's better. This was maybe a bad joke for today. So hello. Good evening or good morning to you. I welcome you to this DICUM lecture, Digital Humanism lecture of today. Today we have a topic which might be a little bit outside. But in some sense, one can also consider it at the center of digital humanism because the lecture of today is in the world software history. So we are looking at the history of software. And let's say in some sense, we are applying the methods of history or historical research to our discipline of software and software engineering. The talk is given by Roberto Di Cosmo. He is leading a project in the field. And then he will be introduced by our moderator, Edward Ashfordly, afterwards. Before we do that, just some words. This is our last lecture before the summer break. Just to remember, we will continue in fall 2021, so this fall, and you will receive the respective communication in time. I was just... impressed what we did because since may 2020 we have 18 panels or online lectures talks and two online workshop and you can have access to this on our on our website and we have just finished our book which is called Perspective on Digital Humanism. And this will be published by Springer. And you can have access to all the content by July 10. And we will also inform you about when it's online accessible. For that, I would like to thank, for the work we did, I would like to thank all the members of the program committee. the co-editors of the book, who is Carlo Ghezzi, Edward Lee, Erich Brehm, and my colleagues here at TU Wien, Stefanie Bogovic, Mette Seertken, and also Peter Knies. I think this is all our joint work, but especially those guys from TU Wien making it possible, I would give this special thanks. By the way, tomorrow there will be the ministers of foreign affairs of Austria. The Czech Republic and Slovakia will sign the Poistov Declaration on Digital Humanism. So digital humanism already made it on the ministers or foreign affairs ministers, at least in Central Europe, and they will sign this declaration. And I hope it has to do with the content we are discussing in our online lectures. Back to our lecture today. The talk will be 30 minutes, and then we have 30 minutes Q&A. And afterwards, we have again a piece of music introduced by Peter and selected by Peter. And it has to do with the history of software. It's now my pleasure to hand over to Edward, whom I do not need to introduce. He had done some fundamental contributions to computer science. And in the last years, he deals where he has treated the interplay or the interaction of man and machine. And he is with us since the early beginning. So he's with this initiative since the earliest beginning. Edward, I thank you for that. And the floor is yours. Thank you. Thank you, Hannes. Let me start by apologizing for all the background sound from the birds here, although there's a lot of tweeting. I promise you it has nothing to do with Twitter. But I can't make them be quiet. First of all, it gives me really great pleasure to introduce Roberto di Cosmo. So Roberto graduated from the Scuola Normale Superiore di Pisa and got a PhD from the University of Pisa and then spent time as a professor or he became a professor at the Ecole Normale Superiore in Paris and also than a professor in Paris Diderot or Paris 7 as it's also known. So Roberto made quite a splash a few years ago when he wrote a very critical paper on Microsoft. I think that's one of the things that really sort of put him on the map and it's a very interesting read. More recently, he's made pretty significant contributions to Linux. and has been one of the really key founders and proponents of open source software and really the initiator of the first, I think, really serious software archiving effort, this effort that he's going to be talking about today, the Software Heritage Initiative, which he started with support from INRIA in France. And the Software Heritage Foundation, I'm actually quite a fan of it. It's a pretty remarkable piece of work, and I think Roberto will tell you quite a bit about it. So it's not to take more time from Roberto. Roberto, you have the floor. Okay, thanks a lot for the kind introduction. Let me see if I can share my slides. Can you see my screen? Yes, it works. Okay. okay fantastic so let's move on and first of all thanks a lot for having me uh with you today it's a pleasure to come and share with you some thoughts and some initiative about uh what we collectively as a community are doing for changing the world through software and how we actually think we are responsible for preserving the software history so the talk is organized more or less in two sides so one side is Should we preserve the software history of the world? What are the reasons for doing that? And then how can we do that? And I will share some ideas on how this can be done, show you what has already been done, and tell you a little bit more about what you should be helping us do. So the slides of this presentation will be fully online. There are blue links that are clickable, so I encourage you to follow them. I thank a lot Eduard for the kind introduction. Here it is a very short presentation of what I did. Let me sum it up. I mean 30 years plus doing research in theoretical computer science and then later in software engineering. 20 years of free and open source software and then as you grow older i mean at least you have some graveyard now you start thinking you need to help younger people and so to do that you need to build in direct structure for the common good i mean so software is my last effort to go into this direction so now let's move to the to the key issue which is interesting for us so why should we or must we preserve the history of software source code but first of all of course we know software is all around us it is a key to the digital transformation we are living through it is also the tool that has helped us come kind of keep a social life during this terrible period of the health crisis we are going through it has also many other downsides but i mean let's keep positive view and but when you talk about software uh it first of all for the people is not technical people, it's just not easy to understand what software is. It's kind of intangible, right? They know what is an application, how to push on a button, but what exactly software is, is not very clear. And then when you tell them actually software doesn't come out of the blue, but comes out from human ingenuity through something which is called source code, then this requires a little bit of thought to be given to this issue again. So when we talk about software source code, we are actually talking about the precious knowledge we are embedding in the software source code. When I was a student many years ago in Pisa, I remember reading the introduction of this book by Harold Abelson that was saying it was structural interpretation of computer programs and he was saying programs must be written for people to read and only incidentally for machines to execute. Back then, you could think of a kind of a joke you are telling to your students. I mean, if you turn in a homework and I cannot read it, you will have a bad grade. But actually, this is much deeper than that. The point is that developing a program, writing a piece of source code is actually, as Donald Knuth once put it, telling another human what we want the computer to do. And today, some 40 years after this introduction of this book by Adelson, there is an incredible amount of source code available and we can actually see what this actually means. For example, this one on the left is a small excerpt of the source code of the Apollo 11 guidance computer. And you see on the left, you will recognize the mnemonics of the assembly code that will be turned into executable instruction for the machine. But what you see on the right here, these are comments after the number signs. And these comments will never go to the machine. They are messages from one developer to the other person that will need to read it. And it makes, by the way, quite an interesting read. If you go to something more recent here, for example, you have an example of a QA3 source code, an excerpt of a source code, with a mythical routine, which was used to compute one of a square root of X without using floating point numbers, because back then the floating point coprocess were not efficient enough. I mean, this would take an afternoon to go. completely through this. But again, you see the comments in there and the name of the values. They are really key to understand what is going on. So to make a long story short, as who was a board director of the computer history museum once properly said, I mean, the source code provides for us a view into the mind of the designer. And so It is important actually to recognize that inside this source code there is precious knowledge and this precious knowledge must be preserved. So if you look at what happened a couple of years ago, a group of experts at UNESCO met under an invitation from UNESCO on one side and software editor on the other to discuss the issue of the relevance of source code for our society globally. And this led to this Paris call on software source code, which is published since February 2019. It's a very interesting read. I really suggest you have a complete look at it. It has connection with the Digital Humanism Manifesto, by the way. But one point which is important there is that you see all these experts actually call to support efforts to actually preserve the artifacts and narrative of the history of computing, because we have the privilege to be still able to talk to the earliest creator, most of whom are still alive. Not for too much, unfortunately, but I mean, they're still here. It's not the case if you want to talk to Newton or Archimedes, that's too late. But for computer science, you can. And then more recently, I was happy to see this piece, this column in Communication with EM from February 2021, just a couple of months ago, a piece by Donald Knuth and Schuster, who also called for more effort in actually preserving the history of computer science and they think about presenting the technical history of computer science that was the key of the message and of course it's important to keep this history because it's telling the stories which is the best way to actually teach okay and again that's a unique opportunity most of the creators are still here we can talk to them which is something other people cannot do but you know these are two points of view related to looking at software source code as part of our heritage as part of our history so we are basically looking at the past but there is more than that a motivation to preserving source code it is actually looking at the present and the future so let me offer you just a couple of points here Looking at the present, for example, you are all aware about the important movement which is called open science today. I mean, the need to make the result of science easily accessible to everybody, in particular in terms of understanding, body-taking, and reproducing scientific results. Well, today, software is one of the key pillars of open science. even if most of the people think about the issue related to open access which is reasonable considering all the money around this etc etc but then you have data and finally you have source code of the software that you use to transform this data and the link in this picture with the three pillars are really essential so you need to be able reading a paper to understand what data set you transform using what transformation coding what kind of source code or a piece of software So preserving the history of source code here, preserving it today for tomorrow, is important for reproducibility of research results, which is something we are valuing every day more than before. So this is a motivation from open science, but it is not just that. You have other kind of motivation to actually keep a precise history of the evolution of software, in particular source code. And this comes actually from very actual issue related to security cyber security and transparency because you know today a lot of software which we build is actually based on open source components which are collected from existing projects outside all over the place in the world actually in so many places you can find projects on github on the old source forge on maven repository you name it okay so the big issue is do you know where this software come from i mean can you trace it do you know the history the origin the provenance of what you are embarking a piece of software for you i mean this is not a a minor point it's a key point and if you have been observing what has happening in the us recently there was an exact reorder by the president of the united states may 2021 which is about cyber security and they are pushing this idea that it is essential to improve the software supply chain we are using. And this means, for example, ensuring that testing to the extent practical to the integrity and provenance of the software. To do that, you need to trace the history of software. You need to keep the history of software. So I hope this is enough motivation. We have seen there are historical reasons, there are cultural reasons, there are scientific reasons and there are actually technical and key security reasons that push us to do the very same thing. I mean archiving, tracing and referencing the source code that has been developed around the world. Now, the point is that all this knowledge, which is so important, is actually an endangered knowledge. Because nobody was actually taking care or keeping track of the history of source code for different reasons that would take too much to analyze today. You know, the point is that software source code, like all other digital information, is extremely fragile. Of course, you have different sources of fragility. One is a typical link rot. When you create a project on a forge, I mean, on GitHub or wherever else, this project can be created. then be renamed moved around removed etc so you keep a link to it and then after a while just this link brings you to nowhere then you have other surprising sources more dangerous sources of fragility which are business driven decisions actually to shut down or remove a part of the popular code hosting platform for example for example like in 2015 and more recently big bucket endangering some quarter of a million of projects in last summer for technical reasons because your data route physical media decay etc so we are used when a website goes away to rely on something which is the internet archive a beautiful initiative that tries to archive everything that was done on the web but what do you do if a piece of software which is important for you that was in a particular forge either a popular one github or github or an institutional forge or something else goes away and what about all the legacy software which is so important which is somewhere in an archive in an institution that takes a risk is under risk of being just thrown away so what do we do about this well this is a point where i need to think and to act i mean if you look at the past The clock is ticking, only a few are left, and we need to go after and recover all the history of the technology that we have contributed to develop. And looking at the future, you see, social development is really skyrocketing. Okay, so there are more programs and more code. For some old people like me around the table, you have already heard many times this mantra, it's the end of programming, right? You remember IDE, fifth generation programming system, et cetera, et cetera, no code initiative. Every time you see this, a couple of years later, you have more programmers. I mean, so actually development is skyrocketing anyway. So it is important today to build the platform that preserves the software of today in such a way that we will not have in the future to go after a recovery from scratch, which is not an easy thing to do. So it's urgent to take action. And here is a place where I can move to the second part of the talk. How can we actually do something to preserve our software? So let me introduce for you. This initiative, which was SOTO Heritage, it was started some seven years ago, actually announced it to the public on June 30th, 2016. So tomorrow is the fifth anniversary of the unveiling of this initiative. The mission of SOTO Heritage or the SOTO Heritage Foundation is exactly to collect, preserve and share all the source code of the SOTO, which is publicly available today. So we are building a reference catalog in here, where you can find and reference all the source code, no matter where it comes from. We are building a universal archive to actually ensure the sort which is archived there will stay there over time. And last but not least, for our community, we are also putting the first stone of the key infrastructure we actually need, an infrastructure that allows us to enable the analysis massive analysis of the evolution of software through code over time, which is still another way of doing history. And in some sense, we need to build a very large telescope to observe the galaxy of software development, and we still do not have it. Well, if you look at how we have designed software heritage, software heritage is really an infrastructure. I mean, this is an infrastructure whose mission is precisely to go after all the source code no more no less and so we want to keep it when we make it available and develop all the basic functionality that will enable the building application in different verticals it can be in cultural heritage can be industry research and education public administration and so on We will see the archive later on, but you see, we started archiving the projects in the summer of 2015, and we are already over 160 million projects archived from all over the world, which boils down to more than 10 billion unique source code files archived already and counting. We have basic principles for building on this. On the technological side, Everything we do is open source because you cannot believe us if we tell you that we are going to archive for the long term some pressure knowledge and we hide the way we do it and we do not share information on how we do it. How can you trust us? We are actually keeping contents with a very careful tracking of everything, facts and provenance for every piece of source code. We can tell you where we found it, when we found it. how we ingested it in the archive and as an organization we go back to this we decided to go completely for a non-profit multi-stakeholder open organization whose mission is only precisely to keep this archive forever for humankind so if you leave me a little bit of Let me, a little bit of pleasure here, let me delve a little bit under the hood. I mean, we are building a universal archive. Building a universal archive of source code is not an easy feat. So, for example, what we are doing, we are really going after all the places where source code is available today, if you're in development platform, build connector for each of these places. because it is not like archiving the web yet there is no http standard okay for each of these platforms you need to build a different connector so we build this connector which we call we call listers to list all the different projects which are available there and then you will discover you know our discipline there is a massive creativity around so you have tons of different ways of keeping version control system or package managers and have it so there are there is a gigantic bubble tower issue here to many things git subversion mercurial packages whatever so we decided to go the extra mile and build adapters that read all these different formats and packages and create a single gigantic graph, which is technically a Merkle graph, that contains the whole history of development across the world in a stable, simple, well-documented structure that will survive the test of time, or so we hope. So the result is that you have the global development history of software development permanently archived in a unique graph across the world due to the compression property of this graph this is only half a petabyte today but the graph is huge over 20 billion nodes almost 300 billion edges around there by the way we build this graph i mean that uses for the duplication cryptographic signatures of all the components inside following the merkel construction we are actually able to associate to every single component in the graph every node in the graph a file a directory revision release an intrinsic identifier which is now called the software identifier that actually can be rebuilt by everybody independently once you have a copy of the object so it allows you to check the integrity of this object and actually verify it by yourself This is now an emerging standard being adopted in industry. For example, you find it in the SPD-X22 standard from the Linux Foundation. The prefix SWH is registered with IANA. There is a weak data properties for this kind of identifier. And when you will download the slide, I encourage you to click on these blue links. You will follow these links. And this allows to find particular pieces of source code with contextual information that allows you to actually... see it in a particular situation so this was a presentation why how but i would like to take a little bit of time now to show you exactly what this is so let's move to let's visit together the software heritage archive okay so this is archive.software.org it's the entry point of the archive you see here these counters which are up today so it's over 160 million projects today roberto excuse me for interrupting but we're still seeing your uh slides not the ah not the you might be sharing the window sorry so let me let me try if thank you so let me see if I can share what about now do you see the the website yeah okay yes this looks right yes okay thanks a lot for thanks a lot for heads up so this is a main entrance of the archives i was telling you here you see the different project archive the different uh sources we archive automatically i mean it's a selection there are many more than this and you can go in here and actually Enter in the search box for the moment the URL of the place of a project once was. It is not yet a full search inside the source code because this requires more money and more resources than what we have today, but it will be coming. You can actually have a look into this and, for example, find a piece of code of mine which comes from a paper published back in 2000. 12 if you see when you see uh the code archived you see the presentation of the archive is actually designed for us it designed for developers for people who know software source code so you can actually visit the content the readmes are rendered you can navigate inside the source code find particular parts of the source code that you are interested in And imagine, for example, you want to write a paper or documentation or share information about a particular algorithm with somebody or pinpoint a piece of source code that has particular historical relevance. So you can navigate in the archive, then select the part you're interested in. For example, here I'm clicking on the first line, shift clicking on the second line. And then all over the place in this archive, you have this permalinks box that opens up for you. And here you get the cryptographic identifier for this file, but also if you want, you can add the additional content that contains even the name of the file and the number of lines, which are the line numbers that are selected. Once you do this, you can copy this information, put it in an article, click on it. Now I'm simulating it by just copy pasting. And what happens here will be brought in the archive in front of exactly the same code fragment in exactly the same context. You see, it comes from the same file name that you see here, saved from the same origin and inside the same revision. So all the information is actually shared in the context. If there is a piece of source code that you would like to see saved, which is not already saved by the automatic crawlers, we have already set up a mechanism for you, which is very easy, that allows you to just point our crawlers to the part that interests you. For example, here I am pointing to a Git repository that contains a nice piece of source code from Len Schuster, by the way. So you click on submit, and it goes. into the waiting queue. So you see it is already accepted. It is this one. It is 5.31. So it's basically now. It will be scheduled and archived in a few minutes after this. And once you do this, you can write beautiful documentation about, for example, a piece of source code. Imagine the Apollo 11 source code. Here is an excerpt of the blog post we have. And when you have an image of a... piece of code which is relevant for you you can add these special links you have seen and this brings you again into the archive in front of exactly the piece of source code you're interested in you see and there are you you find some nice uh nice uh things i mean if you tap down in the source code which is available this is deep kind of technology archiving saturation putting reference to it has already been adopted in different journals so for example this is ipol image processing online you will see they point to software edge for the archived option there are also biptech entries including these identifiers that can be copy pasted into your papers if you want There are possibilities of depositing software through institutional archives. For example, in France, we have HAL, which is a national open access portal. You can deposit their source code, which is archiving software heritage, and then you can browse it directly and get all the benefits. So you can, again, navigate inside the source code, getting the thermal links, et cetera. And actually, I'm already using it in my paper. For example, this is a paper from 2012, where I was very proud of a particular algorithm that you see here. But back then, I didn't have software heritage account. So there was no link on this page. While today, this is a new version of the paper, I compiled with a link. I added this link that allows you to go to the archive and find, again, exactly the routine which is described in the paper. And then last but not least, here is an example of an incredible historical piece of source code which was developed for musical synthesis in the University of Pisa in the 70s that has been rescued in collaboration with the University of Pisa and UNESCO by a team where Carlo Montangero, Laura Bussi and Guido Scatena contributed. And here you can find the full history of this source code that comes from the 70s. Okay, so I see it's Fortran, if somebody will recognize it, as it has been rescued by this team. Okay, so let me stop here this demo. It was very quick, but the idea was to basically convince you to actually go and visit this object by yourselves. I would like to go back to the slides to go towards the conclusion. Let me see where I put the slides. Okay. Here we are and now I need to reshare again. How do I do this? Wait a second. I do this and then I click on that. I hope this works. Can you see my slides again? Yes, I think so. Okay. That was a very, very quick demo. If you download the slides and click on the blue links, you have pointers to all of these objects, right? You can try it by yourselves. Now, Let's move forward again on this preservation and going towards the conclusion. So for preserving the history of our software commons, following up on this call from the UNESCO Asper Group, a joint effort has been done with the University of Pisa to actually develop a process, a detailed process, which is called the software acquisition process. explains exactly how to reconstruct the developing history faithfully, keeping track of the authors, the dates, the kind of options, where they come from, which is not an easy thing to do, but now you have a process that people can follow, and actually UNESCO is translating these documents in different languages as we speak. An example is this great work recovering this first experiment, electronic music in Pisa. We have seen this in the demo just a couple of minutes ago. And then I cannot announce anything properly today, but I mean, stay tuned because we are moving forward into that. It is not just rescuing the software, but finding a way of showing the history of software projects in a more lively way for the next generations. Now, if you look at the present and the future, I mean, in academia, there is a growing adoption of this kind of technology, either through HAL or on different, I mean, reference archives for mathematical software. Many journals are adopting this kind of long-term technology with intrinsic identifiers. I do hope to see more of our societies, I mean, ACMI, AAA, to join this movement. For now, these are different areas. You see image processing, life science, mechanics, there are other coming in. From the policy side, this kind of technology and archival effort is part of the National Plan of Open Science . It's part of the strategy for scholarly infrastructure research software in Europe. You'll find guidelines again available here. Maybe I will skip this. I mean, just a simple example. I mean, why preserving all this? Is this useful? Is there somebody who is interested in what we preserve? Well, let me give you a simple example, okay? Last summer, Bitbucket erased 250,000 repositories. For technical reasons, business decisions, okay? Their decision, it's up to them. Luckily, we are already there. We got funding from a foundation in the Netherlands, working with a company that was very experienced with the Mercurial version control system. And basically, when they unplugged Bitbucket, we already had the archive. And just a few days after we announced the archive live, this guy, who is a researcher in astrophysics, tweeted this. You can click on the original tweet. I swear we didn't pay him. He just realized that a piece of precious source code that he had on Bitbucket went away. He thought everything was lost, but since we automatically archived everything, he could recover it. It's important to do this massive effort on salt preservation. Let me conclude very quickly here. If you look at the other head, what do we have? Well, we have a committed core team. We are almost 15 people working here. Here we see a picture taken, as you can see, from masks laying around during the pandemics. But we were respecting the health measure. We breathed very deeply, then removed the mask, take a picture, put the mask again on. And there are also other people who were not present for this pitch, unfortunately, like Jean-François Grammatic and many others. There is international support for this initiative from the policy level. We have an agreement with UNESCO and support from many German societies. And we have a growing set of donors, members and sponsors, starting from IRIA that... helping us move forward and now we have many many other partners not enough for what we need to do but this is already a nice starting point and i think this is a moment where i will tell you that you can help everybody listening to this presentation can help you can actually adopt and use this archive you can use this archive for archiving a reference relevant source code either yours All relevant source code you find somewhere, because now you have seen this Save Code Now functionality allows you to point our crawlers to anything which is relevant. There are also functionalities for deposit, but these are more for institutions. If you're interested, just contact me. You can use it in your research articles, in journals, in books on the history of software. You can work using this software acquisition protocol to go after landmark legacy source code. I'm dreaming, for example, of seeing the source code of the Algol compiler written by Dijkstra. But I'm sure somewhere in CWI or somewhere else in the world, this must be there. Our source code of LISP, original version of things. I mean, we need to map the history of our technology over time. And now we have tools to do that. We can engage, you can engage, all your students can engage with what we are doing, either as an ambassador, there is an ambassador program around, or you can contribute to the technical and scientific development. This is not an easy thing to develop an infrastructure like software heritage. I do not have time to go through this today, but it's really something which is not easy to do. And you can engage as an organization. Any university or other organization can become a member or a sponsor. You can build mirrors to help make sure this will not be lost or contribute to the preservation mission. So I hope I have kept my time. I think I will stop here. And I leave you with some pointers. I'm very happy to take any questions you may have. Thanks again for your attention. Thank you so much. Normally now there would be a thorough round of applause, but all you get is a few tweets from some birds in the background. So we already have a couple of questions. Moshe Vardi and then Alberto Siliti. So Moshe, you want to go first? Yeah. So thank you, Roberto, for this compelling presentation. I have two questions. One is. There are some software that you may want to keep alive. That is that you have all the pieces, you know it's going to run, and part of your job is to make sure that it keeps running. But, I mean, what do you do, for example, suppose you only have binary. What do you do with binary? Binary is something you want to archive? That's a very, very good point. I have some software that my student wrote. and unfortunately by now it's dead because we have not documented all the dependencies it is still a document of what they have done but it doesn't run anymore yeah so so there are i see different degrees of you know and in some sense all deserve to be preserved somehow right yes so this is the first question do you want me to answer this right away or do you want to give yourself to expose the second question too No, I will answer this. I will answer this right away. Well, thanks a lot for pinpointing this. Preserving software and making software run for a long time is a massive undertaking. It's very important. It's something we would really like to do. It is something we really do not know how to do well today. So what Software Heritage actually does is focuses on this part of this mission, the part that is keeping the source code available there are many reasons for this as we have seen before for source code even if the machine where you can run in is lost you can still read it and you can still understand what is going on that's the reason why there is where you find the knowledge not in the binary if you only have a binary not the machine to run it good luck understanding what the software does right so having the source code alone is better than having just the binary of course we would like to be also be able to keep the software running but this you know the jury is still out there are so many different ways of doing this you can use a virtual machine docker containers many different objects they work today but they need a lot of effort to be kept running over time another solution is to try to keep track of all the information which is necessary to actually rebuild binaries recompile binaries bit by bit compatible with starting from the sources and here the good news is that some technologies get getting out there are initiatives like geeks of nix a functional packet manager with which we have tied it already connectors established And then there are people who are, for example, if you look at the Library of Yale, they have a nice initiative called EAZ, Emulation as a Service, where you can actually run and spawn through the web emulators for different kinds of virtual machines for different epochs in the history of computing. And then you can use them to actually run binaries for which you do not have a platform anymore. So that's a very complex puzzle. We do not pretend to answer all the issues. We want to focus on ours, making source code available and keep it for the long time, and connect with all the other initiatives that are building the other pieces of the puzzle. So I hope this answered your question. Thank you, Roberto. Alberto Siliti, do you want to unmute yourself? Yes. So thank you, Roberto. Hi. Hi, Roberto. I would like to ask you, one thing so basically you said that you want to store all the algorithms all the software that make the history basically and what about the fact that some original algorithms are not actually code itself but are pseudo code so have you thought about any way of preserving this kind of knowledge that is also connected with different instances. So you have the pseudo code and then the different implementation of this code. Have you ever thought about this kind of preservation? Thanks Alberto. That's also a very important point. Again, I didn't have time at all to touch upon this right now. You know, in this movement about open science, there is an effort to recognize the importance of software, which was kind of forgotten for too long. And then when you think about software, you are very right. I mean, in the contribution to a piece of software, there is not just the code. There is a lot of other effort that comes in. I mean, the people that design the algorithm, the people that design the architecture of the system. There are other documents. A lot of documentation goes around the software project, which is not in the code itself. So it's important to give credit to the people that do this kind of work. And this is an important issue today. I mean, for the careers in general. But it's also important for preservation to keep track of this. So we do not work on this again. You understood my answer too much, so you see it's kind of a repetita, but we're not focused on that because our focus is on software source code. But we are working with institutional repositories, with journals, with documents, with companies, to make sure that they know that it is possible to link documents, for example, or books or articles that describe algorithms, that describe architecture, that describe... different parts of the process of building a software with the corresponding source code and providing this link. and we keep also this is new i mean we have the means to actually deposit metadata associated to particular pieces of source code that comes from specific authorities like for example acm or ipre or a company or some association could say this was called developed by one of our member actually is a key important part that comes from that paper on that book or using proper that other project and we can keep that metadata associated to the software and make it easier to have these links between the documents, the code, the data, which are so important to keep our knowledge of mankind. Thanks a lot. Thank you, Roberto. George Zarkatakis, you've got your hand up. Can you unmute yourself? First of all, thanks also for presenting this very worthwhile project. My question is, following the message I saw in the chat about how important the history of these developments is. Does your project carry within it the ambition to go beyond creating the archive, as valuable as it is, and proceeding to, let's say, making the sort of links that historians do as to the significance of a particular event, as to links with other events, as to the motivation of of a certain piece of software being written, as to whether it represents a turning point in the history of the subject, or is that something to be... This, of course, is always controversial, and there's no such thing as the history with a definite article, but it depends on the viewpoint and on all kinds of other pre-notions. Is that... part of this of the current project or is that going to be left for let's say uh future historians of the digital um development right thanks a lot for this question as you can imagine i hope i could trans share with you a little bit of the passion that moves me and i can assure you all of the team in working on this kind of project and you are very right i mean part of this passion comes from the fact that software is not just technology software is part of a human adventure it's part of a human history there is a history behind each project and it is so important to tell this story because this is a way we can make the rest of the population the rest of the new generation aware what is going on there are so many things going on so we need to rebuild this history for doing this we need to work this historian and i point you to this column by uh len schustek and don knoop where they are actually pushing for more historians to look into the history of this technology and understanding how the tonnage evolved how the project evolved we are in touch with some historians of technology to try to see with them how to do this i mean we ourselves we are not doing this we are more on the technical scientific side of the infrastructure which is i assure you is already a gigantic undertaking but we are trying actually to make connection and what i was kind of informally mentioning, because it is too early to announce it, I mean, trying to build these tools and website to have a description of the software stories, of the story of software, linking to the people, linking to the events, linking to the article, linking to the documents, I mean, to tell the story of a software project. This is something we are undertaking right now in collaboration with UNESCO, with some little company in the US, with the collaboration of the University of Pisa. I see Carlo here. He's also involved in this project today. I mean, it's a small initiative, but the idea is to try to provide the tooling that will make it easier for historians of technology to make available their finding in a very nice way, an easy way for people to actually learn. Sorry to look at this more from the tool point of view, you see, but it's important. If you do not have the tools to do this properly, then it is difficult and then people will have more difficulty doing it. With the proper tools, the proper presentation of this history, I hope we can attract more volunteers. Think about, for example, master's students or... they want to look for an internship service why not working together with some historian understanding why that compiler was done this particular way of the database system were written a particular way who did it what are the key decision in the can we find it in the in the source code can we find in the documentation when you find this let's show it you see this can be exciting if we can provide the people with the tools to show the results thank you roberto and thank you george um I'm going to use my privilege as moderator to ask a question here. So there are a few projects out there that I think are very nicely complementary and synergistic. So one of them is Synopsys' Black Duck Open Hub, which I don't know if you've heard of it, but it used to be Ohlone and they acquired it. And it does automated analysis of various aspects of... of software that is in public repositories, including things like using this Kokomo model to estimate the number of person years involved in developing it and also tracking kind of the history of commits and how many commits there have been. It seems to me that those kinds of tools would be enormously helpful to historians for developing a narrative associated with the software. And in particular, unlike, I think, Synopsys' tool, instead of focusing on just single pieces of software, you could be able to relate things. So, for example, tracking particularly high prolific authors of software as they move from project to project, right? That would be an extremely interesting thing to be able to understand. Absolutely. I mean, this kind of community analysis has been quite popular in the last years in the software engineering community. I mean, the particular side of software engineering community. I do not want to impose too much time because I do not have a lot of time left, but we already started doing this kind of analysis. We already provided a data set for researchers to work on this. You can look on the online slides. There is an appendix. and slides i didn't have time to show today i will not lose time in manipulating to show them again but you you have actually huge data set with all the comments all the history everything that was in the archive available for people doing this kind of analysis the only thing keep in mind this is huge okay it's a huge data set so you need resources to make it easily available We are working with researchers, in particular Stefano Zacchiaroli, who is my number two in this project, is very involved with the software engineering community in trying to foster this kind of analysis. There is a nice paper. You can look, for example, there are gender studies in software. I mean, looking at software heritage, you see how many women participated in software development over time, how this changed over time. I will not spoil you. You can read the paper. You will see some nice things. So you can do all this on software agents at a much bigger scale with respect to what you can do on OpenHub or other things, just because this is a universal archive. But we are not yet ready to offer you a cloud version of this because, again, believe me, it costs money to set up this kind of infrastructure. if you any of you know some kind of billionaire they want to sponsor these kind of things and offer gigantic infrastructure we know how to use it and we will be more than happy to provide the functionality you are mentioning here okay in the interests of the impending football game i'm gonna ask jim laras to ask the last question uh thank you for this very interesting talk I have a question about the use of this archive. So one of the things that for many years I thought was very unfortunate is that we teach students, we teach lots of people to program without teaching them to read extremely well-written programs. You know, it's kind of strange. You don't learn to write without reading literature. You know, what is the great literature of software? And, you know, is anybody looking for that? Is anybody sort of trying to figure out? I mean, you know, there are certain things that Legend has that are particularly well written, you know, the Linux, the Unix, v6, source code, that type of thing. But is there any systematic effort to try to figure out what we should be putting up as examples of very well written programs for students to learn from? Thanks again, James. This is a. Fantastic question. I mean, actually, you're raising a super important point. Programming is actually still today a kind of an art. If you want to learn how to do it properly, like in literature, unless you're a magician, I mean, you do not buy poetry just as you are born. You start by reading the classics and then you develop your style. We should be doing, I fully agree, we should be doing the same with programming here. It requires a lot of effort. There are a few examples of things that you can think about. You remember the Cedric book on algorithm tries to show how you do these kind of things. There are beautiful, there are books like Hacker's Delight that show beautiful example of kind of calls like this or many initiatives like this. What I think is a little bit of a game changer here with the availability of an archive like Software Edge is that you can Start building this material by referencing it the way I have shown you during the demo and making sure that your effort does not go away. So if I look at my old articles many years ago when I was teaching, trying to teach dynamic programming by delving into the source code of the text to tease and looking how diff is actually written, which is not exactly what you teach when you do algorithm. There are many subtleties in there. I was using a version of the source code, and then when I tried to teach it again two years later, it was gone. So it's so frustrating. Today, you can fix it and say, this is a version I want to show you, and you know it will be there, and you know your referencing is like that. It's so simple, but it's a game changer. So we should start doing this today. Yep. Great. thank you uh once again uh thank thanks a million roberto for this very inspiring talk and discussion and uh as you all you all know i think it's customary to end with a piece of music uh i'd like to turn the floor over to mythic thanks a lot for having me here it's a pleasure to to talk to this or great community peter's in charge of this oh yeah thanks edward um yeah i'll happily take take care of this um throughout the whole presentation thanks roberto for this really really interesting and inspiring talk um i was wondering why why aren't we listening to the tao muse music synthesizer from the 70s if you haven't if you have an example why aren't we you can you can i can share it i will share it for you later on please yeah let's let's let's do that um but i have something from a decade later uh from the from the 80s and So, yeah, when you're talking about preserving software and for the cultural artifacts that they are, I thought it's also important to stress the importance of video games in that regard. At least that's like software that's hugely important for me and also the impact that they had and are having. And also not to underestimate the role of preserving them for their music and soundtrack. So, I mean, there's lots of electronic music out there and a lot of it is in video games actually from the time. So I want to end with video game music and I've picked a sentimental favorite of mine. Let me just share the screen here. Name of the menu theme of the 1987. Commodore 64 game, The Great Jana Sisters, which is kind of like a rip-off of Super Mario Brothers, but the better version. So Super Great Mario Jana Brothers Sisters. It's kind of like the Commodore 64 version of that. And the soundtrack back then was composed by Chris Hülspeck, who is a master of turning the limited capabilities that the sound chips back then had. and using that to create multi-layered highly memorable compositions and he's also done things like soundtracks for Turrican and R-Type among many others for those that recognize those titles. I also want to mention that that was a very tough call for me between this one and the Arkanoid theme by Martin Galway which is also a classic and I think we'll put both on the soundtrack playlist that we have on our YouTube channel where we collect all the music that we play throughout the all these lectures or at the end of all these lectures. But right now, it's the Jana Sisters theme. And I have to say, it really unfolds its magic in a continuous loop over three hours minimum. But we'll just hear one iteration and then fade out in a second, so it's not going to be very long. For today, I want to thank you all for joining, and I hope you can enjoy your vacation, and that we'll see you after the summer. Take care. And here's some final piece of music. Thanks to all of you. See you after the summer break. Bye. Thank you. Bye, everybody. Bye, everybody. Roberto, I will invite you to a workshop if you want. Okay. Absolutely.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 25.36,
+      "text": "The finger is not the right expression. Lift your finger. Thank you. That's better. This was maybe a bad joke for today. So hello. Good evening or good morning to you. I welcome you to this DICUM lecture, Digital Humanism lecture of today. Today we have a topic which might be a little bit outside."
+    },
+    {
+      "start": 25.36,
+      "end": 52.896,
+      "text": "But in some sense, one can also consider it at the center of digital humanism because the lecture of today is in the world software history. So we are looking at the history of software. And let's say in some sense, we are applying the methods of history or historical research to our discipline of software and software engineering. The talk is given by Roberto Di Cosmo. He is leading a project in the field."
+    },
+    {
+      "start": 52.896,
+      "end": 79.36,
+      "text": "And then he will be introduced by our moderator, Edward Ashfordly, afterwards. Before we do that, just some words. This is our last lecture before the summer break. Just to remember, we will continue in fall 2021, so this fall, and you will receive the respective communication in time. I was just..."
+    },
+    {
+      "start": 79.36,
+      "end": 95.472,
+      "text": "impressed what we did because since may 2020 we have 18 panels or online lectures talks and two online workshop and you can have access to this on our on our website and we have just finished our book"
+    },
+    {
+      "start": 95.472,
+      "end": 120.208,
+      "text": "which is called Perspective on Digital Humanism. And this will be published by Springer. And you can have access to all the content by July 10. And we will also inform you about when it's online accessible. For that, I would like to thank, for the work we did, I would like to thank all the members of the program committee."
+    },
+    {
+      "start": 120.336,
+      "end": 146.912,
+      "text": "the co-editors of the book, who is Carlo Ghezzi, Edward Lee, Erich Brehm, and my colleagues here at TU Wien, Stefanie Bogovic, Mette Seertken, and also Peter Knies. I think this is all our joint work, but especially those guys from TU Wien making it possible, I would give this special thanks. By the way, tomorrow there will be the ministers of foreign affairs of Austria."
+    },
+    {
+      "start": 146.912,
+      "end": 176.56,
+      "text": "The Czech Republic and Slovakia will sign the Poistov Declaration on Digital Humanism. So digital humanism already made it on the ministers or foreign affairs ministers, at least in Central Europe, and they will sign this declaration. And I hope it has to do with the content we are discussing in our online lectures. Back to our lecture today. The talk will be 30 minutes, and then we have 30 minutes Q&A."
+    },
+    {
+      "start": 176.56,
+      "end": 203.2,
+      "text": "And afterwards, we have again a piece of music introduced by Peter and selected by Peter. And it has to do with the history of software. It's now my pleasure to hand over to Edward, whom I do not need to introduce. He had done some fundamental contributions to computer science. And in the last years, he deals where he has treated the interplay or the interaction of man and machine."
+    },
+    {
+      "start": 203.2,
+      "end": 227.936,
+      "text": "And he is with us since the early beginning. So he's with this initiative since the earliest beginning. Edward, I thank you for that. And the floor is yours. Thank you. Thank you, Hannes. Let me start by apologizing for all the background sound from the birds here, although there's a lot of tweeting. I promise you it has nothing to do with Twitter. But I can't make them be quiet."
+    },
+    {
+      "start": 227.936,
+      "end": 255.04,
+      "text": "First of all, it gives me really great pleasure to introduce Roberto di Cosmo. So Roberto graduated from the Scuola Normale Superiore di Pisa and got a PhD from the University of Pisa and then spent time as a professor or he became a professor at the Ecole Normale Superiore in Paris and also"
+    },
+    {
+      "start": 255.04,
+      "end": 281.696,
+      "text": "than a professor in Paris Diderot or Paris 7 as it's also known. So Roberto made quite a splash a few years ago when he wrote a very critical paper on Microsoft. I think that's one of the things that really sort of put him on the map and it's a very interesting read. More recently, he's made pretty significant contributions to Linux."
+    },
+    {
+      "start": 281.696,
+      "end": 311.296,
+      "text": "and has been one of the really key founders and proponents of open source software and really the initiator of the first, I think, really serious software archiving effort, this effort that he's going to be talking about today, the Software Heritage Initiative, which he started with support from INRIA in France."
+    },
+    {
+      "start": 311.296,
+      "end": 339.152,
+      "text": "And the Software Heritage Foundation, I'm actually quite a fan of it. It's a pretty remarkable piece of work, and I think Roberto will tell you quite a bit about it. So it's not to take more time from Roberto. Roberto, you have the floor. Okay, thanks a lot for the kind introduction. Let me see if I can share my slides. Can you see my screen? Yes, it works. Okay."
+    },
+    {
+      "start": 339.152,
+      "end": 365.536,
+      "text": "okay fantastic so let's move on and first of all thanks a lot for having me uh with you today it's a pleasure to come and share with you some thoughts and some initiative about uh what we collectively as a community are doing for changing the world through software and how we actually think we are responsible for preserving the software history so the talk is organized more or less in two sides so one side is"
+    },
+    {
+      "start": 365.536,
+      "end": 391.2,
+      "text": "Should we preserve the software history of the world? What are the reasons for doing that? And then how can we do that? And I will share some ideas on how this can be done, show you what has already been done, and tell you a little bit more about what you should be helping us do. So the slides of this presentation will be fully online. There are blue links that are clickable, so I encourage you to follow them."
+    },
+    {
+      "start": 391.2,
+      "end": 406.384,
+      "text": "I thank a lot Eduard for the kind introduction. Here it is a very short presentation of what I did. Let me sum it up. I mean 30 years plus doing research in theoretical computer science and then later in software engineering."
+    },
+    {
+      "start": 406.384,
+      "end": 434.784,
+      "text": "20 years of free and open source software and then as you grow older i mean at least you have some graveyard now you start thinking you need to help younger people and so to do that you need to build in direct structure for the common good i mean so software is my last effort to go into this direction so now let's move to the to the key issue which is interesting for us so why should we or must we preserve the history of software source code"
+    },
+    {
+      "start": 434.784,
+      "end": 463.104,
+      "text": "but first of all of course we know software is all around us it is a key to the digital transformation we are living through it is also the tool that has helped us come kind of keep a social life during this terrible period of the health crisis we are going through it has also many other downsides but i mean let's keep positive view and but when you talk about software uh it first of all for the people is"
+    },
+    {
+      "start": 463.104,
+      "end": 491.168,
+      "text": "not technical people, it's just not easy to understand what software is. It's kind of intangible, right? They know what is an application, how to push on a button, but what exactly software is, is not very clear. And then when you tell them actually software doesn't come out of the blue, but comes out from human ingenuity through something which is called source code, then this requires a little bit of thought to be given to this issue again. So when we talk about software source code,"
+    },
+    {
+      "start": 491.168,
+      "end": 515.92,
+      "text": "we are actually talking about the precious knowledge we are embedding in the software source code. When I was a student many years ago in Pisa, I remember reading the introduction of this book by Harold Abelson that was saying it was structural interpretation of computer programs and he was saying programs must be written for people to read and only incidentally for machines to execute."
+    },
+    {
+      "start": 515.92,
+      "end": 545.584,
+      "text": "Back then, you could think of a kind of a joke you are telling to your students. I mean, if you turn in a homework and I cannot read it, you will have a bad grade. But actually, this is much deeper than that. The point is that developing a program, writing a piece of source code is actually, as Donald Knuth once put it, telling another human what we want the computer to do. And today, some 40 years after this introduction of this book by Adelson,"
+    },
+    {
+      "start": 545.584,
+      "end": 551.168,
+      "text": "there is an incredible amount of source code available and we can actually see what this actually means."
+    },
+    {
+      "start": 551.168,
+      "end": 579.248,
+      "text": "For example, this one on the left is a small excerpt of the source code of the Apollo 11 guidance computer. And you see on the left, you will recognize the mnemonics of the assembly code that will be turned into executable instruction for the machine. But what you see on the right here, these are comments after the number signs. And these comments will never go to the machine. They are messages from one developer to the other person that will need to read it."
+    },
+    {
+      "start": 579.312,
+      "end": 605.824,
+      "text": "And it makes, by the way, quite an interesting read. If you go to something more recent here, for example, you have an example of a QA3 source code, an excerpt of a source code, with a mythical routine, which was used to compute one of a square root of X without using floating point numbers, because back then the floating point coprocess were not efficient enough. I mean, this would take an afternoon to go."
+    },
+    {
+      "start": 605.824,
+      "end": 631.648,
+      "text": "completely through this. But again, you see the comments in there and the name of the values. They are really key to understand what is going on. So to make a long story short, as who was a board director of the computer history museum once properly said, I mean, the source code provides for us a view into the mind of the designer. And so"
+    },
+    {
+      "start": 631.648,
+      "end": 640.624,
+      "text": "It is important actually to recognize that inside this source code there is precious knowledge and this precious knowledge must be preserved."
+    },
+    {
+      "start": 640.624,
+      "end": 666.288,
+      "text": "So if you look at what happened a couple of years ago, a group of experts at UNESCO met under an invitation from UNESCO on one side and software editor on the other to discuss the issue of the relevance of source code for our society globally. And this led to this Paris call on software source code, which is published since February 2019."
+    },
+    {
+      "start": 666.288,
+      "end": 692.768,
+      "text": "It's a very interesting read. I really suggest you have a complete look at it. It has connection with the Digital Humanism Manifesto, by the way. But one point which is important there is that you see all these experts actually call to support efforts to actually preserve the artifacts and narrative of the history of computing, because we have the privilege to be still able to talk to the earliest creator, most of whom are still alive."
+    },
+    {
+      "start": 692.768,
+      "end": 720.416,
+      "text": "Not for too much, unfortunately, but I mean, they're still here. It's not the case if you want to talk to Newton or Archimedes, that's too late. But for computer science, you can. And then more recently, I was happy to see this piece, this column in Communication with EM from February 2021, just a couple of months ago, a piece by Donald Knuth and Schuster, who also called for more effort in actually"
+    },
+    {
+      "start": 720.416,
+      "end": 746.128,
+      "text": "preserving the history of computer science and they think about presenting the technical history of computer science that was the key of the message and of course it's important to keep this history because it's telling the stories which is the best way to actually teach okay and again that's a unique opportunity most of the creators are still here we can talk to them which is something other people cannot do but you know"
+    },
+    {
+      "start": 746.128,
+      "end": 765.104,
+      "text": "these are two points of view related to looking at software source code as part of our heritage as part of our history so we are basically looking at the past but there is more than that a motivation to preserving source code it is actually looking at the present and the future so let me offer you just a couple of points here"
+    },
+    {
+      "start": 765.104,
+      "end": 789.568,
+      "text": "Looking at the present, for example, you are all aware about the important movement which is called open science today. I mean, the need to make the result of science easily accessible to everybody, in particular in terms of understanding, body-taking, and reproducing scientific results. Well, today, software is one of the key pillars of open science."
+    },
+    {
+      "start": 789.568,
+      "end": 818.336,
+      "text": "even if most of the people think about the issue related to open access which is reasonable considering all the money around this etc etc but then you have data and finally you have source code of the software that you use to transform this data and the link in this picture with the three pillars are really essential so you need to be able reading a paper to understand what data set you transform using what transformation coding what kind of source code or a piece of software"
+    },
+    {
+      "start": 818.336,
+      "end": 847.056,
+      "text": "So preserving the history of source code here, preserving it today for tomorrow, is important for reproducibility of research results, which is something we are valuing every day more than before. So this is a motivation from open science, but it is not just that. You have other kind of motivation to actually keep a precise history of the evolution of software, in particular source code. And this comes actually from"
+    },
+    {
+      "start": 847.056,
+      "end": 875.792,
+      "text": "very actual issue related to security cyber security and transparency because you know today a lot of software which we build is actually based on open source components which are collected from existing projects outside all over the place in the world actually in so many places you can find projects on github on the old source forge on maven repository you name it okay so the big issue is"
+    },
+    {
+      "start": 875.792,
+      "end": 905.392,
+      "text": "do you know where this software come from i mean can you trace it do you know the history the origin the provenance of what you are embarking a piece of software for you i mean this is not a a minor point it's a key point and if you have been observing what has happening in the us recently there was an exact reorder by the president of the united states may 2021 which is about cyber security and they are pushing this idea that it is essential"
+    },
+    {
+      "start": 905.392,
+      "end": 928.496,
+      "text": "to improve the software supply chain we are using. And this means, for example, ensuring that testing to the extent practical to the integrity and provenance of the software. To do that, you need to trace the history of software. You need to keep the history of software. So I hope this is enough motivation."
+    },
+    {
+      "start": 928.816,
+      "end": 956.208,
+      "text": "We have seen there are historical reasons, there are cultural reasons, there are scientific reasons and there are actually technical and key security reasons that push us to do the very same thing. I mean archiving, tracing and referencing the source code that has been developed around the world. Now, the point is that all this knowledge, which is so important, is actually an endangered knowledge."
+    },
+    {
+      "start": 956.208,
+      "end": 985.536,
+      "text": "Because nobody was actually taking care or keeping track of the history of source code for different reasons that would take too much to analyze today. You know, the point is that software source code, like all other digital information, is extremely fragile. Of course, you have different sources of fragility. One is a typical link rot. When you create a project on a forge, I mean, on GitHub or wherever else, this project can be created."
+    },
+    {
+      "start": 985.536,
+      "end": 1010.656,
+      "text": "then be renamed moved around removed etc so you keep a link to it and then after a while just this link brings you to nowhere then you have other surprising sources more dangerous sources of fragility which are business driven decisions actually to shut down or remove a part of the popular code hosting platform for example for example like"
+    },
+    {
+      "start": 1010.656,
+      "end": 1038.512,
+      "text": "in 2015 and more recently big bucket endangering some quarter of a million of projects in last summer for technical reasons because your data route physical media decay etc so we are used when a website goes away to rely on something which is the internet archive a beautiful initiative that tries to archive everything that was done on the web but what do you do"
+    },
+    {
+      "start": 1038.512,
+      "end": 1068.416,
+      "text": "if a piece of software which is important for you that was in a particular forge either a popular one github or github or an institutional forge or something else goes away and what about all the legacy software which is so important which is somewhere in an archive in an institution that takes a risk is under risk of being just thrown away so what do we do about this well this is a point where i need to think and to act i mean if you look at the past"
+    },
+    {
+      "start": 1068.416,
+      "end": 1084.16,
+      "text": "The clock is ticking, only a few are left, and we need to go after and recover all the history of the technology that we have contributed to develop. And looking at the future, you see, social development is really skyrocketing."
+    },
+    {
+      "start": 1084.16,
+      "end": 1106.72,
+      "text": "Okay, so there are more programs and more code. For some old people like me around the table, you have already heard many times this mantra, it's the end of programming, right? You remember IDE, fifth generation programming system, et cetera, et cetera, no code initiative. Every time you see this, a couple of years later, you have more programmers. I mean, so actually development is skyrocketing anyway."
+    },
+    {
+      "start": 1106.72,
+      "end": 1133.024,
+      "text": "So it is important today to build the platform that preserves the software of today in such a way that we will not have in the future to go after a recovery from scratch, which is not an easy thing to do. So it's urgent to take action. And here is a place where I can move to the second part of the talk. How can we actually do something to preserve our software? So let me introduce for you."
+    },
+    {
+      "start": 1133.024,
+      "end": 1159.968,
+      "text": "This initiative, which was SOTO Heritage, it was started some seven years ago, actually announced it to the public on June 30th, 2016. So tomorrow is the fifth anniversary of the unveiling of this initiative. The mission of SOTO Heritage or the SOTO Heritage Foundation is exactly to collect, preserve and share all the source code of the SOTO, which is publicly available today."
+    },
+    {
+      "start": 1159.968,
+      "end": 1189.136,
+      "text": "So we are building a reference catalog in here, where you can find and reference all the source code, no matter where it comes from. We are building a universal archive to actually ensure the sort which is archived there will stay there over time. And last but not least, for our community, we are also putting the first stone of the key infrastructure we actually need, an infrastructure that allows us to enable the analysis"
+    },
+    {
+      "start": 1189.136,
+      "end": 1218.192,
+      "text": "massive analysis of the evolution of software through code over time, which is still another way of doing history. And in some sense, we need to build a very large telescope to observe the galaxy of software development, and we still do not have it. Well, if you look at how we have designed software heritage, software heritage is really an infrastructure. I mean, this is an infrastructure whose mission is precisely"
+    },
+    {
+      "start": 1218.192,
+      "end": 1239.264,
+      "text": "to go after all the source code no more no less and so we want to keep it when we make it available and develop all the basic functionality that will enable the building application in different verticals it can be in cultural heritage can be industry research and education public administration and so on"
+    },
+    {
+      "start": 1239.264,
+      "end": 1265.216,
+      "text": "We will see the archive later on, but you see, we started archiving the projects in the summer of 2015, and we are already over 160 million projects archived from all over the world, which boils down to more than 10 billion unique source code files archived already and counting. We have basic principles for building on this. On the technological side,"
+    },
+    {
+      "start": 1265.216,
+      "end": 1293.136,
+      "text": "Everything we do is open source because you cannot believe us if we tell you that we are going to archive for the long term some pressure knowledge and we hide the way we do it and we do not share information on how we do it. How can you trust us? We are actually keeping contents with a very careful tracking of everything, facts and provenance for every piece of source code. We can tell you where we found it, when we found it."
+    },
+    {
+      "start": 1293.136,
+      "end": 1314.4,
+      "text": "how we ingested it in the archive and as an organization we go back to this we decided to go completely for a non-profit multi-stakeholder open organization whose mission is only precisely to keep this archive forever for humankind so if you leave me a little bit of"
+    },
+    {
+      "start": 1314.4,
+      "end": 1337.488,
+      "text": "Let me, a little bit of pleasure here, let me delve a little bit under the hood. I mean, we are building a universal archive. Building a universal archive of source code is not an easy feat. So, for example, what we are doing, we are really going after all the places where source code is available today, if you're in development platform, build connector for each of these places."
+    },
+    {
+      "start": 1337.488,
+      "end": 1352.4,
+      "text": "because it is not like archiving the web yet there is no http standard okay for each of these platforms you need to build a different connector so we build this connector which we call we call listers to list all the different projects which are available there"
+    },
+    {
+      "start": 1352.4,
+      "end": 1382.08,
+      "text": "and then you will discover you know our discipline there is a massive creativity around so you have tons of different ways of keeping version control system or package managers and have it so there are there is a gigantic bubble tower issue here to many things git subversion mercurial packages whatever so we decided to go the extra mile and build adapters that read all these different formats and packages and create a single"
+    },
+    {
+      "start": 1382.08,
+      "end": 1407.296,
+      "text": "gigantic graph, which is technically a Merkle graph, that contains the whole history of development across the world in a stable, simple, well-documented structure that will survive the test of time, or so we hope. So the result is that you have the global development history of software development permanently archived in a unique"
+    },
+    {
+      "start": 1407.296,
+      "end": 1436.992,
+      "text": "graph across the world due to the compression property of this graph this is only half a petabyte today but the graph is huge over 20 billion nodes almost 300 billion edges around there by the way we build this graph i mean that uses for the duplication cryptographic signatures of all the components inside following the merkel construction we are actually able to associate to every single component"
+    },
+    {
+      "start": 1436.992,
+      "end": 1461.568,
+      "text": "in the graph every node in the graph a file a directory revision release an intrinsic identifier which is now called the software identifier that actually can be rebuilt by everybody independently once you have a copy of the object so it allows you to check the integrity of this object and actually verify it by yourself"
+    },
+    {
+      "start": 1461.568,
+      "end": 1491.088,
+      "text": "This is now an emerging standard being adopted in industry. For example, you find it in the SPD-X22 standard from the Linux Foundation. The prefix SWH is registered with IANA. There is a weak data properties for this kind of identifier. And when you will download the slide, I encourage you to click on these blue links. You will follow these links. And this allows to find particular pieces of source code with contextual information that allows you to actually..."
+    },
+    {
+      "start": 1491.088,
+      "end": 1516.704,
+      "text": "see it in a particular situation so this was a presentation why how but i would like to take a little bit of time now to show you exactly what this is so let's move to let's visit together"
+    },
+    {
+      "start": 1516.704,
+      "end": 1544.4,
+      "text": "the software heritage archive okay so this is archive.software.org it's the entry point of the archive you see here these counters which are up today so it's over 160 million projects today roberto excuse me for interrupting but we're still seeing your uh slides not the ah not the you might be sharing the window sorry so let me let me try if"
+    },
+    {
+      "start": 1545.776,
+      "end": 1563.648,
+      "text": "thank you so let me see if I can share what about now do you see the the website yeah okay yes this looks right yes okay thanks a lot for"
+    },
+    {
+      "start": 1563.648,
+      "end": 1580.64,
+      "text": "thanks a lot for heads up so this is a main entrance of the archives i was telling you here you see the different project archive the different uh sources we archive automatically i mean it's a selection there are many more than this and you can go in here and actually"
+    },
+    {
+      "start": 1580.64,
+      "end": 1608.448,
+      "text": "Enter in the search box for the moment the URL of the place of a project once was. It is not yet a full search inside the source code because this requires more money and more resources than what we have today, but it will be coming. You can actually have a look into this and, for example, find a piece of code of mine which comes from a paper published back in 2000."
+    },
+    {
+      "start": 1608.448,
+      "end": 1633.552,
+      "text": "12 if you see when you see uh the code archived you see the presentation of the archive is actually designed for us it designed for developers for people who know software source code so you can actually visit the content the readmes are rendered you can navigate inside the source code find particular parts of the source code that you are interested in"
+    },
+    {
+      "start": 1633.552,
+      "end": 1662.32,
+      "text": "And imagine, for example, you want to write a paper or documentation or share information about a particular algorithm with somebody or pinpoint a piece of source code that has particular historical relevance. So you can navigate in the archive, then select the part you're interested in. For example, here I'm clicking on the first line, shift clicking on the second line. And then all over the place in this archive, you have this permalinks box that opens up for you."
+    },
+    {
+      "start": 1662.8,
+      "end": 1686.448,
+      "text": "And here you get the cryptographic identifier for this file, but also if you want, you can add the additional content that contains even the name of the file and the number of lines, which are the line numbers that are selected. Once you do this, you can copy this information, put it in an article, click on it."
+    },
+    {
+      "start": 1686.576,
+      "end": 1715.424,
+      "text": "Now I'm simulating it by just copy pasting. And what happens here will be brought in the archive in front of exactly the same code fragment in exactly the same context. You see, it comes from the same file name that you see here, saved from the same origin and inside the same revision. So all the information is actually shared in the context."
+    },
+    {
+      "start": 1715.424,
+      "end": 1744.4,
+      "text": "If there is a piece of source code that you would like to see saved, which is not already saved by the automatic crawlers, we have already set up a mechanism for you, which is very easy, that allows you to just point our crawlers to the part that interests you. For example, here I am pointing to a Git repository that contains a nice piece of source code from Len Schuster, by the way. So you click on submit, and it goes."
+    },
+    {
+      "start": 1744.4,
+      "end": 1773.088,
+      "text": "into the waiting queue. So you see it is already accepted. It is this one. It is 5.31. So it's basically now. It will be scheduled and archived in a few minutes after this. And once you do this, you can write beautiful documentation about, for example, a piece of source code. Imagine the Apollo 11 source code. Here is an excerpt of the blog post we have. And when you have an image of a..."
+    },
+    {
+      "start": 1773.088,
+      "end": 1800.448,
+      "text": "piece of code which is relevant for you you can add these special links you have seen and this brings you again into the archive in front of exactly the piece of source code you're interested in you see and there are you you find some nice uh nice uh things i mean if you tap down in the source code which is available this is deep kind of technology archiving saturation putting reference to it"
+    },
+    {
+      "start": 1800.448,
+      "end": 1821.456,
+      "text": "has already been adopted in different journals so for example this is ipol image processing online you will see they point to software edge for the archived option there are also biptech entries including these identifiers that can be copy pasted into your papers if you want"
+    },
+    {
+      "start": 1821.52,
+      "end": 1848.752,
+      "text": "There are possibilities of depositing software through institutional archives. For example, in France, we have HAL, which is a national open access portal. You can deposit their source code, which is archiving software heritage, and then you can browse it directly and get all the benefits. So you can, again, navigate inside the source code, getting the thermal links, et cetera. And actually,"
+    },
+    {
+      "start": 1849.04,
+      "end": 1878.848,
+      "text": "I'm already using it in my paper. For example, this is a paper from 2012, where I was very proud of a particular algorithm that you see here. But back then, I didn't have software heritage account. So there was no link on this page. While today, this is a new version of the paper, I compiled with a link. I added this link that allows you to go to the archive and find, again, exactly the routine which is described in the paper."
+    },
+    {
+      "start": 1878.848,
+      "end": 1908.4,
+      "text": "And then last but not least, here is an example of an incredible historical piece of source code which was developed for musical synthesis in the University of Pisa in the 70s that has been rescued in collaboration with the University of Pisa and UNESCO by a team where Carlo Montangero, Laura Bussi and Guido Scatena contributed. And here you can find the full"
+    },
+    {
+      "start": 1908.4,
+      "end": 1937.616,
+      "text": "history of this source code that comes from the 70s. Okay, so I see it's Fortran, if somebody will recognize it, as it has been rescued by this team. Okay, so let me stop here this demo. It was very quick, but the idea was to basically convince you to actually go and visit this object by yourselves."
+    },
+    {
+      "start": 1937.616,
+      "end": 1964.464,
+      "text": "I would like to go back to the slides to go towards the conclusion. Let me see where I put the slides. Okay. Here we are and now I need to reshare again. How do I do this? Wait a second."
+    },
+    {
+      "start": 1967.056,
+      "end": 1993.616,
+      "text": "I do this and then I click on that. I hope this works. Can you see my slides again? Yes, I think so. Okay. That was a very, very quick demo. If you download the slides and click on the blue links, you have pointers to all of these objects, right? You can try it by yourselves. Now,"
+    },
+    {
+      "start": 1994.096,
+      "end": 2018.912,
+      "text": "Let's move forward again on this preservation and going towards the conclusion. So for preserving the history of our software commons, following up on this call from the UNESCO Asper Group, a joint effort has been done with the University of Pisa to actually develop a process, a detailed process, which is called the software acquisition process."
+    },
+    {
+      "start": 2018.912,
+      "end": 2044.976,
+      "text": "explains exactly how to reconstruct the developing history faithfully, keeping track of the authors, the dates, the kind of options, where they come from, which is not an easy thing to do, but now you have a process that people can follow, and actually UNESCO is translating these documents in different languages as we speak. An example is this great work recovering this first experiment, electronic music in Pisa."
+    },
+    {
+      "start": 2045.328,
+      "end": 2066.224,
+      "text": "We have seen this in the demo just a couple of minutes ago. And then I cannot announce anything properly today, but I mean, stay tuned because we are moving forward into that. It is not just rescuing the software, but finding a way of showing the history of software projects in a more lively way for the next generations."
+    },
+    {
+      "start": 2066.224,
+      "end": 2095.856,
+      "text": "Now, if you look at the present and the future, I mean, in academia, there is a growing adoption of this kind of technology, either through HAL or on different, I mean, reference archives for mathematical software. Many journals are adopting this kind of long-term technology with intrinsic identifiers. I do hope to see more of our societies, I mean, ACMI, AAA, to join this movement. For now, these are different areas. You see image processing, life science, mechanics, there are other coming in."
+    },
+    {
+      "start": 2096.112,
+      "end": 2125.984,
+      "text": "From the policy side, this kind of technology and archival effort is part of the National Plan of Open Science . It's part of the strategy for scholarly infrastructure research software in Europe. You'll find guidelines again available here. Maybe I will skip this. I mean, just a simple example. I mean, why preserving all this? Is this useful? Is there somebody who is interested in what we preserve? Well, let me give you a simple example, okay?"
+    },
+    {
+      "start": 2125.984,
+      "end": 2150.496,
+      "text": "Last summer, Bitbucket erased 250,000 repositories. For technical reasons, business decisions, okay? Their decision, it's up to them. Luckily, we are already there. We got funding from a foundation in the Netherlands, working with a company that was very experienced with the Mercurial version control system. And basically, when they unplugged Bitbucket, we already had the archive."
+    },
+    {
+      "start": 2150.496,
+      "end": 2179.824,
+      "text": "And just a few days after we announced the archive live, this guy, who is a researcher in astrophysics, tweeted this. You can click on the original tweet. I swear we didn't pay him. He just realized that a piece of precious source code that he had on Bitbucket went away. He thought everything was lost, but since we automatically archived everything, he could recover it."
+    },
+    {
+      "start": 2179.824,
+      "end": 2207.408,
+      "text": "It's important to do this massive effort on salt preservation. Let me conclude very quickly here. If you look at the other head, what do we have? Well, we have a committed core team. We are almost 15 people working here. Here we see a picture taken, as you can see, from masks laying around during the pandemics. But we were respecting the health measure. We breathed very deeply, then removed the mask, take a picture, put the mask again on."
+    },
+    {
+      "start": 2207.408,
+      "end": 2229.952,
+      "text": "And there are also other people who were not present for this pitch, unfortunately, like Jean-François Grammatic and many others. There is international support for this initiative from the policy level. We have an agreement with UNESCO and support from many German societies. And we have a growing set of donors, members and sponsors, starting from IRIA that..."
+    },
+    {
+      "start": 2229.952,
+      "end": 2254.256,
+      "text": "helping us move forward and now we have many many other partners not enough for what we need to do but this is already a nice starting point and i think this is a moment where i will tell you that you can help everybody listening to this presentation can help you can actually adopt and use this archive you can use this archive for archiving a reference relevant source code either yours"
+    },
+    {
+      "start": 2254.256,
+      "end": 2274.4,
+      "text": "All relevant source code you find somewhere, because now you have seen this Save Code Now functionality allows you to point our crawlers to anything which is relevant. There are also functionalities for deposit, but these are more for institutions. If you're interested, just contact me. You can use it in your research articles, in journals, in books on the history of software."
+    },
+    {
+      "start": 2274.4,
+      "end": 2301.072,
+      "text": "You can work using this software acquisition protocol to go after landmark legacy source code. I'm dreaming, for example, of seeing the source code of the Algol compiler written by Dijkstra. But I'm sure somewhere in CWI or somewhere else in the world, this must be there. Our source code of LISP, original version of things. I mean, we need to map the history of our technology over time. And now we have tools to do that."
+    },
+    {
+      "start": 2301.072,
+      "end": 2328.144,
+      "text": "We can engage, you can engage, all your students can engage with what we are doing, either as an ambassador, there is an ambassador program around, or you can contribute to the technical and scientific development. This is not an easy thing to develop an infrastructure like software heritage. I do not have time to go through this today, but it's really something which is not easy to do. And you can engage as an organization."
+    },
+    {
+      "start": 2328.4,
+      "end": 2358.192,
+      "text": "Any university or other organization can become a member or a sponsor. You can build mirrors to help make sure this will not be lost or contribute to the preservation mission. So I hope I have kept my time. I think I will stop here. And I leave you with some pointers. I'm very happy to take any questions you may have. Thanks again for your attention. Thank you so much."
+    },
+    {
+      "start": 2358.192,
+      "end": 2385.52,
+      "text": "Normally now there would be a thorough round of applause, but all you get is a few tweets from some birds in the background. So we already have a couple of questions. Moshe Vardi and then Alberto Siliti. So Moshe, you want to go first? Yeah. So thank you, Roberto, for this compelling presentation. I have two questions. One is."
+    },
+    {
+      "start": 2385.52,
+      "end": 2412.208,
+      "text": "There are some software that you may want to keep alive. That is that you have all the pieces, you know it's going to run, and part of your job is to make sure that it keeps running. But, I mean, what do you do, for example, suppose you only have binary. What do you do with binary? Binary is something you want to archive? That's a very, very good point. I have some software that my student wrote."
+    },
+    {
+      "start": 2412.208,
+      "end": 2439.632,
+      "text": "and unfortunately by now it's dead because we have not documented all the dependencies it is still a document of what they have done but it doesn't run anymore yeah so so there are i see different degrees of you know and in some sense all deserve to be preserved somehow right yes so this is the first question do you want me to answer this right away or do you want to give yourself to expose the second question too"
+    },
+    {
+      "start": 2441.552,
+      "end": 2469.328,
+      "text": "No, I will answer this. I will answer this right away. Well, thanks a lot for pinpointing this. Preserving software and making software run for a long time is a massive undertaking. It's very important. It's something we would really like to do. It is something we really do not know how to do well today. So what Software Heritage actually does is focuses on this part of this mission, the part that is keeping"
+    },
+    {
+      "start": 2469.328,
+      "end": 2498.176,
+      "text": "the source code available there are many reasons for this as we have seen before for source code even if the machine where you can run in is lost you can still read it and you can still understand what is going on that's the reason why there is where you find the knowledge not in the binary if you only have a binary not the machine to run it good luck understanding what the software does right so having the source code alone is better than having just the binary of course we would like to be also be able to keep"
+    },
+    {
+      "start": 2498.176,
+      "end": 2514.96,
+      "text": "the software running but this you know the jury is still out there are so many different ways of doing this you can use a virtual machine docker containers many different objects they work today but they need a lot of effort to be kept running over time another solution"
+    },
+    {
+      "start": 2514.96,
+      "end": 2537.536,
+      "text": "is to try to keep track of all the information which is necessary to actually rebuild binaries recompile binaries bit by bit compatible with starting from the sources and here the good news is that some technologies get getting out there are initiatives like geeks of nix a functional packet manager with which we have tied it already connectors established"
+    },
+    {
+      "start": 2537.536,
+      "end": 2565.344,
+      "text": "And then there are people who are, for example, if you look at the Library of Yale, they have a nice initiative called EAZ, Emulation as a Service, where you can actually run and spawn through the web emulators for different kinds of virtual machines for different epochs in the history of computing. And then you can use them to actually run binaries for which you do not have a platform anymore. So that's a very complex puzzle. We do not pretend to answer all the issues."
+    },
+    {
+      "start": 2565.344,
+      "end": 2594.112,
+      "text": "We want to focus on ours, making source code available and keep it for the long time, and connect with all the other initiatives that are building the other pieces of the puzzle. So I hope this answered your question. Thank you, Roberto. Alberto Siliti, do you want to unmute yourself? Yes. So thank you, Roberto. Hi. Hi, Roberto. I would like to ask you,"
+    },
+    {
+      "start": 2594.112,
+      "end": 2621.856,
+      "text": "one thing so basically you said that you want to store all the algorithms all the software that make the history basically and what about the fact that some original algorithms are not actually code itself but are pseudo code so have you thought about any way of preserving this kind of knowledge that is also connected with"
+    },
+    {
+      "start": 2621.856,
+      "end": 2632.144,
+      "text": "different instances. So you have the pseudo code and then the different implementation of this code. Have you ever thought about this kind of preservation? Thanks Alberto."
+    },
+    {
+      "start": 2632.144,
+      "end": 2653.568,
+      "text": "That's also a very important point. Again, I didn't have time at all to touch upon this right now. You know, in this movement about open science, there is an effort to recognize the importance of software, which was kind of forgotten for too long. And then when you think about software, you are very right. I mean, in the contribution to a piece of software, there is not just the code."
+    },
+    {
+      "start": 2653.568,
+      "end": 2681.744,
+      "text": "There is a lot of other effort that comes in. I mean, the people that design the algorithm, the people that design the architecture of the system. There are other documents. A lot of documentation goes around the software project, which is not in the code itself. So it's important to give credit to the people that do this kind of work. And this is an important issue today. I mean, for the careers in general. But it's also important for preservation to keep track of this. So we do not work on this again."
+    },
+    {
+      "start": 2681.744,
+      "end": 2708.608,
+      "text": "You understood my answer too much, so you see it's kind of a repetita, but we're not focused on that because our focus is on software source code. But we are working with institutional repositories, with journals, with documents, with companies, to make sure that they know that it is possible to link documents, for example, or books or articles that describe algorithms, that describe architecture, that describe..."
+    },
+    {
+      "start": 2708.608,
+      "end": 2716.208,
+      "text": "different parts of the process of building a software with the corresponding source code and providing this link."
+    },
+    {
+      "start": 2716.208,
+      "end": 2746.096,
+      "text": "and we keep also this is new i mean we have the means to actually deposit metadata associated to particular pieces of source code that comes from specific authorities like for example acm or ipre or a company or some association could say this was called developed by one of our member actually is a key important part that comes from that paper on that book or using proper that other project and we can keep that metadata associated to the software and make it easier to have these links"
+    },
+    {
+      "start": 2746.096,
+      "end": 2775.904,
+      "text": "between the documents, the code, the data, which are so important to keep our knowledge of mankind. Thanks a lot. Thank you, Roberto. George Zarkatakis, you've got your hand up. Can you unmute yourself? First of all, thanks also for presenting this very worthwhile project. My question is,"
+    },
+    {
+      "start": 2775.904,
+      "end": 2801.312,
+      "text": "following the message I saw in the chat about how important the history of these developments is. Does your project carry within it the ambition to go beyond creating the archive, as valuable as it is, and proceeding to, let's say,"
+    },
+    {
+      "start": 2801.312,
+      "end": 2816.128,
+      "text": "making the sort of links that historians do as to the significance of a particular event, as to links with other events, as to the motivation of"
+    },
+    {
+      "start": 2816.128,
+      "end": 2844.08,
+      "text": "of a certain piece of software being written, as to whether it represents a turning point in the history of the subject, or is that something to be... This, of course, is always controversial, and there's no such thing as the history with a definite article, but it depends on the viewpoint and on all kinds of other pre-notions. Is that..."
+    },
+    {
+      "start": 2844.08,
+      "end": 2873.376,
+      "text": "part of this of the current project or is that going to be left for let's say uh future historians of the digital um development right thanks a lot for this question as you can imagine i hope i could trans share with you a little bit of the passion that moves me and i can assure you all of the team in working on this kind of project and you are very right i mean part of this passion comes from the fact that software is not just"
+    },
+    {
+      "start": 2873.376,
+      "end": 2902.832,
+      "text": "technology software is part of a human adventure it's part of a human history there is a history behind each project and it is so important to tell this story because this is a way we can make the rest of the population the rest of the new generation aware what is going on there are so many things going on so we need to rebuild this history for doing this we need to work this historian and i point you to this column by uh len schustek and don knoop where they are actually pushing"
+    },
+    {
+      "start": 2902.832,
+      "end": 2930.576,
+      "text": "for more historians to look into the history of this technology and understanding how the tonnage evolved how the project evolved we are in touch with some historians of technology to try to see with them how to do this i mean we ourselves we are not doing this we are more on the technical scientific side of the infrastructure which is i assure you is already a gigantic undertaking but we are trying actually to make connection and what i was kind of"
+    },
+    {
+      "start": 2930.576,
+      "end": 2951.856,
+      "text": "informally mentioning, because it is too early to announce it, I mean, trying to build these tools and website to have a description of the software stories, of the story of software, linking to the people, linking to the events, linking to the article, linking to the documents, I mean, to tell the story of a software project."
+    },
+    {
+      "start": 2951.856,
+      "end": 2981.392,
+      "text": "This is something we are undertaking right now in collaboration with UNESCO, with some little company in the US, with the collaboration of the University of Pisa. I see Carlo here. He's also involved in this project today. I mean, it's a small initiative, but the idea is to try to provide the tooling that will make it easier for historians of technology to make available their finding in a very nice way, an easy way for people to actually learn."
+    },
+    {
+      "start": 2981.552,
+      "end": 3005.408,
+      "text": "Sorry to look at this more from the tool point of view, you see, but it's important. If you do not have the tools to do this properly, then it is difficult and then people will have more difficulty doing it. With the proper tools, the proper presentation of this history, I hope we can attract more volunteers. Think about, for example, master's students or..."
+    },
+    {
+      "start": 3005.408,
+      "end": 3035.2,
+      "text": "they want to look for an internship service why not working together with some historian understanding why that compiler was done this particular way of the database system were written a particular way who did it what are the key decision in the can we find it in the in the source code can we find in the documentation when you find this let's show it you see this can be exciting if we can provide the people with the tools to show the results thank you roberto and thank you george um"
+    },
+    {
+      "start": 3035.2,
+      "end": 3063.408,
+      "text": "I'm going to use my privilege as moderator to ask a question here. So there are a few projects out there that I think are very nicely complementary and synergistic. So one of them is Synopsys' Black Duck Open Hub, which I don't know if you've heard of it, but it used to be Ohlone and they acquired it. And it does automated analysis of various aspects of..."
+    },
+    {
+      "start": 3063.408,
+      "end": 3089.888,
+      "text": "of software that is in public repositories, including things like using this Kokomo model to estimate the number of person years involved in developing it and also tracking kind of the history of commits and how many commits there have been. It seems to me that those kinds of tools would be enormously helpful to historians for developing a narrative associated with"
+    },
+    {
+      "start": 3089.888,
+      "end": 3114.224,
+      "text": "the software. And in particular, unlike, I think, Synopsys' tool, instead of focusing on just single pieces of software, you could be able to relate things. So, for example, tracking particularly high prolific authors of software as they move from project to project, right? That would be an extremely interesting thing to be able to understand."
+    },
+    {
+      "start": 3114.704,
+      "end": 3143.776,
+      "text": "Absolutely. I mean, this kind of community analysis has been quite popular in the last years in the software engineering community. I mean, the particular side of software engineering community. I do not want to impose too much time because I do not have a lot of time left, but we already started doing this kind of analysis. We already provided a data set for researchers to work on this. You can look on the online slides. There is an appendix."
+    },
+    {
+      "start": 3143.776,
+      "end": 3166.304,
+      "text": "and slides i didn't have time to show today i will not lose time in manipulating to show them again but you you have actually huge data set with all the comments all the history everything that was in the archive available for people doing this kind of analysis the only thing keep in mind this is huge okay it's a huge data set so you need resources to make it easily available"
+    },
+    {
+      "start": 3166.304,
+      "end": 3193.824,
+      "text": "We are working with researchers, in particular Stefano Zacchiaroli, who is my number two in this project, is very involved with the software engineering community in trying to foster this kind of analysis. There is a nice paper. You can look, for example, there are gender studies in software. I mean, looking at software heritage, you see how many women participated in software development over time, how this changed over time. I will not spoil you. You can read the paper. You will see some nice things."
+    },
+    {
+      "start": 3193.824,
+      "end": 3215.696,
+      "text": "So you can do all this on software agents at a much bigger scale with respect to what you can do on OpenHub or other things, just because this is a universal archive. But we are not yet ready to offer you a cloud version of this because, again, believe me, it costs money to set up this kind of infrastructure."
+    },
+    {
+      "start": 3215.696,
+      "end": 3243.952,
+      "text": "if you any of you know some kind of billionaire they want to sponsor these kind of things and offer gigantic infrastructure we know how to use it and we will be more than happy to provide the functionality you are mentioning here okay in the interests of the impending football game i'm gonna ask jim laras to ask the last question uh thank you for this very interesting talk"
+    },
+    {
+      "start": 3243.952,
+      "end": 3273.76,
+      "text": "I have a question about the use of this archive. So one of the things that for many years I thought was very unfortunate is that we teach students, we teach lots of people to program without teaching them to read extremely well-written programs. You know, it's kind of strange. You don't learn to write without reading literature. You know, what is the great literature of software?"
+    },
+    {
+      "start": 3273.76,
+      "end": 3303.184,
+      "text": "And, you know, is anybody looking for that? Is anybody sort of trying to figure out? I mean, you know, there are certain things that Legend has that are particularly well written, you know, the Linux, the Unix, v6, source code, that type of thing. But is there any systematic effort to try to figure out what we should be putting up as examples of very well written programs for students to learn from? Thanks again, James. This is a."
+    },
+    {
+      "start": 3303.184,
+      "end": 3330.288,
+      "text": "Fantastic question. I mean, actually, you're raising a super important point. Programming is actually still today a kind of an art. If you want to learn how to do it properly, like in literature, unless you're a magician, I mean, you do not buy poetry just as you are born. You start by reading the classics and then you develop your style. We should be doing, I fully agree, we should be doing the same with programming here. It requires a lot of effort."
+    },
+    {
+      "start": 3330.288,
+      "end": 3354.384,
+      "text": "There are a few examples of things that you can think about. You remember the Cedric book on algorithm tries to show how you do these kind of things. There are beautiful, there are books like Hacker's Delight that show beautiful example of kind of calls like this or many initiatives like this. What I think is a little bit of a game changer here with the availability of an archive like Software Edge is that you can"
+    },
+    {
+      "start": 3354.384,
+      "end": 3384.192,
+      "text": "Start building this material by referencing it the way I have shown you during the demo and making sure that your effort does not go away. So if I look at my old articles many years ago when I was teaching, trying to teach dynamic programming by delving into the source code of the text to tease and looking how diff is actually written, which is not exactly what you teach when you do algorithm. There are many subtleties in there."
+    },
+    {
+      "start": 3384.192,
+      "end": 3408.496,
+      "text": "I was using a version of the source code, and then when I tried to teach it again two years later, it was gone. So it's so frustrating. Today, you can fix it and say, this is a version I want to show you, and you know it will be there, and you know your referencing is like that. It's so simple, but it's a game changer. So we should start doing this today. Yep. Great."
+    },
+    {
+      "start": 3408.496,
+      "end": 3437.008,
+      "text": "thank you uh once again uh thank thanks a million roberto for this very inspiring talk and discussion and uh as you all you all know i think it's customary to end with a piece of music uh i'd like to turn the floor over to mythic thanks a lot for having me here it's a pleasure to to talk to this or great community peter's in charge of this oh yeah thanks edward um yeah i'll happily take"
+    },
+    {
+      "start": 3437.008,
+      "end": 3466.768,
+      "text": "take care of this um throughout the whole presentation thanks roberto for this really really interesting and inspiring talk um i was wondering why why aren't we listening to the tao muse music synthesizer from the 70s if you haven't if you have an example why aren't we you can you can i can share it i will share it for you later on please yeah let's let's let's do that um but i have something from a decade later uh from the from the 80s and"
+    },
+    {
+      "start": 3466.768,
+      "end": 3487.264,
+      "text": "So, yeah, when you're talking about preserving software and for the cultural artifacts that they are, I thought it's also important to stress the importance of video games in that regard. At least that's like software that's hugely important for me and also the impact that they had and are having."
+    },
+    {
+      "start": 3487.264,
+      "end": 3516.8,
+      "text": "And also not to underestimate the role of preserving them for their music and soundtrack. So, I mean, there's lots of electronic music out there and a lot of it is in video games actually from the time. So I want to end with video game music and I've picked a sentimental favorite of mine. Let me just share the screen here. Name of the menu theme of the 1987."
+    },
+    {
+      "start": 3516.8,
+      "end": 3543.184,
+      "text": "Commodore 64 game, The Great Jana Sisters, which is kind of like a rip-off of Super Mario Brothers, but the better version. So Super Great Mario Jana Brothers Sisters. It's kind of like the Commodore 64 version of that. And the soundtrack back then was composed by Chris Hülspeck, who is a master of turning the limited capabilities that the sound chips back then had."
+    },
+    {
+      "start": 3543.184,
+      "end": 3572.944,
+      "text": "and using that to create multi-layered highly memorable compositions and he's also done things like soundtracks for Turrican and R-Type among many others for those that recognize those titles. I also want to mention that that was a very tough call for me between this one and the Arkanoid theme by Martin Galway which is also a classic and I think we'll put both on the soundtrack playlist that we have on our YouTube channel where we collect all the music that we play throughout the"
+    },
+    {
+      "start": 3572.944,
+      "end": 3601.376,
+      "text": "all these lectures or at the end of all these lectures. But right now, it's the Jana Sisters theme. And I have to say, it really unfolds its magic in a continuous loop over three hours minimum. But we'll just hear one iteration and then fade out in a second, so it's not going to be very long. For today, I want to thank you all for joining, and I hope you can enjoy your vacation, and that we'll see you after the summer. Take care."
+    },
+    {
+      "start": 3601.376,
+      "end": 3603.92,
+      "text": "And here's some final piece of music."
+    },
+    {
+      "start": 3717.2,
+      "end": 3735.023,
+      "text": "Thanks to all of you. See you after the summer break. Bye. Thank you. Bye, everybody. Bye, everybody. Roberto, I will invite you to a workshop if you want. Okay. Absolutely."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,741 @@
+{
+  "video_id": "5pdNpZy64Sk",
+  "source": "whisper",
+  "language": "en",
+  "text": "Thank you, everybody. Thank you for joining. Thank you for joining to this event of today, to the lecture of today. Today, we are looking at data and data infrastructure. So it's somehow looking at the basis of the digital world, which is made out of data and other connected. And I'm really happy to have with us. Melania Stefania Milan from the University of Amsterdam. She will give the lecture of today and thanks Stefania for joining us. The moderator will be Helga Novotny. She will then introduce Stefania in more detail. The choreography is well known as always. We have 30 minutes with a presentation and then 30 minutes Q&A moderated by Helga. And at the end we have... Always a piece of music, this time proposed by our speaker, Stefania. I would like to welcome moderator Helga. I think I don't have to introduce her, I introduce you. And I thank you, Helga, that you are with us. Let's say the crown of the European research. Thanks for joining and being with us since the early beginning. The floor is yours. Thank you very much, Hannes, and welcome to everyone, especially to Stefania Milan. It's a pleasure to introduce Stefania. She is a professor for critical data studies at the University of Amsterdam. And as she just told us, before the University of Amsterdam is a bit in a turmoil because there are students protesting, the police, the management. So we asked Stefania to relax and to speak to us about the work she does. She has also an appointment with the Berkman Klein Center for Internet and Society at Harvard University. And she's also a research associate in Florence with the European University Institute at the School of Transnational Governance. Stefania, her research has been very much engaged with the topic of citizenship. and data, digital networks. And she has studied grassroots engagement. How can citizens at the grassroots level become engaged with data and data infrastructure? She also has a special interest in what happens in the so-called global south, which is somehow neglected. Normally, we look at what is happening in our part of the world and not in the so-called rest of the world. And there are people that she calls data poor. Today's topic is about the governance of data infrastructures. Stefania will tell us what this entails. And I hand over to you, Stefania. Welcome. Thank you very much, Helga. Thank you, Hannes and everyone, for having me here today. Thank you also for the very exhaustive, very kind introduction. It's really an honour to be with you and share what are, in fact, some initial ideas about a new research project that I will start in the years to come. But there are ideas, as probably will become apparent in the course of my presentation. that have been bubbling in my head for quite some time. Although, as you know, when the research ideas are not yet funded, they're always a bit sidelined, waiting to make room and space for proper engagement. So far, they're scattered pieces here and there. Now it's the time, as the title says, to theorize what I've been doing, what I want to do in the future. Elga mentioned there's a little bit of turmoil at the University of Amsterdam. I want to mention this because I think this is a message for all of us academics and citizens in 2024. The University of Amsterdam, so students and staff, including myself at the University of Amsterdam, have been asking for some institutional change in light of some dynamics at the university that we considered. not ideal, let's say, including, for example, with research funding and collaborations, there's been quite some brutal police repression that has come to a shock to a lot of us and the students in particular. So in my conversation with the students, besides the facts, what happened and all of that, what I realized is that students often do not feel heard by us by the university, not just the senior, not just the management, but by the university as a system. And so I just want to plant this little seed. Let's give agency and voice to our students and space for them to also have a say whether we agree or not. And let's probably also try to the best of our possibilities not. to repress this beautiful energy that comes from the ground up. It's citizenship in action, really. I want to mention that also, it's a way to apologise if my talk is going to be a bit flimsy, because I'm just coming out of a meeting where there were my colleagues, some of them are crying. So it's a very emotional time for us in Amsterdam at the moment. The university is closed today. And tomorrow, because of the protests, because of the destruction, because of the repression, which is also, by the way, at some point my little... Toddler girl is going to come in. You might see her or we might be interrupted by her because I have to be at home to do this talk. So sorry, too long an introduction, but it's a very emotional time for all of us in Amsterdam these days. And so apologies in advance if I am a little bit scattered and less focused than I should be. I wonder whether you see my screen now. Do you see my screen or not? No. OK, so I do share screen again. Sorry, because in fact, I was looking at your beautiful faces and it wasn't clear to me. So now you see it. Good. OK, thank you very much. So. This picture picture appear, it was a large billboard at the Rome Fiumicino Airport in the summer of 2021. You might remember that we were just emerging out of one and a half years or one plus a month here of variously intense lockdown periods in which we couldn't visit family and friends. It was hard to travel. So everyone was eager to get back on the road or in this case on the air. Delta, in partnership with Aeroporti di Roma and a company called Innovation Biometrics, announced biometric traveling, sorry, boarding for all Delta passengers. We can discuss whether, you know, like, for example. the iconography that comes with, you know, smart technologies like the beautiful woman, white. Let's leave that aside for a moment. But what I find interesting is that we are told as citizens, as travelers, as users who might not be very aware of how biometric technology works, this is not rocket science. It's simply, brutally put, your new way of traveling. You're already part of it. In fact, we are. part of it but it's also here presented very much as a new brainer seamless technology that is going to facilitate our life we have all been very bored in line waiting to board the plane right so why would we be against something to facilitate our lives well facial recognition technology is uh to say the least a bit problematic Recently, the European Parliament in the European Union AI, Artificial Intelligence Act, has put a moratorium on a lot of this technology. But it is anyway to a large extent in the laws in our society. It's here in Amsterdam. It's, for example, at the football stadium here in Amsterdam. It's at the airport, but I'm sure it's also in a city near you. This is a screenshot from the Guardian, how the facial recognition technology works. For those of you who aren't familiar with it, sorry, just one minute because I want us to be all on the same page. A facial recognition technology camera looks exactly like a normal security camera. We are used to the sight of those devices, except that it doesn't take a faithful picture like our human. eyes. We see each other with blood and flesh and hair and eyes and all that. But it measures and records the distances between some topical points on our face. There's a lot of different biometric technology around. I'm going to focus on face recognition because it's a long-hanging fruit in terms of making clear why this is a bit creepy and problematic because we're all quite jealous about our identity. So what happens? Your face, so the distances of, you know, like a mock-up of your face is recreated in real time, and this mock-up is then compared in real time with existing data assets. You might say, well, I have nothing to hide, right? Why would I worry? point well taken but if you have ever been on a social media network whether voluntarily publishing your picture or simply being you know put there by someone else including for an academic event or whatever you are already in some of these data sets so we are continuously tracked on the move before without being um aware of that but what's uh i mean an analogy would be It's like walking around town with an open passport on our forehead. So it gives us away our identity on the spot. Now, yeah, we live in an increasingly data-fired society. We have accepted by now, I suppose, that pretty much anything around us, but also anything of our doings is. So transmuted, translated into data points that are then monetized and traded, but also that are used, and I'm not going to deny it, to facilitate our life. A lot of this, I mean, as an example of official recognition, technology deployed at the gate at the airport is generally designed to facilitate our life. So why do I worry even? Well, I... the example of facial recognition technology, which is a type of biometric technology under the rubric of regulatory data infrastructure. What are regulatory data infrastructures? Well, they are infrastructures which combine software and hardware. They're complex. They combine very different types of technology in one device, often a device as small as our mobile phone. that generate data in real time. And this data results then in monitoring of depravity or decision-making. Another example that for some reason is Belgium, but I like the fact that the phone was holding a hand. A hand that was holding the phone, sorry. Although the phone holding the hand is probably what happened more and more these days where technology is very much designed to guide our actions. So apologies for this Freudian slip. So another example is the European Union digital COVID certificates. It was called Green Pass in some countries like Italy when I come from. It was called simply QR codes in the Netherlands because they did have a QR code. Now, don't get me wrong. I'm absolutely pro-vaccination, multiple time vaccinated. I'm not necessarily against a way of checking. who is vaccinating, who is not for public safety, but together with a number of colleagues in computer science, legal studies and critical geography, we have been writing about why we consider COVID vaccination certificates in the digital format a problematic endeavour, including because they create an infrastructure for identity verification that is a scaffolding that once implanted in society. can be done use for other purposes, not of all a welcome by the citizens. But I can point you to the article if you are curious. Now regulatory data infrastructure are called regulatory for me because they exercise regulatory power. They increasingly take up functions that were once pertained almost exclusively to governmental agency and public administrations and were performed almost exclusively by human beings. Now, essentially, we have this software making automated decisions on our behalf. And these automated decisions, I argue, regulate the polity, end up regulating even our possibility or not of belonging to a community. In other words, you see another example of a COVID. Technology, I mean, which is totally non-COVID, and they should have been traveling in Asia. You've seen this long before the pandemic. This is a thermal camera that detects whether all the bypasses are running at temperature. Because if you're running at temperature, it's quite likely that you are carrying a virus or are, by the way, having a bacterial infection. So you might be a threat to those around you. So this is a great example of how regulatory data infrastructure, thermal camera being one of them, make and unmake publics. This picture actually comes from a conference that I attended in my own country in Italy during the pandemic, where it was a little still, I mean, one of the first conferences we could attend to. We were very happy of that. Understandably, they were trying by all means that people would not get more infected, but I find quite problematic because this was really a way of showing the ability of regulatory data infrastructure in action to make and unmake publics. Several people were stopped at the entrance using the indicator of the temperature, whether or not they had a green pass, by the way. So regulatory data infrastructure make and unmake publics, make and unmake community. There are a number of problematic aspects. Now, I'm very well aware, as I said earlier, that there's also a lot of beauty in these developments. But I take upon myself the task of discussing instead what might go wrong. Why is that? Well, we are seeing marketing is already doing a great job at convincing our society that this is all awesome. And then we should certainly not oppose any of this very convenient technological solution. States as well, state agencies. often implement them without asking us whether we like them, but also with the same flamboyant narratives of citizen empowerment. So whereas I acknowledge that there is quite some truth in this narrative of citizen empowerment, I want to just focus for now on if you want the negative side and apologies for that in advance, because I've been told recently my research is depressive. Sorry, I understand that. So seven reasons why we should worry about regulatory data infrastructure penetrating more and more inside our society and society built up. Often the implementation, the adoption of this technology happens outside democratic scrutiny. I'll give you an example. Apologies are again a pandemic example. When contact tracing apps were introduced in a lot of European countries, I'm going to focus on Europe just for reducing the complexity of the world, but not to dismiss that there is a much broader universe out there where actually examples are even more poignant, more interesting. When these contact tracing apps were introduced in many European countries, there was no debate at all. People were not asked whether they like this to happen. When a new facial recognition system was enrolled in the city of London, UK, in January 2020, right before the pandemic and completely non-pandemic related, local administrators were not asked whether they agreed to that, let alone the citizens. The local administrators are in place to represent the will of the citizens and their interests. So I find it a bit... or very disconcerting, that a lot of this technology adoption happens completely outside our purview. We don't know about them, but also outside the mechanisms that are normally debuted in a democracy with representing citizen rights and preferences. Second reason for concern is that these are complex technologies with some very limited exceptions. These technologies are in the hands of the private sector. They are too complex for state agencies to be able to run and maintain them at their own cost with their own stuff. So regulatory data infrastructure brings into the picture for-profit contractors that, as a byproduct of that, get access to a lot of sensitive data. Think about health. technology, education technology, by the way, all of this is part to some extent of what I call regulatory data infrastructure, which is a very broad category. And you're going to understand how we should ask questions about private contractors having access to certain data that are very personal and they are very dangerous to release in the public domain. Third reason of concern. They often, these technologies are being adopted and used in a grey socio-legal area. Special recognition cameras, for example, have been implanted in many cities and countries long before the AI Act sort of put a temporary and not even enforced yet stop to this proliferation. And often because they were ascribed to regular security cameras regulation, whereas, as I hope I made clear earlier, this type of technology is a tiny bit more intrusive than what we were used to. So technology development typically sneaks through, in a way, existing legislation because the policy process is much slower for good reasons. But, you know, technological innovation often takes the lead here and policymakers then try to patch it up ex post. As I'm going to mention in a bit, there is unfortunately ample potential for discrimination. Now, we are a deeply unequal society. So I'm not saying that technology brings in itself discrimination. We are a society that discriminates. But because technology is often designed by humans, it carries the same biases that we have as humans. With a caveat, however, that whereas if you have, I mean, when you deal with humans, there are typically existing mechanisms in a democracy to correct potential discrimination effects. With technology, there is less possibility at the moment at least for a redress or for understanding what's going on. I have two Dutch examples that are really... scary, to prove my point. Point number five, or reason to concern number five, it's very difficult to opt out, if not impossible. I mean, first of all, if you walk around town and you get yourself under the eye of a facial recognition camera, which is typically not signal, I mean, you understand that you definitely cannot opt out. But also think, for example, about the adoption by our school systems of technologies, streets like Google Classroom during the pandemic. If one day to the next, you're told your child is going to go to school because there's a pandemic, we have to invent a solution. The only solution we have is this. You have two choices. Either you say, I find this problematic, I'll keep my kids home from school, but I'm not sure you can actually do that legally or whether this is going to be good for your kids. But you have no other choice than to opt. in. Reason to focus on number six, climate footprint. This is something which is totally and deliberately hidden by the official discourses about these technologies, but these are very energy-hungry technology. Data centers, and I don't remember now, of course, the amount, but I think they are expected, so don't quote me at face value, because I would have to, I don't have the My notes with me now on this, but by 2027, if I remember correctly, one of the reports that I've read, they are expected to consume one fifth of the world's electricity. And this is not a discussion that we are having. Why the Netherlands is starting? I don't know what about, for example, Austria. And then final six points is that we are moving quickly towards the normalization of this technology. Once implemented, they're rarely taken back. They're often in the background, just collecting data for the next emergence, for the next good excuse to use the data. So we as a population, we are more prone to accept and give away our, for example, privacy concerns. Now, I argue that the pandemic, there's a big bird. Sorry, there's a big bird walking on my laundry. For one time that there is sun in Amsterdam, this is the result. Sorry, I just got distracted saying this kind of flying monster. Hope we don't have too many bad consequences. Yeah, so the pandemic has accelerated the transitions to what I call governance by data infrastructure. We are seeing a lot in the pandemic. The pandemic, of course, was a special time in which pretty much everyone, not only policymakers, but also as common citizens were driven to believe desperately that technology would help us to ease the social costs of the pandemic, which are all very bad, fresh memory. So governance by data infrastructure, for me, it's the process through which more and more governance processes are in the hands of or delegated to technology of the kind that I've just described, with some consequences. Well, most of all, as I mentioned, it's the penetration of the private sector into state institutions, including the welfare. system, which consequences that I personally think are worrisome. So in the next five years, I've been lucky enough to execute, by the way, a European research fund deal. the European Research Council Fund. And I always want to thank Helga for having contributed to set up this fantastic organization that allows us to pursue our wildest research dream. So what I'm going to do is to gather a wealth of empirical data to prove or disprove, I'm open to staying corrected, my three pretty scary hypotheses about governance by data infrastructure. I believe the governance by data infrastructure changes our ability to exercise citizenship. It's like if technology intervenes between the state and its citizens, altering some of the dynamics we have known so far. Once again, not everything is for the worst, but allow me to emphasize that part. Secondly, it shifts sovereignty and state-making ability away from the state. through the private sector, because the private sector is called to intervene to provide this technology, manage and run this technology, and the data centers where the informations are stored. And ultimately governance by data infrastructure is very likely to augment inequality in society, which is a particularly sad outcome. I give you a couple of examples. This is the Netherlands. You're going to have to understand Dutch. I'm going to tell you what the header is about. It's a little bit old, but I find the header quite telling. I want to tell you this little story. The student with the darker complexion was trying to take an exam at the Vrije Universiteit here in Amsterdam. Not my university, but just by chance, right? Because all of our universities during the pandemic have used invigilating software called proctoring software to make sure the students do not cheat in an exam, even if they're conducting the exam in the solitude of their bedrooms or their living rooms or their kitchen. Now, as it turns out, this student, so the software was not optimized beyond white skin. So the student was trying to take the exam. You have all been through exams. Imagine you're there, stressed. It's already a very stressful time. The students kept getting the message that she reported in the header. Prove that you are human. So she kept being thrown out of the exam room and said, prove that you are human. Prove that you are human. Now, she brought the court. So she decided to not stand quiet about this. An organization, the guy that you see next, you probably know him because he was the director of a Dutch great organization called Beats of Freedom, which is a digital rights organization here in the Netherlands. They decided to stand on the side of the student and they brought the case in front of the College of Direct and Fundamental, which is an independent organization overseeing human rights implementation in the country. Now, very sadly. There was a court case at the beginning. The court ruled that the university has to prove that there has not been discrimination. In the end, the student lost the case because there was no proof of actual individual discrimination. So there was no proof that this individual student called Robin had been discriminated, but just black people in general. So we can discuss legislation, we can discuss court cases, whatever. So it's a sad outcome, but it contributed to put the issue on track. Another example, it's called the Toeslagen Affair. You probably remember in 2021, there was a welfare scandal in the Netherlands that forced the government to resign. Since then, we actually haven't had the government. That's another story. And this was on the basis of a scandal that... 20,000 parents involved, 20,000 parents that were recipients of welfare subsidies for child support. So these are impoverished families that their algorithms, which was an anti or let's say a fraud detection algorithm, tried to, so were flagged as potentially committing fraud. The state intervened and asked them money back. This created, some people went bankrupt, some people committed suicide. There's a pretty horrible story behind this. But this was an algorithm that flagged as more likely than others to conduct fraud on the basis of foreign surname. Double surname, which until not long ago was not allowed in the Netherlands, so it meant that you were really a foreigner. Residence in low-income neighborhoods and double citizenship, which is also an indication that you are not a real Dutch, right? So this is to show how, I mean, when I talk about discrimination, what I mean, and also to the extent to which it can go wrong, even in a country like the Netherlands, which is a pretty solid rule of law, and also quite some... good efforts at the government level to try to prevent these disruptions and these things from going wrong and also quite some good level of digital literacy amongst the population. So I realize as usually I get quite excited about this and I'm talking maybe a little too long so I want to just flag three reasons or three little mini pieces of research that I've done as part as I said of other I mean, bits and pieces that have done all regulatory data infrastructure waiting for the funding to materialize. One was on techno-solutionism and the standard human. One of the byproducts of regulatory data infrastructures is that they are part of an effort in our society to rely or to try to find technological fixes to societal problems. So trying to turn political problems into technical ones and also trying to use the technology to fix society. As one of the byproducts, one of the efforts of this is that the technology that is normally the beauty to this role is only optimized for what we may call the standard human. I'm a sociologist by training, and I was very inspired in the past by the work of Stephen Epstein, who wrote about the standard human in a completely different context. He was writing about sociology of health and medical trials. But I really find his criticism against the standard human, as it is conceptualized also in a lot of pharmaceutical research, luckily less and less so, given there's quite some pushback from public health. researchers. But what is meant by that is that we extrapolate the features for one, two, for a limited set of experimental subjects often, a profile of society, and then we make that fit to the rest of society. And a tiny example. Sorry for interrupting. Can you come? points short because we need some time for discussion. Yes, sure. So this is, I actually can just maybe conclude here because also... No, no, you have two more points. But yeah, two more slides actually. So one related to that is that it legitimizes inequality and exclusion because we tend to... to trust a decision made by a computer much more than we trust a decision made by a human. Plus, often there's not yet in the legislation, in the public procedures around this, a way to seek redress, raise your voice, seek explanations. So they have a lot of examples of that. And finally, I do believe that this exposes also a new type of poverty in our society. So the over-reliance on technology to address or to govern society addresses or makes another type of poverty emerge. So we used to think that privacy is a very important right. You can be wrong, it is. But there's a portion of the population for which privacy is actually a privilege. It's important to be visible. in data, it's important to be visible, for example, in a data set that proves that you are poor enough to deserve subsidies if that's the case. Now, this will require a little bit more of explanation, so I'll just drop it there. If you're curious, I can tell you more also where this notion of data poverty comes from. But there's also a quick commentary published by myself and my colleague Emiliano Treire, and it's probably easier and clearer if you read that. Once again, thank you very much for listening. I will now stop sharing my screen. Apologies if I'm all over the place, quite agitated because of what is happening these days at our university. Just to say how much I'm happy to be with you. This is the only talk this week that I've kept. Everything else, including meeting government official in the Hague that was supposed to go to do tomorrow for advice. has been suspended, not because I don't care about that, but because it can wait. But I wanted to be with you. So thank you very much for your patience. Thank you very much, Stephanie. Whatever we can say and heard about you about the University of Amsterdam, nevertheless, I would say it's to their credit that they make you professor of critical data studies because we need also a critical voice. So the floor is open for discussion, but. Maybe I take my privilege of chair to start with one question. You mentioned this well-known scandal that led to the resignation of the Dutch government, which is really, it shows how big and consequential the scandal was. But I was wondering what has happened since in Dutch society? People must have been taken aback, must have discussed it. There probably were also political parties that took a stand, etc. So what was the impact of this on Dutch society? That's a very, very good question. Thank you very much, Helga. By the way, I used to... Dutch examples. My research is not necessarily in the Netherlands. Actually, not at all. But I found I find more and more value into using examples that about to talk about these things that are not about China or about, you know, known authoritarian context, because otherwise it's very easy to dismiss them as it doesn't interest our society. What we like to think we have the antibodies against these things. We don't know what my argument is that we do not have yet. Unfortunately, they're coming. We are working on that as a society. Now, yeah, what happened in the Dutch society? I'm not 100% sure a lot happened at the societal level. Society in general, I mean, let's say if you look also at the Eurobarometer data, the Dutch are at the forefront when it comes to digital literacy. So the understanding of... You know, also privacy rights is quite high and quite good. And also there's a public debate. There was already a public debate on the use of algorithm into policy. I mean, you mentioned they gave me a chair in critical data studies. That is the title I claimed for myself. It was not the original title. But yes, I have to say I'm lucky enough to work with a huge group of fantastic colleagues at the University of Amsterdam and beyond, also in the Netherlands. that do critical work on this. So I like to think that also because of the work of all these colleagues, there is this public debate. Because of these people, and because of an organization like Beats of Freedom, there is quite some awareness. Let's say, much more awareness than I would see ever in my own, that I've seen so far in my own country, Italy. Now, looking at what has happened at the governmental level, Well, they got a message. So, for example, there's been so they started. I just look at the translation as you are speaking. They just translated into English. They have set up a digital translator from the Dutch, a digital government code to guarantee confidence in good governance. So this is a process that they started. Some of the ministries started with actually a lot of governance levels involved, like municipalities, to come up with documents, with rules that also show that are transparent to citizens. This is called CODIO, and I think it has great potential. But the fact that I was scheduled to go to The Hague tomorrow, it's also a consequence of that. they are having a number of talks, they're inviting us academics, but not only, frankly they don't even need us academics to make decisions, but there are a number of small units that have been set up in ministries and municipalities to address this type of discrimination as well. So things are moving, there's of course a lot more work to be done. The political situation is not of the best now. Let's say people wouldn't care much about discrimination by algorithms because the way that people have spoken in the ballot is clear. I mean, they actually like discrimination. So that's another story. But something is moving. And I think it's beautiful, actually, to witness these type of things. At the same time, and I'm sorry, I'm speaking too much. I have it somewhere. here. If you want a copy, I can send it to you. We have run this survey. It's on public values concerning digital technologies. I also have it in, no, these are both in English and Dutch. I can put it on the chat because we have it in digital form as well. Now I have two hands that have been raised for some time. First, Paul Timmels and followed by Carlo Ghezzi. Paul. Thank you very much, Stephanie. I really liked it. I find it also very inspiring that you can give this talk right at this moment in time. I experienced some of the same stress that you have at the KU Leuven, so I can feel with you. By the way, a little detail, I happen to need the data about what the scandal did in the Netherlands. A while ago for a presentation and immediately after the scandal kind of burst open, they did a public survey and 70% of the public had felt that it had a negative impact on trust in government and 65% trust in politicians. So it really erodes the legitimacy of government. What I was wondering about is whether your research, which is really about, as I look at it, of course, is this interplay between technology and social constructs like law, our norms and values, how we organize ourselves for oversight and the technological side, how we set up the technology. Two ways you might think of to counter the unwanted effects, which is itself a social construct, of course, which would be working at the technological side and working at the social construct side. And I was wondering, because there are many examples also in history, whether you also have the piece of historic sociological research. How have people been doing this in the past in order to kind of organize new social constructs that might counter? these negative effects, or perhaps impose requirements on technology and then get new technology. So an example would be data minimization, putting the technology only on your mobile phone, it can never go into a larger infrastructure, those kind of things, which they did wrong, of course, in the COVID app. And at the social construct side, well, you are doing an example yourself, because you're raising awareness as a researcher, you're working on this. But perhaps we can do a lot more. And I'm thinking of it, what if we then would apply that almost as a toolbox to, say, GPT-4-0 that came out yesterday, which has all of the seven characteristics that you showed on your slides. No democratic oversight, you know, it's shifting sovereignty, et cetera, et cetera, et cetera. So this is a very good, very complex double question. Then, but I would love to actually have more conversation on that because I clearly, so the more emotional I am, the more, the least I can control my, you know, energy. So I'm going to try to be quick this time. In terms of social customer, what I can tell you that we are doing, and by we, I mean me and my research team, but also in collaboration with the Municipality of Amsterdam, groups at least, and also in the industries, is to... try to engage with co-design of policymaking and technologies as well. Thanks to the funding of the Dutch Research Council, we were able to run this survey, which is a survey of the public values in technologies, but also we have the chance to work with computer scientists and with legal scholars and ourselves to design, so to envision at least how, for example, would a digital identity system look like if. we were to take into account all of these concerns that we're thinking about. We all want a digital identity system. Can we even design it in a way that is respectful? And we want to involve the citizens in that. And we also want to do what I call, and that's what is in my New Year's Sea Grant, but also it's something I'm really experimenting as part of this Model Dutch project. We are doing this co-design and what I call playable citizen science. So attempts to involve the citizens in conversations with policymakers, with three functions, by the way, also with artists. We have beautiful experience recently to get citizens to talk about 5G technology and privacy and all of that in collaboration with the public library in Amsterdam. So really reaching out to normal people, not just the converted. And the idea there is to raise awareness, is to get better policy or more informed policies and increase the force of societal cohesion and trust, ideally, but also using role playing, for example, to increase. The extent to which we get to know about each other, the extent to which, for example, citizens know the constraints that policymakers sometimes have to face. Because let's face it, for the most part, we found that it's very, very hard to run technology being really human rights respecting by design. We have tried. We have tried with the mail server, for example. We failed. So, you know, all of these experiments, there's a lot moving. There's many of my colleagues also involved in this. So hopefully what we would like to do is to have more of this playable citizen science to make sure we have a better relation with technology and with the policymaking around technology and better policies. Great. Thank you. Caro. Thank you very much, Stefania. It was a very inspiring talk. And actually, Paul asked the same question I wanted to ask. And you gave already a little bit of answer to that. But I would like to go on. What you're saying is that we need to change the way we design technology. It should be co-designed. It should involve others. Actually, I would like to say that we need to bring to the table. disciplines that are outside technology, which is not what is happening today. We are still working in isolation. Technologists cannot design the world by themselves. They have to co-design the world with others. So I would like just to stress and see if you agree that we really need to move to more interdisciplinary approaches to that and also involve stakeholders, involve the people in the design. Yeah, I absolutely agree. You put it so well that I don't think there's much for me to add. What I can tell you is that there is this awareness at various levels. And for example, the Dutch Research Council funding that I am lucky enough to have landed was designed. It was called Responsible Innovation, co-designing for public values. It was co-funded by three ministries, four ministries and one municipality. So what I want to say is that there is more and more. more and more efforts and space being made for designing technologies that takes into account various ways of seeing the world, but also simply various disciplines. One of the most fun people to talk with when we design technology in the context of our project, of course, these are small efforts, right? But it's actually philosophers, for example, because they raise questions. So I think by now, if you also go to a lot of the digital rights conferences, but also if you look at the material from Microsoft and the Google of these days, there's also more and more industrial awareness of this. Now, what I would like to see, and that's what I'm trying to reflect on, is are there ways to really make sure this is, let's say, written in the legislation? I mean, I'm talking about now technology that is developed for the state by the industry. Can we make sure that as far as the state is concerned, so the policymaker can intervene, that they actually create guidelines and processes that take that into account? There's many, actually. For example, if you look at... what was the raggi principles for human rights in business, for example, even business has been able to discuss that, whether they're implemented, it's another story, but I would like to see similar instruments to start with. Thank you, Hannes. Thanks for the excellent talk and also thanks for the question, which brings me to a follow-up question, because I would like to know from you how you see, because at the end it's about power. It's about power, how publics and the society can interfere with technological development. And here we have some limitations or big limitations. And what do you see? How could we interfere with this development? Because in the long run, for some years, we see privatization of data, privatization of technology, privatization of public spaces. And we discussed this issue since years, but in essence, we are really fighting with this fundamental question. It's a societal political power question. Yeah, this is another million dollar question. Thank you very much, Hannes, for asking it. I hope to have an answer in five years from now. I now can try to venture into some hypothesis. Let's say, take out one of the old hobby horse of mine, which is literacy. Unless we change the way as citizens we inform ourselves and know about these things, unless we change the way we teach our kids to be future citizens of tomorrow, that are also empowered to make informed decisions about the technology that surrounds us, that enables us to exercise citizenship, then we have a big problem. Because, I mean, I have, unfortunately, plenty of examples of things that have gone wrong based on ignorance. Ignorance of policymakers, ignorance of citizens, citizens unable to ask questions. It's also a matter of privilege. I realize I'm privileged enough to... very privileged to be able to spend time to do this for a lot of people. I mean, this is definitely not the core concern because they have to, you know, this is not their job. They have to put food on the table. They have a much more, you know, harder task ahead of them. So I understand it's not easy for everyone, but you have to try to find a way for society to deal with these antibodies against the overpower of some people at the expense of, for example, citizens. By some people, I mean both technology companies and, to some extent, also the state when things go wrong. Now, one thing I probably should say is that I love technology. I don't want to see less of it. I mean, I'm pretty fascinated by all the possibilities open up, but I would like to see more of it used for empowerment rather than for fueling power the way you talk about. We do have some instruments as a society. We have, for example, antitrust regulation, although it has proved largely ineffective with the superpower companies that we have today. Yeah, we have to build these antibodies. And I think one of the other ways is to start from education. Although, yeah, this is also a way of relegating a lot of responsibility to the individual. Whereas we should also make sure that this becomes the responsibility of the state, of the rule makers. It's not just, you know, oh, but, you know, like I'm almost like the side, the sad side effect of the cookie European measure. Right. Well, you are informed. So now it's your problem. And it doesn't solve, it doesn't make the cookie go away. It doesn't make the profiling go away. It just makes us more aware of the problem, which is an important step, but it cannot be the only one. So, I mean, it's very, very complex. I'm not sure I have a good answer. Hannes, you still have your hand raised? No, I had a short follow-up question. But if somebody else has a question, I can... I don't see it, but then I still have a question. So go on. Okay. because it puts forward a fundamental question for us as scientists or academics because we have the issue as Carlo mentioned of interdisciplinarity of working together without a discipline to raise or to let's say to to meet the challenges but the other one is really probably equally important is the interference with the public to interfere with political issues which is I think the digitalization really puts it on the table. It's not just science. It's not just making better systems. It's really or to understand it. I think we have to interfere. And this is challenging fundamentally our role as scientists. This is what I see as a major issue for us. This is more a comment than a question. Sorry. No, and just to add to that, probably then academia, because I totally agree, academia should probably put different also incentive schemes on making sure that we make a dent in society rather than, you know, being just a book in the library, if you know what I mean. A lot of us are doing it, but we also have the luxury of doing it because we are probably more senior compared to other people that are struggling to just, you know, flooded with teaching and struggling to find the proper place in academia. So it has a number of complexities, but I totally see your point. Well, mine is also a kind of final comment. I also want to thank Stefania for this very broad overview that you gave us to the problematic situation that we find ourselves in, but also pointing towards possibility, how we can go about in making this co-design, you know, to matter. And I think you have to use a multi-pronged approach. There is something, one part is how to bring in the government, because what we see is this shift from state towards market. In the beginning, you spoke about this is happening outside the democratic sphere, but that's the market. you know, is the market. And you don't have to ask anyone because you put something on the market and if people buy it, that's the end of the question. So this is one of the problems. However, the state has possibilities, for instance, in public procurement, which is a very powerful and important instrument. for every government, because this is the way how you can give directionality to innovation, et cetera, et cetera. And public procurement could very easily contain a clause that in this particular instance, you have to include somehow the people who will have to live with it or bear the consequences of however you approach it. And then I found it interesting that you brought back citizen science. Citizen science has had its ups, but more and more of downs. And, you know, there was the enthusiastic phase. And then it turned out that for many reasons, it's not as easy. And somehow I feel we are almost back to birdwatching and, you know, observing the sky, you know, beautiful things. But this is not all that citizen science should be about. And so I think whether you succeed in getting citizens involved about something that really touches their lives and the way how they see their future is an open question. And I wonder what you see, how do you assess the chances for getting the kind of... you know, citizens' involvement in something that they should be concerned with. But we also know people don't have much time, spend their time in different ways, there are other worries, etc. So what is your personal take on this? Thank you very much for this, as taking notes, as like with all the other questions, they're all very useful food for thought. Now, as it happened, so I can tell you... Some little experience we have had, which have been extremely successful working, for example, through the public library system. Again, a portion of the population goes to the public library. There's more than our students only, right? and involving art and artists to tell the story, I mean, to make people feel and experience technology in a way that it makes technology accessible to people, because that's the other big challenge we have. These are boring topics. They're complex. So, you know, you even spend an hour to understand how this works, right, between terminology and all of that. Now, my partner is a behavioral... economics, a professor of economic psychology at the University of Amsterdam. Next week, we have our joint inaugural lecture as professors here, although we've been professors already for a while. And we're actually at the moment working on coming up together to an answer to this question. So it does mathematical modeling. It does a lot of behavioral modeling and working with incentive schemes, for example. So we're trying to figure out what are the incentives for citizens to participate, but also what are the incentives for the one where to listen. So the policymakers, the state, let's say. for listening. So I hopefully going to have an answer later on, which is probably still theory based without probably it's going to be theory based with some empirics. So we want to do also some joint experiments there in the lab. But what is the odds? I've seen that there is more and more thirst actually for knowledge in this realm. People are scared. We've run a lot of, so we had this artwork at the library. We use it as a great conversation starter for people that came through. It was an interactive antenna that would follow people around, whatever, whatever. So it really captured people's eyes, people's imagination, but also elicited theories. It was a great conversation starter to talk about technology. Judging from that engagement, which is very, very partial, I think there is quite some potential into making this. happen. What we have noticed is that about 75% of people that would come in would stop to look at the artwork, would spend time to talk to researchers. You can say yes, but there are still those that go to the library. Okay, we have to start from somewhere. So I think there is thirst, and I want to be optimistic for once. and say that there is potential. So at the moment, I think there is, if we can find the ways to do it. I'm currently, for example, for another European project, looking at ways of using board games to talk about sustainability transition, something completely different, but also technical. So in September, I'm going to have more evidence of what I'm saying, whether it's true or not, but I want to be optimistic. So thank you very much. We wish you all the best with your research and also us as academics, because I think we are all underlining and ready to take on what you just shared with us. And now we come to the last part, the music. I turn to Peter. Yes, thank you. Stefania selected mit Bastelusule bei Zoot Soundsystem. Reggae from Salento. I hope that will take your mind off of the current circumstances. Also, before I play the next events, they were already announced last time. So on June 4th, Wessel Reyes will speak on civic virtue and digital technology and Erich Prehm will moderate. And one week later on June 11th, Gordon Birch will speak on generative AI degrading online communities, moderated by Enrico Nardelli. So thank you, Stefania, Helga and all attending. See you again in June and take care and goodbye. Thank you. Thank you. Thank you. Thank you. Bye. Have a great evening. Goodbye. It was great and good luck for Amsterdam. We need a good education. That's about it.",
+  "segments": [
+    {
+      "start": 0.016,
+      "end": 22.544,
+      "text": "Thank you, everybody. Thank you for joining. Thank you for joining to this event of today, to the lecture of today. Today, we are looking at data and data infrastructure. So it's somehow looking at the basis of the digital world, which is made out of data and other connected. And I'm really happy to have with us."
+    },
+    {
+      "start": 23.056,
+      "end": 50.32,
+      "text": "Melania Stefania Milan from the University of Amsterdam. She will give the lecture of today and thanks Stefania for joining us. The moderator will be Helga Novotny. She will then introduce Stefania in more detail. The choreography is well known as always. We have 30 minutes with a presentation and then 30 minutes Q&A moderated by Helga. And at the end we have..."
+    },
+    {
+      "start": 50.32,
+      "end": 76.656,
+      "text": "Always a piece of music, this time proposed by our speaker, Stefania. I would like to welcome moderator Helga. I think I don't have to introduce her, I introduce you. And I thank you, Helga, that you are with us. Let's say the crown of the European research. Thanks for joining and being with us since the early beginning. The floor is yours."
+    },
+    {
+      "start": 76.656,
+      "end": 106.128,
+      "text": "Thank you very much, Hannes, and welcome to everyone, especially to Stefania Milan. It's a pleasure to introduce Stefania. She is a professor for critical data studies at the University of Amsterdam. And as she just told us, before the University of Amsterdam is a bit in a turmoil because there are students protesting, the police, the management."
+    },
+    {
+      "start": 106.128,
+      "end": 131.6,
+      "text": "So we asked Stefania to relax and to speak to us about the work she does. She has also an appointment with the Berkman Klein Center for Internet and Society at Harvard University. And she's also a research associate in Florence with the European University Institute at the School of Transnational Governance."
+    },
+    {
+      "start": 131.6,
+      "end": 139.184,
+      "text": "Stefania, her research has been very much engaged with the topic of citizenship."
+    },
+    {
+      "start": 139.184,
+      "end": 165.216,
+      "text": "and data, digital networks. And she has studied grassroots engagement. How can citizens at the grassroots level become engaged with data and data infrastructure? She also has a special interest in what happens in the so-called global south, which is somehow neglected."
+    },
+    {
+      "start": 165.216,
+      "end": 194.16,
+      "text": "Normally, we look at what is happening in our part of the world and not in the so-called rest of the world. And there are people that she calls data poor. Today's topic is about the governance of data infrastructures. Stefania will tell us what this entails. And I hand over to you, Stefania. Welcome."
+    },
+    {
+      "start": 194.864,
+      "end": 223.056,
+      "text": "Thank you very much, Helga. Thank you, Hannes and everyone, for having me here today. Thank you also for the very exhaustive, very kind introduction. It's really an honour to be with you and share what are, in fact, some initial ideas about a new research project that I will start in the years to come. But there are ideas, as probably will become apparent in the course of my presentation."
+    },
+    {
+      "start": 223.056,
+      "end": 249.152,
+      "text": "that have been bubbling in my head for quite some time. Although, as you know, when the research ideas are not yet funded, they're always a bit sidelined, waiting to make room and space for proper engagement. So far, they're scattered pieces here and there. Now it's the time, as the title says, to theorize what I've been doing, what I want to do in the future."
+    },
+    {
+      "start": 249.152,
+      "end": 278.8,
+      "text": "Elga mentioned there's a little bit of turmoil at the University of Amsterdam. I want to mention this because I think this is a message for all of us academics and citizens in 2024. The University of Amsterdam, so students and staff, including myself at the University of Amsterdam, have been asking for some institutional change in light of some dynamics at the university that we considered."
+    },
+    {
+      "start": 278.8,
+      "end": 305.552,
+      "text": "not ideal, let's say, including, for example, with research funding and collaborations, there's been quite some brutal police repression that has come to a shock to a lot of us and the students in particular. So in my conversation with the students, besides the facts, what happened and all of that, what I realized is that students often do not feel heard by"
+    },
+    {
+      "start": 305.552,
+      "end": 327.392,
+      "text": "us by the university, not just the senior, not just the management, but by the university as a system. And so I just want to plant this little seed. Let's give agency and voice to our students and space for them to also have a say whether we agree or not. And let's probably also try to the best of our possibilities not."
+    },
+    {
+      "start": 327.392,
+      "end": 353.872,
+      "text": "to repress this beautiful energy that comes from the ground up. It's citizenship in action, really. I want to mention that also, it's a way to apologise if my talk is going to be a bit flimsy, because I'm just coming out of a meeting where there were my colleagues, some of them are crying. So it's a very emotional time for us in Amsterdam at the moment. The university is closed today."
+    },
+    {
+      "start": 353.872,
+      "end": 363.12,
+      "text": "And tomorrow, because of the protests, because of the destruction, because of the repression, which is also, by the way, at some point my little..."
+    },
+    {
+      "start": 363.12,
+      "end": 391.12,
+      "text": "Toddler girl is going to come in. You might see her or we might be interrupted by her because I have to be at home to do this talk. So sorry, too long an introduction, but it's a very emotional time for all of us in Amsterdam these days. And so apologies in advance if I am a little bit scattered and less focused than I should be. I wonder whether you see my screen now."
+    },
+    {
+      "start": 393.584,
+      "end": 421.296,
+      "text": "Do you see my screen or not? No. OK, so I do share screen again. Sorry, because in fact, I was looking at your beautiful faces and it wasn't clear to me. So now you see it. Good. OK, thank you very much. So. This picture picture appear, it was a large billboard at the Rome Fiumicino Airport in the summer of 2021."
+    },
+    {
+      "start": 421.296,
+      "end": 444.4,
+      "text": "You might remember that we were just emerging out of one and a half years or one plus a month here of variously intense lockdown periods in which we couldn't visit family and friends. It was hard to travel. So everyone was eager to get back on the road or in this case on the air."
+    },
+    {
+      "start": 444.4,
+      "end": 459.84,
+      "text": "Delta, in partnership with Aeroporti di Roma and a company called Innovation Biometrics, announced biometric traveling, sorry, boarding for all Delta passengers. We can discuss whether, you know, like, for example."
+    },
+    {
+      "start": 459.84,
+      "end": 486.656,
+      "text": "the iconography that comes with, you know, smart technologies like the beautiful woman, white. Let's leave that aside for a moment. But what I find interesting is that we are told as citizens, as travelers, as users who might not be very aware of how biometric technology works, this is not rocket science. It's simply, brutally put, your new way of traveling. You're already part of it. In fact, we are."
+    },
+    {
+      "start": 486.656,
+      "end": 512.032,
+      "text": "part of it but it's also here presented very much as a new brainer seamless technology that is going to facilitate our life we have all been very bored in line waiting to board the plane right so why would we be against something to facilitate our lives well facial recognition technology is uh to say the least a bit problematic"
+    },
+    {
+      "start": 512.032,
+      "end": 540.4,
+      "text": "Recently, the European Parliament in the European Union AI, Artificial Intelligence Act, has put a moratorium on a lot of this technology. But it is anyway to a large extent in the laws in our society. It's here in Amsterdam. It's, for example, at the football stadium here in Amsterdam. It's at the airport, but I'm sure it's also in a city near you."
+    },
+    {
+      "start": 540.4,
+      "end": 567.184,
+      "text": "This is a screenshot from the Guardian, how the facial recognition technology works. For those of you who aren't familiar with it, sorry, just one minute because I want us to be all on the same page. A facial recognition technology camera looks exactly like a normal security camera. We are used to the sight of those devices, except that it doesn't take a faithful picture like our human."
+    },
+    {
+      "start": 567.216,
+      "end": 597.056,
+      "text": "eyes. We see each other with blood and flesh and hair and eyes and all that. But it measures and records the distances between some topical points on our face. There's a lot of different biometric technology around. I'm going to focus on face recognition because it's a long-hanging fruit in terms of making clear why this is a bit creepy and problematic because we're all quite jealous about our identity."
+    },
+    {
+      "start": 597.056,
+      "end": 621.872,
+      "text": "So what happens? Your face, so the distances of, you know, like a mock-up of your face is recreated in real time, and this mock-up is then compared in real time with existing data assets. You might say, well, I have nothing to hide, right? Why would I worry?"
+    },
+    {
+      "start": 621.872,
+      "end": 651.872,
+      "text": "point well taken but if you have ever been on a social media network whether voluntarily publishing your picture or simply being you know put there by someone else including for an academic event or whatever you are already in some of these data sets so we are continuously tracked on the move before without being um aware of that but what's uh i mean an analogy would be"
+    },
+    {
+      "start": 651.872,
+      "end": 673.28,
+      "text": "It's like walking around town with an open passport on our forehead. So it gives us away our identity on the spot. Now, yeah, we live in an increasingly data-fired society. We have accepted by now, I suppose, that pretty much anything around us, but also anything of our doings is."
+    },
+    {
+      "start": 673.28,
+      "end": 699.712,
+      "text": "So transmuted, translated into data points that are then monetized and traded, but also that are used, and I'm not going to deny it, to facilitate our life. A lot of this, I mean, as an example of official recognition, technology deployed at the gate at the airport is generally designed to facilitate our life. So why do I worry even? Well, I..."
+    },
+    {
+      "start": 699.712,
+      "end": 727.68,
+      "text": "the example of facial recognition technology, which is a type of biometric technology under the rubric of regulatory data infrastructure. What are regulatory data infrastructures? Well, they are infrastructures which combine software and hardware. They're complex. They combine very different types of technology in one device, often a device as small as our mobile phone."
+    },
+    {
+      "start": 727.68,
+      "end": 757.6,
+      "text": "that generate data in real time. And this data results then in monitoring of depravity or decision-making. Another example that for some reason is Belgium, but I like the fact that the phone was holding a hand. A hand that was holding the phone, sorry. Although the phone holding the hand is probably what happened more and more these days where technology is very much designed to guide our actions. So apologies for this Freudian slip."
+    },
+    {
+      "start": 757.6,
+      "end": 782.208,
+      "text": "So another example is the European Union digital COVID certificates. It was called Green Pass in some countries like Italy when I come from. It was called simply QR codes in the Netherlands because they did have a QR code. Now, don't get me wrong. I'm absolutely pro-vaccination, multiple time vaccinated. I'm not necessarily against a way of checking."
+    },
+    {
+      "start": 782.208,
+      "end": 810.208,
+      "text": "who is vaccinating, who is not for public safety, but together with a number of colleagues in computer science, legal studies and critical geography, we have been writing about why we consider COVID vaccination certificates in the digital format a problematic endeavour, including because they create an infrastructure for identity verification that is a scaffolding that once implanted in society."
+    },
+    {
+      "start": 810.208,
+      "end": 840.048,
+      "text": "can be done use for other purposes, not of all a welcome by the citizens. But I can point you to the article if you are curious. Now regulatory data infrastructure are called regulatory for me because they exercise regulatory power. They increasingly take up functions that were once pertained almost exclusively to governmental agency and public administrations and were performed almost exclusively by human beings."
+    },
+    {
+      "start": 840.048,
+      "end": 862.704,
+      "text": "Now, essentially, we have this software making automated decisions on our behalf. And these automated decisions, I argue, regulate the polity, end up regulating even our possibility or not of belonging to a community. In other words, you see another example of a COVID."
+    },
+    {
+      "start": 862.896,
+      "end": 888.352,
+      "text": "Technology, I mean, which is totally non-COVID, and they should have been traveling in Asia. You've seen this long before the pandemic. This is a thermal camera that detects whether all the bypasses are running at temperature. Because if you're running at temperature, it's quite likely that you are carrying a virus or are, by the way, having a bacterial infection. So you might be a threat to those around you."
+    },
+    {
+      "start": 888.352,
+      "end": 917.856,
+      "text": "So this is a great example of how regulatory data infrastructure, thermal camera being one of them, make and unmake publics. This picture actually comes from a conference that I attended in my own country in Italy during the pandemic, where it was a little still, I mean, one of the first conferences we could attend to. We were very happy of that. Understandably, they were trying by all means that people would not get more infected, but I find quite problematic because this was really a way of showing"
+    },
+    {
+      "start": 917.856,
+      "end": 944.336,
+      "text": "the ability of regulatory data infrastructure in action to make and unmake publics. Several people were stopped at the entrance using the indicator of the temperature, whether or not they had a green pass, by the way. So regulatory data infrastructure make and unmake publics, make and unmake community. There are a number of problematic aspects."
+    },
+    {
+      "start": 944.336,
+      "end": 972.032,
+      "text": "Now, I'm very well aware, as I said earlier, that there's also a lot of beauty in these developments. But I take upon myself the task of discussing instead what might go wrong. Why is that? Well, we are seeing marketing is already doing a great job at convincing our society that this is all awesome. And then we should certainly not oppose any of this very convenient technological solution. States as well, state agencies."
+    },
+    {
+      "start": 972.032,
+      "end": 998.64,
+      "text": "often implement them without asking us whether we like them, but also with the same flamboyant narratives of citizen empowerment. So whereas I acknowledge that there is quite some truth in this narrative of citizen empowerment, I want to just focus for now on if you want the negative side and apologies for that in advance, because I've been told recently my research is depressive. Sorry, I understand that."
+    },
+    {
+      "start": 998.64,
+      "end": 1018.208,
+      "text": "So seven reasons why we should worry about regulatory data infrastructure penetrating more and more inside our society and society built up. Often the implementation, the adoption of this technology happens outside democratic scrutiny. I'll give you an example."
+    },
+    {
+      "start": 1018.208,
+      "end": 1047.36,
+      "text": "Apologies are again a pandemic example. When contact tracing apps were introduced in a lot of European countries, I'm going to focus on Europe just for reducing the complexity of the world, but not to dismiss that there is a much broader universe out there where actually examples are even more poignant, more interesting. When these contact tracing apps were introduced in many European countries, there was no debate at all. People were not asked whether they like this to happen."
+    },
+    {
+      "start": 1047.36,
+      "end": 1073.952,
+      "text": "When a new facial recognition system was enrolled in the city of London, UK, in January 2020, right before the pandemic and completely non-pandemic related, local administrators were not asked whether they agreed to that, let alone the citizens. The local administrators are in place to represent the will of the citizens and their interests. So I find it a bit..."
+    },
+    {
+      "start": 1073.952,
+      "end": 1102.064,
+      "text": "or very disconcerting, that a lot of this technology adoption happens completely outside our purview. We don't know about them, but also outside the mechanisms that are normally debuted in a democracy with representing citizen rights and preferences. Second reason for concern is that these are complex technologies with some very limited exceptions."
+    },
+    {
+      "start": 1102.064,
+      "end": 1126.736,
+      "text": "These technologies are in the hands of the private sector. They are too complex for state agencies to be able to run and maintain them at their own cost with their own stuff. So regulatory data infrastructure brings into the picture for-profit contractors that, as a byproduct of that, get access to a lot of sensitive data. Think about health."
+    },
+    {
+      "start": 1126.736,
+      "end": 1154.384,
+      "text": "technology, education technology, by the way, all of this is part to some extent of what I call regulatory data infrastructure, which is a very broad category. And you're going to understand how we should ask questions about private contractors having access to certain data that are very personal and they are very dangerous to release in the public domain. Third reason of concern. They often, these technologies are"
+    },
+    {
+      "start": 1154.416,
+      "end": 1184.272,
+      "text": "being adopted and used in a grey socio-legal area. Special recognition cameras, for example, have been implanted in many cities and countries long before the AI Act sort of put a temporary and not even enforced yet stop to this proliferation. And often because they were ascribed to"
+    },
+    {
+      "start": 1184.272,
+      "end": 1210.752,
+      "text": "regular security cameras regulation, whereas, as I hope I made clear earlier, this type of technology is a tiny bit more intrusive than what we were used to. So technology development typically sneaks through, in a way, existing legislation because the policy process is"
+    },
+    {
+      "start": 1210.752,
+      "end": 1239.296,
+      "text": "much slower for good reasons. But, you know, technological innovation often takes the lead here and policymakers then try to patch it up ex post. As I'm going to mention in a bit, there is unfortunately ample potential for discrimination. Now, we are a deeply unequal society. So I'm not saying that technology brings in itself discrimination. We are a society that discriminates."
+    },
+    {
+      "start": 1239.296,
+      "end": 1268.688,
+      "text": "But because technology is often designed by humans, it carries the same biases that we have as humans. With a caveat, however, that whereas if you have, I mean, when you deal with humans, there are typically existing mechanisms in a democracy to correct potential discrimination effects. With technology, there is less possibility at the moment at least for a redress or for understanding what's going on. I have two Dutch examples that are really..."
+    },
+    {
+      "start": 1268.688,
+      "end": 1298.384,
+      "text": "scary, to prove my point. Point number five, or reason to concern number five, it's very difficult to opt out, if not impossible. I mean, first of all, if you walk around town and you get yourself under the eye of a facial recognition camera, which is typically not signal, I mean, you understand that you definitely cannot opt out. But also think, for example, about the adoption by our school systems of"
+    },
+    {
+      "start": 1298.384,
+      "end": 1327.648,
+      "text": "technologies, streets like Google Classroom during the pandemic. If one day to the next, you're told your child is going to go to school because there's a pandemic, we have to invent a solution. The only solution we have is this. You have two choices. Either you say, I find this problematic, I'll keep my kids home from school, but I'm not sure you can actually do that legally or whether this is going to be good for your kids. But you have no other choice than to opt."
+    },
+    {
+      "start": 1327.648,
+      "end": 1356.288,
+      "text": "in. Reason to focus on number six, climate footprint. This is something which is totally and deliberately hidden by the official discourses about these technologies, but these are very energy-hungry technology. Data centers, and I don't remember now, of course, the amount, but I think they are expected, so don't quote me at face value, because I would have to, I don't have the"
+    },
+    {
+      "start": 1356.288,
+      "end": 1376.112,
+      "text": "My notes with me now on this, but by 2027, if I remember correctly, one of the reports that I've read, they are expected to consume one fifth of the world's electricity. And this is not a discussion that we are having. Why the Netherlands is starting? I don't know what about, for example, Austria."
+    },
+    {
+      "start": 1376.112,
+      "end": 1404.416,
+      "text": "And then final six points is that we are moving quickly towards the normalization of this technology. Once implemented, they're rarely taken back. They're often in the background, just collecting data for the next emergence, for the next good excuse to use the data. So we as a population, we are more prone to accept and give away our, for example, privacy concerns. Now, I argue that the pandemic, there's a big bird."
+    },
+    {
+      "start": 1404.416,
+      "end": 1426.88,
+      "text": "Sorry, there's a big bird walking on my laundry. For one time that there is sun in Amsterdam, this is the result. Sorry, I just got distracted saying this kind of flying monster. Hope we don't have too many bad consequences. Yeah, so the pandemic has accelerated the transitions to what I call governance by data infrastructure."
+    },
+    {
+      "start": 1426.88,
+      "end": 1447.792,
+      "text": "We are seeing a lot in the pandemic. The pandemic, of course, was a special time in which pretty much everyone, not only policymakers, but also as common citizens were driven to believe desperately that technology would help us to ease the social costs of the pandemic, which are all very bad, fresh memory."
+    },
+    {
+      "start": 1447.984,
+      "end": 1473.792,
+      "text": "So governance by data infrastructure, for me, it's the process through which more and more governance processes are in the hands of or delegated to technology of the kind that I've just described, with some consequences. Well, most of all, as I mentioned, it's the penetration of the private sector into state institutions, including the welfare."
+    },
+    {
+      "start": 1473.792,
+      "end": 1487.168,
+      "text": "system, which consequences that I personally think are worrisome. So in the next five years, I've been lucky enough to execute, by the way, a European research fund deal."
+    },
+    {
+      "start": 1487.168,
+      "end": 1514.608,
+      "text": "the European Research Council Fund. And I always want to thank Helga for having contributed to set up this fantastic organization that allows us to pursue our wildest research dream. So what I'm going to do is to gather a wealth of empirical data to prove or disprove, I'm open to staying corrected, my three pretty scary hypotheses about governance by data infrastructure."
+    },
+    {
+      "start": 1514.608,
+      "end": 1542.064,
+      "text": "I believe the governance by data infrastructure changes our ability to exercise citizenship. It's like if technology intervenes between the state and its citizens, altering some of the dynamics we have known so far. Once again, not everything is for the worst, but allow me to emphasize that part. Secondly, it shifts sovereignty and state-making ability away from the state."
+    },
+    {
+      "start": 1542.064,
+      "end": 1566.192,
+      "text": "through the private sector, because the private sector is called to intervene to provide this technology, manage and run this technology, and the data centers where the informations are stored. And ultimately governance by data infrastructure is very likely to augment inequality in society, which is a particularly sad outcome. I give you a couple of examples."
+    },
+    {
+      "start": 1566.192,
+      "end": 1594.704,
+      "text": "This is the Netherlands. You're going to have to understand Dutch. I'm going to tell you what the header is about. It's a little bit old, but I find the header quite telling. I want to tell you this little story. The student with the darker complexion was trying to take an exam at the Vrije Universiteit here in Amsterdam."
+    },
+    {
+      "start": 1594.768,
+      "end": 1622.416,
+      "text": "Not my university, but just by chance, right? Because all of our universities during the pandemic have used invigilating software called proctoring software to make sure the students do not cheat in an exam, even if they're conducting the exam in the solitude of their bedrooms or their living rooms or their kitchen. Now, as it turns out, this student, so the software was not optimized beyond white skin."
+    },
+    {
+      "start": 1622.576,
+      "end": 1652.272,
+      "text": "So the student was trying to take the exam. You have all been through exams. Imagine you're there, stressed. It's already a very stressful time. The students kept getting the message that she reported in the header. Prove that you are human. So she kept being thrown out of the exam room and said, prove that you are human. Prove that you are human. Now, she brought the court. So she decided to not stand quiet about this."
+    },
+    {
+      "start": 1652.272,
+      "end": 1681.136,
+      "text": "An organization, the guy that you see next, you probably know him because he was the director of a Dutch great organization called Beats of Freedom, which is a digital rights organization here in the Netherlands. They decided to stand on the side of the student and they brought the case in front of the College of Direct and Fundamental, which is an independent organization overseeing human rights implementation in the country. Now, very sadly."
+    },
+    {
+      "start": 1681.136,
+      "end": 1706.416,
+      "text": "There was a court case at the beginning. The court ruled that the university has to prove that there has not been discrimination. In the end, the student lost the case because there was no proof of actual individual discrimination. So there was no proof that this individual student called Robin had been discriminated, but just black people in general."
+    },
+    {
+      "start": 1706.416,
+      "end": 1734.24,
+      "text": "So we can discuss legislation, we can discuss court cases, whatever. So it's a sad outcome, but it contributed to put the issue on track. Another example, it's called the Toeslagen Affair. You probably remember in 2021, there was a welfare scandal in the Netherlands that forced the government to resign. Since then, we actually haven't had the government. That's another story. And this was on the basis of a scandal that..."
+    },
+    {
+      "start": 1734.24,
+      "end": 1760.688,
+      "text": "20,000 parents involved, 20,000 parents that were recipients of welfare subsidies for child support. So these are impoverished families that their algorithms, which was an anti or let's say a fraud detection algorithm, tried to, so were flagged as potentially committing fraud. The state intervened and asked them money back."
+    },
+    {
+      "start": 1760.72,
+      "end": 1780.512,
+      "text": "This created, some people went bankrupt, some people committed suicide. There's a pretty horrible story behind this. But this was an algorithm that flagged as more likely than others to conduct fraud on the basis of foreign surname."
+    },
+    {
+      "start": 1780.512,
+      "end": 1807.568,
+      "text": "Double surname, which until not long ago was not allowed in the Netherlands, so it meant that you were really a foreigner. Residence in low-income neighborhoods and double citizenship, which is also an indication that you are not a real Dutch, right? So this is to show how, I mean, when I talk about discrimination, what I mean, and also to the extent to which it can go wrong, even in a country like the Netherlands, which is a pretty solid rule of law, and also quite some..."
+    },
+    {
+      "start": 1807.568,
+      "end": 1836.224,
+      "text": "good efforts at the government level to try to prevent these disruptions and these things from going wrong and also quite some good level of digital literacy amongst the population. So I realize as usually I get quite excited about this and I'm talking maybe a little too long so I want to just flag three reasons or three little mini pieces of research that I've done as part as I said of other"
+    },
+    {
+      "start": 1836.224,
+      "end": 1864.544,
+      "text": "I mean, bits and pieces that have done all regulatory data infrastructure waiting for the funding to materialize. One was on techno-solutionism and the standard human. One of the byproducts of regulatory data infrastructures is that they are part of an effort in our society to rely or to try to find technological fixes to societal problems. So trying to turn"
+    },
+    {
+      "start": 1864.544,
+      "end": 1884.56,
+      "text": "political problems into technical ones and also trying to use the technology to fix society. As one of the byproducts, one of the efforts of this is that the technology that is normally the beauty to this role is only optimized for what we may call the standard human."
+    },
+    {
+      "start": 1884.624,
+      "end": 1913.664,
+      "text": "I'm a sociologist by training, and I was very inspired in the past by the work of Stephen Epstein, who wrote about the standard human in a completely different context. He was writing about sociology of health and medical trials. But I really find his criticism against the standard human, as it is conceptualized also in a lot of pharmaceutical research, luckily less and less so, given there's quite some pushback from public health."
+    },
+    {
+      "start": 1913.664,
+      "end": 1943.376,
+      "text": "researchers. But what is meant by that is that we extrapolate the features for one, two, for a limited set of experimental subjects often, a profile of society, and then we make that fit to the rest of society. And a tiny example. Sorry for interrupting. Can you come?"
+    },
+    {
+      "start": 1943.376,
+      "end": 1965.712,
+      "text": "points short because we need some time for discussion. Yes, sure. So this is, I actually can just maybe conclude here because also... No, no, you have two more points. But yeah, two more slides actually. So one related to that is that it legitimizes inequality and exclusion because we tend to..."
+    },
+    {
+      "start": 1965.712,
+      "end": 1994.512,
+      "text": "to trust a decision made by a computer much more than we trust a decision made by a human. Plus, often there's not yet in the legislation, in the public procedures around this, a way to seek redress, raise your voice, seek explanations. So they have a lot of examples of that. And finally, I do believe that this exposes also a new type of poverty in our society."
+    },
+    {
+      "start": 1994.512,
+      "end": 2021.152,
+      "text": "So the over-reliance on technology to address or to govern society addresses or makes another type of poverty emerge. So we used to think that privacy is a very important right. You can be wrong, it is. But there's a portion of the population for which privacy is actually a privilege. It's important to be visible."
+    },
+    {
+      "start": 2021.152,
+      "end": 2049.392,
+      "text": "in data, it's important to be visible, for example, in a data set that proves that you are poor enough to deserve subsidies if that's the case. Now, this will require a little bit more of explanation, so I'll just drop it there. If you're curious, I can tell you more also where this notion of data poverty comes from. But there's also a quick commentary published by myself and my colleague Emiliano Treire, and it's probably easier and clearer if you read that."
+    },
+    {
+      "start": 2049.392,
+      "end": 2077.04,
+      "text": "Once again, thank you very much for listening. I will now stop sharing my screen. Apologies if I'm all over the place, quite agitated because of what is happening these days at our university. Just to say how much I'm happy to be with you. This is the only talk this week that I've kept. Everything else, including meeting government official in the Hague that was supposed to go to do tomorrow for advice."
+    },
+    {
+      "start": 2077.04,
+      "end": 2106.24,
+      "text": "has been suspended, not because I don't care about that, but because it can wait. But I wanted to be with you. So thank you very much for your patience. Thank you very much, Stephanie. Whatever we can say and heard about you about the University of Amsterdam, nevertheless, I would say it's to their credit that they make you professor of critical data studies because we need also a critical voice. So the floor is open for discussion, but."
+    },
+    {
+      "start": 2106.24,
+      "end": 2133.264,
+      "text": "Maybe I take my privilege of chair to start with one question. You mentioned this well-known scandal that led to the resignation of the Dutch government, which is really, it shows how big and consequential the scandal was. But I was wondering what has happened since in Dutch society?"
+    },
+    {
+      "start": 2133.264,
+      "end": 2158.512,
+      "text": "People must have been taken aback, must have discussed it. There probably were also political parties that took a stand, etc. So what was the impact of this on Dutch society? That's a very, very good question. Thank you very much, Helga. By the way, I used to..."
+    },
+    {
+      "start": 2158.512,
+      "end": 2187.488,
+      "text": "Dutch examples. My research is not necessarily in the Netherlands. Actually, not at all. But I found I find more and more value into using examples that about to talk about these things that are not about China or about, you know, known authoritarian context, because otherwise it's very easy to dismiss them as it doesn't interest our society. What we like to think we have the antibodies against these things. We don't know what my argument is that we do not have yet. Unfortunately, they're coming."
+    },
+    {
+      "start": 2187.488,
+      "end": 2210.816,
+      "text": "We are working on that as a society. Now, yeah, what happened in the Dutch society? I'm not 100% sure a lot happened at the societal level. Society in general, I mean, let's say if you look also at the Eurobarometer data, the Dutch are at the forefront when it comes to digital literacy. So the understanding of..."
+    },
+    {
+      "start": 2210.816,
+      "end": 2239.68,
+      "text": "You know, also privacy rights is quite high and quite good. And also there's a public debate. There was already a public debate on the use of algorithm into policy. I mean, you mentioned they gave me a chair in critical data studies. That is the title I claimed for myself. It was not the original title. But yes, I have to say I'm lucky enough to work with a huge group of fantastic colleagues at the University of Amsterdam and beyond, also in the Netherlands."
+    },
+    {
+      "start": 2239.68,
+      "end": 2265.952,
+      "text": "that do critical work on this. So I like to think that also because of the work of all these colleagues, there is this public debate. Because of these people, and because of an organization like Beats of Freedom, there is quite some awareness. Let's say, much more awareness than I would see ever in my own, that I've seen so far in my own country, Italy. Now, looking at what has happened at the governmental level,"
+    },
+    {
+      "start": 2265.952,
+      "end": 2288.704,
+      "text": "Well, they got a message. So, for example, there's been so they started. I just look at the translation as you are speaking. They just translated into English. They have set up a digital translator from the Dutch, a digital government code to guarantee confidence in good governance."
+    },
+    {
+      "start": 2288.704,
+      "end": 2315.52,
+      "text": "So this is a process that they started. Some of the ministries started with actually a lot of governance levels involved, like municipalities, to come up with documents, with rules that also show that are transparent to citizens. This is called CODIO, and I think it has great potential. But the fact that I was scheduled to go to The Hague tomorrow, it's also a consequence of that."
+    },
+    {
+      "start": 2315.52,
+      "end": 2340.736,
+      "text": "they are having a number of talks, they're inviting us academics, but not only, frankly they don't even need us academics to make decisions, but there are a number of small units that have been set up in ministries and municipalities to address this type of discrimination as well. So things are moving, there's of course a lot more work to be done."
+    },
+    {
+      "start": 2340.736,
+      "end": 2369.664,
+      "text": "The political situation is not of the best now. Let's say people wouldn't care much about discrimination by algorithms because the way that people have spoken in the ballot is clear. I mean, they actually like discrimination. So that's another story. But something is moving. And I think it's beautiful, actually, to witness these type of things. At the same time, and I'm sorry, I'm speaking too much. I have it somewhere."
+    },
+    {
+      "start": 2369.664,
+      "end": 2396.4,
+      "text": "here. If you want a copy, I can send it to you. We have run this survey. It's on public values concerning digital technologies. I also have it in, no, these are both in English and Dutch. I can put it on the chat because we have it in digital form as well. Now I have two hands that have been raised for some time. First, Paul Timmels and followed by Carlo Ghezzi. Paul."
+    },
+    {
+      "start": 2396.4,
+      "end": 2412.368,
+      "text": "Thank you very much, Stephanie. I really liked it. I find it also very inspiring that you can give this talk right at this moment in time. I experienced some of the same stress that you have at the KU Leuven, so I can feel with you."
+    },
+    {
+      "start": 2412.368,
+      "end": 2433.888,
+      "text": "By the way, a little detail, I happen to need the data about what the scandal did in the Netherlands. A while ago for a presentation and immediately after the scandal kind of burst open, they did a public survey and 70% of the public had felt that it had a negative impact on trust in government and 65% trust in politicians."
+    },
+    {
+      "start": 2433.888,
+      "end": 2458.368,
+      "text": "So it really erodes the legitimacy of government. What I was wondering about is whether your research, which is really about, as I look at it, of course, is this interplay between technology and social constructs like law, our norms and values, how we organize ourselves for oversight and the technological side, how we set up the technology."
+    },
+    {
+      "start": 2458.368,
+      "end": 2484.704,
+      "text": "Two ways you might think of to counter the unwanted effects, which is itself a social construct, of course, which would be working at the technological side and working at the social construct side. And I was wondering, because there are many examples also in history, whether you also have the piece of historic sociological research. How have people been doing this in the past in order to kind of organize new social constructs that might counter?"
+    },
+    {
+      "start": 2484.704,
+      "end": 2509.888,
+      "text": "these negative effects, or perhaps impose requirements on technology and then get new technology. So an example would be data minimization, putting the technology only on your mobile phone, it can never go into a larger infrastructure, those kind of things, which they did wrong, of course, in the COVID app. And at the social construct side, well, you are doing an example yourself, because you're raising awareness as a researcher, you're working on this."
+    },
+    {
+      "start": 2509.888,
+      "end": 2538.8,
+      "text": "But perhaps we can do a lot more. And I'm thinking of it, what if we then would apply that almost as a toolbox to, say, GPT-4-0 that came out yesterday, which has all of the seven characteristics that you showed on your slides. No democratic oversight, you know, it's shifting sovereignty, et cetera, et cetera, et cetera. So this is a very good, very complex double question."
+    },
+    {
+      "start": 2538.8,
+      "end": 2567.536,
+      "text": "Then, but I would love to actually have more conversation on that because I clearly, so the more emotional I am, the more, the least I can control my, you know, energy. So I'm going to try to be quick this time. In terms of social customer, what I can tell you that we are doing, and by we, I mean me and my research team, but also in collaboration with the Municipality of Amsterdam, groups at least, and also in the industries, is to..."
+    },
+    {
+      "start": 2567.536,
+      "end": 2596.592,
+      "text": "try to engage with co-design of policymaking and technologies as well. Thanks to the funding of the Dutch Research Council, we were able to run this survey, which is a survey of the public values in technologies, but also we have the chance to work with computer scientists and with legal scholars and ourselves to design, so to envision at least how, for example, would a digital identity system look like if."
+    },
+    {
+      "start": 2596.592,
+      "end": 2620.912,
+      "text": "we were to take into account all of these concerns that we're thinking about. We all want a digital identity system. Can we even design it in a way that is respectful? And we want to involve the citizens in that. And we also want to do what I call, and that's what is in my New Year's Sea Grant, but also it's something I'm really experimenting as part of this Model Dutch project. We are doing this co-design and what I call playable citizen science."
+    },
+    {
+      "start": 2620.912,
+      "end": 2645.424,
+      "text": "So attempts to involve the citizens in conversations with policymakers, with three functions, by the way, also with artists. We have beautiful experience recently to get citizens to talk about 5G technology and privacy and all of that in collaboration with the public library in Amsterdam. So really reaching out to normal people, not just the converted."
+    },
+    {
+      "start": 2645.424,
+      "end": 2660.48,
+      "text": "And the idea there is to raise awareness, is to get better policy or more informed policies and increase the force of societal cohesion and trust, ideally, but also using role playing, for example, to increase."
+    },
+    {
+      "start": 2660.48,
+      "end": 2680.496,
+      "text": "The extent to which we get to know about each other, the extent to which, for example, citizens know the constraints that policymakers sometimes have to face. Because let's face it, for the most part, we found that it's very, very hard to run technology being really human rights respecting by design. We have tried. We have tried with the mail server, for example. We failed."
+    },
+    {
+      "start": 2680.496,
+      "end": 2701.296,
+      "text": "So, you know, all of these experiments, there's a lot moving. There's many of my colleagues also involved in this. So hopefully what we would like to do is to have more of this playable citizen science to make sure we have a better relation with technology and with the policymaking around technology and better policies. Great. Thank you. Caro."
+    },
+    {
+      "start": 2701.296,
+      "end": 2729.52,
+      "text": "Thank you very much, Stefania. It was a very inspiring talk. And actually, Paul asked the same question I wanted to ask. And you gave already a little bit of answer to that. But I would like to go on. What you're saying is that we need to change the way we design technology. It should be co-designed. It should involve others. Actually, I would like to say that we need to bring to the table."
+    },
+    {
+      "start": 2729.52,
+      "end": 2757.392,
+      "text": "disciplines that are outside technology, which is not what is happening today. We are still working in isolation. Technologists cannot design the world by themselves. They have to co-design the world with others. So I would like just to stress and see if you agree that we really need to move to more interdisciplinary approaches to that and also involve"
+    },
+    {
+      "start": 2757.392,
+      "end": 2760.848,
+      "text": "stakeholders, involve the people in the design."
+    },
+    {
+      "start": 2761.584,
+      "end": 2791.184,
+      "text": "Yeah, I absolutely agree. You put it so well that I don't think there's much for me to add. What I can tell you is that there is this awareness at various levels. And for example, the Dutch Research Council funding that I am lucky enough to have landed was designed. It was called Responsible Innovation, co-designing for public values. It was co-funded by three ministries, four ministries and one municipality. So what I want to say is that there is more and more."
+    },
+    {
+      "start": 2791.184,
+      "end": 2814.896,
+      "text": "more and more efforts and space being made for designing technologies that takes into account various ways of seeing the world, but also simply various disciplines. One of the most fun people to talk with when we design technology in the context of our project, of course, these are small efforts, right? But it's actually philosophers, for example, because they raise questions."
+    },
+    {
+      "start": 2814.896,
+      "end": 2843.664,
+      "text": "So I think by now, if you also go to a lot of the digital rights conferences, but also if you look at the material from Microsoft and the Google of these days, there's also more and more industrial awareness of this. Now, what I would like to see, and that's what I'm trying to reflect on, is are there ways to really make sure this is, let's say, written in the legislation?"
+    },
+    {
+      "start": 2843.664,
+      "end": 2866.752,
+      "text": "I mean, I'm talking about now technology that is developed for the state by the industry. Can we make sure that as far as the state is concerned, so the policymaker can intervene, that they actually create guidelines and processes that take that into account? There's many, actually. For example, if you look at..."
+    },
+    {
+      "start": 2866.752,
+      "end": 2896.736,
+      "text": "what was the raggi principles for human rights in business, for example, even business has been able to discuss that, whether they're implemented, it's another story, but I would like to see similar instruments to start with. Thank you, Hannes. Thanks for the excellent talk and also thanks for the question, which brings me to a follow-up question, because I would like to know from you how you see, because at the end it's about power."
+    },
+    {
+      "start": 2896.736,
+      "end": 2921.04,
+      "text": "It's about power, how publics and the society can interfere with technological development. And here we have some limitations or big limitations. And what do you see? How could we interfere with this development? Because in the long run, for some years, we see privatization of data, privatization of technology, privatization of public spaces."
+    },
+    {
+      "start": 2921.04,
+      "end": 2947.952,
+      "text": "And we discussed this issue since years, but in essence, we are really fighting with this fundamental question. It's a societal political power question. Yeah, this is another million dollar question. Thank you very much, Hannes, for asking it. I hope to have an answer in five years from now. I now can try to venture into some hypothesis. Let's say, take out one of the old hobby horse of mine, which is literacy."
+    },
+    {
+      "start": 2948.144,
+      "end": 2967.136,
+      "text": "Unless we change the way as citizens we inform ourselves and know about these things, unless we change the way we teach our kids to be future citizens of tomorrow, that are also empowered to make informed decisions about the technology that surrounds us, that enables us to exercise citizenship, then we have a big problem."
+    },
+    {
+      "start": 2967.136,
+      "end": 2984.496,
+      "text": "Because, I mean, I have, unfortunately, plenty of examples of things that have gone wrong based on ignorance. Ignorance of policymakers, ignorance of citizens, citizens unable to ask questions. It's also a matter of privilege. I realize I'm privileged enough to..."
+    },
+    {
+      "start": 2984.496,
+      "end": 2998.512,
+      "text": "very privileged to be able to spend time to do this for a lot of people. I mean, this is definitely not the core concern because they have to, you know, this is not their job. They have to put food on the table. They have a much more, you know, harder task ahead of them."
+    },
+    {
+      "start": 2998.512,
+      "end": 3025.248,
+      "text": "So I understand it's not easy for everyone, but you have to try to find a way for society to deal with these antibodies against the overpower of some people at the expense of, for example, citizens. By some people, I mean both technology companies and, to some extent, also the state when things go wrong. Now, one thing I probably should say is that I love technology."
+    },
+    {
+      "start": 3025.248,
+      "end": 3053.488,
+      "text": "I don't want to see less of it. I mean, I'm pretty fascinated by all the possibilities open up, but I would like to see more of it used for empowerment rather than for fueling power the way you talk about. We do have some instruments as a society. We have, for example, antitrust regulation, although it has proved largely ineffective with the superpower companies that we have today."
+    },
+    {
+      "start": 3053.488,
+      "end": 3082.304,
+      "text": "Yeah, we have to build these antibodies. And I think one of the other ways is to start from education. Although, yeah, this is also a way of relegating a lot of responsibility to the individual. Whereas we should also make sure that this becomes the responsibility of the state, of the rule makers. It's not just, you know, oh, but, you know, like I'm almost like the side, the sad side effect of the cookie European measure. Right. Well, you are informed."
+    },
+    {
+      "start": 3082.304,
+      "end": 3111.856,
+      "text": "So now it's your problem. And it doesn't solve, it doesn't make the cookie go away. It doesn't make the profiling go away. It just makes us more aware of the problem, which is an important step, but it cannot be the only one. So, I mean, it's very, very complex. I'm not sure I have a good answer. Hannes, you still have your hand raised? No, I had a short follow-up question. But if somebody else has a question, I can... I don't see it, but then I still have a question. So go on. Okay."
+    },
+    {
+      "start": 3111.856,
+      "end": 3135.728,
+      "text": "because it puts forward a fundamental question for us as scientists or academics because we have the issue as Carlo mentioned of interdisciplinarity of working together without a discipline to raise or to let's say to to meet the challenges but the other one is really probably equally important is the interference with the public to interfere with political issues which is"
+    },
+    {
+      "start": 3135.728,
+      "end": 3158.16,
+      "text": "I think the digitalization really puts it on the table. It's not just science. It's not just making better systems. It's really or to understand it. I think we have to interfere. And this is challenging fundamentally our role as scientists. This is what I see as a major issue for us. This is more a comment than a question. Sorry."
+    },
+    {
+      "start": 3158.16,
+      "end": 3187.952,
+      "text": "No, and just to add to that, probably then academia, because I totally agree, academia should probably put different also incentive schemes on making sure that we make a dent in society rather than, you know, being just a book in the library, if you know what I mean. A lot of us are doing it, but we also have the luxury of doing it because we are probably more senior compared to other people that are struggling to just, you know, flooded with teaching and struggling to find the proper place in academia. So it has a number of complexities, but I totally see your point."
+    },
+    {
+      "start": 3187.952,
+      "end": 3212.16,
+      "text": "Well, mine is also a kind of final comment. I also want to thank Stefania for this very broad overview that you gave us to the problematic situation that we find ourselves in, but also pointing towards possibility, how we can go about in making this co-design, you know, to matter."
+    },
+    {
+      "start": 3212.16,
+      "end": 3235.072,
+      "text": "And I think you have to use a multi-pronged approach. There is something, one part is how to bring in the government, because what we see is this shift from state towards market. In the beginning, you spoke about this is happening outside the democratic sphere, but that's the market."
+    },
+    {
+      "start": 3235.072,
+      "end": 3256.384,
+      "text": "you know, is the market. And you don't have to ask anyone because you put something on the market and if people buy it, that's the end of the question. So this is one of the problems. However, the state has possibilities, for instance, in public procurement, which is a very powerful and important instrument."
+    },
+    {
+      "start": 3256.384,
+      "end": 3285.376,
+      "text": "for every government, because this is the way how you can give directionality to innovation, et cetera, et cetera. And public procurement could very easily contain a clause that in this particular instance, you have to include somehow the people who will have to live with it or bear the consequences of however you approach it. And then I found it interesting that you brought back citizen science."
+    },
+    {
+      "start": 3285.376,
+      "end": 3314.976,
+      "text": "Citizen science has had its ups, but more and more of downs. And, you know, there was the enthusiastic phase. And then it turned out that for many reasons, it's not as easy. And somehow I feel we are almost back to birdwatching and, you know, observing the sky, you know, beautiful things. But this is not all that citizen science should be about."
+    },
+    {
+      "start": 3314.976,
+      "end": 3340.096,
+      "text": "And so I think whether you succeed in getting citizens involved about something that really touches their lives and the way how they see their future is an open question. And I wonder what you see, how do you assess the chances for getting the kind of..."
+    },
+    {
+      "start": 3340.096,
+      "end": 3367.568,
+      "text": "you know, citizens' involvement in something that they should be concerned with. But we also know people don't have much time, spend their time in different ways, there are other worries, etc. So what is your personal take on this? Thank you very much for this, as taking notes, as like with all the other questions, they're all very useful food for thought. Now, as it happened, so I can tell you..."
+    },
+    {
+      "start": 3367.6,
+      "end": 3379.6,
+      "text": "Some little experience we have had, which have been extremely successful working, for example, through the public library system. Again, a portion of the population goes to the public library. There's more than our students only, right?"
+    },
+    {
+      "start": 3379.6,
+      "end": 3404.976,
+      "text": "and involving art and artists to tell the story, I mean, to make people feel and experience technology in a way that it makes technology accessible to people, because that's the other big challenge we have. These are boring topics. They're complex. So, you know, you even spend an hour to understand how this works, right, between terminology and all of that. Now, my partner is a behavioral..."
+    },
+    {
+      "start": 3404.976,
+      "end": 3421.696,
+      "text": "economics, a professor of economic psychology at the University of Amsterdam. Next week, we have our joint inaugural lecture as professors here, although we've been professors already for a while. And we're actually at the moment working on coming up together to an answer to this question."
+    },
+    {
+      "start": 3421.696,
+      "end": 3442.896,
+      "text": "So it does mathematical modeling. It does a lot of behavioral modeling and working with incentive schemes, for example. So we're trying to figure out what are the incentives for citizens to participate, but also what are the incentives for the one where to listen. So the policymakers, the state, let's say."
+    },
+    {
+      "start": 3442.896,
+      "end": 3472.128,
+      "text": "for listening. So I hopefully going to have an answer later on, which is probably still theory based without probably it's going to be theory based with some empirics. So we want to do also some joint experiments there in the lab. But what is the odds? I've seen that there is more and more thirst actually for knowledge in this realm. People are scared. We've run a lot of, so we had this artwork at the library."
+    },
+    {
+      "start": 3472.128,
+      "end": 3501.792,
+      "text": "We use it as a great conversation starter for people that came through. It was an interactive antenna that would follow people around, whatever, whatever. So it really captured people's eyes, people's imagination, but also elicited theories. It was a great conversation starter to talk about technology. Judging from that engagement, which is very, very partial, I think there is quite some potential into making this."
+    },
+    {
+      "start": 3501.792,
+      "end": 3521.296,
+      "text": "happen. What we have noticed is that about 75% of people that would come in would stop to look at the artwork, would spend time to talk to researchers. You can say yes, but there are still those that go to the library. Okay, we have to start from somewhere. So I think there is thirst, and I want to be optimistic for once."
+    },
+    {
+      "start": 3521.296,
+      "end": 3549.36,
+      "text": "and say that there is potential. So at the moment, I think there is, if we can find the ways to do it. I'm currently, for example, for another European project, looking at ways of using board games to talk about sustainability transition, something completely different, but also technical. So in September, I'm going to have more evidence of what I'm saying, whether it's true or not, but I want to be optimistic."
+    },
+    {
+      "start": 3550.128,
+      "end": 3578.256,
+      "text": "So thank you very much. We wish you all the best with your research and also us as academics, because I think we are all underlining and ready to take on what you just shared with us. And now we come to the last part, the music. I turn to Peter. Yes, thank you. Stefania selected mit Bastelusule bei Zoot Soundsystem."
+    },
+    {
+      "start": 3578.256,
+      "end": 3608.176,
+      "text": "Reggae from Salento. I hope that will take your mind off of the current circumstances. Also, before I play the next events, they were already announced last time. So on June 4th, Wessel Reyes will speak on civic virtue and digital technology and Erich Prehm will moderate. And one week later on June 11th, Gordon Birch will speak on generative AI degrading online communities, moderated by Enrico Nardelli. So thank you, Stefania, Helga and all attending."
+    },
+    {
+      "start": 3608.176,
+      "end": 3634.256,
+      "text": "See you again in June and take care and goodbye."
+    },
+    {
+      "start": 3634.256,
+      "end": 3656.144,
+      "text": "Thank you. Thank you. Thank you."
+    },
+    {
+      "start": 3859.376,
+      "end": 3868.848,
+      "text": "Thank you. Bye. Have a great evening. Goodbye. It was great and good luck for Amsterdam. We need a good education. That's about it."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,806 @@
+{
+  "video_id": "d_bgYwWbOJY",
+  "source": "whisper",
+  "language": "en",
+  "text": "Ladies and gentlemen, it's my pleasure and honor to welcome you all here at this very nice Berkelsaal at TU Wien. You know, today in the morning, in the room next to here, I had to welcome a South Korean delegation. What would they have liked to hear from us? Of course, about AI, what else? But what would they really have liked to hear from us? How our research in AI is influencing Austrian policy. And here we did a lot of hand-waving, I have to tell you. Because AI policy lab, it's now. We didn't have almost nothing to say in the morning. It's not totally true. We were telling about digital humanism and how we made it in the Viennese governmental program and so on. But I think here... Theo Wien and our faculty of informatics has some room for improvement to use the knowledge we have, not only for basic research, which is very important, of course, and we are getting the Ichikai Distinguished Paper Award, and great thank you to Agata Ciabattoni, who got this award last week. But we have to do, I'm really convinced it's our responsibility that we also have to go into the direction of policy briefings and educating not only the youth, but also the past, our politicians. And so I'm very honored and delighted to have Professor Virginia, not Dicum, but Dicnum, you know, from, yeah, but it makes a difference. from the University here as an IWM, and you will hear just in a minute what this is about, senior fellow. And I have to tell you, I don't know if you, when you get an email, you read until the very end. Normally people don't read anymore. I'm always reading until the very end. And at the very end of this invitation email, it is stated, Digital Humanism Senior Fellowship Program is a program, a collaboration between IWM and Hannes Wertner. And I have to tell you, it's partly true. I should say hello from Hannes Wertner, who is now at the Island of Cause and enjoying, I guess, the sea and some nice dinner. And he was the Spiritus Rector of this fellowship together with Ludger Hagedorn. but it's a collaboration between IWM and the Faculty of Informatics. I have signed it, and we will continue this collaboration between TU Wien and the Faculty of Informatics and IWM. I'm happy to confirm it. Therefore, I now hand over to Ludger. Great that you are here. Thank you. Thank you very much, Gerti. I will be less entertaining, but I will also be short for my introduction. So I'm Ludger Hagron from the IWM, and IWM in German means Institut für die Wissenschaften for Menschen. It's too long a name, but we have it for too long now to change it, so this is unavoidable. We will continue with it. Institute for Human Sciences, and we are running together with the TU Wien. I happily confirm. I even know how this happened, but I will not tell you. But you're right. I mean, it's also good to mention Hannes, so he was very initiative in the beginning to start this, and he's very important for it. But we are doing this as a collaboration of IWM and the TU Wien, and we are very grateful for it. And we should mention that we are running this already for four years. That's quite some time. We have had quite a good number of fellows, two fellows per year, who come to visit in the frame of the program. I will not mention all the names now, but I think it was quite a good list of people. One of them was Hans Ackermanns, who is here, who was our fellow last semester, and who happens to be the organizer of this year's summer school at TU Wien as well. You see very many things and ways of collaboration we have. Let me just very briefly say we are very, very happy that Virginia Dignum is this semester's fellow in the frame of the digital humanism program. Virginia, in her normal life, teaches responsible AI. That's very important. It's also in the title tonight. This is already in the title of her professorship, Responsible AI at Umeå. And Umeå is... Far north in Sweden. I mean, I made it very far north, but that far north I did not make it. I mean, this is seriously north in Sweden. Fourth coming, and I mentioned only this, fourth coming is her book that will be entitled The AI Paradox. We just discussed it, so I have the very latest information about this. It will come out with Princeton University Press in February 2026, so very, very soon. Part of the program is also, and this should be mentioned, we should not forget that, the Austrian Federal Ministry, Ministry for Innovation, Mobility and Infrastructure, is financing this program. We are very grateful for that, and it's good to collaborate with them on this. The colleague from the ministry actually promised to be here tonight, but I don't see him, so I will leave it. And I will hand over to you, Virginia. Very nice that you're with us tonight. Beyond Hype and Fear, Responsible AI for Responsible AI. There it is again for social transformation is the title. And let me just say that after the lecture and the Q&A that will certainly follow, we also have a reception and you're very welcome for that. Virginia, please. Thank you. Thank you. Thank you all for being here. Thank you for the introduction. Thank you for explaining the context in which I'm here. You mentioned several times the responsibility part. Actually, I don't know if anyone reads what I put on LinkedIn, but just this weekend I was complaining about the word responsibility in AI because it has become a kind of meaningless word, a word which has been taken over by consultancy and companies. as something that either AI does or that we can make a checklist and then we are done. And that's not at all what I mean by responsibility, but still, indeed, my chair is about responsible AI, not AI being responsible, but us. people taking taking sure that we use and develop ai responsibly but words are are complex and that's one of the things that i appreciate the time that i have here at the institute because it's a time in which i can spend thinking about this type of issues but yeah ai responsible or not maybe it is of course we cannot go around it and i've been in working in ai for almost 40 years now i think 37 years or something like that and it has never been the amount of interest the amount of enthusiasm but also the amount of fear that we see with ai nowadays And it's hardly possible to open a newspaper or to talk with people in a party or whatever. Everybody's talking about AI and, like I say, both with some enthusiasm and also some fear. One of the issues that we see currently is that there is this increasing narrative that AI gets better when it's more. when we have more data, when we have more computing power, when we have bigger and better algorithms. So more is better, and that is something that, especially in the last few years, is becoming one of the leading directions in AI. We need more. We need bigger machines, more data. Everything needs to be bigger and bigger. But if we look at it exactly, what do we mean by more data? We get... the world that looks like in that image. This image is from 2022. It's not mine. It's from the Mozilla Foundation. And it shows the distribution of availability, of data availability for the training and the use within AI systems. This 2022, if we look at it today, probably the world is even more skewed than there. And, of course, it doesn't mean that the blue parts of the world, and Germany has a very big blue part there, is the biggest in Europe, and all the rest of us in Europe are squeezed to the sides. But even in the places where there are these big, enlarged blue areas, The data that is available doesn't represent everybody equally, and there are increasingly differences in the way that we are represented in data, depending on our backgrounds, on our regions, on our ethnicities, on our genders, and so on. So more data might be better, but more data which enlarges this type of difference is... probably not what we are looking for. Talking about computing power, and that is one which is more often in the news, it comes with costs. It comes with costs in terms of energy, the amount of energy that goes into keeping data centers and computing centers running is huge, is increasing, and there are many of these graphs. I don't really have their source for the graphs because there are so many and they keep changing. But all of them have this type of idea. We need more and more energy to run these data centers, these computer centers. More and more we are aware that it's not just energy but also water, like the one there behind, the bottom, but also other types of natural resources and metals and so on. But at the same time, and also we don't really talk much about it, More and more money is going into the building and the maintaining of these systems. And money is something which sometimes looks like infinite, but still there are choices and there's where policy comes. There are policy choices, political choices, in terms of... How are we using our available resources, our available money, our available economic resources in a country, in a region, and so on? And what goes into building bigger and bigger data centers is not going somewhere else. These are choices that need to be also taken into account and understood from the perspective of the use and the choices and the policy choices around AI. And finally, the algorithmic power is indeed increasing, but the impact of those algorithms is increasing as much or more. And if we go into this impact of the algorithms, we more and more see the negative impact of the algorithms. That's what makes the news. What gets into the news is when things go wrong. and things are going wrong in many different ways, bigger and smaller, but it shows that it's not AI that goes wrong or that has any type of responsibility for what goes wrong, but the impact of what we do with AI is directly related. to the decisions that we take on when, how, and what for we use AI. And therefore, the responsibility is ours. And how we can address this responsibility is what I would like to discuss with you today. By the way, in principle, there will be Q&A at the end, but if anyone has some kind of urgent question that cannot wait until the end, please feel free to interrupt me. So it starts by understanding what is AI. And I'm not going to give a lecture on what is AI. I don't think no one really knows what is AI. There are more definitions of AI than people working in AI or than politicians or whatever. So there is many, many different understandings of what AI is. But maybe it's important to look at what AI is not. And what it is not is intelligent or artificial. The name is... We have to live with the names, what are words, but it is not intelligent in the sense that, at least not in the sense that we talk about people being intelligent. It is a different type of intelligence and that might actually be the benefit of AI because it is intelligent and it's able of addressing complex issues from a completely different way than what we would do. And therefore, it is... We should embrace the different type of intelligence of these systems and not really try to compare or to make them more human intelligent. On the other hand, it's also not just artificial. AI, as we use it today, and probably all of you today literally use it in one way or another, as we use it, it doesn't really exist without the work and the effort. of a huge amount of people not only the ones who develop and design and implement it but more and more the hidden workers which are there to take care of all the trash that goes in the systems that comes out of the systems and making sure that things don't really affect us as much as they could be so and at the same time like i said it uses natural resources so It is not just artificial and it's different intelligent. And the fact that these systems are able to manipulate language in a way that we hardly can distinguish from AI or not doesn't really show a proxy to intelligence. questioning about what is AI, and especially talking with politicians and policymakers, there are a lot of kind of misconceptions about what AI would be. There is a firm belief that we can decide this is AI and this is not AI, and then we can regulate AI and we can leave what is not AI to be done by other means. This difference and this distinguish gets more and more blurred, and the more we embed AI in many different types of products and services and applications, the more it is difficult to distinguish what is AI or not, and then think about the AI Act, which is supposed to address... the capabilities and the issues around AI, if that is embedded in a system with all kinds of interfaces and all kinds of other types of components, it becomes very difficult to say, I'm going to use the AI Act for this little bit of all the components there, and I'm going to use other types of regulations somewhere else. There is also this idea that AI acts in the world and we have to address being the real world or the virtual world, that there is an active contribution of AI to the world. But most of the times that AI is being used and is being applied nowadays, it is not a direct action of AI in the world, but there are many steps and many intermediaries between what AI does and what really at the end is the action. There is also this idea of the user. We are protecting the user. We are looking at what the user does. There is not one user, and all users have different types of expectations, different types of requirements, different types of capabilities. One AI system is being used by many different users. Each user might potentially use many different AI systems. AI systems are increasingly using other AI systems. So the idea of who is using AI and that we can address and isolate that component or that part is also a difficult one. And then the idea that AI needs a lot of data and if there is not... data then we cannot really do nothing with ai is another type of misconception that goes around and finally probably the most important of them there is this idea yes ai doesn't really do all what we want but just don't worry we'll find the fix and there will be a technological fix for whatever problems we encounter and when we find that fix then everything is done unfortunately Technology doesn't really fix everything, and if we think that that's the case, probably we don't really understand what is AI, but also don't definitely understand what technology is, but also not what are the problems that it causes. So these are the kind of backgrounds in which discussions around policy evolve. And it's difficult to convince that there is more to it than, and that's not all issues about AI. So talking again about responsible AI, why are, and this is a field that you introduced, it's something that like 10 years ago, definitely no one was talking about responsible AI. No one was talking about AI ethics. No one was talking about impact. So it's quite a new thing. But it has been quite evolving and quite developing in a very short time span. And the discussions around it are very, very new. And in a lot of cases, we don't really have enough evidence. We don't really have enough experience or not even the tools to address all the issues that can be around the responsible AI. And if you hear different people talking about responsible AI, it will mean different things, and we will be concerned about different issues. But anyway, why should we be concerned? One of them is this very strong idea that data is... and AI runs on data, and that we should look at the bias in the data, and if we are looking at the bias in the data, then we are fixing and addressing the problems of AI. But this strong belief that data is all, or at least a very large part of what AI is, is probably right from the perspective of AI, but from a humanity... humanism perspective is probably not what we want to look at. More and more people are talking about this datification, which is the idea that data is all what we need, but if we really want to demystify this, reality is always more than data, one which is kind of hard to understand by policymakers. Data doesn't exist nowhere. something that we create, that we construct, that we measure through many different types of things, but you cannot pick up data from nowhere. We build it. And as we build data, it comes with all the decisions and all the... The consequence of those decisions, what we decide to measure, when we decide to count, where we decide to take these measures, what kind of characteristics of reality we are taking into account, that is what becomes data. But that's only part of everything. And even if we try to put sensors on everything, we still end up with... more than what the sensors can measure. And therefore, the reality that an AI system understands is a different reality than the world is, and that was the map of some time ago. But it also only shows some parts of the story, if you want. And therefore, because we build it, it comes with bias by definition. because we have to make decisions of what we build, what we construct, what we measure or not, and those, by definition, become bias. And one thing which this whole idea of datification tries to combat or to make clear is that being data rich or having a lot of data not necessarily leads to a better insight on the situation. So we need to address it by different ways. Then we have the issue of power. Who is building AI? At this moment, who is building AI, at least the AI that we all are using and that policymakers are concerned about, is a very few group of people, very much located in a couple of places in the world. They are building it. mostly from someone of them is listening and trying to complain, probably. They have those big tech companies, be it in North America or in China, they have their own interests and their own options that they make about what, why, and how they are developing these systems. there is very little capacity from democratic elected governments or any government at all to really interfere and have some type of participation on how and what for AI is being developed. So the issue of who is deciding on what is happening is an issue that really needs to be addressed further. And not to forget as well how skewed the whole field of AI tends to be. And finally, I already talked about the computational costs of AI or the economic costs of AI, but more and more we also see the human and social costs of AI, of all those people that are behind the scenes. Oh, that's a new music, so it's... Yeah, maybe next time better react because we'll get another type of music. Anyway, so there are the people who are behind the scenes and it is an awful place. I talked with some of them, not the ones in the picture, but some of these people in India. They are working at this moment and probably under their tables there are other ones sleeping and they will change turns in between themselves to make sure that the... The potential trash that an AI system, especially a generative AI system, can generate is not really dumping in our screens, and also to make sure that the data in which those systems are trained are taken care of. So I talked with a couple of them in India last year, and it's really not a good place to be. And also, of course, on the other side, we more and more are part of the... equation as well we contribute ourselves every time to the building of these systems knowing or not knowing so with all this can we really be responsible and how are we going to be responsible and what does this responsibility mean Like I say, it can mean many things to many people, but it starts, and again, when I try to talk with policymakers around the world, it starts by trying to demystify this idea that AI happens. The most politicians in the world that I have talked with, they have this feeling that AI is something like the weather. It happens and we are not really able to control the weather. We can only try to address the consequences. We can see what is the weather forecast and decide to go outside because it's a nice day or to take an umbrella because it's raining. But AI doesn't happen to us. Someone is making the decisions and the choices about what these systems are, where they are, what they can do. And these decisions, who should decide and which values, what kind of issues should be considered and how to prioritize all these values and requirements and constraints on the systems. Those are the questions that are not really being openly and transparently discussed. There is also increasingly this fear of missing out and the idea that we have to use AI. I was one year ago, more or less, in a meeting of ministers of the Nordic and Baltic countries, and it was funny almost because they were running to the front and saying, by 2027, my country is going to have 82% of civil servants using AI, and then the next one would come. By 2026, we are going to do 97%. One after the other just coming with this thing. And then I just, I was in the room and I asked why. And I think that they almost tried to kick me out of the room. But it's the question that we are not asking. There is very much, we are putting AI first because AI is there and because everybody else is using AI. And we are not sufficiently asking what we call the question zero. Is AI the best option for whatever you want? What do you gain by using AI? What do you lose by using AI? Who is going to be benefiting? Who is going to suffer from it? All these type of questions are not really asking sufficiently. So we need much more to ask why before we ask how. And I'm in a technical university, so I can again and again say this. technical people we engineers we computer scientists don't know how to ask why we know how to ask how we know how to solve the how but we don't know how to ask why and that's why i think that's The initiatives like digital humanism, which brings the humanities. The humanities, they ask why all the time. They don't do nothing, maybe, but that's another part. But they're asking why they do. But maybe they don't ask how enough. I don't know. I'm not humanities. But I think that this type of initiatives are really very, very important. We cannot keep wielding stuff just because we can, just because there is a puzzle that we want to answer. But we need more and more asking why. And then when we know why, we might be better informed to answer the how questions. Moreover, AI is not just about the program that someone wrote. It's not just about the app that runs somewhere, even if those huge things. AI is not the technology. AI is a social technical system. If we don't take into account the social part of the AI equation or the AI system, then we are not really addressing the whole complexity of what it is. And when we talk about ethics and regulations and laws and governance and so on, we are not talking about regulating a piece of software. We are talking about regulating this context, social technical context, be built, can be used, can be deployed, implemented, and so on. So when we talk about responsible AI solutions, we need much more to look at the social science, the humanities, than just about the technology. And then we need to ask ourselves, not again, what is AI, but ask us, what do we want AI to be? We are building these things. We ask why we are wielding them, and then we have also to ask what do we want it to be. If we are wielding it, we can take this type of decisions. We don't have to take or to accept the decision or the answer that someone else gives. Do we want AI to be human-like? First, what does it mean? And why do we want AI to be human-like? Is it to speak like a person? Which person? Is it to look like a person? Which person? And why do we need a machine to look like a person? And I'm not saying that it shouldn't and that there are no reasons or no situations in which AI should have some human-like characteristics, but we need first to understand those situations and it's not necessarily that every piece of machinery needs to be human-like. And then people, and mostly people in the ethics and responsible AI field, they all will say, no, no, no, of course we don't want human-like and all this anthropomorphizing of the systems is a very bad thing. We want AI to be tools. Sure, let's go build tools, but here again we have to ask, a tool for what and a tool for who? I'm left-handed. I cannot really use the scissors in the same way that a right-handed person uses the scissors. So even simple things like scissors have some benefits for many and some complexities of using for others. So even if we see AI as a tool, we do need to ask ourselves, what is this tool going to do? Who is going to benefit from using the tool? When is this tool available? How is it available? And do we need to have some type of driver's license for this tool? Is it a tool that anyone can use? Do we want to limit it? So there are many questions there. Then we have to ask, and maybe this is a kind of old one. When AI started many, many years ago, it was very much meant as a simulation of human intelligence. It was 70 years ago at the end of August. that they made the first proposal for a workshop on AI. And if you look at that, what they were trying to do was to build systems or models that would enable us to understand better how human intelligence works. So we were trying to simulate some of the characteristics and the capabilities of human intelligence and using these simulations, hoping that that would give us better insight into the... characteristics of human intelligence nowadays that is not really at all the main interest or the main function of building ai these systems are having direct or indirectly interventions in the world and maybe they need to be built differently and with different types of tools than the ones that we used for exploring the idea of intelligence and finally and i think this is probably the most important Do we want AI to do as we do or do we want AI to do as we say? It's very different. And who is going to decide that we want AI to do as we say? What are the right ways to behave? And then we get to even more potentially interesting questions. What kind of decisions should this... system take? Should it really take decisions about our own intentions and limit our intentions depending and determined by some type of normative understanding of where we are going? Is this normative going to benefit me, the individual, the user, or the group? Is it going to benefit society in general or only me? If we know that the complexities of the ethical space, if you want, and we know that unfortunately, or fortunately, I don't know, I don't comment on it, what is legally allowed is not necessarily what is ethically or morally acceptable, and what is morally acceptable is not exactly what is socially accepted. And we know that we navigate this space and that our decisions and our options are always placed in this space. This space changes from one place to another, from one time to another. Capital punishment is possible and accepted and legal in many places of the world. In other places, not. What we believed to be right 200 years ago or even 50 years ago is different from what we believe to be right now. So if we know that this is a complex, dynamic and evolving space, where is the ethical behavior of AI going to be? And finally, we need also to understand that in most cases we cannot have it all. And some decisions need to be taken in terms of what type of values and principles do we want to prioritize. And again, there we need to ask ourselves why and what are the effects of this. So all of this to say that AI is multidisciplinary and definitely responsible AI is multidisciplinary. It's not just about building systems that... And building formalisms that check and measure the fairness of a system is not just about building systems that are transparent, but it's really understanding all this type of question and having the tools and the mechanisms for the criticizing and reflecting about the consequences of what is being built. I think I should be stopping because we need to go have drinks and questions and whatever else. The questions there I already talked about. I will share the slides and someone will share the slides. If you want the slides, just mail me and I will do it. This one we already talked about as well. Design is not neutral. It's always political. It depends on what we are. agreeing in terms of all kinds of issues. A lot is being done at this moment on the governance of AI. Actually, I should have said it was being done until a couple of months ago. Nowadays, very much all countries and all agencies are moving away from it. We can talk a lot or short about it. We can discuss a lot why is it needed or not. The short version is cars drive faster because they have brakes. Putting brakes on cars and seatbelts and airbags and all those kind of things don't really change the main function of the car, but gives all of us the trust and the capabilities to use them with confidence in a complex and changing world. So maybe we can learn something from these simple metaphors. And there is a lot of work being done on these principles and guidelines. By now, I think there are over a thousand of these things. Unfortunately, very few of them are really implemented and operationalized. I could have said a couple of months ago that at least the AI Act was there, but it seems unfortunately that they are trying to slow it down, so I don't know. But as we move... and understanding all this complexity and all these groups and all these activities around building the safeguards, the guardrails, the principles that can guide a global understanding of how and what we want to build with AI. is important and there is a lot of interest for it it is also basically important maybe at this time to try to place this in a broader context of the safeguards that we need to put for democracy understanding how ai is impacted by the discussions and the ways that we understand and the changing ways by which we understand democratic process and also how AI can impact this process in many different ways. And another one which we need to take into account is also how can we understand what we are doing from the perspective of the planet. Let me just move quickly to the end. I think one way or another I talked about most of these things. Probably we need to start thinking about a different AI paradigm. And in my life as an AI researcher, I have seen a couple. So there was the rule-based, the symbolic AI type of paradigm. We are now in a world in which the data-driven paradigm is the way that we understand AI. But we probably need a new one. And it's one that starts by recognizing that there is not one universal solution to build AI, recognizing the limitations in addressing complex challenges, addressing the risks that come in terms of the impact in the world, a paradigm that really needs to go. I would not even call it multidisciplinary anymore, but it really needs to move. beyond the existing disciplines and be supported by ways and standard technical bases that really provide the capability to verify and to do it in a sustainable and participatory way. We can leave the innovation for another time. The last thing is responsible AI is not really a choice. We don't really have a choice between innovating or being responsible. That's kind of something which politicians are always talking about and complaining about, but it's not a choice. If we go innovate without being responsible, what are we doing? Just rushing after the other ones. We really need to start talking about responsible AI, about AI ethics, about AI regulation, much more as the stepping stone that we need to guide innovation, to build trust. create really different transformation of what we have instead of keeping in this type of discussions. Are we going to innovate or are we going to regulate? There is not an option here. Thank you. And I think I went a bit over time, but maybe there is time for a couple of questions or we do that during the drinks. Up to you. You can take it all the way there to the end. Fast delivery. Thank you for this wonderful talk. My question is about lowering the threshold for developers and companies to engage with responsible AI and ethics by design. What do you think is currently the biggest threshold that is keeping developers to, for instance, engage with ethical design and things like this throughout the development process of AI? One of the biggest blocks is this idea that we need to rush to a solution. We need to go as quick as possible. Unfortunately, the motto of Silicon Valley of go quick and break things has really permeated the whole industry, and there is not really a reflection on time to slow down. In most cases, we don't really need to rush so much. And most of the designs and applications that we are developing, if they are not out tomorrow, but next week, probably doesn't really matter much in many cases. But this idea that we really have to go quick and that... Otherwise, someone else is going to go quicker is really becoming a kind of a mantra in the industry. And that is one of the main implications towards really taking a more constructive and deliberate approach. There is also very much the feeling that it's going to cost more. but these costs are not really in most cases. MIT did recently a study on that, and I'm not an economist, but most times it's not really clear about how they are measuring these costs. It's more an idea of believing that it will cost more, but if we really take a longer-term perspective on the cost and... benefit from most systems, then it balances much more, whether you took a responsible approach, ethics by design approach, which might have been more costly to start with. And even that is not completely the case all the time. But if we take it the long term, then it's difficult. It's much more balanced. In the beginning, you had a slide about the limitations of data. Did you show this slide already with the number crunches of the complexity science hub in Vienna? I'm a bit sceptic what they are doing. I didn't talk to them, but we could. I'm here a couple more weeks, so maybe we can discuss that. But I mean, I'm not, there are many, many situations in which we really need a lot of data. But it's not all. and it's not necessarily that all AI approaches and all AI techniques benefit from a lot of more data. There are examples of getting more medical data because you need more data, but then it ends up really getting more data where it is easy to get that data, and that skews the whole data set because the rush to have more data makes it... the easier to get very skewed type of data. But we can discuss with the complexity people. Would be a great time to do, yeah. Yes? Thank you so much for the lecture. I have not really scientific question, but rather about the policymaking. If you... If you could give only one advice to policymakers about AI regulating and be sure it's going to be implemented, which one would you choose? It's actually what I ask them all the time is ask themselves why and who is going to benefit from that system that they are building. Most times they haven't. Actually, I was just last week, I was here already, but I was giving a talk. to the commune in Umeå which they want to use it for maximizing or supporting the energy costs of the different houses and they want to put some AI machines in all the houses in the city. about to measure the energy consumption. And then I just ask them, why is that? And what are the alternatives to use AI? And often they don't really thought about the alternatives. It's very much this fear of missing out. You rush because everybody else is using AI. So therefore, we also have to show that we are using AI. So why are you doing it? And do you have thought about alternatives? Those would be the questions for the policymakers. There are things around here. Okay, you got it. Go for it. Thank you. Thank you for your presentation. Sorry. Sorry. I don't see the speaker. Sorry. Actually, I want to join in on the question before because I... I wonder how you do it because you were saying when you're sitting in a room full of policymakers and you ask the why question, you nearly got kicked out. So I want to know what happens afterwards. So you tell them to ask the why question, but how do you convince them or how can this be translated into policymaking in times of competitiveness, the great acceleration and all these things? That's a very good question and I don't really have definitely answers to all of them. I think it's very much contextual and what might work for a specific region or city or whatever might not be what works for other ones. But the most important, I think, is that they connect. what they are trying to do with AI to their own main priorities. And usually they do have, especially cities and municipalities, they do have a set of priorities which elect them there or which they have agreed with in their programs or something like that. And asking them how much is this really going to get you to address those issues that you... that are the important issues for this city. And sometimes, indeed, and again, I'm not saying that they shouldn't use AI. There are many relevant and potential beneficial uses of AI, also for policymakers, also in cities and municipalities, but trying to make them more aware of how much is that aligned with their own main interests or mission or whatever they call it. that usually helps them in prioritizing what they are doing. So first of all, thank you for your presentation. I was just wondering if you can elaborate a little bit about AI literacy or digital literacy, because to me it seems like that It applies the same thing that you said about responsible AI, also about the terms of AI literacy and digital literacy. So what is the level of literacy that we need and who needs this kind of literacy right now? Good question. I think I would need another lecture to talk about AI literacy. And I don't know if you are in the summer school. I will be there on Thursday, I think, so maybe we can talk. Friday, okay, whatever. Someone knows me. I will be there. Anyway, maybe we can talk about those issues there. But one of the issues with literacy, I think, is that we also there have to be very aware of the need to differentiate. Not all of us need to be car mechanics, and not all of us need to know how to build an AI system. That doesn't mean that all of us, some of us need to know how to drive, and maybe we also need to think about driver's license for those that are driving AI systems. But all of us, even if we don't have a driver's license, need to know and understand how to interact safely with traffic. This type of basic literacy, how can we interact safely with AI, that is at this moment the most urgent type of thing. And it's again not not using it, it's not forbidding AI to be used, and especially the chatbots and the chat EPTs of this world, not not using it, but it's having a basic understanding of. Where are the dangers? Like we know what are the dangers of rushing into the street and running under a car. Those type of interaction, basic interaction, is the basic literacy that we need most urgently. Yes, if someone has a microphone, use it. A question that... Probably ask a lot, but how does sentience come to all of this since sentient AI or the concept of sentience in general? Because we're advancing so fast and people seem really not that worried about it considering how little we know about it. Okay. Yes, it is asked a lot. And I think that someone is calling it seemingly sentient AI or seemingly conscious AI. A lot of the consciousness and sentientness of AI are properties that we ascribe to these systems. At the end of the day, we are dealing with statistical models, mathematical models. There is no grain of consciousness to be found inside these models. It is not possible mathematically. It is not possible formally. I'm not saying that if we really don't go into another completely other way of building these systems, you cannot get to something which we can call consciousness. But at this moment, we are much more interpreting, interpret the interactions with these systems like what the system would be. conscious or sentient and so on so it's much more on our side it's like in the the in in the side of us interacting with systems than with the system having said that that doesn't mean that at this moment systems are being built to be i would say it to be are enforcing this type of dependency. They are being willed to be agreeable to you, to agree with you all the time, to make you feel good all the time, to extend as much as possible the interaction between you and the system. These are design choices, and these choices are being designed very consciously and very deliberately by the organizations and the companies that are putting these systems out. And that is what we need to address first, to create the rules, to create the responsibility, the standards by which this type of deliberate design decisions are not possible or at least are transparent to those that use them. But the all-conscious discussion, I think we need to take it in another place. I just have a short question about one of the last slides that you had about innovation versus regulation, I think it was. So the way I see the development of AI, it's innovation first, regulation second, especially in the Silicon Valley. Maybe not in the European Union, but the Silicon Valley, definitely in the US. So allow me to be a devil's advocate. Why should I... sacrifice my progress and fall behind my competitors, like, let's say, China or Russia or, like, I don't know, North Korea or whatever, in support of the regulations, if it will slow me down. Just playing the devil's advocate. I know, I know. But first, who is defining what is the measure of the quality of innovation? We are measuring innovation very much by the perspective of a better technical gadget, which is maybe a little bit more accurate or whatever. But if I improve my system with 1% of accuracy, maybe let's put a different question. What is more innovative? Is to work on a system to make it 1% more accurate or is to work on a system to make it 50% more fair or more privacy enhancing or whatever. This type of, and this is one which us as researchers in AI are the guilty of it. We measure our conference contributions and papers submitted to conference much more by how much they improve the accuracy of the algorithm that they submitted last year and not about other types of ways to measure the innovation of the system. So a system that is more... or that is more privacy enhancing or that is less discriminatory is as much of an innovation as making the system quicker. But somehow we think that the quickness is the only way to go. And the other one, and I think I went very quickly about that, innovation is not only about the technical requirements or the technical characteristics of your systems. We need technological innovation, but we need... organizational innovation, we need regulation innovation, we need governance innovation, we need use innovation, and all those types of innovation are not really considered sufficiently. So we need to be much broader in understanding what are we talking about when we're talking about innovation. Innovation is not just about making a system that is half a percent more accurate than the one before. And that is the failure of Silicon Valley. I suppose someone wants us to stop. I don't know who is taking care of the schedule. If there are more questions, yes, please go ahead. And whoever wants me to stop, let me know. Otherwise, we can stay for a little longer. Okay. I would have another question. You also? Yeah, I was curious if you could say a bit what you think could be the role and responsibility of universities when it comes to this question of responsible AI. Is there innovation needed from the point of view of academia or university education? I think that our biggest innovation assignment start looking at AI as a multidisciplinary type of study and not just building or creating the engineers that are going to be able to improve the accuracy of the system with the alpha percent but building or creating and delivering the engineers and the researchers and the scientists that are also not only able to ask why, but also answer the why questions as they also know how to improve the accuracy with alpha percent. And for that, we need really to start working across departments. And that's the worst and the most difficult assignment of all, just daring to talk with the department next door. Those are the scary things. So, Virginia, I suggest we can take one more question. It was your neighbor who had also a question. If you just hand over the mic. Thank you for your very nice talk. I'd like to go back to this question of regulation and the developers. This is not a new situation, of course. I think there's a different way of seeing this relationship, which I think fits better what's actually happened. in the history of different technologies and their adoption by societies and economies. Good regulation saves the developers from themselves. And that's what we need if we want economies running on effective, useful, acceptable innovations. The regulation saves the developers. It's not against them. No, I fully agree. You get the last word. I fully agree. No, it was not the last word, because I think we have one more question. So I suggest we take that, right? Because this was a short answer. So we have one more, please. One last one. Sure. So thank you for this interesting lecture. I also read your article about custodian. Thank you. Yeah, so it's really interesting. So my question is, I think it's similar as a question that I did before in the morning. So I was reading like this slide about the concentration of, so seven of the world's 10 most valuable companies are now digital giants. Now we are in this race of US versus China and You mentioned about That so maybe we don't need so much data So this is for me was very thought-provoking that you mentioned because normally we usually Read that we need like chips computer power the whole infrastructure in order to develop AI. So this is the system that we are designing, and now they are concentrated with these giants. So how we can move beyond, redesign the system, because there is so much power, concentration. So how we can develop a custodianship AI with this system? Good question. We have today. Thank you so much. Indeed, the ones who want us to believe that we are on a race and the ones that want us to believe that we need data and computational power more and more are the ones that are selling that computational power and that data, are the ones which invest, I don't know how many trillions or whatever amounts of number, into creating this infrastructure. So there are invested interests on this type of development, and that doesn't mean that that's the only way to go, but it becomes very difficult, especially when we see that our own governments and our own democratic institutions are not able or maybe even not willing to provide an alternative. And I think that's one thing which we need. And like I say, it's not just about using AI to support democracy, but we really need to start thinking much more about what can we do about our democracies and what we are doing and how much we are selling our democracies to the big data. But that's maybe a completely different discussion. But the issue of the race is one which I all the time want to content. We are not on a race. This is not a race. A race has an end line. And in that end line, then we can measure who was the first to arrive there. We don't have an end line. After this paradigm, after this way of AI, there will be other ones coming. And more importantly, a race is the idea that we all go in the same direction and we kind of get all following each other. What we need at this moment is exactly... to have much more an exploration of what are the alternatives than investing and following the lead of the ones who are already ahead. So if we are keeping measuring ourselves against those ones that are already ahead, we are always losing. And that's a bit what the European Union, the kind of way that they believe in the European Union. Even now they have these calls for LLM, all the calls for open AI proposals at the European Commission. They all have to use LLM somewhere. And then I also told them, yeah, why are we putting LLM all over? Yeah, because that's the next big thing. No, it's the last big thing. Let's go and explore what is the next big thing, which is not LLM. That one is done, it's tried, and we can go do something else. So we shouldn't be talking about race exactly because what we are experiencing shouldn't be compared, it cannot be compared with race. We don't have an end line. So let's talk about something else. And again, it's a political and very deliberate... to keep us busy with talking about races instead of going and doing something different. So coming to an end, Virginia, there was one formulation in your talk that I liked a lot. I found it really great. Data rich, insight poor. Very, very great formula and maybe one of the shortest formula for the... context of the current discussion. I mean, also applicable to many other contexts. I find it's a great thing. Data rich, insight poor. I would want to say about your talk tonight description rich, insight big. Thanks a lot for that. And I may say these things on behalf of Theo Wiengerti and of IWM. Thanks a lot for that. And this applause is yours. And now maybe Walter has to say a few more words about the summer school. I don't know. So that's part of the Digital Humanism Summer School happening this week. So for those who still have free space in the calendar this week, tomorrow at 5, Alexander Brezhnev is talking about why China won't replace software engineers. That's online. On Friday, for those who want to go deep into policy, we have Virginia Dignam. in the morning on global governments of AI. And on Wednesday, we have a public screening with a Q&A with the director of the How to Build a Truth Engine, Friedrich Moser. And from the DigiHome lecture series, we have the end of September, Jonathan Haidt. 7th of October, we're talking about new humanism in time of neuroscience and AI. And then there's a pre-announcement safety date for the 21st of October. Dover, there should be in Vienna. The date is fixed. We don't know the location, but that's like happening in Vienna hybrid. And in November, the 20th, there's then the Digital Humanism Conference. For those who are not from TU or Digital Humanism, you can also sign up then on the newsletter. That's the program for this week if you want to join. And I think the last announcement is then from the... Humanities Festival from EVM, who is now sponsoring the food and... The drinks as well, yes. Thank you so much. So what you see on screen here now is also back there on one of the tables, an old-fashioned printed program we have as well for the Vienna Humanities Festival that is taking part at the last weekend of September on different places in Vienna. Have a look and take one home with you if you are in Vienna at the end of September. Thanks a lot for this evening. Thanks a lot, Virginia, and welcome for the reception.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.184,
+      "text": "Ladies and gentlemen, it's my pleasure and honor to welcome you all here at this very nice Berkelsaal at TU Wien. You know, today in the morning, in the room next to here, I had to welcome a South Korean delegation. What would they have liked to hear from us? Of course, about AI, what else? But what would they really have liked to hear from us?"
+    },
+    {
+      "start": 29.184,
+      "end": 58.8,
+      "text": "How our research in AI is influencing Austrian policy. And here we did a lot of hand-waving, I have to tell you. Because AI policy lab, it's now. We didn't have almost nothing to say in the morning. It's not totally true. We were telling about digital humanism and how we made it in the Viennese governmental program and so on. But I think here..."
+    },
+    {
+      "start": 58.8,
+      "end": 82.288,
+      "text": "Theo Wien and our faculty of informatics has some room for improvement to use the knowledge we have, not only for basic research, which is very important, of course, and we are getting the Ichikai Distinguished Paper Award, and great thank you to Agata Ciabattoni, who got this award last week."
+    },
+    {
+      "start": 82.288,
+      "end": 110.0,
+      "text": "But we have to do, I'm really convinced it's our responsibility that we also have to go into the direction of policy briefings and educating not only the youth, but also the past, our politicians. And so I'm very honored and delighted to have Professor Virginia, not Dicum, but Dicnum, you know, from, yeah, but it makes a difference."
+    },
+    {
+      "start": 110.0,
+      "end": 139.856,
+      "text": "from the University here as an IWM, and you will hear just in a minute what this is about, senior fellow. And I have to tell you, I don't know if you, when you get an email, you read until the very end. Normally people don't read anymore. I'm always reading until the very end. And at the very end of this invitation email, it is stated,"
+    },
+    {
+      "start": 140.144,
+      "end": 169.904,
+      "text": "Digital Humanism Senior Fellowship Program is a program, a collaboration between IWM and Hannes Wertner. And I have to tell you, it's partly true. I should say hello from Hannes Wertner, who is now at the Island of Cause and enjoying, I guess, the sea and some nice dinner. And he was the Spiritus Rector of this fellowship together with Ludger Hagedorn."
+    },
+    {
+      "start": 169.904,
+      "end": 191.504,
+      "text": "but it's a collaboration between IWM and the Faculty of Informatics. I have signed it, and we will continue this collaboration between TU Wien and the Faculty of Informatics and IWM. I'm happy to confirm it. Therefore, I now hand over to Ludger. Great that you are here. Thank you."
+    },
+    {
+      "start": 196.528,
+      "end": 225.824,
+      "text": "Thank you very much, Gerti. I will be less entertaining, but I will also be short for my introduction. So I'm Ludger Hagron from the IWM, and IWM in German means Institut für die Wissenschaften for Menschen. It's too long a name, but we have it for too long now to change it, so this is unavoidable. We will continue with it. Institute for Human Sciences, and we are running together with the TU Wien. I happily confirm. I even know how this happened, but I will not tell you."
+    },
+    {
+      "start": 225.824,
+      "end": 238.08,
+      "text": "But you're right. I mean, it's also good to mention Hannes, so he was very initiative in the beginning to start this, and he's very important for it. But we are doing this as a collaboration of IWM and the TU Wien, and we are very grateful for it."
+    },
+    {
+      "start": 238.08,
+      "end": 267.184,
+      "text": "And we should mention that we are running this already for four years. That's quite some time. We have had quite a good number of fellows, two fellows per year, who come to visit in the frame of the program. I will not mention all the names now, but I think it was quite a good list of people. One of them was Hans Ackermanns, who is here, who was our fellow last semester, and who happens to be the organizer of this year's summer school at TU Wien as well. You see very many things and ways of collaboration we have."
+    },
+    {
+      "start": 267.184,
+      "end": 290.688,
+      "text": "Let me just very briefly say we are very, very happy that Virginia Dignum is this semester's fellow in the frame of the digital humanism program. Virginia, in her normal life, teaches responsible AI. That's very important. It's also in the title tonight. This is already in the title of her professorship, Responsible AI at Umeå. And Umeå is..."
+    },
+    {
+      "start": 290.688,
+      "end": 320.4,
+      "text": "Far north in Sweden. I mean, I made it very far north, but that far north I did not make it. I mean, this is seriously north in Sweden. Fourth coming, and I mentioned only this, fourth coming is her book that will be entitled The AI Paradox. We just discussed it, so I have the very latest information about this. It will come out with Princeton University Press in February 2026, so very, very soon."
+    },
+    {
+      "start": 320.464,
+      "end": 343.376,
+      "text": "Part of the program is also, and this should be mentioned, we should not forget that, the Austrian Federal Ministry, Ministry for Innovation, Mobility and Infrastructure, is financing this program. We are very grateful for that, and it's good to collaborate with them on this. The colleague from the ministry actually promised to be here tonight, but I don't see him, so I will leave it."
+    },
+    {
+      "start": 343.376,
+      "end": 369.2,
+      "text": "And I will hand over to you, Virginia. Very nice that you're with us tonight. Beyond Hype and Fear, Responsible AI for Responsible AI. There it is again for social transformation is the title. And let me just say that after the lecture and the Q&A that will certainly follow, we also have a reception and you're very welcome for that. Virginia, please. Thank you."
+    },
+    {
+      "start": 374.64,
+      "end": 403.888,
+      "text": "Thank you. Thank you all for being here. Thank you for the introduction. Thank you for explaining the context in which I'm here. You mentioned several times the responsibility part. Actually, I don't know if anyone reads what I put on LinkedIn, but just this weekend I was complaining about the word responsibility in AI because it has become a kind of meaningless word, a word which has been taken over by consultancy and companies."
+    },
+    {
+      "start": 403.888,
+      "end": 418.784,
+      "text": "as something that either AI does or that we can make a checklist and then we are done. And that's not at all what I mean by responsibility, but still, indeed, my chair is about responsible AI, not AI being responsible, but us."
+    },
+    {
+      "start": 418.784,
+      "end": 447.808,
+      "text": "people taking taking sure that we use and develop ai responsibly but words are are complex and that's one of the things that i appreciate the time that i have here at the institute because it's a time in which i can spend thinking about this type of issues but yeah ai responsible or not maybe it is of course we cannot go around it and i've been in working in ai for"
+    },
+    {
+      "start": 447.808,
+      "end": 463.12,
+      "text": "almost 40 years now i think 37 years or something like that and it has never been the amount of interest the amount of enthusiasm but also the amount of fear that we see with ai nowadays"
+    },
+    {
+      "start": 463.12,
+      "end": 490.88,
+      "text": "And it's hardly possible to open a newspaper or to talk with people in a party or whatever. Everybody's talking about AI and, like I say, both with some enthusiasm and also some fear. One of the issues that we see currently is that there is this increasing narrative that AI gets better when it's more."
+    },
+    {
+      "start": 490.88,
+      "end": 518.784,
+      "text": "when we have more data, when we have more computing power, when we have bigger and better algorithms. So more is better, and that is something that, especially in the last few years, is becoming one of the leading directions in AI. We need more. We need bigger machines, more data. Everything needs to be bigger and bigger. But if we look at it exactly, what do we mean by more data? We get..."
+    },
+    {
+      "start": 518.784,
+      "end": 537.536,
+      "text": "the world that looks like in that image. This image is from 2022. It's not mine. It's from the Mozilla Foundation. And it shows the distribution of availability, of data availability for the training and the use within AI systems."
+    },
+    {
+      "start": 537.536,
+      "end": 567.504,
+      "text": "This 2022, if we look at it today, probably the world is even more skewed than there. And, of course, it doesn't mean that the blue parts of the world, and Germany has a very big blue part there, is the biggest in Europe, and all the rest of us in Europe are squeezed to the sides. But even in the places where there are these big, enlarged blue areas,"
+    },
+    {
+      "start": 567.504,
+      "end": 596.496,
+      "text": "The data that is available doesn't represent everybody equally, and there are increasingly differences in the way that we are represented in data, depending on our backgrounds, on our regions, on our ethnicities, on our genders, and so on. So more data might be better, but more data which enlarges this type of difference is..."
+    },
+    {
+      "start": 596.496,
+      "end": 625.12,
+      "text": "probably not what we are looking for. Talking about computing power, and that is one which is more often in the news, it comes with costs. It comes with costs in terms of energy, the amount of energy that goes into keeping data centers and computing centers running is huge, is increasing, and there are many of these graphs. I don't really have their"
+    },
+    {
+      "start": 625.12,
+      "end": 654.608,
+      "text": "source for the graphs because there are so many and they keep changing. But all of them have this type of idea. We need more and more energy to run these data centers, these computer centers. More and more we are aware that it's not just energy but also water, like the one there behind, the bottom, but also other types of natural resources and metals and so on. But at the same time, and also we don't really talk much about it,"
+    },
+    {
+      "start": 654.608,
+      "end": 673.136,
+      "text": "More and more money is going into the building and the maintaining of these systems. And money is something which sometimes looks like infinite, but still there are choices and there's where policy comes. There are policy choices, political choices, in terms of..."
+    },
+    {
+      "start": 673.136,
+      "end": 701.36,
+      "text": "How are we using our available resources, our available money, our available economic resources in a country, in a region, and so on? And what goes into building bigger and bigger data centers is not going somewhere else. These are choices that need to be also taken into account and understood from the perspective of the use and the choices and the policy choices around AI."
+    },
+    {
+      "start": 701.424,
+      "end": 725.44,
+      "text": "And finally, the algorithmic power is indeed increasing, but the impact of those algorithms is increasing as much or more. And if we go into this impact of the algorithms, we more and more see the negative impact of the algorithms. That's what makes the news. What gets into the news is when things go wrong."
+    },
+    {
+      "start": 725.44,
+      "end": 750.304,
+      "text": "and things are going wrong in many different ways, bigger and smaller, but it shows that it's not AI that goes wrong or that has any type of responsibility for what goes wrong, but the impact of what we do with AI is directly related."
+    },
+    {
+      "start": 750.304,
+      "end": 777.744,
+      "text": "to the decisions that we take on when, how, and what for we use AI. And therefore, the responsibility is ours. And how we can address this responsibility is what I would like to discuss with you today. By the way, in principle, there will be Q&A at the end, but if anyone has some kind of urgent question that cannot wait until the end, please feel free to interrupt me."
+    },
+    {
+      "start": 779.376,
+      "end": 807.648,
+      "text": "So it starts by understanding what is AI. And I'm not going to give a lecture on what is AI. I don't think no one really knows what is AI. There are more definitions of AI than people working in AI or than politicians or whatever. So there is many, many different understandings of what AI is. But maybe it's important to look at what AI is not. And what it is not is intelligent or artificial. The name is..."
+    },
+    {
+      "start": 807.648,
+      "end": 837.568,
+      "text": "We have to live with the names, what are words, but it is not intelligent in the sense that, at least not in the sense that we talk about people being intelligent. It is a different type of intelligence and that might actually be the benefit of AI because it is intelligent and it's able of addressing complex issues from a completely different way than what we would do. And therefore, it is..."
+    },
+    {
+      "start": 837.568,
+      "end": 866.608,
+      "text": "We should embrace the different type of intelligence of these systems and not really try to compare or to make them more human intelligent. On the other hand, it's also not just artificial. AI, as we use it today, and probably all of you today literally use it in one way or another, as we use it, it doesn't really exist without the work and the effort."
+    },
+    {
+      "start": 866.608,
+      "end": 893.504,
+      "text": "of a huge amount of people not only the ones who develop and design and implement it but more and more the hidden workers which are there to take care of all the trash that goes in the systems that comes out of the systems and making sure that things don't really affect us as much as they could be so and at the same time like i said it uses natural resources so"
+    },
+    {
+      "start": 893.504,
+      "end": 915.28,
+      "text": "It is not just artificial and it's different intelligent. And the fact that these systems are able to manipulate language in a way that we hardly can distinguish from AI or not doesn't really show a proxy to intelligence."
+    },
+    {
+      "start": 915.536,
+      "end": 942.016,
+      "text": "questioning about what is AI, and especially talking with politicians and policymakers, there are a lot of kind of misconceptions about what AI would be. There is a firm belief that we can decide this is AI and this is not AI, and then we can regulate AI and we can leave what is not AI to be done by other means."
+    },
+    {
+      "start": 942.016,
+      "end": 961.456,
+      "text": "This difference and this distinguish gets more and more blurred, and the more we embed AI in many different types of products and services and applications, the more it is difficult to distinguish what is AI or not, and then think about the AI Act, which is supposed to address..."
+    },
+    {
+      "start": 961.456,
+      "end": 983.12,
+      "text": "the capabilities and the issues around AI, if that is embedded in a system with all kinds of interfaces and all kinds of other types of components, it becomes very difficult to say, I'm going to use the AI Act for this little bit of all the components there, and I'm going to use other types of regulations somewhere else."
+    },
+    {
+      "start": 983.312,
+      "end": 1012.912,
+      "text": "There is also this idea that AI acts in the world and we have to address being the real world or the virtual world, that there is an active contribution of AI to the world. But most of the times that AI is being used and is being applied nowadays, it is not a direct action of AI in the world, but there are many steps and many intermediaries between what AI does and what really at the end is the action."
+    },
+    {
+      "start": 1013.296,
+      "end": 1035.088,
+      "text": "There is also this idea of the user. We are protecting the user. We are looking at what the user does. There is not one user, and all users have different types of expectations, different types of requirements, different types of capabilities. One AI system is being used by many different users."
+    },
+    {
+      "start": 1035.088,
+      "end": 1057.04,
+      "text": "Each user might potentially use many different AI systems. AI systems are increasingly using other AI systems. So the idea of who is using AI and that we can address and isolate that component or that part is also a difficult one. And then the idea that AI needs a lot of data and if there is not..."
+    },
+    {
+      "start": 1057.04,
+      "end": 1083.216,
+      "text": "data then we cannot really do nothing with ai is another type of misconception that goes around and finally probably the most important of them there is this idea yes ai doesn't really do all what we want but just don't worry we'll find the fix and there will be a technological fix for whatever problems we encounter and when we find that fix then everything is done unfortunately"
+    },
+    {
+      "start": 1083.216,
+      "end": 1106.176,
+      "text": "Technology doesn't really fix everything, and if we think that that's the case, probably we don't really understand what is AI, but also don't definitely understand what technology is, but also not what are the problems that it causes. So these are the kind of backgrounds in which discussions around policy evolve."
+    },
+    {
+      "start": 1106.176,
+      "end": 1135.792,
+      "text": "And it's difficult to convince that there is more to it than, and that's not all issues about AI. So talking again about responsible AI, why are, and this is a field that you introduced, it's something that like 10 years ago, definitely no one was talking about responsible AI. No one was talking about AI ethics. No one was talking about impact. So it's quite a new thing."
+    },
+    {
+      "start": 1135.792,
+      "end": 1160.288,
+      "text": "But it has been quite evolving and quite developing in a very short time span. And the discussions around it are very, very new. And in a lot of cases, we don't really have enough evidence. We don't really have enough experience or not even the tools to address all the issues that can be around the responsible AI."
+    },
+    {
+      "start": 1160.288,
+      "end": 1178.528,
+      "text": "And if you hear different people talking about responsible AI, it will mean different things, and we will be concerned about different issues. But anyway, why should we be concerned? One of them is this very strong idea that data is..."
+    },
+    {
+      "start": 1178.528,
+      "end": 1207.392,
+      "text": "and AI runs on data, and that we should look at the bias in the data, and if we are looking at the bias in the data, then we are fixing and addressing the problems of AI. But this strong belief that data is all, or at least a very large part of what AI is, is probably right from the perspective of AI, but from a humanity..."
+    },
+    {
+      "start": 1207.392,
+      "end": 1236.768,
+      "text": "humanism perspective is probably not what we want to look at. More and more people are talking about this datification, which is the idea that data is all what we need, but if we really want to demystify this, reality is always more than data, one which is kind of hard to understand by policymakers. Data doesn't exist nowhere."
+    },
+    {
+      "start": 1236.768,
+      "end": 1255.136,
+      "text": "something that we create, that we construct, that we measure through many different types of things, but you cannot pick up data from nowhere. We build it. And as we build data, it comes with all the decisions and all the..."
+    },
+    {
+      "start": 1255.136,
+      "end": 1283.104,
+      "text": "The consequence of those decisions, what we decide to measure, when we decide to count, where we decide to take these measures, what kind of characteristics of reality we are taking into account, that is what becomes data. But that's only part of everything. And even if we try to put sensors on everything, we still end up with..."
+    },
+    {
+      "start": 1283.104,
+      "end": 1308.496,
+      "text": "more than what the sensors can measure. And therefore, the reality that an AI system understands is a different reality than the world is, and that was the map of some time ago. But it also only shows some parts of the story, if you want. And therefore, because we build it, it comes with bias by definition."
+    },
+    {
+      "start": 1308.496,
+      "end": 1335.632,
+      "text": "because we have to make decisions of what we build, what we construct, what we measure or not, and those, by definition, become bias. And one thing which this whole idea of datification tries to combat or to make clear is that being data rich or having a lot of data not necessarily leads to a better insight on the situation. So we need to address it by different ways."
+    },
+    {
+      "start": 1336.208,
+      "end": 1360.528,
+      "text": "Then we have the issue of power. Who is building AI? At this moment, who is building AI, at least the AI that we all are using and that policymakers are concerned about, is a very few group of people, very much located in a couple of places in the world. They are building it."
+    },
+    {
+      "start": 1361.328,
+      "end": 1385.36,
+      "text": "mostly from someone of them is listening and trying to complain, probably. They have those big tech companies, be it in North America or in China, they have their own interests and their own options that they make about what, why, and how they are developing these systems."
+    },
+    {
+      "start": 1385.36,
+      "end": 1410.56,
+      "text": "there is very little capacity from democratic elected governments or any government at all to really interfere and have some type of participation on how and what for AI is being developed. So the issue of who is deciding on what is happening is an issue that really needs to be addressed further."
+    },
+    {
+      "start": 1410.56,
+      "end": 1438.672,
+      "text": "And not to forget as well how skewed the whole field of AI tends to be. And finally, I already talked about the computational costs of AI or the economic costs of AI, but more and more we also see the human and social costs of AI, of all those people that are behind the scenes. Oh, that's a new music, so it's..."
+    },
+    {
+      "start": 1440.368,
+      "end": 1467.28,
+      "text": "Yeah, maybe next time better react because we'll get another type of music. Anyway, so there are the people who are behind the scenes and it is an awful place. I talked with some of them, not the ones in the picture, but some of these people in India. They are working at this moment and probably under their tables there are other ones sleeping and they will change turns in between themselves to make sure that the..."
+    },
+    {
+      "start": 1467.28,
+      "end": 1495.872,
+      "text": "The potential trash that an AI system, especially a generative AI system, can generate is not really dumping in our screens, and also to make sure that the data in which those systems are trained are taken care of. So I talked with a couple of them in India last year, and it's really not a good place to be. And also, of course, on the other side, we more and more are part of the..."
+    },
+    {
+      "start": 1495.872,
+      "end": 1514.192,
+      "text": "equation as well we contribute ourselves every time to the building of these systems knowing or not knowing so with all this can we really be responsible and how are we going to be responsible and what does this responsibility mean"
+    },
+    {
+      "start": 1515.408,
+      "end": 1538.016,
+      "text": "Like I say, it can mean many things to many people, but it starts, and again, when I try to talk with policymakers around the world, it starts by trying to demystify this idea that AI happens. The most politicians in the world that I have talked with, they have this feeling that AI is something like the weather."
+    },
+    {
+      "start": 1538.016,
+      "end": 1560.256,
+      "text": "It happens and we are not really able to control the weather. We can only try to address the consequences. We can see what is the weather forecast and decide to go outside because it's a nice day or to take an umbrella because it's raining. But AI doesn't happen to us."
+    },
+    {
+      "start": 1560.256,
+      "end": 1589.568,
+      "text": "Someone is making the decisions and the choices about what these systems are, where they are, what they can do. And these decisions, who should decide and which values, what kind of issues should be considered and how to prioritize all these values and requirements and constraints on the systems. Those are the questions that are not really being openly and transparently discussed."
+    },
+    {
+      "start": 1589.568,
+      "end": 1619.376,
+      "text": "There is also increasingly this fear of missing out and the idea that we have to use AI. I was one year ago, more or less, in a meeting of ministers of the Nordic and Baltic countries, and it was funny almost because they were running to the front and saying, by 2027, my country is going to have 82% of civil servants using AI, and then the next one would come. By 2026, we are going to do 97%."
+    },
+    {
+      "start": 1619.376,
+      "end": 1649.28,
+      "text": "One after the other just coming with this thing. And then I just, I was in the room and I asked why. And I think that they almost tried to kick me out of the room. But it's the question that we are not asking. There is very much, we are putting AI first because AI is there and because everybody else is using AI. And we are not sufficiently asking what we call the question zero. Is AI the best option for whatever you want?"
+    },
+    {
+      "start": 1649.28,
+      "end": 1675.408,
+      "text": "What do you gain by using AI? What do you lose by using AI? Who is going to be benefiting? Who is going to suffer from it? All these type of questions are not really asking sufficiently. So we need much more to ask why before we ask how. And I'm in a technical university, so I can again and again say this."
+    },
+    {
+      "start": 1675.408,
+      "end": 1690.464,
+      "text": "technical people we engineers we computer scientists don't know how to ask why we know how to ask how we know how to solve the how but we don't know how to ask why and that's why i think that's"
+    },
+    {
+      "start": 1690.464,
+      "end": 1719.648,
+      "text": "The initiatives like digital humanism, which brings the humanities. The humanities, they ask why all the time. They don't do nothing, maybe, but that's another part. But they're asking why they do. But maybe they don't ask how enough. I don't know. I'm not humanities. But I think that this type of initiatives are really very, very important. We cannot keep wielding stuff just because we can, just because there is a puzzle that we want to answer."
+    },
+    {
+      "start": 1719.648,
+      "end": 1749.36,
+      "text": "But we need more and more asking why. And then when we know why, we might be better informed to answer the how questions. Moreover, AI is not just about the program that someone wrote. It's not just about the app that runs somewhere, even if those huge things. AI is not the technology. AI is a social technical system."
+    },
+    {
+      "start": 1749.36,
+      "end": 1779.136,
+      "text": "If we don't take into account the social part of the AI equation or the AI system, then we are not really addressing the whole complexity of what it is. And when we talk about ethics and regulations and laws and governance and so on, we are not talking about regulating a piece of software. We are talking about regulating this context, social technical context,"
+    },
+    {
+      "start": 1779.136,
+      "end": 1807.088,
+      "text": "be built, can be used, can be deployed, implemented, and so on. So when we talk about responsible AI solutions, we need much more to look at the social science, the humanities, than just about the technology. And then we need to ask ourselves, not again, what is AI, but ask us, what do we want AI to be? We are building these things."
+    },
+    {
+      "start": 1807.088,
+      "end": 1836.8,
+      "text": "We ask why we are wielding them, and then we have also to ask what do we want it to be. If we are wielding it, we can take this type of decisions. We don't have to take or to accept the decision or the answer that someone else gives. Do we want AI to be human-like? First, what does it mean? And why do we want AI to be human-like? Is it to speak like a person? Which person?"
+    },
+    {
+      "start": 1836.8,
+      "end": 1862.976,
+      "text": "Is it to look like a person? Which person? And why do we need a machine to look like a person? And I'm not saying that it shouldn't and that there are no reasons or no situations in which AI should have some human-like characteristics, but we need first to understand those situations and it's not necessarily that every piece of machinery needs to be human-like."
+    },
+    {
+      "start": 1862.976,
+      "end": 1888.288,
+      "text": "And then people, and mostly people in the ethics and responsible AI field, they all will say, no, no, no, of course we don't want human-like and all this anthropomorphizing of the systems is a very bad thing. We want AI to be tools. Sure, let's go build tools, but here again we have to ask, a tool for what and a tool for who?"
+    },
+    {
+      "start": 1888.288,
+      "end": 1909.344,
+      "text": "I'm left-handed. I cannot really use the scissors in the same way that a right-handed person uses the scissors. So even simple things like scissors have some benefits for many and some complexities of using for others. So even if we see AI as a tool, we do need to ask ourselves, what is this tool going to do?"
+    },
+    {
+      "start": 1909.344,
+      "end": 1939.312,
+      "text": "Who is going to benefit from using the tool? When is this tool available? How is it available? And do we need to have some type of driver's license for this tool? Is it a tool that anyone can use? Do we want to limit it? So there are many questions there. Then we have to ask, and maybe this is a kind of old one. When AI started many, many years ago, it was very much meant as a simulation of human intelligence. It was 70 years ago at the end of August."
+    },
+    {
+      "start": 1939.312,
+      "end": 1969.296,
+      "text": "that they made the first proposal for a workshop on AI. And if you look at that, what they were trying to do was to build systems or models that would enable us to understand better how human intelligence works. So we were trying to simulate some of the characteristics and the capabilities of human intelligence and using these simulations, hoping that that would give us better insight into the..."
+    },
+    {
+      "start": 1969.296,
+      "end": 1995.968,
+      "text": "characteristics of human intelligence nowadays that is not really at all the main interest or the main function of building ai these systems are having direct or indirectly interventions in the world and maybe they need to be built differently and with different types of tools than the ones that we used for exploring the idea of intelligence and finally and i think this is probably the most important"
+    },
+    {
+      "start": 1995.968,
+      "end": 2018.832,
+      "text": "Do we want AI to do as we do or do we want AI to do as we say? It's very different. And who is going to decide that we want AI to do as we say? What are the right ways to behave? And then we get to even more potentially interesting questions. What kind of decisions should this..."
+    },
+    {
+      "start": 2018.832,
+      "end": 2047.904,
+      "text": "system take? Should it really take decisions about our own intentions and limit our intentions depending and determined by some type of normative understanding of where we are going? Is this normative going to benefit me, the individual, the user, or the group? Is it going to benefit society in general or only me? If we know that"
+    },
+    {
+      "start": 2047.904,
+      "end": 2069.376,
+      "text": "the complexities of the ethical space, if you want, and we know that unfortunately, or fortunately, I don't know, I don't comment on it, what is legally allowed is not necessarily what is ethically or morally acceptable, and what is morally acceptable is not exactly what is socially accepted."
+    },
+    {
+      "start": 2069.376,
+      "end": 2091.92,
+      "text": "And we know that we navigate this space and that our decisions and our options are always placed in this space. This space changes from one place to another, from one time to another. Capital punishment is possible and accepted and legal in many places of the world. In other places, not."
+    },
+    {
+      "start": 2091.92,
+      "end": 2116.432,
+      "text": "What we believed to be right 200 years ago or even 50 years ago is different from what we believe to be right now. So if we know that this is a complex, dynamic and evolving space, where is the ethical behavior of AI going to be? And finally, we need also to understand that in most cases we cannot have it all."
+    },
+    {
+      "start": 2116.432,
+      "end": 2143.184,
+      "text": "And some decisions need to be taken in terms of what type of values and principles do we want to prioritize. And again, there we need to ask ourselves why and what are the effects of this. So all of this to say that AI is multidisciplinary and definitely responsible AI is multidisciplinary. It's not just about building systems that..."
+    },
+    {
+      "start": 2143.184,
+      "end": 2170.768,
+      "text": "And building formalisms that check and measure the fairness of a system is not just about building systems that are transparent, but it's really understanding all this type of question and having the tools and the mechanisms for the criticizing and reflecting about the consequences of what is being built."
+    },
+    {
+      "start": 2170.768,
+      "end": 2197.872,
+      "text": "I think I should be stopping because we need to go have drinks and questions and whatever else. The questions there I already talked about. I will share the slides and someone will share the slides. If you want the slides, just mail me and I will do it. This one we already talked about as well. Design is not neutral. It's always political. It depends on what we are."
+    },
+    {
+      "start": 2197.872,
+      "end": 2227.616,
+      "text": "agreeing in terms of all kinds of issues. A lot is being done at this moment on the governance of AI. Actually, I should have said it was being done until a couple of months ago. Nowadays, very much all countries and all agencies are moving away from it. We can talk a lot or short about it. We can discuss a lot why is it needed or not. The short version is cars drive faster because they have brakes."
+    },
+    {
+      "start": 2227.616,
+      "end": 2250.0,
+      "text": "Putting brakes on cars and seatbelts and airbags and all those kind of things don't really change the main function of the car, but gives all of us the trust and the capabilities to use them with confidence in a complex and changing world. So maybe we can learn something from these simple metaphors."
+    },
+    {
+      "start": 2250.0,
+      "end": 2276.0,
+      "text": "And there is a lot of work being done on these principles and guidelines. By now, I think there are over a thousand of these things. Unfortunately, very few of them are really implemented and operationalized. I could have said a couple of months ago that at least the AI Act was there, but it seems unfortunately that they are trying to slow it down, so I don't know. But as we move..."
+    },
+    {
+      "start": 2276.0,
+      "end": 2294.592,
+      "text": "and understanding all this complexity and all these groups and all these activities around building the safeguards, the guardrails, the principles that can guide a global understanding of how and what we want to build with AI."
+    },
+    {
+      "start": 2294.592,
+      "end": 2321.856,
+      "text": "is important and there is a lot of interest for it it is also basically important maybe at this time to try to place this in a broader context of the safeguards that we need to put for democracy understanding how ai is impacted by the discussions and the ways that we understand and the changing ways by which we understand democratic process"
+    },
+    {
+      "start": 2321.856,
+      "end": 2348.352,
+      "text": "and also how AI can impact this process in many different ways. And another one which we need to take into account is also how can we understand what we are doing from the perspective of the planet. Let me just move quickly to the end. I think one way or another I talked about most of these things."
+    },
+    {
+      "start": 2348.352,
+      "end": 2370.272,
+      "text": "Probably we need to start thinking about a different AI paradigm. And in my life as an AI researcher, I have seen a couple. So there was the rule-based, the symbolic AI type of paradigm. We are now in a world in which the data-driven paradigm is the way that we understand AI. But we probably need a new one."
+    },
+    {
+      "start": 2370.272,
+      "end": 2394.704,
+      "text": "And it's one that starts by recognizing that there is not one universal solution to build AI, recognizing the limitations in addressing complex challenges, addressing the risks that come in terms of the impact in the world, a paradigm that really needs to go. I would not even call it multidisciplinary anymore, but it really needs to move."
+    },
+    {
+      "start": 2394.704,
+      "end": 2417.232,
+      "text": "beyond the existing disciplines and be supported by ways and standard technical bases that really provide the capability to verify and to do it in a sustainable and participatory way. We can leave the innovation for another time."
+    },
+    {
+      "start": 2417.232,
+      "end": 2431.936,
+      "text": "The last thing is responsible AI is not really a choice. We don't really have a choice between innovating or being responsible. That's kind of something which politicians are always talking about and complaining about, but it's not a choice."
+    },
+    {
+      "start": 2431.936,
+      "end": 2452.032,
+      "text": "If we go innovate without being responsible, what are we doing? Just rushing after the other ones. We really need to start talking about responsible AI, about AI ethics, about AI regulation, much more as the stepping stone that we need to guide innovation, to build trust."
+    },
+    {
+      "start": 2452.032,
+      "end": 2482.0,
+      "text": "create really different transformation of what we have instead of keeping in this type of discussions. Are we going to innovate or are we going to regulate? There is not an option here. Thank you. And I think I went a bit over time, but maybe there is time for a couple of questions or we do that during the drinks."
+    },
+    {
+      "start": 2482.064,
+      "end": 2507.696,
+      "text": "Up to you. You can take it all the way there to the end."
+    },
+    {
+      "start": 2510.992,
+      "end": 2540.16,
+      "text": "Fast delivery. Thank you for this wonderful talk. My question is about lowering the threshold for developers and companies to engage with responsible AI and ethics by design. What do you think is currently the biggest threshold that is keeping developers to, for instance, engage with ethical design and things like this throughout the development process of AI?"
+    },
+    {
+      "start": 2540.16,
+      "end": 2569.984,
+      "text": "One of the biggest blocks is this idea that we need to rush to a solution. We need to go as quick as possible. Unfortunately, the motto of Silicon Valley of go quick and break things has really permeated the whole industry, and there is not really a reflection on time to slow down."
+    },
+    {
+      "start": 2569.984,
+      "end": 2591.168,
+      "text": "In most cases, we don't really need to rush so much. And most of the designs and applications that we are developing, if they are not out tomorrow, but next week, probably doesn't really matter much in many cases. But this idea that we really have to go quick and that..."
+    },
+    {
+      "start": 2591.168,
+      "end": 2614.608,
+      "text": "Otherwise, someone else is going to go quicker is really becoming a kind of a mantra in the industry. And that is one of the main implications towards really taking a more constructive and deliberate approach. There is also very much the feeling that it's going to cost more."
+    },
+    {
+      "start": 2614.608,
+      "end": 2642.928,
+      "text": "but these costs are not really in most cases. MIT did recently a study on that, and I'm not an economist, but most times it's not really clear about how they are measuring these costs. It's more an idea of believing that it will cost more, but if we really take a longer-term perspective on the cost and..."
+    },
+    {
+      "start": 2643.312,
+      "end": 2669.968,
+      "text": "benefit from most systems, then it balances much more, whether you took a responsible approach, ethics by design approach, which might have been more costly to start with. And even that is not completely the case all the time. But if we take it the long term, then it's difficult. It's much more balanced."
+    },
+    {
+      "start": 2671.792,
+      "end": 2699.744,
+      "text": "In the beginning, you had a slide about the limitations of data. Did you show this slide already with the number crunches of the complexity science hub in Vienna? I'm a bit sceptic what they are doing. I didn't talk to them, but we could. I'm here a couple more weeks, so maybe we can discuss that. But I mean, I'm not, there are many, many situations in which we really need a lot of data. But it's not all."
+    },
+    {
+      "start": 2699.744,
+      "end": 2729.376,
+      "text": "and it's not necessarily that all AI approaches and all AI techniques benefit from a lot of more data. There are examples of getting more medical data because you need more data, but then it ends up really getting more data where it is easy to get that data, and that skews the whole data set because the rush to have more data makes it..."
+    },
+    {
+      "start": 2729.376,
+      "end": 2753.472,
+      "text": "the easier to get very skewed type of data. But we can discuss with the complexity people. Would be a great time to do, yeah. Yes? Thank you so much for the lecture. I have not really scientific question, but rather about the policymaking. If you..."
+    },
+    {
+      "start": 2753.472,
+      "end": 2781.904,
+      "text": "If you could give only one advice to policymakers about AI regulating and be sure it's going to be implemented, which one would you choose? It's actually what I ask them all the time is ask themselves why and who is going to benefit from that system that they are building. Most times they haven't. Actually, I was just last week, I was here already, but I was giving a talk."
+    },
+    {
+      "start": 2781.904,
+      "end": 2798.64,
+      "text": "to the commune in Umeå which they want to use it for maximizing or supporting the energy costs of the different houses and they want to put some AI machines in all the houses in the city."
+    },
+    {
+      "start": 2798.64,
+      "end": 2828.176,
+      "text": "about to measure the energy consumption. And then I just ask them, why is that? And what are the alternatives to use AI? And often they don't really thought about the alternatives. It's very much this fear of missing out. You rush because everybody else is using AI. So therefore, we also have to show that we are using AI. So why are you doing it? And do you have thought about alternatives? Those would be the questions for the policymakers."
+    },
+    {
+      "start": 2830.32,
+      "end": 2850.912,
+      "text": "There are things around here. Okay, you got it. Go for it. Thank you. Thank you for your presentation. Sorry. Sorry. I don't see the speaker. Sorry. Actually, I want to join in on the question before because I..."
+    },
+    {
+      "start": 2850.912,
+      "end": 2876.96,
+      "text": "I wonder how you do it because you were saying when you're sitting in a room full of policymakers and you ask the why question, you nearly got kicked out. So I want to know what happens afterwards. So you tell them to ask the why question, but how do you convince them or how can this be translated into policymaking in times of competitiveness, the great acceleration and all these things?"
+    },
+    {
+      "start": 2876.96,
+      "end": 2897.056,
+      "text": "That's a very good question and I don't really have definitely answers to all of them. I think it's very much contextual and what might work for a specific region or city or whatever might not be what works for other ones. But the most important, I think, is that they connect."
+    },
+    {
+      "start": 2897.056,
+      "end": 2924.32,
+      "text": "what they are trying to do with AI to their own main priorities. And usually they do have, especially cities and municipalities, they do have a set of priorities which elect them there or which they have agreed with in their programs or something like that. And asking them how much is this really going to get you to address those issues that you..."
+    },
+    {
+      "start": 2924.32,
+      "end": 2951.408,
+      "text": "that are the important issues for this city. And sometimes, indeed, and again, I'm not saying that they shouldn't use AI. There are many relevant and potential beneficial uses of AI, also for policymakers, also in cities and municipalities, but trying to make them more aware of how much is that aligned with their own main interests or mission or whatever they call it."
+    },
+    {
+      "start": 2951.408,
+      "end": 2970.272,
+      "text": "that usually helps them in prioritizing what they are doing. So first of all, thank you for your presentation. I was just wondering if you can elaborate a little bit about AI literacy or digital literacy, because to me it seems like that"
+    },
+    {
+      "start": 2970.272,
+      "end": 2995.248,
+      "text": "It applies the same thing that you said about responsible AI, also about the terms of AI literacy and digital literacy. So what is the level of literacy that we need and who needs this kind of literacy right now? Good question. I think I would need another lecture to talk about AI literacy. And I don't know if you are in the summer school. I will be there on Thursday, I think, so maybe we can talk."
+    },
+    {
+      "start": 2995.248,
+      "end": 3020.032,
+      "text": "Friday, okay, whatever. Someone knows me. I will be there. Anyway, maybe we can talk about those issues there. But one of the issues with literacy, I think, is that we also there have to be very aware of the need to differentiate. Not all of us need to be car mechanics, and not all of us need to know how to build an AI system."
+    },
+    {
+      "start": 3020.032,
+      "end": 3043.424,
+      "text": "That doesn't mean that all of us, some of us need to know how to drive, and maybe we also need to think about driver's license for those that are driving AI systems. But all of us, even if we don't have a driver's license, need to know and understand how to interact safely with traffic."
+    },
+    {
+      "start": 3043.424,
+      "end": 3072.16,
+      "text": "This type of basic literacy, how can we interact safely with AI, that is at this moment the most urgent type of thing. And it's again not not using it, it's not forbidding AI to be used, and especially the chatbots and the chat EPTs of this world, not not using it, but it's having a basic understanding of."
+    },
+    {
+      "start": 3072.16,
+      "end": 3097.152,
+      "text": "Where are the dangers? Like we know what are the dangers of rushing into the street and running under a car. Those type of interaction, basic interaction, is the basic literacy that we need most urgently. Yes, if someone has a microphone, use it. A question that..."
+    },
+    {
+      "start": 3097.152,
+      "end": 3124.624,
+      "text": "Probably ask a lot, but how does sentience come to all of this since sentient AI or the concept of sentience in general? Because we're advancing so fast and people seem really not that worried about it considering how little we know about it. Okay. Yes, it is asked a lot."
+    },
+    {
+      "start": 3124.624,
+      "end": 3148.352,
+      "text": "And I think that someone is calling it seemingly sentient AI or seemingly conscious AI. A lot of the consciousness and sentientness of AI are properties that we ascribe to these systems. At the end of the day, we are dealing with statistical models, mathematical models. There is no grain of consciousness to be found inside these models."
+    },
+    {
+      "start": 3148.352,
+      "end": 3174.88,
+      "text": "It is not possible mathematically. It is not possible formally. I'm not saying that if we really don't go into another completely other way of building these systems, you cannot get to something which we can call consciousness. But at this moment, we are much more interpreting, interpret the interactions with these systems like what the system would be."
+    },
+    {
+      "start": 3174.88,
+      "end": 3201.072,
+      "text": "conscious or sentient and so on so it's much more on our side it's like in the the in in the side of us interacting with systems than with the system having said that that doesn't mean that at this moment systems are being built to be i would say it to be"
+    },
+    {
+      "start": 3201.808,
+      "end": 3230.4,
+      "text": "are enforcing this type of dependency. They are being willed to be agreeable to you, to agree with you all the time, to make you feel good all the time, to extend as much as possible the interaction between you and the system. These are design choices, and these choices are being designed very consciously and very deliberately by the organizations and the companies that are putting these systems out."
+    },
+    {
+      "start": 3230.4,
+      "end": 3255.76,
+      "text": "And that is what we need to address first, to create the rules, to create the responsibility, the standards by which this type of deliberate design decisions are not possible or at least are transparent to those that use them. But the all-conscious discussion, I think we need to take it in another place."
+    },
+    {
+      "start": 3256.656,
+      "end": 3282.048,
+      "text": "I just have a short question about one of the last slides that you had about innovation versus regulation, I think it was. So the way I see the development of AI, it's innovation first, regulation second, especially in the Silicon Valley. Maybe not in the European Union, but the Silicon Valley, definitely in the US. So allow me to be a devil's advocate. Why should I..."
+    },
+    {
+      "start": 3282.048,
+      "end": 3308.576,
+      "text": "sacrifice my progress and fall behind my competitors, like, let's say, China or Russia or, like, I don't know, North Korea or whatever, in support of the regulations, if it will slow me down. Just playing the devil's advocate. I know, I know. But first, who is defining what is the measure of the quality of innovation?"
+    },
+    {
+      "start": 3308.576,
+      "end": 3334.624,
+      "text": "We are measuring innovation very much by the perspective of a better technical gadget, which is maybe a little bit more accurate or whatever. But if I improve my system with 1% of accuracy, maybe let's put a different question. What is more innovative?"
+    },
+    {
+      "start": 3334.624,
+      "end": 3355.616,
+      "text": "Is to work on a system to make it 1% more accurate or is to work on a system to make it 50% more fair or more privacy enhancing or whatever. This type of, and this is one which us as researchers in AI are the guilty of it."
+    },
+    {
+      "start": 3355.616,
+      "end": 3376.608,
+      "text": "We measure our conference contributions and papers submitted to conference much more by how much they improve the accuracy of the algorithm that they submitted last year and not about other types of ways to measure the innovation of the system. So a system that is more..."
+    },
+    {
+      "start": 3376.608,
+      "end": 3404.496,
+      "text": "or that is more privacy enhancing or that is less discriminatory is as much of an innovation as making the system quicker. But somehow we think that the quickness is the only way to go. And the other one, and I think I went very quickly about that, innovation is not only about the technical requirements or the technical characteristics of your systems. We need technological innovation, but we need..."
+    },
+    {
+      "start": 3404.496,
+      "end": 3432.752,
+      "text": "organizational innovation, we need regulation innovation, we need governance innovation, we need use innovation, and all those types of innovation are not really considered sufficiently. So we need to be much broader in understanding what are we talking about when we're talking about innovation. Innovation is not just about making a system that is half a percent more accurate than the one before."
+    },
+    {
+      "start": 3432.752,
+      "end": 3460.608,
+      "text": "And that is the failure of Silicon Valley. I suppose someone wants us to stop. I don't know who is taking care of the schedule. If there are more questions, yes, please go ahead. And whoever wants me to stop, let me know. Otherwise, we can stay for a little longer."
+    },
+    {
+      "start": 3460.608,
+      "end": 3489.616,
+      "text": "Okay. I would have another question. You also? Yeah, I was curious if you could say a bit what you think could be the role and responsibility of universities when it comes to this question of responsible AI. Is there innovation needed from the point of view of academia or university education? I think that our biggest innovation assignment"
+    },
+    {
+      "start": 3490.768,
+      "end": 3518.624,
+      "text": "start looking at AI as a multidisciplinary type of study and not just building or creating the engineers that are going to be able to improve the accuracy of the system with the alpha percent but building or creating and delivering the engineers and the researchers and the scientists that are also"
+    },
+    {
+      "start": 3518.624,
+      "end": 3543.728,
+      "text": "not only able to ask why, but also answer the why questions as they also know how to improve the accuracy with alpha percent. And for that, we need really to start working across departments. And that's the worst and the most difficult assignment of all, just daring to talk with the department next door. Those are the scary things."
+    },
+    {
+      "start": 3544.368,
+      "end": 3573.76,
+      "text": "So, Virginia, I suggest we can take one more question. It was your neighbor who had also a question. If you just hand over the mic. Thank you for your very nice talk. I'd like to go back to this question of regulation and the developers. This is not a new situation, of course. I think there's a different way of seeing this relationship, which I think fits better what's actually happened."
+    },
+    {
+      "start": 3573.76,
+      "end": 3603.568,
+      "text": "in the history of different technologies and their adoption by societies and economies. Good regulation saves the developers from themselves. And that's what we need if we want economies running on effective, useful, acceptable innovations. The regulation saves the developers. It's not against them."
+    },
+    {
+      "start": 3603.568,
+      "end": 3631.376,
+      "text": "No, I fully agree. You get the last word. I fully agree. No, it was not the last word, because I think we have one more question. So I suggest we take that, right? Because this was a short answer. So we have one more, please. One last one. Sure. So thank you for this interesting lecture. I also read your article about custodian."
+    },
+    {
+      "start": 3631.376,
+      "end": 3661.296,
+      "text": "Thank you. Yeah, so it's really interesting. So my question is, I think it's similar as a question that I did before in the morning. So I was reading like this slide about the concentration of, so seven of the world's 10 most valuable companies are now digital giants."
+    },
+    {
+      "start": 3661.584,
+      "end": 3685.184,
+      "text": "Now we are in this race of US versus China and You mentioned about That so maybe we don't need so much data So this is for me was very thought-provoking that you mentioned because normally we usually Read that we need like chips computer power"
+    },
+    {
+      "start": 3685.184,
+      "end": 3714.448,
+      "text": "the whole infrastructure in order to develop AI. So this is the system that we are designing, and now they are concentrated with these giants. So how we can move beyond, redesign the system, because there is so much power, concentration. So how we can develop a custodianship AI with this system?"
+    },
+    {
+      "start": 3714.448,
+      "end": 3743.808,
+      "text": "Good question. We have today. Thank you so much. Indeed, the ones who want us to believe that we are on a race and the ones that want us to believe that we need data and computational power more and more are the ones that are selling that computational power and that data, are the ones which invest, I don't know how many trillions or whatever amounts of number, into creating this infrastructure."
+    },
+    {
+      "start": 3743.808,
+      "end": 3766.4,
+      "text": "So there are invested interests on this type of development, and that doesn't mean that that's the only way to go, but it becomes very difficult, especially when we see that our own governments and our own democratic institutions are not able or maybe even not willing to provide an alternative."
+    },
+    {
+      "start": 3766.4,
+      "end": 3795.536,
+      "text": "And I think that's one thing which we need. And like I say, it's not just about using AI to support democracy, but we really need to start thinking much more about what can we do about our democracies and what we are doing and how much we are selling our democracies to the big data. But that's maybe a completely different discussion. But the issue of the race is one which I all the time want to content. We are not on a race."
+    },
+    {
+      "start": 3795.536,
+      "end": 3824.784,
+      "text": "This is not a race. A race has an end line. And in that end line, then we can measure who was the first to arrive there. We don't have an end line. After this paradigm, after this way of AI, there will be other ones coming. And more importantly, a race is the idea that we all go in the same direction and we kind of get all following each other. What we need at this moment is exactly..."
+    },
+    {
+      "start": 3824.784,
+      "end": 3841.2,
+      "text": "to have much more an exploration of what are the alternatives than investing and following the lead of the ones who are already ahead. So if we are keeping measuring ourselves against those ones that are already ahead, we are always losing."
+    },
+    {
+      "start": 3841.2,
+      "end": 3865.568,
+      "text": "And that's a bit what the European Union, the kind of way that they believe in the European Union. Even now they have these calls for LLM, all the calls for open AI proposals at the European Commission. They all have to use LLM somewhere. And then I also told them, yeah, why are we putting LLM all over? Yeah, because that's the next big thing."
+    },
+    {
+      "start": 3865.568,
+      "end": 3894.8,
+      "text": "No, it's the last big thing. Let's go and explore what is the next big thing, which is not LLM. That one is done, it's tried, and we can go do something else. So we shouldn't be talking about race exactly because what we are experiencing shouldn't be compared, it cannot be compared with race. We don't have an end line. So let's talk about something else. And again, it's a political and very deliberate..."
+    },
+    {
+      "start": 3895.056,
+      "end": 3920.032,
+      "text": "to keep us busy with talking about races instead of going and doing something different. So coming to an end, Virginia, there was one formulation in your talk that I liked a lot. I found it really great. Data rich, insight poor. Very, very great formula and maybe one of the shortest formula for the..."
+    },
+    {
+      "start": 3920.032,
+      "end": 3945.648,
+      "text": "context of the current discussion. I mean, also applicable to many other contexts. I find it's a great thing. Data rich, insight poor. I would want to say about your talk tonight description rich, insight big. Thanks a lot for that. And I may say these things on behalf of Theo Wiengerti and of IWM. Thanks a lot for that. And this applause is yours."
+    },
+    {
+      "start": 3957.968,
+      "end": 3983.024,
+      "text": "And now maybe Walter has to say a few more words about the summer school. I don't know. So that's part of the Digital Humanism Summer School happening this week. So for those who still have free space in the calendar this week, tomorrow at 5, Alexander Brezhnev is talking about why China won't replace software engineers. That's online. On Friday, for those who want to go deep into policy, we have Virginia Dignam."
+    },
+    {
+      "start": 3983.024,
+      "end": 4011.408,
+      "text": "in the morning on global governments of AI. And on Wednesday, we have a public screening with a Q&A with the director of the How to Build a Truth Engine, Friedrich Moser. And from the DigiHome lecture series, we have the end of September, Jonathan Haidt. 7th of October, we're talking about new humanism in time of neuroscience and AI. And then there's a pre-announcement safety date for the 21st of October."
+    },
+    {
+      "start": 4011.408,
+      "end": 4036.944,
+      "text": "Dover, there should be in Vienna. The date is fixed. We don't know the location, but that's like happening in Vienna hybrid. And in November, the 20th, there's then the Digital Humanism Conference. For those who are not from TU or Digital Humanism, you can also sign up then on the newsletter. That's the program for this week if you want to join. And I think the last announcement is then from the..."
+    },
+    {
+      "start": 4037.328,
+      "end": 4050.064,
+      "text": "Humanities Festival from EVM, who is now sponsoring the food and... The drinks as well, yes. Thank you so much."
+    },
+    {
+      "start": 4055.344,
+      "end": 4078.704,
+      "text": "So what you see on screen here now is also back there on one of the tables, an old-fashioned printed program we have as well for the Vienna Humanities Festival that is taking part at the last weekend of September on different places in Vienna. Have a look and take one home with you if you are in Vienna at the end of September. Thanks a lot for this evening. Thanks a lot, Virginia, and welcome for the reception."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

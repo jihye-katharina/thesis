@@ -1,0 +1,681 @@
+{
+  "video_id": "K4brQobC16I",
+  "source": "whisper",
+  "language": "en",
+  "text": "Is it democratization or is it just a media hype? And I'm very happy that we have a young expert here with us today who looked into the technical details of DeepSeq a bit and who will share his insights with us today as a basis for a discussion about the impact of this new large language model. I'm particularly happy and honored that Edward Lee agreed to moderate today's lecture. Edward Lee is professor of the Graduate School and Distinguished Professor Emeritus at the University of California, Berkeley, where he has been on this faculty since the mid-80s. He is author of several books, two of them for a general audience and also of particular interest for digital humanists. One is the co-evolution, the entwined futures of humans and machines. The other one, which appeared a bit earlier, is Plato and the Nerd, the creative partnership of humans and technology, both published by MIT Press. Edward has been an active member of our initiative from the very start. And without further ado, I will now hand over to Tagstuhl in Germany, where Edward is. is currently attending a seminar on trade-offs in reactive systems. And a particular warm welcome to all the participants at the talk show event, which are with us today. And Edward, the floor is yours. Hi, Stefan. Hi, everybody. Yeah, I was... planning to moderate this, you know, in some corner of Dogstool, but I started telling some of the people at this seminar about this and they all really wanted to listen in. And so we decided to invite them all. And so please welcome the Dogstool participants. Yeah. And this is a seminar on reactive system design. It doesn't actually have a whole lot of AI content, but actually, coincidentally, tomorrow there will be some discussion about how to use AI safely in reactive systems. So it's very pertinent. But in any case, I'm not here to introduce us. I'm here to introduce Johannes Oster, which I have the pleasure. to introduce, who is a lecturer in generative AI at the Technical University of Vienna. And he's also pursuing a master's degree in data science. And he is a leading AI engineer in Became AI, a very interesting organization. It's an agency committed to help companies to ethically develop generative AI-based solutions. And for several years, he's been a leading organizer of the global invitation only Sigma Squared Summit, which brings together ambitious young founders, serial entrepreneurs, thought leaders to foster intergenerational discourse. So I guess that means they want to talk to old guys like me. So with that, I'll turn it over to Johannes. Johannes, the floor is yours. Thank you very much for this wonderful introduction. I'm very pleased and privileged to be here and talk about DeepSeq and decorate my presentation a bit with currently very relevant paradigms and paradigm shifts around the development of LLMs. Before I start, I designed this presentation to be digestible for people outside of the field. If during the presentation you have any questions, whether I'm too technical or not technical enough, please feel free. to interrupt me at any point in time. To start this presentation, maybe let's summarize what's happened in one slide. In the end of 2024 or beginning of 2025, a relatively unknown Chinese startup released around 800 lines of inference code and a bunch of floating point numbers that Each and every one of us can download on our own consumer hardware. You will need around 400 gigabytes of RAM, so stacking up eight Mac Minis should bring you a GPD 4.0 or a 1-level LLM to your own home. Completely offline, locally run, you own it there. That's something that we call open weights. And then their app gained huge popularity within days. It was sometimes referred to as the democratization of AI. We witnessed crashing stock markets and some people even referred to it as the Sputnik moment of the 21st century. To disentangle this media hype, I would like to use three of the characteristics of the real Sputnik moment as my general guideline through this presentation. I do not want to open the discussion around whether the Sputnik moment actually was about... technical supremacy or just the miscalculation the importance of being the first in space. So please let me use this analogy here. I will focus on high-stake field and arms race dynamics, the debunking of the perceived supremacy in a technological space, and finally the strong reaction of the West. So the question for this presentation becomes now, is DeepSeek such a Sputnik moment or not? DeepSeq, R1 and DeepSeq v3, the main models that we are going to talk about are language models. Language is very generalizable across pretty much any domain. It is very omnipresent in our own life. It is a pretty much direct interface into our thoughts. So the ability to understand or to bend language to its own will is a very potent tool. And quite a lot of people refer to language as one of the Primary vehicles are a vital component to the path to cross-domain intelligence or artificial general intelligence. Something or somewhat that controls and bends language can impact or influence on an individual, community, country, societal or even species level. And I think the release of DeepSeek has reminded us of this. It has reignited very important discussions around still unanswered questions like who owns this omnipresent AI? Who will control what goes into it? And very important, what comes out of it or does not come out of it? Do we have visibility into it? Can we own it ourselves as individuals or on a bigger scale as a species? And it reignited these discussions and therefore I think it... underlined the importance and the fact that AI or language is in fact a high stakes field. There are a lot of opponents of LLMs, especially around the belief of that it will bring us to AGI. But for those, I would say that throughout the last three years, we have seen that not only language is generalizable, but also the underlying architecture, the former architecture, generalizes extremely well for other modalities. So while 10 to 15 years ago, one would have a relatively hard time. to build multiple models in each of the modalities. Right now, when having the ability to build a language model, it's relatively easy to also go to other modalities like image generation, computer vision, et cetera. So the transformer architecture is what allows us to see an image just as a series of a series of patches which in themselves are a series of pixels and it allows us to see image generation as a sequence of denoising steps so going from completely random noise to relatively beautiful images and For some mathematical convenience, it also allows us to see sound or music as an image, which then in fact becomes a sequence of patches and a sequence of pixels. So while I'm obviously trivializing the implementation details of these modalities, the underlying ideas remains true. Being able to build language models also enables you relatively quickly to go into other domains. For the sake of this argument, I will stick to language as the main carrier. So insight number one, we do live in a high-stake environment because of the immense power of language. Insight number two is something we know as the scaling law of large language model. Paraphrase, it means that keeping the underlying architecture insane, the sheer act of scaling up compute, training compute, the parameter count and data set size for the training equally will give us a relatively predictable increase in performance. For quite some time, this has been translated in LLMs being a magic machine that translate money into pure intelligence, where GPUs or computational power is the translation engine. And on top of this belief of scale, we see that companies in America, like in this sense that West is just the US, by far outnumbered investments into AI. Not only do we have the West, quote unquote, the US has the money, it also has the knowledge or it perceives that it has the knowledge by owning or having the leading research organization. And then finally, through export controls, they also have the GPUs. So to summarize, the idea of this technological supremacy comes from the belief in scale, the belief that America by far, this is actually true, has the most capital invested in AI. It has the knowledge in the research organization, and it also controls the GPUs that are necessary to translate money into intelligence. So to summarize those first few slides, on the one hand, yes, we do live in a high-stakes field with a power of language. We do have this arms race dynamic through the scaling law that leads us to thinking who can build the bigger model faster. And we also have this perceived technological supremacy by having the capital, having the knowledge and having the GPUs. And this is where then DeepSeq comes into place. DeepSeq by the end of 2024 and beginning of 2025 released three main model groups. DeepSeq v3 base and DeepSeq v3, which are foundational models. Then DeepSeq R1.0 and R1, which are reasoning models. And finally, they have a bunch of distilled version, and I will go into detail about what that means, of this reasoning model. I will not go into the details about the reasonability of benchmarks, but what we saw is that on well-established benchmarks, they are on par with other leading closed source and closed weights models. Throughout the next couple slides, I want to highlight the three main insights that we can get out of these models. The DeepSeq has demonstrated that and how efficiency can actually be improved in training, that reinforcement learning on LLMs works, and again, I will go into detail what that means, and finally, that reasoning is distillable. Let's start with DeepSeq v3 base and DeepSeq v3. The first step and very important step in large language models is the pre-training phase, the generative pre-training. The core idea is that we take a huge neural network, something with 600 billions of parameters. Then we take a huge amount of text, chunk it up into individual small pieces, things we call tokens. put it through the neural network and let it produce probability distribution over its vocabulary indicating which tokens are very likely to come next and which aren't. For the training process we then aim to dial the knobs or adapt the parameters so that those tokens that actually come in the training process have a high likelihood and the others a low likelihood. So in the end we basically build a huge approximation of the inner structure of language represented by the training data. Usually you run a few test runs, you have individual sub-researchers, you try to train smaller models, etc. And then there comes the point where you press the final button and let multiple thousands of GPUs run for a very long time to train on trillions of tokens. As a comparison, Another open weights model where we actually know a number is Lama 3. And we know that it took around 30 millions of GPU hours, where a GPU hour is just one single GPU that runs for one hour. And they claim that it took them 30 million hours. Another number that we know from DeepSeek is that it took them only 2.8 million GPRRs. also on weaker hardware. So it's roughly 9% of the training time. There are claims that say, hey, DeepSeq had access to more performant GPUs. I would argue, yes, that might be the case. I don't see into the data set, but their relation still remains the same. And if they have access to more powerful GPUs, they would only have access to GPUs that actually also Lama was trained on. So while the relation might get less impressive, it's still impressive. The other claim is that this might just be wrong. On the one hand, there have been quite a lot of people that did the calculation based on the information that we have, and it's a reasonable number for the architecture that they applied. So the only actual possibility that this is a wrong number and the relation is not as big is if they just straight out lied what their training data size meant. So if they actually trained on way more tokens than they claim, which I personally think is unreasonable, but... We don't know because we do not know what data actually they turned on. To maybe capture this other idea of media hype is if you see something, a headline that says DeepSeek 6 million versus 250 billion of US cloud companies. I would say that's a false claim or an unfair comparison because the only actual data that we have are the GPU training hours. The amount of money it took is also an estimation based on just some market average of how much it would cost if you rent H800s on the public market. But the true comparison is just the amount of training compute they used in terms of GPU hours. So the valid thing to say is actually they have demonstrated them. and explain very thoroughly that there is huge improvements in efficiency gains in the training process. Now the question comes, how? For the next couple of minutes, it will be a bit more technical. Please still try to follow along. I just want to give you a bit of a sense of the caliber of the innovations. You do not have to understand each individual piece, but I still think it's important to see, okay, what did they actually do? One of the primary things is a mixture of experts. Mixture of experts is not a new idea. However, what they did extremely well is applying this on scale. It becomes pretty hard to do that. Comparable models, like Mistral models, has a ratio of 1 to 8. They apply 2 to 256. What does this ratio mean? The core idea of Mixture of Experts is that instead of having a very dense model where all parameters are activated in a single forward pass, you actually partition the model in itself and dynamically select only parts of the model that are going to be activated. This obviously saves you a huge amount of compute, but it's difficult to do in scale, and they achieved it on scale. Another thing is multi-token prediction. Also not something that is new, but again something they implemented very well. The core idea is that instead of predicting just one token, you can use the output of your core model and predict multiple tokens. The core idea behind this is that you thereby enrich the representation of your sequence because this representation does not have to predict only one token but it has to look further into the future so your representation gets enriched. A third point is dual pipeline training. As said One of the things is the reduced training time. And one of the reasons you can achieve that is by just letting your GPU be utilized all the time. Currently, most of the models kind of waste a lot of GPU time by just not utilizing it to 100%. Dual-pipe training introduces a very smart mechanism that optimizes a training process in the direction that your GPUs run all the time for almost 100%. It's not a groundbreaking new architecture, but a super high gain in efficiency by just fully utilizing your GPUs. Another point is mixed precision training. In computer science, we can use different number formats. There are bigger number formats, like floating port 32, just uses a lot of space, and it takes you longer to compute things. Lower number formats potentially could grasp less richness of information. They're just way more efficient. And what they did is they found on an engineering level a very efficient way to use lower precision. training when it's possible, and then only introduce high precision when it's absolutely necessary. And the final thing is something they call multi-hat latent attention, and that's actually quote-unquote an invention by them. They introduced it in their previous model, DeepSeq v3. The core idea behind it is this, is there is one operation that is highly computationally complex, the attention mechanism. and the ideas of latent intentions such to reduce the size of the dimension of the key individual parts down to a lower dimensional vector space to again say compute or during inference memory i hope i did not lose you here but the core idea that i want to show you is there have been quite amazing engineering level innovations most of them are not groundbreaking or new but extremely well executed on scale. So what do we learn from that? Number one, it was a demonstration like a proof and a thorough explanation of how efficient training processes through excellent engineering process can actually be realized. Number two, it is one of the clear frontier open weights models with very permissive licenses without any major downstream use case restrictions. And I hope we can go into the discussion about later what that would actually mean. What it wasn't, it was not an unexpected shift of performance trajectory of the LLMs. There's not another groundbreaking new theory, which I want to be very clear about. I do not want to say it's not an amazing thing, but it's not something unexpected. The next part. are reasoning models and i would argue this has made the bigger waves in the media their deep seek r1 model let me use an analogy of actually one of the big opponents of the idea that lms will lead to artificial general intelligence which who is a young liquor so to use this cake let's say that this cake represents our learning tasks the cakes in this sense is language and we want to reproduce or we want to teach a model to produce cakes. The first part during the training process would then be unsupervised or self-supervised training, where we just collect a huge amount of cakes and let the model reproduce these cakes on an atom by atom basis. That's the analogy to token by token building up language. Then the second part is the post-training phase. We can curate a very well-structured data set of only those cakes that we want. So if you look back in the core data set, there are a few cakes that might not look as delicious as what we would expect. It's the same with LLMs. There's a lot of quote-unquote trash in the initial training data. So in the post-training phase, we curate only those cakes that we actually want to see. And then something that made big waves in GPT-4 is preference learning. The specific thing that OpenAI used is something we call reinforcement learning from human feedback, where we let the model produce multiple outputs and then indirectly, through human feedback, we can judge whether something is good or not. It's often used for alignment, but it's also used to increase the performance for a specific task. So pre-training, a bunch of cakes, post-training with supervised fine tuning, which is a curated data set, and then finally the preference tuning to only select those that we actually want to see in our final output. And then not a really new idea, but still an important paradigm shift comes into play, led by two questions. Number one, can we trade test time compute for better performance? What is Test Hunt Compute? It's a simple synonym for any compute that is necessary to run inference on. So after the training, if you use the model, it's called Test Hunt Compute. The idea is that during training, we spend a lot of money to get better performance. During inference, produced tokens cost us cents, not even that. So the idea is, can we spend more money during inference to get better performance? The second important question here is, I know it might sound a bit ridiculous to post it in a digital humanism lecture, but the question is how can we overcome the bottleneck of the human in reinforcement learning from human feedback? And this is where reinforcement learning comes into play. Specifically, reinforcement learning from variable, verifiable rewards. What is the idea? Instead of letting an MLM build up a cake atom by atom, we just say the final cake should... have a cherry on top of it and that's what we optimize for it's a verifiable outcome and we can train the model by letting it produce cakes and then say it is good or bad only based on the outcome on the fact that it has a cherry on top of it or not This is actually the core technique behind the huge success in deep learning of AlphaGo, where they took two machines or two instances of a model and play against each other and learn just based on the outcome. Did the model learn? Yes or no. This is what led to a superhuman performance specifically in this game. Another aspect is it is something that always comes back to the bitter lesson of Rich Sutton, which means that. Building how we think we think does not work in the long run in the context of machine learning. So why is this important? It is a valid counter argument that LLMs are not able to produce real novelty because they actually just reproduce or connect in new ways what they have only seen in training data. I do not totally agree, but it's still a valid counter argument. And the reason behind this is that true novelty is a bit hard to realize if you are basically penalized for going out of the distribution of your training data. So as we penalize based on the fact how good can you reproduce the actual training data, the probability that you go out of the training data distribution and produce something truly novel is relatively low. However, with reinforcement learning, the generations in between, so between the prompt and the final completion, is actually not judged at all. So what the model or how the model thinks. to come to the end conclusion will not be taken into consideration for the final loss calculation. How does this look in DeepSeq R1, the reasoning model? You take the existing base model V3, you let it make a lot of completions for any given question, and then you have two rewards on the one hand You reward for accuracy. Is the final cherry on top of the cake, yes or no? This works very well for coding or math problems. And on the other hand, you reward it for consistency. Why? As you see on the headline at the top, there is this model R10. This is actually a research artifact. And what they have shown is that if you do not reward consistency, the model suddenly starts to speak two languages and mix it. That's because in reinforcement learning, usually the model just aims to maximize its rewards. So if you do not set specific constraints for the way it comes to those conclusions, the model will find a way that is not totally in line with what you actually think. We are still, from an engineering perspective, in an area where we only have verifiable results. So it's relatively hard that the model goes completely off the charts because it's relatively easy to verify encoding and mark problems. But I still want to emphasize that this is an important paradigm shift because we kind of move away from this interpretability and this high constraint environment where we say the model needs to go certain steps, but we let loose of these constraints and just optimize for a final outcome. It has been shown throughout the paper that this actually works. So it's a proof of this again. By having just multiple steps in the training process, the performance increases. It's very important here that we do not tell the model how to solve the problem. It just solves the problem. It iterates for a bunch of completion and is rewarded based on the final outcome. The thing that actually is here to insight is that reinforcement learning on large language models works. It shows a paradigm shift more towards this reinforcement learning paradigm that I just explained to you. Again, it is not an unexpected shift of performance. A lot of people said that this is a natural step, the next step to get more performance. However, until now, it just has not been possible because reinforcement learning is a relatively sparse. learning modality means if you want to learn the natural structure of language by just using trial and error, you will have a hard time. But if your model is very good, then you can start judging just based on trial and error because the likelihood of producing the correct answer is relatively high. So key takeaway for this reasoning model is reinforcement learning works with all the things that I told you what this could potentially mean. And the final step here is DeepSeq R1 distilled versions. It's just one sentence that I want to boil down here because I think it's less important the impact of this. It's just that reasoning as such is distillable. What does distillation mean in this context? The idea is you take a large, very strong model, and then you extract certain knowledge paths by just letting the big LLM produce lots of completions and train your smaller model on those completions. So you have a highly curated data set, a high quality data set. And what we've seen by just those two highlights is that compared to a 32 billion model, the distilled version where you take the reasoning thoughts of this R1 model, you can train a 7 billion model to a higher performance than the larger model. This might have implication on the... um on the realization of smaller models but that's still an open question that we have not have enough that we do not have enough research data on to actually make this claim let me look at the question of democratization of er as you remember we have a bunch of inference code we have a bunch of floating point numbers and each of us can run it on our own devices What we have is open weights. You have to inference code. What we have is a very, very comprehensible technical report. So they kind of opened up this hidden knowledge of closed research labs. What we do not have, and that's also very important, is the data. We do not know what goes into that. We do not have the training or evaluation code. And we also do not have any intermediate checkpoints or logs. So while this is a great step into the right direction, personally, I think this is far from true democratization of AI. Let me come to the final conclusion about what we have here. Is Deep Seeker Sputnik moment? Is it a democratization of AI or is it just a media hype? Personally, I believe it's neither. Deep-seq should be a wake-up call. It should be a reminder that the field that we are working in is very important. It is a reminder that we still have a lot of unanswered questions. It is a reminder that we, quote-unquote, kind of gave up the research again, the closed-source research labs, and that we need the versatility, the diversification of LLMs, that we have still unanswered questions that we need answers to before deploying this technology on such a large scale. And I think the second point is... that while maybe a year ago those questions were kind of hypothetical because other organizations like universities did not really have the capital to go and get a seat on the table, I think the proof that now we can get a seat on the table, it opened up the door for other organizations to maybe not get at the very, very front of this research, but at least we can catch up very quickly and enter the game. So what this means on a bigger picture, and especially what the response from the West should actually be, is an open question which I would like to hand over back to all of you in our discussion, and specifically hand back to Professor Li for facilitating this discussion. Thank you very much. OK, I think we could actually have. Thank you, Johannes. That was a really fantastic and really concise and to the point overview of what's been going on. So I'm going to take my my privilege as a moderator and play a little trick on you. So I took the. the description that you sent to uh to me and stefan ahead of time about what you were going to be talking about and i fed it into deep seek and asked deep seek what question it would like to ask you and so now i'd like to give you a question from deep seek so i'll just read it verbatim You mentioned the shift from supervised training to pure reinforcement learning as a paradigm shift akin to the AlphaGo moment for LLMs. Given this, how do you see DeepSeek's open-weight approach influencing not just the democratization of AI, but also the broader ethical and regulatory landscape, especially as these models become more autonomous and their decision-making processes less interpretable? Could this openness paradoxically lead to new challenges in ensuring accountability and trust in AI systems? That's a lovely question, a very nice trick. I believe specifically on the question of ethics, open weights is not enough. What we essentially get is a static picture of a model that we have still a very hard time of actually understanding what goes into it. And with models like R1 that basically learn through trial and error, one thing that is very important is who builds the verifier and what does the verifier verify and reward. As soon as you go into reinforcement learning, as you said, explainability can reduce drastically. And I personally think that from an engineering perspective, a very reasonable next step is that the reasoning does not happen in English or understandable language, but just in some latent space. And then you get the final answer after 20 years, which is 42. And I believe if we go into that direction, that the question of Who builds the verifier? What do we reward based on becomes super important. And for that, while I want to recognize that the openness of DeepSeek is way better than closed from other people, I think it's still not enough. Super. I think DeepSeek would probably say thank you. Guiseppe, you have your hand up. Can you proceed and ask your question? Yes. Thank you very much. I think it was a very nice overview. I want to add a few things that were possibly skipped in the presentation. So the one thing is the preference optimization. They introduced a new technique, which is called group relative preference optimization, which in their paper mentioned has been helpful to substantially reduce the training costs. So that's very important because in the second part of the post-processing, post-training, you have to do a lot of work in order to absorb the alternative answers and choose the one which is the best. You clearly explained that. But it is a costly task because in other systems, for example, AlphaGo that you mentioned, they use Monte Carlo to search, which is a very, very expensive exponential. And so with GRPO, they don't have to do this exponential search. And in the paper, they say that they tried that and it was too expensive for them to use. So that's why they introduced this alternative approach. And just to note, since we have people coming from Stanford, this is an idea which came from a group from Stanford, from Christopher Manning, which introduced the direct preference optimization technique, which is something that is mentioned also in the Deep Seek paper as an inspiration. And the second thing is that there is a lot of... rethinking in the process of generating the answer. So if you try R1, for example, you put the think tag and within the think tag and the close think tag, you see the process that the model undergoes to produce the answer. So it produces the first answer, then says, ah, wait, there's something wrong here, I haven't considered, and tries another solution, and so on and so on. So it takes a significant amount, it spends a significant amount of time in trying to revise its first answer. That means that the answer takes much longer. Somebody is unmuted. Can you mute yourself and not interfere? Thank you. Okay. So it takes much longer. But what is nice is that it shows the steps. For example, other models like OpenAI O3 or OneMini do something similar, but they don't show these steps. So it's a little bit kind of transparency. to see how the model goes through the steps introducing the answer. Actually, it just provides an explanation of what it did, an explanation which is in language, so you can understand and figure out what it did. And the last thing... Let's give Johannes a chance to... Just to quickly speak, the last thing is that about the democratization of these models. In the paper, they say at the end... Deploying this model is very expensive. It's very hard to deploy. The model is very big. So it's 650 billion parameters, which means that you have to have a machine with at least 1.5 terabytes of memory in the GPU to be able to run. And that's an issue which still needs to be addressed. Thank you. Okay, Johannes, that was a rather lengthy question. Yeah, I think it was a very good addition. I think it's very hard to cover all the technical details in this paper and in such a talk. So thank you very much for this addition. Maybe I want to go into the part of the thinking space. One of the things that we saw is that While DeepSeq was the first that at least opening eyes started to show us some sort of their thinking process. I don't believe that it's the actual thing that the model directly produces, but at least some sort. So while pushing towards openness, I think maybe also to add to the previous question of you, Professor Li, it kind of forces other players to also get a bit more open just through the... pure pressure of the market so in that sense openness is very good especially if you are a frontier level model and i would argue it only works if you have frontier level model because otherwise they would say well yeah you are open but you're better so but otherwise i have nothing to uh to add to your edition so thank you very much for that um other questions do we do we have any questions from the room here oh yes there are probably questions in the chat not yet not yet not yet okay well um i have a question for johannes um i i would be curious to know uh whether you've been following the innovations in architecture so the efforts that people are making to make hardware that perhaps might be more finely tuned to the kind of workloads that are involved than the GPUs, which were originally designed for graphics processing, and what kind of impact that might have on perhaps a further reduction in the costs of, particularly in the costs of deploying, which I think Guiseppe raised that. that point quite well, that the cost of deploying is still quite high. What are your thoughts about that? That's a very good question. So as a disclaimer, I'm definitely not an expert on hardware, but a few things that are important to this question. On one hand, there's a difference between inference and training. There are a lot of new chips that optimize heavily on inference and make things just way faster. On the other hand, if we just see the normal progress of hardware improvements, the probability that we have a GPT-4 level model on our phone at the end of the year is relatively high. Now, there will always be people that spend more money and more compute to get an even bigger model. But I would argue for the biggest disruption wave, the current level is already enough. and of a GPT-4 level. And I think even if we do not have groundbreaking hardware improvements, just with the current improvements in both model size reduction, quantization, et cetera, and the existing improvements from companies like NVIDIA will already be enough to significantly bring down the cost of intelligence in such a sense. Yeah, let's leave it at this. Okay. I would have a question. Go ahead. I'm just curious, Johannes, about one term which pops up in the media from time to time. It's not now directly related to DeepSeq, but to LLMs in general, and this is the phenomenon of model collapse. Is this something where DeepSeq also has a different We have different expectations, or is this also just this model collapse problem a fake news thing? Maybe you can say a few words. To be honest, I did not have heard this term in the media. So maybe could you add to it? Maybe I heard it under different terms. The idea of model collapse is that the more and more data being automatically generated is used for training. This leads to a decrease of the quality of the model. That's what some people anticipate, but I'm not sure whether this is really a valid point. interested in your personal data content so in in the sense of maybe let's make it even bigger question on the one hand the question of what happens when llms are only trained on self-generated or llm generated data is a very important question and the answers we don't know yet on the other hand this paradigm of reinforcement learning It gets rid of the necessity of having actual textual data as your brown tooth, quote, unquote, that you train on. But you basically do not care anymore on the text that it actually produces as long as the final output is true. So if we go more and more, and I would assume we do, into this direction of reinforcement learning. then this threat of model collapse in the way you explained it is not actually a threat because you do not need to train on huge amounts of data to reproduce it step by step. Okay. I have another follow-up question for you, Johannes. probably because of the curation of the training data in this, particularly in this reinforcement learning part of the process. DeepSeek has, you know, certain, shall I say, a Chinese accent, right? If you ask it about Taiwan, it has an answer that might not be the answer you would get from, you know, the same question asked to an American AI. And there's been various efforts to kind of fine tune deep seek to try to change that and, you know, sort of create a different set of biases, we might say, without degrading the performance of the model. And I was wondering whether you've been following that work and what your thoughts might be about that. Yes. idea let's also make it a bit broad i think something that is very beautifully said or named this whole area is the personality of a model claude makes actually a lot of research around this area of what is the personality of the model in post-training and i would say two things on the one hand there's a lot you can achieve in post-training but still if you put in data and tune your whole model in the pre-training phase in a way that you do not want, you will have an unbelievably hard time to actually change that in post-training. There are a few very nice papers around model poisoning, so a bit different perspective, but it has been shown that you can use a set of training data in pre-training where you can have sleeping agents that when adding a certain year in your prompt, they will produce malicious code. In comparison, if you use another year, they will not use malicious code. And it was impossible to untrain this in the post-training phase. So we are still in an area where, on the one hand, we... Because of lack of research, we actually do not have a one-on-one correlation between training data and outcome. So it is not like we say, let's use those four training data sets and then you will have a German or Austrian accents. And if we change that in post-training, it will be different. The only thing we know is that there are things that are unbelievably hard to out-train or unlearn in the post-training phase. And for most of those things, I think not only because I'm totally aware of that I have my shortcomings in knowledge, but I don't think that it's only because I don't know something. There are a lot of things that we actually do not know yet because this space is just under-researched. most of the research did not have access and that's also why deep seek is a huge thing for also the research organ they did not have access to a clear frontier big size model to actually try those things and most of the closed source labs are not really interested in getting different accents into the model as the primary objective function is i think capital and not really the other things Yeah, very good. Okay, Hannes, you have a question. Please go ahead. First of all, thanks for the excellent overview. And I'm proud to be of Technical University where we have students like you who also teach us what we have to teach. So this is really synonymous for where we are today. So congratulations. My question is a little bit more general. We had this, let's say, basic breakthroughs with LLMs, with self-attention mechanisms and so on. And now you described some engineering progress and you said it's engineering which brought us to this next level. in your mind or in your opinion, is the next steps we can expect? Is it a sequence of engineering achievements or do we see something different from a technical point of view, not from an economic or from a, let's say, political point of view? A great question. I think if I have the true answer to that, I will probably be a very rich person in five years. No, you first have to finish your master's. But the expectation would be just looking back that efficiency gain will not be the primary objective of the leading research organizations in America. Because they played a game of being the first that achieves artificial general intelligence. What I would expect is that reinforcement learning will be expanded towards other domains that do not have this hard code verifiability. We have currently seen that they train on math and coding primarily because it's very easy to verify that. And I would expect that we expand towards other areas. chemistry, physics, science, etc., where you also have maybe more difficult but still verifiable outcomes and see amazing results. So we're kind of in the first baby steps in reinforcement learning on large language models. And I would assume that this will get a lot of attention and generalizability across other domains. Thank you. Okay, the last question goes to Luis Moniz-Pereira. Well, thank you. Thank you for your talk. My question is about forgetting. How can you, is it possible in the, I guess, post-training phase to say, forget these facts? And of course, also forget the consequences that those facts supported. Can you tell us something about forgetting, please? That's a beautiful question. And in fact, a colleague of mine and I have talked about this under the lens of bias and we unlearn a bias. And there are some research papers, but most of the time they have a very narrow view on that and achieve OK results. So if you now ask me, is it actually possible to completely forget, to untrain something, to unlearn, by the day, currently today, I would say we do not know of such a process. And from my personal understanding of the algorithms and how such a neural network learns. I think as long as we do not have a better mechanistic understanding of where certain facts and concepts are stored, just trying to look at it from a black box perspective from the outside, it is pretty much impossible to really erase things that do not then pop up in certain scenarios. Thank you. The dogstool audience, I think, is mostly new to the Digital Humanism Initiative and doesn't know about our tradition of emphasizing the human and closing these meetings with a piece of music. But before we do that, I really would like us to give you another round of applause for a really wonderful presentation. Thank you very much. Appreciate it. And with that, I will turn it over to Stefan. All right. Thank you very much, Edward. Thank you very much, Johannes, for this excellent presentation. Thanks to the audience for the discussion and also for the comments in the chat. Very interesting remarks there. As Edward has mentioned, we usually end with a piece of music and having announcements for future activities. Unfortunately, Peter Gnes, who is... taking care of the music is not here with us today. So I hope the technical setup will nonetheless work. Let me just announce our next lecture. So this will take place on March 18. We will have Simon Parsons from Lincoln University. And the topic is AI for sustainable agriculture. So completely different thing. And I'm looking forward very much to that. Before saying goodbye to all of you and to listen to the music, I just want to bring back Johannes once again, because what we usually do is that our speaker can select which piece of music he wants to hear at the end of this session. And maybe, Johannes, you can quickly announce the music, the tune, and why this was your choice. Yes, so it's a lovely piece from Beethoven, a part of the first sentence of his variation piece in A flat major, which is a very important piece for me because it was the piece that I studied myself when I actually discovered computer programming back then, the time when these two passions of playing the piano and computer programming started to fight each other for the time. And the second reason is that, as you will hear later, while I completely recognize the amazing improvements in general in artificial music generation, I still believe that specifically this section where melodic simplicity is embedded in poetic harmony sharpens or strengthens my probably a bit naive belief that truly humanly generated music will be the last. to surrender to machines perfect closing words here and there's nothing to it from my side thank you and walter now it's your your task Okay. Bye-bye. Thank you very much. See you soon.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.248,
+      "text": "Is it democratization or is it just a media hype? And I'm very happy that we have a young expert here with us today who looked into the technical details of DeepSeq a bit and who will share his insights with us today as a basis for a discussion about the impact of this new large language model. I'm particularly happy and honored that Edward Lee agreed to moderate today's lecture."
+    },
+    {
+      "start": 29.248,
+      "end": 54.72,
+      "text": "Edward Lee is professor of the Graduate School and Distinguished Professor Emeritus at the University of California, Berkeley, where he has been on this faculty since the mid-80s. He is author of several books, two of them for a general audience and also of particular interest for digital humanists."
+    },
+    {
+      "start": 54.72,
+      "end": 82.208,
+      "text": "One is the co-evolution, the entwined futures of humans and machines. The other one, which appeared a bit earlier, is Plato and the Nerd, the creative partnership of humans and technology, both published by MIT Press. Edward has been an active member of our initiative from the very start. And without further ado, I will now hand over to Tagstuhl in Germany, where Edward is."
+    },
+    {
+      "start": 82.208,
+      "end": 104.096,
+      "text": "is currently attending a seminar on trade-offs in reactive systems. And a particular warm welcome to all the participants at the talk show event, which are with us today. And Edward, the floor is yours. Hi, Stefan. Hi, everybody. Yeah, I was..."
+    },
+    {
+      "start": 104.096,
+      "end": 128.448,
+      "text": "planning to moderate this, you know, in some corner of Dogstool, but I started telling some of the people at this seminar about this and they all really wanted to listen in. And so we decided to invite them all. And so please welcome the Dogstool participants. Yeah. And this is a seminar on reactive system design."
+    },
+    {
+      "start": 128.448,
+      "end": 150.784,
+      "text": "It doesn't actually have a whole lot of AI content, but actually, coincidentally, tomorrow there will be some discussion about how to use AI safely in reactive systems. So it's very pertinent. But in any case, I'm not here to introduce us. I'm here to introduce Johannes Oster, which I have the pleasure."
+    },
+    {
+      "start": 150.784,
+      "end": 176.352,
+      "text": "to introduce, who is a lecturer in generative AI at the Technical University of Vienna. And he's also pursuing a master's degree in data science. And he is a leading AI engineer in Became AI, a very interesting organization. It's an agency committed to help companies to ethically develop generative AI-based solutions."
+    },
+    {
+      "start": 176.352,
+      "end": 202.928,
+      "text": "And for several years, he's been a leading organizer of the global invitation only Sigma Squared Summit, which brings together ambitious young founders, serial entrepreneurs, thought leaders to foster intergenerational discourse. So I guess that means they want to talk to old guys like me. So with that, I'll turn it over to Johannes. Johannes, the floor is yours."
+    },
+    {
+      "start": 203.504,
+      "end": 233.008,
+      "text": "Thank you very much for this wonderful introduction. I'm very pleased and privileged to be here and talk about DeepSeq and decorate my presentation a bit with currently very relevant paradigms and paradigm shifts around the development of LLMs. Before I start, I designed this presentation to be digestible for people outside of the field. If during the presentation you have any questions, whether I'm too technical or not technical enough, please feel free."
+    },
+    {
+      "start": 233.008,
+      "end": 259.92,
+      "text": "to interrupt me at any point in time. To start this presentation, maybe let's summarize what's happened in one slide. In the end of 2024 or beginning of 2025, a relatively unknown Chinese startup released around 800 lines of inference code and a bunch of floating point numbers that"
+    },
+    {
+      "start": 259.92,
+      "end": 289.744,
+      "text": "Each and every one of us can download on our own consumer hardware. You will need around 400 gigabytes of RAM, so stacking up eight Mac Minis should bring you a GPD 4.0 or a 1-level LLM to your own home. Completely offline, locally run, you own it there. That's something that we call open weights. And then their app gained huge popularity within days."
+    },
+    {
+      "start": 289.744,
+      "end": 319.296,
+      "text": "It was sometimes referred to as the democratization of AI. We witnessed crashing stock markets and some people even referred to it as the Sputnik moment of the 21st century. To disentangle this media hype, I would like to use three of the characteristics of the real Sputnik moment as my general guideline through this presentation. I do not want to open the discussion around whether the Sputnik moment actually was about..."
+    },
+    {
+      "start": 319.296,
+      "end": 348.336,
+      "text": "technical supremacy or just the miscalculation the importance of being the first in space. So please let me use this analogy here. I will focus on high-stake field and arms race dynamics, the debunking of the perceived supremacy in a technological space, and finally the strong reaction of the West. So the question for this presentation becomes now, is DeepSeek such a Sputnik moment or not?"
+    },
+    {
+      "start": 350.192,
+      "end": 379.552,
+      "text": "DeepSeq, R1 and DeepSeq v3, the main models that we are going to talk about are language models. Language is very generalizable across pretty much any domain. It is very omnipresent in our own life. It is a pretty much direct interface into our thoughts. So the ability to understand or to bend language to its own will is a very potent tool. And quite a lot of people refer to language as one of the"
+    },
+    {
+      "start": 379.552,
+      "end": 405.344,
+      "text": "Primary vehicles are a vital component to the path to cross-domain intelligence or artificial general intelligence. Something or somewhat that controls and bends language can impact or influence on an individual, community, country, societal or even species level. And I think the release of DeepSeek has reminded us of this."
+    },
+    {
+      "start": 405.344,
+      "end": 432.656,
+      "text": "It has reignited very important discussions around still unanswered questions like who owns this omnipresent AI? Who will control what goes into it? And very important, what comes out of it or does not come out of it? Do we have visibility into it? Can we own it ourselves as individuals or on a bigger scale as a species? And it reignited these discussions and therefore I think it..."
+    },
+    {
+      "start": 432.656,
+      "end": 440.208,
+      "text": "underlined the importance and the fact that AI or language is in fact a high stakes field."
+    },
+    {
+      "start": 440.208,
+      "end": 466.928,
+      "text": "There are a lot of opponents of LLMs, especially around the belief of that it will bring us to AGI. But for those, I would say that throughout the last three years, we have seen that not only language is generalizable, but also the underlying architecture, the former architecture, generalizes extremely well for other modalities. So while 10 to 15 years ago, one would have a relatively hard time."
+    },
+    {
+      "start": 466.928,
+      "end": 489.168,
+      "text": "to build multiple models in each of the modalities. Right now, when having the ability to build a language model, it's relatively easy to also go to other modalities like image generation, computer vision, et cetera. So the transformer architecture is what allows us to see an image just as a series of"
+    },
+    {
+      "start": 489.296,
+      "end": 504.512,
+      "text": "a series of patches which in themselves are a series of pixels and it allows us to see image generation as a sequence of denoising steps so going from completely random noise to relatively beautiful images and"
+    },
+    {
+      "start": 504.512,
+      "end": 534.064,
+      "text": "For some mathematical convenience, it also allows us to see sound or music as an image, which then in fact becomes a sequence of patches and a sequence of pixels. So while I'm obviously trivializing the implementation details of these modalities, the underlying ideas remains true. Being able to build language models also enables you relatively quickly to go into other domains. For the sake of this argument, I will stick to language as the main carrier."
+    },
+    {
+      "start": 534.064,
+      "end": 564.016,
+      "text": "So insight number one, we do live in a high-stake environment because of the immense power of language. Insight number two is something we know as the scaling law of large language model. Paraphrase, it means that keeping the underlying architecture insane, the sheer act of scaling up compute, training compute, the parameter count and data set size for the training equally will give us a relatively predictable increase in performance."
+    },
+    {
+      "start": 564.4,
+      "end": 591.44,
+      "text": "For quite some time, this has been translated in LLMs being a magic machine that translate money into pure intelligence, where GPUs or computational power is the translation engine. And on top of this belief of scale, we see that companies in America, like in this sense that West is just the US, by far outnumbered investments into AI."
+    },
+    {
+      "start": 592.048,
+      "end": 609.584,
+      "text": "Not only do we have the West, quote unquote, the US has the money, it also has the knowledge or it perceives that it has the knowledge by owning or having the leading research organization. And then finally, through export controls, they also have the GPUs."
+    },
+    {
+      "start": 609.584,
+      "end": 639.232,
+      "text": "So to summarize, the idea of this technological supremacy comes from the belief in scale, the belief that America by far, this is actually true, has the most capital invested in AI. It has the knowledge in the research organization, and it also controls the GPUs that are necessary to translate money into intelligence. So to summarize those first few slides, on the one hand, yes, we do live in a high-stakes field with a power of language."
+    },
+    {
+      "start": 639.232,
+      "end": 665.312,
+      "text": "We do have this arms race dynamic through the scaling law that leads us to thinking who can build the bigger model faster. And we also have this perceived technological supremacy by having the capital, having the knowledge and having the GPUs. And this is where then DeepSeq comes into place. DeepSeq by the end of 2024 and beginning of 2025 released three main model groups."
+    },
+    {
+      "start": 665.312,
+      "end": 693.168,
+      "text": "DeepSeq v3 base and DeepSeq v3, which are foundational models. Then DeepSeq R1.0 and R1, which are reasoning models. And finally, they have a bunch of distilled version, and I will go into detail about what that means, of this reasoning model. I will not go into the details about the reasonability of benchmarks, but what we saw is that on well-established benchmarks, they are on par with other leading"
+    },
+    {
+      "start": 693.168,
+      "end": 718.64,
+      "text": "closed source and closed weights models. Throughout the next couple slides, I want to highlight the three main insights that we can get out of these models. The DeepSeq has demonstrated that and how efficiency can actually be improved in training, that reinforcement learning on LLMs works, and again, I will go into detail what that means, and finally, that reasoning is distillable."
+    },
+    {
+      "start": 719.92,
+      "end": 748.512,
+      "text": "Let's start with DeepSeq v3 base and DeepSeq v3. The first step and very important step in large language models is the pre-training phase, the generative pre-training. The core idea is that we take a huge neural network, something with 600 billions of parameters. Then we take a huge amount of text, chunk it up into individual small pieces, things we call tokens."
+    },
+    {
+      "start": 748.512,
+      "end": 775.36,
+      "text": "put it through the neural network and let it produce probability distribution over its vocabulary indicating which tokens are very likely to come next and which aren't. For the training process we then aim to dial the knobs or adapt the parameters so that those tokens that actually come in the training process have a high likelihood and the others a low likelihood. So in the end we basically build a huge"
+    },
+    {
+      "start": 775.36,
+      "end": 804.112,
+      "text": "approximation of the inner structure of language represented by the training data. Usually you run a few test runs, you have individual sub-researchers, you try to train smaller models, etc. And then there comes the point where you press the final button and let multiple thousands of GPUs run for a very long time to train on trillions of tokens. As a comparison,"
+    },
+    {
+      "start": 804.112,
+      "end": 830.656,
+      "text": "Another open weights model where we actually know a number is Lama 3. And we know that it took around 30 millions of GPU hours, where a GPU hour is just one single GPU that runs for one hour. And they claim that it took them 30 million hours. Another number that we know from DeepSeek is that it took them only 2.8 million GPRRs."
+    },
+    {
+      "start": 830.656,
+      "end": 850.688,
+      "text": "also on weaker hardware. So it's roughly 9% of the training time. There are claims that say, hey, DeepSeq had access to more performant GPUs. I would argue, yes, that might be the case. I don't see into the data set, but"
+    },
+    {
+      "start": 850.688,
+      "end": 868.336,
+      "text": "their relation still remains the same. And if they have access to more powerful GPUs, they would only have access to GPUs that actually also Lama was trained on. So while the relation might get less impressive, it's still impressive. The other claim is that this might just be wrong."
+    },
+    {
+      "start": 868.336,
+      "end": 896.832,
+      "text": "On the one hand, there have been quite a lot of people that did the calculation based on the information that we have, and it's a reasonable number for the architecture that they applied. So the only actual possibility that this is a wrong number and the relation is not as big is if they just straight out lied what their training data size meant. So if they actually trained on way more tokens than they claim, which I personally think is unreasonable, but..."
+    },
+    {
+      "start": 896.832,
+      "end": 914.496,
+      "text": "We don't know because we do not know what data actually they turned on. To maybe capture this other idea of media hype is if you see something, a headline that says DeepSeek 6 million versus 250 billion of US cloud companies."
+    },
+    {
+      "start": 914.496,
+      "end": 943.6,
+      "text": "I would say that's a false claim or an unfair comparison because the only actual data that we have are the GPU training hours. The amount of money it took is also an estimation based on just some market average of how much it would cost if you rent H800s on the public market. But the true comparison is just the amount of training compute they used in terms of GPU hours. So the valid thing to say is actually they have demonstrated them."
+    },
+    {
+      "start": 943.6,
+      "end": 973.408,
+      "text": "and explain very thoroughly that there is huge improvements in efficiency gains in the training process. Now the question comes, how? For the next couple of minutes, it will be a bit more technical. Please still try to follow along. I just want to give you a bit of a sense of the caliber of the innovations. You do not have to understand each individual piece, but I still think it's important to see, okay, what did they actually do? One of the primary things is a mixture of experts."
+    },
+    {
+      "start": 973.408,
+      "end": 992.864,
+      "text": "Mixture of experts is not a new idea. However, what they did extremely well is applying this on scale. It becomes pretty hard to do that. Comparable models, like Mistral models, has a ratio of 1 to 8. They apply 2 to 256."
+    },
+    {
+      "start": 992.864,
+      "end": 1020.688,
+      "text": "What does this ratio mean? The core idea of Mixture of Experts is that instead of having a very dense model where all parameters are activated in a single forward pass, you actually partition the model in itself and dynamically select only parts of the model that are going to be activated. This obviously saves you a huge amount of compute, but it's difficult to do in scale, and they achieved it on scale."
+    },
+    {
+      "start": 1021.2,
+      "end": 1036.448,
+      "text": "Another thing is multi-token prediction. Also not something that is new, but again something they implemented very well. The core idea is that instead of predicting just one token, you can use the output of your core model and predict multiple tokens."
+    },
+    {
+      "start": 1036.448,
+      "end": 1056.736,
+      "text": "The core idea behind this is that you thereby enrich the representation of your sequence because this representation does not have to predict only one token but it has to look further into the future so your representation gets enriched. A third point is dual pipeline training. As said"
+    },
+    {
+      "start": 1056.736,
+      "end": 1082.592,
+      "text": "One of the things is the reduced training time. And one of the reasons you can achieve that is by just letting your GPU be utilized all the time. Currently, most of the models kind of waste a lot of GPU time by just not utilizing it to 100%. Dual-pipe training introduces a very smart mechanism that optimizes"
+    },
+    {
+      "start": 1082.592,
+      "end": 1101.984,
+      "text": "a training process in the direction that your GPUs run all the time for almost 100%. It's not a groundbreaking new architecture, but a super high gain in efficiency by just fully utilizing your GPUs. Another point is mixed precision training."
+    },
+    {
+      "start": 1101.984,
+      "end": 1128.304,
+      "text": "In computer science, we can use different number formats. There are bigger number formats, like floating port 32, just uses a lot of space, and it takes you longer to compute things. Lower number formats potentially could grasp less richness of information. They're just way more efficient. And what they did is they found on an engineering level a very efficient way to use lower precision."
+    },
+    {
+      "start": 1128.304,
+      "end": 1153.248,
+      "text": "training when it's possible, and then only introduce high precision when it's absolutely necessary. And the final thing is something they call multi-hat latent attention, and that's actually quote-unquote an invention by them. They introduced it in their previous model, DeepSeq v3. The core idea behind it is this, is there is one operation that is highly computationally complex, the attention mechanism."
+    },
+    {
+      "start": 1153.248,
+      "end": 1182.336,
+      "text": "and the ideas of latent intentions such to reduce the size of the dimension of the key individual parts down to a lower dimensional vector space to again say compute or during inference memory i hope i did not lose you here but the core idea that i want to show you is there have been quite amazing engineering level innovations most of them are not groundbreaking or new but extremely well executed"
+    },
+    {
+      "start": 1182.336,
+      "end": 1208.752,
+      "text": "on scale. So what do we learn from that? Number one, it was a demonstration like a proof and a thorough explanation of how efficient training processes through excellent engineering process can actually be realized. Number two, it is one of the clear frontier open weights models with very permissive licenses without any major downstream use case restrictions."
+    },
+    {
+      "start": 1208.752,
+      "end": 1234.208,
+      "text": "And I hope we can go into the discussion about later what that would actually mean. What it wasn't, it was not an unexpected shift of performance trajectory of the LLMs. There's not another groundbreaking new theory, which I want to be very clear about. I do not want to say it's not an amazing thing, but it's not something unexpected. The next part."
+    },
+    {
+      "start": 1234.208,
+      "end": 1263.648,
+      "text": "are reasoning models and i would argue this has made the bigger waves in the media their deep seek r1 model let me use an analogy of actually one of the big opponents of the idea that lms will lead to artificial general intelligence which who is a young liquor so to use this cake let's say that this cake represents our learning tasks the cakes in this sense is language and we want to reproduce or we want to teach a model"
+    },
+    {
+      "start": 1263.648,
+      "end": 1290.368,
+      "text": "to produce cakes. The first part during the training process would then be unsupervised or self-supervised training, where we just collect a huge amount of cakes and let the model reproduce these cakes on an atom by atom basis. That's the analogy to token by token building up language. Then the second part is the post-training phase. We can curate"
+    },
+    {
+      "start": 1290.368,
+      "end": 1315.056,
+      "text": "a very well-structured data set of only those cakes that we want. So if you look back in the core data set, there are a few cakes that might not look as delicious as what we would expect. It's the same with LLMs. There's a lot of quote-unquote trash in the initial training data. So in the post-training phase, we curate only those cakes that we actually want to see."
+    },
+    {
+      "start": 1315.056,
+      "end": 1342.88,
+      "text": "And then something that made big waves in GPT-4 is preference learning. The specific thing that OpenAI used is something we call reinforcement learning from human feedback, where we let the model produce multiple outputs and then indirectly, through human feedback, we can judge whether something is good or not. It's often used for alignment, but it's also used to increase the performance for a specific task."
+    },
+    {
+      "start": 1342.88,
+      "end": 1372.176,
+      "text": "So pre-training, a bunch of cakes, post-training with supervised fine tuning, which is a curated data set, and then finally the preference tuning to only select those that we actually want to see in our final output. And then not a really new idea, but still an important paradigm shift comes into play, led by two questions. Number one, can we trade test time compute for better performance?"
+    },
+    {
+      "start": 1372.464,
+      "end": 1401.936,
+      "text": "What is Test Hunt Compute? It's a simple synonym for any compute that is necessary to run inference on. So after the training, if you use the model, it's called Test Hunt Compute. The idea is that during training, we spend a lot of money to get better performance. During inference, produced tokens cost us cents, not even that. So the idea is, can we spend more money during inference to get better performance? The second important question here is,"
+    },
+    {
+      "start": 1402.0,
+      "end": 1430.944,
+      "text": "I know it might sound a bit ridiculous to post it in a digital humanism lecture, but the question is how can we overcome the bottleneck of the human in reinforcement learning from human feedback? And this is where reinforcement learning comes into play. Specifically, reinforcement learning from variable, verifiable rewards. What is the idea? Instead of letting an MLM build up a cake atom by atom, we just say the final cake should..."
+    },
+    {
+      "start": 1430.944,
+      "end": 1447.6,
+      "text": "have a cherry on top of it and that's what we optimize for it's a verifiable outcome and we can train the model by letting it produce cakes and then say it is good or bad only based on the outcome on the fact that it has a cherry on top of it or not"
+    },
+    {
+      "start": 1448.08,
+      "end": 1477.424,
+      "text": "This is actually the core technique behind the huge success in deep learning of AlphaGo, where they took two machines or two instances of a model and play against each other and learn just based on the outcome. Did the model learn? Yes or no. This is what led to a superhuman performance specifically in this game. Another aspect is it is something that always comes back to the bitter lesson of Rich Sutton, which means that."
+    },
+    {
+      "start": 1477.424,
+      "end": 1503.696,
+      "text": "Building how we think we think does not work in the long run in the context of machine learning. So why is this important? It is a valid counter argument that LLMs are not able to produce real novelty because they actually just reproduce or connect in new ways what they have only seen in training data."
+    },
+    {
+      "start": 1503.696,
+      "end": 1527.904,
+      "text": "I do not totally agree, but it's still a valid counter argument. And the reason behind this is that true novelty is a bit hard to realize if you are basically penalized for going out of the distribution of your training data. So as we penalize based on the fact how good can you reproduce the actual training data,"
+    },
+    {
+      "start": 1527.904,
+      "end": 1552.528,
+      "text": "the probability that you go out of the training data distribution and produce something truly novel is relatively low. However, with reinforcement learning, the generations in between, so between the prompt and the final completion, is actually not judged at all. So what the model or how the model thinks."
+    },
+    {
+      "start": 1552.528,
+      "end": 1576.336,
+      "text": "to come to the end conclusion will not be taken into consideration for the final loss calculation. How does this look in DeepSeq R1, the reasoning model? You take the existing base model V3, you let it make a lot of completions for any given question, and then you have two rewards on the one hand"
+    },
+    {
+      "start": 1576.336,
+      "end": 1605.728,
+      "text": "You reward for accuracy. Is the final cherry on top of the cake, yes or no? This works very well for coding or math problems. And on the other hand, you reward it for consistency. Why? As you see on the headline at the top, there is this model R10. This is actually a research artifact. And what they have shown is that if you do not reward consistency, the model suddenly starts to speak two languages and mix it."
+    },
+    {
+      "start": 1605.728,
+      "end": 1631.088,
+      "text": "That's because in reinforcement learning, usually the model just aims to maximize its rewards. So if you do not set specific constraints for the way it comes to those conclusions, the model will find a way that is not totally in line with what you actually think. We are still, from an engineering perspective, in an area where we only have verifiable results."
+    },
+    {
+      "start": 1631.088,
+      "end": 1660.272,
+      "text": "So it's relatively hard that the model goes completely off the charts because it's relatively easy to verify encoding and mark problems. But I still want to emphasize that this is an important paradigm shift because we kind of move away from this interpretability and this high constraint environment where we say the model needs to go certain steps, but we let loose of these constraints and just optimize for a final outcome."
+    },
+    {
+      "start": 1661.296,
+      "end": 1682.704,
+      "text": "It has been shown throughout the paper that this actually works. So it's a proof of this again. By having just multiple steps in the training process, the performance increases. It's very important here that we do not tell the model how to solve the problem. It just solves the problem. It iterates for a bunch of completion and is rewarded based on the final outcome."
+    },
+    {
+      "start": 1683.664,
+      "end": 1710.192,
+      "text": "The thing that actually is here to insight is that reinforcement learning on large language models works. It shows a paradigm shift more towards this reinforcement learning paradigm that I just explained to you. Again, it is not an unexpected shift of performance. A lot of people said that this is a natural step, the next step to get more performance. However, until now, it just has not been possible because reinforcement learning is a relatively sparse."
+    },
+    {
+      "start": 1710.192,
+      "end": 1738.64,
+      "text": "learning modality means if you want to learn the natural structure of language by just using trial and error, you will have a hard time. But if your model is very good, then you can start judging just based on trial and error because the likelihood of producing the correct answer is relatively high. So key takeaway for this reasoning model is reinforcement learning works with all the things that I told you what this could potentially mean."
+    },
+    {
+      "start": 1738.768,
+      "end": 1756.208,
+      "text": "And the final step here is DeepSeq R1 distilled versions. It's just one sentence that I want to boil down here because I think it's less important the impact of this. It's just that reasoning as such is distillable. What does distillation mean in this context?"
+    },
+    {
+      "start": 1756.208,
+      "end": 1774.016,
+      "text": "The idea is you take a large, very strong model, and then you extract certain knowledge paths by just letting the big LLM produce lots of completions and train your smaller model on those completions. So you have a highly curated data set, a high quality data set."
+    },
+    {
+      "start": 1774.016,
+      "end": 1794.512,
+      "text": "And what we've seen by just those two highlights is that compared to a 32 billion model, the distilled version where you take the reasoning thoughts of this R1 model, you can train a 7 billion model to a higher performance than the larger model. This might have implication on the..."
+    },
+    {
+      "start": 1794.512,
+      "end": 1823.312,
+      "text": "um on the realization of smaller models but that's still an open question that we have not have enough that we do not have enough research data on to actually make this claim let me look at the question of democratization of er as you remember we have a bunch of inference code we have a bunch of floating point numbers and each of us can run it on our own devices"
+    },
+    {
+      "start": 1823.824,
+      "end": 1852.912,
+      "text": "What we have is open weights. You have to inference code. What we have is a very, very comprehensible technical report. So they kind of opened up this hidden knowledge of closed research labs. What we do not have, and that's also very important, is the data. We do not know what goes into that. We do not have the training or evaluation code. And we also do not have any intermediate checkpoints or logs."
+    },
+    {
+      "start": 1852.912,
+      "end": 1878.672,
+      "text": "So while this is a great step into the right direction, personally, I think this is far from true democratization of AI. Let me come to the final conclusion about what we have here. Is Deep Seeker Sputnik moment? Is it a democratization of AI or is it just a media hype? Personally, I believe it's neither."
+    },
+    {
+      "start": 1880.048,
+      "end": 1909.168,
+      "text": "Deep-seq should be a wake-up call. It should be a reminder that the field that we are working in is very important. It is a reminder that we still have a lot of unanswered questions. It is a reminder that we, quote-unquote, kind of gave up the research again, the closed-source research labs, and that we need the versatility, the diversification of LLMs, that we have still unanswered questions that we need answers to before deploying this technology on such a large scale. And I think the second point is..."
+    },
+    {
+      "start": 1909.168,
+      "end": 1936.816,
+      "text": "that while maybe a year ago those questions were kind of hypothetical because other organizations like universities did not really have the capital to go and get a seat on the table, I think the proof that now we can get a seat on the table, it opened up the door for other organizations to maybe not get at the very, very front of this research, but at least we can catch up very quickly and enter the game."
+    },
+    {
+      "start": 1937.872,
+      "end": 1958.768,
+      "text": "So what this means on a bigger picture, and especially what the response from the West should actually be, is an open question which I would like to hand over back to all of you in our discussion, and specifically hand back to Professor Li for facilitating this discussion. Thank you very much."
+    },
+    {
+      "start": 1962.992,
+      "end": 1991.376,
+      "text": "OK, I think we could actually have. Thank you, Johannes. That was a really fantastic and really concise and to the point overview of what's been going on. So I'm going to take my my privilege as a moderator and play a little trick on you. So I took the."
+    },
+    {
+      "start": 1991.376,
+      "end": 2016.416,
+      "text": "the description that you sent to uh to me and stefan ahead of time about what you were going to be talking about and i fed it into deep seek and asked deep seek what question it would like to ask you and so now i'd like to give you a question from deep seek so i'll just read it verbatim"
+    },
+    {
+      "start": 2016.416,
+      "end": 2045.328,
+      "text": "You mentioned the shift from supervised training to pure reinforcement learning as a paradigm shift akin to the AlphaGo moment for LLMs. Given this, how do you see DeepSeek's open-weight approach influencing not just the democratization of AI, but also the broader ethical and regulatory landscape, especially as these models become more autonomous and their decision-making processes less interpretable?"
+    },
+    {
+      "start": 2045.328,
+      "end": 2075.2,
+      "text": "Could this openness paradoxically lead to new challenges in ensuring accountability and trust in AI systems? That's a lovely question, a very nice trick. I believe specifically on the question of ethics, open weights is not enough. What we essentially get is a static picture of a model that we have still a very hard time of actually understanding what goes into it."
+    },
+    {
+      "start": 2075.2,
+      "end": 2087.248,
+      "text": "And with models like R1 that basically learn through trial and error, one thing that is very important is who builds the verifier and what does the verifier verify and reward."
+    },
+    {
+      "start": 2087.248,
+      "end": 2115.744,
+      "text": "As soon as you go into reinforcement learning, as you said, explainability can reduce drastically. And I personally think that from an engineering perspective, a very reasonable next step is that the reasoning does not happen in English or understandable language, but just in some latent space. And then you get the final answer after 20 years, which is 42. And I believe if we go into that direction, that the question of"
+    },
+    {
+      "start": 2115.744,
+      "end": 2145.52,
+      "text": "Who builds the verifier? What do we reward based on becomes super important. And for that, while I want to recognize that the openness of DeepSeek is way better than closed from other people, I think it's still not enough. Super. I think DeepSeek would probably say thank you. Guiseppe, you have your hand up. Can you proceed and ask your question? Yes."
+    },
+    {
+      "start": 2145.52,
+      "end": 2174.928,
+      "text": "Thank you very much. I think it was a very nice overview. I want to add a few things that were possibly skipped in the presentation. So the one thing is the preference optimization. They introduced a new technique, which is called group relative preference optimization, which in their paper mentioned has been helpful to substantially reduce the training costs."
+    },
+    {
+      "start": 2174.928,
+      "end": 2199.968,
+      "text": "So that's very important because in the second part of the post-processing, post-training, you have to do a lot of work in order to absorb the alternative answers and choose the one which is the best. You clearly explained that."
+    },
+    {
+      "start": 2199.968,
+      "end": 2223.728,
+      "text": "But it is a costly task because in other systems, for example, AlphaGo that you mentioned, they use Monte Carlo to search, which is a very, very expensive exponential. And so with GRPO, they don't have to do this exponential search. And in the paper, they say that they tried that and it was too expensive for them to use. So that's why they introduced this alternative approach."
+    },
+    {
+      "start": 2223.728,
+      "end": 2250.896,
+      "text": "And just to note, since we have people coming from Stanford, this is an idea which came from a group from Stanford, from Christopher Manning, which introduced the direct preference optimization technique, which is something that is mentioned also in the Deep Seek paper as an inspiration. And the second thing is that there is a lot of..."
+    },
+    {
+      "start": 2250.896,
+      "end": 2271.264,
+      "text": "rethinking in the process of generating the answer. So if you try R1, for example, you put the think tag and within the think tag and the close think tag, you see the process that the model undergoes to produce the answer."
+    },
+    {
+      "start": 2271.264,
+      "end": 2294.864,
+      "text": "So it produces the first answer, then says, ah, wait, there's something wrong here, I haven't considered, and tries another solution, and so on and so on. So it takes a significant amount, it spends a significant amount of time in trying to revise its first answer. That means that the answer takes much longer."
+    },
+    {
+      "start": 2294.992,
+      "end": 2321.216,
+      "text": "Somebody is unmuted. Can you mute yourself and not interfere? Thank you. Okay. So it takes much longer. But what is nice is that it shows the steps. For example, other models like OpenAI O3 or OneMini do something similar, but they don't show these steps. So it's a little bit kind of transparency."
+    },
+    {
+      "start": 2321.216,
+      "end": 2348.8,
+      "text": "to see how the model goes through the steps introducing the answer. Actually, it just provides an explanation of what it did, an explanation which is in language, so you can understand and figure out what it did. And the last thing... Let's give Johannes a chance to... Just to quickly speak, the last thing is that about the democratization of these models. In the paper, they say at the end..."
+    },
+    {
+      "start": 2348.8,
+      "end": 2377.168,
+      "text": "Deploying this model is very expensive. It's very hard to deploy. The model is very big. So it's 650 billion parameters, which means that you have to have a machine with at least 1.5 terabytes of memory in the GPU to be able to run. And that's an issue which still needs to be addressed. Thank you. Okay, Johannes, that was a rather lengthy question."
+    },
+    {
+      "start": 2377.424,
+      "end": 2399.392,
+      "text": "Yeah, I think it was a very good addition. I think it's very hard to cover all the technical details in this paper and in such a talk. So thank you very much for this addition. Maybe I want to go into the part of the thinking space. One of the things that we saw is that"
+    },
+    {
+      "start": 2399.392,
+      "end": 2427.296,
+      "text": "While DeepSeq was the first that at least opening eyes started to show us some sort of their thinking process. I don't believe that it's the actual thing that the model directly produces, but at least some sort. So while pushing towards openness, I think maybe also to add to the previous question of you, Professor Li, it kind of forces other players to also get a bit more open just through the..."
+    },
+    {
+      "start": 2427.296,
+      "end": 2453.344,
+      "text": "pure pressure of the market so in that sense openness is very good especially if you are a frontier level model and i would argue it only works if you have frontier level model because otherwise they would say well yeah you are open but you're better so but otherwise i have nothing to uh to add to your edition so thank you very much for that um"
+    },
+    {
+      "start": 2453.344,
+      "end": 2480.96,
+      "text": "other questions do we do we have any questions from the room here oh yes there are probably questions in the chat not yet not yet not yet okay well um i have a question for johannes um i i would be curious to know uh whether you've been following the innovations in architecture so the"
+    },
+    {
+      "start": 2480.96,
+      "end": 2506.16,
+      "text": "efforts that people are making to make hardware that perhaps might be more finely tuned to the kind of workloads that are involved than the GPUs, which were originally designed for graphics processing, and what kind of impact that might have on perhaps a further reduction in the costs of, particularly in the costs of deploying, which I think Guiseppe raised that."
+    },
+    {
+      "start": 2506.16,
+      "end": 2535.008,
+      "text": "that point quite well, that the cost of deploying is still quite high. What are your thoughts about that? That's a very good question. So as a disclaimer, I'm definitely not an expert on hardware, but a few things that are important to this question. On one hand, there's a difference between inference and training. There are a lot of new chips that optimize heavily on inference and make things just way faster."
+    },
+    {
+      "start": 2535.008,
+      "end": 2563.44,
+      "text": "On the other hand, if we just see the normal progress of hardware improvements, the probability that we have a GPT-4 level model on our phone at the end of the year is relatively high. Now, there will always be people that spend more money and more compute to get an even bigger model. But I would argue for the biggest disruption wave, the current level is already enough."
+    },
+    {
+      "start": 2563.44,
+      "end": 2590.576,
+      "text": "and of a GPT-4 level. And I think even if we do not have groundbreaking hardware improvements, just with the current improvements in both model size reduction, quantization, et cetera, and the existing improvements from companies like NVIDIA will already be enough to significantly bring down the cost of intelligence in such a sense."
+    },
+    {
+      "start": 2590.704,
+      "end": 2619.328,
+      "text": "Yeah, let's leave it at this. Okay. I would have a question. Go ahead. I'm just curious, Johannes, about one term which pops up in the media from time to time. It's not now directly related to DeepSeq, but to LLMs in general, and this is the phenomenon of model collapse. Is this something where DeepSeq also has a different"
+    },
+    {
+      "start": 2619.328,
+      "end": 2627.744,
+      "text": "We have different expectations, or is this also just this model collapse problem a fake news thing? Maybe you can say a few words."
+    },
+    {
+      "start": 2627.744,
+      "end": 2656.48,
+      "text": "To be honest, I did not have heard this term in the media. So maybe could you add to it? Maybe I heard it under different terms. The idea of model collapse is that the more and more data being automatically generated is used for training. This leads to a decrease of the quality of the model. That's what some people anticipate, but I'm not sure whether this is really a valid point."
+    },
+    {
+      "start": 2656.48,
+      "end": 2680.592,
+      "text": "interested in your personal data content so in in the sense of maybe let's make it even bigger question on the one hand the question of what happens when llms are only trained on self-generated or llm generated data is a very important question and the answers we don't know yet on the other hand this paradigm of reinforcement learning"
+    },
+    {
+      "start": 2680.592,
+      "end": 2701.6,
+      "text": "It gets rid of the necessity of having actual textual data as your brown tooth, quote, unquote, that you train on. But you basically do not care anymore on the text that it actually produces as long as the final output is true. So if we go more and more, and I would assume we do, into this direction of reinforcement learning."
+    },
+    {
+      "start": 2701.6,
+      "end": 2722.416,
+      "text": "then this threat of model collapse in the way you explained it is not actually a threat because you do not need to train on huge amounts of data to reproduce it step by step. Okay. I have another follow-up question for you, Johannes."
+    },
+    {
+      "start": 2722.416,
+      "end": 2749.888,
+      "text": "probably because of the curation of the training data in this, particularly in this reinforcement learning part of the process. DeepSeek has, you know, certain, shall I say, a Chinese accent, right? If you ask it about Taiwan, it has an answer that might not be the answer you would get from, you know, the same question asked to an American AI."
+    },
+    {
+      "start": 2749.888,
+      "end": 2774.528,
+      "text": "And there's been various efforts to kind of fine tune deep seek to try to change that and, you know, sort of create a different set of biases, we might say, without degrading the performance of the model. And I was wondering whether you've been following that work and what your thoughts might be about that. Yes."
+    },
+    {
+      "start": 2774.528,
+      "end": 2799.664,
+      "text": "idea let's also make it a bit broad i think something that is very beautifully said or named this whole area is the personality of a model claude makes actually a lot of research around this area of what is the personality of the model in post-training and i would say two things on the one hand there's a lot you can achieve in post-training but still if you put in"
+    },
+    {
+      "start": 2799.664,
+      "end": 2825.248,
+      "text": "data and tune your whole model in the pre-training phase in a way that you do not want, you will have an unbelievably hard time to actually change that in post-training. There are a few very nice papers around model poisoning, so a bit different perspective, but it has been shown that you can use a set of training data in pre-training"
+    },
+    {
+      "start": 2825.248,
+      "end": 2847.792,
+      "text": "where you can have sleeping agents that when adding a certain year in your prompt, they will produce malicious code. In comparison, if you use another year, they will not use malicious code. And it was impossible to untrain this in the post-training phase. So we are still in an area where, on the one hand, we..."
+    },
+    {
+      "start": 2847.792,
+      "end": 2874.592,
+      "text": "Because of lack of research, we actually do not have a one-on-one correlation between training data and outcome. So it is not like we say, let's use those four training data sets and then you will have a German or Austrian accents. And if we change that in post-training, it will be different. The only thing we know is that there are things that are unbelievably hard to out-train or unlearn in the post-training phase."
+    },
+    {
+      "start": 2874.592,
+      "end": 2892.192,
+      "text": "And for most of those things, I think not only because I'm totally aware of that I have my shortcomings in knowledge, but I don't think that it's only because I don't know something. There are a lot of things that we actually do not know yet because this space is just under-researched."
+    },
+    {
+      "start": 2892.192,
+      "end": 2918.64,
+      "text": "most of the research did not have access and that's also why deep seek is a huge thing for also the research organ they did not have access to a clear frontier big size model to actually try those things and most of the closed source labs are not really interested in getting different accents into the model as the primary objective function is i think capital and not really the other things"
+    },
+    {
+      "start": 2922.128,
+      "end": 2948.208,
+      "text": "Yeah, very good. Okay, Hannes, you have a question. Please go ahead. First of all, thanks for the excellent overview. And I'm proud to be of Technical University where we have students like you who also teach us what we have to teach. So this is really synonymous for where we are today. So congratulations."
+    },
+    {
+      "start": 2948.368,
+      "end": 2972.832,
+      "text": "My question is a little bit more general. We had this, let's say, basic breakthroughs with LLMs, with self-attention mechanisms and so on. And now you described some engineering progress and you said it's engineering which brought us to this next level."
+    },
+    {
+      "start": 2972.832,
+      "end": 2991.888,
+      "text": "in your mind or in your opinion, is the next steps we can expect? Is it a sequence of engineering achievements or do we see something different from a technical point of view, not from an economic or from a, let's say, political point of view?"
+    },
+    {
+      "start": 2992.24,
+      "end": 3020.128,
+      "text": "A great question. I think if I have the true answer to that, I will probably be a very rich person in five years. No, you first have to finish your master's. But the expectation would be just looking back that efficiency gain will not be the primary objective of the leading research organizations in America."
+    },
+    {
+      "start": 3020.128,
+      "end": 3048.352,
+      "text": "Because they played a game of being the first that achieves artificial general intelligence. What I would expect is that reinforcement learning will be expanded towards other domains that do not have this hard code verifiability. We have currently seen that they train on math and coding primarily because it's very easy to verify that. And I would expect that we expand towards other areas."
+    },
+    {
+      "start": 3048.352,
+      "end": 3074.864,
+      "text": "chemistry, physics, science, etc., where you also have maybe more difficult but still verifiable outcomes and see amazing results. So we're kind of in the first baby steps in reinforcement learning on large language models. And I would assume that this will get a lot of attention and generalizability across other domains. Thank you."
+    },
+    {
+      "start": 3074.928,
+      "end": 3104.56,
+      "text": "Okay, the last question goes to Luis Moniz-Pereira. Well, thank you. Thank you for your talk. My question is about forgetting. How can you, is it possible in the, I guess, post-training phase to say, forget these facts? And of course, also forget the consequences that those facts supported."
+    },
+    {
+      "start": 3104.56,
+      "end": 3130.064,
+      "text": "Can you tell us something about forgetting, please? That's a beautiful question. And in fact, a colleague of mine and I have talked about this under the lens of bias and we unlearn a bias. And there are some research papers, but most of the time they have a very narrow view on that and achieve OK results."
+    },
+    {
+      "start": 3130.064,
+      "end": 3151.456,
+      "text": "So if you now ask me, is it actually possible to completely forget, to untrain something, to unlearn, by the day, currently today, I would say we do not know of such a process. And from my personal understanding of the algorithms and how such a neural network learns."
+    },
+    {
+      "start": 3151.456,
+      "end": 3179.6,
+      "text": "I think as long as we do not have a better mechanistic understanding of where certain facts and concepts are stored, just trying to look at it from a black box perspective from the outside, it is pretty much impossible to really erase things that do not then pop up in certain scenarios. Thank you."
+    },
+    {
+      "start": 3179.6,
+      "end": 3206.928,
+      "text": "The dogstool audience, I think, is mostly new to the Digital Humanism Initiative and doesn't know about our tradition of emphasizing the human and closing these meetings with a piece of music. But before we do that, I really would like us to give you another round of applause for a really wonderful presentation. Thank you very much. Appreciate it. And with that, I will turn it over to Stefan."
+    },
+    {
+      "start": 3207.312,
+      "end": 3232.32,
+      "text": "All right. Thank you very much, Edward. Thank you very much, Johannes, for this excellent presentation. Thanks to the audience for the discussion and also for the comments in the chat. Very interesting remarks there. As Edward has mentioned, we usually end with a piece of music and having announcements for future activities. Unfortunately, Peter Gnes, who is..."
+    },
+    {
+      "start": 3232.32,
+      "end": 3260.32,
+      "text": "taking care of the music is not here with us today. So I hope the technical setup will nonetheless work. Let me just announce our next lecture. So this will take place on March 18. We will have Simon Parsons from Lincoln University. And the topic is AI for sustainable agriculture. So completely different thing. And I'm looking forward very much to that."
+    },
+    {
+      "start": 3260.32,
+      "end": 3284.976,
+      "text": "Before saying goodbye to all of you and to listen to the music, I just want to bring back Johannes once again, because what we usually do is that our speaker can select which piece of music he wants to hear at the end of this session. And maybe, Johannes, you can quickly announce the music, the tune, and why this was your choice."
+    },
+    {
+      "start": 3285.264,
+      "end": 3314.128,
+      "text": "Yes, so it's a lovely piece from Beethoven, a part of the first sentence of his variation piece in A flat major, which is a very important piece for me because it was the piece that I studied myself when I actually discovered computer programming back then, the time when these two passions of playing the piano and computer programming started to fight each other for the time."
+    },
+    {
+      "start": 3314.128,
+      "end": 3341.952,
+      "text": "And the second reason is that, as you will hear later, while I completely recognize the amazing improvements in general in artificial music generation, I still believe that specifically this section where melodic simplicity is embedded in poetic harmony sharpens or strengthens my probably a bit naive belief that truly humanly generated music will be the last."
+    },
+    {
+      "start": 3341.952,
+      "end": 3351.984,
+      "text": "to surrender to machines perfect closing words here and there's nothing to it from my side thank you and walter now it's your your task"
+    },
+    {
+      "start": 3478.416,
+      "end": 3481.936,
+      "text": "Okay. Bye-bye. Thank you very much. See you soon."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

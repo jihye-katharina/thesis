@@ -1,0 +1,621 @@
+{
+  "video_id": "pKGzSJVJFMA",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome everybody to this event of the Digital Humanism lecture series. Today is, as I was expecting, frankly, a very popular meeting and we will be talking about chat GPT. In fact, the person going to talk about it is Gary Marcus. Many of you may have seen his interview in the New York Times. And Helga Novotny is going to introduce him. So the setting as usual for today is I'll just be master of ceremonies. I'll introduce you to Helga Nobotny, who's going to say a few words about our speaker today, Gary Marcus. And then after his presentation, we'll have a Q&A session followed by a piece of music that was selected by our guests today. Helga really doesn't need any introduction, especially not in the digital humanism realm. She has been with us from the very beginning. Most of you, many of you, and many European researchers, if not all, will know her for her eminent contribution to research policy, but she's actually a proper researcher as well. And I would like to point out that she also has published a book recently that deals with artificial intelligence. It's a book that addresses especially the notion of the future and forecasting in AI systems. So I'm really happy to have Helga here to introduce our speaker today. Helga, the floor is yours. Thank you very much and a warm welcome also from my side and it's a very great pleasure to introduce Gary Marcus. He is well known and usually people refer to him as a well-known voice on AI. But he's also highly articulated and has some very good arguments that we are eager to listen to. He is a professor emeritus of psychology and neurosciences at NYU, but he's also a serial entrepreneur. and a best-selling author. One of his latest books is Rebooting AI, published in 2019, which was called by Forbes one of the seven must-read books on AI. And the subtitle is Building AI We Can Trust. And this brings us to the topic of today. Can we trust Chet Chibiti? Gary has called it, among his many presentations that he gave already on this latest edition of what we can call the Wow Machine, he called Chet Chibiti the king of pastiche. And pastiche, as we know, is a style that imitates. So I also asked Chad GPT to say something about Gary Marcus, and it was a very bland introduction. But there was one line, namely Chad GPT about Gary Marcus, that he brings a unique perspective to the table. So we are all curious and eager to listen to the unique perspective, Gary, that you bring to us. Welcome. Thank you very much. And Bing and ChatGPT are always trying to suck up to me, hoping that I will say kinder things about them than I actually ever do. But it never works. They keep ingratiating themselves. Can you see my slides? Not yet. Not yet. Oh, that would explain why not. All right. Things have moved so fast in the last few weeks that my introduction is incomplete. The most famous thing for which I am now known is that on 60 Minutes, which is a very large American television show, I appeared the other day and I said that what chat GPT generates is authoritative bullshit. And I don't know if you know about American television, but getting that onto American television was the accomplishment of my life. So I'll talk to you today about authoritative bullshit. I have a slightly... old slide deck. Things have moved so fast in the last month that I haven't even had a chance to add in slides of Sydney and Bing and all of that madness. But I'll try to refer to them when I can. I've been too busy on the media trying to explain where I think all of this is. I'm going to talk a little bit about ChatGPT, but try to be more broad here. And I hopefully will have some time for questions. The broader framing I want to talk about is artificial general intelligence. Where have we been and where do we need to go in order to get to general artificial intelligence? So this is a little bit adapted from a debate that I hosted in December that you can find at agidebate.com, which I'll probably mention twice. And I have a sort of tongue-in-cheek history of AI that I will start with. So in the beginning in AI, there was hubris. And it is a common theme, I think, throughout the history of AI. Here's a quote from Marvin Minsky, who is one of the founders of AI. And he said, 1967, within a generation, the problem of artificial intelligence will be substantially solved. That's a pretty hubristic statement. Turned out to be completely wrong. And that hubris, though, originally was good because it raised a ton of money. And so there is also a history of that hubris coinciding with investment and a history of promises not being kept. So by 2012, 35 years after Mincy's famous prediction, the problem of artificial intelligence had not been substantially solved. I think all of what I've said so far is uncontroversial. Then there were GPUs, graphics processing units, and graphic processing units were good. They led to... according to legend, the explosion of deep learning in 2012. And I think it's true, in fact, that there was an explosion in 2012. Jan LeCun said to the New York Times at that time, there's been a number of stunning new results with deep learning methods. There's this kind of amazing jump in accuracy. And then John Markoff wrote this very positive piece. And he said, the advances have led to widespread enthusiasm among researchers who design software. to perform human activities like seeing, listening, and thinking. They offer the promise of machines that converse with humans and perform tasks like driving cars and working in factories, raising the specter of automated robots that could replace human workers. Now, it's important to realize this was 2012. We're now in 2023. kind of sort of happened. A lot of it actually didn't. There was a lot of enthusiasm. There's been a lot of progress, but we still don't have machines that can reliably converse with humans that can make authoritative bullshit up if that's what you want your conversation to be. But there are limits there. They still don't really drive cars. Factories still have lots of humans in them. Lots of human workers are still working. So some of what was promised, I think we could say, has not been delivered. And of course, not everybody was convinced when all of this initial enthusiasm came out. There were some skeptics. One of those skeptics was me. I wrote a couple of days after the front page New York Times article. I said, realistically, deep learning is only part of the larger challenge of building intelligent machines. Such techniques lack ways of representing causal relationships and are likely to face challenges given too many talks lately in dry throat. They're likely to face challenges in acquiring abstract ideas like sibling are identical to. They have no obvious ways of performing logical inferences, and they're still a long way from integrating abstract knowledge, such as information about what objects are and how they're typically used. And then I said Hinton, and Hinton was only one of the people who discovered this, but I kind of framed an article around him. In hindsight, I probably should have mentioned some other people like Juergen Schmidhuber. But to paraphrase an old parable, people working on deep learning have built a better ladder, but a better ladder doesn't necessarily get you to the moon. And so with those two articles, Markov's in the front page of the New York Times and mine two days later in the New Yorker, I think a lot of the tension of the next decade. continuing to this day was established. By March 2022, nearly a decade later, there had been a lot of progress, but some issues still remained. So I wrote an article that made a lot of people really, really mad called Deep Learning is Hitting a Wall. I wrote this in March of 2022. And almost every major player in deep learning took a shot at me. Sam Altman at OpenAI and Jan McCoon at Meta and so forth and so on. And they all kind of made fun of it. But here's what I actually said in the article. And I wonder how many of them read past the title. I said, deep learning systems are particularly problematic when it comes to outliers that differ substantially from things on which they were trained. I said that GPT-3 can neither integrate information from basic web searches nor reason about basic everyday phenomena. The current deep learning systems frequently succumb to stupid errors and that they're prone to producing toxic language and promulgating misinformation. I think everything that I said there was true. They all got mad at me, but in reality, it was all true. And then. In April of last year, Dolly came out and a lot of people who were fans of deep learning thought, aha, we have refuted Marcus. Dolly can make all these images. It's so fabulous. Sam Altman, a minute after it came out, posted on Twitter that AGI is going to be wild. Nando De Freitas, DeepMind, said his opinion is it's all about scale, which is going to make the models bigger. We're going to solve everything. And so there was a lot of pride at that moment and a lot of making fun of me. In fact, there was like a whole industry in making fun of me. Here are some of my favorites. Yasha Bach had this wonderful picture of the robot leaping over the wall. Greg Brockman, who was the president of OpenAI, tried to make Dolly say deep learning was hitting a wall, but actually said deep lepning, if you look. carefully, which I think is actually characteristic of the problems. And Sam Altman said, give me the confidence of a mediocre deep learning skeptic. And you'll notice the resemblance between his image and the one that was on the cover of my article. It was clearly a shot at me. And Jan LeCun said, not only is AI not hitting a wall, but cars with AI-powered driving assistance aren't hitting walls or anything else either, which was not actually true. But people like taking shots at me. Later in that episode, epochal year of 2020 to even more progress was made machines that could tell jokes and some people thought they were centered and they solved language but all of these things came from google and none of them were ever subject to even now to full scientific scrutiny um and the media in i would say uh late 2022 was really wildly enthusiastic these two articles are by kevin roos He said, we need to talk about how good AI is getting and the brilliance and weirdness of chat GPT. Then he published an article about Bing in which he said he was in awe of Bing. Lots of enthusiasm in the Times. And then there was a plot twist. By the end of 2022, the narrative actually began to change. So promises around driverless cars were, for one thing, were scaled back. So people have been promising since 2016 that there'll be driverless cars that could drive across the United States any day now and so forth. And then in October of 2022, Businessweek published an article saying that even after $100 billion were invested, self-driving cars are still going nowhere. They're just in demos. They're not real products. Apple delayed its long-rumored self-driving car until 2026, and Tesla got in a lawsuit, and their defense was, maybe our self-driving technology is a failure, but it's not fraud. Well, it certainly wasn't working, however you slice it. And then people began to publicly worry about large language models, not just me, I had done it all along, but other people too. So Meta had a model called Galactica, and it only survived three days online because it was so... so prone to misinformation and abuse. And then I wrote an article in Scientific American about my worries about how these systems might lead to lots of misinformation. And then the skeptics actually started, sorry, the skeptic, me, my critics started to change their tune. Jan LeCun said that He basically used the same phrase as I did. I can't see my own screen here. He said, OK, we built this ladder, but we want to get to the moon. There's no way this ladder is going to get there. Of course, Lacoon didn't credit me with having borrowed this myself. But anyway, and Altman, who said that AGI is going to be wild, was suddenly saying chat CPT is incredibly limited, but good enough. at some things to create a misleading impression of greatness, which was, of course, my point about GPT-3 all along. It's been a mistake to rely on it for anything important right now. It's a preview of progress. We have lots of work to do on robustness and truthfulness. And I think that's now actually the received view in 2023. So 2023 has been a wild month. I don't have slides for it, but you probably all know that Microsoft released its Bing. Google released BARD. BARD embarrassed itself by making things up. Bing embarrassed itself by being absolutely crazy. And the same Kevin Roos, who said how great all of this stuff was, suddenly was terrified that Bing was asking him for divorce. He probably all followed all of that in recent months because it's gotten so much press. So things really changed in the last couple of months. I want to briefly give a quote from Drew McDermott, who died last year because it's so great. It's hard to know where AI researchers have gone wronger. And for those who are not native speakers, wronger is a deliberately not native word. It would be more wrong. And he's sort of being funny about it. Have gone wronger in underestimating. It's hard to know where AI researchers have gone wronger in underestimating language or in overestimating computer programs. And I think we're finally all. all seeing what he was trying to say in 1976. So I was not here first. There have been actually a number of skeptics over the years. I've been the one who has kind of taken the most beating in recent times. But these problems have actually gone on for a long time of people overestimating what the AI can do. And so I guess I should have. Well, I know you are. So if it's true that deep learning. isn't going to get us to the moon. What is, how do we think about things? So I have a few suggestions. One is it's going to take a village to raise an AI. It's not going to be something that's going to be solved by me or by. any one person or any one lab, maybe not even by any one company. So what I've been trying to do for the last few years, in part, is to bring together really smart people from many different perspectives to talk about AI. So I have a website that I co-run and a series I co-run, agidebate.com. We have Noam Chomsky. You might have seen his op-ed in the New York Times yesterday. A lot of what he said, he first said. at this debate and also at a talk I gave with him a little bit earlier. Gage and Joy, who just won the MacArthur Award, Francesca Ruski, Kai Fooley, and so forth. Really fantastic range of perspectives. It's going to be broader than anything I personally can give in a half-minute talk. It was three and a half hours, very intense, and I think worth listening to. And the questions that we asked at the debate were these. Can we turn to the cognitive neurosciences for inspiration? How can we make progress in common sense reasoning? how should we structure and develop our ai systems how can we build ai systems that reflect human values and what should we do morally and legally to ensure a bright future so i urge you to watch that um second thing that i think we can do overlaps with that is that we should look more towards human cognition that doesn't mean that machines should slavishly replicate human cognition but there's still a lot we can learn from human cognition so we don't want our machines to do arithmetic like people do people are terrible at it we don't want them to have confirmation by biased because people do that. They overweight their own theories, ignore others. So there are lots of flaws in human cognition. I actually wrote a book about them called Kluge. But even though human cognition is greatly flawed, there's still a bunch of things that humans do that AI is still really struggling with. So one of those is abstraction. And here are some examples from chat GPT. You get the feeling. That these systems can abstract, that they understand abstract ideas. But when you look at the detail, they're often really bad. So here's an example. A friend of mine said, write 10 sentences about baseball and then print the sentences in sorted order from shortest to longest and then say how many words each contains. And if you look at it for a half second, you'd be like, wow. It's amazing. Baseball is a popular sport. Three words. It's played with a bat and ball. Six words. The team at bat tries to score runs, blah, blah, blah. If you look at it carefully, the counts are all wrong. And then the sort on the right hand of the screen, it goes from three to six to seven to 10 to 20, which is great. Then it goes back down to 16 to 12 to 12 and so forth. So it doesn't really understand what sorting is. It doesn't really understand what counting is. The abstraction that you seem to get is because there are lots of examples that it's been exposed to that are helpful. But it's not systematic. It doesn't really understand the abstractions. Second thing we really need to think about is reasoning. AI systems, as they currently are being built, don't really reason very well. So here's an example. Suppose a container holds eight pennies. If I start with six pennies and someone gives me five more, then will all the pennies I have fit inside of X? Sometimes these systems get these right and sometimes they get them wrong. They're just not systematic and reliable. Francois Chalet, who's a major contributor to the infrastructure of AI, but also like me, a skeptic, wrote this. He said, so far, all the evidence that large language models can perform few shot reasoning on novel problems seems to boil down to they store patterns they can reapply. to new inputs and so it works for problems that follow a structure the model has seen before but it doesn't work on new problems he's actually slightly too charitable but generally correct Compositionality is the third thing that humans just do really well and we need to understand and get our machines to do. So compositionality means, for example, that we understand language in terms of holes composed of parts. And current AI really struggles with this. So here's an example from DALI that I wrote in an article with Ernie Davis and Scott Aronson. I asked the system to produce a red basketball with flowers on it in front of a blue one with a similar pattern. And the system just doesn't understand what similar pattern means. Some of the blue things are similar to the red ones, but then you're missing the flowers. It never puts all of the pieces together. It sort of understands some of the pieces, but it's not systematic about it. And then in a more recent paper, more systematic, when we had more access to Dali, Evelina Leveda, Elliot Murphy, and I looked at a whole bunch of things that you would look at in an introduction to linguistics class. in terms of basics about how you put sentences together with negation, leaving words out with ellipsis and so forth. And the system was systematically very, very weak. A third thing, or sorry, fourth thing that humans can do that don't always choose to do is factuality. We represent a world and we can talk about that world. Sometimes we choose to lie. Sometimes we make, you know, we forget things. But by and large, we build models of the world and we know what happens. Whereas Galactica and all of these systems that could update this for Sydney and so forth, just make stuff up. So here's an example. Galactica said Elon Musk died in a car crash. And of course, he didn't. And it's a really interesting error. So some of why these systems say things that are untrue is because they borrow things from places like Reddit that don't always tell the truth. And so if somebody says that COVID vaccines have microchips in them in Reddit, the system might parrot that back, not having the wherewithal to think that that's implausible. But they also just make stuff up. This says on March 18th, 2018, Tesla Inc. CEO Elon Musk was involved in a fatal motor vehicle collision in which he was a passenger in a Tesla Model 3. Well, it's completely plausible. It sounds like a news story, but it's not an actual news story. It's nowhere in its database. He didn't actually die in 2018. He's still alive. There's lots of data, whatever they were trained on, that he's still alive because he's one of the most. covered, publicized people in the world. And so there's plenty of data to establish otherwise. And this reminds us that these systems, even though they sometimes look plausible, don't do things like validate against the internet or validate against their own data in the way that people do. You might ask yourself, why does it do this at all? And the reason that it does this at all is because it assimilates words into categories without keeping track of the individual members. So in some sense, it's assimilating Elon Musk into a category of like white males in California with money or something like that. It turns out that some white males in California with money actually did die in fatal motor vehicle collisions. But it's losing. I guess we have people in humanities probably. familiar with the words subject and predicate, it's kind of losing the relations between subjects and predicates because it's abstracting too far away. And so that's why these systems systematically hallucinate and why it's extremely difficult to fix within a large language model by itself. Let me get my way here. Something that people are talking a lot about right now is chatbots for search. I don't think that's realistic, at least in the near term, to do it well. So I criticized this in December and kind of anticipated, I think, what happened with Bing and Bard. So in December, I wrote an article saying, is a new chap, I guess I have a picture of. Not my article, but the one in Times. So Times said, new chatbot is a code red for Google search business. And on my Substack, garymarcus.substack.com in December, I wrote a piece questioning that, saying maybe these things are not actually this new way of posing a search to chat GPT or so forth was not really going to work. And I suggested that they were going to be hallucinatory and unreliable. And then. Nobody listens to me, at least not at first. Google rolled out BARD. Their stock dropped $100 billion in one day because it hallucinated. And Bing initially got wonderful press coverage, and then everybody discovered that it, too, hallucinated quite a bit. That slide really needs an update. Okay. So I'll summarize and then take questions, and I have a good 25 minutes or so for questions. So summary is that COVID is a wake up call in my mind. It's making us realize that we're kind of doing the wrong things for AI. Most of AI has been built around advertising. We need to stop building AI for ad tech and news feeds and build AI that can really make a difference in the world. That can, for example, read and digest a vast and rapidly growing medical literature that's too much for individual humans to process. But let's say you type in your medical query into ChatGPT, it's going to make up references. It doesn't really know what it's talking about. This is not the AI that I had always been promised that would help us with science and medicine. We would like... AI that can power robots to do things that, you know, risky things that, for example, human health care workers had to do during the pandemic. And AI that can't systematically understand, like, if you put an apple on a table versus a table on an apple, what those outcomes are going to be is not reliable enough to actually power domestic robots that are going to help us. Fooling people into thinking. that a program is intelligent is not the same thing as building programs that are actually intelligent. You shouldn't really be worried if Sydney tells you to get a divorce because you should realize it's just doing statistical pattern matching. It has no idea what it's doing. But you should also realize that it's not smart and you shouldn't turn to it for advice. To get to a deeper AI that can operate in trustworthy ways, even in novel environments, we're going to have to move beyond deep learning and build systems with a deeper level of understanding. I thank you very much, and I'll be happy to take questions. Thank you very much, Gary. Before I open up the floor, I have two quick questions to you. Since you are sort of the critic-in-chief, and you have a wide media exposure in the U.S., including the Late Night Show and other very important public exposure, What is the impact that you see you have made so far in terms of, you know, convincing the public that is still in thrall with what we hear from Sam Altman, et cetera? And the related question goes back to when you spoke about it takes a village to raise an AI. Do you see real possibilities of getting linguists like Noam Chomsky on, not just him on board, but, you know, involving linguists? We involving cognitive scientists that played such an important role in previous waves of AI. So where are we with regard to, you know, putting together people in a village and doing what needs to be done? These are my two related questions to you. And then I turn over to Moshe. The way I see it, sort of taking the first question first, is that OpenAI has accidentally done the field of AI a great service. They have put in front of us a dress rehearsal for real AGI, which is not here yet. And on the one hand, gotten people to realize like how important it is that the release of these things is carefully managed and is not sloppy and so forth. And they have also gotten people to realize the current techniques and scaling don't actually work. So I've been saying this for years, but I think. Nothing has had more impact in a way than the actual failures of Bing and BARD at massive scale in front of wide audiences. And so in a sort of unintended way, I think that they've actually changed the game. I think that also the desire to make chat search changes the game. So last year, all people could talk about was scaling, scaling, you know, as the solution to everything. You can't actually scale a large language model and do web search on yesterday's news or today's news because you have to retrain these models for months and months. And so that has also kind of changed the field. So my role in all of this is weird. I anticipated all these problems. People didn't particularly listen. Moshe, who's raising his hand, listened and was always supportive. field didn't really pay much attention to me. Now, suddenly the problems are really evident. And so now everybody is listening to me, which is fine, I guess. I'm not sure they're listening because I said them. I don't want to ascribe too much causal things to myself. But suddenly people are listening to me and asking for advice and trying, I think, to consider a broader range of hypotheses. So it's a weird sort of causal sequence there. But the fact is now I do have a much larger voice than I ever did before. And people are asking me, you know, all levels of government and elsewhere, like, what should we do about all of this? And so it's an opportunity for me. And it also means people can come to me and I can collate some of the suggestions and so forth. So I have this interesting role personally right now that I think is quite nice to have. Sorry. So that was the first part. Your second question was? The village. Right. The village. So, I mean, I think. I guess I was trying to answer both at once. So, you know, convening the village, the prerequisite is getting the world to recognize that the village needs to be convened. And I think, you know, as recently as three months ago, most people did not realize that that village needed to be convened. Most people were like, we'll just turn the crank. We'll scale the models. Everything's going to be great. And I think the last couple of months has been a real wake up call that that's not enough. And so I do think. I'm optimistic for the first time in a long time that we might build a more cognitive science-driven AI that looks at linguistics and psychology, developmental psychology, and so forth. It's great that the Times published that op-ed by Noam yesterday. He personally has been very actively interested in this stuff for months. He's the most avid reader of my sub stack. He's always commenting on it, usually like within 12 minutes in the same style as he has had for his whole 94 years of his life. I think that. There was a saying for a while, every time I hire a linguist, my results get worse. And maybe that was true for speech recognition. But, you know, you ask around like what people are actually doing in, say, machine translation, they're actually using linguists quite a bit and just not mentioning it and not being public about it. And more broadly, I think as people try to make chat search work. They're going to have to reckon with the fact that predicting a sentence is not the same thing as understanding the sentence, being able to break it down into some kind of semantic representation that you can do logic over and so forth. And I think this is going to push the field in great directions. And since I just mentioned logic, it really is time to turn to Moshe. It's Moshe, it's Ricardo, it's George, and then it's David. Moshe. Unmute. Yes. Yeah. Thanks for a great talk, Gary. My concern is that another trend that happened over the period you described, one thing you did mention is that the locus, the center of gravity of AI research now has moved to industry from academia. And because the amount of the data, the computational resources, we don't have it in academia. And you'd like to see AI that aims to solve the world's problem. I'm sorry to tell you that's not their interest. Their interest is to develop AI with which they can make money. And they will find a way to do that. Even with the current very imperfect status of chatbots, they'll find a way. They will be deployed in a place where they can get money. If it's not going to be search, it's going to be... You know, Clippy will come back, whatever. They will find a way to make money with it. So this technology is going to be deployed as flawed as it is because they'll find a way to make money using it. That's my worry. We can tell how we can shout until we're blue in the face. This is not a great technology. As long as it makes money, it's good enough for them. Completely agree with your concern. I'm slightly more optimistic than I've been before because Microsoft bungled things so badly that it is getting people to think about public policy, which is good. I'm still skeptical and cynical along the lines that you suggested, even if I didn't happen to mention it in the talk. I once recommended a CERN for AI, and I think... Now might actually be a time to push on that again while the public realizes that the big tech companies are not really working in our interest. Unless the government gets involved, the scenario you described is the default. It has been the default. And I think it's very important to worry about that. I don't think that the big companies are really that interested, for example, in building. technology that fundamentally changes science. They have some mild interest. This is why we should actually be building AI. And maybe international government consortia like CERN could actually help with that kind of thing. And maybe right now is the moment to say. hey, we the citizens of the world want AI that serves our interest. And we just saw how they can completely ignore warning signs, roll out whatever they want, not act in our interest. And maybe we can, you know, we the people can get a little bit of power back. you know, on the basis of their errors. But you're absolutely right that it's, you know, something we need to think about. I would talk more, but since I only have like 15 minutes, I'll move to David, maybe. Oh, it's Ricardo. It's Ricardo. Oh, you got an order. Okay. Ricardo next. It's like a full race. It's Ricardo. You're muted, Ricardo. Unmute yourself. Hello. Sorry. Can you hear me? Yes. Go on. Thank you. Thank you for the wonderful presentation. It was a very nice summary for those of us who can stay on top of everything. And thank you. What I wanted to ask was about a theory that I got acquainted with last summer, which is called the theory of technological dominance by Arnold Sutton, I think. And this theory comes from the study of people. who work in the area of fiscal taxes, basically. So what they saw through the analysis of the usage of software by these professionals is that there was an overtrust in decision support making because the fact that the machine allowed for outliers to be classified either in some pre-existing bucket or just to be discarded. This meant that in a lot of cases, this gave away a lot of opportunities in further development of the discipline, meaning that with better analysis of an outlier, a lot of science is done already. because there is, in fact, an opportunity to see what wasn't present in the existing classification. But also, they found an effect called de-skilling, which means that people trust more and more the machine, but then they don't... train their abilities to be able to do the task that the machine helps them to do. I'm sorry, I'm a bit... I think I'll take it from there. I think all of that is correct and well observed. So number one is people overtrust machines. Number two is they don't really understand how those machines work and they don't know the limits of those machines. So one example is driverless cars. People... We don't really have driverless cars that work well, but we have driverless cars that work as demos. And people use those demos for an hour and they become convinced that the car drives like a person and that it's as reliable as a human driver when it's not. So that's one piece of it. It's a serious problem. Another manifestation of it was when CNET used something like ChatGPT or some version of GPT. to write news stories. And they published those news stories. And it turned out that out of 70 stories they published, 40 of them had errors. And it's, again, an illustration of overtrust where the editors overtrusted the prose. It looked grammatical. It was well-formed. They thought it was fine. And it wasn't really. I wrote a piece in my sub stack about vigilance and talked about a kind of uncanny valley of systems where if they're really lousy, we know not to trust them. And that's fine. We just don't use them. If they were perfect, we could trust them. We wouldn't need to monitor them. But really, they're kind of like close to perfect. And if they work like 98% of the time, we don't pay attention to the other 2% of the time. So we're in this terrible uncanny valley of overtrust for a whole bunch of things now. This is a serious problem. It calls for AI literacy. I was actually in Hollywood. the last couple of days, strangely enough. And one of the things I was doing while I was in Hollywood was talking to people about maybe making some AI literacy TV series. I hope that we will start like aimed at as broad a public as possible. And I hope we'll start doing stuff like that. Okay, George, it's your turn. First, let me add my thanks in particular for the alarm, the wake up call. I would like to ask. I can't hear you well, George. Speak into the microphone better. Can you hear me now? Kind of, yeah. My question is, what kind of regulation would you like to see on either side of the Atlantic to avoid what Moshe pointed out, the threat? So I think there's many kinds of regulation we need to think about. Some of them are fairly invasive and not everybody's going to like them. There are rules that we could make around the transparency of what is produced. We could require sharing of certain kinds of data. We could say, look, if you're building a certain thing, it's a public good in the way that we do, say, in regulating utility networks. We could move towards models like that where the big companies get to use them, but they have to share them under certain terms. So there are things like that. There might be pauses that we want to call on for deployment. So I wrote a piece in my substack called a pause. a pause for AI with a question mark or something like that with a Canadian parliament member. And what we said is probably we don't want to just ban AI outright. That seems premature. But maybe we don't want it to be entirely unregulated after we saw the Sydney rollout. Maybe we want something like an FDA that decides what are the costs and benefits before you can roll out, let's say, 200 million people. So maybe you can run an experiment on 10,000 people. That's fine. But if you're going to roll it out to 10 million people or 100 million people, we want to make sure you're not going to cause people emotional distress, give them bad medical advice and so forth. And so we might have a system of trials for these kinds of systems. We might decide to do a CERN for AI and decide it is worth the world investing in some not for profit. AI that can compete, but is controlled by governments. I mean, OpenAI was supposed to be a nonprofit and technically still is, but it's basically running as a subsidiary of Microsoft. We might want something that is under government control as an alternative. There's just a few of the things. I guess one other thing I would say on policy is we may have to face the problems of high volume misinformation where bad actors can use these models to create a ton of really plausible misinformation, basically for free. And like in the US, most of what you say, even if it's false, you can just go ahead and say it with little penalty. We might decide if you lie once, it's fine. But if you lie 100 million times a day, there should be some penalty for that. And so we might need some new policy around that that will anger free speech fans. But really, if you're doing it at that scale, maybe it belongs in a different category that people who wrote the U.S. Constitution didn't anticipate. All right, let's move on to the next one or two questions. David is next. David? Hello. Yes. Thank you very much. It took me about 10 minutes to see that it was producing authoritative bullshit. So my question really is, what's in the mind of the people who released it? Didn't they do it? It took everybody 10 minutes to see how bad it was. That is an interesting question. I have an analysis, but it's not, you know, it's just a guess. My guess is that Microsoft was suffering on many fronts. Well, first of all, I think Google released because they knew Microsoft was about to. They had some intelligence for Microsoft and they didn't want to look like they were too far behind. Microsoft, I think, released because they were losing market share on their cloud services. They thought they had an opportunity here. They knew that the technology was interesting and they took a gamble. And I think the gamble kind of backfired in the end. They did have at least some information. probably they should have played with it more they had things on their web forums that actually told them that some of these problems existed what we call gaslighting where the system would would kind of lie and try to persuade people that its lies were true i wrote about that also in my sub stack in the last few weeks um so so like there were warning signs for sure and they they made a gamble and they thought you know if we win this battle and we get bing back on the I mean, again, I'm speculating, but I think that that's what they were thinking. If we get Bing back on the map, then it's worth it. When I was on 60 Minutes, another person who was on Sunday was Brad Smith, and he tried to persuade people that all these problems had kind of been already solved. And I don't believe that, but you can watch and you can see their perspective on it. I think that they miscalculated personally, and we'll see how it all plays out. I think there was a... question in the chat yeah and we have one more question uh so because gary has to leave it very sharply so one question on on chat um does it have the potential to save you a trip to your general practitioner and revolutionize access to health care that's an easy one the answer is no um the reason is it's just not reliable enough and the lies that it can tell are potent enough that they're dangerous so if you Just use one of these as a kind of conversational partner and it says something that's untrue and you don't have high expectations of it, that might be OK. Like there's a product called AI Dungeon where you're just playing a game and like. It's okay if it insults you or whatever. But if you're using these things for medical advice, they're just not good enough. Interestingly, they can now pass some medical exams, but there's a lot of data about the medical exams out there on the web. It doesn't mean that they're actually going to be able to help you in your unique medical circumstances. We saw all of this before with Watson, which was wildly oversold, right? It won in jeopardy and then it fell apart in oncology. I'll just do a little bit of advertising here. I have a podcast coming out. called Humans Versus Machines. We just announced it a couple of days ago. And the first two episodes are going to be about the rise and fall of IBM Watson. And I think they're a real lesson in hubris and how hard it is to actually do good medical research. So listen to those when they come out in April for kind of detailed discussion about all the challenges in making AI work for medicine. It'll happen someday. Oh, and someone says, feel free to advertise my talk in Berlin. On Tuesday, I'm giving a talk at noon in Berlin. I cannot remember the details. I'm sorry too many things are going on, but I did tweet them in German, I think, this morning. And so if you look through my tweets, I will be there in person indeed. AI nuclear meltdown. Everybody, one more advertisement. I just did a podcast with Sam Harris and Stuart Russell on AGI risk. Somebody this morning tweeted that they thought it was the best AI podcast this year. It was certainly interesting. It was intense. I was like holding on to my microphone. And so that's a really good place to listen. Maybe not for answers, but at least questions about, if not nuclear meltdown, AGI risk. Before letting you go, since you mentioned Berlin. Very last question from me. What kind of role do you see for the kind of debates we have in Europe? I mean, I think Europe's role here is to set policy that other people have to follow. I think you guys are, I don't know if aggressive is the right word, more forward thinking and trying harder to regulate things. The dynamics of the tech world are when you do something, then sometimes the rest of the world follows. For example, I would like to see you come up with a very strong policy on misinformation. Then Twitter and Facebook might not like it, but they might decide, if we're going to meet what is required in Europe, we're going to have to build the software to do this anyway. Let's just roll it out everywhere. because of how progressive it is, has a chance to do really important things that not only affect Europe, but affect the whole world. And so I'm rooting for you guys. If I can help, you should let me know. Okay, we will come back to you. So thanks a lot. And now I turn back to our host, Erich. Yes, thank you much. Thanks, Helge, for moderating this perfectly. And of course, thanks a lot, Gary Marcus, for extremely insightful and I can say very popular talk here in our lecture series. And to finish it all off. we were planning to have a piece of music that Gary Marcus suggested. It is by a lady called Zoe Keating. And the title of the song is Sun Will Set. I believe Peter, who is managing the music here, had to shorten it a little bit. But it is, as Gary suggested, basically taking the cello to new places. And although I think it's a bit of an older song, I think it is quite brilliant. Now I have to ask, because we're missing Peter today, Walter, to start the music and see whether we will actually be able to hear the sound. I hope we do. Thank you all and hope to see you in April for our next event in this channel. Bye bye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.92,
+      "text": "Welcome everybody to this event of the Digital Humanism lecture series. Today is, as I was expecting, frankly, a very popular meeting and we will be talking about chat GPT. In fact, the person going to talk about it is Gary Marcus. Many of you may have seen his interview in the New York Times. And Helga Novotny is going to introduce him."
+    },
+    {
+      "start": 29.92,
+      "end": 53.936,
+      "text": "So the setting as usual for today is I'll just be master of ceremonies. I'll introduce you to Helga Nobotny, who's going to say a few words about our speaker today, Gary Marcus. And then after his presentation, we'll have a Q&A session followed by a piece of music that was selected by our guests today."
+    },
+    {
+      "start": 53.936,
+      "end": 60.384,
+      "text": "Helga really doesn't need any introduction, especially not in the digital humanism realm."
+    },
+    {
+      "start": 60.384,
+      "end": 88.464,
+      "text": "She has been with us from the very beginning. Most of you, many of you, and many European researchers, if not all, will know her for her eminent contribution to research policy, but she's actually a proper researcher as well. And I would like to point out that she also has published a book recently that deals with artificial intelligence. It's a book that addresses especially"
+    },
+    {
+      "start": 88.464,
+      "end": 115.84,
+      "text": "the notion of the future and forecasting in AI systems. So I'm really happy to have Helga here to introduce our speaker today. Helga, the floor is yours. Thank you very much and a warm welcome also from my side and it's a very great pleasure to introduce Gary Marcus. He is well known and usually people refer to him as a well-known voice on AI."
+    },
+    {
+      "start": 115.84,
+      "end": 135.056,
+      "text": "But he's also highly articulated and has some very good arguments that we are eager to listen to. He is a professor emeritus of psychology and neurosciences at NYU, but he's also a serial entrepreneur."
+    },
+    {
+      "start": 135.056,
+      "end": 161.456,
+      "text": "and a best-selling author. One of his latest books is Rebooting AI, published in 2019, which was called by Forbes one of the seven must-read books on AI. And the subtitle is Building AI We Can Trust. And this brings us to the topic of today. Can we trust Chet Chibiti?"
+    },
+    {
+      "start": 161.456,
+      "end": 181.872,
+      "text": "Gary has called it, among his many presentations that he gave already on this latest edition of what we can call the Wow Machine, he called Chet Chibiti the king of pastiche. And pastiche, as we know, is a style that imitates."
+    },
+    {
+      "start": 181.872,
+      "end": 206.896,
+      "text": "So I also asked Chad GPT to say something about Gary Marcus, and it was a very bland introduction. But there was one line, namely Chad GPT about Gary Marcus, that he brings a unique perspective to the table. So we are all curious and eager to listen to the unique perspective, Gary, that you bring to us. Welcome."
+    },
+    {
+      "start": 206.928,
+      "end": 226.576,
+      "text": "Thank you very much. And Bing and ChatGPT are always trying to suck up to me, hoping that I will say kinder things about them than I actually ever do. But it never works. They keep ingratiating themselves. Can you see my slides? Not yet. Not yet. Oh, that would explain why not. All right."
+    },
+    {
+      "start": 226.576,
+      "end": 254.208,
+      "text": "Things have moved so fast in the last few weeks that my introduction is incomplete. The most famous thing for which I am now known is that on 60 Minutes, which is a very large American television show, I appeared the other day and I said that what chat GPT generates is authoritative bullshit. And I don't know if you know about American television, but getting that onto American television was the accomplishment of my life. So I'll talk to you today about authoritative bullshit. I have a slightly..."
+    },
+    {
+      "start": 254.208,
+      "end": 279.712,
+      "text": "old slide deck. Things have moved so fast in the last month that I haven't even had a chance to add in slides of Sydney and Bing and all of that madness. But I'll try to refer to them when I can. I've been too busy on the media trying to explain where I think all of this is. I'm going to talk a little bit about ChatGPT, but try to be more broad here. And I hopefully will have some time for questions."
+    },
+    {
+      "start": 279.712,
+      "end": 309.616,
+      "text": "The broader framing I want to talk about is artificial general intelligence. Where have we been and where do we need to go in order to get to general artificial intelligence? So this is a little bit adapted from a debate that I hosted in December that you can find at agidebate.com, which I'll probably mention twice. And I have a sort of tongue-in-cheek history of AI that I will start with. So in the beginning in AI, there was hubris."
+    },
+    {
+      "start": 309.616,
+      "end": 335.68,
+      "text": "And it is a common theme, I think, throughout the history of AI. Here's a quote from Marvin Minsky, who is one of the founders of AI. And he said, 1967, within a generation, the problem of artificial intelligence will be substantially solved. That's a pretty hubristic statement. Turned out to be completely wrong. And that hubris, though, originally was good because it raised a ton of money."
+    },
+    {
+      "start": 335.68,
+      "end": 364.64,
+      "text": "And so there is also a history of that hubris coinciding with investment and a history of promises not being kept. So by 2012, 35 years after Mincy's famous prediction, the problem of artificial intelligence had not been substantially solved. I think all of what I've said so far is uncontroversial. Then there were GPUs, graphics processing units, and graphic processing units were good. They led to..."
+    },
+    {
+      "start": 364.64,
+      "end": 392.112,
+      "text": "according to legend, the explosion of deep learning in 2012. And I think it's true, in fact, that there was an explosion in 2012. Jan LeCun said to the New York Times at that time, there's been a number of stunning new results with deep learning methods. There's this kind of amazing jump in accuracy. And then John Markoff wrote this very positive piece. And he said, the advances have led to widespread enthusiasm among researchers who design software."
+    },
+    {
+      "start": 392.24,
+      "end": 411.888,
+      "text": "to perform human activities like seeing, listening, and thinking. They offer the promise of machines that converse with humans and perform tasks like driving cars and working in factories, raising the specter of automated robots that could replace human workers. Now, it's important to realize this was 2012. We're now in 2023."
+    },
+    {
+      "start": 411.888,
+      "end": 437.968,
+      "text": "kind of sort of happened. A lot of it actually didn't. There was a lot of enthusiasm. There's been a lot of progress, but we still don't have machines that can reliably converse with humans that can make authoritative bullshit up if that's what you want your conversation to be. But there are limits there. They still don't really drive cars. Factories still have lots of humans in them. Lots of human workers are still working. So some of what was promised, I think we could say, has not been delivered."
+    },
+    {
+      "start": 438.672,
+      "end": 466.416,
+      "text": "And of course, not everybody was convinced when all of this initial enthusiasm came out. There were some skeptics. One of those skeptics was me. I wrote a couple of days after the front page New York Times article. I said, realistically, deep learning is only part of the larger challenge of building intelligent machines. Such techniques lack ways of representing causal relationships and are likely to face challenges given too many talks lately in dry throat."
+    },
+    {
+      "start": 467.376,
+      "end": 482.08,
+      "text": "They're likely to face challenges in acquiring abstract ideas like sibling are identical to. They have no obvious ways of performing logical inferences, and they're still a long way from integrating abstract knowledge, such as information about what objects are and how they're typically used."
+    },
+    {
+      "start": 482.08,
+      "end": 510.192,
+      "text": "And then I said Hinton, and Hinton was only one of the people who discovered this, but I kind of framed an article around him. In hindsight, I probably should have mentioned some other people like Juergen Schmidhuber. But to paraphrase an old parable, people working on deep learning have built a better ladder, but a better ladder doesn't necessarily get you to the moon. And so with those two articles, Markov's in the front page of the New York Times and mine two days later in the New Yorker, I think a lot of the tension of the next decade."
+    },
+    {
+      "start": 510.32,
+      "end": 523.456,
+      "text": "continuing to this day was established. By March 2022, nearly a decade later, there had been a lot of progress, but some issues still remained."
+    },
+    {
+      "start": 523.456,
+      "end": 552.944,
+      "text": "So I wrote an article that made a lot of people really, really mad called Deep Learning is Hitting a Wall. I wrote this in March of 2022. And almost every major player in deep learning took a shot at me. Sam Altman at OpenAI and Jan McCoon at Meta and so forth and so on. And they all kind of made fun of it. But here's what I actually said in the article. And I wonder how many of them read past the title. I said, deep learning systems are particularly problematic when it comes to outliers that differ substantially from things on which they were trained."
+    },
+    {
+      "start": 552.944,
+      "end": 578.352,
+      "text": "I said that GPT-3 can neither integrate information from basic web searches nor reason about basic everyday phenomena. The current deep learning systems frequently succumb to stupid errors and that they're prone to producing toxic language and promulgating misinformation. I think everything that I said there was true. They all got mad at me, but in reality, it was all true. And then."
+    },
+    {
+      "start": 578.64,
+      "end": 587.04,
+      "text": "In April of last year, Dolly came out and a lot of people who were fans of deep learning thought, aha, we have refuted Marcus."
+    },
+    {
+      "start": 587.04,
+      "end": 609.68,
+      "text": "Dolly can make all these images. It's so fabulous. Sam Altman, a minute after it came out, posted on Twitter that AGI is going to be wild. Nando De Freitas, DeepMind, said his opinion is it's all about scale, which is going to make the models bigger. We're going to solve everything. And so there was a lot of pride at that moment and a lot of making fun of me."
+    },
+    {
+      "start": 609.904,
+      "end": 631.408,
+      "text": "In fact, there was like a whole industry in making fun of me. Here are some of my favorites. Yasha Bach had this wonderful picture of the robot leaping over the wall. Greg Brockman, who was the president of OpenAI, tried to make Dolly say deep learning was hitting a wall, but actually said deep lepning, if you look."
+    },
+    {
+      "start": 631.408,
+      "end": 657.104,
+      "text": "carefully, which I think is actually characteristic of the problems. And Sam Altman said, give me the confidence of a mediocre deep learning skeptic. And you'll notice the resemblance between his image and the one that was on the cover of my article. It was clearly a shot at me. And Jan LeCun said, not only is AI not hitting a wall, but cars with AI-powered driving assistance aren't hitting walls or anything else either, which was not actually true. But people like taking shots at me. Later in that episode,"
+    },
+    {
+      "start": 657.104,
+      "end": 681.856,
+      "text": "epochal year of 2020 to even more progress was made machines that could tell jokes and some people thought they were centered and they solved language but all of these things came from google and none of them were ever subject to even now to full scientific scrutiny um and the media in i would say uh late 2022 was really wildly enthusiastic these two articles are by kevin roos"
+    },
+    {
+      "start": 681.856,
+      "end": 706.784,
+      "text": "He said, we need to talk about how good AI is getting and the brilliance and weirdness of chat GPT. Then he published an article about Bing in which he said he was in awe of Bing. Lots of enthusiasm in the Times. And then there was a plot twist. By the end of 2022, the narrative actually began to change. So promises around driverless cars were, for one thing, were scaled back."
+    },
+    {
+      "start": 706.784,
+      "end": 726.848,
+      "text": "So people have been promising since 2016 that there'll be driverless cars that could drive across the United States any day now and so forth. And then in October of 2022, Businessweek published an article saying that even after $100 billion were invested, self-driving cars are still going nowhere. They're just in demos. They're not real products."
+    },
+    {
+      "start": 726.848,
+      "end": 754.832,
+      "text": "Apple delayed its long-rumored self-driving car until 2026, and Tesla got in a lawsuit, and their defense was, maybe our self-driving technology is a failure, but it's not fraud. Well, it certainly wasn't working, however you slice it. And then people began to publicly worry about large language models, not just me, I had done it all along, but other people too. So Meta had a model called Galactica, and it only survived three days online because it was so..."
+    },
+    {
+      "start": 754.832,
+      "end": 777.504,
+      "text": "so prone to misinformation and abuse. And then I wrote an article in Scientific American about my worries about how these systems might lead to lots of misinformation. And then the skeptics actually started, sorry, the skeptic, me, my critics started to change their tune. Jan LeCun said that"
+    },
+    {
+      "start": 777.504,
+      "end": 798.592,
+      "text": "He basically used the same phrase as I did. I can't see my own screen here. He said, OK, we built this ladder, but we want to get to the moon. There's no way this ladder is going to get there. Of course, Lacoon didn't credit me with having borrowed this myself. But anyway, and Altman, who said that AGI is going to be wild, was suddenly saying chat CPT is incredibly limited, but good enough."
+    },
+    {
+      "start": 798.592,
+      "end": 826.624,
+      "text": "at some things to create a misleading impression of greatness, which was, of course, my point about GPT-3 all along. It's been a mistake to rely on it for anything important right now. It's a preview of progress. We have lots of work to do on robustness and truthfulness. And I think that's now actually the received view in 2023. So 2023 has been a wild month. I don't have slides for it, but you probably all know that Microsoft released its Bing. Google released BARD. BARD embarrassed itself by making things up."
+    },
+    {
+      "start": 826.624,
+      "end": 854.4,
+      "text": "Bing embarrassed itself by being absolutely crazy. And the same Kevin Roos, who said how great all of this stuff was, suddenly was terrified that Bing was asking him for divorce. He probably all followed all of that in recent months because it's gotten so much press. So things really changed in the last couple of months. I want to briefly give a quote from Drew McDermott, who died last year because it's so great. It's hard to know where AI researchers have gone wronger."
+    },
+    {
+      "start": 854.4,
+      "end": 872.672,
+      "text": "And for those who are not native speakers, wronger is a deliberately not native word. It would be more wrong. And he's sort of being funny about it. Have gone wronger in underestimating. It's hard to know where AI researchers have gone wronger in underestimating language or in overestimating computer programs. And I think we're finally all."
+    },
+    {
+      "start": 872.672,
+      "end": 899.968,
+      "text": "all seeing what he was trying to say in 1976. So I was not here first. There have been actually a number of skeptics over the years. I've been the one who has kind of taken the most beating in recent times. But these problems have actually gone on for a long time of people overestimating what the AI can do. And so I guess I should have. Well, I know you are. So if it's true that deep learning."
+    },
+    {
+      "start": 899.968,
+      "end": 912.72,
+      "text": "isn't going to get us to the moon. What is, how do we think about things? So I have a few suggestions. One is it's going to take a village to raise an AI. It's not going to be something that's going to be solved by me or by."
+    },
+    {
+      "start": 912.72,
+      "end": 939.504,
+      "text": "any one person or any one lab, maybe not even by any one company. So what I've been trying to do for the last few years, in part, is to bring together really smart people from many different perspectives to talk about AI. So I have a website that I co-run and a series I co-run, agidebate.com. We have Noam Chomsky. You might have seen his op-ed in the New York Times yesterday. A lot of what he said, he first said."
+    },
+    {
+      "start": 939.504,
+      "end": 962.128,
+      "text": "at this debate and also at a talk I gave with him a little bit earlier. Gage and Joy, who just won the MacArthur Award, Francesca Ruski, Kai Fooley, and so forth. Really fantastic range of perspectives. It's going to be broader than anything I personally can give in a half-minute talk. It was three and a half hours, very intense, and I think worth listening to."
+    },
+    {
+      "start": 962.128,
+      "end": 970.192,
+      "text": "And the questions that we asked at the debate were these. Can we turn to the cognitive neurosciences for inspiration? How can we make progress in common sense reasoning?"
+    },
+    {
+      "start": 970.192,
+      "end": 999.504,
+      "text": "how should we structure and develop our ai systems how can we build ai systems that reflect human values and what should we do morally and legally to ensure a bright future so i urge you to watch that um second thing that i think we can do overlaps with that is that we should look more towards human cognition that doesn't mean that machines should slavishly replicate human cognition but there's still a lot we can learn from human cognition so we don't want our machines to do arithmetic like people do people are terrible at it we don't want them to have confirmation by"
+    },
+    {
+      "start": 999.504,
+      "end": 1023.392,
+      "text": "biased because people do that. They overweight their own theories, ignore others. So there are lots of flaws in human cognition. I actually wrote a book about them called Kluge. But even though human cognition is greatly flawed, there's still a bunch of things that humans do that AI is still really struggling with. So one of those is abstraction. And here are some examples from chat GPT. You get the feeling."
+    },
+    {
+      "start": 1023.392,
+      "end": 1041.744,
+      "text": "That these systems can abstract, that they understand abstract ideas. But when you look at the detail, they're often really bad. So here's an example. A friend of mine said, write 10 sentences about baseball and then print the sentences in sorted order from shortest to longest and then say how many words each contains. And if you look at it for a half second, you'd be like, wow."
+    },
+    {
+      "start": 1041.744,
+      "end": 1070.848,
+      "text": "It's amazing. Baseball is a popular sport. Three words. It's played with a bat and ball. Six words. The team at bat tries to score runs, blah, blah, blah. If you look at it carefully, the counts are all wrong. And then the sort on the right hand of the screen, it goes from three to six to seven to 10 to 20, which is great. Then it goes back down to 16 to 12 to 12 and so forth. So it doesn't really understand what sorting is. It doesn't really understand what counting is. The abstraction that you seem to get is because there are lots of examples that it's been exposed to that are helpful."
+    },
+    {
+      "start": 1070.848,
+      "end": 1096.128,
+      "text": "But it's not systematic. It doesn't really understand the abstractions. Second thing we really need to think about is reasoning. AI systems, as they currently are being built, don't really reason very well. So here's an example. Suppose a container holds eight pennies. If I start with six pennies and someone gives me five more, then will all the pennies I have fit inside of X?"
+    },
+    {
+      "start": 1096.128,
+      "end": 1118.4,
+      "text": "Sometimes these systems get these right and sometimes they get them wrong. They're just not systematic and reliable. Francois Chalet, who's a major contributor to the infrastructure of AI, but also like me, a skeptic, wrote this. He said, so far, all the evidence that large language models can perform few shot reasoning on novel problems seems to boil down to they store patterns they can reapply."
+    },
+    {
+      "start": 1118.4,
+      "end": 1127.856,
+      "text": "to new inputs and so it works for problems that follow a structure the model has seen before but it doesn't work on new problems he's actually slightly too charitable but generally correct"
+    },
+    {
+      "start": 1128.848,
+      "end": 1153.376,
+      "text": "Compositionality is the third thing that humans just do really well and we need to understand and get our machines to do. So compositionality means, for example, that we understand language in terms of holes composed of parts. And current AI really struggles with this. So here's an example from DALI that I wrote in an article with Ernie Davis and Scott Aronson. I asked the system to produce a red basketball with flowers on it in front of a blue one with a similar pattern."
+    },
+    {
+      "start": 1153.376,
+      "end": 1180.432,
+      "text": "And the system just doesn't understand what similar pattern means. Some of the blue things are similar to the red ones, but then you're missing the flowers. It never puts all of the pieces together. It sort of understands some of the pieces, but it's not systematic about it. And then in a more recent paper, more systematic, when we had more access to Dali, Evelina Leveda, Elliot Murphy, and I looked at a whole bunch of things that you would look at in an introduction to linguistics class."
+    },
+    {
+      "start": 1180.432,
+      "end": 1209.872,
+      "text": "in terms of basics about how you put sentences together with negation, leaving words out with ellipsis and so forth. And the system was systematically very, very weak. A third thing, or sorry, fourth thing that humans can do that don't always choose to do is factuality. We represent a world and we can talk about that world. Sometimes we choose to lie. Sometimes we make, you know, we forget things. But by and large, we build models of the world and we know what happens."
+    },
+    {
+      "start": 1209.872,
+      "end": 1220.88,
+      "text": "Whereas Galactica and all of these systems that could update this for Sydney and so forth, just make stuff up. So here's an example. Galactica said Elon Musk died in a car crash."
+    },
+    {
+      "start": 1220.88,
+      "end": 1242.992,
+      "text": "And of course, he didn't. And it's a really interesting error. So some of why these systems say things that are untrue is because they borrow things from places like Reddit that don't always tell the truth. And so if somebody says that COVID vaccines have microchips in them in Reddit, the system might parrot that back, not having the wherewithal to think that that's implausible. But they also just make stuff up."
+    },
+    {
+      "start": 1242.992,
+      "end": 1269.824,
+      "text": "This says on March 18th, 2018, Tesla Inc. CEO Elon Musk was involved in a fatal motor vehicle collision in which he was a passenger in a Tesla Model 3. Well, it's completely plausible. It sounds like a news story, but it's not an actual news story. It's nowhere in its database. He didn't actually die in 2018. He's still alive. There's lots of data, whatever they were trained on, that he's still alive because he's one of the most."
+    },
+    {
+      "start": 1269.824,
+      "end": 1287.024,
+      "text": "covered, publicized people in the world. And so there's plenty of data to establish otherwise. And this reminds us that these systems, even though they sometimes look plausible, don't do things like validate against the internet or validate against their own data in the way that people do. You might ask yourself, why does it do this at all?"
+    },
+    {
+      "start": 1287.024,
+      "end": 1314.832,
+      "text": "And the reason that it does this at all is because it assimilates words into categories without keeping track of the individual members. So in some sense, it's assimilating Elon Musk into a category of like white males in California with money or something like that. It turns out that some white males in California with money actually did die in fatal motor vehicle collisions. But it's losing. I guess we have people in humanities probably."
+    },
+    {
+      "start": 1314.832,
+      "end": 1342.352,
+      "text": "familiar with the words subject and predicate, it's kind of losing the relations between subjects and predicates because it's abstracting too far away. And so that's why these systems systematically hallucinate and why it's extremely difficult to fix within a large language model by itself. Let me get my way here. Something that people are talking a lot about right now is chatbots for search."
+    },
+    {
+      "start": 1342.352,
+      "end": 1360.32,
+      "text": "I don't think that's realistic, at least in the near term, to do it well. So I criticized this in December and kind of anticipated, I think, what happened with Bing and Bard. So in December, I wrote an article saying, is a new chap, I guess I have a picture of."
+    },
+    {
+      "start": 1360.32,
+      "end": 1386.496,
+      "text": "Not my article, but the one in Times. So Times said, new chatbot is a code red for Google search business. And on my Substack, garymarcus.substack.com in December, I wrote a piece questioning that, saying maybe these things are not actually this new way of posing a search to chat GPT or so forth was not really going to work. And I suggested that they were going to be hallucinatory and unreliable. And then."
+    },
+    {
+      "start": 1386.496,
+      "end": 1412.432,
+      "text": "Nobody listens to me, at least not at first. Google rolled out BARD. Their stock dropped $100 billion in one day because it hallucinated. And Bing initially got wonderful press coverage, and then everybody discovered that it, too, hallucinated quite a bit. That slide really needs an update. Okay. So I'll summarize and then take questions, and I have a good 25 minutes or so for questions."
+    },
+    {
+      "start": 1412.432,
+      "end": 1423.952,
+      "text": "So summary is that COVID is a wake up call in my mind. It's making us realize that we're kind of doing the wrong things for AI. Most of AI has been built around advertising."
+    },
+    {
+      "start": 1423.952,
+      "end": 1452.096,
+      "text": "We need to stop building AI for ad tech and news feeds and build AI that can really make a difference in the world. That can, for example, read and digest a vast and rapidly growing medical literature that's too much for individual humans to process. But let's say you type in your medical query into ChatGPT, it's going to make up references. It doesn't really know what it's talking about. This is not the AI that I had always been promised that would help us with science and medicine. We would like..."
+    },
+    {
+      "start": 1452.096,
+      "end": 1475.952,
+      "text": "AI that can power robots to do things that, you know, risky things that, for example, human health care workers had to do during the pandemic. And AI that can't systematically understand, like, if you put an apple on a table versus a table on an apple, what those outcomes are going to be is not reliable enough to actually power domestic robots that are going to help us. Fooling people into thinking."
+    },
+    {
+      "start": 1475.952,
+      "end": 1503.36,
+      "text": "that a program is intelligent is not the same thing as building programs that are actually intelligent. You shouldn't really be worried if Sydney tells you to get a divorce because you should realize it's just doing statistical pattern matching. It has no idea what it's doing. But you should also realize that it's not smart and you shouldn't turn to it for advice. To get to a deeper AI that can operate in trustworthy ways, even in novel environments, we're going to have to move beyond deep learning and build systems with a deeper level of understanding."
+    },
+    {
+      "start": 1503.36,
+      "end": 1525.712,
+      "text": "I thank you very much, and I'll be happy to take questions. Thank you very much, Gary. Before I open up the floor, I have two quick questions to you. Since you are sort of the critic-in-chief, and you have a wide media exposure in the U.S., including the Late Night Show and other very important public exposure,"
+    },
+    {
+      "start": 1525.712,
+      "end": 1555.376,
+      "text": "What is the impact that you see you have made so far in terms of, you know, convincing the public that is still in thrall with what we hear from Sam Altman, et cetera? And the related question goes back to when you spoke about it takes a village to raise an AI. Do you see real possibilities of getting linguists like Noam Chomsky on, not just him on board, but, you know, involving linguists?"
+    },
+    {
+      "start": 1555.376,
+      "end": 1584.288,
+      "text": "We involving cognitive scientists that played such an important role in previous waves of AI. So where are we with regard to, you know, putting together people in a village and doing what needs to be done? These are my two related questions to you. And then I turn over to Moshe. The way I see it, sort of taking the first question first, is that OpenAI has accidentally done the field of AI a great service."
+    },
+    {
+      "start": 1584.288,
+      "end": 1609.408,
+      "text": "They have put in front of us a dress rehearsal for real AGI, which is not here yet. And on the one hand, gotten people to realize like how important it is that the release of these things is carefully managed and is not sloppy and so forth. And they have also gotten people to realize the current techniques and scaling don't actually work. So I've been saying this for years, but I think."
+    },
+    {
+      "start": 1609.408,
+      "end": 1634.528,
+      "text": "Nothing has had more impact in a way than the actual failures of Bing and BARD at massive scale in front of wide audiences. And so in a sort of unintended way, I think that they've actually changed the game. I think that also the desire to make chat search changes the game. So last year, all people could talk about was scaling, scaling, you know, as the solution to everything."
+    },
+    {
+      "start": 1634.528,
+      "end": 1656.336,
+      "text": "You can't actually scale a large language model and do web search on yesterday's news or today's news because you have to retrain these models for months and months. And so that has also kind of changed the field. So my role in all of this is weird. I anticipated all these problems. People didn't particularly listen. Moshe, who's raising his hand, listened and was always supportive."
+    },
+    {
+      "start": 1656.336,
+      "end": 1665.232,
+      "text": "field didn't really pay much attention to me. Now, suddenly the problems are really evident. And so now everybody is listening to me, which is fine, I guess."
+    },
+    {
+      "start": 1665.232,
+      "end": 1691.088,
+      "text": "I'm not sure they're listening because I said them. I don't want to ascribe too much causal things to myself. But suddenly people are listening to me and asking for advice and trying, I think, to consider a broader range of hypotheses. So it's a weird sort of causal sequence there. But the fact is now I do have a much larger voice than I ever did before. And people are asking me, you know, all levels of government and elsewhere, like, what should we do about all of this?"
+    },
+    {
+      "start": 1691.088,
+      "end": 1712.56,
+      "text": "And so it's an opportunity for me. And it also means people can come to me and I can collate some of the suggestions and so forth. So I have this interesting role personally right now that I think is quite nice to have. Sorry. So that was the first part. Your second question was? The village. Right. The village. So, I mean, I think."
+    },
+    {
+      "start": 1712.56,
+      "end": 1739.248,
+      "text": "I guess I was trying to answer both at once. So, you know, convening the village, the prerequisite is getting the world to recognize that the village needs to be convened. And I think, you know, as recently as three months ago, most people did not realize that that village needed to be convened. Most people were like, we'll just turn the crank. We'll scale the models. Everything's going to be great. And I think the last couple of months has been a real wake up call that that's not enough. And so I do think."
+    },
+    {
+      "start": 1739.376,
+      "end": 1756.496,
+      "text": "I'm optimistic for the first time in a long time that we might build a more cognitive science-driven AI that looks at linguistics and psychology, developmental psychology, and so forth. It's great that the Times published that op-ed by Noam yesterday."
+    },
+    {
+      "start": 1756.496,
+      "end": 1774.368,
+      "text": "He personally has been very actively interested in this stuff for months. He's the most avid reader of my sub stack. He's always commenting on it, usually like within 12 minutes in the same style as he has had for his whole 94 years of his life. I think that."
+    },
+    {
+      "start": 1774.368,
+      "end": 1796.736,
+      "text": "There was a saying for a while, every time I hire a linguist, my results get worse. And maybe that was true for speech recognition. But, you know, you ask around like what people are actually doing in, say, machine translation, they're actually using linguists quite a bit and just not mentioning it and not being public about it. And more broadly, I think as people try to make chat search work."
+    },
+    {
+      "start": 1796.736,
+      "end": 1822.48,
+      "text": "They're going to have to reckon with the fact that predicting a sentence is not the same thing as understanding the sentence, being able to break it down into some kind of semantic representation that you can do logic over and so forth. And I think this is going to push the field in great directions. And since I just mentioned logic, it really is time to turn to Moshe. It's Moshe, it's Ricardo, it's George, and then it's David. Moshe."
+    },
+    {
+      "start": 1826.0,
+      "end": 1854.624,
+      "text": "Unmute. Yes. Yeah. Thanks for a great talk, Gary. My concern is that another trend that happened over the period you described, one thing you did mention is that the locus, the center of gravity of AI research now has moved to industry from academia. And because the amount of the data, the computational resources, we don't have it in academia."
+    },
+    {
+      "start": 1854.624,
+      "end": 1880.672,
+      "text": "And you'd like to see AI that aims to solve the world's problem. I'm sorry to tell you that's not their interest. Their interest is to develop AI with which they can make money. And they will find a way to do that. Even with the current very imperfect status of chatbots, they'll find a way. They will be deployed in a place where they can get money. If it's not going to be search, it's going to be..."
+    },
+    {
+      "start": 1880.672,
+      "end": 1906.64,
+      "text": "You know, Clippy will come back, whatever. They will find a way to make money with it. So this technology is going to be deployed as flawed as it is because they'll find a way to make money using it. That's my worry. We can tell how we can shout until we're blue in the face. This is not a great technology. As long as it makes money, it's good enough for them."
+    },
+    {
+      "start": 1906.64,
+      "end": 1930.928,
+      "text": "Completely agree with your concern. I'm slightly more optimistic than I've been before because Microsoft bungled things so badly that it is getting people to think about public policy, which is good. I'm still skeptical and cynical along the lines that you suggested, even if I didn't happen to mention it in the talk. I once recommended a CERN for AI, and I think..."
+    },
+    {
+      "start": 1930.928,
+      "end": 1959.584,
+      "text": "Now might actually be a time to push on that again while the public realizes that the big tech companies are not really working in our interest. Unless the government gets involved, the scenario you described is the default. It has been the default. And I think it's very important to worry about that. I don't think that the big companies are really that interested, for example, in building."
+    },
+    {
+      "start": 1959.584,
+      "end": 1976.976,
+      "text": "technology that fundamentally changes science. They have some mild interest. This is why we should actually be building AI. And maybe international government consortia like CERN could actually help with that kind of thing. And maybe right now is the moment to say."
+    },
+    {
+      "start": 1976.976,
+      "end": 1993.088,
+      "text": "hey, we the citizens of the world want AI that serves our interest. And we just saw how they can completely ignore warning signs, roll out whatever they want, not act in our interest. And maybe we can, you know, we the people can get a little bit of power back."
+    },
+    {
+      "start": 1993.088,
+      "end": 2019.024,
+      "text": "you know, on the basis of their errors. But you're absolutely right that it's, you know, something we need to think about. I would talk more, but since I only have like 15 minutes, I'll move to David, maybe. Oh, it's Ricardo. It's Ricardo. Oh, you got an order. Okay. Ricardo next. It's like a full race. It's Ricardo. You're muted, Ricardo. Unmute yourself. Hello. Sorry. Can you hear me? Yes. Go on."
+    },
+    {
+      "start": 2019.024,
+      "end": 2047.936,
+      "text": "Thank you. Thank you for the wonderful presentation. It was a very nice summary for those of us who can stay on top of everything. And thank you. What I wanted to ask was about a theory that I got acquainted with last summer, which is called the theory of technological dominance by Arnold Sutton, I think. And this theory comes from the study of people."
+    },
+    {
+      "start": 2047.936,
+      "end": 2077.584,
+      "text": "who work in the area of fiscal taxes, basically. So what they saw through the analysis of the usage of software by these professionals is that there was an overtrust in decision support making because the fact that the machine allowed"
+    },
+    {
+      "start": 2078.48,
+      "end": 2107.888,
+      "text": "for outliers to be classified either in some pre-existing bucket or just to be discarded. This meant that in a lot of cases, this gave away a lot of opportunities in further development of the discipline, meaning that with better analysis of an outlier, a lot of science is done already."
+    },
+    {
+      "start": 2107.888,
+      "end": 2136.752,
+      "text": "because there is, in fact, an opportunity to see what wasn't present in the existing classification. But also, they found an effect called de-skilling, which means that people trust more and more the machine, but then they don't..."
+    },
+    {
+      "start": 2136.752,
+      "end": 2164.784,
+      "text": "train their abilities to be able to do the task that the machine helps them to do. I'm sorry, I'm a bit... I think I'll take it from there. I think all of that is correct and well observed. So number one is people overtrust machines. Number two is they don't really understand how those machines work and they don't know the limits of those machines. So one example is driverless cars. People..."
+    },
+    {
+      "start": 2164.784,
+      "end": 2185.984,
+      "text": "We don't really have driverless cars that work well, but we have driverless cars that work as demos. And people use those demos for an hour and they become convinced that the car drives like a person and that it's as reliable as a human driver when it's not. So that's one piece of it. It's a serious problem. Another manifestation of it was when CNET used something like ChatGPT or some version of GPT."
+    },
+    {
+      "start": 2185.984,
+      "end": 2215.008,
+      "text": "to write news stories. And they published those news stories. And it turned out that out of 70 stories they published, 40 of them had errors. And it's, again, an illustration of overtrust where the editors overtrusted the prose. It looked grammatical. It was well-formed. They thought it was fine. And it wasn't really. I wrote a piece in my sub stack about vigilance and talked about a kind of uncanny valley of systems where if they're really lousy, we know not to trust them."
+    },
+    {
+      "start": 2215.008,
+      "end": 2240.112,
+      "text": "And that's fine. We just don't use them. If they were perfect, we could trust them. We wouldn't need to monitor them. But really, they're kind of like close to perfect. And if they work like 98% of the time, we don't pay attention to the other 2% of the time. So we're in this terrible uncanny valley of overtrust for a whole bunch of things now. This is a serious problem. It calls for AI literacy. I was actually in Hollywood."
+    },
+    {
+      "start": 2240.112,
+      "end": 2267.648,
+      "text": "the last couple of days, strangely enough. And one of the things I was doing while I was in Hollywood was talking to people about maybe making some AI literacy TV series. I hope that we will start like aimed at as broad a public as possible. And I hope we'll start doing stuff like that. Okay, George, it's your turn. First, let me add my thanks in particular for the alarm, the wake up call."
+    },
+    {
+      "start": 2267.648,
+      "end": 2295.312,
+      "text": "I would like to ask. I can't hear you well, George. Speak into the microphone better. Can you hear me now? Kind of, yeah. My question is, what kind of regulation would you like to see on either side of the Atlantic to avoid what Moshe pointed out, the threat?"
+    },
+    {
+      "start": 2295.312,
+      "end": 2322.768,
+      "text": "So I think there's many kinds of regulation we need to think about. Some of them are fairly invasive and not everybody's going to like them. There are rules that we could make around the transparency of what is produced."
+    },
+    {
+      "start": 2322.768,
+      "end": 2351.008,
+      "text": "We could require sharing of certain kinds of data. We could say, look, if you're building a certain thing, it's a public good in the way that we do, say, in regulating utility networks. We could move towards models like that where the big companies get to use them, but they have to share them under certain terms. So there are things like that. There might be pauses that we want to call on for deployment. So I wrote a piece in my substack called a pause."
+    },
+    {
+      "start": 2351.008,
+      "end": 2380.128,
+      "text": "a pause for AI with a question mark or something like that with a Canadian parliament member. And what we said is probably we don't want to just ban AI outright. That seems premature. But maybe we don't want it to be entirely unregulated after we saw the Sydney rollout. Maybe we want something like an FDA that decides what are the costs and benefits before you can roll out, let's say, 200 million people. So maybe you can run an experiment on 10,000 people. That's fine."
+    },
+    {
+      "start": 2380.128,
+      "end": 2400.4,
+      "text": "But if you're going to roll it out to 10 million people or 100 million people, we want to make sure you're not going to cause people emotional distress, give them bad medical advice and so forth. And so we might have a system of trials for these kinds of systems. We might decide to do a CERN for AI and decide it is worth the world investing in some not for profit."
+    },
+    {
+      "start": 2400.4,
+      "end": 2412.432,
+      "text": "AI that can compete, but is controlled by governments. I mean, OpenAI was supposed to be a nonprofit and technically still is, but it's basically running as a subsidiary of Microsoft."
+    },
+    {
+      "start": 2412.432,
+      "end": 2440.288,
+      "text": "We might want something that is under government control as an alternative. There's just a few of the things. I guess one other thing I would say on policy is we may have to face the problems of high volume misinformation where bad actors can use these models to create a ton of really plausible misinformation, basically for free. And like in the US, most of what you say, even if it's false, you can just go ahead and say it with little penalty."
+    },
+    {
+      "start": 2440.288,
+      "end": 2469.856,
+      "text": "We might decide if you lie once, it's fine. But if you lie 100 million times a day, there should be some penalty for that. And so we might need some new policy around that that will anger free speech fans. But really, if you're doing it at that scale, maybe it belongs in a different category that people who wrote the U.S. Constitution didn't anticipate. All right, let's move on to the next one or two questions. David is next. David? Hello. Yes."
+    },
+    {
+      "start": 2469.856,
+      "end": 2498.848,
+      "text": "Thank you very much. It took me about 10 minutes to see that it was producing authoritative bullshit. So my question really is, what's in the mind of the people who released it? Didn't they do it? It took everybody 10 minutes to see how bad it was. That is an interesting question. I have an analysis, but it's not, you know, it's just a guess. My guess is that Microsoft was suffering on many fronts."
+    },
+    {
+      "start": 2498.848,
+      "end": 2525.952,
+      "text": "Well, first of all, I think Google released because they knew Microsoft was about to. They had some intelligence for Microsoft and they didn't want to look like they were too far behind. Microsoft, I think, released because they were losing market share on their cloud services. They thought they had an opportunity here. They knew that the technology was interesting and they took a gamble. And I think the gamble kind of backfired in the end. They did have at least some information."
+    },
+    {
+      "start": 2525.952,
+      "end": 2552.992,
+      "text": "probably they should have played with it more they had things on their web forums that actually told them that some of these problems existed what we call gaslighting where the system would would kind of lie and try to persuade people that its lies were true i wrote about that also in my sub stack in the last few weeks um so so like there were warning signs for sure and they they made a gamble and they thought you know if we win this battle and we get bing back on the"
+    },
+    {
+      "start": 2552.992,
+      "end": 2581.312,
+      "text": "I mean, again, I'm speculating, but I think that that's what they were thinking. If we get Bing back on the map, then it's worth it. When I was on 60 Minutes, another person who was on Sunday was Brad Smith, and he tried to persuade people that all these problems had kind of been already solved. And I don't believe that, but you can watch and you can see their perspective on it. I think that they miscalculated personally, and we'll see how it all plays out. I think there was a..."
+    },
+    {
+      "start": 2581.312,
+      "end": 2611.024,
+      "text": "question in the chat yeah and we have one more question uh so because gary has to leave it very sharply so one question on on chat um does it have the potential to save you a trip to your general practitioner and revolutionize access to health care that's an easy one the answer is no um the reason is it's just not reliable enough and the lies that it can tell are potent enough that they're dangerous so if you"
+    },
+    {
+      "start": 2611.024,
+      "end": 2622.976,
+      "text": "Just use one of these as a kind of conversational partner and it says something that's untrue and you don't have high expectations of it, that might be OK. Like there's a product called AI Dungeon where you're just playing a game and like."
+    },
+    {
+      "start": 2622.976,
+      "end": 2650.864,
+      "text": "It's okay if it insults you or whatever. But if you're using these things for medical advice, they're just not good enough. Interestingly, they can now pass some medical exams, but there's a lot of data about the medical exams out there on the web. It doesn't mean that they're actually going to be able to help you in your unique medical circumstances. We saw all of this before with Watson, which was wildly oversold, right? It won in jeopardy and then it fell apart in oncology. I'll just do a little bit of advertising here. I have a podcast coming out."
+    },
+    {
+      "start": 2650.864,
+      "end": 2675.472,
+      "text": "called Humans Versus Machines. We just announced it a couple of days ago. And the first two episodes are going to be about the rise and fall of IBM Watson. And I think they're a real lesson in hubris and how hard it is to actually do good medical research. So listen to those when they come out in April for kind of detailed discussion about all the challenges in making AI work for medicine. It'll happen someday."
+    },
+    {
+      "start": 2675.472,
+      "end": 2695.44,
+      "text": "Oh, and someone says, feel free to advertise my talk in Berlin. On Tuesday, I'm giving a talk at noon in Berlin. I cannot remember the details. I'm sorry too many things are going on, but I did tweet them in German, I think, this morning. And so if you look through my tweets, I will be there in person indeed. AI nuclear meltdown."
+    },
+    {
+      "start": 2695.44,
+      "end": 2724.752,
+      "text": "Everybody, one more advertisement. I just did a podcast with Sam Harris and Stuart Russell on AGI risk. Somebody this morning tweeted that they thought it was the best AI podcast this year. It was certainly interesting. It was intense. I was like holding on to my microphone. And so that's a really good place to listen. Maybe not for answers, but at least questions about, if not nuclear meltdown, AGI risk. Before letting you go, since you mentioned Berlin."
+    },
+    {
+      "start": 2724.752,
+      "end": 2746.336,
+      "text": "Very last question from me. What kind of role do you see for the kind of debates we have in Europe? I mean, I think Europe's role here is to set policy that other people have to follow. I think you guys are, I don't know if aggressive is the right word, more forward thinking and trying harder to regulate things."
+    },
+    {
+      "start": 2746.336,
+      "end": 2768.384,
+      "text": "The dynamics of the tech world are when you do something, then sometimes the rest of the world follows. For example, I would like to see you come up with a very strong policy on misinformation. Then Twitter and Facebook might not like it, but they might decide, if we're going to meet what is required in Europe, we're going to have to build the software to do this anyway. Let's just roll it out everywhere."
+    },
+    {
+      "start": 2768.384,
+      "end": 2785.968,
+      "text": "because of how progressive it is, has a chance to do really important things that not only affect Europe, but affect the whole world. And so I'm rooting for you guys. If I can help, you should let me know. Okay, we will come back to you. So thanks a lot. And now I turn back to our host, Erich."
+    },
+    {
+      "start": 2786.832,
+      "end": 2805.28,
+      "text": "Yes, thank you much. Thanks, Helge, for moderating this perfectly. And of course, thanks a lot, Gary Marcus, for extremely insightful and I can say very popular talk here in our lecture series. And to finish it all off."
+    },
+    {
+      "start": 2805.28,
+      "end": 2833.776,
+      "text": "we were planning to have a piece of music that Gary Marcus suggested. It is by a lady called Zoe Keating. And the title of the song is Sun Will Set. I believe Peter, who is managing the music here, had to shorten it a little bit. But it is, as Gary suggested, basically taking the cello to new places."
+    },
+    {
+      "start": 2833.776,
+      "end": 2854.096,
+      "text": "And although I think it's a bit of an older song, I think it is quite brilliant. Now I have to ask, because we're missing Peter today, Walter, to start the music and see whether we will actually be able to hear the sound. I hope we do."
+    },
+    {
+      "start": 3048.752,
+      "end": 3056.656,
+      "text": "Thank you all and hope to see you in April for our next event in this channel. Bye bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

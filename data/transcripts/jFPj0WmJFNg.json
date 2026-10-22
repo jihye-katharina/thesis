@@ -1,0 +1,706 @@
+{
+  "video_id": "jFPj0WmJFNg",
+  "source": "whisper",
+  "language": "en",
+  "text": "So welcome to today's lectures. Hello, everybody. The lecture of today is done by Kay Fiat Butterfield. And we are back to AI. So it's on AI and trustworthiness. Kay, thanks for being with us today. Thank you. You will be introduced in more detail later on by Peter Knies, who will be the moderator of today. I just want to say that this is the last lecture before the summer break. So we will have a two or two and a half months summer break. And I really want now to thank all of you for having been with us and your ongoing participation, cooperation and joining our lectures. I think we had an interesting year with quite a lot of very good presentations and talks and discussions. The choreography is well known. We have a talk for 30 minutes. Then we have 30 minutes Q&A moderated by Peter. And then we have at the end, again, a piece of music proposed by Kay today. Welcome, a special welcome and thanks to Peter Knaes. I just want to say that he's the new UNESCO Digital Humanism Chair at TU Wien. So this is a professorship. And it's branded by the UNESCO. And Peter is taking care of the digital humanism affairs at TU Wien. Peter, I wish you all the best for this. And I thank you for being with us and moderating the session. The floor is yours. Thank you, Hannes. That was actually, this is not about me, but thanks anyway. Actually, I just want to introduce our speaker, Kay Firth-Butterfield. She's the executive director of the Center for Trustworthy Technology, which is a World Economic Forum Center for the Fourth Industrial Revolution. This is quite an impressive CV, so it will take some time until I'm through with this, but no. But just to give you a bit of context here and a bit of background, so Kay has advanced degrees in law and international relations, is an associate barrister. Master of the Inner Temple in London, which I think is a very interesting title, very much to learn about the law system in the UK with titles like this. A former judge, former and soon to be again professor at the University of Texas in Austin, co-founder of the Responsibility Eye Institute, vice chair of the IEEE Global Initiative for Ethical Considerations in Artificial Intelligent Autonomous Systems. Part of the group which met at the Asylum Art to create the Asylum Art AI Ethical Principles, which was a conference organized by the Future of Life Institute, which got a lot of attention recently for publishing this letter that urged for a pause in the development of AI and large language models. And many more activities. Very, very impressive. I really just want to mention the things I found on the Wikipedia page. I think this sounds very impressive, the awards that you've received. Kay is one of the most important women in robotics, one of the most brilliant women in AI ethics, one of the women most defining the 21st century AI movement, and one of the women changing the landscape of leadership. So with all these appraisals, Kay, the floor is yours. We're looking very much forward to your presentation. And I ask Marta to share the screen and take care of the presentation. Thank you very much. And I want to start actually by saying that despite those accolades, I actually am not an AI scientist. I am a lawyer by background as per the introduction. And I'm actually in London at the Inner Temple looking out on the Templar Church. which is the round church that features in the Da Vinci Code, if any of you ever saw the movie or read the book. And what does master of the inner temple mean? It actually just means that I'm a senior barrister and I have been asked to effectively be on the board of directors of the inner temple. And we train our lawyers, our barristers at. through our inns. So it's not as sort of interesting as it sounds, but we have been doing it since we actually took the land of the Knights Templar in about 1200. So it's an interesting legal history. that when the Knights Templar came back from the Crusades, the lawyers had moved in on their territory, and we've held it ever since. So with that, let's go on to artificial intelligence. And because I don't know how much my audience, obviously I know some of you, and I know that you know a lot about artificial intelligence, but because I don't know how much... you all know. Please bear with me if I'm teaching you all to suck eggs. But I really wanted to start with the EU and the OECD's definition of AI as a sort of level set here, and I will read it. A machine based system that is designed to operate with varying levels of autonomy and that can, for explicit and implicit objectives, generate outputs such as predictions, recommendations or decisions that influence physical or virtual environments. And as some of you all know, when the EU went back to revisit their forthcoming act, they. have recently adopted this as their definition, which gives them more focus perhaps on machine learning and deep learning. So if we could move to the next slide, please. I just want to talk a little bit today about the history of responsible AI, why I chose the music, whether it's an existential threat, something that interests me enormously whether we can create the policies today that actually will lead us to a better future with technology particularly AI tomorrow where I see some of the problems and some of the solutions and then I hope that we can have a discussion I know it's a question and answer but it'd be good to have a discussion about some of these things. I will say that you'll find that I have more questions than answers. But I hope that that in itself provokes questions and synapses go off in your minds. So very quickly, the history of the responsible AI movement, I would say it really started getting some mainstream attention when Stephen, well, firstly, when DeepMind sold itself to Google and said, only will we sell ourselves if we have an ethical advisory panel or board. And then probably when Stephen Hawking. Stuart Russell and Max Tegmark for the Future of Life Institute actually wrote in the Times of London that AI could be the best thing that happens to us, or it could be our very last thing that happens to us. And that was 2014. That was the 1st of May 2014. And I think that, you know, those of us who had been thinking about this before. probably welcomed the fact that there was some beginning of discussion. But at that stage, I think it's fair to say that we were probably talking more about existential risk. Nick Bostrom's book, Superintelligence, came out in the same year than the things that I want to talk about more today. And that is the direct current impact on our society and how we mitigate some of those risks. So in 2014, I also became the world's first chief ethics officer. And so I have been involved in this movement ever since, as you heard from the bio. So that's, of course, why I picked Bob Payton's singularity. He's a I live in Austin, Texas, and he's a local jazz musician and. When I first went when I went to a concert and found that his album was called Singularity, I sort of felt that this this this this obviously was meant for me. So that's why you'll be hearing it at the end of our conversation today. So perhaps we could go on to the next slide, please. I am involved in an inner. conversation that's being hosted by the Medici Archives, which addresses this question. So, you know, did the printing press democratize access to knowledge? And is generative AI our new democratization of knowledge? And if the printing press isn't the right analogy, what is the right analogy? And so if you think about it, the printing press was initially really only held in the hands of a few and enabled a few people to read and they would be the very wealthy. So I would suggest and posit that actually at the moment, we're probably at that. point with generative AI. But you might want to argue instead, well, there are 100 million people using chat GPT. And so actually, we are moving to democratization of AI, and much faster than perhaps we had democratization of knowledge in the past. And so one of the things we've been looking at with the Medici project is whether actually We're looking at a better analogy with cheap paper. So when cheap paper came along, you could actually start writing letters and corresponding and sharing knowledge. But again, you know, if we say that that was the Medici and you look at Medici archives, there are huge archives. still the power to write these letters and share knowledge is very much held in the hands of a few. And so when do we have democratization of knowledge? Is it when we start universal education? I hope it's something that we can discuss later because I fear when people say, and you hear it all the time, oh, generative AI is like the printing press, that we're actually making the wrong analogies here. And so perhaps we could go to the next page, next slide, and I can begin to form that out a bit. So I think there's a problem with data and generative AI. And I'll explain why. Obviously, you know, data has been called oil or air or water. And undoubtedly, the quality of your data affects the quality of your outcome. So what I want to concentrate on is those sources of data. So one of the things that worries me a great. deal at the moment is that our sources of data that have been used to train the generative AI models are severely skewed. And why do I say that? Well, if you look at the totality of documents on the internet, what we've got is that the bulk of those have been written by men. mainly by men living in the global north and mainly by white men. And so then if you think about, well, what's the quality of this data? The quality of this data, if we're going to say that generative AI is a democratizing tool, is actually going to affect our ability for AI to serve everybody. So let me just give you an example. Most of the data on the Internet around heart attacks is focused on white Americans who are over 55 and are male. So if we want to cure or help with heart attacks in Kenya. We may not be able to use that data if we want to do that with women who are Asian. We probably can't use that data. So the question then in my mind, and as I said, I have more questions than answers, is how do we truly democratize the data so that we can democratize AI? And so. One of the things that I hear, I see something in the chat saying it's even worse with GPT-4. I agree. So my question to this group is, how do we think about that? Is there actually any way that we can move the needle here? Because my great fear, and I'm British, so I have a sordid colonial history. is that actually what we are doing with generative AI is we're in danger of recolonizing the world from the north because we are going to be offering this source of data and this source of knowledge to the global south. That is, if they can access it which of course brings me to my next point with about the data and democratization of ai which is that actually we have still got three billion people who don't have access to the internet so when we blithely say all these millions of people have got are using chat gpt actually um that the the the number is de minimis compared to the access that the world has and that the world would be using. And so I think that that's a truly important point. Even in America, we just today had Biden announcing that he was going to make sure that the 7% of Americans who don't have access to fast internet will have access to fast internet. And that seems to me to be crucial. to our genuine or what I hope is our objective with artificial intelligence is that it benefits everybody globally and regardless of their strata in society. And so, you know, just as an anecdote, when I was talking to the pop star Will.i.am, he looks after a group of students in Los Angeles who are extremely disadvantaged and one of the first things he had to do when there was a pandemic was not only get them computers but also get them internet access and that's in LA. I think the other thing that we have to be very careful about is that I've been doing a lot of work with hospitals in the United States, and they are particularly worried that some of their ER doctors are actually using chat GPT to second guess or perhaps give them a diagnosis. And as Stuart Russell has been saying forcibly every time I've heard him speak recently, we need proper licensure for. some of these devices if they are going to be used in that capacity. And so I'll come back to product liability a little bit later. So that's my sort of diversion into data. But I think it's fundamental to how we think about AI and generative AI. So perhaps we could move to the next slide. AI to generative AI. I apologise about the formatting on this slide. What's the difference? What was responsible or trustworthy AI? And should the dire predictions for generative AI be a cause for concern? Well, I think the point I want to make for this particular speech is that actually the... The difference is that we now have a lot of people, despite what I've just said, using these tools. And I believe that there should be a different approach in terms of either regulation or using the current law that we have in regard to how the companies which produce generative AI are regulated. And I'll expand that in a moment. What was responsible or trustworthy AI? I think it still is. It's just the problems that we were facing when we were talking about responsible or trustworthy AI have actually been sort of put on steroids for a better analogy by the development of generative AI. What you might know or might not know is that we often talk about the gulf between East and West or China and the US. But actually, if you look at the 192 sets of principles, AI principles that are out there and you map them onto one another. what you find is that the whole world agrees that AI should be beneficial to humanity. AI should be safe and robust. AI should be fair and accountable and explainable and transparent. And so actually, when we're thinking about trustworthy AI as a global movement, We're all wanting the same things out of AI. And I'm prepared to posit that actually that's true of generative AI as well. The problems, of course, have always been around how do you make something explainable that is not explainable. And I'm sure knowing some of the people in the audience, I'm sure that we can have a discussion about that later. And then the dire predictions of generative AI, can they be a cause for concern? Well, I'm going to come clean here and say I am one of the people who signed that letter of the future of life calling for a moratorium. And you might say, well, why did you do that, Kay? Because clearly that's not going to happen. And as we have seen, it's not going to happen. I signed it, and I think many of the 26,000 of us who did, because I thought it was important that we have a true conversation about this. And we have it now, because if we don't have that conversation now, and we don't have regulators thinking about it. and lawyers thinking about it for that matter, then we don't have any opportunity of creating the right policies today to achieve the goals that we might want to see for us in 2040. And just on that point, my centre... is looking at the moment at creating the competition around asking various people around the world to give us their ideas of what they want the future to look like with AI. We're inundated with dystopian visions of what AI should look like. What we need to do is to come up with what we think using AI beneficially. might look like. And then we can start to try and interest governments into building that policy and ladder up to where we'd like to be. So all ideas about, you know, how, what we want our future to look like with AI, gratefully received. So perhaps we want to go to the next slide. Who benefits from generative AI? Well, you know, is it the big tech companies who create it. You may or may not know that 80% of the world doesn't even have the compute power, let alone the GPUs to actually create LLMs. And, you know, or can we leapfrog in some way using generative AI in the global south? I think that this is a really important question that we have to ask. ourselves, especially when there is, when the big tech companies have been approaching so many legislators around the world to forward their own idea of what regulations should look like. So let's go to the next slide. So Eric Schmidt of Google has argued that actually, you know, the obligation, the best people to regulate AI is the companies because the companies understand artificial intelligence and governments don't. So I wonder for myself, and I'd be interested to hear your views in a moment, about whether that's actually a myth. Do governments actually have to understand something in order to regulate it? And if we look back in history, I don't think governments have ever understood something before they regulated. So for example, let's take energy, for example. Did the energy companies say the same thing? Government, you can't regulate electricity because you don't actually understand how it works. You can't regulate agricultural machinery or cars. How many of us know how our car works? And yet we do. And we do because governments, even if our senators in America, and I live in America, even if our senators and congressmen don't know how a car works or how AI works, that doesn't mean to say that they can't bring in the right staff and experts to make good legislation. That's a personal perspective, and I'm keen to hear yours. I think it's really hard to think of another industry where... Banking, for example, or medical devices. So I think there is a question about whether whether we should have a regulator that just looks at artificial intelligence or in the same way as we have regulators for banking and regulators for drug discovery, etc. So, you know, my my point is. Can we create responsible generative AI? I think we can, but we need some mechanisms in place. And so I want to go to the next slide because I've got some ideas on that to share with you. Again, it seems to have formatted my slide badly, but I just want to quickly zip through some of the regulation. that's out there. Obviously, the EU AI Act didn't have anything about generative AI in it until recently. And that's because it's trying to legislate as things change. So I'm not going to bore you with a great detail of the EU AI Act, because I'm assuming that most of you know it and know it well. So just going to move to the USA. because I think that the USA is interesting in that there is at the moment little going on in terms of federal regulation, but there's quite a lot going on in terms of regulation from states. And actually, I would say that if you want to know what the United States is doing, you're better to look at the governor's website and look at the states. than at the federal picture. And so, of course, one of these things is the New York law around hiring and using AI in hiring. And I also just want to call out, if we're thinking about how to get companies to actually... step up and take responsibility, NIST has come up in the USA with a really good tool to help them. And I haven't put them down here, but one of the things that we do think about a lot is, well, what would agile governance look like? So not regulation, but how do you bring in governance that helps? without the time lag of regulation. And so in Singapore, what they've been doing is they haven't been regulating, but they've created a tool called AI Verify, which they have required companies using AI in Singapore to train on. and use when they're using AI tools. So that's a really interesting agile governance mechanism. And I recommend that you have a look at it if you haven't come across it. And so Singapore. If we then move to India, until just recently, India hasn't been thinking about regulation of AI. But that's changing as well. And I think India is a really interesting case study for the world, really, because India has two billion people in it, 27 different languages and not good representation, better than some, but not good representation in the current large language models. China, as we know, has done quite a bit of work in this area, and we can talk about that if it's of interest later, because I know that I'm coming up on my time. I want to just call out the UK. simply because, again, you know, the UK produced white paper about a week before the letter came out. And it was very much hands off. It was very much let's leave it to the existing regulators to work out how to regulate AI in their particular section. And again, that might be really interesting as an agile governance tool. It means you don't have to wait for legislation. You don't have to set up new mechanisms and new bodies. And if we think that we need to do something now, then that might actually be a great way of moving forwards. And if you look at that Online Harms Act, that's been... in the works for a long time and it keeps getting pushed back and not passed. But now, of course, the UK seems to have woken up to the fact that this might be a bit more serious. And so Richie Sunak has suggested this big summit, which is likely to happen in October here in the UK, bringing the world's leaders together to actually talk about generative AI. So let's now look at what's in place. Next slide, please. So there's a whole lot of stuff in place already. And I know it could be argued that we don't need regulation because we've already got a lot of law that covers a lot of the harms that could be created by artificial intelligence. And so I just want to raise that wonderful case where the lawyer in America asked ChatGPT to write its brief. And then it submitted the brief to the court without checking. And of course, the court found that the cases cited in it, I think there were six or seven, were all made up. by ChatGPT. And so clearly, in my view, the lawyer was negligent for not checking his work. But I think the question really that we have to think about here is, is there also any liability or should there also be any liability on the company that produced a machine, despite the disclaimers, that gave that bad advice? Because actually, they're the only people who can put it right. So the lawyer could have put it right by checking. But if this was advice or something that had been given to somebody without the expertise to check, then that might be much more serious. Likewise, if it was medical advice that was taken, that might be much more serious. the consumers can't actually put it right. So I'd love to talk to you about that in a moment as well as a theory. But going back to agile governance, of course, what's happened now is that a decision out of a Texas court says now that if you use AI to help with your pleadings, you have to say, you have to declare that to the court. So I like that. It's a very simple solution to what could have become a much bigger problem. I know that I've only got seven minutes left, but I do just want to talk about IP and copyright and generative AI, because it has been thought that up to up to the Supreme Court's decision just recently, I think two or three weeks ago. that AI creating images, for example, would be covered by something that we lawyers call fair use. But the Warhol case in the Supreme Court seems to have suggested that that might not be the case, at least in the US. Briefly, the case was brought by a photographer who had taken a photograph of Prince. She had licensed that photograph to Andy Warhol to create one painting. He actually went ahead and I think created 26 paintings. The original painting that Andy Warhol created was on the front cover of Harper's Bazaar, Vanity Fair, one of those. And when it came to the 25th anniversary of Prince's death, they wanted the same magazine, went to the Warhol Foundation and said, can we have a new Andy Warhol painting to put on the front cover of our magazine? And the original photographer. brought this case to the Supreme Court eventually and said, I lost money because of this. Because Andy Warhol did more things with my photograph than I ever licensed him to do. And the court accepted that. And so the question is now, obviously, when we're thinking about generative AI. If the original artist is losing money, then would that fall into the same bucket as this Warhol case? And as you probably know, there are a number of big class action against some of these image generators in the United States. And also Getty Images is suing them in the UK. So I just want to very briefly talk about regulators applying existing laws and really sort of talk about the EEOC, that's the Equal Employment Opportunities Commission in the United States, where they have really grasped the nettle and said... created a lot of documentation to help us as the consumers actually understand where AI is being used in hiring and might be disadvantaging us in hiring. And they are now looking at suing people, companies who are using AI in hiring. where it unfairly discriminates. And they're using the Civil Rights Act of 1965 to do that. And so I think that it is one of a number of measures that we're seeing being used by regulators to perhaps make up for the gap. But what I wanted to do by just bringing you those two vignettes was to help you think. that there may be existing law that covers a lot of this. And we shouldn't just sort of blindly say, well, we need regulation to cover AI. Next slide, please. So we've talked about whether it's an existential threat. I would love to hear from you. Obviously, you know, people like Stuart Russell, who I respect a lot. worry about it being an existential threat. And so who am I to say otherwise? But I tend to worry about actually the existential threat that I see is what the capacity of AI to undermine our societies, undermine our democracies. And those are the things that I think we need to be worrying about today and leaving clever folks like Stuart to work out what happens along the way. um in the future and one of the things that a lot of people have suggested is do we have a nuclear type regulatory body um i'm skeptical about whether that would work um i think that the nuclear works because it's countries but this is not just in the hands of countries and i'd be very interested to hear your view I do think that something like product liability, which I've already talked about, might be a way forward. And there does seem to be a mishmash of things that we can do. And the last thing is insurance. I was talking just to a startup not long ago who is bringing together a lot of insurance companies to look at how do we insure against some of these risks. The next slide, please. I just want to close out with a number of thoughts. One is if we could get startups and more importantly, VCs to impose some form of responsible behavior within our startups, then I think we would see the ecosystem move. On global convenings, I talked about Richie Sunak. On employment, I think it's something we really need to be thinking about because, so I was recently in Singapore and talking to one of the big companies there, they said that they had laid off 5,000 people, but they had managed to retrain them within their company. But now they were looking at laying off another 8,000 people because of generative AI. And they had no places that they could retrain them into. That seems to me to be a major problem. And whilst we all talk about the fact that AI will generate more jobs than we lose, there is that piece in the middle. that time in the middle that I think is very crucial for our societies, especially with some of the problems with democracy, undermining democracy that we're seeing. And finally, I just wanted to say that I'm always looking for great examples of where good, responsible practice in AI actually turns a company a profit, because I think that's the way that we'll get people to actually listen to us. So thank you for listening to me. And I'd love to listen to you now. Thank you very much, Kate. We have time for questions. And first question is going to be asked by Moshe. Please, Moshe, go ahead. Thank you for this review of the law and generative AI. But I wonder when we talk about the law, we're not aiming too low. What I mean by that is you look at our whole. Look at the United States. Open the Constitution. Look for the word corporation. It's not there. And yet you have today Apple, which is like a $3 trillion corporation. So it seems to me that something bigger is amiss here. And we are going down to the leaves to discuss, you know, should we regulate this? Should we regulate that? So looking at the bigger picture, which is what should be the role of... of cooperation in our life especially now you look at big tech it's 25 percent of the standard and poor 500 you know open the paper every day this is the day the agenda of today is determined essentially by putin she and big tech yeah um i of course i of course i agree with you and um But I think our problem is how do we tackle it? Because, you know, if you have a lot of money, you have a lot of influence in government. You can pay for a lot of lobbyists. You can go on tours of the world's governments with your suggested regulation and say, accept that this is how you should regulate. I think you should regulate. I don't like the regulation that you're trying to do over here. And I can't think of a democratic government in the world that has an appetite to break up big tech, for example, or bring measures that you, the sort of measures that I think you're thinking of. And why? Well, when I talk to governments, everybody's frightened of missing out. So they're frightened of regulating too much, not so much in Europe, but everywhere else. They're frightened of regulating too much or they're frightened of missing the AI boat and the economic growth that the AI boat will bring to them. Sadly, it's an extremely nuanced continuum. And whenever I talk to governments about governance, they will always, most of them will also talk about, well, we desperately need the economic improvements to our country. I mean, we had this fight 100 years ago. And at the time, the government understood that the future of democracy in the state, that we cannot have... Democracy breaks down if you have players that are just too powerful. And this was a big, you know, this was a big fight. I mean, this started 19th century, big cooperation. It's, as we said, deja vu all over again. But now we're afraid of fighting the fight. I wish I had some motion. I'm taking time before. A lot of people are raising their hand, but to reply to one thing or come back to one thing that you mentioned, which I liked a lot, was that can you regulate the product if you don't understand the product? The government should not regulate because they don't understand. I would argue that also the companies, at least those people that lobby for these kind of things, also don't understand the product, right? So they're claiming they understand things better, but they actually don't do much better. And also, I would argue that... the product they're selling is not necessarily AI. They're using AI to sell something else, like the idea of AI. But, you know, they're mostly an advertising business and these kind of things. And that is a product that is actually understood quite well. But I think if there's anything you regulate, then it would be that. And I think that argument is an interesting one, but it's not applying here, really. Yeah, and I just wanted to sort of say a couple of more things around that. One of our problems is that we have never, and Asa Raskin and Tristan Harris make this point really carefully and well, we haven't ever truly sorted out our first encounter with AI. i.e. the social media problems and the democracy problems that we've got. And now, without having sorted out that, we're now in the second encounter with AI. And we have to have a change of government will in order to actually... deal with this, let alone this. And then, you know, if we're thinking about this and you look at the use that the parties in America have already made of deep fakes, that makes me think that perhaps we're not going to see any developments on that. Just in case you don't know, the Republican Party created a deep fake response to Biden saying that he would run again. And just recently, Ron DeSantis also used a deep fake. So it does seem that rather than regulating, some of our politicians are likely to just embrace the technology. Okay, Hannes, then I'm going to bring in Giuseppe's comment and then Erich. Thanks, first of all, for your excellent presentation and bringing those different pieces together. And I would like to respond to your presentation and also to Moshe's request, because I think it's the basis of our activity. How can we organize a democratic decision which is somehow fighting against this lobbyism? Who are the key stakeholders? Because you write that this describes the lobbyists who can interfere with this, let's say, democratic process where they directly go to governments. And I see very big similarity to this ecological movement, to the climate problem, where we also have, let's say, the majority of the world is quite aware of what is happening, but we are confronted with a democratic process which is too slow to answer this question. So the question from my side is, would it make sense to have a worldwide... meeting or something where we especially also invite NGOs to discuss on that issue, that we have some basic movements where really we can answer such a big lobbyism movement. So I think this is the basic of, I think we agree on the problem. We see that it has a threat to democracy. I also do not agree with these existential threats, but there are other issues which are important we should answer. But this is the basic question, how to answer and how to organize a political process which is really powerful enough. So this is not the question. It's more a comment. It's more, let's say, showing where we are at the moment. And it's a political action needed. Let me just bring in Giuseppe's comment because it's kind of along those lines, right? So he posted international organizations are very weak because they're blocked by UNAN. contrasting interest. The only alternative to cooperation power is large user cooperatives joined across nations. So maybe that's as an add-on to also what Hannes just said. So cooperatives as an alternative. I can comment on this. Oh, yeah. I can comment on this, if you like. Yes, please. This idea that we have... corporation which was brought in by Moshe Vardy is that they became so big and they are so powerful that they are more powerful than governments, right? So what do we have in the past? We've seen alternative to corporations. We have been people grouping into cooperatives where cooperatives work together and the users themselves own and share. the activities and the outcomes of the cooperative, that they own their own results and they work for the benefit of the people, not for the benefit of the shareholders who put the capital in the corporations. This happened in the court in the 19th century and so we could revise this idea and so we have digital cooperatives where we have millions of people that join together and say well we own the data so we just share. what we want to do with the data rather than give it to corporations that use it for their own sake and exploit the data and exploit anything that we can do with the data. For example, we can build that with models and so on. And benefits, the outcome of those activities are given back to the user themselves. So the outcome and the results are given back to the users themselves rather than being taken by the corporations that make them take them for profit. This is maybe just a utopian idea, but I think it's only an alternative of going to corporations against the nations because nations have their own weakness at the moment. Thanks, Giuseppe. I think we have a lot of topics now. Sorry, we're bringing too many things on the table. Let me just make a couple of points. Obviously, I just recently moved from the World Economic Forum to another part of the World Economic Forum. And Klaus has for years talked about stakeholder capitalism and breaking the need for corporations to make money for their stakeholders. So obviously, I espouse that. But to the more thorny issue of... How do we create a movement that energizes people and gives and shows governments that there are enough citizens who want change and want something done about this? And maybe it's Giuseppe's version of what this what we do, or maybe it's a different version of what we do. And that, I think, exercises us all. So, you know, I would. was interviewing for my podcast yesterday the chair of the Equal Employment Opportunity Commission and they are working very hard to try and make sure that anybody who might be employed in America using AI with you know with the screen AI screening actually knows that there is somebody to whom they can complain and the problem I think is that we are if we if we have the analogy with the green movement, we are at that very earliest point where either people are not talking about it or they don't understand enough about it or they don't care. And so what we need to do is to learn, I believe we need to learn from the green movement and we need to see what that trajectory was and see if we can we can bring it down so that we get it done quicker um you know i have i have friends who still look at me at dinner parties as if i'm crazy when i talk about this stuff and they're intelligent well-read people so it's i at the moment i think we once we've got citizens interested and demanding from governments then we would see a change but it's how do we get there and I don't know the answer to that. Okay final question. Many thanks Kay for the very interesting presentation. I maybe want to come back to one of your let's say the your core profession in the area of law. I recently had the doubtful pleasure of participating in the parliamentary committee or group that debated artificial intelligence and I left that meeting rather frustrated and happy that I'm not in the seat of these politicians because it occurred to me not only is it extremely difficult for these people to understand what's going on, I mean it's difficult for us as researchers in AI. We are surprised every day about what these systems can and cannot do. But for politicians and laymen, it seems completely, you know, unfeasible to fully understand what's going on. Now, usually, and that raises a lot of questions for lawmaking in technology. You mentioned nuclear as one example, and that's one of the few examples really where the technology itself is regulated. Very often we only regulate the consequences. And let me just mention one thing that with the EU AI Act. So first of all, I think there is this question, the definition, what is AI? My first comment and question would be, well, but isn't it? true that most of digital systems are actually what we should be interested in. It's not just AI. It's actually broader than that. So if you narrow down the definition, we get very specific things. And my second question, one of the changes that the parliament requested was that, for example, generative AI shouldn't create illegal texts. Now, that's easy to write, but it's nearly impossible to realize. And if you do it, I think you're overshooting. There's a big danger of overshooting into censorship and cultural bias and what have you. So I'm sure you have some ideas about that. Well, yes, absolutely. And I know that there's been a lot of a lot of. worry about how you're going to be compliant with the EU AI Act, especially given that they've shortened the time to be compliant from three years to two years now and increase the size of the fines quite dramatically as well. Yes, I hear what you say. I guess what I see is that One of the problems with legislation, and that's why I mentioned agile governance, I went along, is that you end up with lots of long, complicated legal cases where actually we are all just paddling about in the dark. And so I actually like Hans's idea that we need a movement that educates people. And I guess. we need to start somewhere. So maybe we could start here. Great. Thanks, Kay. That was really, really great talk and really great discussion in the end. Very, let's say, good ideas and good counter ideas, I would say, to that. So we're coming to the last part, and I was actually wondering whether the music that you picked, Similarity, has any reference to to AI and now we already know that it was intentionally so I was a bit worried but I think you cleared this quite nicely before so this piece is like 6 minutes 10 and you know what since this is the last time we meet for the season we're going to play listen to the full 6 minutes we still have that time I'm sure so even though we're already past 6 now I think we can dedicate a bit of time to I could also just add that the book Singularity Now by, I think it's Singularity Now, or The Singularity, it was a book by Ray Kurzweil back in 2003, was the book that got me hooked. So it has that synergy as well. So you respond to when something has that title, as you mentioned before, with Bob Patton. Let me just make sure I'm sharing the screen and we're ready to go as soon as I've basically announced what is still to come here. Of course, we are on the summer break now, and I hope you'll join us again in fall. We'll have more lectures. We'll have more excellent speakers. likely new and unexpected topics. We will also have a workshop on teaching computer science and ethics. This will be an international online workshop with professors from different universities. And they will all discuss this topic. So this is something that's not on the website yet, but I can announce this already. But all the details you will find online on our website and where you get all the information from Twitter and so on. So that's it for today. for this season, basically. Thanks again, Kate, for this great presentation. I also want to take the opportunity to thank Wajda for basically operating the PowerPoint today and running the online tag in the background all the time and the streams and taking care of all that. I think this also needs some recognition. And, well, thanks, everyone, for joining and for the vivid discussions. And, yeah, enjoy the holidays. And as a start into these holidays, let's listen to Singularity. Goodbye and have a nice summer. Good bye.",
+  "segments": [
+    {
+      "start": 0.464,
+      "end": 26.352,
+      "text": "So welcome to today's lectures. Hello, everybody. The lecture of today is done by Kay Fiat Butterfield. And we are back to AI. So it's on AI and trustworthiness. Kay, thanks for being with us today. Thank you. You will be introduced in more detail later on by Peter Knies, who will be the moderator of today."
+    },
+    {
+      "start": 26.352,
+      "end": 48.496,
+      "text": "I just want to say that this is the last lecture before the summer break. So we will have a two or two and a half months summer break. And I really want now to thank all of you for having been with us and your ongoing participation, cooperation and joining our lectures. I think we had an interesting year with quite a lot of very good presentations and talks and discussions."
+    },
+    {
+      "start": 48.496,
+      "end": 73.856,
+      "text": "The choreography is well known. We have a talk for 30 minutes. Then we have 30 minutes Q&A moderated by Peter. And then we have at the end, again, a piece of music proposed by Kay today. Welcome, a special welcome and thanks to Peter Knaes. I just want to say that he's the new UNESCO Digital Humanism Chair at TU Wien. So this is a professorship."
+    },
+    {
+      "start": 73.856,
+      "end": 96.0,
+      "text": "And it's branded by the UNESCO. And Peter is taking care of the digital humanism affairs at TU Wien. Peter, I wish you all the best for this. And I thank you for being with us and moderating the session. The floor is yours. Thank you, Hannes. That was actually, this is not about me, but thanks anyway."
+    },
+    {
+      "start": 96.0,
+      "end": 124.304,
+      "text": "Actually, I just want to introduce our speaker, Kay Firth-Butterfield. She's the executive director of the Center for Trustworthy Technology, which is a World Economic Forum Center for the Fourth Industrial Revolution. This is quite an impressive CV, so it will take some time until I'm through with this, but no. But just to give you a bit of context here and a bit of background, so Kay has advanced degrees in law and international relations, is an associate barrister."
+    },
+    {
+      "start": 124.304,
+      "end": 151.984,
+      "text": "Master of the Inner Temple in London, which I think is a very interesting title, very much to learn about the law system in the UK with titles like this. A former judge, former and soon to be again professor at the University of Texas in Austin, co-founder of the Responsibility Eye Institute, vice chair of the IEEE Global Initiative for Ethical Considerations in Artificial Intelligent Autonomous Systems."
+    },
+    {
+      "start": 151.984,
+      "end": 180.528,
+      "text": "Part of the group which met at the Asylum Art to create the Asylum Art AI Ethical Principles, which was a conference organized by the Future of Life Institute, which got a lot of attention recently for publishing this letter that urged for a pause in the development of AI and large language models. And many more activities. Very, very impressive. I really just want to mention the things I found on the Wikipedia page. I think this sounds very impressive, the awards that you've received."
+    },
+    {
+      "start": 180.528,
+      "end": 206.384,
+      "text": "Kay is one of the most important women in robotics, one of the most brilliant women in AI ethics, one of the women most defining the 21st century AI movement, and one of the women changing the landscape of leadership. So with all these appraisals, Kay, the floor is yours. We're looking very much forward to your presentation. And I ask Marta to share the screen and take care of the presentation."
+    },
+    {
+      "start": 207.472,
+      "end": 230.72,
+      "text": "Thank you very much. And I want to start actually by saying that despite those accolades, I actually am not an AI scientist. I am a lawyer by background as per the introduction. And I'm actually in London at the Inner Temple looking out on the Templar Church."
+    },
+    {
+      "start": 230.72,
+      "end": 258.816,
+      "text": "which is the round church that features in the Da Vinci Code, if any of you ever saw the movie or read the book. And what does master of the inner temple mean? It actually just means that I'm a senior barrister and I have been asked to effectively be on the board of directors of the inner temple. And we train our lawyers, our barristers at."
+    },
+    {
+      "start": 258.816,
+      "end": 283.504,
+      "text": "through our inns. So it's not as sort of interesting as it sounds, but we have been doing it since we actually took the land of the Knights Templar in about 1200. So it's an interesting legal history."
+    },
+    {
+      "start": 283.504,
+      "end": 312.0,
+      "text": "that when the Knights Templar came back from the Crusades, the lawyers had moved in on their territory, and we've held it ever since. So with that, let's go on to artificial intelligence. And because I don't know how much my audience, obviously I know some of you, and I know that you know a lot about artificial intelligence, but because I don't know how much..."
+    },
+    {
+      "start": 312.0,
+      "end": 330.272,
+      "text": "you all know. Please bear with me if I'm teaching you all to suck eggs. But I really wanted to start with the EU and the OECD's definition of AI as a sort of level set here, and I will read it."
+    },
+    {
+      "start": 330.272,
+      "end": 359.184,
+      "text": "A machine based system that is designed to operate with varying levels of autonomy and that can, for explicit and implicit objectives, generate outputs such as predictions, recommendations or decisions that influence physical or virtual environments. And as some of you all know, when the EU went back to revisit their forthcoming act, they."
+    },
+    {
+      "start": 359.184,
+      "end": 387.552,
+      "text": "have recently adopted this as their definition, which gives them more focus perhaps on machine learning and deep learning. So if we could move to the next slide, please. I just want to talk a little bit today about the history of responsible AI, why I chose the music, whether it's an existential threat, something that"
+    },
+    {
+      "start": 387.552,
+      "end": 409.152,
+      "text": "interests me enormously whether we can create the policies today that actually will lead us to a better future with technology particularly AI tomorrow where I see some of the problems and some of the solutions and then I hope that we can have a discussion I know it's a question and answer but it'd be good to have a discussion about some of these things."
+    },
+    {
+      "start": 409.152,
+      "end": 423.6,
+      "text": "I will say that you'll find that I have more questions than answers. But I hope that that in itself provokes questions and synapses go off in your minds."
+    },
+    {
+      "start": 423.6,
+      "end": 451.184,
+      "text": "So very quickly, the history of the responsible AI movement, I would say it really started getting some mainstream attention when Stephen, well, firstly, when DeepMind sold itself to Google and said, only will we sell ourselves if we have an ethical advisory panel or board. And then probably when Stephen Hawking."
+    },
+    {
+      "start": 451.184,
+      "end": 478.144,
+      "text": "Stuart Russell and Max Tegmark for the Future of Life Institute actually wrote in the Times of London that AI could be the best thing that happens to us, or it could be our very last thing that happens to us. And that was 2014. That was the 1st of May 2014. And I think that, you know, those of us who had been thinking about this before."
+    },
+    {
+      "start": 478.144,
+      "end": 507.952,
+      "text": "probably welcomed the fact that there was some beginning of discussion. But at that stage, I think it's fair to say that we were probably talking more about existential risk. Nick Bostrom's book, Superintelligence, came out in the same year than the things that I want to talk about more today. And that is the direct current impact on our society and how we mitigate some of those risks."
+    },
+    {
+      "start": 507.952,
+      "end": 534.96,
+      "text": "So in 2014, I also became the world's first chief ethics officer. And so I have been involved in this movement ever since, as you heard from the bio. So that's, of course, why I picked Bob Payton's singularity. He's a I live in Austin, Texas, and he's a local jazz musician and."
+    },
+    {
+      "start": 534.96,
+      "end": 561.088,
+      "text": "When I first went when I went to a concert and found that his album was called Singularity, I sort of felt that this this this this obviously was meant for me. So that's why you'll be hearing it at the end of our conversation today. So perhaps we could go on to the next slide, please. I am involved in an inner."
+    },
+    {
+      "start": 561.088,
+      "end": 589.52,
+      "text": "conversation that's being hosted by the Medici Archives, which addresses this question. So, you know, did the printing press democratize access to knowledge? And is generative AI our new democratization of knowledge? And if the printing press isn't the right analogy, what is the right analogy?"
+    },
+    {
+      "start": 589.52,
+      "end": 610.752,
+      "text": "And so if you think about it, the printing press was initially really only held in the hands of a few and enabled a few people to read and they would be the very wealthy. So I would suggest and posit that actually at the moment, we're probably at that."
+    },
+    {
+      "start": 610.752,
+      "end": 640.304,
+      "text": "point with generative AI. But you might want to argue instead, well, there are 100 million people using chat GPT. And so actually, we are moving to democratization of AI, and much faster than perhaps we had democratization of knowledge in the past. And so one of the things we've been looking at with the Medici project is whether actually"
+    },
+    {
+      "start": 640.304,
+      "end": 666.56,
+      "text": "We're looking at a better analogy with cheap paper. So when cheap paper came along, you could actually start writing letters and corresponding and sharing knowledge. But again, you know, if we say that that was the Medici and you look at Medici archives, there are huge archives."
+    },
+    {
+      "start": 666.56,
+      "end": 691.984,
+      "text": "still the power to write these letters and share knowledge is very much held in the hands of a few. And so when do we have democratization of knowledge? Is it when we start universal education? I hope it's something that we can discuss later because"
+    },
+    {
+      "start": 691.984,
+      "end": 720.24,
+      "text": "I fear when people say, and you hear it all the time, oh, generative AI is like the printing press, that we're actually making the wrong analogies here. And so perhaps we could go to the next page, next slide, and I can begin to form that out a bit. So I think there's a problem with data and generative AI."
+    },
+    {
+      "start": 720.24,
+      "end": 745.36,
+      "text": "And I'll explain why. Obviously, you know, data has been called oil or air or water. And undoubtedly, the quality of your data affects the quality of your outcome. So what I want to concentrate on is those sources of data. So one of the things that worries me a great."
+    },
+    {
+      "start": 745.36,
+      "end": 772.112,
+      "text": "deal at the moment is that our sources of data that have been used to train the generative AI models are severely skewed. And why do I say that? Well, if you look at the totality of documents on the internet, what we've got is that the bulk of those have been written by men."
+    },
+    {
+      "start": 772.112,
+      "end": 799.44,
+      "text": "mainly by men living in the global north and mainly by white men. And so then if you think about, well, what's the quality of this data? The quality of this data, if we're going to say that generative AI is a democratizing tool, is actually going to affect our ability for AI to serve everybody."
+    },
+    {
+      "start": 799.44,
+      "end": 824.8,
+      "text": "So let me just give you an example. Most of the data on the Internet around heart attacks is focused on white Americans who are over 55 and are male. So if we want to cure or help with heart attacks in Kenya."
+    },
+    {
+      "start": 824.8,
+      "end": 851.92,
+      "text": "We may not be able to use that data if we want to do that with women who are Asian. We probably can't use that data. So the question then in my mind, and as I said, I have more questions than answers, is how do we truly democratize the data so that we can democratize AI? And so."
+    },
+    {
+      "start": 852.912,
+      "end": 882.016,
+      "text": "One of the things that I hear, I see something in the chat saying it's even worse with GPT-4. I agree. So my question to this group is, how do we think about that? Is there actually any way that we can move the needle here? Because my great fear, and I'm British, so I have a sordid colonial history."
+    },
+    {
+      "start": 882.016,
+      "end": 908.256,
+      "text": "is that actually what we are doing with generative AI is we're in danger of recolonizing the world from the north because we are going to be offering this source of data and this source of knowledge to the global south. That is, if they can"
+    },
+    {
+      "start": 908.256,
+      "end": 937.872,
+      "text": "access it which of course brings me to my next point with about the data and democratization of ai which is that actually we have still got three billion people who don't have access to the internet so when we blithely say all these millions of people have got are using chat gpt actually um that the the the number is de minimis compared to the"
+    },
+    {
+      "start": 937.872,
+      "end": 967.632,
+      "text": "access that the world has and that the world would be using. And so I think that that's a truly important point. Even in America, we just today had Biden announcing that he was going to make sure that the 7% of Americans who don't have access to fast internet will have access to fast internet. And that seems to me to be crucial."
+    },
+    {
+      "start": 967.632,
+      "end": 994.016,
+      "text": "to our genuine or what I hope is our objective with artificial intelligence is that it benefits everybody globally and regardless of their strata in society. And so, you know, just as an anecdote, when I was talking to the pop star Will.i.am, he looks after a group of"
+    },
+    {
+      "start": 994.016,
+      "end": 1016.64,
+      "text": "students in Los Angeles who are extremely disadvantaged and one of the first things he had to do when there was a pandemic was not only get them computers but also get them internet access and that's in LA. I think the other thing that we have to be very careful about is that"
+    },
+    {
+      "start": 1016.64,
+      "end": 1044.272,
+      "text": "I've been doing a lot of work with hospitals in the United States, and they are particularly worried that some of their ER doctors are actually using chat GPT to second guess or perhaps give them a diagnosis. And as Stuart Russell has been saying forcibly every time I've heard him speak recently, we need proper licensure for."
+    },
+    {
+      "start": 1044.272,
+      "end": 1069.968,
+      "text": "some of these devices if they are going to be used in that capacity. And so I'll come back to product liability a little bit later. So that's my sort of diversion into data. But I think it's fundamental to how we think about AI and generative AI. So perhaps we could move to the next slide."
+    },
+    {
+      "start": 1071.056,
+      "end": 1099.728,
+      "text": "AI to generative AI. I apologise about the formatting on this slide. What's the difference? What was responsible or trustworthy AI? And should the dire predictions for generative AI be a cause for concern? Well, I think the point I want to make for this particular speech is that actually the..."
+    },
+    {
+      "start": 1099.728,
+      "end": 1129.168,
+      "text": "The difference is that we now have a lot of people, despite what I've just said, using these tools. And I believe that there should be a different approach in terms of either regulation or using the current law that we have in regard to how"
+    },
+    {
+      "start": 1129.168,
+      "end": 1158.384,
+      "text": "the companies which produce generative AI are regulated. And I'll expand that in a moment. What was responsible or trustworthy AI? I think it still is. It's just the problems that we were facing when we were talking about responsible or trustworthy AI have actually been sort of put on steroids for a better analogy by the development of generative AI."
+    },
+    {
+      "start": 1158.384,
+      "end": 1186.48,
+      "text": "What you might know or might not know is that we often talk about the gulf between East and West or China and the US. But actually, if you look at the 192 sets of principles, AI principles that are out there and you map them onto one another."
+    },
+    {
+      "start": 1186.48,
+      "end": 1213.728,
+      "text": "what you find is that the whole world agrees that AI should be beneficial to humanity. AI should be safe and robust. AI should be fair and accountable and explainable and transparent. And so actually, when we're thinking about trustworthy AI as a global movement,"
+    },
+    {
+      "start": 1213.728,
+      "end": 1229.376,
+      "text": "We're all wanting the same things out of AI. And I'm prepared to posit that actually that's true of generative AI as well."
+    },
+    {
+      "start": 1229.376,
+      "end": 1244.352,
+      "text": "The problems, of course, have always been around how do you make something explainable that is not explainable. And I'm sure knowing some of the people in the audience, I'm sure that we can have a discussion about that later."
+    },
+    {
+      "start": 1244.352,
+      "end": 1273.216,
+      "text": "And then the dire predictions of generative AI, can they be a cause for concern? Well, I'm going to come clean here and say I am one of the people who signed that letter of the future of life calling for a moratorium. And you might say, well, why did you do that, Kay? Because clearly that's not going to happen. And as we have seen, it's not going to happen."
+    },
+    {
+      "start": 1273.216,
+      "end": 1294.896,
+      "text": "I signed it, and I think many of the 26,000 of us who did, because I thought it was important that we have a true conversation about this. And we have it now, because if we don't have that conversation now, and we don't have regulators thinking about it."
+    },
+    {
+      "start": 1294.896,
+      "end": 1318.784,
+      "text": "and lawyers thinking about it for that matter, then we don't have any opportunity of creating the right policies today to achieve the goals that we might want to see for us in 2040. And just on that point, my centre..."
+    },
+    {
+      "start": 1318.784,
+      "end": 1346.656,
+      "text": "is looking at the moment at creating the competition around asking various people around the world to give us their ideas of what they want the future to look like with AI. We're inundated with dystopian visions of what AI should look like. What we need to do is to come up with what we think using AI beneficially."
+    },
+    {
+      "start": 1346.656,
+      "end": 1376.368,
+      "text": "might look like. And then we can start to try and interest governments into building that policy and ladder up to where we'd like to be. So all ideas about, you know, how, what we want our future to look like with AI, gratefully received. So perhaps we want to go to the next slide. Who benefits from generative AI? Well, you know, is it the"
+    },
+    {
+      "start": 1376.368,
+      "end": 1404.352,
+      "text": "big tech companies who create it. You may or may not know that 80% of the world doesn't even have the compute power, let alone the GPUs to actually create LLMs. And, you know, or can we leapfrog in some way using generative AI in the global south? I think that this is a really important question that we have to ask."
+    },
+    {
+      "start": 1404.352,
+      "end": 1428.944,
+      "text": "ourselves, especially when there is, when the big tech companies have been approaching so many legislators around the world to forward their own idea of what regulations should look like. So let's go to the next slide."
+    },
+    {
+      "start": 1429.2,
+      "end": 1452.336,
+      "text": "So Eric Schmidt of Google has argued that actually, you know, the obligation, the best people to regulate AI is the companies because the companies understand artificial intelligence and governments don't."
+    },
+    {
+      "start": 1452.336,
+      "end": 1481.088,
+      "text": "So I wonder for myself, and I'd be interested to hear your views in a moment, about whether that's actually a myth. Do governments actually have to understand something in order to regulate it? And if we look back in history, I don't think governments have ever understood something before they regulated. So for example, let's take energy, for example."
+    },
+    {
+      "start": 1481.088,
+      "end": 1508.72,
+      "text": "Did the energy companies say the same thing? Government, you can't regulate electricity because you don't actually understand how it works. You can't regulate agricultural machinery or cars. How many of us know how our car works? And yet we do. And we do because governments, even if our senators in America, and I live in America,"
+    },
+    {
+      "start": 1508.72,
+      "end": 1537.6,
+      "text": "even if our senators and congressmen don't know how a car works or how AI works, that doesn't mean to say that they can't bring in the right staff and experts to make good legislation. That's a personal perspective, and I'm keen to hear yours. I think it's really hard to think of another industry where..."
+    },
+    {
+      "start": 1537.6,
+      "end": 1563.92,
+      "text": "Banking, for example, or medical devices. So I think there is a question about whether whether we should have a regulator that just looks at artificial intelligence or in the same way as we have regulators for banking and regulators for drug discovery, etc. So, you know, my my point is."
+    },
+    {
+      "start": 1563.92,
+      "end": 1592.624,
+      "text": "Can we create responsible generative AI? I think we can, but we need some mechanisms in place. And so I want to go to the next slide because I've got some ideas on that to share with you. Again, it seems to have formatted my slide badly, but I just want to quickly zip through some of the regulation."
+    },
+    {
+      "start": 1592.624,
+      "end": 1622.464,
+      "text": "that's out there. Obviously, the EU AI Act didn't have anything about generative AI in it until recently. And that's because it's trying to legislate as things change. So I'm not going to bore you with a great detail of the EU AI Act, because I'm assuming that most of you know it and know it well. So just going to move to the USA."
+    },
+    {
+      "start": 1622.464,
+      "end": 1649.744,
+      "text": "because I think that the USA is interesting in that there is at the moment little going on in terms of federal regulation, but there's quite a lot going on in terms of regulation from states. And actually, I would say that if you want to know what the United States is doing, you're better to look at the governor's website and look at the states."
+    },
+    {
+      "start": 1649.744,
+      "end": 1677.136,
+      "text": "than at the federal picture. And so, of course, one of these things is the New York law around hiring and using AI in hiring. And I also just want to call out, if we're thinking about how to get companies to actually..."
+    },
+    {
+      "start": 1677.136,
+      "end": 1704.928,
+      "text": "step up and take responsibility, NIST has come up in the USA with a really good tool to help them. And I haven't put them down here, but one of the things that we do think about a lot is, well, what would agile governance look like? So not regulation, but how do you bring in governance that helps?"
+    },
+    {
+      "start": 1704.928,
+      "end": 1727.52,
+      "text": "without the time lag of regulation. And so in Singapore, what they've been doing is they haven't been regulating, but they've created a tool called AI Verify, which they have required companies using AI in Singapore to train on."
+    },
+    {
+      "start": 1727.52,
+      "end": 1754.352,
+      "text": "and use when they're using AI tools. So that's a really interesting agile governance mechanism. And I recommend that you have a look at it if you haven't come across it. And so Singapore. If we then move to India, until just recently, India hasn't been thinking about regulation of AI."
+    },
+    {
+      "start": 1754.352,
+      "end": 1782.496,
+      "text": "But that's changing as well. And I think India is a really interesting case study for the world, really, because India has two billion people in it, 27 different languages and not good representation, better than some, but not good representation in the current large language models."
+    },
+    {
+      "start": 1782.496,
+      "end": 1800.448,
+      "text": "China, as we know, has done quite a bit of work in this area, and we can talk about that if it's of interest later, because I know that I'm coming up on my time. I want to just call out the UK."
+    },
+    {
+      "start": 1800.448,
+      "end": 1820.88,
+      "text": "simply because, again, you know, the UK produced white paper about a week before the letter came out. And it was very much hands off. It was very much let's leave it to the existing regulators to work out how to regulate AI in their particular section."
+    },
+    {
+      "start": 1820.88,
+      "end": 1848.832,
+      "text": "And again, that might be really interesting as an agile governance tool. It means you don't have to wait for legislation. You don't have to set up new mechanisms and new bodies. And if we think that we need to do something now, then that might actually be a great way of moving forwards. And if you look at that Online Harms Act, that's been..."
+    },
+    {
+      "start": 1848.832,
+      "end": 1875.472,
+      "text": "in the works for a long time and it keeps getting pushed back and not passed. But now, of course, the UK seems to have woken up to the fact that this might be a bit more serious. And so Richie Sunak has suggested this big summit, which is likely to happen in October here in the UK, bringing the world's leaders together to actually talk about generative AI."
+    },
+    {
+      "start": 1875.472,
+      "end": 1904.96,
+      "text": "So let's now look at what's in place. Next slide, please. So there's a whole lot of stuff in place already. And I know it could be argued that we don't need regulation because we've already got a lot of law that covers a lot of the harms that could be created by artificial intelligence."
+    },
+    {
+      "start": 1904.96,
+      "end": 1934.016,
+      "text": "And so I just want to raise that wonderful case where the lawyer in America asked ChatGPT to write its brief. And then it submitted the brief to the court without checking. And of course, the court found that the cases cited in it, I think there were six or seven, were all made up."
+    },
+    {
+      "start": 1934.016,
+      "end": 1963.056,
+      "text": "by ChatGPT. And so clearly, in my view, the lawyer was negligent for not checking his work. But I think the question really that we have to think about here is, is there also any liability or should there also be any liability on the company that produced a machine, despite the disclaimers, that gave that bad advice?"
+    },
+    {
+      "start": 1963.056,
+      "end": 1989.04,
+      "text": "Because actually, they're the only people who can put it right. So the lawyer could have put it right by checking. But if this was advice or something that had been given to somebody without the expertise to check, then that might be much more serious. Likewise, if it was medical advice that was taken, that might be much more serious."
+    },
+    {
+      "start": 1989.04,
+      "end": 2018.832,
+      "text": "the consumers can't actually put it right. So I'd love to talk to you about that in a moment as well as a theory. But going back to agile governance, of course, what's happened now is that a decision out of a Texas court says now that if you use AI to help with your pleadings, you have to say, you have to declare that to the court."
+    },
+    {
+      "start": 2018.832,
+      "end": 2046.544,
+      "text": "So I like that. It's a very simple solution to what could have become a much bigger problem. I know that I've only got seven minutes left, but I do just want to talk about IP and copyright and generative AI, because it has been thought that up to up to the Supreme Court's decision just recently, I think two or three weeks ago."
+    },
+    {
+      "start": 2046.544,
+      "end": 2072.992,
+      "text": "that AI creating images, for example, would be covered by something that we lawyers call fair use. But the Warhol case in the Supreme Court seems to have suggested that that might not be the case, at least in the US."
+    },
+    {
+      "start": 2072.992,
+      "end": 2101.92,
+      "text": "Briefly, the case was brought by a photographer who had taken a photograph of Prince. She had licensed that photograph to Andy Warhol to create one painting. He actually went ahead and I think created 26 paintings. The original painting that Andy Warhol created was on the front cover of Harper's Bazaar, Vanity Fair, one of those."
+    },
+    {
+      "start": 2101.92,
+      "end": 2126.944,
+      "text": "And when it came to the 25th anniversary of Prince's death, they wanted the same magazine, went to the Warhol Foundation and said, can we have a new Andy Warhol painting to put on the front cover of our magazine? And the original photographer."
+    },
+    {
+      "start": 2126.944,
+      "end": 2156.128,
+      "text": "brought this case to the Supreme Court eventually and said, I lost money because of this. Because Andy Warhol did more things with my photograph than I ever licensed him to do. And the court accepted that. And so the question is now, obviously, when we're thinking about generative AI."
+    },
+    {
+      "start": 2156.128,
+      "end": 2185.408,
+      "text": "If the original artist is losing money, then would that fall into the same bucket as this Warhol case? And as you probably know, there are a number of big class action against some of these image generators in the United States. And also Getty Images is suing them in the UK."
+    },
+    {
+      "start": 2185.408,
+      "end": 2212.256,
+      "text": "So I just want to very briefly talk about regulators applying existing laws and really sort of talk about the EEOC, that's the Equal Employment Opportunities Commission in the United States, where they have really grasped the nettle and said..."
+    },
+    {
+      "start": 2212.256,
+      "end": 2241.856,
+      "text": "created a lot of documentation to help us as the consumers actually understand where AI is being used in hiring and might be disadvantaging us in hiring. And they are now looking at suing people, companies who are using AI in hiring."
+    },
+    {
+      "start": 2241.856,
+      "end": 2271.36,
+      "text": "where it unfairly discriminates. And they're using the Civil Rights Act of 1965 to do that. And so I think that it is one of a number of measures that we're seeing being used by regulators to perhaps make up for the gap. But what I wanted to do by just bringing you those two vignettes was to help you think."
+    },
+    {
+      "start": 2271.36,
+      "end": 2298.448,
+      "text": "that there may be existing law that covers a lot of this. And we shouldn't just sort of blindly say, well, we need regulation to cover AI. Next slide, please. So we've talked about whether it's an existential threat. I would love to hear from you. Obviously, you know, people like Stuart Russell, who I respect a lot."
+    },
+    {
+      "start": 2298.448,
+      "end": 2327.808,
+      "text": "worry about it being an existential threat. And so who am I to say otherwise? But I tend to worry about actually the existential threat that I see is what the capacity of AI to undermine our societies, undermine our democracies. And those are the things that I think we need to be worrying about today and leaving clever folks like Stuart to work out what happens along the way."
+    },
+    {
+      "start": 2327.808,
+      "end": 2348.736,
+      "text": "um in the future and one of the things that a lot of people have suggested is do we have a nuclear type regulatory body um i'm skeptical about whether that would work um i think that the nuclear works because it's countries but this is not just in the hands of countries and i'd be very interested to hear your view"
+    },
+    {
+      "start": 2348.736,
+      "end": 2376.88,
+      "text": "I do think that something like product liability, which I've already talked about, might be a way forward. And there does seem to be a mishmash of things that we can do. And the last thing is insurance. I was talking just to a startup not long ago who is bringing together a lot of insurance companies to look at how do we insure against some of these risks."
+    },
+    {
+      "start": 2376.88,
+      "end": 2404.72,
+      "text": "The next slide, please. I just want to close out with a number of thoughts. One is if we could get startups and more importantly, VCs to impose some form of responsible behavior within our startups, then I think we would see the ecosystem move. On global convenings, I talked about Richie Sunak."
+    },
+    {
+      "start": 2404.72,
+      "end": 2433.024,
+      "text": "On employment, I think it's something we really need to be thinking about because, so I was recently in Singapore and talking to one of the big companies there, they said that they had laid off 5,000 people, but they had managed to retrain them within their company. But now they were looking at laying off another 8,000 people because of generative AI."
+    },
+    {
+      "start": 2433.024,
+      "end": 2453.568,
+      "text": "And they had no places that they could retrain them into. That seems to me to be a major problem. And whilst we all talk about the fact that AI will generate more jobs than we lose, there is that piece in the middle."
+    },
+    {
+      "start": 2453.568,
+      "end": 2479.424,
+      "text": "that time in the middle that I think is very crucial for our societies, especially with some of the problems with democracy, undermining democracy that we're seeing. And finally, I just wanted to say that I'm always looking for great examples of where good, responsible practice in AI actually turns a company a profit, because I think that's the way that we'll get people to actually listen to us."
+    },
+    {
+      "start": 2479.424,
+      "end": 2508.688,
+      "text": "So thank you for listening to me. And I'd love to listen to you now. Thank you very much, Kate. We have time for questions. And first question is going to be asked by Moshe. Please, Moshe, go ahead. Thank you for this review of the law and generative AI. But I wonder when we talk about the law, we're not aiming too low. What I mean by that is you look at our whole."
+    },
+    {
+      "start": 2508.688,
+      "end": 2536.336,
+      "text": "Look at the United States. Open the Constitution. Look for the word corporation. It's not there. And yet you have today Apple, which is like a $3 trillion corporation. So it seems to me that something bigger is amiss here. And we are going down to the leaves to discuss, you know, should we regulate this? Should we regulate that? So looking at the bigger picture, which is what should be the role of..."
+    },
+    {
+      "start": 2536.336,
+      "end": 2562.48,
+      "text": "of cooperation in our life especially now you look at big tech it's 25 percent of the standard and poor 500 you know open the paper every day this is the day the agenda of today is determined essentially by putin she and big tech yeah um i of course i of course i agree with you and um"
+    },
+    {
+      "start": 2562.48,
+      "end": 2590.56,
+      "text": "But I think our problem is how do we tackle it? Because, you know, if you have a lot of money, you have a lot of influence in government. You can pay for a lot of lobbyists. You can go on tours of the world's governments with your suggested regulation and say, accept that this is how you should regulate. I think you should regulate."
+    },
+    {
+      "start": 2590.56,
+      "end": 2619.792,
+      "text": "I don't like the regulation that you're trying to do over here. And I can't think of a democratic government in the world that has an appetite to break up big tech, for example, or bring measures that you, the sort of measures that I think you're thinking of. And why?"
+    },
+    {
+      "start": 2619.792,
+      "end": 2649.072,
+      "text": "Well, when I talk to governments, everybody's frightened of missing out. So they're frightened of regulating too much, not so much in Europe, but everywhere else. They're frightened of regulating too much or they're frightened of missing the AI boat and the economic growth that the AI boat will bring to them."
+    },
+    {
+      "start": 2649.072,
+      "end": 2678.192,
+      "text": "Sadly, it's an extremely nuanced continuum. And whenever I talk to governments about governance, they will always, most of them will also talk about, well, we desperately need the economic improvements to our country. I mean, we had this fight 100 years ago. And at the time, the government understood that the future of democracy in the state, that we cannot have..."
+    },
+    {
+      "start": 2678.192,
+      "end": 2707.952,
+      "text": "Democracy breaks down if you have players that are just too powerful. And this was a big, you know, this was a big fight. I mean, this started 19th century, big cooperation. It's, as we said, deja vu all over again. But now we're afraid of fighting the fight. I wish I had some motion. I'm taking time before."
+    },
+    {
+      "start": 2707.952,
+      "end": 2735.52,
+      "text": "A lot of people are raising their hand, but to reply to one thing or come back to one thing that you mentioned, which I liked a lot, was that can you regulate the product if you don't understand the product? The government should not regulate because they don't understand. I would argue that also the companies, at least those people that lobby for these kind of things, also don't understand the product, right? So they're claiming they understand things better, but they actually don't do much better. And also, I would argue that..."
+    },
+    {
+      "start": 2735.52,
+      "end": 2763.984,
+      "text": "the product they're selling is not necessarily AI. They're using AI to sell something else, like the idea of AI. But, you know, they're mostly an advertising business and these kind of things. And that is a product that is actually understood quite well. But I think if there's anything you regulate, then it would be that. And I think that argument is an interesting one, but it's not applying here, really. Yeah, and I just wanted to sort of say a couple of more things around that."
+    },
+    {
+      "start": 2763.984,
+      "end": 2782.56,
+      "text": "One of our problems is that we have never, and Asa Raskin and Tristan Harris make this point really carefully and well, we haven't ever truly sorted out our first encounter with AI."
+    },
+    {
+      "start": 2782.56,
+      "end": 2802.64,
+      "text": "i.e. the social media problems and the democracy problems that we've got. And now, without having sorted out that, we're now in the second encounter with AI. And we have to have a change of government will in order to actually..."
+    },
+    {
+      "start": 2802.64,
+      "end": 2825.904,
+      "text": "deal with this, let alone this. And then, you know, if we're thinking about this and you look at the use that the parties in America have already made of deep fakes, that makes me think that perhaps we're not going to see any developments on that."
+    },
+    {
+      "start": 2825.904,
+      "end": 2850.736,
+      "text": "Just in case you don't know, the Republican Party created a deep fake response to Biden saying that he would run again. And just recently, Ron DeSantis also used a deep fake. So it does seem that rather than regulating, some of our politicians are likely to just embrace the technology."
+    },
+    {
+      "start": 2851.472,
+      "end": 2879.44,
+      "text": "Okay, Hannes, then I'm going to bring in Giuseppe's comment and then Erich. Thanks, first of all, for your excellent presentation and bringing those different pieces together. And I would like to respond to your presentation and also to Moshe's request, because I think it's the basis of our activity. How can we organize a democratic decision which is somehow fighting against this lobbyism? Who are the key stakeholders?"
+    },
+    {
+      "start": 2879.44,
+      "end": 2908.88,
+      "text": "Because you write that this describes the lobbyists who can interfere with this, let's say, democratic process where they directly go to governments. And I see very big similarity to this ecological movement, to the climate problem, where we also have, let's say, the majority of the world is quite aware of what is happening, but we are confronted with a democratic process which is too slow to answer this question. So the question from my side is, would it make sense to have a worldwide..."
+    },
+    {
+      "start": 2908.88,
+      "end": 2935.936,
+      "text": "meeting or something where we especially also invite NGOs to discuss on that issue, that we have some basic movements where really we can answer such a big lobbyism movement. So I think this is the basic of, I think we agree on the problem. We see that it has a threat to democracy. I also do not agree with these existential threats, but there are other issues which are important we should answer."
+    },
+    {
+      "start": 2935.936,
+      "end": 2963.472,
+      "text": "But this is the basic question, how to answer and how to organize a political process which is really powerful enough. So this is not the question. It's more a comment. It's more, let's say, showing where we are at the moment. And it's a political action needed. Let me just bring in Giuseppe's comment because it's kind of along those lines, right? So he posted international organizations are very weak because they're blocked by UNAN."
+    },
+    {
+      "start": 2963.472,
+      "end": 2989.456,
+      "text": "contrasting interest. The only alternative to cooperation power is large user cooperatives joined across nations. So maybe that's as an add-on to also what Hannes just said. So cooperatives as an alternative. I can comment on this. Oh, yeah. I can comment on this, if you like. Yes, please. This idea that we have..."
+    },
+    {
+      "start": 2989.456,
+      "end": 3009.168,
+      "text": "corporation which was brought in by Moshe Vardy is that they became so big and they are so powerful that they are more powerful than governments, right? So what do we have in the past? We've seen alternative to corporations. We have been people grouping into cooperatives where cooperatives work together and the users themselves own and share."
+    },
+    {
+      "start": 3009.168,
+      "end": 3037.68,
+      "text": "the activities and the outcomes of the cooperative, that they own their own results and they work for the benefit of the people, not for the benefit of the shareholders who put the capital in the corporations. This happened in the court in the 19th century and so we could revise this idea and so we have digital cooperatives where we have millions of people that join together and say well we own the data so we just share."
+    },
+    {
+      "start": 3037.68,
+      "end": 3064.272,
+      "text": "what we want to do with the data rather than give it to corporations that use it for their own sake and exploit the data and exploit anything that we can do with the data. For example, we can build that with models and so on. And benefits, the outcome of those activities are given back to the user themselves. So the outcome and the results are given back to the users themselves rather than"
+    },
+    {
+      "start": 3064.272,
+      "end": 3094.08,
+      "text": "being taken by the corporations that make them take them for profit. This is maybe just a utopian idea, but I think it's only an alternative of going to corporations against the nations because nations have their own weakness at the moment. Thanks, Giuseppe. I think we have a lot of topics now. Sorry, we're bringing too many things on the table. Let me just make a couple of points. Obviously, I just"
+    },
+    {
+      "start": 3094.08,
+      "end": 3118.992,
+      "text": "recently moved from the World Economic Forum to another part of the World Economic Forum. And Klaus has for years talked about stakeholder capitalism and breaking the need for corporations to make money for their stakeholders. So obviously, I espouse that. But to the more thorny issue of..."
+    },
+    {
+      "start": 3119.472,
+      "end": 3147.28,
+      "text": "How do we create a movement that energizes people and gives and shows governments that there are enough citizens who want change and want something done about this? And maybe it's Giuseppe's version of what this what we do, or maybe it's a different version of what we do. And that, I think, exercises us all. So, you know, I would."
+    },
+    {
+      "start": 3147.28,
+      "end": 3176.304,
+      "text": "was interviewing for my podcast yesterday the chair of the Equal Employment Opportunity Commission and they are working very hard to try and make sure that anybody who might be employed in America using AI with you know with the screen AI screening actually knows that there is somebody to whom they can complain and the problem I think is that we are if we"
+    },
+    {
+      "start": 3176.304,
+      "end": 3202.352,
+      "text": "if we have the analogy with the green movement, we are at that very earliest point where either people are not talking about it or they don't understand enough about it or they don't care. And so what we need to do is to learn, I believe we need to learn from the green movement and we need to"
+    },
+    {
+      "start": 3203.248,
+      "end": 3230.224,
+      "text": "see what that trajectory was and see if we can we can bring it down so that we get it done quicker um you know i have i have friends who still look at me at dinner parties as if i'm crazy when i talk about this stuff and they're intelligent well-read people so it's i at the moment i think we once we've got citizens interested and demanding from governments"
+    },
+    {
+      "start": 3230.224,
+      "end": 3259.648,
+      "text": "then we would see a change but it's how do we get there and I don't know the answer to that. Okay final question. Many thanks Kay for the very interesting presentation. I maybe want to come back to one of your let's say the your core profession in the area of law. I recently had the doubtful pleasure of participating in the parliamentary committee or group that debated artificial intelligence and I left that meeting"
+    },
+    {
+      "start": 3259.648,
+      "end": 3275.392,
+      "text": "rather frustrated and happy that I'm not in the seat of these politicians because it occurred to me not only is it extremely difficult for these people to understand what's going on, I mean it's difficult for us as researchers in AI."
+    },
+    {
+      "start": 3275.392,
+      "end": 3294.896,
+      "text": "We are surprised every day about what these systems can and cannot do. But for politicians and laymen, it seems completely, you know, unfeasible to fully understand what's going on. Now, usually, and that raises a lot of questions for lawmaking in technology."
+    },
+    {
+      "start": 3294.896,
+      "end": 3319.264,
+      "text": "You mentioned nuclear as one example, and that's one of the few examples really where the technology itself is regulated. Very often we only regulate the consequences. And let me just mention one thing that with the EU AI Act. So first of all, I think there is this question, the definition, what is AI? My first comment and question would be, well, but isn't it?"
+    },
+    {
+      "start": 3319.264,
+      "end": 3347.008,
+      "text": "true that most of digital systems are actually what we should be interested in. It's not just AI. It's actually broader than that. So if you narrow down the definition, we get very specific things. And my second question, one of the changes that the parliament requested was that, for example, generative AI shouldn't create illegal texts. Now, that's easy to write, but it's nearly impossible to realize."
+    },
+    {
+      "start": 3347.008,
+      "end": 3364.368,
+      "text": "And if you do it, I think you're overshooting. There's a big danger of overshooting into censorship and cultural bias and what have you. So I'm sure you have some ideas about that. Well, yes, absolutely. And I know that there's been a lot of a lot of."
+    },
+    {
+      "start": 3364.368,
+      "end": 3393.904,
+      "text": "worry about how you're going to be compliant with the EU AI Act, especially given that they've shortened the time to be compliant from three years to two years now and increase the size of the fines quite dramatically as well. Yes, I hear what you say. I guess what I see is that"
+    },
+    {
+      "start": 3394.096,
+      "end": 3422.288,
+      "text": "One of the problems with legislation, and that's why I mentioned agile governance, I went along, is that you end up with lots of long, complicated legal cases where actually we are all just paddling about in the dark. And so I actually like Hans's idea that we need a movement that educates people. And I guess."
+    },
+    {
+      "start": 3422.288,
+      "end": 3451.696,
+      "text": "we need to start somewhere. So maybe we could start here. Great. Thanks, Kay. That was really, really great talk and really great discussion in the end. Very, let's say, good ideas and good counter ideas, I would say, to that. So we're coming to the last part, and I was actually wondering whether the music that you picked, Similarity, has any reference to"
+    },
+    {
+      "start": 3451.696,
+      "end": 3479.104,
+      "text": "to AI and now we already know that it was intentionally so I was a bit worried but I think you cleared this quite nicely before so this piece is like 6 minutes 10 and you know what since this is the last time we meet for the season we're going to play listen to the full 6 minutes we still have that time I'm sure so even though we're already past 6 now I think we can dedicate a bit of time to"
+    },
+    {
+      "start": 3479.104,
+      "end": 3501.488,
+      "text": "I could also just add that the book Singularity Now by, I think it's Singularity Now, or The Singularity, it was a book by Ray Kurzweil back in 2003, was the book that got me hooked. So it has that synergy as well."
+    },
+    {
+      "start": 3502.768,
+      "end": 3531.648,
+      "text": "So you respond to when something has that title, as you mentioned before, with Bob Patton. Let me just make sure I'm sharing the screen and we're ready to go as soon as I've basically announced what is still to come here. Of course, we are on the summer break now, and I hope you'll join us again in fall. We'll have more lectures. We'll have more excellent speakers."
+    },
+    {
+      "start": 3531.648,
+      "end": 3561.088,
+      "text": "likely new and unexpected topics. We will also have a workshop on teaching computer science and ethics. This will be an international online workshop with professors from different universities. And they will all discuss this topic. So this is something that's not on the website yet, but I can announce this already. But all the details you will find online on our website and where you get all the information from Twitter and so on. So that's it for today."
+    },
+    {
+      "start": 3561.088,
+      "end": 3590.064,
+      "text": "for this season, basically. Thanks again, Kate, for this great presentation. I also want to take the opportunity to thank Wajda for basically operating the PowerPoint today and running the online tag in the background all the time and the streams and taking care of all that. I think this also needs some recognition. And, well, thanks, everyone, for joining and for the vivid discussions. And, yeah, enjoy the holidays."
+    },
+    {
+      "start": 3590.064,
+      "end": 3596.016,
+      "text": "And as a start into these holidays, let's listen to Singularity. Goodbye and have a nice summer."
+    },
+    {
+      "start": 3966.864,
+      "end": 3967.696,
+      "text": "Good bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

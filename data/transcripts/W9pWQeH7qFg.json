@@ -1,0 +1,781 @@
+{
+  "video_id": "W9pWQeH7qFg",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome to our digital humanism lecture of today. It is already, as I count correctly, the 20th lecture within one year. And so it's already becoming a tradition. And also it's already becoming a tradition to start with a piece of music at the beginning. Today I would like to welcome an outstanding speaker, Mark Rothenberg. And he's also representing an outstanding institution with similar goals. as our digital humanism initiative. Thanks, Mark, for joining us. Before passing over to our moderator, who will then introduce the speaker, just show the procedure of our lecture, of the talk of today. So we have at the beginning, we have 30 minutes to talk. Then we have 30 minutes Q&A. And afterwards, again, a piece of music presented by Peter Knies. And this is to round up this today talks and discussion. It's my pleasure to hand over to Paul Timmers. We know each other since the late 90s already, Paul, I think, when you were a director of the European Commission for Digital Society and you were one of the central guys for digital society in Europe. Currently, Paul is a research associate at Oxford University for Political Sciences. And he's also a junk professor at the European University of Cyprus here, where he's also active in the field of cybersecurity. Paul is also a member of the Digital Enlightenment Forum, which is a partner to our Digital Humanism Initiative. Paul, thanks for moderating the session and the floor is yours. Thank you very much, Hannes. I hope that you can hear me well and a special thanks. of course, to Mark Rotenberg. We are really pleased, Mark, that you are here and that you're going to enlighten us about artificial intelligence and democratic values and the path forward. Mark has a really, really impressive background, and I have heard his name. I don't think I've ever met a person, but... frequently, frequently when I was still working in the European Commission. Mark is president and founder of the Center for AI and Digital Policy and a leading expert in the field of data protection, privacy, and AI, and has served in many international advisory panels, including the OECD AI Group of Experts, and also helped to draft universal guidelines for AI that are... widely endorsed and nowadays also very much commenting on the AI regulatory activities across the world and including what is happening in the United States and in the European Union in terms of AI policy development. He is a prolific writer, has written several books on AI policy and on data protection privacy, of course, testified for US Congress, European Parliament. OECD, other international organizations. And I should also say that I also associate the name of Mark Rotenberg to EPIC, the Electronic Privacy Information Center, that already since 1994, I think you are the founder and co-founder of that and have been the president of that, established itself as... the reference point, but also the place to discuss matters that are related to privacy. And you are certainly doing the same now with the Center for AI and Digital Policy on AI. Recently, you were awarded the ACM Policy Award for longstanding high impact leadership in privacy and technology policy. I think absolutely something that we also... It shows also, I think, from all of us how much we appreciate your work. And just to finish here, Mark will in a minute then get the floor and use a presentation. I also saw that you are a licensed captain of the U.S. Coast Guard. So if we need to be saved, we will turn to you. Mark, the floor is yours. Thank you, Paul, for that very kind introduction. Thank you, Hans, for the kind invitation. It really is an honor to have the opportunity to speak with you today and congratulate you also, I think, on this very important initiative you have launched on digital humanism, which seems so... timely, so critical and so important. So thank you for giving me the opportunity to be a part of it. My only regret actually is that I can't join you in Vienna. I have very fond memories when I was a young child. The first trip I took with my family outside of the United States was to Vienna. And my grandfather taught me how to play chess in a park, which along with my sailing became the... lifelong hobby. So thank you for this. And let me just jump right in. I'm going to speak with you today about artificial intelligence and democratic values. And to cover this topic, I will make a frequent reference to this new organization we have established. called the Center for AI and Digital Policy, because we take this as our mission to understand the relationship between new technology and important principles of fundamental rights and democratic governance. And I invite you, of course, to visit our website, which is caidp.org. I also had the good fortune over several years to work with the OECD in the drafting of the OECD AI principles, which are the first global framework for the governance of artificial intelligence. This was actually one of several projects I've pursued with the OECD over the years. We have done some work on cryptography and computer security and risk assessment and even privacy. But the framework for artificial intelligence is perhaps the most significant work. And it is important to understand the context, the origin of this global framework. To be sure, if you study the field of AI policy, you will almost immediately find reference to 300 frameworks, 500 frameworks. I think the Council of Europe is. told us now we're up to 800 frameworks. So there are plenty of frameworks. But the OECD framework is significant for several reasons. First of all, it was endorsed by national governments, 46 countries affiliated with the OECD. I think there are 38 member states and eight observers. It was subsequently supported by the G20 nations. But at least at the OECD, it also represents the dual commitment to the protection of democratic values and also innovation and economic progress. And so this is a framework that's grounded in a belief that we can have both the protection of political rights, we can have economic cooperation and development, and there is no necessary trade-off, which I think is key to understanding. how we assess new technologies. And of course, the OECD was very proud of this outcome. There's been work over the last couple of years to assess the implementation of the OECD AI principles. And here you see a brief summary. for what the principles seek to accomplish. If you are familiar with the OECD, you know also these are non-binding principles. There is no legal force, but they can be influential. And oftentimes, countries will take this type of soft law. It becomes the basis for national law or international agreement. We actually witnessed this over many years. in the data protection field where the OECD privacy guidelines oftentimes provided a basis for the United States and the European Union to resolve their differing approaches to data protection. And I'm sure also many of the terms on this slide regarding the contents of the OECD principles will be familiar to you. But as I was doing the work with the OECD and the drafting, I was pursuing several related projects. And so one of the projects I was interested in was trying to get a better understanding of these different frameworks for artificial intelligence. Some were arising in the context of international organizations. Some could be found in national AI strategies. There were ethical codes from associations such as the ACM and the IEEE. There were codes that were introduced by large companies like Microsoft and Google. And so I also compiled essentially a reference book with the primary documents for these different AI policy frameworks to make them available to others who wanted to. teach in the field or study the frameworks. And I began to look for common standards, common terms that were emerging in the frameworks. I think you could fairly say one of the first observations in this field is that there's a bit of a spectrum here. There's the hard law, the standards, the requirement. There is at the other end, what we might call ethics or principles, guidelines, I would suggest, exist somewhere in between. And these phrases, of course, again, familiar, human-centric, trustworthy, job growth, fairness, accountability, transparency, and democratic governance, all emerging in the context of the formulation of AI policies and, frankly, reflecting a nation's goals, larger goals at this moment in time for how technology may even address challenges with a pandemic or with climate change, the sustainable development goals of the United Nations. These can be found as well. So there's the work of the OECD. There's the effort to put in one place the key text. And then there was also work that was underway with civil society organizations, with computer scientists, with legal experts to set out a framework more strongly associated we might say with fundamental rights. The OECD I would say provides a very useful framework to think about innovation and growth that touches upon what we would consider fundamental rights, but that is not the primary focus. And in the lead up to the meeting of the Data Protection Commissioners Conference that was held in Brussels in 2018, we tried to put out a set of guidelines, which we called the universal guidelines for artificial intelligence. And we were squarely focused on what many might consider today to be the hard problems, issues associated with the use of AI for social scoring, for example, a technique of the Chinese government to rate the private behavior of individuals in terms of the alignment. with the goals that the government has established. I think to most democratic nations, that use of AI is quite unsettling, recognizing, of course, that in our own countries, we have systems of credit scoring and grading and evaluation that we're all quite familiar with. But I don't think we had previously seen a single score signed by the government. that would both create opportunity for those who are aligned with the aims of the government and at the same time operate as a stigma preventing employment or transportation or access to education if the behavior was not aligned with the government. So that was an issue we had identified. And then, of course, there's a very interesting issue of facial recognition in public spaces. what some would call facial surveillance. I think it's not difficult to distinguish between the use of facial recognition as a form of authentication within the control of the user. We all have that experience. You know, we open up our iPhone or Android phone and one of the best techniques to establish that the phone is within control of the user is the biometric, which is the facial template that can be linked one-to-one directly to the phone. But of course, that's entirely different from the placement of cameras in public spaces and the real-time identification with the aim of tracking and monitoring behavior. So we spent considerable amount of time actually developing these guidelines. I will share with you the 12 simple bumper sticker version statements. We were quite purposeful in outlining the guidelines to describe them as the rights and responsibilities associated with the deployment of AI techniques. And we purposefully made this an asymmetric relationship. Oftentimes in the world of AI ethics, people will say, well, we all have certain responsibilities and users of systems should seek to be well informed. I frankly think this is not the right approach to undergird legal structures in democratic societies. I think we need to recognize. in the creation of these frameworks, that there are asymmetric relations of power, of information. And part of what legal frameworks and democratic societies seek to do is restore a bit of balance in these relations, particularly when they can be upset by the introduction of new technology. And AI, of course, has the capacity. to dramatically amplify the power and the authority of both large businesses and government over individuals through decision making. And so at the outset in formulating the universal guidelines, we purposefully said to those who are subject to AI-based decision making, they should receive certain rights. about transparency of the decision, about a decision made by a person. And those who choose to deploy these techniques should carry various obligations. I was interested, for example, in the asymmetry of identification in physical space, because while those cameras are designed... to identify people. Aerial drones with cameras and facial recognition identify people. Interestingly, our ability to understand who operates these systems seems to be inversely proportional to their interest in identifying us. They hide behind digital screens. And so we called for an identification obligation, which I was actually pleased to see in the EU regulation on drones carried forward this view that if you operate drones in public spaces, you have a responsibility to actively make known the operator and purpose of the drone. That's an example of an identification obligation. I won't go in detail into all these. I think this framework is a useful checklist. As we think about AI and democratic values, you can find this online. But as I said, I think also as we talk about AI and the rule of law, it is very important at the outset that we make clear where the rights fall and where the responsibilities fall. There are, as I mentioned earlier, certainly Topics such as facial recognition, it is tempting to imagine that these techniques would not be used in democratic countries, but of course that's not the case. Many European countries, the US, South America, and elsewhere are all wrestling, I would say, a bit with the question of how to deploy these techniques, whether to deploy these techniques. The proposed EU AI Act treats remote biometric identification as a high-risk application of AI, but doesn't actually prohibit it, as many of the NGOs and academic experts have urged. I spoke a few years ago to the privacy commissioners when they were gathered in Albania and urged them to at least adopt a moratorium. We did some other work in the United States regarding Facebook and our Federal Trade Commission to try to establish a prohibition. I was actually very pleased. I don't know if you saw this past week, but Facebook actually did announce. that it would shut down its facial recognition system and delete more than 1 billion facial images that it had gathered. So these are examples, you know, I would say of controversial AI techniques and how we talk about the relationship to democratic values is really now the next focus of the presentation. Hiring, by the way, is an area where there are black box techniques used to evaluate job applicants. So, and with appropriate thanks to Moshe, who as the former editor of communications of the ACM had asked me to write a little bit, you know, about the work we were doing. It was just about a year ago on into the OECD principles and the universal guidelines. We said it. It's probably time to evaluate what is actually happening in national governments with AI policies and practices. And so we set about a very ambitious project, which was to begin a formal mechanism to assess the alignment between AI policies and practices and democratic values. There are many metrics in the field of AI. We can quickly determine papers published by country, patents issued, research investment. These are familiar to the AI research community and to the policymakers. But if you ask the question, well, How does the United States, let's say, compare with its democratic partners in terms of AI policy? And another question, which I think is always interesting to ask, over time, what trends can we see in a nation's AI policies? Are they becoming more democratic? Are they becoming less democratic? How do we make these judgments? And I outlined the preliminary. thoughts as we were working our way through this report. We published our first edition. In December last year, in conjunction with the Michael Dukakis Institute, we were very honored to have the participation of the president of the European Commission, Ursula von der Leyen, to talk a bit about her views regarding AI and democratic values. And you will find this page again on our website. It's about a 400-page report, so it's a big PDF. You can download the whole thing if you wish. You can also look at it piece by piece. We took 30 countries. We looked at the top 25 by GDP and an additional five countries that we thought were significant. We are planning this year to do 50 countries. And let me explain what I believe the significance of the report is. There are a lot of studies, of course. of AI policies. This was the first numeric evaluation where we actually assigned scores and the assignment of scores then made it possible to rank nations based on our evaluation. And of course in the development of our methodology we try to identify key metrics for democratic values. Now there are 12 metrics which I'll show you in a moment, but just by way of example, one of the metrics that we used was this question. Has the country established a process for meaningful public participation in the development of a national AI policy? And we described our experience having conducted the research of the 30 nations we looked at, and we found various levels of public participation. Some are quite open and engaged. create those opportunities. Others, you know, see AI advancement as a national strategy, have a science agency, and simply announce a policy. We used a metric which essentially was to say roughly yes, no, or partial in the responses that our researchers found as they were trying to answer these questions. Here are the 12 questions we asked. Critically, we looked both at endorsement of frameworks that we considered aligned with democratic values for AI and also implementation of those frameworks. So a country can say, yes, you know, we think the OECD has done very good work and we endorse. But if they're not taking steps to implement. then there is clearly a problem. We had a similar approach with the Universal Declaration of Human Rights. We've talked a little bit about public participation already. We looked for independent agencies to oversee AI practices, sometimes the Data Protection Agency, maybe it's a Human Rights Commission. Algorithmic transparency we see as a key interest in democratic nations and countries that are you know subject to the gdpr or the council of europe convention on privacy typically receive favorable scores so those were our uh 12 questions um our scoring was uh You know, top score would have been a 12. I think Germany was first to 10.5. Kazakhstan was 2.5. It is, as I said, a substantial report. We began last year with 20 researchers. I think now we're over 50 or 60 people who are involved with the project. So it's been growing. It was subject to outside review before we published. We did ask experts for their assessments. We made some revisions based on the feedback we received. And very briefly, here were the findings. Not surprisingly, the OECD guidelines remain influential. We saw a close connection between AI policy safeguards and traditional laws regarding data protection. As I mentioned earlier, there's... clearly red lines that help distinguish democratic nations from authoritarian nations. Authoritarian nations were not reluctant to deploy facial surveillance in public spaces. Democratic nations have struggled with that issue. And then you get into questions such as criminal sentencing or scoring of citizens. Notably, the pace is accelerating. Here are our groupings for our first assessment. And as I said, this provides both a comparison at a moment in time between countries and over time, as we continue to ask the same questions and produce results, we'll look for trends and try to determine whether country practices are improving or moving in the wrong direction. Here's an excerpt. of the scoring from the matrix. You can see a good result on a question would be a Y, a bad result would be an N, and partial credit was a P. And frankly, we recognize that in using subjective ratings and the scope of our empirical work, I think was... very good under the circumstances, but we did not want to create the false concreteness that sometimes arises in a statistical assignment. There's no 8.36 score to be found here. These are rough scores reflecting approximate answers to the questions we asked. We do have recommendations. We do talk about the need to implement democratic values and ensure public participation, fairness, accountability, and transparency remain cross-cutting themes as they were when I did the survey for the AI policy source book. We were particularly interested in the deployment of AI by government itself because it is so influential in establishing best practices. We raised this, in fact. recently with the G20 nations at their meeting, their summit in Rome, and we continue to focus on facial recognition. We've distributed the report. We're doing an update now. As I said, our research group has grown, and it's an exciting project. We have some engagement, certainly, with decision makers. Our ultimate aim, of course, will be to drive the policies and practices of national governments toward higher scores. And I'll just say a few words now about where we are with the center and maybe also some opportunities for collaboration. Of course, welcome your questions and have dialogue. On top of the report, we are now doing weekly updates, looking at significant AI policy developments. We were very interested in the leader statement that came out of the G20 summit in Rome, calling attention to inclusion and diversity for the first time in the realm of AI, talking about privacy and gender equality. We are noting significant reports in the field, and we are also beginning to engage more with policymakers with the aim of trying to influence outcomes. We actually had a very good meeting. last week here in Washington, D.C., with the ADA Committee of the European Parliament, which is about to produce recommendations regarding the EU AI Act, and we had the chance to share our views with them. We have also formalized the study of AI policy, and our aim is to create a formal rubric to teach others many of the key legal instruments and norms and relevant facts to participate as an AI policy advisor. We graduated our first class in the spring. We required a professional ethics statement. from everyone who completes the class. I think that's the first time that's been done in the AI policy field. And we invite applications. So I'm making an offer here to those who'd like to learn more about our work and participate in our work. We are opening up our spring 22 cohort group with applications through mid-December. We've also arranged externships for academic credit. with law schools in the United States, including Georgetown and Stanford, and hope to create similar arrangements with universities in Europe and elsewhere. And engaged, of course, in the policy debate. Our Office of Science and Technology Policy here in the United States has recently proposed a U.S. AI Bill of Rights, which we favor. And we made recommendations just this past week. about how to carry that goal forward. Finally, we're at a very interesting moment. Here we are mid-November. We're anticipating a lot of news on AI policy. Today, Mr. Voss of the Ada Committee introduced a draft report. We will take a close look at that. UNESCO will announce its formal recommendation on the ethics of AI. That is the opening session. That photograph is from yesterday. And we are taking the opportunity to host tomorrow, around this time, in fact, a global conference on AI and democratic values, focusing on two key topics, the first being governance. and the second being the protection of fundamental rights. And finally, I will close by inviting you to join us if you're available tomorrow to continue the conversation about the relationship between artificial intelligence and democratic values. So thank you very much for your time. That's my presentation. I would be happy to answer your questions and have a discussion. Thank you very much, Mark. This was really interesting, I think, both for the breadth and the depth of what you present here, because so much work has been done. And on the one hand, AI is really broad and you're covering here, you're providing a wide comparison and umbrella for that. At the same time, you kind of say it goes already into the very difficult issues that are highly contested and where you can start testing, so to say, what the guidelines, for example, mean and also what the comparison between countries, the national approaches actually mean when it starts to bite, say, facial recognition being one of those, but also, as you point to, what are governments doing themselves with AI. So let's move to the discussion with the participants. So anyone, everybody knows you can raise your hand. And if I don't see your hand, someone will help me to spot that. I saw you can use also the chat and perhaps you can first take on the chat. There was a question from Alison and then the next one that I will invite is Edward Lee. So Alison Stanger, Alison, would you like to formulate your question? Sure. It's just a very quick. Quick question. I was wondering if the center had any position on the soon to be formed National Artificial Intelligence Advisory Committee. If you were backing a particular candidate or had any recommendations for that soon to be formed commission. Yeah, that's a very good question. Thank you for that. In fact, we support that initiative from the Office of Science and Technology Policy here in the U.S. We have nominated two people. We're glad that process is open. But I will say that current advisory council also stands as a contrast to the initial U.S. approach, which was the National Security Commission on AI. And that commission was limited, frankly, to leaders in the tech industry and Defense Department agencies. It was very secretive. It made a lot of recommendations that we don't agree with. And it presented itself as the formal position of the U.S. government on AI. That was not the right approach. And in our evaluation, of the US AI strategy on that question five, we were critical of the US for that type of policymaking. But if you're following now the strategy of the report in our metric, that score could well improve because there is now an open process to invite public participation and we consider that a step in the right direction. May I just build for a minute on that question? Does that also mean that apart from kind of assessing the quality of the governance, you are also starting to give this is the way you could actually do actually organize it? This is this is a proper form of governance. So kind of giving. Well, you know, it's a normative part, but at least this is anyway an open method of comparison. So it could be best practices. Yes, I'm a very big believer in comparative studies, and I think one of the great virtues of comparative studies is that it gives you the opportunity to see how the same question is addressed in different jurisdictions. So I don't need to, you know, so much be the academic and imagine my most favorite approach. I can say, isn't it interesting, let's say, that in Canada they went through a series of public meetings. and provided a draft report and then proceeded to a national strategy on that basis. The EU actually did something very similar with a white paper in February 2020, and India has as well. So we do the study to find exemplars of good practice, and it is a way to encourage other countries to say, maybe you could follow the lead of that country in the development of your national strategy. Thank you. Edward, you have your hand raised. The floor is yours. Yeah. Hi, Mark. I'm Edward Lee from computer science at Berkeley. My question is about algorithmic transparency. And the short version of the question is, what if it's impossible? And just to elaborate a little bit, you know, most people relate this idea of algorithmic transparency to the ability to provide convincing explanations for the outcomes of the AI. And I conjecture that a demand for convincing explanations is going to lead to the development of an AI that can provide a convincing explanation for any decision. We already know that humans are actually very good at that. And psychologists know that often the convincing explanation is not actually an explanation of what leads to the decision. And we're seeing similar phenomena in particularly architectures that are based on deep neural networks, where you can come up with many different convincing explanations for just about any decision, including opposite decisions. And if we automate the process of creating the convincing explanations, we will have accomplished exactly nothing. Yeah, I agree with you. Nice to see you, by the way. I actually thought you were going to ask a slightly different question. I'm sure you remember the days, you know, what we used to call AI back in the 80s, which were essentially rule-based expert systems, right? And they were transparent and they were provable. I spent some time writing chess and backgammon programs. And if I didn't like the result, you know, I'd alter a coefficient or change the, you know, tree search mechanism or whatever it was. But the nice thing about that era to me was that, you know, we could investigate, we could prove, we could adjust. Now, as you say, we're in the realm of machine learning and neural networks, and they are essentially black boxes. If you ask someone to replicate an outcome or prove an outcome, they say, well, that's not really possible, but we'll give you an explanation of the outcome. And I agree with you, by the way, I don't find explanations very satisfying. We have focused in the metric on algorithmic transparency on certain legal instruments, such as Article 22 in the GDPR and Article 9 in the Council of Europe Privacy Convention, which actually give people the right to access the logic and factors that contributed to a decision, right? And, you know, I've had this debate with people say, well, that's, you know, lovely theory, but you have to understand practically it's not possible. And my view, at least, is if your model, you know, for criminal sentencing relies on the fact in the United States that young black males have a higher recidivism rate than young white females, and therefore they should go to jail for longer period of time. We simply wouldn't permit it. But if you produce the same outcome based on the data sets that you've gathered with no opportunity to investigate or interrogate, we shouldn't allow it, you see. So we're in a realm where I think we are actually going to need to make some decisions, and it may be the EU risk framework that helps us with this. where we may actually need to prohibit certain types of AI practices if we can't prove outcomes. Because in, for example, criminal sentencing, and we might even say job hiring, the consequences of an unfair or inaccurate outcome are just too great, you know. But thank you. I mean, it's a very interesting point you make, and I think I would agree with you that the challenge is really not how good is the explanation. I think there's a deeper problem there. That's really interesting, and if we have time, I'd like to come back to that. But let's first move to Sally Wyatt, and then after that, Laurence Brooks has a question on the chat. But Sally? Okay, thank you. Thank you very much. It's very interesting. My name is Sally Wyatt. I'm a professor of digital cultures at Maastricht University in the Netherlands. And I think this relates to the question that Edward just raised and your answer. But it's, you know, I think an important democratic value is protecting the rights of minorities in a country. And one of the things that sometimes concerns me is that, you know, AI could actually be used. to really threaten the rights of minorities or to undermine the rights of the minorities. And I was wondering in your kind of scoring system, and I appreciate your efforts to not come up with, you know, three points after the decimal. But was rights of minorities one of the criteria? I'm afraid it went a bit fast for me. Yeah, that's that's another great question. And frankly, it's an issue we've struggled with. a bit, particularly in the United States. I mean, there's no doubt that in the US, the AI policy dialogue is very focused on questions of bias and the impact of AI on particular communities, which I think is descriptively correct. And at the same time, we wanted to create a methodology that could capture all circumstances. And, you know, it means considering not only people of color or certain gender, but also immigrants. And if we go down eight roads, in my opinion, we're almost going down no roads. So we try to use general metrics, let's say fairness, accountability and transparency. And if decisions are fair, you see. then factors that would tend to discriminate against certain groups should not be permissible, right? It would be the overarching approach to deal with those unjust outcomes. This is a little bit of a roundabout answer, but the point I'm making here is with full recognition of the problem of bias and the disparate impact, our aim with the methodology is to be inclusive and comprehensive and to treat any unfair outcome as a result that democratic nations would seek to avoid. Thank you. Laurence had a question on the chat. Lawrence, do you want to pick up your point and phrase the question? Hello. Thank you very much for your talk, Mark. Lawrence Brooks here, professor in the Centre for Computing and Social Responsibility at De Montfort University in the UK. I was just trying to kind of widen the conversation a little bit. I very much appreciate that you came to talk about AI. It's also what lessons can we learn from this for maybe other technologies? AI, in a sense, has already been quite well developed, especially in some parts anyway, in some aspects. But there are other emerging technologies which also speak very much to some of the other questions about threats to democracy and human rights. And I'm just wondering, are there lessons do you think that we can learn from the AI development that we can apply to technologies? earlier on in their development phase so things like neurotechnologies where people are already experimenting with direct interaction with the brain or even the one that's around us at the moment with cop 26 and climate change are there are there kind of policies and lessons that we can extract from this that we can apply to these more emerging more developing technologies you know it's an extra Excellent question, Lawrence, and I think particularly in the field of science and ethics and science and professional responsibility, there's a wide terrain. of technologies that require more careful investigation. I will say at this moment, there is good reason to focus on AI. And the simple reason is that governments are focused on AI and big companies are focused on AI. And the decisions that occur now through political institutions will have lasting consequence. The debate around AI has both matured and concentrated that I think it justifies this attention. But I would not exclude through the lens of science and ethics, or as I said, science and professional responsibility. You know, nanotech comes up from time to time, or robotics comes up, or bioengineering. All of these are important fields to study. Mark, may I ask the mirror of that question, perhaps? We have had technologies that led to a lot of debate. And what did we actually learn from them? I'm thinking in particular, the whole debate around encryption, which is kind of still unresolved. And I mean, looking a little bit from a distance, it's a history of a lot of frustration, put it politely. So what did we actually learn from the way we conducted that debate for this debate of today? Perhaps in parts of AI, not everything of AI, but in parts of AI. Right. That's a very good question, Paul, also. And I was, you know, as I say, I was there at the beginning because it was really the basis when we started EPIC in 1994. We had organized the first Internet petition on the freedom to use encryption, and we were opposing the national security agencies. efforts to mandate key escrow. But it also was an opportunity, apart from the advocacy work we did, to do a comparative study similar to the one we're doing now on AI to understand how different national governments were regulating crypto. And I don't know what the simple solution is today. I think there is a risk always of building in access. In the best case scenario, it's used with lawful authority in pursuit of someone who's suspected of a crime or poses a risk to public safety. And I would not object in those circumstances. But as I said, that's the best case scenario. And many other scenarios of access to private keys anticipate a much broader type of surveillance authority. I remember in the US, this was a few years ago, I debated the former director of the FBI, Mr. Comey, at the annual convention of the Bar Association in San Francisco. And he was arguing at the time that he had 700 cell phones in his possession from lawful investigations, and he couldn't open them because of encryption. He was very upset about it. And I did my homework before the debate, and I had learned that in the past year, more than 3 million cell phones had been lost or stolen in the United States. And it was because of encryption that further crimes were not committed by the people who had seized those cell phones. So I thought, well, you have 700 you're concerned about. But that's maybe a good trade-off if there are 3 million cell phones out there that can't be hacked for fraudulent purposes. That indeed may also have a lesson for AI. There was a question on the chat by Anna. Anna, do you want to... Yeah, hello. I'm a postdoc in machine learning. in the University of Vienna. So my question is that we know that all IE basically learns the biases that exist already in data sets. So all these policies that we see and they kind of come from people before that. So my question is, was it compared like the policies that made from IE with the people who works there from government? Right. That issue has come up frequently in AI debates. Interestingly, it comes up oftentimes with regard to employment. Big companies turn to third party firms to sift through their resumes, their applications and decide who it is they should interview. And so the third party firm looks at the company and asks the question, what type of people succeed in the company? You see, and so they create a certain prototype and they say, well, these are the people, therefore, that you should be interviewing and hiring. And not surprisingly, if you have a big company with biases built in, that technique, by virtue of the data set, becomes almost a precise replication of the bias within the organization. clearly a need to look more closely at the data and to understand how those decisions are made. I think, to use Paul's term, you can flip this on its head and actually use these data analytic techniques to uncover problems with companies and criminal justice systems. Because perhaps instead of the AI saying to the company, These are the people that you should hire because they're very similar to the people at the company. Maybe the AI should say to the company, you don't appear to have a very diverse workforce. There are a lot of talented people out there. Let's take a different approach to take advantage of the skills that would be available to you. So this would be a... more radical use of an AI technique to uncover bias rather than to simply replicate it. Then AI becomes kind of like a microscope or perhaps a telescope to dissect what is happening in government or in companies, the way they work. Very interesting. Thank you, Anna, for that question. Oliviero Stock, you raised also your hand. Oliviero, the floor is yours. Thank you. thank you for your talk mark i'm oliviero stock i'm an ai person language and intelligent interfaces so mostly when when we talk about the democratic values and ai we talk about ai threats mainly surveillance biases opacity and so on but i think if we talk about democratic values danger one of the big issues now is somehow the right to truthful information physically telling truth from false or avoiding unwanted persuasion on one sort of the other so ai could have a very important potential role in helping democracy from that point of view so it's the The other side of the coin, AI that should help democracy and doesn't do enough for helping democracy. My question is, is it possible to come also with a proactive policy that tends to enforce, for instance, to require, I don't know, I say something stupid, to require that companies must spend... a part of their income in investing in this direction? Yes. I think it's clear there are many positive applications for AI. And to return to my great regard for the OECD, my understanding of technology is that it does coexist with democracy and innovation. I don't think we need to say, you know, we shouldn't use AI because we believe in democracy. I think we should look for innovative techniques. But I do believe it needs to be accountable. And I would say the big concern, and this is also, you know, the view that was expressed by the Facebook whistleblower who spoke yesterday in the European Parliament. is that to deploy a technique and not to be able to assess it is a very dangerous road to go down, even if the preliminary results you receive are encouraging. And there are lots of ways in which AI can be very impressive. But I think we need to be careful because if we can't interrogate these techniques and if we can't prove outcomes, we become increasingly reliant on systems we don't understand. And that would not be a good result. So yes, let's use AI techniques to uncover disinformation, but let's be sure that we can evaluate these techniques and know that they're working as they should. Thank you. Mark, we are nearing the end of the hour, but I see that Hannah still would like to intervene. And there's also another question on, The chat, perhaps Hannes first. Hannes, do you want to take the floor? Yeah, I had a similar question to Oliviero's, but I have another one. First of all, thanks, Mark, for a really presentation, because it's really basic work you are doing. And it's really I didn't know, for example, that there are already 800 frameworks, guidelines and those different issues. And I think this is really a valuable contribution to the discussion. My question is very similar to Oliviero's, because there is the. frequent argument that too much regulation could harm innovation. And do you have some external variables where you could somehow look at this argument and say, okay, if there's a framework of regulation, what is the relationship to innovation or the speed of innovation? So it's a critical issue you raise, Hans. And I'll say, frankly, I'm agnostic on this point. If you take as your goal the protection of democratic values, then I think your answer is as much regulation as is necessary. So if we can do this with light touch regulation, I'm sure the industry and the research community would say that's preferable. But you see, if light touch regulation doesn't protect the fundamental rights of a democratic society, then that's an insufficient answer. So rather than say, you know, lots of regulation or little regulation, I think we need to determine what is the necessary regulation. And if I can add a corollary also, you know, the GDPR as originally conceived was comprehensive, but it was not overly detailed, at least compared with some of the US laws I've studied, which can be. extremely complex and still not get much work done. I think the GDPR struck the balance between a comprehensive approach that still allows for commerce and everything else to take place. And so perhaps a similar approach with AI would work well. Thank you. Mark, do you still have a minute for questions? Yes, sure. I'm happy to go further if you'd like. Let's go on because I think there's actually related interesting question also on the chat by, at least the way I interpret it, by Skouros Georgios, that kind of suggests, you know, there may be other technologies that could be combined with AI. And perhaps that also relates to this question about how much regulation that you actually need, because then if you talk about decentralization suggesting blockchain, that's another form of governance. But perhaps Skouros Georgios, perhaps you want to pose the question yourself. explain a bit more. You have the floor. Yes, excuse me. I had a problem to activate my microphone. Thank you. The idea is that as we learn, we hear more and more about blockchain these times. And I've just read a book called Cyber Republic of George Sarkadakis. father of me from Greece, who in this book, he puts several interesting matters and thinks that these new decentralized systems, which probably will take over the actual web 2.0 system, all these social media, et cetera, which are owned by big companies, maybe they will favor democracy. respect of democratic values in the future. What is your opinion? I would not like to... I think it's understandable what I would like to say. So I addressed this issue just a couple of weeks ago. I was speaking with the data protection commissioners and again, making the argument that I do think new technologies do advance democratic values. I don't think we need to have a negative assessment. And blockchain could as well. But here you see the significance of understanding the asymmetric allocation of rights and responsibilities actually becomes quite important. So I'm concerned that blockchain is used to, let's say, track the activities of the private individual and create a verifiable public ledger that disadvantages the individual in the dispute with the business. Whereas if blockchain is deployed to expand accountability techniques, with regard to companies and agencies that are deploying AI methods, this is actually a way that we could implement or encode. democratic values. Because you see, we've established the predicate, accountability for AI is important. Blockchain is a technique that could advance that goal. Let's implement that technique toward that goal. And this is the way in which we do introduce and can introduce technologies in many domains that also constitute forms of innovation and that also advance the interests of democracy. Thank you, Mark. This is really fascinating. I mean, AI is in that sense, perhaps not only that we are talking about that technology, but the way it exposes in many ways, we are working, we are assuming that we have relationships, whether in the public sector or between consumers and companies expose that. I'm thinking of the case in the Netherlands where, Somewhere just in the beginning, there is a piece of AI, but ultimately the way it had been used to find people that were claiming child benefits that were not justified, that actually what has been perhaps even more serious is how the whole process beyond the technology worked, the judicial system, the administrative system, the political system, and ultimately the government fell. So, you know, there's a serious issue there. So AI can possibly be also the trigger to expose a lot of the way we work and live and do commerce. Mark, there's a lot more to be said, but we are very grateful that you have. been going in depth here with us and also been able to, I think, bring these topics, a lot of work that is happening in this field. And as Hannes also said, a lot more is going to happen here. We should all be part of that. And the work that you are doing is critical, I think, to inform us, to make us part of the discussion and to discuss and continue discussing with you. So many thanks for that. The tradition here is to close the Digital Humanism seminars in a very special way. And for that, I hand back again saying a word of thanks to you, Mark, and hoping to stay in contact. I hand back to Hannes or to Mette? No, to Peter. Ah, okay, to Peter. There you go. So we're closing with some music. Let's close with some music. And again, Mozart. So within the given constraints, so Mark wanted Mozart, Professor Wertner always wants short pieces. So given these things, I selected for both the beginning and the end something from Le Petit Rien, which is a ballet where some contributions have later been attributed to Mozart and in the Kirche vor Zeichnis this is filed under 299b in appendix 10 and the order of the movements and pieces is somewhat arbitrary. The one we heard in the beginning can be found as agité in some editions. but there seems to be some doubt whether it was actually written by Mozart. Likely it was, however. The one now does not provide any specifications, but is often numbered as the second piece in that collection. Performance-wise, both performances are found under the name of an obscure orchestra called L'Orchestra Philharmonica di Mos Weissmann. which is funny because it seems to only exist on music streaming platforms and appears to be a fake name to rebrand others recordings and avoid proper attribution and collecting royalties and this is not the first time this would be happening but i do like these renditions and this is why i picked them so to sum up i can't say which piece it is exactly or who the performer is but there is a chance the composer is actually mozart as requested by mark Now I have a nice segue. For sure, we do know the performer of our next lecture, which is taking place already next week, Minxin Pei from Claremont McKenna College will talk about the transition from labor-intensive to tech-intensive surveillance in China, and Susan Winter will moderate. Okay, so with another little nothing by probably Mozart, I say thanks to all for today, and see you next week. Thanks to all of you. Goodbye. Thank you. Goodbye. Thank you, Mark. It was great. Mark, it was great. Nice to see you all. Okay. Bye.",
+  "segments": [
+    {
+      "start": 52.656,
+      "end": 81.856,
+      "text": "Welcome to our digital humanism lecture of today. It is already, as I count correctly, the 20th lecture within one year. And so it's already becoming a tradition. And also it's already becoming a tradition to start with a piece of music at the beginning. Today I would like to welcome an outstanding speaker, Mark Rothenberg. And he's also representing an outstanding institution with similar goals."
+    },
+    {
+      "start": 81.856,
+      "end": 111.136,
+      "text": "as our digital humanism initiative. Thanks, Mark, for joining us. Before passing over to our moderator, who will then introduce the speaker, just show the procedure of our lecture, of the talk of today. So we have at the beginning, we have 30 minutes to talk. Then we have 30 minutes Q&A. And afterwards, again, a piece of music presented by Peter Knies. And this is to round up this today talks and discussion."
+    },
+    {
+      "start": 111.136,
+      "end": 133.136,
+      "text": "It's my pleasure to hand over to Paul Timmers. We know each other since the late 90s already, Paul, I think, when you were a director of the European Commission for Digital Society and you were one of the central guys for digital society in Europe. Currently, Paul is a research associate at Oxford University for Political Sciences."
+    },
+    {
+      "start": 133.136,
+      "end": 159.84,
+      "text": "And he's also a junk professor at the European University of Cyprus here, where he's also active in the field of cybersecurity. Paul is also a member of the Digital Enlightenment Forum, which is a partner to our Digital Humanism Initiative. Paul, thanks for moderating the session and the floor is yours. Thank you very much, Hannes. I hope that you can hear me well and a special thanks."
+    },
+    {
+      "start": 159.84,
+      "end": 186.304,
+      "text": "of course, to Mark Rotenberg. We are really pleased, Mark, that you are here and that you're going to enlighten us about artificial intelligence and democratic values and the path forward. Mark has a really, really impressive background, and I have heard his name. I don't think I've ever met a person, but..."
+    },
+    {
+      "start": 186.304,
+      "end": 213.472,
+      "text": "frequently, frequently when I was still working in the European Commission. Mark is president and founder of the Center for AI and Digital Policy and a leading expert in the field of data protection, privacy, and AI, and has served in many international advisory panels, including the OECD AI Group of Experts, and also helped to draft universal guidelines for AI that are..."
+    },
+    {
+      "start": 213.472,
+      "end": 243.296,
+      "text": "widely endorsed and nowadays also very much commenting on the AI regulatory activities across the world and including what is happening in the United States and in the European Union in terms of AI policy development. He is a prolific writer, has written several books on AI policy and on data protection privacy, of course, testified for US Congress, European Parliament."
+    },
+    {
+      "start": 243.296,
+      "end": 268.32,
+      "text": "OECD, other international organizations. And I should also say that I also associate the name of Mark Rotenberg to EPIC, the Electronic Privacy Information Center, that already since 1994, I think you are the founder and co-founder of that and have been the president of that, established itself as..."
+    },
+    {
+      "start": 268.32,
+      "end": 295.216,
+      "text": "the reference point, but also the place to discuss matters that are related to privacy. And you are certainly doing the same now with the Center for AI and Digital Policy on AI. Recently, you were awarded the ACM Policy Award for longstanding high impact leadership in privacy and technology policy. I think absolutely something that we also..."
+    },
+    {
+      "start": 295.216,
+      "end": 316.304,
+      "text": "It shows also, I think, from all of us how much we appreciate your work. And just to finish here, Mark will in a minute then get the floor and use a presentation. I also saw that you are a licensed captain of the U.S. Coast Guard. So if we need to be saved, we will turn to you. Mark, the floor is yours."
+    },
+    {
+      "start": 316.848,
+      "end": 337.664,
+      "text": "Thank you, Paul, for that very kind introduction. Thank you, Hans, for the kind invitation. It really is an honor to have the opportunity to speak with you today and congratulate you also, I think, on this very important initiative you have launched on digital humanism, which seems so..."
+    },
+    {
+      "start": 337.664,
+      "end": 364.352,
+      "text": "timely, so critical and so important. So thank you for giving me the opportunity to be a part of it. My only regret actually is that I can't join you in Vienna. I have very fond memories when I was a young child. The first trip I took with my family outside of the United States was to Vienna. And my grandfather taught me how to play chess in a park, which along with my sailing became the..."
+    },
+    {
+      "start": 364.352,
+      "end": 386.944,
+      "text": "lifelong hobby. So thank you for this. And let me just jump right in. I'm going to speak with you today about artificial intelligence and democratic values. And to cover this topic, I will make a frequent reference to this new organization we have established."
+    },
+    {
+      "start": 386.944,
+      "end": 416.576,
+      "text": "called the Center for AI and Digital Policy, because we take this as our mission to understand the relationship between new technology and important principles of fundamental rights and democratic governance. And I invite you, of course, to visit our website, which is caidp.org. I also had the good fortune over several years to work"
+    },
+    {
+      "start": 416.576,
+      "end": 445.328,
+      "text": "with the OECD in the drafting of the OECD AI principles, which are the first global framework for the governance of artificial intelligence. This was actually one of several projects I've pursued with the OECD over the years. We have done some work on cryptography and computer security and risk assessment and even privacy."
+    },
+    {
+      "start": 445.328,
+      "end": 472.48,
+      "text": "But the framework for artificial intelligence is perhaps the most significant work. And it is important to understand the context, the origin of this global framework. To be sure, if you study the field of AI policy, you will almost immediately find reference to 300 frameworks, 500 frameworks. I think the Council of Europe is."
+    },
+    {
+      "start": 472.48,
+      "end": 498.944,
+      "text": "told us now we're up to 800 frameworks. So there are plenty of frameworks. But the OECD framework is significant for several reasons. First of all, it was endorsed by national governments, 46 countries affiliated with the OECD. I think there are 38 member states and eight observers. It was subsequently supported by the G20 nations."
+    },
+    {
+      "start": 498.944,
+      "end": 526.992,
+      "text": "But at least at the OECD, it also represents the dual commitment to the protection of democratic values and also innovation and economic progress. And so this is a framework that's grounded in a belief that we can have both the protection of political rights, we can have economic cooperation and development, and there is no necessary trade-off, which I think is key to understanding."
+    },
+    {
+      "start": 526.992,
+      "end": 547.328,
+      "text": "how we assess new technologies. And of course, the OECD was very proud of this outcome. There's been work over the last couple of years to assess the implementation of the OECD AI principles. And here you see a brief summary."
+    },
+    {
+      "start": 547.328,
+      "end": 572.672,
+      "text": "for what the principles seek to accomplish. If you are familiar with the OECD, you know also these are non-binding principles. There is no legal force, but they can be influential. And oftentimes, countries will take this type of soft law. It becomes the basis for national law or international agreement. We actually witnessed this over many years."
+    },
+    {
+      "start": 572.672,
+      "end": 596.432,
+      "text": "in the data protection field where the OECD privacy guidelines oftentimes provided a basis for the United States and the European Union to resolve their differing approaches to data protection. And I'm sure also many of the terms on this slide regarding the contents of the OECD principles will be familiar to you."
+    },
+    {
+      "start": 596.848,
+      "end": 618.096,
+      "text": "But as I was doing the work with the OECD and the drafting, I was pursuing several related projects. And so one of the projects I was interested in was trying to get a better understanding of these different frameworks for artificial intelligence."
+    },
+    {
+      "start": 618.096,
+      "end": 643.248,
+      "text": "Some were arising in the context of international organizations. Some could be found in national AI strategies. There were ethical codes from associations such as the ACM and the IEEE. There were codes that were introduced by large companies like Microsoft and Google."
+    },
+    {
+      "start": 643.248,
+      "end": 656.336,
+      "text": "And so I also compiled essentially a reference book with the primary documents for these different AI policy frameworks to make them available to others who wanted to."
+    },
+    {
+      "start": 656.336,
+      "end": 678.112,
+      "text": "teach in the field or study the frameworks. And I began to look for common standards, common terms that were emerging in the frameworks. I think you could fairly say one of the first observations in this field is that there's a bit of a spectrum here. There's the hard law, the standards, the requirement."
+    },
+    {
+      "start": 678.112,
+      "end": 705.472,
+      "text": "There is at the other end, what we might call ethics or principles, guidelines, I would suggest, exist somewhere in between. And these phrases, of course, again, familiar, human-centric, trustworthy, job growth, fairness, accountability, transparency, and democratic governance, all emerging in the context of the formulation of AI policies and, frankly, reflecting"
+    },
+    {
+      "start": 705.472,
+      "end": 734.288,
+      "text": "a nation's goals, larger goals at this moment in time for how technology may even address challenges with a pandemic or with climate change, the sustainable development goals of the United Nations. These can be found as well. So there's the work of the OECD. There's the effort to put in one place the key text. And then there was also work that was underway"
+    },
+    {
+      "start": 734.288,
+      "end": 755.728,
+      "text": "with civil society organizations, with computer scientists, with legal experts to set out a framework more strongly associated we might say with fundamental rights. The OECD I would say provides a very useful"
+    },
+    {
+      "start": 755.728,
+      "end": 783.76,
+      "text": "framework to think about innovation and growth that touches upon what we would consider fundamental rights, but that is not the primary focus. And in the lead up to the meeting of the Data Protection Commissioners Conference that was held in Brussels in 2018, we tried to put out a set of guidelines, which we called"
+    },
+    {
+      "start": 783.76,
+      "end": 811.44,
+      "text": "the universal guidelines for artificial intelligence. And we were squarely focused on what many might consider today to be the hard problems, issues associated with the use of AI for social scoring, for example, a technique of the Chinese government to rate the private behavior of individuals in terms of the alignment."
+    },
+    {
+      "start": 811.44,
+      "end": 838.56,
+      "text": "with the goals that the government has established. I think to most democratic nations, that use of AI is quite unsettling, recognizing, of course, that in our own countries, we have systems of credit scoring and grading and evaluation that we're all quite familiar with. But I don't think we had previously seen a single score signed by the government."
+    },
+    {
+      "start": 838.56,
+      "end": 865.712,
+      "text": "that would both create opportunity for those who are aligned with the aims of the government and at the same time operate as a stigma preventing employment or transportation or access to education if the behavior was not aligned with the government. So that was an issue we had identified. And then, of course, there's a very interesting issue of facial recognition in public spaces."
+    },
+    {
+      "start": 865.712,
+      "end": 885.872,
+      "text": "what some would call facial surveillance. I think it's not difficult to distinguish between the use of facial recognition as a form of authentication within the control of the user. We all have that experience. You know, we open up our iPhone or Android phone and one of the best"
+    },
+    {
+      "start": 885.872,
+      "end": 914.912,
+      "text": "techniques to establish that the phone is within control of the user is the biometric, which is the facial template that can be linked one-to-one directly to the phone. But of course, that's entirely different from the placement of cameras in public spaces and the real-time identification with the aim of tracking and monitoring behavior. So we spent"
+    },
+    {
+      "start": 914.912,
+      "end": 940.944,
+      "text": "considerable amount of time actually developing these guidelines. I will share with you the 12 simple bumper sticker version statements. We were quite purposeful in outlining the guidelines to describe them as the rights and responsibilities associated with the deployment of AI techniques."
+    },
+    {
+      "start": 940.944,
+      "end": 968.224,
+      "text": "And we purposefully made this an asymmetric relationship. Oftentimes in the world of AI ethics, people will say, well, we all have certain responsibilities and users of systems should seek to be well informed. I frankly think this is not the right approach to undergird legal structures in democratic societies. I think we need to recognize."
+    },
+    {
+      "start": 968.224,
+      "end": 995.68,
+      "text": "in the creation of these frameworks, that there are asymmetric relations of power, of information. And part of what legal frameworks and democratic societies seek to do is restore a bit of balance in these relations, particularly when they can be upset by the introduction of new technology. And AI, of course, has the capacity."
+    },
+    {
+      "start": 995.68,
+      "end": 1023.12,
+      "text": "to dramatically amplify the power and the authority of both large businesses and government over individuals through decision making. And so at the outset in formulating the universal guidelines, we purposefully said to those who are subject to AI-based decision making, they should receive certain rights."
+    },
+    {
+      "start": 1023.12,
+      "end": 1047.968,
+      "text": "about transparency of the decision, about a decision made by a person. And those who choose to deploy these techniques should carry various obligations. I was interested, for example, in the asymmetry of identification in physical space, because while those cameras are designed..."
+    },
+    {
+      "start": 1047.968,
+      "end": 1070.128,
+      "text": "to identify people. Aerial drones with cameras and facial recognition identify people. Interestingly, our ability to understand who operates these systems seems to be inversely proportional to their interest in identifying us. They hide behind digital screens."
+    },
+    {
+      "start": 1070.128,
+      "end": 1098.832,
+      "text": "And so we called for an identification obligation, which I was actually pleased to see in the EU regulation on drones carried forward this view that if you operate drones in public spaces, you have a responsibility to actively make known the operator and purpose of the drone. That's an example of an identification obligation. I won't go in detail into all these. I think this"
+    },
+    {
+      "start": 1098.832,
+      "end": 1125.488,
+      "text": "framework is a useful checklist. As we think about AI and democratic values, you can find this online. But as I said, I think also as we talk about AI and the rule of law, it is very important at the outset that we make clear where the rights fall and where the responsibilities fall. There are, as I mentioned earlier, certainly"
+    },
+    {
+      "start": 1125.488,
+      "end": 1151.728,
+      "text": "Topics such as facial recognition, it is tempting to imagine that these techniques would not be used in democratic countries, but of course that's not the case. Many European countries, the US, South America, and elsewhere are all wrestling, I would say, a bit with the question of how to deploy these techniques, whether to deploy these techniques."
+    },
+    {
+      "start": 1151.728,
+      "end": 1181.584,
+      "text": "The proposed EU AI Act treats remote biometric identification as a high-risk application of AI, but doesn't actually prohibit it, as many of the NGOs and academic experts have urged. I spoke a few years ago to the privacy commissioners when they were gathered in Albania and urged them to at least adopt a moratorium."
+    },
+    {
+      "start": 1181.584,
+      "end": 1197.568,
+      "text": "We did some other work in the United States regarding Facebook and our Federal Trade Commission to try to establish a prohibition. I was actually very pleased. I don't know if you saw this past week, but Facebook actually did announce."
+    },
+    {
+      "start": 1197.568,
+      "end": 1225.872,
+      "text": "that it would shut down its facial recognition system and delete more than 1 billion facial images that it had gathered. So these are examples, you know, I would say of controversial AI techniques and how we talk about the relationship to democratic values is really now the next focus of the presentation. Hiring, by the way, is an area where there are"
+    },
+    {
+      "start": 1225.872,
+      "end": 1251.536,
+      "text": "black box techniques used to evaluate job applicants. So, and with appropriate thanks to Moshe, who as the former editor of communications of the ACM had asked me to write a little bit, you know, about the work we were doing. It was just about a year ago on into the OECD principles and the universal guidelines. We said it."
+    },
+    {
+      "start": 1251.536,
+      "end": 1278.608,
+      "text": "It's probably time to evaluate what is actually happening in national governments with AI policies and practices. And so we set about a very ambitious project, which was to begin a formal mechanism to assess the alignment between AI policies and practices and democratic values."
+    },
+    {
+      "start": 1278.608,
+      "end": 1302.224,
+      "text": "There are many metrics in the field of AI. We can quickly determine papers published by country, patents issued, research investment. These are familiar to the AI research community and to the policymakers. But if you ask the question, well,"
+    },
+    {
+      "start": 1302.224,
+      "end": 1331.552,
+      "text": "How does the United States, let's say, compare with its democratic partners in terms of AI policy? And another question, which I think is always interesting to ask, over time, what trends can we see in a nation's AI policies? Are they becoming more democratic? Are they becoming less democratic? How do we make these judgments? And I outlined the preliminary."
+    },
+    {
+      "start": 1331.552,
+      "end": 1339.216,
+      "text": "thoughts as we were working our way through this report. We published our first edition."
+    },
+    {
+      "start": 1339.6,
+      "end": 1369.12,
+      "text": "In December last year, in conjunction with the Michael Dukakis Institute, we were very honored to have the participation of the president of the European Commission, Ursula von der Leyen, to talk a bit about her views regarding AI and democratic values. And you will find this page again on our website. It's about a 400-page report, so it's a big PDF."
+    },
+    {
+      "start": 1369.12,
+      "end": 1393.376,
+      "text": "You can download the whole thing if you wish. You can also look at it piece by piece. We took 30 countries. We looked at the top 25 by GDP and an additional five countries that we thought were significant. We are planning this year to do 50 countries. And let me explain what I believe the significance of the report is. There are a lot of studies, of course."
+    },
+    {
+      "start": 1393.376,
+      "end": 1420.032,
+      "text": "of AI policies. This was the first numeric evaluation where we actually assigned scores and the assignment of scores then made it possible to rank nations based on our evaluation. And of course in the development of our methodology we try to identify key metrics for democratic values. Now there are 12 metrics"
+    },
+    {
+      "start": 1420.032,
+      "end": 1448.912,
+      "text": "which I'll show you in a moment, but just by way of example, one of the metrics that we used was this question. Has the country established a process for meaningful public participation in the development of a national AI policy? And we described our experience having conducted the research of the 30 nations we looked at, and we found various levels of public participation. Some are quite open and engaged."
+    },
+    {
+      "start": 1448.912,
+      "end": 1478.832,
+      "text": "create those opportunities. Others, you know, see AI advancement as a national strategy, have a science agency, and simply announce a policy. We used a metric which essentially was to say roughly yes, no, or partial in the responses that our researchers found as they were trying to answer these questions. Here are the 12 questions we asked."
+    },
+    {
+      "start": 1478.832,
+      "end": 1503.552,
+      "text": "Critically, we looked both at endorsement of frameworks that we considered aligned with democratic values for AI and also implementation of those frameworks. So a country can say, yes, you know, we think the OECD has done very good work and we endorse. But if they're not taking steps to implement."
+    },
+    {
+      "start": 1503.552,
+      "end": 1532.256,
+      "text": "then there is clearly a problem. We had a similar approach with the Universal Declaration of Human Rights. We've talked a little bit about public participation already. We looked for independent agencies to oversee AI practices, sometimes the Data Protection Agency, maybe it's a Human Rights Commission. Algorithmic transparency we see as a key interest in democratic nations and countries that are"
+    },
+    {
+      "start": 1532.256,
+      "end": 1547.184,
+      "text": "you know subject to the gdpr or the council of europe convention on privacy typically receive favorable scores so those were our uh 12 questions um our scoring was uh"
+    },
+    {
+      "start": 1547.184,
+      "end": 1572.336,
+      "text": "You know, top score would have been a 12. I think Germany was first to 10.5. Kazakhstan was 2.5. It is, as I said, a substantial report. We began last year with 20 researchers. I think now we're over 50 or 60 people who are involved with the project. So it's been growing. It was subject to outside review before we published."
+    },
+    {
+      "start": 1572.688,
+      "end": 1596.32,
+      "text": "We did ask experts for their assessments. We made some revisions based on the feedback we received. And very briefly, here were the findings. Not surprisingly, the OECD guidelines remain influential. We saw a close connection between AI policy safeguards and traditional laws regarding data protection. As I mentioned earlier, there's..."
+    },
+    {
+      "start": 1596.32,
+      "end": 1621.424,
+      "text": "clearly red lines that help distinguish democratic nations from authoritarian nations. Authoritarian nations were not reluctant to deploy facial surveillance in public spaces. Democratic nations have struggled with that issue. And then you get into questions such as criminal sentencing or scoring of citizens. Notably, the pace is accelerating."
+    },
+    {
+      "start": 1621.424,
+      "end": 1649.76,
+      "text": "Here are our groupings for our first assessment. And as I said, this provides both a comparison at a moment in time between countries and over time, as we continue to ask the same questions and produce results, we'll look for trends and try to determine whether country practices are improving or moving in the wrong direction. Here's an excerpt."
+    },
+    {
+      "start": 1649.76,
+      "end": 1671.616,
+      "text": "of the scoring from the matrix. You can see a good result on a question would be a Y, a bad result would be an N, and partial credit was a P. And frankly, we recognize that in using subjective ratings and the scope of our empirical work, I think was..."
+    },
+    {
+      "start": 1671.616,
+      "end": 1699.664,
+      "text": "very good under the circumstances, but we did not want to create the false concreteness that sometimes arises in a statistical assignment. There's no 8.36 score to be found here. These are rough scores reflecting approximate answers to the questions we asked. We do have recommendations. We do talk about the need to implement democratic values and ensure"
+    },
+    {
+      "start": 1699.664,
+      "end": 1722.0,
+      "text": "public participation, fairness, accountability, and transparency remain cross-cutting themes as they were when I did the survey for the AI policy source book. We were particularly interested in the deployment of AI by government itself because it is so influential in establishing best practices. We raised this, in fact."
+    },
+    {
+      "start": 1722.0,
+      "end": 1750.816,
+      "text": "recently with the G20 nations at their meeting, their summit in Rome, and we continue to focus on facial recognition. We've distributed the report. We're doing an update now. As I said, our research group has grown, and it's an exciting project. We have some engagement, certainly, with decision makers. Our ultimate aim, of course, will be to drive the policies and practices of national governments toward higher scores."
+    },
+    {
+      "start": 1750.816,
+      "end": 1771.232,
+      "text": "And I'll just say a few words now about where we are with the center and maybe also some opportunities for collaboration. Of course, welcome your questions and have dialogue. On top of the report, we are now doing weekly updates, looking at significant AI policy developments."
+    },
+    {
+      "start": 1771.232,
+      "end": 1801.12,
+      "text": "We were very interested in the leader statement that came out of the G20 summit in Rome, calling attention to inclusion and diversity for the first time in the realm of AI, talking about privacy and gender equality. We are noting significant reports in the field, and we are also beginning to engage more with policymakers with the aim of trying to influence outcomes. We actually had a very good meeting."
+    },
+    {
+      "start": 1801.12,
+      "end": 1828.464,
+      "text": "last week here in Washington, D.C., with the ADA Committee of the European Parliament, which is about to produce recommendations regarding the EU AI Act, and we had the chance to share our views with them. We have also formalized the study of AI policy, and our aim is to create"
+    },
+    {
+      "start": 1828.464,
+      "end": 1852.672,
+      "text": "a formal rubric to teach others many of the key legal instruments and norms and relevant facts to participate as an AI policy advisor. We graduated our first class in the spring. We required a professional ethics statement."
+    },
+    {
+      "start": 1852.672,
+      "end": 1881.664,
+      "text": "from everyone who completes the class. I think that's the first time that's been done in the AI policy field. And we invite applications. So I'm making an offer here to those who'd like to learn more about our work and participate in our work. We are opening up our spring 22 cohort group with applications through mid-December. We've also arranged externships for academic credit."
+    },
+    {
+      "start": 1881.664,
+      "end": 1910.096,
+      "text": "with law schools in the United States, including Georgetown and Stanford, and hope to create similar arrangements with universities in Europe and elsewhere. And engaged, of course, in the policy debate. Our Office of Science and Technology Policy here in the United States has recently proposed a U.S. AI Bill of Rights, which we favor. And we made recommendations just this past week."
+    },
+    {
+      "start": 1910.096,
+      "end": 1933.568,
+      "text": "about how to carry that goal forward. Finally, we're at a very interesting moment. Here we are mid-November. We're anticipating a lot of news on AI policy. Today, Mr. Voss of the Ada Committee introduced a draft report. We will take a close look at that."
+    },
+    {
+      "start": 1933.568,
+      "end": 1960.256,
+      "text": "UNESCO will announce its formal recommendation on the ethics of AI. That is the opening session. That photograph is from yesterday. And we are taking the opportunity to host tomorrow, around this time, in fact, a global conference on AI and democratic values, focusing on two key topics, the first being governance."
+    },
+    {
+      "start": 1960.256,
+      "end": 1988.816,
+      "text": "and the second being the protection of fundamental rights. And finally, I will close by inviting you to join us if you're available tomorrow to continue the conversation about the relationship between artificial intelligence and democratic values. So thank you very much for your time. That's my presentation. I would be happy to answer your questions and have a discussion."
+    },
+    {
+      "start": 1988.816,
+      "end": 2017.76,
+      "text": "Thank you very much, Mark. This was really interesting, I think, both for the breadth and the depth of what you present here, because so much work has been done. And on the one hand, AI is really broad and you're covering here, you're providing a wide comparison and umbrella for that. At the same time, you kind of say it goes already into"
+    },
+    {
+      "start": 2017.76,
+      "end": 2040.88,
+      "text": "the very difficult issues that are highly contested and where you can start testing, so to say, what the guidelines, for example, mean and also what the comparison between countries, the national approaches actually mean when it starts to bite, say, facial recognition being one of those, but also, as you point to, what are governments doing themselves with AI."
+    },
+    {
+      "start": 2040.88,
+      "end": 2068.016,
+      "text": "So let's move to the discussion with the participants. So anyone, everybody knows you can raise your hand. And if I don't see your hand, someone will help me to spot that. I saw you can use also the chat and perhaps you can first take on the chat. There was a question from Alison and then the next one that I will invite is Edward Lee. So Alison Stanger, Alison, would you like to formulate your question? Sure. It's just a very quick."
+    },
+    {
+      "start": 2068.016,
+      "end": 2095.072,
+      "text": "Quick question. I was wondering if the center had any position on the soon to be formed National Artificial Intelligence Advisory Committee. If you were backing a particular candidate or had any recommendations for that soon to be formed commission. Yeah, that's a very good question. Thank you for that. In fact, we support that initiative from the Office of Science and Technology Policy here in the U.S."
+    },
+    {
+      "start": 2095.072,
+      "end": 2114.32,
+      "text": "We have nominated two people. We're glad that process is open. But I will say that current advisory council also stands as a contrast to the initial U.S. approach, which was the National Security Commission on AI."
+    },
+    {
+      "start": 2114.32,
+      "end": 2139.968,
+      "text": "And that commission was limited, frankly, to leaders in the tech industry and Defense Department agencies. It was very secretive. It made a lot of recommendations that we don't agree with. And it presented itself as the formal position of the U.S. government on AI. That was not the right approach. And in our evaluation,"
+    },
+    {
+      "start": 2139.968,
+      "end": 2164.848,
+      "text": "of the US AI strategy on that question five, we were critical of the US for that type of policymaking. But if you're following now the strategy of the report in our metric, that score could well improve because there is now an open process to invite public participation and we consider that a step in the right direction."
+    },
+    {
+      "start": 2164.848,
+      "end": 2187.664,
+      "text": "May I just build for a minute on that question? Does that also mean that apart from kind of assessing the quality of the governance, you are also starting to give this is the way you could actually do actually organize it? This is this is a proper form of governance. So kind of giving. Well, you know, it's a normative part, but at least this is anyway an open method of comparison. So it could be best practices."
+    },
+    {
+      "start": 2187.728,
+      "end": 2216.56,
+      "text": "Yes, I'm a very big believer in comparative studies, and I think one of the great virtues of comparative studies is that it gives you the opportunity to see how the same question is addressed in different jurisdictions. So I don't need to, you know, so much be the academic and imagine my most favorite approach. I can say, isn't it interesting, let's say, that in Canada they went through a series of public meetings."
+    },
+    {
+      "start": 2216.56,
+      "end": 2244.032,
+      "text": "and provided a draft report and then proceeded to a national strategy on that basis. The EU actually did something very similar with a white paper in February 2020, and India has as well. So we do the study to find exemplars of good practice, and it is a way to encourage other countries to say, maybe you could follow the lead of that country in the development of your national strategy. Thank you."
+    },
+    {
+      "start": 2244.032,
+      "end": 2272.672,
+      "text": "Edward, you have your hand raised. The floor is yours. Yeah. Hi, Mark. I'm Edward Lee from computer science at Berkeley. My question is about algorithmic transparency. And the short version of the question is, what if it's impossible? And just to elaborate a little bit, you know, most people relate this idea of algorithmic transparency to the ability to provide convincing explanations for the outcomes of the AI."
+    },
+    {
+      "start": 2272.672,
+      "end": 2301.6,
+      "text": "And I conjecture that a demand for convincing explanations is going to lead to the development of an AI that can provide a convincing explanation for any decision. We already know that humans are actually very good at that. And psychologists know that often the convincing explanation is not actually an explanation of what leads to the decision."
+    },
+    {
+      "start": 2301.6,
+      "end": 2325.472,
+      "text": "And we're seeing similar phenomena in particularly architectures that are based on deep neural networks, where you can come up with many different convincing explanations for just about any decision, including opposite decisions. And if we automate the process of creating the convincing explanations, we will have accomplished exactly nothing."
+    },
+    {
+      "start": 2325.472,
+      "end": 2340.976,
+      "text": "Yeah, I agree with you. Nice to see you, by the way. I actually thought you were going to ask a slightly different question. I'm sure you remember the days, you know, what we used to call AI back in the 80s, which were essentially rule-based expert systems, right?"
+    },
+    {
+      "start": 2340.976,
+      "end": 2365.472,
+      "text": "And they were transparent and they were provable. I spent some time writing chess and backgammon programs. And if I didn't like the result, you know, I'd alter a coefficient or change the, you know, tree search mechanism or whatever it was. But the nice thing about that era to me was that, you know, we could investigate, we could prove, we could adjust."
+    },
+    {
+      "start": 2365.472,
+      "end": 2383.904,
+      "text": "Now, as you say, we're in the realm of machine learning and neural networks, and they are essentially black boxes. If you ask someone to replicate an outcome or prove an outcome, they say, well, that's not really possible, but we'll give you an explanation of the outcome. And I agree with you, by the way, I don't find explanations very satisfying."
+    },
+    {
+      "start": 2383.904,
+      "end": 2409.936,
+      "text": "We have focused in the metric on algorithmic transparency on certain legal instruments, such as Article 22 in the GDPR and Article 9 in the Council of Europe Privacy Convention, which actually give people the right to access the logic and factors that contributed to a decision, right?"
+    },
+    {
+      "start": 2409.936,
+      "end": 2438.64,
+      "text": "And, you know, I've had this debate with people say, well, that's, you know, lovely theory, but you have to understand practically it's not possible. And my view, at least, is if your model, you know, for criminal sentencing relies on the fact in the United States that young black males have a higher recidivism rate than young white females, and therefore they should go to jail for longer period of time."
+    },
+    {
+      "start": 2438.64,
+      "end": 2464.928,
+      "text": "We simply wouldn't permit it. But if you produce the same outcome based on the data sets that you've gathered with no opportunity to investigate or interrogate, we shouldn't allow it, you see. So we're in a realm where I think we are actually going to need to make some decisions, and it may be the EU risk framework that helps us with this."
+    },
+    {
+      "start": 2464.928,
+      "end": 2488.4,
+      "text": "where we may actually need to prohibit certain types of AI practices if we can't prove outcomes. Because in, for example, criminal sentencing, and we might even say job hiring, the consequences of an unfair or inaccurate outcome are just too great, you know."
+    },
+    {
+      "start": 2488.4,
+      "end": 2515.664,
+      "text": "But thank you. I mean, it's a very interesting point you make, and I think I would agree with you that the challenge is really not how good is the explanation. I think there's a deeper problem there. That's really interesting, and if we have time, I'd like to come back to that. But let's first move to Sally Wyatt, and then after that, Laurence Brooks has a question on the chat. But Sally? Okay, thank you. Thank you very much. It's very interesting."
+    },
+    {
+      "start": 2515.664,
+      "end": 2542.816,
+      "text": "My name is Sally Wyatt. I'm a professor of digital cultures at Maastricht University in the Netherlands. And I think this relates to the question that Edward just raised and your answer. But it's, you know, I think an important democratic value is protecting the rights of minorities in a country. And one of the things that sometimes concerns me is that, you know, AI could actually be used."
+    },
+    {
+      "start": 2542.816,
+      "end": 2568.112,
+      "text": "to really threaten the rights of minorities or to undermine the rights of the minorities. And I was wondering in your kind of scoring system, and I appreciate your efforts to not come up with, you know, three points after the decimal. But was rights of minorities one of the criteria? I'm afraid it went a bit fast for me. Yeah, that's that's another great question. And frankly, it's an issue we've struggled with."
+    },
+    {
+      "start": 2568.112,
+      "end": 2594.912,
+      "text": "a bit, particularly in the United States. I mean, there's no doubt that in the US, the AI policy dialogue is very focused on questions of bias and the impact of AI on particular communities, which I think is descriptively correct. And at the same time, we wanted to create a methodology that could capture all circumstances."
+    },
+    {
+      "start": 2594.912,
+      "end": 2622.256,
+      "text": "And, you know, it means considering not only people of color or certain gender, but also immigrants. And if we go down eight roads, in my opinion, we're almost going down no roads. So we try to use general metrics, let's say fairness, accountability and transparency. And if decisions are fair, you see."
+    },
+    {
+      "start": 2622.256,
+      "end": 2639.808,
+      "text": "then factors that would tend to discriminate against certain groups should not be permissible, right? It would be the overarching approach to deal with those unjust outcomes."
+    },
+    {
+      "start": 2639.808,
+      "end": 2668.544,
+      "text": "This is a little bit of a roundabout answer, but the point I'm making here is with full recognition of the problem of bias and the disparate impact, our aim with the methodology is to be inclusive and comprehensive and to treat any unfair outcome as a result that democratic nations would seek to avoid. Thank you. Laurence had a question on the chat."
+    },
+    {
+      "start": 2668.544,
+      "end": 2696.736,
+      "text": "Lawrence, do you want to pick up your point and phrase the question? Hello. Thank you very much for your talk, Mark. Lawrence Brooks here, professor in the Centre for Computing and Social Responsibility at De Montfort University in the UK. I was just trying to kind of widen the conversation a little bit. I very much appreciate that you came to talk about AI."
+    },
+    {
+      "start": 2696.736,
+      "end": 2724.928,
+      "text": "It's also what lessons can we learn from this for maybe other technologies? AI, in a sense, has already been quite well developed, especially in some parts anyway, in some aspects. But there are other emerging technologies which also speak very much to some of the other questions about threats to democracy and human rights. And I'm just wondering, are there lessons do you think that we can learn from the AI development that we can apply to technologies?"
+    },
+    {
+      "start": 2724.928,
+      "end": 2748.896,
+      "text": "earlier on in their development phase so things like neurotechnologies where people are already experimenting with direct interaction with the brain or even the one that's around us at the moment with cop 26 and climate change are there are there kind of policies and lessons that we can extract from this that we can apply to these more emerging more developing technologies you know it's an extra"
+    },
+    {
+      "start": 2748.896,
+      "end": 2760.32,
+      "text": "Excellent question, Lawrence, and I think particularly in the field of science and ethics and science and professional responsibility, there's a wide terrain."
+    },
+    {
+      "start": 2760.32,
+      "end": 2785.328,
+      "text": "of technologies that require more careful investigation. I will say at this moment, there is good reason to focus on AI. And the simple reason is that governments are focused on AI and big companies are focused on AI. And the decisions that occur now through political institutions will have lasting consequence."
+    },
+    {
+      "start": 2785.328,
+      "end": 2813.36,
+      "text": "The debate around AI has both matured and concentrated that I think it justifies this attention. But I would not exclude through the lens of science and ethics, or as I said, science and professional responsibility. You know, nanotech comes up from time to time, or robotics comes up, or bioengineering. All of these are important fields to study."
+    },
+    {
+      "start": 2813.36,
+      "end": 2841.84,
+      "text": "Mark, may I ask the mirror of that question, perhaps? We have had technologies that led to a lot of debate. And what did we actually learn from them? I'm thinking in particular, the whole debate around encryption, which is kind of still unresolved. And I mean, looking a little bit from a distance, it's a history of a lot of frustration, put it politely. So what did we actually learn from the way we conducted that debate for this debate of today?"
+    },
+    {
+      "start": 2841.84,
+      "end": 2866.384,
+      "text": "Perhaps in parts of AI, not everything of AI, but in parts of AI. Right. That's a very good question, Paul, also. And I was, you know, as I say, I was there at the beginning because it was really the basis when we started EPIC in 1994. We had organized the first Internet petition on the freedom to use encryption, and we were opposing the national security agencies."
+    },
+    {
+      "start": 2866.384,
+      "end": 2896.064,
+      "text": "efforts to mandate key escrow. But it also was an opportunity, apart from the advocacy work we did, to do a comparative study similar to the one we're doing now on AI to understand how different national governments were regulating crypto. And I don't know what the simple solution is today. I think there is a risk always of building in access."
+    },
+    {
+      "start": 2896.064,
+      "end": 2923.568,
+      "text": "In the best case scenario, it's used with lawful authority in pursuit of someone who's suspected of a crime or poses a risk to public safety. And I would not object in those circumstances. But as I said, that's the best case scenario. And many other scenarios of access to private keys anticipate a much broader type of surveillance authority."
+    },
+    {
+      "start": 2923.568,
+      "end": 2952.48,
+      "text": "I remember in the US, this was a few years ago, I debated the former director of the FBI, Mr. Comey, at the annual convention of the Bar Association in San Francisco. And he was arguing at the time that he had 700 cell phones in his possession from lawful investigations, and he couldn't open them because of encryption. He was very upset about it."
+    },
+    {
+      "start": 2952.48,
+      "end": 2972.976,
+      "text": "And I did my homework before the debate, and I had learned that in the past year, more than 3 million cell phones had been lost or stolen in the United States. And it was because of encryption that further crimes were not committed by the people who had seized those cell phones. So I thought, well, you have 700 you're concerned about."
+    },
+    {
+      "start": 2972.976,
+      "end": 3001.856,
+      "text": "But that's maybe a good trade-off if there are 3 million cell phones out there that can't be hacked for fraudulent purposes. That indeed may also have a lesson for AI. There was a question on the chat by Anna. Anna, do you want to... Yeah, hello. I'm a postdoc in machine learning."
+    },
+    {
+      "start": 3001.856,
+      "end": 3029.888,
+      "text": "in the University of Vienna. So my question is that we know that all IE basically learns the biases that exist already in data sets. So all these policies that we see and they kind of come from people before that. So my question is, was it compared like the policies that made from IE with the people who works there from government?"
+    },
+    {
+      "start": 3029.888,
+      "end": 3057.056,
+      "text": "Right. That issue has come up frequently in AI debates. Interestingly, it comes up oftentimes with regard to employment. Big companies turn to third party firms to sift through their resumes, their applications and decide who it is they should interview. And so the third party firm looks at the company and asks the question, what type of people succeed in the company?"
+    },
+    {
+      "start": 3057.056,
+      "end": 3083.008,
+      "text": "You see, and so they create a certain prototype and they say, well, these are the people, therefore, that you should be interviewing and hiring. And not surprisingly, if you have a big company with biases built in, that technique, by virtue of the data set, becomes almost a precise replication of the bias within the organization."
+    },
+    {
+      "start": 3083.008,
+      "end": 3108.016,
+      "text": "clearly a need to look more closely at the data and to understand how those decisions are made. I think, to use Paul's term, you can flip this on its head and actually use these data analytic techniques to uncover problems with companies and criminal justice systems. Because perhaps instead of the AI saying to the company,"
+    },
+    {
+      "start": 3108.016,
+      "end": 3128.88,
+      "text": "These are the people that you should hire because they're very similar to the people at the company. Maybe the AI should say to the company, you don't appear to have a very diverse workforce. There are a lot of talented people out there. Let's take a different approach to take advantage of the skills that would be available to you. So this would be a..."
+    },
+    {
+      "start": 3128.88,
+      "end": 3154.704,
+      "text": "more radical use of an AI technique to uncover bias rather than to simply replicate it. Then AI becomes kind of like a microscope or perhaps a telescope to dissect what is happening in government or in companies, the way they work. Very interesting. Thank you, Anna, for that question. Oliviero Stock, you raised also your hand. Oliviero, the floor is yours. Thank you."
+    },
+    {
+      "start": 3154.704,
+      "end": 3183.184,
+      "text": "thank you for your talk mark i'm oliviero stock i'm an ai person language and intelligent interfaces so mostly when when we talk about the democratic values and ai we talk about ai threats mainly surveillance biases opacity and so on but i think if we talk about democratic values"
+    },
+    {
+      "start": 3183.184,
+      "end": 3211.888,
+      "text": "danger one of the big issues now is somehow the right to truthful information physically telling truth from false or avoiding unwanted persuasion on one sort of the other so ai could have a very important potential role in helping democracy from that point of view so it's the"
+    },
+    {
+      "start": 3212.368,
+      "end": 3239.184,
+      "text": "The other side of the coin, AI that should help democracy and doesn't do enough for helping democracy. My question is, is it possible to come also with a proactive policy that tends to enforce, for instance, to require, I don't know, I say something stupid, to require that companies must spend..."
+    },
+    {
+      "start": 3239.76,
+      "end": 3264.16,
+      "text": "a part of their income in investing in this direction? Yes. I think it's clear there are many positive applications for AI. And to return to my great regard for the OECD, my understanding of technology is that it does coexist with democracy and innovation."
+    },
+    {
+      "start": 3264.16,
+      "end": 3286.352,
+      "text": "I don't think we need to say, you know, we shouldn't use AI because we believe in democracy. I think we should look for innovative techniques. But I do believe it needs to be accountable. And I would say the big concern, and this is also, you know, the view that was expressed by the Facebook whistleblower who spoke yesterday in the European Parliament."
+    },
+    {
+      "start": 3286.352,
+      "end": 3313.984,
+      "text": "is that to deploy a technique and not to be able to assess it is a very dangerous road to go down, even if the preliminary results you receive are encouraging. And there are lots of ways in which AI can be very impressive. But I think we need to be careful because if we can't interrogate these techniques and if we can't prove outcomes,"
+    },
+    {
+      "start": 3313.984,
+      "end": 3343.936,
+      "text": "we become increasingly reliant on systems we don't understand. And that would not be a good result. So yes, let's use AI techniques to uncover disinformation, but let's be sure that we can evaluate these techniques and know that they're working as they should. Thank you. Mark, we are nearing the end of the hour, but I see that Hannah still would like to intervene. And there's also another question on,"
+    },
+    {
+      "start": 3343.936,
+      "end": 3370.848,
+      "text": "The chat, perhaps Hannes first. Hannes, do you want to take the floor? Yeah, I had a similar question to Oliviero's, but I have another one. First of all, thanks, Mark, for a really presentation, because it's really basic work you are doing. And it's really I didn't know, for example, that there are already 800 frameworks, guidelines and those different issues. And I think this is really a valuable contribution to the discussion. My question is very similar to Oliviero's, because there is the."
+    },
+    {
+      "start": 3370.848,
+      "end": 3397.344,
+      "text": "frequent argument that too much regulation could harm innovation. And do you have some external variables where you could somehow look at this argument and say, okay, if there's a framework of regulation, what is the relationship to innovation or the speed of innovation? So it's a critical issue you raise, Hans. And I'll say, frankly, I'm agnostic on this point."
+    },
+    {
+      "start": 3397.344,
+      "end": 3426.864,
+      "text": "If you take as your goal the protection of democratic values, then I think your answer is as much regulation as is necessary. So if we can do this with light touch regulation, I'm sure the industry and the research community would say that's preferable. But you see, if light touch regulation doesn't protect the fundamental rights of a democratic society, then that's an insufficient answer."
+    },
+    {
+      "start": 3426.864,
+      "end": 3453.76,
+      "text": "So rather than say, you know, lots of regulation or little regulation, I think we need to determine what is the necessary regulation. And if I can add a corollary also, you know, the GDPR as originally conceived was comprehensive, but it was not overly detailed, at least compared with some of the US laws I've studied, which can be."
+    },
+    {
+      "start": 3453.76,
+      "end": 3483.344,
+      "text": "extremely complex and still not get much work done. I think the GDPR struck the balance between a comprehensive approach that still allows for commerce and everything else to take place. And so perhaps a similar approach with AI would work well. Thank you. Mark, do you still have a minute for questions? Yes, sure. I'm happy to go further if you'd like. Let's go on because I think there's actually"
+    },
+    {
+      "start": 3483.344,
+      "end": 3512.096,
+      "text": "related interesting question also on the chat by, at least the way I interpret it, by Skouros Georgios, that kind of suggests, you know, there may be other technologies that could be combined with AI. And perhaps that also relates to this question about how much regulation that you actually need, because then if you talk about decentralization suggesting blockchain, that's another form of governance. But perhaps Skouros Georgios, perhaps you want to pose the question yourself."
+    },
+    {
+      "start": 3512.096,
+      "end": 3541.984,
+      "text": "explain a bit more. You have the floor. Yes, excuse me. I had a problem to activate my microphone. Thank you. The idea is that as we learn, we hear more and more about blockchain these times. And I've just read a book called Cyber Republic of George Sarkadakis."
+    },
+    {
+      "start": 3541.984,
+      "end": 3571.488,
+      "text": "father of me from Greece, who in this book, he puts several interesting matters and thinks that these new decentralized systems, which probably will take over the actual web 2.0 system, all these social media, et cetera, which are owned by big companies, maybe they will favor democracy."
+    },
+    {
+      "start": 3571.488,
+      "end": 3581.328,
+      "text": "respect of democratic values in the future. What is your opinion? I would not like to... I think it's understandable what I would like to say."
+    },
+    {
+      "start": 3581.328,
+      "end": 3609.584,
+      "text": "So I addressed this issue just a couple of weeks ago. I was speaking with the data protection commissioners and again, making the argument that I do think new technologies do advance democratic values. I don't think we need to have a negative assessment. And blockchain could as well. But here you see the significance of understanding the asymmetric allocation of rights and responsibilities actually becomes quite important."
+    },
+    {
+      "start": 3609.584,
+      "end": 3635.52,
+      "text": "So I'm concerned that blockchain is used to, let's say, track the activities of the private individual and create a verifiable public ledger that disadvantages the individual in the dispute with the business. Whereas if blockchain is deployed to expand accountability techniques,"
+    },
+    {
+      "start": 3635.52,
+      "end": 3646.384,
+      "text": "with regard to companies and agencies that are deploying AI methods, this is actually a way that we could implement or encode."
+    },
+    {
+      "start": 3646.384,
+      "end": 3675.776,
+      "text": "democratic values. Because you see, we've established the predicate, accountability for AI is important. Blockchain is a technique that could advance that goal. Let's implement that technique toward that goal. And this is the way in which we do introduce and can introduce technologies in many domains that also constitute forms of innovation and that also advance the interests of democracy."
+    },
+    {
+      "start": 3675.776,
+      "end": 3705.376,
+      "text": "Thank you, Mark. This is really fascinating. I mean, AI is in that sense, perhaps not only that we are talking about that technology, but the way it exposes in many ways, we are working, we are assuming that we have relationships, whether in the public sector or between consumers and companies expose that. I'm thinking of the case in the Netherlands where,"
+    },
+    {
+      "start": 3705.376,
+      "end": 3732.272,
+      "text": "Somewhere just in the beginning, there is a piece of AI, but ultimately the way it had been used to find people that were claiming child benefits that were not justified, that actually what has been perhaps even more serious is how the whole process beyond the technology worked, the judicial system, the administrative system, the political system, and ultimately the government fell. So, you know, there's a serious issue there."
+    },
+    {
+      "start": 3732.272,
+      "end": 3751.008,
+      "text": "So AI can possibly be also the trigger to expose a lot of the way we work and live and do commerce. Mark, there's a lot more to be said, but we are very grateful that you have."
+    },
+    {
+      "start": 3751.008,
+      "end": 3779.856,
+      "text": "been going in depth here with us and also been able to, I think, bring these topics, a lot of work that is happening in this field. And as Hannes also said, a lot more is going to happen here. We should all be part of that. And the work that you are doing is critical, I think, to inform us, to make us part of the discussion and to discuss and continue discussing with you. So many thanks for that. The tradition here is to close the Digital Humanism"
+    },
+    {
+      "start": 3779.856,
+      "end": 3804.368,
+      "text": "seminars in a very special way. And for that, I hand back again saying a word of thanks to you, Mark, and hoping to stay in contact. I hand back to Hannes or to Mette? No, to Peter. Ah, okay, to Peter. There you go. So we're closing with some music. Let's close with some music. And again, Mozart."
+    },
+    {
+      "start": 3804.368,
+      "end": 3814.016,
+      "text": "So within the given constraints, so Mark wanted Mozart, Professor Wertner always wants short pieces. So given these things,"
+    },
+    {
+      "start": 3814.016,
+      "end": 3840.352,
+      "text": "I selected for both the beginning and the end something from Le Petit Rien, which is a ballet where some contributions have later been attributed to Mozart and in the Kirche vor Zeichnis this is filed under 299b in appendix 10 and the order of the movements and pieces is somewhat arbitrary. The one we heard in the beginning can be found as agité in some editions."
+    },
+    {
+      "start": 3840.352,
+      "end": 3860.32,
+      "text": "but there seems to be some doubt whether it was actually written by Mozart. Likely it was, however. The one now does not provide any specifications, but is often numbered as the second piece in that collection. Performance-wise, both performances are found under the name of an obscure orchestra called L'Orchestra Philharmonica di Mos Weissmann."
+    },
+    {
+      "start": 3860.32,
+      "end": 3888.832,
+      "text": "which is funny because it seems to only exist on music streaming platforms and appears to be a fake name to rebrand others recordings and avoid proper attribution and collecting royalties and this is not the first time this would be happening but i do like these renditions and this is why i picked them so to sum up i can't say which piece it is exactly or who the performer is but there is a chance the composer is actually mozart as requested by mark"
+    },
+    {
+      "start": 3888.832,
+      "end": 3916.56,
+      "text": "Now I have a nice segue. For sure, we do know the performer of our next lecture, which is taking place already next week, Minxin Pei from Claremont McKenna College will talk about the transition from labor-intensive to tech-intensive surveillance in China, and Susan Winter will moderate. Okay, so with another little nothing by probably Mozart, I say thanks to all for today, and see you next week."
+    },
+    {
+      "start": 3990.704,
+      "end": 4001.04,
+      "text": "Thanks to all of you. Goodbye. Thank you. Goodbye. Thank you, Mark. It was great. Mark, it was great. Nice to see you all. Okay. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

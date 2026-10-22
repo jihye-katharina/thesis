@@ -1,0 +1,1246 @@
+{
+  "video_id": "7CnL-3SHVp8",
+  "source": "whisper",
+  "language": "en",
+  "text": "So, yeah, so Hannes asked me to give a summary and commentary on the first session yesterday, and that's hard to do because I thought it was an absolutely brilliant session. But I actually wanted to start this by just thanking Hannes, actually, because I think what... He's done here. I mean, I think he's really been the major oars pulling this together. And this conference has kind of blown my mind in a way that I think he reflected already. I also, you know, I sort of expect to be able to keep up with my email while I'm at a conference. I am so far behind. It's just I have not been able to divert my attention. And I think Hannes deserves a credit for that. So I'd like to give him a round of applause. So I'll begin with an apology, which is that one of the speakers yesterday was Allison, who said that PowerPoint disrupts her thinking. I actually can't think without PowerPoint. And so I did put on my summary with this crutch of the PowerPoint. Whoops. So these were the four talks. I trust most of you were there already. So Bill's talk, which focused on scrutiny. Marco's talk, which focused on the ability of amateurs to create incredibly chaotic and complex artifacts. Allison, which was focusing on kind of the contradiction and conflict between consumers and citizens. And Hans, who was focusing on the tragedy of the commons and had some very interesting insights about what we as computer scientists, I'm a computer scientist, need to be doing in relation to drawing inspiration from what scientists were facing in the 20th century. So here were my main takeaways from Bill's talk. The social construction of information, I think, was a really extremely important point. I mean, this is a whole field in philosophy and social science, and I think that we really need to take it seriously. And I think as scientists, we often think in a much more platonic way by indoctrination through our scientific education. and where we assume that the truths that we're working with are all sort of independent of humans and exist out there in some platonic heaven. But that's not really so obvious, and in particular when we face the information flows that we're dealing with these days, the social construction of truths is something that actually is a reality in our environment. And I think that his emphasis also on this importance of scrutiny, scrutiny more than, you know, as a computer scientist, I often think of verification, right? We want to prove correctness. Well, no, that's not really what it's about, right? I mean, correctness is always about a model, but we're deploying these systems in the real world, and anything that we say about the model is going to have a necessary gap. with whatever is happening in the real world. And so his focus was on scrutiny as really the main thing that we need to be ensuring that we're able to do. And I think that's a particular challenge when we have inscrutable technologies. So I think that Marco's... Marco apologized to me, but he had to leave because he had a plane to catch, so I can say whatever I want about what he said. But I think his major focus was, I mean, I think he was lamenting the fact that the web was created by amateurs and how much better it would be if it had been created by professionals. But actually, my takeaway was really quite different. Wow, that was created by amateurs? You know, it's kind of an amazing outcome for something that was done in such an ad hoc way. And so that was that was kind of my takeaway. So Allison, I think, really challenged a lot of us with, you know, sort of emphasizing that this pursuit of profit really is a threat to individualism and that the whole economic structure around. the monetization of internet technology has created some real threats, I think, to the values, the social values that, at least in the West, we hold fairly central. And then Hans, I think, my major takeaway from his presentation was, I guess I would summarize it as computer scientists need to grow up. And, you know, that we really are dealing with potential risks due to the tragedy of the commons. And, you know, I mean, existential threat to humanity may be a little bit of hype. But the reality is that we are building technologies that are very transformative. And maybe, you know, we're not exactly facing nuclear annihilation like the scientists in the 20th century were. the impact is sufficiently large that we really need to kind of step to the plate and up our game. So what I'd like to do as just a way of framing a discussion is present a scenario that I call an information apocalypse and consider each of these topics with respect to that scenario. So first of all, assume that all information on the Internet is true. If we take this social construction of information seriously and the Internet is our society, then it's kind of by definition an assumption we can take. But I also deliberately put up this bullet because there's a lot of people who immediately, when I talk about this information apocalypse, they think I'm talking about the problem of fake news. But actually, I'm not. The problem arises even if all of the information actually is true. We still have a problem, okay? So the problem is sort of highlighted in the second bullet, which is that the information flux today vastly exceeds any individual capacity that we have to absorb it. This is quite different from 30 years ago, where information was relatively hard to get. You kind of had to go to the library and search for that paper, and there was a lot of labor involved in getting information. And it was expensive to disseminate information, and information tended to be broadcast to a whole population, which meant that that population, for better or worse, was more likely to share some common truths. Whereas today, the sources of information can become very fragmented and individualized. So you get these individualized information flows regulated by software, and this software is, to Allison's point, is... built by entrepreneurs who get rich from the creation of the companies that make that software. And they're, in fact, affecting the thinking of the whole population. And I think that, to Hans' point, the result of this can be that you can have a society that has islands of disjoint truths, which is certainly something that I think we're seeing in the U.S. People have used the term filter bubbles and echo chambers. for these sort of customized sources of information and the way that they affect people's way of thinking. And my question to Hans's point is, is this potentially a real threat to democracy? If you have societies that are divided up into islands that don't share even basic common truths, how do you run a democracy in that context? So this could really be something that really has a profound impact. So what do you imagine? Well, this is I'm pulling I'm pulling this up as a case study. Right. To to look at these various issues. Yes. I'm not saying this isn't happening. This is happening. Right. OK. So the other thing is I'd like to pick up on Helga's point this morning. On one slide, she talked about about the co-evolution. Right. So I think that one of the things that is a little too easy. When we look at the problems of this scenario that I outlined, is to say, well, let's just blame the technologists. They created something that's truly horrible, and those software engineers should be blamed. But actually, I would like to put a stake in the ground and say that that position is what I would call a digital creationism position. And that it might actually be a more reasonable interpretation of what's going on is that it's a Darwinian coevolution and that actually the individual software engineers have much less control than they think over this. So I first got this idea from George Dyson, who is a historian of science. And he wrote this really wonderful book called Turing's Cathedral. And he had written a book several years earlier, published in the 90s. called Darwin Among the Machines, which is not a very pleasant read, but it had all of the key ideas in it. But the Turing's Cathedral is a lot better, and I have a couple of quotes from it. He talks about Google's million-plus servers as a collective metazoan organism. And the companies and individuals who nurture the servers are ever more richly rewarded in return. So this is potentially another interpretation of the profit motive. Are the machines actually exploiting humans' greed to further themselves? Well, in a co-evolutionary view, there's an element of that. He says, unemployment is pandemic among those not working on behalf of the machines. So are they working on behalf of the capitalists or are they working on behalf of the machines? Maybe capitalism is just their tool for getting... Okay, so he says the big computer is doing everything in its power to make life as comfortable as possible for its human symbionts. Just go to a Google office and, you know, the free food and all that stuff that gets paid for by the actions of these machines. Yeah, these machines are making the life of their human symbionts very comfortable. Okay, so this... This coevolution idea, you can think of it this way. Richard Dawkins famously said, a chicken is an egg's way of making another egg. The question that I'd like to raise is, is a human a computer's way of making another computer? Maybe we really are playing a different role in this whole system than we think we are. I'd like to put a quote from So this is me in front of an engineered artifact. Now, this is an older engineered artifact, right? This is not an Internet artifact, but it is an engineered artifact. And the question is, it's a ship. It's a Swedish ship, Vasa, right? It was built 350 years ago, and it sank 1,000 meters into its maiden voyage. It was a really crappy piece of engineering, okay? Now, you know, when ship designers sit down and design a ship, are they doing top-down intelligent design, right? That's the question. Or is the ship design actually the result of an evolutionary process? I think the engineers hold some responsibility for this. Yeah, but I'd like to just read a quote from the French philosopher Alain, okay, who said, He said this in French, but I'm not going to read it in French, right? Every boat is copied from another boat. Let's reason as follows in the manner of Darwin. It's clear that a very badly made boat will end up at the bottom after one or two voyages and thus never be copied. One could say then with complete rigor that it is the sea herself who fashions the boats, choosing those which function and destroying the others. So I'd like to raise this question. So one of the mediators of information that is out there in the Internet that is creating these filter bubbles and sort of reinforcing these local networks is Snapchat, right? So who designed Snapchat? Was it a bunch of software engineers or was it the teenagers? Under this interpretation... The teenagers certainly had a big role in it. In fact, if you think about it objectively, Snapchat's not a very complicated piece of technology. There were actually thousands of other very similar pieces of software that had been designed, that people were trying to make businesses into, that were trying to monetize. Most of those died out. It wasn't the brilliance of those particular software engineers, nor that they were... greedier and more effective capitalists or anything like that that made that one succeed, right? There was a lot more randomness in this and a lot more Darwinian evolution and natural selection, okay? So... So that was from Alain. So I'm going to then read a quote from my own book. This was published at the end of 2017, where I say, are we playing God, creating a new life form in our own image, or are we being played by a Darwinian evolution of a symbiotic new species? I also said in that book, are humans the purveyors of the noisy channel of mutation, facilitating sex between software beings by recombining and mutating programs into new ones? This is what software engineers do. They take a chunk of code from here and a chunk of code from there, and they combine it and create a new chunk of code. And most of those mutants die, but a few of them survive, and then their chunks of code get copied. So what is the role of the humans in this? Is it really top-down intelligent design? Well, I don't know. There's kind of an element of that. But it's not so clear. So I'm going to read a quote from a book that's not yet published but is almost finished. So maybe a more realistic view is that we are the sources of mutation in a Darwinian coevolution. The mutations we introduce are not entirely random, but in a modern view of evolution, neither are biological mutations introduced by nature. I've actually learned a lot about new theories of evolution, and it's a lot less random than you might think. Much like what happens in nature, most of the technological mutants we bring forth go quickly extinct, while a few grow to occupy a niche, at least for a while, in a continually changing ecosystem. So we do not like seeing our mental cognitive processes as themselves cogs in a relentless, purposeless evolution. But is this what they are? So this is the question that I'd like to raise, and I think that it's particularly pertinent to these four talks, It's a question of what do we do next? Do we just blame the technologists or try to correct the technologists? One simple solution is we teach ethics. The issue came up about whether teaching ethics at an individual level is going to be effective. If you take this co-evolutionary view, you're going to have to take a much bigger picture view of how how to approach the whole ethics problem. It also becomes clear that having a Hippocratic oath isn't going to work because that's a very individualized interaction that's being mediated. So I think that if we think of at least one of the forces here being co-evolutionary, it's going to change how we approach how we might solve this problem through policy or whatever. OK. Thanks. This was more than a summary. Sorry. No, no, it's okay. Are there any immediate thoughts on this or questions or remarks? I would have one on this evolutionary picture, the big one, because it's the macroscopic view. It doesn't say that we are somehow passive in the evolution. We could play an active role. And if you have an interpretation, an active player, you could even say, okay, this is what digital humanism is about. It is interplay of... and human and what, even if there are some more generic rules or generic, let's say, mechanism, what is the role we have more specifically in that? Yeah, I mean, keep it, keep it. Well, I agree with you, but I would say a little differently. So what is the analog of nature here? I would say it's the marketplace. It's also human nature, but also a huge part is the marketplace. The marketplace is not God-given. It's a human institution, human-created institution. shaped in a complicated way, but being reshaped all the time. We keep changing what is the marketplace all the time by adding laws, by adding incentive, by taking away incentive. So part of the question here, even if you take this point of view, how could we change the environment, the marketplace, to steer evolution in a direction we'd like to steer it? Yeah, let me put it slightly differently, which is that I have one, which is... Humans are, in fact, manipulating biological evolution already. We were just talking about climate change a couple of hours ago. So humans do have the power to influence biological evolution. Why should we think we have no power to influence an evolutionary process that we actually started? That would be an absurd conclusion. Obviously, we can influence it. Can we control it is the question. And I think that simplistic answers like blaming the engineers is what I'm arguing against. So quick question at the beginning. So I love the part about creating sort of filter bubbles. We've talked a lot about that. But it's probably even worse than that. in the sense that because the systems know so much about us, they're able to carefully construct a lie that we're predisposed to believe. So it's sort of beyond just giving us individual information, but it's a really powerful influence. I think you're absolutely right, but I'm just trying to avoid going down the rabbit hole of the fake news stuff, because even without the fake news, we're in trouble. I like very much the thing written, the sentence written in black. I just looked up what cogs are, now I know. In a relentless, purposeless evolution, I can fully agree to that because from my view, how I see humanism, I don't need no bigger picture. I don't need no transcendental sense in my life. There's a lot of thoughts coming up how to be a human being and what humanism might be in this kind of worldview. So I'm happy to modestly contribute to digital humanism discussions under exactly this headline. That's why I picked it. I like that very much. It's also about destroying metaphysics. It is. Because we have to go back to scientific processes. This is somehow, and this links to scrutiny. Mr. Fraunberger. Do you want to say something? Don't throw it, don't throw it, don't throw it. I just want to maybe say something like don't blame the engineers. And I think responsibility is something quite complex and non-binary. we ought to be careful of not letting them off the hook completely. There is a shared responsibility of all of us, and the engineers play a role because they create things that can be misused. It's a difference whether I create a hammer or create a gun. So there's an intention in design that comes with some responsibility that we should not ignore. And I don't know where this quote is coming from, but somebody said, like, you know, there's always a path where there is a will. But with technology, it seems to be the other way around. There's always going to be a will where there is a path. Yeah, I think that's right. And I think that one of the words of caution is that. Just because one engineer chooses to not make a gun does not mean that guns will not get made. And so that's why I think we need to be thinking in a bigger sense about how to nudge the process and affect the process in a bigger sense. You can still choose to not make a gun, but that may not result in guns not being made. They're very old. So we should switch now. You're going to take away my microphone? Yeah, yeah, yeah. We have a change in power relation. Thank you. Thank you for the help. So, it's working or it's not working? because I don't trust this thing. So, is it fine? So, he's adjusting again. I should talk, then you see whether I... No, it's not working. Thank you, Chris, because I'm really mentioning more this responsibility part of things. But as you know, Hannes, he is very good in not saying exactly what we should do. just something will happen in the afternoon. And that's why we have different approaches, I think, to summarizing our takeaways. And this, of course, helps us facilitate innovation and openness and new things. So I think this is a quality. It's not a bug. So what we... Sometimes it's very challenging. Like, you could, you know, you should, at the very last moment, to create something. So what I have done is a little bit different. I'm not talking about quotes or my books, but I'm just saying a little bit about the things that I was hearing yesterday afternoon about the intercession, humans and society, AI and ethics. So what I have done is went through the presentations one by one and trying to find out what the takeaways are, what the main messages were for me, and then also what I was thinking that I can see it. in this way for me living today, this place, and having an idea what I can do in the future. So these are the green ones, and other ones are from the presentations. So I'm going through these ones. And at the end, I want to show my general takeaway of all these discussions, because I was also listening to all incredible presentations. So Miriam's work, empirical work in Africa, and showing us how anthropology And the methodologies can be applied to understand people. So people that we don't really, partly we are not even aware of their life and of their situations, technologies they use, or governments or environments do there with them. Or they initiate certain things or some certain things happens because they use. mobile phones and having access only to the Facebook and later on WhatsApp and believing that the internet is the Facebook and information in Facebook is everything that they are aware of. And then I think these were insights that can happen only if we have researchers, people going there and seeing. concretely what's happening so this is one of the very important issues that I want to mention here in this talk and of course seeing that interdisciplinary work is very important and more than important more than ever so because we at the university in the faculty are very keen on working interdisciplinary but I'm not so sure that our colleagues some are sitting here creating machine learning, AI stuff, whether they are also working interdisciplinary. So I think this is a good message from this gathering in this workshop to see you have to understand your users and you have to do certain things for them and consider it also in the design and development of these things. Even though knowing that's very difficult. But this is probably your way out. So then the new power schemes are interesting. They happen and they evolve there. how people live in these schemes and cope with it, and the society is changing through these schemes and the power structures, and mobile phones play a big role in that, as far as I got from the presentation, and the so-called power of the digital. So I think we have to find out how we can actually enable using this. digital possibilities for different type of people, and we need to create measures for enabling, but also at the same time for regulating. We had also the third and fourth talk yesterday afternoon was about what happens if you don't regulate. So what happens, how far it can go and change the society. Is there any point of no return that you only react, but you cannot really shape actively the development or evolving of these technologies? The technophones are really interesting. It's looking very primitive, but having great power. And then I was saying, you know, Facebook, I knew it before your presentation. But, you know, how can this be? But on the other hand, I understood that you have to start somewhere. So you start simple. but at least you start. So you see that technologies make things available and possible for you, but you can adapt and progress in this using the new ways of technologies or application of these technologies. So then it becomes very complex. As we heard today, the platforms can be very complex, but you don't start with the complex platforms. They evolve through the time. And still, it's very important that we keep... this view, at least European view, open data and open access for everyone. So I think, how can this be done? So how can an African woman know that this information she gets from Facebook is true or not? So these are different ways of dealing with that. I think one of that is the last point here, the lack of critical analysis of information they are provided. So they are not, they need to be. As Helga told during the lunch, so if you don't have any answer, you can always use the term education. So if you don't know how to solve the problems, you can always educate people. So this is not meant this way. This was really meant to how can we create, you know, I'm working at a university being also dean of studies. I want to try out different formats for education, not only for our students who are knowledgeable about ways of learning. How can we do it with users from other countries with limited technologies or certain type of information which is provided? So what is the content? What is the format? Then we have to rethink things. And so also this YouTube type of video-based information distribution is getting always important. And how can we use certain formats and develop them? And then there were three terms. and movement and radicalization, these were very interesting examples showing that we need qualitative methods to understand these people. So it's not just modeling or theorizing things, it's also seeing, observing, participatory, capturing the situation, understanding the context. creating narratives and then finding out ways of doing it. And so I think living labs as an approach can help us to do so, but still seeing as having also a living lab running in Austria and Vienna, so it's very difficult to find a common understanding and definition of living labs. So this scales differently and involvement of researchers and citizens changes depending. on the context, on the environment. So that's why this is a big challenge for this approach. But we have to find ways to make them more successful. So community building and acting, so building this ethnic linking worldwide, this is also interesting to see how people do that, for what reasons, and how fast technology can help people to connect to each other. And really also... help each other. So in a way, having the money to do certain things or being aware of what's happening in Africa if people are living in another continent. So technology is obviously a facilitator, but I want to see here the community as not a bunch of people around the technology. It's more than just the people who are created while using technology. What are the qualities of communities? Why? We saw also the volume makes the difference. So if you have many people, then it works. But how can you keep this amount of people active in a community? Facebook can obviously do that. The second presentation was very interesting. A lot of things what I was wondering about work situation, but also this is something that... We normally know if we are talking about digital transformation and what happens, the machines are coming, AI, et cetera, and what happens with the work of people. But Moshe manages always to put something additional to this thing. And this was very interesting to see the automation, automobile car crashes, massive loss of jobs in the States, and also seeing that these developed economies having problem with automation processes and challenges. So there is obviously this uncertainty of the future about new jobs is still existing. So there are some hypotheses or maybe theories in the meantime. So what happens? New jobs are coming. And the quality of life is somehow depending on that. But we try to find out ways to develop these things. But actually, we don't know what will happen. I think the main message was also it's not certain. And this is somehow we can maybe. simulate different options and see what happens. The simulation came yesterday and today several times, so our experimenting. So we can see what happens if we play with the parameters. What happens and learning from the history, but also applying new parameters because the parameters are changing through the technology. We get new ones, new possibilities. What can happen then if it develops into that direction? And then study and try to understand and see the impact of these changes. So the impact is also something, needs also be simulated in a way. Simulations are powerful tools, but everyone is coming to us now in Vienna, simulate the traffic, simulate if this happens. So yeah, we are really professional in the simulation things in the meantime. And I think these aspects of growing inequality, job polarization, and the level of education, how it changed now in the state, in this example, with the drivers. So income, or probably in a more manufacturing area, income differences based on the education level. Again, we have here educational challenges. So what does it mean? Do we need to teach our students? the so-called lifelong learning thing, what can we provide actually as universities for them. And we need models for balancing. So what type of things can we put next to each other and see if we find out that changing one aspect in the society or in economy or manufacturing context in that sense. So how can this impact positively to the other issues? So I don't know whether we manage that. Maybe we find out innovative approaches to find out. Not just making everything in a depressive way, developing in a very bad situation for a human. Just finding out ways and defining these parameters. Once not as reaction, but more as action. So I like this action. action type of movement and not just reacting to the things and assessing the impact, but also doing really active things. So this would be interesting if these colleagues are able also doing this type of thing. So this would be a very good result, I think. And then I heard real economic and financial area. This was in the discussion. There are different realities. We have to be aware of that. And then what are we talking about should be differentiated. Because in normal political, societal, or media talk, everything is one thing. So if you want to make people anxious or relaxed, then you choose the certain examples and you communicate this way. And so I think we have the role to change that. Then there was the race. between humans and technology, it was tougher. It's getting tougher. And I think that we have, we had, or partly have still this parallelized situation. So we don't know what to do. So we observe, but we don't act. And maybe we are also capable of creating new jobs, because we know how the technology evolves. We are creating the technology. We know what can happen. So maybe... Flexibly, we think in different ways of combining skills and knowledges for people and being the innovative job creators. But also, at the same time, be careful what can happen if this goes further and further and what happens in 10 years and 20 years. So maybe we have a solution for that. The productivity was interesting. I think Helga was asking, are we more productive now? Is it increase or decrease? I think this was you asking. And we have to really talk about that. Just don't accept what people say. And this should be clarified in the society to the politicians, policymakers, and regulators also. So just also the companies, they think the productivity increases if certain technologies are implemented or introduced. This critical approach should be communicated also by our students. I think this responsibility thing comes here. So as technology does things and you cannot change it, or technology can be actually designed in a way that it really considers human also in the processes. Because involving, we as technology providers or researchers or engineers should really take our responsibility to consider these things. So, you know, the guns are made somewhere if we are ethically correct and we don't do or we have on the hammer. But still we can try to communicate that what it means if you do certain technology development and what has this impact. So we did it at our university in computer science. The reaction is completely different by the students. Some are really eye-opening and saying, wow, what does it mean? And others are saying, I don't bother. I do still, if they pay me more, then I do that job and that job. So this is something that we have to find out as teachers, as educators at universities, how to deal with that. And I think a sociotechnological approach was mentioned also. by Hans and then saying what does it mean actually to interlink social aspects with the technology development and vice versa. So I think this is the way to go to find this type of different views and position ourselves in this process. So I am again for simulating and experimenting. I like this experiment. The next one was about machine autonomy. So I got tired, but I was still awake. So this was the constructive ambiguity between human autonomy versus machine autonomy. Then there was a good example until the end with the stop sign and what's actually how can machine autonomy be regulated, whether it can be regulated, or what does it mean. I think as our presenters, is he here? Yes. So you're carefully listening. Please correct me. So we have to protect human, yeah. No, no, you should stay. So protecting human autonomy is one point, and I agree with that. On the other hand, so how can we control, ethically control machine autonomy? But it should be meaningful also. So the technology help us, but we don't know how to do that, and there are so certain, so there's a balance how can we do that. These were questions and possibilities. and how we can solve ethical problems. So there are several principles oriented differently, and we have to understand this plurality and the role of shaping or solving ethical problems. And then we have to develop also ethical policies. Obviously, in certain areas we have certain policies, but in others not. And then it comes always to the prioritization of principles and how we compromise and what type of compromises can be prioritized higher and lower. So I think there are so many things that we have to do still in order to get some balance between human autonomy and machine autonomy and considering ethical aspects. Then I like these moral tensions in context, and I was wondering what context, whose context. So this is also something with the responsibility, whose context you put into the center of your attention. So probably we can create narratives of context and understand what the impact can be and to whom and under which circumstances. You showed also the existing competing models, segregationist, liberal, and paternalist. And so, of course, you know one is better than the other. But we have to actually understand also the context in the application of these things. Whether we like it or not, they are implemented, applied. Where is this happening and why? And then to understand not make the same mistake maybe. So communicate this type of information and then make it more transparent. So it sounds in the definition one is the best, but why are the others existent? Why are the others applied? So this is interesting to understand these models. Also, there was a one-sided argument, so a list of better machine performances. So how can we change, actually, that social harm is decreasing in a way, and what can we do, and what are the mechanisms or measures to implement it? So how can we actually fight for ethical issues? Equality, fairness, and rationality. You mentioned these points, but I am in charge of equity, diversity, and inclusion in scientific conferences in several ones. I try to do things, but I'm a computer scientist, so I know to have possibilities that people can have different opinions and they can talk during the conferences and they are not... whole communication happens, but actually a lot of information is missing to really do these things correctly and being informed and also changing something in there. So I think we need to communicate and understand that and see us as also researchers in the position to really apply these things and implement these things and communicate and teach these things. Good. But this is always about informing. So informing people, informing us. So we are not stupid, but we don't have the time to inform ourselves for that. I saw yesterday and today. So then the last point in this talk was, for me, offsetting moral inadequacies of machine judgment, the machine judgment with the stop sign. This is something whether we can do or not and how we can do and what can be the possible solutions. Probably you know more because you had a lot of slides you didn't show because I didn't let you show. But the point is, of course, how can we work on these solutions? And this is very important to find out. So this is one slide, and then I have a very last slide. So two slides, I'm very fast. So I am very sorry, Jim, because I... didn't have the time to summarize it more because I was making photos and I didn't have the time to go through. I summarized it only in this way, the most important things that was for me yesterday, that we separate between development of AI, how we regulate AI, what is AI, and we have to maybe in the regulation be considered applied AI and the development of AI. And then the terms, as Hannes also mentioned today, accountability and liability are two big issues that we consider in that context. And then, again, the role of developers, researchers, and implementers. So if commercial products are implementing certain things, it's a different thing that we have here labs, and then we are researching and having the research on that topic. Then the role of data and ownership of the data and access to the data. which is used in AI applications. And then the reasons you showed us, I think, very useful reasons for regulation or not regulation, not regulating AI. What are the reasons? They are there, and they are legitimate for themselves, and we have to find out what we understand. And then the question whether who should regulate AI is also most... the question, but half of the group said something. Whether the state is in the position of doing this, if the government should do it or not. So it's not clear even for people like us who are critical or questioning things. We don't know how to regulate it. Who should be in charge of doing these things? And then also this. trustworthiness of AI, because it's depending on the data. So my final takeaways are, I think, coming from CSCW, I'm very interested in work context. And I would like to see how we can study and reshape of work in the context of digital transformation or digital changes happening in our society, especially in work. And then also at the same time, considering the quality of life issue, because I think we do a lot of things. Certain things help us to have better life, but also other developments causes that we work more and harder and being under pressure and have to do everything ourselves because technology makes it possible that we do everything for us. We don't go somewhere and then consume the services of other people. And also the education, I think we have really challenges there. What are the innovative ways of educating people and everyone? So for all, not just only for students or who have access to these facilities like universities or other education centers, example Africa. So interdisciplinary work is important. And then obviously, we have to find out still we have to find out ways of bridging the communication gaps. So I think I also could observe it in our workshop yesterday and today that sometimes we don't understand each other. So it has something to do with the language, but with also knowledge that coming from which discipline. So I always feel that as computer scientists, we have to bridge the gap. So maybe as anthropologists or sociologists or lawyers think, they bridge the gap. So I think we have to find out a way and then distribute the job among us and then try to do that. And also having respect for this type of work. I think this is not obvious to work interdisciplinary in computer science fields. So I'm talking from my experience. So sociotechnological methods are the last ones that I think is very important because it ends up in interdisciplinarity and the methods and approaches are important. Indeed, we need more space for experimentation. I think if we manage somehow with our work here to communicate the results in another scale with the university, management, society, city of Vienna and policymakers, et cetera, then maybe we have more ways of implementing that. So thank you. Remarks? Comments? From the ethical side? Yes? Of course. I just want to second that on interdisciplinarity. And maybe this is also a little bit of a plea to computer scientists and their institutions, such as our university, to kind of... Maybe think about the compartmentalizing effects of having disciplines and sharp boundaries around them. From my own experience, I found it hard to get PhD students who are designers or social scientists or have different backgrounds to work on my projects because they're not allowed to do a PhD with us. Maybe this is also a call to... regulatory bodies within universities to kind of look beyond their immediate kind of fields of expertise and allow these bridges to be built. So it's funny because actually it's me saying no to this type of PhD. So thank you for your support. I think we have already, you know, that we changed the process of PhD applications. So we are more open now and having the proficiency evaluation where we define actually it's a computer science PhD or not. So I think Andreas can say more about that. So, yeah, you are holding it. Now you have to say something. He gave me the microphone already. I am showing the thing. No, but we are not starting our discussion of the study program of TU Vienna. And all the pitfalls we have. Sorry, please. It would be an everlasting story, okay? Sorry. No, no. Also not aimed at you, just in principle, as a general comment, right? No, but just having a short word on that, we have designed this. The ERP remembers we have a concept for inter-faculty centers, and it's a little bit a way that it will be implemented. I don't know what happens with that. Just a quick comment on this point. It would be nice, even at the European Research Council level, it would be easier to do this kind of interdisciplinary research. Actually, as far as I know, you have to select one panel. You cannot, I mean, by design, to select an interdisciplinary comment. The problem starts there. No, she has to comment. We really, just for the historical record, we really tried. And we set up 10% of the overall budget and we put it into a special interdisciplinary pot so that each panel would not feel... You know, it comes out of our available funding. So it worked reasonably well with flagging going to two panels, but then came the crux. In the end, you have double candidates and the money is not indefinite. So what happened typically is, and the logistics was difficult behind, we got the chairs of the main two panels, and the following scene happened. Panel chair one comes and says, this is not really my field, but my panel thinks this is excellent. Panel chair two comes and says, this is really not my field, but my panel says this is excellent. So what do you do? And you cannot have a third authority then deciding, nor did we want to use the lot and make a random decision between them. So we had to admit we failed with having this idea because our reviewing system is not up to the task of doing it. Now we continue to flag and, you know. tell the panelists, please consider this, etc., etc., but we have not invented anywhere in the world a robust peer review system that could really handle it. So this is just for the historical record. Then we have to solve this problem. We have to fix the problem, otherwise we will never... But I have even a more harsh comment on that. It's because this is the top of the pyramid. Our young PhDs have serious problems if they go into interdisciplinary work. Where to publish? What is the impact factor? There are not well-established journals in several of those fields, and we are asking at the same time to do this type of work. So I think this is the bottom line. You are already at the top where we have established researchers. They have problems. I would have a different – no, we are not going on to this. But I have a question to you. No, no. No, I take the authority of... I have a different summary. It's not about ethics, it's about politics. Would you agree? If you talk about this... I do not agree on that, so we would have a different summary. But it's just somehow because... We had this discussion about this ethics. Is it individual? Is it socially? Is it socially constructed? Things like that. But the envy, it's about political decision making. And it's society. It's a democratic process. And in that sense, I say it's about policy. Sorry for... No, not sorry. I think it's good. So I would very much agree that it's about public policy, even in Europe. I think today's... the last session where we were talking about the laws in Europe and the issues behind the current set of laws in Europe indicate that there's a very strong public policy component that is expressed in terms of ethics frequently in Europe. But I think as my talk showed, it's expressed in different ways in different places, even though I would argue that many of the concerns are very much the same. It's the way in which they're expressed, not to say that there are not ethical concerns in all three places or that the Europeans are not serious about it, but I think that... In many cases, what's driving it forward is public policy, and it's driving it in different ways. Europe is going towards regulation. China is using public policy to push AI as a technological advance for China, a method of control for the society, a bunch of other uses that would be totally and completely unacceptable in Europe. So I think... characterizing as public policy is a good characterization. I go back because I think what we are doing here, it's civil society, and this is also for me policymaking. So it's not public policymaking is ready out there, established state level, which has some power. I think it's also general about policymaking. And it's also the civil society. It's also some, it's a movement issue. And I think this is also important, but maybe we are talking about minor. Okay, sorry. Thank you. I'm a little bit worried of this kind of separation between ethics from the one side and public policy from the other side. I mean, they go together. Ethics is not just an individual moral deliberation. It's a public discourse already. And I can provide many, many examples. But then I think there's another issue which is very important. And I think that... If we just move on the public policy side, this is a kind of de-responsibilization. And you just insisted a lot of time that we have to be regulations. That's, of course, it's true. It's very important. But at the same time, regulations cannot solve all the problems. And they cannot solve all the problems. I think we had a wonderful example this morning with the example of the GDPR in Europe and how this kind of strong regulation still solves some problems but opens many problems. And then also I think it's very important that if you just think that, okay, you are a computer scientist, you are an engineer, and then you have to develop some tools, and then there must be regulation. This is a kind of de-responsibilization of your work, of your process. And I think having read this declaration and some of the parts of this declaration, computer science alone is not enough, and many parts on which I strongly agree, I think that we be very careful in not making this separation ethics as individual process and then public policy. And then... Okay, we can go ahead, but then public policy and regulation will solve all the problems. So thanks, and now we continue with the third session. We are still, we are already out of time, so. Let's continue, okay? Okay, well, first of all, I really enjoyed these two days. And I also want to thank you, all the speakers, all the people who made comments. It was really, for me, a pleasure to be here. I'm very grateful for having given the opportunity to be here. And, you know, a measure, again, is not only the email that is behind, but also the fact that I'm saving money. Because, you know, sometimes when I go to conferences, I start buying like crazy. You know, I go on Amazon and I buy books. And then, you know, if there's wine sales online, I buy wine. But I didn't buy anything. So, okay, this is my success measure. Now, then, you know, again, you know, fallacy of requirements. He gave us requirements, and they're being interpreted very differently from, you know, Edward, Hilda, and myself. So this is my interpretation of the requirements I had for this session. A very brief, you know, basically pointing out a few, that I thought were very relevant in the presentations. You all remember them, perhaps. And then maybe spend a little bit more time, you know, telling you what is my takeaway. So anyway, if I'm allowed to have this kind of implementation. Okay, fine. So, you know, the first presentation this morning was by Helga, who walked me on... Basically, I don't worry about the title, but this is what I thought was very important. She stressed this problem of dynamics that she called creative destruction using Schumpeter's words. And of course, the fact that what is happening today is this disruptive... Sorry. Creative, constructive events occur continuously at a very high speed. And the problem is that as humans, we try to interpret the world in which we are by building boundaries, separating, dominating complexity through these boundaries. And boundaries change. And they change so quickly. So she was talking about these interfaces. Again, interfaces between humans and machines, machines and humans, and the external world as well. These interfaces continuously change. And we have to realize that for the researcher, change is a source of joy and a lot of opportunities. For society, it is a source of anxiety. And that was my strong takeaway from the talk, which also, again, gives us a lot of responsibility. Because what is change for us, which is kind of very positive, can have side effects, more subtle and raise difficulties in the people. So that was Helga. Then the second presentation was by Jeff Parker. And basically, the reflection there, at least for me, was how deeply Digital technologies have changed the business world and the economy, moving from tangible to the intangibles. And the role of these platforms that are emerging, that basically are carrying all the interaction with the rest. of the actors, consumers on the one side, the producers on the other side. And the fact that this kind of open innovation that is often introduced by these new platforms They're competing with other forms. There is the vertical integration on the one side, the open innovation approach on the other side, and the fact that these are coexisting, but it's introducing new kinds of tensions in the world that were not there before. Then the third presentation by Nikolaus actually shaped many of my beliefs, in a sense. I tended to see, despite a number of difficulties and problems, for example, in the GDPR, the fact that it wanted to reflect certain values that are difficult to support then to implement in a legal way, but he was very much and very strongly showing actually the tension that we have between the legal, this gap that we have between the technological developments and the legal gap, and in some sense giving me no hope that there could be acceptable legal frameworks within which technological developments have to be constrained in some way. But, of course, that's a very interesting... So the speed of evolution is such that it seems to me that there's almost no hope to come out with legal... legal settlements of the relationships between the humans and technology. The last presentation by Manfred touched another of the important themes that came out throughout the presentations, which is the breaking the siloes in the in our universities in terms of research. And basically, he gave us an example of an effort that they're doing in Berlin in which they really try to build new forms of corporations in research that are cross-cut in different areas. And of course, I mean, if there is good practices, that come out of these experiments that can be shared and can be socialized and reused, of course, they would be very beneficial. This is my short summary of the main points. And if I can, I... Yeah, that's a long expose on your own thoughts. My own thoughts. Okay, so my takeaway. You know, we have been reflecting a lot on, you know, the... Human sciences and technology during these days, you know, how mutually, you know, dependent they are. I mean, the issues are. And at the same time, you know, I go back to the problem of education. I'm looking at the way we teach. We are forming the new generation. And I see that almost everywhere we are still. We have completely separate tracks. And there is no way... Although we live in the same space, physical, very often, we do not take advantage of that for inventing new ways of putting things together. I'm not saying this is easy, but... And I don't think that the problem is just introduce course A and B in the informatics curriculum. An ethics course in informatics, I don't think that's the solution. that we really need to reinvent new ways in which we can put together students, work together on problems that have this kind of impact, societal impact, using projects to do that. But of course, this requires a lot of supervision on us. We need the faculties to be convinced. We need the faculties to reflect on the fact that they have to work together. in these projects with the students. I think it's a kind of apprenticeship approach that we need to try in which we put them together in the projects. That's my hypothesis. The other thing is that I really believe that a reflection on technology and the use of technology, and your work, but in a serious way, should not only start when you are in college. I really believe that education since K-12 has to embrace this. There should be a new way of teaching science in general, including computing, that is different from what we have done so far. So the questions of how is truth, How are theories built? The fact that there is no a priori truth, but there is approximation. People build their truths through some processes. I think this is a kind of thing that they have to learn since they are in school, since they are very young. We are at the stage in which science... is discredited in society by this disintermediarization. People accessing directly information, they are unable to distinguish what is a scientific truth and the meaning of what is truth, which means that it works in many cases, in most cases, under certain conditions. We need to build this understanding of what scientific truths are in the young people since they are in school. Because what we see today in society, I think, is pretty scary. People ignoring what science has done. We see in the case of vaccinations and many other cases. We need to rebuild this kind of, let's say, I wouldn't say faith, but belief in the value of science, which has been going down. And perhaps this requires also a change on our side in the way we communicate to society. But that's a different, in the way we reach out. But this is a different story. Third point. No, it's okay. Third point is what I might take away. I spoke about education in research. My takeaway is we are living in this very fast cycles from research into applications. I mean, this continues flow. There's a kind of disappearing time between design time and run time, if you want, using computer science terms. Which means that compared to the past, the fact that you develop something, you try out in very small context, you try to understand what the consequences are, you try to understand what is a good use or a bad use. I mean, the ethical reflection on technology has time to mature. Well, time is compressed. My understanding of the phenomenon is that, again, we have to bring on within the research other people, other competencies. It's not just a question of developing technology. But as technology is developed in our research environment, we should have social scientists, philosophers work with us. and anticipate reasoning about the research that is being developed. Anticipate the problems. I'm not saying that you will be ready, but I think you can shorten the time in which you understand what is the societal implication of what you're doing. How can you move your research in a way that is more informed? by the needs of society. Fourth point. When we are talking about the impact on society, again, context is very important. I think that the reflection on Africa is different. We have to take that into account. When we are talking about the societal impact, you really have to understand what we are talking about. And in some cases, the context is very important. Last point. I really believe that we are talking to each other here, but we need to reach out. We need to reach out to our own community. I don't know how many of us agree on this. So the manifesto is very important for this. We have to reach out to society in general, more generally. You know, yesterday, Hans was drawing the parallel with the physicists, and they reached out at some point, you know, raising this issue that, you know, the potential consequences on human life of nuclear technology. Of course, you know, we are not affecting necessarily We hope. But in some sense, I think that our influence is even more profound than the fallout of research in physics. It is more profound also because it's not just us. I mean, it's not just computer science. Computer science is changing also the other sciences. So all the sciences are changing. And the changes in science, And all these sciences are leading to change to society. So we really need to reach out because of that. Finish. Thank you. So I immediately pass over to you for your more general summary. All the others already made a summary. Before Gerti says something, I have a small remark. Because this local impact and experimentation and having impact, I remember the AI summit we had in the U.S. The University of Maryland is doing an undergrade program where different disciplines work together on problems of the local population. They have a one semester experiment where they have a concrete problem in this local neighborhood. And then the different disciplines work on that and they try to find a concrete solution to a concrete problem with the local neighborhood. And this is a way of how you could integrate both different disciplines as well as the local neighborhood as having also some impact because you really work on a concrete problem. This is just a remark. Gerti wants to say something and then we pass over to you. Remember that we have in school the physicists from Friedrich Dürrenmatt, which was this satiric about, you know, the three physicists meeting in a hospital for mental illness, and where they kind of tried, in fact, they only do so if they would be mentally ill. And, in fact, we all learned in school the kind of the problems and the difficulties which the physicists had when finding out about the atom bomb and so on. Where is this kind of this novel for computer science? What I want to say is because we also... No, but we're in a silo here. I think something like that, because we are talking about... outreach and how can we reach the masses. They already, Manfredrich Dürrmann reached all the pupils, at least I think in Europe everybody has rated. It's a scary story. I don't know if anybody watched the Black Mule. So I take the instructions that I received. This is a typical problem in computer science. The interface did not work. No, no, no. And by the way, I learned what you normally do during conferences. will try it should work Hannes put it into my pocket so I will try to focus on what which should bring us to what we have not discussed as yet namely what is the link to humanism but I want to give you a warning when people hear the word digital humanism the first reaction is Ah, you are speaking about digital humanities, yes? And you have to be aware we are not speaking about digital humanities, but we want to move towards something that we call humanism, whatever it is, however we will define it. And I would like to link it to what all three of you said, but just focusing on one topic. And starting with Edward. I would translate it into my language and I would say part of humanism should be the ability to be reflexive, to think about what we do, about who we are, how we do it. You can use different terms. You can look at what is called agency. We ascribe agency. to technology knowing that after all they are designed operated by humans so there is a human agent somewhere around the road but nevertheless technology assumes a very powerful form of agency how do we cope with that or also we call it performativity which is a way of saying things can affect the way how we regulate our behavior. And the mere words can also perform something. If you get married, the civil servant says, you are married, and it's a legal act. This, again, is something that is performed. And technology has a very strong performative component, again, to reflect on that. Hilda mentioned power relations. Power relations are normally not mentioned in technological conferences. because it's somewhere outside your normal universe. And yet it is central to any social relation and interaction. It's central to every society, whether we like it, whether we don't like it, whether we think it's legitimate, whether we are contesting it because we think it's illegitimate. It's part of it. And I think this kind of reflexivity needs to be cultivated, needs to be part of education. And this brings me to very much the core evolutionary approach that I think needs to be further deepened, because I'm fully in line here with what Edward said, but I think the way how we will see how machine learning, deep learning, is developing further. there will be something that is moving into what evolution is telling us. But at the same time, our concept of evolution is being extended by what we see we can do with algorithms and machinery. And this is a very exciting development, but it has implications on humanisms. Because in co-evolution, you know, where is humanism in co-evolution? Can we pinpoint it? Can we describe it? Can we put our finger on it? So it's a very exciting development that I see, but it also offers us the opportunity to try to refine, to anchor what we think humanism could mean. So this is my reaction to Edward. Hilda spoke about the interfaces already, and I mentioned interfaces quite a bit. Also, Carla took it up again. Something that I would like to leave with you, interfaces are not only changing quickly, they are not only blurred, but they are also messy. And dealing with this messiness and realizing, You know, it comes, I mentioned Sidney Brenner this morning, fantastic Nobel Prize winner and fantastic person. And he once said, mathematics deals with the perfect. Physics deals with the optimal. Biology deals with the satisfactory. And he stopped there. And I said, the social sciences deal with the messy. And we have to bring it all together. This is the kind of interdisciplinarity that I would like to see. How do you somehow integrate the perfect, the optimal, the satisfactory, and the messiness? And so this is what I would like to say about interfaces. But then there's a very messy interface that has to do with regulation, that has to do with law, with ethics, going beyond ethics, some concepts like social justice, which for me is an extended way of speaking about ethics. All this is very messy as we experienced in the past two days. and nevertheless accepting that messiness is also part of humanism, how to cope with messiness. Third point is the dear to my heart, the reinvention of experimenting. The experiment was the hallmark of modern science. In fact, what we... think of as modern science in the 17th century started with the experiment exploring in a systematic way the natural world and the way to do it was to set up an experiment. What very few people know is that in the beginning these experiments, they were also messy experiments, but they had to be repeated in public. The Royal Society was consisting of, they were called natural philosophers, not scientists in the 17th century. They were doing their experiments somewhere in the equivalent of the garage, namely in the shed of landed aristocrats or other people who had access to the space they needed. But this was not sufficient. You could not just come and say, you know, I did my experiment yesterday in the backyard of Lord so-and-so. And therefore, the Royal Society staged a repetition of the experiment in public. And you needed an informed audience. They had to be gentlemen. So women were excluded and people who were not considered gentlemen were excluded, but for a very specific reason. In order to be a gentleman and to be able to serve as a witness for what happened, you had to be economically independent. Women were not economically independent. They depended on husbands or fathers. And therefore they were excluded, and of course everyone who was a servant or a handicraft person was excluded because they were considered not to be economically independent. In the 21st century, we have a more inclusive notion of who the public is. But still, I think this idea that experiments have to have... something to do with the public. We are not staging experiments. This would be ludicrous to ask for this. But to think about how can we include the public. Now, coming back to what Carlos said about your passionate plea, we have to reach out, etc. I think one mistake that the scientific community did is we focused much too much on Finnish products we wanted to convince the public and of course the funders and the politicians look the beautiful things that we are able to produce and this is the finished product and of course it has all the benefits and the hype and the promises etc and we were not good we were shy in communicating the process of doing research the way of getting there And François Jacob, the French biologist, had this very nice expression. He said, well, there is the day side of science and the night side. And the day side is when you communicate to the public and to your funders and to your colleagues, everything worked and these are my great results. But then there is the night side when you have to throw away, you know, your... the labor of a couple of weeks because the experiment does not work out. You have to start again. You are frustrated. You go back at midnight from your lab home. You are tired and frustrated. But this is the other side of the same coin of working in research. And I think this is something that needs to be better communicated. And again, it starts with education, you know, teaching kids. what research consists of. You have to be able to observe, you have to be able to analyze, you have to be able to do this and that, and to do it now with the means with which we do the kind of work that you are doing. But when we speak about the spaces needed for experiment, we go beyond what is done in laboratories today. We want to create spaces where we have a possibility of interrogating, of investigating what might be some of the social implications. We can foresee only a small part of it. Let's not fall into the illusion that the goodwill for being able to think of implications will open all the doors of perception and wisdom to us. It will not. But at least... to make the attempt, as far as we can go, to think about what are the social implications. For whom? For which part of the population? Where are people in the work we do? And which kind of people are there? And this is something that needs also a better way of involving the public, of engaging with the public. And last but not least, to put it in a very simple way, I think science shapes our relationship to reality. We know there are still many people where we think they are deficient in science shaping their relation to reality, but nevertheless this is the scientific worldview that we share. The situation today is such that it's very much markets and media that shape our relations to each other. Markets and media shape our relationship to each other. And in order to get towards a conception of humanism that we can incorporate, we have to think how can we use, be it art, be it... you know, what the humanities have to offer. 90% of humanistic research in the humanities deal with the past, with the human past in all its variety and differences. Now the past, as we know, is a foreign country. You cannot go back and you would not recognize who you are if you were to go back. But nevertheless, there is this enormous richness of the human past that we can extract and interrogate with questions that are important for us today. And again, these are interconnected, and we have to come up with spaces for reflecting on it, bringing in the messy interfaces, and trying to set up experimental spaces in which we can continue to work on this. Thank you. Now we start to discuss on this. We already have one, two, three, four, five, six, seven. And then we have, okay. So I wanted to comment on Helga's point about reflexivity because I've been reading a lot recently in psychology about embodied cognition. which is really caught on among psychologists a lot in the last 10 to 15 years. I mean, it's an older idea. But, you know, the idea is that cognition isn't really something, a process that resides in the brain looking out at the world, you know, reacting to sensor data and interacting with it, but rather cognition is the interaction of the brain with its environment. And there are certain ways that this manifests in very practical ways. So when you hold a hammer in your hand, for example, and you use a hammer to drive a nail, your brain actually makes that hammer part of your arm. It actually becomes a part of the brain's sense of the body that it's working with, and that's why you're so able to use tools so effectively. And the point that I'd like to make is that when I hold this in my hand, It's becoming part of my cognitive sense. And moreover, because this reaches out into the network, the things I'm interacting with in the network become part of my cognitive mind. So the point that I'd like to make is that this reflexivity, we tend to talk about how our technology is shaping our society. It's also shaping our cognitive selves. And I think that's an element that really needs to be a central part of anything that we might call digital humanism, is how it actually changes even our individual cognitive selves. I really ask to make short comments because coffee is waiting. I begin with a historical precursor of Google and Facebook. The The richest man in human history was Jakob Fugger. And among other things, he became rich because he transferred money which was collected in Germany from Ablas. What is Ablas in English? You paid to the Catholic Church and you were forgiven 1,000 years of... Indulgence, yes. Indulgence. So the analogy is this ad-driven economy of Facebook and Google had a precursor there because all these ads that we get are as useful as indulgence was then. This is the reason we need enlightenment. Martin Luther yes but the point that I wanted really to make is regulation the most effective type of regulation is taxation and I mean taxation one way to tax this thing and to regulate it is if rent income so effortless income is taxed much higher than now and work is taxed less, and you could just define that this ad-driven economy is rent income. And this would be a very effective means of regulation. Miriam, who else wanted to say something? Okay, let me just... I think the central thing you discussed was... What is humanism? And I think there is also an interdisciplinarity here and a disciplinarity. I think from anthropology and sociology, you would say humanism is sociality. And I think that the social and social relating is at the heart of all that you said. And that that is what we need to really understand much better than we do. And that's probably one of the elements that is the starting point for understanding what humanism is. And sociality shifts all the time. And we define it amongst ourselves. But I don't know if we talk about the same when a computer scientist says sociality or when I say it. And I think that is where we need to start. To understand humanism. You mean Facebook. You. So... So this is an invitation to have a discussion on this, I think. What is sociality? Because if we don't understand and we don't talk about the same types of sociality, we can never come to a definition of humanism. So if you wanted to simplify our goal... One might say that our goal was to find mechanisms for shaping our digital world to make it more human-centered. And in doing this, I was reminded of how Larry Lessig, the legal scholar, became so famous. He became famous by talking about the ways in which we could control behavior on the Internet. fundamental ways of doing that. One of them was law and that would include policy. One of them was social norms and that would include ethics and education. One of them is economics and the other is architecture. The other point that he made is that each of those influencers can shape the other influencers in certain kinds of ways. And so maybe this is one way to think about this, or maybe we think that Lessig is so 1990s now. He's great. He's a great person. Thanks. Yeah, just very quickly, this has been a wonderful conference. I've just enjoyed every moment, and I'm completely behind on something I was supposed to have finished, because I've been listening the entire time. Shopping. Not shopping, evaluating a whole set of proposals. But anyway. Something Helga said about experiments and the role of gentlemen and their independence reminded me of a particular contribution I think we as academics of the university can make to these discussions about humanism and ethics. I think it's important to put out there, and that's that we're potentially seen as disinterested. In other words, if you look, and by disinterested I mean whenever you want to talk about questions of justice and ethics, If there's a conflict of interest, it's hard to believe you have anything meaningful to say. If we look at the Google, the blowing up of the Google's ethics and AI board, which just happened yesterday, I think that's because they put people on that panel who clearly had conflicts of interest. And I think this is something that's often underestimated in Silicon Valley, and it's something that we particularly, as tenured individuals, who can say whatever we want without losing our livelihood, we have a particular role in this dialogue we're having. So I applaud this conference, and I'm very excited to have been a part of it. Okay. So just one observation from the four summaries and from reading the statement is that there's something very big. missing in all of this discussion and that is the role of corporations in this because we talk as if it's only individuals and we talk of individuals have no control but there are individuals that have a considerable amount of control. The CEO of Google for instance has a tremendous amount of say about all of the things that we are particularly concerned about. Power. But if we only talk about individuals, and perhaps the word humanism has sent us down that path, we are going to miss the opportunity to actually have influence on those who have power or those who will. Are you saying they're not human? No, no. I think corporations are not human in spite of the sort of longstanding mistake in the U.S. Don't get me going on that one. I think that the issue here is that if we only think about the actors as being humans in the corporations, then we miss the fact that the actors are acting on behalf of some larger entity which has a set of goals which cannot be described in terms of morality. I don't think anybody thinks of corporations as moral entities. You may aspire to that, but that's not the reality. So if we are going to have this discussion about what we can actually accomplish, we need to bring the corporations as well as the individuals into the scope of the discussion. Power is a relationship. It's not about people. They may be powerful, but you understand power only as a relationship between people. You want to react? I would say you can't just understand it in terms of people. You actually have to have the corporations involved in the relationship. So it's not just people as individuals. Can I ask a question? I just wanted to ask a question on this. Okay. I see your point, but what is an enterprise? An enterprise is actually a human creation, right? So you're talking about the enterprise as if it is a... an entity by itself? Isn't this a human? No, no, no. What I'm saying, yeah, but who creates them? There's the theory of Williamson, the theory of capitalism. He is explaining transaction cost theory and he explaining exactly. on the transaction cost, why it makes sense to internalize transactions, and this is the basis why we have companies, okay? And what Jeff was saying to us on these externalities and the idea that it could be outsourced and it becoming network. Sorry for that. Short interpretation of externalities and companies. Okay. My remark is more a question. Is there anything that should be forbidden for ethical reason while trying to control this digital co-evolution so as to avoid that humanism became androidism, for example, when we substitute part of our body with digital devices, or this is acceptable? So now we are going to the basics of the discussion. It's in five minutes is coffee. It's first is Helga, then it's you. Okay. No, I just wanted, you know, just a historical remark. I cannot help but to come in with historical examples. You probably know the figure of the Leviathan, Thomas Hobbes, the Leviathan. The Leviathan is relevant to our discussion about democracy today. Because if you look at survey results and you ask people, would you be willing to have as your government, you know, an algorithm that comes up with wise decisions, an astonishing number of people say yes. So you have a strong support of an algorithmic Leviathan. Now, historically, what is interesting is that Thomas Hobbes wrote the Leviathan. as an alternative to the most powerful corporation of that day, namely the East Indian Company, which was so powerful that the state was under threat. Just a historical reminder of something that is coming back to us and haunts us today in terms of what happens to our democracy. Just a comment, because somehow the interpretation that has been voiced out that we are dismissing ethics. Justice Warren said, the law floats on a sea of ethics. So, ethics is incredibly informed. Everything we are discussing starts with ethics. But if you ask a legal scholar, and I don't know whether a lawyer is still here, he will tell you, ethics is not self-executing, except for in a certain well-defined sector, the law and the medicine, in which ethics has been So you can lose your license as a doctor or as a lawyer because of ethics violation. I cannot lose my license as a computer scientist because I'm not ethical. So, of course, take as an example, we think in the Western world that trading organs for money is morally repugnant. And this is a widely shared value. We could have stopped there. But no, at least I don't know about the law in Europe or the United States. It is illegal. to buy organs. We took ethics and we institutionalized it by adding it to the law because the law has a structure that executes it. If you think we can live just on ethics, this is a utopia. Everybody is ethical and we live on ethics. Can I ask you to continue this discussion at the coffee break? No, sorry, because this is somehow... People are... Desperately waiting for the coffee break, but before you do that... No, no, no, no, no. Sorry, sorry, sorry, sorry. No, I take the liberty as a moderator of this panel and... Transparent, yes. Power relationship. And I will not take up what you have said. And this is going into the direction of a definition of digital humanism. And I think you have somehow identified three key concepts which are important. One is the object we are dealing with. This is the relationship or the co-evolution of technology. computer science with co-evolution of the technology, computer science, artifacts with human, humankind, society with all different aspects. Understanding this is a complex process. Second, it's the methodological point of view. It's a scientifically based approach, interdisciplinary, to understand, to describe. Maybe to model and also maybe to have some prediction. And at the end, it's also some objective. Why do we do that? And it's to put the human at the center and having it in an open democratic process. So these are the elements of a definition which I think is a result of this discussion. And being very transparent, I wish you now a good coffee break.",
+  "segments": [
+    {
+      "start": 0.496,
+      "end": 28.496,
+      "text": "So, yeah, so Hannes asked me to give a summary and commentary on the first session yesterday, and that's hard to do because I thought it was an absolutely brilliant session. But I actually wanted to start this by just thanking Hannes, actually, because I think what..."
+    },
+    {
+      "start": 28.496,
+      "end": 56.816,
+      "text": "He's done here. I mean, I think he's really been the major oars pulling this together. And this conference has kind of blown my mind in a way that I think he reflected already. I also, you know, I sort of expect to be able to keep up with my email while I'm at a conference. I am so far behind. It's just I have not been able to divert my attention. And I think Hannes deserves a credit for that. So I'd like to give him a round of applause."
+    },
+    {
+      "start": 63.888,
+      "end": 91.44,
+      "text": "So I'll begin with an apology, which is that one of the speakers yesterday was Allison, who said that PowerPoint disrupts her thinking. I actually can't think without PowerPoint. And so I did put on my summary with this crutch of the PowerPoint. Whoops. So these were the four talks. I trust most of you were there already."
+    },
+    {
+      "start": 91.44,
+      "end": 119.088,
+      "text": "So Bill's talk, which focused on scrutiny. Marco's talk, which focused on the ability of amateurs to create incredibly chaotic and complex artifacts. Allison, which was focusing on kind of the contradiction and conflict between consumers and citizens. And Hans, who was focusing on"
+    },
+    {
+      "start": 119.088,
+      "end": 148.256,
+      "text": "the tragedy of the commons and had some very interesting insights about what we as computer scientists, I'm a computer scientist, need to be doing in relation to drawing inspiration from what scientists were facing in the 20th century. So here were my main takeaways from Bill's talk."
+    },
+    {
+      "start": 148.256,
+      "end": 172.32,
+      "text": "The social construction of information, I think, was a really extremely important point. I mean, this is a whole field in philosophy and social science, and I think that we really need to take it seriously. And I think as scientists, we often think in a much more platonic way by indoctrination through our scientific education."
+    },
+    {
+      "start": 172.32,
+      "end": 200.448,
+      "text": "and where we assume that the truths that we're working with are all sort of independent of humans and exist out there in some platonic heaven. But that's not really so obvious, and in particular when we face the information flows that we're dealing with these days, the social construction of truths is something that actually is a reality in our environment."
+    },
+    {
+      "start": 200.448,
+      "end": 226.736,
+      "text": "And I think that his emphasis also on this importance of scrutiny, scrutiny more than, you know, as a computer scientist, I often think of verification, right? We want to prove correctness. Well, no, that's not really what it's about, right? I mean, correctness is always about a model, but we're deploying these systems in the real world, and anything that we say about the model is going to have a necessary gap."
+    },
+    {
+      "start": 226.736,
+      "end": 249.424,
+      "text": "with whatever is happening in the real world. And so his focus was on scrutiny as really the main thing that we need to be ensuring that we're able to do. And I think that's a particular challenge when we have inscrutable technologies. So I think that Marco's..."
+    },
+    {
+      "start": 249.424,
+      "end": 277.68,
+      "text": "Marco apologized to me, but he had to leave because he had a plane to catch, so I can say whatever I want about what he said. But I think his major focus was, I mean, I think he was lamenting the fact that the web was created by amateurs and how much better it would be if it had been created by professionals. But actually, my takeaway was really quite different. Wow, that was created by amateurs?"
+    },
+    {
+      "start": 277.68,
+      "end": 302.176,
+      "text": "You know, it's kind of an amazing outcome for something that was done in such an ad hoc way. And so that was that was kind of my takeaway. So Allison, I think, really challenged a lot of us with, you know, sort of emphasizing that this pursuit of profit really is a threat to individualism and that the whole economic structure around."
+    },
+    {
+      "start": 302.176,
+      "end": 331.744,
+      "text": "the monetization of internet technology has created some real threats, I think, to the values, the social values that, at least in the West, we hold fairly central. And then Hans, I think, my major takeaway from his presentation was, I guess I would summarize it as computer scientists need to grow up."
+    },
+    {
+      "start": 331.744,
+      "end": 358.432,
+      "text": "And, you know, that we really are dealing with potential risks due to the tragedy of the commons. And, you know, I mean, existential threat to humanity may be a little bit of hype. But the reality is that we are building technologies that are very transformative. And maybe, you know, we're not exactly facing nuclear annihilation like the scientists in the 20th century were."
+    },
+    {
+      "start": 358.432,
+      "end": 381.488,
+      "text": "the impact is sufficiently large that we really need to kind of step to the plate and up our game. So what I'd like to do as just a way of framing a discussion is present a scenario that I call an information apocalypse and consider each of these topics with respect to that scenario. So first of all, assume that all information on the Internet is true."
+    },
+    {
+      "start": 381.776,
+      "end": 409.872,
+      "text": "If we take this social construction of information seriously and the Internet is our society, then it's kind of by definition an assumption we can take. But I also deliberately put up this bullet because there's a lot of people who immediately, when I talk about this information apocalypse, they think I'm talking about the problem of fake news. But actually, I'm not. The problem arises even if all of the information actually is true."
+    },
+    {
+      "start": 409.872,
+      "end": 434.128,
+      "text": "We still have a problem, okay? So the problem is sort of highlighted in the second bullet, which is that the information flux today vastly exceeds any individual capacity that we have to absorb it. This is quite different from 30 years ago, where information was relatively hard to get. You kind of had to go to the library and search for that paper, and there was a lot of labor involved in getting information."
+    },
+    {
+      "start": 434.128,
+      "end": 462.944,
+      "text": "And it was expensive to disseminate information, and information tended to be broadcast to a whole population, which meant that that population, for better or worse, was more likely to share some common truths. Whereas today, the sources of information can become very fragmented and individualized. So you get these individualized information flows regulated by software, and this software is, to Allison's point, is..."
+    },
+    {
+      "start": 462.944,
+      "end": 492.352,
+      "text": "built by entrepreneurs who get rich from the creation of the companies that make that software. And they're, in fact, affecting the thinking of the whole population. And I think that, to Hans' point, the result of this can be that you can have a society that has islands of disjoint truths, which is certainly something that I think we're seeing in the U.S. People have used the term filter bubbles and echo chambers."
+    },
+    {
+      "start": 492.352,
+      "end": 521.44,
+      "text": "for these sort of customized sources of information and the way that they affect people's way of thinking. And my question to Hans's point is, is this potentially a real threat to democracy? If you have societies that are divided up into islands that don't share even basic common truths, how do you run a democracy in that context? So this could really be something that really has a profound impact."
+    },
+    {
+      "start": 521.44,
+      "end": 550.672,
+      "text": "So what do you imagine? Well, this is I'm pulling I'm pulling this up as a case study. Right. To to look at these various issues. Yes. I'm not saying this isn't happening. This is happening. Right. OK. So the other thing is I'd like to pick up on Helga's point this morning. On one slide, she talked about about the co-evolution. Right. So I think that one of the things that is a little too easy."
+    },
+    {
+      "start": 550.704,
+      "end": 574.144,
+      "text": "When we look at the problems of this scenario that I outlined, is to say, well, let's just blame the technologists. They created something that's truly horrible, and those software engineers should be blamed. But actually, I would like to put a stake in the ground and say that that position is what I would call a digital creationism position."
+    },
+    {
+      "start": 574.144,
+      "end": 600.0,
+      "text": "And that it might actually be a more reasonable interpretation of what's going on is that it's a Darwinian coevolution and that actually the individual software engineers have much less control than they think over this. So I first got this idea from George Dyson, who is a historian of science. And he wrote this really wonderful book called Turing's Cathedral. And he had written a book several years earlier, published in the 90s."
+    },
+    {
+      "start": 600.0,
+      "end": 628.832,
+      "text": "called Darwin Among the Machines, which is not a very pleasant read, but it had all of the key ideas in it. But the Turing's Cathedral is a lot better, and I have a couple of quotes from it. He talks about Google's million-plus servers as a collective metazoan organism. And the companies and individuals who nurture the servers are ever more richly rewarded in return. So this is potentially another interpretation of the profit motive."
+    },
+    {
+      "start": 628.832,
+      "end": 654.816,
+      "text": "Are the machines actually exploiting humans' greed to further themselves? Well, in a co-evolutionary view, there's an element of that. He says, unemployment is pandemic among those not working on behalf of the machines. So are they working on behalf of the capitalists or are they working on behalf of the machines? Maybe capitalism is just their tool for getting..."
+    },
+    {
+      "start": 654.816,
+      "end": 676.944,
+      "text": "Okay, so he says the big computer is doing everything in its power to make life as comfortable as possible for its human symbionts. Just go to a Google office and, you know, the free food and all that stuff that gets paid for by the actions of these machines. Yeah, these machines are making the life of their human symbionts very comfortable. Okay, so this..."
+    },
+    {
+      "start": 676.944,
+      "end": 706.688,
+      "text": "This coevolution idea, you can think of it this way. Richard Dawkins famously said, a chicken is an egg's way of making another egg. The question that I'd like to raise is, is a human a computer's way of making another computer? Maybe we really are playing a different role in this whole system than we think we are. I'd like to put a quote from"
+    },
+    {
+      "start": 706.688,
+      "end": 734.624,
+      "text": "So this is me in front of an engineered artifact. Now, this is an older engineered artifact, right? This is not an Internet artifact, but it is an engineered artifact. And the question is, it's a ship. It's a Swedish ship, Vasa, right? It was built 350 years ago, and it sank 1,000 meters into its maiden voyage. It was a really crappy piece of engineering, okay?"
+    },
+    {
+      "start": 734.624,
+      "end": 762.896,
+      "text": "Now, you know, when ship designers sit down and design a ship, are they doing top-down intelligent design, right? That's the question. Or is the ship design actually the result of an evolutionary process? I think the engineers hold some responsibility for this. Yeah, but I'd like to just read a quote from the French philosopher Alain, okay, who said,"
+    },
+    {
+      "start": 762.896,
+      "end": 784.944,
+      "text": "He said this in French, but I'm not going to read it in French, right? Every boat is copied from another boat. Let's reason as follows in the manner of Darwin. It's clear that a very badly made boat will end up at the bottom after one or two voyages and thus never be copied. One could say then with complete rigor that it is the sea herself who fashions the boats, choosing those which function and destroying the others."
+    },
+    {
+      "start": 784.944,
+      "end": 803.6320000000001,
+      "text": "So I'd like to raise this question. So one of the mediators of information that is out there in the Internet that is creating these filter bubbles and sort of reinforcing these local networks is Snapchat, right? So who designed Snapchat? Was it a bunch of software engineers or was it the teenagers? Under this interpretation..."
+    },
+    {
+      "start": 803.7280000000001,
+      "end": 828.944,
+      "text": "The teenagers certainly had a big role in it. In fact, if you think about it objectively, Snapchat's not a very complicated piece of technology. There were actually thousands of other very similar pieces of software that had been designed, that people were trying to make businesses into, that were trying to monetize. Most of those died out. It wasn't the brilliance of those particular software engineers, nor that they were..."
+    },
+    {
+      "start": 828.944,
+      "end": 843.424,
+      "text": "greedier and more effective capitalists or anything like that that made that one succeed, right? There was a lot more randomness in this and a lot more Darwinian evolution and natural selection, okay? So..."
+    },
+    {
+      "start": 843.424,
+      "end": 872.72,
+      "text": "So that was from Alain. So I'm going to then read a quote from my own book. This was published at the end of 2017, where I say, are we playing God, creating a new life form in our own image, or are we being played by a Darwinian evolution of a symbiotic new species? I also said in that book, are humans the purveyors of the noisy channel of mutation, facilitating sex between software beings by recombining and mutating programs into new ones?"
+    },
+    {
+      "start": 872.72,
+      "end": 895.008,
+      "text": "This is what software engineers do. They take a chunk of code from here and a chunk of code from there, and they combine it and create a new chunk of code. And most of those mutants die, but a few of them survive, and then their chunks of code get copied. So what is the role of the humans in this? Is it really top-down intelligent design? Well, I don't know. There's kind of an element of that."
+    },
+    {
+      "start": 895.008,
+      "end": 923.696,
+      "text": "But it's not so clear. So I'm going to read a quote from a book that's not yet published but is almost finished. So maybe a more realistic view is that we are the sources of mutation in a Darwinian coevolution. The mutations we introduce are not entirely random, but in a modern view of evolution, neither are biological mutations introduced by nature. I've actually learned a lot about new theories of evolution, and it's a lot less random than you might think."
+    },
+    {
+      "start": 923.696,
+      "end": 952.912,
+      "text": "Much like what happens in nature, most of the technological mutants we bring forth go quickly extinct, while a few grow to occupy a niche, at least for a while, in a continually changing ecosystem. So we do not like seeing our mental cognitive processes as themselves cogs in a relentless, purposeless evolution. But is this what they are? So this is the question that I'd like to raise, and I think that it's particularly pertinent to these four talks,"
+    },
+    {
+      "start": 953.072,
+      "end": 982.0799999999999,
+      "text": "It's a question of what do we do next? Do we just blame the technologists or try to correct the technologists? One simple solution is we teach ethics. The issue came up about whether teaching ethics at an individual level is going to be effective. If you take this co-evolutionary view, you're going to have to take a much bigger picture view of how"
+    },
+    {
+      "start": 982.0799999999999,
+      "end": 1011.6320000000001,
+      "text": "how to approach the whole ethics problem. It also becomes clear that having a Hippocratic oath isn't going to work because that's a very individualized interaction that's being mediated. So I think that if we think of at least one of the forces here being co-evolutionary, it's going to change how we approach how we might solve this problem through policy or whatever. OK. Thanks."
+    },
+    {
+      "start": 1014.544,
+      "end": 1043.008,
+      "text": "This was more than a summary. Sorry. No, no, it's okay. Are there any immediate thoughts on this or questions or remarks? I would have one on this evolutionary picture, the big one, because it's the macroscopic view. It doesn't say that we are somehow passive in the evolution. We could play an active role. And if you have an interpretation, an active player, you could even say, okay, this is what digital humanism is about. It is interplay of..."
+    },
+    {
+      "start": 1043.008,
+      "end": 1070.864,
+      "text": "and human and what, even if there are some more generic rules or generic, let's say, mechanism, what is the role we have more specifically in that? Yeah, I mean, keep it, keep it. Well, I agree with you, but I would say a little differently. So what is the analog of nature here? I would say it's the marketplace. It's also human nature, but also a huge part is the marketplace. The marketplace is not God-given. It's a human institution, human-created institution."
+    },
+    {
+      "start": 1070.864,
+      "end": 1100.384,
+      "text": "shaped in a complicated way, but being reshaped all the time. We keep changing what is the marketplace all the time by adding laws, by adding incentive, by taking away incentive. So part of the question here, even if you take this point of view, how could we change the environment, the marketplace, to steer evolution in a direction we'd like to steer it? Yeah, let me put it slightly differently, which is that I have one, which is..."
+    },
+    {
+      "start": 1100.384,
+      "end": 1129.3600000000001,
+      "text": "Humans are, in fact, manipulating biological evolution already. We were just talking about climate change a couple of hours ago. So humans do have the power to influence biological evolution. Why should we think we have no power to influence an evolutionary process that we actually started? That would be an absurd conclusion. Obviously, we can influence it."
+    },
+    {
+      "start": 1129.3600000000001,
+      "end": 1157.5839999999998,
+      "text": "Can we control it is the question. And I think that simplistic answers like blaming the engineers is what I'm arguing against. So quick question at the beginning. So I love the part about creating sort of filter bubbles. We've talked a lot about that. But it's probably even worse than that."
+    },
+    {
+      "start": 1157.5839999999998,
+      "end": 1187.152,
+      "text": "in the sense that because the systems know so much about us, they're able to carefully construct a lie that we're predisposed to believe. So it's sort of beyond just giving us individual information, but it's a really powerful influence. I think you're absolutely right, but I'm just trying to avoid going down the rabbit hole of the fake news stuff, because even without the fake news, we're in trouble."
+    },
+    {
+      "start": 1188.912,
+      "end": 1200.0,
+      "text": "I like very much the thing written, the sentence written in black."
+    },
+    {
+      "start": 1200.0,
+      "end": 1228.464,
+      "text": "I just looked up what cogs are, now I know. In a relentless, purposeless evolution, I can fully agree to that because from my view, how I see humanism, I don't need no bigger picture. I don't need no transcendental sense in my life."
+    },
+    {
+      "start": 1228.464,
+      "end": 1256.72,
+      "text": "There's a lot of thoughts coming up how to be a human being and what humanism might be in this kind of worldview. So I'm happy to modestly contribute to digital humanism discussions under exactly this headline. That's why I picked it. I like that very much. It's also about destroying metaphysics."
+    },
+    {
+      "start": 1256.72,
+      "end": 1284.352,
+      "text": "It is. Because we have to go back to scientific processes. This is somehow, and this links to scrutiny. Mr. Fraunberger. Do you want to say something? Don't throw it, don't throw it, don't throw it. I just want to maybe say something like don't blame the engineers. And I think responsibility is something quite complex and non-binary."
+    },
+    {
+      "start": 1284.352,
+      "end": 1311.84,
+      "text": "we ought to be careful of not letting them off the hook completely. There is a shared responsibility of all of us, and the engineers play a role because they create things that can be misused. It's a difference whether I create a hammer or create a gun. So there's an intention in design that comes with some responsibility that we should not ignore."
+    },
+    {
+      "start": 1311.84,
+      "end": 1331.952,
+      "text": "And I don't know where this quote is coming from, but somebody said, like, you know, there's always a path where there is a will. But with technology, it seems to be the other way around. There's always going to be a will where there is a path. Yeah, I think that's right. And I think that one of the words of caution is that."
+    },
+    {
+      "start": 1331.952,
+      "end": 1358.864,
+      "text": "Just because one engineer chooses to not make a gun does not mean that guns will not get made. And so that's why I think we need to be thinking in a bigger sense about how to nudge the process and affect the process in a bigger sense. You can still choose to not make a gun, but that may not result in guns not being made. They're very old. So we should switch now."
+    },
+    {
+      "start": 1358.864,
+      "end": 1386.16,
+      "text": "You're going to take away my microphone? Yeah, yeah, yeah. We have a change in power relation. Thank you. Thank you for the help. So, it's working or it's not working?"
+    },
+    {
+      "start": 1387.696,
+      "end": 1416.72,
+      "text": "because I don't trust this thing. So, is it fine? So, he's adjusting again. I should talk, then you see whether I... No, it's not working. Thank you, Chris, because I'm really mentioning more this responsibility part of things. But as you know, Hannes, he is very good in not saying exactly what we should do."
+    },
+    {
+      "start": 1416.72,
+      "end": 1446.496,
+      "text": "just something will happen in the afternoon. And that's why we have different approaches, I think, to summarizing our takeaways. And this, of course, helps us facilitate innovation and openness and new things. So I think this is a quality. It's not a bug. So what we... Sometimes it's very challenging. Like, you could, you know, you should, at the very last moment, to create something. So what I have done is a little bit different."
+    },
+    {
+      "start": 1446.496,
+      "end": 1475.008,
+      "text": "I'm not talking about quotes or my books, but I'm just saying a little bit about the things that I was hearing yesterday afternoon about the intercession, humans and society, AI and ethics. So what I have done is went through the presentations one by one and trying to find out what the takeaways are, what the main messages were for me, and then also what I was thinking that I can see it."
+    },
+    {
+      "start": 1475.008,
+      "end": 1503.344,
+      "text": "in this way for me living today, this place, and having an idea what I can do in the future. So these are the green ones, and other ones are from the presentations. So I'm going through these ones. And at the end, I want to show my general takeaway of all these discussions, because I was also listening to all incredible presentations. So Miriam's work, empirical work in Africa, and showing us how anthropology"
+    },
+    {
+      "start": 1503.344,
+      "end": 1527.888,
+      "text": "And the methodologies can be applied to understand people. So people that we don't really, partly we are not even aware of their life and of their situations, technologies they use, or governments or environments do there with them. Or they initiate certain things or some certain things happens because they use."
+    },
+    {
+      "start": 1527.888,
+      "end": 1551.664,
+      "text": "mobile phones and having access only to the Facebook and later on WhatsApp and believing that the internet is the Facebook and information in Facebook is everything that they are aware of. And then I think these were insights that can happen only if we have researchers, people going there and seeing."
+    },
+    {
+      "start": 1552.208,
+      "end": 1577.632,
+      "text": "concretely what's happening so this is one of the very important issues that I want to mention here in this talk and of course seeing that interdisciplinary work is very important and more than important more than ever so because we at the university in the faculty are very keen on working interdisciplinary but I'm not so sure that our colleagues some are sitting here creating"
+    },
+    {
+      "start": 1577.632,
+      "end": 1607.328,
+      "text": "machine learning, AI stuff, whether they are also working interdisciplinary. So I think this is a good message from this gathering in this workshop to see you have to understand your users and you have to do certain things for them and consider it also in the design and development of these things. Even though knowing that's very difficult. But this is probably your way out. So then the new power schemes are interesting. They happen and they evolve there."
+    },
+    {
+      "start": 1607.328,
+      "end": 1635.44,
+      "text": "how people live in these schemes and cope with it, and the society is changing through these schemes and the power structures, and mobile phones play a big role in that, as far as I got from the presentation, and the so-called power of the digital. So I think we have to find out how we can actually enable using this."
+    },
+    {
+      "start": 1635.44,
+      "end": 1658.416,
+      "text": "digital possibilities for different type of people, and we need to create measures for enabling, but also at the same time for regulating. We had also the third and fourth talk yesterday afternoon was about what happens if you don't regulate. So what happens, how far it can go and change the society."
+    },
+    {
+      "start": 1658.416,
+      "end": 1687.952,
+      "text": "Is there any point of no return that you only react, but you cannot really shape actively the development or evolving of these technologies? The technophones are really interesting. It's looking very primitive, but having great power. And then I was saying, you know, Facebook, I knew it before your presentation. But, you know, how can this be? But on the other hand, I understood that you have to start somewhere. So you start simple."
+    },
+    {
+      "start": 1687.952,
+      "end": 1714.9279999999999,
+      "text": "but at least you start. So you see that technologies make things available and possible for you, but you can adapt and progress in this using the new ways of technologies or application of these technologies. So then it becomes very complex. As we heard today, the platforms can be very complex, but you don't start with the complex platforms. They evolve through the time. And still, it's very important that we keep..."
+    },
+    {
+      "start": 1714.9279999999999,
+      "end": 1744.464,
+      "text": "this view, at least European view, open data and open access for everyone. So I think, how can this be done? So how can an African woman know that this information she gets from Facebook is true or not? So these are different ways of dealing with that. I think one of that is the last point here, the lack of critical analysis of information they are provided. So they are not, they need to be."
+    },
+    {
+      "start": 1744.464,
+      "end": 1773.6799999999998,
+      "text": "As Helga told during the lunch, so if you don't have any answer, you can always use the term education. So if you don't know how to solve the problems, you can always educate people. So this is not meant this way. This was really meant to how can we create, you know, I'm working at a university being also dean of studies. I want to try out different formats for education, not only for our students who are knowledgeable about ways of learning."
+    },
+    {
+      "start": 1773.6799999999998,
+      "end": 1800.0,
+      "text": "How can we do it with users from other countries with limited technologies or certain type of information which is provided? So what is the content? What is the format? Then we have to rethink things. And so also this YouTube type of video-based information distribution is getting always important. And how can we use certain formats and develop them? And then there were three terms."
+    },
+    {
+      "start": 1800.0,
+      "end": 1825.44,
+      "text": "and movement and radicalization, these were very interesting examples showing that we need qualitative methods to understand these people. So it's not just modeling or theorizing things, it's also seeing, observing, participatory, capturing the situation, understanding the context."
+    },
+    {
+      "start": 1825.44,
+      "end": 1851.984,
+      "text": "creating narratives and then finding out ways of doing it. And so I think living labs as an approach can help us to do so, but still seeing as having also a living lab running in Austria and Vienna, so it's very difficult to find a common understanding and definition of living labs. So this scales differently and involvement of researchers and citizens changes depending."
+    },
+    {
+      "start": 1851.984,
+      "end": 1879.664,
+      "text": "on the context, on the environment. So that's why this is a big challenge for this approach. But we have to find ways to make them more successful. So community building and acting, so building this ethnic linking worldwide, this is also interesting to see how people do that, for what reasons, and how fast technology can help people to connect to each other. And really also..."
+    },
+    {
+      "start": 1879.664,
+      "end": 1908.224,
+      "text": "help each other. So in a way, having the money to do certain things or being aware of what's happening in Africa if people are living in another continent. So technology is obviously a facilitator, but I want to see here the community as not a bunch of people around the technology. It's more than just the people who are created while using technology. What are the qualities of communities? Why? We saw also"
+    },
+    {
+      "start": 1908.224,
+      "end": 1932.256,
+      "text": "the volume makes the difference. So if you have many people, then it works. But how can you keep this amount of people active in a community? Facebook can obviously do that. The second presentation was very interesting. A lot of things what I was wondering about work situation, but also this is something that..."
+    },
+    {
+      "start": 1932.256,
+      "end": 1960.176,
+      "text": "We normally know if we are talking about digital transformation and what happens, the machines are coming, AI, et cetera, and what happens with the work of people. But Moshe manages always to put something additional to this thing. And this was very interesting to see the automation, automobile car crashes, massive loss of jobs in the States, and also seeing that these developed economies having problem with automation processes and challenges."
+    },
+    {
+      "start": 1960.176,
+      "end": 1989.12,
+      "text": "So there is obviously this uncertainty of the future about new jobs is still existing. So there are some hypotheses or maybe theories in the meantime. So what happens? New jobs are coming. And the quality of life is somehow depending on that. But we try to find out ways to develop these things. But actually, we don't know what will happen. I think the main message was also it's not certain. And this is somehow we can maybe."
+    },
+    {
+      "start": 1989.12,
+      "end": 2017.616,
+      "text": "simulate different options and see what happens. The simulation came yesterday and today several times, so our experimenting. So we can see what happens if we play with the parameters. What happens and learning from the history, but also applying new parameters because the parameters are changing through the technology. We get new ones, new possibilities. What can happen then if it develops into that direction?"
+    },
+    {
+      "start": 2017.616,
+      "end": 2043.776,
+      "text": "And then study and try to understand and see the impact of these changes. So the impact is also something, needs also be simulated in a way. Simulations are powerful tools, but everyone is coming to us now in Vienna, simulate the traffic, simulate if this happens. So yeah, we are really professional in the simulation things in the meantime."
+    },
+    {
+      "start": 2043.776,
+      "end": 2071.76,
+      "text": "And I think these aspects of growing inequality, job polarization, and the level of education, how it changed now in the state, in this example, with the drivers. So income, or probably in a more manufacturing area, income differences based on the education level. Again, we have here educational challenges. So what does it mean? Do we need to teach our students?"
+    },
+    {
+      "start": 2071.76,
+      "end": 2101.216,
+      "text": "the so-called lifelong learning thing, what can we provide actually as universities for them. And we need models for balancing. So what type of things can we put next to each other and see if we find out that changing one aspect in the society or in economy or manufacturing context in that sense. So how can this impact positively to the other issues?"
+    },
+    {
+      "start": 2101.216,
+      "end": 2125.872,
+      "text": "So I don't know whether we manage that. Maybe we find out innovative approaches to find out. Not just making everything in a depressive way, developing in a very bad situation for a human. Just finding out ways and defining these parameters. Once not as reaction, but more as action. So I like this action."
+    },
+    {
+      "start": 2125.872,
+      "end": 2150.704,
+      "text": "action type of movement and not just reacting to the things and assessing the impact, but also doing really active things. So this would be interesting if these colleagues are able also doing this type of thing. So this would be a very good result, I think. And then I heard real economic and financial area. This was in the discussion."
+    },
+    {
+      "start": 2150.704,
+      "end": 2178.624,
+      "text": "There are different realities. We have to be aware of that. And then what are we talking about should be differentiated. Because in normal political, societal, or media talk, everything is one thing. So if you want to make people anxious or relaxed, then you choose the certain examples and you communicate this way. And so I think we have the role to change that. Then there was the race."
+    },
+    {
+      "start": 2178.624,
+      "end": 2206.656,
+      "text": "between humans and technology, it was tougher. It's getting tougher. And I think that we have, we had, or partly have still this parallelized situation. So we don't know what to do. So we observe, but we don't act. And maybe we are also capable of creating new jobs, because we know how the technology evolves. We are creating the technology. We know what can happen. So maybe..."
+    },
+    {
+      "start": 2206.656,
+      "end": 2235.936,
+      "text": "Flexibly, we think in different ways of combining skills and knowledges for people and being the innovative job creators. But also, at the same time, be careful what can happen if this goes further and further and what happens in 10 years and 20 years. So maybe we have a solution for that. The productivity was interesting. I think Helga was asking, are we more productive now?"
+    },
+    {
+      "start": 2235.936,
+      "end": 2264.08,
+      "text": "Is it increase or decrease? I think this was you asking. And we have to really talk about that. Just don't accept what people say. And this should be clarified in the society to the politicians, policymakers, and regulators also. So just also the companies, they think the productivity increases if certain technologies are implemented or introduced. This critical approach should be communicated also by our students."
+    },
+    {
+      "start": 2264.4,
+      "end": 2292.352,
+      "text": "I think this responsibility thing comes here. So as technology does things and you cannot change it, or technology can be actually designed in a way that it really considers human also in the processes. Because involving, we as technology providers or researchers or engineers should really take our responsibility to consider these things."
+    },
+    {
+      "start": 2292.352,
+      "end": 2311.456,
+      "text": "So, you know, the guns are made somewhere if we are ethically correct and we don't do or we have on the hammer. But still we can try to communicate that what it means if you do certain technology development and what has this impact. So we did it at our university in computer science."
+    },
+    {
+      "start": 2311.456,
+      "end": 2336.768,
+      "text": "The reaction is completely different by the students. Some are really eye-opening and saying, wow, what does it mean? And others are saying, I don't bother. I do still, if they pay me more, then I do that job and that job. So this is something that we have to find out as teachers, as educators at universities, how to deal with that. And I think a sociotechnological approach was mentioned also."
+    },
+    {
+      "start": 2336.768,
+      "end": 2361.056,
+      "text": "by Hans and then saying what does it mean actually to interlink social aspects with the technology development and vice versa. So I think this is the way to go to find this type of different views and position ourselves in this process. So I am again for simulating and experimenting. I like this experiment."
+    },
+    {
+      "start": 2361.056,
+      "end": 2390.416,
+      "text": "The next one was about machine autonomy. So I got tired, but I was still awake. So this was the constructive ambiguity between human autonomy versus machine autonomy. Then there was a good example until the end with the stop sign and what's actually how can machine autonomy be regulated, whether it can be regulated, or what does it mean."
+    },
+    {
+      "start": 2390.416,
+      "end": 2400.0,
+      "text": "I think as our presenters, is he here? Yes. So you're carefully listening. Please correct me."
+    },
+    {
+      "start": 2400.0,
+      "end": 2428.624,
+      "text": "So we have to protect human, yeah. No, no, you should stay. So protecting human autonomy is one point, and I agree with that. On the other hand, so how can we control, ethically control machine autonomy? But it should be meaningful also. So the technology help us, but we don't know how to do that, and there are so certain, so there's a balance how can we do that. These were questions and possibilities."
+    },
+    {
+      "start": 2428.624,
+      "end": 2452.384,
+      "text": "and how we can solve ethical problems. So there are several principles oriented differently, and we have to understand this plurality and the role of shaping or solving ethical problems. And then we have to develop also ethical policies. Obviously, in certain areas we have certain policies, but in others not."
+    },
+    {
+      "start": 2452.384,
+      "end": 2473.84,
+      "text": "And then it comes always to the prioritization of principles and how we compromise and what type of compromises can be prioritized higher and lower. So I think there are so many things that we have to do still in order to get some balance between human autonomy and machine autonomy and considering ethical aspects."
+    },
+    {
+      "start": 2473.84,
+      "end": 2499.504,
+      "text": "Then I like these moral tensions in context, and I was wondering what context, whose context. So this is also something with the responsibility, whose context you put into the center of your attention. So probably we can create narratives of context and understand what the impact can be and to whom and under which circumstances."
+    },
+    {
+      "start": 2499.696,
+      "end": 2518.192,
+      "text": "You showed also the existing competing models, segregationist, liberal, and paternalist. And so, of course, you know one is better than the other. But we have to actually understand also the context in the application of these things. Whether we like it or not, they are implemented, applied."
+    },
+    {
+      "start": 2518.192,
+      "end": 2542.992,
+      "text": "Where is this happening and why? And then to understand not make the same mistake maybe. So communicate this type of information and then make it more transparent. So it sounds in the definition one is the best, but why are the others existent? Why are the others applied? So this is interesting to understand these models."
+    },
+    {
+      "start": 2542.992,
+      "end": 2572.864,
+      "text": "Also, there was a one-sided argument, so a list of better machine performances. So how can we change, actually, that social harm is decreasing in a way, and what can we do, and what are the mechanisms or measures to implement it?"
+    },
+    {
+      "start": 2572.864,
+      "end": 2601.296,
+      "text": "So how can we actually fight for ethical issues? Equality, fairness, and rationality. You mentioned these points, but I am in charge of equity, diversity, and inclusion in scientific conferences in several ones. I try to do things, but I'm a computer scientist, so I know to have possibilities that people can have different opinions and they can talk during the conferences and they are not..."
+    },
+    {
+      "start": 2601.296,
+      "end": 2626.512,
+      "text": "whole communication happens, but actually a lot of information is missing to really do these things correctly and being informed and also changing something in there. So I think we need to communicate and understand that and see us as also researchers in the position to really apply these things and implement these things and communicate and teach these things."
+    },
+    {
+      "start": 2626.896,
+      "end": 2651.696,
+      "text": "Good. But this is always about informing. So informing people, informing us. So we are not stupid, but we don't have the time to inform ourselves for that. I saw yesterday and today. So then the last point in this talk was, for me, offsetting moral inadequacies of machine judgment, the machine judgment with the stop sign."
+    },
+    {
+      "start": 2652.08,
+      "end": 2680.032,
+      "text": "This is something whether we can do or not and how we can do and what can be the possible solutions. Probably you know more because you had a lot of slides you didn't show because I didn't let you show. But the point is, of course, how can we work on these solutions? And this is very important to find out. So this is one slide, and then I have a very last slide. So two slides, I'm very fast. So I am very sorry, Jim, because I..."
+    },
+    {
+      "start": 2680.032,
+      "end": 2707.248,
+      "text": "didn't have the time to summarize it more because I was making photos and I didn't have the time to go through. I summarized it only in this way, the most important things that was for me yesterday, that we separate between development of AI, how we regulate AI, what is AI, and we have to maybe in the regulation be considered applied AI and the development of AI."
+    },
+    {
+      "start": 2707.248,
+      "end": 2737.168,
+      "text": "And then the terms, as Hannes also mentioned today, accountability and liability are two big issues that we consider in that context. And then, again, the role of developers, researchers, and implementers. So if commercial products are implementing certain things, it's a different thing that we have here labs, and then we are researching and having the research on that topic. Then the role of data and ownership of the data and access to the data."
+    },
+    {
+      "start": 2737.168,
+      "end": 2765.712,
+      "text": "which is used in AI applications. And then the reasons you showed us, I think, very useful reasons for regulation or not regulation, not regulating AI. What are the reasons? They are there, and they are legitimate for themselves, and we have to find out what we understand. And then the question whether who should regulate AI is also most..."
+    },
+    {
+      "start": 2765.712,
+      "end": 2789.136,
+      "text": "the question, but half of the group said something. Whether the state is in the position of doing this, if the government should do it or not. So it's not clear even for people like us who are critical or questioning things. We don't know how to regulate it. Who should be in charge of doing these things? And then also this."
+    },
+    {
+      "start": 2789.136,
+      "end": 2814.0,
+      "text": "trustworthiness of AI, because it's depending on the data. So my final takeaways are, I think, coming from CSCW, I'm very interested in work context. And I would like to see how we can study and reshape of work in the context of digital transformation or digital changes happening in our society, especially in work."
+    },
+    {
+      "start": 2814.0,
+      "end": 2841.024,
+      "text": "And then also at the same time, considering the quality of life issue, because I think we do a lot of things. Certain things help us to have better life, but also other developments causes that we work more and harder and being under pressure and have to do everything ourselves because technology makes it possible that we do everything for us."
+    },
+    {
+      "start": 2841.024,
+      "end": 2870.016,
+      "text": "We don't go somewhere and then consume the services of other people. And also the education, I think we have really challenges there. What are the innovative ways of educating people and everyone? So for all, not just only for students or who have access to these facilities like universities or other education centers, example Africa. So interdisciplinary work is important. And then obviously, we have to find out"
+    },
+    {
+      "start": 2870.016,
+      "end": 2893.536,
+      "text": "still we have to find out ways of bridging the communication gaps. So I think I also could observe it in our workshop yesterday and today that sometimes we don't understand each other. So it has something to do with the language, but with also knowledge that coming from which discipline. So I always feel that as computer scientists, we have to bridge the gap."
+    },
+    {
+      "start": 2893.536,
+      "end": 2917.76,
+      "text": "So maybe as anthropologists or sociologists or lawyers think, they bridge the gap. So I think we have to find out a way and then distribute the job among us and then try to do that. And also having respect for this type of work. I think this is not obvious to work interdisciplinary in computer science fields. So I'm talking from my experience."
+    },
+    {
+      "start": 2917.76,
+      "end": 2945.984,
+      "text": "So sociotechnological methods are the last ones that I think is very important because it ends up in interdisciplinarity and the methods and approaches are important. Indeed, we need more space for experimentation. I think if we manage somehow with our work here to communicate the results in another scale with the university, management, society,"
+    },
+    {
+      "start": 2945.984,
+      "end": 2974.1440000000002,
+      "text": "city of Vienna and policymakers, et cetera, then maybe we have more ways of implementing that. So thank you. Remarks? Comments? From the ethical side? Yes? Of course."
+    },
+    {
+      "start": 2974.1440000000002,
+      "end": 3000.0,
+      "text": "I just want to second that on interdisciplinarity. And maybe this is also a little bit of a plea to computer scientists and their institutions, such as our university, to kind of..."
+    },
+    {
+      "start": 3000.0,
+      "end": 3027.584,
+      "text": "Maybe think about the compartmentalizing effects of having disciplines and sharp boundaries around them. From my own experience, I found it hard to get PhD students who are designers or social scientists or have different backgrounds to work on my projects because they're not allowed to do a PhD with us. Maybe this is also a call to..."
+    },
+    {
+      "start": 3027.584,
+      "end": 3054.352,
+      "text": "regulatory bodies within universities to kind of look beyond their immediate kind of fields of expertise and allow these bridges to be built. So it's funny because actually it's me saying no to this type of PhD. So thank you for your support."
+    },
+    {
+      "start": 3056.56,
+      "end": 3085.2,
+      "text": "I think we have already, you know, that we changed the process of PhD applications. So we are more open now and having the proficiency evaluation where we define actually it's a computer science PhD or not. So I think Andreas can say more about that. So, yeah, you are holding it. Now you have to say something. He gave me the microphone already. I am showing the thing. No, but we are not starting our discussion of the study program of TU Vienna."
+    },
+    {
+      "start": 3085.2,
+      "end": 3112.912,
+      "text": "And all the pitfalls we have. Sorry, please. It would be an everlasting story, okay? Sorry. No, no. Also not aimed at you, just in principle, as a general comment, right? No, but just having a short word on that, we have designed this. The ERP remembers we have a concept for inter-faculty centers, and it's a little bit a way that it will be implemented. I don't know what happens with that."
+    },
+    {
+      "start": 3118.608,
+      "end": 3148.48,
+      "text": "Just a quick comment on this point. It would be nice, even at the European Research Council level, it would be easier to do this kind of interdisciplinary research. Actually, as far as I know, you have to select one panel. You cannot, I mean, by design, to select an interdisciplinary comment. The problem starts there."
+    },
+    {
+      "start": 3148.48,
+      "end": 3176.496,
+      "text": "No, she has to comment. We really, just for the historical record, we really tried. And we set up 10% of the overall budget and we put it into a special interdisciplinary pot so that each panel would not feel..."
+    },
+    {
+      "start": 3176.496,
+      "end": 3205.648,
+      "text": "You know, it comes out of our available funding. So it worked reasonably well with flagging going to two panels, but then came the crux. In the end, you have double candidates and the money is not indefinite. So what happened typically is, and the logistics was difficult behind, we got the chairs of the main two panels, and the following scene happened."
+    },
+    {
+      "start": 3205.776,
+      "end": 3225.488,
+      "text": "Panel chair one comes and says, this is not really my field, but my panel thinks this is excellent. Panel chair two comes and says, this is really not my field, but my panel says this is excellent. So what do you do?"
+    },
+    {
+      "start": 3225.776,
+      "end": 3253.408,
+      "text": "And you cannot have a third authority then deciding, nor did we want to use the lot and make a random decision between them. So we had to admit we failed with having this idea because our reviewing system is not up to the task of doing it. Now we continue to flag and, you know."
+    },
+    {
+      "start": 3253.408,
+      "end": 3281.648,
+      "text": "tell the panelists, please consider this, etc., etc., but we have not invented anywhere in the world a robust peer review system that could really handle it. So this is just for the historical record. Then we have to solve this problem. We have to fix the problem, otherwise we will never... But I have even a more harsh comment on that. It's because this is the top of the pyramid."
+    },
+    {
+      "start": 3281.648,
+      "end": 3310.624,
+      "text": "Our young PhDs have serious problems if they go into interdisciplinary work. Where to publish? What is the impact factor? There are not well-established journals in several of those fields, and we are asking at the same time to do this type of work. So I think this is the bottom line. You are already at the top where we have established researchers. They have problems. I would have a different – no, we are not going on to this. But I have a question to you. No, no."
+    },
+    {
+      "start": 3310.624,
+      "end": 3336.7200000000003,
+      "text": "No, I take the authority of... I have a different summary. It's not about ethics, it's about politics. Would you agree? If you talk about this... I do not agree on that, so we would have a different summary. But it's just somehow because..."
+    },
+    {
+      "start": 3336.7200000000003,
+      "end": 3365.44,
+      "text": "We had this discussion about this ethics. Is it individual? Is it socially? Is it socially constructed? Things like that. But the envy, it's about political decision making. And it's society. It's a democratic process. And in that sense, I say it's about policy. Sorry for... No, not sorry. I think it's good. So I would very much agree that it's about public policy, even in Europe. I think today's..."
+    },
+    {
+      "start": 3365.44,
+      "end": 3387.84,
+      "text": "the last session where we were talking about the laws in Europe and the issues behind the current set of laws in Europe indicate that there's a very strong public policy component that is expressed in terms of ethics frequently in Europe."
+    },
+    {
+      "start": 3387.84,
+      "end": 3406.512,
+      "text": "But I think as my talk showed, it's expressed in different ways in different places, even though I would argue that many of the concerns are very much the same. It's the way in which they're expressed, not to say that there are not ethical concerns in all three places or that the Europeans are not serious about it, but I think that..."
+    },
+    {
+      "start": 3406.512,
+      "end": 3427.984,
+      "text": "In many cases, what's driving it forward is public policy, and it's driving it in different ways. Europe is going towards regulation. China is using public policy to push AI as a technological advance for China, a method of control for the society, a bunch of other uses that would be totally and completely unacceptable in Europe. So I think..."
+    },
+    {
+      "start": 3427.984,
+      "end": 3457.072,
+      "text": "characterizing as public policy is a good characterization. I go back because I think what we are doing here, it's civil society, and this is also for me policymaking. So it's not public policymaking is ready out there, established state level, which has some power. I think it's also general about policymaking. And it's also the civil society. It's also some, it's a movement issue. And I think this is also important, but maybe we are talking about minor."
+    },
+    {
+      "start": 3472.912,
+      "end": 3500.912,
+      "text": "Okay, sorry. Thank you. I'm a little bit worried of this kind of separation between ethics from the one side and public policy from the other side. I mean, they go together. Ethics is not just an individual moral deliberation. It's a public discourse already. And I can provide many, many examples. But then I think there's another issue which is very important. And I think that..."
+    },
+    {
+      "start": 3500.912,
+      "end": 3528.592,
+      "text": "If we just move on the public policy side, this is a kind of de-responsibilization. And you just insisted a lot of time that we have to be regulations. That's, of course, it's true. It's very important. But at the same time, regulations cannot solve all the problems. And they cannot solve all the problems."
+    },
+    {
+      "start": 3528.592,
+      "end": 3557.248,
+      "text": "I think we had a wonderful example this morning with the example of the GDPR in Europe and how this kind of strong regulation still solves some problems but opens many problems. And then also I think it's very important that if you just think that, okay, you are a computer scientist, you are an engineer, and then you have to develop some tools, and then there must be regulation."
+    },
+    {
+      "start": 3557.248,
+      "end": 3585.4880000000003,
+      "text": "This is a kind of de-responsibilization of your work, of your process. And I think having read this declaration and some of the parts of this declaration, computer science alone is not enough, and many parts on which I strongly agree, I think that we be very careful in not making this separation ethics as individual process and then public policy. And then..."
+    },
+    {
+      "start": 3585.4880000000003,
+      "end": 3600.0,
+      "text": "Okay, we can go ahead, but then public policy and regulation will solve all the problems. So thanks, and now we continue with the third session. We are still, we are already out of time, so."
+    },
+    {
+      "start": 3600.0,
+      "end": 3629.36,
+      "text": "Let's continue, okay? Okay, well, first of all, I really enjoyed these two days. And I also want to thank you, all the speakers, all the people who made comments. It was really, for me, a pleasure to be here. I'm very grateful for having given the opportunity to be here."
+    },
+    {
+      "start": 3629.36,
+      "end": 3655.568,
+      "text": "And, you know, a measure, again, is not only the email that is behind, but also the fact that I'm saving money. Because, you know, sometimes when I go to conferences, I start buying like crazy. You know, I go on Amazon and I buy books. And then, you know, if there's wine sales online, I buy wine. But I didn't buy anything. So, okay, this is my success measure."
+    },
+    {
+      "start": 3660.4,
+      "end": 3690.128,
+      "text": "Now, then, you know, again, you know, fallacy of requirements. He gave us requirements, and they're being interpreted very differently from, you know, Edward, Hilda, and myself. So this is my interpretation of the requirements I had for this session. A very brief, you know, basically pointing out a few,"
+    },
+    {
+      "start": 3690.128,
+      "end": 3719.328,
+      "text": "that I thought were very relevant in the presentations. You all remember them, perhaps. And then maybe spend a little bit more time, you know, telling you what is my takeaway. So anyway, if I'm allowed to have this kind of implementation. Okay, fine. So, you know, the first presentation this morning was by Helga, who walked me on..."
+    },
+    {
+      "start": 3719.328,
+      "end": 3748.992,
+      "text": "Basically, I don't worry about the title, but this is what I thought was very important. She stressed this problem of dynamics that she called creative destruction using Schumpeter's words. And of course, the fact that what is happening today is this disruptive... Sorry."
+    },
+    {
+      "start": 3748.992,
+      "end": 3778.928,
+      "text": "Creative, constructive events occur continuously at a very high speed. And the problem is that as humans, we try to interpret the world in which we are by building boundaries, separating, dominating complexity through these boundaries. And boundaries change."
+    },
+    {
+      "start": 3778.928,
+      "end": 3806.416,
+      "text": "And they change so quickly. So she was talking about these interfaces. Again, interfaces between humans and machines, machines and humans, and the external world as well. These interfaces continuously change. And we have to realize that for the researcher,"
+    },
+    {
+      "start": 3806.416,
+      "end": 3835.872,
+      "text": "change is a source of joy and a lot of opportunities. For society, it is a source of anxiety. And that was my strong takeaway from the talk, which also, again, gives us a lot of responsibility. Because what is change for us, which is kind of very positive,"
+    },
+    {
+      "start": 3835.872,
+      "end": 3865.776,
+      "text": "can have side effects, more subtle and raise difficulties in the people. So that was Helga. Then the second presentation was by Jeff Parker. And basically, the reflection there, at least for me, was how deeply"
+    },
+    {
+      "start": 3867.056,
+      "end": 3891.968,
+      "text": "Digital technologies have changed the business world and the economy, moving from tangible to the intangibles. And the role of these platforms that are emerging, that basically are carrying all the interaction with the rest."
+    },
+    {
+      "start": 3891.968,
+      "end": 3915.696,
+      "text": "of the actors, consumers on the one side, the producers on the other side. And the fact that this kind of open innovation that is often introduced by these new platforms"
+    },
+    {
+      "start": 3915.696,
+      "end": 3945.584,
+      "text": "They're competing with other forms. There is the vertical integration on the one side, the open innovation approach on the other side, and the fact that these are coexisting, but it's introducing new kinds of tensions in the world that were not there before. Then the third presentation by Nikolaus actually"
+    },
+    {
+      "start": 3945.584,
+      "end": 3975.264,
+      "text": "shaped many of my beliefs, in a sense. I tended to see, despite a number of difficulties and problems, for example, in the GDPR, the fact that it wanted to reflect certain values that are difficult to support"
+    },
+    {
+      "start": 3975.264,
+      "end": 4003.792,
+      "text": "then to implement in a legal way, but he was very much and very strongly showing actually the tension that we have between the legal, this gap that we have between the technological developments and the legal gap, and in some sense giving me no hope that there could be"
+    },
+    {
+      "start": 4005.808,
+      "end": 4032.5280000000002,
+      "text": "acceptable legal frameworks within which technological developments have to be constrained in some way. But, of course, that's a very interesting... So the speed of evolution is such that it seems to me that there's almost no hope to come out with legal..."
+    },
+    {
+      "start": 4035.2799999999997,
+      "end": 4064.944,
+      "text": "legal settlements of the relationships between the humans and technology. The last presentation by Manfred touched another of the important themes that came out throughout the presentations, which is the breaking the siloes in the"
+    },
+    {
+      "start": 4064.944,
+      "end": 4092.32,
+      "text": "in our universities in terms of research. And basically, he gave us an example of an effort that they're doing in Berlin in which they really try to build new forms of corporations in research that are cross-cut in different areas. And of course, I mean, if there is good practices,"
+    },
+    {
+      "start": 4092.32,
+      "end": 4122.0,
+      "text": "that come out of these experiments that can be shared and can be socialized and reused, of course, they would be very beneficial. This is my short summary of the main points. And if I can, I... Yeah, that's a long expose on your own thoughts. My own thoughts. Okay, so my takeaway. You know, we have been reflecting a lot on, you know, the..."
+    },
+    {
+      "start": 4122.576,
+      "end": 4151.76,
+      "text": "Human sciences and technology during these days, you know, how mutually, you know, dependent they are. I mean, the issues are. And at the same time, you know, I go back to the problem of education. I'm looking at the way we teach. We are forming the new generation. And I see that almost everywhere we are still."
+    },
+    {
+      "start": 4151.76,
+      "end": 4180.72,
+      "text": "We have completely separate tracks. And there is no way... Although we live in the same space, physical, very often, we do not take advantage of that for inventing new ways of putting things together. I'm not saying this is easy, but..."
+    },
+    {
+      "start": 4180.752,
+      "end": 4200.0,
+      "text": "And I don't think that the problem is just introduce course A and B in the informatics curriculum. An ethics course in informatics, I don't think that's the solution."
+    },
+    {
+      "start": 4200.0,
+      "end": 4229.712,
+      "text": "that we really need to reinvent new ways in which we can put together students, work together on problems that have this kind of impact, societal impact, using projects to do that. But of course, this requires a lot of supervision on us. We need the faculties to be convinced. We need the faculties to reflect on the fact that they have to work together."
+    },
+    {
+      "start": 4229.712,
+      "end": 4259.456,
+      "text": "in these projects with the students. I think it's a kind of apprenticeship approach that we need to try in which we put them together in the projects. That's my hypothesis. The other thing is that I really believe that a reflection on technology and the use of technology,"
+    },
+    {
+      "start": 4259.456,
+      "end": 4289.312,
+      "text": "and your work, but in a serious way, should not only start when you are in college. I really believe that education since K-12 has to embrace this. There should be a new way of teaching science in general, including computing, that is different from what we have done so far. So the questions of how is truth,"
+    },
+    {
+      "start": 4289.312,
+      "end": 4318.544,
+      "text": "How are theories built? The fact that there is no a priori truth, but there is approximation. People build their truths through some processes. I think this is a kind of thing that they have to learn since they are in school, since they are very young. We are at the stage in which science..."
+    },
+    {
+      "start": 4318.608,
+      "end": 4347.68,
+      "text": "is discredited in society by this disintermediarization. People accessing directly information, they are unable to distinguish what is a scientific truth and the meaning of what is truth, which means that it works in many cases, in most cases, under certain conditions."
+    },
+    {
+      "start": 4347.68,
+      "end": 4376.208,
+      "text": "We need to build this understanding of what scientific truths are in the young people since they are in school. Because what we see today in society, I think, is pretty scary. People ignoring what science has done. We see in the case of vaccinations and many other cases."
+    },
+    {
+      "start": 4376.464,
+      "end": 4406.384,
+      "text": "We need to rebuild this kind of, let's say, I wouldn't say faith, but belief in the value of science, which has been going down. And perhaps this requires also a change on our side in the way we communicate to society. But that's a different, in the way we reach out. But this is a different story. Third point."
+    },
+    {
+      "start": 4408.752,
+      "end": 4438.0,
+      "text": "No, it's okay. Third point is what I might take away. I spoke about education in research. My takeaway is we are living in this very fast cycles from research into applications. I mean, this continues flow. There's a kind of disappearing time between design time and run time, if you want, using computer science terms."
+    },
+    {
+      "start": 4438.064,
+      "end": 4467.296,
+      "text": "Which means that compared to the past, the fact that you develop something, you try out in very small context, you try to understand what the consequences are, you try to understand what is a good use or a bad use. I mean, the ethical reflection on technology has time to mature. Well, time is compressed."
+    },
+    {
+      "start": 4467.296,
+      "end": 4495.216,
+      "text": "My understanding of the phenomenon is that, again, we have to bring on within the research other people, other competencies. It's not just a question of developing technology. But as technology is developed in our research environment, we should have social scientists, philosophers work with us."
+    },
+    {
+      "start": 4495.312,
+      "end": 4524.176,
+      "text": "and anticipate reasoning about the research that is being developed. Anticipate the problems. I'm not saying that you will be ready, but I think you can shorten the time in which you understand what is the societal implication of what you're doing. How can you move your research in a way that is more informed?"
+    },
+    {
+      "start": 4524.176,
+      "end": 4552.72,
+      "text": "by the needs of society. Fourth point. When we are talking about the impact on society, again, context is very important. I think that the reflection on Africa is different. We have to take that into account. When we are talking about the societal impact, you really have to understand what we are talking about. And in some cases, the context is very important."
+    },
+    {
+      "start": 4552.72,
+      "end": 4577.68,
+      "text": "Last point. I really believe that we are talking to each other here, but we need to reach out. We need to reach out to our own community. I don't know how many of us agree on this. So the manifesto is very important for this. We have to reach out to society in general, more generally."
+    },
+    {
+      "start": 4577.68,
+      "end": 4606.192,
+      "text": "You know, yesterday, Hans was drawing the parallel with the physicists, and they reached out at some point, you know, raising this issue that, you know, the potential consequences on human life of nuclear technology. Of course, you know, we are not affecting necessarily"
+    },
+    {
+      "start": 4607.184,
+      "end": 4636.896,
+      "text": "We hope. But in some sense, I think that our influence is even more profound than the fallout of research in physics. It is more profound also because it's not just us. I mean, it's not just computer science. Computer science is changing also the other sciences. So all the sciences are changing. And the changes in science,"
+    },
+    {
+      "start": 4636.896,
+      "end": 4666.368,
+      "text": "And all these sciences are leading to change to society. So we really need to reach out because of that. Finish. Thank you. So I immediately pass over to you for your more general summary. All the others already made a summary. Before Gerti says something, I have a small remark. Because this local impact and experimentation and having impact,"
+    },
+    {
+      "start": 4666.368,
+      "end": 4693.696,
+      "text": "I remember the AI summit we had in the U.S. The University of Maryland is doing an undergrade program where different disciplines work together on problems of the local population. They have a one semester experiment where they have a concrete problem in this local neighborhood."
+    },
+    {
+      "start": 4693.696,
+      "end": 4716.016,
+      "text": "And then the different disciplines work on that and they try to find a concrete solution to a concrete problem with the local neighborhood. And this is a way of how you could integrate both different disciplines as well as the local neighborhood as having also some impact because you really work on a concrete problem. This is just a remark. Gerti wants to say something and then we pass over to you."
+    },
+    {
+      "start": 4723.152,
+      "end": 4753.024,
+      "text": "Remember that we have in school the physicists from Friedrich Dürrenmatt, which was this satiric about, you know, the three physicists meeting in a hospital for mental illness, and where they kind of tried, in fact, they only do so if they would be mentally ill."
+    },
+    {
+      "start": 4753.024,
+      "end": 4780.608,
+      "text": "And, in fact, we all learned in school the kind of the problems and the difficulties which the physicists had when finding out about the atom bomb and so on. Where is this kind of this novel for computer science? What I want to say is because we also... No, but we're in a silo here. I think something like that, because we are talking about..."
+    },
+    {
+      "start": 4780.608,
+      "end": 4791.28,
+      "text": "outreach and how can we reach the masses. They already, Manfredrich Dürrmann reached all the pupils, at least I think in Europe everybody has rated."
+    },
+    {
+      "start": 4805.136,
+      "end": 4833.296,
+      "text": "It's a scary story. I don't know if anybody watched the Black Mule."
+    },
+    {
+      "start": 4834.672,
+      "end": 4861.584,
+      "text": "So I take the instructions that I received. This is a typical problem in computer science. The interface did not work. No, no, no. And by the way, I learned what you normally do during conferences."
+    },
+    {
+      "start": 4864.592,
+      "end": 4894.176,
+      "text": "will try it should work Hannes put it into my pocket so I will try to focus on what which should bring us to what we have not discussed as yet namely what is the link to humanism but I want to give you a warning when people hear the word digital humanism the first reaction is"
+    },
+    {
+      "start": 4894.176,
+      "end": 4920.992,
+      "text": "Ah, you are speaking about digital humanities, yes? And you have to be aware we are not speaking about digital humanities, but we want to move towards something that we call humanism, whatever it is, however we will define it. And I would like to link it to what all three of you said, but just focusing on one topic. And starting with Edward."
+    },
+    {
+      "start": 4920.992,
+      "end": 4944.592,
+      "text": "I would translate it into my language and I would say part of humanism should be the ability to be reflexive, to think about what we do, about who we are, how we do it. You can use different terms. You can look at what is called agency. We ascribe agency."
+    },
+    {
+      "start": 4944.592,
+      "end": 4972.176,
+      "text": "to technology knowing that after all they are designed operated by humans so there is a human agent somewhere around the road but nevertheless technology assumes a very powerful form of agency how do we cope with that or also we call it performativity which is a way of saying things"
+    },
+    {
+      "start": 4972.624,
+      "end": 5001.168,
+      "text": "can affect the way how we regulate our behavior. And the mere words can also perform something. If you get married, the civil servant says, you are married, and it's a legal act. This, again, is something that is performed. And technology has a very strong performative component, again, to reflect on that."
+    },
+    {
+      "start": 5001.296,
+      "end": 5010.992,
+      "text": "Hilda mentioned power relations. Power relations are normally not mentioned in technological conferences."
+    },
+    {
+      "start": 5010.992,
+      "end": 5040.256,
+      "text": "because it's somewhere outside your normal universe. And yet it is central to any social relation and interaction. It's central to every society, whether we like it, whether we don't like it, whether we think it's legitimate, whether we are contesting it because we think it's illegitimate. It's part of it. And I think this kind of reflexivity needs to be cultivated, needs to be part of education."
+    },
+    {
+      "start": 5040.256,
+      "end": 5065.344,
+      "text": "And this brings me to very much the core evolutionary approach that I think needs to be further deepened, because I'm fully in line here with what Edward said, but I think the way how we will see how machine learning, deep learning, is developing further."
+    },
+    {
+      "start": 5065.344,
+      "end": 5085.84,
+      "text": "there will be something that is moving into what evolution is telling us. But at the same time, our concept of evolution is being extended by what we see we can do with algorithms and machinery. And this is a very exciting development, but it has implications on humanisms."
+    },
+    {
+      "start": 5085.84,
+      "end": 5115.216,
+      "text": "Because in co-evolution, you know, where is humanism in co-evolution? Can we pinpoint it? Can we describe it? Can we put our finger on it? So it's a very exciting development that I see, but it also offers us the opportunity to try to refine, to anchor what we think humanism could mean. So this is my reaction to Edward."
+    },
+    {
+      "start": 5115.216,
+      "end": 5145.136,
+      "text": "Hilda spoke about the interfaces already, and I mentioned interfaces quite a bit. Also, Carla took it up again. Something that I would like to leave with you, interfaces are not only changing quickly, they are not only blurred, but they are also messy. And dealing with this messiness and realizing,"
+    },
+    {
+      "start": 5145.136,
+      "end": 5166.4,
+      "text": "You know, it comes, I mentioned Sidney Brenner this morning, fantastic Nobel Prize winner and fantastic person. And he once said, mathematics deals with the perfect. Physics deals with the optimal. Biology deals with the satisfactory. And he stopped there."
+    },
+    {
+      "start": 5166.4,
+      "end": 5195.6,
+      "text": "And I said, the social sciences deal with the messy. And we have to bring it all together. This is the kind of interdisciplinarity that I would like to see. How do you somehow integrate the perfect, the optimal, the satisfactory, and the messiness? And so this is what I would like to say about interfaces."
+    },
+    {
+      "start": 5195.6,
+      "end": 5221.168,
+      "text": "But then there's a very messy interface that has to do with regulation, that has to do with law, with ethics, going beyond ethics, some concepts like social justice, which for me is an extended way of speaking about ethics. All this is very messy as we experienced in the past two days."
+    },
+    {
+      "start": 5221.168,
+      "end": 5249.184,
+      "text": "and nevertheless accepting that messiness is also part of humanism, how to cope with messiness. Third point is the dear to my heart, the reinvention of experimenting. The experiment was the hallmark of modern science. In fact, what we..."
+    },
+    {
+      "start": 5249.184,
+      "end": 5273.04,
+      "text": "think of as modern science in the 17th century started with the experiment exploring in a systematic way the natural world and the way to do it was to set up an experiment. What very few people know is that in the beginning these experiments, they were also messy experiments, but they had to be repeated in public."
+    },
+    {
+      "start": 5273.2,
+      "end": 5298.544,
+      "text": "The Royal Society was consisting of, they were called natural philosophers, not scientists in the 17th century. They were doing their experiments somewhere in the equivalent of the garage, namely in the shed of landed aristocrats or other people who had access to the space they needed."
+    },
+    {
+      "start": 5298.544,
+      "end": 5321.824,
+      "text": "But this was not sufficient. You could not just come and say, you know, I did my experiment yesterday in the backyard of Lord so-and-so. And therefore, the Royal Society staged a repetition of the experiment in public. And you needed an informed audience. They had to be gentlemen."
+    },
+    {
+      "start": 5321.824,
+      "end": 5347.408,
+      "text": "So women were excluded and people who were not considered gentlemen were excluded, but for a very specific reason. In order to be a gentleman and to be able to serve as a witness for what happened, you had to be economically independent. Women were not economically independent. They depended on husbands or fathers."
+    },
+    {
+      "start": 5347.408,
+      "end": 5373.536,
+      "text": "And therefore they were excluded, and of course everyone who was a servant or a handicraft person was excluded because they were considered not to be economically independent. In the 21st century, we have a more inclusive notion of who the public is. But still, I think this idea that experiments have to have..."
+    },
+    {
+      "start": 5373.536,
+      "end": 5400.0,
+      "text": "something to do with the public. We are not staging experiments. This would be ludicrous to ask for this. But to think about how can we include the public. Now, coming back to what Carlos said about your passionate plea, we have to reach out, etc. I think one mistake that the scientific community did is we focused much too much on Finnish"
+    },
+    {
+      "start": 5400.0,
+      "end": 5428.464,
+      "text": "products we wanted to convince the public and of course the funders and the politicians look the beautiful things that we are able to produce and this is the finished product and of course it has all the benefits and the hype and the promises etc and we were not good we were shy in communicating the process of doing research the way of getting there"
+    },
+    {
+      "start": 5428.464,
+      "end": 5457.712,
+      "text": "And François Jacob, the French biologist, had this very nice expression. He said, well, there is the day side of science and the night side. And the day side is when you communicate to the public and to your funders and to your colleagues, everything worked and these are my great results. But then there is the night side when you have to throw away, you know, your..."
+    },
+    {
+      "start": 5457.712,
+      "end": 5486.528,
+      "text": "the labor of a couple of weeks because the experiment does not work out. You have to start again. You are frustrated. You go back at midnight from your lab home. You are tired and frustrated. But this is the other side of the same coin of working in research. And I think this is something that needs to be better communicated. And again, it starts with education, you know, teaching kids."
+    },
+    {
+      "start": 5486.528,
+      "end": 5514.064,
+      "text": "what research consists of. You have to be able to observe, you have to be able to analyze, you have to be able to do this and that, and to do it now with the means with which we do the kind of work that you are doing. But when we speak about the spaces needed for experiment, we go beyond what is done in laboratories today."
+    },
+    {
+      "start": 5514.064,
+      "end": 5542.816,
+      "text": "We want to create spaces where we have a possibility of interrogating, of investigating what might be some of the social implications. We can foresee only a small part of it. Let's not fall into the illusion that the goodwill for being able to think of implications will open all the doors of perception and wisdom to us. It will not. But at least..."
+    },
+    {
+      "start": 5542.816,
+      "end": 5570.192,
+      "text": "to make the attempt, as far as we can go, to think about what are the social implications. For whom? For which part of the population? Where are people in the work we do? And which kind of people are there? And this is something that needs also a better way of involving the public, of engaging with the public."
+    },
+    {
+      "start": 5570.928,
+      "end": 5599.472,
+      "text": "And last but not least, to put it in a very simple way, I think science shapes our relationship to reality. We know there are still many people where we think they are deficient in science shaping their relation to reality, but nevertheless this is the scientific worldview that we share."
+    },
+    {
+      "start": 5600.144,
+      "end": 5628.736,
+      "text": "The situation today is such that it's very much markets and media that shape our relations to each other. Markets and media shape our relationship to each other. And in order to get towards a conception of humanism that we can incorporate, we have to think how can we use, be it art, be it..."
+    },
+    {
+      "start": 5628.736,
+      "end": 5651.024,
+      "text": "you know, what the humanities have to offer. 90% of humanistic research in the humanities deal with the past, with the human past in all its variety and differences. Now the past, as we know, is a foreign country. You cannot go back and you would not recognize who you are if you were to go back."
+    },
+    {
+      "start": 5651.024,
+      "end": 5679.28,
+      "text": "But nevertheless, there is this enormous richness of the human past that we can extract and interrogate with questions that are important for us today. And again, these are interconnected, and we have to come up with spaces for reflecting on it, bringing in the messy interfaces, and trying to set up experimental spaces in which we can continue to work on this."
+    },
+    {
+      "start": 5680.976,
+      "end": 5710.368,
+      "text": "Thank you. Now we start to discuss on this. We already have one, two, three, four, five, six, seven. And then we have, okay. So I wanted to comment on Helga's point about reflexivity because I've been reading a lot recently in psychology about embodied cognition."
+    },
+    {
+      "start": 5710.368,
+      "end": 5732.816,
+      "text": "which is really caught on among psychologists a lot in the last 10 to 15 years. I mean, it's an older idea. But, you know, the idea is that cognition isn't really something, a process that resides in the brain looking out at the world, you know, reacting to sensor data and interacting with it, but rather cognition is the interaction of the brain with its environment."
+    },
+    {
+      "start": 5732.816,
+      "end": 5759.104,
+      "text": "And there are certain ways that this manifests in very practical ways. So when you hold a hammer in your hand, for example, and you use a hammer to drive a nail, your brain actually makes that hammer part of your arm. It actually becomes a part of the brain's sense of the body that it's working with, and that's why you're so able to use tools so effectively. And the point that I'd like to make is that when I hold this in my hand,"
+    },
+    {
+      "start": 5759.104,
+      "end": 5781.424,
+      "text": "It's becoming part of my cognitive sense. And moreover, because this reaches out into the network, the things I'm interacting with in the network become part of my cognitive mind. So the point that I'd like to make is that this reflexivity, we tend to talk about how our technology is shaping our society. It's also shaping our cognitive selves."
+    },
+    {
+      "start": 5781.424,
+      "end": 5809.36,
+      "text": "And I think that's an element that really needs to be a central part of anything that we might call digital humanism, is how it actually changes even our individual cognitive selves. I really ask to make short comments because coffee is waiting. I begin with a historical precursor of Google and Facebook. The"
+    },
+    {
+      "start": 5809.648,
+      "end": 5838.736,
+      "text": "The richest man in human history was Jakob Fugger. And among other things, he became rich because he transferred money which was collected in Germany from Ablas. What is Ablas in English? You paid to the Catholic Church and you were forgiven 1,000 years of..."
+    },
+    {
+      "start": 5838.96,
+      "end": 5867.632,
+      "text": "Indulgence, yes. Indulgence. So the analogy is this ad-driven economy of Facebook and Google had a precursor there because all these ads that we get are as useful as indulgence was then. This is the reason we need enlightenment."
+    },
+    {
+      "start": 5867.76,
+      "end": 5897.104,
+      "text": "Martin Luther yes but the point that I wanted really to make is regulation the most effective type of regulation is taxation and I mean taxation one way to tax this thing and to regulate it is if rent income so effortless income is taxed much higher than now"
+    },
+    {
+      "start": 5897.104,
+      "end": 5926.48,
+      "text": "and work is taxed less, and you could just define that this ad-driven economy is rent income. And this would be a very effective means of regulation. Miriam, who else wanted to say something? Okay, let me just... I think the central thing you discussed was..."
+    },
+    {
+      "start": 5926.48,
+      "end": 5955.904,
+      "text": "What is humanism? And I think there is also an interdisciplinarity here and a disciplinarity. I think from anthropology and sociology, you would say humanism is sociality. And I think that the social and social relating is at the heart of all that you said. And that that is what we need to really understand much better than we do. And that's probably one of the elements that is the starting point for understanding what humanism is."
+    },
+    {
+      "start": 5955.904,
+      "end": 5980.08,
+      "text": "And sociality shifts all the time. And we define it amongst ourselves. But I don't know if we talk about the same when a computer scientist says sociality or when I say it. And I think that is where we need to start. To understand humanism. You mean Facebook. You. So..."
+    },
+    {
+      "start": 5980.144,
+      "end": 6000.0,
+      "text": "So this is an invitation to have a discussion on this, I think. What is sociality? Because if we don't understand and we don't talk about the same types of sociality, we can never come to a definition of humanism. So if you wanted to simplify our goal..."
+    },
+    {
+      "start": 6000.0,
+      "end": 6029.776,
+      "text": "One might say that our goal was to find mechanisms for shaping our digital world to make it more human-centered. And in doing this, I was reminded of how Larry Lessig, the legal scholar, became so famous. He became famous by talking about the ways in which we could control behavior on the Internet."
+    },
+    {
+      "start": 6029.776,
+      "end": 6058.96,
+      "text": "fundamental ways of doing that. One of them was law and that would include policy. One of them was social norms and that would include ethics and education. One of them is economics and the other is architecture. The other point that he made is that each of those influencers can shape the other influencers in certain kinds of ways."
+    },
+    {
+      "start": 6058.96,
+      "end": 6086.928,
+      "text": "And so maybe this is one way to think about this, or maybe we think that Lessig is so 1990s now. He's great. He's a great person. Thanks. Yeah, just very quickly, this has been a wonderful conference. I've just enjoyed every moment, and I'm completely behind on something I was supposed to have finished, because I've been listening the entire time. Shopping. Not shopping, evaluating a whole set of proposals. But anyway."
+    },
+    {
+      "start": 6087.6,
+      "end": 6114.368,
+      "text": "Something Helga said about experiments and the role of gentlemen and their independence reminded me of a particular contribution I think we as academics of the university can make to these discussions about humanism and ethics. I think it's important to put out there, and that's that we're potentially seen as disinterested. In other words, if you look, and by disinterested I mean whenever you want to talk about questions of justice and ethics,"
+    },
+    {
+      "start": 6114.368,
+      "end": 6143.36,
+      "text": "If there's a conflict of interest, it's hard to believe you have anything meaningful to say. If we look at the Google, the blowing up of the Google's ethics and AI board, which just happened yesterday, I think that's because they put people on that panel who clearly had conflicts of interest. And I think this is something that's often underestimated in Silicon Valley, and it's something that we particularly, as tenured individuals,"
+    },
+    {
+      "start": 6143.36,
+      "end": 6170.816,
+      "text": "who can say whatever we want without losing our livelihood, we have a particular role in this dialogue we're having. So I applaud this conference, and I'm very excited to have been a part of it. Okay. So just one observation from the four summaries and from reading the statement is that there's something very big."
+    },
+    {
+      "start": 6170.816,
+      "end": 6196.416,
+      "text": "missing in all of this discussion and that is the role of corporations in this because we talk as if it's only individuals and we talk of individuals have no control but there are individuals that have a considerable amount of control. The CEO of Google for instance has a tremendous amount of say about all of the things that we are particularly concerned about. Power."
+    },
+    {
+      "start": 6196.416,
+      "end": 6226.016,
+      "text": "But if we only talk about individuals, and perhaps the word humanism has sent us down that path, we are going to miss the opportunity to actually have influence on those who have power or those who will. Are you saying they're not human? No, no. I think corporations are not human in spite of the sort of longstanding mistake in the U.S. Don't get me going on that one."
+    },
+    {
+      "start": 6226.016,
+      "end": 6249.088,
+      "text": "I think that the issue here is that if we only think about the actors as being humans in the corporations, then we miss the fact that the actors are acting on behalf of some larger entity which has a set of goals which cannot be described in terms of morality. I don't think anybody thinks of corporations as moral entities. You may aspire to that, but that's not the reality."
+    },
+    {
+      "start": 6249.088,
+      "end": 6275.952,
+      "text": "So if we are going to have this discussion about what we can actually accomplish, we need to bring the corporations as well as the individuals into the scope of the discussion. Power is a relationship. It's not about people. They may be powerful, but you understand power only as a relationship between people. You want to react?"
+    },
+    {
+      "start": 6278.544,
+      "end": 6307.888,
+      "text": "I would say you can't just understand it in terms of people. You actually have to have the corporations involved in the relationship. So it's not just people as individuals. Can I ask a question? I just wanted to ask a question on this. Okay. I see your point, but what is an enterprise? An enterprise is actually a human creation, right? So you're talking about the enterprise as if it is a..."
+    },
+    {
+      "start": 6307.888,
+      "end": 6329.488,
+      "text": "an entity by itself? Isn't this a human? No, no, no. What I'm saying, yeah, but who creates them? There's the theory of Williamson, the theory of capitalism. He is explaining transaction cost theory and he explaining exactly."
+    },
+    {
+      "start": 6329.488,
+      "end": 6358.416,
+      "text": "on the transaction cost, why it makes sense to internalize transactions, and this is the basis why we have companies, okay? And what Jeff was saying to us on these externalities and the idea that it could be outsourced and it becoming network. Sorry for that. Short interpretation of externalities and companies. Okay. My remark is more a question."
+    },
+    {
+      "start": 6358.416,
+      "end": 6384.528,
+      "text": "Is there anything that should be forbidden for ethical reason while trying to control this digital co-evolution so as to avoid that humanism became androidism, for example, when we substitute part of our body with digital devices, or this is acceptable?"
+    },
+    {
+      "start": 6390.32,
+      "end": 6418.112,
+      "text": "So now we are going to the basics of the discussion. It's in five minutes is coffee. It's first is Helga, then it's you. Okay. No, I just wanted, you know, just a historical remark. I cannot help but to come in with historical examples. You probably know the figure of the Leviathan, Thomas Hobbes, the Leviathan. The Leviathan is relevant to our discussion about democracy today."
+    },
+    {
+      "start": 6418.112,
+      "end": 6447.936,
+      "text": "Because if you look at survey results and you ask people, would you be willing to have as your government, you know, an algorithm that comes up with wise decisions, an astonishing number of people say yes. So you have a strong support of an algorithmic Leviathan. Now, historically, what is interesting is that Thomas Hobbes wrote the Leviathan."
+    },
+    {
+      "start": 6447.936,
+      "end": 6472.88,
+      "text": "as an alternative to the most powerful corporation of that day, namely the East Indian Company, which was so powerful that the state was under threat. Just a historical reminder of something that is coming back to us and haunts us today in terms of what happens to our democracy."
+    },
+    {
+      "start": 6473.264,
+      "end": 6502.944,
+      "text": "Just a comment, because somehow the interpretation that has been voiced out that we are dismissing ethics. Justice Warren said, the law floats on a sea of ethics. So, ethics is incredibly informed. Everything we are discussing starts with ethics. But if you ask a legal scholar, and I don't know whether a lawyer is still here, he will tell you, ethics is not self-executing, except for in a certain well-defined sector, the law and the medicine, in which ethics has been"
+    },
+    {
+      "start": 6502.944,
+      "end": 6532.416,
+      "text": "So you can lose your license as a doctor or as a lawyer because of ethics violation. I cannot lose my license as a computer scientist because I'm not ethical. So, of course, take as an example, we think in the Western world that trading organs for money is morally repugnant. And this is a widely shared value. We could have stopped there. But no, at least I don't know about the law in Europe or the United States. It is illegal."
+    },
+    {
+      "start": 6532.416,
+      "end": 6560.784,
+      "text": "to buy organs. We took ethics and we institutionalized it by adding it to the law because the law has a structure that executes it. If you think we can live just on ethics, this is a utopia. Everybody is ethical and we live on ethics. Can I ask you to continue this discussion at the coffee break? No, sorry, because this is somehow... People are..."
+    },
+    {
+      "start": 6560.784,
+      "end": 6588.32,
+      "text": "Desperately waiting for the coffee break, but before you do that... No, no, no, no, no. Sorry, sorry, sorry, sorry. No, I take the liberty as a moderator of this panel and... Transparent, yes. Power relationship. And I will not take up what you have said. And this is going into the direction of a definition of digital humanism."
+    },
+    {
+      "start": 6588.32,
+      "end": 6600.0,
+      "text": "And I think you have somehow identified three key concepts which are important. One is the object we are dealing with. This is the relationship or the co-evolution of technology."
+    },
+    {
+      "start": 6600.0,
+      "end": 6626.448,
+      "text": "computer science with co-evolution of the technology, computer science, artifacts with human, humankind, society with all different aspects. Understanding this is a complex process. Second, it's the methodological point of view. It's a scientifically based approach, interdisciplinary, to understand, to describe."
+    },
+    {
+      "start": 6626.448,
+      "end": 6650.512,
+      "text": "Maybe to model and also maybe to have some prediction. And at the end, it's also some objective. Why do we do that? And it's to put the human at the center and having it in an open democratic process. So these are the elements of a definition which I think is a result of this discussion. And being very transparent, I wish you now a good coffee break."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

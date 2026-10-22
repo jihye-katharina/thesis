@@ -1,0 +1,816 @@
+{
+  "video_id": "9NWSgny12wY",
+  "source": "whisper",
+  "language": "en",
+  "text": "you unless the microphone yeah yes yes i'm sorry i was muted uh good evening everybody welcome back after this holiday break i hope you had some relaxing days and you are still resisting the pandemic we are all hoping that you will soon be over but i'm not so optimistic at the moment at least but we are resisting a special welcome to our speaker of today with the sociologists antonio cassini he's coming from the School of Telecommunication Engineering of Polytechnic Institute of Paris. And I am happy that you are with us, Antonio. Thank you, Anders. Truly ethically artificial intelligence. And as we have agreed, there's a special focus on the people who work in this field, worldwide distributed. And I think this will be an interesting insight for us. It will be moderated by Enrico Nardelli, who will then also introduce you in more detail. As you know, we have to talk for 30 minutes and then we have 30 minutes Q&A. And after that, again, please do not forget the piece of music, which is this time selected by Antonio together with Peter Knies. And it will be a very interesting piece. I would like to remind you to look at our website. and the YouTube channel. You have access to all our previous talks and to the slides as well as the videos. I think it's now already 50 hours of videos where you can have access to that. It's a pleasure to introduce the moderator, Enrico, who is with us since the early beginning. He's also a co-author of our manifesto on digital humanism. He's a professor of informatics at the University of Rome, Tor Vergata. And he is currently the president of Informatics Europe. Go to the website, look at Informatics Europe. It's the association of European Informatics University departments and research labs. They have Informatics Europe, I think it's 150 or 160 members already, organizational, institutional members. And he's the president. He's also a member of the ACM Europe Council. So he has a close cooperation with ACM. And let's say his focus or his main attitude is versus introducing informatics education in schools. There is also managing a program with the Italian Ministry of Education. He is a director of a national laboratory dealing with informatics at school. And he's also a member of the steering committee of the European Informatics for All Coalition, which is a very broad coalition of individuals and institutions. And this coalition is advocating informatics as a component of education in all schools across Europe. And with this, he is also very active in the field of information systems and the social impact. Enrico, thanks for being with us. And now the floor is yours. Thanks, Hannes, for the very nice introduction. And it's my pleasure now to introduce Antonio Casilli, which is a full professor of sociology at the Telecommunications School of the Institut Polytechnique de Paris. He's also a researcher at the Interdisciplinary Institute on Innovation of the French National Research Council. He also has other position as associate researcher at the Critical Interdisciplinary Anthropology Center of the School for Advanced Studies in Social Sciences. He is fellow at the NEXA Center for Internet and Society in the Polytechnic University of Turin in Italy. He is associate member of the Criticality of AI-Based Systems Research Group at the Weizenbaum Institute of Berlin and member of the Scholarly Council of the UCLA Center for Critical Inquiry. His main research interests are social networks, digital platforms, digital labor and privacy, where he conducts field works in many countries all over the world and coordinates several international research projects. He is the co-founder of the research program Digital Platform Labor and of the European Network on Digital Labor. Beyond many scientific publications in French, English, and Italian, he is the author of many books. The most recent one is the award-winning En attendant le robot, meaning Waiting for Robots, which is published also in Italian as Schiavi del Clic, which is an inquiry into the working conditions of underpaid humans who make artificial intelligence possible. and from the book the french public national television has produced and broadcasted a documentary series his previous books focused on various themes at the intersection of digital technology and society for which i refer you to his web page he's a regular commentator on the french national radio france culture and writes on international media in france uk and italy It's our pleasure to have his talk today with the title, What is a truly ethical artificial intelligence? An end-to-end approach to responsible and human technological systems, where he will discuss how in order to develop an end-to-end ethical approach to AI, we must take into account the conditions of production of the data used to create and market artifacts. Without further ado, Antonio, the floor is yours. Thank you very much, Enrico. I don't know why this is showing on your screen. I was supposed to share another thing. Thank you very much again for the invitation today. It is really my pleasure to be here and to present you a few results of my recent ongoing research. projects on digital labor, artificial intelligence, and the ethics of AI. First of all, probably we should address the, not the elephant in the room, but the question that everybody asks when it comes to artificial intelligence. What do we mean when we say an ethical AI? Actually, It is a complicated question, despite the fact that it's very simple. Because when it comes to defining artificial intelligence and ethics together, we have a limited amount of examples. Because, yes, artificial intelligence as a field of research has existed for 70 years, more or less. the ethical AI guidelines started being featured and published in the second half of the 2010s. The debate was kickstarted by the famous open letter research priorities for robust and beneficial artificial intelligence, which was by, among other persons, co-signed by industrialists such as Elon Musk or scientists like Stephen Hawking. But these specific open letter focused on the big questions like for instance what do we do when we want to avoid the adverse consequences of a super intelligence or an AI system that would be so intelligent to actually overcome human performance and humanity and then again what are the ethical challenges raised by autonomous technologies, usually technologies that already exist, such as weapons or cars. But when they become intelligent, how do they change? What does it mean for a self-driving car to operate an ethical choice, for instance? Now, this first example of ethical AI instantiation eventually turned into several dozens of guidelines and charters which were published from 2015 to 2020. Actually, this article published by Anna Jobin and her colleagues published in the journal Nature actually analyzed 84 AI guidelines produced by governments, ONGs, but also by businesses. And in this article, five main domains emerge. These domains tend to be extremely consensual, meaning that they exist all over the 84. ethical ethical ai guidelines but usually they differ when it comes to the actual manifestation for instance transparency which has to do on the one side with the structure of the models that are used in ai and how black black boxish, let's say they are, and how can we make them more accountable, transparent, or explainable, and so on and so on. But again, using these different words, meaning accountable, explainable, means very different things. So transparency can mean very different things. The other big domain is justice and fairness. And of course, there's a lot of research going on on bias and sometimes, I don't know, predictive policing or even face recognition or other civilians, AI driven. technologies can introduce specific forms of injustice that target minorities or human groups. And again, understand this in terms of fairness or in terms of bias can really be a game changer because when it comes to bias, this is, well, probably simpler. for, I don't know, a data scientist or a software engineer to envision, because if there is a bias in this model, in the model that analyzes, I don't know, face prints, one can change the weights of the parameters and actually make the AI more fair. No malfeasance, which basically means no harm, is another complicated and yet extremely consensual. domain where artificial intelligence and ethics collide. Because, especially if we look at some technologies which are designed to harm human beings, such as, for instance, autonomous weapons or drones, well, the normal efficiency is something that these technological systems cannot comply with. But in other cases, normal efficiency means basically selecting the type of harm or the type of persons the harm is done to. Again, making these choices can really change entirely what we mean by an ethical AI. Is my autonomous weapon ethical because it doesn't kill people of my nation or of my creed or of my party? or because it refuses to function in some cases. Well, that's a big question. Legal responsibility and especially accountability and liabilities. Well, this is something that has been discussed a lot in the domain of ethical AI. You are probably familiar with the extremely well-publicized and... Let's say media savvy experiment with the moral dilemma. If you were an autonomous vehicle, a self-driving car, would you run over, I don't know, two thieves and two... nurses or five old ladies. Again, it's a complicated choice. It's something that cannot be established as a sharp 50-50 choice. And so legal responsibility in some cases can create very complex responses. Finally, there is the issue of privacy, especially when AI is used to operate surveillance over large populations. such as face recognition or biometric AI systems or drones. And this is something that has to do not only with the type of data that is analyzed by the AI, but also with the type of model that is used to analyze them and the actual final final scope and final goal of these technologies. Now, despite these convergence on these five main domains, there are really sharply different interpretations of these shared principles. And meaning that, again, the same word, the same domain, the same value of transparency, privacy and so on and so on can be interpreted in very different ways. in two countries or in two industrial sectors. And then again, there is the remarkable absence all over these almost 100 ethical AI guidelines published so far, remarkable absence of other values such as sustainability, such as trust, such as liberty and autonomy or dignity or solidarity. And the authors of this Nature article stress and emphasize these absences. And more importantly, there is no direct link between the principles that are enunciated in the guidelines and the actionable requirements. Meaning, yes, I want to... I want to say that my AI solution has to be transparent and do not harm others. But what does it mean in terms of standards? What does it mean in terms of rules? What does it mean in terms of compliance with specific laws? And this is something that brings us to, well, the first main point and the first main problem with ethical AI so far. The fact that the tech giants such as Alphabet, Meta or Microsoft or Baidu in China or... or a male in Russia have not only co-opted the analysis of ethical AI and in general of accountable and sustainable AI, and they have co-opted it in some cases hiring well-recognized and world-renowned AI ethicists to neutralize the critique. Neutralize the critic, meaning that even the criticism that sometimes is brought against these AI systems is denigrated by tech giants. And in some cases, they fund the weakest critics, meaning the critics that avoid. proposing stringent regulation. And in general, one point that has been made largely in the last few years is that this emphasis on ethical AI by tech giants such as Google and company is something that is put in place to avoid. to comply with laws, which usually are more stringent. So the focus on ethics is also used to frame issues that are incredibly more complex than simply saying, I want to make an ethical artificial intelligence. Issues of power, dominance, inequalities, of oppression, and we will try and address some of those in the rest of my presentation. First, again, just to provide you with a couple of other important points. When I say that there is an alignment between tech giants, ethical AI, and AI in general, if we look at the papers presented in big computer science such as NeurIPS, over the last 10 years, there has been a sharp increase in the presence of tech giants that now account for the majority of the money spent in AI research, the majority of the papers published and presented in these conferences. The authors with corporate ties in conferences such as NeurIPS went from 40... 3% to 79% in the last five years. And the publications directly done by Alphabet, Microsoft, and others have increased more than fivefold. Now let's go back to the ethical AI guidelines. And let's look at the geography of it just to understand why the alignment is not only in terms of published guidelines or papers or the type of research, but there is something that has to do with the actual physical geography and political geography of the countries where both AI is produced and sold and ethical AI guidelines are produced and published. Most guidelines referenced in the Anjubin's and colleagues' article were published in the USA, in Europe, in Australia, Japan, and in some emerging countries such as India. Unfortunately, one of the limitations of this study is that they do not take into account China and guidelines published in Chinese. But you would be surprised, or probably not, but there is a lot of ethical AI. debate in China too and there is clearly in this geography and under representation of the global south entire continents such as africa or central and south america or subcontinents such as southeast asia are not represented and this may undermine not only pluralism and cultural awareness of the type of ai and the type of ethical ai that is produced today but also in a way in our opinion and my opinion in particular tend to focus a little too much on only one part of, only one end one might say, of AI. If we look at AI and we want to be extremely simplistic, we might say that there is a distinction between the production phase and the deployment phase, and that all the guidelines, all the ethical AI guidelines analyzed so far tend to focus disproportionately on the deployment phase. What do we do with a killing robot once we have produced and marketed it? What do we do with the self-driving car once the car is already in the streets? But probably in order to have a more humane and a more responsible approach to ethical AI, we should focus also on the production phase. And this brings us to the end-to-end part of AI. strong claim that I'm trying to make is that we have to look at AI like we look at, I don't know, food or footwear or any other piece of garment. Do we ask if my, I don't know, my shoes are ethical because they can be sold to different people coming from different nations, speaking different languages and having different... colors of their skins. Now, the shoe is considered, for instance, ethical or, I don't know, the coffee is considered ethical if the production of it is ethical and also the way it is marketed is ethical. So if, for instance, the production of the shoes do not pollute or not pollute too much or compensate for the pollution and the waste. Or on the other side, if it doesn't pollute, let's say, economies, communities and workers, meaning if it does not exploit workers. So looking at the end-to-end ethical AI means basically taking into account the production phase and the deployment phase to place the human back in the loop of ethical AI. And I'm sorry, I'm probably going a little too fast. Now, let me give you a few examples in order to illustrate what I mean by production of AI, because production of AI, especially if you have a STEM background, sometimes tend to mean a very limited. a very limited domain, meaning the work of software engineers, data scientists, system scientists, those who design the algorithms. So the production is not that. A lot of the production is basically production of data. And this data are, of course, they need to feed huge databases such as ImageNet and others. Data is necessary to train models. For instance, if you have to, I don't know, tag different objects in pictures or to define the contour of a face. One example that comes from our own research is one person that we interviewed back in 2017 in France. She was working as a data annotator. And what she did was looking at pictures of salads and she had to draw a square around the tomato. And this is basically semantic segmentation and tagging that is necessary to enrich the data that is then used to train the models. But then when all the models are... Sorry, just one quick thing is that... Geographically speaking, this person was working for a company, for a platform that was located in Paris, but the person was not located in Paris. She was located in the south of France. And more importantly, other platforms also used, I don't know, French-speaking workers that were located in Morocco or Maghreb in Senegal or other African countries, French-speaking African countries. Now, once we have trained all the data, is this over? Unfortunately not, because another part of the digital labor and the data labor that is necessary to make AI exist is to verify outputs. For instance, another person that we interviewed back in 2019 was somebody who was listening to people speaking to, well, a virtual assistant, a vocal assistant. Actually, it was Cortana, to be fair. Now, this person said, I listened to the audio recording, then a text appeared on screen showing what the vocal system understood and transcribed. My job was to check if it was accurate. If not, I had to correct the text. So again, this is an artificial intelligence system that is already on the market. It is already sold, and yet it doesn't work perfectly. Now, again, let's look at the slightly more complicated geography of this labor. The last example was about a technology that was produced by a company that is located more or less here in the United States. You can understand which big company I'm talking about. This company subcontracts. the recruitment of data workers to a company that is located in China. The company in China sublets the very same job to a portal that is located in Japan, the portal in Japan to a company that is based in Spain. The company in Spain recruits workers. in France, and the workers in France is supervised by other workers who are in Italy. And then all the data annotated and all the outputs verified go back to this company back in the US. So it's a very, very complicated geography. And it gets even more complicated if we look at the final type of data labor, the labor that is necessary sometimes to impersonate AI. Impersonate AI means basically that not all the autonomous technologies that we use every day or that are developed are really autonomous. Sometimes actual humans have to take the systems into their own hands in a way and, well, fake it. Fake it until you make it. That's the usual Silicon Valley motto. Businessmen that we interviewed in 2018 said the overwhelming majority of B2B startups we know are human-based. meaning that there are humans who impersonate AI. But I understand them, he says, because for them, it's a bet on the future. They have to create the data for the tasks and then do machine learning and hope one day that the process will be automated. Hope one day that the process will be automated. Sometimes there are remarkable examples of fake AI or fake robots, like, for instance, this one, which is called Boris the Robot. It's an example of... fake Russian robot. Actually, it's a human being disguised as a robot. But also, US-based companies have been taken to task for faking AI. For instance, Google Duplex marketed as the artificial intelligence that can, I don't know, make calls for you. Actually, 60% of it were calls done by actual human beings. And if we look at the, again, the geography of it, it gets even more complicated because in order for these humans to fake it so well that they are mistaken for actual artificial intelligences, especially artificial intelligence systems that speak one specific language, you have to recruit and enlist workers that share the same cultural... parameters in a way. So, for instance, it's not a surprise that the same businessman told us that the majority of French AI is actually done in Madagascar, because Madagascar is a French-speaking country, a country where the average wage is so low that it becomes cost-effective to go recruit data workers over there. Let me give you an example that goes to the final part of my presentation. And it's also a case study and extremely interesting. This is a French startup that sells a very specific and very, let's say. interesting, you will see that that's ironic, service. If you are an influencer, if you are a VIP, you are contacted by this company and this company will suggest for you, I don't know, holidays or... I don't know, a weekend in a spa resort or some kind of luxury service. And usually they do this by. creating a profile for you and then collecting all the data that are available on your different social media and then understand via an AI your tastes and your preferences and they suggest you the thing that is tailor-made for you. Now, surprise, surprise, there is no artificial intelligence at all. The artificial intelligence is actually a few hundred people recruited in Madagascar that actually do. The same thing that the AI is supposed to do, but they do it by hand, looking at your profile, guessing more or less your preferences, and then choosing a weekend or a holiday among a list of possibilities of companies that have some kind of partnership with the startup. And it becomes really a type of outsourcing. that leads us from, I don't know, the luxury houses in Paris to places such as this, which is in the periphery of Antananarivo in Madagascar. So it's just an industrial setting where people go and work every day and they work as artificial intelligences or artificial intelligence system. So the geographies of data production are really more complicated than this. And I want to say something about the geographies of other things too, meaning that... the environmental resources. First of all, what I will show you is a cartography, more or less complete, as of today, of data production based on two ongoing projects. One is called HUSH and the other one is called TRIA. If you want, I can tell you more about this, but basically the idea is that The AI is produced and sold in countries, the same countries that produce the ethical AI guidelines. We saw them before. So usually it's the global north or a couple of emerging countries such as India and China. But the data, if they are for English speaking companies and platforms, are usually produced in Southeast Asia or in India. for the Brits and for the U.S. and Canada-based companies. But if you are in Spain or if you are in the Spanish-speaking part of the U.S., the workers are recruited usually in South America, countries such as Venezuela, Colombia, and Argentina. or Bolivia, countries that have a very, very low average wage. And when it comes to Africa, it's more complicated. Part of Africa, the French-speaking part. goes or produces data for the French. And as for countries such as Egypt, well, they usually work for the Chinese, for Chinese companies and for face recognition, you find Chinese companies such as Tencent and others. And China, well, this is more of a guesswork because it's an ongoing research. But the educated guess is that China has bought... huge internal market. Usually it's people in rural and frontier regions that work for big companies located in Shenzhen. And there are a lot of Chinese-speaking nationals or Chinese nationals in Southeast Asia, Malaysia, Singapore and so on. And they usually work to produce data for Chinese companies. Final remark. It's not only a matter of data. It's also a matter of environmental and natural resources. Now, you have seen in the last few years the... Well, a lot of articles that point and insist on the fact that AI is not carbon neutral. Usually, if you want to train a machine learning, a huge machine learning model, in some cases, you can emit as much carbon as five cars in their lifetime. So if you want to compare, you know, if you consider the automobile industry as a benchmark for pollution, that's very. bad usually but unfortunately these alarms that has been raised around the carbon footprint or the emission consequences of AI have created a kind of a paradoxical situations where usually there is a strong sense that we should use AI to correct the problems caused by AI. We should use AI to look for the better carbon footprint or to limit and reduce waste and dead weight assets of AI. It's kind of paradoxical because you know you're fighting fire with fire. The point is that usually we have to look at the real and the larger cost of AI. I'm finished in two minutes. Okay, good. So I would say the larger cost means that not only we have to look at how many emissions are produced by an AI. But we also have to look at the very material side of the systems. They need batteries. They need to be produced using specific and very polluting technologies. And they rely heavily on an extractive industry, meaning the extraction of minerals such as cobalt, nickel, lithium, and rare minerals and rare earths. And all these... are usually located, as you will see in a second, in countries that are along the trajectories of the data labour supply chains. This extractive industry disrupts local economies. It creates conflicts over land, land ownership. It incurs even more pollution for international transportation. And it is also important because it mobilizes a huge quantity of labor. You need a lot of people to work in these mines. The two pictures that you see here, the first one is a fieldwork. I did in 2018 when I was in Bolivia. Bolivia is a relatively small country, landlocked, but it has one of the biggest salt lakes, and so lithium can be extracted from it in the world. And this lithium is now used to produce batteries. Bolivian government had to fight many years in order to nationalize this industry and not have international companies come and buy it like it happened in other countries. Like, for instance, the second picture that you see here is a cobalt, sorry, it's a nickel mine in Madagascar, where I will be in three weeks. And this is not far from Antananarivo. So from this, I don't know, 83 kilometers from the the very workers that I showed in a few slides back, there is this huge cobalt and nickel mine that is called Ambatovi. If we look at the geography of research extraction, again, you might see that there is a little overlapping. If we look at the countries where cobalt is produced, one of the biggest one is, of course, Congo, but Madagascar. Brazil is also huge. Rare earths is of course China. When it comes to nickel, it's also Indonesia. And when it comes to lithium, it's of course Bolivia, but also Argentina and Chile. Now, conclusions. What does it mean to have an end-to-end approach to ethical AI? It means that if we want to design and conceive, an AI system that is ethical from end to end, we have to look not only at the deployment, but also at the production of the systems. And that there is no tech-only silver bullet that might suffice to address the enormous challenges that are raised. made visible by what we just described. We have to take into account the natural and human environment that these systems affect, not only when they are deployed, but also when they are We have to consider the political economy of AI and we have to look at global dependencies. In some cases, some forms of neocolonialism that is put in place when this data labor is. well, created. And we have to ensure humane working conditions and fair working conditions all over the supply chain that creates and eventually produces and markets our AI systems. Thank you very much. And now we can open the floor for questions. Thanks, Antonio, for this very interesting talk that was a kind of red pill for somebody. I see you, Moshe. A kind of red pill for some people that had not the possibility of looking at what's under the hood of AI production in terms of total human costs, social costs and natural costs. So I have already two raised hands. First Moshe and then Eric. Moshe. You are muted. Somebody should calculate what is the carbon footprint of the sentence, you are muted. So, you know, people get very entangled with the trolley problem and autonomous vehicle. But the biggest deployment of AI that each one of us is exposed to. Dozens of times per day is search engines and social media. So surveillance capitalism, which is supporting a huge industry, is all supported under the hood. It's supported by AI, the AI that gathers information about you and decides which advertisement to show to you. Is this AI ethical? And I have a problem. The problem is not the ethics of AI here. The problem is the ethics of the corporations that run this business model. And somehow we are talking about, everybody loves to talk about exotic technologies. This is the AI each one of us is using every day. Surveillance capitalism, its foundation is machine learning. Yeah, I appreciate really the fact that you introduced the notion of surveillance capitalism. There is a lot of debate recently since the publishing of the book, the eponymous book by Shoshana Zuboff. I would like to develop on what you just said. I mean, yes, it's true. I mean, this is something that everybody's using, even more than virtual assistants on smartphones or smart speakers or others. And it is interesting. I mean, I agree 100% with you that this is the ethics of the corporations, but it is also the ethics of the kind of communication. and of the corporation. By communication, I mean we need to make these corporations accountable for the type of treatment and analysis that is done with our data. It's not only a matter, and this is probably one of the limitations that I recognize in Shoshana Zuboff's work, it's not only a matter of capturing work. and data. But it's the fact that this data is analyzed by people that we are not aware of. Let me give you an example. Among the data workers that we interviewed, a number of these workers actually are recruited by Google or Facebook, and they are called raters, and they usually are those who are in charge with verifying the outputs of the search engines, for instance. Microsoft does the same. And this is the point. This search engine is probably less algorithmic that we want to believe, that we are ready to believe. There is a lot of people that is listening or reading what we are saying or writing. And this is the scary part, because it's not only surveillance capitalism. This is, well, very informal surveillance. This is something that is not taken into account, in my opinion, that constitutes a big breach in, for instance, the GDPR. provisions, because GDPR, for instance, insists a lot on the fact that we should not make only algorithmic-based decisions. Yes, but when the algorithm is not an algorithm because part of it or the entirety of it is fake, the problem is not only the algorithmic decision, it's also that somebody is looking at my stuff. Thank you. Eric? Yes, Antonio, many thanks for this to the force through value networks in artificial intelligence. I think it's really important to point out some of these dependencies and not to forget them. However, my question is, I have two questions. One is as regards the, let's say, the fake AI work. I think the fake part is clear. So here, this is unethical because we... People are pretending to have AI when really they haven't. But the other part is really a globalization that's practically everywhere in the economy nowadays. So my question would be, or do you think it is different from other areas? My second question is, are you guilty of not taking into account the environment, especially the social environment? when only listing the negative effects of electronics and IT, because obviously many of the green tech that we have, many of the energy saving technologies, they all... basically rely nowadays on IT, there would be no excellent transformation of power anywhere if we had no power electronics and control algorithms that save a lot of energy compared much more than what they cost, actually. So, yeah, these are my two questions. Thank you very much. These are very important questions, and I really thank you for both of them. Let me address the second one first. The point I was trying to make is that we cannot simply consider AI and its environmental cost in terms of emissions footprint, carbon footprint and waste. Because, of course, yes, there is a balance that could be achieved. It can be reached when we look. at the kind of energy that is necessary to produce AI and the kind of gains in terms of limitations of wastes and energies that are produced by the AI. In this kind of game, it's easy to win. And this is usually the point with the technical approach to technical problems is that usually, yes, it's easy to win because you define the problem in a way that is user- It's easier to solve, at least in the foreseeable future. The point is that there is some kind of a hidden dimension in the environmental... cost of AI. And me or my colleague Kate Crawford or Jussi Parica, other theorists that have been working on this for years, have insisted on the fact that it's not carbon footprints. It's also the kind of distraction that is produced by the extractive nature. So let's not focus exclusively on the algorithms or on the modeling part. Let's look at the fact that the AI you know, has to stay in a device and this device has to have a battery and this device, you know, need lithium or nickel and stuff like this. So this is the main point I'm trying to make. But I agree with you. I was probably in my tour de force a little quick on that. The first question is actually important because it allows me to actually make be more precise in one aspect. When we talk about AI impersonation, or as another sociologist, Gemma Newland, says, AI as a service, we're not all talking exclusively of frauds, of forgeries, of fake AI. Yes, of course, I mean, it's easy, it's funny, you can, you know. point the finger at Google once in a while and say, ah, they faked it. Now, the point is that forgery is not pervasive. But one thing that is pervasive is AI impersonation, sometimes to allow the creation of AI, sometimes to test, A-B testing, sometimes it's fake. There is one aspect or one type, method of design that is called the Wizard of Oz. You simulate, I don't know, an interface and the interface does not exist. There is, of course, what is called a real time supervision of AI. And this is, again, output verification in real time, which basically means that if the system provides with a wrong outcome, you can correct it in real time. So you are basically simulating a functioning machine. So, again, the point is. that in this case it's not only forgery, it's not only fraud, it's something more pervasive than that. And is it more or worse than other industries? Well, as long as we only focus on AI as something that is already ready to be deployed and marketed, this is different. I mean, I don't know, industries like, I don't know, garments or food, they do have responsibility all along the supply chain. If I produce coffee, I'm responsible with what happens in Colombia, for instance. If I produce AI, usually I'm not responsible for what happens in Indonesia or Madagascar. And that's the problem for me. Okay, thanks. Are there any other questions? I don't see any recent and. Can I give one final question, unless do we have time? Yeah, okay. Yes, we have time, of course. Yeah, okay. I wanted to ask Antonio to comment about one principles that to me is highly important in in in developing ai which is the solidarity because i mean it seems to me that uh a lot of the of the of the talks of the discourse is focusing on some things that can be measured technically like i mean the carbon footprint or the number of something but there are a lot of things that cannot be measured. And these are the most important ones maybe to human beings. And for a society, I think that solidarity is a highly important one. So I think we should, I mean, something should be done, even if it is not at all clear to me how we can design a solid AI, one that is able to understand these things that are typically human. I don't know if you have some comments about this. And then we have also a resident by ERB. a very quick quick comment is about the methods that are already put in place in order to create solidarities among platform workers or in some cases they are regular companies like bpos all over the world and there are mainly three possibilities. One is about organizing and creating unions. And there is already a number of examples all over the world. It started back in 2014, when Amazon Mechanical Turkers workers, the people who were annotating data on Amazon Mechanical Turk, created a guild, First Union. Then there is, of course, the other approach that is called cooperativism. Platform cooperativism is a movement that has existed since 2016. It means that in some cases, workers come together to create cooperatives and they try to put in place different forms of ownership and different working conditions. And the final part, the other part, is actually creativity. creating new type of platforms and new type of supply chain between data platforms and AI. And this is more complicated because it has to take into account really international movements or international forms of organization that, again, can connect people who are working in the lithium mines in Bolivia and people who produce, I don't know, iPhones in China. in China and people who produce data all over the world. And sometimes it's also us because we do produce data every day, of course. Thanks, Antonio. We have one raised hand by Yarby. Yeah, hello. Hello, everyone. Thank you. Thank you very much for the talk. I'm sorry for my voice. I'm a little bit ill. I have actually two questions, but I will ask only one question because of time, I think. My question is, from the ethical point of view, how is it good to use already existing large databases, data sets on pre-trained models, which are acquired or developed using, let's say, unethically, based on your... talk now analytical methods. And what do you think about that? Because I think everyone knows that when we are using models and we are using a model pre-trained, for example, on Imaginate or other datasets, and we know how such datasets are well created. Well, I am very... Yeah, I'm interested in your answer. It's an excellent question. Well, first of all, I mean, I have several problems with these big databases that are now everywhere. Of course, they are owned or they are produced by the usual suspects. It's always Alphabet, Meta, which is Facebook, Microsoft, a couple of big universities such as Stanford, Tsinghua in China. These are the producers of... these big chunks of information, these big databases. The second problem is, of course, that what we do with those databases, when we train our models on those databases, the problem is overfitting, of course. The results are very good with that data, but what happens when you have to, well, transfer that? to another domain, for instance. And this is the problem of today's transfer learning. The fact that we pre-train something on a big database that is, I don't know, the mainstream database such as ImageNet, and then we transfer it to another contents. For instance, we use it to, I don't know, make face recognition or to count people in a shopping mall and stuff like that. It's again... It's problematic because all the biases and all the problems that you had in the first set of data is also transferred. And when I see the problems, when I see bias in the data, it's not specifically the bias of the type of data, the type of content, for instance, of the data. I mean, if you have only white faces in a data set, you have a problem. The annotation can be problematic. And in databases such as ImageNet, it's clear. You can use only specific tags. to tag the images. And who decides the tags? Again, the same people who pay for the databases. So it's a big problem, but the alternative is even worse, probably. Because if this means that everybody has to create another database that is comparable with ImageNet every time, it's like reinventing the wheel every time and spending a lot of human labor. and environmental costs to create another database that needs to be stored somewhere and you have to pay for it and so on and so on. So it's a very dramatic situation. We don't know how to come out of it as of now. Thank you for answering. Thank you. Thanks. Are there any other questions? I don't see any raised hand. We can now play our splendid Russian punk song that I've selected for the final set of this final part of this seminar. I don't know, Hannes, do you want to say a final word or Enrico? No, thank you. I would like to thank you for your excellent talk, which has somehow a new view on this AI discussion we had now, which was going away from the ethical point. And I think it underlined very well that it's, as we have discussed, digital humanism, that digital humanism is a political issue. And your talk made this very clear. Thank you. Thank you. And one final thing for those of you who were alive in the 1980s. This is a song by the Russian punk band Grastanskaya Uvarona. It's very rough and it's called Me Lyot, which means probably we are the eyes under the feet of the major lieutenant. It's an anti-authoritarian song. Yeah. Thank you. Thanks, Antonio. Thanks. Thanks for the introduction. I don't have to stumble across the Russian pronunciation. Thanks very much, Antonio. I will just announce quickly the next event that we have in the lecture series on February 8th, when Daniel Saman of the International Labour Organization will speak on job scenarios 2030, how the world of work has changed around the globe, and George Mitakidis will be the moderator. also a quick update on the fourth workshop on digital humanism which we had to postpone in december due to a lockdown in vienna we have now rescheduled that to march 3rd to 4th and the slightly only slightly updated program will be online uh beginning of february so stay tuned for that um so yeah i will play the music now so thanks for joining today uh thanks enrico for for moderating and antonio for really great insights and also for choosing the final notes for today so here's the russian punk from the 80s goodbye Foreign We'll be back. Thank you and goodbye. Thank you for joining. Antonio, great. Anita, this is the music for tomorrow.",
+  "segments": [
+    {
+      "start": 20.464,
+      "end": 24.08,
+      "text": "you"
+    },
+    {
+      "start": 63.312,
+      "end": 90.912,
+      "text": "unless the microphone yeah yes yes i'm sorry i was muted uh good evening everybody welcome back after this holiday break i hope you had some relaxing days and you are still resisting the pandemic we are all hoping that you will soon be over but i'm not so optimistic at the moment at least but we are resisting a special welcome to our speaker of today with the sociologists antonio cassini he's coming from the"
+    },
+    {
+      "start": 90.912,
+      "end": 115.76,
+      "text": "School of Telecommunication Engineering of Polytechnic Institute of Paris. And I am happy that you are with us, Antonio. Thank you, Anders. Truly ethically artificial intelligence. And as we have agreed, there's a special focus on the people who work in this field, worldwide distributed. And I think this will be an interesting insight for us."
+    },
+    {
+      "start": 115.888,
+      "end": 144.496,
+      "text": "It will be moderated by Enrico Nardelli, who will then also introduce you in more detail. As you know, we have to talk for 30 minutes and then we have 30 minutes Q&A. And after that, again, please do not forget the piece of music, which is this time selected by Antonio together with Peter Knies. And it will be a very interesting piece. I would like to remind you to look at our website."
+    },
+    {
+      "start": 144.496,
+      "end": 172.048,
+      "text": "and the YouTube channel. You have access to all our previous talks and to the slides as well as the videos. I think it's now already 50 hours of videos where you can have access to that. It's a pleasure to introduce the moderator, Enrico, who is with us since the early beginning. He's also a co-author of our manifesto on digital humanism."
+    },
+    {
+      "start": 172.048,
+      "end": 201.28,
+      "text": "He's a professor of informatics at the University of Rome, Tor Vergata. And he is currently the president of Informatics Europe. Go to the website, look at Informatics Europe. It's the association of European Informatics University departments and research labs. They have Informatics Europe, I think it's 150 or 160 members already, organizational, institutional members."
+    },
+    {
+      "start": 201.28,
+      "end": 229.776,
+      "text": "And he's the president. He's also a member of the ACM Europe Council. So he has a close cooperation with ACM. And let's say his focus or his main attitude is versus introducing informatics education in schools. There is also managing a program with the Italian Ministry of Education. He is a director of a national laboratory dealing with informatics at school."
+    },
+    {
+      "start": 229.776,
+      "end": 258.896,
+      "text": "And he's also a member of the steering committee of the European Informatics for All Coalition, which is a very broad coalition of individuals and institutions. And this coalition is advocating informatics as a component of education in all schools across Europe. And with this, he is also very active in the field of information systems and the social impact. Enrico, thanks for being with us. And now the floor is yours."
+    },
+    {
+      "start": 259.696,
+      "end": 283.248,
+      "text": "Thanks, Hannes, for the very nice introduction. And it's my pleasure now to introduce Antonio Casilli, which is a full professor of sociology at the Telecommunications School of the Institut Polytechnique de Paris. He's also a researcher at the Interdisciplinary Institute on Innovation of the French National Research Council."
+    },
+    {
+      "start": 283.248,
+      "end": 313.2,
+      "text": "He also has other position as associate researcher at the Critical Interdisciplinary Anthropology Center of the School for Advanced Studies in Social Sciences. He is fellow at the NEXA Center for Internet and Society in the Polytechnic University of Turin in Italy. He is associate member of the Criticality of AI-Based Systems Research Group at the Weizenbaum Institute of Berlin and member of the Scholarly Council of the UCLA Center for Critical Inquiry."
+    },
+    {
+      "start": 313.2,
+      "end": 337.04,
+      "text": "His main research interests are social networks, digital platforms, digital labor and privacy, where he conducts field works in many countries all over the world and coordinates several international research projects. He is the co-founder of the research program Digital Platform Labor and of the European Network on Digital Labor."
+    },
+    {
+      "start": 337.04,
+      "end": 363.456,
+      "text": "Beyond many scientific publications in French, English, and Italian, he is the author of many books. The most recent one is the award-winning En attendant le robot, meaning Waiting for Robots, which is published also in Italian as Schiavi del Clic, which is an inquiry into the working conditions of underpaid humans who make artificial intelligence possible."
+    },
+    {
+      "start": 363.456,
+      "end": 388.864,
+      "text": "and from the book the french public national television has produced and broadcasted a documentary series his previous books focused on various themes at the intersection of digital technology and society for which i refer you to his web page he's a regular commentator on the french national radio france culture and writes on international media in france uk and italy"
+    },
+    {
+      "start": 388.864,
+      "end": 417.008,
+      "text": "It's our pleasure to have his talk today with the title, What is a truly ethical artificial intelligence? An end-to-end approach to responsible and human technological systems, where he will discuss how in order to develop an end-to-end ethical approach to AI, we must take into account the conditions of production of the data used to create and market artifacts. Without further ado, Antonio, the floor is yours."
+    },
+    {
+      "start": 417.168,
+      "end": 445.648,
+      "text": "Thank you very much, Enrico. I don't know why this is showing on your screen. I was supposed to share another thing. Thank you very much again for the invitation today. It is really my pleasure to be here and to present you a few results of my recent ongoing research."
+    },
+    {
+      "start": 445.648,
+      "end": 472.688,
+      "text": "projects on digital labor, artificial intelligence, and the ethics of AI. First of all, probably we should address the, not the elephant in the room, but the question that everybody asks when it comes to artificial intelligence. What do we mean when we say an ethical AI? Actually,"
+    },
+    {
+      "start": 472.688,
+      "end": 502.544,
+      "text": "It is a complicated question, despite the fact that it's very simple. Because when it comes to defining artificial intelligence and ethics together, we have a limited amount of examples. Because, yes, artificial intelligence as a field of research has existed for 70 years, more or less."
+    },
+    {
+      "start": 502.544,
+      "end": 512.224,
+      "text": "the ethical AI guidelines started being featured and published in the second half of the"
+    },
+    {
+      "start": 512.224,
+      "end": 538.288,
+      "text": "2010s. The debate was kickstarted by the famous open letter research priorities for robust and beneficial artificial intelligence, which was by, among other persons, co-signed by industrialists such as Elon Musk or scientists like Stephen Hawking. But these specific"
+    },
+    {
+      "start": 538.288,
+      "end": 563.68,
+      "text": "open letter focused on the big questions like for instance what do we do when we want to avoid the adverse consequences of a super intelligence or an AI system that would be so intelligent to actually overcome human performance and humanity and then again what are the ethical"
+    },
+    {
+      "start": 563.68,
+      "end": 591.184,
+      "text": "challenges raised by autonomous technologies, usually technologies that already exist, such as weapons or cars. But when they become intelligent, how do they change? What does it mean for a self-driving car to operate an ethical choice, for instance? Now, this first example"
+    },
+    {
+      "start": 591.184,
+      "end": 620.0,
+      "text": "of ethical AI instantiation eventually turned into several dozens of guidelines and charters which were published from 2015 to 2020. Actually, this article published by Anna Jobin and her colleagues published in the journal Nature"
+    },
+    {
+      "start": 620.0,
+      "end": 648.144,
+      "text": "actually analyzed 84 AI guidelines produced by governments, ONGs, but also by businesses. And in this article, five main domains emerge. These domains tend to be extremely consensual, meaning that they exist all over the 84."
+    },
+    {
+      "start": 648.144,
+      "end": 671.008,
+      "text": "ethical ethical ai guidelines but usually they differ when it comes to the actual manifestation for instance transparency which has to do on the one side with the structure of the models that are used in ai and how black"
+    },
+    {
+      "start": 671.008,
+      "end": 695.6,
+      "text": "black boxish, let's say they are, and how can we make them more accountable, transparent, or explainable, and so on and so on. But again, using these different words, meaning accountable, explainable, means very different things. So transparency can mean very different things."
+    },
+    {
+      "start": 695.6,
+      "end": 716.608,
+      "text": "The other big domain is justice and fairness. And of course, there's a lot of research going on on bias and sometimes, I don't know, predictive policing or even face recognition or other civilians, AI driven."
+    },
+    {
+      "start": 716.608,
+      "end": 740.416,
+      "text": "technologies can introduce specific forms of injustice that target minorities or human groups. And again, understand this in terms of fairness or in terms of bias can really be a game changer because when it comes to bias, this is, well, probably simpler."
+    },
+    {
+      "start": 740.416,
+      "end": 770.288,
+      "text": "for, I don't know, a data scientist or a software engineer to envision, because if there is a bias in this model, in the model that analyzes, I don't know, face prints, one can change the weights of the parameters and actually make the AI more fair. No malfeasance, which basically means no harm, is another complicated and yet extremely consensual."
+    },
+    {
+      "start": 770.288,
+      "end": 798.512,
+      "text": "domain where artificial intelligence and ethics collide. Because, especially if we look at some technologies which are designed to harm human beings, such as, for instance, autonomous weapons or drones, well, the normal efficiency is something that these technological systems cannot comply with. But in other cases, normal efficiency"
+    },
+    {
+      "start": 798.512,
+      "end": 824.64,
+      "text": "means basically selecting the type of harm or the type of persons the harm is done to. Again, making these choices can really change entirely what we mean by an ethical AI. Is my autonomous weapon ethical because it doesn't kill people of my nation or of my creed or of my party?"
+    },
+    {
+      "start": 824.64,
+      "end": 849.888,
+      "text": "or because it refuses to function in some cases. Well, that's a big question. Legal responsibility and especially accountability and liabilities. Well, this is something that has been discussed a lot in the domain of ethical AI. You are probably familiar with the extremely well-publicized and..."
+    },
+    {
+      "start": 849.888,
+      "end": 868.048,
+      "text": "Let's say media savvy experiment with the moral dilemma. If you were an autonomous vehicle, a self-driving car, would you run over, I don't know, two thieves and two..."
+    },
+    {
+      "start": 868.048,
+      "end": 897.456,
+      "text": "nurses or five old ladies. Again, it's a complicated choice. It's something that cannot be established as a sharp 50-50 choice. And so legal responsibility in some cases can create very complex responses. Finally, there is the issue of privacy, especially when AI"
+    },
+    {
+      "start": 897.456,
+      "end": 906.352,
+      "text": "is used to operate surveillance over large populations."
+    },
+    {
+      "start": 906.352,
+      "end": 935.024,
+      "text": "such as face recognition or biometric AI systems or drones. And this is something that has to do not only with the type of data that is analyzed by the AI, but also with the type of model that is used to analyze them and the actual final"
+    },
+    {
+      "start": 935.024,
+      "end": 955.84,
+      "text": "final scope and final goal of these technologies. Now, despite these convergence on these five main domains, there are really sharply different interpretations of these shared principles."
+    },
+    {
+      "start": 955.84,
+      "end": 968.512,
+      "text": "And meaning that, again, the same word, the same domain, the same value of transparency, privacy and so on and so on can be interpreted in very different ways."
+    },
+    {
+      "start": 968.512,
+      "end": 993.344,
+      "text": "in two countries or in two industrial sectors. And then again, there is the remarkable absence all over these almost 100 ethical AI guidelines published so far, remarkable absence of other values such as sustainability, such as trust, such as liberty and autonomy or dignity or solidarity."
+    },
+    {
+      "start": 993.344,
+      "end": 1011.6,
+      "text": "And the authors of this Nature article stress and emphasize these absences. And more importantly, there is no direct link between the principles that are enunciated in the guidelines and the actionable requirements. Meaning, yes, I want to..."
+    },
+    {
+      "start": 1011.6,
+      "end": 1028.64,
+      "text": "I want to say that my AI solution has to be transparent and do not harm others. But what does it mean in terms of standards? What does it mean in terms of rules? What does it mean in terms of compliance with specific laws?"
+    },
+    {
+      "start": 1028.64,
+      "end": 1047.52,
+      "text": "And this is something that brings us to, well, the first main point and the first main problem with ethical AI so far. The fact that the tech giants such as Alphabet, Meta or Microsoft or Baidu in China or..."
+    },
+    {
+      "start": 1047.52,
+      "end": 1074.304,
+      "text": "or a male in Russia have not only co-opted the analysis of ethical AI and in general of accountable and sustainable AI, and they have co-opted it in some cases hiring well-recognized and world-renowned AI ethicists to neutralize the critique."
+    },
+    {
+      "start": 1074.304,
+      "end": 1097.04,
+      "text": "Neutralize the critic, meaning that even the criticism that sometimes is brought against these AI systems is denigrated by tech giants. And in some cases, they fund the weakest critics, meaning the critics that avoid."
+    },
+    {
+      "start": 1097.168,
+      "end": 1120.72,
+      "text": "proposing stringent regulation. And in general, one point that has been made largely in the last few years is that this emphasis on ethical AI by tech giants such as Google and company is something that is put in place to avoid."
+    },
+    {
+      "start": 1120.72,
+      "end": 1144.496,
+      "text": "to comply with laws, which usually are more stringent. So the focus on ethics is also used to frame issues that are incredibly more complex than simply saying, I want to make an ethical artificial intelligence. Issues of power, dominance, inequalities, of oppression, and we will try and address some of those in the rest of my presentation."
+    },
+    {
+      "start": 1144.688,
+      "end": 1170.912,
+      "text": "First, again, just to provide you with a couple of other important points. When I say that there is an alignment between tech giants, ethical AI, and AI in general, if we look at the papers presented in big computer science"
+    },
+    {
+      "start": 1170.912,
+      "end": 1199.424,
+      "text": "such as NeurIPS, over the last 10 years, there has been a sharp increase in the presence of tech giants that now account for the majority of the money spent in AI research, the majority of the papers published and presented in these conferences. The authors with corporate ties in conferences such as NeurIPS went from 40..."
+    },
+    {
+      "start": 1199.424,
+      "end": 1221.824,
+      "text": "3% to 79% in the last five years. And the publications directly done by Alphabet, Microsoft, and others have increased more than fivefold. Now let's go back to the ethical AI guidelines."
+    },
+    {
+      "start": 1221.824,
+      "end": 1250.768,
+      "text": "And let's look at the geography of it just to understand why the alignment is not only in terms of published guidelines or papers or the type of research, but there is something that has to do with the actual physical geography and political geography of the countries where both AI is produced and sold and ethical AI guidelines are produced and published."
+    },
+    {
+      "start": 1250.768,
+      "end": 1280.144,
+      "text": "Most guidelines referenced in the Anjubin's and colleagues' article were published in the USA, in Europe, in Australia, Japan, and in some emerging countries such as India. Unfortunately, one of the limitations of this study is that they do not take into account China and guidelines published in Chinese. But you would be surprised, or probably not, but there is a lot of ethical AI."
+    },
+    {
+      "start": 1280.144,
+      "end": 1289.04,
+      "text": "debate in China too and there is clearly in this geography and under representation of the global south"
+    },
+    {
+      "start": 1289.04,
+      "end": 1318.352,
+      "text": "entire continents such as africa or central and south america or subcontinents such as southeast asia are not represented and this may undermine not only pluralism and cultural awareness of the type of ai and the type of ethical ai that is produced today but also in a way in our opinion and my opinion in particular tend to focus a little too much on only one"
+    },
+    {
+      "start": 1318.352,
+      "end": 1323.6,
+      "text": "part of, only one end one might say, of"
+    },
+    {
+      "start": 1323.6,
+      "end": 1350.384,
+      "text": "AI. If we look at AI and we want to be extremely simplistic, we might say that there is a distinction between the production phase and the deployment phase, and that all the guidelines, all the ethical AI guidelines analyzed so far tend to focus disproportionately on the deployment phase. What do we do with a killing robot once we have produced and marketed it?"
+    },
+    {
+      "start": 1350.384,
+      "end": 1377.392,
+      "text": "What do we do with the self-driving car once the car is already in the streets? But probably in order to have a more humane and a more responsible approach to ethical AI, we should focus also on the production phase. And this brings us to the end-to-end part of AI."
+    },
+    {
+      "start": 1377.392,
+      "end": 1404.512,
+      "text": "strong claim that I'm trying to make is that we have to look at AI like we look at, I don't know, food or footwear or any other piece of garment. Do we ask if my, I don't know, my shoes are ethical because they can be sold to different people coming from different nations, speaking different languages and having different..."
+    },
+    {
+      "start": 1404.512,
+      "end": 1427.856,
+      "text": "colors of their skins. Now, the shoe is considered, for instance, ethical or, I don't know, the coffee is considered ethical if the production of it is ethical and also the way it is marketed is ethical. So if, for instance, the production of the shoes"
+    },
+    {
+      "start": 1427.856,
+      "end": 1457.184,
+      "text": "do not pollute or not pollute too much or compensate for the pollution and the waste. Or on the other side, if it doesn't pollute, let's say, economies, communities and workers, meaning if it does not exploit workers. So looking at the end-to-end ethical AI means basically taking into account the production phase and the deployment phase to place the human back in the loop of ethical AI."
+    },
+    {
+      "start": 1457.184,
+      "end": 1479.008,
+      "text": "And I'm sorry, I'm probably going a little too fast. Now, let me give you a few examples in order to illustrate what I mean by production of AI, because production of AI, especially if you have a STEM background, sometimes tend to mean a very limited."
+    },
+    {
+      "start": 1479.008,
+      "end": 1498.944,
+      "text": "a very limited domain, meaning the work of software engineers, data scientists, system scientists, those who design the algorithms. So the production is not that. A lot of the production is basically production of data. And this data are, of course,"
+    },
+    {
+      "start": 1498.944,
+      "end": 1510.32,
+      "text": "they need to feed huge databases such as ImageNet and others."
+    },
+    {
+      "start": 1510.32,
+      "end": 1539.824,
+      "text": "Data is necessary to train models. For instance, if you have to, I don't know, tag different objects in pictures or to define the contour of a face. One example that comes from our own research is one person that we interviewed back in 2017 in France. She was working as a data annotator."
+    },
+    {
+      "start": 1539.824,
+      "end": 1564.224,
+      "text": "And what she did was looking at pictures of salads and she had to draw a square around the tomato. And this is basically semantic segmentation and tagging that is necessary to enrich the data that is then used to train the models. But then when all the models are... Sorry, just one quick thing is that..."
+    },
+    {
+      "start": 1564.224,
+      "end": 1593.968,
+      "text": "Geographically speaking, this person was working for a company, for a platform that was located in Paris, but the person was not located in Paris. She was located in the south of France. And more importantly, other platforms also used, I don't know, French-speaking workers that were located in Morocco or Maghreb in Senegal or other African countries, French-speaking African countries."
+    },
+    {
+      "start": 1594.0,
+      "end": 1612.272,
+      "text": "Now, once we have trained all the data, is this over? Unfortunately not, because another part of the digital labor and the data labor that is necessary to make AI exist is to verify outputs."
+    },
+    {
+      "start": 1612.272,
+      "end": 1625.392,
+      "text": "For instance, another person that we interviewed back in 2019 was somebody who was listening to people speaking to, well, a virtual assistant, a vocal assistant."
+    },
+    {
+      "start": 1625.392,
+      "end": 1653.648,
+      "text": "Actually, it was Cortana, to be fair. Now, this person said, I listened to the audio recording, then a text appeared on screen showing what the vocal system understood and transcribed. My job was to check if it was accurate. If not, I had to correct the text. So again, this is an artificial intelligence system that is already on the market. It is already sold, and yet it doesn't work perfectly."
+    },
+    {
+      "start": 1653.648,
+      "end": 1681.92,
+      "text": "Now, again, let's look at the slightly more complicated geography of this labor. The last example was about a technology that was produced by a company that is located more or less here in the United States. You can understand which big company I'm talking about. This company subcontracts."
+    },
+    {
+      "start": 1681.92,
+      "end": 1701.984,
+      "text": "the recruitment of data workers to a company that is located in China. The company in China sublets the very same job to a portal that is located in Japan, the portal in Japan to a company that is based in Spain. The company in Spain recruits workers."
+    },
+    {
+      "start": 1701.984,
+      "end": 1731.36,
+      "text": "in France, and the workers in France is supervised by other workers who are in Italy. And then all the data annotated and all the outputs verified go back to this company back in the US. So it's a very, very complicated geography. And it gets even more complicated if we look at the final type of data labor, the labor that is necessary sometimes to impersonate AI."
+    },
+    {
+      "start": 1731.36,
+      "end": 1758.864,
+      "text": "Impersonate AI means basically that not all the autonomous technologies that we use every day or that are developed are really autonomous. Sometimes actual humans have to take the systems into their own hands in a way and, well, fake it. Fake it until you make it. That's the usual Silicon Valley motto."
+    },
+    {
+      "start": 1758.864,
+      "end": 1767.36,
+      "text": "Businessmen that we interviewed in 2018 said the overwhelming majority of B2B startups we know are human-based."
+    },
+    {
+      "start": 1767.36,
+      "end": 1796.112,
+      "text": "meaning that there are humans who impersonate AI. But I understand them, he says, because for them, it's a bet on the future. They have to create the data for the tasks and then do machine learning and hope one day that the process will be automated. Hope one day that the process will be automated. Sometimes there are remarkable examples of fake AI or fake robots, like, for instance, this one, which is called Boris the Robot. It's an example of..."
+    },
+    {
+      "start": 1796.112,
+      "end": 1822.336,
+      "text": "fake Russian robot. Actually, it's a human being disguised as a robot. But also, US-based companies have been taken to task for faking AI. For instance, Google Duplex marketed as the artificial intelligence that can, I don't know, make calls for you. Actually, 60% of it were calls done by actual human beings."
+    },
+    {
+      "start": 1822.336,
+      "end": 1850.24,
+      "text": "And if we look at the, again, the geography of it, it gets even more complicated because in order for these humans to fake it so well that they are mistaken for actual artificial intelligences, especially artificial intelligence systems that speak one specific language, you have to recruit and enlist workers that share the same cultural..."
+    },
+    {
+      "start": 1850.24,
+      "end": 1876.208,
+      "text": "parameters in a way. So, for instance, it's not a surprise that the same businessman told us that the majority of French AI is actually done in Madagascar, because Madagascar is a French-speaking country, a country where the average wage is so low that it becomes cost-effective to go recruit data workers over there."
+    },
+    {
+      "start": 1876.208,
+      "end": 1895.68,
+      "text": "Let me give you an example that goes to the final part of my presentation. And it's also a case study and extremely interesting. This is a French startup that sells a very specific and very, let's say."
+    },
+    {
+      "start": 1895.68,
+      "end": 1918.608,
+      "text": "interesting, you will see that that's ironic, service. If you are an influencer, if you are a VIP, you are contacted by this company and this company will suggest for you, I don't know, holidays or..."
+    },
+    {
+      "start": 1918.608,
+      "end": 1927.792,
+      "text": "I don't know, a weekend in a spa resort or some kind of luxury service. And usually they do this by."
+    },
+    {
+      "start": 1927.792,
+      "end": 1951.936,
+      "text": "creating a profile for you and then collecting all the data that are available on your different social media and then understand via an AI your tastes and your preferences and they suggest you the thing that is tailor-made for you. Now, surprise, surprise, there is no artificial intelligence at all."
+    },
+    {
+      "start": 1951.936,
+      "end": 1959.92,
+      "text": "The artificial intelligence is actually a few hundred people recruited in Madagascar that actually do."
+    },
+    {
+      "start": 1959.92,
+      "end": 1989.2,
+      "text": "The same thing that the AI is supposed to do, but they do it by hand, looking at your profile, guessing more or less your preferences, and then choosing a weekend or a holiday among a list of possibilities of companies that have some kind of partnership with the startup. And it becomes really a type of outsourcing."
+    },
+    {
+      "start": 1989.2,
+      "end": 2015.536,
+      "text": "that leads us from, I don't know, the luxury houses in Paris to places such as this, which is in the periphery of Antananarivo in Madagascar. So it's just an industrial setting where people go and work every day and they work as artificial intelligences or artificial intelligence system."
+    },
+    {
+      "start": 2015.536,
+      "end": 2026.304,
+      "text": "So the geographies of data production are really more complicated than this. And I want to say something about the geographies of other things too, meaning that..."
+    },
+    {
+      "start": 2026.304,
+      "end": 2049.52,
+      "text": "the environmental resources. First of all, what I will show you is a cartography, more or less complete, as of today, of data production based on two ongoing projects. One is called HUSH and the other one is called TRIA. If you want, I can tell you more about this, but basically the idea is that"
+    },
+    {
+      "start": 2049.52,
+      "end": 2077.856,
+      "text": "The AI is produced and sold in countries, the same countries that produce the ethical AI guidelines. We saw them before. So usually it's the global north or a couple of emerging countries such as India and China. But the data, if they are for English speaking companies and platforms, are usually produced in Southeast Asia or in India."
+    },
+    {
+      "start": 2077.856,
+      "end": 2104.112,
+      "text": "for the Brits and for the U.S. and Canada-based companies. But if you are in Spain or if you are in the Spanish-speaking part of the U.S., the workers are recruited usually in South America, countries such as Venezuela, Colombia, and Argentina."
+    },
+    {
+      "start": 2104.112,
+      "end": 2115.504,
+      "text": "or Bolivia, countries that have a very, very low average wage. And when it comes to Africa, it's more complicated. Part of Africa, the French-speaking part."
+    },
+    {
+      "start": 2115.504,
+      "end": 2142.512,
+      "text": "goes or produces data for the French. And as for countries such as Egypt, well, they usually work for the Chinese, for Chinese companies and for face recognition, you find Chinese companies such as Tencent and others. And China, well, this is more of a guesswork because it's an ongoing research. But the educated guess is that China has bought..."
+    },
+    {
+      "start": 2142.512,
+      "end": 2172.032,
+      "text": "huge internal market. Usually it's people in rural and frontier regions that work for big companies located in Shenzhen. And there are a lot of Chinese-speaking nationals or Chinese nationals in Southeast Asia, Malaysia, Singapore and so on. And they usually work to produce data for Chinese companies."
+    },
+    {
+      "start": 2172.032,
+      "end": 2189.28,
+      "text": "Final remark. It's not only a matter of data. It's also a matter of environmental and natural resources. Now, you have seen in the last few years the..."
+    },
+    {
+      "start": 2189.28,
+      "end": 2218.576,
+      "text": "Well, a lot of articles that point and insist on the fact that AI is not carbon neutral. Usually, if you want to train a machine learning, a huge machine learning model, in some cases, you can emit as much carbon as five cars in their lifetime. So if you want to compare, you know, if you consider the automobile industry as a benchmark for pollution, that's very."
+    },
+    {
+      "start": 2218.576,
+      "end": 2244.352,
+      "text": "bad usually but unfortunately these alarms that has been raised around the carbon footprint or the emission consequences of AI have created a kind of a paradoxical situations where usually there is a strong sense that we should use AI to correct"
+    },
+    {
+      "start": 2244.352,
+      "end": 2273.024,
+      "text": "the problems caused by AI. We should use AI to look for the better carbon footprint or to limit and reduce waste and dead weight assets of AI. It's kind of paradoxical because you know you're fighting fire with fire. The point is that usually we have to look at the real and the larger cost of AI."
+    },
+    {
+      "start": 2273.024,
+      "end": 2295.68,
+      "text": "I'm finished in two minutes. Okay, good. So I would say the larger cost means that not only we have to look at how many emissions are produced by an AI."
+    },
+    {
+      "start": 2295.68,
+      "end": 2324.144,
+      "text": "But we also have to look at the very material side of the systems. They need batteries. They need to be produced using specific and very polluting technologies. And they rely heavily on an extractive industry, meaning the extraction of minerals such as cobalt, nickel, lithium, and rare minerals and rare earths. And all these..."
+    },
+    {
+      "start": 2324.208,
+      "end": 2338.528,
+      "text": "are usually located, as you will see in a second, in countries that are along the trajectories of the data labour supply chains."
+    },
+    {
+      "start": 2338.528,
+      "end": 2367.824,
+      "text": "This extractive industry disrupts local economies. It creates conflicts over land, land ownership. It incurs even more pollution for international transportation. And it is also important because it mobilizes a huge quantity of labor. You need a lot of people to work in these mines. The two pictures that you see here, the first one is a fieldwork."
+    },
+    {
+      "start": 2367.824,
+      "end": 2394.928,
+      "text": "I did in 2018 when I was in Bolivia. Bolivia is a relatively small country, landlocked, but it has one of the biggest salt lakes, and so lithium can be extracted from it in the world. And this lithium is now used to produce batteries."
+    },
+    {
+      "start": 2394.928,
+      "end": 2400.56,
+      "text": "Bolivian government had to fight many years in order"
+    },
+    {
+      "start": 2400.56,
+      "end": 2429.84,
+      "text": "to nationalize this industry and not have international companies come and buy it like it happened in other countries. Like, for instance, the second picture that you see here is a cobalt, sorry, it's a nickel mine in Madagascar, where I will be in three weeks. And this is not far from Antananarivo. So from this, I don't know, 83 kilometers from the"
+    },
+    {
+      "start": 2429.84,
+      "end": 2443.888,
+      "text": "the very workers that I showed in a few slides back, there is this huge cobalt and nickel mine that is called Ambatovi."
+    },
+    {
+      "start": 2443.888,
+      "end": 2462.064,
+      "text": "If we look at the geography of research extraction, again, you might see that there is a little overlapping. If we look at the countries where cobalt is produced, one of the biggest one is, of course, Congo, but Madagascar."
+    },
+    {
+      "start": 2462.064,
+      "end": 2491.872,
+      "text": "Brazil is also huge. Rare earths is of course China. When it comes to nickel, it's also Indonesia. And when it comes to lithium, it's of course Bolivia, but also Argentina and Chile. Now, conclusions. What does it mean to have an end-to-end approach to ethical AI? It means that if we want to design and conceive,"
+    },
+    {
+      "start": 2491.872,
+      "end": 2517.264,
+      "text": "an AI system that is ethical from end to end, we have to look not only at the deployment, but also at the production of the systems. And that there is no tech-only silver bullet that might suffice to address the enormous challenges that are raised."
+    },
+    {
+      "start": 2517.264,
+      "end": 2532.928,
+      "text": "made visible by what we just described. We have to take into account the natural and human environment that these systems affect, not only when they are deployed, but also when they are"
+    },
+    {
+      "start": 2532.928,
+      "end": 2547.936,
+      "text": "We have to consider the political economy of AI and we have to look at global dependencies. In some cases, some forms of neocolonialism that is put in place when this data labor is."
+    },
+    {
+      "start": 2547.936,
+      "end": 2570.032,
+      "text": "well, created. And we have to ensure humane working conditions and fair working conditions all over the supply chain that creates and eventually produces and markets our AI systems. Thank you very much. And now we can open the floor for questions."
+    },
+    {
+      "start": 2570.704,
+      "end": 2598.192,
+      "text": "Thanks, Antonio, for this very interesting talk that was a kind of red pill for somebody. I see you, Moshe. A kind of red pill for some people that had not the possibility of looking at what's under the hood of AI production in terms of total human costs, social costs and natural costs. So I have already two raised hands. First Moshe and then Eric. Moshe."
+    },
+    {
+      "start": 2600.208,
+      "end": 2628.416,
+      "text": "You are muted. Somebody should calculate what is the carbon footprint of the sentence, you are muted. So, you know, people get very entangled with the trolley problem and autonomous vehicle. But the biggest deployment of AI that each one of us is exposed to."
+    },
+    {
+      "start": 2628.416,
+      "end": 2649.68,
+      "text": "Dozens of times per day is search engines and social media. So surveillance capitalism, which is supporting a huge industry, is all supported under the hood. It's supported by AI, the AI that gathers information about you and decides which advertisement to show to you."
+    },
+    {
+      "start": 2650.384,
+      "end": 2673.04,
+      "text": "Is this AI ethical? And I have a problem. The problem is not the ethics of AI here. The problem is the ethics of the corporations that run this business model. And somehow we are talking about, everybody loves to talk about exotic technologies. This is the AI each one of us is using every day. Surveillance capitalism, its foundation is machine learning."
+    },
+    {
+      "start": 2674.992,
+      "end": 2692.016,
+      "text": "Yeah, I appreciate really the fact that you introduced the notion of surveillance capitalism. There is a lot of debate recently since the publishing of the book, the eponymous book by Shoshana Zuboff."
+    },
+    {
+      "start": 2692.016,
+      "end": 2718.96,
+      "text": "I would like to develop on what you just said. I mean, yes, it's true. I mean, this is something that everybody's using, even more than virtual assistants on smartphones or smart speakers or others. And it is interesting. I mean, I agree 100% with you that this is the ethics of the corporations, but it is also the ethics of the kind of communication."
+    },
+    {
+      "start": 2718.96,
+      "end": 2739.264,
+      "text": "and of the corporation. By communication, I mean we need to make these corporations accountable for the type of treatment and analysis that is done with our data. It's not only a matter, and this is probably one of the limitations that I recognize in Shoshana Zuboff's work, it's not only a matter of capturing work."
+    },
+    {
+      "start": 2739.264,
+      "end": 2765.936,
+      "text": "and data. But it's the fact that this data is analyzed by people that we are not aware of. Let me give you an example. Among the data workers that we interviewed, a number of these workers actually are recruited by Google or Facebook, and they are called raters, and they usually are"
+    },
+    {
+      "start": 2765.936,
+      "end": 2784.832,
+      "text": "those who are in charge with verifying the outputs of the search engines, for instance. Microsoft does the same. And this is the point. This search engine is probably less algorithmic that we want to believe, that we are ready to believe."
+    },
+    {
+      "start": 2784.832,
+      "end": 2810.72,
+      "text": "There is a lot of people that is listening or reading what we are saying or writing. And this is the scary part, because it's not only surveillance capitalism. This is, well, very informal surveillance. This is something that is not taken into account, in my opinion, that constitutes a big breach in, for instance, the GDPR."
+    },
+    {
+      "start": 2810.72,
+      "end": 2839.68,
+      "text": "provisions, because GDPR, for instance, insists a lot on the fact that we should not make only algorithmic-based decisions. Yes, but when the algorithm is not an algorithm because part of it or the entirety of it is fake, the problem is not only the algorithmic decision, it's also that somebody is looking at my stuff. Thank you. Eric? Yes, Antonio, many thanks for this"
+    },
+    {
+      "start": 2839.68,
+      "end": 2864.96,
+      "text": "to the force through value networks in artificial intelligence. I think it's really important to point out some of these dependencies and not to forget them. However, my question is, I have two questions. One is as regards the, let's say, the fake AI work. I think the fake part is clear. So here, this is unethical because we..."
+    },
+    {
+      "start": 2864.96,
+      "end": 2892.736,
+      "text": "People are pretending to have AI when really they haven't. But the other part is really a globalization that's practically everywhere in the economy nowadays. So my question would be, or do you think it is different from other areas? My second question is, are you guilty of not taking into account the environment, especially the social environment?"
+    },
+    {
+      "start": 2892.736,
+      "end": 2905.552,
+      "text": "when only listing the negative effects of electronics and IT, because obviously many of the green tech that we have, many of the energy saving technologies, they all..."
+    },
+    {
+      "start": 2905.552,
+      "end": 2935.072,
+      "text": "basically rely nowadays on IT, there would be no excellent transformation of power anywhere if we had no power electronics and control algorithms that save a lot of energy compared much more than what they cost, actually. So, yeah, these are my two questions. Thank you very much. These are very important questions, and I really thank you for both of them. Let me address the second one first."
+    },
+    {
+      "start": 2935.072,
+      "end": 2959.072,
+      "text": "The point I was trying to make is that we cannot simply consider AI and its environmental cost in terms of emissions footprint, carbon footprint and waste. Because, of course, yes, there is a balance that could be achieved. It can be reached when we look."
+    },
+    {
+      "start": 2959.072,
+      "end": 2988.432,
+      "text": "at the kind of energy that is necessary to produce AI and the kind of gains in terms of limitations of wastes and energies that are produced by the AI. In this kind of game, it's easy to win. And this is usually the point with the technical approach to technical problems is that usually, yes, it's easy to win because you define the problem in a way that is user-"
+    },
+    {
+      "start": 2988.56,
+      "end": 2999.072,
+      "text": "It's easier to solve, at least in the foreseeable future. The point is that there is some kind of a hidden dimension in the environmental..."
+    },
+    {
+      "start": 2999.072,
+      "end": 3027.92,
+      "text": "cost of AI. And me or my colleague Kate Crawford or Jussi Parica, other theorists that have been working on this for years, have insisted on the fact that it's not carbon footprints. It's also the kind of distraction that is produced by the extractive nature. So let's not focus exclusively on the algorithms or on the modeling part. Let's look at the fact that the AI"
+    },
+    {
+      "start": 3027.92,
+      "end": 3053.856,
+      "text": "you know, has to stay in a device and this device has to have a battery and this device, you know, need lithium or nickel and stuff like this. So this is the main point I'm trying to make. But I agree with you. I was probably in my tour de force a little quick on that. The first question is actually important because it allows me to actually make"
+    },
+    {
+      "start": 3053.856,
+      "end": 3078.032,
+      "text": "be more precise in one aspect. When we talk about AI impersonation, or as another sociologist, Gemma Newland, says, AI as a service, we're not all talking exclusively of frauds, of forgeries, of fake AI. Yes, of course, I mean, it's easy, it's funny, you can, you know."
+    },
+    {
+      "start": 3078.032,
+      "end": 3103.792,
+      "text": "point the finger at Google once in a while and say, ah, they faked it. Now, the point is that forgery is not pervasive. But one thing that is pervasive is AI impersonation, sometimes to allow the creation of AI, sometimes to test, A-B testing, sometimes it's fake. There is one aspect or one type, method of design that is called the Wizard of Oz."
+    },
+    {
+      "start": 3103.792,
+      "end": 3133.296,
+      "text": "You simulate, I don't know, an interface and the interface does not exist. There is, of course, what is called a real time supervision of AI. And this is, again, output verification in real time, which basically means that if the system provides with a wrong outcome, you can correct it in real time. So you are basically simulating a functioning machine. So, again, the point is."
+    },
+    {
+      "start": 3133.296,
+      "end": 3162.0,
+      "text": "that in this case it's not only forgery, it's not only fraud, it's something more pervasive than that. And is it more or worse than other industries? Well, as long as we only focus on AI as something that is already ready to be deployed and marketed, this is different. I mean,"
+    },
+    {
+      "start": 3162.0,
+      "end": 3188.496,
+      "text": "I don't know, industries like, I don't know, garments or food, they do have responsibility all along the supply chain. If I produce coffee, I'm responsible with what happens in Colombia, for instance. If I produce AI, usually I'm not responsible for what happens in Indonesia or Madagascar. And that's the problem for me."
+    },
+    {
+      "start": 3191.44,
+      "end": 3218.992,
+      "text": "Okay, thanks. Are there any other questions? I don't see any recent and. Can I give one final question, unless do we have time? Yeah, okay. Yes, we have time, of course. Yeah, okay. I wanted to ask Antonio to comment about one"
+    },
+    {
+      "start": 3219.312,
+      "end": 3244.864,
+      "text": "principles that to me is highly important in in in developing ai which is the solidarity because i mean it seems to me that uh a lot of the of the of the talks of the discourse is focusing on some things that can be measured technically like i mean the carbon footprint or the number of something but there are a lot of things that"
+    },
+    {
+      "start": 3244.864,
+      "end": 3272.816,
+      "text": "cannot be measured. And these are the most important ones maybe to human beings. And for a society, I think that solidarity is a highly important one. So I think we should, I mean, something should be done, even if it is not at all clear to me how we can design a solid AI, one that is able to understand these things that are typically human. I don't know if you have some comments about this. And then we have also a resident by ERB."
+    },
+    {
+      "start": 3272.816,
+      "end": 3291.968,
+      "text": "a very quick quick comment is about the methods that are already put in place in order to create solidarities among platform workers or in some cases they are regular companies like bpos all over the world and there are mainly three"
+    },
+    {
+      "start": 3291.968,
+      "end": 3315.36,
+      "text": "possibilities. One is about organizing and creating unions. And there is already a number of examples all over the world. It started back in 2014, when Amazon Mechanical Turkers workers, the people who were annotating data on Amazon Mechanical Turk, created a guild, First Union."
+    },
+    {
+      "start": 3315.36,
+      "end": 3344.656,
+      "text": "Then there is, of course, the other approach that is called cooperativism. Platform cooperativism is a movement that has existed since 2016. It means that in some cases, workers come together to create cooperatives and they try to put in place different forms of ownership and different working conditions. And the final part, the other part, is actually creativity."
+    },
+    {
+      "start": 3344.656,
+      "end": 3373.872,
+      "text": "creating new type of platforms and new type of supply chain between data platforms and AI. And this is more complicated because it has to take into account really international movements or international forms of organization that, again, can connect people who are working in the lithium mines in Bolivia and people who produce, I don't know, iPhones in China."
+    },
+    {
+      "start": 3373.872,
+      "end": 3402.848,
+      "text": "in China and people who produce data all over the world. And sometimes it's also us because we do produce data every day, of course. Thanks, Antonio. We have one raised hand by Yarby. Yeah, hello. Hello, everyone. Thank you. Thank you very much for the talk. I'm sorry for my voice. I'm a little bit ill. I have actually two questions, but I will ask only one question because of time, I think."
+    },
+    {
+      "start": 3402.848,
+      "end": 3432.08,
+      "text": "My question is, from the ethical point of view, how is it good to use already existing large databases, data sets on pre-trained models, which are acquired or developed using, let's say, unethically, based on your..."
+    },
+    {
+      "start": 3432.08,
+      "end": 3455.44,
+      "text": "talk now analytical methods. And what do you think about that? Because I think everyone knows that when we are using models and we are using a model pre-trained, for example, on Imaginate or other datasets, and we know how such datasets are well created. Well, I am very..."
+    },
+    {
+      "start": 3455.44,
+      "end": 3467.984,
+      "text": "Yeah, I'm interested in your answer. It's an excellent question. Well, first of all, I mean, I have several problems with these big databases that are now everywhere."
+    },
+    {
+      "start": 3468.176,
+      "end": 3492.544,
+      "text": "Of course, they are owned or they are produced by the usual suspects. It's always Alphabet, Meta, which is Facebook, Microsoft, a couple of big universities such as Stanford, Tsinghua in China. These are the producers of..."
+    },
+    {
+      "start": 3492.544,
+      "end": 3516.64,
+      "text": "these big chunks of information, these big databases. The second problem is, of course, that what we do with those databases, when we train our models on those databases, the problem is overfitting, of course. The results are very good with that data, but what happens when you have to, well, transfer that?"
+    },
+    {
+      "start": 3516.64,
+      "end": 3545.936,
+      "text": "to another domain, for instance. And this is the problem of today's transfer learning. The fact that we pre-train something on a big database that is, I don't know, the mainstream database such as ImageNet, and then we transfer it to another contents. For instance, we use it to, I don't know, make face recognition or to count people in a shopping mall and stuff like that. It's again..."
+    },
+    {
+      "start": 3545.936,
+      "end": 3574.32,
+      "text": "It's problematic because all the biases and all the problems that you had in the first set of data is also transferred. And when I see the problems, when I see bias in the data, it's not specifically the bias of the type of data, the type of content, for instance, of the data. I mean, if you have only white faces in a data set, you have a problem."
+    },
+    {
+      "start": 3574.32,
+      "end": 3584.928,
+      "text": "The annotation can be problematic. And in databases such as ImageNet, it's clear. You can use only specific tags."
+    },
+    {
+      "start": 3584.928,
+      "end": 3614.288,
+      "text": "to tag the images. And who decides the tags? Again, the same people who pay for the databases. So it's a big problem, but the alternative is even worse, probably. Because if this means that everybody has to create another database that is comparable with ImageNet every time, it's like reinventing the wheel every time and spending a lot of human labor."
+    },
+    {
+      "start": 3614.288,
+      "end": 3640.912,
+      "text": "and environmental costs to create another database that needs to be stored somewhere and you have to pay for it and so on and so on. So it's a very dramatic situation. We don't know how to come out of it as of now. Thank you for answering. Thank you. Thanks. Are there any other questions?"
+    },
+    {
+      "start": 3643.408,
+      "end": 3663.824,
+      "text": "I don't see any raised hand. We can now play our splendid Russian punk song that I've selected for the final set of this final part of this seminar. I don't know, Hannes, do you want to say a final word or Enrico?"
+    },
+    {
+      "start": 3664.88,
+      "end": 3687.328,
+      "text": "No, thank you. I would like to thank you for your excellent talk, which has somehow a new view on this AI discussion we had now, which was going away from the ethical point. And I think it underlined very well that it's, as we have discussed, digital humanism, that digital humanism is a political issue. And your talk made this very clear. Thank you."
+    },
+    {
+      "start": 3687.328,
+      "end": 3715.952,
+      "text": "Thank you. And one final thing for those of you who were alive in the 1980s. This is a song by the Russian punk band Grastanskaya Uvarona. It's very rough and it's called Me Lyot, which means probably we are the eyes under the feet of the major lieutenant. It's an anti-authoritarian song. Yeah. Thank you. Thanks, Antonio."
+    },
+    {
+      "start": 3715.952,
+      "end": 3742.944,
+      "text": "Thanks. Thanks for the introduction. I don't have to stumble across the Russian pronunciation. Thanks very much, Antonio. I will just announce quickly the next event that we have in the lecture series on February 8th, when Daniel Saman of the International Labour Organization will speak on job scenarios 2030, how the world of work has changed around the globe, and George Mitakidis will be the moderator."
+    },
+    {
+      "start": 3742.944,
+      "end": 3772.4,
+      "text": "also a quick update on the fourth workshop on digital humanism which we had to postpone in december due to a lockdown in vienna we have now rescheduled that to march 3rd to 4th and the slightly only slightly updated program will be online uh beginning of february so stay tuned for that um so yeah i will play the music now so thanks for joining today uh thanks enrico for for moderating and antonio for really great insights"
+    },
+    {
+      "start": 3772.4,
+      "end": 3778.992,
+      "text": "and also for choosing the final notes for today so here's the russian punk from the 80s goodbye"
+    },
+    {
+      "start": 3816.752,
+      "end": 3831.92,
+      "text": "Foreign"
+    },
+    {
+      "start": 3860.496,
+      "end": 3889.936,
+      "text": "We'll be back."
+    },
+    {
+      "start": 3897.04,
+      "end": 3914.224,
+      "text": "Thank you and goodbye. Thank you for joining. Antonio, great. Anita, this is the music for tomorrow."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

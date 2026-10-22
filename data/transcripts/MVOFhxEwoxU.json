@@ -1,0 +1,386 @@
+{
+  "video_id": "MVOFhxEwoxU",
+  "source": "whisper",
+  "language": "en",
+  "text": "So we're coming now to the third session. I think we have seen that informatics can offer a set of tools and a rich set of methodologies and methods to really to manage research and to manage the crisis. In the second, in the third part, we are coming now to societal issues and to critical issues. And I would like to hand over to Erich Prem, who will moderate it. Erich has a close relationship with the University of Technology of Vienna, and he's one of the few guys I know, I think he's the only one I know, who has two PhDs, one in computer science and one in philosophy. So he is really well suited to moderate this third session. Erich, the floor is yours. Many thanks for that, Hannes. Thanks for the kind introduction. I think in the dialectical setup of this workshop, from the more positive aspects of informatics, we are now shifting to some of the challenges. And these challenges include privacy, security, and of course, societal questions. And I think it's fair to say the topics which we are going to talk about in this session, they have received a lot of interest, both in Austria and internationally. And our first topic that we are going to talk about is probably one that has been discussed both from, let's say, with very rational arguments and with a lot of emotion at the same time. It's the question of privacy, designing systems accordingly in the case of Corona apps. But it has also been a hugely political discussion. when you think about what has happened at EU level and what has happened at member state level. So our first speaker, and it's really an honor to have him with us. now is Walter Hötzendorfer from the Research Institute Digital Human Rights Center. Walter is not only an expert in privacy, he is a frequent advisor on the European data protection regulation, but most importantly he worked with the Austrian Red Cross. um in order to develop the stop corona app which is our version our national version of the corona tracing app and i'm sure walter will have all the details and i'm looking forward to walter's presentation um walter the screen is yours thank you thank you for this kind invitation uh to this event and uh let me share my slides with you so today i have prepared a few thoughts around contact tracing apps for you not only the austrian app i was able to participate but also some general learnings out of it and you can also think of it as the story how it happened that Google and Facebook work together now to implement the privacy and privacy by design concept which was developed by European researchers. So as Erich already mentioned I'm with the Research Institute Digital Human Rights Center in Vienna and I've been advising the Austrian Red Cross in data protection since several years because we are a research center But to cross-finance our research, to co-finance our research, we are also doing consulting on selected clients. And one of them is the Austrian Red Cross. And when the Red Cross came up with the prototype of a Stop Corona app, it turned out that we were quite in a good position to cover data protection and privacy issues of this app because of our interdisciplinary background. So I have a background in IT as well as in law. And also because of our close relationship to civil society in Austria, to NGOs like Epicentral Works, Neub, the CCC, and so on. And also to the research community, of course. And of course, it's not just me at the Research Institute working on that. It's a huge team behind, as with many of you. I can imagine. So briefly, I want to give a little chronology on tackling the pandemic with IT. But more, I want to speak not only about the Austrian app, but on the involvement of civil society, on the public, and some general reflection. So in the beginning, I would say in early March, we realized we have a pandemic. So many people thought, let's use technology to tackle it. What could possibly go wrong? So let's have a look. The first debate that hit me and that hit Austria, it was in mid-March. It was about the use of anonymized location data from mobile phones. And I happened to be involved in a research project some years ago called AGETOR, where we actually did research on exactly that, on using location data from mobile phones for different applications. And what I learned from that is that such data are... very, very difficult to anonymize. I would say almost impossible to anonymize while keeping anything useful there. So you have to be very skeptical if someone claims that they only use anonymized location data from mobile phones. It is still used in Austria on an aggregated level, for instance, for giving estimates on how many people are using public transport, and this went down by 50% or something like that. So to tackle the pandemic with technology, we also learned about other things. I think we all heard that Israel wanted to tackle the pandemic with anti-terrorism tools. Yeah, partly at least I didn't follow it too closely. But about a month later, we had also this headline. So at least partly these things were stopped already in Israel. And I think I can say we reached a situation where most people realized that location data is not accurate enough. and hence not useful for contact tracing. So the thing I'm talking about today, so we use some other data and not location data from mobile phones to do contact tracing. And even more, we quickly realized that we are in a quite unique situation because there is a single best concept for implementing app-based contact tracing, which happens to be at the same time the most privacy-friendly concept you can imagine. So in the case of contact tracing smartphone apps, I would say there is no trade-off between privacy and health here. You can have both perfectly well. You have to use a variety of what is called the decentralized approach for designing such an app. So one of my fields of research is privacy by design and architecture. That's the approach I'm always promoting. You have to read this pyramid from top down. And it basically says privacy is not only about adding privacy by rules, how to use a software, or by adding technologies to software, to a product. But you have to design the whole product in a way that it is privacy friendly and that you think of privacy from the very beginning, from that time where you design the architecture of that system. And if you apply that to contact tracing with an app, I would like to briefly explain how this works and what we are talking about. Let me give you an example. Alice and Bob meet each other. And later it turns out that Bob is infected. And he can use the app to warn Alice about it. So when they met, pseudonymous IDs were exchanged by Bluetooth if both are using the app in the background. That was at the time when they met. And when Bob later is diagnosed for COVID-19, he can use the app voluntarily if he wants to and tell all people he met that he was infected. And how does he do that? At this time, and this is why it is called the decentralized approach, at this time only, we need a server where Bob... actually tells the server all pseudonyms he was using or the app was using when he was moving around and then at the second stage Alice can query the server and learns oh there is a pseudonym which belongs to a person infected and I know that pseudonym so I have met this person and so I will stay at home. And to be very clear, such an app does not protect Alice and Bob. So Bob is infected and Alice might be infected or not. But it protects people Alice does not meet because she was warned and stays at home. And I think it's important to realize the more we roll back the lockdown now, the more useful is the app. So now we might be able to... remember all the people we meet we have close contact with and so on but in the future we meet more people again and then this might be a useful tool to use. So and the second picture to the right is from Wikipedia and it should stress that COVID-19 is a disease where the infected people are contagious before having symptoms. That's very important to realize. And that's why we need contact tracing, which can be done manually, of course, but which can also be done using an app. And I was involved, as I mentioned, in the development of the Stop Corona app. It's developed by the Austrian Red Cross. So there are close ties to Austrian government, and they are in the crisis meeting of the government, of course. as Niki Popper is. But it's an independent effort by an NGO and not by the government itself. And it was one of the first endeavors in this regard. The development started already in February. And from the beginning, you have to imagine there was not the discussion we are already having. Everyone seems to be involved nowadays. which is a good thing, but it was not that at that time. So there was no centralized versus decentralized architecture discussion and so on. But the Austrian Red Cross hired Accenture to implement the app and they, from the beginning, designed a decentralized approach. They still use a server for the so-called digital handshake. So the first step I've shown you. but it's still a decentralized architecture. And the app basically operates as a contact diary, a pseudonymized contact diary, as I just showed you before. So I don't want to get into much detail on the app itself. I would rather want to tell you something about the process behind. And key to all that, key to promoting the app is trust. So there are also discussions on making the app mandatory. But in my view, this is pointless because it's practically, regardless of the law and everything, but it's practically impossible to make the app mandatory for several reasons. And it's key that people... decide to use such an app if it wants to become successful and for that it's key that people trust in such an app and how did we try to achieve trust so we joined this development in mid-march and informally from the beginning we shared information on this development with civil society in Austria with the data protection community that means with NGOs with researchers and also with other experts from the beginning and we gathered their qualified input and improved the app accordingly and we did a mandatory data protection impact assessment a thorough more than 100 pages document and endeavor it's not just the document it's also the process behind involving the developers and the people responsible and we published the report in a quite uncommon step uncommon move we published the report on the data protection impact assessment and in another stage we disclosed the source code to some researchers and some experts of the NGO community. And they voluntarily made a technical and legal review. And this review found 25 recommendations. And finally, so it's these three NGOs and institutions, Epicenter Works, Neub, and SBA research. And you can read the names of the people involved here. And this was an excellent report they provided with 25 recommendations. And we immediately implemented almost all recommendations they had. We are still about to implement the last ones, the final ones. We're almost done. Or I think maybe already done with all of them. And I think that was a very important endeavor to show trust and transparency that we really hook up these recommendations. And the funny thing from my perspective is, of course, that a lot of that recommendations we also had before internally, but not only when they were now publicly published in this report. the Red Cross or the developers took them up and actually implemented them. So I think this story is key to what I wanted to tell you now, that establishing trust by transparency and involving civil society and experts is very important and was very successful in this case, but you really have to take it up. what is discussed and what is suggested and otherwise just a pro forma thing cannot help here. Yeah and the final step was that we published the source code and now the app is open source and now let me come back to a more general discussion so I cannot go into detail on everything. But there are, of course, international guidelines have been published by the European Data Protection Boards and also an excellent piece by the Chaos Computer Club. I can really recommend. So 10 touchstones on how to implement contact tracing apps. And most importantly, European researchers gathered. There is a longer story behind that. a movement started before and then the decentralized approach I already mentioned was then teamed up by these researchers here in their effort called DP3T and it didn't took long that Google and Apple announced that they will implement the functionality of contact tracing into Android and iOS directly. So if I come back to the Austrian app, we are not yet there. On iPhones, this automated handshake I described is not yet possible. So you need changes in the operating system that the app can run in background all the time and so on. So this is highly appreciated in my view. It's unprecedented. These two companies team up and they take up basically this DP3T decentralized approach. And they also published some more fundamental principles of their development. So there will be one app per country which can use that then. So they will collaborate with countries because you need that functionality in the operating system, but you also need an actual app which takes up the data and does all the management which is done by the health authorities. And they will strictly not use any location data and they will promote international interoperability. As I already mentioned in the beginning, this is really privacy by design in practice. Of course, not everything went perfect in that process. I cannot mention a lot of things because of time issues, but there is also discussion still about the centralized approach, but now Google and Apple support the decentralized approach. and the centralized approach a server-side component would be too complex. So I think I can skip that and come to my final learnings on the public I wanted to share with you. So there are many popular apps that track people on the app stores all over the world and people don't question them. And we developed one of the most privacy friendly and best scrutinized apps. And people question them, question it. And this is a good thing, of course. But it turned out to be very difficult to explain a privacy by design solution to the public. And this is a major learning for me I wanted to share with you. So clearly, it is difficult to understand why tracing and anonymity or pseudonymity is possible at the same time. It's not easy to understand. And you might need to be familiar with basic security concepts in order to understand that. But still, it's a good thing that people are skeptical and ask questions on privacy and data protection. But it's necessary to differentiate and to make educated decisions here. And either you read into it yourself or in the end you trust experts and civil society. And we found also some problems with technical terms. Many people found alarming. For instance, in their effort, Google and Apple used the word contact tracing. And then they found it necessary to replace that by exposure tracing. They used advertising just for... It's a technical term for spreading the pseudonymous IDs. Now they use the term broadcast. And also the term surveillance study, which in epidemiology is quite a common term, of course, raised a lot of skepticism in the general public. Well, I will skip this now. Is it really working? Bluetooth is difficult to use here. And there are still some issues to resolve. But I think I have to come to an end. And I just want to mention that I hope that the debate about the app raises generally more awareness about data protection, especially with regard to apps out there everybody is using and maybe even privacy by design solutions like client-side data storage and processing we are doing here is more spread also among the public. Thank you very much. Brilliant, Walter. Thank you very much. I think it's a hugely interesting talk. Obviously, as you said, very controversial technology development, but at the same time, one... where many lessons can be learned. And thank you also for your talk, because there were many questions asked, and I think you answered several of them already. There was a question by Edward Lee, which was answered. Jeff Kramer had a question, which I think was at least partially answered. I may come back to you, Jeff, but I would like to give the floor to Enrico Nardelli, because he had a question already beforehand. in Edward's talk. So Enrico, if you like. Yes. I think, yes, we can hear you. Please go ahead. Yeah. OK, so thank you. My name is Enrico Nardelli, University of Roma, and the current president of Informatics Euro. I would like to point out that privacy is full. of small details that can make a lot of difference and I got the impression from the presentation that it is assumed somehow that decentralized solutions to contact tracing are exempt from defect. Maybe I'm wrong and I would like to stress the the fact that there are a number of papers pointing out that even decentralized solutions like dp3t or the google and apple solution give away privacy and there is a very nice analysis done in france which is on the site risk trassage and the link in the question and there is also very more technical analysis done by a cryptographer, which is French by origin, but he is at EPFL, which discusses actually the various solutions, centralized and decentralized, and shows that both of them give away some privacy in different ways, but both of them give away privacy. So we need to be very careful. on this issue and indeed ACM Europe TCP Technology Policy Council of which I am part of we issued a statement advising that all solutions have some problem any solution has some problem and so decision makers should take into account effectiveness of solution against the risks, which is, I think, something that we as a digital humanist should be very, we should consider very, very, very carefully because, you know, with digital, once the door is open, digital data are away. And there are many subtle ways of using that. digital data. Thank you very much Enrico for that intervention. I think that's a very important point. I have to admit that even myself now, I myself in the end had the impression that due to a lot of things I had to skip for timing reasons, the presentation was too positive on contact tracing with apps in general because as you mentioned regardless of what approach you are following you can make a lot of mistakes and you have to implement it in a very good way and know what you are doing and transparency helps a lot on that as well so not only publishing the source code but also really having people who do and scrutinize the code actually and do an analysis. And yes, so my point is that you decide conceptually for the better architecture. I'm quite myself, I'm quite clear on that and I still are. But then you have a lot to do to implement it correctly and in the best way. And of course, it's not perfect and it's not black and white. Thank you. Thank you, Walter. I take two more questions, the one by Jeff and one by George, because I believe the others can probably be answered in line in the question and answers box, Walter. So I would take Jeff Kramer next. Jeff, are you with us? Yes. Can you hear me? Yes, very well. Thank you. Go ahead. I'll ask you a short question, please. Sure. I actually completely agree with Enrico. As people may know, in the UK, we're involved in actually what's called decentralized design, partly also because that provides you with the data that you need for modeling for all of the virus and for detecting clusters, which is actually not possible with the decentralized. But with a point I actually want to make, rather than get into that argument, is that I think that people and the public are more prepared to accept that companies seem to be more invasive in the way that they attack privacy. Whereas when it comes to governments adopting these, they are far more careful and expect the governments to behave in a far better approach than they do from companies. And I think... the emphasis on transparency and the publication open source and so on is crucial as well i think as independent evaluation and argument i think one of the things that we need to try to institute are various organizations such as the academies who are independent of the actual creation of these apps and they should be evaluating and commenting and criticizing in order to create some basis on which the public can balance between the benefit that they gain and the risks to their own privacy. Thank you. I can only stress again that this is exactly what happened. So these three institutions here are very independent and very critical. Also admit that I'm a member of Epicenter Works, for instance, because I just find very good what they are doing. But we separated concerns very well here and I was not involved at all in the review they conducted. And this is exactly the point. Independent institutions who are not even paid for doing that or paid by the public. So please donate to these institutions. especially the NGOs, they independently scrutinized and reviewed. And that's key. Thank you. Thank you, Walter. Final question very quickly by George. George, you have to unmute yourself. Yes, you are. Go ahead. Yes, I'm here. There's also an issue with the effectiveness of the particular mode of contact tracing in the absence of massive testing. There are now studies that show that in the absence of massive testing and given the fact that 50% of all potential people that could transmit the virus are asymptomatic, the value added of mobile app contact tracing becomes marginal compared to whatever. concerns that might be on the privacy or transparency side. Yes, I can only agree. Testing is key. The Austrian app, there is also an option. Just you're checking symptoms and then you can even spread already a warning. It is a distinct warning. It says that you're not tested, but you're only having symptoms. And there was also the question about misuse, of course, I understand that. And we just record, so by another person I read on the question and answers panel, and we record the phone number of anyone who is reporting that he's infected or has symptoms. So not in the stage of tracing, but in the reporting. and it's stored for 30 days to tackle any misuse. But of course, that's not a very strong measure. That's a measure where we strike a balance between privacy and misuse protection. Walter, thank you so much. My feeling is this topic could be the topic of a separate workshop easily. And probably it should be, because you also talked about many things that we need to change in the future, including, for example, informing people about what informatics can do. We are quite, let's say, we have many tools at our hands, including privacy by design, and people don't know about it. So we need to spread the word. Thank you again.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.744,
+      "text": "So we're coming now to the third session. I think we have seen that informatics can offer a set of tools and a rich set of methodologies and methods to really to manage research and to manage the crisis. In the second, in the third part, we are coming now to societal issues and to critical issues. And I would like to hand over to Erich Prem, who will moderate it."
+    },
+    {
+      "start": 27.744,
+      "end": 54.832,
+      "text": "Erich has a close relationship with the University of Technology of Vienna, and he's one of the few guys I know, I think he's the only one I know, who has two PhDs, one in computer science and one in philosophy. So he is really well suited to moderate this third session. Erich, the floor is yours. Many thanks for that, Hannes. Thanks for the kind introduction."
+    },
+    {
+      "start": 54.832,
+      "end": 84.528,
+      "text": "I think in the dialectical setup of this workshop, from the more positive aspects of informatics, we are now shifting to some of the challenges. And these challenges include privacy, security, and of course, societal questions. And I think it's fair to say the topics which we are going to talk about in this session, they have received a lot of interest, both in Austria and internationally."
+    },
+    {
+      "start": 84.528,
+      "end": 111.632,
+      "text": "And our first topic that we are going to talk about is probably one that has been discussed both from, let's say, with very rational arguments and with a lot of emotion at the same time. It's the question of privacy, designing systems accordingly in the case of Corona apps. But it has also been a hugely political discussion."
+    },
+    {
+      "start": 111.632,
+      "end": 123.872,
+      "text": "when you think about what has happened at EU level and what has happened at member state level. So our first speaker, and it's really an honor to have him with us."
+    },
+    {
+      "start": 123.872,
+      "end": 148.672,
+      "text": "now is Walter Hötzendorfer from the Research Institute Digital Human Rights Center. Walter is not only an expert in privacy, he is a frequent advisor on the European data protection regulation, but most importantly he worked with the Austrian Red Cross."
+    },
+    {
+      "start": 148.672,
+      "end": 178.112,
+      "text": "um in order to develop the stop corona app which is our version our national version of the corona tracing app and i'm sure walter will have all the details and i'm looking forward to walter's presentation um walter the screen is yours thank you thank you for this kind invitation uh to this event and uh let me share my"
+    },
+    {
+      "start": 178.112,
+      "end": 200.656,
+      "text": "slides with you so today i have prepared a few thoughts around contact tracing apps for you not only the austrian app i was able to participate but also some general learnings out of it and you can also think of it as the story"
+    },
+    {
+      "start": 200.656,
+      "end": 229.84,
+      "text": "how it happened that Google and Facebook work together now to implement the privacy and privacy by design concept which was developed by European researchers. So as Erich already mentioned I'm with the Research Institute Digital Human Rights Center in Vienna and I've been advising the Austrian Red Cross in data protection since several years because we are a research center"
+    },
+    {
+      "start": 229.84,
+      "end": 259.024,
+      "text": "But to cross-finance our research, to co-finance our research, we are also doing consulting on selected clients. And one of them is the Austrian Red Cross. And when the Red Cross came up with the prototype of a Stop Corona app, it turned out that we were quite in a good position to cover data protection and privacy issues of this app because of our interdisciplinary background."
+    },
+    {
+      "start": 259.024,
+      "end": 286.464,
+      "text": "So I have a background in IT as well as in law. And also because of our close relationship to civil society in Austria, to NGOs like Epicentral Works, Neub, the CCC, and so on. And also to the research community, of course. And of course, it's not just me at the Research Institute working on that. It's a huge team behind, as with many of you."
+    },
+    {
+      "start": 286.464,
+      "end": 314.688,
+      "text": "I can imagine. So briefly, I want to give a little chronology on tackling the pandemic with IT. But more, I want to speak not only about the Austrian app, but on the involvement of civil society, on the public, and some general reflection. So in the beginning,"
+    },
+    {
+      "start": 314.688,
+      "end": 343.456,
+      "text": "I would say in early March, we realized we have a pandemic. So many people thought, let's use technology to tackle it. What could possibly go wrong? So let's have a look. The first debate that hit me and that hit Austria, it was in mid-March."
+    },
+    {
+      "start": 343.456,
+      "end": 371.984,
+      "text": "It was about the use of anonymized location data from mobile phones. And I happened to be involved in a research project some years ago called AGETOR, where we actually did research on exactly that, on using location data from mobile phones for different applications. And what I learned from that is that such data are..."
+    },
+    {
+      "start": 371.984,
+      "end": 396.432,
+      "text": "very, very difficult to anonymize. I would say almost impossible to anonymize while keeping anything useful there. So you have to be very skeptical if someone claims that they only use anonymized location data from mobile phones."
+    },
+    {
+      "start": 396.72,
+      "end": 425.232,
+      "text": "It is still used in Austria on an aggregated level, for instance, for giving estimates on how many people are using public transport, and this went down by 50% or something like that. So to tackle the pandemic with technology, we also learned about other things. I think we all heard that Israel wanted to tackle the pandemic with anti-terrorism tools."
+    },
+    {
+      "start": 425.232,
+      "end": 453.472,
+      "text": "Yeah, partly at least I didn't follow it too closely. But about a month later, we had also this headline. So at least partly these things were stopped already in Israel. And I think I can say we reached a situation where most people realized that location data is not accurate enough."
+    },
+    {
+      "start": 453.472,
+      "end": 482.96,
+      "text": "and hence not useful for contact tracing. So the thing I'm talking about today, so we use some other data and not location data from mobile phones to do contact tracing. And even more, we quickly realized that we are in a quite unique situation because there is a single best concept for implementing app-based contact tracing, which happens to be at the same time"
+    },
+    {
+      "start": 482.96,
+      "end": 510.08,
+      "text": "the most privacy-friendly concept you can imagine. So in the case of contact tracing smartphone apps, I would say there is no trade-off between privacy and health here. You can have both perfectly well. You have to use a variety of what is called the decentralized approach for designing such an app."
+    },
+    {
+      "start": 510.08,
+      "end": 537.264,
+      "text": "So one of my fields of research is privacy by design and architecture. That's the approach I'm always promoting. You have to read this pyramid from top down. And it basically says privacy is not only about adding privacy by rules, how to use a software, or by adding technologies to software, to a product."
+    },
+    {
+      "start": 537.264,
+      "end": 566.208,
+      "text": "But you have to design the whole product in a way that it is privacy friendly and that you think of privacy from the very beginning, from that time where you design the architecture of that system. And if you apply that to contact tracing with an app, I would like to briefly explain how this works and what we are talking about."
+    },
+    {
+      "start": 566.208,
+      "end": 594.48,
+      "text": "Let me give you an example. Alice and Bob meet each other. And later it turns out that Bob is infected. And he can use the app to warn Alice about it. So when they met, pseudonymous IDs were exchanged by Bluetooth if both are using the app in the background. That was at the time when they met."
+    },
+    {
+      "start": 594.48,
+      "end": 623.888,
+      "text": "And when Bob later is diagnosed for COVID-19, he can use the app voluntarily if he wants to and tell all people he met that he was infected. And how does he do that? At this time, and this is why it is called the decentralized approach, at this time only, we need a server where Bob..."
+    },
+    {
+      "start": 623.888,
+      "end": 653.776,
+      "text": "actually tells the server all pseudonyms he was using or the app was using when he was moving around and then at the second stage Alice can query the server and learns oh there is a pseudonym which belongs to a person infected and I know that pseudonym so I have met this person and so I will stay at home."
+    },
+    {
+      "start": 653.776,
+      "end": 683.264,
+      "text": "And to be very clear, such an app does not protect Alice and Bob. So Bob is infected and Alice might be infected or not. But it protects people Alice does not meet because she was warned and stays at home. And I think it's important to realize the more we roll back the lockdown now, the more useful is the app. So now we might be able to..."
+    },
+    {
+      "start": 683.264,
+      "end": 713.184,
+      "text": "remember all the people we meet we have close contact with and so on but in the future we meet more people again and then this might be a useful tool to use. So and the second picture to the right is from Wikipedia and it should stress that COVID-19 is a disease where the infected people are contagious before having symptoms. That's very important to realize."
+    },
+    {
+      "start": 713.184,
+      "end": 742.224,
+      "text": "And that's why we need contact tracing, which can be done manually, of course, but which can also be done using an app. And I was involved, as I mentioned, in the development of the Stop Corona app. It's developed by the Austrian Red Cross. So there are close ties to Austrian government, and they are in the crisis meeting of the government, of course."
+    },
+    {
+      "start": 742.224,
+      "end": 769.44,
+      "text": "as Niki Popper is. But it's an independent effort by an NGO and not by the government itself. And it was one of the first endeavors in this regard. The development started already in February. And from the beginning, you have to imagine there was not the discussion we are already having. Everyone seems to be involved nowadays."
+    },
+    {
+      "start": 769.44,
+      "end": 798.944,
+      "text": "which is a good thing, but it was not that at that time. So there was no centralized versus decentralized architecture discussion and so on. But the Austrian Red Cross hired Accenture to implement the app and they, from the beginning, designed a decentralized approach. They still use a server for the so-called digital handshake. So the first step I've shown you."
+    },
+    {
+      "start": 798.944,
+      "end": 828.464,
+      "text": "but it's still a decentralized architecture. And the app basically operates as a contact diary, a pseudonymized contact diary, as I just showed you before. So I don't want to get into much detail on the app itself. I would rather want to tell you something about the process behind."
+    },
+    {
+      "start": 828.528,
+      "end": 857.472,
+      "text": "And key to all that, key to promoting the app is trust. So there are also discussions on making the app mandatory. But in my view, this is pointless because it's practically, regardless of the law and everything, but it's practically impossible to make the app mandatory for several reasons. And it's key that people..."
+    },
+    {
+      "start": 857.472,
+      "end": 883.952,
+      "text": "decide to use such an app if it wants to become successful and for that it's key that people trust in such an app and how did we try to achieve trust so we joined this development in mid-march and informally from the beginning we shared information on this development"
+    },
+    {
+      "start": 883.952,
+      "end": 908.432,
+      "text": "with civil society in Austria with the data protection community that means with NGOs with researchers and also with other experts from the beginning and we gathered their qualified input and improved the app accordingly and we did a mandatory data protection impact assessment a thorough"
+    },
+    {
+      "start": 908.432,
+      "end": 938.224,
+      "text": "more than 100 pages document and endeavor it's not just the document it's also the process behind involving the developers and the people responsible and we published the report in a quite uncommon step uncommon move we published the report on the data protection impact assessment and in another stage we disclosed the source code"
+    },
+    {
+      "start": 938.224,
+      "end": 967.888,
+      "text": "to some researchers and some experts of the NGO community. And they voluntarily made a technical and legal review. And this review found 25 recommendations. And finally, so it's these three NGOs and institutions, Epicenter Works, Neub,"
+    },
+    {
+      "start": 967.888,
+      "end": 997.04,
+      "text": "and SBA research. And you can read the names of the people involved here. And this was an excellent report they provided with 25 recommendations. And we immediately implemented almost all recommendations they had. We are still about to implement the last ones, the final ones. We're almost done. Or I think maybe already done with all of them."
+    },
+    {
+      "start": 997.296,
+      "end": 1023.808,
+      "text": "And I think that was a very important endeavor to show trust and transparency that we really hook up these recommendations. And the funny thing from my perspective is, of course, that a lot of that recommendations we also had before internally, but not only when they were now publicly published in this report."
+    },
+    {
+      "start": 1023.808,
+      "end": 1049.872,
+      "text": "the Red Cross or the developers took them up and actually implemented them. So I think this story is key to what I wanted to tell you now, that establishing trust by transparency and involving civil society and experts is very important and was very successful in this case, but you really have to take it up."
+    },
+    {
+      "start": 1049.872,
+      "end": 1072.416,
+      "text": "what is discussed and what is suggested and otherwise just a pro forma thing cannot help here. Yeah and the final step was that we published the source code and now the app is open source and now let me come back to a more general discussion so I cannot go into detail on everything."
+    },
+    {
+      "start": 1072.416,
+      "end": 1100.576,
+      "text": "But there are, of course, international guidelines have been published by the European Data Protection Boards and also an excellent piece by the Chaos Computer Club. I can really recommend. So 10 touchstones on how to implement contact tracing apps. And most importantly, European researchers gathered. There is a longer story behind that."
+    },
+    {
+      "start": 1100.576,
+      "end": 1126.16,
+      "text": "a movement started before and then the decentralized approach I already mentioned was then teamed up by these researchers here in their effort called DP3T and it didn't took long that Google and Apple announced"
+    },
+    {
+      "start": 1126.16,
+      "end": 1152.752,
+      "text": "that they will implement the functionality of contact tracing into Android and iOS directly. So if I come back to the Austrian app, we are not yet there. On iPhones, this automated handshake I described is not yet possible. So you need changes in the operating system that the app can"
+    },
+    {
+      "start": 1152.752,
+      "end": 1182.24,
+      "text": "run in background all the time and so on. So this is highly appreciated in my view. It's unprecedented. These two companies team up and they take up basically this DP3T decentralized approach. And they also published some more fundamental principles of their development. So there will be one app per country which can use that then."
+    },
+    {
+      "start": 1182.24,
+      "end": 1211.28,
+      "text": "So they will collaborate with countries because you need that functionality in the operating system, but you also need an actual app which takes up the data and does all the management which is done by the health authorities. And they will strictly not use any location data and they will promote international interoperability."
+    },
+    {
+      "start": 1211.28,
+      "end": 1237.52,
+      "text": "As I already mentioned in the beginning, this is really privacy by design in practice. Of course, not everything went perfect in that process. I cannot mention a lot of things because of time issues, but there is also discussion still about the centralized approach, but now Google and Apple support the decentralized approach."
+    },
+    {
+      "start": 1237.52,
+      "end": 1263.088,
+      "text": "and the centralized approach a server-side component would be too complex. So I think I can skip that and come to my final learnings on the public I wanted to share with you. So there are many popular apps that track people on the app stores all over the world and people don't question them."
+    },
+    {
+      "start": 1263.088,
+      "end": 1293.056,
+      "text": "And we developed one of the most privacy friendly and best scrutinized apps. And people question them, question it. And this is a good thing, of course. But it turned out to be very difficult to explain a privacy by design solution to the public. And this is a major learning for me I wanted to share with you. So clearly, it is difficult to understand why tracing and anonymity or pseudonymity is possible at the same time. It's not easy to understand."
+    },
+    {
+      "start": 1293.056,
+      "end": 1315.968,
+      "text": "And you might need to be familiar with basic security concepts in order to understand that. But still, it's a good thing that people are skeptical and ask questions on privacy and data protection. But it's necessary to differentiate and to make educated decisions here."
+    },
+    {
+      "start": 1315.968,
+      "end": 1345.28,
+      "text": "And either you read into it yourself or in the end you trust experts and civil society. And we found also some problems with technical terms. Many people found alarming. For instance, in their effort, Google and Apple used the word contact tracing. And then they found it necessary to replace that by exposure tracing. They used advertising just for..."
+    },
+    {
+      "start": 1345.28,
+      "end": 1371.824,
+      "text": "It's a technical term for spreading the pseudonymous IDs. Now they use the term broadcast. And also the term surveillance study, which in epidemiology is quite a common term, of course, raised a lot of skepticism in the general public. Well, I will skip this now. Is it really working? Bluetooth is difficult to use here."
+    },
+    {
+      "start": 1371.824,
+      "end": 1398.176,
+      "text": "And there are still some issues to resolve. But I think I have to come to an end. And I just want to mention that I hope that the debate about the app raises generally more awareness about data protection, especially with regard to apps out there everybody is using and maybe even"
+    },
+    {
+      "start": 1398.176,
+      "end": 1422.784,
+      "text": "privacy by design solutions like client-side data storage and processing we are doing here is more spread also among the public. Thank you very much. Brilliant, Walter. Thank you very much. I think it's a hugely interesting talk. Obviously, as you said, very controversial technology development, but at the same time, one..."
+    },
+    {
+      "start": 1422.784,
+      "end": 1451.248,
+      "text": "where many lessons can be learned. And thank you also for your talk, because there were many questions asked, and I think you answered several of them already. There was a question by Edward Lee, which was answered. Jeff Kramer had a question, which I think was at least partially answered. I may come back to you, Jeff, but I would like to give the floor to Enrico Nardelli, because he had a question already beforehand."
+    },
+    {
+      "start": 1451.248,
+      "end": 1477.056,
+      "text": "in Edward's talk. So Enrico, if you like. Yes. I think, yes, we can hear you. Please go ahead. Yeah. OK, so thank you. My name is Enrico Nardelli, University of Roma, and the current president of Informatics Euro. I would like to point out that privacy is full."
+    },
+    {
+      "start": 1477.056,
+      "end": 1501.248,
+      "text": "of small details that can make a lot of difference and I got the impression from the presentation that it is assumed somehow that decentralized solutions to contact tracing are exempt from defect. Maybe I'm wrong and I would like to stress the the fact that"
+    },
+    {
+      "start": 1501.248,
+      "end": 1531.232,
+      "text": "there are a number of papers pointing out that even decentralized solutions like dp3t or the google and apple solution give away privacy and there is a very nice analysis done in france which is on the site risk trassage and the link in the question and there is also very more technical analysis"
+    },
+    {
+      "start": 1531.232,
+      "end": 1559.68,
+      "text": "done by a cryptographer, which is French by origin, but he is at EPFL, which discusses actually the various solutions, centralized and decentralized, and shows that both of them give away some privacy in different ways, but both of them give away privacy. So we need to be very careful."
+    },
+    {
+      "start": 1559.68,
+      "end": 1582.816,
+      "text": "on this issue and indeed ACM Europe TCP Technology Policy Council of which I am part of we issued a statement advising that all solutions have some problem any solution has some problem and so decision makers"
+    },
+    {
+      "start": 1582.816,
+      "end": 1612.432,
+      "text": "should take into account effectiveness of solution against the risks, which is, I think, something that we as a digital humanist should be very, we should consider very, very, very carefully because, you know, with digital, once the door is open, digital data are away. And there are many subtle ways of using that."
+    },
+    {
+      "start": 1612.432,
+      "end": 1637.648,
+      "text": "digital data. Thank you very much Enrico for that intervention. I think that's a very important point. I have to admit that even myself now, I myself in the end had the impression that due to a lot of things I had to skip for timing reasons, the presentation was too positive on"
+    },
+    {
+      "start": 1637.648,
+      "end": 1667.456,
+      "text": "contact tracing with apps in general because as you mentioned regardless of what approach you are following you can make a lot of mistakes and you have to implement it in a very good way and know what you are doing and transparency helps a lot on that as well so not only publishing the source code but also really having people who"
+    },
+    {
+      "start": 1667.456,
+      "end": 1694.8,
+      "text": "do and scrutinize the code actually and do an analysis. And yes, so my point is that you decide conceptually for the better architecture. I'm quite myself, I'm quite clear on that and I still are. But then you have a lot to do to implement it correctly and in the best way."
+    },
+    {
+      "start": 1694.8,
+      "end": 1722.848,
+      "text": "And of course, it's not perfect and it's not black and white. Thank you. Thank you, Walter. I take two more questions, the one by Jeff and one by George, because I believe the others can probably be answered in line in the question and answers box, Walter. So I would take Jeff Kramer next. Jeff, are you with us? Yes. Can you hear me? Yes, very well. Thank you. Go ahead. I'll ask you a short question, please."
+    },
+    {
+      "start": 1722.848,
+      "end": 1751.984,
+      "text": "Sure. I actually completely agree with Enrico. As people may know, in the UK, we're involved in actually what's called decentralized design, partly also because that provides you with the data that you need for modeling for all of the virus and for detecting clusters, which is actually not possible with the decentralized. But with a point I actually want to make, rather than get into that argument,"
+    },
+    {
+      "start": 1751.984,
+      "end": 1775.376,
+      "text": "is that I think that people and the public are more prepared to accept that companies seem to be more invasive in the way that they attack privacy. Whereas when it comes to governments adopting these, they are far more careful and expect the governments to behave in a far better approach than they do from companies. And I think..."
+    },
+    {
+      "start": 1775.376,
+      "end": 1803.296,
+      "text": "the emphasis on transparency and the publication open source and so on is crucial as well i think as independent evaluation and argument i think one of the things that we need to try to institute are various organizations such as the academies who are independent of the actual creation of these apps and they should be evaluating and commenting and criticizing in order to create"
+    },
+    {
+      "start": 1803.296,
+      "end": 1831.408,
+      "text": "some basis on which the public can balance between the benefit that they gain and the risks to their own privacy. Thank you. I can only stress again that this is exactly what happened. So these three institutions here are very independent and very critical."
+    },
+    {
+      "start": 1831.408,
+      "end": 1861.152,
+      "text": "Also admit that I'm a member of Epicenter Works, for instance, because I just find very good what they are doing. But we separated concerns very well here and I was not involved at all in the review they conducted. And this is exactly the point. Independent institutions who are not even paid for doing that or paid by the public. So please donate to these institutions."
+    },
+    {
+      "start": 1861.152,
+      "end": 1888.72,
+      "text": "especially the NGOs, they independently scrutinized and reviewed. And that's key. Thank you. Thank you, Walter. Final question very quickly by George. George, you have to unmute yourself. Yes, you are. Go ahead. Yes, I'm here. There's also an issue with the effectiveness of the particular mode of contact tracing in the absence of massive testing."
+    },
+    {
+      "start": 1888.784,
+      "end": 1916.784,
+      "text": "There are now studies that show that in the absence of massive testing and given the fact that 50% of all potential people that could transmit the virus are asymptomatic, the value added of mobile app contact tracing becomes marginal compared to whatever."
+    },
+    {
+      "start": 1916.784,
+      "end": 1943.744,
+      "text": "concerns that might be on the privacy or transparency side. Yes, I can only agree. Testing is key. The Austrian app, there is also an option. Just you're checking symptoms and then you can even spread already a warning. It is a distinct warning. It says that you're not tested, but you're only having symptoms."
+    },
+    {
+      "start": 1943.744,
+      "end": 1969.632,
+      "text": "And there was also the question about misuse, of course, I understand that. And we just record, so by another person I read on the question and answers panel, and we record the phone number of anyone who is reporting that he's infected or has symptoms. So not in the stage of tracing, but in the reporting."
+    },
+    {
+      "start": 1969.632,
+      "end": 1992.864,
+      "text": "and it's stored for 30 days to tackle any misuse. But of course, that's not a very strong measure. That's a measure where we strike a balance between privacy and misuse protection. Walter, thank you so much. My feeling is this topic could be the topic of a separate workshop easily."
+    },
+    {
+      "start": 1992.864,
+      "end": 2015.376,
+      "text": "And probably it should be, because you also talked about many things that we need to change in the future, including, for example, informing people about what informatics can do. We are quite, let's say, we have many tools at our hands, including privacy by design, and people don't know about it. So we need to spread the word. Thank you again."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

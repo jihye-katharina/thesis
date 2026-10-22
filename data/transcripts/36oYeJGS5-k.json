@@ -1,0 +1,726 @@
+{
+  "video_id": "36oYeJGS5-k",
+  "source": "whisper",
+  "language": "en",
+  "text": "I'm welcoming everybody to this event of today, to this talk of today where we look at generative AI and the impact on social media, not on the workplace, but on social media. And I think this is probably one of the hottest topics of today because it has an impact on democracy, on communication, and so on. And I'm really happy to welcome Gordon Birch. He's from Boston University, and he will give the lecture of today. The moderator will be Enrico Nardelli, who will also introduce Gordon afterwards. The choreography is well known, talk for 30 minutes, 30 minutes Q&A, moderated by Enrico. And at the end, we have again a piece of music, which is proposed by Gordon. I also especially welcome Enrico, who is the moderator of today, since I think it's one of the... He's moderating. I'm introducing him as a professor of informatics at the University of Rome, Dua Vergata. He's also the past president of Informatics Europe. Informatics Europe is the association of informatics university departments and research labs in Europe. I think it's already 160 members. More. More already. So Enrico, you can correct me afterwards. He's also a member of the ACM Europe Council and he's very active in introducing informatics to schools, something we spoke shortly before. So he's also coordinating the Italian project on Programma il Futuro, which is informatics in schools. He is also the director of the National Lab Informatics and Schools and his research is on informatics education and also the impact of computer science informatics on society. And in this area, he's also very active in dissemination activities where he's giving frequent speaks in the Italian and European public. Enrico, the floor is yours. Thanks, Hannes, for the very nice introduction and thanks to everybody for being here. So it is my pleasure to moderate today's lecture by Gordon Burch. Gordon is a professor of information systems and fellow of the Digital Business Institute. at the Boston University's Kestrom School of Business. His research examines the economics and societal consequences of online platform technologies and has been published in many leading journals supported by several corporate non-profit and government entities, including, I don't know if I'm allowed to say the names, but it's not publicity, Meta, Adobe and the National Science Foundation. Very interesting is that before entering academia, Gordon has worked as a hardware design engineer, IT systems auditor, and technology consultant. So he knows a few things about the world outside the ivory tower of academia. He has a PhD in business administration from Temple University, as well as an MBA in software engineering from the McMaster University. And the topic of this talk is a very fascinating one because it is about some unexpected consequences of generating AI for an online community, which is a topic on which I completely agree. In a book I've written in Italian a couple of years ago that was called The Informatics Revolution, I wrote a corollary of a very famous law by Douglas of Stutter about the time it requires to finish something and the law was named the law of social impact of digital technologies. And it goes like that. The social impact of digital technologies is always unexpected, even taking into account the law of social impact of digital technology. So this is something that. We forget, even we that are in this field, we forget. And the example that Gordon will present us today is one very good example. And it has sparked in my mind a reflection on how many other samples there will be in the future of the impact of this technology. So without further ado, Gordon, the floor is yours. Thank you, Enrico. And I appreciate the invitation to present, Thomas. Just give me one second and I will bring my slides up. Hopefully this is visible. OK, so our time is somewhat brief, so I'll try to be quick with this. This work is co-authored with another faculty member here, Dokyun Lee. His background is... computer science. So he actually largely works on building these tools. So that's an interesting collaboration for us. A lot of the research that we do together, he's building them. And then I'm thinking about what's that going to do to people's behavior. The third author on this piece is a PhD student here who's working towards their dissertation. And the work, as was described, is thinking about the impact that generative AI, specifically large language models, that they're having on online communities. And more broadly, we're thinking about this as a microcosm for how these technologies may affect people's interaction with other people. So we happen to have data on these online communities that can be quite granular, so we can get a sense of what happens to interpersonal interaction in these contexts and maybe start to think how might this generalize to other settings, like an organization, a formal organization, for example, like a company. The title slide kind of depicts the contrast we're thinking about here. You imagine you're working on a project involving some code, potentially, and you want to figure out how to solve a problem. Maybe there's a bug in your code, you don't know how to debug it, you don't know what's going wrong, and you think about what's the quickest way to solve this problem. In the past, You might have gone to Stack Overflow. Probably everybody here is familiar with Stack Overflow and Stack Exchange. Stack Overflow is the world's most popular online community for coding and technical languages, at least it used to be. And today, you may not do that. Something you might have done in the past, maybe today you would instead turn to your favorite large language model because things could be quite faster, like GitHub Copilot even or something like this. And our idea here is this is not just about code. This kind of dynamic can happen with lots of different activities that you might have engaged in where you may have gone to ask a person before somebody you work with, a teacher, et cetera. Maybe you turn to these tools instead. OK. So this work is based on a couple of companion papers that this talk is based on. In case you're curious, I'm just throwing up QR codes here so you can check these out. One was published in Communications of the ACM as an opinion piece. And then we had a follow on full paper that was published in Scientific Reports a few weeks ago that you can check out. So I think we're all well aware that large language models and various foundation models have taken off. They've been rapidly adopted around the world. By all accounts, ChatGPT is probably one of the most popular of these, was adapted more quickly than any other app in history by an order of magnitude. What are people using these tools for? Well, there's a lot of industry surveys about this that are suggesting that people use these for. Beyond coding and beyond writing emails and reference letters, using them for tasks like ideation. So creative oriented things, figuring out how to what to write about in the discussion section of your academic paper, for example, and getting ideas around that. Beyond debugging code, just doing general research on a topic. And there's a lot of other use cases here, but the reason I'm highlighting these three, which were flagged as big use cases in these industry surveys, is that they're all tasks where at one point in the past, you might have gone to talk to another person about these things, right? So brainstorming ideas, you may have done this in a group. Trying to debug your code, you might have asked somebody for help. researching a topic, you might do that collaboratively. And the point is, these are all key tasks for large language model use. And if you're doing this with a large language model, you may be less likely to be doing this with another person. Okay. So this is unsurprising, right? So LLMs now exhibit these amazing capabilities to produce code. They're doing so well on standardized tests. Basically, their performance on various benchmark tests We can debate a little bit about the accuracy of those metrics in terms of what it means for capability of these models, but they're performing at about the level of a smart high schooler. And if we believe things will continue to scale, which again is something we could debate, it's really fascinating slash scary where we'll be in the next few years. This is taken from a recent... a 165-page essay written by a former OpenAI employee, Leopold Aschenbrenner, who was talking about the economics and the scaling laws and everything we should expect in the next few years. And the point is, what we're seeing now is just the beginning, potentially, for the consequences of these things, okay? So if we believe there's going to be shifts in social dynamics, these may get amplified in the years to come as well. So this is important to understand. And I've given you an intuitive sense about where this substitution might be happening and why we're motivated with this paper, that these tools are really useful for content production, knowledge sharing. They may hallucinate a little bit, et cetera, but they're a really advanced, useful tool for these things. And if you look at the world's most heavily trafficked websites, according to SimilarWeb, I pulled this this morning, ChatGPT.com is now number 13 on that list. It's higher than TikTok. And it's kind of on par with some of the world's largest social media platforms, many of which are places people would have gone for information sharing, social connection, etc. OK, and we're basically asking the question, not only is this thing competing in terms of popularity, but are they actually possibly substitutes to some extent? And when and where is that going to happen? This happens, the concerns that we might have. Number one. The obvious is we know that LLMs can hallucinate. They sometimes make things up and maybe the information that you're getting out of them may not be of the highest quality compared to a human. Second, and I think more interestingly, which goes to the humanism component of this, right, like why this talk is happening in this venue, is that a decline in online community participation might reflect a broader decline in people connecting with peers, which could have lots of knock on consequences that could be undesirable from a social standpoint. Peer connection is really important in a lot of different settings beyond online communities for things like the first time you join a company. There's really recent work in economics showing robust evidence that peer interaction is super important for training, onboarding, knowledge acquisition and getting good at your job. If I'm not getting embedded with peers, I may be less likely to stick around. So organizational attachment could decline potentially. All of that stuff then feeds into possibly, you know, effects on career advancement. If I'm not connecting with people, social capital, we know is very important in organizations for people to move up in their job. And I'm giving examples that are specific to companies, but you can imagine there are similar consequences for other types of organizations where these dynamics could begin to emerge. If we think about an educational context, as I was having this conversation with Enrico yesterday, if I'm not connecting well with my teacher, that could harm learning outcomes and things, right? If I'm not connecting with peer students, I may have a harder time learning as well. So there's lots of implications beyond online communities. Okay, so our research questions. To what extent does information seeking broadly begin to decline? So this is sort of just the average effect for everybody in the community. How much do we see drop off in people trying to participate in these online knowledge communities? Then trying to get a little bit more nuanced about these things, we ask, where are those effects likely to be largest? And when we look at that question, we look at a few different sources of heterogeneity. So we're going to look at community characteristics. So we're going to compare Stack Overflow actually with alternative community context, which is Reddit developer communities. And I can explain a bit more about why we do that particular contrast later. We also look at the characteristics of the people who continue to participate in these communities after these tools become available. And basically what we're going to look at is any shifts we see in the average characteristics of people who participate. And it says something about who is leaving. Right. So who are the people that cease to participate as they exit? It's going to cause shifts in the characteristics of the users who stick around. And then lastly, we're going to think about other variation in the types of content that people produce in the community, actually. So we're going to look at the types of questions that people are asking, the characteristics of those questions, how they shift. And we're also going to look at basically, as I mentioned, the characteristics of the users themselves around like how new is a particular user or how established are they in the community? We do have some second-order analyses we do around the quality of the information that's being shared in the community. The general idea with this is that as certain people begin to exit, you may see this may do harm to the quality of information sharing because many of these models are crowdsourced models in these communities, and they depend on really broad participation for the right person with the right answer at the right time to be there to help you. And so we may have a hypothesis that the quality of the knowledge you get back when you seek it may decline and the community could unravel, essentially. We have some really preliminary results around that, I would say, that I can speak to towards the end, too. OK, so our primary context for this study is going to be Stack Overflow, which is one of the Stack Exchange communities. So Stack Exchange is a lot of different communities focused on many topics from history to art to law to physics and code. Stack Overflow is very focused on programming languages and technical tools. It was the first and biggest Stack Exchange community. It's been around since 2008. It has historically been one of the most popular online communities for Q&A around these topics. We are also going to, as I said, contrast this with Reddit developer communities. So Reddit in general is a very popular, highly trafficked website. true necessarily of the developer community specifically on Reddit, which are hosted in their own subreddits, but they are popular in and of their own right. And the reason that we are looking at Reddit as well is that there is an interesting contrast between Stack Overflow and Reddit developer communities, which has been documented in some of the CS literature. Essentially, the idea is that Reddit has much more social fabric. Stack Overflow, there's almost an ideology of not... stating or sharing any text that is not related to the question or the answer. It's not a venue for socializing. It's a venue for information transmission purely. That's kind of how Stack Overflow thinks about itself. Reddit is not so attached to that idea. And there's a lot more socialization and peer connection and sort of social bonding that happens on Reddit. And our hypothesis is that the LLMs are going to be better at substituting for information, not so great yet at replacing a social connection. And so Reddit may be buffered from these effects a little bit. And we're going to show that that's the case. So we identify subreddits that are specifically focused on the same topics like programming languages that show up on Stack Overflow. And we'll do kind of a paired analysis across the two contexts. So this is just descriptive from Stack Overflow's own data. To get a first idea of our initial question of what's happening to average participation in these communities, Stack Overflow themselves has... It can show if you go and look at their publicly available data on web traffic that it's been dropping off. Just for context, ChatGPT's initial release was the end of November of 2022. So the drop off was already happening a little bit prior to that. OK, so that's something we need to deal with in our research design to really get at the causal effect that ChatGPT has been having. I'll explain our research design for dealing with that in just one second. So we're not going to rely on Stack Overflow's own data because that's a single time series of web traffic. So what we do is we obtain web traffic statistics from SimilarWeb, which is a company that aggregates web traffic data for most of the websites, popular ones on the Internet. We get a panel of daily web traffic volumes from SimilarWeb for the 1,000 most popular websites on the Internet from all sources. For each website, we're going to have by day how many people visited or an estimate of that from similar web. Stackoverflow.com is in that top 1,000 consistently. That's our treated panel. We have a single time series that is our treatment group that we're saying is going to be affected by similar or by ChatGPT's release. We're going to use all of these other sort of 999 other websites traffic series to form a prediction of the counterfactual of what would have happened to Stack Overflow's traffic if ChatGPT had never come out. The assumption here is that all the 999 other websites that we're looking at weren't affected by ChatGPT's release, which by and large, that's probably true. So most websites on the Internet. I mean, you're thinking about what these websites are. It's things like Amazon and things like this, right? But it's not so clear why Chachapiti would affect their web traffic as much. That said, there's some assumptions behind that. So the method we use, the synthetic control using Lasso, you use the time series of daily web traffic for 999 control sites to try to generate an accurate prediction of the web traffic to StackOverflow.com. in the pre-period, so before November of 2022. If you can get a model that's pretty accurate at predicting from the control sites what's happening on the treated site in the pre-period, then the idea is you can take that predictive model forward into the post-period after ChatGPT is released, get predictions from it, and it'll tell you this is predicted traffic that would have happened from the model that doesn't know about ChatGPT, what it says would have happened, okay? And what we see is this. So on the left-hand side, In blue is the real data, so the real series of daily web traffic for stackoverflow.com. The red vertical line there just before January of 2023, that's the date of ChatGPT's release. And then the synthetic control in the red series is the forecast from our model based on pretreatment data of what would have happened if we had not had ChatGPT come out. And you're basically seeing a systematic. predicted drop or estimated drop in web traffic to Stack Overflow. How big is this effect? It's about 12% of their daily web traffic, which is pretty large, obviously, I would say. So there's a really big drop-off between 12% and 15% of web traffic after ChatGP comes out. So we know systematically fewer people are now going to the site. How is that translating to content production? So the way we're going to see what happens to the volume of questions that people are posting on StackOverflow.com as a result of ChatGPT coming out, we construct, again, panels. So these panels are based on topics. So the topics are based on tags that are associated with the questions on StackOverflow. Any given question might have like five or six tags tied to it. For example, Python, right, if it's a Python question. So for the top 50 most popular topics, we make a... panel a weekly panel in the period around chat gpt's release of the volume of questions being posted that include that tag okay we have this for a period of time bracketing chat gpt's actual release in november 2022 so an evenly balanced window on either side of that date and then what we do is for the same topic we go back one calendar year in the past and we pull weekly panel data so the volumes of questions for those topics from a year ago And we bring them forward in time, line them up with the current period, and we use those as our control group. So the idea is if question posting activity is highly seasonal and cyclical, then what happened a year ago should be a good counterfactual or a basis for a counterfactual for what's going on now when ChatGPT is coming out. And there's a few recent papers in sort of Journal of Public Economics and some prominent econ journals that have been using this methodology. We do some validation to make sure it makes sense in our context, but this is the idea. OK, is a visual depiction of exactly what we're doing here, bringing data from the past forward to serve as a control. And so we use this data to estimate a difference in differences regression. So the idea is for the current time period, how is the volume of posting activity per topic changing before and after ChatGPT comes out relative to what we saw happening in the same comparison periods in the past when ChatGPT never existed? And we use that to get an estimate of the drop off. and posting volumes. We can kind of get a sense about whether our method is working or is valid by looking at, so what these plots are depicting is on the X axis is how many weeks away are you from the calendar time period when ChatGPT came out? And then the vertical axis is the estimate of how much did you see changing week over week? Question posting activity on average across these 50 topics. from before to after ChatGPT came out compared to before to after the same calendar period a year ago when ChatGPT played no role. And going through this exercise and generating estimates, we see there's no systematic differences in the weeks leading up to the time period when ChatGP was released, but it starts to go significant and negative and drop off in the post period, suggesting we're estimating like a discontinuous drop off in question posting volumes as a result of ChatGPT. And how much less? It's again about a 15% decline. So it's well aligned with the web traffic effect. In terms of absolute volumes, there's a scale issue. Like some topics are way more popular than others, but on average, 150 fewer questions per topic in a given week. Okay, so now to the maybe more interesting things for you. Thinking about, okay, we know people are participating less, they're posting fewer questions. Now the question is, where is this happening more? Okay, because this may not be homogenous across all communities or all topics. So the first thing we're going to do is just using the Stack Overflow data, we're going to separate this out by topic. So for each of the top 50 topics, We're going to estimate that difference in differences regression per topic and get an estimate about how much has question posting volume dropped off for each of these topics one by one. And then we can plot this to get a sense about where the effects bigger versus smaller. And this is essentially what we see. So this plot is showing you on the X axis is basically how big of a negative effect did the release of ChatGPT have on a given topic. So on the Y axis, you see the different topic tags, popular topic tags that we looked at. When this the point estimates are the black dots, you have 95 percent confidence intervals around those are the whiskers. Further left with the dot suggests bigger negative effect on posting volumes around that topic. So the biggest drop offs in absolute volumes, which could be driven in part by the fact that these are the most popular topics to begin with. Although I will tell you, when we look at this in percentage or relative terms, you see a similar plot, essentially. Python, JavaScript, React.js, some of these more popular topics are dropping off more. And the red and purple bars that you see there, we have this hypothesis that this is happening because these are topics where there was more training data available to create this foundation model in the first place. And so these should be topics where the model is going to do better at answering questions. Right. Whereas answer the code it provides is less likely to generate an error or is more likely to actually solve your problem. So longer purple bar, that's a scaled number of the number of GitHub repositories that make use of that, that have that tag associated with them. OK, so longer purple bar, there's more GitHub repositories using Python, for example, as compared to the spring framework down at the bottom. The red bar is a scaled version of the number of subscribers to the subreddit dedicated to that topic on Reddit. So that developer community, bigger community, longer bar. Both of these are proxies for available training data, we're arguing. And we see sort of a rough correlation that effects are bigger around topics where there was more training data historically on those topics. OK, it's not perfectly correlated. We have some of these where it's low. But for example, if you look at R. which is the fifth one down. It has relatively little training data according to our two measures, but bear in mind there are lots of other contexts where you would get training data for R, like R bloggers and other things, where we're not capturing that with our proxies here. Okay. Now we're going to compare the estimates we got for topic posting volumes on Stack Overflow with a similar effect on Reddit. We get data from Reddit, from this website, subredditstats.com, where they track posting volumes on each subreddit every day. And we pull historical posting volumes for each of the subreddits that have a matched tag, like the topic, like the Python community, for example. We get a time series for that from Reddit. We just repeat our estimation the same way we did before. And what we see is absolutely nothing. Essentially... Using the exact same strategy, there's been no detectable drop off in participation in the same analogous Reddit communities relative to what we saw on Stack Overflow. Looking at this heterogeneously, so that's the average effect. There's nothing on average. And then when you look at specific communities, that's what the plot on the right is showing you. In yellow, that's the original estimates I already showed you of what happened on Stack Overflow. When I look at Reddit, the point estimates are in red. Some of them are missing because we could not identify. Either we could not identify an analogous subreddit for a developer community on that topic, or the data was missing from subreddit stats because there is some missingness on that site. But the point is, if we look at the Reddit effect estimates, all of them are null on a case by case basis as well. Essentially, like we don't see any variation. It's just this isn't really impacting Reddit participation in any way. And if we look at average effects, this is what the numbers look like. OK, so nine point two per topic. Right. Fewer questions are being posted per topic on average. And then remember, my earlier estimate was based on like the peak. At the end of the time series, it was about a 15 percent drop, but on average, it's a nine question drop. On Reddit, you see about, if anything, a 1.8 question or post increase, although it's not statistically significant. OK, this goes to our earlier point that we think social fabric plays a bigger role on Reddit, and that can be why it's not suffering as much as Stack Overflow has been. OK, so now we're going to say something about who are the users who are leaving. And the way we're going to operationalize this, the thing we're particularly interested in is how long have the users been around in the community? So the average tenure of the user that's posting stuff on Stack Overflow, how does it shift after ChatGPT comes up? We're using the same research design, but essentially our outcome variable becomes the age of the account of the user that's posting the question and how that's shifting over time. And this is essentially what we see. Our estimates show that there's a discontinuous increase in the average age of posting users. on the site after ChatGPT comes out. What does that imply? It means, the way to interpret this is, newer users are the ones exiting. So the people who continue to stick around are the older user accounts, which probably makes sense, right? The people that are not embedded in the community and haven't been coming as much, they're the first to exit, they have the lowest switching costs, okay? Why is that important? Because if we believe something similar is true about, say, somebody that's new to a company, if they're the first people to go to these tools and not talk to people, that's pretty bad. Right. As far as dynamics go, if I'm a new learner and I don't know a topic, I'm the first one to leave because I'm not embedded that bad. And I know I'm running short on time here, so I'm going to wrap this up. Looking at characteristics of the type of knowledge that's being sought, this is going to be a bit correlated with who is leaving and who's sticking around. But we do something really simple. We take questions and we look at the count of the number of big words that show up in the question. This is a proxy, a loose proxy for the complexity of the question or the sophistication of the question that's being asked. It's the number of words that have at least six letters. And if we throw this into a regression as our dependent variable, we see a similar shift that basically the questions that stick around are questions with more longer words. Questions that continue to be posted after ChatsVP releases are the more complicated ones, which is exactly what you would expect because, number one, LLMs are probably better at answering simple questions. That's where they're going to substitute the most. And also the users who are leaving to use the LLM are the people who are newer, more junior, and maybe have easier problems to solve. Okay. And then I won't speak about this too much because I'm less confident about how to interpret these results, but essentially our proxy for the quality of the content that people are posting. We have voting data on Stack Overflow, right? So when somebody posts a question and a question can be upvoted or downvoted, and it may even be voted negatively if people think it's a really bad question to be asking or it's an obvious question or something. The same is true of answers. So answers that people post, they get upvoted, they get downvoted. We use those votes on the answers that people receive, the selected answer, or sorry, not the selected answer, all the answers that people receive to say something about are the answers getting better or worse that people are getting. Now, the voting distribution is going to shift just as a function of people leaving the community. So if fewer people are voting, vote counts are going to tend towards zero. So rather than just looking at the raw count of votes that are happening. or the net, we're going to just basically create a binary indicator of was the net voting positive or negative. So if this variable equals a one, if on average or the net vote was negative for the answer that somebody posted. Conditional on the question, right? So across answers that a given question received, if post ChatGPT we see a systematic increase in the probability that there's a downvote of an answer, that's bad. And we get We do get some indication that answer quality is getting worse. Essentially, if we allow comparison across the users that are participating, we see a systematic rise in the probability that questions are getting or answers are getting downvoted. However, once we condition on the users that are answering, we don't see any effects. What does this mean? It means there is a drop in quality, but it's not because the users that are providing answers are doing a worse job. It's that the people who would have provided good answers have left the community. Yeah, but this is a dynamic estimate of what that looks like over time. This is why I'm not as confident about this result, because you start to see significant positive effects only like three months post. OK, so it takes a while for that to happen. So I'll stop there because I know I'm going long and we need to leave time for questions and Q&A. But I am happy to take your questions and looking forward to the discussion. Thanks. Thanks a lot, Gordon, for your. Very beautiful presentation. I'm waiting to see whether there is some hand raised. Ah, Moshe. Okay, so the floor is yours. Very, very, very interesting talk and sometimes very scary. And I think it fits with something I've been calling the friction hypothesis. And the friction hypothesis is that on one hand, we don't like friction. We always try to eliminate friction. At the same time, activity with friction at the end are more meaningful and more satisfying. So what you discover now, it's kind of the same thing that we are seeing with kids. Playing with other kids has friction. Staring at your phone has less friction. But of course, it is less meaningful. And now we have... You know, the evidence is mounting by the day that this is one reason we have the mental health crisis for teenagers. And it holds, on one hand, we try to avoid friction, but then it comes to bite us back. And this is kind of what you're describing here seems to me falling to the same pattern. You know, yeah, it's either to ask the GPT, but then you don't have, you are missing the interaction with other people. Yeah. I mean, I agree with that characterization. I think it's kind of in economic terms, I would think of this as kind of a market failure. So essentially, people are optimizing biopically for themselves, right? And they're not thinking about the bigger picture or the long term, right? Even for themselves, they're thinking short term for themselves. Even for themselves, we are very bad in doing things in the long term for ourselves. We're very good at short term optimization. We suck at long term optimization. Yeah, I agree with that. And what's the standard solution to that kind of market failure? Right. We think about you need some paternalism or government or something to oversee and prevent it from happening. I don't know what form that would take in our paper because we're business professors. We basically say, like, what does this mean for an organization like a company, a private private company? What should they do about this if they don't want their employees or if a school doesn't want their students to have these problems? We say something like this is going to happen if you do nothing. Right. Because these tools are out there and they're publicly available. So the point is to be active, proactive, integrate the tools purposefully in a way that facilitates good behavior. Yeah. So I think that's part of the main message from our paper. Thanks for your talk. My interpretation is a little bit different because it also shows when you compare Reddit with Stack Overflow that in the broader communication, the broader community, let's say in the social aspect, there is no decline. Which is also when you are focused on, let's say, a business impact and it's very, let's say, it's in the work environment and things like that, then there might happen something which has an impact on enterprises and things like that. But on the other side, in the, let's say, broader communication, at least your research doesn't show. any negative impact. The second one is a methodological question, because could there be some other event besides chat GPT, which could have something in this impact? Is it, it's very, let's say, reasonable that it's this event, but maybe something, can you exclude any other reason? No, so that's, yeah, like... That's a fair comment. It's possible that there was some other thing that changed in the environment that had this stark negative impact on Stack Overflow's participation activity. So the best I can say is that I'm not aware of what that would be, but that doesn't mean it doesn't exist. I don't know what I don't know, right? That's always a possibility. And to the first thing, to this community. I actually, I flipped that on its head. And what I say, yes, we find no effect in this other context where it's very social in nature. I think Moshe's point was a more broad one about certain types of technology, I think, may undermine, for example, social interaction among kids. Right. Phones are an alternative. I go in and sit in my bedroom to talk maybe on Messenger rather than going outside and interacting with them or something. This particular technology does not have that specific effect. I agree. And in fact, I would take it a step further and say an implication is to the extent you can, you need to embed and create opportunities for social fabric to arise somehow so that it can act as a buffer against these tools undermining. social dynamics in an organization. If I have an organization that doesn't have a good work culture where people are connected to each other and talking to each other around a water cooler or doing something else, that sets the stage for a really bad outcome. Like right now, post-COVID, everybody working from home and not talking to the new employee, that's a really bad situation where this could make it worse, essentially. That's how I would think about this. Francesco, you have a question? Thank you, Gordon, for the talk. Very interesting. By listening to you, I got this idea that we can even expect a positive effect of this phenomenon in the sense that apparently. For easy questions, let's say chat GPT and similar large language models and interactive system can help, let's say, the developer. But for complex questions, imagine that chat GPT cannot do much than, let's say, telling you basic things. So I would expect that the interactions in these social networks will converge to more complex problems. And maybe even the quality of the interactions can improve because you have this kind of filter that all these trivial topics are managed by the artificial intelligence agents. So do you share with me these positive, say, expectations on the future of these communities? So I share the, I agree that that's possible. Now, here's the thing. So Stack Overflow laid off over a quarter of its workforce not that long ago. So they're not doing better as a result of this. Part of the challenge is and they came about it, they went about it a little late. But it was this issue that I mentioned that if you do nothing as an organization, like a community manager or something, these tools exist and people will go use them. The problem is they're outside of your. locus of control they're outside of your oversight which means that they're leaving the community to go use those tools and maybe they're not coming back because they don't think to do that they don't know their answer is low quality because they're a new person and so they'll ask the llm anything even for the complex stuff and even if the answer is wrong they just kind of go with it because they don't know what they don't know and so this dynamic of there's a difference between um like making the market more efficient or the community more efficient in some sense, which I think is kind of what you're alluding to, like that can be a good thing. But you're losing people who in the past might have stuck around and evolved to become those more sophisticated users. You know what I mean? It's like there's an extensive margin and an intensive margin. And at the extensive margin, these people are just leaving and maybe they don't come back. That's the concern. So I agree with what you're saying. I don't have like a I can't for sure say this is a bad dynamic. I'll put it that way. But at least it's a question. Yeah. Yeah. Another dynamic that I would expect is that since such LGBT and similar tools are trained on the data that are produced by Stack Overflow, by changing this dynamic, it will also modify the behavior of the artificial intelligence system. So in the future, if there are no textual data for where you can learn, let's say, the replies, then even the artificial intelligence system will be less performant. the people will go back to probably to the real interactions because the artificial intelligence has not learned the right things through the stored and collected data. So it's very difficult, I mean, really to imagine what could happen in the future, which is not the short future, but in the long term. Now, do you agree with me, this doubts or no? So there's a few things to unpack there. So one is this is code, right, which is a very specific context. But we think about using these tools for other types of general purpose tasks. Like there's recent experiments that some folks at MIT and Harvard and Wharton ran where they were looking at Boston Consultants, Boston Consulting Group consultants, giving them access to these tools, working on typical tasks they would do with a client. Right. As a consulting agency where it involves like doing a little bit of market research, writing documentation, elaborating on ideas, presenting like strategic documentation, these types of higher order concepts, which really leverage this, why they're called foundation models. Right. That they have this ability to learn across all these different data coming from different sources and then generate like reasonably good. responses and behavior and decision support across lots of different types of tasks it's a question as to whether they're just you know regurgitating memorized things or actually extrapolating to new settings or whatever but to the point the data they've got so far makes these tools good enough to tackle like new abstract tasks or support a human in the performance of that new abstract task that doesn't that exists now but it didn't exist when the training data was created I think if the models are still useful going forward in that way, then the dynamic you suggested about people reverting back to communities or whatever might not happen. That's not clear to me, but it could. Depends if the models are going to get worse over time because new tasks are arising that they don't know how to deal with or something. That's like an unknown. As far as data availability, like I agree, that's an issue. Like to the extent you undermine participation in these communities, there's less data to train on in the future. And I think there's lots of discussion right now in the CS community about, like, are they going to run out of data and when are they going to run out of data? I mean, I think a lot of the way that things are going right now is less about coming up with better data and bigger models and starting to figure out agentic models. Like, how do I get models to work together in teams to solve problems? We're starting to see that that's actually an effective way to get these things to continue to improve beyond the current state. So it's not clear to me that data is going to be the main limitation in the long run either, necessarily. That was a pretty blank response, but yeah. Thanks for the question. Thanks. Thanks, Gordon. Recalling a comment in the chat by Gottfried, I would like to stress the fact that the social implication of these Gen AI tools are difficult and will require time to be understood. It's clear that on... a highly focused technical task it might became the standard tool like search engines have became our standard tool to do research in in the last couple of decades so probably we will have this kind of augmented with ai tools to do something in focus at the technical field. But the social consequences of this are difficult because I would say that they are a bit chaotic in their behavior. So it's difficult to predict where the future orbit will be. And also, the other, I think, important issue is to understand the business case. for Gen AI. Until now, there has been a lot of investment, but economic return on investment has been not so big. And we know that at this level of investment, there has to be some return, otherwise it will be just, I mean. a tool for children to play games and something like this. So this will have to be seen. Then there are a couple of more questions on the chat. Gordon, I don't know if you can see them. If you can come from Claudio Domingo Gutierrez and from Alireza Saebi. Any evidence to determine if optimization of individuals over groups are doing is on the quality of answers or time of answering? So I did. So from Claudio, I did do some analysis of how quickly answers are arriving. I'm not sure if that gets to really what you're asking here. We didn't see any significant effects on the timing, like how quickly you start to receive answers. So there's no. Now. that could just be due to noise. Like a null result doesn't mean there's no result, right? It just means that I couldn't detect it with this data. So it's possible that that is playing a role. It just seems like not a particularly large role. And feel free to reply in the chat if I didn't answer your question. Hopefully I did. And then Alireza is asking, is there any statistics that exist from returning users to Stack Overflow from Gen AI tools like ChatGPT? So this is one of the major... downsides of this research is that i don't get to see people using these tools i'm inferring that they're using these tools by the fact that they've stopped participating here and the timing around which that happens so so no there's no data this is a big issue right like the companies that have the most data about the usage of these tools uh are the companies that make them and a lot of them are not sharing that data so we don't really know so i'm in the process of trying to collaborate with some companies right now to get some data from them, which is challenging to work through, as you can imagine, about which employees are making use of these tools as proxied by their web traffic to OpenAI.com, for example, from within the corporate network, and trying to link that with what they're doing in the company. So that's ongoing, and it's tough. And then Stefano is asking, I may have missed something, but is this data on the top 50 most popular topics only? Do you have data on the supposedly longer tail less popular topics? So, yes, this analysis and all of this data is focused on the top 50 most popular topics. I'm not looking at the long tail. In theory, we could. We have the data. We just haven't done that. The data is just sparser. So there's a lot of topic tags that show up a small handful of times to the point where the panel would be mostly zeros. um so there's a really really long tail of topics actually because the tags are actually user generated they're not necessarily uh structured thanks thanks gordon for having take care of this question now that we have a hand raised by moshe so uh one issue that i don't think you've raised to correct me from wrong is that uh how does chat gpt know knows how to code it's from reading stack training on stack overflow. So if participation goes down, then the training material is starting to decline. So this is called eating your own seed corn. Yeah, I think this came out a little bit when I was speaking about this with Francesco earlier about the data dynamics. It's true. I don't know that people have, these companies have figured out what their strategy is going to be going forward for getting more data. And it's actually not not only is it just that people are participating less here because they're making use of these tools instead. It goes a step beyond because there's some pretty recent research from some colleagues of mine, not at BU, but elsewhere. But in my discipline, I'm showing that there's starting to be some reactionary response in various settings where people are actually actively sharing and posting less of their content because they don't want it to be monetized by these companies. So I think there was one context, which I think is Upsplash, which is a photo sharing platform where they created a curated data set of images that could be used for trading text or image models. And if somebody had their photo included as part of that curated data set, they became systematically less likely to post anything afterwards, basically because. This was getting put out there for AI companies to try to monetize and make use of without their permission. So there's some reactionary issues that are happening. This is an issue. I mean, I guess I don't know the answer to this. I don't know where the data is going to come from in the future. It seems like it will become a problem. People also have shown that more and more of the data that's on the web is generated by Gen AI. Yeah. And so this is a... You know, people who don't have water and they drink their own urine, excuse me for the analogy. Yeah. So there's an important thing to keep in mind, which is this is one type of model, which is like a publicly accessible open model. It's being trained on all kinds of data. The data may get contaminated with the model's own output for that reason. It's hard to keep track of. But if you're an organization. Like I gave the example of Boston Consulting Group earlier. I mean, they're going to have an internal model for a lot of reasons, like information security concerns, for example. They don't want their employees using these public models. They'd rather have their own custom built model within their firewall trained on their curated data. That's clean. And I know it's clean. They that's a bit different because if their employees are using their model within the firewall, they can see the use and they can actually. tag and keep track of what was generated by the model to try to filter it out of any data that gets produced in the future and avoid this feedback loop problem. So I think there's a difference that arises between public and private settings that needs to be kept in mind. But your point is correct. Yeah. Yep. Thanks again, Gordon. I have one short comment and one quick question. The short comment is the issue of polarization. I mean, we all know that If a tool is highly used, then it tends to polarize the users around the major teams. So maybe I'm just speculating one consequences of having ChatGPT be very efficient on Python and JavaScript could be that almost all the other languages are forgotten and then we only use them, which is not so nice because I think the... diversity, even in programming languages, is important. So this is the comment. The question is, do you plan to redo your analysis after, because I see in the graphs they arrive until April last year. Have you done it on the subsequent months to see if the trend persists or there is some change? I mean, we could in theory. So these are now published papers. So I guess we could go back and see if these trends continue. This data is all publicly available data for the most part. Not this web traffic data, but everything else that we use in this paper is all publicly available data that anybody can download. And we have a repository with scripts and data that are shared online with the paper. So I may get to it, but I have a lot of other projects going on. No, no. This could be a work for some young people wanting to do research on an interesting topic. So Harness. You raised your hand. Thanks. One question is we had, I think, one or two months ago, we had Dara Nazimoglu and he showed or referred to some research showing empowerment aspects of JetGPT in programming where you could increase, let's say, the productivity as well as the knowledge level of. Let's say less qualified programmers, which is somehow coherent with your observation. The question is a different one. Are you, because we are talking about online communities, no? And there's a world outside online. Let's say there's something, a behavior outside. Do you have a link to any research showing on the impact of community behavior outside online communities by using ChatGPT? Because this was a question we had yesterday very much coming from the high school teachers, saying that the behavioral aspect of high school students is changing. Let's say community aspects are changing and they have only some set of subjective observations. But are you aware of any research going into this direction of, let's say, social behavior, language behavior, things like that? Which is, I think, really the basics of what we are talking when we say, OK, we look at AI and the impact on our society. So I'm not. So, I mean, I'm aware of work that's going on right now by some folks I know that's looking at how people. The comparison between how one person works with another person as opposed to how they work with an LLM on a topic, just pairs of people, which is a little bit social, but I don't think it's really what you're trying to get at here. I'm not aware of that. So I'm trying to get there, like I said, trying to arrange getting data from a company to see what's happening inside the company in terms of collaboration and meetings and other things that people are having with other people in the organization. That's going to be longer term just because it's sensitive data, right? I think doing this kind of analysis in an educational setting would be interesting. Like I see this among my own graduate students even because I teach programming courses or at least involves heavy programming and students rely very heavily on these tools. I don't know if it's affecting the degree to which they have study groups or participate or engage with other students, but it's something that I think it's measurable. Somebody just has to do it. I think it's probably easier to do it in a post-secondary setting versus like an elementary school or a high school just because of the population involved. Getting access to the data and things is going to be sort of harder, I suppose, in lower level schooling. But I think it's still important. And maybe there are. So my answer, my short answer is no, I don't have a link to research. And my secondary answer is I think it's a good idea to do that research. Thank you. I don't see any other question. Even if the entire area of education and the use of generative AI is highly interesting, I think also highly diverse because every stage of education has its own characteristics and something that can be good at the university is not good for secondary school and so on going downwards. And I always like to repeat, not a citation, but to remember that the Greek philosopher Plato, in his dialogue, he stressed that the educational relation is a personal relation between the teacher and the pupil where the affective component is highly important. You cannot have this if we have tools responding in place of the teacher or if you have Zoom lectures instead of being in the same And it is clear that the more harmed in this respect are the younger. And if we go down from your example, Gordon, of the youngest people in Stack Overflow being less involved in the community, if you bring down these examples to school, we may speculate that the more harmed. from the use of let's say from the unrestricted or unthoughtful use of ai tools in school might be the younger students that are the ones that i mean need to build their knowledge their experience and their social relation and so on and so forth but uh i see that we are past six so unless i don't know whether we can go on or yes we pass over to peter who takes over with the music proposed by Gordon. Happy to. Let me just share the screen. There we go. Can we just say huge thanks to Gordon for his availability and his lecture before starting the music? Because I guess after the music, the things will be over. Thanks a lot, Gordon. My pleasure. Thank you. Thanks for the question. Bravo. Thanks, Gordon. That was what I just wanted to do. Thanks for the presentation and also for the very interesting discussion afterwards. You've selected Cellphones by Beck as a final song. Do you want to give any story behind why you chose it or just because you like it? It's interesting because it goes back to Moshe's earlier point about how phones are making like kids offline and not socially interacting as much. And we're kind of seeing similar social consequences, at least the start of that around some of these LLMs and things. So that was the connection, actually. I see. OK, before I play it, I will just announce our next talk in two weeks on June 25th. We will have a panel on autonomous weapon systems and future paths for regulation. And we will have two speakers, namely Elisabeth Hofberger-Pippan of the Peace Research Institute Frankfurt and Karoline Wergerter of the Austrian Federal Ministry for European and International Affairs. And the panel will be moderated by Alison Stanger. And that's all I have to say. So thank you, Gordon. Thank you, Enrico. Thanks all attending. See you in two weeks. And here's Beck. and goodbye. Thanks to everybody. See you in two weeks.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.336,
+      "text": "I'm welcoming everybody to this event of today, to this talk of today where we look at generative AI and the impact on social media, not on the workplace, but on social media. And I think this is probably one of the hottest topics of today because it has an impact on democracy, on communication, and so on. And I'm really happy to welcome Gordon Birch. He's from Boston University, and he will give the lecture of today."
+    },
+    {
+      "start": 28.336,
+      "end": 53.712,
+      "text": "The moderator will be Enrico Nardelli, who will also introduce Gordon afterwards. The choreography is well known, talk for 30 minutes, 30 minutes Q&A, moderated by Enrico. And at the end, we have again a piece of music, which is proposed by Gordon. I also especially welcome Enrico, who is the moderator of today, since I think it's one of the..."
+    },
+    {
+      "start": 53.712,
+      "end": 82.144,
+      "text": "He's moderating. I'm introducing him as a professor of informatics at the University of Rome, Dua Vergata. He's also the past president of Informatics Europe. Informatics Europe is the association of informatics university departments and research labs in Europe. I think it's already 160 members. More. More already. So Enrico, you can correct me afterwards."
+    },
+    {
+      "start": 82.144,
+      "end": 101.76,
+      "text": "He's also a member of the ACM Europe Council and he's very active in introducing informatics to schools, something we spoke shortly before. So he's also coordinating the Italian project on Programma il Futuro, which is informatics in schools."
+    },
+    {
+      "start": 101.76,
+      "end": 126.544,
+      "text": "He is also the director of the National Lab Informatics and Schools and his research is on informatics education and also the impact of computer science informatics on society. And in this area, he's also very active in dissemination activities where he's giving frequent speaks in the Italian and European public. Enrico, the floor is yours."
+    },
+    {
+      "start": 126.992,
+      "end": 146.576,
+      "text": "Thanks, Hannes, for the very nice introduction and thanks to everybody for being here. So it is my pleasure to moderate today's lecture by Gordon Burch. Gordon is a professor of information systems and fellow of the Digital Business Institute."
+    },
+    {
+      "start": 146.576,
+      "end": 175.92,
+      "text": "at the Boston University's Kestrom School of Business. His research examines the economics and societal consequences of online platform technologies and has been published in many leading journals supported by several corporate non-profit and government entities, including, I don't know if I'm allowed to say the names, but it's not publicity, Meta, Adobe and the National Science Foundation."
+    },
+    {
+      "start": 175.92,
+      "end": 203.744,
+      "text": "Very interesting is that before entering academia, Gordon has worked as a hardware design engineer, IT systems auditor, and technology consultant. So he knows a few things about the world outside the ivory tower of academia. He has a PhD in business administration from Temple University, as well as an MBA in software engineering from the McMaster University."
+    },
+    {
+      "start": 203.744,
+      "end": 233.696,
+      "text": "And the topic of this talk is a very fascinating one because it is about some unexpected consequences of generating AI for an online community, which is a topic on which I completely agree. In a book I've written in Italian a couple of years ago that was called The Informatics Revolution, I wrote a corollary of a very famous law by"
+    },
+    {
+      "start": 233.696,
+      "end": 255.216,
+      "text": "Douglas of Stutter about the time it requires to finish something and the law was named the law of social impact of digital technologies. And it goes like that. The social impact of digital technologies is always unexpected, even taking into account the law of social impact of digital technology. So this is something that."
+    },
+    {
+      "start": 255.472,
+      "end": 279.248,
+      "text": "We forget, even we that are in this field, we forget. And the example that Gordon will present us today is one very good example. And it has sparked in my mind a reflection on how many other samples there will be in the future of the impact of this technology. So without further ado, Gordon, the floor is yours."
+    },
+    {
+      "start": 279.632,
+      "end": 308.864,
+      "text": "Thank you, Enrico. And I appreciate the invitation to present, Thomas. Just give me one second and I will bring my slides up. Hopefully this is visible. OK, so our time is somewhat brief, so I'll try to be quick with this. This work is co-authored with another faculty member here, Dokyun Lee. His background is..."
+    },
+    {
+      "start": 308.864,
+      "end": 336.256,
+      "text": "computer science. So he actually largely works on building these tools. So that's an interesting collaboration for us. A lot of the research that we do together, he's building them. And then I'm thinking about what's that going to do to people's behavior. The third author on this piece is a PhD student here who's working towards their dissertation. And the work, as was described, is thinking about the impact that generative AI, specifically large language models,"
+    },
+    {
+      "start": 336.256,
+      "end": 365.088,
+      "text": "that they're having on online communities. And more broadly, we're thinking about this as a microcosm for how these technologies may affect people's interaction with other people. So we happen to have data on these online communities that can be quite granular, so we can get a sense of what happens to interpersonal interaction in these contexts and maybe start to think how might this generalize to other settings, like an organization, a formal organization, for example, like a company."
+    },
+    {
+      "start": 365.088,
+      "end": 386.224,
+      "text": "The title slide kind of depicts the contrast we're thinking about here. You imagine you're working on a project involving some code, potentially, and you want to figure out how to solve a problem. Maybe there's a bug in your code, you don't know how to debug it, you don't know what's going wrong, and you think about what's the quickest way to solve this problem. In the past,"
+    },
+    {
+      "start": 386.224,
+      "end": 414.256,
+      "text": "You might have gone to Stack Overflow. Probably everybody here is familiar with Stack Overflow and Stack Exchange. Stack Overflow is the world's most popular online community for coding and technical languages, at least it used to be. And today, you may not do that. Something you might have done in the past, maybe today you would instead turn to your favorite large language model because things could be quite faster, like GitHub Copilot even or something like this."
+    },
+    {
+      "start": 414.256,
+      "end": 431.44,
+      "text": "And our idea here is this is not just about code. This kind of dynamic can happen with lots of different activities that you might have engaged in where you may have gone to ask a person before somebody you work with, a teacher, et cetera. Maybe you turn to these tools instead. OK."
+    },
+    {
+      "start": 432.24,
+      "end": 461.84,
+      "text": "So this work is based on a couple of companion papers that this talk is based on. In case you're curious, I'm just throwing up QR codes here so you can check these out. One was published in Communications of the ACM as an opinion piece. And then we had a follow on full paper that was published in Scientific Reports a few weeks ago that you can check out. So I think we're all well aware that large language models and various foundation models have taken off. They've been rapidly adopted around the world."
+    },
+    {
+      "start": 461.84,
+      "end": 480.752,
+      "text": "By all accounts, ChatGPT is probably one of the most popular of these, was adapted more quickly than any other app in history by an order of magnitude. What are people using these tools for? Well, there's a lot of industry surveys about this that are suggesting that people use these for."
+    },
+    {
+      "start": 480.752,
+      "end": 496.512,
+      "text": "Beyond coding and beyond writing emails and reference letters, using them for tasks like ideation. So creative oriented things, figuring out how to what to write about in the discussion section of your academic paper, for example, and getting ideas around that."
+    },
+    {
+      "start": 496.512,
+      "end": 522.368,
+      "text": "Beyond debugging code, just doing general research on a topic. And there's a lot of other use cases here, but the reason I'm highlighting these three, which were flagged as big use cases in these industry surveys, is that they're all tasks where at one point in the past, you might have gone to talk to another person about these things, right? So brainstorming ideas, you may have done this in a group. Trying to debug your code, you might have asked somebody for help."
+    },
+    {
+      "start": 522.368,
+      "end": 549.728,
+      "text": "researching a topic, you might do that collaboratively. And the point is, these are all key tasks for large language model use. And if you're doing this with a large language model, you may be less likely to be doing this with another person. Okay. So this is unsurprising, right? So LLMs now exhibit these amazing capabilities to produce code. They're doing so well on standardized tests. Basically, their performance on various benchmark tests"
+    },
+    {
+      "start": 549.728,
+      "end": 570.944,
+      "text": "We can debate a little bit about the accuracy of those metrics in terms of what it means for capability of these models, but they're performing at about the level of a smart high schooler. And if we believe things will continue to scale, which again is something we could debate, it's really fascinating slash scary where we'll be in the next few years. This is taken from a recent..."
+    },
+    {
+      "start": 570.944,
+      "end": 594.832,
+      "text": "a 165-page essay written by a former OpenAI employee, Leopold Aschenbrenner, who was talking about the economics and the scaling laws and everything we should expect in the next few years. And the point is, what we're seeing now is just the beginning, potentially, for the consequences of these things, okay? So if we believe there's going to be shifts in social dynamics, these may get amplified in the years to come as well. So this is important to understand."
+    },
+    {
+      "start": 597.04,
+      "end": 624.0,
+      "text": "And I've given you an intuitive sense about where this substitution might be happening and why we're motivated with this paper, that these tools are really useful for content production, knowledge sharing. They may hallucinate a little bit, et cetera, but they're a really advanced, useful tool for these things. And if you look at the world's most heavily trafficked websites, according to SimilarWeb, I pulled this this morning, ChatGPT.com is now number 13 on that list. It's higher than TikTok."
+    },
+    {
+      "start": 624.0,
+      "end": 653.184,
+      "text": "And it's kind of on par with some of the world's largest social media platforms, many of which are places people would have gone for information sharing, social connection, etc. OK, and we're basically asking the question, not only is this thing competing in terms of popularity, but are they actually possibly substitutes to some extent? And when and where is that going to happen? This happens, the concerns that we might have. Number one."
+    },
+    {
+      "start": 653.184,
+      "end": 681.504,
+      "text": "The obvious is we know that LLMs can hallucinate. They sometimes make things up and maybe the information that you're getting out of them may not be of the highest quality compared to a human. Second, and I think more interestingly, which goes to the humanism component of this, right, like why this talk is happening in this venue, is that a decline in online community participation might reflect a broader decline in people connecting with peers, which could have lots of knock on consequences that could be undesirable from a social standpoint."
+    },
+    {
+      "start": 681.504,
+      "end": 707.216,
+      "text": "Peer connection is really important in a lot of different settings beyond online communities for things like the first time you join a company. There's really recent work in economics showing robust evidence that peer interaction is super important for training, onboarding, knowledge acquisition and getting good at your job. If I'm not getting embedded with peers, I may be less likely to stick around. So organizational attachment could decline potentially."
+    },
+    {
+      "start": 707.216,
+      "end": 716.464,
+      "text": "All of that stuff then feeds into possibly, you know, effects on career advancement. If I'm not connecting with people, social capital, we know is very important in organizations for people to move up in their job."
+    },
+    {
+      "start": 716.464,
+      "end": 744.144,
+      "text": "And I'm giving examples that are specific to companies, but you can imagine there are similar consequences for other types of organizations where these dynamics could begin to emerge. If we think about an educational context, as I was having this conversation with Enrico yesterday, if I'm not connecting well with my teacher, that could harm learning outcomes and things, right? If I'm not connecting with peer students, I may have a harder time learning as well. So there's lots of implications beyond online communities. Okay, so our research questions."
+    },
+    {
+      "start": 744.464,
+      "end": 763.6,
+      "text": "To what extent does information seeking broadly begin to decline? So this is sort of just the average effect for everybody in the community. How much do we see drop off in people trying to participate in these online knowledge communities? Then trying to get a little bit more nuanced about these things, we ask, where are those effects likely to be largest?"
+    },
+    {
+      "start": 763.6,
+      "end": 788.096,
+      "text": "And when we look at that question, we look at a few different sources of heterogeneity. So we're going to look at community characteristics. So we're going to compare Stack Overflow actually with alternative community context, which is Reddit developer communities. And I can explain a bit more about why we do that particular contrast later. We also look at the characteristics of the people who continue to participate in these communities after these tools become available."
+    },
+    {
+      "start": 788.096,
+      "end": 801.808,
+      "text": "And basically what we're going to look at is any shifts we see in the average characteristics of people who participate. And it says something about who is leaving. Right. So who are the people that cease to participate as they exit? It's going to cause shifts in the characteristics of the users who stick around."
+    },
+    {
+      "start": 802.288,
+      "end": 822.896,
+      "text": "And then lastly, we're going to think about other variation in the types of content that people produce in the community, actually. So we're going to look at the types of questions that people are asking, the characteristics of those questions, how they shift. And we're also going to look at basically, as I mentioned, the characteristics of the users themselves around like how new is a particular user or how established are they in the community?"
+    },
+    {
+      "start": 823.408,
+      "end": 847.152,
+      "text": "We do have some second-order analyses we do around the quality of the information that's being shared in the community. The general idea with this is that as certain people begin to exit, you may see this may do harm to the quality of information sharing because many of these models are crowdsourced models in these communities, and they depend on really broad participation for the right person with the right answer at the right time to be there to help you."
+    },
+    {
+      "start": 847.152,
+      "end": 876.528,
+      "text": "And so we may have a hypothesis that the quality of the knowledge you get back when you seek it may decline and the community could unravel, essentially. We have some really preliminary results around that, I would say, that I can speak to towards the end, too. OK, so our primary context for this study is going to be Stack Overflow, which is one of the Stack Exchange communities. So Stack Exchange is a lot of different communities focused on many topics from history to art to law to physics and code."
+    },
+    {
+      "start": 876.528,
+      "end": 902.816,
+      "text": "Stack Overflow is very focused on programming languages and technical tools. It was the first and biggest Stack Exchange community. It's been around since 2008. It has historically been one of the most popular online communities for Q&A around these topics. We are also going to, as I said, contrast this with Reddit developer communities. So Reddit in general is a very popular, highly trafficked website."
+    },
+    {
+      "start": 902.816,
+      "end": 931.616,
+      "text": "true necessarily of the developer community specifically on Reddit, which are hosted in their own subreddits, but they are popular in and of their own right. And the reason that we are looking at Reddit as well is that there is an interesting contrast between Stack Overflow and Reddit developer communities, which has been documented in some of the CS literature. Essentially, the idea is that Reddit has much more social fabric. Stack Overflow, there's almost an ideology of not..."
+    },
+    {
+      "start": 931.616,
+      "end": 961.36,
+      "text": "stating or sharing any text that is not related to the question or the answer. It's not a venue for socializing. It's a venue for information transmission purely. That's kind of how Stack Overflow thinks about itself. Reddit is not so attached to that idea. And there's a lot more socialization and peer connection and sort of social bonding that happens on Reddit. And our hypothesis is that the LLMs are going to be better at substituting for information, not so great yet at replacing a social connection. And so Reddit may be buffered from these effects a little bit. And we're going to show that that's the case."
+    },
+    {
+      "start": 962.224,
+      "end": 989.024,
+      "text": "So we identify subreddits that are specifically focused on the same topics like programming languages that show up on Stack Overflow. And we'll do kind of a paired analysis across the two contexts. So this is just descriptive from Stack Overflow's own data. To get a first idea of our initial question of what's happening to average participation in these communities, Stack Overflow themselves has..."
+    },
+    {
+      "start": 989.024,
+      "end": 1013.616,
+      "text": "It can show if you go and look at their publicly available data on web traffic that it's been dropping off. Just for context, ChatGPT's initial release was the end of November of 2022. So the drop off was already happening a little bit prior to that. OK, so that's something we need to deal with in our research design to really get at the causal effect that ChatGPT has been having. I'll explain our research design for dealing with that in just one second."
+    },
+    {
+      "start": 1016.016,
+      "end": 1042.064,
+      "text": "So we're not going to rely on Stack Overflow's own data because that's a single time series of web traffic. So what we do is we obtain web traffic statistics from SimilarWeb, which is a company that aggregates web traffic data for most of the websites, popular ones on the Internet. We get a panel of daily web traffic volumes from SimilarWeb for the 1,000 most popular websites on the Internet from all sources."
+    },
+    {
+      "start": 1042.256,
+      "end": 1061.904,
+      "text": "For each website, we're going to have by day how many people visited or an estimate of that from similar web. Stackoverflow.com is in that top 1,000 consistently. That's our treated panel. We have a single time series that is our treatment group that we're saying is going to be affected by similar or by ChatGPT's release."
+    },
+    {
+      "start": 1061.904,
+      "end": 1086.0,
+      "text": "We're going to use all of these other sort of 999 other websites traffic series to form a prediction of the counterfactual of what would have happened to Stack Overflow's traffic if ChatGPT had never come out. The assumption here is that all the 999 other websites that we're looking at weren't affected by ChatGPT's release, which by and large, that's probably true. So most websites on the Internet."
+    },
+    {
+      "start": 1086.0,
+      "end": 1113.68,
+      "text": "I mean, you're thinking about what these websites are. It's things like Amazon and things like this, right? But it's not so clear why Chachapiti would affect their web traffic as much. That said, there's some assumptions behind that. So the method we use, the synthetic control using Lasso, you use the time series of daily web traffic for 999 control sites to try to generate an accurate prediction of the web traffic to StackOverflow.com."
+    },
+    {
+      "start": 1113.68,
+      "end": 1142.528,
+      "text": "in the pre-period, so before November of 2022. If you can get a model that's pretty accurate at predicting from the control sites what's happening on the treated site in the pre-period, then the idea is you can take that predictive model forward into the post-period after ChatGPT is released, get predictions from it, and it'll tell you this is predicted traffic that would have happened from the model that doesn't know about ChatGPT, what it says would have happened, okay? And what we see is this. So on the left-hand side,"
+    },
+    {
+      "start": 1142.528,
+      "end": 1166.096,
+      "text": "In blue is the real data, so the real series of daily web traffic for stackoverflow.com. The red vertical line there just before January of 2023, that's the date of ChatGPT's release. And then the synthetic control in the red series is the forecast from our model based on pretreatment data of what would have happened if we had not had ChatGPT come out. And you're basically seeing a systematic."
+    },
+    {
+      "start": 1166.096,
+      "end": 1192.144,
+      "text": "predicted drop or estimated drop in web traffic to Stack Overflow. How big is this effect? It's about 12% of their daily web traffic, which is pretty large, obviously, I would say. So there's a really big drop-off between 12% and 15% of web traffic after ChatGP comes out. So we know systematically fewer people are now going to the site. How is that translating to content production?"
+    },
+    {
+      "start": 1192.144,
+      "end": 1220.464,
+      "text": "So the way we're going to see what happens to the volume of questions that people are posting on StackOverflow.com as a result of ChatGPT coming out, we construct, again, panels. So these panels are based on topics. So the topics are based on tags that are associated with the questions on StackOverflow. Any given question might have like five or six tags tied to it. For example, Python, right, if it's a Python question. So for the top 50 most popular topics, we make a..."
+    },
+    {
+      "start": 1220.464,
+      "end": 1250.016,
+      "text": "panel a weekly panel in the period around chat gpt's release of the volume of questions being posted that include that tag okay we have this for a period of time bracketing chat gpt's actual release in november 2022 so an evenly balanced window on either side of that date and then what we do is for the same topic we go back one calendar year in the past and we pull weekly panel data so the volumes of questions for those topics from a year ago"
+    },
+    {
+      "start": 1250.016,
+      "end": 1279.952,
+      "text": "And we bring them forward in time, line them up with the current period, and we use those as our control group. So the idea is if question posting activity is highly seasonal and cyclical, then what happened a year ago should be a good counterfactual or a basis for a counterfactual for what's going on now when ChatGPT is coming out. And there's a few recent papers in sort of Journal of Public Economics and some prominent econ journals that have been using this methodology. We do some validation to make sure it makes sense in our context, but this is the idea."
+    },
+    {
+      "start": 1280.304,
+      "end": 1309.232,
+      "text": "OK, is a visual depiction of exactly what we're doing here, bringing data from the past forward to serve as a control. And so we use this data to estimate a difference in differences regression. So the idea is for the current time period, how is the volume of posting activity per topic changing before and after ChatGPT comes out relative to what we saw happening in the same comparison periods in the past when ChatGPT never existed? And we use that to get an estimate of the drop off."
+    },
+    {
+      "start": 1309.232,
+      "end": 1338.768,
+      "text": "and posting volumes. We can kind of get a sense about whether our method is working or is valid by looking at, so what these plots are depicting is on the X axis is how many weeks away are you from the calendar time period when ChatGPT came out? And then the vertical axis is the estimate of how much did you see changing week over week? Question posting activity on average across these 50 topics."
+    },
+    {
+      "start": 1338.768,
+      "end": 1347.568,
+      "text": "from before to after ChatGPT came out compared to before to after the same calendar period a year ago when ChatGPT played no role."
+    },
+    {
+      "start": 1347.664,
+      "end": 1377.264,
+      "text": "And going through this exercise and generating estimates, we see there's no systematic differences in the weeks leading up to the time period when ChatGP was released, but it starts to go significant and negative and drop off in the post period, suggesting we're estimating like a discontinuous drop off in question posting volumes as a result of ChatGPT. And how much less? It's again about a 15% decline. So it's well aligned with the web traffic effect. In terms of absolute volumes, there's a scale issue. Like some topics are way more popular than others, but on average,"
+    },
+    {
+      "start": 1377.264,
+      "end": 1407.04,
+      "text": "150 fewer questions per topic in a given week. Okay, so now to the maybe more interesting things for you. Thinking about, okay, we know people are participating less, they're posting fewer questions. Now the question is, where is this happening more? Okay, because this may not be homogenous across all communities or all topics. So the first thing we're going to do is just using the Stack Overflow data, we're going to separate this out by topic. So for each of the top 50 topics,"
+    },
+    {
+      "start": 1407.04,
+      "end": 1436.672,
+      "text": "We're going to estimate that difference in differences regression per topic and get an estimate about how much has question posting volume dropped off for each of these topics one by one. And then we can plot this to get a sense about where the effects bigger versus smaller. And this is essentially what we see. So this plot is showing you on the X axis is basically how big of a negative effect did the release of ChatGPT have on a given topic."
+    },
+    {
+      "start": 1436.672,
+      "end": 1463.584,
+      "text": "So on the Y axis, you see the different topic tags, popular topic tags that we looked at. When this the point estimates are the black dots, you have 95 percent confidence intervals around those are the whiskers. Further left with the dot suggests bigger negative effect on posting volumes around that topic. So the biggest drop offs in absolute volumes, which could be driven in part by the fact that these are the most popular topics to begin with."
+    },
+    {
+      "start": 1463.584,
+      "end": 1493.232,
+      "text": "Although I will tell you, when we look at this in percentage or relative terms, you see a similar plot, essentially. Python, JavaScript, React.js, some of these more popular topics are dropping off more. And the red and purple bars that you see there, we have this hypothesis that this is happening because these are topics where there was more training data available to create this foundation model in the first place. And so these should be topics where the model is going to do better at answering questions."
+    },
+    {
+      "start": 1493.232,
+      "end": 1517.712,
+      "text": "Right. Whereas answer the code it provides is less likely to generate an error or is more likely to actually solve your problem. So longer purple bar, that's a scaled number of the number of GitHub repositories that make use of that, that have that tag associated with them. OK, so longer purple bar, there's more GitHub repositories using Python, for example, as compared to the spring framework down at the bottom."
+    },
+    {
+      "start": 1518.032,
+      "end": 1544.944,
+      "text": "The red bar is a scaled version of the number of subscribers to the subreddit dedicated to that topic on Reddit. So that developer community, bigger community, longer bar. Both of these are proxies for available training data, we're arguing. And we see sort of a rough correlation that effects are bigger around topics where there was more training data historically on those topics. OK, it's not perfectly correlated. We have some of these where it's low. But for example, if you look at R."
+    },
+    {
+      "start": 1544.944,
+      "end": 1570.896,
+      "text": "which is the fifth one down. It has relatively little training data according to our two measures, but bear in mind there are lots of other contexts where you would get training data for R, like R bloggers and other things, where we're not capturing that with our proxies here. Okay. Now we're going to compare the estimates we got for topic posting volumes on Stack Overflow with a similar effect on Reddit."
+    },
+    {
+      "start": 1570.896,
+      "end": 1596.912,
+      "text": "We get data from Reddit, from this website, subredditstats.com, where they track posting volumes on each subreddit every day. And we pull historical posting volumes for each of the subreddits that have a matched tag, like the topic, like the Python community, for example. We get a time series for that from Reddit. We just repeat our estimation the same way we did before. And what we see is absolutely nothing. Essentially..."
+    },
+    {
+      "start": 1596.912,
+      "end": 1616.592,
+      "text": "Using the exact same strategy, there's been no detectable drop off in participation in the same analogous Reddit communities relative to what we saw on Stack Overflow. Looking at this heterogeneously, so that's the average effect. There's nothing on average. And then when you look at specific communities, that's what the plot on the right is showing you."
+    },
+    {
+      "start": 1616.592,
+      "end": 1636.32,
+      "text": "In yellow, that's the original estimates I already showed you of what happened on Stack Overflow. When I look at Reddit, the point estimates are in red. Some of them are missing because we could not identify. Either we could not identify an analogous subreddit for a developer community on that topic, or the data was missing from subreddit stats because there is some missingness on that site."
+    },
+    {
+      "start": 1636.32,
+      "end": 1665.568,
+      "text": "But the point is, if we look at the Reddit effect estimates, all of them are null on a case by case basis as well. Essentially, like we don't see any variation. It's just this isn't really impacting Reddit participation in any way. And if we look at average effects, this is what the numbers look like. OK, so nine point two per topic. Right. Fewer questions are being posted per topic on average. And then remember, my earlier estimate was based on like the peak."
+    },
+    {
+      "start": 1665.568,
+      "end": 1691.104,
+      "text": "At the end of the time series, it was about a 15 percent drop, but on average, it's a nine question drop. On Reddit, you see about, if anything, a 1.8 question or post increase, although it's not statistically significant. OK, this goes to our earlier point that we think social fabric plays a bigger role on Reddit, and that can be why it's not suffering as much as Stack Overflow has been. OK, so now we're going to say something about who are the users who are leaving."
+    },
+    {
+      "start": 1691.104,
+      "end": 1719.696,
+      "text": "And the way we're going to operationalize this, the thing we're particularly interested in is how long have the users been around in the community? So the average tenure of the user that's posting stuff on Stack Overflow, how does it shift after ChatGPT comes up? We're using the same research design, but essentially our outcome variable becomes the age of the account of the user that's posting the question and how that's shifting over time. And this is essentially what we see. Our estimates show that there's a discontinuous increase in the average age of posting users."
+    },
+    {
+      "start": 1719.696,
+      "end": 1739.488,
+      "text": "on the site after ChatGPT comes out. What does that imply? It means, the way to interpret this is, newer users are the ones exiting. So the people who continue to stick around are the older user accounts, which probably makes sense, right? The people that are not embedded in the community and haven't been coming as much, they're the first to exit, they have the lowest switching costs, okay?"
+    },
+    {
+      "start": 1739.488,
+      "end": 1768.8,
+      "text": "Why is that important? Because if we believe something similar is true about, say, somebody that's new to a company, if they're the first people to go to these tools and not talk to people, that's pretty bad. Right. As far as dynamics go, if I'm a new learner and I don't know a topic, I'm the first one to leave because I'm not embedded that bad. And I know I'm running short on time here, so I'm going to wrap this up. Looking at characteristics of the type of knowledge that's being sought, this is going to be a bit correlated with who is leaving and who's sticking around."
+    },
+    {
+      "start": 1768.8,
+      "end": 1798.368,
+      "text": "But we do something really simple. We take questions and we look at the count of the number of big words that show up in the question. This is a proxy, a loose proxy for the complexity of the question or the sophistication of the question that's being asked. It's the number of words that have at least six letters. And if we throw this into a regression as our dependent variable, we see a similar shift that basically the questions that stick around are questions with more longer words."
+    },
+    {
+      "start": 1798.368,
+      "end": 1818.912,
+      "text": "Questions that continue to be posted after ChatsVP releases are the more complicated ones, which is exactly what you would expect because, number one, LLMs are probably better at answering simple questions. That's where they're going to substitute the most. And also the users who are leaving to use the LLM are the people who are newer, more junior, and maybe have easier problems to solve. Okay."
+    },
+    {
+      "start": 1818.912,
+      "end": 1847.696,
+      "text": "And then I won't speak about this too much because I'm less confident about how to interpret these results, but essentially our proxy for the quality of the content that people are posting. We have voting data on Stack Overflow, right? So when somebody posts a question and a question can be upvoted or downvoted, and it may even be voted negatively if people think it's a really bad question to be asking or it's an obvious question or something. The same is true of answers. So answers that people post, they get upvoted, they get downvoted."
+    },
+    {
+      "start": 1847.696,
+      "end": 1872.4,
+      "text": "We use those votes on the answers that people receive, the selected answer, or sorry, not the selected answer, all the answers that people receive to say something about are the answers getting better or worse that people are getting. Now, the voting distribution is going to shift just as a function of people leaving the community. So if fewer people are voting, vote counts are going to tend towards zero. So rather than just looking at the raw count of votes that are happening."
+    },
+    {
+      "start": 1872.4,
+      "end": 1901.392,
+      "text": "or the net, we're going to just basically create a binary indicator of was the net voting positive or negative. So if this variable equals a one, if on average or the net vote was negative for the answer that somebody posted. Conditional on the question, right? So across answers that a given question received, if post ChatGPT we see a systematic increase in the probability that there's a downvote of an answer, that's bad. And we get"
+    },
+    {
+      "start": 1901.392,
+      "end": 1930.16,
+      "text": "We do get some indication that answer quality is getting worse. Essentially, if we allow comparison across the users that are participating, we see a systematic rise in the probability that questions are getting or answers are getting downvoted. However, once we condition on the users that are answering, we don't see any effects. What does this mean? It means there is a drop in quality, but it's not because the users that are providing answers are doing a worse job. It's that the people who would have provided good answers have left the community."
+    },
+    {
+      "start": 1930.576,
+      "end": 1959.728,
+      "text": "Yeah, but this is a dynamic estimate of what that looks like over time. This is why I'm not as confident about this result, because you start to see significant positive effects only like three months post. OK, so it takes a while for that to happen. So I'll stop there because I know I'm going long and we need to leave time for questions and Q&A. But I am happy to take your questions and looking forward to the discussion. Thanks. Thanks a lot, Gordon, for your."
+    },
+    {
+      "start": 1959.824,
+      "end": 1986.992,
+      "text": "Very beautiful presentation. I'm waiting to see whether there is some hand raised. Ah, Moshe. Okay, so the floor is yours. Very, very, very interesting talk and sometimes very scary. And I think it fits with something I've been calling the friction hypothesis."
+    },
+    {
+      "start": 1987.632,
+      "end": 2017.424,
+      "text": "And the friction hypothesis is that on one hand, we don't like friction. We always try to eliminate friction. At the same time, activity with friction at the end are more meaningful and more satisfying. So what you discover now, it's kind of the same thing that we are seeing with kids. Playing with other kids has friction. Staring at your phone has less friction. But of course, it is less meaningful. And now we have..."
+    },
+    {
+      "start": 2017.424,
+      "end": 2046.448,
+      "text": "You know, the evidence is mounting by the day that this is one reason we have the mental health crisis for teenagers. And it holds, on one hand, we try to avoid friction, but then it comes to bite us back. And this is kind of what you're describing here seems to me falling to the same pattern. You know, yeah, it's either to ask the GPT, but then you don't have, you are missing the interaction with other people. Yeah."
+    },
+    {
+      "start": 2046.448,
+      "end": 2074.0,
+      "text": "I mean, I agree with that characterization. I think it's kind of in economic terms, I would think of this as kind of a market failure. So essentially, people are optimizing biopically for themselves, right? And they're not thinking about the bigger picture or the long term, right? Even for themselves, they're thinking short term for themselves. Even for themselves, we are very bad in doing things in the long term for ourselves. We're very good at short term optimization."
+    },
+    {
+      "start": 2074.0,
+      "end": 2093.888,
+      "text": "We suck at long term optimization. Yeah, I agree with that. And what's the standard solution to that kind of market failure? Right. We think about you need some paternalism or government or something to oversee and prevent it from happening. I don't know what form that would take in our paper because we're business professors."
+    },
+    {
+      "start": 2093.888,
+      "end": 2122.608,
+      "text": "We basically say, like, what does this mean for an organization like a company, a private private company? What should they do about this if they don't want their employees or if a school doesn't want their students to have these problems? We say something like this is going to happen if you do nothing. Right. Because these tools are out there and they're publicly available. So the point is to be active, proactive, integrate the tools purposefully in a way that facilitates good behavior. Yeah. So I think that's part of the main message from our paper."
+    },
+    {
+      "start": 2123.344,
+      "end": 2141.968,
+      "text": "Thanks for your talk. My interpretation is a little bit different because it also shows when you compare Reddit with Stack Overflow that in the broader communication, the broader community, let's say in the social aspect, there is no decline."
+    },
+    {
+      "start": 2142.16,
+      "end": 2167.328,
+      "text": "Which is also when you are focused on, let's say, a business impact and it's very, let's say, it's in the work environment and things like that, then there might happen something which has an impact on enterprises and things like that. But on the other side, in the, let's say, broader communication, at least your research doesn't show."
+    },
+    {
+      "start": 2167.328,
+      "end": 2196.16,
+      "text": "any negative impact. The second one is a methodological question, because could there be some other event besides chat GPT, which could have something in this impact? Is it, it's very, let's say, reasonable that it's this event, but maybe something, can you exclude any other reason? No, so that's, yeah, like..."
+    },
+    {
+      "start": 2196.16,
+      "end": 2219.952,
+      "text": "That's a fair comment. It's possible that there was some other thing that changed in the environment that had this stark negative impact on Stack Overflow's participation activity. So the best I can say is that I'm not aware of what that would be, but that doesn't mean it doesn't exist. I don't know what I don't know, right? That's always a possibility."
+    },
+    {
+      "start": 2220.176,
+      "end": 2240.704,
+      "text": "And to the first thing, to this community. I actually, I flipped that on its head. And what I say, yes, we find no effect in this other context where it's very social in nature. I think Moshe's point was a more broad one about certain types of technology, I think, may undermine, for example, social interaction among kids."
+    },
+    {
+      "start": 2240.704,
+      "end": 2266.336,
+      "text": "Right. Phones are an alternative. I go in and sit in my bedroom to talk maybe on Messenger rather than going outside and interacting with them or something. This particular technology does not have that specific effect. I agree. And in fact, I would take it a step further and say an implication is to the extent you can, you need to embed and create opportunities for social fabric to arise somehow so that it can act as a buffer against these tools undermining."
+    },
+    {
+      "start": 2266.336,
+      "end": 2292.912,
+      "text": "social dynamics in an organization. If I have an organization that doesn't have a good work culture where people are connected to each other and talking to each other around a water cooler or doing something else, that sets the stage for a really bad outcome. Like right now, post-COVID, everybody working from home and not talking to the new employee, that's a really bad situation where this could make it worse, essentially. That's how I would think about this. Francesco, you have a question?"
+    },
+    {
+      "start": 2293.808,
+      "end": 2307.392,
+      "text": "Thank you, Gordon, for the talk. Very interesting. By listening to you, I got this idea that we can even expect a positive effect of this phenomenon in the sense that apparently."
+    },
+    {
+      "start": 2307.392,
+      "end": 2334.0,
+      "text": "For easy questions, let's say chat GPT and similar large language models and interactive system can help, let's say, the developer. But for complex questions, imagine that chat GPT cannot do much than, let's say, telling you basic things. So I would expect that the interactions in these social networks will converge to more complex problems."
+    },
+    {
+      "start": 2334.0,
+      "end": 2359.888,
+      "text": "And maybe even the quality of the interactions can improve because you have this kind of filter that all these trivial topics are managed by the artificial intelligence agents. So do you share with me these positive, say, expectations on the future of these communities? So I share the, I agree that that's possible."
+    },
+    {
+      "start": 2359.92,
+      "end": 2385.392,
+      "text": "Now, here's the thing. So Stack Overflow laid off over a quarter of its workforce not that long ago. So they're not doing better as a result of this. Part of the challenge is and they came about it, they went about it a little late. But it was this issue that I mentioned that if you do nothing as an organization, like a community manager or something, these tools exist and people will go use them. The problem is they're outside of your."
+    },
+    {
+      "start": 2385.584,
+      "end": 2409.296,
+      "text": "locus of control they're outside of your oversight which means that they're leaving the community to go use those tools and maybe they're not coming back because they don't think to do that they don't know their answer is low quality because they're a new person and so they'll ask the llm anything even for the complex stuff and even if the answer is wrong they just kind of go with it because they don't know what they don't know and so this dynamic of there's a difference between um"
+    },
+    {
+      "start": 2409.552,
+      "end": 2438.944,
+      "text": "like making the market more efficient or the community more efficient in some sense, which I think is kind of what you're alluding to, like that can be a good thing. But you're losing people who in the past might have stuck around and evolved to become those more sophisticated users. You know what I mean? It's like there's an extensive margin and an intensive margin. And at the extensive margin, these people are just leaving and maybe they don't come back. That's the concern. So I agree with what you're saying. I don't have like a I can't for sure say this is a bad dynamic. I'll put it that way."
+    },
+    {
+      "start": 2438.944,
+      "end": 2468.832,
+      "text": "But at least it's a question. Yeah. Yeah. Another dynamic that I would expect is that since such LGBT and similar tools are trained on the data that are produced by Stack Overflow, by changing this dynamic, it will also modify the behavior of the artificial intelligence system. So in the future, if there are no textual data for where you can learn, let's say, the replies, then even the artificial intelligence system will be less performant."
+    },
+    {
+      "start": 2468.832,
+      "end": 2497.664,
+      "text": "the people will go back to probably to the real interactions because the artificial intelligence has not learned the right things through the stored and collected data. So it's very difficult, I mean, really to imagine what could happen in the future, which is not the short future, but in the long term. Now, do you agree with me, this doubts or no? So there's a few things to unpack there."
+    },
+    {
+      "start": 2497.664,
+      "end": 2520.576,
+      "text": "So one is this is code, right, which is a very specific context. But we think about using these tools for other types of general purpose tasks. Like there's recent experiments that some folks at MIT and Harvard and Wharton ran where they were looking at Boston Consultants, Boston Consulting Group consultants, giving them access to these tools, working on typical tasks they would do with a client."
+    },
+    {
+      "start": 2520.576,
+      "end": 2545.68,
+      "text": "Right. As a consulting agency where it involves like doing a little bit of market research, writing documentation, elaborating on ideas, presenting like strategic documentation, these types of higher order concepts, which really leverage this, why they're called foundation models. Right. That they have this ability to learn across all these different data coming from different sources and then generate like reasonably good."
+    },
+    {
+      "start": 2545.68,
+      "end": 2574.448,
+      "text": "responses and behavior and decision support across lots of different types of tasks it's a question as to whether they're just you know regurgitating memorized things or actually extrapolating to new settings or whatever but to the point the data they've got so far makes these tools good enough to tackle like new abstract tasks or support a human in the performance of that new abstract task that doesn't that exists now but it didn't exist when the training data was created"
+    },
+    {
+      "start": 2574.448,
+      "end": 2601.936,
+      "text": "I think if the models are still useful going forward in that way, then the dynamic you suggested about people reverting back to communities or whatever might not happen. That's not clear to me, but it could. Depends if the models are going to get worse over time because new tasks are arising that they don't know how to deal with or something. That's like an unknown. As far as data availability, like I agree, that's an issue. Like to the extent you undermine participation in these communities, there's less data to train on in the future."
+    },
+    {
+      "start": 2601.936,
+      "end": 2630.128,
+      "text": "And I think there's lots of discussion right now in the CS community about, like, are they going to run out of data and when are they going to run out of data? I mean, I think a lot of the way that things are going right now is less about coming up with better data and bigger models and starting to figure out agentic models. Like, how do I get models to work together in teams to solve problems? We're starting to see that that's actually an effective way to get these things to continue to improve beyond the current state. So it's not clear to me that data is going to be the main limitation in the long run either, necessarily."
+    },
+    {
+      "start": 2630.288,
+      "end": 2656.176,
+      "text": "That was a pretty blank response, but yeah. Thanks for the question. Thanks. Thanks, Gordon. Recalling a comment in the chat by Gottfried, I would like to stress the fact that the social implication of these Gen AI tools are difficult and will require time to be understood. It's clear that on..."
+    },
+    {
+      "start": 2656.176,
+      "end": 2678.128,
+      "text": "a highly focused technical task it might became the standard tool like search engines have became our standard tool to do research in in the last couple of decades so probably we will have this kind of augmented with ai tools to do something in focus at the"
+    },
+    {
+      "start": 2678.128,
+      "end": 2702.256,
+      "text": "technical field. But the social consequences of this are difficult because I would say that they are a bit chaotic in their behavior. So it's difficult to predict where the future orbit will be. And also, the other, I think, important issue is to understand the business case."
+    },
+    {
+      "start": 2702.256,
+      "end": 2722.56,
+      "text": "for Gen AI. Until now, there has been a lot of investment, but economic return on investment has been not so big. And we know that at this level of investment, there has to be some return, otherwise it will be just, I mean."
+    },
+    {
+      "start": 2722.56,
+      "end": 2745.936,
+      "text": "a tool for children to play games and something like this. So this will have to be seen. Then there are a couple of more questions on the chat. Gordon, I don't know if you can see them. If you can come from Claudio Domingo Gutierrez and from Alireza Saebi."
+    },
+    {
+      "start": 2745.936,
+      "end": 2768.016,
+      "text": "Any evidence to determine if optimization of individuals over groups are doing is on the quality of answers or time of answering? So I did. So from Claudio, I did do some analysis of how quickly answers are arriving. I'm not sure if that gets to really what you're asking here. We didn't see any significant effects on the timing, like how quickly you start to receive answers. So there's no. Now."
+    },
+    {
+      "start": 2768.016,
+      "end": 2796.192,
+      "text": "that could just be due to noise. Like a null result doesn't mean there's no result, right? It just means that I couldn't detect it with this data. So it's possible that that is playing a role. It just seems like not a particularly large role. And feel free to reply in the chat if I didn't answer your question. Hopefully I did. And then Alireza is asking, is there any statistics that exist from returning users to Stack Overflow from Gen AI tools like ChatGPT? So this is one of the major..."
+    },
+    {
+      "start": 2796.192,
+      "end": 2823.808,
+      "text": "downsides of this research is that i don't get to see people using these tools i'm inferring that they're using these tools by the fact that they've stopped participating here and the timing around which that happens so so no there's no data this is a big issue right like the companies that have the most data about the usage of these tools uh are the companies that make them and a lot of them are not sharing that data so we don't really know so i'm in the process of trying to collaborate with some companies right now"
+    },
+    {
+      "start": 2823.808,
+      "end": 2844.528,
+      "text": "to get some data from them, which is challenging to work through, as you can imagine, about which employees are making use of these tools as proxied by their web traffic to OpenAI.com, for example, from within the corporate network, and trying to link that with what they're doing in the company. So that's ongoing, and it's tough."
+    },
+    {
+      "start": 2845.104,
+      "end": 2873.952,
+      "text": "And then Stefano is asking, I may have missed something, but is this data on the top 50 most popular topics only? Do you have data on the supposedly longer tail less popular topics? So, yes, this analysis and all of this data is focused on the top 50 most popular topics. I'm not looking at the long tail. In theory, we could. We have the data. We just haven't done that. The data is just sparser. So there's a lot of topic tags that show up a small handful of times to the point where the panel would be mostly zeros."
+    },
+    {
+      "start": 2873.952,
+      "end": 2903.168,
+      "text": "um so there's a really really long tail of topics actually because the tags are actually user generated they're not necessarily uh structured thanks thanks gordon for having take care of this question now that we have a hand raised by moshe so uh one issue that i don't think you've raised to correct me from wrong is that uh how does chat gpt know knows how to code it's from reading stack"
+    },
+    {
+      "start": 2903.168,
+      "end": 2932.784,
+      "text": "training on stack overflow. So if participation goes down, then the training material is starting to decline. So this is called eating your own seed corn. Yeah, I think this came out a little bit when I was speaking about this with Francesco earlier about the data dynamics. It's true. I don't know that people have, these companies have figured out what their strategy is going to be going forward for getting more data."
+    },
+    {
+      "start": 2932.784,
+      "end": 2960.24,
+      "text": "And it's actually not not only is it just that people are participating less here because they're making use of these tools instead. It goes a step beyond because there's some pretty recent research from some colleagues of mine, not at BU, but elsewhere. But in my discipline, I'm showing that there's starting to be some reactionary response in various settings where people are actually actively sharing and posting less of their content because they don't want it to be monetized by these companies."
+    },
+    {
+      "start": 2960.24,
+      "end": 2979.344,
+      "text": "So I think there was one context, which I think is Upsplash, which is a photo sharing platform where they created a curated data set of images that could be used for trading text or image models. And if somebody had their photo included as part of that curated data set, they became systematically less likely to post anything afterwards, basically because."
+    },
+    {
+      "start": 2979.344,
+      "end": 3006.112,
+      "text": "This was getting put out there for AI companies to try to monetize and make use of without their permission. So there's some reactionary issues that are happening. This is an issue. I mean, I guess I don't know the answer to this. I don't know where the data is going to come from in the future. It seems like it will become a problem. People also have shown that more and more of the data that's on the web is generated by Gen AI. Yeah. And so this is a..."
+    },
+    {
+      "start": 3006.112,
+      "end": 3027.696,
+      "text": "You know, people who don't have water and they drink their own urine, excuse me for the analogy. Yeah. So there's an important thing to keep in mind, which is this is one type of model, which is like a publicly accessible open model. It's being trained on all kinds of data. The data may get contaminated with the model's own output for that reason. It's hard to keep track of. But if you're an organization."
+    },
+    {
+      "start": 3027.696,
+      "end": 3054.72,
+      "text": "Like I gave the example of Boston Consulting Group earlier. I mean, they're going to have an internal model for a lot of reasons, like information security concerns, for example. They don't want their employees using these public models. They'd rather have their own custom built model within their firewall trained on their curated data. That's clean. And I know it's clean. They that's a bit different because if their employees are using their model within the firewall, they can see the use and they can actually."
+    },
+    {
+      "start": 3054.72,
+      "end": 3081.968,
+      "text": "tag and keep track of what was generated by the model to try to filter it out of any data that gets produced in the future and avoid this feedback loop problem. So I think there's a difference that arises between public and private settings that needs to be kept in mind. But your point is correct. Yeah. Yep. Thanks again, Gordon. I have one short comment and one quick question. The short comment is the issue of polarization. I mean, we all know that"
+    },
+    {
+      "start": 3081.968,
+      "end": 3107.36,
+      "text": "If a tool is highly used, then it tends to polarize the users around the major teams. So maybe I'm just speculating one consequences of having ChatGPT be very efficient on Python and JavaScript could be that almost all the other languages are forgotten and then we only use them, which is not so nice because I think the..."
+    },
+    {
+      "start": 3107.36,
+      "end": 3131.808,
+      "text": "diversity, even in programming languages, is important. So this is the comment. The question is, do you plan to redo your analysis after, because I see in the graphs they arrive until April last year. Have you done it on the subsequent months to see if the trend persists or there is some change?"
+    },
+    {
+      "start": 3131.808,
+      "end": 3139.968,
+      "text": "I mean, we could in theory. So these are now published papers. So I guess we could go back and see if these trends continue."
+    },
+    {
+      "start": 3139.968,
+      "end": 3169.232,
+      "text": "This data is all publicly available data for the most part. Not this web traffic data, but everything else that we use in this paper is all publicly available data that anybody can download. And we have a repository with scripts and data that are shared online with the paper. So I may get to it, but I have a lot of other projects going on. No, no. This could be a work for some young people wanting to do research on an interesting topic. So Harness."
+    },
+    {
+      "start": 3169.424,
+      "end": 3190.336,
+      "text": "You raised your hand. Thanks. One question is we had, I think, one or two months ago, we had Dara Nazimoglu and he showed or referred to some research showing empowerment aspects of JetGPT in programming where you could increase, let's say, the productivity as well as the knowledge level of."
+    },
+    {
+      "start": 3190.336,
+      "end": 3219.216,
+      "text": "Let's say less qualified programmers, which is somehow coherent with your observation. The question is a different one. Are you, because we are talking about online communities, no? And there's a world outside online. Let's say there's something, a behavior outside. Do you have a link to any research showing on the impact of community behavior outside online communities by using ChatGPT?"
+    },
+    {
+      "start": 3219.216,
+      "end": 3247.952,
+      "text": "Because this was a question we had yesterday very much coming from the high school teachers, saying that the behavioral aspect of high school students is changing. Let's say community aspects are changing and they have only some set of subjective observations. But are you aware of any research going into this direction of, let's say, social behavior, language behavior, things like that?"
+    },
+    {
+      "start": 3248.048,
+      "end": 3267.568,
+      "text": "Which is, I think, really the basics of what we are talking when we say, OK, we look at AI and the impact on our society. So I'm not. So, I mean, I'm aware of work that's going on right now by some folks I know that's looking at how people."
+    },
+    {
+      "start": 3267.568,
+      "end": 3295.584,
+      "text": "The comparison between how one person works with another person as opposed to how they work with an LLM on a topic, just pairs of people, which is a little bit social, but I don't think it's really what you're trying to get at here. I'm not aware of that. So I'm trying to get there, like I said, trying to arrange getting data from a company to see what's happening inside the company in terms of collaboration and meetings and other things that people are having with other people in the organization. That's going to be longer term just because it's sensitive data, right?"
+    },
+    {
+      "start": 3295.584,
+      "end": 3319.424,
+      "text": "I think doing this kind of analysis in an educational setting would be interesting. Like I see this among my own graduate students even because I teach programming courses or at least involves heavy programming and students rely very heavily on these tools. I don't know if it's affecting the degree to which they have study groups or participate or engage with other students, but it's something that I think it's measurable."
+    },
+    {
+      "start": 3319.424,
+      "end": 3347.984,
+      "text": "Somebody just has to do it. I think it's probably easier to do it in a post-secondary setting versus like an elementary school or a high school just because of the population involved. Getting access to the data and things is going to be sort of harder, I suppose, in lower level schooling. But I think it's still important. And maybe there are. So my answer, my short answer is no, I don't have a link to research. And my secondary answer is I think it's a good idea to do that research."
+    },
+    {
+      "start": 3348.368,
+      "end": 3371.072,
+      "text": "Thank you. I don't see any other question. Even if the entire area of education and the use of generative AI is highly interesting, I think also highly diverse because every stage of education has"
+    },
+    {
+      "start": 3371.072,
+      "end": 3397.328,
+      "text": "its own characteristics and something that can be good at the university is not good for secondary school and so on going downwards. And I always like to repeat, not a citation, but to remember that the Greek philosopher Plato, in his dialogue, he stressed that the educational relation"
+    },
+    {
+      "start": 3397.328,
+      "end": 3416.992,
+      "text": "is a personal relation between the teacher and the pupil where the affective component is highly important. You cannot have this if we have tools responding in place of the teacher or if you have Zoom lectures instead of being in the same"
+    },
+    {
+      "start": 3416.992,
+      "end": 3440.064,
+      "text": "And it is clear that the more harmed in this respect are the younger. And if we go down from your example, Gordon, of the youngest people in Stack Overflow being less involved in the community, if you bring down these examples to school, we may speculate that the more harmed."
+    },
+    {
+      "start": 3440.064,
+      "end": 3468.528,
+      "text": "from the use of let's say from the unrestricted or unthoughtful use of ai tools in school might be the younger students that are the ones that i mean need to build their knowledge their experience and their social relation and so on and so forth but uh i see that we are past six so unless i don't know whether we can go on or yes we pass over to peter who"
+    },
+    {
+      "start": 3468.592,
+      "end": 3498.512,
+      "text": "takes over with the music proposed by Gordon. Happy to. Let me just share the screen. There we go. Can we just say huge thanks to Gordon for his availability and his lecture before starting the music? Because I guess after the music, the things will be over. Thanks a lot, Gordon. My pleasure. Thank you. Thanks for the question. Bravo."
+    },
+    {
+      "start": 3500.08,
+      "end": 3516.336,
+      "text": "Thanks, Gordon. That was what I just wanted to do. Thanks for the presentation and also for the very interesting discussion afterwards. You've selected Cellphones by Beck as a final song. Do you want to give any story behind why you chose it or just because you like it?"
+    },
+    {
+      "start": 3516.336,
+      "end": 3543.184,
+      "text": "It's interesting because it goes back to Moshe's earlier point about how phones are making like kids offline and not socially interacting as much. And we're kind of seeing similar social consequences, at least the start of that around some of these LLMs and things. So that was the connection, actually. I see. OK, before I play it, I will just announce our next talk in two weeks on June 25th. We will have a panel on autonomous weapon systems and future paths for regulation."
+    },
+    {
+      "start": 3543.184,
+      "end": 3565.456,
+      "text": "And we will have two speakers, namely Elisabeth Hofberger-Pippan of the Peace Research Institute Frankfurt and Karoline Wergerter of the Austrian Federal Ministry for European and International Affairs. And the panel will be moderated by Alison Stanger. And that's all I have to say. So thank you, Gordon. Thank you, Enrico. Thanks all attending. See you in two weeks. And here's Beck."
+    },
+    {
+      "start": 3852.816,
+      "end": 3857.232,
+      "text": "and goodbye. Thanks to everybody. See you in two weeks."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,1061 @@
+{
+  "video_id": "LCkFOUrh6yM",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome, everybody. Hello. Good evening or good morning. I welcome to this DICOM lecture of today. It's on gender diversity and inclusion in digital humanism. And I think it's a topic which is at the center, at the core of our activity. Remember, digital humanism states that humans have to be at the center of technological progress. So it should be centered around human interest. But who are these humans? How diverse are they? Which groups are there? And how can different interests be included and taken into consideration in this technological progress and development? So this is the topic of the panel of today, and I think it's a very important one. I'm happy to welcome the distinguished speakers of this panel. We have five of them, Sally Wyatt, Sean Landers, Hinda Hanad, Judy Watzman, and Erin Young. And they will be introduced afterwards by Linda, who is chairing and moderating this session. And she also organized together with Sally Wyatt this panel. And I want to thank you both for that, for this really excellent speakers of today. Before going to Linda and introducing her, I will just shortly remember what we have done in our digital humanism initiatives so far. We succeeded with our online lectures on a nearly weekly or at least monthly basis since June 2020. We organized 13 lectures since then and four workshops. At the beginning, we were not sure how this could be done, but we were successful. All the slides and all the talks are available on our website and also at our YouTube channel. So this is really a huge, rich source of knowledge. And you can I really invite you to have a look. In essence, we started small and we are growing. Now we have also an internationally renowned program committee. But we do not only do these online lectures. We are just finishing a book called Perspective on Digital Humanism. There will be over 45 contributions there and it will be published by Springer. In September, we have a very active working group discussing and designing an interdisciplinary digital humanism master curriculum, which is really how could this be taught, combining humanities, social science with computer science. And we also plan a summer school in September. So it's summer in September in Greece. But this will heavily depend on the pandemic. But we are optimistic that it will be possible and it will be published and announced soon. I think we are successful in creating a knowledge hub, an international one, with very little money, nearly nothing, but with a lot of commitment. And we will continue to do so because at the end, it's about ourselves. It's about our future and our future as a society. Regarding organizational issues, now we have the panel and the discussion at the end. We have again the piece of music by Peter Knies, which will be at 6.30 approximately. To the moderator, Linda Hartmann. She is a manager of research and strategy at the Centrum Wieskunde Informatica in Amsterdam, which is a research center. And at the same time, she is professor at the University of Utrecht in the Netherlands. on multimedia interaction. She's also the director of the Amsterdam Data Science Network, which is a center or a network focusing on data science and artificial intelligence, and this bringing together people from academia, industry, and also society. She's at the same time the European director of LIAMA, which is a research collaboration. Between INRIA and France, CVE, which is the Dutch Institute of Linda and the Chinese Academy of Science. She's also the past president of Informatics Europe. And she really did a lot for this International Association of European Informatics Department. And finally, which some on her research, which is on information, data visualization, data science, semantic web, human computer interaction. Linda, I thank you for organizing and moderating, for being with us. And you are with us since the early beginning. So thank you for that. The floor is yours. Thank you very much, Hannes. I feel highly embarrassed with my long CV there. So I would very much like to welcome our panelists this afternoon. I would also like to welcome our audience. because I'm always aware in these digital humanism lectures that the audience is at least as knowledgeable as the panelists. So I really look forward to an interactive discussion. I have put the fear of Zoom into our panelists today. They have 12 minutes each. And while Hannes gave me such a beautiful introduction, I am going to refer you to the website to find the CVs of all our really amazing speakers. And I would like to start the floor and invite Sally to give our first part of the panel today. Thank you very much. Thank you very much, Linda. And thank you also to Hannes and Meta and for the technical support and organising all of this. And to Peter Knace, who has. chosen a wonderful piece of music for us to end on and i think um as we've already uh said this is a very very timely and important topic and really goes to the heart of digital humanism um i've been doing this a hundred times and now i can't find the devil okay um right You're going to see probably various versions of headlines like this over the next hour and a half in the different talks. We all picked our favorite ones. I mean, I particularly like the Uber looking for a female chief executive and narrowing it down to three men. Well done, guys. But, you know, I think it's an interesting reflection on issues around women in the labor market in high tech areas. And the top one is a sort of good example of how AI bias, particularly training data that may in itself be very biased, having neglected women's lives and perspectives and experiences is just going to exacerbate the problem. And then Apple engaging in a little bit of political censorship and, you know, not wanting to frighten anyone by talking about feminism, heaven forbid. So what I want to focus on is a little bit of the history. That's why I'm going first. We've established I'm not the oldest person present, but I have been around for a while and remember some of this stuff and was there. But I thought I'd also start before getting to the history with a bit of a Dutch situation. If you read my little bit of CD, I'm not actually Dutch, but I have lived in the Netherlands for 21 years. And it's now the kind of situation I know best. And of course, before I came here and I imagine many of you and my apologies to the Dutch people who are present. I know you're there. But the Dutch have a really good international press and think it's a really kind of tolerant and progressive country. And in many ways, that is true. It was the first country to allow gay marriage. But when it comes to the position of women in the labour market and the women position of women in universities in particular, the record is not so good as these numbers illustrate. And I'm not going to go through them in detail, but maybe just to highlight that computer science and AI is included in engineering in this data. I myself am a social scientist, which is clearly. the best thing to be here in terms of women professors and so as a proportion if you look at the proportion of students maybe not so great but I think another important point to make is that there are also big differences between these within disciplines so not only between disciplines so in the humanities for example if you look at sort of literary theory and linguistics There are more women. If you go to philosophy, the position of women is much, much lower than this number would indicate. So as I said, you know, the Dutch have a good press in terms of the United Nations Gender Equality Index are doing very well. No large, large part due to very good sex education and other such things. But when it comes to and also pretty good in Parliament, this is based on the latest election, which was just a few weeks ago. But labour market participation is relatively low compared to many other Western European countries. also Eastern European countries. And as I've already said, the position of women in universities is really quite shocking. But I really want to focus. And these are my conclusions in case Linda just unplugs me at some point. So if I don't get through my whole talk, these are the main points. It's important to think about the position of women in particular in computing science generally, in digital humanism, in AI. because of social justice and fairness that women and other marginalized groups should have access to these interesting developments but it's also a question of epistemic justice and the importance of design that if we have a wider range of perspectives we might manage to design actually better technologies Here are a few nice pictures. Now, I'm sure for all the computer scientists present, I'm sure that in your history of computing courses, I know some of you don't even have history of computing courses, but you should. And you should learn about Ada Lovelace, the woman up there in the corner who worked closely with Charles Babbage in trying to develop the analytic engine. And amongst feminists is well known as the first programmer. I hope the rest of you know that as well. Down in the sort of lower corner, that's a photograph from Bletchley Park, where again, where Turing worked, where to try and do the code breaking during the Second World War, somewhere mysterious in the middle of England. 75% of the people working there were women. Now, of course, this was partly because the men were off fighting and doing other sorts of things. But it does kind of demonstrate that the argument that women cannot do this is simply not true. Women were quite capable of coding and programming and decoding back in the day, sort of in the 1940s. And then the picture from the cover of Marie Hicks' book. Judging by the clothing is obviously somewhat later than the 1940s, the late 60s. And still throughout, as Hicks says at the beginning of her book, you know, throughout the 40s to the 60s, computer operation and programming was very much viewed as women's work. And as time went on, as it became more professionalized, as higher education departments, degree programs were set up, men displaced the women. Partly, I think this was because at that time in the kind of 60s and 70s, more attention was given to the hardware, which was sort of seen as men's work. The point, I mean, there's much to be said. There are many books about this. But I think the important point is that women have done this before. They can do it again. One other sort of important little fact, let me find it, that in the early 80s in the United States, 37 percent of computer science students were women. This dramatically declined. And by 2010, it was only 17 percent. So things used to be better. So this sort of notion that the world just gets better and better. I think we've had lots of examples of how that hasn't been the case over recent years, but also in relation to the position of women in computing. So I have lots and lots of quotes, but I'm only going to give you this one. Well, no, I have one more. Shulamith Firestone, who was this was this book was actually on the bestseller list when it first came out. I mean, she has been a bit forgotten, but I think her work on what some of us present call materialist feminism is still really important. And I think the reason I'm showing you this is that sometimes people think that women are really against technology, that somehow we have a greater affinity with nature. Again, this is wrong. I can see Linda looking puzzled here. But there was a lot of optimism about digital technologies, or we call them something different back in 1970. Firestone was also very positive about the possibilities of reproductive technologies, which were also undergoing lots of change at that time, and computing technologies about how this would liberate women from oppressive conditions of patriarchy. I think Firestone was very important for Donna Haraway, who you might have heard of, who wrote the Cyborg Manifesto in the mid 1980s. And I'm not going to read through this, but Haraway was trying to argue, again, we can't reject technology as women or as feminists. You know, we are them. They are us. We're very much kind of bound up with that. And she famous quote, I would rather be a cyborg than a goddess. to embrace technology and move with the times. Another important development from later in the 80s, intersectionality. And those of us who were there might remember a lot of the fights that we had in second wave feminism about who was in and who was out. But the important thing that we did actually already know back then, but now goes under the name of intersectionality, that we have to kind of take different elements of our identities into account. We don't live our gender alone. Gender, class, ethnicity, age, sexuality, all of these things kind of come together. And Crenshaw is kind of usually credited for bringing this to our attention, a legal scholar. So this is my final. I thought I'd be really radical and end with a man, Andrew Feenberg, a well-known philosopher of technology. Now, actually, he was talking about capitalism that. And this, I think, could be an interesting discussion point. And I think perhaps rather challenging to some of the people present. He's arguing that technology is inherently conservative. And, yeah, I would question, is that actually the case? Under what conditions can we? design things that could help us to transcend both capitalist, patriarchal and sexist and racist and other bad things. So if you want to read more, there is a huge literature on this. Here's some of it. I think I'm on time, Linda. You have seconds to go, if you wish. I will give those to Hinda. OK, thank you very much. I'm not going to. I now have to stop sharing. You're not going to get to see that. OK, thank you very much. Indeed, that is a perfect introduction to the topic. And for computer scientists, I've only ever experienced computer science from the inside. And it's really interesting to have people reflect about technology and the role of women in that. So then I'd like to give the floor to Hindu, who now has. 12 and a half minutes, because you've got some time from Sally. Fantastic. Thanks, Linda. Thank you, Sally, for the extra few seconds. So, yeah. So my name is Linda. I work for Janssen Biologics. I'm a data scientist there. And I'm also doing research at the University of Amsterdam as an endowed professor of data science. Today, my challenge will be to talk to you about bias in AI and kind of my perspective on how I experience this and how I try to deal with it in my day to day work as someone who's leading a data science team. So as Sally predicted, this is a slide where you see some of the world stories that we saw in the news in the past few years. And the idea is to obviously relate to, you know, these. These breaking news around AI that fails and AI that is, you know, often we see things about racist algorithms or sexist algorithms. Obviously, deploying algorithms that fail sometimes cause problems. And this is why we're all here talking about this. And in this context, what I wanted to talk about from the perspective of a data scientist is someone who's actually developing these models at a company. is how we define bias, because bias is obviously a concept in statistics, but when we talk about AI and algorithms, what we mean by bias in this context is these errors that these algorithms, these models that are deployed are going to cause, and then they produce unfair outcomes for individuals and communities. And these biases, so these systematic errors, They can come from a variety of sources. So it could be algorithmic designs, the way we decided to model a problem. It could come from biased data collection. It could come from the way we selected the different features in our model, et cetera. And these algorithms are basically going to perpetuate the bias that's already existed in the data. So there are different types of biases out there, and I find it very useful to try and put them in three categories. that are not, this is not an exhaustive list and I will share my slides later and I really recommend you take a look at this paper that I refer to towards the bottom of my slide. And basically I like to divide this in three categories as I said, so historical bias which reflects the structural society or issues. So this is typically when you have gender bias that affects the data and that's picked up by an algorithm. Representation bias is where you have groups, certain groups are underrepresented in the training data. And measurement bias where you are using certain data, certain features to try and model a phenomenon, but then you end up approximating or modeling something else. I'm going to give three examples of each one of these biases. In my slide earlier, there were these headlines from different news outlets. There was something about the Amazon sexist tool. And I think two or three years ago, there was this story about Amazon having developed a screening software to look at different CVs that were received from folks that wanted to work at Amazon. And then they ended up kind of discriminating systematically against women. Now, if we look at just the data in terms of what is the female or the women representation of this workforce, you see that obviously women are underrepresented in these different STEM related jobs. So realistically, you won't have the same quality of data that represents a different pool of candidates or talent for men and women. And this is something that's very easy to pick up for an algorithm. If you're just going to throw some features in a model. this is typically something that's going to be picked up and then scaled, right? Because algorithms are obviously cheap and they can produce results at a different scale than when humans are interacting directly with them. So this is typically historical bias that we see in the sexist, so-called sexist tool, because it is the way that our society has evolved to have women being underrepresented in this field. And then just an example that illustrates, in my opinion, the representation bias very well is the study that's been done two or three years ago, where researchers compared the efficiency of different facial recognition algorithms or actually software from different companies. And they looked at the errors. So they looked at when do these software make errors? And what they observed is that it's typically a dark female face or dark female skin. this is where you have the highest error rates in these models. And this is what we would kind of attribute to the underrepresentation of these type of features that these individuals have in the data. So basically, it wasn't captured by the training data set. That doesn't mean that folks were underrepresented in society. It means they weren't represented in the data. And this is typically then picked up by an algorithm. And then, of course, if you don't see enough variety in the data, then you're not necessarily going to predict things right when you're deployed in real life. So my last example in a series of bias illustration is a rather recent example that you might remember from last year in the UK. Because of the coronavirus pandemic, the students said that the. The high school exams were canceled for the last year. Students and authorities wanted to predict what great folks these young students would have. And that would determine which university they would go to. And if you remember, there were a lot of protests where the students were saying things like an algorithm shouldn't decide my future. So obviously, this came from, let's say, a good intention where they wanted to automate this process because, of course, there are a lot of students there and they wanted to have a fair assignment of these final predicted grades for high school before students would go to college. And what they ended up doing is use a lot of features that were actually predicting something else than the competence of the student and how well they would fare in their last exam. And there were things like the class size, the postcode as well. And obviously, these features are correlated with, you know, how correlated with where the school is situated and also with what type of population is it servicing. So at the end, you end up giving even more advantage to schools that already are in the affluent neighborhoods. So this is typically something that illustrate measurement bias, because instead of measuring the performance of the students, we end up measuring whether they come from a rich or poor background. So in practice, what does this mean? We know that these things can happen. So when we are faced with a decision about what data to select or what type of model we want to develop or deploy. A lot of the literature around fairness and AI and mitigating bias revolves around what we call fairness algorithms. So basically, the idea there is that in order to fix these issues, we are going to modify these algorithms to make sure that they're correct for the potential problems. In my opinion, there is not really a unified framework where we can do that. There is no recipe that tells us data scientists in our day to day work how we should tackle this problem and how we should be paying attention to sources of bias. Especially since it can happen at different stages in our development process. So it could be about the population that we're targeting. For instance, in the UK exam examples, it was the student population. And we can also have bias that results from the data that we choose, the features that we choose to put in a model, the type of model that we are choosing. And of course, this obvious combination of bias in all these different possibilities for bias to occur can be combined and then result into a decision that would lead to discrimination. So these are the, when you talk about mitigating bias with algorithms that are going to fix bias, there are three types out there that you can read about. Some of them try to modify the train data if you've already identified some bias in there. So they try to fix the bias at the source. Other algorithms try to modify the way the predictions are being made in order to account for potential bias. And then you have those who look at the outcomes after the predictions have been made and try to modify that in order to make fair outcomes. So you probably already guessed that I don't find this approach particularly relevant. I don't think it really solves the problem of bias because it just looks at it from a technical perspective. We think we have bias. So we're just going to try and fix the problem from a tech perspective, not really looking at the bigger picture and really asking the question. should we really be building something that potentially could lead to bias? But from, let's say, a practitioner perspective, it also raises issues and questions because they're just simply not practical. In most cases, doing a lot of the work that data scientists do, you don't always know what's in your data. You don't always know what, let's say, hidden biases your features might be encoded for. And so this assumption that you already know what sensitive attributes and potential problems your data have, that only concerns very specific use cases or scenarios. And they're not always relevant for the vast majority of mathematicians. And when it comes to fixing bias in terms of using an unbiased algorithm or fairness algorithm, you're going to have to make the decision of losing a little bit of. the performance of your model that I call here utility versus a measure of fairness that you want. This obviously also raises the question of how much fairness do I allow for how much loss do I allow in terms of utility? This is not a trivial question because someone, an individual in this process, has to make that decision. Someone needs to decide how much performance, how much appears I'm going to lose, you know, to allow for more fairness. And of course, reliability. If you look at all the AI literature around fairness and fairness algorithms, it's impressive. Every day there is some new claims about how we can fix bias. When you look at some of the reviews that have been done recently, you see that actually these algorithms want to fix bias. They're not always that stable. So I'm not going to go through details here, but this is also a very nice paper to read. I think it's rather accessible. You don't need to be a data scientist to understand it. But the idea is. If you compare all the algorithms or some of the algorithms out there that try to fix bias and you look at their accuracy, basically what you see is that depending on for what feature or what type of source of bias you want to fix for, you will have some variability around the performance of these models. So these are the different boxes that we see. So every time you run your fixed algorithmic fix with fairness, you will end up with slightly different results. This also means that in practice, someone needs to decide where do I actually draw the line? Where do I trust that these algorithms are actually indeed going to fix my bias problem? So we encourage you to take a look at this paper. It's very interesting. So actually I already mentioned this. The idea is that we're here with this fairness algorithm trying to fix the bias. We're trying to really do it from a tech perspective, but we're not really looking at the whole context where these models are being deployed. So I'm not sure how I'm doing time-wise, but... You have 20 seconds. Okay. So very quickly, so the message basically here is if you want to fix or if you want to pay attention to these different bias issues in AI, what we need to do to start off is just ask some relevant questions. And I know they seem quite trivial, but I also know from experience that a lot of people just don't even start to think whether they should be automating the task that they have at hand to begin with. And then, of course, there are other questions that you can ask about transparency, potential harms and who is going to be affected if things go badly, et cetera, et cetera. So I think this is all just part of the conversation that folks need to have. The folks that are developing this model need to be empowered to have. It's not always easy to do these questions. So that's it for me. Thank you very much indeed, Hinda. I wish we'd have this live. We should ask Peter to get a loud clapping noise. No, that was lovely. Thank you very much. Then I'd like to continue with our next speakers. And they have a really hard time. Judy and Aaron have together got one speaking slot. So they have assured me that they have this down to a T. In some sense, we should maybe expand the whole panel to be double the length. But we'll start with the 12 minutes that we have. And I look very much forward to what you both have to say. Thank you. Well, actually, it's very easy for us because we're so in tune with what's been said already. It's absolutely marvelous. Can I first say that we're delighted to be invited and get an opportunity to tell you about our project? We're at the Alan Turing Institute, you know, part of the public policy program. And as you can see, we've got a project called Women in Data Science and AI. And the point of it is. really, to use research to inform concrete policy measures aimed at increasing the number of women in data science and AI. And just quickly in the next slide, you'll see that we're the National Institute for Data Science in the UK, basically. We have all of these various partners. To just go on to the next slide. Thank you, Erin. You're with me. Thank you very much. I mean, you know, we've... We've already seen the sort of numbers. I mean, we partly decided to do this project because it's so clear that women are, amongst other groups, are very underrepresented in this kind of work. And the third, you know, the graph on the right, which I know is very hard to see, but it's basically showing you that if you look at research done in AI. On average, 88% of men, you know, there's a whole list of countries here, but basically it's incredibly sort of male-dominated area. And so in the next slide, which, again, you've already seen a lot of these examples, there's a lot of discussion now of coded bias. And I won't go through these now because you've seen quite a lot of these things already. I mean, the main thing, you know, that I think is very interesting is how this is getting headlines, how there's a lot of discussion about this. saw the film Coded Violence on Netflix. So it is like there's now a public conversation, really, about the problems of social bias and algorithms. And, you know, for some of us, these issues are not so surprising. I mean, if you, in the next slide we've just got here, you know. That, as I said, there's now a lot of research and activism around these issues. But, you know, there's a lot of historical work that Sally was talking about, a lot of sociological feminist theory going back for many, many decades, really talking about gender relations being embedded in technology. So particularly for... people of Sally and I who've been around a long time what's kind of interesting is the extent to which there's a reproduction if you like of gender relations in very new technologies and you know I'm very struck by how a field like data science which is a relatively kind of new field can become so masculinized in such a short period of time and actually Inder has very nicely already talked about technical studies, you know, that there is now a big debate about fairness in algorithms, whether there's technical solutions and the limits to technical solutions. And I guess just sort of quickly going on to the third slide. I mean, our project's been going for about two years. We think about it as having, if you like. three themes. The first one, which we just finished, and Erin's going to talk about our report, was really a mapping exercise because we really wanted to have an evidence base for doing some work on women in data science and AI and actually kind of have a look at what the statistics are, how it looks. Where the second Theme, if you like, or that we're going to go on and research quite soon, will be on workplace cultures, you know, what's happening within organisations, what are the subtle processes that maybe are making it difficult for women and other groups to feel comfortable and thrive in those cultures. And then the third one will be to look at how these things relate to bias in AI. And if I can just kind of repeat what... Sally said, because it's been my theme as well for my working life, if you like, is that we really are always emphasising that these issues about gender and technology are important, both as social justice issues, but also, as Sally very nicely put it, as issues of epistemic justice. And, you know, it worries me a bit that a lot of this discussion... now about technical and non-technical solutions to algorithmic bias are not immediately hooked back to the issue about, well, actually, could this be something to do with the underrepresented nature of the people who are designing these algorithms and technologies in the first place? But now I'm going to quickly switch to Erin to tell you about our report. Thank you, Judy. And I will say it's brilliant how in tune we are as a project with the first two talks. I thoroughly enjoyed them. And so, as Judy said, this report that we launched on International Women's Day this year, we make the connection between the lack of diversity in the AI and data science fields and this feedback loop of bias in AI. And on the right here, I pulled the cartoon, which we included in the report, which I really like. So for the report, we began with an overview of existing literature in the field and particularly existing data sets of women working in AI and data science fields. And we found that detailed data is very sparse. Hinda gave quite a nice overview. So roughly about 20% of UK AI professionals are women. And this drops to a really shocking. 8% of those who are contributing to online machine learning conferences. So not only did we need more data, but we wanted to be able to interrogate the dynamics of this problem in this lack of diversity. So we formed a data partnership with an executive search firm who work in the fields of advanced analytics, AI and data science. And from there, we obtained a unique curated data set, which contains career data on individuals working in the fields and crucially this connected to their linkedin profiles which we worked with and so we the report focuses on our data science analysis of this career data set and through this we were able to really interrogate the gender dynamics of ai and data science careers both in the uk and globally and our findings reveal extensive and really worryingly persistent disparities between men and women in skills, status, pay, seniority, attrition, and so on. So I wanted to pull out a couple of the most striking findings for you. So we found evidence of persistent structural inequality in the data science and AI fields with massively diverging career trajectories. Women are more likely to occupy a job in the AI talent pool associated with less status and lower pay. So usually within, as you can see on the graph, data preparation, exploration, analytics. And the more prestigious jobs in engineering and machine learning are typically held by men. We also found that. women working in AI and data science in the tech sector have higher turnover rates so this is more frequently changing job roles and higher attrition rates that's leaving the industry altogether. And there has been some really interesting research on gendered attrition from technology firms with, I'm sure, reasons you've heard before around chilly, unwelcoming climate, sexual harassment, microaggressions, family commitments, cultural associations around who now fits in technology fields. And as Judy mentioned, this is an interesting and important aspect we're going to go on to explore in our next piece of work. Some of our other findings include industry differences. So as you'd probably expect, women in data and AI are underrepresented in industries which traditionally entail more technical skills. So the IT sector, for example, and overrepresented in industries which entail fewer technical skills. So the health care sector. We found that men routinely self-report having more skills than women on LinkedIn. And this was consistent across all the industries we looked at and all the countries in our sample. And then the qualification gap, we found that women in data and AI have higher formal educational levels than men across all industries. And shockingly, this was even higher for those in more senior ranks, so those in C-suite positions. I also wanted to quickly highlight our case study. the sparsity of statistics on the demographics or people working in data science and AI motivated us to look at other potentially informative sources and as I'm sure you're aware online communities are a really important feature of data science and AI so we thought this would be an interesting lens through which to look at what's happening and our research found a pretty consistent across ES Central, Kaggle, and OpenML that 17% of participants globally are women. And then this drops to only 8% on Stack Overflow, which is shocking. We also found that only 20% of UK data and AI professionals in the UK on Google Scholar are women. Hope I'm not running over time. Okay, so just to end with, two minutes, perfect. So we we ended the report calling for the need for effective policy solutions if basically if we're to reap and enjoy the benefits of these technological advances of AI. And we had if you take a look at our report, our recommendations are very long, but I just wanted to pull a short extract to show you. So we basically call for the need for greater transparency from big tech firms around their diversity and inclusion figures. We call for, as the speakers before discussed, more gender sensitive or mandating gender sensitive design of machine learning systems and for governments to ensure that women have access to participate in these frontier technical positions in data science and AI. And we're really excited to say we're having a lot of exciting engagement, particularly with the UK government. So our report is starting to have some real tangible impact, which is brilliant. So thank you very much. If you'd like to learn more about our project, please head to our project hub. We have some of our past research. I've added here a cover of some work we did with UN Women last year. And we also have a list of resources for women in the community already in the data science and AI fields or wanting to get into the data science and AI fields, as well as some more information around bias in AI. So I hope I haven't run over time. Thank you very much. No, that's brilliant. I seem to really have scared you all. Virtual clapping. I was wondering if you could perhaps post the link to your report in the chat. And I was wondering, I was having problems with cutting and pasting into the chat. I don't seem to be able to copy items from the chat. Is that something that our. technical people in the background can allow everyone to at least copy stuff from the chat because if people are pasting interesting information there then it's nice to share. Okay yes sorry there's so much time left over I don't know what to do so luckily Jeanne knows exactly what to do the extra time and I'd like to welcome Jeanne who came out early from one of our meetings to come and join the session and will give us a policy perspective on this whole debate. So please go ahead, Jan. You definitely have 12 minutes from now. Perfect. Thank you, Linda. And thank you very much to the other speakers as well. I think this ties in very nicely in terms of what the EU is doing to support gender equality in research and innovation. So I'm a policy officer at the gender sector in the D4 Democracy and European Values Unit. And I briefly want to give a context of the broader equality priority of this new commission, President von der Leyen. We have the first commissioner for equality, Helena Daly, and an internal task force for equality that actually coordinates all the equality mainstreaming throughout the services. So RTD or DGI is affected by this as well. We published the gender equality strategy last year in March, and in this R&I and our funding programme Horizon Europe are explicitly mentioned, with measures announcing the possibility to require a gender equality plan from applicants, initiatives to increase the number of women-led tech start-ups through the European Innovation Council, and Horizon Europe also would address or provide new insights into gender biases in AI. So we have five, and this actually also ties in nicely with our other priority on Europe Fit for a Digital Age, where we want to make sure that everyone is included in this digital transition and no one is left out. We have five more strategies adopted. The first ever EU anti-racism action plan, the EU... EU-ROMA strategic framework for equality, inclusion and participation, the LGBTIQ equality strategy, the gender action plan for external action and the strategy for the rights of persons with disabilities. Now, in the EU anti-racism action plan, this phenomenon of facial recognition systems performing less well on darker skinned faces is also recognised and In this action plan, it is also mentioned that this is an issue we want to tackle on the EU level. We have published a white paper on artificial intelligence that lays out the European approach on trustworthy and secure development of AI. This was last year in February. It is grounded in our values on fundamental rights and non-discrimination, and it also looks at the potential risks for exacerbating existing inequalities, creating new biases and discrimination through systems like facial recognition or chatbots. It focuses very much also on skills development, which will be addressed under the Digital Europe programme and is also in line with the Digital Education Action Plan, where we actually have specific actions focusing on developing digital skills for girls in STEM education through a STEAM approach. And then lastly, there will be a forthcoming proposal on a new legislative framework on AI based on this white paper and following a big public stakeholder consultation. And this will address how to safeguard fundamental EU values and rights and user safety. In terms of what we are doing at DG Research and Innovation, we have adopted a new communication on the new European research area recently, in which we have recognized gender equality and gender mainstreaming as a priority. This addresses three objectives, gender equality in scientific careers at all levels, gender balance in decision making bodies and positions, and the integration of the gender dimension in research and innovation content. Erin just already talked about having gender sensitive research, so we'll go more a bit into this later. Our common approach is to foster institutional change, and we want to do this on three levels with member states and associated countries with stakeholders such as research performing and research funding organizations and in our own organization and through our own funding program, Horizon Europe. We. To achieve these goals, you need to monitor gender equality. So we have this flagship publication that the last one was published in 2018, and the new one will come out in June this year, ahead of the R&I days, where actually it's all confirming what has already been said about the huge gender gap in ICT and STEM careers. And although we've already or almost reached gender balance in terms of PhD graduates, which says 48.1%, there's still a big gap in ICT. And only two in 10 ICT specialists are women in the tech sector. And there's only 9% of women registered as inventors for patent publications. So this is also a big impact in terms of the kind of ideas that are being brought to the market. In this era of communication, we recognise that there are persisting gender equalities in the European R&I systems, which actually hinder our potential to form and bring new ideas. And for the first time, we address or we... recognise the need to open up to intersectionality with other social categories such as ethnicity, disability and sexual orientation. And we also want to address gender-based discrimination and violence in R&I organisations. more strongly, because this still remains a bit of an understudied and under-recognised issue, but it's very detrimental to a women's career, as we've already heard before. So the Commission will, as of 2021, propose the development of inclusive gender equality plans with Member States. And I will talk more about what that means later. First about our key funding program for research innovation and innovation. We have a big budget of 95.5 billion euros and it's structured around three pillars on excellent science, global challenges and innovative Europe. Under pillar two, we have these six clusters that address different research areas and cluster four, digital industry and space. We'll also look into emerging technologies such as AI, virtual reality and quantum technologies. So I cannot say too much about this now because the work programs for this year and next year is. are foreseen to be adopted soon in the next month, hopefully. We have strengthened our provisions for gender equality in Horizon Europe with a new eligibility criterion. That means that applying public bodies, research organisations and higher education establishments will need to have a gender equality plan in place. And what is a gender equality plan? that is fostering this institutional change approach. It's having a formal document signed by the top management and published on the institution's website, having dedicated resources such as earmarked funding for equality officers and gender equality teams, and also perhaps having working hours reserved for existing staff to do this equality work. There should be capacity for data collection and monitoring on sex and gender disaggregated data collection across all staff categories and annual reporting of gender imbalances across job categories. We also want to encourage training and capacity building, for example, by tackling unconscious gender bias among staff and decision makers. And this approach is really meant to foster a more... friendly working culture in R&I organizations and also to prevent what Judy just talked about, this higher turnover rate of women who may have to leave their organization because of sexual harassment or other issues. So these are the areas that we recommend a gender equality plan should cover. It's work life balance with parental leave policies of flexible work time arrangements, gender balance in leadership and decision making, gender equality in recruitment and career progression. This gender sensitive research. So the integration of gender dimension into research and teaching content and measures against gender based violence. So for this, we have the gear tool that actually has a lot of best practices, resources and guidelines on how to do this. It could be having a place of conduct, having a code of conduct in place or an intervention protocol in case of complaints. The other novelty for Horizon Europe is this strengthening of the gender dimension in. research and innovation content. So as of the next work program for 2021, this will be mandatory. So researchers and applicants have to justify or have to explain how they will integrate the gender dimension into their research projects, unless they can justify why this may not be relevant for a topic, for example, on pure mathematics. So this really this is evaluated under the excellence criterion. And with this, we want to we want to strengthen gender sensitive research. Why is it important? I think we've already seen enough reasons in the other presentations, but we believe that it brings added value in research in terms of excellence, reproducibility, creativity and business opportunities. It brings an in-depth understanding of all people's needs, behaviours and attitudes, and it also ensures that goods and services are better suited to the needs of all citizens and therefore it can enhance societal relevance of research and innovation outputs. To help researchers address this, we have an expert group called Gendered Innovations that produced 15 case studies in health, climate change, energy, transport, urban planning, but also in AI and robotics. This is building on our previous projects, and it includes methodologies on how to actually do sex and gender analysis or intersectional analysis in R&I content in all these areas. So they also provided policy recommendations and fact sheets that I recommend you can check out. This study on the gender shapes project has already been mentioned a couple of times, so I won't go further into it. One of the examples that we often show to people working on the design of the Horizon Europe work program to actually raise awareness about this and to also consider where gender might be relevant. Another example is on virtual reality, where actually it's not just about producing bias, but where virtual reality can. also help to promote gender equality or to develop empathy through visualizing worlds where someone experiences inequalities or where someone actually sees, for example, a woman on the U.S. banknotes, which is from the Notable Women's Project. Can I start to round up? Yes. So we just have this EU Prize for Women Innovators that I just want to mention. Applications are still open from 18th of March to 30th of June, and the winners will be announced in November. This is to celebrate women who are bringing game-changing innovation and create role models. Conclusion, there are certainly still a lot of gender inequalities and lack of diversity, which in our potential in the European research area. But on EU level, we really want to change this through this gender equality plan approach and through mainstreaming the sex, gender and intersectional dimension in Horizon Europe. And if you have any questions, you can also check out our web page. I'm sorry for speaking too long. That's it. No, thank you very much. We're very, very delighted you're able to speak with us today. Before we move on to the questions, I just want to say that Meta and I have been having a chat about the chat. And while it seems we cannot currently copy the links in the chat, that Meta will make sure that any links you post to the chat can be included in the comments section on the YouTube page. So it will take a little bit of delay, but we will get the links to you. OK, so now I'd like to open the floor to participants to ask questions to our speakers. It's the nicest if you can pose a question in real life with voice or camera. If you can somehow raise your hand, which I believe you should be able to with the reactions, one of which is raise hand. I'm now raising my own hand. There we go. Mosh has also raised his hand. I will unraise my hand. And Moshe, this is you really asking a question. Excellent. Please go ahead. So there is a dimension that has not been mentioned here. And I don't know if it's been studied, but anecdotally, there seems to be a north-south gap in the underrepresentation. What I mean by that is that the gap is much larger in northern countries. And in smaller, there is more representation of women in computing in southern countries. This is even true in Europe. If you go to the kind of the Mediterranean countries, they usually have higher representation. I think this is true also between Northern America and Central America. So again, I've not seen it studied formally, but when I talk to people, you just seem to be significant. High representation in southern countries. And I'm curious if people know about it, have opinions about it. I see Judy waving her hand. Hello. I see Hannes waving his hand. Can I add something to this question? Sorry, Judy, because I just wanted to have the second part of this question. Thank you, Moshe, for raising it. Because we had a higher presentation of women in computer science studies in Eastern Europe. And after the breakdown of the of the real socialist country, this percentage went down radically. So I just wanted to add this to the motion. So it's something like a social, cultural, political context. OK. I didn't want to. Well, that's precisely my answer, that it's social and historical context. I mean, we absolutely do know this. And in all the reports on these things, we do mention that absolutely there's a big divide, as Moishe said, between, you know, when I was in Hong Kong or, you know, in China, you know, just the relationship between girls and maths is completely different than it is in Britain and America. And it is to do with a particular construction of masculinity and femininity and its association with particular skills and types of knowledge, which isn't universal. I mean, Sally, in a way, gave the evidence historically about how there's nothing inherent in this relationship between whether women or men are better at technology and science. And one can do it historically, but one can... equally, as Moishe says, do it cross-culturally and very much show that whether it's the history of Eastern Europe where, of course, engineers and doctors in the early socialist years were equal to men, that history we still see. You know, the explanation is a very difficult one, and I think it's a multiple one. And I still, although I've thought about this issue for many decades, haven't been able to unpick really why the sort of femininity that I've experienced, say, in the sort of US, Britain and Australia, is so intricately somehow bound up with a lack of confidence about technical skills in a way that it isn't the case in Taiwan or in Hong Kong. other countries i think that's that is very hard to unpick actually and it's because it's embedded through a long sort of history as you know social cultural historical and just to add to that there's a there's a really good piece on they call it the gender paradox as a report i think they call it the gender paradox but it discusses exactly this and i think that comes the closest to some tangible research on it thank you yeah okay great thank you Can I move on to Andrei with his question? Yeah, thanks. You can just introduce yourself briefly where you're from. Well, I'm Andrei, I work at CWI as well, together with Linda. I'm a PhD student. Well, I have a question that also I think is related to my research. It's a question for Hinda, but maybe also for everyone. So on your last slide, you mentioned the fundamental questions and one of them was, is the system transparent? And my question would be, how do you see this transparency? What is a transparent system? What do you think about it? Yeah, that's the next question. Thank you. So. I'm really looking at this from a practitioner perspective, and from a practitioner perspective, it can be something as simple as having documentation for something as an automated system because you'd be surprised to see how many companies buy software, deploy software, or buy data science services from companies but don't actually know what is in the model. Having a description of what model you have, what features go in, what is the algorithm that's being used, that's to me like the kind of the first level of transparency. And then going further and building on this would be transparency about the testing and all the, let's say, verification steps that the developers undertook in the development cycle. So did you test your model on unseen data? What are the different steps that you took in order to validate your predictions, etc.? Have you looked at and balanced between groups, for example, if we're talking about fairness and outcomes and the way that they are distributed across different groups? Is that even something that's relevant? Do you have sensitive attributes in your data? Just having all these conversations, isn't that trivial? And in my experience, a lot of companies... by these data science services or by software deployed. It affects their customers, but they don't ask these fundamental questions. Okay, thank you very much. Then I'd like to ask Rayan to ask her question. But firstly, I just want to say, as I said at the beginning, that much of our audience are at least as experienced as the speakers today. Rayan is one of these people. She sets up the European... ACM Women Europe from ACM. And she's devoted many years of service to the community, which is why her LinkedIn link appeared in the chat by mistake, because I was having problems copying and pasting. So anyway, please ask your question after all the embarrassment. Thank you very much, Linda. Yes, I'm from Turkey. I'm here at Beacon University. I'm an instructor. And for two years, I'm working for Women in Computing. My question is to everyone. There is a paradox. As the gender equality level goes down, percentage of women in STEM goes up. Linda, maybe you remember from IE reports, I have been asked many times, what is your secret? We don't have any secrets. Yeah. So what can you say about this paradox? Do you have any particular panel member in mind? Or just a whole panel? She asked the entire panel, she said. Yeah, OK. I mean, I can add a little something. I don't know too much about it, so I wouldn't like to speak too much about it. But the report I just mentioned, I blush if I could, I just posted the link in the chat. There is a really good discussion of this. So I can recommend if you'd like to read some more about it, but I personally can't. speak too much to this okay I'll paste the link of the research that I'm mentioning thank you that's great um okay so while people are still thinking about questions I will take the chair's prerogative and ask my own um Erin so you were talking about the percentage of women on the different I don't know what the collective name is but the code basis so the different places where women are publishing code do you have any idea whether people are hiding the fact there are women or not because i think sometimes there's a lot of hassles of women tend not to show that they're women yeah that's a really interesting question um there's kind of two pieces how i can answer that so firstly i think i'll preface it with we we in our methodology when we were looking at the numbers of uh women and men and other genders and then different intersections between these different groups of people we some of the platforms are self-declared gender so some of the data we took from surveys that have been administered through the platforms um one of the platforms we use the genderize api where we can infer gender which i'm not a huge fan of doing but it's obviously difficult if we don't have a database of genders to be able to do research on on gender on these platforms um and so i think that's that's the first piece which is this is an interesting uh prob i can say probably it's an interesting discussion we've had a lot when we've been working on this how if at all is it okay to infer gender um particularly on linkedin as well um so i think the second piece yes that absolutely there is people use different um usernames often to hide their gender so that there isn't this uh as all the panelists have said there aren't these traditional assumptions made about technical skill or process of working and I think this is we didn't really interrogate this too much on the case study but this is something we're really interested to look at in the next piece of work we're moving on to so I think Judy mentioned it briefly but we'll be looking at different online workplace communication tools where sometimes gender is hidden deliberately sometimes it's not available sometimes it can be inferred through name other times it on purpose can't be and so I think this is one of the things that we'll tackle with when we come on to this next piece about diversity inclusion online I think it's a really yeah really interesting question I'd be really grateful to hear what how other people think about this as well. Does anyone in the audience have any experience with this? Just quickly, it's hard to scan. OK, if you do have them, please raise your hand and we can come back to this later. Then I have another question while the audience is still thinking about other questions. This is to Jeanne. So you were saying that one of the policies is to have gender balance at all levels of seniority. and my own observations from my own computer science field is that there's difficult to have balance at the more senior levels because there was never the women in the pipeline to fill these senior levels so then we have all this yes but you need to get the best people so is there any way we can accelerate this yeah thank you um i think we get this pipeline question a lot because it is a real but it's i don't want to say it's a completely valid or overarching issue but it is also partly a reality but we want to basically create a pipeline of more women talent by starting with girls from an early school age going to secondary education and then higher research levels to actually ensure that there are enough women because This argument is getting a bit tiring, I find personally, and it shouldn't be the case anymore. So we do have actions at the European Institute for Innovation and Technology that is looking into developing girls' digital skills. We have projects working on women innovators in tech. We try to have more and more on this. And I think the political attention that this is getting is also very useful in creating such a pipeline. OK, thank you. Then I guess the answer is we need to wait a little bit. OK, then I have Linda Weigel, if you could perhaps introduce yourself briefly. Yes. Yeah. Thanks. Thanks to everyone who presented the fantastic slide so far. My name is Linda. I'm a doctoral researcher at the University of Luxembourg. And at the moment I'm working on a paper on digital identity management. And we found that new forms of electronic identification, on the one hand, convey more control and power to the user, for instance. But at the same time, it also requires the user to be able to meet really rational decisions and well-informed decisions to share data or to restrict data to third parties, for instance. And as such, it also requires higher digital literacy among users, among the population, if you use it in the public sector, especially, which I'm personally looking into in particular. And there are some voices that also complain that these new technical standards require a really high level of digital and data literacy and user competence. So I was wondering whether the more competence we... delegate to the user, isn't there also more inequality going on if, for instance, girls or women maybe are disadvantaged here? So in the end, some new technology with a new goal actually can actually be detrimental to society as such. Are there any thoughts on this? I don't know. It's open to the panel in general. And maybe just as a first reaction, I mean, that might happen, but as we were discussing earlier, I think it depends a lot on which women, where, what their backgrounds are, that this might be a problem in some countries amongst some demographics and not so much in other countries. Things are very unevenly distributed and that we shouldn't necessarily assume that women don't have these skills, because certainly I think a lot of the evidence is that women are the major users of certainly social media. The problem is they're not necessarily the major designers. But, you know, they're kind of quite women are quite capable of using a lot of these technologies and maybe in quite sophisticated ways that aren't necessarily visible. And the other point I wanted to make, which I think is related to this and related to something that came up earlier, which I found really interesting. It was about, in a sense, the kind of pseudonymous use or of, you know, using pseudonyms to upload your data or upload your code because perhaps you're afraid of getting online abuse because that's one of the other things we've witnessed. The wonders of digital technologies that the kinds of abuse that women get when they're. So, you know, it'd be interesting to be able to create systems where women and other people who might kind of suffer from kind of hate speech or whatever, to be able to kind of hide their identities. And of course, in the early days of the Internet, we had that. And of course, we still have it. But it's been interesting to see how the kind of right to. online anonymity has shifted over the last kind of 25 years. And OK, I'm not a technical expert. I'm kind of curious what some of the more many computer scientists here kind of think about those sorts of questions about, you know, the right to kind of, yeah, to hide your identity. Whereas, you know, most of the efforts are all about trying to pin people down really, really precisely and hold them accountable, which in some. context is fine, but not in all contexts. And yeah, I'll leave it there. Okay. Thank you very much. Would any computer scientists like to reply to Sally briefly? Okay. Right. Then I would like to ask Bridget Ratza for her question. Thank you. Hello. Actually, sorry, I'm a chemical engineer. by training from Technical University Vienna. I'm the coordinator of one of those structural change projects that are funded by the EU in the science research for society calls. And obviously, we are all concerned about this leaky pipeline phenomenon. And our project was situated in the STEM field, so in the core field where also ICT is. And the current discussion actually here is all about culture. So it goes to what Sally already has said. It's about bullying. It's about harassment. It's about what kind of identity could you or can you have and can you share in this kind of surrounding. And I think it is not by chance that the Horizon Europe program now encompasses one more point in addition to what we had before like decision making and fixing female careers and gender in gender dimension in research it also added the sexual harassment perspective and I think this is quite crucial because what we see is not only young women not entering the field but even more women leaving the field either before or after graduating and going somewhere else because it's not the place where you want to be as a young woman. And I think this is the thing that we have to take. It's not about technical ability or things like that. I would reject that. Okay. Would someone like to respond? Yes, I mean, can I? I mean, I just want to sort of completely kind of agree with that. I mean, in a way, we were under quite a lot of pressure to work on the sort of pipeline and, you know, and getting more women, you know, adding to the studies of women in academia and such like. And we very sort of specifically thought that it was very important to look at organisational dynamics and chilly climate in organisations because it seems to us that there are very subtle, dynamics going on there that are very sort of hard to identify if you're doing kind of macro work. And so that's why we're going to look at Slack data and other kind of interactions and see if there are ways of kind of shifting the expectations of what interaction should be, what's reasonable interaction, what's supportive interaction, what sort of criticisms are appropriate, you know, trying to make some cultural change at the organisational level, because it does seem to me that's absolutely key. Jeanne, you've put up your hand. Did you want to respond to this as well? Yes, I think I also want to clarify maybe a bit what I said earlier about creating this pipeline. That's, of course, very important to have these technical skills. I mean, it's one thing to have the gender gaps in STEM and ICT, but also what I was talking about earlier. I mean, we want to have a more comprehensive approach that looks at fostering digital skills or STEM skills, but also addressing these organizational. aspects through gender equality plans. And I think that is part of our GECO consortium. And yeah, that's one of the projects that's actually also working on addressing this and fostering more inclusive work cultures where also issues like unconscious bias are tackled when it comes to career progression or recruitment. so that this sort of biplane excuse is not always a valid excuse. Thank you very much. I would like to embarrass Alexander Schmoltz because he wrote an item in the chat which I think was very appropriate. Alexander, do you want to introduce your own item or shall I do it for you? Thank you. I just wanted to point to another aspect of gender and undoing gender about toxic masculinity. And I had some research, especially in the FED sector, so about occupations like academia and IT, which are more well-paid occupations, that there is a vast experience that there is a lot of toxic masculinity masculinity in the field that kind of prevents women from entering also higher levels of occupations. So my question would do what we as men could do to undo gender practices, both in business and but also in everyday personal actions and behavior. Well, that's an easy one. Sally, could you maybe respond to this? Well, I mean, it relates very nicely to the previous question and discussion. I think this is absolutely the right question that, you know, it's not, you know, this isn't only women's problem that this, you know, men also have to kind of step up and. change behavior and of course as we were discussing you know this isn't universal I mean clearly in some countries this kind of you know works reasonably well or in some sectors it works reasonably well what can we learn from other sectors where there's a better gender balance where you don't get women leaving the profession after five years um but you know I remember once having a young man kind of something had come up in the Netherlands and he said you know what can I do and I you know my simple advice was you don't be a jerk I mean it's It's not that difficult, guys. Just be a decent human being. But of course, you know, there is a you know, there are it's not about only about individuals. There are workplace cultures, as Judy was talking about, that need to be addressed. And, you know, what happens when inappropriate behavior happens and who gets punished? And but, you know, again, these are questions, you know. feminists who've been looking at women and work have been grappling with for a long time so you know i think there's a lot we can learn from but i think the simple answer is you know just try and be a decent person okay thank you we're rapidly running out of time um i'd like to give the floor to eric um if he promises to have a short question and if you can have a short answer we can start the music on time yep i'll try to be very short and phrase my my My comment is a question. I mean, the digital seems to have this this effect of presenting us with a mirror of of ourselves and our society. And the case we have been discussing today is a special case of this. But it's definitely true that that we we are faced with, you know, in computer science and its applications. realizing bias, gender issues and all these sorts of things. But at the same time, this this mirror image is a big opportunity, even if it's a weird one, because, for example, now we are starting to teach computer science students, engineers about these issues, biases, for example, which they probably. would have otherwise never heard about or at least never, you know, been never discussed in an educational proper setting. That's kind of weird, but at least it's happening here. So I'd like to know whether you can share your views on this and also if you share a positive twist of this. Yeah, Judy, go ahead. This is our last speaker, I think. Okay. No pressure. No. I mean, one very sort of positive thing that's happening is the introduction of ethics courses into computer science. And that's happening, you know, I was at Stanford a couple of years ago and there was a big thing that they were making ethics compulsory. I mean, my slight worry is how ethics are defined and that they can be defined somehow narrowly. And as a science and technology studies person and a sociologist, I'm just concerned that that sort of education is kind of broad enough that it isn't philosophical ethics, but actually about kind of socio-technical issues more broadly and the kinds of issues that we've talked about today. For example, that not all problems have got technical solutions and that, you know, there isn't a technical definition or solution to the kind of fairness issue in algorithms. I'll leave it at that. OK, thank you very much indeed. Then thank you all, all the speakers for contributing. Thank you for the audience for being a great audience. The whole session with the speakers and the questions will be made online on YouTube. And I hope we can get the links that the speakers and others have been supplying copied into that session there. Then I give the floor to Peter, who will allow us to exit and enjoy our evening with some beautiful music. Thank you, Linda. So for the final notes today, I got a request from Sally, actually, and she said it would be great to, or at least that's what I got from her request, that it would be great to end with a piece by one of the great female composers who... managed to break into a traditionally male-dominated artistic profession and managed to have their works published at a time when this wasn't common and generally setting a precedent for the acceptance of women in this field. And let me just share the screen because then it's a bit... easier to talk about it. And we agreed on a piece by Fanny Mendelssohn-Hensel from her Piano Cycle Das Jahr, zwölf Charakterstücke, namely April. Why this one? Because it's April. That's the reference for today. And the piece is just as unsteady as the weather is. As such, it would also fit for the next lecture, which is also in April and already next week on April 20th, which is going to be on the topic vaccination passports, a tool for liberation or the opposite. The speaker will be Ron Rosendahl from the Ministry of Health, Welfare and Sports in the Netherlands. The respondent will be Nikolaus Voigo from the University of Vienna, and it will be moderated by Dr. Hötzendorfer from the Research Institute in Vienna. So let's listen to April by Fanny Mendelssohn-Hensel, performed by Lauma Skride. Thanks for joining today and see you next week. Thank you and see you next Tuesday. Bye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.68,
+      "text": "Welcome, everybody. Hello. Good evening or good morning. I welcome to this DICOM lecture of today. It's on gender diversity and inclusion in digital humanism. And I think it's a topic which is at the center, at the core of our activity. Remember, digital humanism states that humans have to be at the center of technological progress. So it should be centered around human interest. But who are these humans?"
+    },
+    {
+      "start": 27.68,
+      "end": 55.296,
+      "text": "How diverse are they? Which groups are there? And how can different interests be included and taken into consideration in this technological progress and development? So this is the topic of the panel of today, and I think it's a very important one. I'm happy to welcome the distinguished speakers of this panel. We have five of them, Sally Wyatt, Sean Landers, Hinda Hanad, Judy Watzman, and Erin Young."
+    },
+    {
+      "start": 55.296,
+      "end": 84.976,
+      "text": "And they will be introduced afterwards by Linda, who is chairing and moderating this session. And she also organized together with Sally Wyatt this panel. And I want to thank you both for that, for this really excellent speakers of today. Before going to Linda and introducing her, I will just shortly remember what we have done in our digital humanism initiatives so far."
+    },
+    {
+      "start": 85.072,
+      "end": 114.384,
+      "text": "We succeeded with our online lectures on a nearly weekly or at least monthly basis since June 2020. We organized 13 lectures since then and four workshops. At the beginning, we were not sure how this could be done, but we were successful. All the slides and all the talks are available on our website and also at our YouTube channel. So this is really a huge, rich source of knowledge."
+    },
+    {
+      "start": 114.384,
+      "end": 144.208,
+      "text": "And you can I really invite you to have a look. In essence, we started small and we are growing. Now we have also an internationally renowned program committee. But we do not only do these online lectures. We are just finishing a book called Perspective on Digital Humanism. There will be over 45 contributions there and it will be published by Springer."
+    },
+    {
+      "start": 144.208,
+      "end": 172.192,
+      "text": "In September, we have a very active working group discussing and designing an interdisciplinary digital humanism master curriculum, which is really how could this be taught, combining humanities, social science with computer science. And we also plan a summer school in September. So it's summer in September in Greece. But this will heavily depend on the pandemic."
+    },
+    {
+      "start": 172.192,
+      "end": 196.4,
+      "text": "But we are optimistic that it will be possible and it will be published and announced soon. I think we are successful in creating a knowledge hub, an international one, with very little money, nearly nothing, but with a lot of commitment. And we will continue to do so because at the end, it's about ourselves. It's about our future and our future as a society."
+    },
+    {
+      "start": 197.264,
+      "end": 226.784,
+      "text": "Regarding organizational issues, now we have the panel and the discussion at the end. We have again the piece of music by Peter Knies, which will be at 6.30 approximately. To the moderator, Linda Hartmann. She is a manager of research and strategy at the Centrum Wieskunde Informatica in Amsterdam, which is a research center. And at the same time, she is professor at the University of Utrecht in the Netherlands."
+    },
+    {
+      "start": 226.784,
+      "end": 252.704,
+      "text": "on multimedia interaction. She's also the director of the Amsterdam Data Science Network, which is a center or a network focusing on data science and artificial intelligence, and this bringing together people from academia, industry, and also society. She's at the same time the European director of LIAMA, which is a research collaboration."
+    },
+    {
+      "start": 252.704,
+      "end": 281.648,
+      "text": "Between INRIA and France, CVE, which is the Dutch Institute of Linda and the Chinese Academy of Science. She's also the past president of Informatics Europe. And she really did a lot for this International Association of European Informatics Department. And finally, which some on her research, which is on information, data visualization, data science, semantic web, human computer interaction."
+    },
+    {
+      "start": 282.16,
+      "end": 306.736,
+      "text": "Linda, I thank you for organizing and moderating, for being with us. And you are with us since the early beginning. So thank you for that. The floor is yours. Thank you very much, Hannes. I feel highly embarrassed with my long CV there. So I would very much like to welcome our panelists this afternoon. I would also like to welcome our audience."
+    },
+    {
+      "start": 306.736,
+      "end": 334.56,
+      "text": "because I'm always aware in these digital humanism lectures that the audience is at least as knowledgeable as the panelists. So I really look forward to an interactive discussion. I have put the fear of Zoom into our panelists today. They have 12 minutes each. And while Hannes gave me such a beautiful introduction, I am going to refer you to the website to find the CVs of all our really amazing speakers."
+    },
+    {
+      "start": 334.56,
+      "end": 357.136,
+      "text": "And I would like to start the floor and invite Sally to give our first part of the panel today. Thank you very much. Thank you very much, Linda. And thank you also to Hannes and Meta and for the technical support and organising all of this. And to Peter Knace, who has."
+    },
+    {
+      "start": 357.136,
+      "end": 379.984,
+      "text": "chosen a wonderful piece of music for us to end on and i think um as we've already uh said this is a very very timely and important topic and really goes to the heart of digital humanism um i've been doing this a hundred times and now i can't find the devil okay um right"
+    },
+    {
+      "start": 379.984,
+      "end": 409.056,
+      "text": "You're going to see probably various versions of headlines like this over the next hour and a half in the different talks. We all picked our favorite ones. I mean, I particularly like the Uber looking for a female chief executive and narrowing it down to three men. Well done, guys. But, you know, I think it's an interesting reflection on issues around women in the labor market in high tech areas."
+    },
+    {
+      "start": 409.056,
+      "end": 428.224,
+      "text": "And the top one is a sort of good example of how AI bias, particularly training data that may in itself be very biased, having neglected women's lives and perspectives and experiences is just going to exacerbate the problem."
+    },
+    {
+      "start": 428.224,
+      "end": 455.616,
+      "text": "And then Apple engaging in a little bit of political censorship and, you know, not wanting to frighten anyone by talking about feminism, heaven forbid. So what I want to focus on is a little bit of the history. That's why I'm going first. We've established I'm not the oldest person present, but I have been around for a while and remember some of this stuff and was there."
+    },
+    {
+      "start": 455.616,
+      "end": 480.736,
+      "text": "But I thought I'd also start before getting to the history with a bit of a Dutch situation. If you read my little bit of CD, I'm not actually Dutch, but I have lived in the Netherlands for 21 years. And it's now the kind of situation I know best. And of course, before I came here and I imagine many of you and my apologies to the Dutch people who are present. I know you're there."
+    },
+    {
+      "start": 480.736,
+      "end": 495.264,
+      "text": "But the Dutch have a really good international press and think it's a really kind of tolerant and progressive country. And in many ways, that is true. It was the first country to allow gay marriage."
+    },
+    {
+      "start": 495.264,
+      "end": 522.192,
+      "text": "But when it comes to the position of women in the labour market and the women position of women in universities in particular, the record is not so good as these numbers illustrate. And I'm not going to go through them in detail, but maybe just to highlight that computer science and AI is included in engineering in this data. I myself am a social scientist, which is clearly."
+    },
+    {
+      "start": 522.192,
+      "end": 549.504,
+      "text": "the best thing to be here in terms of women professors and so as a proportion if you look at the proportion of students maybe not so great but I think another important point to make is that there are also big differences between these within disciplines so not only between disciplines so in the humanities for example if you look at sort of literary theory and linguistics"
+    },
+    {
+      "start": 549.504,
+      "end": 567.696,
+      "text": "There are more women. If you go to philosophy, the position of women is much, much lower than this number would indicate. So as I said, you know, the Dutch have a good press in terms of the United Nations Gender Equality Index are doing very well."
+    },
+    {
+      "start": 567.696,
+      "end": 590.944,
+      "text": "No large, large part due to very good sex education and other such things. But when it comes to and also pretty good in Parliament, this is based on the latest election, which was just a few weeks ago. But labour market participation is relatively low compared to many other Western European countries."
+    },
+    {
+      "start": 590.944,
+      "end": 600.0,
+      "text": "also Eastern European countries. And as I've already said, the position of women in universities is really quite shocking. But I really want to focus."
+    },
+    {
+      "start": 600.0,
+      "end": 620.272,
+      "text": "And these are my conclusions in case Linda just unplugs me at some point. So if I don't get through my whole talk, these are the main points. It's important to think about the position of women in particular in computing science generally, in digital humanism, in AI."
+    },
+    {
+      "start": 620.272,
+      "end": 639.696,
+      "text": "because of social justice and fairness that women and other marginalized groups should have access to these interesting developments but it's also a question of epistemic justice and the importance of design that if we have a wider range of perspectives we might manage to design actually better technologies"
+    },
+    {
+      "start": 640.592,
+      "end": 661.5360000000001,
+      "text": "Here are a few nice pictures. Now, I'm sure for all the computer scientists present, I'm sure that in your history of computing courses, I know some of you don't even have history of computing courses, but you should. And you should learn about Ada Lovelace, the woman up there in the corner who worked closely with Charles Babbage in trying to develop the analytic engine."
+    },
+    {
+      "start": 661.5360000000001,
+      "end": 686.288,
+      "text": "And amongst feminists is well known as the first programmer. I hope the rest of you know that as well. Down in the sort of lower corner, that's a photograph from Bletchley Park, where again, where Turing worked, where to try and do the code breaking during the Second World War, somewhere mysterious in the middle of England."
+    },
+    {
+      "start": 686.288,
+      "end": 714.528,
+      "text": "75% of the people working there were women. Now, of course, this was partly because the men were off fighting and doing other sorts of things. But it does kind of demonstrate that the argument that women cannot do this is simply not true. Women were quite capable of coding and programming and decoding back in the day, sort of in the 1940s. And then the picture from the cover of Marie Hicks' book."
+    },
+    {
+      "start": 714.528,
+      "end": 738.0,
+      "text": "Judging by the clothing is obviously somewhat later than the 1940s, the late 60s. And still throughout, as Hicks says at the beginning of her book, you know, throughout the 40s to the 60s, computer operation and programming was very much viewed as women's work."
+    },
+    {
+      "start": 738.0,
+      "end": 764.912,
+      "text": "And as time went on, as it became more professionalized, as higher education departments, degree programs were set up, men displaced the women. Partly, I think this was because at that time in the kind of 60s and 70s, more attention was given to the hardware, which was sort of seen as men's work."
+    },
+    {
+      "start": 764.912,
+      "end": 794.832,
+      "text": "The point, I mean, there's much to be said. There are many books about this. But I think the important point is that women have done this before. They can do it again. One other sort of important little fact, let me find it, that in the early 80s in the United States, 37 percent of computer science students were women. This dramatically declined. And by 2010, it was only 17 percent."
+    },
+    {
+      "start": 794.832,
+      "end": 819.328,
+      "text": "So things used to be better. So this sort of notion that the world just gets better and better. I think we've had lots of examples of how that hasn't been the case over recent years, but also in relation to the position of women in computing. So I have lots and lots of quotes, but I'm only going to give you this one. Well, no, I have one more."
+    },
+    {
+      "start": 819.328,
+      "end": 838.992,
+      "text": "Shulamith Firestone, who was this was this book was actually on the bestseller list when it first came out. I mean, she has been a bit forgotten, but I think her work on what some of us present call materialist feminism is still really important."
+    },
+    {
+      "start": 839.408,
+      "end": 860.912,
+      "text": "And I think the reason I'm showing you this is that sometimes people think that women are really against technology, that somehow we have a greater affinity with nature. Again, this is wrong. I can see Linda looking puzzled here. But there was a lot of optimism about digital technologies, or we call them something different back in 1970."
+    },
+    {
+      "start": 860.912,
+      "end": 878.64,
+      "text": "Firestone was also very positive about the possibilities of reproductive technologies, which were also undergoing lots of change at that time, and computing technologies about how this would liberate women from oppressive conditions of patriarchy."
+    },
+    {
+      "start": 879.408,
+      "end": 908.736,
+      "text": "I think Firestone was very important for Donna Haraway, who you might have heard of, who wrote the Cyborg Manifesto in the mid 1980s. And I'm not going to read through this, but Haraway was trying to argue, again, we can't reject technology as women or as feminists. You know, we are them. They are us. We're very much kind of bound up with that. And she famous quote, I would rather be a cyborg than a goddess."
+    },
+    {
+      "start": 908.736,
+      "end": 936.496,
+      "text": "to embrace technology and move with the times. Another important development from later in the 80s, intersectionality. And those of us who were there might remember a lot of the fights that we had in second wave feminism about who was in and who was out. But the important thing that we did actually already know back then, but now goes under the name of intersectionality, that"
+    },
+    {
+      "start": 936.496,
+      "end": 965.696,
+      "text": "we have to kind of take different elements of our identities into account. We don't live our gender alone. Gender, class, ethnicity, age, sexuality, all of these things kind of come together. And Crenshaw is kind of usually credited for bringing this to our attention, a legal scholar. So this is my final."
+    },
+    {
+      "start": 965.696,
+      "end": 995.552,
+      "text": "I thought I'd be really radical and end with a man, Andrew Feenberg, a well-known philosopher of technology. Now, actually, he was talking about capitalism that. And this, I think, could be an interesting discussion point. And I think perhaps rather challenging to some of the people present. He's arguing that technology is inherently conservative. And, yeah, I would question, is that actually the case? Under what conditions can we?"
+    },
+    {
+      "start": 995.552,
+      "end": 1023.328,
+      "text": "design things that could help us to transcend both capitalist, patriarchal and sexist and racist and other bad things. So if you want to read more, there is a huge literature on this. Here's some of it. I think I'm on time, Linda. You have seconds to go, if you wish. I will give those to Hinda."
+    },
+    {
+      "start": 1023.328,
+      "end": 1050.912,
+      "text": "OK, thank you very much. I'm not going to. I now have to stop sharing. You're not going to get to see that. OK, thank you very much. Indeed, that is a perfect introduction to the topic. And for computer scientists, I've only ever experienced computer science from the inside. And it's really interesting to have people reflect about technology and the role of women in that. So then I'd like to give the floor to Hindu, who now has."
+    },
+    {
+      "start": 1050.912,
+      "end": 1071.568,
+      "text": "12 and a half minutes, because you've got some time from Sally. Fantastic. Thanks, Linda. Thank you, Sally, for the extra few seconds. So, yeah. So my name is Linda. I work for Janssen Biologics. I'm a data scientist there. And I'm also doing research at the University of Amsterdam as an endowed professor of data science."
+    },
+    {
+      "start": 1071.568,
+      "end": 1100.896,
+      "text": "Today, my challenge will be to talk to you about bias in AI and kind of my perspective on how I experience this and how I try to deal with it in my day to day work as someone who's leading a data science team. So as Sally predicted, this is a slide where you see some of the world stories that we saw in the news in the past few years. And the idea is to obviously relate to, you know, these."
+    },
+    {
+      "start": 1100.896,
+      "end": 1124.72,
+      "text": "These breaking news around AI that fails and AI that is, you know, often we see things about racist algorithms or sexist algorithms. Obviously, deploying algorithms that fail sometimes cause problems. And this is why we're all here talking about this. And in this context, what I wanted to talk about from the perspective of a data scientist is someone who's actually developing these models at a company."
+    },
+    {
+      "start": 1124.72,
+      "end": 1150.7359999999999,
+      "text": "is how we define bias, because bias is obviously a concept in statistics, but when we talk about AI and algorithms, what we mean by bias in this context is these errors that these algorithms, these models that are deployed are going to cause, and then they produce unfair outcomes for individuals and communities. And these biases, so these systematic errors,"
+    },
+    {
+      "start": 1150.7359999999999,
+      "end": 1180.384,
+      "text": "They can come from a variety of sources. So it could be algorithmic designs, the way we decided to model a problem. It could come from biased data collection. It could come from the way we selected the different features in our model, et cetera. And these algorithms are basically going to perpetuate the bias that's already existed in the data. So there are different types of biases out there, and I find it very useful to try and put them in three categories."
+    },
+    {
+      "start": 1180.384,
+      "end": 1200.0,
+      "text": "that are not, this is not an exhaustive list and I will share my slides later and I really recommend you take a look at this paper that I refer to towards the bottom of my slide. And basically I like to divide this in three categories as I said, so historical bias which reflects the structural society"
+    },
+    {
+      "start": 1200.0,
+      "end": 1229.632,
+      "text": "or issues. So this is typically when you have gender bias that affects the data and that's picked up by an algorithm. Representation bias is where you have groups, certain groups are underrepresented in the training data. And measurement bias where you are using certain data, certain features to try and model a phenomenon, but then you end up approximating or modeling something else. I'm going to give three examples of each one of these biases."
+    },
+    {
+      "start": 1229.632,
+      "end": 1254.8,
+      "text": "In my slide earlier, there were these headlines from different news outlets. There was something about the Amazon sexist tool. And I think two or three years ago, there was this story about Amazon having developed a screening software to look at different CVs that were received from folks that wanted to work at Amazon. And then they ended up kind of discriminating systematically against women."
+    },
+    {
+      "start": 1254.8,
+      "end": 1282.624,
+      "text": "Now, if we look at just the data in terms of what is the female or the women representation of this workforce, you see that obviously women are underrepresented in these different STEM related jobs. So realistically, you won't have the same quality of data that represents a different pool of candidates or talent for men and women. And this is something that's very easy to pick up for an algorithm. If you're just going to throw some features in a model."
+    },
+    {
+      "start": 1282.624,
+      "end": 1309.936,
+      "text": "this is typically something that's going to be picked up and then scaled, right? Because algorithms are obviously cheap and they can produce results at a different scale than when humans are interacting directly with them. So this is typically historical bias that we see in the sexist, so-called sexist tool, because it is the way that our society has evolved to have women being underrepresented in this field."
+    },
+    {
+      "start": 1310.992,
+      "end": 1340.192,
+      "text": "And then just an example that illustrates, in my opinion, the representation bias very well is the study that's been done two or three years ago, where researchers compared the efficiency of different facial recognition algorithms or actually software from different companies. And they looked at the errors. So they looked at when do these software make errors? And what they observed is that it's typically a dark female face or dark female skin."
+    },
+    {
+      "start": 1340.192,
+      "end": 1366.336,
+      "text": "this is where you have the highest error rates in these models. And this is what we would kind of attribute to the underrepresentation of these type of features that these individuals have in the data. So basically, it wasn't captured by the training data set. That doesn't mean that folks were underrepresented in society. It means they weren't represented in the data."
+    },
+    {
+      "start": 1366.336,
+      "end": 1394.176,
+      "text": "And this is typically then picked up by an algorithm. And then, of course, if you don't see enough variety in the data, then you're not necessarily going to predict things right when you're deployed in real life. So my last example in a series of bias illustration is a rather recent example that you might remember from last year in the UK. Because of the coronavirus pandemic, the students said that the."
+    },
+    {
+      "start": 1394.176,
+      "end": 1418.496,
+      "text": "The high school exams were canceled for the last year. Students and authorities wanted to predict what great folks these young students would have. And that would determine which university they would go to. And if you remember, there were a lot of protests where the students were saying things like an algorithm shouldn't decide my future."
+    },
+    {
+      "start": 1418.496,
+      "end": 1446.016,
+      "text": "So obviously, this came from, let's say, a good intention where they wanted to automate this process because, of course, there are a lot of students there and they wanted to have a fair assignment of these final predicted grades for high school before students would go to college. And what they ended up doing is use a lot of features that were actually predicting something else than the competence of the student and how well they would fare in their last exam."
+    },
+    {
+      "start": 1446.016,
+      "end": 1471.088,
+      "text": "And there were things like the class size, the postcode as well. And obviously, these features are correlated with, you know, how correlated with where the school is situated and also with what type of population is it servicing. So at the end, you end up giving even more advantage to schools that already are in the affluent neighborhoods."
+    },
+    {
+      "start": 1471.44,
+      "end": 1495.6480000000001,
+      "text": "So this is typically something that illustrate measurement bias, because instead of measuring the performance of the students, we end up measuring whether they come from a rich or poor background. So in practice, what does this mean? We know that these things can happen. So when we are faced with a decision about what data to select or what type of model we want to develop or deploy."
+    },
+    {
+      "start": 1495.6480000000001,
+      "end": 1518.6399999999999,
+      "text": "A lot of the literature around fairness and AI and mitigating bias revolves around what we call fairness algorithms. So basically, the idea there is that in order to fix these issues, we are going to modify these algorithms to make sure that they're correct for the potential problems."
+    },
+    {
+      "start": 1518.6399999999999,
+      "end": 1545.088,
+      "text": "In my opinion, there is not really a unified framework where we can do that. There is no recipe that tells us data scientists in our day to day work how we should tackle this problem and how we should be paying attention to sources of bias. Especially since it can happen at different stages in our development process. So it could be about the population that we're targeting. For instance, in the UK exam examples, it was the student population."
+    },
+    {
+      "start": 1545.088,
+      "end": 1570.224,
+      "text": "And we can also have bias that results from the data that we choose, the features that we choose to put in a model, the type of model that we are choosing. And of course, this obvious combination of bias in all these different possibilities for bias to occur can be combined and then result into a decision that would lead to discrimination."
+    },
+    {
+      "start": 1571.824,
+      "end": 1597.728,
+      "text": "So these are the, when you talk about mitigating bias with algorithms that are going to fix bias, there are three types out there that you can read about. Some of them try to modify the train data if you've already identified some bias in there. So they try to fix the bias at the source. Other algorithms try to modify the way the predictions are being made in order to account for potential bias."
+    },
+    {
+      "start": 1597.728,
+      "end": 1626.768,
+      "text": "And then you have those who look at the outcomes after the predictions have been made and try to modify that in order to make fair outcomes. So you probably already guessed that I don't find this approach particularly relevant. I don't think it really solves the problem of bias because it just looks at it from a technical perspective. We think we have bias. So we're just going to try and fix the problem from a tech perspective, not really looking at the bigger picture and really asking the question."
+    },
+    {
+      "start": 1626.768,
+      "end": 1654.8319999999999,
+      "text": "should we really be building something that potentially could lead to bias? But from, let's say, a practitioner perspective, it also raises issues and questions because they're just simply not practical. In most cases, doing a lot of the work that data scientists do, you don't always know what's in your data. You don't always know what, let's say, hidden biases your features might be encoded for."
+    },
+    {
+      "start": 1654.8319999999999,
+      "end": 1683.872,
+      "text": "And so this assumption that you already know what sensitive attributes and potential problems your data have, that only concerns very specific use cases or scenarios. And they're not always relevant for the vast majority of mathematicians. And when it comes to fixing bias in terms of using an unbiased algorithm or fairness algorithm, you're going to have to make the decision of losing a little bit of."
+    },
+    {
+      "start": 1683.872,
+      "end": 1712.512,
+      "text": "the performance of your model that I call here utility versus a measure of fairness that you want. This obviously also raises the question of how much fairness do I allow for how much loss do I allow in terms of utility? This is not a trivial question because someone, an individual in this process, has to make that decision. Someone needs to decide how much performance, how much appears I'm going to lose, you know, to allow for more fairness. And of course, reliability."
+    },
+    {
+      "start": 1712.512,
+      "end": 1740.576,
+      "text": "If you look at all the AI literature around fairness and fairness algorithms, it's impressive. Every day there is some new claims about how we can fix bias. When you look at some of the reviews that have been done recently, you see that actually these algorithms want to fix bias. They're not always that stable. So I'm not going to go through details here, but this is also a very nice paper to read. I think it's rather accessible. You don't need to be a data scientist to understand it. But the idea is."
+    },
+    {
+      "start": 1740.576,
+      "end": 1761.024,
+      "text": "If you compare all the algorithms or some of the algorithms out there that try to fix bias and you look at their accuracy, basically what you see is that depending on for what feature or what type of source of bias you want to fix for, you will have some variability around the performance of these models. So these are the different boxes that we see."
+    },
+    {
+      "start": 1761.024,
+      "end": 1785.024,
+      "text": "So every time you run your fixed algorithmic fix with fairness, you will end up with slightly different results. This also means that in practice, someone needs to decide where do I actually draw the line? Where do I trust that these algorithms are actually indeed going to fix my bias problem? So we encourage you to take a look at this paper. It's very interesting. So actually I already mentioned this."
+    },
+    {
+      "start": 1785.024,
+      "end": 1800.0,
+      "text": "The idea is that we're here with this fairness algorithm trying to fix the bias. We're trying to really do it from a tech perspective, but we're not really looking at the whole context where these models are being deployed."
+    },
+    {
+      "start": 1800.24,
+      "end": 1829.152,
+      "text": "So I'm not sure how I'm doing time-wise, but... You have 20 seconds. Okay. So very quickly, so the message basically here is if you want to fix or if you want to pay attention to these different bias issues in AI, what we need to do to start off is just ask some relevant questions. And I know they seem quite trivial, but I also know from experience that a lot of people just don't even start to think whether they should be automating the task that they have at hand to begin with."
+    },
+    {
+      "start": 1829.152,
+      "end": 1857.088,
+      "text": "And then, of course, there are other questions that you can ask about transparency, potential harms and who is going to be affected if things go badly, et cetera, et cetera. So I think this is all just part of the conversation that folks need to have. The folks that are developing this model need to be empowered to have. It's not always easy to do these questions. So that's it for me. Thank you very much indeed, Hinda. I wish we'd have this live. We should ask Peter to get a loud clapping noise."
+    },
+    {
+      "start": 1857.088,
+      "end": 1884.048,
+      "text": "No, that was lovely. Thank you very much. Then I'd like to continue with our next speakers. And they have a really hard time. Judy and Aaron have together got one speaking slot. So they have assured me that they have this down to a T. In some sense, we should maybe expand the whole panel to be double the length. But we'll start with the 12 minutes that we have. And I look very much forward to what you both have to say. Thank you."
+    },
+    {
+      "start": 1884.048,
+      "end": 1907.44,
+      "text": "Well, actually, it's very easy for us because we're so in tune with what's been said already. It's absolutely marvelous. Can I first say that we're delighted to be invited and get an opportunity to tell you about our project? We're at the Alan Turing Institute, you know, part of the public policy program. And as you can see, we've got a project called Women in Data Science and AI. And the point of it is."
+    },
+    {
+      "start": 1907.44,
+      "end": 1932.096,
+      "text": "really, to use research to inform concrete policy measures aimed at increasing the number of women in data science and AI. And just quickly in the next slide, you'll see that we're the National Institute for Data Science in the UK, basically. We have all of these various partners. To just go on to the next slide. Thank you, Erin. You're with me. Thank you very much. I mean, you know, we've..."
+    },
+    {
+      "start": 1932.096,
+      "end": 1957.12,
+      "text": "We've already seen the sort of numbers. I mean, we partly decided to do this project because it's so clear that women are, amongst other groups, are very underrepresented in this kind of work. And the third, you know, the graph on the right, which I know is very hard to see, but it's basically showing you that if you look at research done in AI."
+    },
+    {
+      "start": 1957.12,
+      "end": 1987.04,
+      "text": "On average, 88% of men, you know, there's a whole list of countries here, but basically it's incredibly sort of male-dominated area. And so in the next slide, which, again, you've already seen a lot of these examples, there's a lot of discussion now of coded bias. And I won't go through these now because you've seen quite a lot of these things already. I mean, the main thing, you know, that I think is very interesting is how this is getting headlines, how there's a lot of discussion about this."
+    },
+    {
+      "start": 1987.04,
+      "end": 2009.728,
+      "text": "saw the film Coded Violence on Netflix. So it is like there's now a public conversation, really, about the problems of social bias and algorithms. And, you know, for some of us, these issues are not so surprising. I mean, if you, in the next slide we've just got here, you know."
+    },
+    {
+      "start": 2009.728,
+      "end": 2030.208,
+      "text": "That, as I said, there's now a lot of research and activism around these issues. But, you know, there's a lot of historical work that Sally was talking about, a lot of sociological feminist theory going back for many, many decades, really talking about gender relations being embedded in technology. So particularly for..."
+    },
+    {
+      "start": 2030.208,
+      "end": 2056.3360000000002,
+      "text": "people of Sally and I who've been around a long time what's kind of interesting is the extent to which there's a reproduction if you like of gender relations in very new technologies and you know I'm very struck by how a field like data science which is a relatively kind of new field can become so masculinized in such a short period of time and actually"
+    },
+    {
+      "start": 2056.3360000000002,
+      "end": 2077.84,
+      "text": "Inder has very nicely already talked about technical studies, you know, that there is now a big debate about fairness in algorithms, whether there's technical solutions and the limits to technical solutions. And I guess just sort of quickly going on to the third slide. I mean, our project's been going for about two years. We think about it as having, if you like."
+    },
+    {
+      "start": 2077.84,
+      "end": 2101.152,
+      "text": "three themes. The first one, which we just finished, and Erin's going to talk about our report, was really a mapping exercise because we really wanted to have an evidence base for doing some work on women in data science and AI and actually kind of have a look at what the statistics are, how it looks. Where the second"
+    },
+    {
+      "start": 2101.152,
+      "end": 2128.864,
+      "text": "Theme, if you like, or that we're going to go on and research quite soon, will be on workplace cultures, you know, what's happening within organisations, what are the subtle processes that maybe are making it difficult for women and other groups to feel comfortable and thrive in those cultures. And then the third one will be to look at how these things relate to bias in AI. And if I can just kind of repeat what..."
+    },
+    {
+      "start": 2128.864,
+      "end": 2154.032,
+      "text": "Sally said, because it's been my theme as well for my working life, if you like, is that we really are always emphasising that these issues about gender and technology are important, both as social justice issues, but also, as Sally very nicely put it, as issues of epistemic justice. And, you know, it worries me a bit that a lot of this discussion..."
+    },
+    {
+      "start": 2154.032,
+      "end": 2176.096,
+      "text": "now about technical and non-technical solutions to algorithmic bias are not immediately hooked back to the issue about, well, actually, could this be something to do with the underrepresented nature of the people who are designing these algorithms and technologies in the first place? But now I'm going to quickly switch to Erin to tell you about our report."
+    },
+    {
+      "start": 2176.096,
+      "end": 2201.552,
+      "text": "Thank you, Judy. And I will say it's brilliant how in tune we are as a project with the first two talks. I thoroughly enjoyed them. And so, as Judy said, this report that we launched on International Women's Day this year, we make the connection between the lack of diversity in the AI and data science fields and this feedback loop of bias in AI. And on the right here, I pulled the cartoon, which we included in the report, which I really like."
+    },
+    {
+      "start": 2201.552,
+      "end": 2227.872,
+      "text": "So for the report, we began with an overview of existing literature in the field and particularly existing data sets of women working in AI and data science fields. And we found that detailed data is very sparse. Hinda gave quite a nice overview. So roughly about 20% of UK AI professionals are women. And this drops to a really shocking."
+    },
+    {
+      "start": 2227.872,
+      "end": 2256.304,
+      "text": "8% of those who are contributing to online machine learning conferences. So not only did we need more data, but we wanted to be able to interrogate the dynamics of this problem in this lack of diversity. So we formed a data partnership with an executive search firm who work in the fields of advanced analytics, AI and data science. And from there, we obtained a unique curated data set, which contains"
+    },
+    {
+      "start": 2256.304,
+      "end": 2282.832,
+      "text": "career data on individuals working in the fields and crucially this connected to their linkedin profiles which we worked with and so we the report focuses on our data science analysis of this career data set and through this we were able to really interrogate the gender dynamics of ai and data science careers both in the uk and globally and our findings reveal extensive and"
+    },
+    {
+      "start": 2282.832,
+      "end": 2308.688,
+      "text": "really worryingly persistent disparities between men and women in skills, status, pay, seniority, attrition, and so on. So I wanted to pull out a couple of the most striking findings for you. So we found evidence of persistent structural inequality in the data science and AI fields with massively diverging career trajectories."
+    },
+    {
+      "start": 2308.688,
+      "end": 2333.824,
+      "text": "Women are more likely to occupy a job in the AI talent pool associated with less status and lower pay. So usually within, as you can see on the graph, data preparation, exploration, analytics. And the more prestigious jobs in engineering and machine learning are typically held by men. We also found that."
+    },
+    {
+      "start": 2333.824,
+      "end": 2347.968,
+      "text": "women working in AI and data science in the tech sector have higher turnover rates so this is more frequently changing job roles and higher attrition rates that's leaving the industry altogether."
+    },
+    {
+      "start": 2347.968,
+      "end": 2372.08,
+      "text": "And there has been some really interesting research on gendered attrition from technology firms with, I'm sure, reasons you've heard before around chilly, unwelcoming climate, sexual harassment, microaggressions, family commitments, cultural associations around who now fits in technology fields. And as Judy mentioned, this is an interesting and important aspect we're going to go on to explore in our next piece of work."
+    },
+    {
+      "start": 2372.656,
+      "end": 2400.0,
+      "text": "Some of our other findings include industry differences. So as you'd probably expect, women in data and AI are underrepresented in industries which traditionally entail more technical skills. So the IT sector, for example, and overrepresented in industries which entail fewer technical skills. So the health care sector. We found that men routinely self-report having more skills than women on LinkedIn."
+    },
+    {
+      "start": 2400.0,
+      "end": 2426.448,
+      "text": "And this was consistent across all the industries we looked at and all the countries in our sample. And then the qualification gap, we found that women in data and AI have higher formal educational levels than men across all industries. And shockingly, this was even higher for those in more senior ranks, so those in C-suite positions. I also wanted to quickly highlight our case study."
+    },
+    {
+      "start": 2426.448,
+      "end": 2451.664,
+      "text": "the sparsity of statistics on the demographics or people working in data science and AI motivated us to look at other potentially informative sources and as I'm sure you're aware online communities are a really important feature of data science and AI so we thought this would be an interesting lens through which to look at what's happening and our research found a pretty consistent"
+    },
+    {
+      "start": 2451.664,
+      "end": 2480.928,
+      "text": "across ES Central, Kaggle, and OpenML that 17% of participants globally are women. And then this drops to only 8% on Stack Overflow, which is shocking. We also found that only 20% of UK data and AI professionals in the UK on Google Scholar are women. Hope I'm not running over time. Okay, so just to end with, two minutes, perfect."
+    },
+    {
+      "start": 2480.928,
+      "end": 2503.472,
+      "text": "So we we ended the report calling for the need for effective policy solutions if basically if we're to reap and enjoy the benefits of these technological advances of AI. And we had if you take a look at our report, our recommendations are very long, but I just wanted to pull a short extract to show you."
+    },
+    {
+      "start": 2503.472,
+      "end": 2532.96,
+      "text": "So we basically call for the need for greater transparency from big tech firms around their diversity and inclusion figures. We call for, as the speakers before discussed, more gender sensitive or mandating gender sensitive design of machine learning systems and for governments to ensure that women have access to participate in these frontier technical positions in data science and AI."
+    },
+    {
+      "start": 2532.96,
+      "end": 2543.504,
+      "text": "And we're really excited to say we're having a lot of exciting engagement, particularly with the UK government. So our report is starting to have some real tangible impact, which is brilliant."
+    },
+    {
+      "start": 2544.272,
+      "end": 2569.2,
+      "text": "So thank you very much. If you'd like to learn more about our project, please head to our project hub. We have some of our past research. I've added here a cover of some work we did with UN Women last year. And we also have a list of resources for women in the community already in the data science and AI fields or wanting to get into the data science and AI fields, as well as some more information around bias in AI."
+    },
+    {
+      "start": 2569.2,
+      "end": 2594.576,
+      "text": "So I hope I haven't run over time. Thank you very much. No, that's brilliant. I seem to really have scared you all. Virtual clapping. I was wondering if you could perhaps post the link to your report in the chat. And I was wondering, I was having problems with cutting and pasting into the chat. I don't seem to be able to copy items from the chat. Is that something that our."
+    },
+    {
+      "start": 2594.576,
+      "end": 2622.784,
+      "text": "technical people in the background can allow everyone to at least copy stuff from the chat because if people are pasting interesting information there then it's nice to share. Okay yes sorry there's so much time left over I don't know what to do so luckily Jeanne knows exactly what to do the extra time and I'd like to welcome Jeanne who came out early from one of our meetings to come and join the session and will give us a"
+    },
+    {
+      "start": 2622.784,
+      "end": 2649.632,
+      "text": "policy perspective on this whole debate. So please go ahead, Jan. You definitely have 12 minutes from now. Perfect. Thank you, Linda. And thank you very much to the other speakers as well. I think this ties in very nicely in terms of what the EU is doing to support gender equality in research and innovation. So I'm a policy officer at the gender sector in the D4 Democracy and European Values Unit."
+    },
+    {
+      "start": 2649.632,
+      "end": 2676.48,
+      "text": "And I briefly want to give a context of the broader equality priority of this new commission, President von der Leyen. We have the first commissioner for equality, Helena Daly, and an internal task force for equality that actually coordinates all the equality mainstreaming throughout the services. So RTD or DGI is affected by this as well."
+    },
+    {
+      "start": 2676.48,
+      "end": 2705.952,
+      "text": "We published the gender equality strategy last year in March, and in this R&I and our funding programme Horizon Europe are explicitly mentioned, with measures announcing the possibility to require a gender equality plan from applicants, initiatives to increase the number of women-led tech start-ups through the European Innovation Council, and Horizon Europe also would address"
+    },
+    {
+      "start": 2705.952,
+      "end": 2733.728,
+      "text": "or provide new insights into gender biases in AI. So we have five, and this actually also ties in nicely with our other priority on Europe Fit for a Digital Age, where we want to make sure that everyone is included in this digital transition and no one is left out. We have five more strategies adopted. The first ever EU anti-racism action plan, the EU..."
+    },
+    {
+      "start": 2733.728,
+      "end": 2762.016,
+      "text": "EU-ROMA strategic framework for equality, inclusion and participation, the LGBTIQ equality strategy, the gender action plan for external action and the strategy for the rights of persons with disabilities. Now, in the EU anti-racism action plan, this phenomenon of facial recognition systems performing less well on darker skinned faces is also recognised and"
+    },
+    {
+      "start": 2762.016,
+      "end": 2782.192,
+      "text": "In this action plan, it is also mentioned that this is an issue we want to tackle on the EU level. We have published a white paper on artificial intelligence that lays out the European approach on trustworthy and secure development of AI. This was last year in February."
+    },
+    {
+      "start": 2782.192,
+      "end": 2799.392,
+      "text": "It is grounded in our values on fundamental rights and non-discrimination, and it also looks at the potential risks for exacerbating existing inequalities, creating new biases and discrimination through systems like facial recognition or chatbots."
+    },
+    {
+      "start": 2799.392,
+      "end": 2820.624,
+      "text": "It focuses very much also on skills development, which will be addressed under the Digital Europe programme and is also in line with the Digital Education Action Plan, where we actually have specific actions focusing on developing digital skills for girls in STEM education through a STEAM approach."
+    },
+    {
+      "start": 2820.624,
+      "end": 2840.688,
+      "text": "And then lastly, there will be a forthcoming proposal on a new legislative framework on AI based on this white paper and following a big public stakeholder consultation. And this will address how to safeguard fundamental EU values and rights and user safety."
+    },
+    {
+      "start": 2841.232,
+      "end": 2861.296,
+      "text": "In terms of what we are doing at DG Research and Innovation, we have adopted a new communication on the new European research area recently, in which we have recognized gender equality and gender mainstreaming as a priority."
+    },
+    {
+      "start": 2861.296,
+      "end": 2885.344,
+      "text": "This addresses three objectives, gender equality in scientific careers at all levels, gender balance in decision making bodies and positions, and the integration of the gender dimension in research and innovation content. Erin just already talked about having gender sensitive research, so we'll go more a bit into this later."
+    },
+    {
+      "start": 2885.344,
+      "end": 2906.8,
+      "text": "Our common approach is to foster institutional change, and we want to do this on three levels with member states and associated countries with stakeholders such as research performing and research funding organizations and in our own organization and through our own funding program, Horizon Europe. We."
+    },
+    {
+      "start": 2906.8,
+      "end": 2933.168,
+      "text": "To achieve these goals, you need to monitor gender equality. So we have this flagship publication that the last one was published in 2018, and the new one will come out in June this year, ahead of the R&I days, where actually it's all confirming what has already been said about the huge gender gap in ICT and STEM careers."
+    },
+    {
+      "start": 2933.168,
+      "end": 2962.288,
+      "text": "And although we've already or almost reached gender balance in terms of PhD graduates, which says 48.1%, there's still a big gap in ICT. And only two in 10 ICT specialists are women in the tech sector. And there's only 9% of women registered as inventors for patent publications. So this is also a big impact in terms of the kind of ideas that are being"
+    },
+    {
+      "start": 2962.288,
+      "end": 2983.152,
+      "text": "brought to the market. In this era of communication, we recognise that there are persisting gender equalities in the European R&I systems, which actually hinder our potential to form and bring new ideas. And for the first time, we address or we..."
+    },
+    {
+      "start": 2983.152,
+      "end": 3000.0,
+      "text": "recognise the need to open up to intersectionality with other social categories such as ethnicity, disability and sexual orientation. And we also want to address gender-based discrimination and violence in R&I organisations."
+    },
+    {
+      "start": 3000.0,
+      "end": 3026.592,
+      "text": "more strongly, because this still remains a bit of an understudied and under-recognised issue, but it's very detrimental to a women's career, as we've already heard before. So the Commission will, as of 2021, propose the development of inclusive gender equality plans with Member States. And I will talk more about what that means later."
+    },
+    {
+      "start": 3026.592,
+      "end": 3047.472,
+      "text": "First about our key funding program for research innovation and innovation. We have a big budget of 95.5 billion euros and it's structured around three pillars on excellent science, global challenges and innovative Europe."
+    },
+    {
+      "start": 3047.472,
+      "end": 3075.104,
+      "text": "Under pillar two, we have these six clusters that address different research areas and cluster four, digital industry and space. We'll also look into emerging technologies such as AI, virtual reality and quantum technologies. So I cannot say too much about this now because the work programs for this year and next year is."
+    },
+    {
+      "start": 3075.104,
+      "end": 3104.832,
+      "text": "are foreseen to be adopted soon in the next month, hopefully. We have strengthened our provisions for gender equality in Horizon Europe with a new eligibility criterion. That means that applying public bodies, research organisations and higher education establishments will need to have a gender equality plan in place. And what is a gender equality plan?"
+    },
+    {
+      "start": 3104.832,
+      "end": 3131.968,
+      "text": "that is fostering this institutional change approach. It's having a formal document signed by the top management and published on the institution's website, having dedicated resources such as earmarked funding for equality officers and gender equality teams, and also perhaps having working hours reserved for existing staff to do this equality work."
+    },
+    {
+      "start": 3131.968,
+      "end": 3159.008,
+      "text": "There should be capacity for data collection and monitoring on sex and gender disaggregated data collection across all staff categories and annual reporting of gender imbalances across job categories. We also want to encourage training and capacity building, for example, by tackling unconscious gender bias among staff and decision makers. And this approach is really meant to foster a more..."
+    },
+    {
+      "start": 3159.008,
+      "end": 3175.136,
+      "text": "friendly working culture in R&I organizations and also to prevent what Judy just talked about, this higher turnover rate of women who may have to leave their organization because of sexual harassment or other issues."
+    },
+    {
+      "start": 3175.136,
+      "end": 3196.992,
+      "text": "So these are the areas that we recommend a gender equality plan should cover. It's work life balance with parental leave policies of flexible work time arrangements, gender balance in leadership and decision making, gender equality in recruitment and career progression. This gender sensitive research."
+    },
+    {
+      "start": 3196.992,
+      "end": 3220.752,
+      "text": "So the integration of gender dimension into research and teaching content and measures against gender based violence. So for this, we have the gear tool that actually has a lot of best practices, resources and guidelines on how to do this. It could be having a place of conduct, having a code of conduct in place or an intervention protocol in case of complaints."
+    },
+    {
+      "start": 3221.04,
+      "end": 3228.448,
+      "text": "The other novelty for Horizon Europe is this strengthening of the gender dimension in."
+    },
+    {
+      "start": 3228.448,
+      "end": 3254.832,
+      "text": "research and innovation content. So as of the next work program for 2021, this will be mandatory. So researchers and applicants have to justify or have to explain how they will integrate the gender dimension into their research projects, unless they can justify why this may not be relevant for a topic, for example, on pure mathematics."
+    },
+    {
+      "start": 3254.832,
+      "end": 3283.008,
+      "text": "So this really this is evaluated under the excellence criterion. And with this, we want to we want to strengthen gender sensitive research. Why is it important? I think we've already seen enough reasons in the other presentations, but we believe that it brings added value in research in terms of excellence, reproducibility, creativity and business opportunities."
+    },
+    {
+      "start": 3283.008,
+      "end": 3299.952,
+      "text": "It brings an in-depth understanding of all people's needs, behaviours and attitudes, and it also ensures that goods and services are better suited to the needs of all citizens and therefore it can enhance societal relevance of research and innovation outputs."
+    },
+    {
+      "start": 3301.232,
+      "end": 3317.616,
+      "text": "To help researchers address this, we have an expert group called Gendered Innovations that produced 15 case studies in health, climate change, energy, transport, urban planning, but also in AI and robotics."
+    },
+    {
+      "start": 3317.616,
+      "end": 3346.704,
+      "text": "This is building on our previous projects, and it includes methodologies on how to actually do sex and gender analysis or intersectional analysis in R&I content in all these areas. So they also provided policy recommendations and fact sheets that I recommend you can check out. This study on the gender shapes project has already been mentioned a couple of times, so I won't go further into it."
+    },
+    {
+      "start": 3346.704,
+      "end": 3371.216,
+      "text": "One of the examples that we often show to people working on the design of the Horizon Europe work program to actually raise awareness about this and to also consider where gender might be relevant. Another example is on virtual reality, where actually it's not just about producing bias, but where virtual reality can."
+    },
+    {
+      "start": 3371.216,
+      "end": 3393.728,
+      "text": "also help to promote gender equality or to develop empathy through visualizing worlds where someone experiences inequalities or where someone actually sees, for example, a woman on the U.S. banknotes, which is from the Notable Women's Project. Can I start to round up? Yes."
+    },
+    {
+      "start": 3393.728,
+      "end": 3416.112,
+      "text": "So we just have this EU Prize for Women Innovators that I just want to mention. Applications are still open from 18th of March to 30th of June, and the winners will be announced in November. This is to celebrate women who are bringing game-changing innovation and create role models."
+    },
+    {
+      "start": 3416.112,
+      "end": 3444.208,
+      "text": "Conclusion, there are certainly still a lot of gender inequalities and lack of diversity, which in our potential in the European research area. But on EU level, we really want to change this through this gender equality plan approach and through mainstreaming the sex, gender and intersectional dimension in Horizon Europe. And if you have any questions, you can also check out our web page."
+    },
+    {
+      "start": 3444.208,
+      "end": 3474.208,
+      "text": "I'm sorry for speaking too long. That's it. No, thank you very much. We're very, very delighted you're able to speak with us today. Before we move on to the questions, I just want to say that Meta and I have been having a chat about the chat. And while it seems we cannot currently copy the links in the chat, that Meta will make sure that any links you post to the chat can be included in the comments section on the YouTube page."
+    },
+    {
+      "start": 3474.208,
+      "end": 3503.824,
+      "text": "So it will take a little bit of delay, but we will get the links to you. OK, so now I'd like to open the floor to participants to ask questions to our speakers. It's the nicest if you can pose a question in real life with voice or camera. If you can somehow raise your hand, which I believe you should be able to with the reactions, one of which is raise hand. I'm now raising my own hand. There we go. Mosh has also raised his hand. I will unraise my hand."
+    },
+    {
+      "start": 3503.824,
+      "end": 3527.632,
+      "text": "And Moshe, this is you really asking a question. Excellent. Please go ahead. So there is a dimension that has not been mentioned here. And I don't know if it's been studied, but anecdotally, there seems to be a north-south gap in the underrepresentation. What I mean by that is that the gap is much larger in northern countries."
+    },
+    {
+      "start": 3527.8559999999998,
+      "end": 3554.96,
+      "text": "And in smaller, there is more representation of women in computing in southern countries. This is even true in Europe. If you go to the kind of the Mediterranean countries, they usually have higher representation. I think this is true also between Northern America and Central America. So again, I've not seen it studied formally, but when I talk to people, you just seem to be significant."
+    },
+    {
+      "start": 3555.312,
+      "end": 3583.76,
+      "text": "High representation in southern countries. And I'm curious if people know about it, have opinions about it. I see Judy waving her hand. Hello. I see Hannes waving his hand. Can I add something to this question? Sorry, Judy, because I just wanted to have the second part of this question. Thank you, Moshe, for raising it. Because we had a higher presentation of women in computer science studies in Eastern Europe."
+    },
+    {
+      "start": 3583.76,
+      "end": 3600.0,
+      "text": "And after the breakdown of the of the real socialist country, this percentage went down radically. So I just wanted to add this to the motion. So it's something like a social, cultural, political context. OK."
+    },
+    {
+      "start": 3600.0,
+      "end": 3627.456,
+      "text": "I didn't want to. Well, that's precisely my answer, that it's social and historical context. I mean, we absolutely do know this. And in all the reports on these things, we do mention that absolutely there's a big divide, as Moishe said, between, you know, when I was in Hong Kong or, you know, in China, you know, just the relationship between girls and maths is completely different than it is in Britain and America."
+    },
+    {
+      "start": 3627.456,
+      "end": 3653.536,
+      "text": "And it is to do with a particular construction of masculinity and femininity and its association with particular skills and types of knowledge, which isn't universal. I mean, Sally, in a way, gave the evidence historically about how there's nothing inherent in this relationship between whether women or men are better at technology and science. And one can do it historically, but one can..."
+    },
+    {
+      "start": 3653.536,
+      "end": 3671.072,
+      "text": "equally, as Moishe says, do it cross-culturally and very much show that whether it's the history of Eastern Europe where, of course, engineers and doctors in the early socialist years were equal to men, that history we still see."
+    },
+    {
+      "start": 3671.072,
+      "end": 3699.536,
+      "text": "You know, the explanation is a very difficult one, and I think it's a multiple one. And I still, although I've thought about this issue for many decades, haven't been able to unpick really why the sort of femininity that I've experienced, say, in the sort of US, Britain and Australia, is so intricately somehow bound up with a lack of confidence about technical skills in a way that it isn't the case in Taiwan or in Hong Kong."
+    },
+    {
+      "start": 3699.536,
+      "end": 3726.256,
+      "text": "other countries i think that's that is very hard to unpick actually and it's because it's embedded through a long sort of history as you know social cultural historical and just to add to that there's a there's a really good piece on they call it the gender paradox as a report i think they call it the gender paradox but it discusses exactly this and i think that comes the closest to some tangible research on it thank you yeah okay great thank you"
+    },
+    {
+      "start": 3726.256,
+      "end": 3755.552,
+      "text": "Can I move on to Andrei with his question? Yeah, thanks. You can just introduce yourself briefly where you're from. Well, I'm Andrei, I work at CWI as well, together with Linda. I'm a PhD student. Well, I have a question that also I think is related to my research. It's a question for Hinda, but maybe also for everyone."
+    },
+    {
+      "start": 3755.552,
+      "end": 3777.792,
+      "text": "So on your last slide, you mentioned the fundamental questions and one of them was, is the system transparent? And my question would be, how do you see this transparency? What is a transparent system? What do you think about it? Yeah, that's the next question. Thank you. So."
+    },
+    {
+      "start": 3777.792,
+      "end": 3797.552,
+      "text": "I'm really looking at this from a practitioner perspective, and from a practitioner perspective, it can be something as simple as having documentation for something as an automated system because you'd be surprised to see how many companies buy software, deploy software, or buy data science services from companies but don't actually know what is in the model."
+    },
+    {
+      "start": 3797.552,
+      "end": 3827.344,
+      "text": "Having a description of what model you have, what features go in, what is the algorithm that's being used, that's to me like the kind of the first level of transparency. And then going further and building on this would be transparency about the testing and all the, let's say, verification steps that the developers undertook in the development cycle. So did you test your model on unseen data?"
+    },
+    {
+      "start": 3827.344,
+      "end": 3851.776,
+      "text": "What are the different steps that you took in order to validate your predictions, etc.? Have you looked at and balanced between groups, for example, if we're talking about fairness and outcomes and the way that they are distributed across different groups? Is that even something that's relevant? Do you have sensitive attributes in your data? Just having all these conversations, isn't that trivial? And in my experience, a lot of companies..."
+    },
+    {
+      "start": 3851.776,
+      "end": 3881.344,
+      "text": "by these data science services or by software deployed. It affects their customers, but they don't ask these fundamental questions. Okay, thank you very much. Then I'd like to ask Rayan to ask her question. But firstly, I just want to say, as I said at the beginning, that much of our audience are at least as experienced as the speakers today. Rayan is one of these people. She sets up the European..."
+    },
+    {
+      "start": 3881.344,
+      "end": 3903.072,
+      "text": "ACM Women Europe from ACM. And she's devoted many years of service to the community, which is why her LinkedIn link appeared in the chat by mistake, because I was having problems copying and pasting. So anyway, please ask your question after all the embarrassment. Thank you very much, Linda. Yes, I'm from Turkey."
+    },
+    {
+      "start": 3903.072,
+      "end": 3928.32,
+      "text": "I'm here at Beacon University. I'm an instructor. And for two years, I'm working for Women in Computing. My question is to everyone. There is a paradox. As the gender equality level goes down, percentage of women in STEM goes up."
+    },
+    {
+      "start": 3928.32,
+      "end": 3953.968,
+      "text": "Linda, maybe you remember from IE reports, I have been asked many times, what is your secret? We don't have any secrets. Yeah. So what can you say about this paradox? Do you have any particular panel member in mind? Or just a whole panel?"
+    },
+    {
+      "start": 3958.704,
+      "end": 3988.208,
+      "text": "She asked the entire panel, she said. Yeah, OK. I mean, I can add a little something. I don't know too much about it, so I wouldn't like to speak too much about it. But the report I just mentioned, I blush if I could, I just posted the link in the chat. There is a really good discussion of this. So I can recommend if you'd like to read some more about it, but I personally can't."
+    },
+    {
+      "start": 3988.208,
+      "end": 4017.008,
+      "text": "speak too much to this okay I'll paste the link of the research that I'm mentioning thank you that's great um okay so while people are still thinking about questions I will take the chair's prerogative and ask my own um Erin so you were talking about the percentage of women on the different I don't know what the collective name is but the code basis so the different places where women are publishing code do you have any idea"
+    },
+    {
+      "start": 4017.264,
+      "end": 4046.496,
+      "text": "whether people are hiding the fact there are women or not because i think sometimes there's a lot of hassles of women tend not to show that they're women yeah that's a really interesting question um there's kind of two pieces how i can answer that so firstly i think i'll preface it with we we in our methodology when we were looking at the numbers of uh women and men and other genders and then different"
+    },
+    {
+      "start": 4046.496,
+      "end": 4066.832,
+      "text": "intersections between these different groups of people we some of the platforms are self-declared gender so some of the data we took from surveys that have been administered through the platforms um one of the platforms we use the genderize api where we can infer gender which i'm"
+    },
+    {
+      "start": 4066.832,
+      "end": 4094.192,
+      "text": "not a huge fan of doing but it's obviously difficult if we don't have a database of genders to be able to do research on on gender on these platforms um and so i think that's that's the first piece which is this is an interesting uh prob i can say probably it's an interesting discussion we've had a lot when we've been working on this how if at all is it okay to infer gender um"
+    },
+    {
+      "start": 4094.352,
+      "end": 4109.696,
+      "text": "particularly on linkedin as well um so i think the second piece yes that absolutely there is people use different um usernames often to hide their gender so that there isn't this uh"
+    },
+    {
+      "start": 4109.696,
+      "end": 4134.064,
+      "text": "as all the panelists have said there aren't these traditional assumptions made about technical skill or process of working and I think this is we didn't really interrogate this too much on the case study but this is something we're really interested to look at in the next piece of work we're moving on to so I think Judy mentioned it briefly but we'll be looking at different online"
+    },
+    {
+      "start": 4134.064,
+      "end": 4163.472,
+      "text": "workplace communication tools where sometimes gender is hidden deliberately sometimes it's not available sometimes it can be inferred through name other times it on purpose can't be and so I think this is one of the things that we'll tackle with when we come on to this next piece about diversity inclusion online I think it's a really yeah really interesting question I'd be really grateful to hear what how other people think about this as well."
+    },
+    {
+      "start": 4163.632,
+      "end": 4192.8,
+      "text": "Does anyone in the audience have any experience with this? Just quickly, it's hard to scan. OK, if you do have them, please raise your hand and we can come back to this later. Then I have another question while the audience is still thinking about other questions. This is to Jeanne. So you were saying that one of the policies is to have gender balance at all levels of seniority."
+    },
+    {
+      "start": 4192.8,
+      "end": 4200.0,
+      "text": "and my own observations from my own computer science field is that there's"
+    },
+    {
+      "start": 4200.656,
+      "end": 4229.808,
+      "text": "difficult to have balance at the more senior levels because there was never the women in the pipeline to fill these senior levels so then we have all this yes but you need to get the best people so is there any way we can accelerate this yeah thank you um i think we get this pipeline question a lot because it is a real but it's i don't want to say it's a completely valid or"
+    },
+    {
+      "start": 4230.544,
+      "end": 4256.512,
+      "text": "overarching issue but it is also partly a reality but we want to basically create a pipeline of more women talent by starting with girls from an early school age going to secondary education and then higher research levels to actually ensure that there are enough women because"
+    },
+    {
+      "start": 4256.512,
+      "end": 4279.024,
+      "text": "This argument is getting a bit tiring, I find personally, and it shouldn't be the case anymore. So we do have actions at the European Institute for Innovation and Technology that is looking into developing girls' digital skills. We have projects working on women innovators in tech."
+    },
+    {
+      "start": 4279.024,
+      "end": 4308.832,
+      "text": "We try to have more and more on this. And I think the political attention that this is getting is also very useful in creating such a pipeline. OK, thank you. Then I guess the answer is we need to wait a little bit. OK, then I have Linda Weigel, if you could perhaps introduce yourself briefly. Yes. Yeah. Thanks. Thanks to everyone who presented the fantastic slide so far. My name is Linda. I'm a doctoral researcher at the University of Luxembourg."
+    },
+    {
+      "start": 4308.832,
+      "end": 4335.648,
+      "text": "And at the moment I'm working on a paper on digital identity management. And we found that new forms of electronic identification, on the one hand, convey more control and power to the user, for instance. But at the same time, it also requires the user to be able to meet really rational decisions and well-informed decisions to share data or to restrict data to third parties, for instance."
+    },
+    {
+      "start": 4335.648,
+      "end": 4363.072,
+      "text": "And as such, it also requires higher digital literacy among users, among the population, if you use it in the public sector, especially, which I'm personally looking into in particular. And there are some voices that also complain that these new technical standards require a really high level of digital and data literacy and user competence. So I was wondering whether the more competence we..."
+    },
+    {
+      "start": 4363.072,
+      "end": 4387.76,
+      "text": "delegate to the user, isn't there also more inequality going on if, for instance, girls or women maybe are disadvantaged here? So in the end, some new technology with a new goal actually can actually be detrimental to society as such. Are there any thoughts on this? I don't know. It's open to the panel in general."
+    },
+    {
+      "start": 4389.968,
+      "end": 4412.272,
+      "text": "And maybe just as a first reaction, I mean, that might happen, but as we were discussing earlier, I think it depends a lot on which women, where, what their backgrounds are, that this might be a problem in some countries amongst some demographics and not so much in other countries."
+    },
+    {
+      "start": 4412.272,
+      "end": 4440.976,
+      "text": "Things are very unevenly distributed and that we shouldn't necessarily assume that women don't have these skills, because certainly I think a lot of the evidence is that women are the major users of certainly social media. The problem is they're not necessarily the major designers. But, you know, they're kind of quite women are quite capable of using a lot of these technologies and maybe in quite sophisticated ways that aren't necessarily visible."
+    },
+    {
+      "start": 4440.976,
+      "end": 4465.04,
+      "text": "And the other point I wanted to make, which I think is related to this and related to something that came up earlier, which I found really interesting. It was about, in a sense, the kind of pseudonymous use or of, you know, using pseudonyms to upload your data or upload your code because perhaps you're afraid of getting online abuse because that's one of the other things we've witnessed."
+    },
+    {
+      "start": 4465.04,
+      "end": 4492.72,
+      "text": "The wonders of digital technologies that the kinds of abuse that women get when they're. So, you know, it'd be interesting to be able to create systems where women and other people who might kind of suffer from kind of hate speech or whatever, to be able to kind of hide their identities. And of course, in the early days of the Internet, we had that. And of course, we still have it. But it's been interesting to see how the kind of right to."
+    },
+    {
+      "start": 4492.72,
+      "end": 4520.816,
+      "text": "online anonymity has shifted over the last kind of 25 years. And OK, I'm not a technical expert. I'm kind of curious what some of the more many computer scientists here kind of think about those sorts of questions about, you know, the right to kind of, yeah, to hide your identity. Whereas, you know, most of the efforts are all about trying to pin people down really, really precisely and hold them accountable, which in some."
+    },
+    {
+      "start": 4520.816,
+      "end": 4550.4,
+      "text": "context is fine, but not in all contexts. And yeah, I'll leave it there. Okay. Thank you very much. Would any computer scientists like to reply to Sally briefly? Okay. Right. Then I would like to ask Bridget Ratza for her question. Thank you. Hello. Actually, sorry, I'm a chemical engineer."
+    },
+    {
+      "start": 4550.4,
+      "end": 4575.776,
+      "text": "by training from Technical University Vienna. I'm the coordinator of one of those structural change projects that are funded by the EU in the science research for society calls. And obviously, we are all concerned about this leaky pipeline phenomenon. And our project was situated in the STEM field, so in the core field where also ICT is."
+    },
+    {
+      "start": 4575.776,
+      "end": 4604.464,
+      "text": "And the current discussion actually here is all about culture. So it goes to what Sally already has said. It's about bullying. It's about harassment. It's about what kind of identity could you or can you have and can you share in this kind of surrounding. And I think it is not by chance that the Horizon Europe program now"
+    },
+    {
+      "start": 4604.464,
+      "end": 4631.84,
+      "text": "encompasses one more point in addition to what we had before like decision making and fixing female careers and gender in gender dimension in research it also added the sexual harassment perspective and I think this is quite crucial because what we see is not only young women not entering the field but"
+    },
+    {
+      "start": 4631.84,
+      "end": 4657.776,
+      "text": "even more women leaving the field either before or after graduating and going somewhere else because it's not the place where you want to be as a young woman. And I think this is the thing that we have to take. It's not about technical ability or things like that. I would reject that. Okay. Would someone like to respond?"
+    },
+    {
+      "start": 4659.312,
+      "end": 4689.28,
+      "text": "Yes, I mean, can I? I mean, I just want to sort of completely kind of agree with that. I mean, in a way, we were under quite a lot of pressure to work on the sort of pipeline and, you know, and getting more women, you know, adding to the studies of women in academia and such like. And we very sort of specifically thought that it was very important to look at organisational dynamics and chilly climate in organisations because it seems to us that there are very subtle,"
+    },
+    {
+      "start": 4689.28,
+      "end": 4717.872,
+      "text": "dynamics going on there that are very sort of hard to identify if you're doing kind of macro work. And so that's why we're going to look at Slack data and other kind of interactions and see if there are ways of kind of shifting the expectations of what interaction should be, what's reasonable interaction, what's supportive interaction, what sort of criticisms are appropriate, you know, trying to make some cultural change at the organisational level, because it does seem to me that's absolutely key."
+    },
+    {
+      "start": 4718.992,
+      "end": 4748.4,
+      "text": "Jeanne, you've put up your hand. Did you want to respond to this as well? Yes, I think I also want to clarify maybe a bit what I said earlier about creating this pipeline. That's, of course, very important to have these technical skills. I mean, it's one thing to have the gender gaps in STEM and ICT, but also what I was talking about earlier. I mean, we want to have a more comprehensive approach that looks at fostering digital skills or STEM skills, but also addressing these organizational."
+    },
+    {
+      "start": 4748.4,
+      "end": 4775.648,
+      "text": "aspects through gender equality plans. And I think that is part of our GECO consortium. And yeah, that's one of the projects that's actually also working on addressing this and fostering more inclusive work cultures where also issues like unconscious bias are tackled when it comes to career progression or recruitment."
+    },
+    {
+      "start": 4775.648,
+      "end": 4800.0,
+      "text": "so that this sort of biplane excuse is not always a valid excuse. Thank you very much. I would like to embarrass Alexander Schmoltz because he wrote an item in the chat which I think was very appropriate. Alexander, do you want to introduce your own item or shall I do it for you? Thank you."
+    },
+    {
+      "start": 4800.0,
+      "end": 4828.0,
+      "text": "I just wanted to point to another aspect of gender and undoing gender about toxic masculinity. And I had some research, especially in the FED sector, so about occupations like academia and IT, which are more well-paid occupations, that there is a vast experience that there is a lot of toxic masculinity"
+    },
+    {
+      "start": 4828.0,
+      "end": 4853.68,
+      "text": "masculinity in the field that kind of prevents women from entering also higher levels of occupations. So my question would do what we as men could do to undo gender practices, both in business and but also in everyday personal actions and behavior. Well, that's an easy one. Sally, could you maybe respond to this?"
+    },
+    {
+      "start": 4853.68,
+      "end": 4871.584,
+      "text": "Well, I mean, it relates very nicely to the previous question and discussion. I think this is absolutely the right question that, you know, it's not, you know, this isn't only women's problem that this, you know, men also have to kind of step up and."
+    },
+    {
+      "start": 4871.584,
+      "end": 4900.752,
+      "text": "change behavior and of course as we were discussing you know this isn't universal I mean clearly in some countries this kind of you know works reasonably well or in some sectors it works reasonably well what can we learn from other sectors where there's a better gender balance where you don't get women leaving the profession after five years um but you know I remember once having a young man kind of something had come up in the Netherlands and he said you know what can I do and I you know my simple advice was you don't be a jerk I mean it's"
+    },
+    {
+      "start": 4900.752,
+      "end": 4927.824,
+      "text": "It's not that difficult, guys. Just be a decent human being. But of course, you know, there is a you know, there are it's not about only about individuals. There are workplace cultures, as Judy was talking about, that need to be addressed. And, you know, what happens when inappropriate behavior happens and who gets punished? And but, you know, again, these are questions, you know."
+    },
+    {
+      "start": 4927.984,
+      "end": 4956.688,
+      "text": "feminists who've been looking at women and work have been grappling with for a long time so you know i think there's a lot we can learn from but i think the simple answer is you know just try and be a decent person okay thank you we're rapidly running out of time um i'd like to give the floor to eric um if he promises to have a short question and if you can have a short answer we can start the music on time yep i'll try to be very short and phrase my my"
+    },
+    {
+      "start": 4956.688,
+      "end": 4981.232,
+      "text": "My comment is a question. I mean, the digital seems to have this this effect of presenting us with a mirror of of ourselves and our society. And the case we have been discussing today is a special case of this. But it's definitely true that that we we are faced with, you know, in computer science and its applications."
+    },
+    {
+      "start": 4981.232,
+      "end": 5005.232,
+      "text": "realizing bias, gender issues and all these sorts of things. But at the same time, this this mirror image is a big opportunity, even if it's a weird one, because, for example, now we are starting to teach computer science students, engineers about these issues, biases, for example, which they probably."
+    },
+    {
+      "start": 5005.232,
+      "end": 5029.744,
+      "text": "would have otherwise never heard about or at least never, you know, been never discussed in an educational proper setting. That's kind of weird, but at least it's happening here. So I'd like to know whether you can share your views on this and also if you share a positive twist of this."
+    },
+    {
+      "start": 5029.872,
+      "end": 5059.552,
+      "text": "Yeah, Judy, go ahead. This is our last speaker, I think. Okay. No pressure. No. I mean, one very sort of positive thing that's happening is the introduction of ethics courses into computer science. And that's happening, you know, I was at Stanford a couple of years ago and there was a big thing that they were making ethics compulsory. I mean, my slight worry is how ethics are defined and that they can be defined somehow narrowly. And as a science and technology studies person and a sociologist,"
+    },
+    {
+      "start": 5059.552,
+      "end": 5085.104,
+      "text": "I'm just concerned that that sort of education is kind of broad enough that it isn't philosophical ethics, but actually about kind of socio-technical issues more broadly and the kinds of issues that we've talked about today. For example, that not all problems have got technical solutions and that, you know, there isn't a technical definition or solution to the kind of fairness issue in algorithms. I'll leave it at that. OK, thank you very much indeed."
+    },
+    {
+      "start": 5085.104,
+      "end": 5113.552,
+      "text": "Then thank you all, all the speakers for contributing. Thank you for the audience for being a great audience. The whole session with the speakers and the questions will be made online on YouTube. And I hope we can get the links that the speakers and others have been supplying copied into that session there. Then I give the floor to Peter, who will allow us to exit and enjoy our evening with some beautiful music."
+    },
+    {
+      "start": 5114.512,
+      "end": 5132.992,
+      "text": "Thank you, Linda. So for the final notes today, I got a request from Sally, actually, and she said it would be great to, or at least that's what I got from her request, that it would be great to end with a piece by one of the great female composers who..."
+    },
+    {
+      "start": 5132.992,
+      "end": 5155.184,
+      "text": "managed to break into a traditionally male-dominated artistic profession and managed to have their works published at a time when this wasn't common and generally setting a precedent for the acceptance of women in this field. And let me just share the screen because then it's a bit..."
+    },
+    {
+      "start": 5155.184,
+      "end": 5177.776,
+      "text": "easier to talk about it. And we agreed on a piece by Fanny Mendelssohn-Hensel from her Piano Cycle Das Jahr, zwölf Charakterstücke, namely April. Why this one? Because it's April. That's the reference for today. And the piece is just as unsteady as the weather is."
+    },
+    {
+      "start": 5177.776,
+      "end": 5204.448,
+      "text": "As such, it would also fit for the next lecture, which is also in April and already next week on April 20th, which is going to be on the topic vaccination passports, a tool for liberation or the opposite. The speaker will be Ron Rosendahl from the Ministry of Health, Welfare and Sports in the Netherlands. The respondent will be Nikolaus Voigo from the University of Vienna, and it will be moderated by Dr. Hötzendorfer from the Research Institute in Vienna."
+    },
+    {
+      "start": 5204.448,
+      "end": 5216.176,
+      "text": "So let's listen to April by Fanny Mendelssohn-Hensel, performed by Lauma Skride. Thanks for joining today and see you next week."
+    },
+    {
+      "start": 5405.488,
+      "end": 5408.816,
+      "text": "Thank you and see you next Tuesday. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

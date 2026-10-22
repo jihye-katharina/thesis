@@ -1,0 +1,876 @@
+{
+  "video_id": "AIOnixSBAvI",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome to this online event and thank you for joining. My name is Hannes Werten and not Mete Seatkan. We had to switch in the last moment because the mics did not work properly here at TU Wien, so I'm taking the post of Mete. Just a short introduction before handing over to Moshe. You remember we had our... Last event on May 14th, an online event on digital humanism and COVID-19. And I think it was a successful event. And we took this opportunity and decided to make regular talks, online talks on a regular basis, either monthly or every second week. This is not yet decided. And there are two reasons for that. The one is an organizational and let's say community building one. the virus is blocking our mobility so we cannot move. But at the same time, it's easier to organize online events, to organize events where it's easier for the speakers and the audience because we don't have to move. We just have to agree on a joint time so that we can be online at the same moment of time, which is a little bit a problem because it's in the morning in the US and it's early afternoon or early evening in... in Europe and maybe late night in Asia. So this is the problem. But it's easier to organize this. And the second one is we have seen after a first period of shock, we have seen that computer science or digitalization or informatics, whatever you call it, is really essential in managing the crisis, but also essential now for the recovery. This you can see in many programs already announced. also at the European level, where you see that informatics and digitalization will be an essential vehicle for economic and social recovery. And the issue is which type of digitalization we want. And this brings in digital humanism as a major topic to put or design or create systems with the human at the center. So this is the reason we are doing these events, to look at different aspects of digital humanism. Before having some technical issues, I would like to thank the co-organizers and supporters of this event, which is, again, more on an, let's say, abstract level, not a financial one. It's the Digital Enlightenment Forum in Brussels. It's Informatics Europe, the Board of Informatics Europe. It's the Vienna Science and Technology Fund and it's IEEE. So these organizations are supporting and co-organizing this event. On the technical side, we have both Zoom and YouTube. The talk will be for 30 minutes and then we have 30 minutes Q&A. So we have separated so Moshe can talk for 30 minutes. I want to remember that it's recorded and we use it on our Digital Humanism YouTube channel so that others can also visit and look at the presentations afterward. I ask all participants to mute their microphone so that we are not disturbed. And afterwards, please raise your hand. And before asking a question, introduce yourself shortly by telling your name. I asked you to stay to the end, really the end, because there's a little surprise. It's based on the idea of Helga Novotny, and it was implemented by Peter Knies. So at the event, there will be some surprise. Okay. So that's the, let's say, the intro to this lecture in general. which we intend to keep on this basis, at least in the year 2020. I'm happy to welcome Moshe as a first speaker in this regular lecture. He will talk about lessons we can draw from this crisis. Very short to Moshe, I think all of you know him. He is one of the most cited. Computer scientists, and you look at all the metrics, he's one of the leading guys in our field. He's coming from logic, so he's more from the formal side. But he's one of those guys who also takes seriously the role of computer science in our society and our relationship to that. He's very influential also in the public discourse. Formerly, he has a professor position at Rice University, Texas. And he was, until 2017, the editor-in-chief of Communication of the ACM, which is probably one of the most influential magazines we have in computer science and informatics. Last but not least, he's one of the founding guys of this initiative or platform, whatever we call it, on digital humanism, bringing in some basic ideas and also being aware of the necessity to open computer science and to not only to specialists, but both to the public as well as to other sciences. Moshe, the floor is yours. Thank you all. There is advantages and disadvantages of doing it using this medium. And one advantage is that we have a large number of people who are able to join. And I think it's good to have this to start what I'm hoping is a global conversation. I want to focus today on one lesson that we can learn from COVID-19. So I don't think I'm telling anyone it's a surprise that we're in a crisis, but I think it's a multiple crisis that happened in the same time. I view it as a quadruple crisis. The first one, of course, is the public health crisis. And this is the world meters. This is the table that I look at. I'm a bit obsessive about it several times a day. What's going on? How many people are sick? How many people died? And right now, you see, the US is leading. This is a new meaning to America first. And the other point, not that the UK is number five, but even though I think I expect it to be number four soon. Moshe, did you share your screen? I think so, no. No, no, you have not shared your screen. okay then i need to do it once more okay i'm sorry can you see my screen now now now we can yes now it's okay okay so I said the first crisis is the public health crisis. And we have a large number of people who are sick and a large number of people who are dying. Anybody who said this is just like the flu, tell the person that he or she are an idiot. The second crisis is an economic crisis. This is not the parking lot at Disneyland. This is a line of people in the United States, I'm not sure where, who are waiting to get food in a food bank. I mean, to me, this is utterly shocking. It's an utterly shocking picture. There's so many people are waiting for hours just to get food. The third crisis is a social crisis. This is here, you see. A peaceful protest in front of the White House being dispersed by force. This is, to me, one of the most disturbing political developments in the United States in I don't know how long. Just an utterly shocking development that, in effect, some of the police here are military police. So if you have heard recently of all kinds of generals speaking against Trump, it's because of this event. And so all this, we have this already talked about three crises. And many of these crises are magnified by leadership crises. This is not happening only in the United States. This is true in many other countries, not everywhere. I mean, at this point, I'd love to be in New Zealand, but I'm not in New Zealand. But we have a leadership crisis. So I don't know that we can say that we're at the end of the beginning even. The future is very murky. So what can we still learn from this? So I want to go back to, A distant memory from March, and some of you may remember the expression that we use a lot in March, flatten the curve. We must flatten the curve. And so the idea is that when you have a pandemic, the number of cases grows and grows and grows, and you want to slow down the growth. And when you flatten the curve, it's not necessarily that you're slowing down the contagion, the infection rate. But as long as you don't really have a vaccine, it's not clear that at the end of the day, fewer people will get sick. Nevertheless, we do want to flatten the curve. And what is the motivation to flatten the curve? So people explain that there is a very good motivation to flatten the curve because we can expect lots of infections to happen. Right now, in the United States, we passed two million infections. But we don't want too many of them to happen at the same time because we are not able to deal with so many people at the same time. So there is the issue of hospital beds. Okay, so we understand that this was, of course, you can't really build a hospital bed to prepare for the most extreme scenario. But we suddenly saw a shortage of air ventilators for people who need help in breathing. And even more shocking, there was a shortage of PPEs. personal protective equipment. This is for the medical personnel. They need to protect themselves. And there was not enough. People have to, you know, and in fact, many of the people who end up getting sick and even dying are medical staff because there was not enough PPEs for all the doctors and nurses in the hospital. And that situation led... I think it's a very important column in the Wall Street Journal in March of 2020, but William Galston from the Birkin Institute. And the title was Efficiency is not the only economic virtue. And in that column, he contrasted the relentless quest for efficiency with also with the need for resilience. And he wrote, what if the relentless pursuit of efficiency? which has dominated American business thinking for decades, had made the global economic system more vulnerable for shocks. And he goes on to explain that how do you become efficient? You become efficient by adapting optimally to the current environment. So you are perfectly fit to the current environment. This is great as long as the environment doesn't change. What happens when suddenly the environment changes? If you are overfit to the current environment, you don't have the capacity to change and adapt quickly. So you optimize on efficiency, you sacrifice resilience. It turns out that this idea is then voiced by other people as well. Tom Friedman wrote a column on May 30th in the New York Times, and he wrote, grid and globalization set up us for disaster. And he made a very similar point. He said, over the past 20 years, we have been removing barriers, natural buffers, redundancies, regulations, and norms that provide resilience and protection when big systems, be they ecological, geopolitical, or financial, get stressed. So, again, efficiency comes at the expense of resilience. And he concludes, Tom Friedman concludes, we have been recklessly removing these buffers out of an obsession with short-term efficiency and growth without thinking at all. And it's interesting that this comes from Tom Friedman, who was very pre-globalization. The world is flat. He is one of the prophets, so to speak, of globalization. And now he says, oh, my God, this happened at the expense. of resilience. It turns out that this idea is, I keep discovering older and older expression of this idea. And again, if you know something even earlier, please let me know. But I wrote about this and somebody came back to me with a pointer to an article from 1975 that appeared in a journal on environment and planning. And made the same point on the inefficiency of being efficient. And he says, if you make decision making on a too narrow scale, you do it as you're being too efficient and you sacrifice resilience. He said he ends up this paper document, this element of decision and sketch a number of scenarios with such an approach that led to unexpected and undesirable consequences. So I want to switch now to computing and see how this idea of efficiency versus resilience also come up in nature and in computing. So in 2016, I was editor-in-chief of CSCM, and we published one issue where the feature article was an article that I'll talk about a little more in a minute. And the title was Sex as an Algorithm, the Theory of Evolution under the Lens of Computation. And we had to figure out what kind of cover, when we had the title Sex as an Algorithm, what kind of cover are you going to put on the cover page of the magazine? And so, you know, it's hard to come up with a good graphical element for an article about sex as an algorithm. So we just came up with Pink. And I thought it was funny. And many other people got offended by Pink. But skipping the cover page, let's go to the article itself. The article was written by Livnat and Papa Dimitriou. Papa Dimitriou is one of the most senior theoreticians in computer science. And they asked the following. When you look at, we look at search algorithms. So we have search algorithms that try to mimic nature. They're called genetic algorithms. And you have where you actually do kind of crossbreeding to try to create a better and better record. And this is competing with another search algorithm called simulated annealing that just proceeds by a sequence of mutations. And our experience computationally is that simulated annealing, which does not have the sexual crossbreeding, is better than genetic algorithms. So why has nature chosen sex as the almost exclusive means of reproduction for animals? And we know that this is not proof of bacteria, for example. And there are some rare exceptions in the animal kingdom. But generally for animals, sex is the dominant means of reproduction. And our computational experience was that no. So it's not just we all know that sex is messy, but computationally sex is not very efficient. So this is the question that Livnath and Papadimitriou ask. Why has nature chosen sex as opposed to just using mutation? And the answer was that you should not focus only on efficiency. He said what sexual reproduction does, it offers greater diversity of genes. And if you have greater diversity of genes, then the species is more resilient to disruptive environmental change. So we're not optimizing for any individual. But if you look at the species having more diversity. is good for the species. And so this explains, the focus on resilience explains why we need sex for resilience. So let's go on a little bit and look at computer science. So I grew up, and I know that not everybody listening here is a computer scientist, but for computer scientists, this book, The Art of Computer Programming by Don Knuth was the Bible. This actually was one of the very first books, I think the first book about algorithm. And Knuth also was the person who developed the so-called analysis of algorithm. So you go to Wikipedia and you say, what is analysis of algorithm? And here is the quote. In computer science, The analysis of algorithm is the process of finding the computational complexity of algorithm, the amount of time, storage, or other resources needed to execute them. So it's all about efficiency. And in fact, these books, this multi-volume collection of books, and the last one is volume four that by now has many, many sub-volume. The original plan was to have seven volume, but nobody think that it will actually happen. But the main focus here is efficiency, efficiency, efficiency. So we can't just look at the business community and their relentless focus on efficiency. This is also true for us. We need to look at the mirror. We have been very, very focused on efficiency, efficiency, efficiency. So in an article from 2013, David Ackley, he said, let's revisit an analysis of algorithm. But from the resiliency, he called it robustness perspective. And he's looking at three algorithms for sorting. So sorting is the algorithm when you have a set of elements. Imagine you have a set of students who have taken the class and you want to publish maybe the grades by their ID number. So you want to sort the list by ID numbers. And so this is an old study in computer science. And again, I would not try to be too technical in this talk. but we have a the naive algorithm it's called bubble salt it just says keep keep comparing element in the switch them if they're out of order and this is a quadratic algorithm if you have n elements you may need to use in the worst case n square quadratic number of comparison but also on the average you're going to use quadratic number of comparisons so if you take it's okay if you have a a small list but even if you have imagine that you have a list with let's we're doing now the census imagine you have a list of million people now sorting it may take trillion operations so that's very expensive a melt source is a better one it has what we call almost linear complexity which is n times log n so this is much more a boss for worst case but also for the average case and quicksort is again is quadratic another algorithm is quadratic in the worst case but typically it is again almost linear and log n And David Ackley asks, suppose your comparison is not perfect. So let's suppose that on 10% of the comparison operation, maybe on half of them you'll make an error and you'll give the wrong result to the comparison. And what will end up to the final list? So the final list will not be fully sorted. The question is how far from sorted would it be? And what he showed is that quick sort will give you an almost sorted list with very few deviations. While bubble sort and merge sort will not. They will be pretty badly sorted list. So why is bubble sort so much better? Because they have done many more comparisons. And these comparisons were not needed just to get a sorted list if everything works out perfectly. But this redundancy suddenly does help you when... when you can have problems, when some of the comparison can be faulty. So this is an example where there is a tension between efficiency and resilience. I want to bring, sorting is a bit kind of more of a technical algorithm, but I want to bring another algorithm that many of you have used without realizing it. And this is called PageRank. And PageRan is the algorithm that Larry Page came up with in the mid-90s. You do a Google, you do a web search, and you get many, many results. And the answer is none of us is going to scroll down to page 10 of the result. So it's very important to saw the result by the relevance, which are the most important, which are the most useful results of the PageRan. And if you remember the web... the search engines of the early 90s, they were pretty bad. They gave you lots of very irrelevant results. And when Google came, you go suddenly, ah, this is very, very relevant. So PageRank was the algorithm that was based for the first version of the Google search engine. And they had a very elegant idea that if a website is important, then there will be many links to it. So the more links to a website tells you how important it is. It's more complicated than that, but simply speaking, the more pointers to a website, the more important it is, and you put it higher in the search order. So indeed, I remember when Google came about and you start doing Google search, it was magic because suddenly you really got very, very relevant search results. But very quickly, people realized, wait a minute. If having many more links to my website means it's ranked higher, I will create such links. And in fact, the whole industry arose. It became known as search engine optimization. How to make your website flow to the top by creating essentially what we would call today fake links. And so it turns out that PageRack was not resilient. It was a beautiful algorithm. It was not resilient. It was very easy to subvert it. And today... On one hand, the patent has expired. And if you go to, I've at some point asked Google if they are willing to write an article for CSCM about how they rank search results. And they say, no, this is a trade secret now. We are not going to tell you how to do it because as soon as we tell you how to do it, people will try to subvert it. So resiliency is an important part of algorithms. But I challenge the people who teach algorithms courses to tell me. what their focus is. I can tell you here at Rice, the focus is efficiency, efficiency, efficiency. I want to address another aspect of efficiency, which has to do with friction. And I use friction in a broad sense. And in 2013, I wrote, our discipline is dedicated to reducing friction. Latency must be eliminated. Bandwidth must increase. Ubiquity should be universal. Our goal is to reduce the friction of computing communication as much as possible. And take Facebook, one of the most influential companies these days in the news every day now. What was their motto from the beginning? Frictionless sharing. Sharing should be so easy to share, there should be no friction whatsoever. So now we know what happens when you reduce this kind of friction. What do you get? You get what we call filter bubbles. You end up seeing only the stuff that you like. And it's incredibly easy to promote fake news and extreme content. And now we are all, you know, the genie is out of the bottle with social media. And now every day I read in the news, how do we put the genie back in the bottle? And the answer is nobody really knows at this point how to put your genie back in the bottle. And this is the result of the ideology of frictionless. sharing but this is just one example take another example there is something now called high frequency trading or algorithmic trading and 10 years ago there was something called the flash crash the flash crash was the dow jones dropped 600 point in five minutes i mean it was such a drop that they had to stop trading basically And later on, there was some analysis by the security and exchange commissions and the commodity and future trading commission. And they said the problem was when you do this such trading with such frequency, some sales order come in and they trigger other sales order and they trigger other sales order and all of it happens so fast, poof, the market crashes. Now, why are we allowing high frequency trading? The proponent says, oh, it makes the market more liquid. The markets become more efficient. But Thomas Petroffi, who is one of the people who started this industry of high-frequency trading, he says, hogwash. It's all about profits. He said, today, drive for speed has absolutely no social value. And what we've done, we've created a system with no friction. And systems without frictions are very non-robust. Every mechanical hero will tell you, systems without friction are not robust. They're not resilient. So this is a plea. I think we need to think about how to bring the friction back into computing. So imagine you talk to a mechanical engineer and this mechanical engineer says, I want to reduce friction everywhere. You say, wait a minute, this is crazy. There are some places where I want no friction. But when it comes to the tire in the road, for example, I want maximum friction. What happens if you make my tire perfectly smooth? I can't go anywhere. So, Aristotle wrote, getting angry is easy. But getting angry for the right reason, at the right people, in the right amount, that is hard. And I said, the same thing you should think of how to do friction. We need the right amount of friction, in the right place, in the right time. And we have not yet developed the scholarship of friction in computing. And without it, again, no friction, no robustness, no resilience. Going back to David Ackley, he coined the phrase what he called CEO software. This is not about chief executive officers. He said that our CEOs stand for correctness and efficiency only. And if you look, take an open syllabus in computer science and see how we teach algorithm, what is the focus? The focus is correctness. Algorithm has to be correct and efficient. And we assume that the platform is reliable. The hardware is reliable. We assume no adversaries. And he says it would help to have better visibility into the, if we need to have a better visibility into the efficiency robustness trade-off. Existing software quality metric could be expanded to include correctness degradation under various fault models. So again, he says, we cannot just focus on efficiency. We must focus on equally robustness. I call it resilience. And I'll give you another example where I think as a discipline, we just blew it really badly. So I'm quoting here verbatim from an email that I received from a colleague of mine who is a security researcher. And he explained to me how... security works he says first somebody builds a thing so this is very colloquial you see it's an email from someone first someone builds a thing and it's super useful then eventually someone else come along and finds a vulnerability then security become part of the engineering process just like we need to make sure our code doesn't have also bug that makes it crash we also need to make sure that our code does not have bug that can be exploited for bad purposes there are the crank for a few years and eventually security gets better and in fact a prime example of this attitude which is functionality first security later is this medium you're using assume as soon as zoom became very popular people discover all the problems security problem assume had to scramble to add security you know later it didn't start with security security came later so Our computer age is about 75 years old. One way to look at the pinnacles of achievement in computing is to look at the Turing Award, the Nobel Prize in Computing. Three Turing Awards went for cryptography. Three Turing Awards went for cryptography. Not a single one in security. Now, of course, cryptography is part of security, but it's not the whole story. You can have a perfect cryptography. and still have very vulnerable systems, okay? And the reason we did not give a Turing Award in cybersecurity, I think, because we can find the accomplishment that we deserve a Turing Award. And it's not just about privacy. I mean, recently there was, you know, there was some, there was a lot of tension between Israel and Iran, and apparently there was some attempt to attack water system in Israel. So we have to think now that our infrastructure is very vulnerable. And, you know, the water system, the financial system, the power system, all of these are vulnerable to cyber attacks. And I think community is a bit blasé about it. You know, I don't think people are saying, oh, this is a crisis. Stop everything. You know, people are saying now, stop everything. We must deal with racism. And of course, we might deal with racism. But we have, I think, a systemic risk here. And we are not saying we must stop everything and fix our security mess. And some of the attitude for this is what I call cyber libertarianism. So let's compare a computing technology to another technology, which is essential to us, is transportation, vehicle technology. So cars kill people. We know that it was true from the beginning. But for the last 100 years, we really made a very steady improvement. And the way they measure it, they look for billion miles travel. How many people get killed for billion VMT, vehicles mile travel? And it's been improving for the last 100 years. For example, the United States, we established a national board, the Transportation Safety Board. Security is not taking that seriously. Computer security is not taking such so seriously. And one reason is because there is an attitude in the technical community of cyber libertarianism. Leave the government out of it. Regulation will stifle innovation. But we have not been able to fix the security mess on our own. And we must find some way to say we must change the boundary condition. This is a market failure. I'll come back to it. And the only way to fix market failure. is to change the boundary conditions for that market. And I can't see any way of doing it other than some government action. So I want to go back now to economic efficiency. So it's become very clear that the relentless pursuit of efficiency meant that we didn't really get ready for a pandemic. There were warnings. I mean, I've read these warnings over the years, and I assume that somebody is preparing for it. But in February, Trump defended why he's making a huge budget cut to the CDC. The CDC is helpful. This is controlled. This is the agency in charge of getting ready for epidemics. And he says, well, when we need doctors, we can hire them. We don't need them now. We'll hire them when we need them. Now there is a worry of a second wave of coronavirus. And China is trying to control factories of PPEs. Again, we... You know, it's expensive to prepare. We don't want to spend money now on preparation for the pandemic. So let's go back to economic efficiency. What does economic efficiency mean? So you go back to Economics 101, and they will tell you economic efficiency means that goods and production, factory production, are distributed to the most valuable users and waste is minimized. This is efficiency. and there are people who believe in the free market, a big advocate of the free market, and they believe that self-interest, individual self-interest, and let's say fair economics, let everybody do what they want to do with economics, that will lead to economic efficiency and will serve the best interest of society. So this sentence I got from Investopedia. These are not my words. This is what free market advocates believe in. So first of all, I think that we are conflating inefficiency with optimality. Is efficiency optimal? And that's something we've seen before about resilience, that efficiency competes with resilience. But efficiency has other problems as well. So what is the source of the question of efficiency? So if you go to learn Microeconomics 101, you run and you ask... People, what is the most fundamental theorems in economics? You run into the so-called first welfare theorem. And what does the first welfare theorem state? It states that under certain assumptions, that essentially of, you know, there are various reasonable assumptions. We can debate how reasonable, but under some assumption, the market will tend towards a competitive Pareto optimal equilibrium. Pareto optimal means that no one can... can improve their situation unless someone else. It's a zero-sum game. That's what planet optimal means. So that really is in some sense what they tell you is free markets produce economic efficiency. Now, how well does it serve the best interests of society? Remember, the quote from the free market advocates was that it serves the best interests of society. How well does it serve the best interests of society? So it turned out that economics was silent on that. And computer science had to shed some light on it. And this was a work from just over 20 years ago by Koutsoupias and Papadimitriou. So, same Papadimitriou. And they say, well, it turns out that when you look at equilibrium, there are many possible equilibria, not a single one. And the economy does not tell you which equilibrium will be rich. Just one of them will be rich. So they say, let's look at the worst possible Nash equilibrium, worse in terms of the social utility, and compare it to the optimum. And they call this the price later on. They didn't use this phrase later on. Somebody else called it the price of anarchy. If you have anarchy, just let the market do it. Actually, it's not the price of anarchy. It's the price of free market. And so the answer is that the free market may converge in an equilibrium. They can be very, very far away from the social optimum. So economic efficiency, this is really an incredibly important result. It tells us efficiency does not guarantee optimality. It's not just about resilience, but even if you just look at utility that you measure, you know, like the total amount of money that everybody has in society, that's not guaranteed to be optimum under economic efficiency. So this is one important result. And I call it the computational lens on economics. That result in computer science that tells us something about economics. And then a few years later, again, Pablo Demetrio, now with Daskalakis and Goldberg, asked another question. And the question was, how long does it take to reach equilibrium? But remember, how is equilibrium reached? There is no master control here. You know, I reduce my demand because the price is too high. The merchant reduced the price because demand is too low. It's a sequence of local actions. And what they show is that by a sequence of local action, the amount of time it takes to reach an equilibrium can be exceedingly long. Well, if it's exceedingly long, then it means the market is really unlikely to ever be in an equilibrium. Why? Because things change. The world is not static. If it's over a short time, you can say, okay, you reached an equilibrium. But over the long time, price change, supply change, demand change, you know, things change. The world is not static, as we all know. So these two results really tell us that the free market deals are wrong. There's no efficiency. The free market does not guarantee efficiency. It does not guarantee optimality. I'm not advocating here central market because we tried central market and we saw how well it doesn't work. But we should not believe in the free market efficiency optimality blindly. And in fact, it does not take very deep theory to know that greed is bad. Why am I using the line greed is bad? Because there was a movie in 1987 called Wall Street. And Michael Douglas is playing a despicable character, Gordon Gicko. And he gave a famous speech. You can go and find it on YouTube, where he said greed. For the lack of a better word, is good. And what's the argument? Well, it's essentially Adam Smith's invisible hand. It's a beautifully seductive argument. Everybody does what's best for them. And out of this comes a social good. But in computer science, we teach every graduate student about greedy algorithm. And greedy algorithm, algorithm that always try to improve just local improvement. And we know that such algorithm can, what we say, stuck in a local optimum. What does it mean? Nobody can improve the situation, but that does not mean it's an optimal situation. It requires some systemic intervention to drive you out of this equilibrium where you're stuck. You cannot do better. Nobody can do better. But you know that this is not optimal. I think right now, for example, with cybersecurity, we seem to be stuck in a local optimum. We know the market does not encourage more investment in cybersecurity. Economists will call it, it's a market failure. And we need to ask ourselves, how do we get out of it? However, I've kind of been somewhat critical of computing here. But the reality is that in COVID-19, while a whole bunch of systems are collapsing around us, one thing did work. What did work? Internet. Look at us. We're right here. Okay. We are working from home. We're shopping from home. I have not gone now shopping outside, even grocery shopping for two months. Everything comes to my door. I'm teaching from home. I'm learning from home. So the internet did, you know, a huge challenge was thrown into the internet and the internet held up. Partly because the internet was designed from the beginning. This was, remember, it was developed, the internet used to be the ARPANET. It was a military network. It was designed to withstand potentially a nuclear war. How do you do that? Redundancy. And in computing, we know that redundancy is critical to resilience from the early days, error-correcting codes. How do you guarantee that? Von Neumann, a very distinguished mathematician, wrote about reliable organisms. And again, the key was redundancy. And in fact, after 2008, After the banking system practically collapsed and we needed to make sure that we have a robust banking system. So now the federal banks does stress tests for banks. And what do they check? That the bank has enough capital. It's again about redundancy. Redundancy is inefficient, but it gives you resilience, robustness. So to summarize, I think resilience is a property. which is very fundamental for survival of societies and species. We're not discussing it enough. Computing need to increase focus on resilience. Economic needs to increase the focus on resilience. Markets do not appreciate it. So think about it. Take, for example, even something like car insurance. I'm mandated by law. If I want to get my registration from the state, I have to send a proof of insurance. Why do they require me to send proof of insurance? Because they know that insurance is inefficient. In the long term, it costs me more money. If I had enough money, I could be self-insured. I would have enough money in the bank to pay for an accident. But they said, no, no, not good enough. We cannot guarantee that. So everybody, you must have car insurance. By law, you must have car insurance. So societal action is required to ensure resilience. because the market does not guarantee it. And when we just behave selfishly, we don't do it. We must remember, as bad as things are now, this might be just a dress rehearsal for a bigger challenge coming down the way, which is climate change. And to me, the essence of digital humanism is computing for the common good, for societal good. And I want to finish. quoting one of our patron saints, Ada Lovelace, who's generally considered to be the first programmer. And in 1843, she writes a letter for Charles Babbage, who wanted to build an analytical engine. And he was a businessman. He wanted to make money on it. And she wrote to him, says, it's okay for me if you make money, but I wish to add my mind towards expounding and interpreting the Almighty, his laws, and his works. for the most effective use of mankind, computing for the social good. This is the essence of digital humanism for me. Thank you. Moshe, thank you very much. I was somehow tempted to interfere because of the timing, but it was so interesting. We are now going to the question and answer session. And we have a long list of participants. And I ask you, because you can use on your Zoom, you can raise your hand. And I have a look at the long list and see who is raising his hand. Carlo is raising his hand and I see Helga is raising her hand. Carlo first. Carlo, OK. OK, well, thank you. It was fascinating, Moshe, really. I really enjoyed your presentation. Actually, you know. I thought that your discussion about efficiency versus resilience also applies to political systems. If you think of democracy, I mean, democracy is based on redundancy. There is checks and balances. So decisions require longer processes than in authoritarian regimes. In some sense, we can probably say that democratic countries have been handling, you know, this emergency better than countries like Brazil or, you know, the US, where you have one person in charge who wants to decide. You know, there may be an efficiency motivation behind that. But in the end, you know, democracy is more resilient. Don't you think that that is the case? Absolutely. Absolutely. I mean, the problem is authoritarian system is that they are more efficient. One person makes the decision. And as long as this one person makes the good decisions, everything works well. And then this one person can make one disastrous decision and the whole country goes, you know, suffer the consequences of that. So, yes, absolutely. I think that's a nice way to look at the democracy. is an inefficient system and you know i'm not talking about you know the arguments on moral grounds for democracy but even even just in terms of is it a good governance system the answer is yeah it's much more resilient absolutely helga had a question ah moshe i wanted to give okay helga and then erich brehm okay because moshe it was okay helga it's you Okay, I would like to introduce the time dimension. And it is obvious when you speak about efficiency, it's also about the most immediate gains that you can get. So there is a time dimension built into it that aims for getting profit as quickly as possible. We know how the financial markets work, et cetera, et cetera. While when you speak about resilience or robustness, you are preparing the system, you're preparing the agents in the system for a future which is largely unknown. you know that there will be changes, but nobody knows exactly what kind of changes and when they will come about. So I think it would be nice if you could also, you know, build in this time dimension into what you say. And I thought also it's a very, very taking way of presenting the situation which we are in. My question really goes back to what you mentioned at the very end about grassroots. for climate change. Now, obviously, there are far more, it's a far more complex system. I mean, now we had to deal essentially, as you said, with the health system. We had to deal with the economic system. And then in some countries, luckily, you don't have the kind of riots we see now everywhere. You have people supporting the protest movements. But what happens in the U.S. is not everywhere. But climate change will be everywhere. And I would like to get you to say a little bit more. Also, the role of the markets in climate change, it's there, but it's very different from what we have been talking about now. So I just wanted to show this into the discussion. So I think that the challenge for us with the challenge, for example, with climate change has exactly to do with the dimension of time that you mentioned. OK, so it is well known that we are not even individual people are not very good at planning for a very long time. I mean, there is a classical what is the phrase? God made me chaste, but not today. OK, so how do we optimize for the long term and how long? What is I mean, it's even more difficult because how long should we optimize for? Okay. And this is, so, I mean, there are various ways of trying to think about long-term planning. But the problem with climate change is that clearly to prepare for it now, we have to spend money now. And that's where the argument of efficiency is going to be very expensive. And the gains are not clear. And there is also the element, of course, of uncertainty. Okay. You know, clearly we have to, what you're telling us is going to cost money now for sure. And maybe there will be a benefit. Okay. And, I mean, for us, I think, given what we have today, which is the large size of humanity, for us to plan for the long term is the biggest challenge of society. How does society plan for the next 200 years? I mean, even 100 years. It's just very, very difficult for us to do it. I don't think as a society we have found a way to, in the maturity, to say how do we plan for the next 100 years. Okay, Moshe, thanks. A little remark from my side, because on this timing issue on the optimization problem, what Helga mentioned, because when you go on efficiency for the short time range, the problem is well structured. But if you go on a longer time scale, there are new structures appearing and it becomes much more complex. So I think timing is also related with this complexity issue, if you look for a longer time period. But this was just a side remark. I wanted to give the voice to Erich Prem. Erich, it's your turn. Yes. Thank you, Moshe, for this fascinating talk. I'm particularly grateful that you mentioned or focused on cybersecurity. You know that in digital humanism, we talk a lot about privacy. We talk a lot about social networks and fake news and that sort of thing. But maybe not enough about cybersecurity. It seems like, you know, in computer science and informatics, we are constantly magnifying issues that probably wouldn't be so severe if they weren't electronic or software issues. We are kind of magnifying them and cybersecurity is one of them. And today we have very little, as you say, regulation. I mean, it's surprising. Computer scientists have known about these issues, you know, for a very long time, but there is no proper, let's say, authority that even supervises. what controls banks, whether they are doing everything properly. While I have to identify myself towards the ATM, the ATM never actually identifies itself properly to me. And it's all these sorts of issues that we know about and which create crime and other issues. But I wanted to ask you a more concrete question about this question of resilience. For me, there is another important aspect regarding robustness, which has to do with economic conditions in the IT industry. And that is the shift from owning a system. Like in the old days, we used to buy Microsoft Word, for example, or I remember buying WordPerfect. And that has... practically gone out of the window and now we are all renting systems or actually services. It's a shift from owning the system to subscription models which theoretically sounds nice because you can update the system and guarantee the service but in practice I think it has also introduced a lot of brittleness and it has changed a lot of conditions because it has changed ownership. And I just wanted to see if you have thoughts about this. Thank you. So I used to work for IBM. And in the early days, IBM did not sell computers. IBM leased computers. And then somebody, somehow, some consultant told them, you know, you'll make more money selling them. And IBM in the 80s started selling computers. And they made money hands over fists, as we say. And the 80s was just a great decade for IBM. And then there was a recession in the early 90s. And when there is a recession, you say, where can I cut on expenses? And it says, well, like, for example, I have a car. I used to replace my car every five years, but it's still in good shape. I can wait. I have a mainframe. You know. It costs a million dollars or whatever to buy a new mainframe. I can wait. So for big items like that, suddenly demand just collapsed. And IBM almost went under. The same issue now, for example, I have a laptop. You know, what version? Word 2013. It still works. I'm okay with that. I don't need the most recent version of Word. So this company has switched to the subscription model. to make themselves more resilient. Because if you stop, imagine if you own a car, you can decide, I'm not going to replace it now, I can wait. But if you lease a car, if you stop paying the lease payments, you don't have a car. So you say, I'm going to keep paying. So if you lease software, subscribe to software, you'll keep paying. What's missing there is, again, the legal framework. So suppose all your documents now are on, let's say, what is it now called? Office 365, I think it's called. They're on the cloud and you pay the subscription. What happens when you start paying the subscription? You decide, I don't need it anymore, but I want my old documents. So what we have not created is, you know, for these companies, it makes sense to go to subscription model. What we have not created is a legal framework that says, OK, what is our right as subscribers? And I think you have a point there. And I don't we have not thought about it enough. OK. And again, because part of my bigger theme is that we have been it was OK in computing to be cowboys, to have what cowboy, you know, is in the Wild West. And it's the kind of there's no sheriff. So you kind of do what makes sense. When we are a small industry. Today, we are the biggest companies of the tech companies. As I think this was Werner who said, we run the operating system of civilization. And to do it without a framework of rules and regulations is just to me unacceptable now. If somebody has a question, please raise your hand. If not, I have one. And I want to go back to that design for efficiency in building systems for efficiency. And I would like to confront this with the, let's say, presentation of Edward, who said we are producing software by evolution. It's an evolutionary process. It's more try and error. And those pieces of software survive, which are the fittest for a specific environment. Could you confront this idea of Edward Lee with his evolutionary process, with your design for efficiency? So, you know, it's an interesting, I think we have to explore it further. So, in some sense, when you look at a species, the species also adapt for efficiency. You know, why did the dinosaurs become bigger and bigger okay because if you're bigger you you beat the other guy okay so you become bigger long term eternity becoming too big was was a weakness so the dinosaurs are out so it also has to do with the time element okay so what happened was that uh sex at some point was just a mutation it was not very efficient but over the long term The species survive better. Individual may have not. Individual we want to optimize better, but it survive better. So, I mean, for example, I think if you look what you discussed now, the subscription model, if part of taking the software in a broader way, not just the features, but also the way we now, the business model of software, the switch from selling software, licensing software, they call it. They never sold it to you. They license it to you. From selling you license to selling you subscription. That's an evolution, and it's evolution in result of they have seen what happened in recessions, and they have seen that your income stream can suddenly dry up, and suddenly the company can go bankrupt. So that's a response to that. So in some sense, evolution in the long term is also a search for resilience, right? Because only resilient species are there for the long term. But even short-term evolution can drive you to efficiency at the expense of resilience. I think it's a complicated landscape. I think Edward and I need to think about it together more. Very interesting. Next time we have a joint presentation. From a semantic point of view, could we also substitute resilience? added or connotated with the notion of sustainability and variation? Of? Let's say the resilience. It's a kind of sustainability, which is then... Yeah, it's another phrase for sustainability. I mean, people use sustainability in a particular context, but people use sustainability in some way of looking at it, robustness. is another theorem i think all this time essentially refer ultimately to our ability to survive in the long term it has to do with back with what helga mentioned which is that the time the time dimension okay and so when people talk about sustainability they they they want to know okay we'll can we continue to do that for the long haul I mean, the sum of difference, I would say, that when people look at sustainability, they think about steady state. Can we continue with the current steady state for long haul? The answer is no, because we are making things worse and worse. And resilience and robustness thinks about disruptions. Okay. Okay. Now, the answer is that we know is that if we continue, for example, with our current economic practices, and they're not sustainable, because huge disruption will come. So the things are tied together. Interesting. Also, this would be a further presentation. Edward, the floor is yours. Yeah, I just wanted to comment on a little follow up on this evolution story. Moshe, I think you were using the term evolution is almost synonymous with mutation. But there's another actually much more important part of evolution, which is natural selection. that actually fits your your resilience story much better because mutations you know particularly through as you point out through sexual reproduction lead to variation and variation becomes valuable in the context of natural selection and i think that that does happen with software so And in some ways, there is sexual reproduction with software because software engineers take pieces of code from here and pieces of code from there and combine them to create new capabilities. That's very analogous to sexual reproduction. And, you know, we tend to think in retrospect of particularly successful pieces of software like Snapchat or something like that as if they were. done by brilliant designers out of nowhere. But actually, there were thousands of competing products and ideas and pieces of software out there that then were subjected to this natural selection process. And the ones that emerged from that process were the ones that we ultimately remember. So don't forget about the natural selection part of the story. It's not just mutation. Yeah, yeah, I completely agree. Yeah. I mean, mutation by itself is no good unless there is natural selection. Yeah. Okay. There is some other hands raised. Giuseppe Di Giacomo. Moshe, can you? Ah, that's perfect because I just wanted to ask you to take off your. Yeah. Giuseppe. Hi. Hi, Moshe. Very, very nice talk. Very nice. So sequential decision making. So. What happens when the outcomes of our action, of an intelligent agent action, are unexpected? So resilience is obviously extremely important and essentially ignored so far. Where do we start? What should we study? You know, we have been studying resilience in some context. Right. I mean, people who build, you know, a distributed system for tolerance is a big area. It's not as if computing has neglected it. And I said we have one huge success story in terms of the Internet. OK, but I think we have not yet done is is kind of, you know, efficiency is kind of built into into the fabric of how we think about computing. OK, I don't think resiliency is there at the same level. OK, so it shows up in places people talk about, you know, adversarial machine learning. I mean, it shows up here and there. It's not as if we have completely neglected it. But I think we need to sit down and think, OK, now that we know how important it is and we had this huge success story with the Internet. And again, building up on what Edward says, it was not a foregone conclusion. I remember when there was just big discussion what networking model should work. The Internet was not a given that this is how we should do networking using the Internet. But, I mean, going back, I think we need to think in computing, what role should resilience play? And I don't have the answer. I think this is a very important resource agenda, resilient computing. There are some aspects. You see aspects that happen. For example, people talk about there is a phrase you may have heard, inexact computing. This has to do with possible error in hardware. And so this is another place where people may talk about, again, resilience. But in the context of AI, for example, very little discussion of resilience in the context of AI. So we need to go back to the board and start thinking about this topic of, I think, resilience. We now understand how important it is. I don't think, you know, it takes sometimes... You have to be hit on the head with a two by four to realize, oh, my goodness, this is very important. We've been hit on the head with a two by four. Maybe we should take some lessons from social science, probably. Can I just? There was Jeff Kramer now. But was it? Yes. Yes. I just wanted to say. Two minutes. OK. Yeah. I just wanted to say originally. term comes from ecology goes back to the 70s has been taken up quite a bit by the social sciences and the social sciences have looked at people's resilience when people you know you have poor communities and yet you know some resist better and are more resilient than others where apparently the life conditions are just as bad. So if you want to start a cross-disciplinary discussion about resilience, I think it would be a good starting point to look into the social science literature as well. So it's absolutely true. So in fact, a psychologist saw the column I wrote on efficiency versus resilience, and the psychologist said he found it very inspiring, and he wrote a column. on on personal resilience i think i don't know and i would be very interesting yeah what's interesting to me is is looking at resilience for communities and for societies even beyond communities okay for example you look now and at the united states and you say wow this is not a very resilient resilient society and why is that and and this is sociologists are trying to write about it how We have, you know, the polarization, we have lost trust and things like putting a mask on your face has become a political issue, which I just find mind blowing. But that's the reality. So I don't know. It would be very interesting to look at. And somebody mentioned, I think Carlo mentioned democracy as a way to handle societies in a resilient way. But I think what after we are seeing now, we are seeing kind of almost a social collapse around us today in the United States of America. It is almost shocking. It actually is not almost. It is shocking to see the situation. And the answer is that we ended up with very non-resilient society. And this is to me when it's not just about computing. To survive, you must be resilient. So societies want to survive. Humanity want to survive. It's about must be long term resilience, must trump. Okay, now we have Jeff. It's yours. Let's take the last question, Jeff, okay? Okay. Thank you very much, Moshe. I think you've really come up with a great important point, which I think has been really neglected, this notion of resilience. I think although we've talked a lot about robustness and things in computing, the move from short-term software... to which was actually correct, had to produce a result and that was it, to long-term software which runs so-called forever, has actually moved us to actually change the kind of focus that we have to have. And I think the notion of resilience is a very important notion. One of the things that you haven't really talked about, and which I was going to ask you the question, I don't know if there's enough time now, is to do with risk. And this is to do with evaluating the risk of certain things happening and the implications of those things if they do happen and how we balance that with the notions of how much we spend on things and in computing how much do we actually add in the redundancy and so on into the software. So this notion of risk and risk evaluation, both in terms of whether it's likely to happen. And what are the implications of us not taking it into account are exactly things which have taken place with respect to COVID, which we knew was a huge risk and actually the implications were huge and we didn't do anything about it or very little. And the same is true about climate change. But in computing, we can do this and we can put in more redundancy and more adaptive systems. So what do you think about actually risk and risk evaluation? We should always try to learn. I mean, I have a rule in life. Rule number one is learn from your own mistakes. Rule number two is even better to learn from other people's mistakes. That's the best way of learning. I tell my students, don't learn from your mistakes, learn from my mistakes first. I've done, I've made so many of them. You have the benefit of my mistakes. So it's the finance industry. has learned from this because they're the one, I mean, think about it, all these people in hedge fund and all these things, they do risk management day in and day out. And you may want to, I think it's a title of an article from more than a decade ago, the formula that almost destroyed the world. And he talked about something called VAR, V-A-R, value at risk, which is a very standard tool in financial risk management. And you basically say, let's suppose you say, I want to know what is my risk, how much can I lose? I mean, I cannot, there is never no risk. And so the idea was, how much can I lose, let's say with probability, I want to know with probability, let's say 99%, that I will not lose more than, let's say, a million dollars. So value at risk, you put a probability there. I want 99%. I'm willing to take a risk of 1%. And the model will tell you what's the value at risk for the 99%. What that formula did not do is ask, how much do you lose in that 1%? And the answer is, if the loss in the 1% suddenly goes from a billion to a billion, then we all can compute expectations. And suddenly your expected loss is huge because even the very tiny, the long tail, the very far out event implies a huge loss. And in finance, it's understood that you now need to start planning also for the Black Swan events. And what we are not doing for climate change or even for epidemics was that, okay, it's expensive to plan for a... to plan for a pandemic. And maybe it's only, you know, 1%. But what is the damage for us? Okay. Now, if you look at the damage that has been in many, many trillions of dollars, and now people are talking that we'll take, and even these estimates, to me, are optimistic, because assume that we're coming out of this crisis, and I'm not seeing us coming out anytime soon. They're saying it will take a decade for the economy to recover. So now we're talking about losses. I think the total loss will be for the world. The world GDP is, I think, about $80 trillion. So that means now we are talking about tens of trillions of dollars lost that this cost us. And it's hard for me to imagine that the cost of getting the CDC ready for this would be anything near that. So doing risk management in a smart way, and I say we can learn from the mistake of the finance industry. And that's why today they tell banks, you must have capital reserve, which is very inefficient. But the stressors are exactly, they make models of things that can happen. And can you survive it? And this kind of risk modeling is, again, when I said we have not internalized how important resilience is. How many of us know about risk modeling? It's not an exercise that we do in computing as a normal course of here is how we do computing. We build risk models. Again, you find in some corner people are starting to build risk models for autonomous vehicles, for example. But by and large, I would say this is not part of the portfolio of computer scientists building risk models. Good point. Thank you, Jeff, for the question. Thank you all for your question. And Moshe, for your presentation, what comes to my mind with this risk is who has to pay for that? And then this is a societal question and that goes back to markets, goes back to democracy. And at the end, this goes back also to digital humanism. My slogan is markets are supposed to serve societies, not the other way around. Yes. OK. Thanks for your participation. I would tell you to look at the DECOM YouTube channel. There you can find this presentation and the discussion. Look at our website where you can download the slides from Moshe, who will send me his slides, I hope. Thank you, Moshe. I just told you now. Thank you. I wanted to tell you that we have a next event on July 14th, again at 5 p.m. where we have Alfonso Fujeta. He will talk again at the COVID-19 European app and discuss also this democracy versus health control and how to deploy such a system and in which way on the European level. We have a discussant, Jeff Kramer from Imperial College. Thank you, Jeff. And I hope it will be moderated by Carlo Ghezzi. I'm just... Now, I thank everybody. And now comes the surprise at the end. And I hand over to Peter Knies. And I thank you all and wish you a nice evening or a nice day in the US or wherever you are. Peter, the floor is yours. Thank you. Thank you very much. And thanks to Moshe and thanks to everyone for the really interesting discussion. So I've been. I'm working in the area of music recommender systems, and I've been asked to pick music representing digital humanism. I wasn't aware that the stakes might be so high to pick the right track here. But anyway, the first thing I want to say is that I did not resort to an algorithm to make the choice for that song that I picked, but I've relied on my own knowledge. The second thing I want to highlight is that in order to not neglect the digital aspect of digital humanism, I opted for electronic music and selected the track Human After All by Daft Punk. And there's the reasoning behind that is that Daft Punk as a band has devoted a considerable amount of their work really on questions of technology and the relationship of technology and humans. This starts basically with their artistic decision to publicly appear only as their robot personas. is really emphasized in the album Human After All, where this track is coming from, the accompanying movie Electroma, which is about two robots struggling to become human, the soundtrack to the movie Tron Legacy, and even in their latest album, Random Access Memories, that can be seen as an attempt to bring a human touch into electronic music, or as they call it on the album, bring life back to music. For our YouTube channel, before I play it, before our YouTube channel, we are also going to put together a music playlist as the soundtrack of digital humanism in the next weeks. Basically, well, to paraphrase Emma Goldman, a revolution without dancing is not a revolution worth having. And so it might be good to have some music accompanying that. So if you have any suggestions for that playlist, I ask you to submit them and tell us. And we're very open to that. So without much further ado. Let me share my screen here. Hope you can see it now. So, yeah, I want to. So there we are. So thank you for joining. We hope to have you back next time. Goodbye. And this is Daft Punk, human after all.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.952,
+      "text": "Welcome to this online event and thank you for joining. My name is Hannes Werten and not Mete Seatkan. We had to switch in the last moment because the mics did not work properly here at TU Wien, so I'm taking the post of Mete. Just a short introduction before handing over to Moshe. You remember we had our..."
+    },
+    {
+      "start": 28.016,
+      "end": 57.008,
+      "text": "Last event on May 14th, an online event on digital humanism and COVID-19. And I think it was a successful event. And we took this opportunity and decided to make regular talks, online talks on a regular basis, either monthly or every second week. This is not yet decided. And there are two reasons for that. The one is an organizational and let's say community building one."
+    },
+    {
+      "start": 57.168,
+      "end": 86.592,
+      "text": "the virus is blocking our mobility so we cannot move. But at the same time, it's easier to organize online events, to organize events where it's easier for the speakers and the audience because we don't have to move. We just have to agree on a joint time so that we can be online at the same moment of time, which is a little bit a problem because it's in the morning in the US and it's early afternoon or early evening in..."
+    },
+    {
+      "start": 86.592,
+      "end": 115.456,
+      "text": "in Europe and maybe late night in Asia. So this is the problem. But it's easier to organize this. And the second one is we have seen after a first period of shock, we have seen that computer science or digitalization or informatics, whatever you call it, is really essential in managing the crisis, but also essential now for the recovery. This you can see in many programs already announced."
+    },
+    {
+      "start": 115.456,
+      "end": 144.08,
+      "text": "also at the European level, where you see that informatics and digitalization will be an essential vehicle for economic and social recovery. And the issue is which type of digitalization we want. And this brings in digital humanism as a major topic to put or design or create systems with the human at the center. So this is the reason we are doing these events, to look at different aspects of digital humanism."
+    },
+    {
+      "start": 144.688,
+      "end": 168.08,
+      "text": "Before having some technical issues, I would like to thank the co-organizers and supporters of this event, which is, again, more on an, let's say, abstract level, not a financial one. It's the Digital Enlightenment Forum in Brussels. It's Informatics Europe, the Board of Informatics Europe."
+    },
+    {
+      "start": 168.08,
+      "end": 193.488,
+      "text": "It's the Vienna Science and Technology Fund and it's IEEE. So these organizations are supporting and co-organizing this event. On the technical side, we have both Zoom and YouTube. The talk will be for 30 minutes and then we have 30 minutes Q&A. So we have separated so Moshe can talk for 30 minutes."
+    },
+    {
+      "start": 193.52,
+      "end": 223.504,
+      "text": "I want to remember that it's recorded and we use it on our Digital Humanism YouTube channel so that others can also visit and look at the presentations afterward. I ask all participants to mute their microphone so that we are not disturbed. And afterwards, please raise your hand. And before asking a question, introduce yourself shortly by telling your name."
+    },
+    {
+      "start": 223.568,
+      "end": 250.896,
+      "text": "I asked you to stay to the end, really the end, because there's a little surprise. It's based on the idea of Helga Novotny, and it was implemented by Peter Knies. So at the event, there will be some surprise. Okay. So that's the, let's say, the intro to this lecture in general."
+    },
+    {
+      "start": 250.896,
+      "end": 280.224,
+      "text": "which we intend to keep on this basis, at least in the year 2020. I'm happy to welcome Moshe as a first speaker in this regular lecture. He will talk about lessons we can draw from this crisis. Very short to Moshe, I think all of you know him. He is one of the most cited."
+    },
+    {
+      "start": 280.224,
+      "end": 306.544,
+      "text": "Computer scientists, and you look at all the metrics, he's one of the leading guys in our field. He's coming from logic, so he's more from the formal side. But he's one of those guys who also takes seriously the role of computer science in our society and our relationship to that. He's very influential also in the public discourse."
+    },
+    {
+      "start": 307.088,
+      "end": 334.544,
+      "text": "Formerly, he has a professor position at Rice University, Texas. And he was, until 2017, the editor-in-chief of Communication of the ACM, which is probably one of the most influential magazines we have in computer science and informatics. Last but not least, he's one of the"
+    },
+    {
+      "start": 334.544,
+      "end": 362.768,
+      "text": "founding guys of this initiative or platform, whatever we call it, on digital humanism, bringing in some basic ideas and also being aware of the necessity to open computer science and to not only to specialists, but both to the public as well as to other sciences. Moshe, the floor is yours. Thank you all."
+    },
+    {
+      "start": 363.984,
+      "end": 389.328,
+      "text": "There is advantages and disadvantages of doing it using this medium. And one advantage is that we have a large number of people who are able to join. And I think it's good to have this to start what I'm hoping is a global conversation. I want to focus today on one lesson that we can learn from COVID-19."
+    },
+    {
+      "start": 395.088,
+      "end": 419.712,
+      "text": "So I don't think I'm telling anyone it's a surprise that we're in a crisis, but I think it's a multiple crisis that happened in the same time. I view it as a quadruple crisis. The first one, of course, is the public health crisis. And this is the world meters. This is the table that I look at."
+    },
+    {
+      "start": 419.712,
+      "end": 447.968,
+      "text": "I'm a bit obsessive about it several times a day. What's going on? How many people are sick? How many people died? And right now, you see, the US is leading. This is a new meaning to America first. And the other point, not that the UK is number five, but even though I think I expect it to be number four soon. Moshe, did you share your screen? I think so, no. No, no, you have not shared your screen."
+    },
+    {
+      "start": 447.968,
+      "end": 473.952,
+      "text": "okay then i need to do it once more okay i'm sorry can you see my screen now now now we can yes now it's okay okay so"
+    },
+    {
+      "start": 473.952,
+      "end": 501.008,
+      "text": "I said the first crisis is the public health crisis. And we have a large number of people who are sick and a large number of people who are dying. Anybody who said this is just like the flu, tell the person that he or she are an idiot. The second crisis is an economic crisis. This is not the parking lot at Disneyland."
+    },
+    {
+      "start": 501.2,
+      "end": 530.16,
+      "text": "This is a line of people in the United States, I'm not sure where, who are waiting to get food in a food bank. I mean, to me, this is utterly shocking. It's an utterly shocking picture. There's so many people are waiting for hours just to get food. The third crisis is a social crisis. This is here, you see."
+    },
+    {
+      "start": 530.352,
+      "end": 559.984,
+      "text": "A peaceful protest in front of the White House being dispersed by force. This is, to me, one of the most disturbing political developments in the United States in I don't know how long. Just an utterly shocking development that, in effect, some of the police here are military police. So if you have heard recently of all kinds of generals speaking against Trump, it's because of this event. And so all this, we have this already talked about three crises."
+    },
+    {
+      "start": 560.816,
+      "end": 590.816,
+      "text": "And many of these crises are magnified by leadership crises. This is not happening only in the United States. This is true in many other countries, not everywhere. I mean, at this point, I'd love to be in New Zealand, but I'm not in New Zealand. But we have a leadership crisis. So I don't know that we can say that we're at the end of the beginning even. The future is very murky. So what can we still learn from this? So I want to go back to,"
+    },
+    {
+      "start": 590.816,
+      "end": 618.448,
+      "text": "A distant memory from March, and some of you may remember the expression that we use a lot in March, flatten the curve. We must flatten the curve. And so the idea is that when you have a pandemic, the number of cases grows and grows and grows, and you want to slow down the growth. And when you flatten the curve, it's not necessarily that you're slowing down the contagion, the infection rate."
+    },
+    {
+      "start": 618.448,
+      "end": 646.72,
+      "text": "But as long as you don't really have a vaccine, it's not clear that at the end of the day, fewer people will get sick. Nevertheless, we do want to flatten the curve. And what is the motivation to flatten the curve? So people explain that there is a very good motivation to flatten the curve because we can expect lots of infections to happen. Right now, in the United States, we passed two million infections."
+    },
+    {
+      "start": 646.72,
+      "end": 675.344,
+      "text": "But we don't want too many of them to happen at the same time because we are not able to deal with so many people at the same time. So there is the issue of hospital beds. Okay, so we understand that this was, of course, you can't really build a hospital bed to prepare for the most extreme scenario. But we suddenly saw a shortage of air ventilators for people who need help in breathing. And even more shocking, there was a shortage of PPEs."
+    },
+    {
+      "start": 675.344,
+      "end": 700.736,
+      "text": "personal protective equipment. This is for the medical personnel. They need to protect themselves. And there was not enough. People have to, you know, and in fact, many of the people who end up getting sick and even dying are medical staff because there was not enough PPEs for all the doctors and nurses in the hospital. And that situation led..."
+    },
+    {
+      "start": 700.736,
+      "end": 728.336,
+      "text": "I think it's a very important column in the Wall Street Journal in March of 2020, but William Galston from the Birkin Institute. And the title was Efficiency is not the only economic virtue. And in that column, he contrasted the relentless quest for efficiency with also with the need for resilience. And he wrote, what if the relentless pursuit of efficiency?"
+    },
+    {
+      "start": 728.336,
+      "end": 757.648,
+      "text": "which has dominated American business thinking for decades, had made the global economic system more vulnerable for shocks. And he goes on to explain that how do you become efficient? You become efficient by adapting optimally to the current environment. So you are perfectly fit to the current environment. This is great as long as the environment doesn't change. What happens when suddenly the environment changes?"
+    },
+    {
+      "start": 757.808,
+      "end": 784.336,
+      "text": "If you are overfit to the current environment, you don't have the capacity to change and adapt quickly. So you optimize on efficiency, you sacrifice resilience. It turns out that this idea is then voiced by other people as well."
+    },
+    {
+      "start": 784.656,
+      "end": 813.872,
+      "text": "Tom Friedman wrote a column on May 30th in the New York Times, and he wrote, grid and globalization set up us for disaster. And he made a very similar point. He said, over the past 20 years, we have been removing barriers, natural buffers, redundancies, regulations, and norms that provide resilience and protection when big systems, be they ecological, geopolitical, or financial, get stressed."
+    },
+    {
+      "start": 813.872,
+      "end": 843.664,
+      "text": "So, again, efficiency comes at the expense of resilience. And he concludes, Tom Friedman concludes, we have been recklessly removing these buffers out of an obsession with short-term efficiency and growth without thinking at all. And it's interesting that this comes from Tom Friedman, who was very pre-globalization. The world is flat. He is one of the prophets, so to speak, of globalization. And now he says, oh, my God, this happened at the expense."
+    },
+    {
+      "start": 843.664,
+      "end": 873.008,
+      "text": "of resilience. It turns out that this idea is, I keep discovering older and older expression of this idea. And again, if you know something even earlier, please let me know. But I wrote about this and somebody came back to me with a pointer to an article from 1975 that appeared in a journal on environment and planning."
+    },
+    {
+      "start": 873.488,
+      "end": 903.024,
+      "text": "And made the same point on the inefficiency of being efficient. And he says, if you make decision making on a too narrow scale, you do it as you're being too efficient and you sacrifice resilience. He said he ends up this paper document, this element of decision and sketch a number of scenarios with such an approach that led to unexpected and undesirable consequences."
+    },
+    {
+      "start": 903.024,
+      "end": 930.528,
+      "text": "So I want to switch now to computing and see how this idea of efficiency versus resilience also come up in nature and in computing. So in 2016, I was editor-in-chief of CSCM, and we published one issue where the feature article was an article that I'll talk about a little more in a minute."
+    },
+    {
+      "start": 930.528,
+      "end": 960.496,
+      "text": "And the title was Sex as an Algorithm, the Theory of Evolution under the Lens of Computation. And we had to figure out what kind of cover, when we had the title Sex as an Algorithm, what kind of cover are you going to put on the cover page of the magazine? And so, you know, it's hard to come up with a good graphical element for an article about sex as an algorithm. So we just came up with Pink. And I thought it was funny. And many other people got offended by Pink."
+    },
+    {
+      "start": 961.2,
+      "end": 989.328,
+      "text": "But skipping the cover page, let's go to the article itself. The article was written by Livnat and Papa Dimitriou. Papa Dimitriou is one of the most senior theoreticians in computer science. And they asked the following. When you look at, we look at search algorithms. So we have search algorithms that try to mimic nature. They're called genetic algorithms. And you have where you actually do kind of crossbreeding to try to create a better and better record."
+    },
+    {
+      "start": 989.584,
+      "end": 1018.528,
+      "text": "And this is competing with another search algorithm called simulated annealing that just proceeds by a sequence of mutations. And our experience computationally is that simulated annealing, which does not have the sexual crossbreeding, is better than genetic algorithms. So why has nature chosen sex as the almost exclusive means of reproduction for animals?"
+    },
+    {
+      "start": 1018.528,
+      "end": 1046.8,
+      "text": "And we know that this is not proof of bacteria, for example. And there are some rare exceptions in the animal kingdom. But generally for animals, sex is the dominant means of reproduction. And our computational experience was that no. So it's not just we all know that sex is messy, but computationally sex is not very efficient. So this is the question that Livnath and Papadimitriou ask. Why has nature chosen sex as opposed to just using mutation?"
+    },
+    {
+      "start": 1047.76,
+      "end": 1076.864,
+      "text": "And the answer was that you should not focus only on efficiency. He said what sexual reproduction does, it offers greater diversity of genes. And if you have greater diversity of genes, then the species is more resilient to disruptive environmental change. So we're not optimizing for any individual. But if you look at the species having more diversity."
+    },
+    {
+      "start": 1076.864,
+      "end": 1106.8,
+      "text": "is good for the species. And so this explains, the focus on resilience explains why we need sex for resilience. So let's go on a little bit and look at computer science. So I grew up, and I know that not everybody listening here is a computer scientist, but for computer scientists, this book,"
+    },
+    {
+      "start": 1106.832,
+      "end": 1133.44,
+      "text": "The Art of Computer Programming by Don Knuth was the Bible. This actually was one of the very first books, I think the first book about algorithm. And Knuth also was the person who developed the so-called analysis of algorithm. So you go to Wikipedia and you say, what is analysis of algorithm? And here is the quote. In computer science,"
+    },
+    {
+      "start": 1133.44,
+      "end": 1159.6,
+      "text": "The analysis of algorithm is the process of finding the computational complexity of algorithm, the amount of time, storage, or other resources needed to execute them. So it's all about efficiency. And in fact, these books, this multi-volume collection of books, and the last one is volume four that by now has many, many sub-volume. The original plan was to have seven volume, but nobody think that it will actually happen."
+    },
+    {
+      "start": 1160.048,
+      "end": 1189.168,
+      "text": "But the main focus here is efficiency, efficiency, efficiency. So we can't just look at the business community and their relentless focus on efficiency. This is also true for us. We need to look at the mirror. We have been very, very focused on efficiency, efficiency, efficiency. So in an article from 2013, David Ackley, he said, let's revisit an analysis of algorithm."
+    },
+    {
+      "start": 1189.168,
+      "end": 1219.104,
+      "text": "But from the resiliency, he called it robustness perspective. And he's looking at three algorithms for sorting. So sorting is the algorithm when you have a set of elements. Imagine you have a set of students who have taken the class and you want to publish maybe the grades by their ID number. So you want to sort the list by ID numbers. And so this is an old study in computer science. And again, I would not try to be too technical in this talk."
+    },
+    {
+      "start": 1219.104,
+      "end": 1249.04,
+      "text": "but we have a the naive algorithm it's called bubble salt it just says keep keep comparing element in the switch them if they're out of order and this is a quadratic algorithm if you have n elements you may need to use in the worst case n square quadratic number of comparison but also on the average you're going to use quadratic number of comparisons so if you take it's okay if you have a a small list but even if you have imagine that you have a list with"
+    },
+    {
+      "start": 1249.04,
+      "end": 1277.616,
+      "text": "let's we're doing now the census imagine you have a list of million people now sorting it may take trillion operations so that's very expensive a melt source is a better one it has what we call almost linear complexity which is n times log n so this is much more a boss for worst case but also for the average case and quicksort is again is quadratic another algorithm is quadratic in the worst case but typically it is again almost linear and log n"
+    },
+    {
+      "start": 1278.352,
+      "end": 1305.904,
+      "text": "And David Ackley asks, suppose your comparison is not perfect. So let's suppose that on 10% of the comparison operation, maybe on half of them you'll make an error and you'll give the wrong result to the comparison. And what will end up to the final list? So the final list will not be fully sorted. The question is how far from sorted would it be?"
+    },
+    {
+      "start": 1306.416,
+      "end": 1335.584,
+      "text": "And what he showed is that quick sort will give you an almost sorted list with very few deviations. While bubble sort and merge sort will not. They will be pretty badly sorted list. So why is bubble sort so much better? Because they have done many more comparisons. And these comparisons were not needed just to get a sorted list if everything works out perfectly. But this redundancy suddenly does help you when..."
+    },
+    {
+      "start": 1335.584,
+      "end": 1363.056,
+      "text": "when you can have problems, when some of the comparison can be faulty. So this is an example where there is a tension between efficiency and resilience. I want to bring, sorting is a bit kind of more of a technical algorithm, but I want to bring another algorithm that many of you have used without realizing it. And this is called PageRank."
+    },
+    {
+      "start": 1363.536,
+      "end": 1390.768,
+      "text": "And PageRan is the algorithm that Larry Page came up with in the mid-90s. You do a Google, you do a web search, and you get many, many results. And the answer is none of us is going to scroll down to page 10 of the result. So it's very important to saw the result by the relevance, which are the most important, which are the most useful results of the PageRan. And if you remember the web..."
+    },
+    {
+      "start": 1390.768,
+      "end": 1419.744,
+      "text": "the search engines of the early 90s, they were pretty bad. They gave you lots of very irrelevant results. And when Google came, you go suddenly, ah, this is very, very relevant. So PageRank was the algorithm that was based for the first version of the Google search engine. And they had a very elegant idea that if a website is important, then there will be many links to it. So the more links to a website tells you how important it is."
+    },
+    {
+      "start": 1419.744,
+      "end": 1447.76,
+      "text": "It's more complicated than that, but simply speaking, the more pointers to a website, the more important it is, and you put it higher in the search order. So indeed, I remember when Google came about and you start doing Google search, it was magic because suddenly you really got very, very relevant search results. But very quickly, people realized, wait a minute."
+    },
+    {
+      "start": 1448.304,
+      "end": 1476.784,
+      "text": "If having many more links to my website means it's ranked higher, I will create such links. And in fact, the whole industry arose. It became known as search engine optimization. How to make your website flow to the top by creating essentially what we would call today fake links. And so it turns out that PageRack was not resilient. It was a beautiful algorithm. It was not resilient. It was very easy to subvert it. And today..."
+    },
+    {
+      "start": 1476.784,
+      "end": 1505.904,
+      "text": "On one hand, the patent has expired. And if you go to, I've at some point asked Google if they are willing to write an article for CSCM about how they rank search results. And they say, no, this is a trade secret now. We are not going to tell you how to do it because as soon as we tell you how to do it, people will try to subvert it. So resiliency is an important part of algorithms. But I challenge the people who teach algorithms courses to tell me."
+    },
+    {
+      "start": 1505.904,
+      "end": 1533.712,
+      "text": "what their focus is. I can tell you here at Rice, the focus is efficiency, efficiency, efficiency. I want to address another aspect of efficiency, which has to do with friction. And I use friction in a broad sense. And in 2013, I wrote, our discipline is dedicated to reducing friction. Latency must be eliminated. Bandwidth must increase."
+    },
+    {
+      "start": 1533.712,
+      "end": 1561.968,
+      "text": "Ubiquity should be universal. Our goal is to reduce the friction of computing communication as much as possible. And take Facebook, one of the most influential companies these days in the news every day now. What was their motto from the beginning? Frictionless sharing. Sharing should be so easy to share, there should be no friction whatsoever. So now we know what happens when you reduce this kind of friction."
+    },
+    {
+      "start": 1561.968,
+      "end": 1591.488,
+      "text": "What do you get? You get what we call filter bubbles. You end up seeing only the stuff that you like. And it's incredibly easy to promote fake news and extreme content. And now we are all, you know, the genie is out of the bottle with social media. And now every day I read in the news, how do we put the genie back in the bottle? And the answer is nobody really knows at this point how to put your genie back in the bottle. And this is the result of the ideology of frictionless."
+    },
+    {
+      "start": 1591.488,
+      "end": 1614.224,
+      "text": "sharing but this is just one example take another example there is something now called high frequency trading or algorithmic trading and 10 years ago there was something called the flash crash the flash crash was the dow jones dropped 600 point in five minutes i mean it was such a drop that they had to stop trading basically"
+    },
+    {
+      "start": 1614.224,
+      "end": 1643.568,
+      "text": "And later on, there was some analysis by the security and exchange commissions and the commodity and future trading commission. And they said the problem was when you do this such trading with such frequency, some sales order come in and they trigger other sales order and they trigger other sales order and all of it happens so fast, poof, the market crashes. Now, why are we allowing high frequency trading? The proponent says, oh, it makes the market more liquid. The markets become more efficient."
+    },
+    {
+      "start": 1643.952,
+      "end": 1672.24,
+      "text": "But Thomas Petroffi, who is one of the people who started this industry of high-frequency trading, he says, hogwash. It's all about profits. He said, today, drive for speed has absolutely no social value. And what we've done, we've created a system with no friction. And systems without frictions are very non-robust. Every mechanical hero will tell you, systems without friction are not robust. They're not resilient."
+    },
+    {
+      "start": 1673.072,
+      "end": 1701.968,
+      "text": "So this is a plea. I think we need to think about how to bring the friction back into computing. So imagine you talk to a mechanical engineer and this mechanical engineer says, I want to reduce friction everywhere. You say, wait a minute, this is crazy. There are some places where I want no friction. But when it comes to the tire in the road, for example, I want maximum friction. What happens if you make my tire perfectly smooth? I can't go anywhere."
+    },
+    {
+      "start": 1702.512,
+      "end": 1732.0,
+      "text": "So, Aristotle wrote, getting angry is easy. But getting angry for the right reason, at the right people, in the right amount, that is hard. And I said, the same thing you should think of how to do friction. We need the right amount of friction, in the right place, in the right time. And we have not yet developed the scholarship of friction in computing."
+    },
+    {
+      "start": 1732.0,
+      "end": 1761.76,
+      "text": "And without it, again, no friction, no robustness, no resilience. Going back to David Ackley, he coined the phrase what he called CEO software. This is not about chief executive officers. He said that our CEOs stand for correctness and efficiency only. And if you look, take an open syllabus in computer science and see how we teach algorithm, what is the focus?"
+    },
+    {
+      "start": 1761.76,
+      "end": 1791.232,
+      "text": "The focus is correctness. Algorithm has to be correct and efficient. And we assume that the platform is reliable. The hardware is reliable. We assume no adversaries. And he says it would help to have better visibility into the, if we need to have a better visibility into the efficiency robustness trade-off. Existing software quality metric could be expanded to include correctness degradation under various fault models."
+    },
+    {
+      "start": 1791.232,
+      "end": 1820.64,
+      "text": "So again, he says, we cannot just focus on efficiency. We must focus on equally robustness. I call it resilience. And I'll give you another example where I think as a discipline, we just blew it really badly. So I'm quoting here verbatim from an email that I received from a colleague of mine who is a security researcher. And he explained to me how..."
+    },
+    {
+      "start": 1820.64,
+      "end": 1850.224,
+      "text": "security works he says first somebody builds a thing so this is very colloquial you see it's an email from someone first someone builds a thing and it's super useful then eventually someone else come along and finds a vulnerability then security become part of the engineering process just like we need to make sure our code doesn't have also bug that makes it crash we also need to make sure that our code does not have bug that can be exploited for bad purposes there are the crank"
+    },
+    {
+      "start": 1850.224,
+      "end": 1878.736,
+      "text": "for a few years and eventually security gets better and in fact a prime example of this attitude which is functionality first security later is this medium you're using assume as soon as zoom became very popular people discover all the problems security problem assume had to scramble to add security you know later it didn't start with security security came later so"
+    },
+    {
+      "start": 1878.832,
+      "end": 1906.528,
+      "text": "Our computer age is about 75 years old. One way to look at the pinnacles of achievement in computing is to look at the Turing Award, the Nobel Prize in Computing. Three Turing Awards went for cryptography. Three Turing Awards went for cryptography. Not a single one in security. Now, of course, cryptography is part of security, but it's not the whole story. You can have a perfect cryptography."
+    },
+    {
+      "start": 1906.528,
+      "end": 1933.008,
+      "text": "and still have very vulnerable systems, okay? And the reason we did not give a Turing Award in cybersecurity, I think, because we can find the accomplishment that we deserve a Turing Award. And it's not just about privacy. I mean, recently there was, you know, there was some, there was a lot of tension between Israel and Iran, and apparently there was some attempt to attack water system in Israel."
+    },
+    {
+      "start": 1933.136,
+      "end": 1962.416,
+      "text": "So we have to think now that our infrastructure is very vulnerable. And, you know, the water system, the financial system, the power system, all of these are vulnerable to cyber attacks. And I think community is a bit blasé about it. You know, I don't think people are saying, oh, this is a crisis. Stop everything. You know, people are saying now, stop everything. We must deal with racism. And of course, we might deal with racism."
+    },
+    {
+      "start": 1962.928,
+      "end": 1990.064,
+      "text": "But we have, I think, a systemic risk here. And we are not saying we must stop everything and fix our security mess. And some of the attitude for this is what I call cyber libertarianism. So let's compare a computing technology to another technology, which is essential to us, is transportation, vehicle technology. So cars kill people. We know that it was true from the beginning."
+    },
+    {
+      "start": 1990.256,
+      "end": 2016.56,
+      "text": "But for the last 100 years, we really made a very steady improvement. And the way they measure it, they look for billion miles travel. How many people get killed for billion VMT, vehicles mile travel? And it's been improving for the last 100 years. For example, the United States, we established a national board, the Transportation Safety Board."
+    },
+    {
+      "start": 2017.296,
+      "end": 2046.112,
+      "text": "Security is not taking that seriously. Computer security is not taking such so seriously. And one reason is because there is an attitude in the technical community of cyber libertarianism. Leave the government out of it. Regulation will stifle innovation. But we have not been able to fix the security mess on our own. And we must find some way to say we must change the boundary condition. This is a market failure. I'll come back to it. And the only way to fix market failure."
+    },
+    {
+      "start": 2046.112,
+      "end": 2074.96,
+      "text": "is to change the boundary conditions for that market. And I can't see any way of doing it other than some government action. So I want to go back now to economic efficiency. So it's become very clear that the relentless pursuit of efficiency meant that we didn't really get ready for a pandemic. There were warnings. I mean, I've read these warnings over the years, and I assume that somebody is preparing for it."
+    },
+    {
+      "start": 2075.024,
+      "end": 2103.344,
+      "text": "But in February, Trump defended why he's making a huge budget cut to the CDC. The CDC is helpful. This is controlled. This is the agency in charge of getting ready for epidemics. And he says, well, when we need doctors, we can hire them. We don't need them now. We'll hire them when we need them. Now there is a worry of a second wave of coronavirus. And China is trying to control factories of PPEs. Again, we..."
+    },
+    {
+      "start": 2103.344,
+      "end": 2132.464,
+      "text": "You know, it's expensive to prepare. We don't want to spend money now on preparation for the pandemic. So let's go back to economic efficiency. What does economic efficiency mean? So you go back to Economics 101, and they will tell you economic efficiency means that goods and production, factory production, are distributed to the most valuable users and waste is minimized. This is efficiency."
+    },
+    {
+      "start": 2132.784,
+      "end": 2160.96,
+      "text": "and there are people who believe in the free market, a big advocate of the free market, and they believe that self-interest, individual self-interest, and let's say fair economics, let everybody do what they want to do with economics, that will lead to economic efficiency and will serve the best interest of society. So this sentence I got from Investopedia. These are not my words."
+    },
+    {
+      "start": 2160.96,
+      "end": 2190.304,
+      "text": "This is what free market advocates believe in. So first of all, I think that we are conflating inefficiency with optimality. Is efficiency optimal? And that's something we've seen before about resilience, that efficiency competes with resilience. But efficiency has other problems as well. So what is the source of the question of efficiency? So if you go to learn Microeconomics 101, you run and you ask..."
+    },
+    {
+      "start": 2190.304,
+      "end": 2218.464,
+      "text": "People, what is the most fundamental theorems in economics? You run into the so-called first welfare theorem. And what does the first welfare theorem state? It states that under certain assumptions, that essentially of, you know, there are various reasonable assumptions. We can debate how reasonable, but under some assumption, the market will tend towards a competitive Pareto optimal equilibrium. Pareto optimal means that no one can..."
+    },
+    {
+      "start": 2218.464,
+      "end": 2248.208,
+      "text": "can improve their situation unless someone else. It's a zero-sum game. That's what planet optimal means. So that really is in some sense what they tell you is free markets produce economic efficiency. Now, how well does it serve the best interests of society? Remember, the quote from the free market advocates was that it serves the best interests of society. How well does it serve the best interests of society? So it turned out that economics was silent on that."
+    },
+    {
+      "start": 2248.304,
+      "end": 2276.432,
+      "text": "And computer science had to shed some light on it. And this was a work from just over 20 years ago by Koutsoupias and Papadimitriou. So, same Papadimitriou. And they say, well, it turns out that when you look at equilibrium, there are many possible equilibria, not a single one. And the economy does not tell you which equilibrium will be rich. Just one of them will be rich."
+    },
+    {
+      "start": 2276.624,
+      "end": 2304.016,
+      "text": "So they say, let's look at the worst possible Nash equilibrium, worse in terms of the social utility, and compare it to the optimum. And they call this the price later on. They didn't use this phrase later on. Somebody else called it the price of anarchy. If you have anarchy, just let the market do it. Actually, it's not the price of anarchy. It's the price of free market. And so the answer is that the free market may converge in an equilibrium."
+    },
+    {
+      "start": 2304.016,
+      "end": 2332.688,
+      "text": "They can be very, very far away from the social optimum. So economic efficiency, this is really an incredibly important result. It tells us efficiency does not guarantee optimality. It's not just about resilience, but even if you just look at utility that you measure, you know, like the total amount of money that everybody has in society, that's not guaranteed to be optimum under economic efficiency. So this is one important result."
+    },
+    {
+      "start": 2332.688,
+      "end": 2362.432,
+      "text": "And I call it the computational lens on economics. That result in computer science that tells us something about economics. And then a few years later, again, Pablo Demetrio, now with Daskalakis and Goldberg, asked another question. And the question was, how long does it take to reach equilibrium? But remember, how is equilibrium reached? There is no master control here. You know, I reduce my demand because the price is too high."
+    },
+    {
+      "start": 2362.432,
+      "end": 2392.176,
+      "text": "The merchant reduced the price because demand is too low. It's a sequence of local actions. And what they show is that by a sequence of local action, the amount of time it takes to reach an equilibrium can be exceedingly long. Well, if it's exceedingly long, then it means the market is really unlikely to ever be in an equilibrium. Why? Because things change. The world is not static. If it's over a short time, you can say, okay, you reached an equilibrium."
+    },
+    {
+      "start": 2392.176,
+      "end": 2419.12,
+      "text": "But over the long time, price change, supply change, demand change, you know, things change. The world is not static, as we all know. So these two results really tell us that the free market deals are wrong. There's no efficiency. The free market does not guarantee efficiency. It does not guarantee optimality. I'm not advocating here central market because we tried central market and we saw how well it doesn't work."
+    },
+    {
+      "start": 2419.408,
+      "end": 2447.488,
+      "text": "But we should not believe in the free market efficiency optimality blindly. And in fact, it does not take very deep theory to know that greed is bad. Why am I using the line greed is bad? Because there was a movie in 1987 called Wall Street. And Michael Douglas is playing a despicable character, Gordon Gicko. And he gave a famous speech. You can go and find it on YouTube, where he said greed."
+    },
+    {
+      "start": 2447.488,
+      "end": 2474.16,
+      "text": "For the lack of a better word, is good. And what's the argument? Well, it's essentially Adam Smith's invisible hand. It's a beautifully seductive argument. Everybody does what's best for them. And out of this comes a social good. But in computer science, we teach every graduate student about greedy algorithm. And greedy algorithm, algorithm that always try to improve just local improvement."
+    },
+    {
+      "start": 2474.16,
+      "end": 2504.048,
+      "text": "And we know that such algorithm can, what we say, stuck in a local optimum. What does it mean? Nobody can improve the situation, but that does not mean it's an optimal situation. It requires some systemic intervention to drive you out of this equilibrium where you're stuck. You cannot do better. Nobody can do better. But you know that this is not optimal. I think right now, for example, with cybersecurity, we seem to be stuck in a local optimum. We know the market does not encourage more investment in cybersecurity."
+    },
+    {
+      "start": 2504.048,
+      "end": 2530.608,
+      "text": "Economists will call it, it's a market failure. And we need to ask ourselves, how do we get out of it? However, I've kind of been somewhat critical of computing here. But the reality is that in COVID-19, while a whole bunch of systems are collapsing around us, one thing did work. What did work? Internet. Look at us. We're right here. Okay. We are working from home."
+    },
+    {
+      "start": 2530.608,
+      "end": 2558.64,
+      "text": "We're shopping from home. I have not gone now shopping outside, even grocery shopping for two months. Everything comes to my door. I'm teaching from home. I'm learning from home. So the internet did, you know, a huge challenge was thrown into the internet and the internet held up. Partly because the internet was designed from the beginning. This was, remember, it was developed, the internet used to be the ARPANET. It was a military network. It was designed to withstand potentially a nuclear war."
+    },
+    {
+      "start": 2558.64,
+      "end": 2584.704,
+      "text": "How do you do that? Redundancy. And in computing, we know that redundancy is critical to resilience from the early days, error-correcting codes. How do you guarantee that? Von Neumann, a very distinguished mathematician, wrote about reliable organisms. And again, the key was redundancy. And in fact, after 2008,"
+    },
+    {
+      "start": 2584.704,
+      "end": 2614.24,
+      "text": "After the banking system practically collapsed and we needed to make sure that we have a robust banking system. So now the federal banks does stress tests for banks. And what do they check? That the bank has enough capital. It's again about redundancy. Redundancy is inefficient, but it gives you resilience, robustness. So to summarize, I think resilience is a property."
+    },
+    {
+      "start": 2614.24,
+      "end": 2644.176,
+      "text": "which is very fundamental for survival of societies and species. We're not discussing it enough. Computing need to increase focus on resilience. Economic needs to increase the focus on resilience. Markets do not appreciate it. So think about it. Take, for example, even something like car insurance. I'm mandated by law. If I want to get my registration from the state, I have to send a proof of insurance."
+    },
+    {
+      "start": 2644.176,
+      "end": 2672.496,
+      "text": "Why do they require me to send proof of insurance? Because they know that insurance is inefficient. In the long term, it costs me more money. If I had enough money, I could be self-insured. I would have enough money in the bank to pay for an accident. But they said, no, no, not good enough. We cannot guarantee that. So everybody, you must have car insurance. By law, you must have car insurance. So societal action is required to ensure resilience."
+    },
+    {
+      "start": 2672.496,
+      "end": 2702.368,
+      "text": "because the market does not guarantee it. And when we just behave selfishly, we don't do it. We must remember, as bad as things are now, this might be just a dress rehearsal for a bigger challenge coming down the way, which is climate change. And to me, the essence of digital humanism is computing for the common good, for societal good. And I want to finish."
+    },
+    {
+      "start": 2702.368,
+      "end": 2731.92,
+      "text": "quoting one of our patron saints, Ada Lovelace, who's generally considered to be the first programmer. And in 1843, she writes a letter for Charles Babbage, who wanted to build an analytical engine. And he was a businessman. He wanted to make money on it. And she wrote to him, says, it's okay for me if you make money, but I wish to add my mind towards expounding and interpreting the Almighty, his laws, and his works."
+    },
+    {
+      "start": 2731.92,
+      "end": 2761.456,
+      "text": "for the most effective use of mankind, computing for the social good. This is the essence of digital humanism for me. Thank you. Moshe, thank you very much. I was somehow tempted to interfere because of the timing, but it was so interesting. We are now going to the question and answer session."
+    },
+    {
+      "start": 2761.456,
+      "end": 2790.416,
+      "text": "And we have a long list of participants. And I ask you, because you can use on your Zoom, you can raise your hand. And I have a look at the long list and see who is raising his hand. Carlo is raising his hand and I see Helga is raising her hand. Carlo first. Carlo, OK. OK, well, thank you. It was fascinating, Moshe, really. I really enjoyed your presentation. Actually, you know."
+    },
+    {
+      "start": 2790.416,
+      "end": 2817.136,
+      "text": "I thought that your discussion about efficiency versus resilience also applies to political systems. If you think of democracy, I mean, democracy is based on redundancy. There is checks and balances. So decisions require longer processes than in authoritarian regimes."
+    },
+    {
+      "start": 2817.136,
+      "end": 2845.568,
+      "text": "In some sense, we can probably say that democratic countries have been handling, you know, this emergency better than countries like Brazil or, you know, the US, where you have one person in charge who wants to decide. You know, there may be an efficiency motivation behind that. But in the end, you know, democracy is more resilient."
+    },
+    {
+      "start": 2845.568,
+      "end": 2873.728,
+      "text": "Don't you think that that is the case? Absolutely. Absolutely. I mean, the problem is authoritarian system is that they are more efficient. One person makes the decision. And as long as this one person makes the good decisions, everything works well. And then this one person can make one disastrous decision and the whole country goes, you know, suffer the consequences of that. So, yes, absolutely. I think that's a nice way to look at the democracy."
+    },
+    {
+      "start": 2873.728,
+      "end": 2899.024,
+      "text": "is an inefficient system and you know i'm not talking about you know the arguments on moral grounds for democracy but even even just in terms of is it a good governance system the answer is yeah it's much more resilient absolutely helga had a question ah moshe i wanted to give okay helga and then erich brehm okay because moshe it was okay helga it's you"
+    },
+    {
+      "start": 2899.024,
+      "end": 2926.736,
+      "text": "Okay, I would like to introduce the time dimension. And it is obvious when you speak about efficiency, it's also about the most immediate gains that you can get. So there is a time dimension built into it that aims for getting profit as quickly as possible. We know how the financial markets work, et cetera, et cetera."
+    },
+    {
+      "start": 2926.736,
+      "end": 2940.704,
+      "text": "While when you speak about resilience or robustness, you are preparing the system, you're preparing the agents in the system for a future which is largely unknown."
+    },
+    {
+      "start": 2940.704,
+      "end": 2970.0,
+      "text": "you know that there will be changes, but nobody knows exactly what kind of changes and when they will come about. So I think it would be nice if you could also, you know, build in this time dimension into what you say. And I thought also it's a very, very taking way of presenting the situation which we are in. My question really goes back to what you mentioned at the very end about grassroots."
+    },
+    {
+      "start": 2970.0,
+      "end": 2979.872,
+      "text": "for climate change. Now, obviously, there are far more, it's a far more complex system."
+    },
+    {
+      "start": 2979.872,
+      "end": 3002.336,
+      "text": "I mean, now we had to deal essentially, as you said, with the health system. We had to deal with the economic system. And then in some countries, luckily, you don't have the kind of riots we see now everywhere. You have people supporting the protest movements. But what happens in the U.S. is not everywhere. But climate change will be everywhere."
+    },
+    {
+      "start": 3002.336,
+      "end": 3031.984,
+      "text": "And I would like to get you to say a little bit more. Also, the role of the markets in climate change, it's there, but it's very different from what we have been talking about now. So I just wanted to show this into the discussion. So I think that the challenge for us with the challenge, for example, with climate change has exactly to do with the dimension of time that you mentioned."
+    },
+    {
+      "start": 3031.984,
+      "end": 3058.656,
+      "text": "OK, so it is well known that we are not even individual people are not very good at planning for a very long time. I mean, there is a classical what is the phrase? God made me chaste, but not today. OK, so how do we optimize for the long term and how long? What is I mean, it's even more difficult because how long should we optimize for?"
+    },
+    {
+      "start": 3058.656,
+      "end": 3088.64,
+      "text": "Okay. And this is, so, I mean, there are various ways of trying to think about long-term planning. But the problem with climate change is that clearly to prepare for it now, we have to spend money now. And that's where the argument of efficiency is going to be very expensive. And the gains are not clear. And there is also the element, of course, of uncertainty. Okay. You know, clearly we have to, what you're telling us is going to cost money now for sure. And maybe there will be a benefit. Okay."
+    },
+    {
+      "start": 3088.64,
+      "end": 3118.128,
+      "text": "And, I mean, for us, I think, given what we have today, which is the large size of humanity, for us to plan for the long term is the biggest challenge of society. How does society plan for the next 200 years? I mean, even 100 years. It's just very, very difficult for us to do it. I don't think as a society we have found a way to, in the maturity, to say how do we plan for the next 100 years."
+    },
+    {
+      "start": 3120.304,
+      "end": 3147.824,
+      "text": "Okay, Moshe, thanks. A little remark from my side, because on this timing issue on the optimization problem, what Helga mentioned, because when you go on efficiency for the short time range, the problem is well structured. But if you go on a longer time scale, there are new structures appearing and it becomes much more complex. So I think timing is also related with this complexity issue, if you look for a longer time period."
+    },
+    {
+      "start": 3147.824,
+      "end": 3175.2,
+      "text": "But this was just a side remark. I wanted to give the voice to Erich Prem. Erich, it's your turn. Yes. Thank you, Moshe, for this fascinating talk. I'm particularly grateful that you mentioned or focused on cybersecurity. You know that in digital humanism, we talk a lot about privacy. We talk a lot about social networks and fake news and that sort of thing."
+    },
+    {
+      "start": 3175.2,
+      "end": 3200.496,
+      "text": "But maybe not enough about cybersecurity. It seems like, you know, in computer science and informatics, we are constantly magnifying issues that probably wouldn't be so severe if they weren't electronic or software issues. We are kind of magnifying them and cybersecurity is one of them."
+    },
+    {
+      "start": 3200.496,
+      "end": 3220.208,
+      "text": "And today we have very little, as you say, regulation. I mean, it's surprising. Computer scientists have known about these issues, you know, for a very long time, but there is no proper, let's say, authority that even supervises."
+    },
+    {
+      "start": 3220.208,
+      "end": 3246.672,
+      "text": "what controls banks, whether they are doing everything properly. While I have to identify myself towards the ATM, the ATM never actually identifies itself properly to me. And it's all these sorts of issues that we know about and which create crime and other issues. But I wanted to ask you a more concrete question about this question of resilience."
+    },
+    {
+      "start": 3246.672,
+      "end": 3270.56,
+      "text": "For me, there is another important aspect regarding robustness, which has to do with economic conditions in the IT industry. And that is the shift from owning a system. Like in the old days, we used to buy Microsoft Word, for example, or I remember buying WordPerfect. And that has..."
+    },
+    {
+      "start": 3270.56,
+      "end": 3298.288,
+      "text": "practically gone out of the window and now we are all renting systems or actually services. It's a shift from owning the system to subscription models which theoretically sounds nice because you can update the system and guarantee the service but in practice I think it has also introduced a lot of brittleness and it has changed a lot of conditions because it has changed ownership."
+    },
+    {
+      "start": 3298.288,
+      "end": 3325.264,
+      "text": "And I just wanted to see if you have thoughts about this. Thank you. So I used to work for IBM. And in the early days, IBM did not sell computers. IBM leased computers. And then somebody, somehow, some consultant told them, you know, you'll make more money selling them. And IBM in the 80s started selling computers."
+    },
+    {
+      "start": 3325.328,
+      "end": 3354.016,
+      "text": "And they made money hands over fists, as we say. And the 80s was just a great decade for IBM. And then there was a recession in the early 90s. And when there is a recession, you say, where can I cut on expenses? And it says, well, like, for example, I have a car. I used to replace my car every five years, but it's still in good shape. I can wait. I have a mainframe. You know."
+    },
+    {
+      "start": 3354.016,
+      "end": 3383.952,
+      "text": "It costs a million dollars or whatever to buy a new mainframe. I can wait. So for big items like that, suddenly demand just collapsed. And IBM almost went under. The same issue now, for example, I have a laptop. You know, what version? Word 2013. It still works. I'm okay with that. I don't need the most recent version of Word. So this company has switched to the subscription model."
+    },
+    {
+      "start": 3383.952,
+      "end": 3413.664,
+      "text": "to make themselves more resilient. Because if you stop, imagine if you own a car, you can decide, I'm not going to replace it now, I can wait. But if you lease a car, if you stop paying the lease payments, you don't have a car. So you say, I'm going to keep paying. So if you lease software, subscribe to software, you'll keep paying. What's missing there is, again, the legal framework."
+    },
+    {
+      "start": 3413.664,
+      "end": 3441.168,
+      "text": "So suppose all your documents now are on, let's say, what is it now called? Office 365, I think it's called. They're on the cloud and you pay the subscription. What happens when you start paying the subscription? You decide, I don't need it anymore, but I want my old documents. So what we have not created is, you know, for these companies, it makes sense to go to subscription model."
+    },
+    {
+      "start": 3441.264,
+      "end": 3469.872,
+      "text": "What we have not created is a legal framework that says, OK, what is our right as subscribers? And I think you have a point there. And I don't we have not thought about it enough. OK. And again, because part of my bigger theme is that we have been it was OK in computing to be cowboys, to have what cowboy, you know, is in the Wild West. And it's the kind of there's no sheriff. So you kind of do what makes sense."
+    },
+    {
+      "start": 3470.096,
+      "end": 3499.28,
+      "text": "When we are a small industry. Today, we are the biggest companies of the tech companies. As I think this was Werner who said, we run the operating system of civilization. And to do it without a framework of rules and regulations is just to me unacceptable now. If somebody has a question, please raise your hand."
+    },
+    {
+      "start": 3499.44,
+      "end": 3528.848,
+      "text": "If not, I have one. And I want to go back to that design for efficiency in building systems for efficiency. And I would like to confront this with the, let's say, presentation of Edward, who said we are producing software by evolution. It's an evolutionary process. It's more try and error. And those pieces of software survive, which are the fittest for a specific environment."
+    },
+    {
+      "start": 3528.848,
+      "end": 3558.256,
+      "text": "Could you confront this idea of Edward Lee with his evolutionary process, with your design for efficiency? So, you know, it's an interesting, I think we have to explore it further. So, in some sense, when you look at a species, the species also adapt for efficiency. You know, why did the dinosaurs become"
+    },
+    {
+      "start": 3558.256,
+      "end": 3583.824,
+      "text": "bigger and bigger okay because if you're bigger you you beat the other guy okay so you become bigger long term eternity becoming too big was was a weakness so the dinosaurs are out so it also has to do with the time element okay so what happened was that uh sex at some point was just a mutation it was not very efficient but over the long term"
+    },
+    {
+      "start": 3583.856,
+      "end": 3613.616,
+      "text": "The species survive better. Individual may have not. Individual we want to optimize better, but it survive better. So, I mean, for example, I think if you look what you discussed now, the subscription model, if part of taking the software in a broader way, not just the features, but also the way we now, the business model of software, the switch from selling software, licensing software, they call it. They never sold it to you. They license it to you. From selling you license to selling you subscription."
+    },
+    {
+      "start": 3613.616,
+      "end": 3640.416,
+      "text": "That's an evolution, and it's evolution in result of they have seen what happened in recessions, and they have seen that your income stream can suddenly dry up, and suddenly the company can go bankrupt. So that's a response to that. So in some sense, evolution in the long term is also a search for resilience, right? Because only resilient species are there for the long term."
+    },
+    {
+      "start": 3640.416,
+      "end": 3664.864,
+      "text": "But even short-term evolution can drive you to efficiency at the expense of resilience. I think it's a complicated landscape. I think Edward and I need to think about it together more. Very interesting. Next time we have a joint presentation. From a semantic point of view, could we also substitute resilience?"
+    },
+    {
+      "start": 3664.864,
+      "end": 3691.44,
+      "text": "added or connotated with the notion of sustainability and variation? Of? Let's say the resilience. It's a kind of sustainability, which is then... Yeah, it's another phrase for sustainability. I mean, people use sustainability in a particular context, but people use sustainability in some way of looking at it, robustness."
+    },
+    {
+      "start": 3691.44,
+      "end": 3714.256,
+      "text": "is another theorem i think all this time essentially refer ultimately to our ability to survive in the long term it has to do with back with what helga mentioned which is that the time the time dimension okay and so when people talk about sustainability they they they want to know okay we'll can we continue to do that for the long haul"
+    },
+    {
+      "start": 3715.056,
+      "end": 3744.528,
+      "text": "I mean, the sum of difference, I would say, that when people look at sustainability, they think about steady state. Can we continue with the current steady state for long haul? The answer is no, because we are making things worse and worse. And resilience and robustness thinks about disruptions. Okay. Okay. Now, the answer is that we know is that if we continue, for example, with our current economic practices, and they're not sustainable, because huge disruption will come."
+    },
+    {
+      "start": 3744.528,
+      "end": 3771.664,
+      "text": "So the things are tied together. Interesting. Also, this would be a further presentation. Edward, the floor is yours. Yeah, I just wanted to comment on a little follow up on this evolution story. Moshe, I think you were using the term evolution is almost synonymous with mutation. But there's another actually much more important part of evolution, which is natural selection."
+    },
+    {
+      "start": 3771.664,
+      "end": 3796.8,
+      "text": "that actually fits your your resilience story much better because mutations you know particularly through as you point out through sexual reproduction lead to variation and variation becomes valuable in the context of natural selection and i think that that does happen with software so"
+    },
+    {
+      "start": 3796.8,
+      "end": 3822.24,
+      "text": "And in some ways, there is sexual reproduction with software because software engineers take pieces of code from here and pieces of code from there and combine them to create new capabilities. That's very analogous to sexual reproduction. And, you know, we tend to think in retrospect of particularly successful pieces of software like Snapchat or something like that as if they were."
+    },
+    {
+      "start": 3822.24,
+      "end": 3850.784,
+      "text": "done by brilliant designers out of nowhere. But actually, there were thousands of competing products and ideas and pieces of software out there that then were subjected to this natural selection process. And the ones that emerged from that process were the ones that we ultimately remember. So don't forget about the natural selection part of the story. It's not just mutation. Yeah, yeah, I completely agree. Yeah."
+    },
+    {
+      "start": 3850.784,
+      "end": 3879.072,
+      "text": "I mean, mutation by itself is no good unless there is natural selection. Yeah. Okay. There is some other hands raised. Giuseppe Di Giacomo. Moshe, can you? Ah, that's perfect because I just wanted to ask you to take off your. Yeah. Giuseppe. Hi. Hi, Moshe. Very, very nice talk. Very nice. So sequential decision making. So."
+    },
+    {
+      "start": 3879.072,
+      "end": 3903.968,
+      "text": "What happens when the outcomes of our action, of an intelligent agent action, are unexpected? So resilience is obviously extremely important and essentially ignored so far. Where do we start? What should we study? You know, we have been studying resilience in some context."
+    },
+    {
+      "start": 3903.968,
+      "end": 3931.344,
+      "text": "Right. I mean, people who build, you know, a distributed system for tolerance is a big area. It's not as if computing has neglected it. And I said we have one huge success story in terms of the Internet. OK, but I think we have not yet done is is kind of, you know, efficiency is kind of built into into the fabric of how we think about computing. OK, I don't think resiliency is there at the same level."
+    },
+    {
+      "start": 3931.344,
+      "end": 3960.608,
+      "text": "OK, so it shows up in places people talk about, you know, adversarial machine learning. I mean, it shows up here and there. It's not as if we have completely neglected it. But I think we need to sit down and think, OK, now that we know how important it is and we had this huge success story with the Internet. And again, building up on what Edward says, it was not a foregone conclusion. I remember when there was just big discussion what networking model should work."
+    },
+    {
+      "start": 3960.608,
+      "end": 3989.344,
+      "text": "The Internet was not a given that this is how we should do networking using the Internet. But, I mean, going back, I think we need to think in computing, what role should resilience play? And I don't have the answer. I think this is a very important resource agenda, resilient computing. There are some aspects. You see aspects that happen. For example, people talk about there is a phrase you may have heard, inexact computing."
+    },
+    {
+      "start": 3989.344,
+      "end": 4016.688,
+      "text": "This has to do with possible error in hardware. And so this is another place where people may talk about, again, resilience. But in the context of AI, for example, very little discussion of resilience in the context of AI. So we need to go back to the board and start thinking about this topic of, I think, resilience. We now understand how important it is. I don't think, you know, it takes sometimes..."
+    },
+    {
+      "start": 4016.688,
+      "end": 4045.296,
+      "text": "You have to be hit on the head with a two by four to realize, oh, my goodness, this is very important. We've been hit on the head with a two by four. Maybe we should take some lessons from social science, probably. Can I just? There was Jeff Kramer now. But was it? Yes. Yes. I just wanted to say. Two minutes. OK. Yeah. I just wanted to say originally."
+    },
+    {
+      "start": 4045.296,
+      "end": 4066.432,
+      "text": "term comes from ecology goes back to the 70s has been taken up quite a bit by the social sciences and the social sciences have looked at people's resilience when people you know you have poor communities and yet you know some resist better and are more resilient than others"
+    },
+    {
+      "start": 4066.432,
+      "end": 4094.528,
+      "text": "where apparently the life conditions are just as bad. So if you want to start a cross-disciplinary discussion about resilience, I think it would be a good starting point to look into the social science literature as well. So it's absolutely true. So in fact, a psychologist saw the column I wrote on efficiency versus resilience, and the psychologist said he found it very inspiring, and he wrote a column."
+    },
+    {
+      "start": 4094.528,
+      "end": 4124.064,
+      "text": "on on personal resilience i think i don't know and i would be very interesting yeah what's interesting to me is is looking at resilience for communities and for societies even beyond communities okay for example you look now and at the united states and you say wow this is not a very resilient resilient society and why is that and and this is sociologists are trying to write about it how"
+    },
+    {
+      "start": 4124.064,
+      "end": 4149.536,
+      "text": "We have, you know, the polarization, we have lost trust and things like putting a mask on your face has become a political issue, which I just find mind blowing. But that's the reality. So I don't know. It would be very interesting to look at. And somebody mentioned, I think Carlo mentioned democracy as a way to handle societies in a resilient way."
+    },
+    {
+      "start": 4149.536,
+      "end": 4178.96,
+      "text": "But I think what after we are seeing now, we are seeing kind of almost a social collapse around us today in the United States of America. It is almost shocking. It actually is not almost. It is shocking to see the situation. And the answer is that we ended up with very non-resilient society. And this is to me when it's not just about computing. To survive, you must be resilient. So societies want to survive. Humanity want to survive. It's about must be long term resilience, must trump."
+    },
+    {
+      "start": 4178.96,
+      "end": 4206.704,
+      "text": "Okay, now we have Jeff. It's yours. Let's take the last question, Jeff, okay? Okay. Thank you very much, Moshe. I think you've really come up with a great important point, which I think has been really neglected, this notion of resilience. I think although we've talked a lot about robustness and things in computing, the move from short-term software..."
+    },
+    {
+      "start": 4206.704,
+      "end": 4231.488,
+      "text": "to which was actually correct, had to produce a result and that was it, to long-term software which runs so-called forever, has actually moved us to actually change the kind of focus that we have to have. And I think the notion of resilience is a very important notion. One of the things that you haven't really talked about, and which I was going to ask you the question, I don't know if there's enough time now, is to do with risk."
+    },
+    {
+      "start": 4231.488,
+      "end": 4256.32,
+      "text": "And this is to do with evaluating the risk of certain things happening and the implications of those things if they do happen and how we balance that with the notions of how much we spend on things and in computing how much do we actually add in the redundancy and so on into the software. So this notion of risk and risk evaluation, both in terms of whether it's likely to happen."
+    },
+    {
+      "start": 4256.32,
+      "end": 4286.064,
+      "text": "And what are the implications of us not taking it into account are exactly things which have taken place with respect to COVID, which we knew was a huge risk and actually the implications were huge and we didn't do anything about it or very little. And the same is true about climate change. But in computing, we can do this and we can put in more redundancy and more adaptive systems. So what do you think about actually risk and risk evaluation?"
+    },
+    {
+      "start": 4286.128,
+      "end": 4309.68,
+      "text": "We should always try to learn. I mean, I have a rule in life. Rule number one is learn from your own mistakes. Rule number two is even better to learn from other people's mistakes. That's the best way of learning. I tell my students, don't learn from your mistakes, learn from my mistakes first. I've done, I've made so many of them. You have the benefit of my mistakes. So it's the finance industry."
+    },
+    {
+      "start": 4309.68,
+      "end": 4339.088,
+      "text": "has learned from this because they're the one, I mean, think about it, all these people in hedge fund and all these things, they do risk management day in and day out. And you may want to, I think it's a title of an article from more than a decade ago, the formula that almost destroyed the world. And he talked about something called VAR, V-A-R, value at risk, which is a very standard tool in financial risk management."
+    },
+    {
+      "start": 4339.152,
+      "end": 4362.704,
+      "text": "And you basically say, let's suppose you say, I want to know what is my risk, how much can I lose? I mean, I cannot, there is never no risk. And so the idea was, how much can I lose, let's say with probability, I want to know with probability, let's say 99%, that I will not lose more than, let's say, a million dollars."
+    },
+    {
+      "start": 4363.28,
+      "end": 4390.24,
+      "text": "So value at risk, you put a probability there. I want 99%. I'm willing to take a risk of 1%. And the model will tell you what's the value at risk for the 99%. What that formula did not do is ask, how much do you lose in that 1%? And the answer is, if the loss in the 1% suddenly goes from a billion to a billion, then we all can compute expectations."
+    },
+    {
+      "start": 4390.24,
+      "end": 4418.896,
+      "text": "And suddenly your expected loss is huge because even the very tiny, the long tail, the very far out event implies a huge loss. And in finance, it's understood that you now need to start planning also for the Black Swan events. And what we are not doing for climate change or even for epidemics was that, okay, it's expensive to plan for a..."
+    },
+    {
+      "start": 4418.896,
+      "end": 4447.216,
+      "text": "to plan for a pandemic. And maybe it's only, you know, 1%. But what is the damage for us? Okay. Now, if you look at the damage that has been in many, many trillions of dollars, and now people are talking that we'll take, and even these estimates, to me, are optimistic, because assume that we're coming out of this crisis, and I'm not seeing us coming out anytime soon. They're saying it will take a decade for the economy to recover. So now we're talking about losses."
+    },
+    {
+      "start": 4447.664,
+      "end": 4468.864,
+      "text": "I think the total loss will be for the world. The world GDP is, I think, about $80 trillion. So that means now we are talking about tens of trillions of dollars lost that this cost us. And it's hard for me to imagine that the cost of getting the CDC ready for this would be anything near that."
+    },
+    {
+      "start": 4468.864,
+      "end": 4495.968,
+      "text": "So doing risk management in a smart way, and I say we can learn from the mistake of the finance industry. And that's why today they tell banks, you must have capital reserve, which is very inefficient. But the stressors are exactly, they make models of things that can happen. And can you survive it? And this kind of risk modeling is, again, when I said we have not internalized how important resilience is."
+    },
+    {
+      "start": 4495.968,
+      "end": 4521.392,
+      "text": "How many of us know about risk modeling? It's not an exercise that we do in computing as a normal course of here is how we do computing. We build risk models. Again, you find in some corner people are starting to build risk models for autonomous vehicles, for example. But by and large, I would say this is not part of the portfolio of computer scientists building risk models. Good point. Thank you, Jeff, for the question. Thank you all for your question."
+    },
+    {
+      "start": 4521.392,
+      "end": 4547.056,
+      "text": "And Moshe, for your presentation, what comes to my mind with this risk is who has to pay for that? And then this is a societal question and that goes back to markets, goes back to democracy. And at the end, this goes back also to digital humanism. My slogan is markets are supposed to serve societies, not the other way around. Yes. OK. Thanks for your participation."
+    },
+    {
+      "start": 4547.152,
+      "end": 4575.408,
+      "text": "I would tell you to look at the DECOM YouTube channel. There you can find this presentation and the discussion. Look at our website where you can download the slides from Moshe, who will send me his slides, I hope. Thank you, Moshe. I just told you now. Thank you. I wanted to tell you that we have a next event on July 14th, again at 5 p.m."
+    },
+    {
+      "start": 4575.408,
+      "end": 4604.848,
+      "text": "where we have Alfonso Fujeta. He will talk again at the COVID-19 European app and discuss also this democracy versus health control and how to deploy such a system and in which way on the European level. We have a discussant, Jeff Kramer from Imperial College. Thank you, Jeff. And I hope it will be moderated by Carlo Ghezzi. I'm just..."
+    },
+    {
+      "start": 4604.848,
+      "end": 4632.08,
+      "text": "Now, I thank everybody. And now comes the surprise at the end. And I hand over to Peter Knies. And I thank you all and wish you a nice evening or a nice day in the US or wherever you are. Peter, the floor is yours. Thank you. Thank you very much. And thanks to Moshe and thanks to everyone for the really interesting discussion. So I've been."
+    },
+    {
+      "start": 4632.08,
+      "end": 4661.136,
+      "text": "I'm working in the area of music recommender systems, and I've been asked to pick music representing digital humanism. I wasn't aware that the stakes might be so high to pick the right track here. But anyway, the first thing I want to say is that I did not resort to an algorithm to make the choice for that song that I picked, but I've relied on my own knowledge. The second thing I want to highlight is that in order to not neglect the digital aspect of digital humanism,"
+    },
+    {
+      "start": 4661.136,
+      "end": 4688.992,
+      "text": "I opted for electronic music and selected the track Human After All by Daft Punk. And there's the reasoning behind that is that Daft Punk as a band has devoted a considerable amount of their work really on questions of technology and the relationship of technology and humans. This starts basically with their artistic decision to publicly appear only as their robot personas."
+    },
+    {
+      "start": 4688.992,
+      "end": 4715.008,
+      "text": "is really emphasized in the album Human After All, where this track is coming from, the accompanying movie Electroma, which is about two robots struggling to become human, the soundtrack to the movie Tron Legacy, and even in their latest album, Random Access Memories, that can be seen as an attempt to bring a human touch into electronic music, or as they call it on the album, bring life back to music."
+    },
+    {
+      "start": 4715.008,
+      "end": 4743.36,
+      "text": "For our YouTube channel, before I play it, before our YouTube channel, we are also going to put together a music playlist as the soundtrack of digital humanism in the next weeks. Basically, well, to paraphrase Emma Goldman, a revolution without dancing is not a revolution worth having. And so it might be good to have some music accompanying that. So if you have any suggestions for that playlist, I ask you to submit them and tell us. And we're very open to that. So without much further ado."
+    },
+    {
+      "start": 4743.36,
+      "end": 4766.736,
+      "text": "Let me share my screen here. Hope you can see it now. So, yeah, I want to. So there we are. So thank you for joining. We hope to have you back next time. Goodbye. And this is Daft Punk, human after all."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,801 @@
+{
+  "video_id": "WkM81jmxGJc",
+  "source": "whisper",
+  "language": "en",
+  "text": "So welcome to the lecture series on digital humanism. In April this year, we from the Faculty of Informatics here at TU Wien organized together with the Vienna Science and Technology Fund and with the city of Vienna a workshop with more than 100 participants from different countries and different disciplines. And so the goal of this workshop was to reflect the complex interplay of technology and humans, and more importantly, to think of ways how we could influence this interplay in a positive way for a better society. The Vienna Manifesto on Digital Humanism as a call for action and reflection in this regard is one outcome of this workshop. And so you see it everywhere here, so you can take one, you can read it, and you can support it by going on the website and sign it. And yeah, so the link to the website you find on the printout. And another outcome of the workshop is a lecture on digital humanism for master students that is taking place now here at TU Wien, but we organize it together with the University of Vienna. And the public part of this course is now this public lecture series, which is also supported by the Vienna Science and Technology Fund. Yes, and today this lecture series starts, and I'm very honored to welcome Susan J. Winter as the first speaker of this lecture series. And Susan is Associate Dean for Research and Co-Director of the Center for Advanced Study of Communities and Information at the University of Maryland College of Information Studies. So she has a background in business administration and information systems, so she has a PhD in that area from the University of Arizona. But she also has a background in organizational psychology, where she has a master's degree from the Claremont Graduate University and also a bachelor's degree from University of California at Berkeley in industrial and organizational psychology. Her research focuses on scientific data work and new forms of cooperative production, living in smart and connected communities. information and communication technologies and new forms of work, and ethics and emerging technologies. So her work has been supported by the U.S. National Science Foundation and by the Institute of Museums and Library Services, and she has received a high number of competitive grants, a lot of awards, and many recognitions. She's in the editorial board of different renowned journals. And she's the editor of the computing ethics column of the communications of the ACM. And now we will hear her talk with the title, Kuibono, a sociotechnical view of smart cities. Thank you for that lovely introduction. Can you all hear me in the back? We were fooling around with microphones earlier. So if it ever doesn't work, start making hand gestures in the back there. Yeah, so I'm Susan Winter, and I actually have been looking at smart cities for a little while and looking at who benefits. My background is interdisciplinary, and so looking at this from a computer science perspective, from an organizational psychology perspective, I bring a different sort of lens to this. I guess the first question as we think about who benefits is to ask, why do we care who benefits? Basically, the question of who benefits is one of the oldest questions in ethics. And as such, we look at values. Ethics, what society says is acceptable. Society says some things are just absolutely not acceptable. No fraud, no theft, no murder. But then there are lots of different ethical frameworks. So you may recognize David Hume from the Scottish Enlightenment, and he said benevolence and social virtue are important. That we should be concerned about others and our interrelations with each other, not just because it's good for them. but because it's terribly important for us. And so we should practice compassion, generosity, and service because we're all part of the same society. You may also ask, why do I care who benefits? My goal has always been to look at quality of life. And within that, I focused on quality of work life. And within that, looking at... technology and work practices. Why? Because I did my undergraduate degree at UC Berkeley and was doing my master's in organizational psychology at Claremont, and it seemed like there were these things showing up that could really affect quality of work life. These computer things, these personal computers were coming into workplaces. Robots were coming into manufacturing facilities. Seemed to me like this could have a real impact on quality of work life. Turns out they have a real impact on quality of life as well. Not just because work affects, technology affects your work life and your work life affects your life satisfaction, but also because these things have actually infiltrated into our lives. So I did... How did I come by this interest in quality of life and quality of work life? It's really, I think, stems from my parents and my grandparents. My mother's people lived in West Virginia in coal country. They weren't miners, but their classmates were. That was terrible work. There's an 11-year-old miner in 1908. My father's father... was in the garment industry in New York City. He did furs, pelts. That was terrible work. Not because the work itself, but the way we organized it and the way we managed it and the way we controlled it. I spent 20 years as a faculty member in colleges of business and doing things, working in industry, working for Duke Energy, being a program manager, a project manager. And what I discovered, it took me a long time to learn it, I'm not very smart, I actually don't care about corporate profits. I actually don't care about shareholder value. That made me a very bad fit for business schools. I would have been okay as a fit for business schools in the 1950s, but in the 1970s, Milton Friedman and the Chicago School of Economics was very influential in arguing that the only goal of business is to make profit and provide shareholder value. That's what drove Reagan. That's what drove Thatcher, drove a revolution in business. I actually really don't care about that. I do care about quality of life, and I love teaching because I love watching the light bulb go off over people's heads, which means I should not be in industry. I should not be in business. I spent four years at the National Science Foundation. The agency in the U.S. that funds 80% of basic computer science research. They also fund research in other sciences as well. I was in the Office of Cyber Infrastructure, where they funded the big supercomputers. And then I actually cared about people. They found that rather surprising. And then for three years, and then one year in Social Behavior and Economics Directorate, where I actually cared about technology, which... they found kind of confusing. I found that the interesting stuff I was funding, most interesting stuff was coming out of things called Colleges of Information Studies. Not out of business schools, not out of computer science. So when I left NSF and National Science Foundation, you can come for four years and then you time out. You go back into academia. I took a job at the University of Maryland's College of Information Studies. Colleges of Information Studies are a little bit weird. We actually care a lot about quality of life. At the University of Maryland, our goal is to harness the power of information so that everyone can improve their world. Sometimes that means you have to change the information. Sometimes it means you have to change the technology. Sometimes it means you have to change the people. But it's about getting people information to empower them. And we focus on information, how it can be used by people, by teams, by organizations. What do I mean by changing the information? Originally, we were a library school. The information was in books. Information has escaped into the wild. A lot of that stuff is digitized. A lot of those things are not in libraries, archives, and museums. Sometimes we have to change it. If you're blind, having written material doesn't help. You need to make it something that's spoken. If you don't have fingers, you can't use the touch screen. If you get old, your fingers dry out. and the touchscreen doesn't register your fingers anymore. How do we change the technology so that people can use it? Sometimes you have to change the people. If you can't read and write, you can't get access to the information. So, yeah, for over 40 years, we were a library school. Books were the technology for information. But we really take a sociotechnical approach. We're trying to solve problems. That makes us interdisciplinary. We have people on the faculty with degrees from computer science, from computer engineering, from physics, from English, from journalism, from critical feminist theory. We've got all kinds of people. And we provided information as libraries from the beginning, not just... in libraries, but we had bookmobiles for places where there were roads. And we delivered books on horseback where there weren't roads. We still have the bookmobiles. The information has escaped into the wild and we're trying to figure out now how do we follow it? Where do we go? Disney is not a viable company without their digital assets. Without the movies, they don't have a company. Amazon's got an incredible amount of information. Facebook has an incredible amount of information. How do we engage this? We work to increase the positive impacts and decrease the negative impacts. But we are always sensitive to questions of equity. So when I look at technology and I look at smart cities, I think about what's the information and I think about equity. How are you empowering people? We all remember a time a librarian helped us. Why did that librarian help you? Because you needed help. That's what we do. We focus on groups that need help. I went to an iSchool about the time that the Smart Cities movement got started. So I thought, okay, I know about information. Smart Cities are about information. Let's figure out what this is. I searched smart city definition on Google a couple days ago. 219 million results. Okay, nobody really has a definition of smart cities, but I've picked a couple of good ones here. Wikipedia is generally, the Wikipedians are pretty diligent in making sure that they collect the information that's needed and present it. And they're saying an urban area that uses different types of electronic Internet of Things sensors to collect data, get insights from that data, manage the assets, resources, and services efficiently. You guys all know what the Internet of Things is, right? Small, lightweight sensors, long battery life, networks for moving to 5G with low latency, allowing real-time control. You've got data, metadata, analytics, reports, notifications, visualizations. Stop me if any of this seems surprising. Who's doing this? Engineers, computer scientists, material scientists. They're working on the cutting edge in universities like this, in companies like Siemens. They're creating new technologies to improve efficiency. Well, maybe Wikipedia is just one example. How about Technopedia? The first thing that comes up actually on Google if you search for smart cities definitions. It's basically the same thing. They're all saying new technologies for efficiency. That that's what smart cities are all about. And yeah, it should enhance quality of living for citizens, but through smart technology. So the technology is the one that's driving it. It's going to be more efficient and it's going to make everybody so happy. There are a couple of different ways of approaching this in terms of smart cities technologies. I always look at them and think about whether the goal that's being pursued, what's the role of the people? Are the people being engineered out of the system or are they central to the system? And we see as you look at the various users of these smart cities technologies, for some of them, we have engineered people or trying to engineer people entirely out of this system. So the sensor senses the amount of traffic and it automatically tells the traffic signals to change. Smart buildings, they sense whether there's somebody in them. And if there isn't, then... They reduce the amount of heating, ventilation, air conditioning, and they turn off the lights to save energy. No people involved. By the way, we have that in our building. More trouble. You guys have that? You're sitting there working at your desk and the lights go off. I'm still here. We've had people who've taped it over because the sensor is actually, they're not line of sight of the sensor. It's hitting the back of the screen of their computer. So yeah, those things are awesome for people, not so much. Self-driving cars. We've engineered the people out of the system. Sometimes the users are city planners. So they're using the information to figure out where road construction should happen, where parking spaces should be, what the tolls ought to be based on usage. So if it's very busy, they did this recently on one of the main freeways coming into Washington, D.C. If you're trying to come in, during rush hour in the morning, and you're a single person in the car. Highest it got up to was $48 to get into the city. It's hit that more than once. Yeah, people were really shocked. Sometimes the users are government workers, where they'll get a text or an alert saying, we need you to go empty this trash bin. It's full now. Sometimes the users are residents. They're putting up kiosks with Wi-Fi. local maps, internet access, the ability to charge your device. So there's some variance in terms of the technologies that we have. And what are they promising us? Technical innovations are supposed to lead to these desired solutions. So if we have self-driving cars, then we're going to reduce congestion, parking spaces, fuel use. Traffic cameras and sensors adjust automatically. We're reducing congestion, pollution, fuel use, increasing toll revenue. Buildings with the cameras and sensors conserve energy, reduce costs for government buildings, compacting solar-powered trash cans that signal when full, reduce the collection frequency, odors, rats, government costs. These are all good things. So who's creating these smart cities? Because whoever's creating them affects who's going to benefit. If you're creating it, you have some power over who's going to benefit. So who's creating the new Internet of Things sensors, information communications technology, data insights algorithms, engineers, computer scientists? Who's disseminating the technology? These are companies seeking profits as vendors. They're going to sell it to the city. We're not seeing a lot of companies that are just going to give this away. Remember Milton Freeman saying, nope, short-term profits and shareholder value is what drives this. And then city management, public administrators are actually making those purchasing decisions. These are the ones that are generally the people at the table in creating smart cities. So if we're thinking about who benefits and thinking about the ethics and the values, I thought, well, what are the professional codes of ethics of these people say about what they ought to be doing, what their goals ought to be? And these are awesome ethical goals. I was so happy to see these. National Society of Professional Engineers, engineers' impact on the quality of life for all people. They should pursue fairness and equity, hold paramount the safety, health, and welfare of the public, serve the public interest. Association for Computing Machinery, a lot of computer scientists belong to this, go even further. They say when the interests of multiple groups conflict, the needs of those less advantaged should be given increased attention and priority. Not maybe, should be. Companies seeking profits? Yeah, they have no codes of ethics. Milton Friedman said they didn't need those. They needed a free market. Okay, I'm blaming him a little unnecessarily. He wasn't the only one behind it, but he's widely, he got the Nobel Prize, so I guess I can blame him for it. American Society for Public Administration. Strengthen social equity, reduce unfairness, injustice, and inequality in society. These are all really great goals. These are the kinds of things that colleges of information studies and librarians care about. These are the kinds of things I care about. These are the kinds of things that David Hume and the Scottish Enlightenment cared about. This is benevolence. So perhaps an ethical smart city would be an urban area that uses technologies, data, and insights to manage efficiency, but also to serve the public interest by reducing unfairness, injustice, and inequality in society. You guys are looking a little skeptical. So what kinds of problems do smart cities actually address? Congestion, parking problems, garbage, air pollution, energy wasted on lighting, HVAC for empty buildings. These are the kinds of things that smart cities, okay, admittedly, that's New Delhi, and that's not going to be fixed with smart traffic lights. That's burning off the stubble from the adjacent fields that's actually choking New Delhi, but it's a great picture of air pollution, you must admit. So these are the kinds of problems we're trying to solve. Who benefits? Does this serve the public interest? Yes, absolutely. If you're an engineer, computing professional, a company seeking profits, or a city, Does this reduce unfairness, injustice, and inequality in society? Here's a picture of a part of a city in West Baltimore, Maryland. Can technology to improve government efficiency solve problems for them? Will it solve their problems? Doesn't look like it to me. Have you ever seen the movie, the show, Series of the Wire? About drug dealing, and it was really pretty distressing. That was filmed in West Baltimore. So we went and asked people in West Baltimore, what do you want in terms of smart cities? One of my colleagues got money, actually, from the National Science Foundation. I wasn't on that proposal. But they went and talked to the people in West Baltimore and said, huh. Smart cities. What do you actually need? Do you need smart traffic lights where there's no congestion? Do you need smart buildings? This housing needs something much more basic than automated control of the lighting to reduce energy use. Do you need Wi-Fi access at a public kiosk? You could go there and pay your bills. And they said two things. One is no. Well, both of them were no. No for two reasons. One is, it is not safe to be standing at a kiosk in that neighborhood. And the other is, why should I have to do my business on a public street when everybody else gets to do this in the privacy of their own home? Both good points. The being shot at seems to me like a more pressing problem. Do they want compacting trash cans? Being a trash collector is a good paying job. Those are the kind of jobs people in our neighborhood depend on. Why would we want to get rid of those jobs? Self-driving cars? They can't afford any kind of car, much less a self-driving car. What about self-driving buses? Absolutely would never get on a self-driving bus. Well, for one thing, they didn't like them because bus-driving jobs are good jobs. that people in our community depend on. But the bus driver isn't there just to drive the bus. The bus driver is also there to keep order. How do I know I'm not going to get robbed if I'm on a bus without a bus driver who is a person of authority who will keep me safe? The smart city solution didn't make any sense to the poor people in West Baltimore. What did they want? free or affordable Wi-Fi. On the bus, because they have long commutes to and from work, to and from school, they can spend over an hour on the bus. They've got no Wi-Fi. Wi-Fi at home with no unexpected data charges so they don't get surprised at the end of the month when they do not have the money to pay it. They want the Wi-Fi to do their homework, to be able to... learn something online to improve their skills, to be able to participate in modern life. Interestingly, they had some really interesting solutions. There's one woman who has open Wi-Fi, and so all her neighbors congregate on the stairs outside her apartment. The kids come and do their homework. But if it gets too slow, she has to open the door and shoo them away because it's gotten too slow. In many rural areas in the U.S., Parents will drive their kids to the parking lot of the public library for them to do their homework. This is something that they fundamentally need, but something that businesses are not going to make money on. They wanted community empowerment. They wanted access to the feeds from the cameras and the microphones so that they knew what kind of crime was going on in their neighborhood. They didn't want it to go to the police with the whole police surveillance thing going on. West Baltimore has had some bad relations with police in the past, in the relatively recent past. There was a court case. It didn't go well. There were deaths. It was not good. There was rioting afterwards. So why the mismatch? Why is it the smart city's rhetoric is talking about solutions that have nothing to do with the problems that these people are experiencing? and the solutions that they want. Fundamentally, cities are not machines. You cannot engineer them for efficiency. They are living, vibrant, remarkably uncontrollable entities as the government in Hong Kong is discovering. A quarter of the population of Hong Kong is out on the streets protesting every day because cities are not machines that you can engineer. They're complicated, they are socio-technical, and they are emergent. Things happen that you didn't predict. You got some, you can play the odds. You can have a sense of the probabilities, but you may not know exactly when they're going to happen and exactly what the moves are going to be. Urban areas are also hard to manage. Their boundaries are dynamic. How do you know when you're outside of the Vienna city area? Boundaries also often cross multiple cities, counties, states. An urban region may spill over into multiple municipalities. And they're porous. You have residents. You have people who come in to work and then they go out. And you have visitors. You guys have tourists here. You're besieged by tourists, I can tell, every year. It's a different city then now, isn't it? Urban planning is traditionally top-down and efficiency-focused. These are bureaucrats and they're trying to be good stewards of... The money that they get from the taxes. To not waste it. To spend it wisely. Smart cities. As I go talk to the mayor of Baltimore. And we've actually got a round table. With the mayors of all the cities. Little towns that surround College Park. Where the University of Maryland is. And they tell me. Smart cities are being driven by the technology companies. They're seeking profits by selling to municipal leaders, not the residents. They're providing data to inform the policy makers, not the residents. That's not their business model. I take a sociotechnical perspective. What does that mean? So from a sociotechnical perspective, We're talking about looking at cities as a system. We're looking at organizations, people, and technologies, and they're intimately intertwined. Context matters. Collective action is important. So if you just look at the technology or just the social system or look at them both but they're side by side, you're missing important stuff. You need to look at when the technology, the people, and the organizations interact and what emerges there. That's where the interesting and exciting stuff happens. This is very different from an engineering perspective on how we're going to create smart cities. This charming lady in the lower left is Denise Schmont-Besserat. She's an archaeologist who figured out when we learned how to write. She was in an archaeological dig. from 9,000 years ago in the city of Uruk, Mesopotamia. And Uruk had really strong walls, strong city walls. It lasted for a very long time. And there was a chamber buried pretty far down that had a bunch of these. What the heck are those? Turns out those are 9,000 year, that's a 9,000 year old contract. So if I paid my taxes in barley, we'd have a little symbol that was barley. If I paid my taxes by providing a sheep, we'd have a little figurine that was a sheep. And so we would actually, or if I bought a sheep from you and I paid you in barley, then we would have the appropriate number of little figurines. We'd put them in the clay vessel and seal it up. So if there was any question about the contract, we'd have to break the contract open to see what was inside. You needed to be able to use clay to make this work. Not all communities could do this. You had to learn how to work clay. So there was a technological aspect to it. And they had pretty high taxes because they had to maintain the wall. But this was very inefficient. These things are not stackable. They can break when you don't want them to. Once you've broken it, how do you reseal it? It's a mess. So not too long later, we wound up seeing these little cuneiform tablets that you created on wet clay with a stylus. You had to be able to split the reeds to do the stylus. If you like, you can go online now and buy styluses. You can actually learn. The Khan Academy has a how to write in cuneiform course if you'd like to do it. It's a living technology. It turns out with a stylus and better ability to work clay, you get these nice tablets, and that's actually a record of barley taxes from a rook. That's why we created writing. We had a social problem. We had the technology. We came up with writing as a solution. It emerged from the city government, from the problem, from the technological abilities. We don't actually know who invented it, but I think that's pretty darn cool. Organizations, people, technologies are all intertwined. When you think about a smart city, You need to think about the organizations, the people, the technologies. You need to think about the context and what people are trying to accomplish. You need to think about collective action. Who's working together? Let me unpack that for you a little bit. When you talk about technologies, people, and organizations being intertwined, you need to pay attention to cause and effect. Cause and effect can go both ways. Technologies affect people and people affect technologies. Both are happening. There's a co-evolution of the social and the technical. Just because the technologist had some idea of what we were going to use things for doesn't mean that that's what we wind up using them for. Nobody invented Facebook to encourage cyber-stalking. If you're a technologist creating technologies, you think about people using them the way you would use them, not the way other people might use them. This is dangerous because not everybody is as nice as you are. Not everybody has your goals. Terrorists use this in ways we didn't expect. They use all of our technologies in ways we didn't expect. In my field in sociomateriality, we talk about something called affordances. So if I needed to hammer in a nail, I could get a hammer. That'd be good. I could also use the hammer to prop up a table that's got wobbly. There are affordances, things that they're easier to use for. But we have social norms about what we do use them for, but that's not what it's limited to. There's a lot of creativity out there. and they will come up with things to use it for that you didn't think about. So the results are not entirely predictable, but you can foresee some things. Pay attention to the physical technology triggers. Pay attention to the actions of social groups, government, companies, news media, residence associations. Think about the context. The budgets, the politics, the legal authority, geographic features, complex processes by which you develop, adopt, adapt, and use new technologies in people's social worlds. Because if they don't get adopted, adapted, and used in your social world, it doesn't matter what the technology is. It sits on a shelf, and nobody ever knows about it. Guys recognize punch cards? Okay, you've heard about punch cards. They were still around up through the early 80s. In some old library books, you'd still find punch cards. Do you know how they came up with the punch card technology? In the U.S., they have to count everybody in the U.S. every 10 years. It's called the census. And in the 1880 census, it took them eight years to count everything because the census forms were handwritten. They realized that in the 1890 census, they were going to take more than 10 years to count everybody. This made the census not really very useful. So the federal government created a competition for anybody who could come up with the best machine to count these things faster. So we've got the government involved because we're trying to solve a social and governmental problem. This gentleman in the upper right, Herman Hollerith. who had a background in sewing machines, absolutely brilliant engineer, graduated Carnegie Mellon at the age of like 18 or something ridiculous, came up with the punch card. You had to have cheap paper. You had to be able to machine the little holes in the paper. You had to be able to machine the little stylus. So there were technological advances. You can see it kind of looks like a sewing machine. And he rented the reward if you won. You got the federal contract for tabulating the 1890 census. So he started a business. He found cheap warehousing space across the river from, actually on the same side, along the river in the District of Columbia. The space was cheap because this was the late 1880s. It was right along the Chesapeake and Ohio Canal. Context matters. Geographic features matter. Late 1880s, the railroads had come in. Nobody needed the warehouse space along the canal. So he got it for cheap, and that's where he put his workshop. It's still there. You can go to his workshop. It's now the Seacatch Restaurant. You can get some nice fish there. It's in Georgetown. There's a little plaque by the men's toilet that's commemorating. Herman Hollerith and the Hollerith machine. His company then merged with another company a few years later and renamed themselves the International Business Machines. It's IDM. So the history matters, the context matters. These are complex and dynamic interactions among technological capacities, social histories, situated context, human choices and action. just creating a sensor and creating smart traffic lights, you're intervening in an incredibly complex system. If you don't understand that system, you can't predict what's going to happen with it. If you do understand that system, higher probability of guessing what's going to happen with it. Still no guarantees. As I say, context matters. Technologies are embedded in a social context. Smart traffic lights are not going to work. I'll predict this in Mexico City. Why? They don't stop when the light is red. Why would they care whether it's a smart traffic light? They ignore it. Social context then adapts to the technologies and reshapes the technologies through the design, development, deployment, and use. My students tell me now that Visitors do not ring the doorbell when they get to your house. Do they still ring the doorbell here? Yeah, they don't in the U.S. at all. They would never answer a doorbell that was rung. They would assume it was someone selling them something or someone that wanted to rob them. What do they do instead? They text. They get there and they send a text saying, I'm here, and you open the door for them. We're reshaping the technologies in a dynamic way. And looking at the technology separate from the context limits our understanding. Any of you who've done natural language processing and try to understand the nuance of language, understand the difficulties. When you say a mask in New Delhi, you guys all just thought about the air filter masks and how bad the smog is there. When I say mask in Hong Kong, 25% of people on the streets protesting. They've got a lot of security cameras, and they're using facial recognition. They're using facial recognition with the intent to prosecute. People just put masks on. They have to outlaw masks. But how are you going to enforce that? It's embedded in social context, and social context matters. What would it take? to say we do facial recognition for entrance to university buildings here. Who could make that decision? What would the process be? What would be involved? That's all the context. The timing matters. You see here, this is the longwall method of coal mining. When it was first introduced in England in the 1800s, the miners refused to go down in the mine. Flat out refused to go. So it used to be, originally, you'd chop the coal at the face, you'd put it in a little cart. Boys, little boys, would push the cart up to the mouth of the mine. Longwall method of coal mining, everybody who's working at the rock face is in a team. Everybody who's shoveling it into the coal containers is a team. Everyone who's pushing it up to the surface is a team. Coal miners said, I'm not going in. Because it's dangerous. And the teams, when it was me at the face and Stephanie shoveling the coal and Hans pushing it up to the top, we were family members. They were brothers. They were uncles. They were sons. If there was a problem, I knew my uncle would get me out. If I'm now on a team with somebody who, by the way, claimed that they were going to buy my sheep for four bushels of barley and they only delivered three ten years ago, they're not going to get me out of that mine. They refused to go in. Now, they reorganized, they've changed the culture, they put in safety, and they can go in. Think about collective action by multiple parties. If you have differing goals, you're going to create conflict. You have shared goals that will energize the design, development, deployment, and use of new technologies. If we're trying to figure out whether the building is occupied so that we can reduce energy use, we have security cameras in there, we can reduce energy use. But we might also have some issues about privacy. These are conflicting goals. I can predict. I can predict that self-driving cars, the technical problems are going to be fixed way before we ever see them on the road. The legal challenges on that are incredible. If you're in an accident and you kill somebody in an autonomous vehicle, if the autonomous vehicle kills somebody, who's at fault? The company? The person who was in the driver's seat but was told, only take over when something seriously bad happens? What if you're the passenger? What kind of liability do you have? We have no idea. We're going to have to sort all this stuff out before it can ever happen. To create smart and ethical cities means supporting communities as complex socio-technical systems. Not just dropping sensors into a physical built environment, but really thinking about What, how does this system work now? Who's important? How are they being heard? Technologically involved change is complex and uncertain. You need to look at it over time and in context. There's a reciprocity and co-evolution of the interaction and the outcomes. That means what works in Vienna is not the same as what's going to work in West Baltimore. You can't have one size that fits all. The vendors would love to have one size that fits all. Here's a solution, here's a solution. You get a solution, you get a solution, you get a solution. Your solution is going to be different from my solution. There's a lot of hand stitching, a lot of customization that has to happen. If you look at the networks of institutions, of people, the technologies that influence that design, development, deployment, uptake and uses of the technology. You can see fault lines. You can see patterns. You can see who's going to be pushing issues and who's not going to be pushing issues. You can predict where things are going to happen. Think about what parts of the system are technological and what parts are what I call complementary assets. You can have a car, but do you have roads? What do you need to actually make that technology function? If you've got a technological change but you don't have the complementary assets in place, it's not going to be effective. The other thing to remember is that smart cities benefit those who talk with the government. Who does the government talk with? When I talk to the mayors in the cities around College Park, they hear a lot from the companies. They hear from the vendors, and they try and hear from the residents. They have town hall meetings. They have public hearings. They have comment periods. They have social media. They have websites. They're emailing. They're texting. They're using Twitter. It's not good enough. The residents are still shocked. Why? The residents in West Baltimore don't have the Wi-Fi connectivity to be hanging out on the Baltimore... city website. That's not their life. That's not their lived experience. And I can tell you the people in West Baltimore are not going to walk into a building that looks like that. Happens to be the council chamber, the chamber of city council building in Calgary, Canada. But oh my gosh, that's intimidating. It does not look inviting to me. And the policies, when cities do talk to people, they talk to a subset of people, a smaller group of people. They tend to be wealthier, better educated. They have the time to be involved. If you're a single mother with small children with a long commute and you're working a couple of jobs and you don't have a babysitter, you're not coming to the town hall meeting. You're not there to have the conversation. And so we create... policies that work for the people we're talking with. But the policy that works for the vendors may not work for the residents. Policy that works for the urban residents may not work for the rural residents. Policies that work for one type won't work for another. Things that work for a 40-year-old man with a college degree don't work for an 80-year-old. They don't work for an eight-year-old. They don't work for people who've only been here a year. We have new cars in our underground in the metro. It's absolutely hysterical. They didn't want to have a lot of congestion near the doors. So they've got a lot of that overhead pipe you can hold on to. If I reach like this, I can touch the pipe. I can't reach it. I'm not eight, but if I were eight, I definitely wouldn't be able to reach it. How do you expect kids to take the subway to get to school? They can't hold on. They can't be safe. We didn't design it for them. What about people with mobility problems, with cognitive problems? You look at the interfaces, and people with dementia, people with Alzheimer's, they can't use these technologies. People who can't see. People who can't hear. A lot of these things, they just can't navigate. People who are unemployed, people who are working illegally, people who don't know the language. They're going to need different policies. Actually, they asked people in Atlanta, Georgia, the homeless people, what they most wanted for their technologies. Most important piece of technology for homeless people is a cell phone. They all have cell phones. 90% of them have cell phones. They need a place to charge them. They can't survive without a cell phone. That's how they keep in touch with the places they get benefits, with their family. That's their connection to the regular world. So smart and ethical cities have to be livable for everyone. That means bringing in people who are disadvantaged, attending to their needs, paying attention to the needs of people who are not like you. This actually, interestingly, spurs innovation. If you want to come up with something cool and different, go talk to someone who's not like you. One of the most amazing innovations in the computing world. is the spreadsheet. Do you know how that got invented? It's a computer science student. He had a bachelor's in computer science. He was at Harvard. He went back to do his MBA. And he saw how hard it was to calculate things. If you change one thing early on, they'd have equations that ran around the entire room. You change one thing early on, you'd have to erase it all. And he thought, there has got to be a better way. I can fix that. It was a computer scientist who took a business school class, who found a problem that nobody in the business school had realized could be solved. And by the way, he gave it away because he thought it just ought to be something that people had. And it was what's called the killer app for personal. Before that, nobody could figure out why anyone would want a personal computer. This is incredibly, this is an incredible impact. By trying to solve a problem that's not your problem, but somebody else's problem. It's inefficient. It slows down the process. But it has got to be done. If we're going to serve the public interest, reducing unfairness, injustice, and inequality in society, it simply has to be done. Just creating technologies for the... Vendors who talk to the public officials is not a smart city. It's not having the impact that we want. It's not consistent with our ethics. If we actually took the route of understanding the lived experience of other people, taking those as challenges and building the solutions, whether they're technical or not, The technologists have to be at the table. You can't do it without them. But you need the other complementary assets. You need the interdisciplinarity to be able to take a look at the problem and craft a solution wherever that takes you. You have to pay attention to the needs of people who are disadvantaged and marginalized, need participatory processes. Need technologies that reinforce the interests of people who are living in shared spaces. Cities are odd. The only thing people who are in the same city have in common is that they're in the same city. You all have a lot in common because you're in the same university and you're all trying to get an education. But you may not have very much in common with your neighbor. The goal is to make sure you don't kill your neighbor. This is how do we actually support communities, reinforce, the interests of the people who are living in these shared spaces, if you co-design, it enhances civic engagement, it improves community resilience, and it opens the door to justice. David Hume and the Enlightenment would be very proud of us for actually practicing benevolence. But you have to get out there and you have to get your hands dirty. You have to start working with people. And that's it. Thank you, Susan, for the great talk. So now we have time for some discussion. Any questions, comments? I'm from the Vienna City Library, and I was wondering if you took a look at the smart city strategy of the city of Vienna. It's not about, how you said it, new technology for efficiency, but it's about new technology for a better life balance, a better quality of life, for a better housing. So I was just wondering, in general, if you, in your view, there is a smart city which at least tries to fulfill what you... mentioned in your talk. And my second question is, you said that in West Baltimore, people cannot participate and leave their comments for the, in the, how you say, government, yeah? Because they have no Wi-Fi. And my question would be, do you think they would participate if they have Wi-Fi? Because I don't think so, yeah? Okay, thanks. Good questions. Excellent question. It's interesting. If you look at what's written about smart cities and you look at the rhetoric, it's all about the technologies. If you look at what people are doing, the smart cities projects, they're actually working with residents. They're actually finding problems and working together to fix them. And sometimes there's technology and sometimes there isn't. This is a contested term. So this is vocabulary that people are fighting over. That's why you get 260 million definitions. One interesting feature of that, I like to talk about constructive ambiguity. That sometimes if you really nail down the definition, then a bunch of things are excluded. As long as you keep it vague, you can put things into this bucket. And cities can say, we're a smart city. We're doing, and it may have nothing to do with technologies, but they get bragging rights, which is awesome. It's great to give, because a lot of what they need is to be able to say that they're doing important things. So absolutely, there are a lot of smart cities projects that are going forward, but they are problem-focused. And the solutions sometimes include technology. They're not technology-focused. It's the for-profit companies that are pushing the technology-focused, and they're controlling a lot of the conversation in the news media and in various outlets about what smart cities are. And the second question... Oh, yeah, no, they would absolutely... West Baltimore residents, there is no way that they would go on the website. I can tell you that categorically. It's, even with Wi-Fi access, it's a much deeper problem. The only way we got people to talk to us is on the research team, we included Sherry Parks, who has been deeply engaged in the West Baltimore community her entire life. Was a radio, kind of local radio host for a radio show. And she grew up there. Her family grew up there. She had connections with the social groups that work there. And so, yeah, we just barely even got access there. Interestingly, they have a 3-1-1 system there. If you dial 3-1-1 on your phone, you can report when the roads are broken, traffic light is out. In Baltimore, in Boston, poor people don't report. In Baltimore, poor people report more than rich people do. Why? Again, context matters. In West Baltimore, they think, well, my local representative isn't going to do anything, so I'm going to go right to the top and use the 311 system. Companies that are trying to sell you software to analyze the 311 data, don't understand that distinction. They don't understand that nuance. So you're going to get it wrong for both groups. Yeah, it takes deep and prolonged engagement. Yeah, hi. I'm actually working for Siemens, so thank you for mentioning Siemens. And I was just passing by. So my question actually is, what you're calling for sounds pretty disruptive to me. So how do you want to break this mechanics? I mean, companies are there to make money. Governments are elected to serve the needs of the people. But how can this actually be changed? And usually the companies... The vendors have the knowledge of the technology. The governments very often don't. So there is an imbalance. And what are your ideas of changing that? Excellent question. And I do have some ideas. As I said, businesses are doing exactly what we've told them to do. But in this situation, what we need to do is figure out how do we align the interests of business? with the interests of people. And it's going to mean that there are going to be some hard changes. But it comes down to the question of whether society is here to serve business or business is here to serve society. And I actually think Siemens can still make a profit if we can align the interests. Because for businesses to be profitable, what they need is a set of rules within which they operate. I think actually a real free market where there are no rules is much harder for businesses. A lack of predictability is really terrifying for businesses. That's why they actually want a strong legal system. They want a strong banking system. That's why they don't go put their facilities in Mogadishu. Failed states are not good for businesses. Businesses have rights granted by society. They have a right to enter into contracts, to be legal entities, to use the... It's not something that a rook had. This is something that we created and that actually France created later than England did. Companies didn't just happen. Governments make... that allow contracts, that allow businesses to be legal entities. When there are rights, there are also responsibilities. And I think that we can actually put in place some forms of regulation that would improve the alignment between the interests of people and the interests of businesses. And good businesses will still be able to be very profitable. under that set of alignments. What it will look like in Vienna, I don't know. We could do something like the legal system does in the U.S., where you have a right to... Big companies, big legal firms do what's called pro bono, and there's a lot of social pressure. It means for free. There's a lot of social pressure. They actually report how many hours of for-free legal advice have you provided. by your company. And it had better not be zero. That's not acceptable. They have a right to counsel for criminal cases. If you're poor and you can't pay, you get a lawyer appointed to you by the court. So I don't know if it's going to look like pro bono smart city work on the part of Siemens or if it's going to look like regulation of some sort. But I think there are areas that we can... have movement in and still be successful. There's someone in the back. I think one of the important points you made was reminding us engineers that people tend to use technology in a different way than we would use it. But you made the statement in a very strict sense, saying, okay, terrorists, for instance, have used technology in a way we never did imagine. Is this really a systematic problem? Or couldn't we have the imagination of an airplane crashing into a skyscraper in New York or into illegal persons using Bitcoin if that's an anonymous way of doing transfers? Or is it just that we are simply not caring about it in the way we should? I would say yes, that part of it is a failure of imagination and part of it is a failure of attention. So I, there's a group in my faculty that works on socio-technical cyber security and they actually, the stuff that's unclassified that they can talk about is terrifying and I choose not to work in that field because of it. But yeah, part of it is a lack of imagination. I really do think so. And part of it is they can imagine it, but they think it's too unlikely. That doesn't even have to be a particularly technological solution. When they had the tidal wave in Japan, and they had actually put the power supply in the basement, what did you think was going to happen when you had a flood, right? In a nuclear reactor, you put the power supply in the basement. They had a lack of imagination that that could actually flood and what would happen. The Boeing 737. That was a lack of imagination. And a lack of attention. And part of it was business profit because they were supposed to have three sensors and they took one of them out because it would reduce the cost and they did not. They wanted to sell the plane by telling airlines that their pilots would not need additional training. So it was total cost of ownership. We could actually make that lower, and it made an incredibly unsafe plane. It's a complex system, and you need to think about the various parts of it. And, yeah, people have a failure of imagination, and they don't pay attention because they think it's improbable. But if it's truly catastrophic, even if it's improbable, you've got to pay attention to it. In your view, just now, what are examples of best practice of smart cities? Copenhagen? Vancouver? Just some examples, please. Cities that are doing it well. It's interesting. As I say, I think about smart cities projects more so than cities as a whole. Some of the projects are more successful than others. I think the cities that have a tradition of engaging residents and engaging their citizens, engaging their people, are being more successful. We're seeing Portland, Oregon has actually pushed back against the vendors and said, no, we're going to own the data, not you, or you're not putting that stuff in here. They actually identified like a dozen dimensions. It's a smart city if it is sustainable, if it is healthy, if it is, they actually had outcome variables and then looked at what are projects that would move them toward those outcome variables. They're requiring an impact statement. Before you do a smart cities project, who... Who are all the groups that are going to be impacted? Who's going to be affected by this? And is the impact going to be positive or negative? What are you going to do to address the negative impact? So Portland, Oregon has taken a very interesting approach to it. Is it going fast? No. But they're getting people involved and they're getting people engaged. What, two years ago, a year ago, people would have said Hong Kong's doing pretty well? Now, maybe not so much because we're seeing the negative side of the technologies that they're using. You know, I haven't looked into Singapore recently to see what they're doing. What do you know about what Singapore is doing? Nothing. Yeah. So maybe one last question. What can universities do? What can universities do? So that's an excellent question. One thing is to get out of your local community. Get out of just talking to the people who are on the same hallway as you. One of the things I loved about working at the National Science Foundation is all the sciences were together. be able to go to talks about massively open online classes and then go to talks about how we know what percentage of Neanderthal DNA modern humans have. And then go from that to looking at the dead zone in the Gulf of Mexico, which is an area that has epoxidics, not no oxygen. And nothing can grow there. It's at the mouth of the Mississippi River. And theories about, why it's starting earlier every year and lasting longer. Be more of an omnivore. Go read other stuff. Go talk to other people. What we find, people always think about doing interdisciplinary collaborations, that what you need is kind of a Facebook or a Tinder where I know... how to do ethnography, and you know how to make sensors, so I'll find you in a database, and we'll decide that we want to do something together. That's not how scientists do collaborations. They meet each other, they decide whether they like each other, and if they like each other, they find something, they find a project they can work on together. How do you create situations where scientists run into each other, faculty run into each other? It's becoming more and more of a problem, certainly in the U.S., because we've lost a lot of social organizations. We used to have amateur athletic leagues where people would meet each other, where you'd go play football. And we had benevolent societies. You'd have the Shriners. You'd have the Elks. They'd run into each other. You'd run into people at church. that you didn't see otherwise. We've lost a lot of that in the U.S. We're increasingly in our own bubbles. So what can you do? Can you volunteer at a homeless shelter? It's actually interesting. As I was coming to Vienna, I was looking online to see what kind of stuff you could do. You can actually get a walking tour of Vienna given by someone who's homeless. Homeless or drug addict. I think those are the two categories they have. How many of you have taken them? Was it good? There's another... There are layers of worlds out there. And there are ways of coming into contact with them. But think about how to do this. People I know... Lab managers at University of Central Florida said it's an interdisciplinary group. And he made sure that they had a weekly seminar and that they had food. And cookies didn't work because people just came, they grabbed the cookies and they left. Ice cream sundaes worked because they had to, you know, go with the ice cream, put it out here, put little sprinkles on. Anywhere they had to construct their own snack worked. But you need to get people together. Get them talking so that they stay in contact long enough to know if they like each other and want to work on a project together. Take seminars in other areas. Wander around and see who's here. Walk into some place you never thought you'd want to, well, not the Calgary City Hall, but some place you never thought you'd want to be and see what you can see. Thank you. Again. And so to summarize, it's about policy, not only technology. Not just technology. You can never change just one thing. So I wanted to announce, before you leave, the next talk in this series, it will be in two weeks. It will be in another room, but also in this building. it will be by Gerfried Stocker the artistic director of Ars Electronica with the title Humanizing Technology Through Arts so thanks again Susan and see you in two weeks",
+  "segments": [
+    {
+      "start": 0.272,
+      "end": 23.84,
+      "text": "So welcome to the lecture series on digital humanism. In April this year, we from the Faculty of Informatics here at TU Wien organized together with the Vienna Science and Technology Fund and with the city of Vienna a workshop with more than 100 participants from different countries and different disciplines."
+    },
+    {
+      "start": 23.84,
+      "end": 52.912,
+      "text": "And so the goal of this workshop was to reflect the complex interplay of technology and humans, and more importantly, to think of ways how we could influence this interplay in a positive way for a better society. The Vienna Manifesto on Digital Humanism as a call for action and reflection in this regard is one outcome of this workshop."
+    },
+    {
+      "start": 53.168,
+      "end": 82.576,
+      "text": "And so you see it everywhere here, so you can take one, you can read it, and you can support it by going on the website and sign it. And yeah, so the link to the website you find on the printout. And another outcome of the workshop is a lecture on digital humanism for master students that is taking place now here at TU Wien, but we organize it together with the University of Vienna."
+    },
+    {
+      "start": 82.576,
+      "end": 105.68,
+      "text": "And the public part of this course is now this public lecture series, which is also supported by the Vienna Science and Technology Fund. Yes, and today this lecture series starts, and I'm very honored to welcome Susan J. Winter as the first speaker of this lecture series."
+    },
+    {
+      "start": 105.84,
+      "end": 130.384,
+      "text": "And Susan is Associate Dean for Research and Co-Director of the Center for Advanced Study of Communities and Information at the University of Maryland College of Information Studies. So she has a background in business administration and information systems, so she has a PhD in that area from the University of Arizona."
+    },
+    {
+      "start": 130.384,
+      "end": 159.568,
+      "text": "But she also has a background in organizational psychology, where she has a master's degree from the Claremont Graduate University and also a bachelor's degree from University of California at Berkeley in industrial and organizational psychology. Her research focuses on scientific data work and new forms of cooperative production, living in smart and connected communities."
+    },
+    {
+      "start": 159.568,
+      "end": 188.784,
+      "text": "information and communication technologies and new forms of work, and ethics and emerging technologies. So her work has been supported by the U.S. National Science Foundation and by the Institute of Museums and Library Services, and she has received a high number of competitive grants, a lot of awards, and many recognitions. She's in the editorial board of different renowned journals."
+    },
+    {
+      "start": 188.784,
+      "end": 218.576,
+      "text": "And she's the editor of the computing ethics column of the communications of the ACM. And now we will hear her talk with the title, Kuibono, a sociotechnical view of smart cities. Thank you for that lovely introduction. Can you all hear me in the back? We were fooling around with microphones earlier."
+    },
+    {
+      "start": 218.928,
+      "end": 248.112,
+      "text": "So if it ever doesn't work, start making hand gestures in the back there. Yeah, so I'm Susan Winter, and I actually have been looking at smart cities for a little while and looking at who benefits. My background is interdisciplinary, and so looking at this from a computer science perspective, from an organizational psychology perspective,"
+    },
+    {
+      "start": 248.112,
+      "end": 272.224,
+      "text": "I bring a different sort of lens to this. I guess the first question as we think about who benefits is to ask, why do we care who benefits? Basically, the question of who benefits is one of the oldest questions in ethics. And as such, we look at values."
+    },
+    {
+      "start": 272.224,
+      "end": 300.256,
+      "text": "Ethics, what society says is acceptable. Society says some things are just absolutely not acceptable. No fraud, no theft, no murder. But then there are lots of different ethical frameworks. So you may recognize David Hume from the Scottish Enlightenment, and he said benevolence and social virtue are important. That we should be concerned about others and our interrelations with each other, not just because it's good for them."
+    },
+    {
+      "start": 300.256,
+      "end": 329.056,
+      "text": "but because it's terribly important for us. And so we should practice compassion, generosity, and service because we're all part of the same society. You may also ask, why do I care who benefits? My goal has always been to look at quality of life. And within that, I focused on quality of work life. And within that, looking at..."
+    },
+    {
+      "start": 329.056,
+      "end": 352.208,
+      "text": "technology and work practices. Why? Because I did my undergraduate degree at UC Berkeley and was doing my master's in organizational psychology at Claremont, and it seemed like there were these things showing up that could really affect quality of work life. These computer things, these personal computers were coming into workplaces."
+    },
+    {
+      "start": 352.208,
+      "end": 380.784,
+      "text": "Robots were coming into manufacturing facilities. Seemed to me like this could have a real impact on quality of work life. Turns out they have a real impact on quality of life as well. Not just because work affects, technology affects your work life and your work life affects your life satisfaction, but also because these things have actually infiltrated into our lives. So I did..."
+    },
+    {
+      "start": 382.192,
+      "end": 410.864,
+      "text": "How did I come by this interest in quality of life and quality of work life? It's really, I think, stems from my parents and my grandparents. My mother's people lived in West Virginia in coal country. They weren't miners, but their classmates were. That was terrible work. There's an 11-year-old miner in 1908. My father's father..."
+    },
+    {
+      "start": 410.864,
+      "end": 440.336,
+      "text": "was in the garment industry in New York City. He did furs, pelts. That was terrible work. Not because the work itself, but the way we organized it and the way we managed it and the way we controlled it. I spent 20 years as a faculty member in colleges of business and doing things, working in industry, working for Duke Energy, being a program manager, a project manager."
+    },
+    {
+      "start": 440.336,
+      "end": 469.76,
+      "text": "And what I discovered, it took me a long time to learn it, I'm not very smart, I actually don't care about corporate profits. I actually don't care about shareholder value. That made me a very bad fit for business schools. I would have been okay as a fit for business schools in the 1950s, but in the 1970s, Milton Friedman and the Chicago School of Economics was very influential in arguing"
+    },
+    {
+      "start": 469.76,
+      "end": 499.632,
+      "text": "that the only goal of business is to make profit and provide shareholder value. That's what drove Reagan. That's what drove Thatcher, drove a revolution in business. I actually really don't care about that. I do care about quality of life, and I love teaching because I love watching the light bulb go off over people's heads, which means I should not be in industry. I should not be in business. I spent four years at the National Science Foundation."
+    },
+    {
+      "start": 499.632,
+      "end": 529.168,
+      "text": "The agency in the U.S. that funds 80% of basic computer science research. They also fund research in other sciences as well. I was in the Office of Cyber Infrastructure, where they funded the big supercomputers. And then I actually cared about people. They found that rather surprising. And then for three years, and then one year in Social Behavior and Economics Directorate, where I actually cared about technology, which..."
+    },
+    {
+      "start": 529.168,
+      "end": 555.824,
+      "text": "they found kind of confusing. I found that the interesting stuff I was funding, most interesting stuff was coming out of things called Colleges of Information Studies. Not out of business schools, not out of computer science. So when I left NSF and National Science Foundation, you can come for four years and then you time out. You go back into academia."
+    },
+    {
+      "start": 555.824,
+      "end": 581.36,
+      "text": "I took a job at the University of Maryland's College of Information Studies. Colleges of Information Studies are a little bit weird. We actually care a lot about quality of life. At the University of Maryland, our goal is to harness the power of information so that everyone can improve their world. Sometimes that means you have to change the information."
+    },
+    {
+      "start": 582.416,
+      "end": 612.272,
+      "text": "Sometimes it means you have to change the technology. Sometimes it means you have to change the people. But it's about getting people information to empower them. And we focus on information, how it can be used by people, by teams, by organizations. What do I mean by changing the information? Originally, we were a library school. The information was in books."
+    },
+    {
+      "start": 613.584,
+      "end": 640.112,
+      "text": "Information has escaped into the wild. A lot of that stuff is digitized. A lot of those things are not in libraries, archives, and museums. Sometimes we have to change it. If you're blind, having written material doesn't help. You need to make it something that's spoken. If you don't have fingers, you can't use the touch screen. If you get old, your fingers dry out."
+    },
+    {
+      "start": 640.304,
+      "end": 668.176,
+      "text": "and the touchscreen doesn't register your fingers anymore. How do we change the technology so that people can use it? Sometimes you have to change the people. If you can't read and write, you can't get access to the information. So, yeah, for over 40 years, we were a library school. Books were the technology for information. But we really take a sociotechnical approach. We're trying to solve problems."
+    },
+    {
+      "start": 668.176,
+      "end": 696.848,
+      "text": "That makes us interdisciplinary. We have people on the faculty with degrees from computer science, from computer engineering, from physics, from English, from journalism, from critical feminist theory. We've got all kinds of people. And we provided information as libraries from the beginning, not just..."
+    },
+    {
+      "start": 696.848,
+      "end": 725.136,
+      "text": "in libraries, but we had bookmobiles for places where there were roads. And we delivered books on horseback where there weren't roads. We still have the bookmobiles. The information has escaped into the wild and we're trying to figure out now how do we follow it? Where do we go? Disney is not a viable company without their digital assets."
+    },
+    {
+      "start": 726.416,
+      "end": 756.304,
+      "text": "Without the movies, they don't have a company. Amazon's got an incredible amount of information. Facebook has an incredible amount of information. How do we engage this? We work to increase the positive impacts and decrease the negative impacts. But we are always sensitive to questions of equity. So when I look at technology and I look at smart cities, I think about what's the information and I think about equity. How are you empowering people?"
+    },
+    {
+      "start": 757.456,
+      "end": 785.552,
+      "text": "We all remember a time a librarian helped us. Why did that librarian help you? Because you needed help. That's what we do. We focus on groups that need help. I went to an iSchool about the time that the Smart Cities movement got started. So I thought, okay, I know about information. Smart Cities are about information. Let's figure out what this is."
+    },
+    {
+      "start": 785.68,
+      "end": 808.736,
+      "text": "I searched smart city definition on Google a couple days ago. 219 million results. Okay, nobody really has a definition of smart cities, but I've picked a couple of good ones here. Wikipedia is generally, the Wikipedians are pretty diligent in making sure that they collect the information that's needed and present it."
+    },
+    {
+      "start": 808.736,
+      "end": 834.416,
+      "text": "And they're saying an urban area that uses different types of electronic Internet of Things sensors to collect data, get insights from that data, manage the assets, resources, and services efficiently. You guys all know what the Internet of Things is, right? Small, lightweight sensors, long battery life, networks for moving to 5G with low latency, allowing real-time control."
+    },
+    {
+      "start": 834.416,
+      "end": 863.728,
+      "text": "You've got data, metadata, analytics, reports, notifications, visualizations. Stop me if any of this seems surprising. Who's doing this? Engineers, computer scientists, material scientists. They're working on the cutting edge in universities like this, in companies like Siemens. They're creating new technologies to improve efficiency. Well, maybe Wikipedia is just one example."
+    },
+    {
+      "start": 863.728,
+      "end": 891.456,
+      "text": "How about Technopedia? The first thing that comes up actually on Google if you search for smart cities definitions. It's basically the same thing. They're all saying new technologies for efficiency. That that's what smart cities are all about. And yeah, it should enhance quality of living for citizens, but through smart technology. So the technology is the one that's driving it."
+    },
+    {
+      "start": 891.456,
+      "end": 916.496,
+      "text": "It's going to be more efficient and it's going to make everybody so happy. There are a couple of different ways of approaching this in terms of smart cities technologies. I always look at them and think about whether the goal that's being pursued, what's the role of the people? Are the people being engineered out of the system or are they central to the system?"
+    },
+    {
+      "start": 916.912,
+      "end": 940.832,
+      "text": "And we see as you look at the various users of these smart cities technologies, for some of them, we have engineered people or trying to engineer people entirely out of this system. So the sensor senses the amount of traffic and it automatically tells the traffic signals to change. Smart buildings, they sense whether there's somebody in them. And if there isn't, then..."
+    },
+    {
+      "start": 940.832,
+      "end": 968.912,
+      "text": "They reduce the amount of heating, ventilation, air conditioning, and they turn off the lights to save energy. No people involved. By the way, we have that in our building. More trouble. You guys have that? You're sitting there working at your desk and the lights go off. I'm still here. We've had people who've taped it over because the sensor is actually, they're not line of sight of the sensor. It's hitting the back of the screen of their computer."
+    },
+    {
+      "start": 968.912,
+      "end": 998.528,
+      "text": "So yeah, those things are awesome for people, not so much. Self-driving cars. We've engineered the people out of the system. Sometimes the users are city planners. So they're using the information to figure out where road construction should happen, where parking spaces should be, what the tolls ought to be based on usage. So if it's very busy, they did this recently on one of the main freeways coming into Washington, D.C. If you're trying to come in,"
+    },
+    {
+      "start": 998.528,
+      "end": 1028.208,
+      "text": "during rush hour in the morning, and you're a single person in the car. Highest it got up to was $48 to get into the city. It's hit that more than once. Yeah, people were really shocked. Sometimes the users are government workers, where they'll get a text or an alert saying, we need you to go empty this trash bin. It's full now. Sometimes the users are residents. They're putting up kiosks with Wi-Fi."
+    },
+    {
+      "start": 1028.208,
+      "end": 1053.568,
+      "text": "local maps, internet access, the ability to charge your device. So there's some variance in terms of the technologies that we have. And what are they promising us? Technical innovations are supposed to lead to these desired solutions. So if we have self-driving cars, then we're going to reduce congestion, parking spaces, fuel use."
+    },
+    {
+      "start": 1053.568,
+      "end": 1081.68,
+      "text": "Traffic cameras and sensors adjust automatically. We're reducing congestion, pollution, fuel use, increasing toll revenue. Buildings with the cameras and sensors conserve energy, reduce costs for government buildings, compacting solar-powered trash cans that signal when full, reduce the collection frequency, odors, rats, government costs. These are all good things. So who's creating these smart cities?"
+    },
+    {
+      "start": 1082.128,
+      "end": 1111.648,
+      "text": "Because whoever's creating them affects who's going to benefit. If you're creating it, you have some power over who's going to benefit. So who's creating the new Internet of Things sensors, information communications technology, data insights algorithms, engineers, computer scientists? Who's disseminating the technology? These are companies seeking profits as vendors. They're going to sell it to the city."
+    },
+    {
+      "start": 1111.648,
+      "end": 1136.72,
+      "text": "We're not seeing a lot of companies that are just going to give this away. Remember Milton Freeman saying, nope, short-term profits and shareholder value is what drives this. And then city management, public administrators are actually making those purchasing decisions. These are the ones that are generally the people at the table in creating smart cities."
+    },
+    {
+      "start": 1138.416,
+      "end": 1167.952,
+      "text": "So if we're thinking about who benefits and thinking about the ethics and the values, I thought, well, what are the professional codes of ethics of these people say about what they ought to be doing, what their goals ought to be? And these are awesome ethical goals. I was so happy to see these. National Society of Professional Engineers, engineers' impact on the quality of life for all people."
+    },
+    {
+      "start": 1167.952,
+      "end": 1196.656,
+      "text": "They should pursue fairness and equity, hold paramount the safety, health, and welfare of the public, serve the public interest. Association for Computing Machinery, a lot of computer scientists belong to this, go even further. They say when the interests of multiple groups conflict, the needs of those less advantaged should be given increased attention and priority. Not maybe, should be. Companies seeking profits?"
+    },
+    {
+      "start": 1197.232,
+      "end": 1225.072,
+      "text": "Yeah, they have no codes of ethics. Milton Friedman said they didn't need those. They needed a free market. Okay, I'm blaming him a little unnecessarily. He wasn't the only one behind it, but he's widely, he got the Nobel Prize, so I guess I can blame him for it. American Society for Public Administration. Strengthen social equity, reduce unfairness, injustice, and inequality in society. These are all really great goals."
+    },
+    {
+      "start": 1225.328,
+      "end": 1253.936,
+      "text": "These are the kinds of things that colleges of information studies and librarians care about. These are the kinds of things I care about. These are the kinds of things that David Hume and the Scottish Enlightenment cared about. This is benevolence. So perhaps an ethical smart city would be an urban area that uses technologies, data, and insights to manage efficiency, but also to serve the public interest by reducing unfairness, injustice, and inequality in society."
+    },
+    {
+      "start": 1255.632,
+      "end": 1274.832,
+      "text": "You guys are looking a little skeptical. So what kinds of problems do smart cities actually address? Congestion, parking problems, garbage, air pollution, energy wasted on lighting, HVAC for empty buildings."
+    },
+    {
+      "start": 1274.832,
+      "end": 1304.768,
+      "text": "These are the kinds of things that smart cities, okay, admittedly, that's New Delhi, and that's not going to be fixed with smart traffic lights. That's burning off the stubble from the adjacent fields that's actually choking New Delhi, but it's a great picture of air pollution, you must admit. So these are the kinds of problems we're trying to solve. Who benefits? Does this serve the public interest? Yes, absolutely. If you're an engineer, computing professional, a company seeking profits, or a city,"
+    },
+    {
+      "start": 1304.768,
+      "end": 1334.384,
+      "text": "Does this reduce unfairness, injustice, and inequality in society? Here's a picture of a part of a city in West Baltimore, Maryland. Can technology to improve government efficiency solve problems for them? Will it solve their problems? Doesn't look like it to me."
+    },
+    {
+      "start": 1334.384,
+      "end": 1363.392,
+      "text": "Have you ever seen the movie, the show, Series of the Wire? About drug dealing, and it was really pretty distressing. That was filmed in West Baltimore. So we went and asked people in West Baltimore, what do you want in terms of smart cities? One of my colleagues got money, actually, from the National Science Foundation. I wasn't on that proposal. But they went and talked to the people in West Baltimore and said, huh."
+    },
+    {
+      "start": 1363.392,
+      "end": 1391.808,
+      "text": "Smart cities. What do you actually need? Do you need smart traffic lights where there's no congestion? Do you need smart buildings? This housing needs something much more basic than automated control of the lighting to reduce energy use. Do you need Wi-Fi access at a public kiosk? You could go there and pay your bills. And they said two things. One is no."
+    },
+    {
+      "start": 1391.808,
+      "end": 1421.104,
+      "text": "Well, both of them were no. No for two reasons. One is, it is not safe to be standing at a kiosk in that neighborhood. And the other is, why should I have to do my business on a public street when everybody else gets to do this in the privacy of their own home? Both good points. The being shot at seems to me like a more pressing problem. Do they want compacting trash cans? Being a trash collector is a good paying job."
+    },
+    {
+      "start": 1422.128,
+      "end": 1450.384,
+      "text": "Those are the kind of jobs people in our neighborhood depend on. Why would we want to get rid of those jobs? Self-driving cars? They can't afford any kind of car, much less a self-driving car. What about self-driving buses? Absolutely would never get on a self-driving bus. Well, for one thing, they didn't like them because bus-driving jobs are good jobs."
+    },
+    {
+      "start": 1450.672,
+      "end": 1480.304,
+      "text": "that people in our community depend on. But the bus driver isn't there just to drive the bus. The bus driver is also there to keep order. How do I know I'm not going to get robbed if I'm on a bus without a bus driver who is a person of authority who will keep me safe? The smart city solution didn't make any sense to the poor people in West Baltimore. What did they want?"
+    },
+    {
+      "start": 1483.536,
+      "end": 1511.76,
+      "text": "free or affordable Wi-Fi. On the bus, because they have long commutes to and from work, to and from school, they can spend over an hour on the bus. They've got no Wi-Fi. Wi-Fi at home with no unexpected data charges so they don't get surprised at the end of the month when they do not have the money to pay it. They want the Wi-Fi to do their homework, to be able to..."
+    },
+    {
+      "start": 1511.856,
+      "end": 1540.912,
+      "text": "learn something online to improve their skills, to be able to participate in modern life. Interestingly, they had some really interesting solutions. There's one woman who has open Wi-Fi, and so all her neighbors congregate on the stairs outside her apartment. The kids come and do their homework. But if it gets too slow, she has to open the door and shoo them away because it's gotten too slow. In many rural areas in the U.S.,"
+    },
+    {
+      "start": 1541.424,
+      "end": 1570.688,
+      "text": "Parents will drive their kids to the parking lot of the public library for them to do their homework. This is something that they fundamentally need, but something that businesses are not going to make money on. They wanted community empowerment. They wanted access to the feeds from the cameras and the microphones so that they knew what kind of crime was going on in their neighborhood. They didn't want it to go to the police with the whole police surveillance thing going on."
+    },
+    {
+      "start": 1570.688,
+      "end": 1599.168,
+      "text": "West Baltimore has had some bad relations with police in the past, in the relatively recent past. There was a court case. It didn't go well. There were deaths. It was not good. There was rioting afterwards. So why the mismatch? Why is it the smart city's rhetoric is talking about solutions that have nothing to do with the problems that these people are experiencing?"
+    },
+    {
+      "start": 1599.168,
+      "end": 1623.28,
+      "text": "and the solutions that they want. Fundamentally, cities are not machines. You cannot engineer them for efficiency. They are living, vibrant, remarkably uncontrollable entities as the government in Hong Kong is discovering."
+    },
+    {
+      "start": 1624.592,
+      "end": 1650.128,
+      "text": "A quarter of the population of Hong Kong is out on the streets protesting every day because cities are not machines that you can engineer. They're complicated, they are socio-technical, and they are emergent. Things happen that you didn't predict. You got some, you can play the odds."
+    },
+    {
+      "start": 1650.128,
+      "end": 1679.408,
+      "text": "You can have a sense of the probabilities, but you may not know exactly when they're going to happen and exactly what the moves are going to be. Urban areas are also hard to manage. Their boundaries are dynamic. How do you know when you're outside of the Vienna city area? Boundaries also often cross multiple cities, counties, states. An urban region may spill over into multiple municipalities."
+    },
+    {
+      "start": 1679.504,
+      "end": 1708.096,
+      "text": "And they're porous. You have residents. You have people who come in to work and then they go out. And you have visitors. You guys have tourists here. You're besieged by tourists, I can tell, every year. It's a different city then now, isn't it? Urban planning is traditionally top-down and efficiency-focused. These are bureaucrats and they're trying to be good stewards of..."
+    },
+    {
+      "start": 1708.096,
+      "end": 1734.992,
+      "text": "The money that they get from the taxes. To not waste it. To spend it wisely. Smart cities. As I go talk to the mayor of Baltimore. And we've actually got a round table. With the mayors of all the cities. Little towns that surround College Park. Where the University of Maryland is. And they tell me. Smart cities are being driven by the technology companies."
+    },
+    {
+      "start": 1735.568,
+      "end": 1762.048,
+      "text": "They're seeking profits by selling to municipal leaders, not the residents. They're providing data to inform the policy makers, not the residents. That's not their business model. I take a sociotechnical perspective. What does that mean? So from a sociotechnical perspective,"
+    },
+    {
+      "start": 1762.048,
+      "end": 1791.12,
+      "text": "We're talking about looking at cities as a system. We're looking at organizations, people, and technologies, and they're intimately intertwined. Context matters. Collective action is important. So if you just look at the technology or just the social system or look at them both but they're side by side, you're missing important stuff. You need to look at when the technology, the people, and the organizations interact and what emerges there."
+    },
+    {
+      "start": 1791.12,
+      "end": 1819.632,
+      "text": "That's where the interesting and exciting stuff happens. This is very different from an engineering perspective on how we're going to create smart cities. This charming lady in the lower left is Denise Schmont-Besserat. She's an archaeologist who figured out when we learned how to write. She was in an archaeological dig."
+    },
+    {
+      "start": 1819.632,
+      "end": 1848.56,
+      "text": "from 9,000 years ago in the city of Uruk, Mesopotamia. And Uruk had really strong walls, strong city walls. It lasted for a very long time. And there was a chamber buried pretty far down that had a bunch of these. What the heck are those? Turns out those are 9,000 year, that's a 9,000 year old contract."
+    },
+    {
+      "start": 1850.096,
+      "end": 1876.72,
+      "text": "So if I paid my taxes in barley, we'd have a little symbol that was barley. If I paid my taxes by providing a sheep, we'd have a little figurine that was a sheep. And so we would actually, or if I bought a sheep from you and I paid you in barley, then we would have the appropriate number of little figurines. We'd put them in the clay vessel and seal it up."
+    },
+    {
+      "start": 1876.752,
+      "end": 1900.784,
+      "text": "So if there was any question about the contract, we'd have to break the contract open to see what was inside. You needed to be able to use clay to make this work. Not all communities could do this. You had to learn how to work clay. So there was a technological aspect to it. And they had pretty high taxes because they had to maintain the wall."
+    },
+    {
+      "start": 1900.976,
+      "end": 1927.936,
+      "text": "But this was very inefficient. These things are not stackable. They can break when you don't want them to. Once you've broken it, how do you reseal it? It's a mess. So not too long later, we wound up seeing these little cuneiform tablets that you created on wet clay with a stylus. You had to be able to split the reeds to do the stylus."
+    },
+    {
+      "start": 1927.936,
+      "end": 1957.488,
+      "text": "If you like, you can go online now and buy styluses. You can actually learn. The Khan Academy has a how to write in cuneiform course if you'd like to do it. It's a living technology. It turns out with a stylus and better ability to work clay, you get these nice tablets, and that's actually a record of barley taxes from a rook. That's why we created writing."
+    },
+    {
+      "start": 1957.936,
+      "end": 1986.928,
+      "text": "We had a social problem. We had the technology. We came up with writing as a solution. It emerged from the city government, from the problem, from the technological abilities. We don't actually know who invented it, but I think that's pretty darn cool. Organizations, people, technologies are all intertwined. When you think about a smart city,"
+    },
+    {
+      "start": 1986.928,
+      "end": 2015.584,
+      "text": "You need to think about the organizations, the people, the technologies. You need to think about the context and what people are trying to accomplish. You need to think about collective action. Who's working together? Let me unpack that for you a little bit. When you talk about technologies, people, and organizations being intertwined, you need to pay attention to cause and effect."
+    },
+    {
+      "start": 2015.584,
+      "end": 2045.296,
+      "text": "Cause and effect can go both ways. Technologies affect people and people affect technologies. Both are happening. There's a co-evolution of the social and the technical. Just because the technologist had some idea of what we were going to use things for doesn't mean that that's what we wind up using them for. Nobody invented Facebook to encourage cyber-stalking."
+    },
+    {
+      "start": 2047.344,
+      "end": 2073.936,
+      "text": "If you're a technologist creating technologies, you think about people using them the way you would use them, not the way other people might use them. This is dangerous because not everybody is as nice as you are. Not everybody has your goals. Terrorists use this in ways we didn't expect. They use all of our technologies in ways we didn't expect."
+    },
+    {
+      "start": 2074.544,
+      "end": 2103.392,
+      "text": "In my field in sociomateriality, we talk about something called affordances. So if I needed to hammer in a nail, I could get a hammer. That'd be good. I could also use the hammer to prop up a table that's got wobbly. There are affordances, things that they're easier to use for. But we have social norms about what we do use them for, but that's not what it's limited to. There's a lot of creativity out there."
+    },
+    {
+      "start": 2103.392,
+      "end": 2129.072,
+      "text": "and they will come up with things to use it for that you didn't think about. So the results are not entirely predictable, but you can foresee some things. Pay attention to the physical technology triggers. Pay attention to the actions of social groups, government, companies, news media, residence associations. Think about the context."
+    },
+    {
+      "start": 2129.264,
+      "end": 2157.104,
+      "text": "The budgets, the politics, the legal authority, geographic features, complex processes by which you develop, adopt, adapt, and use new technologies in people's social worlds. Because if they don't get adopted, adapted, and used in your social world, it doesn't matter what the technology is. It sits on a shelf, and nobody ever knows about it. Guys recognize punch cards?"
+    },
+    {
+      "start": 2157.808,
+      "end": 2185.008,
+      "text": "Okay, you've heard about punch cards. They were still around up through the early 80s. In some old library books, you'd still find punch cards. Do you know how they came up with the punch card technology? In the U.S., they have to count everybody in the U.S. every 10 years. It's called the census. And in the 1880 census, it took them eight years to count everything because the census forms were handwritten."
+    },
+    {
+      "start": 2185.968,
+      "end": 2212.368,
+      "text": "They realized that in the 1890 census, they were going to take more than 10 years to count everybody. This made the census not really very useful. So the federal government created a competition for anybody who could come up with the best machine to count these things faster. So we've got the government involved because we're trying to solve a social and governmental problem. This gentleman in the upper right, Herman Hollerith."
+    },
+    {
+      "start": 2212.528,
+      "end": 2241.552,
+      "text": "who had a background in sewing machines, absolutely brilliant engineer, graduated Carnegie Mellon at the age of like 18 or something ridiculous, came up with the punch card. You had to have cheap paper. You had to be able to machine the little holes in the paper. You had to be able to machine the little stylus. So there were technological advances. You can see it kind of looks like a sewing machine."
+    },
+    {
+      "start": 2241.552,
+      "end": 2269.776,
+      "text": "And he rented the reward if you won. You got the federal contract for tabulating the 1890 census. So he started a business. He found cheap warehousing space across the river from, actually on the same side, along the river in the District of Columbia. The space was cheap because this was the late 1880s. It was right along the Chesapeake and Ohio Canal."
+    },
+    {
+      "start": 2270.576,
+      "end": 2298.544,
+      "text": "Context matters. Geographic features matter. Late 1880s, the railroads had come in. Nobody needed the warehouse space along the canal. So he got it for cheap, and that's where he put his workshop. It's still there. You can go to his workshop. It's now the Seacatch Restaurant. You can get some nice fish there. It's in Georgetown. There's a little plaque by the men's toilet that's commemorating."
+    },
+    {
+      "start": 2298.544,
+      "end": 2326.0,
+      "text": "Herman Hollerith and the Hollerith machine. His company then merged with another company a few years later and renamed themselves the International Business Machines. It's IDM. So the history matters, the context matters. These are complex and dynamic interactions among technological capacities, social histories, situated context, human choices and action."
+    },
+    {
+      "start": 2326.864,
+      "end": 2354.064,
+      "text": "just creating a sensor and creating smart traffic lights, you're intervening in an incredibly complex system. If you don't understand that system, you can't predict what's going to happen with it. If you do understand that system, higher probability of guessing what's going to happen with it. Still no guarantees. As I say, context matters."
+    },
+    {
+      "start": 2354.672,
+      "end": 2383.84,
+      "text": "Technologies are embedded in a social context. Smart traffic lights are not going to work. I'll predict this in Mexico City. Why? They don't stop when the light is red. Why would they care whether it's a smart traffic light? They ignore it. Social context then adapts to the technologies and reshapes the technologies through the design, development, deployment, and use. My students tell me now that"
+    },
+    {
+      "start": 2383.84,
+      "end": 2410.512,
+      "text": "Visitors do not ring the doorbell when they get to your house. Do they still ring the doorbell here? Yeah, they don't in the U.S. at all. They would never answer a doorbell that was rung. They would assume it was someone selling them something or someone that wanted to rob them. What do they do instead? They text. They get there and they send a text saying, I'm here, and you open the door for them."
+    },
+    {
+      "start": 2411.472,
+      "end": 2440.208,
+      "text": "We're reshaping the technologies in a dynamic way. And looking at the technology separate from the context limits our understanding. Any of you who've done natural language processing and try to understand the nuance of language, understand the difficulties. When you say a mask in New Delhi, you guys all just thought about the air filter masks and how bad the smog is there. When I say mask in Hong Kong,"
+    },
+    {
+      "start": 2443.856,
+      "end": 2470.48,
+      "text": "25% of people on the streets protesting. They've got a lot of security cameras, and they're using facial recognition. They're using facial recognition with the intent to prosecute. People just put masks on. They have to outlaw masks. But how are you going to enforce that? It's embedded in social context, and social context matters. What would it take?"
+    },
+    {
+      "start": 2470.992,
+      "end": 2500.912,
+      "text": "to say we do facial recognition for entrance to university buildings here. Who could make that decision? What would the process be? What would be involved? That's all the context. The timing matters. You see here, this is the longwall method of coal mining. When it was first introduced in England in the 1800s, the miners refused to go down in the mine. Flat out refused to go."
+    },
+    {
+      "start": 2505.104,
+      "end": 2533.264,
+      "text": "So it used to be, originally, you'd chop the coal at the face, you'd put it in a little cart. Boys, little boys, would push the cart up to the mouth of the mine. Longwall method of coal mining, everybody who's working at the rock face is in a team. Everybody who's shoveling it into the coal containers is a team. Everyone who's pushing it up to the surface is a team. Coal miners said, I'm not going in."
+    },
+    {
+      "start": 2534.48,
+      "end": 2563.152,
+      "text": "Because it's dangerous. And the teams, when it was me at the face and Stephanie shoveling the coal and Hans pushing it up to the top, we were family members. They were brothers. They were uncles. They were sons. If there was a problem, I knew my uncle would get me out. If I'm now on a team with somebody who, by the way,"
+    },
+    {
+      "start": 2563.856,
+      "end": 2592.752,
+      "text": "claimed that they were going to buy my sheep for four bushels of barley and they only delivered three ten years ago, they're not going to get me out of that mine. They refused to go in. Now, they reorganized, they've changed the culture, they put in safety, and they can go in. Think about collective action by multiple parties."
+    },
+    {
+      "start": 2593.232,
+      "end": 2622.16,
+      "text": "If you have differing goals, you're going to create conflict. You have shared goals that will energize the design, development, deployment, and use of new technologies. If we're trying to figure out whether the building is occupied so that we can reduce energy use, we have security cameras in there, we can reduce energy use. But we might also have some issues about privacy. These are conflicting goals. I can predict."
+    },
+    {
+      "start": 2622.352,
+      "end": 2651.728,
+      "text": "I can predict that self-driving cars, the technical problems are going to be fixed way before we ever see them on the road. The legal challenges on that are incredible. If you're in an accident and you kill somebody in an autonomous vehicle, if the autonomous vehicle kills somebody, who's at fault? The company? The person who was in the driver's seat but was told, only take over when something seriously bad happens?"
+    },
+    {
+      "start": 2652.944,
+      "end": 2682.16,
+      "text": "What if you're the passenger? What kind of liability do you have? We have no idea. We're going to have to sort all this stuff out before it can ever happen. To create smart and ethical cities means supporting communities as complex socio-technical systems. Not just dropping sensors into a physical built environment, but really thinking about"
+    },
+    {
+      "start": 2682.192,
+      "end": 2711.248,
+      "text": "What, how does this system work now? Who's important? How are they being heard? Technologically involved change is complex and uncertain. You need to look at it over time and in context. There's a reciprocity and co-evolution of the interaction and the outcomes. That means what works in Vienna is not the same as what's going to work in West Baltimore. You can't have one size that fits all."
+    },
+    {
+      "start": 2711.312,
+      "end": 2738.16,
+      "text": "The vendors would love to have one size that fits all. Here's a solution, here's a solution. You get a solution, you get a solution, you get a solution. Your solution is going to be different from my solution. There's a lot of hand stitching, a lot of customization that has to happen. If you look at the networks of institutions, of people, the technologies that influence that design, development, deployment, uptake and uses of the technology."
+    },
+    {
+      "start": 2738.16,
+      "end": 2766.032,
+      "text": "You can see fault lines. You can see patterns. You can see who's going to be pushing issues and who's not going to be pushing issues. You can predict where things are going to happen. Think about what parts of the system are technological and what parts are what I call complementary assets. You can have a car, but do you have roads? What do you need to actually make that technology function?"
+    },
+    {
+      "start": 2766.736,
+      "end": 2792.784,
+      "text": "If you've got a technological change but you don't have the complementary assets in place, it's not going to be effective. The other thing to remember is that smart cities benefit those who talk with the government. Who does the government talk with? When I talk to the mayors in the cities around College Park, they hear a lot from the companies."
+    },
+    {
+      "start": 2792.784,
+      "end": 2821.76,
+      "text": "They hear from the vendors, and they try and hear from the residents. They have town hall meetings. They have public hearings. They have comment periods. They have social media. They have websites. They're emailing. They're texting. They're using Twitter. It's not good enough. The residents are still shocked. Why? The residents in West Baltimore don't have the Wi-Fi connectivity to be hanging out on the Baltimore..."
+    },
+    {
+      "start": 2821.76,
+      "end": 2850.608,
+      "text": "city website. That's not their life. That's not their lived experience. And I can tell you the people in West Baltimore are not going to walk into a building that looks like that. Happens to be the council chamber, the chamber of city council building in Calgary, Canada. But oh my gosh, that's intimidating. It does not look inviting to me."
+    },
+    {
+      "start": 2850.8,
+      "end": 2879.184,
+      "text": "And the policies, when cities do talk to people, they talk to a subset of people, a smaller group of people. They tend to be wealthier, better educated. They have the time to be involved. If you're a single mother with small children with a long commute and you're working a couple of jobs and you don't have a babysitter, you're not coming to the town hall meeting. You're not there to have the conversation. And so we create..."
+    },
+    {
+      "start": 2879.472,
+      "end": 2906.704,
+      "text": "policies that work for the people we're talking with. But the policy that works for the vendors may not work for the residents. Policy that works for the urban residents may not work for the rural residents. Policies that work for one type won't work for another. Things that work for a 40-year-old man with a college degree don't work for an 80-year-old."
+    },
+    {
+      "start": 2907.856,
+      "end": 2934.288,
+      "text": "They don't work for an eight-year-old. They don't work for people who've only been here a year. We have new cars in our underground in the metro. It's absolutely hysterical. They didn't want to have a lot of congestion near the doors. So they've got a lot of that overhead pipe you can hold on to. If I reach like this, I can touch the pipe. I can't reach it."
+    },
+    {
+      "start": 2935.184,
+      "end": 2964.96,
+      "text": "I'm not eight, but if I were eight, I definitely wouldn't be able to reach it. How do you expect kids to take the subway to get to school? They can't hold on. They can't be safe. We didn't design it for them. What about people with mobility problems, with cognitive problems? You look at the interfaces, and people with dementia, people with Alzheimer's, they can't use these technologies. People who can't see."
+    },
+    {
+      "start": 2964.96,
+      "end": 2992.304,
+      "text": "People who can't hear. A lot of these things, they just can't navigate. People who are unemployed, people who are working illegally, people who don't know the language. They're going to need different policies. Actually, they asked people in Atlanta, Georgia, the homeless people, what they most wanted for their technologies. Most important piece of technology for homeless people is a cell phone."
+    },
+    {
+      "start": 2993.264,
+      "end": 3018.192,
+      "text": "They all have cell phones. 90% of them have cell phones. They need a place to charge them. They can't survive without a cell phone. That's how they keep in touch with the places they get benefits, with their family. That's their connection to the regular world."
+    },
+    {
+      "start": 3022.832,
+      "end": 3051.664,
+      "text": "So smart and ethical cities have to be livable for everyone. That means bringing in people who are disadvantaged, attending to their needs, paying attention to the needs of people who are not like you. This actually, interestingly, spurs innovation. If you want to come up with something cool and different, go talk to someone who's not like you. One of the most amazing innovations in the computing world."
+    },
+    {
+      "start": 3051.664,
+      "end": 3079.792,
+      "text": "is the spreadsheet. Do you know how that got invented? It's a computer science student. He had a bachelor's in computer science. He was at Harvard. He went back to do his MBA. And he saw how hard it was to calculate things. If you change one thing early on, they'd have equations that ran around the entire room. You change one thing early on, you'd have to erase it all. And he thought, there has got to be a better way. I can fix that."
+    },
+    {
+      "start": 3080.368,
+      "end": 3107.6,
+      "text": "It was a computer scientist who took a business school class, who found a problem that nobody in the business school had realized could be solved. And by the way, he gave it away because he thought it just ought to be something that people had. And it was what's called the killer app for personal. Before that, nobody could figure out why anyone would want a personal computer. This is incredibly, this is an incredible impact."
+    },
+    {
+      "start": 3108.176,
+      "end": 3137.744,
+      "text": "By trying to solve a problem that's not your problem, but somebody else's problem. It's inefficient. It slows down the process. But it has got to be done. If we're going to serve the public interest, reducing unfairness, injustice, and inequality in society, it simply has to be done. Just creating technologies for the..."
+    },
+    {
+      "start": 3137.744,
+      "end": 3165.28,
+      "text": "Vendors who talk to the public officials is not a smart city. It's not having the impact that we want. It's not consistent with our ethics. If we actually took the route of understanding the lived experience of other people, taking those as challenges and building the solutions, whether they're technical or not,"
+    },
+    {
+      "start": 3165.28,
+      "end": 3190.032,
+      "text": "The technologists have to be at the table. You can't do it without them. But you need the other complementary assets. You need the interdisciplinarity to be able to take a look at the problem and craft a solution wherever that takes you. You have to pay attention to the needs of people who are disadvantaged and marginalized, need participatory processes."
+    },
+    {
+      "start": 3190.032,
+      "end": 3220.032,
+      "text": "Need technologies that reinforce the interests of people who are living in shared spaces. Cities are odd. The only thing people who are in the same city have in common is that they're in the same city. You all have a lot in common because you're in the same university and you're all trying to get an education. But you may not have very much in common with your neighbor. The goal is to make sure you don't kill your neighbor. This is how do we actually support communities, reinforce,"
+    },
+    {
+      "start": 3220.032,
+      "end": 3249.712,
+      "text": "the interests of the people who are living in these shared spaces, if you co-design, it enhances civic engagement, it improves community resilience, and it opens the door to justice. David Hume and the Enlightenment would be very proud of us for actually practicing benevolence. But you have to get out there and you have to get your hands dirty. You have to start working with people."
+    },
+    {
+      "start": 3252.464,
+      "end": 3268.176,
+      "text": "And that's it. Thank you, Susan, for the great talk. So now we have time for some discussion. Any questions, comments?"
+    },
+    {
+      "start": 3281.424,
+      "end": 3295.376,
+      "text": "I'm from the Vienna City Library, and I was wondering if you took a look at the smart city strategy of the city of Vienna."
+    },
+    {
+      "start": 3296.496,
+      "end": 3320.272,
+      "text": "It's not about, how you said it, new technology for efficiency, but it's about new technology for a better life balance, a better quality of life, for a better housing. So I was just wondering, in general, if you, in your view, there is a smart city which at least tries to fulfill what you..."
+    },
+    {
+      "start": 3320.368,
+      "end": 3347.408,
+      "text": "mentioned in your talk. And my second question is, you said that in West Baltimore, people cannot participate and leave their comments for the, in the, how you say, government, yeah? Because they have no Wi-Fi. And my question would be, do you think they would participate if they have Wi-Fi? Because I don't think so, yeah? Okay, thanks. Good questions."
+    },
+    {
+      "start": 3347.824,
+      "end": 3374.72,
+      "text": "Excellent question. It's interesting. If you look at what's written about smart cities and you look at the rhetoric, it's all about the technologies. If you look at what people are doing, the smart cities projects, they're actually working with residents. They're actually finding problems and working together to fix them. And sometimes there's technology and sometimes there isn't. This is a contested term."
+    },
+    {
+      "start": 3374.72,
+      "end": 3404.32,
+      "text": "So this is vocabulary that people are fighting over. That's why you get 260 million definitions. One interesting feature of that, I like to talk about constructive ambiguity. That sometimes if you really nail down the definition, then a bunch of things are excluded. As long as you keep it vague, you can put things into this bucket. And cities can say, we're a smart city."
+    },
+    {
+      "start": 3404.32,
+      "end": 3429.072,
+      "text": "We're doing, and it may have nothing to do with technologies, but they get bragging rights, which is awesome. It's great to give, because a lot of what they need is to be able to say that they're doing important things. So absolutely, there are a lot of smart cities projects that are going forward, but they are problem-focused."
+    },
+    {
+      "start": 3429.072,
+      "end": 3455.872,
+      "text": "And the solutions sometimes include technology. They're not technology-focused. It's the for-profit companies that are pushing the technology-focused, and they're controlling a lot of the conversation in the news media and in various outlets about what smart cities are. And the second question... Oh, yeah, no, they would absolutely..."
+    },
+    {
+      "start": 3455.872,
+      "end": 3485.12,
+      "text": "West Baltimore residents, there is no way that they would go on the website. I can tell you that categorically. It's, even with Wi-Fi access, it's a much deeper problem. The only way we got people to talk to us is on the research team, we included Sherry Parks, who has been deeply engaged in the West Baltimore community her entire life. Was a radio, kind of local radio host for a radio show."
+    },
+    {
+      "start": 3485.12,
+      "end": 3514.16,
+      "text": "And she grew up there. Her family grew up there. She had connections with the social groups that work there. And so, yeah, we just barely even got access there. Interestingly, they have a 3-1-1 system there. If you dial 3-1-1 on your phone, you can report when the roads are broken, traffic light is out. In Baltimore, in Boston, poor people don't report."
+    },
+    {
+      "start": 3514.288,
+      "end": 3540.784,
+      "text": "In Baltimore, poor people report more than rich people do. Why? Again, context matters. In West Baltimore, they think, well, my local representative isn't going to do anything, so I'm going to go right to the top and use the 311 system. Companies that are trying to sell you software to analyze the 311 data,"
+    },
+    {
+      "start": 3540.912,
+      "end": 3553.872,
+      "text": "don't understand that distinction. They don't understand that nuance. So you're going to get it wrong for both groups. Yeah, it takes deep and prolonged engagement."
+    },
+    {
+      "start": 3570.704,
+      "end": 3598.368,
+      "text": "Yeah, hi. I'm actually working for Siemens, so thank you for mentioning Siemens. And I was just passing by. So my question actually is, what you're calling for sounds pretty disruptive to me. So how do you want to break this mechanics? I mean, companies are there to make money. Governments are elected to serve the needs of the people. But how can this actually be changed? And usually the companies..."
+    },
+    {
+      "start": 3598.368,
+      "end": 3626.496,
+      "text": "The vendors have the knowledge of the technology. The governments very often don't. So there is an imbalance. And what are your ideas of changing that? Excellent question. And I do have some ideas. As I said, businesses are doing exactly what we've told them to do. But in this situation, what we need to do is figure out how do we align the interests of business?"
+    },
+    {
+      "start": 3626.496,
+      "end": 3654.368,
+      "text": "with the interests of people. And it's going to mean that there are going to be some hard changes. But it comes down to the question of whether society is here to serve business or business is here to serve society. And I actually think Siemens can still make a profit if we can align the interests."
+    },
+    {
+      "start": 3654.368,
+      "end": 3683.952,
+      "text": "Because for businesses to be profitable, what they need is a set of rules within which they operate. I think actually a real free market where there are no rules is much harder for businesses. A lack of predictability is really terrifying for businesses. That's why they actually want a strong legal system. They want a strong banking system. That's why they don't go put their facilities in Mogadishu."
+    },
+    {
+      "start": 3683.952,
+      "end": 3713.088,
+      "text": "Failed states are not good for businesses. Businesses have rights granted by society. They have a right to enter into contracts, to be legal entities, to use the... It's not something that a rook had. This is something that we created and that actually France created later than England did. Companies didn't just happen. Governments make..."
+    },
+    {
+      "start": 3713.088,
+      "end": 3741.536,
+      "text": "that allow contracts, that allow businesses to be legal entities. When there are rights, there are also responsibilities. And I think that we can actually put in place some forms of regulation that would improve the alignment between the interests of people and the interests of businesses. And good businesses will still be able to be very profitable."
+    },
+    {
+      "start": 3741.536,
+      "end": 3770.544,
+      "text": "under that set of alignments. What it will look like in Vienna, I don't know. We could do something like the legal system does in the U.S., where you have a right to... Big companies, big legal firms do what's called pro bono, and there's a lot of social pressure. It means for free. There's a lot of social pressure. They actually report how many hours of for-free legal advice have you provided."
+    },
+    {
+      "start": 3770.544,
+      "end": 3799.76,
+      "text": "by your company. And it had better not be zero. That's not acceptable. They have a right to counsel for criminal cases. If you're poor and you can't pay, you get a lawyer appointed to you by the court. So I don't know if it's going to look like pro bono smart city work on the part of Siemens or if it's going to look like regulation of some sort. But I think there are areas that we can..."
+    },
+    {
+      "start": 3799.76,
+      "end": 3827.264,
+      "text": "have movement in and still be successful. There's someone in the back. I think one of the important points you made was reminding us engineers that people tend to use technology in a different way than we would use it. But you made the statement in a very strict sense, saying, okay, terrorists, for instance, have used technology in a way we never did imagine. Is this really a systematic problem?"
+    },
+    {
+      "start": 3827.264,
+      "end": 3856.016,
+      "text": "Or couldn't we have the imagination of an airplane crashing into a skyscraper in New York or into illegal persons using Bitcoin if that's an anonymous way of doing transfers? Or is it just that we are simply not caring about it in the way we should? I would say yes, that part of it is a failure of imagination and part of it is a failure of attention."
+    },
+    {
+      "start": 3856.144,
+      "end": 3881.984,
+      "text": "So I, there's a group in my faculty that works on socio-technical cyber security and they actually, the stuff that's unclassified that they can talk about is terrifying and I choose not to work in that field because of it. But yeah, part of it is a lack of imagination. I really do think so."
+    },
+    {
+      "start": 3881.984,
+      "end": 3910.992,
+      "text": "And part of it is they can imagine it, but they think it's too unlikely. That doesn't even have to be a particularly technological solution. When they had the tidal wave in Japan, and they had actually put the power supply in the basement, what did you think was going to happen when you had a flood, right? In a nuclear reactor, you put the power supply in the basement. They had a lack of imagination that that could actually flood and what would happen."
+    },
+    {
+      "start": 3910.992,
+      "end": 3940.08,
+      "text": "The Boeing 737. That was a lack of imagination. And a lack of attention. And part of it was business profit because they were supposed to have three sensors and they took one of them out because it would reduce the cost and they did not."
+    },
+    {
+      "start": 3940.272,
+      "end": 3966.592,
+      "text": "They wanted to sell the plane by telling airlines that their pilots would not need additional training. So it was total cost of ownership. We could actually make that lower, and it made an incredibly unsafe plane. It's a complex system, and you need to think about the various parts of it. And, yeah, people have a failure of imagination, and they don't pay attention because they think it's improbable."
+    },
+    {
+      "start": 3966.592,
+      "end": 3992.944,
+      "text": "But if it's truly catastrophic, even if it's improbable, you've got to pay attention to it. In your view, just now, what are examples of best practice of smart cities? Copenhagen? Vancouver? Just some examples, please. Cities that are doing it well. It's interesting."
+    },
+    {
+      "start": 3993.136,
+      "end": 4022.544,
+      "text": "As I say, I think about smart cities projects more so than cities as a whole. Some of the projects are more successful than others. I think the cities that have a tradition of engaging residents and engaging their citizens, engaging their people, are being more successful. We're seeing Portland, Oregon has actually pushed back against the vendors and said, no, we're going to own the data, not you, or you're not putting that stuff in here. They actually identified"
+    },
+    {
+      "start": 4022.544,
+      "end": 4046.288,
+      "text": "like a dozen dimensions. It's a smart city if it is sustainable, if it is healthy, if it is, they actually had outcome variables and then looked at what are projects that would move them toward those outcome variables. They're requiring an impact statement. Before you do a smart cities project, who..."
+    },
+    {
+      "start": 4046.288,
+      "end": 4074.544,
+      "text": "Who are all the groups that are going to be impacted? Who's going to be affected by this? And is the impact going to be positive or negative? What are you going to do to address the negative impact? So Portland, Oregon has taken a very interesting approach to it. Is it going fast? No. But they're getting people involved and they're getting people engaged. What, two years ago, a year ago, people would have said Hong Kong's doing pretty well?"
+    },
+    {
+      "start": 4075.696,
+      "end": 4099.472,
+      "text": "Now, maybe not so much because we're seeing the negative side of the technologies that they're using. You know, I haven't looked into Singapore recently to see what they're doing. What do you know about what Singapore is doing? Nothing. Yeah. So maybe one last question."
+    },
+    {
+      "start": 4103.728,
+      "end": 4132.192,
+      "text": "What can universities do? What can universities do? So that's an excellent question. One thing is to get out of your local community. Get out of just talking to the people who are on the same hallway as you. One of the things I loved about working at the National Science Foundation is all the sciences were together."
+    },
+    {
+      "start": 4132.192,
+      "end": 4162.16,
+      "text": "be able to go to talks about massively open online classes and then go to talks about how we know what percentage of Neanderthal DNA modern humans have. And then go from that to looking at the dead zone in the Gulf of Mexico, which is an area that has epoxidics, not no oxygen. And nothing can grow there. It's at the mouth of the Mississippi River. And theories about,"
+    },
+    {
+      "start": 4162.16,
+      "end": 4187.232,
+      "text": "why it's starting earlier every year and lasting longer. Be more of an omnivore. Go read other stuff. Go talk to other people. What we find, people always think about doing interdisciplinary collaborations, that what you need is kind of a Facebook or a Tinder where I know..."
+    },
+    {
+      "start": 4187.232,
+      "end": 4214.64,
+      "text": "how to do ethnography, and you know how to make sensors, so I'll find you in a database, and we'll decide that we want to do something together. That's not how scientists do collaborations. They meet each other, they decide whether they like each other, and if they like each other, they find something, they find a project they can work on together. How do you create situations where scientists run into each other, faculty run into each other?"
+    },
+    {
+      "start": 4215.12,
+      "end": 4245.072,
+      "text": "It's becoming more and more of a problem, certainly in the U.S., because we've lost a lot of social organizations. We used to have amateur athletic leagues where people would meet each other, where you'd go play football. And we had benevolent societies. You'd have the Shriners. You'd have the Elks. They'd run into each other. You'd run into people at church."
+    },
+    {
+      "start": 4245.232,
+      "end": 4274.48,
+      "text": "that you didn't see otherwise. We've lost a lot of that in the U.S. We're increasingly in our own bubbles. So what can you do? Can you volunteer at a homeless shelter? It's actually interesting. As I was coming to Vienna, I was looking online to see what kind of stuff you could do. You can actually get a walking tour of Vienna given by someone who's homeless. Homeless or drug addict. I think those are the two categories they have."
+    },
+    {
+      "start": 4274.48,
+      "end": 4303.648,
+      "text": "How many of you have taken them? Was it good? There's another... There are layers of worlds out there. And there are ways of coming into contact with them. But think about how to do this. People I know..."
+    },
+    {
+      "start": 4303.648,
+      "end": 4333.392,
+      "text": "Lab managers at University of Central Florida said it's an interdisciplinary group. And he made sure that they had a weekly seminar and that they had food. And cookies didn't work because people just came, they grabbed the cookies and they left. Ice cream sundaes worked because they had to, you know, go with the ice cream, put it out here, put little sprinkles on. Anywhere they had to construct their own snack worked. But you need to get people together."
+    },
+    {
+      "start": 4333.392,
+      "end": 4362.512,
+      "text": "Get them talking so that they stay in contact long enough to know if they like each other and want to work on a project together. Take seminars in other areas. Wander around and see who's here. Walk into some place you never thought you'd want to, well, not the Calgary City Hall, but some place you never thought you'd want to be and see what you can see. Thank you. Again."
+    },
+    {
+      "start": 4362.544,
+      "end": 4385.76,
+      "text": "And so to summarize, it's about policy, not only technology. Not just technology. You can never change just one thing. So I wanted to announce, before you leave, the next talk in this series, it will be in two weeks. It will be in another room, but also in this building."
+    },
+    {
+      "start": 4385.76,
+      "end": 4397.968,
+      "text": "it will be by Gerfried Stocker the artistic director of Ars Electronica with the title Humanizing Technology Through Arts so thanks again Susan and see you in two weeks"
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

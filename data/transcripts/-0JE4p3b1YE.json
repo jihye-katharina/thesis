@@ -1,0 +1,761 @@
+{
+  "video_id": "-0JE4p3b1YE",
+  "source": "whisper",
+  "language": "en",
+  "text": "The science ethics dilemma, could I, should I? Good evening, good morning, wherever you are. We continue our digital humanism lecture series. As you see, we really keep the 14-day schedule, which we did not think that we could keep this 14-day schedule. And I would like to thank my colleagues in the program committee. who are organizing with me and with us these lectures. And I would also like to thank my staff here at TU Wien for really doing the organizational and the IT and the website work. Thank you all. Without you, this would not be possible. And for further talks or previous talks and announcements, please have a look at our website. and also our YouTube Digital Humanism channel, where we have recorded all the talks and discussions and panels we had up to now. Before handing over to Erich Brehm, who is the moderator of today, who will then introduce Barbara Gross from Harvard and the discussion, some technical details, organizational details. We have a 30-minute talk and then a 30-minute discussion where you can participate. And this will be moderated by Erich. And we will end, as always, with a little piece of music, which was selected by Peter. And I would like to thank Helga Nowotny for the initial idea that we should finish with some, let's say, art work here, our discussion. at least hosted here in Vienna. Everything is also streamed on YouTube. It's recorded on YouTube and it's accessible on our YouTube Digital Humanism channel, which you can find on YouTube directly using the keywords Digital Humanism or you come via our website. Please also mute your phone while Barbara is presenting her work and doing her presentation. Raise your hand afterwards in the discussion so that we have a list of you and then we can give the floor to you. Please always tell who you are before you raise your or you make your comment. With this, I would like to hand over to Erich Brehm, who is the moderator of today. Thank you, Erich. Erich is a... It's hard to describe because he's a longtime expert and consultant in the field of research policy, but he's also doing fieldwork in the fields of philosophy and AI. He's also teaching at several universities and he's also teaching a course on innovation, which I personally like very much because I participated once. And he's one of the few who has a double degree PhD, both in computer science as well as philosophy. Personally, he's the only one I know. I don't personally I don't know anyone else. And I thank him that he's moderating. I forgot one thing. He also has a MBA in general management. I don't know the difference between management and general management, but you have a PhD MBA in general management. Yannick, thank you. And the floor is yours. Thank you so much for the kind introduction, Hannes. It is a huge pleasure and an honor, really, to have Professor Gross here for this talk in our Digital Humanism lecture series. Not only because she works in AI, which is a field close to my heart, but also, and perhaps more importantly, she is the Higgins Research Professor of Natural Science in the School of Engineering and Applied Sciences at Harvard University. Her contributions to AI were in pioneering research in areas such as dialogue processing, but also in theories of multi-agent collaboration and their application to human-computer interaction. And we are particularly interested also because Professor Gross co-founded Harvard's Embedded Ethics Program. And I think that may be of interest to many of us as it aims to integrate teaching of ethical reasoning into core computer science courses. And I hope we can find the time to talk a little bit about this. Professor Gross also received the Alan Newell Award from the ACM AAAI. and the Computational Linguistics Lifetime Achievement, among many other prizes and awards. And I'm really looking forward to her presentation with the slightly puzzling title, An AI and Computer Science Dilemma, Could I? Should I? Barbara, the floor is yours. Thank you very much, Eric. Can everybody hear me okay? All right. I'm going to now try to share my screen. So you can see my slides, I hope. Yes. Yeah. All right. So I will explain this. I will explain this puzzle of an AI dilemma. Could I? Should I? And I'll explain it in part by saying my alternative. Oops. Let me. OK. My alternative title. You see if I can get all of you out of the way. Yes. Thank you. Which is toward designing society compatible systems. So not to make it a big secret. Eventually, I will get to talking about the embedded ethics program and the main. thrust of that is to get our students from thinking about whether they could build a particular system to whether they should be building that system and how they should build it. And I will return to that theme going forward. I want to say also that I wrote an AI-NCS dilemma because much of the press these days is about AI systems and the ethical challenges they present. But really, every system that is out in society presents similar kinds of ethical dilemmas. And so you'll see that we do the integration not just into AI courses, but into computer science courses overall. And the toward designing society compatible systems. is meant to contrast with what some of you heard two weeks ago from Stuart Russell, where his interest is in designing human-compatible systems. And I mean here to emphasize that these systems need to work not just for individuals, but for society as a whole. And of course, once you go to society as a whole, you have the question of competing or differing values to deal with. So we'll come back to all of that later. So I just want to say as background that in the 40 some years since I started out in the field of AI, it has made enormous advances, most of them recently enabled by machine learning and massive amounts of data. That's data all of us give to the companies who use it. raising some ethical issues and the machine learning as some of you may know has really been moved forward by massive computing power that's a result of all of the games that are on computer systems so this slide shows you just some of the different systems that are out there in daily use now you know some of them on our phones some of them in the stores that we shop in, some of them online, some of them where we go for medical care. So it's well beyond AI contributing just to games in structured environments where you know all the rules. And again, that's something that leads to the ethical challenges. So just so that we're all on the same page about artificial intelligence and what it is, I'm not going to try to define it. I think Stuart may have done that. I think that if you have six AI researchers or developers, you're likely to get seven different definitions. So I will say just that AI is both a science and an engineering undertaking. The science aims to understand human cognitive processing. Some people also look at animals, but human cognitive processing and to develop models and theories that will allow us to explain how they work. The engineering undertaking is what we see in daily life. often does not care about how humans or other intelligent beings, how their cognition works. It's really a matter of can we get a certain kind of behavior? There's also the issue of narrow versus general AI. And on that, I'll say only that to date, we have only narrow AI and general AI that can compete with people is a long way in the future. People may aim to replace humans in certain jobs or certain work or and or to replicate human intelligence. Some of us argue that it's much more important to think about complementing human intelligence. My quip about this is we know how to replicate human intelligence. They're called babies and they have only human intelligence. What we need is something to support that in getting. Things better, things to work better and better things to happen. A most important different comparison is between model based or data dependent methods. And I'll say something more about those in a minute. One of the interesting things about computer systems as compared to earlier technologies is they have what the philosopher James Moore called logical malleability. That is, they can be. designed to do many, many different tasks. And it's hard. It's hard often to make them tractable. And then I'll just mention, if we want to think about ethics and then policy and regulation, that can happen before the systems are put out in the world with design and development processes or after deployment. And I'll just note something I think is very important as we think about the data dependent systems, which I say from a quote from a former student of mine at J. Comar, that they are of people, by people and for people. So model based methods have general theories. Those theories have semantics. They can explain their reasoning. But they require handcrafted models with expert input and knowledge engineering is known to be hard and brittle. The data dependent methods, which are machine, all the machine learning methods don't require that hand crafting, but they require a large corporate of data, which we don't always have in certain application areas. And you get descriptive statistics and not causal, not causal explanations. So they are also brittle, but in a different way. And it's taken a while to recognize that brittleness. Just a few examples of where there's been great performance and yet we should ask questions. So many of you know how wonderful object recognition is now on computer computing systems. In 2015, in some tests, the computer systems outstripped humans. But always when you hear results like this, you need to ask the question of how. And I'm told in this particular study, which, first of all, was not a very broad study. I think there was one human, the system designer. But secondly, I'm told that the outstripping was because the system knew more more breeds of dogs than the human did. And that may be important in some areas, but not always. So as Eric mentioned, one area of my own research has been natural language processing. And I just want to quickly say that you can see differences between humans and the natural language systems of today by testing the systems that we have. So one of my favorite examples is asking my phone where the nearest gas station is. getting a list of 16 and asking which ones are open and getting this response. Would you like me to search the web for which ones are open? And so I've said of this that and earlier of other systems, in fact, the Watson Jeopardy system, that if you look at the errors, you can see that systems are really not close to human performance. So that's kind of funny, but you can also see. that there are some ethical issues that can get raised by these kind of funny gaps in what systems can do. And so students in a course I taught, which I'll come back to shortly, Intelligent Systems Design and Ethical Challenges, their first assignment was to find some examples of where systems worked impressively and where they failed. And one example from these students is these three questions. So if you were to ask a human being any of these three, you would get roughly the same answer. But in fact, that doesn't happen with the phone or it didn't then. And the last time I checked, it didn't. If you ask where is the nearest hospital emergency room, you get a hospital emergency room. Here are some of the answers that you get for where you can get a flu shot. It took me a while to figure these out. Until I realized that the system thought a flu shot was a kind of product. And I never figured out iTunes. But a younger person said to me, oh, the system thinks that flu shot is a music group. No person would ever make that mistake. And then finally, if you look at this example, where instead of telling you how to treat a sprained ankle, you get a Web page and you think. If instead of asking about a sprained ankle, the system had been asked about treating a heart attack, there would be a real ethical problem of a patient needing emergency treatment, not getting it as soon as they need it. So I think I won't have time today to really say much about this example, but I hope you'll take a minute to read it. Well, I point out that. This was a doll that was advertised as being your child's best friend. And here's an example taken from the New York Times Magazine report on this of how the system, because it doesn't understand words like no and nothing. And in fact, it follows a script, carries on a really horrible conversation with a child. And in fact. One could worry that what this doll would do for a child is to teach it to ignore the people it's talking with or she's talking with. Surely not something we need to teach people these days. In fact, we'd like to teach our children the opposite. So the root or a root of the problem is that many of these systems. that are built to be autonomous and work without people forget that we populate the world and the systems need to learn to work with us. And in a particular challenge, as you see on this slide, is that for the foreseeable future, we can't always predict how people will behave. And so we need to build systems that know when to check, when to go back to a person, when they don't know something that's important to the decision they're about to make. So that leads me to the ethical reasoning challenge. And I will focus in particular on design. But I want to just say as background. that when we think about AI and ethics or computer science and ethics, we should think about two things. One is how we can build systems that do good, as well as how we can avoid harm. And then I'll comment that focusing on robot takeover scenarios, focusing on problems like the trolley problem, are really a distraction from issues that are real and present now. And I think that doing so is a huge mistake for the field and for people from the social sciences and humanities who really care about AI systems and computer systems in society. So again, an example I won't have a chance to go through in any detail, but an example of trying to do good is the healthcare coordination work that we've done at Harvard and Stanford. building a little system we call Goalkeeper to help the many, many practitioners who take care of a child who might have been born with genetic issues, who might have been in an accident, who has multiple different problems and therefore sees a whole range of different kinds of therapists and caregivers. Electronic health records do nothing to help with this, but we can build systems. based on theories of collaboration that will help and then a related point which is if we again design not for a full autonomy with no sense no no work done to complement people or work with people also we miss the boat with the data dependent approaches um and And Ece Camar, again, you can see her ICHCAI paper, has argued quite persuasively that here you also need to have humans in the loop in order to build reliable systems. So I'll come to a major point that I want to make, which is that for society compatible systems. You need to take into account, we in AI and in computing overall, need to take into account that any system that works with people outside of a very structured environment, like a banking system internal to the bank or a pilot in an airplane, but not a driver in a car, by the way, that these are socio-technical systems. and that they need to design for collaboration so as eric also mentioned i did work on multi-agent system models of collaboration and in doing that i argued that the capabilities for collaboration cannot be patched on they have to be designed in from the start and i want to argue that that's true of ethics too if we're going to deal with the ethical challenges that these systems present once they're out in society, we need to have the designers of the systems thinking about them from the very beginning. We need to design them so the system, as the poster on the left shows, pulls with everybody else in the boat, not as the poster on the right shows, where they're working against each other. We have developed a program at Harvard called Embedded Ethics. The capital CS is for computer science. And the idea, as illustrated in this rope, is that we need not we need in computer science. And we have recognized this to teach not only technical skills and problem solving. It's one of the things that computer science education is very good at focusing on. And not only design thinking, something that has moved into computer science slowly and partially so far, but also ethical reasoning. And we need these things to be intertwined. And that's what we try to do with embedded ethics. OK, so the idea here is that we want ethics from the start continuously and ubiquitously. Our goal is to design, teach students. to design with ethics principles in mind. I'll note on the side that some people in artificial intelligence are also trying to design ethical reasoning systems. Personally, I think that's extremely hard to do. We still can't build systems that are good at counterfactual reasoning in the physical world. And it's very difficult to teach people ethical reasoning. Seems quite a stretch to go that route, but I'm happy for people trying to do it. In the meantime, I think it's important to teach the people who are going to be building and selling our systems to think about ethics. And it's not it's not just the students that we need to teach. It's also the people in industry who need to be taught. And one hope we have is that as our students go out in the world, they will teach the people that they work for. until we have a whole workforce in computing that has thought about this. We have some nice examples of that happening. But we need industry to take this on also. And we also need the education to educate the public to set expectations correctly. And I'm glad to talk about any of those things. Let me give you a small background because I think this example is quite interesting. And I hope while I'm talking, you'll you'll read what's on the slide. But this was the course that I taught on intelligent systems, design and ethical challenges. One hundred and forty four students competed for 24 positions in the class because it was a small seminar class, which I was really lucky to do that way at Harvard. They had to write essays saying why the class was important and what they would contribute to it. So they were very, very dedicated to the whole issue of ethics and thinking about ethics. In their Tuesday class, we had focused entirely on ethics related to something that had gone on in industry. In the Thursday class, I taught them about how recommender systems work. And then we had this in-class activity. So it was a very interactive class. And you'll notice in blue, they were designing for a client who had an innovative fitness solution. And part of what they needed to do was list five features of the user's profile. So as we went around the class and the different groups that had talked about this gave me the features they wanted, I was aghast. And at the end of going around the class, I asked students how many had thought about ethics. None of them had. So committed students cared about ethics, and yet they hadn't thought about it. When they were asked on their assignment why, they said, well, it wasn't part of the activity description. It wasn't part of what we were told we need to do. We know about making code efficient. We know about making systems that sell, but we didn't. It wasn't there as part of what we thought of in product design. And so that's what led me to think that we need to make ethics as prevalent in computer science as we have made making code efficient and clean. And that's what embedded ethics is trying to do. So we integrate ethics into the curriculum as a whole, and we do it for several reasons. Over the course of 10 or 12 or 14 courses, students get most of a semester's worth of a course. But it's not a separate course that makes ethics seem as an add on. It's integral rather than an interruption, rather than something on the side. It's part of the course. It leads students to think about. ethical issues as they think about the code they're writing in the systems they design. And it shows that this is across all areas of computer science. How do we do it? Well, when I first proposed doing something to my colleagues, they were very glad to do it, but they said they didn't have expertise in ethics. In my course, CS 108, I had a fantastic philosophy PhD student who was teaching. And so I said, well, let me talk to the philosophy department and see if we can recruit students and postdoctoral fellows to do the teaching of the ethics. And so, in fact, that's how it works. Philosophy PhD students who have already have a track record of doing good teaching. meet with the lead faculty teaching a course to identify a technical topic in the course that has ethical ramifications. The PhD student then develops a module, identifies the philosophical issues to bring up in conjunction with the technical issues, develops a module for one or two class sessions. introduce an active learning engagement so the students use the ideas. It's not just a lecture like I'm giving now, which is unfortunate, especially at a distance. And they also design an assignment so that the students know that it matters for the course. Early on, we brought the teaching fellows and then the postdocs together in a teaching lab. This is very novel for the philosophers, by the way, but they love it. And we have built a team that works together with the postdocs guiding the teaching fellows from the perspective of teaching this kind of module in a course where students haven't had introductory philosophy. And the CS postdocs bring expertise beyond what the philosophers have. of computer science to explain the concepts. This has been wildly successful also for the philosophers. Both postdocs and graduate students have gotten different kinds of teaching positions than they would have otherwise. And for the CS postdocs as well, some of whom have changed. In fact, both kinds of postdocs and the graduate students have changed the kind of research they do. So in my remaining time, I just want to talk about why collaborate with philosophers, though I suspect for this audience, I don't need to. But I like this example because it shows how the step back that philosophers do and social scientists also, by the way, is so important. So my colleague, Milan Tambay, who has done tremendous work on. artificial intelligence applications to make society better, came to us. When he first came to us, we invited him to lunch with the teaching lab. And he told us about a tuberculosis project he was developing in India. And I'll note here that 10 million people a year get infected with tuberculosis and 3 million die. So this is a big problem in the world. And he thought that he could use techniques he had used to predict certain things about human behavior to predict who might not adhere, where they could then, the non-governmental organization that was trying to help prevent tuberculosis could focus phone calls and health worker visits on the high-risk people. And what he said to the philosophers, so we've come up with an idea and I want to know if it's fair. Does it generate resources? In this case, calls fairly. And they looked at the wide range of fair machine learning literature, huge number of ideas, and decided that what they would adopt is Rawls' max-min criterion, where you make the pie a little bigger so that The smallest pieces are the same as in the small pie, but there are bigger pieces for the people who need more. And the implementation of that was to change the distribution of who got calls. So here's what the philosophers said. Well, what are you distributing here? Is it phone calls? Is this a harm or a benefit? What's the benefit and what's the harm? And who are we protecting from unfairness? Is it marginalized social classes? Is it regional groups? What's the stigma? We know the goal is increased adherence. And who's the fairness focused on? And after listening to those answers. The philosopher said, look, an arbitrarily chosen criterion is unlikely to operationalize fairness. And I'll say on the side that just because computer scientists decide they can compute something doesn't make it a good criterion for fairness or justice. And this is part of what we're trying to teach our students. And that there's a cost if you if you do with this. And in fact, what they decided in this particular case was that you needed to focus on the socio-technical system. And it was the socio part that needed adjustment. It was what the health care workers said when they called someone and how they treated that person and not who they called. So just to summarize, here's what this collaboration with philosophers bring. They know how to step outside of something, think about counterfactuals, think about uses that computer scientists might not think of, and they know how to apply ethical theories. Some of them know how to apply ethical theories to real-world problems. There's a website for embedded ethics at Harvard. I've put up the website here, but you can just type into your favorite search engine, Harvard embedded ethics, and you'll get here. These are examples of some of the modules. Again, if you go to the website, you can find the list of modules and some of the content of some of them. I'll just say we're updating the website now, so it's a little bit flaky, but it's there and it will be better in another month. So just to end, I think on time, this is a collaboration between computer science and philosophy. I personally have gone from thinking about teamwork and intelligent systems to thinking about teamwork on ethics and forming systems design. And. And in both cases, you need to do it from the beginning. And I'll just come back to the puzzle, Eric, of should versus could. If we're going to inform system design, we need to have that in front of people. I have I said in an interview once that my fantasy was that every time a system designer or programmer booted up his or her system across the screen would come. Have you thought about the ethical implications of your design today? So with that, I will. Thank you. And I guess turn off my sharing and let Eric turn on his and take questions. Thank you so much, Barbara. Very insightful talk. Very inspiring. I think I have found an explanation, at least for me, that works about the could I and should I. In epistemology. The technical sciences are considered to be about constructability. What can be built and how should it be done? And you're actually expanding that question into a little bit into the normative, really, by asking, well, should it be built? Which is a broader question. And I think this is a hugely interesting perspective. Yeah, I like that very much, Eric. I like that very much because when computer science was young and I was I wasn't there in the beginning, but close to the beginning of AI, it was so hard to get computers to do anything that all you could think about was could you do it? And I think it's that perspective that you've talked about science and engineering. That is just so deeply ingrained in computer scientists now that we have to get them out of there. But, of course, for just the reason you said, which is the training and how to think about the normative is elsewhere. We need to do this in partnership with people who are as expert in the normative as we are in the tinkering. Right. Right. OK, that's the time to open up for questions. Please raise your hand. Unfortunately, I seem not to be. Yeah. Anna, I'm taking you. Go ahead, Anna. You should be. Okay. Thank you. Thank you very much, Barbara, for a very nice presentation. Very interesting. My name is Anna Bond. I'm from... The University of Amsterdam. And I'm very interested in the AI ethics. We are currently working with students on this topic. And we are working on information systems building for African farmers. So for very low resource environments. And there the ethical question is, and that's why I'm very interested in what you think about it, is that ethics are often context dependent and dependent on culture. And we are now asking ourselves, and therefore this question, how can we work with the different perspectives on ethics when we work with different cultures in information systems development or AI? That's really a wonderful question, Anna. And in teaching embedded ethics, we actually Don't start with various ethical theories. We start with teaching students that. That in essence, ethics considers different kinds of values, different kinds of preferences and tradeoffs among them and how they affect the different individuals involved or to whom they relate. And then actually gets to say theories like, say, deontology. um or consequentialism by saying well if you take this kind of approach that's what's been kind of packaged up as this theory but but really you need to start with the values and so I mean, first, I'm right. This is not my training and expertise, but I'll tell you what I've learned as I've thought about this, that the different cultures is absolutely essential, that you need to start with the values of the you need to learn the values of the culture you're working with. And for that, you need to talk with the people. I think the. computer science area of human computer interaction. And of course, ethno-methodologists and other anthropologists have developed ways of learning from people what matters to them. And so the ethics has to grow up organically from where you are, which makes it harder. Someone once said to me, well, just tell me what I should do and I'll do it. And I said, but the point is, if I could just write a rule book for you, this would be a much easier problem, but I can't. Right. One has to one has to invest in learning. Which is true, by the way, to build a decent system anyway. Right. The problem, at least with the electronic health record systems in the US, which I've looked at a lot, is that they were designed for billing departments, not patient care delivery. If you don't talk to people who are using the system to understand what matters, it's not going to work in the end. Thank you, Anna. Thank you, Barbara. Barbara, let me ask you a question which came up in last year's course, and it goes along with Edward Lee's question that has just been writing in the chat. We had actually a straightforward proposal when we discussed ethical issues in designing systems is, well, the computer scientists need to be much better ethically. But then Edward rightly argues in his question, very few computer systems are designed by an individual nowadays. So it's actually only the very small systems. But anything of significant size and perhaps impact is co-designed by a number of people, which makes it all the more difficult. I'm sure theoretically you could even argue every single computer scientist could behave ethically and maybe the total system could still be unethical. What shall we do about this massive challenge? Also, thank you. Thank you, Eric. And thank you, Edward. So, yes, the system. So I think I'm going to take it in two stages because computer systems are designed by a group. not an individual. And then they evolve over time. So there's also a change of the group over time. So the argument with respect to the group. So first, of course, I want to say the reason for embedded ethics is if every computer scientist is thinking about ethics, then they all will be thinking about ethics and they will recognize that each of their pieces has to work right for the ethics to work right. Of course, this is the pipe dream, right? But for the team, so one argument for the product design teams is that they should consider having social scientists or ethicists in the room when they talk about the overall design. Computing is not a bunch of monks in their own cells doing things and then they hope it fits together. That just doesn't work. I mean, that's not collaboration. You need collaboration and teamwork. So you want at the table people who will ask questions. So that's that's the answer in terms of when there's synchrony, when it evolves over time. I think, you know, this is this is why I want the banner across the screen, because somebody taking something and tinkering also needs to be reminded, well, you're tinkering. actually affect this so there needs we need so one if if every university that teaches computer science would do this in some kind of integration here then soon we would have different kinds of people in companies and not just as programmers but also as the entrepreneurial drivers and as the managers and as the um so i think i think that that that would also make the difference. So I hope that's an indication of where to go. Yeah, thank you, Barbara. The next question is from Anthony Olive, who I invite to ask his question, and then I take Helga next, and then Hannes. Thanks, Barbara, for the presentation. Very nice, very interesting. I have only one single question. Well, I have many, but I don't want to take all your time. The fact is that, as you know, there are several approaches to ethics. Ethics is, of course, a single word, but it encompasses several approaches from utilitarianism and many, many others. And how do you handle the fact that there could be several approaches to ethics? So we don't hide it. We expose it and have students see. Take this in a slightly different direction. One of the challenges in teaching ethical reasoning, normative reasoning to computer scientists or engineers as a whole, I would say, is that they're used to problems where there's if you pick the right method, you get to an answer that is, I'll put in quotes, provably correct. And it's not that there are six different answers that you then toss a coin about. So one of the things is to teach them that. It may be that you have a choice among competing alternatives here, each of which is good. It's a very different kind of thinking. And this is where I think having philosophers doing the teaching is so valuable because they can look back in history. They know more. Times that we we experiment. So I started this by having four courses and then it went to six and then to eight. And now it's 12 a semester, which is most of the courses. Harvard's a small program. She said to me, you know, I could have done the lecture part of the course. I understand enough now, she said, but I couldn't have answered the students questions. And so my answer to you is. That's where it takes this skill and teaching people how to do the normative reasoning. I think Helga would like to ask a question. Yes. Hello, Barbara. Yes. Yes. First of all, I remember well our time we spent together in Gothenburg. Yeah, it was wonderful. During the Nobel Dialogue Week. Great program, great talk. I think you made it very clear that ethics is not a checklist. And this by itself is a message that has to... to be transmitted to many people. And I would like to come back to what you said about we have also to change somewhat the expectations that society has. and the kind of speculations that often oscillate between a sort of utopian and dystopian view and it does not get us anywhere. I think in this respect there is something which is very very important namely to dwell on the kind of trade-offs we have to make all the time. A dilemma cannot be solved because you can go one way or the other way and both has some advantages and disadvantages. And how do you get this trade-off idea into your teaching and how do you get it into the design? We know, you know, values are contradictory most of the time. There is no universal value system across every culture, perhaps very few exceptions. And this means a constant weighing and balancing. It benefits whom and under which conditions, et cetera, et cetera. And so you get all these messy questions that come from society, from social scientists and from philosophers. And how do you transform these messy questions into something that fits at least a kind of model that you can transmit? And I think trade-offs is one way of transmitting it. Yeah. So thank you, Helga. And again, good to see you again. A very, very good question. So first, the... The main message, again, to the students is that there are these tradeoffs. They can't escape them. There's a certain amount that can be done in design to, let's say, to satisfy as many of the values. I don't mean this in a consequentialist way, but to satisfy as many values as people think are absolutely crucial. And then to be honest, in terms of what you haven't been able to achieve. Because some of what has to, the deciding if there's really a big conflict has to be resolved through policy and regulation. This is what good government is for. I mean, right now I live where there isn't good government in my country, although there is in my state. So it's a it's a huge but this is this is where the society needs to decide. And so the argument for the computer scientists is you shouldn't decide and hide it in the technology. It needs to be evident on the on the surface of the technology. And so I think I had this in the beginning and I didn't have a chance to get back to it, that there's a balance of policy, of ethics. leading to where you need policy and where you need regulation. There are things where you can count on companies to self-regulate or not, and that may depend on their business. So I think that's very good. What you said, I just wanted to say that embedded ethics is very different from having a single computer science and ethics course. And the reason for that is that If you have a computer science, a single computer science and ethics course, if you require it, at least in the United States, the students are just unhappy. I mean, there's the half that care and they, you know, they enjoy it. But the other half don't. And it's the other half that you probably need to teach more than the half that enjoy it. And if you make it optional, it's only, you know, it's still the people who need it. I mean. you know, Zuckerberg would not have gone to a computer science and ethics course, right? I want Harvard to produce no more Zuckerbergs. That would be a great closing statement for the session, but we still have a few minutes left. Barbara, let's ask Hannes. Hannes, I think you wanted to ask a question. And I will combine it with Sarah's question from the NUI Galway. She asks about how to counter the argument sometimes made by computer science students. I don't want to consider ethics because it slows down innovation. But let's take also the question of Hannes and then Barbara, I hand over to you. Mine is more a comment and it was already answered in the previous question because. I think this is a new role of, let's say, ubiquitous computer science systems, that they can uncover social political questions, as you really said. And this is maybe a new role we might have, because when you correctly, in my point of view, if you move from the individual to the societal objective, then it becomes very clear that this is a political question and who defines. And this is also, for example, in machine learning, when we look, when we claim or claim machine learning for the buyers, very often the machine learning uncovers the buyers, which is already available in the data and does in our society. So we are somehow, let's say, somehow gardening and also being somehow maybe also accelerating a political discussion. So this is more a comment I made. I think you already answered it. Previously, when you answered to Helga's question, just an observation from my side. Yeah, so it's a very important observation. And I think from the beginning, the model-based work in AI has helped people see things they didn't see otherwise. So my own work in dialogue systems early on and uncovering the structure of discourse and dialogue was used by teachers. In a certain setting, they said it would, or anyway, people in schools of education, it would help them understand something about teaching writing. The work on speech was used by a speech coach that I knew for training radio announcers better about how to do intonation. So this is a very important. possibility and potential for machine learning if it's used that way to first uncover issues before it just presumes that what's there will work. And we see this, by the way, not just for ethically sensitive things like police and sentencing, but also the disaster of IBM doing the cancer treatment in Houston was that they were using historical data to predict What what drugs to give people and the doctors were rejecting it because it was out of date. So any time the world is evolving, the historical data is going to have is going to have trouble. So. So thank you. And then for Sarah. So there are different ways to answer this first. We don't have any evidence that it slows down innovation of good products. If you consider ethics, you will make a better product. And, you know, but I have said so. So there are ways to speak to the students about this. It's better design. But in the end, and I think what the students are getting at or what they're reflecting is this industry perspective that the incentives are all about making money. And so one of the major challenges is to get industry to rethink its incentive structure. In the end, they're going to want to make money. But that also means they want to avoid lawsuits and they want to avoid regulation. And so so there are benefits to them of having processes where they can say that they have actually considered the ethical questions of design. So my I think I think this is a major challenge. In fact, I'm about to, I am just starting, but we've just put the committee together for the National Academies of the United U.S. The Computer Science Board has asked me to chair a study on responsible computer science. And one of the main challenges is to bring some people with business expertise together with some philosophers and social scientists and academics to talk about just that issue of how you how you get the incentives aligned. And even though we know where we are now, we also know that, and here I can speak only US-centrically, but the values of industry in the 1940s and 50s in the United States were different from the incentives now. And so we know incentives can change. Maybe what we need is a Volvo of the computing industry, somebody who will decide that safe instead of safety matters and is a selling point. Ethics matters and is a selling point. But we have these examples of where, you know. Fake it till you make it or put it out there and fix it just are a disaster. I mean, Theranos, the blood test company, is the biggest example I know now. So I just bring all of this to the students. That's that's what I can say. So. Thanks, Barbara. I think we have to close the Q&A session very soon. But Paul Timmers has raised his hand and I'd like to give him the floor and the mic should be OK now, Paul. Thank you very much. I hope you can hear me. Thank you very much, Barbara. Very challenging. Barbara, I'm currently part of my time at the University of Oxford, but before that time I was a policymaker at the European Commission. And while we were making the first cybersecurity law, which is to deal with the protection, cyber protection of critical infrastructures in Europe. I actually realized that we were completely missing out on what AI could or was about to do. For example, very rapid detection of attacks and then also intervening, actually taking decisions that in the law were supposed to be the prerogative of committees, people getting together. You can imagine the whole regulatory framework is built upon the speed of humans rather than the speed of technology. So we were, we are actually, this law is going to be revised. And so a question is, can you build into that law AI? Which brings me to the question, which is, how would you see that you can actually do the combination of lawmaking, regulatory development, AI and ethics? So starting perhaps from the other point, not a technology point, but starting from ethics in law and taking into account that. Technology is really, really super important there. So that's an important and hard question to answer. And I think the 30 seconds I have left. And what I'll say here is the answer is similar. You have to have the right people in the room. So you need the technologists in the room. And they need to know how to talk with and coordinate with. the philosophers and the legal people and vice versa. So, you know, my career has been almost entirely in multidisciplinary settings. We need to grow multidisciplinary people. So for me, the fact that the Embedded Ethics Program has yielded philosophers who are much more sophisticated about computer science than they were when they came in is important, just like the computer scientists. And in the in the beginning, the first the philosophy graduate students were terrified, terrified of the computer scientists. They were sure they couldn't understand. Well, it turns out they can. And if you find the right computer scientists, they're good teachers of computer science. So I think that the learning has to go both ways. And I hope we'll we'll find more and more ways to do that. But you can't have regulators who are ignorant of the technology designing the regulation or the policies. And you likewise can't have technologists saying what they think it should be because they don't know how to think about the values tradeoff. So you have to have people in the room who can talk with each other. And that means they have developed a common vocabulary. I'm sure you know this from all your committees. There's no, you know. Everybody would like a checklist and a quick way of doing it. Life is complicated. We need to spend the time it takes. Thank you, Barbara. Thanks. I can really say this. It has been a pleasure listening to you and your very insightful comments and also your experiences. I'm sure it's great to have both philosophers and engineers at the same institution. The Technical University of Vienna, unfortunately, has the nearest philosophy department half a mile away. That is a very long distance to walk. But then again, it's two underground stops from Harvard Square to MIT, if I remember it correctly. Yeah, it's actually quite a distance. MIT to Harvard, cognitively, if not physically. But we have had some MIT students teaching at Harvard. MIT, Stanford, and University of Toronto already have plans in place to do this. And I will say that I got the same question at the Technion in Israel. And they have now found people in their medical school, which is not only more distant, but there's like hills involved, Eric. Right. So I think you don't need to have everyone to start. I think if you start with the seed of a small group and they see it's worthwhile, they will make that trek. I mean, I'm working with an early modern philosopher to do this because of the ethicists on the Harvard faculty at the time I tried to do this didn't want to have anything to do with, quote, applied ethics. So it takes creativity, but usually you can find someone. And, you know, it might be in a law school. It might be in a social work school. It might be somewhere else. And really, the young people are craving this. So I think go young. You know, gray hairs, we're just there to inspire them and help them do it. Thanks. Let's go young. Nevertheless, I think I hand back to Hannes. No, I just wanted to make a short comment because you really provoked me about half a mile between technical university and university. But you know that in the context of digital humanism, we are... working on a curriculum between different universities in the master, where we want to combine computer science with humanities and social science, and where we really want to work on this to have something like a cross-covered, crossing curriculum for the master. And I would be happy, Barbara, if you could join us there, and I think we will have some communication on that issue, if you agree. So I'm not sure what you're asking me to join. With your ideas and contributions. Yes, I'm glad to bring it. If you can't come to one meeting, it's one thing. If you can't come to a weekly meeting, I'm not doing that. No, no, no, but we will keep in contact. But I'm very glad to talk with people, and I'm certainly glad to come to a meeting and to comment on plans and so on. That kind of thing I would be glad to do there. This was just a short comment. Eric, the floor is yours. Yes, actually, I think many thanks again. Thanks to all the contributors and also to the very good questions, I believe. Now, help me with the proceedings. I think, Peter, you have a slide that reminds us also of the next event in our lecture series, which is on October 6th. And it is actually Paul Timmons, who you have just seen and heard. and colleagues on digital sovereignty navigating between Scilla and Charybdis. I think the titles of this series are really designed to pose the question, but I think that's good. And then I think I'm now, having said that, having thanked Barbara and all contributors again. I think I have to hand over to Peter with the piece of music, if that is correct. Peter? Yeah, thank you, Erich. I'm going to take over from here, if that's okay. So for the final notes today, they're already somehow a topical transition to the next lecture, in a way. So for today, I've picked the track Computer World by Kraftwerk. which was released in 1981 and therefore long before the inception of the term surveillance capitalism and related discussions. Back then Kraftwerk have made a themed album on the rising ubiquity of computers and already addressing what we're still talking about in our discussion on digital humanism. And as is typical for Kraftwerk, the track reflects upon technological developments, as you will see in a fairly reduced lyrical form. but also reminding us of the beauty of abstraction reduction to convey an idea. I don't think I have to add much more. We're going to see a live performance from one of their later tours, which also allows us to watch the visuals. So with that said, please enjoy and see you next time.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.648,
+      "text": "The science ethics dilemma, could I, should I? Good evening, good morning, wherever you are. We continue our digital humanism lecture series. As you see, we really keep the 14-day schedule, which we did not think that we could keep this 14-day schedule. And I would like to thank my colleagues in the program committee."
+    },
+    {
+      "start": 27.648,
+      "end": 52.592,
+      "text": "who are organizing with me and with us these lectures. And I would also like to thank my staff here at TU Wien for really doing the organizational and the IT and the website work. Thank you all. Without you, this would not be possible. And for further talks or previous talks and announcements, please have a look at our website."
+    },
+    {
+      "start": 52.592,
+      "end": 78.112,
+      "text": "and also our YouTube Digital Humanism channel, where we have recorded all the talks and discussions and panels we had up to now. Before handing over to Erich Brehm, who is the moderator of today, who will then introduce Barbara Gross from Harvard and the discussion, some technical details, organizational details."
+    },
+    {
+      "start": 78.112,
+      "end": 103.36,
+      "text": "We have a 30-minute talk and then a 30-minute discussion where you can participate. And this will be moderated by Erich. And we will end, as always, with a little piece of music, which was selected by Peter. And I would like to thank Helga Nowotny for the initial idea that we should finish with some, let's say, art work here, our discussion."
+    },
+    {
+      "start": 103.36,
+      "end": 132.528,
+      "text": "at least hosted here in Vienna. Everything is also streamed on YouTube. It's recorded on YouTube and it's accessible on our YouTube Digital Humanism channel, which you can find on YouTube directly using the keywords Digital Humanism or you come via our website. Please also mute your phone while Barbara is presenting her work and doing her presentation."
+    },
+    {
+      "start": 132.528,
+      "end": 156.928,
+      "text": "Raise your hand afterwards in the discussion so that we have a list of you and then we can give the floor to you. Please always tell who you are before you raise your or you make your comment. With this, I would like to hand over to Erich Brehm, who is the moderator of today. Thank you, Erich. Erich is a..."
+    },
+    {
+      "start": 156.928,
+      "end": 186.8,
+      "text": "It's hard to describe because he's a longtime expert and consultant in the field of research policy, but he's also doing fieldwork in the fields of philosophy and AI. He's also teaching at several universities and he's also teaching a course on innovation, which I personally like very much because I participated once. And he's one of the few who has a double degree PhD, both in computer science as well as philosophy."
+    },
+    {
+      "start": 186.8,
+      "end": 214.864,
+      "text": "Personally, he's the only one I know. I don't personally I don't know anyone else. And I thank him that he's moderating. I forgot one thing. He also has a MBA in general management. I don't know the difference between management and general management, but you have a PhD MBA in general management. Yannick, thank you. And the floor is yours. Thank you so much for the kind introduction, Hannes."
+    },
+    {
+      "start": 214.864,
+      "end": 243.824,
+      "text": "It is a huge pleasure and an honor, really, to have Professor Gross here for this talk in our Digital Humanism lecture series. Not only because she works in AI, which is a field close to my heart, but also, and perhaps more importantly, she is the Higgins Research Professor of Natural Science in the School of Engineering and Applied Sciences at Harvard University."
+    },
+    {
+      "start": 244.08,
+      "end": 267.936,
+      "text": "Her contributions to AI were in pioneering research in areas such as dialogue processing, but also in theories of multi-agent collaboration and their application to human-computer interaction. And we are particularly interested also because Professor Gross co-founded"
+    },
+    {
+      "start": 267.936,
+      "end": 293.376,
+      "text": "Harvard's Embedded Ethics Program. And I think that may be of interest to many of us as it aims to integrate teaching of ethical reasoning into core computer science courses. And I hope we can find the time to talk a little bit about this. Professor Gross also received the Alan Newell Award from the ACM AAAI."
+    },
+    {
+      "start": 293.376,
+      "end": 322.768,
+      "text": "and the Computational Linguistics Lifetime Achievement, among many other prizes and awards. And I'm really looking forward to her presentation with the slightly puzzling title, An AI and Computer Science Dilemma, Could I? Should I? Barbara, the floor is yours. Thank you very much, Eric. Can everybody hear me okay?"
+    },
+    {
+      "start": 323.216,
+      "end": 351.408,
+      "text": "All right. I'm going to now try to share my screen. So you can see my slides, I hope. Yes. Yeah. All right. So I will explain this. I will explain this puzzle of an AI dilemma. Could I? Should I? And I'll explain it in part by saying my alternative."
+    },
+    {
+      "start": 351.664,
+      "end": 379.776,
+      "text": "Oops. Let me. OK. My alternative title. You see if I can get all of you out of the way. Yes. Thank you. Which is toward designing society compatible systems. So not to make it a big secret. Eventually, I will get to talking about the embedded ethics program and the main."
+    },
+    {
+      "start": 379.776,
+      "end": 406.896,
+      "text": "thrust of that is to get our students from thinking about whether they could build a particular system to whether they should be building that system and how they should build it. And I will return to that theme going forward. I want to say also that I wrote an AI-NCS dilemma because much of the press these days is about"
+    },
+    {
+      "start": 406.896,
+      "end": 433.408,
+      "text": "AI systems and the ethical challenges they present. But really, every system that is out in society presents similar kinds of ethical dilemmas. And so you'll see that we do the integration not just into AI courses, but into computer science courses overall. And the toward designing society compatible systems."
+    },
+    {
+      "start": 433.408,
+      "end": 462.736,
+      "text": "is meant to contrast with what some of you heard two weeks ago from Stuart Russell, where his interest is in designing human-compatible systems. And I mean here to emphasize that these systems need to work not just for individuals, but for society as a whole. And of course, once you go to society as a whole, you have the question of competing or differing values to deal with. So we'll come back to all of that later."
+    },
+    {
+      "start": 465.52,
+      "end": 486.48,
+      "text": "So I just want to say as background that in the 40 some years since I started out in the field of AI, it has made enormous advances, most of them recently enabled by machine learning and massive amounts of data. That's data all of us give to the companies who use it."
+    },
+    {
+      "start": 486.48,
+      "end": 516.304,
+      "text": "raising some ethical issues and the machine learning as some of you may know has really been moved forward by massive computing power that's a result of all of the games that are on computer systems so this slide shows you just some of the different systems that are out there in daily use now you know some of them on our phones some of them"
+    },
+    {
+      "start": 516.304,
+      "end": 524.32,
+      "text": "in the stores that we shop in, some of them online, some of them where we go for medical care."
+    },
+    {
+      "start": 524.32,
+      "end": 553.536,
+      "text": "So it's well beyond AI contributing just to games in structured environments where you know all the rules. And again, that's something that leads to the ethical challenges. So just so that we're all on the same page about artificial intelligence and what it is, I'm not going to try to define it. I think Stuart may have done that. I think that if you have six AI researchers or developers, you're likely to get seven different definitions."
+    },
+    {
+      "start": 553.536,
+      "end": 582.416,
+      "text": "So I will say just that AI is both a science and an engineering undertaking. The science aims to understand human cognitive processing. Some people also look at animals, but human cognitive processing and to develop models and theories that will allow us to explain how they work. The engineering undertaking is what we see in daily life."
+    },
+    {
+      "start": 582.416,
+      "end": 611.92,
+      "text": "often does not care about how humans or other intelligent beings, how their cognition works. It's really a matter of can we get a certain kind of behavior? There's also the issue of narrow versus general AI. And on that, I'll say only that to date, we have only narrow AI and general AI that can compete with people is a long way in the future."
+    },
+    {
+      "start": 612.08,
+      "end": 640.608,
+      "text": "People may aim to replace humans in certain jobs or certain work or and or to replicate human intelligence. Some of us argue that it's much more important to think about complementing human intelligence. My quip about this is we know how to replicate human intelligence. They're called babies and they have only human intelligence. What we need is something to support that in getting."
+    },
+    {
+      "start": 640.608,
+      "end": 669.088,
+      "text": "Things better, things to work better and better things to happen. A most important different comparison is between model based or data dependent methods. And I'll say something more about those in a minute. One of the interesting things about computer systems as compared to earlier technologies is they have what the philosopher James Moore called logical malleability. That is, they can be."
+    },
+    {
+      "start": 669.088,
+      "end": 694.736,
+      "text": "designed to do many, many different tasks. And it's hard. It's hard often to make them tractable. And then I'll just mention, if we want to think about ethics and then policy and regulation, that can happen before the systems are put out in the world with design and development processes or after deployment."
+    },
+    {
+      "start": 695.6,
+      "end": 719.376,
+      "text": "And I'll just note something I think is very important as we think about the data dependent systems, which I say from a quote from a former student of mine at J. Comar, that they are of people, by people and for people. So model based methods have general theories. Those theories have semantics. They can explain their reasoning."
+    },
+    {
+      "start": 719.408,
+      "end": 726.64,
+      "text": "But they require handcrafted models with expert input and knowledge engineering is known to be hard and brittle."
+    },
+    {
+      "start": 726.864,
+      "end": 753.232,
+      "text": "The data dependent methods, which are machine, all the machine learning methods don't require that hand crafting, but they require a large corporate of data, which we don't always have in certain application areas. And you get descriptive statistics and not causal, not causal explanations. So they are also brittle, but in a different way. And it's taken a while to recognize that brittleness."
+    },
+    {
+      "start": 753.552,
+      "end": 776.112,
+      "text": "Just a few examples of where there's been great performance and yet we should ask questions. So many of you know how wonderful object recognition is now on computer computing systems. In 2015, in some tests, the computer systems outstripped humans."
+    },
+    {
+      "start": 776.176,
+      "end": 802.576,
+      "text": "But always when you hear results like this, you need to ask the question of how. And I'm told in this particular study, which, first of all, was not a very broad study. I think there was one human, the system designer. But secondly, I'm told that the outstripping was because the system knew more more breeds of dogs than the human did. And that may be important in some areas, but not always."
+    },
+    {
+      "start": 802.896,
+      "end": 829.008,
+      "text": "So as Eric mentioned, one area of my own research has been natural language processing. And I just want to quickly say that you can see differences between humans and the natural language systems of today by testing the systems that we have. So one of my favorite examples is asking my phone where the nearest gas station is."
+    },
+    {
+      "start": 829.008,
+      "end": 858.784,
+      "text": "getting a list of 16 and asking which ones are open and getting this response. Would you like me to search the web for which ones are open? And so I've said of this that and earlier of other systems, in fact, the Watson Jeopardy system, that if you look at the errors, you can see that systems are really not close to human performance. So that's kind of funny, but you can also see."
+    },
+    {
+      "start": 858.784,
+      "end": 888.224,
+      "text": "that there are some ethical issues that can get raised by these kind of funny gaps in what systems can do. And so students in a course I taught, which I'll come back to shortly, Intelligent Systems Design and Ethical Challenges, their first assignment was to find some examples of where systems worked impressively and where they failed. And one example from these students is these three questions."
+    },
+    {
+      "start": 888.224,
+      "end": 917.264,
+      "text": "So if you were to ask a human being any of these three, you would get roughly the same answer. But in fact, that doesn't happen with the phone or it didn't then. And the last time I checked, it didn't. If you ask where is the nearest hospital emergency room, you get a hospital emergency room. Here are some of the answers that you get for where you can get a flu shot. It took me a while to figure these out."
+    },
+    {
+      "start": 917.264,
+      "end": 944.0,
+      "text": "Until I realized that the system thought a flu shot was a kind of product. And I never figured out iTunes. But a younger person said to me, oh, the system thinks that flu shot is a music group. No person would ever make that mistake. And then finally, if you look at this example, where instead of telling you how to treat a sprained ankle, you get a Web page and you think."
+    },
+    {
+      "start": 944.0,
+      "end": 972.608,
+      "text": "If instead of asking about a sprained ankle, the system had been asked about treating a heart attack, there would be a real ethical problem of a patient needing emergency treatment, not getting it as soon as they need it. So I think I won't have time today to really say much about this example, but I hope you'll take a minute to read it. Well, I point out that."
+    },
+    {
+      "start": 972.608,
+      "end": 996.56,
+      "text": "This was a doll that was advertised as being your child's best friend. And here's an example taken from the New York Times Magazine report on this of how the system, because it doesn't understand words like no and nothing. And in fact, it follows a script, carries on a really horrible conversation with a child. And in fact."
+    },
+    {
+      "start": 996.56,
+      "end": 1021.92,
+      "text": "One could worry that what this doll would do for a child is to teach it to ignore the people it's talking with or she's talking with. Surely not something we need to teach people these days. In fact, we'd like to teach our children the opposite. So the root or a root of the problem is that many of these systems."
+    },
+    {
+      "start": 1021.92,
+      "end": 1048.992,
+      "text": "that are built to be autonomous and work without people forget that we populate the world and the systems need to learn to work with us. And in a particular challenge, as you see on this slide, is that for the foreseeable future, we can't always predict how people will behave. And so we need to build systems that"
+    },
+    {
+      "start": 1048.992,
+      "end": 1070.432,
+      "text": "know when to check, when to go back to a person, when they don't know something that's important to the decision they're about to make. So that leads me to the ethical reasoning challenge. And I will focus in particular on design. But I want to just say as background."
+    },
+    {
+      "start": 1070.432,
+      "end": 1098.688,
+      "text": "that when we think about AI and ethics or computer science and ethics, we should think about two things. One is how we can build systems that do good, as well as how we can avoid harm. And then I'll comment that focusing on robot takeover scenarios, focusing on problems like the trolley problem, are really a distraction from issues that are real and present now. And I think that"
+    },
+    {
+      "start": 1098.688,
+      "end": 1125.856,
+      "text": "doing so is a huge mistake for the field and for people from the social sciences and humanities who really care about AI systems and computer systems in society. So again, an example I won't have a chance to go through in any detail, but an example of trying to do good is the healthcare coordination work that we've done at Harvard and Stanford."
+    },
+    {
+      "start": 1125.856,
+      "end": 1154.416,
+      "text": "building a little system we call Goalkeeper to help the many, many practitioners who take care of a child who might have been born with genetic issues, who might have been in an accident, who has multiple different problems and therefore sees a whole range of different kinds of therapists and caregivers. Electronic health records do nothing to help with this, but we can build systems."
+    },
+    {
+      "start": 1154.416,
+      "end": 1178.144,
+      "text": "based on theories of collaboration that will help and then a related point which is if we again design not for a full autonomy with no sense no no work done to complement people or work with people also we miss the boat with the data dependent approaches um and"
+    },
+    {
+      "start": 1178.144,
+      "end": 1202.128,
+      "text": "And Ece Camar, again, you can see her ICHCAI paper, has argued quite persuasively that here you also need to have humans in the loop in order to build reliable systems. So I'll come to a major point that I want to make, which is that for society compatible systems."
+    },
+    {
+      "start": 1202.704,
+      "end": 1229.936,
+      "text": "You need to take into account, we in AI and in computing overall, need to take into account that any system that works with people outside of a very structured environment, like a banking system internal to the bank or a pilot in an airplane, but not a driver in a car, by the way, that these are socio-technical systems."
+    },
+    {
+      "start": 1229.936,
+      "end": 1257.504,
+      "text": "and that they need to design for collaboration so as eric also mentioned i did work on multi-agent system models of collaboration and in doing that i argued that the capabilities for collaboration cannot be patched on they have to be designed in from the start and i want to argue that that's true of ethics too if we're going to deal with the ethical challenges"
+    },
+    {
+      "start": 1257.504,
+      "end": 1285.344,
+      "text": "that these systems present once they're out in society, we need to have the designers of the systems thinking about them from the very beginning. We need to design them so the system, as the poster on the left shows, pulls with everybody else in the boat, not as the poster on the right shows, where they're working against each other."
+    },
+    {
+      "start": 1285.344,
+      "end": 1309.536,
+      "text": "We have developed a program at Harvard called Embedded Ethics. The capital CS is for computer science. And the idea, as illustrated in this rope, is that we need not we need in computer science. And we have recognized this to teach not only technical skills and problem solving. It's one of the things that computer science education is very good at focusing on."
+    },
+    {
+      "start": 1309.536,
+      "end": 1338.768,
+      "text": "And not only design thinking, something that has moved into computer science slowly and partially so far, but also ethical reasoning. And we need these things to be intertwined. And that's what we try to do with embedded ethics. OK, so the idea here is that we want ethics from the start continuously and ubiquitously. Our goal is to design, teach students."
+    },
+    {
+      "start": 1338.768,
+      "end": 1366.0,
+      "text": "to design with ethics principles in mind. I'll note on the side that some people in artificial intelligence are also trying to design ethical reasoning systems. Personally, I think that's extremely hard to do. We still can't build systems that are good at counterfactual reasoning in the physical world. And it's very difficult to teach people ethical reasoning."
+    },
+    {
+      "start": 1366.0,
+      "end": 1395.968,
+      "text": "Seems quite a stretch to go that route, but I'm happy for people trying to do it. In the meantime, I think it's important to teach the people who are going to be building and selling our systems to think about ethics. And it's not it's not just the students that we need to teach. It's also the people in industry who need to be taught. And one hope we have is that as our students go out in the world, they will teach the people that they work for."
+    },
+    {
+      "start": 1395.968,
+      "end": 1422.992,
+      "text": "until we have a whole workforce in computing that has thought about this. We have some nice examples of that happening. But we need industry to take this on also. And we also need the education to educate the public to set expectations correctly. And I'm glad to talk about any of those things. Let me give you a small background because I think this example is quite interesting."
+    },
+    {
+      "start": 1422.992,
+      "end": 1446.608,
+      "text": "And I hope while I'm talking, you'll you'll read what's on the slide. But this was the course that I taught on intelligent systems, design and ethical challenges. One hundred and forty four students competed for 24 positions in the class because it was a small seminar class, which I was really lucky to do that way at Harvard."
+    },
+    {
+      "start": 1447.632,
+      "end": 1474.176,
+      "text": "They had to write essays saying why the class was important and what they would contribute to it. So they were very, very dedicated to the whole issue of ethics and thinking about ethics. In their Tuesday class, we had focused entirely on ethics related to something that had gone on in industry. In the Thursday class, I taught them about how recommender systems work."
+    },
+    {
+      "start": 1474.176,
+      "end": 1501.584,
+      "text": "And then we had this in-class activity. So it was a very interactive class. And you'll notice in blue, they were designing for a client who had an innovative fitness solution. And part of what they needed to do was list five features of the user's profile. So as we went around the class and the different groups that had talked about this gave me the features they wanted, I was aghast."
+    },
+    {
+      "start": 1501.744,
+      "end": 1530.832,
+      "text": "And at the end of going around the class, I asked students how many had thought about ethics. None of them had. So committed students cared about ethics, and yet they hadn't thought about it. When they were asked on their assignment why, they said, well, it wasn't part of the activity description. It wasn't part of what we were told we need to do. We know about making code efficient. We know about making systems that sell, but we didn't."
+    },
+    {
+      "start": 1530.832,
+      "end": 1556.512,
+      "text": "It wasn't there as part of what we thought of in product design. And so that's what led me to think that we need to make ethics as prevalent in computer science as we have made making code efficient and clean. And that's what embedded ethics is trying to do. So we integrate ethics into the curriculum as a whole, and we do it for several reasons."
+    },
+    {
+      "start": 1556.512,
+      "end": 1583.488,
+      "text": "Over the course of 10 or 12 or 14 courses, students get most of a semester's worth of a course. But it's not a separate course that makes ethics seem as an add on. It's integral rather than an interruption, rather than something on the side. It's part of the course. It leads students to think about."
+    },
+    {
+      "start": 1583.488,
+      "end": 1609.488,
+      "text": "ethical issues as they think about the code they're writing in the systems they design. And it shows that this is across all areas of computer science. How do we do it? Well, when I first proposed doing something to my colleagues, they were very glad to do it, but they said they didn't have expertise in ethics."
+    },
+    {
+      "start": 1610.16,
+      "end": 1638.096,
+      "text": "In my course, CS 108, I had a fantastic philosophy PhD student who was teaching. And so I said, well, let me talk to the philosophy department and see if we can recruit students and postdoctoral fellows to do the teaching of the ethics. And so, in fact, that's how it works. Philosophy PhD students who have already have a track record of doing good teaching."
+    },
+    {
+      "start": 1638.096,
+      "end": 1666.576,
+      "text": "meet with the lead faculty teaching a course to identify a technical topic in the course that has ethical ramifications. The PhD student then develops a module, identifies the philosophical issues to bring up in conjunction with the technical issues, develops a module for one or two class sessions."
+    },
+    {
+      "start": 1666.576,
+      "end": 1691.376,
+      "text": "introduce an active learning engagement so the students use the ideas. It's not just a lecture like I'm giving now, which is unfortunate, especially at a distance. And they also design an assignment so that the students know that it matters for the course. Early on, we brought the teaching fellows and then the"
+    },
+    {
+      "start": 1691.376,
+      "end": 1720.624,
+      "text": "postdocs together in a teaching lab. This is very novel for the philosophers, by the way, but they love it. And we have built a team that works together with the postdocs guiding the teaching fellows from the perspective of teaching this kind of module in a course where students haven't had introductory philosophy. And the CS postdocs bring expertise beyond what the philosophers have."
+    },
+    {
+      "start": 1720.624,
+      "end": 1748.592,
+      "text": "of computer science to explain the concepts. This has been wildly successful also for the philosophers. Both postdocs and graduate students have gotten different kinds of teaching positions than they would have otherwise. And for the CS postdocs as well, some of whom have changed. In fact, both kinds of postdocs and the graduate students have changed the kind of research they do."
+    },
+    {
+      "start": 1749.296,
+      "end": 1774.816,
+      "text": "So in my remaining time, I just want to talk about why collaborate with philosophers, though I suspect for this audience, I don't need to. But I like this example because it shows how the step back that philosophers do and social scientists also, by the way, is so important. So my colleague, Milan Tambay, who has done tremendous work on."
+    },
+    {
+      "start": 1774.816,
+      "end": 1802.096,
+      "text": "artificial intelligence applications to make society better, came to us. When he first came to us, we invited him to lunch with the teaching lab. And he told us about a tuberculosis project he was developing in India. And I'll note here that 10 million people a year get infected with tuberculosis and 3 million die."
+    },
+    {
+      "start": 1802.512,
+      "end": 1830.32,
+      "text": "So this is a big problem in the world. And he thought that he could use techniques he had used to predict certain things about human behavior to predict who might not adhere, where they could then, the non-governmental organization that was trying to help prevent tuberculosis could focus phone calls and health worker visits on the high-risk people."
+    },
+    {
+      "start": 1830.992,
+      "end": 1859.856,
+      "text": "And what he said to the philosophers, so we've come up with an idea and I want to know if it's fair. Does it generate resources? In this case, calls fairly. And they looked at the wide range of fair machine learning literature, huge number of ideas, and decided that what they would adopt is Rawls' max-min criterion, where you make the pie a little bigger so that"
+    },
+    {
+      "start": 1859.856,
+      "end": 1888.784,
+      "text": "The smallest pieces are the same as in the small pie, but there are bigger pieces for the people who need more. And the implementation of that was to change the distribution of who got calls. So here's what the philosophers said. Well, what are you distributing here? Is it phone calls? Is this a harm or a benefit? What's the benefit and what's the harm?"
+    },
+    {
+      "start": 1888.976,
+      "end": 1915.232,
+      "text": "And who are we protecting from unfairness? Is it marginalized social classes? Is it regional groups? What's the stigma? We know the goal is increased adherence. And who's the fairness focused on? And after listening to those answers."
+    },
+    {
+      "start": 1915.232,
+      "end": 1939.6,
+      "text": "The philosopher said, look, an arbitrarily chosen criterion is unlikely to operationalize fairness. And I'll say on the side that just because computer scientists decide they can compute something doesn't make it a good criterion for fairness or justice. And this is part of what we're trying to teach our students. And that there's a cost if you if you do with this."
+    },
+    {
+      "start": 1939.664,
+      "end": 1966.496,
+      "text": "And in fact, what they decided in this particular case was that you needed to focus on the socio-technical system. And it was the socio part that needed adjustment. It was what the health care workers said when they called someone and how they treated that person and not who they called. So just to summarize, here's what this collaboration with philosophers bring."
+    },
+    {
+      "start": 1966.496,
+      "end": 1995.392,
+      "text": "They know how to step outside of something, think about counterfactuals, think about uses that computer scientists might not think of, and they know how to apply ethical theories. Some of them know how to apply ethical theories to real-world problems. There's a website for embedded ethics at Harvard. I've put up the website here, but you can just type into your favorite search engine, Harvard embedded ethics, and you'll get here."
+    },
+    {
+      "start": 1995.392,
+      "end": 2024.112,
+      "text": "These are examples of some of the modules. Again, if you go to the website, you can find the list of modules and some of the content of some of them. I'll just say we're updating the website now, so it's a little bit flaky, but it's there and it will be better in another month. So just to end, I think on time, this is a collaboration between computer science and philosophy."
+    },
+    {
+      "start": 2025.008,
+      "end": 2045.792,
+      "text": "I personally have gone from thinking about teamwork and intelligent systems to thinking about teamwork on ethics and forming systems design. And. And in both cases, you need to do it from the beginning."
+    },
+    {
+      "start": 2045.792,
+      "end": 2074.928,
+      "text": "And I'll just come back to the puzzle, Eric, of should versus could. If we're going to inform system design, we need to have that in front of people. I have I said in an interview once that my fantasy was that every time a system designer or programmer booted up his or her system across the screen would come. Have you thought about the ethical implications of your design today? So with that, I will."
+    },
+    {
+      "start": 2074.928,
+      "end": 2101.072,
+      "text": "Thank you. And I guess turn off my sharing and let Eric turn on his and take questions. Thank you so much, Barbara. Very insightful talk. Very inspiring. I think I have found an explanation, at least for me, that works about the could I and should I. In epistemology."
+    },
+    {
+      "start": 2101.2,
+      "end": 2130.56,
+      "text": "The technical sciences are considered to be about constructability. What can be built and how should it be done? And you're actually expanding that question into a little bit into the normative, really, by asking, well, should it be built? Which is a broader question. And I think this is a hugely interesting perspective. Yeah, I like that very much, Eric."
+    },
+    {
+      "start": 2130.56,
+      "end": 2151.696,
+      "text": "I like that very much because when computer science was young and I was I wasn't there in the beginning, but close to the beginning of AI, it was so hard to get computers to do anything that all you could think about was could you do it? And I think it's that perspective that you've talked about science and engineering."
+    },
+    {
+      "start": 2151.696,
+      "end": 2181.136,
+      "text": "That is just so deeply ingrained in computer scientists now that we have to get them out of there. But, of course, for just the reason you said, which is the training and how to think about the normative is elsewhere. We need to do this in partnership with people who are as expert in the normative as we are in the tinkering. Right. Right. OK, that's the time to open up for questions."
+    },
+    {
+      "start": 2181.424,
+      "end": 2206.144,
+      "text": "Please raise your hand. Unfortunately, I seem not to be. Yeah. Anna, I'm taking you. Go ahead, Anna. You should be. Okay. Thank you. Thank you very much, Barbara, for a very nice presentation. Very interesting. My name is Anna Bond. I'm from..."
+    },
+    {
+      "start": 2206.144,
+      "end": 2235.888,
+      "text": "The University of Amsterdam. And I'm very interested in the AI ethics. We are currently working with students on this topic. And we are working on information systems building for African farmers. So for very low resource environments. And there the ethical question is, and that's why I'm very interested in what you think about it, is that ethics are often context dependent and dependent on culture."
+    },
+    {
+      "start": 2235.888,
+      "end": 2265.296,
+      "text": "And we are now asking ourselves, and therefore this question, how can we work with the different perspectives on ethics when we work with different cultures in information systems development or AI? That's really a wonderful question, Anna. And in teaching embedded ethics, we actually"
+    },
+    {
+      "start": 2265.296,
+      "end": 2295.024,
+      "text": "Don't start with various ethical theories. We start with teaching students that. That in essence, ethics considers different kinds of values, different kinds of preferences and tradeoffs among them and how they affect the different individuals involved or to whom they relate. And then actually gets to say theories like, say, deontology."
+    },
+    {
+      "start": 2295.024,
+      "end": 2308.8,
+      "text": "um or consequentialism by saying well if you take this kind of approach that's what's been kind of packaged up as this theory but but really you need to start with the values and so"
+    },
+    {
+      "start": 2308.8,
+      "end": 2331.696,
+      "text": "I mean, first, I'm right. This is not my training and expertise, but I'll tell you what I've learned as I've thought about this, that the different cultures is absolutely essential, that you need to start with the values of the you need to learn the values of the culture you're working with. And for that, you need to talk with the people. I think the."
+    },
+    {
+      "start": 2331.696,
+      "end": 2361.04,
+      "text": "computer science area of human computer interaction. And of course, ethno-methodologists and other anthropologists have developed ways of learning from people what matters to them. And so the ethics has to grow up organically from where you are, which makes it harder. Someone once said to me, well, just tell me what I should do and I'll do it. And I said, but the point is, if I could just write a rule book for you, this would be a much easier problem, but I can't."
+    },
+    {
+      "start": 2361.04,
+      "end": 2390.864,
+      "text": "Right. One has to one has to invest in learning. Which is true, by the way, to build a decent system anyway. Right. The problem, at least with the electronic health record systems in the US, which I've looked at a lot, is that they were designed for billing departments, not patient care delivery. If you don't talk to people who are using the system to understand what matters, it's not going to work in the end. Thank you, Anna. Thank you, Barbara."
+    },
+    {
+      "start": 2391.12,
+      "end": 2418.176,
+      "text": "Barbara, let me ask you a question which came up in last year's course, and it goes along with Edward Lee's question that has just been writing in the chat. We had actually a straightforward proposal when we discussed ethical issues in designing systems is, well, the computer scientists need to be much better ethically."
+    },
+    {
+      "start": 2418.176,
+      "end": 2447.616,
+      "text": "But then Edward rightly argues in his question, very few computer systems are designed by an individual nowadays. So it's actually only the very small systems. But anything of significant size and perhaps impact is co-designed by a number of people, which makes it all the more difficult. I'm sure theoretically you could even argue every single computer scientist could behave ethically and maybe"
+    },
+    {
+      "start": 2447.616,
+      "end": 2473.392,
+      "text": "the total system could still be unethical. What shall we do about this massive challenge? Also, thank you. Thank you, Eric. And thank you, Edward. So, yes, the system. So I think I'm going to take it in two stages because computer systems are designed by a group."
+    },
+    {
+      "start": 2473.584,
+      "end": 2501.024,
+      "text": "not an individual. And then they evolve over time. So there's also a change of the group over time. So the argument with respect to the group. So first, of course, I want to say the reason for embedded ethics is if every computer scientist is thinking about ethics, then they all will be thinking about ethics and they will recognize that each of their pieces has to work right for the ethics to work right."
+    },
+    {
+      "start": 2501.024,
+      "end": 2530.848,
+      "text": "Of course, this is the pipe dream, right? But for the team, so one argument for the product design teams is that they should consider having social scientists or ethicists in the room when they talk about the overall design. Computing is not a bunch of monks in their own cells doing things and then they hope it fits together."
+    },
+    {
+      "start": 2530.848,
+      "end": 2559.28,
+      "text": "That just doesn't work. I mean, that's not collaboration. You need collaboration and teamwork. So you want at the table people who will ask questions. So that's that's the answer in terms of when there's synchrony, when it evolves over time. I think, you know, this is this is why I want the banner across the screen, because somebody taking something and tinkering also needs to be reminded, well, you're tinkering."
+    },
+    {
+      "start": 2559.28,
+      "end": 2588.08,
+      "text": "actually affect this so there needs we need so one if if every university that teaches computer science would do this in some kind of integration here then soon we would have different kinds of people in companies and not just as programmers but also as the entrepreneurial drivers and as the managers and as the um so i think i think that that"
+    },
+    {
+      "start": 2588.08,
+      "end": 2616.256,
+      "text": "that would also make the difference. So I hope that's an indication of where to go. Yeah, thank you, Barbara. The next question is from Anthony Olive, who I invite to ask his question, and then I take Helga next, and then Hannes. Thanks, Barbara, for the presentation. Very nice, very interesting. I have only one single question. Well, I have many, but I don't want to take all your time."
+    },
+    {
+      "start": 2616.256,
+      "end": 2646.192,
+      "text": "The fact is that, as you know, there are several approaches to ethics. Ethics is, of course, a single word, but it encompasses several approaches from utilitarianism and many, many others. And how do you handle the fact that there could be several approaches to ethics? So we don't hide it. We expose it and have students see."
+    },
+    {
+      "start": 2646.192,
+      "end": 2674.128,
+      "text": "Take this in a slightly different direction. One of the challenges in teaching ethical reasoning, normative reasoning to computer scientists or engineers as a whole, I would say, is that they're used to problems where there's if you pick the right method, you get to an answer that is, I'll put in quotes, provably correct. And it's not that there are six different answers that you then toss a coin about. So one of the things is to teach them that."
+    },
+    {
+      "start": 2674.128,
+      "end": 2697.504,
+      "text": "It may be that you have a choice among competing alternatives here, each of which is good. It's a very different kind of thinking. And this is where I think having philosophers doing the teaching is so valuable because they can look back in history. They know more."
+    },
+    {
+      "start": 2697.504,
+      "end": 2725.248,
+      "text": "Times that we we experiment. So I started this by having four courses and then it went to six and then to eight. And now it's 12 a semester, which is most of the courses. Harvard's a small program. She said to me, you know, I could have done the lecture part of the course. I understand enough now, she said, but I couldn't have answered the students questions. And so my answer to you is."
+    },
+    {
+      "start": 2725.248,
+      "end": 2752.768,
+      "text": "That's where it takes this skill and teaching people how to do the normative reasoning. I think Helga would like to ask a question. Yes. Hello, Barbara. Yes. Yes. First of all, I remember well our time we spent together in Gothenburg."
+    },
+    {
+      "start": 2752.768,
+      "end": 2771.2,
+      "text": "Yeah, it was wonderful. During the Nobel Dialogue Week. Great program, great talk. I think you made it very clear that ethics is not a checklist. And this by itself is a message that has to..."
+    },
+    {
+      "start": 2771.2,
+      "end": 2784.688,
+      "text": "to be transmitted to many people. And I would like to come back to what you said about we have also to change somewhat the expectations that society has."
+    },
+    {
+      "start": 2784.688,
+      "end": 2808.288,
+      "text": "and the kind of speculations that often oscillate between a sort of utopian and dystopian view and it does not get us anywhere. I think in this respect there is something which is very very important namely to dwell on the kind of trade-offs we have to make all the time. A dilemma"
+    },
+    {
+      "start": 2808.288,
+      "end": 2838.288,
+      "text": "cannot be solved because you can go one way or the other way and both has some advantages and disadvantages. And how do you get this trade-off idea into your teaching and how do you get it into the design? We know, you know, values are contradictory most of the time. There is no universal value system across every culture, perhaps very few exceptions."
+    },
+    {
+      "start": 2838.288,
+      "end": 2857.648,
+      "text": "And this means a constant weighing and balancing. It benefits whom and under which conditions, et cetera, et cetera. And so you get all these messy questions that come from society, from social scientists and from philosophers."
+    },
+    {
+      "start": 2857.648,
+      "end": 2882.768,
+      "text": "And how do you transform these messy questions into something that fits at least a kind of model that you can transmit? And I think trade-offs is one way of transmitting it. Yeah. So thank you, Helga. And again, good to see you again. A very, very good question. So first, the..."
+    },
+    {
+      "start": 2882.768,
+      "end": 2912.688,
+      "text": "The main message, again, to the students is that there are these tradeoffs. They can't escape them. There's a certain amount that can be done in design to, let's say, to satisfy as many of the values. I don't mean this in a consequentialist way, but to satisfy as many values as people think are absolutely crucial. And then to be honest, in terms of what you haven't been able to achieve."
+    },
+    {
+      "start": 2912.688,
+      "end": 2931.568,
+      "text": "Because some of what has to, the deciding if there's really a big conflict has to be resolved through policy and regulation. This is what good government is for. I mean, right now I live where there isn't good government in my country, although there is in my state."
+    },
+    {
+      "start": 2931.568,
+      "end": 2958.416,
+      "text": "So it's a it's a huge but this is this is where the society needs to decide. And so the argument for the computer scientists is you shouldn't decide and hide it in the technology. It needs to be evident on the on the surface of the technology. And so I think I had this in the beginning and I didn't have a chance to get back to it, that there's a balance of policy, of ethics."
+    },
+    {
+      "start": 2958.416,
+      "end": 2986.432,
+      "text": "leading to where you need policy and where you need regulation. There are things where you can count on companies to self-regulate or not, and that may depend on their business. So I think that's very good. What you said, I just wanted to say that embedded ethics is very different from having a single computer science and ethics course. And the reason for that is that"
+    },
+    {
+      "start": 2986.432,
+      "end": 3012.016,
+      "text": "If you have a computer science, a single computer science and ethics course, if you require it, at least in the United States, the students are just unhappy. I mean, there's the half that care and they, you know, they enjoy it. But the other half don't. And it's the other half that you probably need to teach more than the half that enjoy it. And if you make it optional, it's only, you know, it's still the people who need it. I mean."
+    },
+    {
+      "start": 3012.016,
+      "end": 3033.744,
+      "text": "you know, Zuckerberg would not have gone to a computer science and ethics course, right? I want Harvard to produce no more Zuckerbergs. That would be a great closing statement for the session, but we still have a few minutes left. Barbara, let's ask Hannes. Hannes, I think you wanted to ask a question."
+    },
+    {
+      "start": 3033.744,
+      "end": 3063.088,
+      "text": "And I will combine it with Sarah's question from the NUI Galway. She asks about how to counter the argument sometimes made by computer science students. I don't want to consider ethics because it slows down innovation. But let's take also the question of Hannes and then Barbara, I hand over to you. Mine is more a comment and it was already answered in the previous question because."
+    },
+    {
+      "start": 3063.088,
+      "end": 3091.104,
+      "text": "I think this is a new role of, let's say, ubiquitous computer science systems, that they can uncover social political questions, as you really said. And this is maybe a new role we might have, because when you correctly, in my point of view, if you move from the individual to the societal objective, then it becomes very clear that this is a political question and who defines."
+    },
+    {
+      "start": 3091.104,
+      "end": 3118.8,
+      "text": "And this is also, for example, in machine learning, when we look, when we claim or claim machine learning for the buyers, very often the machine learning uncovers the buyers, which is already available in the data and does in our society. So we are somehow, let's say, somehow gardening and also being somehow maybe also accelerating a political discussion. So this is more a comment I made. I think you already answered it."
+    },
+    {
+      "start": 3118.8,
+      "end": 3148.56,
+      "text": "Previously, when you answered to Helga's question, just an observation from my side. Yeah, so it's a very important observation. And I think from the beginning, the model-based work in AI has helped people see things they didn't see otherwise. So my own work in dialogue systems early on and uncovering the structure of discourse and dialogue was used by teachers."
+    },
+    {
+      "start": 3148.56,
+      "end": 3167.728,
+      "text": "In a certain setting, they said it would, or anyway, people in schools of education, it would help them understand something about teaching writing. The work on speech was used by a speech coach that I knew for training radio announcers better about how to do intonation. So this is a very important."
+    },
+    {
+      "start": 3167.824,
+      "end": 3197.808,
+      "text": "possibility and potential for machine learning if it's used that way to first uncover issues before it just presumes that what's there will work. And we see this, by the way, not just for ethically sensitive things like police and sentencing, but also the disaster of IBM doing the cancer treatment in Houston was that they were using historical data to predict"
+    },
+    {
+      "start": 3197.808,
+      "end": 3224.752,
+      "text": "What what drugs to give people and the doctors were rejecting it because it was out of date. So any time the world is evolving, the historical data is going to have is going to have trouble. So. So thank you. And then for Sarah. So there are different ways to answer this first."
+    },
+    {
+      "start": 3224.752,
+      "end": 3244.88,
+      "text": "We don't have any evidence that it slows down innovation of good products. If you consider ethics, you will make a better product. And, you know, but I have said so. So there are ways to speak to the students about this. It's better design."
+    },
+    {
+      "start": 3245.136,
+      "end": 3267.888,
+      "text": "But in the end, and I think what the students are getting at or what they're reflecting is this industry perspective that the incentives are all about making money. And so one of the major challenges is to get industry to rethink its incentive structure."
+    },
+    {
+      "start": 3267.984,
+      "end": 3293.744,
+      "text": "In the end, they're going to want to make money. But that also means they want to avoid lawsuits and they want to avoid regulation. And so so there are benefits to them of having processes where they can say that they have actually considered the ethical questions of design. So my I think I think this is a major challenge."
+    },
+    {
+      "start": 3293.744,
+      "end": 3321.84,
+      "text": "In fact, I'm about to, I am just starting, but we've just put the committee together for the National Academies of the United U.S. The Computer Science Board has asked me to chair a study on responsible computer science. And one of the main challenges is to bring some people with business expertise together with some philosophers and social scientists and academics to talk about just that issue of how you"
+    },
+    {
+      "start": 3321.84,
+      "end": 3343.296,
+      "text": "how you get the incentives aligned. And even though we know where we are now, we also know that, and here I can speak only US-centrically, but the values of industry in the 1940s and 50s in the United States were different from the incentives now. And so we know incentives can change."
+    },
+    {
+      "start": 3343.296,
+      "end": 3368.352,
+      "text": "Maybe what we need is a Volvo of the computing industry, somebody who will decide that safe instead of safety matters and is a selling point. Ethics matters and is a selling point. But we have these examples of where, you know. Fake it till you make it or put it out there and fix it just are a disaster."
+    },
+    {
+      "start": 3368.352,
+      "end": 3395.776,
+      "text": "I mean, Theranos, the blood test company, is the biggest example I know now. So I just bring all of this to the students. That's that's what I can say. So. Thanks, Barbara. I think we have to close the Q&A session very soon. But Paul Timmers has raised his hand and I'd like to give him the floor and the mic should be OK now, Paul."
+    },
+    {
+      "start": 3395.776,
+      "end": 3417.936,
+      "text": "Thank you very much. I hope you can hear me. Thank you very much, Barbara. Very challenging. Barbara, I'm currently part of my time at the University of Oxford, but before that time I was a policymaker at the European Commission. And while we were making the first cybersecurity law, which is to deal with the protection, cyber protection of critical infrastructures in Europe."
+    },
+    {
+      "start": 3417.936,
+      "end": 3447.648,
+      "text": "I actually realized that we were completely missing out on what AI could or was about to do. For example, very rapid detection of attacks and then also intervening, actually taking decisions that in the law were supposed to be the prerogative of committees, people getting together. You can imagine the whole regulatory framework is built upon the speed of humans rather than the speed of technology."
+    },
+    {
+      "start": 3447.648,
+      "end": 3475.888,
+      "text": "So we were, we are actually, this law is going to be revised. And so a question is, can you build into that law AI? Which brings me to the question, which is, how would you see that you can actually do the combination of lawmaking, regulatory development, AI and ethics? So starting perhaps from the other point, not a technology point, but starting from ethics in law and taking into account that."
+    },
+    {
+      "start": 3475.888,
+      "end": 3504.8,
+      "text": "Technology is really, really super important there. So that's an important and hard question to answer. And I think the 30 seconds I have left. And what I'll say here is the answer is similar. You have to have the right people in the room. So you need the technologists in the room. And they need to know how to talk with and coordinate with."
+    },
+    {
+      "start": 3504.8,
+      "end": 3533.344,
+      "text": "the philosophers and the legal people and vice versa. So, you know, my career has been almost entirely in multidisciplinary settings. We need to grow multidisciplinary people. So for me, the fact that the Embedded Ethics Program has yielded philosophers who are much more sophisticated about computer science than they were when they came in is important, just like the computer scientists."
+    },
+    {
+      "start": 3533.344,
+      "end": 3558.464,
+      "text": "And in the in the beginning, the first the philosophy graduate students were terrified, terrified of the computer scientists. They were sure they couldn't understand. Well, it turns out they can. And if you find the right computer scientists, they're good teachers of computer science. So I think that the learning has to go both ways. And I hope we'll we'll find more and more ways to do that."
+    },
+    {
+      "start": 3558.464,
+      "end": 3585.856,
+      "text": "But you can't have regulators who are ignorant of the technology designing the regulation or the policies. And you likewise can't have technologists saying what they think it should be because they don't know how to think about the values tradeoff. So you have to have people in the room who can talk with each other. And that means they have developed a common vocabulary. I'm sure you know this from all your committees. There's no, you know."
+    },
+    {
+      "start": 3585.856,
+      "end": 3615.12,
+      "text": "Everybody would like a checklist and a quick way of doing it. Life is complicated. We need to spend the time it takes. Thank you, Barbara. Thanks. I can really say this. It has been a pleasure listening to you and your very insightful comments and also your experiences. I'm sure it's great to have both philosophers and engineers at the same institution."
+    },
+    {
+      "start": 3615.12,
+      "end": 3640.144,
+      "text": "The Technical University of Vienna, unfortunately, has the nearest philosophy department half a mile away. That is a very long distance to walk. But then again, it's two underground stops from Harvard Square to MIT, if I remember it correctly. Yeah, it's actually quite a distance."
+    },
+    {
+      "start": 3640.144,
+      "end": 3666.864,
+      "text": "MIT to Harvard, cognitively, if not physically. But we have had some MIT students teaching at Harvard. MIT, Stanford, and University of Toronto already have plans in place to do this. And I will say that I got the same question at the Technion in Israel."
+    },
+    {
+      "start": 3666.864,
+      "end": 3695.056,
+      "text": "And they have now found people in their medical school, which is not only more distant, but there's like hills involved, Eric. Right. So I think you don't need to have everyone to start. I think if you start with the seed of a small group and they see it's worthwhile, they will make that trek."
+    },
+    {
+      "start": 3695.504,
+      "end": 3722.512,
+      "text": "I mean, I'm working with an early modern philosopher to do this because of the ethicists on the Harvard faculty at the time I tried to do this didn't want to have anything to do with, quote, applied ethics. So it takes creativity, but usually you can find someone. And, you know, it might be in a law school. It might be in a social work school. It might be somewhere else."
+    },
+    {
+      "start": 3722.512,
+      "end": 3750.928,
+      "text": "And really, the young people are craving this. So I think go young. You know, gray hairs, we're just there to inspire them and help them do it. Thanks. Let's go young. Nevertheless, I think I hand back to Hannes. No, I just wanted to make a short comment because you really provoked me about half a mile between technical university and university. But you know that in the context of digital humanism, we are..."
+    },
+    {
+      "start": 3750.928,
+      "end": 3780.656,
+      "text": "working on a curriculum between different universities in the master, where we want to combine computer science with humanities and social science, and where we really want to work on this to have something like a cross-covered, crossing curriculum for the master. And I would be happy, Barbara, if you could join us there, and I think we will have some communication on that issue, if you agree. So I'm not sure what you're asking me to join. With your ideas and contributions."
+    },
+    {
+      "start": 3780.656,
+      "end": 3803.056,
+      "text": "Yes, I'm glad to bring it. If you can't come to one meeting, it's one thing. If you can't come to a weekly meeting, I'm not doing that. No, no, no, but we will keep in contact. But I'm very glad to talk with people, and I'm certainly glad to come to a meeting and to comment on plans and so on. That kind of thing I would be glad to do there."
+    },
+    {
+      "start": 3803.312,
+      "end": 3833.008,
+      "text": "This was just a short comment. Eric, the floor is yours. Yes, actually, I think many thanks again. Thanks to all the contributors and also to the very good questions, I believe. Now, help me with the proceedings. I think, Peter, you have a slide that reminds us also of the next event in our lecture series, which is on October 6th. And it is actually Paul Timmons, who you have just seen and heard."
+    },
+    {
+      "start": 3833.008,
+      "end": 3857.584,
+      "text": "and colleagues on digital sovereignty navigating between Scilla and Charybdis. I think the titles of this series are really designed to pose the question, but I think that's good. And then I think I'm now, having said that, having thanked Barbara and all contributors again."
+    },
+    {
+      "start": 3857.584,
+      "end": 3882.592,
+      "text": "I think I have to hand over to Peter with the piece of music, if that is correct. Peter? Yeah, thank you, Erich. I'm going to take over from here, if that's okay. So for the final notes today, they're already somehow a topical transition to the next lecture, in a way. So for today, I've picked the track Computer World by Kraftwerk."
+    },
+    {
+      "start": 3882.592,
+      "end": 3907.312,
+      "text": "which was released in 1981 and therefore long before the inception of the term surveillance capitalism and related discussions. Back then Kraftwerk have made a themed album on the rising ubiquity of computers and already addressing what we're still talking about in our discussion on digital humanism. And as is typical for Kraftwerk, the track reflects upon technological developments, as you will see in a fairly reduced lyrical form."
+    },
+    {
+      "start": 3907.312,
+      "end": 3925.104,
+      "text": "but also reminding us of the beauty of abstraction reduction to convey an idea. I don't think I have to add much more. We're going to see a live performance from one of their later tours, which also allows us to watch the visuals. So with that said, please enjoy and see you next time."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

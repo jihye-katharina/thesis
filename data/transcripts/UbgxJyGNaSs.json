@@ -1,0 +1,1031 @@
+{
+  "video_id": "UbgxJyGNaSs",
+  "source": "whisper",
+  "language": "en",
+  "text": "My name is Hannes Wertmann. For those of you who don't know me, I'm one of those ex-professors still being active partly at your university. And I'm happy to be able to moderate this today's session on digital humanism. Before starting with the program, there are two announcements. One is by Mr. Steininger, who makes a short announcement for the students. Yes, hello, also from my side. For the students who take the current trends in computer science course, the list is going through, and I will put it on the back there for those who are a bit late. So please remind your colleagues if they come late. The list is in the corner back there. Okay, thank you. Thank you, and the other one is just a reminder to switch off your phone, okay? Because really do that because it's something which is annoying during the talk. Happy to moderate this digital humanism session. It's the third one already in a row. You will hear some more by Ludger Hagedorn later on on this joint program by Technical University and EVM. But before that, I would like to introduce Gerti Kappel, you know her, to say some welcome words to all of you. Gerti. Dear ladies and gentlemen, responsible AI. I guess this is a very, very important topic. And I don't introduce now our esteemed guest. I think this will be done by Hannes. And I don't introduce Ludger Hagedorn from the Institute of the Human Sciences. This will also be done by Hannes and the whole program. What I just would like to mention at the beginning, when we talk about responsible AI, I guess first we should talk about responsible humans and the role we play in the context of responsible AI. And I would like just to mention three things which are ongoing at our Faculty of Informatics of TU Wien. First of all, might have heard that there was this cluster of excellence call by our National Science Foundation. And believe it or not, none of the computer science calls made it to the success stories. One of the reasons, and it is not because we are bad, not at all. Of course, money is only available in a limited form. But, you know, this is now really interesting. One of the reasons why a very, very good kind of grant proposal in the area of AI didn't make it because members from the jury said, do you think you are better than Google and Facebook? What can you do here in Austria? And this is really the wrong habit because this means we are not responsible as humans. And I can tell you we are responsible. So we don't let us being made down from this command. We will continue along the line in research and teaching in AI. Secondly, when you hear about AI nowadays, of course, and being... A teacher at a university or doing teaching at a university, everybody has the same problem now. What do we do with our exercises, with our homeworks, with our exams in the realm of JetGPT and the other tools? And again, I can reassure you, also our faculty is not kind of sitting and waiting that there will be some solution from somewhere. It's already since January that we have a working group in the Faculty of Informatics, but also together with the other departments of informatics in Austria, thinking of not how to forbid it, but how to work together with it, how to integrate it. And, of course, we don't have to ask for seminar works for our students anymore because we will get them from JetGPT. But what we are trying now is... let ChatGPT write the seminar work, then give it to the student and say, make it better, would be perhaps one way to go. And last but not least, and also when I was mentioning teaching, you know, when we talk about teaching, it's always the question, is it with AI or is it about AI? And is it about responsible AI? And we also have... Now, a new position in the area of artificial intelligence ethics, the hearings will be in a couple of weeks. And again, because we think we have to take the responsibility to teach our students, especially at the TU Wien, especially in technical subjects, that it is our and your responsibility to, you can say, to teach not only the right things, but also, of course, the things right, but also to teach that we can provide technical solutions next to others. And last but not least, responsible AI, responsible people, we are currently updating our curriculum. There will be a new bachelor curriculum, computer science, informatics, because it's German. starting with coming October, and we have as compulsory quality measure included embedded ethics, embedded ethics in computer science. Now you might say, what does this mean? You know, when you are teaching database systems, there are some kind of ethical considerations about biases of data, about the fair data principles. When you are teaching algorithms, you can teach kind of the various characteristics like that algorithms are more energy efficient than others. So, of course, there are different kinds of ethical considerations. And I guess we as technicians are not the best one, but we will learn. We will learn together with you, together with the students, to kind of teach. Yeah, the right thing and teach things right. So I'm very happy to have you here, Ricardo. I'm very much looking forward to your presentation and enjoy the evening. Thank you. Thank you, Gerti. Also for your words. Now I'm happy to introduce Ludger Hagedorn. He's a permanent fellow at the EVM. Institute for Human Science, which is a non-university institute focused on social science and humanities. And they are cooperating with TU Wien, with the Faculty of Informatics, on the program he is presenting. And one of the representatives of the program is also Ricardo Lutka. Good evening to all of you. I promise to keep it short, really, since this is not needed to have an extra long second introduction. As Hannes already mentioned, this lecture tonight and the whole program of digital humanism we run in cooperation with the TU Wien. And with Hannes Werthner, I mention you as the institution of your own, Hannes. I hope you agree, since you're such an important part of this cooperation that we are doing. And I should mention that the Ministry, Federal Ministry for Climate Action, Environment and Energy is very much supporting us with this program. I'm also to give you the greetings of Michael Wiesmüller, who is the head of enabling key technologies at the ministry. He cannot be with us tonight, but it's very important also to mention the ministry and their help with this. Just two more things I would like to announce. This program that we are doing includes the invitation of fellows. This is very renowned scholar, says Ricardo Baeza-Yates. This is the second year we are running this program, but it also includes the invitation of early career scholars. And just today, and we did this with the purpose of having this lecture tonight, just today we published the new call for applications for junior fellows for the digital humanism program. Maybe to some of you this is of interest or you know about somebody to whom this might be of interest. Check it on our website, iwm.at. You will immediately find it under open calls and distribute it to whomever might be interested. Second thing... speaking about the junior fellows, both of them that we currently have were supposed to be here tonight. I can see one. I think Marika is not here, but over there is Sergio Barbosa. Sergio, maybe can you stand up for one second? So Sergio is here tonight. Sergio is doing research on what's in the global south. This is his topic and inclinations to political resistance in the global south. We will have a reception afterwards, and this is the good news. If you're interested in the program, speak to us and also speak to Sergio and ask him about it. And congratulations to all of you that you made it here. You are the heroes of tonight because of this heavy rain that you... that you managed to come here. The good news is we had planned for, I don't know, a reception of 100 or 120 people afterwards. We will have wine and sandwiches afterward, so that is the reward that you will have. Welcome, and now hand over. Thank you. Thank you, Ludger. These humanities guys, they have good estimators, no? Just to add, this junior fellowship is fully covered for three months, stay in Vienna, plus travel support. So I think it's rather attractive and it's open for all different disciplines. Now I'm coming to the main part of today, which is Ricardo's talk. And I'm shortly introducing you. I have a long list of things I want to say. Maybe I'm shutting it down, cutting it down. But one thing is... He's a pioneer, one would say even veteran, but I'm not using that word, in web search and bias. He was one of the first ones publishing about that. He even developed a framework for the different types of biases and how you can really tackle them. So he's really coming from the field, now extended to AI. And if you want to learn something or hear something profound, about bias, then this is the right place to be because he is the expert on that issue. He's currently professor at the Institute of Experimental AI. Is there a non-experimental AI? I'm asking myself, but this is the notion of your institute. He's also directing at the Northeastern University in Boston. He's well known for his activity. He was vice president for research at Yahoo. for several years, so he was really directing research at Yahoo and active for web search there. And he was a frequent traveler because he was sitting in London, in Barcelona, in Santiago de Chile, in Haifa, and also somewhere in the U.S., so he's a frequent traveler, not just now. He's continuing that because between his Northeastern University professorship, he has part-time possessorship. at the University in Barcelona, as well as in Santiago de Chile, where you have part-time research and teaching activities. He's well-cited in the community, has over 600 publications, and I'm just mentioning one book which even got the Information Science Book Award. In 2012, it's about modern information retrieval, so it's one of the, let's say, standard textbooks. He has awards and honorary memberships in different societies and universities. I'm not going to mention them. He was also the first computer scientist to be elected in the Chilenian Academy of Science. This seems to be very special that this is mentioned. He's a fellow of the ACM and of IEEE. And what I especially like that he's really devoted to the responsibility part of AI. He's with digital humanism since the early beginning. He was also one of the authors in our first book, Perspectives on Digital Humanism. He published on AI. If you do not know that book, go to the Springer website and download this. We have already 350,000 downloads of this book. so I think it's already a bestseller. Also due to Ricardo, who is one of the authors. Ricardo, thank you for being here with us. He will talk between 50 and 55 minutes, we agreed. Maybe a little bit shorter, but you will need it. Okay, the floor is yours. Thank you. So thank you, Hannes. Thank you, Ludger, for this invitation to be in rainy Vienna in June. And also thank you to all the responsible people that made it to the talk, right? Because maybe other people couldn't. So it's very hard to work on this topic because every day something irresponsible happens. And I need to decide if I put that in my talk or what I need to delete. And it's not easy. So one thing I had to put in my talk is the bonus track. I have to talk about chatbots, right? This is in the news the last six months. So the last part of the talk will be about ASICs and responsive AI in chatbots. Of course, the most well-known is ChatGPT, but it's not the only one. So Harris mentioned the Institute for Experiential AI. Just to give you a small summary of what we are doing, this is a new institute. two and a half years, and the main goal of the institute is to be the single phase of AI for Northeastern University. Northeastern University, many people don't know, has 14 campuses in three countries. I work in Silicon Valley at home, so you can work also. I've been working at home before the pandemic, so I guess I was trendy earlier than normal. And we think that there are two things that make AI good and practical. The first thing is that humans in the loop. Although I don't like this term, or people use humans in the loop, I prefer to talk about humans in charge. And the algorithms should be in the loop. And this is part of responsible AI, to be the ones in charge. The second thing is that we have a strong dependency on data. Many times people don't do better algorithms, they just put more data. And you see that with chatbots. Okay, let's put... More parameters also. Maybe 100 trillions. This is crazy. This is more than things that we already know in our biology. And then as part of this, we want to have a responsible AI practice where we are helping industry to do better AI. And we have learned a lot and they have learned a lot because this is something that not too many people is doing. So this is... And there you have the website if you want to see what we are doing. We have a free seminar series twice a month. In one month, we show what we are doing. In another one, we invite very well-known people. The last one was Yal LeCun and was very, very good talk in person and also online. So the agenda is basically three parts. First, I will briefly say... why I'm talking about responsible AI and not other kinds of AI. And then I need to go to responsible AI. And these are the main four that I will talk today. There are more. Automated discrimination, AI phrenology, human incompetence, we have that everywhere, and expensive and doubtful use of natural resources. This has a personal bias. We need to understand our own biases. Some are more important, but these for me are the most important. And then I would like to try to see what we can do. And then I will talk about principles, I will talk about regulation, and I will talk about our integrated view of responsible AI, what we are doing. So why responsible AI? Many people talk about ethical AI. If you learn something in this talk, don't say that ever again. I will be happy. If you say ethical AI or just AI or trust worthy AI, you are humanizing an algorithm. We shouldn't humanize things. These are not human. So humans can understand ethics, can define ethics, know what is justice or don't know what is justice, and also assign trust. For example, trust is almost something binary. You will never say, I trust this person 50%. And even if you say it, you will... decide to test it or not. So the action would be binary. So don't associate human traits to machine. So we don't use ethical AI, and we have a blog posting about this. But what about trustworthy AI? There is a National Science Foundation program in the US called Trustworthy AI. There's a European Union program called Trustworthy AI. What is the problem with trustworthy AI? There are two problems. It's not only you are humanizing AI, but also we know that AI doesn't work all the time. So maybe a long-term goal will be to have trustworthy eyes that, like the sample I put, is like, if you go to this building and the elevator says it works 99% of the time, I will never take the elevator. Would you? Now, if the elevator says it doesn't work 1% of the time, and when it doesn't work, it stops, I will take it because I know I'm safe. This is why we have planes, we have buildings, we have bridges, we have helicopters. Because we know that it's engineering, not alchemy. Engineering. We know that it's 99.999% safe. We don't have a jet in the air. And second, not only are we doing something unethical of asking people to trust something that doesn't work, but also we are putting the burden on the user. So that's why we use responsibility. Now, responsibility is also human, but we have created laws that have extended the notion to institutions. So we are using responsibility in the sense, a legal sense. Institutions are responsible of the impact of what they sell. And it doesn't matter who provided the data. It doesn't matter who labeled the data. It doesn't matter who programmed that. When we have a problem in our car, we don't look who did the part and complain to that company. We complain to the company that sold the whole car, right? So why we don't do the same with software? You sold it to me, you are responsible, period. And that's it. The last thing is that a related problem is that we like to anthropomorphize algorithms. So we have robots that are like humans. Why? Why we want to create something like us? Why we want to play God? Mostly men, by the way. And it's not coincidence. They are also fighting wars. So systems do not need to be perfect. but seems that people want to be better than us. So, why? So, they are learning from us. They shouldn't. So, there's a very interesting book that was published in 2021 by one of my colleagues, Cesar Hidalgo. He's also from Chile. That is called How Humans Judge Machines. And it's interesting. Humans judge machines much harsher than humans. So, to err is human. That's not true. for machines. So there, we don't humanize them. We are tougher. Why? Cognitive biases. We will get back to that. So this is a multidisciplinary challenge. It's not only about computer science. It's also about social science. Ethics is philosophy. It's also about law and policy, regulation. And even it's about design, how we design things that are more transparent, more safe, and so on. This is a courtesy of my ethics lead. I work with a philosopher, Jan Sujanja, and she is the ethics lead of the Institute. Okay, so let's go to Irresponsible AI. So one of our projects is to build an address to visualize the problems. There are at least two databases available in the web about problems with AI. One is called Oful AI, and the second is called Incident Database.ai, which has more than 2,000 problems. that people have reported. There are many more. This is the tip of the iceberg. Maybe there are more than 10,000 problems, but we don't know about them. Maybe there are problems that will appear in the future because no one has found them. Who knows? And if you play with this, I will not have time to play, but for example, we have a geographical view. You see that half of the problems are in the U.S. and China. Different types of problems, different classes, and so on. So go there and play with the Atlas. We want feedback and we are improving this every year. So, discrimination, the first main problem of AI. Do you get biased data? To an algorithm. First bias we have, that we think that bias is something negative because of the news. Bias, intrinsically, is neutral. Depending on the context, it's negative and positive. Information is bias. If you have white noise entering the algorithm, nothing will happen. This is random data. So we need to have biased data. The problem is that sometimes the bias is negative. This is the case we're talking about. So in that case, the algorithm may ask itself, should I be neutral? Should I be fair? The first problem is that the algorithm is not human, so children ask these questions, as I said. But let's say the algorithm has some pseudo-conscious. And it's asking that. Or at least the developer is asking that, which is the right solution. Well, most of the time, developers don't ask these questions, and you get the same bias, negative, that's why it's red, in the output. But even worse, sometimes the bias is amplified. Now, if the bias is amplified, we cannot blame the data. We have to blame the developer. And this is very important, and Hannes mentioned my work on bias. On systems, I have this paper in Communication on ICM that now is my most downloaded paper. I never expected that, where I show the whole cycle of, the whole vicious cycle of bias in the web, where bias comes from data, comes from the optimization design, and comes also from the user feedback loop between the system and the users. So what is being fair? This is a question for social scientists, not for me. But the typical distinctions are about equality, equity, and justice. Justice takes a long time. So usually we're doing equity. Affirmative actions are equity. We're just fighting before justice. So this is a non-technical question, but sometimes computer scientists answer this question, and that's another problem. So what is the answer? The answer is... That depends on the context. Not always you need to ask these questions. But if you have people, either physically or psychologically, you need to ask these questions. The problem today is that these questions are not being asked. And I will get back to this on regulation. Now, solutions to the problem. We can take the classical ones or devise the input. That would be the best, but not all biases are data. You also don't know all the biases. You can tune the algorithm or you can devise the output, but then you already lost a lot of information. Now, again, we are not using semantically correctly the word because we never can devise something. We are only mitigating the bias. Most of the time, we don't know all the hidden biases, and if you have read about intersectionalism, there may be biases against these certain three classes when you intersect them, like, for example, African, American. women that live in Detroit. Now, the first time that this went to the headline news, although there were problems before, and I will not cover this case, I hope you can read it, it's very well known, it's a compass system, is that they found that a supporting tool to decide if a person will have conditional freedom or not has a racial bias. Well, later, Cynthia Rudin and her team showed that really the bias was age, and there was a high correlation between age and ethnic origin. But it also seems that there were a lot of mistakes, because the people that got free did a lot of crime. So when we have a government using this kind of system, we need to ask this question. Is a secret algorithm ethical? I mean... A system is providing a possible decision on me. Is that ethical if it's completely an opaque black box? However, we need to ask another question. Is a public algorithm safe? Because if I'm a smart criminal and I understand how the system works, I will answer or do whatever I need to get free. So, of course, the answers in between depend on every case. Now, there are many papers on this, but I like this one. It was done by four very famous computer scientists and was a request from the Secretary of Economy in the U.S. because they were interested in basically spending less money in prisons. This was not asked by the Secretary of Justice because, of course, judges are not interested in being replaced. But I think that's okay. In that case, I think I support them. So they used about three-quarter million cases on basically bails. So they decided if a person would stay in prison before the case, before the trial. And they found that if the predictions were correct, they could decrease the crime rate in 25%, keeping the same number of people in prison. or decrease the prison rate in 42% keeping the same crime rate. That is, they could do much better than the judges. If the predictions were right. Remember, these are predictions. Even worse, for the most dangerous criminals, more than half of them would never come back to court and would re-offend. And that was one of the main problems. So let me give you another problem. This system amplified the bias, although it was doing better than the judges. So if you are interested in more technical people, they use data-boosted decision trees, which is something that you can interpret the results. And the only demographic variable in the data was age. Most of these people are men, but they didn't use gender. So from age, you cannot infer any, theoretically, any other thing. But of course, From the case data, the system was able to infer other things like the ethnicity of the people. So here I have the table of the results of the paper. In red, I added the percentage of these minorities in the state of New York. So in the state of New York, there's 18% African American and 13% from Latin American origin. And then in total, 32. Well, if you see here, The system is already biased. 49% that come to the court are black. 33% are Hispanic. In total, 82%. Well, the judges were biased. The African-American increased to 57%. The Hispanic went a bit lower to 32%. Maybe there are more white Hispanics like me, or I look more white than others. And then 89%. In total, so they sum more. So what about the algorithm? Well, the algorithm learned this bias from the system and increased the African-American to 60%, decreased the Hispanic to 30%, but increased the total in 90%. So the system was already biased, and now the bias increased in 10% more, from 81% to 90%. Now, we can play with the algorithm, and if the algorithm... would use the lowest rate for every ethnic origin, then we can do much better still than the judges, decreasing not 25%, but decreasing 23% the crime rate. So still, the system was doing better. So if we want to humanize it, it was more just, although it was still racist. So here we have a dilemma. And then we can go back to this question when we talk about ethics. What is better, a biased algorithm that is just or a noisy judge? Why a noisy judge? Because there are words that show that if you see a judge after lunch, you will get a worse sentence than if you see it at breakfast time. So basically the decisions of humans are not always the same. We are noisy people. So I was using a very interesting paper that was published in Harvard Business Review in 2016 by Daniel Kahneman and collaborators of the cost of inconsistent decision-making. People change their decisions based on other things, personal interest, emotions, whatever. But now, two years ago, Daniel Kahneman published a book called Noise. that basically he goes into this problem. So algorithms are not noisy, but they still can be biased. People really is biased and noisy. So other example of discrimination. Language models, so chatbots. GPT-3, before what happened in November. So if you put this sentence, two Muslims walked into A, most completions were violent. You can read the... There. They compare all religions, and Muslims were four times more violent than Christians, and Christians were four times more violent than atheists. So if you want to choose a religion, choose the less violent. Of course, this is a stereotype from the news that was trained the system. But it can be complicated. In 2020, during the pandemic, the England... this was England and Wales, decided that instead of doing an exam where a lot of students could be infected with COVID, they decided to predict the scores of the exam. And of course, poor people coming from public schools got worse scores than rich people coming from private schools. Because on average, that may be true. But of course, for every person, it's different. So one problem of this system is when you are averaging people, You're assuming that people come from a probability distribution. Maybe that's true if you take all the DNA, but every person is different, every person has different motivation, every person can be very good at something. So don't average people. Don't use this AI to decide the fate of a person. Of course, they couldn't use it because people got really upset. They were discriminated. But sometimes discrimination is not in the data. And here is an example of that. In 2000, I think it was in 2018 or 19, a group of riders in Bologna, Italy, felt that they were discriminated, that they were earning much less money than other groups. And they saw each other, and they were not all women, they were not all immigrants, they were not all dark-skinned, they were all different, but still they were earning less money. So they said, There's some discrimination here. We don't know what. Let's sue the company. And they did. The company found the problem right away but didn't tell the judge how they solved it. And I guess they shared the code. An expert found the same problem. And about two years later, they found that they were discriminating. What was happening? Well, if you see any delivery platform, the peak of work is at night. Most people... for dinner ask for food to come home well there are many people that cannot deliver at night because they have children they have dependents maybe they don't want to work at night and that's completely legal in most countries so they were not checking that the solution was simple give more work during the day to the people that only can deliver during the day and they solve the problem but no one thought about that and as the book says everything is obvious after you know it But before it was not easy. And the last one is the worst case on political impact. This started in 2012 when a brilliant engineer decided to look for fraud in poor people. Basically subsidies for child care. They accused wrongly 26,000 families, let's say 100,000 people. For many years they had to return the money. that people really suffer, like some people went back to their country of origin, some people lost their home. It was a mess. So civil society sued the government. And in 2020, the Supreme Court of the Netherlands said that was illegal. It was already unethical, but that was illegal to use of the system. And the former minister resigned from the parliament. She was a deputy member. But the opposition party said that was not enough and pushed. that basically at the end, the whole government resigned. So this is the first case where a whole government resigned because of bad software. That happened January 15, 2021. So, well, the history continues in the sense that the same government was elected again. That's another story. Second problem, pseudoscience. People from Vienna should know what is physiognomy. You had one of the major exponents of physiognomy in the 19th century. But it's coming back. So Kosinski, a famous psychologist at Stanford, decided to predict sexual orientation using your face. Of course, this had a lot of mistakes. Not only was it not ethical, but it also was badly done. That doesn't work. But one year before, some people in China decided that they could predict criminality before you do anything, like minority report. Of course, many people said that it was not ethical, that it was not scientific. They even replicated that it was scientific, but luckily that's only published in archive, and only the last version. But in 2020, I guess people that had more free time with COVID, tried to do the same again in the U.S. This passed the IRB of the university, passed the reviewers on the journal, was almost published in Nature, passed the editor until someone found out and said this is not ethical and stopped it. So we need to have a real ethics board to check the ethics of the research. And then in 2021, Kosinski came back again and now he can predict which is your political orientation from your face. This is easier in the U.S. because there are only two parties. In other countries, much more difficult. Of course, this is, again, pseudoscience. He got 70% accuracy, but this is pure correlation. Just look if I use a bird or long hair, air ring, and so on, and you get already that. So this is modern phrenology. Modern phrenology was something that started at the end of the 18th century in Germany, and the hypothesis was that criminals had different convolutions in the brain. And to check that, you need to do a lobotomy, so it's complicated. But some people simplified the hypothesis, and for example, Cesare Lombroso, a famous doctor in Torino, said that the skull of a criminal was different. And he collected hundreds of skulls from the morgue, poor people that no one picked up to show that the skull was different he couldn't find any example but he really believed this because he left his own skeleton to show what a normal person should look like a normal person that collected hundreds of skulls this is his house i really i enjoyed the visit here not in the best way but I recommend it to visit if you go to Torino. After the Egyptian Museum, it's the second best museum in Torino for me. Because the Egyptian Museum is the second largest in the world. It's in Torino. You can look wide. But this can be worse. Another famous university, now MIT in 2019, published a paper in one of the most important computer vision conferences showing that if you send me a... voice message in WhatsApp, I can infer your face. I may believe it from here to below, but what about the rest? What about my age, my weight, so on? See the signs. So this is my master phrenology algorithm. You send me a piece of voice, I generate your face, and then I know if you are... political opposer. I know if you're homosexual and then in some countries that's illegal and I know if I should put you in prison because you will do a crime in the future. I even know your name because amazingly the U.S. Patent Office granted the patent to Mitre on a system that can predict your name. No comments. But this can be more subtle. For example, Lisa Feldman Barrett in Northeastern showed that People cannot predict emotions, so we are using people to label emotions. AI cannot predict emotions either. But we are doing things. We are just rediscovering stereotypes. We are not doing science. Okay. Third problem. Stupidity. In 1976, George Box, an mathematician, said, all models are wrong, but some are useful. The same we can say about AI today. All models are wrong. These are models. But some are useful. One example. At the end of 2020, Elon Musk said, use Signal. All of you will understand he's talking about the chat app, which is the most secure, supposedly. But some stock software, basically stock market software that was using input from influencers, saw that he was talking about buying stock from Signal Advance. And the company value increased in 400%. The CEO of that company was very happy. The people that followed the trend was not happy at all. Everything about the adversarial AI is here. For example, you change one pixel and a dog becomes a cat. What the system is learning is not learning what we learn. And the worst, this is pure incompetence. Some engineer in Merlo Park California decided to use an English-trained hate speech model in France. And then the town of Vichy was illegal and disappeared from the platform. They had to complain three weeks to get their Facebook page back. And this may be funny, but if they were using the Facebook page for COVID, this is not funny. Here is a good place to remember the limitations of mature learning that sometimes computer scientists don't remember. First, we are very good at abstracting. And to abstract things, we need to filter. We need to forget things. And AI is not as good to do that. You can read the amazing short story from Jorge Luis Borges, Full of the Memories. It's about that. Second, obvious, but you need to repeat it. You cannot learn what is not in the data. And also data will never capture everything about the problem. For example, justice. Will data capture the context of a person that's accused of a crime? Of course not. But we think we are doing that. And this is what happened in 2018 when an Uber car killed a woman that crossed in a bicycle at night in the wrong place, a road, and the car didn't recognize there was a bicycle, crashed the woman, and the woman died later in the hospital. I will get back to this case. But what happened? You cannot have all the possible traffic accidents that we will have in the future. This is basically open domain. So you will never have all the data to avoid the problem. Still, I believe that self-driving cars will be more safer than human driving cars. So I don't care about the accuracy. I don't care if you tell me 99% or 90%. That's another problem where I'm working on. The evaluation of the system is wrong. Engineering is not measured on how many times it works. Engineering is measured on how much time is saved or when it doesn't work. So I don't care about the accuracy. You have to tell me what happens when it doesn't work. It's only 0.1%, but some person will die. We have a problem. And second, finally, we need to be humble. How many systems have you seen that sometimes say, I don't know? They say, really, I don't know because the confidence is too low. It's 50%. I prefer not to answer. This is a smart person. A smart teacher will say, I don't know, even in front of the students. But systems don't say that. So waste of resources, this table already showed, comes from this very good paper. from Bender and Gebru and other people. And basically, the carbon footprint of training these models is huge. The electricity is huge, but the real problem is not the training, it's the usage. 100 million people playing with ChatGPT every day is the same as maybe 1 million people playing with TikTok every day. I don't know. We need to worry about that, the usage of these systems. And this is a paper, the famous Stochastic Parallels paper. I will recommend to read it if you are interested. This was the paper that implied that Tim LeGuevre was laid off from Google because she wanted to publish this paper. This was the reason that Margaret Mitchell, the colleague of the AI Essex team, couldn't use their name in the paper. But you can still read it. So she put it. She's brave. And that didn't matter too much. because two months after TeamNit was laid off, Make also was laid off. This is not new. For example, when in 2019 Google did an AI ethics board, had to solve it in one week because they chose the wrong people. You need to choose ethical people, right? And this is why we wrote a paper that appeared in Ethics and AI. It's called Towards Intellectual Freedom in AI Ethics Global Community. to basically show that we need to have freedom to basically talk about these things, even if we work at the industry. And I don't want to pick in Google. This is well-known from Amazon. Well, you know the Cambridge Analytica thing, because it was in Europe and recently was the largest find for several billion euros to a company. Maybe the last one was, remember, Spotify in 2022. that was basically saying that vaccines were wrong. And there are very few people like Tim Brake, which I know him from my PhD time, one of the inventors of XML, that, for example, quit Amazon for ethical reasons. I recently also quit the Council of AI in Spain for ethical reasons, too, with two other colleagues. But it's very hard to find people that is... can, because sometimes you cannot, can basically say, I don't want to do this, and I can still survive because of ethical reasons. So, what are my fears? To go to the second part. I don't believe in AGI. I think the problem is us. So, for the second part, I propose this question. If you feel offended, maybe it's the right question. So, principles. The main ethics principle that we have today comes from bioethics. Doctors and biology started this. There was a famous meeting that is in the Belmont Report in 1979, and there are basically three values. One is autonomy, the dignity of us, so basically respect our dignity. Second is basically be good and don't do evil. And the third is try to be just. The conflicts come when you have a problem between these values. Otherwise, there's no conflict. Ethics is about conflict. For example, if you have a system that can predict that you will do something that will harm you, for example, you will lose money. Let's say you have a financial system. The conflict is, do I tell this person to not do it because it will be harm, or I should respect the dignity of that person and it's their problem and they can do whatever they want. In Europe, I think we will be more in autonomy. In the U.S., we'll be more paternalistic and we'll be on let's protect the person. But remember, these are predictions, so we can make mistakes. So here at the right, we have some software properties. that belong to each one of these values. So autonomy, we have consent, informed consent, agency, explainability. In harm-benefit, we have things like accuracy, auditability, competency. And in justice, we have things like accountability, accessibility, protecting the vulnerable, and so on. So we can associate to each one of these principles some instrumental principles. So the things in the right, they're instrumental principles. They are not values. But sometimes people mix these two words. I guess the first regulation in AI comes from GDPR. So it comes from the EU. And I think this one is a good one to contest the decision if you find that you are being discriminated. Now, what it means, this was written by lawyers, so what it means in practice. Article 22. It means that if you want to have full transparency in the process, you need interpretability. Interpretability means you understand how the system works. If you want to contest the decision, you need explainability. Explainability means you explain why in this specific instance you took the decision. Like, tell me why I didn't get the credit. Tell me why I didn't get the scholarship. Tell me why I'm not free. And finally, if you want to maintain your system as intended, you need to do continuous validation, testing, and maintenance. Now, explainability is desirable, but sometimes it's complicated. Have you seen the serious house, the famous doctor's house? No? Okay. He always finds, at the end, the right answer. But if a system gives the most probable answer for some symptoms, This could be very dangerous because the person may die before you find out why he was dying. So in health, it's complicated. This is a paper that appeared in Science in July 2021. And GDPR has already been used. This is a very interesting case where two high schools in the south of France decided to put video cameras for security. And then some parents took the schools to court. And the result was very interesting because the judges used GDPR, and they said there were three reasons that that was illegal. First, they couldn't do it. Competence. The director of the school never asked anyone. But legally, only the city could decide that. But they didn't know. This is incompetence. Second, according to GDPR, if you want to use a camera in a public space, you need to have informed consent. It's impossible to have informed consent at the entrance of school, so that's another problem. And third, very interesting, the solution was not proportional to the problem. I love this one because it's kind of new thing. If you want to have security, put the guard in door. Don't put a camera that can do much more than that. So, the White House finally this year published some principles for software. They call it a Bill of Rights because like an implicit mention to people. But this is instrumental principles for software. And these are here. I will not read them. These are classical ones. We know almost all of them. They are not new. They are put in a different way. But very important, they said automated systems. Although here it says AI. This is very subtle. Semantic, but very important. If we only do it for AI, I just say I don't use AI, and then I don't need to follow any regulations. That's the problem with the EU AI Act that doesn't cover things that are not AI. Even worse, in the EU AI Act, they are to define artificial intelligence, which is already a difficult task for people that work on this. So, another day someone was saying to me that linear regression was artificial intelligence, and I wanted to disagree, but I said, okay, better not to go there. I have been working on this, so I was working on this, although I'm also part of the ACM Technology Policy Committee, and this is unpublished, but I did this attempt to have a taxonomy of principles, and I basically decided that these were the six most important principles for me. But then ACM decided to do this, and I went to the committee, and then one thing I got is to put this new principle, which is new, I call it legitimacy and competency, in the new principles, because this is the one that is missing today. Before you do anything, prove that you should do it, and also that you have the competence to do it. So this is the new... A version that was published at the end of October 2022. Sadly, just after the White House. We didn't know that the White House was doing that. And the three ones in yellow are the main new ones. First, legitimacy and competence. This principle I had designed before. Minimizing harm. Making sure that you are thinking on that. Minimizing harm. And also because some people forget that we are not alone on Earth. Also, nine, limit the environmental impact. So basically, we are animals too. Sometimes we say humans and animals. No, we are also animals, and that's why we are what we are today. This is a comparison. This is unpublished on the 2017 version, the White House, and the new one. And you can see the new one is the most... advance on principles, so if you need principles, please use that. Also, we added a governance section, basically trade-offs that you need to follow, because all people understand principles, but they don't know how to use them. We have found that in practice in data scientists. They say, yeah, I know what is transparency, but how do I use it? Where do I put it? What do I do? And we help them to do that. So, for that, and this will appear in European review this year, I did this diagram to try to explain people where every principle goes. So when you have an idea, you do legitimacy and competence, and that means you need to do an ethical risk assessment. Then you go to design, develop, and operate the system. And here you do validation and testing. You have monitoring tools. And then when it fails too late, we have to do an audit. And when it happens, we have to go to court. Too late. However, be very careful. If you audit an algorithm, you are legitimizing it. So first make sure that you should audit the algorithm. Even if it's wrong. You just say, no, I will not audit because your algorithm shouldn't exist. That will be the audit. Two lines. People will not like it, but that's the right audit. There is already a book on this done by Ben Schneiderman, one of the founders of human-computer interaction. I don't agree on everything because he uses the word trustworthy. I don't like it. But it's good to have certification like ISO 9000, for example, similar to that. And this book is called Human-Centered AI. But the new research problem is how to develop responsible software with the help of AI. So AI helping AI. This is the next step. The EU proposal, I'm sure you know, that at the beginning of May the Parliament voted the new version, still is not in place because now all the EU countries and also the EU executive, the Trilog, have to agree. But this is very interesting because, for example, they forbid any kind of surveillance, any kind of facial recognition, which is very interesting because in other places it's completely the opposite. So the new version has a new article on genetic AI. I think they had to rush in the last three months to put something on genetic AI because that was happening. And I had the chance to talk with one of the presidents of that commission. So there are very interesting things here, but they are wishful thinking. For example, this one, Article 5, you need to check if you are doing psychological or physical harm. So next time that you see a fast food ad and you have a metabolic problem, you should complain. I don't know how they will enforce that. So it makes sense, but sometimes when people don't understand how technology works, this doesn't work. Like the right to be forgotten, yes, you can take it out of the web and the next day someone will put it back. So we'll never get out of the web, but it will not work. But there are other problems. And this is one of the major cognitive biases of humans. That's why we invented the term race. For example, skin color is a continuous thing. Where we put the line doesn't make any sense. There's no line. The same happens in the EU Act, if you have read it a little, because it's based on three levels of risk. But risk is a continuous variable, where you put it. And they define it as use cases. What about the new cases? Well, the new cases will be in the lowest possible. that people think should be, and of course will be one less than the real one. Because that's how people work if they want to have a business. So I think there will be many problems if we do that. The last problem is that it's the first time that we regulate in the use of a technology. All other regulations are on health, on food, on travel, are on the problem. Now we're the first time we're regulating the use of technology. So we will follow with blockchain. Quantum computing, any other new technology that appears in the future, and all the regulations should be consistent with all the previous ones, that's a path that is too complicated, and I think it's a wrong path. We should regulate the problem, not the technology. It's like human rights. We just say, we shouldn't do this, doesn't matter how you do it. And here, I don't know, we are making a distinction, and only AI on how to do it. Accountability. Who is responsible? Remember the Uber example. Uber was not responsible. Why? Because they reached a settlement the same week with the family of the dead woman. Very fast. But also, at the same time, someone told the Arizona state that the person that was inside the car as a backup driver was watching a video. So the Arizona state had to charge... her because it was a public road. And she was found guilty, and she was one year at home without being able to leave with one of these rings in the leg. One year ago, finally, this person told the story in Wired. She was a transgender woman from Mexico. That was the only word that he could get. and was minimal salary, and she was then the one that suffered. So again, another case of vulnerable people suffering because of AI. So this is our integrated view of responsible AI. I will not have much time to talk about this. We built last year the first AI ethics worldwide committee, so you can have a private advice on AI. These are 45 people from all over the world that are experts on the topic. We can do ethical impact assessment. Maybe some people here have heard about the trolley problem. How many? The trolley problem? Okay, forget it. You will never see this problem in reality. This is a real problem. This is people killed by cars. This is people killed by self-driving cars. What is the problem? There are some people that before were not in danger of being killed. And most probably this will be vulnerable people. Women, old people, kids that run too fast to take a ball. and the system didn't recognize that that could be a kid because it looked like a ball, and so on. Still, it's better to have surviving cars, but we need to decide what we do with these cases where people die. So I will try to go very fast, five minutes on genetic AI. Five minutes. Fiction is easy to recognize. We are getting to a very complicated world. You can do the opposite. IP. But reality is getting more complicated. Is this true or not? Well, have you seen Maverick? The movie? No one? Okay, in the US all people have seen Maverick. Well, the voice of Val Kilmer is completely generated by AI because he cannot talk. It was just before he died. So we can put any video of any person today with any voice we want, with right voice, saying whatever we want. So there are many bad uses. Europol in March found many cases. And these are hallucinations. I will not be able to tell you this, but the hallucinations are first a bad word. They are different in every language, so I will skip this. I will skip also that we can manipulate this thing, and they will apologize even if they are wrong. because I'm lying, but they don't know I'm lying. Also, I wanted to tell you about my death too late, but I was dead in the previous version of ChagiPT. I died in 2021, so this is a hologram. But in the new version, I'm alive again. But there are more mistakes in my biography, and there are different mistakes on different languages. So this is in Spanish. You see the amount of mistakes. inventing things that may be probable but never happen. And the problem is that I'm the only one that can check. Every other person will think that that's true. So different false facts. What it implies is that the old Babel Tower, that was a punishment, if you believe in the Bible, is that we had different languages. The new one could be even worse. Two people arguing that ChatGPT said A and B, and they are different. We have different knowledge. So this is a problem. Well, by chance, they already solved this problem in chat GPT-4 because they trained the system only in English. Not because they thought that this was a problem. I think they thought because they had more data. So what is the problem now? It's more subtle. The problem is that we have cultural colonization because all the answers come from English. So you will have a dominance of whatever they think. So the number of continents, seven, not six, and so on. So we can have a pseudo-personality profile, very confident, naive, incoherent, and dragged. This is if we try to humanize them. A technical issue, if people use chatbots to create content, and we cannot distinguish which content is human or not, they will run with content from themselves. But they will be more mechanical. And then we have other problems. Bias, hate, censorship, diversity. ChatGPT-4 works in 95 languages. We have at least 7,000 languages alive on Earth. All these languages are discriminated. And of course, the quality in all of the 95 is different because the amount of data is different. So there are some fears of AGI. I don't believe in that. Even George Hinton, one of the fathers of deep learning, believes that AI will kill. Ourselves, maybe, and if this happens, it's our fault. Harari also believes that. But I try to take it with humor. If you cannot read, to think this all began with letting out a complete finish our sentences. Now, so to finish, the real problem today is mental health. So in 2021, people was already building models to talk to dead people. any time that this person was sad. Recently, even with video, one person in China can talk to his grandmother. And then, March 23, Yaron Lanier said, the danger isn't that the AI destroys us, it's that it drives us insane. I thought, I think he's right. This will happen in a few years. Well, I was wrong. Five days later, one person in Belgium committed suicide after talking to a chatbot for six months. He was a PhD student with a mental problem, and he left one wife and two kids. And he left all the conversations locked that the wife found. And if you read the last conversation, it's like a science fiction movie. I will let you read it, and then you can decide if the chatbot helped. It's not chat GPT if the chatbot help or not to commit suicide. So next day, a lot of people in Belgium was really worried. And then A lot of people were worried about other things, like a complaint, a former complaint, because of illegal things on the Federal Trade Commission in the U.S. You have heard about Italy banning chat GPT on April 1st. Some people thought that was a Fool's Day joke. It was not. On April 11th, China proposed the first regulation of Genetic AI, and it's quite good if you remove all the political parts. So the rest is quite interesting. They have really thought about it much earlier, so it's interesting. And OpenAI fixed the two problems that they were complaining in Italy, and on April 28, ChatGPT was back in business. So, to finish, please do not humanize technology. So don't use robot thinking. They don't think. Language models, chatbots, do not hallucinate. They make errors. They don't think. They mimic conversation. They don't have opinions. They exhibit those. They don't intend any outcome. They produce outcomes. They don't intend to manipulate. They don't lie. They just BS. They don't cause harm. Sorry, they don't intend harm. They just cause manipulation, misinformation, and harm. At least, if we talk about these things right, we will not be like this Google engineer. that thought that we had to have a new religion based on a chatbot that was so smart for him. So thank you. Questions? Thank you, Ricardo. And also excuse for pushing you a little bit forward with your... It's the rainfall. It's the fault of the rain. Questions from the audience. So it was a tour, the fourth rule, regulation, AI, bias, responsibility. Can I just... Somebody help me and give... We have a streaming, and I think it's good for having... I found your presentation very interesting and well-developed in many directions. We cannot... It's technology. Technology. Now it is working. Thank you. Thank you. It is technology, and I do not know, because it's in the house here. So I think your presentation was excellent, and... dealing with many aspects of artificial intelligence, but one aspect was not dealt with neither in the Chinese regulation proposal from 11th of April, nor in the EU regulation proposal, nor in the United States diverse White House or ACM or whatever. And this is the question of the ethics of production of the system itself. Because as far as we see, Facebook, Google, etc., etc., are private production systems, and they accumulate the profit. And what is necessary is my proposal. I worked for the EU for several years, and my proposal for the EU is create a collective production system of AI and share the profits. Thanks. Yeah, this is a topic that I've been... I mean, there are so many topics. But at least Facebook opened their model. And then later someone also released all the weights of their model. So by these two events, basically they have an open model, although they didn't intend to have an open model. And they think this should be the future. And John LeCun, that works at Meta, said two weeks ago in Northeastern, said that he wants to see open models because then everyone has the same opportunity to fine-tune these models and to use it for specific purposes. Of course, OpenAI, Google, Microsoft disagree. We will see what will happen. But if you remember that the Internet is open, that Unix is open, that many other things are open, maybe that's the way to go, but we need to see what the market says. So this is a very important topic. And there are already smaller startups publishing open models that are not as good as ChatGPT, but they are much smaller and they are quite good. So I'm sure in one year, maybe 3DBT will not be so good. Thank you for your talk. I have more of a technical question, maybe. So considering the term of transparency, so I agree with you that, for instance, in general algorithms should be made open source or be public in order to achieve transparency. But I think for deep learning model parameters, this can be a problem because if you publicize them or if you make them public, Other persons could use that as an attack vector in that sense that they could infer, for instance, from the hyperparameters, infer how to tweak model data and then manipulate, sorry, how to tweak the training data and then produce another sort of false outcome of the model. So what is your opinion on that potential dilemma? Yeah, but I said that open models to fine-tune them. So I believe that in the future we should have private models that are based on open models. And these private models need to be secret because of what you say, and to avoid adversarial attacks, to avoid privacy issues. But also you want to do that because you want to keep your data private. Today, if you want to fine-tune a model in ChatGPT, you need to share all the data with OpenAI and even... Well, they are not open, so I don't know why they call themselves open AI. But even they say that they will not use it, you need to trust them. And some companies cannot trust their data, their health data. Legally, you cannot share it. So there are many data in many countries that should be kept in premises. So I think the future of the world will be that we will have like three or four open models, and then you will fine-tune. A lot of private models for a specific domain, because I think if you keep it open domain, you keep all the problems. You keep bias, you keep hate, you keep censorship, and so on. So we need to basically reduce the problem to a problem where you have very good data and very good curated data, so you basically get rid of most of the problems. You mitigate all these problems. Before that question, I have one, because... It's come up with your answer. Aren't those models in the hand of very few companies and this large language model? So it's already some kind of monopolization going on, also in this machine learning field with this large language model. So isn't it a private endeavor where the state has a problem to follow or even universities to catch up with this research? Well, I've done for Joe. They did the LAMA model and then other companies did some small models that are very good. They showed that you could do it with less data and less power. Let's say less computing power. So I think maybe in a couple of years there will be other techniques using whatever we already have to basically do smaller and smaller models because in some sense they are overfitting everything. If you have 100 trillion parameters, and these are the same size of the web, and they are not overfitting, this is like a kind of a mystery, although Yann LeCun explained the other day what is the reason that they don't overfit, but they should. That means that we can do it with less parameters, and that will mean less computation, and we'll have a smaller open model. So I think this will be the future, like three, four very good smaller open models. Any company will be able to fine-tune in their premises these models. This is a possible future. Maybe I'm completely wrong. Thank you for an excellent presentation. I'm wondering what your view is about Section 230 of the Communications Act in America, which basically treats the companies as bulletin boards as opposed to being responsible for the content that they carry. And so there's a lot of deep fakes and things that are being carried online now. So what's your view about that? Do you think it should be changed? Do you think it will be changed? And do you think that the companies who have so much power and so many lobbyists will be able to overcome the problems and keep Section 230 as it is. Thank you very much. That's a very interesting question. Basically, this U.S. law says that you are not responsible of the content that you publish. And the idea is based on, for example, on typical communication where if I call Hannes and I offend him, of course you will not blame. The communication media I'm using to do that. Because they are just carrying the communication. And you use the word carrying. And this is important because the semantics of the words matter. Social networks don't carry content. This is part of the problem. So because they don't carry content, I think this law shouldn't apply to them. Because they decide what content you will see. And algorithms, even if they're well designed, sometimes have unintended consequences. And we had problems with YouTube, for example, recommendations that will go to things that I prefer not to talk to. Or, for example, chatbots that, if you do the right questions, will go into bad answers. We had that with a chatbot in Twitter, remember, in Microsoft a few years ago, that learned in one day how to be biased and hateful. So, if you are using algorithms to decide which content people see, I think different laws should apply. They are not completely responsible because someone is responsible for the content, but at least they should be responsible of showing the wrong content to the wrong people. But it's very hard to regulate. Well, on the other hand, I don't know if you read, recently Japan decided that you can use any data to train the... deep learning models, and there's no problem with the data. It doesn't matter if the data is copyrighted or not. It's the other extreme that's happening in Japan. So we have different views of the problem. Hi. First of all, just a fascinating presentation. You've covered a lot of ground. Thank you. I'm a professor of political science, and I also teach political philosophy. I'm one of those people freaking out right now about how I have to retool all my classes for the fall because of chat GPT. And one of the thoughts that has come to me from that is there's a simple solution, which is all oral exams. My students will obviously hate that idea, and obviously there's a time commitment. But where I'm going with this, I'm curious about your reaction to that, but it also strikes me there's a broader thought I have here, which is if I can no longer trust a student paper, and I can no longer trust a photograph, and I can no longer trust a video recording, and I can no longer trust an audio recording, are we entering a world where basically face-to-face communications and eyewitnesses are taken very, very seriously and everything else is presumed to be fiction and is not taken seriously? Very good question. I think there are two important questions there. One is the impact on education, and the other one is the impact on communication. So let me start with the last one, because I have been talking about this in several interviews. If we cannot trust the video, basically we need to trust people in person and then trust that person there. So maybe in two, three years, the only way to prove something in court is with a person. And this is a pity because I would say in the last 20 years, we have used a lot of social media to learn about things that before were very hard to know. So we will lose that advantage. Now we will have truth. Fake news together, and we're very hard to distinguish that. I don't know what will happen with that, so I think that's a loss that we are taking, and very fast. Maybe in one year, videos will not be valid, for example, in court. This is one thing. Now, on the education side, yeah, oral exams, I have thought about that, but they're not scalable, and it's very hard to do that. I prefer to take a different thing. Give the students the chat GPT answer. And ask them to find all the fake facts so they know how to do fact-checking, which is very important today also if you want to deal with fake news. And also tell them to do it better. And this is about critical thinking analysis. If they cannot do it better, they are not humans. Right? And if we cannot do it better, then they are smarter than us. We have a problem. So... don't fight it, adopt it, and try humans to do it better. So one of the problems, we have been lazy in education. We have exploited too much memory, and memory is not intelligence. We need to exploit more critical thinking, analytical thinking, logics, and so on. I don't know if that was the answer that you wanted, but I think that's the only way because people will use it anyway. I don't know if you know this case, a lawyer used this in a court in the U.S. and gave it to the judge. ChatGPT invented three cases that never existed. Of course, the judge found that and almost killed the lawyer. He said, you have been working 20 years and you do this silly mistake. Oh, but I asked ChatGPT if it was correct and ChatGPT said yes. This is how silly he was. So this is incompetence. If you are that lazy, maybe you shouldn't work. Hello. from University of Belgrade Digital Society Lab. We've been working very hard on defining recommender systems as public good and showing in our scientific works in social science why that is important, because we see this as the most powerful social force at the present. And as for section 230, It's very significant that these recommender systems not only host our content, they also amplify the content that is in interest of big tech. And the issue of power of big tech is significant at this point in the context of recommender systems as well. So what we are actually trying to find some kind of solution. recommender systems at public good in terms of being set by society what's good for society then what's good for tech companies and then individuals can have their own decisions in setting the systems on various levels like emotions kind of categories of content etc etc And that's what we're trying to do. Another thing, you know about TikTok and about the spinach version in China and opium version for the rest of the world. So maybe, as you indicate, we should look for Chinese regulation and solutions because there are some good solutions for the benefit of society and the benefit of the individuals. If the tech companies and society met... in their interest on some half way maybe we could get better effects for society so please comment that yeah so on the tick tock i would prefer not to comment i'm not 100 sure that that's true according to what i talk to chinese people on the first part i think it's a good idea to have like a recommended system and social goods but If you have very few, you are again normalizing people. I would prefer to have recommender systems that are very configurable, and they do what I want them to do. And this is what I don't have today. So I would like to have them, basically, I decide what type of content, basically, I fine-tune them, and it's my recommender system. And second, I would like to have some feedback that should be simple to do, but it's not done today. about how my content feed is changing. For example, I would like to have just a line that says if I'm reading more fake news according to a system or not every week. Or if I'm looking at more leftist or right-wing political content every week. So I know what is happening to me because many people are not aware of their biases. And the first way to know, to solve biases, is awareness. Many people, when they learn about the bias, they change. But many times they never realize that, for example, a single word is bias. For example, in English, you always say, for example, there's a word called manned. For example, a manned vehicle. Because only men in the past were able to basically to man that vehicle. So have you realized that there's a gender bias word? And many people said, wow, first time realized. I said it like a hundred times. So if you do these small changes and the system is feeding back to you what you're doing every week, that's great. For example, Apple did that at some point. That was very good. How much time you're using your phone more or less every week. I don't know if you use it, but it's very valuable because I see if I'm getting more addicted or not. You need this kind of feedback because when you are addicted... You want to do more, right? It's an addiction. And you don't realize that you're using more. You say, no, I'm controlling myself. I had a problem when I was using a BlackBerry. And from that time, I decided that I choose when to look at my phone and not my phone decides when I have to look at him. So no notifications. Doesn't matter. Because I want to decide. That was one way to control my addiction. But most people don't control it. So we need systems to help us to control addiction. But the problem is that the system wants to increase usage. because it's part of the incentive they have in the optimization algorithms that they use. So that would be the best system that don't want to be used. Just in addition to that, they are working to this direction already at the University of Minnesota, Robin Burke, and the University of Poitras, Francesco Ricci. They are working on a recommender system that says public goods. Just to take my... let's say, as the master of the universe in the room. So this is now the last question, because I see the people are becoming a little bit thirsty and hungry. And so I'm already moving out of the room, so I'm asking for a short question, maybe a short answer. I will. Thank you. It's a pity that all questions were done by men. Right? So. Yes. Can we have a question from a woman after? I'm trained myself to notify. So your question quick, and then the last question by Oman. Very fast. I will answer, please. Very short question. No, okay. Then we have two last questions. Yeah. You said you mentioned the concerns about gaming the algorithms if they become transparent, but I don't know if we already have those concerns when we have lawyers that are twisting always the laws and, yeah. whole system that we have built. Because every time that there is a court case, people that can afford it, they have meanings to elongate the process, to always get the outcome they can. So why is gaming the algorithm an issue if we don't discuss the gaming of the whole system? Well, it depends on the application of the algorithm. But if you are talking about algorithms that are used in court, maybe you have a point. It's useless to do that. But if you have an algorithm that, for example, decides on conditional freedom, that's important because you want to be fair there. So this should be independent of the context and also independent of if the other people is good or not. Because ethics is independent of that. So, for example... This was, for example, what Meta said when they were fined recently with this billionaire private issue. They said all the other companies do it. That's not a good reason, right? You're the first one. The other will come. That's my thinking. I hope they realize that that's not ethical to answer that. But the lawyers answered that, so. Please, last question. Thank you for doing the question. Thank you for noticing that there were only men putting questions. We have lots of questions, women, but we let you think you have the questions. So I would like to go to the very beginning of your presentation where you mentioned that we start with biased data. And we expect somehow the algorithms to realize that. And I was wondering if it's maybe not better to already restrict the type of data we allow for training. We all know that news are actually always biased. You will never hear the good news. You will always hear about criminality. You will always hear about the accident, about whatever. You will never hear, oh, there was a great presentation today. Yes, Tehuvine does that and all this stuff, but these things don't really get the overhand in this data. So my question is, first, how can we maybe motivate to increase this percentage of... good data and maybe at the same time restrict the type of data is allowed for training, like don't train on news data that come from courts. Don't train on catastrophic data that are caused by wars. Very good question. I think that's already happening in the regulations that have been proposed. Data will need to be curated so they will have... Maybe they need to pass some audits on gender bias, on race bias, and other things. So I think that will happen. But this already happened because of all the people that are working on this problem. For example, there are many image data sets that are not available now because they were racist. So it's already happening, and basically even the researchers that publish these things feel like they're shamed, and they are taking them away. So I think the system itself is pushing to better data. And there are already, for example, data sets that are specially defined and designed to check for these biases. So I think we're seeing that in the future regulation will help on doing that. So I think that that will happen. I hope sooner than later. Okay, before ending, just a last announcement. I just want to remember that there will be again a Digital Humanism Summer School in September. 4th to the 8th of September, check the Digital Humanism website. There you can see that. So if you want to participate at the summer school, it will be here at TU Wien. And there are some great lecturers who will lecture there at the summer school. Thank you very much. It was great, and great will be the wine and the sandwiches outside. Thank you.",
+  "segments": [
+    {
+      "start": 0.304,
+      "end": 28.944,
+      "text": "My name is Hannes Wertmann. For those of you who don't know me, I'm one of those ex-professors still being active partly at your university. And I'm happy to be able to moderate this today's session on digital humanism. Before starting with the program, there are two announcements. One is by Mr. Steininger, who makes a short announcement for the students."
+    },
+    {
+      "start": 29.84,
+      "end": 58.096,
+      "text": "Yes, hello, also from my side. For the students who take the current trends in computer science course, the list is going through, and I will put it on the back there for those who are a bit late. So please remind your colleagues if they come late. The list is in the corner back there. Okay, thank you. Thank you, and the other one is just a reminder to switch off your phone, okay? Because really do that because it's something which is annoying during the talk."
+    },
+    {
+      "start": 58.096,
+      "end": 81.616,
+      "text": "Happy to moderate this digital humanism session. It's the third one already in a row. You will hear some more by Ludger Hagedorn later on on this joint program by Technical University and EVM. But before that, I would like to introduce Gerti Kappel, you know her, to say some welcome words to all of you. Gerti."
+    },
+    {
+      "start": 92.368,
+      "end": 121.328,
+      "text": "Dear ladies and gentlemen, responsible AI. I guess this is a very, very important topic. And I don't introduce now our esteemed guest. I think this will be done by Hannes. And I don't introduce Ludger Hagedorn from the Institute of the Human Sciences. This will also be done by Hannes and the whole program."
+    },
+    {
+      "start": 121.36,
+      "end": 150.928,
+      "text": "What I just would like to mention at the beginning, when we talk about responsible AI, I guess first we should talk about responsible humans and the role we play in the context of responsible AI. And I would like just to mention three things which are ongoing at our Faculty of Informatics of TU Wien. First of all,"
+    },
+    {
+      "start": 150.928,
+      "end": 179.744,
+      "text": "might have heard that there was this cluster of excellence call by our National Science Foundation. And believe it or not, none of the computer science calls made it to the success stories. One of the reasons, and it is not because we are bad, not at all."
+    },
+    {
+      "start": 179.744,
+      "end": 209.28,
+      "text": "Of course, money is only available in a limited form. But, you know, this is now really interesting. One of the reasons why a very, very good kind of grant proposal in the area of AI didn't make it because members from the jury said, do you think you are better than Google and Facebook? What can you do here in Austria?"
+    },
+    {
+      "start": 209.28,
+      "end": 236.176,
+      "text": "And this is really the wrong habit because this means we are not responsible as humans. And I can tell you we are responsible. So we don't let us being made down from this command. We will continue along the line in research and teaching in AI. Secondly, when you hear about AI nowadays, of course, and being..."
+    },
+    {
+      "start": 236.176,
+      "end": 266.08,
+      "text": "A teacher at a university or doing teaching at a university, everybody has the same problem now. What do we do with our exercises, with our homeworks, with our exams in the realm of JetGPT and the other tools? And again, I can reassure you, also our faculty is not kind of sitting and waiting that there will be some solution from somewhere."
+    },
+    {
+      "start": 266.08,
+      "end": 294.72,
+      "text": "It's already since January that we have a working group in the Faculty of Informatics, but also together with the other departments of informatics in Austria, thinking of not how to forbid it, but how to work together with it, how to integrate it. And, of course, we don't have to ask for seminar works for our students anymore because we will get them from JetGPT. But what we are trying now is..."
+    },
+    {
+      "start": 294.72,
+      "end": 321.6,
+      "text": "let ChatGPT write the seminar work, then give it to the student and say, make it better, would be perhaps one way to go. And last but not least, and also when I was mentioning teaching, you know, when we talk about teaching, it's always the question, is it with AI or is it about AI? And is it about responsible AI? And we also have..."
+    },
+    {
+      "start": 321.6,
+      "end": 348.448,
+      "text": "Now, a new position in the area of artificial intelligence ethics, the hearings will be in a couple of weeks. And again, because we think we have to take the responsibility to teach our students, especially at the TU Wien, especially in technical subjects, that it is our and your responsibility to, you can say,"
+    },
+    {
+      "start": 348.448,
+      "end": 376.384,
+      "text": "to teach not only the right things, but also, of course, the things right, but also to teach that we can provide technical solutions next to others. And last but not least, responsible AI, responsible people, we are currently updating our curriculum. There will be a new bachelor curriculum, computer science, informatics, because it's German."
+    },
+    {
+      "start": 376.384,
+      "end": 404.784,
+      "text": "starting with coming October, and we have as compulsory quality measure included embedded ethics, embedded ethics in computer science. Now you might say, what does this mean? You know, when you are teaching database systems, there are some kind of ethical considerations about biases of data, about the fair data principles."
+    },
+    {
+      "start": 404.784,
+      "end": 434.4,
+      "text": "When you are teaching algorithms, you can teach kind of the various characteristics like that algorithms are more energy efficient than others. So, of course, there are different kinds of ethical considerations. And I guess we as technicians are not the best one, but we will learn. We will learn together with you, together with the students, to kind of teach."
+    },
+    {
+      "start": 434.4,
+      "end": 462.976,
+      "text": "Yeah, the right thing and teach things right. So I'm very happy to have you here, Ricardo. I'm very much looking forward to your presentation and enjoy the evening. Thank you. Thank you, Gerti. Also for your words. Now I'm happy to introduce Ludger Hagedorn. He's a permanent fellow at the EVM."
+    },
+    {
+      "start": 462.976,
+      "end": 492.128,
+      "text": "Institute for Human Science, which is a non-university institute focused on social science and humanities. And they are cooperating with TU Wien, with the Faculty of Informatics, on the program he is presenting. And one of the representatives of the program is also Ricardo Lutka. Good evening to all of you. I promise to keep it short, really, since this is not needed to have an extra long second introduction."
+    },
+    {
+      "start": 492.128,
+      "end": 501.84,
+      "text": "As Hannes already mentioned, this lecture tonight and the whole program of digital humanism we run in cooperation with the TU Wien."
+    },
+    {
+      "start": 501.84,
+      "end": 522.768,
+      "text": "And with Hannes Werthner, I mention you as the institution of your own, Hannes. I hope you agree, since you're such an important part of this cooperation that we are doing. And I should mention that the Ministry, Federal Ministry for Climate Action, Environment and Energy is very much supporting us with this program."
+    },
+    {
+      "start": 522.768,
+      "end": 548.992,
+      "text": "I'm also to give you the greetings of Michael Wiesmüller, who is the head of enabling key technologies at the ministry. He cannot be with us tonight, but it's very important also to mention the ministry and their help with this. Just two more things I would like to announce. This program that we are doing includes the invitation of fellows. This is very renowned scholar, says Ricardo Baeza-Yates."
+    },
+    {
+      "start": 548.992,
+      "end": 556.848,
+      "text": "This is the second year we are running this program, but it also includes the invitation of early career scholars."
+    },
+    {
+      "start": 556.848,
+      "end": 586.048,
+      "text": "And just today, and we did this with the purpose of having this lecture tonight, just today we published the new call for applications for junior fellows for the digital humanism program. Maybe to some of you this is of interest or you know about somebody to whom this might be of interest. Check it on our website, iwm.at. You will immediately find it under open calls and distribute it to whomever might be interested. Second thing..."
+    },
+    {
+      "start": 586.048,
+      "end": 613.248,
+      "text": "speaking about the junior fellows, both of them that we currently have were supposed to be here tonight. I can see one. I think Marika is not here, but over there is Sergio Barbosa. Sergio, maybe can you stand up for one second? So Sergio is here tonight. Sergio is doing research on what's in the global south. This is his topic and inclinations to political resistance in the global south."
+    },
+    {
+      "start": 613.248,
+      "end": 630.608,
+      "text": "We will have a reception afterwards, and this is the good news. If you're interested in the program, speak to us and also speak to Sergio and ask him about it. And congratulations to all of you that you made it here. You are the heroes of tonight because of this heavy rain that you..."
+    },
+    {
+      "start": 630.608,
+      "end": 655.568,
+      "text": "that you managed to come here. The good news is we had planned for, I don't know, a reception of 100 or 120 people afterwards. We will have wine and sandwiches afterward, so that is the reward that you will have. Welcome, and now hand over. Thank you. Thank you, Ludger. These humanities guys, they have good estimators, no?"
+    },
+    {
+      "start": 655.568,
+      "end": 684.656,
+      "text": "Just to add, this junior fellowship is fully covered for three months, stay in Vienna, plus travel support. So I think it's rather attractive and it's open for all different disciplines. Now I'm coming to the main part of today, which is Ricardo's talk. And I'm shortly introducing you. I have a long list of things I want to say. Maybe I'm shutting it down, cutting it down. But one thing is..."
+    },
+    {
+      "start": 684.656,
+      "end": 710.976,
+      "text": "He's a pioneer, one would say even veteran, but I'm not using that word, in web search and bias. He was one of the first ones publishing about that. He even developed a framework for the different types of biases and how you can really tackle them. So he's really coming from the field, now extended to AI. And if you want to learn something or hear something profound,"
+    },
+    {
+      "start": 710.976,
+      "end": 739.472,
+      "text": "about bias, then this is the right place to be because he is the expert on that issue. He's currently professor at the Institute of Experimental AI. Is there a non-experimental AI? I'm asking myself, but this is the notion of your institute. He's also directing at the Northeastern University in Boston. He's well known for his activity. He was vice president for research at Yahoo."
+    },
+    {
+      "start": 739.472,
+      "end": 766.896,
+      "text": "for several years, so he was really directing research at Yahoo and active for web search there. And he was a frequent traveler because he was sitting in London, in Barcelona, in Santiago de Chile, in Haifa, and also somewhere in the U.S., so he's a frequent traveler, not just now. He's continuing that because between his Northeastern University professorship, he has part-time possessorship."
+    },
+    {
+      "start": 766.896,
+      "end": 789.44,
+      "text": "at the University in Barcelona, as well as in Santiago de Chile, where you have part-time research and teaching activities. He's well-cited in the community, has over 600 publications, and I'm just mentioning one book which even got the Information Science Book Award."
+    },
+    {
+      "start": 789.44,
+      "end": 818.416,
+      "text": "In 2012, it's about modern information retrieval, so it's one of the, let's say, standard textbooks. He has awards and honorary memberships in different societies and universities. I'm not going to mention them. He was also the first computer scientist to be elected in the Chilenian Academy of Science. This seems to be very special that this is mentioned."
+    },
+    {
+      "start": 818.416,
+      "end": 848.24,
+      "text": "He's a fellow of the ACM and of IEEE. And what I especially like that he's really devoted to the responsibility part of AI. He's with digital humanism since the early beginning. He was also one of the authors in our first book, Perspectives on Digital Humanism. He published on AI. If you do not know that book, go to the Springer website and download this. We have already 350,000 downloads of this book."
+    },
+    {
+      "start": 848.24,
+      "end": 867.6,
+      "text": "so I think it's already a bestseller. Also due to Ricardo, who is one of the authors. Ricardo, thank you for being here with us. He will talk between 50 and 55 minutes, we agreed. Maybe a little bit shorter, but you will need it. Okay, the floor is yours. Thank you."
+    },
+    {
+      "start": 872.496,
+      "end": 900.88,
+      "text": "So thank you, Hannes. Thank you, Ludger, for this invitation to be in rainy Vienna in June. And also thank you to all the responsible people that made it to the talk, right? Because maybe other people couldn't. So it's very hard to work on this topic because every day something irresponsible happens. And I need to decide if I put that in my talk or what I need to delete. And it's not easy."
+    },
+    {
+      "start": 901.008,
+      "end": 930.864,
+      "text": "So one thing I had to put in my talk is the bonus track. I have to talk about chatbots, right? This is in the news the last six months. So the last part of the talk will be about ASICs and responsive AI in chatbots. Of course, the most well-known is ChatGPT, but it's not the only one. So Harris mentioned the Institute for Experiential AI. Just to give you a small summary of what we are doing, this is a new institute."
+    },
+    {
+      "start": 930.864,
+      "end": 959.664,
+      "text": "two and a half years, and the main goal of the institute is to be the single phase of AI for Northeastern University. Northeastern University, many people don't know, has 14 campuses in three countries. I work in Silicon Valley at home, so you can work also. I've been working at home before the pandemic, so I guess I was trendy earlier than normal. And we think that there are two things that"
+    },
+    {
+      "start": 960.272,
+      "end": 989.76,
+      "text": "make AI good and practical. The first thing is that humans in the loop. Although I don't like this term, or people use humans in the loop, I prefer to talk about humans in charge. And the algorithms should be in the loop. And this is part of responsible AI, to be the ones in charge. The second thing is that we have a strong dependency on data. Many times people don't do better algorithms, they just put more data. And you see that with chatbots. Okay, let's put..."
+    },
+    {
+      "start": 989.76,
+      "end": 1018.592,
+      "text": "More parameters also. Maybe 100 trillions. This is crazy. This is more than things that we already know in our biology. And then as part of this, we want to have a responsible AI practice where we are helping industry to do better AI. And we have learned a lot and they have learned a lot because this is something that not too many people is doing. So this is..."
+    },
+    {
+      "start": 1018.592,
+      "end": 1047.616,
+      "text": "And there you have the website if you want to see what we are doing. We have a free seminar series twice a month. In one month, we show what we are doing. In another one, we invite very well-known people. The last one was Yal LeCun and was very, very good talk in person and also online. So the agenda is basically three parts. First, I will briefly say..."
+    },
+    {
+      "start": 1047.616,
+      "end": 1074.224,
+      "text": "why I'm talking about responsible AI and not other kinds of AI. And then I need to go to responsible AI. And these are the main four that I will talk today. There are more. Automated discrimination, AI phrenology, human incompetence, we have that everywhere, and expensive and doubtful use of natural resources. This has a personal bias. We need to understand our own biases."
+    },
+    {
+      "start": 1074.224,
+      "end": 1103.376,
+      "text": "Some are more important, but these for me are the most important. And then I would like to try to see what we can do. And then I will talk about principles, I will talk about regulation, and I will talk about our integrated view of responsible AI, what we are doing. So why responsible AI? Many people talk about ethical AI. If you learn something in this talk, don't say that ever again. I will be happy."
+    },
+    {
+      "start": 1103.952,
+      "end": 1133.568,
+      "text": "If you say ethical AI or just AI or trust worthy AI, you are humanizing an algorithm. We shouldn't humanize things. These are not human. So humans can understand ethics, can define ethics, know what is justice or don't know what is justice, and also assign trust. For example, trust is almost something binary. You will never say, I trust this person 50%. And even if you say it, you will..."
+    },
+    {
+      "start": 1133.568,
+      "end": 1160.944,
+      "text": "decide to test it or not. So the action would be binary. So don't associate human traits to machine. So we don't use ethical AI, and we have a blog posting about this. But what about trustworthy AI? There is a National Science Foundation program in the US called Trustworthy AI. There's a European Union program called Trustworthy AI. What is the problem with trustworthy AI? There are two problems. It's not only you are humanizing AI, but also we know that AI doesn't work all the time."
+    },
+    {
+      "start": 1161.168,
+      "end": 1190.464,
+      "text": "So maybe a long-term goal will be to have trustworthy eyes that, like the sample I put, is like, if you go to this building and the elevator says it works 99% of the time, I will never take the elevator. Would you? Now, if the elevator says it doesn't work 1% of the time, and when it doesn't work, it stops, I will take it because I know I'm safe. This is why we have planes, we have buildings, we have bridges, we have helicopters."
+    },
+    {
+      "start": 1190.464,
+      "end": 1220.176,
+      "text": "Because we know that it's engineering, not alchemy. Engineering. We know that it's 99.999% safe. We don't have a jet in the air. And second, not only are we doing something unethical of asking people to trust something that doesn't work, but also we are putting the burden on the user. So that's why we use responsibility. Now, responsibility is also human, but we have created laws that have extended the notion to institutions."
+    },
+    {
+      "start": 1220.176,
+      "end": 1248.08,
+      "text": "So we are using responsibility in the sense, a legal sense. Institutions are responsible of the impact of what they sell. And it doesn't matter who provided the data. It doesn't matter who labeled the data. It doesn't matter who programmed that. When we have a problem in our car, we don't look who did the part and complain to that company. We complain to the company that sold the whole car, right? So why we don't do the same with software?"
+    },
+    {
+      "start": 1248.432,
+      "end": 1277.968,
+      "text": "You sold it to me, you are responsible, period. And that's it. The last thing is that a related problem is that we like to anthropomorphize algorithms. So we have robots that are like humans. Why? Why we want to create something like us? Why we want to play God? Mostly men, by the way. And it's not coincidence. They are also fighting wars. So systems do not need to be perfect."
+    },
+    {
+      "start": 1278.224,
+      "end": 1307.328,
+      "text": "but seems that people want to be better than us. So, why? So, they are learning from us. They shouldn't. So, there's a very interesting book that was published in 2021 by one of my colleagues, Cesar Hidalgo. He's also from Chile. That is called How Humans Judge Machines. And it's interesting. Humans judge machines much harsher than humans. So, to err is human. That's not true."
+    },
+    {
+      "start": 1307.328,
+      "end": 1334.672,
+      "text": "for machines. So there, we don't humanize them. We are tougher. Why? Cognitive biases. We will get back to that. So this is a multidisciplinary challenge. It's not only about computer science. It's also about social science. Ethics is philosophy. It's also about law and policy, regulation. And even it's about design, how we design things that are more transparent, more safe, and so on."
+    },
+    {
+      "start": 1334.704,
+      "end": 1364.0,
+      "text": "This is a courtesy of my ethics lead. I work with a philosopher, Jan Sujanja, and she is the ethics lead of the Institute. Okay, so let's go to Irresponsible AI. So one of our projects is to build an address to visualize the problems. There are at least two databases available in the web about problems with AI. One is called Oful AI, and the second is called Incident Database.ai, which has more than 2,000 problems."
+    },
+    {
+      "start": 1364.0,
+      "end": 1393.984,
+      "text": "that people have reported. There are many more. This is the tip of the iceberg. Maybe there are more than 10,000 problems, but we don't know about them. Maybe there are problems that will appear in the future because no one has found them. Who knows? And if you play with this, I will not have time to play, but for example, we have a geographical view. You see that half of the problems are in the U.S. and China. Different types of problems, different classes, and so on. So go there and play with the Atlas."
+    },
+    {
+      "start": 1393.984,
+      "end": 1421.968,
+      "text": "We want feedback and we are improving this every year. So, discrimination, the first main problem of AI. Do you get biased data? To an algorithm. First bias we have, that we think that bias is something negative because of the news. Bias, intrinsically, is neutral. Depending on the context, it's negative and positive. Information is bias."
+    },
+    {
+      "start": 1422.16,
+      "end": 1450.912,
+      "text": "If you have white noise entering the algorithm, nothing will happen. This is random data. So we need to have biased data. The problem is that sometimes the bias is negative. This is the case we're talking about. So in that case, the algorithm may ask itself, should I be neutral? Should I be fair? The first problem is that the algorithm is not human, so children ask these questions, as I said. But let's say the algorithm has some pseudo-conscious."
+    },
+    {
+      "start": 1450.912,
+      "end": 1480.24,
+      "text": "And it's asking that. Or at least the developer is asking that, which is the right solution. Well, most of the time, developers don't ask these questions, and you get the same bias, negative, that's why it's red, in the output. But even worse, sometimes the bias is amplified. Now, if the bias is amplified, we cannot blame the data. We have to blame the developer. And this is very important, and Hannes mentioned my work on bias."
+    },
+    {
+      "start": 1480.432,
+      "end": 1508.304,
+      "text": "On systems, I have this paper in Communication on ICM that now is my most downloaded paper. I never expected that, where I show the whole cycle of, the whole vicious cycle of bias in the web, where bias comes from data, comes from the optimization design, and comes also from the user feedback loop between the system and the users. So what is being fair?"
+    },
+    {
+      "start": 1508.624,
+      "end": 1537.52,
+      "text": "This is a question for social scientists, not for me. But the typical distinctions are about equality, equity, and justice. Justice takes a long time. So usually we're doing equity. Affirmative actions are equity. We're just fighting before justice. So this is a non-technical question, but sometimes computer scientists answer this question, and that's another problem. So what is the answer? The answer is..."
+    },
+    {
+      "start": 1537.52,
+      "end": 1566.832,
+      "text": "That depends on the context. Not always you need to ask these questions. But if you have people, either physically or psychologically, you need to ask these questions. The problem today is that these questions are not being asked. And I will get back to this on regulation. Now, solutions to the problem. We can take the classical ones or devise the input. That would be the best, but not all biases are data. You also don't know all the biases."
+    },
+    {
+      "start": 1566.832,
+      "end": 1595.872,
+      "text": "You can tune the algorithm or you can devise the output, but then you already lost a lot of information. Now, again, we are not using semantically correctly the word because we never can devise something. We are only mitigating the bias. Most of the time, we don't know all the hidden biases, and if you have read about intersectionalism, there may be biases against these certain three classes when you intersect them, like, for example, African, American."
+    },
+    {
+      "start": 1595.872,
+      "end": 1624.304,
+      "text": "women that live in Detroit. Now, the first time that this went to the headline news, although there were problems before, and I will not cover this case, I hope you can read it, it's very well known, it's a compass system, is that they found that a supporting tool to decide if a person will have conditional freedom or not has a racial bias."
+    },
+    {
+      "start": 1624.496,
+      "end": 1653.008,
+      "text": "Well, later, Cynthia Rudin and her team showed that really the bias was age, and there was a high correlation between age and ethnic origin. But it also seems that there were a lot of mistakes, because the people that got free did a lot of crime. So when we have a government using this kind of system, we need to ask this question. Is a secret algorithm ethical? I mean..."
+    },
+    {
+      "start": 1653.2,
+      "end": 1680.496,
+      "text": "A system is providing a possible decision on me. Is that ethical if it's completely an opaque black box? However, we need to ask another question. Is a public algorithm safe? Because if I'm a smart criminal and I understand how the system works, I will answer or do whatever I need to get free. So, of course, the answers in between depend on every case."
+    },
+    {
+      "start": 1684.784,
+      "end": 1712.784,
+      "text": "Now, there are many papers on this, but I like this one. It was done by four very famous computer scientists and was a request from the Secretary of Economy in the U.S. because they were interested in basically spending less money in prisons. This was not asked by the Secretary of Justice because, of course, judges are not interested in being replaced."
+    },
+    {
+      "start": 1713.008,
+      "end": 1739.952,
+      "text": "But I think that's okay. In that case, I think I support them. So they used about three-quarter million cases on basically bails. So they decided if a person would stay in prison before the case, before the trial. And they found that if the predictions were correct, they could decrease the crime rate in 25%, keeping the same number of people in prison."
+    },
+    {
+      "start": 1739.952,
+      "end": 1768.224,
+      "text": "or decrease the prison rate in 42% keeping the same crime rate. That is, they could do much better than the judges. If the predictions were right. Remember, these are predictions. Even worse, for the most dangerous criminals, more than half of them would never come back to court and would re-offend. And that was one of the main problems. So let me give you another problem."
+    },
+    {
+      "start": 1768.224,
+      "end": 1797.792,
+      "text": "This system amplified the bias, although it was doing better than the judges. So if you are interested in more technical people, they use data-boosted decision trees, which is something that you can interpret the results. And the only demographic variable in the data was age. Most of these people are men, but they didn't use gender. So from age, you cannot infer any, theoretically, any other thing. But of course,"
+    },
+    {
+      "start": 1797.792,
+      "end": 1827.648,
+      "text": "From the case data, the system was able to infer other things like the ethnicity of the people. So here I have the table of the results of the paper. In red, I added the percentage of these minorities in the state of New York. So in the state of New York, there's 18% African American and 13% from Latin American origin. And then in total, 32. Well, if you see here,"
+    },
+    {
+      "start": 1827.648,
+      "end": 1856.896,
+      "text": "The system is already biased. 49% that come to the court are black. 33% are Hispanic. In total, 82%. Well, the judges were biased. The African-American increased to 57%. The Hispanic went a bit lower to 32%. Maybe there are more white Hispanics like me, or I look more white than others. And then 89%."
+    },
+    {
+      "start": 1856.896,
+      "end": 1886.448,
+      "text": "In total, so they sum more. So what about the algorithm? Well, the algorithm learned this bias from the system and increased the African-American to 60%, decreased the Hispanic to 30%, but increased the total in 90%. So the system was already biased, and now the bias increased in 10% more, from 81% to 90%. Now, we can play with the algorithm, and if the algorithm..."
+    },
+    {
+      "start": 1886.448,
+      "end": 1911.536,
+      "text": "would use the lowest rate for every ethnic origin, then we can do much better still than the judges, decreasing not 25%, but decreasing 23% the crime rate. So still, the system was doing better. So if we want to humanize it, it was more just, although it was still racist. So here we have a dilemma."
+    },
+    {
+      "start": 1912.592,
+      "end": 1940.56,
+      "text": "And then we can go back to this question when we talk about ethics. What is better, a biased algorithm that is just or a noisy judge? Why a noisy judge? Because there are words that show that if you see a judge after lunch, you will get a worse sentence than if you see it at breakfast time. So basically the decisions of humans are not always the same. We are noisy people."
+    },
+    {
+      "start": 1940.624,
+      "end": 1969.008,
+      "text": "So I was using a very interesting paper that was published in Harvard Business Review in 2016 by Daniel Kahneman and collaborators of the cost of inconsistent decision-making. People change their decisions based on other things, personal interest, emotions, whatever. But now, two years ago, Daniel Kahneman published a book called Noise."
+    },
+    {
+      "start": 1969.008,
+      "end": 1998.72,
+      "text": "that basically he goes into this problem. So algorithms are not noisy, but they still can be biased. People really is biased and noisy. So other example of discrimination. Language models, so chatbots. GPT-3, before what happened in November. So if you put this sentence, two Muslims walked into A, most completions were violent. You can read the..."
+    },
+    {
+      "start": 1998.72,
+      "end": 2027.376,
+      "text": "There. They compare all religions, and Muslims were four times more violent than Christians, and Christians were four times more violent than atheists. So if you want to choose a religion, choose the less violent. Of course, this is a stereotype from the news that was trained the system. But it can be complicated. In 2020, during the pandemic, the England..."
+    },
+    {
+      "start": 2027.376,
+      "end": 2057.248,
+      "text": "this was England and Wales, decided that instead of doing an exam where a lot of students could be infected with COVID, they decided to predict the scores of the exam. And of course, poor people coming from public schools got worse scores than rich people coming from private schools. Because on average, that may be true. But of course, for every person, it's different. So one problem of this system is when you are averaging people,"
+    },
+    {
+      "start": 2057.248,
+      "end": 2086.064,
+      "text": "You're assuming that people come from a probability distribution. Maybe that's true if you take all the DNA, but every person is different, every person has different motivation, every person can be very good at something. So don't average people. Don't use this AI to decide the fate of a person. Of course, they couldn't use it because people got really upset. They were discriminated. But sometimes discrimination is not in the data."
+    },
+    {
+      "start": 2086.064,
+      "end": 2115.6,
+      "text": "And here is an example of that. In 2000, I think it was in 2018 or 19, a group of riders in Bologna, Italy, felt that they were discriminated, that they were earning much less money than other groups. And they saw each other, and they were not all women, they were not all immigrants, they were not all dark-skinned, they were all different, but still they were earning less money. So they said,"
+    },
+    {
+      "start": 2115.6,
+      "end": 2144.992,
+      "text": "There's some discrimination here. We don't know what. Let's sue the company. And they did. The company found the problem right away but didn't tell the judge how they solved it. And I guess they shared the code. An expert found the same problem. And about two years later, they found that they were discriminating. What was happening? Well, if you see any delivery platform, the peak of work is at night. Most people..."
+    },
+    {
+      "start": 2144.992,
+      "end": 2173.84,
+      "text": "for dinner ask for food to come home well there are many people that cannot deliver at night because they have children they have dependents maybe they don't want to work at night and that's completely legal in most countries so they were not checking that the solution was simple give more work during the day to the people that only can deliver during the day and they solve the problem but no one thought about that and as the book says everything is obvious after you know it"
+    },
+    {
+      "start": 2174.608,
+      "end": 2202.864,
+      "text": "But before it was not easy. And the last one is the worst case on political impact. This started in 2012 when a brilliant engineer decided to look for fraud in poor people. Basically subsidies for child care. They accused wrongly 26,000 families, let's say 100,000 people. For many years they had to return the money."
+    },
+    {
+      "start": 2202.864,
+      "end": 2230.576,
+      "text": "that people really suffer, like some people went back to their country of origin, some people lost their home. It was a mess. So civil society sued the government. And in 2020, the Supreme Court of the Netherlands said that was illegal. It was already unethical, but that was illegal to use of the system. And the former minister resigned from the parliament. She was a deputy member. But the opposition party said that was not enough and pushed."
+    },
+    {
+      "start": 2231.216,
+      "end": 2257.872,
+      "text": "that basically at the end, the whole government resigned. So this is the first case where a whole government resigned because of bad software. That happened January 15, 2021. So, well, the history continues in the sense that the same government was elected again. That's another story. Second problem, pseudoscience."
+    },
+    {
+      "start": 2258.672,
+      "end": 2286.704,
+      "text": "People from Vienna should know what is physiognomy. You had one of the major exponents of physiognomy in the 19th century. But it's coming back. So Kosinski, a famous psychologist at Stanford, decided to predict sexual orientation using your face. Of course, this had a lot of mistakes. Not only was it not ethical, but it also was badly done. That doesn't work."
+    },
+    {
+      "start": 2287.12,
+      "end": 2315.312,
+      "text": "But one year before, some people in China decided that they could predict criminality before you do anything, like minority report. Of course, many people said that it was not ethical, that it was not scientific. They even replicated that it was scientific, but luckily that's only published in archive, and only the last version. But in 2020, I guess people that had more free time with COVID,"
+    },
+    {
+      "start": 2315.44,
+      "end": 2345.424,
+      "text": "tried to do the same again in the U.S. This passed the IRB of the university, passed the reviewers on the journal, was almost published in Nature, passed the editor until someone found out and said this is not ethical and stopped it. So we need to have a real ethics board to check the ethics of the research. And then in 2021, Kosinski came back again and now he can predict"
+    },
+    {
+      "start": 2346.032,
+      "end": 2375.072,
+      "text": "which is your political orientation from your face. This is easier in the U.S. because there are only two parties. In other countries, much more difficult. Of course, this is, again, pseudoscience. He got 70% accuracy, but this is pure correlation. Just look if I use a bird or long hair, air ring, and so on, and you get already that. So this is modern phrenology. Modern phrenology was something that started"
+    },
+    {
+      "start": 2375.072,
+      "end": 2404.416,
+      "text": "at the end of the 18th century in Germany, and the hypothesis was that criminals had different convolutions in the brain. And to check that, you need to do a lobotomy, so it's complicated. But some people simplified the hypothesis, and for example, Cesare Lombroso, a famous doctor in Torino, said that the skull of a criminal was different. And he collected hundreds of skulls from the morgue,"
+    },
+    {
+      "start": 2404.416,
+      "end": 2428.272,
+      "text": "poor people that no one picked up to show that the skull was different he couldn't find any example but he really believed this because he left his own skeleton to show what a normal person should look like a normal person that collected hundreds of skulls this is his house i really i enjoyed the visit here not in the best way but"
+    },
+    {
+      "start": 2428.272,
+      "end": 2455.264,
+      "text": "I recommend it to visit if you go to Torino. After the Egyptian Museum, it's the second best museum in Torino for me. Because the Egyptian Museum is the second largest in the world. It's in Torino. You can look wide. But this can be worse. Another famous university, now MIT in 2019, published a paper in one of the most important computer vision conferences showing that if you send me a..."
+    },
+    {
+      "start": 2455.264,
+      "end": 2479.056,
+      "text": "voice message in WhatsApp, I can infer your face. I may believe it from here to below, but what about the rest? What about my age, my weight, so on? See the signs. So this is my master phrenology algorithm. You send me a piece of voice, I generate your face, and then I know if you are..."
+    },
+    {
+      "start": 2479.6,
+      "end": 2509.36,
+      "text": "political opposer. I know if you're homosexual and then in some countries that's illegal and I know if I should put you in prison because you will do a crime in the future. I even know your name because amazingly the U.S. Patent Office granted the patent to Mitre on a system that can predict your name. No comments. But this can be more subtle. For example, Lisa Feldman Barrett in Northeastern showed that"
+    },
+    {
+      "start": 2509.36,
+      "end": 2538.112,
+      "text": "People cannot predict emotions, so we are using people to label emotions. AI cannot predict emotions either. But we are doing things. We are just rediscovering stereotypes. We are not doing science. Okay. Third problem. Stupidity. In 1976, George Box, an mathematician, said, all models are wrong, but some are useful. The same we can say about AI today. All models are wrong. These are models."
+    },
+    {
+      "start": 2538.112,
+      "end": 2567.536,
+      "text": "But some are useful. One example. At the end of 2020, Elon Musk said, use Signal. All of you will understand he's talking about the chat app, which is the most secure, supposedly. But some stock software, basically stock market software that was using input from influencers, saw that he was talking about buying stock from Signal Advance."
+    },
+    {
+      "start": 2567.536,
+      "end": 2596.16,
+      "text": "And the company value increased in 400%. The CEO of that company was very happy. The people that followed the trend was not happy at all. Everything about the adversarial AI is here. For example, you change one pixel and a dog becomes a cat. What the system is learning is not learning what we learn. And the worst, this is pure incompetence. Some engineer in Merlo Park"
+    },
+    {
+      "start": 2596.16,
+      "end": 2622.88,
+      "text": "California decided to use an English-trained hate speech model in France. And then the town of Vichy was illegal and disappeared from the platform. They had to complain three weeks to get their Facebook page back. And this may be funny, but if they were using the Facebook page for COVID, this is not funny."
+    },
+    {
+      "start": 2622.88,
+      "end": 2651.408,
+      "text": "Here is a good place to remember the limitations of mature learning that sometimes computer scientists don't remember. First, we are very good at abstracting. And to abstract things, we need to filter. We need to forget things. And AI is not as good to do that. You can read the amazing short story from Jorge Luis Borges, Full of the Memories. It's about that. Second, obvious, but you need to repeat it. You cannot learn what is not in the data."
+    },
+    {
+      "start": 2651.472,
+      "end": 2680.208,
+      "text": "And also data will never capture everything about the problem. For example, justice. Will data capture the context of a person that's accused of a crime? Of course not. But we think we are doing that. And this is what happened in 2018 when an Uber car killed a woman that crossed in a bicycle at night in the wrong place, a road, and the car didn't recognize there was a bicycle, crashed the woman, and the woman died later in the hospital."
+    },
+    {
+      "start": 2680.464,
+      "end": 2706.96,
+      "text": "I will get back to this case. But what happened? You cannot have all the possible traffic accidents that we will have in the future. This is basically open domain. So you will never have all the data to avoid the problem. Still, I believe that self-driving cars will be more safer than human driving cars. So I don't care about the accuracy."
+    },
+    {
+      "start": 2706.96,
+      "end": 2735.984,
+      "text": "I don't care if you tell me 99% or 90%. That's another problem where I'm working on. The evaluation of the system is wrong. Engineering is not measured on how many times it works. Engineering is measured on how much time is saved or when it doesn't work. So I don't care about the accuracy. You have to tell me what happens when it doesn't work. It's only 0.1%, but some person will die. We have a problem."
+    },
+    {
+      "start": 2736.496,
+      "end": 2763.392,
+      "text": "And second, finally, we need to be humble. How many systems have you seen that sometimes say, I don't know? They say, really, I don't know because the confidence is too low. It's 50%. I prefer not to answer. This is a smart person. A smart teacher will say, I don't know, even in front of the students. But systems don't say that. So waste of resources, this table already showed, comes from this very good paper."
+    },
+    {
+      "start": 2763.392,
+      "end": 2793.36,
+      "text": "from Bender and Gebru and other people. And basically, the carbon footprint of training these models is huge. The electricity is huge, but the real problem is not the training, it's the usage. 100 million people playing with ChatGPT every day is the same as maybe 1 million people playing with TikTok every day. I don't know. We need to worry about that, the usage of these systems."
+    },
+    {
+      "start": 2793.36,
+      "end": 2822.544,
+      "text": "And this is a paper, the famous Stochastic Parallels paper. I will recommend to read it if you are interested. This was the paper that implied that Tim LeGuevre was laid off from Google because she wanted to publish this paper. This was the reason that Margaret Mitchell, the colleague of the AI Essex team, couldn't use their name in the paper. But you can still read it. So she put it. She's brave. And that didn't matter too much."
+    },
+    {
+      "start": 2822.544,
+      "end": 2851.568,
+      "text": "because two months after TeamNit was laid off, Make also was laid off. This is not new. For example, when in 2019 Google did an AI ethics board, had to solve it in one week because they chose the wrong people. You need to choose ethical people, right? And this is why we wrote a paper that appeared in Ethics and AI. It's called Towards Intellectual Freedom in AI Ethics Global Community."
+    },
+    {
+      "start": 2851.568,
+      "end": 2879.52,
+      "text": "to basically show that we need to have freedom to basically talk about these things, even if we work at the industry. And I don't want to pick in Google. This is well-known from Amazon. Well, you know the Cambridge Analytica thing, because it was in Europe and recently was the largest find for several billion euros to a company. Maybe the last one was, remember, Spotify in 2022."
+    },
+    {
+      "start": 2879.52,
+      "end": 2906.0,
+      "text": "that was basically saying that vaccines were wrong. And there are very few people like Tim Brake, which I know him from my PhD time, one of the inventors of XML, that, for example, quit Amazon for ethical reasons. I recently also quit the Council of AI in Spain for ethical reasons, too, with two other colleagues. But it's very hard to find people that is..."
+    },
+    {
+      "start": 2906.352,
+      "end": 2935.6,
+      "text": "can, because sometimes you cannot, can basically say, I don't want to do this, and I can still survive because of ethical reasons. So, what are my fears? To go to the second part. I don't believe in AGI. I think the problem is us. So, for the second part, I propose this question."
+    },
+    {
+      "start": 2938.736,
+      "end": 2968.336,
+      "text": "If you feel offended, maybe it's the right question. So, principles. The main ethics principle that we have today comes from bioethics. Doctors and biology started this. There was a famous meeting that is in the Belmont Report in 1979, and there are basically three values. One is autonomy, the dignity of us, so basically respect our dignity."
+    },
+    {
+      "start": 2968.848,
+      "end": 2998.0,
+      "text": "Second is basically be good and don't do evil. And the third is try to be just. The conflicts come when you have a problem between these values. Otherwise, there's no conflict. Ethics is about conflict. For example, if you have a system that can predict that you will do something that will harm you, for example, you will lose money. Let's say you have a financial system."
+    },
+    {
+      "start": 2998.608,
+      "end": 3025.408,
+      "text": "The conflict is, do I tell this person to not do it because it will be harm, or I should respect the dignity of that person and it's their problem and they can do whatever they want. In Europe, I think we will be more in autonomy. In the U.S., we'll be more paternalistic and we'll be on let's protect the person. But remember, these are predictions, so we can make mistakes. So here at the right, we have some software properties."
+    },
+    {
+      "start": 3025.408,
+      "end": 3051.664,
+      "text": "that belong to each one of these values. So autonomy, we have consent, informed consent, agency, explainability. In harm-benefit, we have things like accuracy, auditability, competency. And in justice, we have things like accountability, accessibility, protecting the vulnerable, and so on. So we can associate to each one of these principles some instrumental principles."
+    },
+    {
+      "start": 3051.664,
+      "end": 3080.992,
+      "text": "So the things in the right, they're instrumental principles. They are not values. But sometimes people mix these two words. I guess the first regulation in AI comes from GDPR. So it comes from the EU. And I think this one is a good one to contest the decision if you find that you are being discriminated. Now, what it means, this was written by lawyers, so what it means in practice. Article 22."
+    },
+    {
+      "start": 3080.992,
+      "end": 3110.0,
+      "text": "It means that if you want to have full transparency in the process, you need interpretability. Interpretability means you understand how the system works. If you want to contest the decision, you need explainability. Explainability means you explain why in this specific instance you took the decision. Like, tell me why I didn't get the credit. Tell me why I didn't get the scholarship. Tell me why I'm not free."
+    },
+    {
+      "start": 3110.576,
+      "end": 3139.648,
+      "text": "And finally, if you want to maintain your system as intended, you need to do continuous validation, testing, and maintenance. Now, explainability is desirable, but sometimes it's complicated. Have you seen the serious house, the famous doctor's house? No? Okay. He always finds, at the end, the right answer. But if a system gives the most probable answer for some symptoms,"
+    },
+    {
+      "start": 3139.648,
+      "end": 3166.576,
+      "text": "This could be very dangerous because the person may die before you find out why he was dying. So in health, it's complicated. This is a paper that appeared in Science in July 2021. And GDPR has already been used. This is a very interesting case where two high schools in the south of France decided to put video cameras for security. And then some parents took the schools to court."
+    },
+    {
+      "start": 3166.832,
+      "end": 3196.544,
+      "text": "And the result was very interesting because the judges used GDPR, and they said there were three reasons that that was illegal. First, they couldn't do it. Competence. The director of the school never asked anyone. But legally, only the city could decide that. But they didn't know. This is incompetence. Second, according to GDPR, if you want to use a camera in a public space, you need to have informed consent."
+    },
+    {
+      "start": 3196.544,
+      "end": 3225.008,
+      "text": "It's impossible to have informed consent at the entrance of school, so that's another problem. And third, very interesting, the solution was not proportional to the problem. I love this one because it's kind of new thing. If you want to have security, put the guard in door. Don't put a camera that can do much more than that. So, the White House finally this year published some principles for software."
+    },
+    {
+      "start": 3225.008,
+      "end": 3253.328,
+      "text": "They call it a Bill of Rights because like an implicit mention to people. But this is instrumental principles for software. And these are here. I will not read them. These are classical ones. We know almost all of them. They are not new. They are put in a different way. But very important, they said automated systems. Although here it says AI. This is very subtle."
+    },
+    {
+      "start": 3253.648,
+      "end": 3279.696,
+      "text": "Semantic, but very important. If we only do it for AI, I just say I don't use AI, and then I don't need to follow any regulations. That's the problem with the EU AI Act that doesn't cover things that are not AI. Even worse, in the EU AI Act, they are to define artificial intelligence, which is already a difficult task for people that work on this."
+    },
+    {
+      "start": 3279.92,
+      "end": 3309.232,
+      "text": "So, another day someone was saying to me that linear regression was artificial intelligence, and I wanted to disagree, but I said, okay, better not to go there. I have been working on this, so I was working on this, although I'm also part of the ACM Technology Policy Committee, and this is unpublished, but I did this attempt to have a taxonomy of principles, and I basically decided that these were the six most important principles for me."
+    },
+    {
+      "start": 3309.872,
+      "end": 3337.232,
+      "text": "But then ACM decided to do this, and I went to the committee, and then one thing I got is to put this new principle, which is new, I call it legitimacy and competency, in the new principles, because this is the one that is missing today. Before you do anything, prove that you should do it, and also that you have the competence to do it. So this is the new..."
+    },
+    {
+      "start": 3337.232,
+      "end": 3364.912,
+      "text": "A version that was published at the end of October 2022. Sadly, just after the White House. We didn't know that the White House was doing that. And the three ones in yellow are the main new ones. First, legitimacy and competence. This principle I had designed before. Minimizing harm. Making sure that you are thinking on that. Minimizing harm. And also because some people forget that we are not alone on Earth."
+    },
+    {
+      "start": 3364.912,
+      "end": 3391.744,
+      "text": "Also, nine, limit the environmental impact. So basically, we are animals too. Sometimes we say humans and animals. No, we are also animals, and that's why we are what we are today. This is a comparison. This is unpublished on the 2017 version, the White House, and the new one. And you can see the new one is the most..."
+    },
+    {
+      "start": 3391.744,
+      "end": 3419.664,
+      "text": "advance on principles, so if you need principles, please use that. Also, we added a governance section, basically trade-offs that you need to follow, because all people understand principles, but they don't know how to use them. We have found that in practice in data scientists. They say, yeah, I know what is transparency, but how do I use it? Where do I put it? What do I do? And we help them to do that. So, for that,"
+    },
+    {
+      "start": 3419.664,
+      "end": 3448.688,
+      "text": "and this will appear in European review this year, I did this diagram to try to explain people where every principle goes. So when you have an idea, you do legitimacy and competence, and that means you need to do an ethical risk assessment. Then you go to design, develop, and operate the system. And here you do validation and testing. You have monitoring tools. And then when it fails too late, we have to do an audit."
+    },
+    {
+      "start": 3448.816,
+      "end": 3474.992,
+      "text": "And when it happens, we have to go to court. Too late. However, be very careful. If you audit an algorithm, you are legitimizing it. So first make sure that you should audit the algorithm. Even if it's wrong. You just say, no, I will not audit because your algorithm shouldn't exist. That will be the audit. Two lines. People will not like it, but that's the right audit."
+    },
+    {
+      "start": 3475.856,
+      "end": 3504.72,
+      "text": "There is already a book on this done by Ben Schneiderman, one of the founders of human-computer interaction. I don't agree on everything because he uses the word trustworthy. I don't like it. But it's good to have certification like ISO 9000, for example, similar to that. And this book is called Human-Centered AI. But the new research problem is how to develop responsible software with the help of AI. So AI helping AI. This is the next step."
+    },
+    {
+      "start": 3506.0,
+      "end": 3533.232,
+      "text": "The EU proposal, I'm sure you know, that at the beginning of May the Parliament voted the new version, still is not in place because now all the EU countries and also the EU executive, the Trilog, have to agree. But this is very interesting because, for example, they forbid any kind of surveillance, any kind of facial recognition, which is very interesting because in other places it's completely the opposite."
+    },
+    {
+      "start": 3536.08,
+      "end": 3564.976,
+      "text": "So the new version has a new article on genetic AI. I think they had to rush in the last three months to put something on genetic AI because that was happening. And I had the chance to talk with one of the presidents of that commission. So there are very interesting things here, but they are wishful thinking. For example, this one, Article 5, you need to check if you are doing psychological or physical harm."
+    },
+    {
+      "start": 3565.424,
+      "end": 3594.8,
+      "text": "So next time that you see a fast food ad and you have a metabolic problem, you should complain. I don't know how they will enforce that. So it makes sense, but sometimes when people don't understand how technology works, this doesn't work. Like the right to be forgotten, yes, you can take it out of the web and the next day someone will put it back. So we'll never get out of the web, but it will not work. But there are other problems."
+    },
+    {
+      "start": 3595.088,
+      "end": 3624.064,
+      "text": "And this is one of the major cognitive biases of humans. That's why we invented the term race. For example, skin color is a continuous thing. Where we put the line doesn't make any sense. There's no line. The same happens in the EU Act, if you have read it a little, because it's based on three levels of risk. But risk is a continuous variable, where you put it. And they define it as use cases. What about the new cases? Well, the new cases will be in the lowest possible."
+    },
+    {
+      "start": 3624.064,
+      "end": 3652.784,
+      "text": "that people think should be, and of course will be one less than the real one. Because that's how people work if they want to have a business. So I think there will be many problems if we do that. The last problem is that it's the first time that we regulate in the use of a technology. All other regulations are on health, on food, on travel, are on the problem. Now we're the first time we're regulating the use of technology. So we will follow with blockchain."
+    },
+    {
+      "start": 3652.784,
+      "end": 3682.704,
+      "text": "Quantum computing, any other new technology that appears in the future, and all the regulations should be consistent with all the previous ones, that's a path that is too complicated, and I think it's a wrong path. We should regulate the problem, not the technology. It's like human rights. We just say, we shouldn't do this, doesn't matter how you do it. And here, I don't know, we are making a distinction, and only AI on how to do it. Accountability. Who is responsible?"
+    },
+    {
+      "start": 3685.136,
+      "end": 3714.288,
+      "text": "Remember the Uber example. Uber was not responsible. Why? Because they reached a settlement the same week with the family of the dead woman. Very fast. But also, at the same time, someone told the Arizona state that the person that was inside the car as a backup driver was watching a video. So the Arizona state had to charge..."
+    },
+    {
+      "start": 3714.288,
+      "end": 3743.312,
+      "text": "her because it was a public road. And she was found guilty, and she was one year at home without being able to leave with one of these rings in the leg. One year ago, finally, this person told the story in Wired. She was a transgender woman from Mexico. That was the only word that he could get."
+    },
+    {
+      "start": 3743.44,
+      "end": 3773.2,
+      "text": "and was minimal salary, and she was then the one that suffered. So again, another case of vulnerable people suffering because of AI. So this is our integrated view of responsible AI. I will not have much time to talk about this. We built last year the first AI ethics worldwide committee, so you can have a private advice on AI. These are 45 people from all over the world that are experts on the topic."
+    },
+    {
+      "start": 3774.928,
+      "end": 3803.184,
+      "text": "We can do ethical impact assessment. Maybe some people here have heard about the trolley problem. How many? The trolley problem? Okay, forget it. You will never see this problem in reality. This is a real problem. This is people killed by cars. This is people killed by self-driving cars. What is the problem? There are some people that before were not in danger of being killed. And most probably this will be vulnerable people. Women, old people, kids that run too fast to take a ball."
+    },
+    {
+      "start": 3803.184,
+      "end": 3832.352,
+      "text": "and the system didn't recognize that that could be a kid because it looked like a ball, and so on. Still, it's better to have surviving cars, but we need to decide what we do with these cases where people die. So I will try to go very fast, five minutes on genetic AI. Five minutes. Fiction is easy to recognize. We are getting to a very complicated world. You can do the opposite."
+    },
+    {
+      "start": 3832.352,
+      "end": 3856.112,
+      "text": "IP. But reality is getting more complicated. Is this true or not? Well, have you seen Maverick? The movie? No one? Okay, in the US all people have seen Maverick. Well, the voice of Val Kilmer is completely generated by AI because he cannot talk. It was just before he died."
+    },
+    {
+      "start": 3857.04,
+      "end": 3886.576,
+      "text": "So we can put any video of any person today with any voice we want, with right voice, saying whatever we want. So there are many bad uses. Europol in March found many cases. And these are hallucinations. I will not be able to tell you this, but the hallucinations are first a bad word. They are different in every language, so I will skip this. I will skip also that we can manipulate this thing, and they will apologize even if they are wrong."
+    },
+    {
+      "start": 3887.024,
+      "end": 3916.128,
+      "text": "because I'm lying, but they don't know I'm lying. Also, I wanted to tell you about my death too late, but I was dead in the previous version of ChagiPT. I died in 2021, so this is a hologram. But in the new version, I'm alive again. But there are more mistakes in my biography, and there are different mistakes on different languages. So this is in Spanish. You see the amount of mistakes."
+    },
+    {
+      "start": 3916.128,
+      "end": 3945.216,
+      "text": "inventing things that may be probable but never happen. And the problem is that I'm the only one that can check. Every other person will think that that's true. So different false facts. What it implies is that the old Babel Tower, that was a punishment, if you believe in the Bible, is that we had different languages. The new one could be even worse. Two people arguing that ChatGPT said A and B, and they are different."
+    },
+    {
+      "start": 3945.216,
+      "end": 3975.088,
+      "text": "We have different knowledge. So this is a problem. Well, by chance, they already solved this problem in chat GPT-4 because they trained the system only in English. Not because they thought that this was a problem. I think they thought because they had more data. So what is the problem now? It's more subtle. The problem is that we have cultural colonization because all the answers come from English. So you will have a dominance of whatever they think. So the number of continents, seven, not six, and so on."
+    },
+    {
+      "start": 3976.048,
+      "end": 4005.008,
+      "text": "So we can have a pseudo-personality profile, very confident, naive, incoherent, and dragged. This is if we try to humanize them. A technical issue, if people use chatbots to create content, and we cannot distinguish which content is human or not, they will run with content from themselves. But they will be more mechanical. And then we have other problems. Bias, hate, censorship, diversity."
+    },
+    {
+      "start": 4005.424,
+      "end": 4034.496,
+      "text": "ChatGPT-4 works in 95 languages. We have at least 7,000 languages alive on Earth. All these languages are discriminated. And of course, the quality in all of the 95 is different because the amount of data is different. So there are some fears of AGI. I don't believe in that. Even George Hinton, one of the fathers of deep learning, believes that AI will kill."
+    },
+    {
+      "start": 4034.496,
+      "end": 4064.272,
+      "text": "Ourselves, maybe, and if this happens, it's our fault. Harari also believes that. But I try to take it with humor. If you cannot read, to think this all began with letting out a complete finish our sentences. Now, so to finish, the real problem today is mental health. So in 2021, people was already building models to talk to dead people."
+    },
+    {
+      "start": 4064.272,
+      "end": 4092.176,
+      "text": "any time that this person was sad. Recently, even with video, one person in China can talk to his grandmother. And then, March 23, Yaron Lanier said, the danger isn't that the AI destroys us, it's that it drives us insane. I thought, I think he's right. This will happen in a few years. Well, I was wrong."
+    },
+    {
+      "start": 4092.912,
+      "end": 4121.104,
+      "text": "Five days later, one person in Belgium committed suicide after talking to a chatbot for six months. He was a PhD student with a mental problem, and he left one wife and two kids. And he left all the conversations locked that the wife found. And if you read the last conversation, it's like a science fiction movie. I will let you read it, and then you can decide if the chatbot helped."
+    },
+    {
+      "start": 4121.104,
+      "end": 4149.184,
+      "text": "It's not chat GPT if the chatbot help or not to commit suicide. So next day, a lot of people in Belgium was really worried. And then"
+    },
+    {
+      "start": 4149.184,
+      "end": 4177.808,
+      "text": "A lot of people were worried about other things, like a complaint, a former complaint, because of illegal things on the Federal Trade Commission in the U.S. You have heard about Italy banning chat GPT on April 1st. Some people thought that was a Fool's Day joke. It was not. On April 11th, China proposed the first regulation of Genetic AI, and it's quite good if you remove all the political parts."
+    },
+    {
+      "start": 4177.872,
+      "end": 4204.496,
+      "text": "So the rest is quite interesting. They have really thought about it much earlier, so it's interesting. And OpenAI fixed the two problems that they were complaining in Italy, and on April 28, ChatGPT was back in business. So, to finish, please do not humanize technology. So don't use robot thinking. They don't think."
+    },
+    {
+      "start": 4206.992,
+      "end": 4235.712,
+      "text": "Language models, chatbots, do not hallucinate. They make errors. They don't think. They mimic conversation. They don't have opinions. They exhibit those. They don't intend any outcome. They produce outcomes. They don't intend to manipulate. They don't lie. They just BS. They don't cause harm. Sorry, they don't intend harm. They just cause manipulation, misinformation, and harm. At least, if we talk about these things right, we will not be like this Google engineer."
+    },
+    {
+      "start": 4235.712,
+      "end": 4246.672,
+      "text": "that thought that we had to have a new religion based on a chatbot that was so smart for him. So thank you. Questions?"
+    },
+    {
+      "start": 4268.144,
+      "end": 4294.032,
+      "text": "Thank you, Ricardo. And also excuse for pushing you a little bit forward with your... It's the rainfall. It's the fault of the rain. Questions from the audience. So it was a tour, the fourth rule, regulation, AI, bias, responsibility. Can I just... Somebody help me and give..."
+    },
+    {
+      "start": 4300.976,
+      "end": 4327.056,
+      "text": "We have a streaming, and I think it's good for having... I found your presentation very interesting and well-developed in many directions. We cannot... It's technology. Technology. Now it is working. Thank you. Thank you. It is technology, and I do not know, because it's in the house here. So I think your presentation was excellent, and..."
+    },
+    {
+      "start": 4327.056,
+      "end": 4356.752,
+      "text": "dealing with many aspects of artificial intelligence, but one aspect was not dealt with neither in the Chinese regulation proposal from 11th of April, nor in the EU regulation proposal, nor in the United States diverse White House or ACM or whatever. And this is the question of the ethics of production of the system itself. Because as far as we see, Facebook, Google, etc., etc.,"
+    },
+    {
+      "start": 4356.752,
+      "end": 4386.656,
+      "text": "are private production systems, and they accumulate the profit. And what is necessary is my proposal. I worked for the EU for several years, and my proposal for the EU is create a collective production system of AI and share the profits. Thanks. Yeah, this is a topic that I've been... I mean, there are so many topics. But at least Facebook opened their model."
+    },
+    {
+      "start": 4386.656,
+      "end": 4416.4,
+      "text": "And then later someone also released all the weights of their model. So by these two events, basically they have an open model, although they didn't intend to have an open model. And they think this should be the future. And John LeCun, that works at Meta, said two weeks ago in Northeastern, said that he wants to see open models because then everyone has the same opportunity to fine-tune these models and to use it for specific purposes."
+    },
+    {
+      "start": 4416.656,
+      "end": 4446.656,
+      "text": "Of course, OpenAI, Google, Microsoft disagree. We will see what will happen. But if you remember that the Internet is open, that Unix is open, that many other things are open, maybe that's the way to go, but we need to see what the market says. So this is a very important topic. And there are already smaller startups publishing open models that are not as good as ChatGPT, but they are much smaller and they are quite good."
+    },
+    {
+      "start": 4446.656,
+      "end": 4473.744,
+      "text": "So I'm sure in one year, maybe 3DBT will not be so good. Thank you for your talk. I have more of a technical question, maybe."
+    },
+    {
+      "start": 4473.744,
+      "end": 4500.448,
+      "text": "So considering the term of transparency, so I agree with you that, for instance, in general algorithms should be made open source or be public in order to achieve transparency. But I think for deep learning model parameters, this can be a problem because if you publicize them or if you make them public,"
+    },
+    {
+      "start": 4500.448,
+      "end": 4529.296,
+      "text": "Other persons could use that as an attack vector in that sense that they could infer, for instance, from the hyperparameters, infer how to tweak model data and then manipulate, sorry, how to tweak the training data and then produce another sort of false outcome of the model. So what is your opinion on that potential dilemma?"
+    },
+    {
+      "start": 4529.488,
+      "end": 4555.536,
+      "text": "Yeah, but I said that open models to fine-tune them. So I believe that in the future we should have private models that are based on open models. And these private models need to be secret because of what you say, and to avoid adversarial attacks, to avoid privacy issues. But also you want to do that because you want to keep your data private. Today, if you want to fine-tune a model in ChatGPT, you need to share all the data with OpenAI and even..."
+    },
+    {
+      "start": 4555.536,
+      "end": 4580.816,
+      "text": "Well, they are not open, so I don't know why they call themselves open AI. But even they say that they will not use it, you need to trust them. And some companies cannot trust their data, their health data. Legally, you cannot share it. So there are many data in many countries that should be kept in premises. So I think the future of the world will be that we will have like three or four open models, and then you will fine-tune."
+    },
+    {
+      "start": 4580.816,
+      "end": 4609.6,
+      "text": "A lot of private models for a specific domain, because I think if you keep it open domain, you keep all the problems. You keep bias, you keep hate, you keep censorship, and so on. So we need to basically reduce the problem to a problem where you have very good data and very good curated data, so you basically get rid of most of the problems. You mitigate all these problems. Before that question, I have one, because..."
+    },
+    {
+      "start": 4609.6,
+      "end": 4638.032,
+      "text": "It's come up with your answer. Aren't those models in the hand of very few companies and this large language model? So it's already some kind of monopolization going on, also in this machine learning field with this large language model. So isn't it a private endeavor where the state has a problem to follow or even universities to catch up with this research? Well, I've done for Joe."
+    },
+    {
+      "start": 4638.032,
+      "end": 4666.576,
+      "text": "They did the LAMA model and then other companies did some small models that are very good. They showed that you could do it with less data and less power. Let's say less computing power. So I think maybe in a couple of years there will be other techniques using whatever we already have to basically do smaller and smaller models because in some sense they are overfitting everything."
+    },
+    {
+      "start": 4666.576,
+      "end": 4695.488,
+      "text": "If you have 100 trillion parameters, and these are the same size of the web, and they are not overfitting, this is like a kind of a mystery, although Yann LeCun explained the other day what is the reason that they don't overfit, but they should. That means that we can do it with less parameters, and that will mean less computation, and we'll have a smaller open model. So I think this will be the future, like three, four very good smaller open models."
+    },
+    {
+      "start": 4695.488,
+      "end": 4720.736,
+      "text": "Any company will be able to fine-tune in their premises these models. This is a possible future. Maybe I'm completely wrong. Thank you for an excellent presentation. I'm wondering what your view is about Section 230 of the Communications Act in America, which basically treats"
+    },
+    {
+      "start": 4720.736,
+      "end": 4747.936,
+      "text": "the companies as bulletin boards as opposed to being responsible for the content that they carry. And so there's a lot of deep fakes and things that are being carried online now. So what's your view about that? Do you think it should be changed? Do you think it will be changed? And do you think that the companies who have so much power and so many lobbyists will be able to overcome the"
+    },
+    {
+      "start": 4747.936,
+      "end": 4777.808,
+      "text": "problems and keep Section 230 as it is. Thank you very much. That's a very interesting question. Basically, this U.S. law says that you are not responsible of the content that you publish. And the idea is based on, for example, on typical communication where if I call Hannes and I offend him, of course you will not blame."
+    },
+    {
+      "start": 4777.808,
+      "end": 4807.376,
+      "text": "The communication media I'm using to do that. Because they are just carrying the communication. And you use the word carrying. And this is important because the semantics of the words matter. Social networks don't carry content. This is part of the problem. So because they don't carry content, I think this law shouldn't apply to them. Because they decide what content you will see. And algorithms, even if they're well designed,"
+    },
+    {
+      "start": 4807.376,
+      "end": 4836.8,
+      "text": "sometimes have unintended consequences. And we had problems with YouTube, for example, recommendations that will go to things that I prefer not to talk to. Or, for example, chatbots that, if you do the right questions, will go into bad answers. We had that with a chatbot in Twitter, remember, in Microsoft a few years ago, that learned in one day how to be biased and hateful."
+    },
+    {
+      "start": 4836.8,
+      "end": 4865.904,
+      "text": "So, if you are using algorithms to decide which content people see, I think different laws should apply. They are not completely responsible because someone is responsible for the content, but at least they should be responsible of showing the wrong content to the wrong people. But it's very hard to regulate. Well, on the other hand, I don't know if you read, recently Japan decided that you can use any data to train the..."
+    },
+    {
+      "start": 4865.904,
+      "end": 4895.6,
+      "text": "deep learning models, and there's no problem with the data. It doesn't matter if the data is copyrighted or not. It's the other extreme that's happening in Japan. So we have different views of the problem. Hi. First of all, just a fascinating presentation. You've covered a lot of ground. Thank you. I'm a professor of political science, and I also teach political philosophy. I'm one of those people freaking out right now about how I have to retool all my classes for the fall because of chat GPT."
+    },
+    {
+      "start": 4895.632,
+      "end": 4925.2,
+      "text": "And one of the thoughts that has come to me from that is there's a simple solution, which is all oral exams. My students will obviously hate that idea, and obviously there's a time commitment. But where I'm going with this, I'm curious about your reaction to that, but it also strikes me there's a broader thought I have here, which is if I can no longer trust a student paper, and I can no longer trust a photograph, and I can no longer trust a video recording,"
+    },
+    {
+      "start": 4925.2,
+      "end": 4954.528,
+      "text": "and I can no longer trust an audio recording, are we entering a world where basically face-to-face communications and eyewitnesses are taken very, very seriously and everything else is presumed to be fiction and is not taken seriously? Very good question. I think there are two important questions there. One is the impact on education, and the other one is the impact on communication. So let me start with the last one, because I have been talking about this in several interviews."
+    },
+    {
+      "start": 4954.528,
+      "end": 4984.288,
+      "text": "If we cannot trust the video, basically we need to trust people in person and then trust that person there. So maybe in two, three years, the only way to prove something in court is with a person. And this is a pity because I would say in the last 20 years, we have used a lot of social media to learn about things that before were very hard to know. So we will lose that advantage. Now we will have truth."
+    },
+    {
+      "start": 4984.288,
+      "end": 5013.552,
+      "text": "Fake news together, and we're very hard to distinguish that. I don't know what will happen with that, so I think that's a loss that we are taking, and very fast. Maybe in one year, videos will not be valid, for example, in court. This is one thing. Now, on the education side, yeah, oral exams, I have thought about that, but they're not scalable, and it's very hard to do that. I prefer to take a different thing. Give the students the chat GPT answer."
+    },
+    {
+      "start": 5013.552,
+      "end": 5039.344,
+      "text": "And ask them to find all the fake facts so they know how to do fact-checking, which is very important today also if you want to deal with fake news. And also tell them to do it better. And this is about critical thinking analysis. If they cannot do it better, they are not humans. Right? And if we cannot do it better, then they are smarter than us. We have a problem. So..."
+    },
+    {
+      "start": 5039.344,
+      "end": 5067.632,
+      "text": "don't fight it, adopt it, and try humans to do it better. So one of the problems, we have been lazy in education. We have exploited too much memory, and memory is not intelligence. We need to exploit more critical thinking, analytical thinking, logics, and so on. I don't know if that was the answer that you wanted, but I think that's the only way because people will use it anyway. I don't know if you know this case, a lawyer used this in a court in the U.S."
+    },
+    {
+      "start": 5067.952,
+      "end": 5092.816,
+      "text": "and gave it to the judge. ChatGPT invented three cases that never existed. Of course, the judge found that and almost killed the lawyer. He said, you have been working 20 years and you do this silly mistake. Oh, but I asked ChatGPT if it was correct and ChatGPT said yes. This is how silly he was. So this is incompetence. If you are that lazy, maybe you shouldn't work."
+    },
+    {
+      "start": 5093.36,
+      "end": 5119.504,
+      "text": "Hello. from University of Belgrade Digital Society Lab. We've been working very hard on defining recommender systems as public good and showing in our scientific works in social science why that is important, because we see this as the most powerful social force at the present. And as for section 230,"
+    },
+    {
+      "start": 5119.504,
+      "end": 5146.368,
+      "text": "It's very significant that these recommender systems not only host our content, they also amplify the content that is in interest of big tech. And the issue of power of big tech is significant at this point in the context of recommender systems as well. So what we are actually trying to find some kind of solution."
+    },
+    {
+      "start": 5146.368,
+      "end": 5172.288,
+      "text": "recommender systems at public good in terms of being set by society what's good for society then what's good for tech companies and then individuals can have their own decisions in setting the systems on various levels like emotions kind of categories of content etc etc"
+    },
+    {
+      "start": 5172.288,
+      "end": 5199.2,
+      "text": "And that's what we're trying to do. Another thing, you know about TikTok and about the spinach version in China and opium version for the rest of the world. So maybe, as you indicate, we should look for Chinese regulation and solutions because there are some good solutions for the benefit of society and the benefit of the individuals. If the tech companies and society met..."
+    },
+    {
+      "start": 5199.2,
+      "end": 5226.352,
+      "text": "in their interest on some half way maybe we could get better effects for society so please comment that yeah so on the tick tock i would prefer not to comment i'm not 100 sure that that's true according to what i talk to chinese people on the first part i think it's a good idea to have like a recommended system and social goods but"
+    },
+    {
+      "start": 5226.896,
+      "end": 5256.112,
+      "text": "If you have very few, you are again normalizing people. I would prefer to have recommender systems that are very configurable, and they do what I want them to do. And this is what I don't have today. So I would like to have them, basically, I decide what type of content, basically, I fine-tune them, and it's my recommender system. And second, I would like to have some feedback that should be simple to do, but it's not done today."
+    },
+    {
+      "start": 5256.112,
+      "end": 5285.952,
+      "text": "about how my content feed is changing. For example, I would like to have just a line that says if I'm reading more fake news according to a system or not every week. Or if I'm looking at more leftist or right-wing political content every week. So I know what is happening to me because many people are not aware of their biases. And the first way to know, to solve biases, is awareness."
+    },
+    {
+      "start": 5285.952,
+      "end": 5315.312,
+      "text": "Many people, when they learn about the bias, they change. But many times they never realize that, for example, a single word is bias. For example, in English, you always say, for example, there's a word called manned. For example, a manned vehicle. Because only men in the past were able to basically to man that vehicle. So have you realized that there's a gender bias word? And many people said, wow, first time realized. I said it like a hundred times."
+    },
+    {
+      "start": 5315.472,
+      "end": 5340.256,
+      "text": "So if you do these small changes and the system is feeding back to you what you're doing every week, that's great. For example, Apple did that at some point. That was very good. How much time you're using your phone more or less every week. I don't know if you use it, but it's very valuable because I see if I'm getting more addicted or not. You need this kind of feedback because when you are addicted..."
+    },
+    {
+      "start": 5340.256,
+      "end": 5370.032,
+      "text": "You want to do more, right? It's an addiction. And you don't realize that you're using more. You say, no, I'm controlling myself. I had a problem when I was using a BlackBerry. And from that time, I decided that I choose when to look at my phone and not my phone decides when I have to look at him. So no notifications. Doesn't matter. Because I want to decide. That was one way to control my addiction. But most people don't control it. So we need systems to help us to control addiction. But the problem is that the system wants to increase usage."
+    },
+    {
+      "start": 5370.032,
+      "end": 5396.144,
+      "text": "because it's part of the incentive they have in the optimization algorithms that they use. So that would be the best system that don't want to be used. Just in addition to that, they are working to this direction already at the University of Minnesota, Robin Burke, and the University of Poitras, Francesco Ricci. They are working on a recommender system that says public goods. Just to take my..."
+    },
+    {
+      "start": 5396.144,
+      "end": 5424.352,
+      "text": "let's say, as the master of the universe in the room. So this is now the last question, because I see the people are becoming a little bit thirsty and hungry. And so I'm already moving out of the room, so I'm asking for a short question, maybe a short answer. I will. Thank you. It's a pity that all questions were done by men. Right? So. Yes. Can we have a question from a woman after? I'm trained myself to notify."
+    },
+    {
+      "start": 5424.352,
+      "end": 5452.496,
+      "text": "So your question quick, and then the last question by Oman. Very fast. I will answer, please. Very short question. No, okay. Then we have two last questions. Yeah. You said you mentioned the concerns about gaming the algorithms if they become transparent, but I don't know if we already have those concerns when we have lawyers that are twisting always the laws and, yeah."
+    },
+    {
+      "start": 5452.496,
+      "end": 5478.4,
+      "text": "whole system that we have built. Because every time that there is a court case, people that can afford it, they have meanings to elongate the process, to always get the outcome they can. So why is gaming the algorithm an issue if we don't discuss the gaming of the whole system?"
+    },
+    {
+      "start": 5478.4,
+      "end": 5507.856,
+      "text": "Well, it depends on the application of the algorithm. But if you are talking about algorithms that are used in court, maybe you have a point. It's useless to do that. But if you have an algorithm that, for example, decides on conditional freedom, that's important because you want to be fair there. So this should be independent of the context and also independent of if the other people is good or not. Because ethics is independent of that. So, for example..."
+    },
+    {
+      "start": 5507.856,
+      "end": 5537.472,
+      "text": "This was, for example, what Meta said when they were fined recently with this billionaire private issue. They said all the other companies do it. That's not a good reason, right? You're the first one. The other will come. That's my thinking. I hope they realize that that's not ethical to answer that. But the lawyers answered that, so. Please, last question. Thank you for doing the question."
+    },
+    {
+      "start": 5537.472,
+      "end": 5567.008,
+      "text": "Thank you for noticing that there were only men putting questions. We have lots of questions, women, but we let you think you have the questions. So I would like to go to the very beginning of your presentation where you mentioned that we start with biased data. And we expect somehow the algorithms to realize that. And I was wondering if it's maybe not better to already restrict the type of data we allow for training."
+    },
+    {
+      "start": 5567.008,
+      "end": 5596.8,
+      "text": "We all know that news are actually always biased. You will never hear the good news. You will always hear about criminality. You will always hear about the accident, about whatever. You will never hear, oh, there was a great presentation today. Yes, Tehuvine does that and all this stuff, but these things don't really get the overhand in this data. So my question is, first, how can we maybe motivate to increase this percentage of..."
+    },
+    {
+      "start": 5596.8,
+      "end": 5625.856,
+      "text": "good data and maybe at the same time restrict the type of data is allowed for training, like don't train on news data that come from courts. Don't train on catastrophic data that are caused by wars. Very good question. I think that's already happening in the regulations that have been proposed. Data will need to be curated so they will have..."
+    },
+    {
+      "start": 5625.856,
+      "end": 5654.672,
+      "text": "Maybe they need to pass some audits on gender bias, on race bias, and other things. So I think that will happen. But this already happened because of all the people that are working on this problem. For example, there are many image data sets that are not available now because they were racist. So it's already happening, and basically even the researchers that publish these things feel like they're shamed, and they are taking them away. So I think the system itself is pushing to better data."
+    },
+    {
+      "start": 5654.672,
+      "end": 5682.736,
+      "text": "And there are already, for example, data sets that are specially defined and designed to check for these biases. So I think we're seeing that in the future regulation will help on doing that. So I think that that will happen. I hope sooner than later. Okay, before ending, just a last announcement. I just want to remember that there will be again a Digital Humanism Summer School in September."
+    },
+    {
+      "start": 5682.736,
+      "end": 5700.368,
+      "text": "4th to the 8th of September, check the Digital Humanism website. There you can see that. So if you want to participate at the summer school, it will be here at TU Wien. And there are some great lecturers who will lecture there at the summer school. Thank you very much."
+    },
+    {
+      "start": 5710.256,
+      "end": 5716.4,
+      "text": "It was great, and great will be the wine and the sandwiches outside. Thank you."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

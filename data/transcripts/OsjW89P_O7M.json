@@ -1,0 +1,666 @@
+{
+  "video_id": "OsjW89P_O7M",
+  "source": "whisper",
+  "language": "en",
+  "text": "Hello, everybody. Welcome to our second lecture event in March. So March is a 10th month for us. It's now two lectures already. And I'm really looking forward to this interesting talk by Vigílio Ameda joining us today from Brazil. And he will talk on how algorithmic act is ruled for our society. So it's a mixture, I think, of political science and computer science and sociology. Welcome, Virgilio, and really happy to have you with us. Moderator of today is Linda Hartman, and she will then introduce Virgilio in more detail. The choreography, you will know it already. It's talk for 30 minutes and then 30 minutes Q&A, moderated by Linda. And at the end, we have a nice piece of music proposed by Virgilio, who will also explain a little bit why he... has chosen to propose this. Our moderator, Linda Hartman, she is, besides her research in information visualization and human computer interaction, so she is really working on how we can move in this virtual semantic space. She's very active in managing and directing research, so she has several roles there, and it's really impressive. managing research and strategy at the Centrum Viscunde Informatica in Amsterdam, which is a research center. At the same time, she is professor of multimedia discourse interaction at Utrecht University. She is also directing the Amsterdam data science, let's say network, which brings together academia, industry and civil society in this Amsterdam region. and which is also very important in this moment of time. She is the European Director of LAMA, which is a research collaboration between INRIA in France, her research center in Amsterdam and the Chinese Academy of Science. So she keeps the contact and has this international cooperation. For this, I think we really have to thank you. And thanks for moderating and the floor is yours. Thank you very much. I'd also like to say welcome to everyone and thank you for joining us today. If you have any questions or comments during the talk, then please feel free to write them in the chat of the Zoom call. And I look for a very lively discussion with lots of interesting questions after the talk. Of course, we're here today not for me or for Hannes. We're here today for our speaker. I'm very grateful that Professor Almeidi has agreed to speak to us today on algorithmic institutionalism. Professor Almeidi is Emeritus Professor. at the Federal University of Minas Gerais in Brazil and faculty associate at Harvard University. His research interests include social computing, governance of algorithms and the social impact of AI. That's also why we're very, very happy that he's with us today. He's written several books on topics such as web technologies, e-commerce and governance for the digital world. His most recent book Algorithmic Institutionalism, The Changing Rules of Social and Political Life, is the topic for today's talk. Professor Almeidi, please go ahead. Thank you, Professor Linda Hartman, for this nice presentation. Well, I'm grateful for the invitation to speak before this very qualified audience. And it's an honor to share. my thoughts with this audience. So I'm going to talk about these ideas that came out of this book. It's called Algorithmic Institutionalist. I'm going to use some slides here. So I'm going to share my screen. Just a second. Do you see the screen? Okay, great. Well, let me tell a little bit, a story about this book. Well, I'm a professor of computer science at the Federal University of Minas Gerais, and also I'm a faculty associate with the Berkman Klein Center at Harvard. I've been here for more than 40 years at this university in the computer science department. For five years, I was responsible for the Brazilian national politics or policies for information technology. And so I learned the importance of governance, of new technology, of emerging technology. So when I went to Harvard and I spent... a year and a half teaching. So this topic was very important for me, governance. And most of my research, my past research, is on performance models, key network models, Petri Net and simulation. And what we basically did was try to collect measurements and to work in a quantitative approach to understand the behavior of those big platforms and big digital services. But I have worked with the students. We found some interesting things, but we always lack an understanding of. What was the reason for that behavior? Seven years ago, we worked on a paper that had a lot of impact, called Auditing Radicalization Pathways in YouTube. And we showed how people got radicalized and went to extremely... However, we could not understand the nature of that movement going from the center to more extremist positions. So I said to myself, we need to have some people from social science and humanities to help us to understand what is going on. And we need also to find some theoretical work to support our research, theoretical work from political science and social science. So this book came out of a work that I did with two colleagues from political science departments, Ricardo and Fernando, both are political. political scientists. So it took us a long time to understand each other in terms of the concerns and the goals and the language. And the result was this book that tries to present a new view on algorithms, actually viewing algorithms as institutions. So let's see. what we got from this multidisciplinary collaboration. We can say that we live in societies permeated by algorithms, and we depend on them for a growing number of daily activities. And this is This happens all over the world, not only in Europe or in the north, but also in global south countries. So urban mobility, such as Waze and Google Maps, relationships such as dating algorithms, always to define work shifts and schedules for employees, access to welfare. policy that was really important during the pandemics. People needed this social support from government, medical decisions, police and criminal dosimetry. So these are a few examples of the role of algorithm in our daily life. So at the same time, we see that algorithms are also playing an important role in politics. And that has caught the attention of scientists from humanities and political science, especially in the context of social media. So some of the consequences of the role played by algorithms in the in social media platforms, that we see a fragmentation of the public sphere, a strong polarization, disinformation and denialism, censorship and bots. All those characteristics are not only consequences from algorithms, but algorithms play an important part in these characteristics. So the question was, what can we do from a political science perspective to understand algorithms and to create or to propose mechanisms to govern algorithms? So that was the initial question. Let's take a few examples to understand. the role of those algorithms these days. This Washington Post article shows that algorithms tipped the balance in the Ukraine war. But I want to call your attention for a few points here. The target algorithms that allow Ukraine to spot and destroy invading Russians are not all that different from the facial recognition algorithm that helped China repress its citizens. So we see here a dual use of algorithms for military purpose and in civil context. But the second point is even more important. What if AI advances eventually allowing the algorithm themselves to take control, making decisions for reasons that they cannot explain at speeds that humans cannot match. So this is maybe the most important question regarding the use of algorithms in military scenarios. And finally, democratic societies need to be constantly vigilant about algorithm technology that society does not understand in most cases. The second example is also a different example. And this is an example based on a book called Voices in the Cold. And the question that they tried to answer was, who gets a kidney transplant? And the answer was the algorithm that decides could be a model for that. So let's take a look at some characteristics of this algorithm used to order the line of people waiting for transplants. So some lessons that we can learn from this algorithm. What may appear as a purely technical inquiry could be a moral dilemma and its resolution should not be entrusted solely to technology experts. So the second point here is that a point that is also very common to computer science people. So the computer science view would be what is the accuracy of the algorithm? How many decimal places should they include? in the algorithm when calculating each patient's allocation score. And the score, in this case, is a key number, given that it somehow determines who lives and who dies in terms of waiting for the transplants. So there are some lessons that we learned from the evolution of this algorithm. And this evolution is discussed from 2007 to these days. And there are four characteristics of this algorithm for ordering a transplant line that are part of our broader discussion here. The first one is participation. And the question is, Should the technical people be the only people that decides about the way and the goals of the algorithm? It is interesting because regarding this question, how many decimal places should they include in the algorithm, there is an example there that the score has more than... 16 decimal places. And they ask a hypothetical question. If the difference between Bob and Alice is a difference in the 14th decimal place, what does it mean? Does it show that one of them should live and the other one should die? Who has? the responsibility to decide that. So they observed, starting in early 2000, that they need to include much more people in the definition, in the design of the algorithm. And this participation should include not only the algorithm designers, the software design and implementers, but also the families of the patients, healthcare people, doctors. So it was really an example of a multi-stakeholder participation. to define the changes of the algorithm. The second point was quite interesting. It's about transparency. And they tried to show how the algorithm worked and to make people comfortable with understanding the way the algorithm worked. In this case, there was an interesting question that we can ask now. It was a traditional algorithm that people understood how it worked. But let's move to these days. If that algorithm was a machine learning algorithm, could people understand in the same way the way that the algorithm worked? So it was an important point. The third characteristic that are part of what I call the governance strategy was forecasting. They tried to forecast the number of people that would be affected by that always as they move to the future. So to understand the size of the impact of that algorithm was something important. And finally, they show that periodic auditing process should be done in order to keep the algorithm working according to the specifications given by this multi-stakeholder system. So this was a quite interesting way of showing showing an algorithm that became a kind of institution because it somehow shaped the behavior of the people that needed the transplant, the behavior of the healthcare employees. And so it was a good example of four properties that should be a part of governance process. And the other thing is that the governance reshaped the logic of the allocation algorithm, giving people voice to influence the goals of the algorithm. One interesting case that happened was they changed the algorithm very often during this 20 years. But one of the changes was the following. Objective function of the algorithm in one specific year was to maximize the number of years saved by the algorithm. And after they discussed that with the community, some people put the following question. So in this case, only young people will be able to receive the transplant. because of this function to maximize the years saved by the transplant. So they changed their way in order to be fair with old people that at that time were old. So these are some ideas that motivated us to work on this idea of algorithm as an institution. So the conceptual proposal, the book just came out and it was published by Oxford University Press. So the conceptual proposal of the book was algorithm as social technical artifacts, structuring our decision-making capacity. Algorithms as institutions. that establish boundaries for individual behaviors with collective implications. And a dual movement between institutional theories and algorithmic societies. That was an important point because we wanted to bring some solid pillars. for this idea of algorithm of institutions. So we relied on institutional theories. So the idea of institutions here is, an institution is a relatively enduring collection of rules and organized practices embedded in a structure of meaning and resources that are relatively invariant in the face of turnover of individuals and relatively resilient to the idiosyncratic preferences and the expectations of individuals and changing external circumstances. And that was based on a paper proposed by Nobel Prize Elinor Ostrom and other authors there. So that was the basic definition concept for institutions. And what are the role of institutions? They empower and constrain. We can have formal, we can have institutions with formal rules, such as laws, and also have some norms, and we can have some informal institutions, such as the concept of family. is an institution that has a set of informal rules depending on the culture and on the region of the world. Institutions shape political actions by advancing logics of appropriate behavior, and they establish authorities with decision-making prerogatives. We can ask now, what's the difference between institutions and the role played by algorithms? So this idea of algorithmic institutionalism allowed us to navigate between these dichotomies, algorithm as characterized by animism, or algorithms that are purely instruments to implement some organization. The two poles of this dichotomy is structure, algorithm as part of infrastructures, or the agency of algorithms relative to the agency of humans. And also determinism. versus openness, because sometimes the outcomes of the algorithms influence people in unintended consequences. We're going to see some examples of these points in the next slides. So in order to analyze algorithms as institutions, we proposed a framework that was derived from the different institutional theories proposed by my colleagues, my co-authors that work with those theories. So the idea that in order to do this analysis, we need to understand the institutional construction and design associated with these algorithms. An important point is the evolution of the algorithm. As in the example of the transplants, past dependency was something very... was key in the development and also when they identified bias against some... some racial bias and some social bias in the process of selecting the people to receive the transplant. Rules and norms. What are rules and norms associated to the algorithms? And what are the consequences of those rules and norms or individual behavior? on collective consequences. And it's important to make the difference. Collective consequences are not the aggregation of the individual behaviors, as I will show in the examples. So we have six big items in this framework to analyze algorithm as an institution. Power implication of algorithmic systems. It's easy to see that in the case of Uber, for instance. The Uber algorithms have a tremendous power over the behavior of drivers and even the behavior of customers. There is a huge asymmetry between the power of the organization and customers and drivers. How individuals play with algorithms, try to avoid rules. And finally, discursive dimensions of an algorithm. So let's see an example of this case. The book is organized with theoretical chapters, but there are three case studies. One that analyzes the role of algorithms in security environments. the role of algorithms in government and the role of recommendation systems. So let's see. Let's take the case of an algorithm that has a huge impact these days, not only on the population of several countries, but also on people of age. in many countries. So, let's see some characteristics of these algorithmic recommenders. So, the idea here is to analyze recommender algorithms as institutions. So, in the contemporary world, it would be unfeasible, even impossible, to find relevant content, products, services without these algorithmic tools that make content visible. So they are very useful tools, but at the same time they create problems mainly in the context of politics. Recommended algorithms are institutions designed around systems that monitor behavioral data to compete for consumer attention. That's the case of the news feed algorithm in Facebook, TikTok, and other systems. Dating algorithms, they shape social and cultural specificities through informal rules that establish what is allowed, or prohibited in a social relationship. It is interesting to observe the difference between those dating algorithms. On Tinder, for instance, everyone can make the first move in an attempt to establish a communication. But on Bumble, only women can initiate communication. So this is a way to to show how these algorithms shape behavior and create norms and standards. You've got a few more minutes left. Okay, all right. Gaming an algorithm involves various strategies and practices to subvert rules and norms to gain visibility, avoid censorship, or inflate content reputation. So I'm going to skip this for the sake of time. So I'm going to move to... Two points. The democratization of algorithmic institutions are confusing and opaque. They have ambivalent consequences. They are useful, but at the same time they have consequences. Example, elections in 2024. And they lack two main pillars of legitimation, authorization and accountability. And there is a set of principles for democratization. So I would like to make Final comments on three specific things. Institutions are very important for this idea of responsible AI. For instance, responsible AI denotes the attempt to find practical ways of dealing with various ethical, social, and related issues. Algorithmic accountability presupposes an idea of responsibility of agents. And the principle of accountability... So it's important that this principle, the idea of responsibility and responsiveness is associated to institution, not to the algorithm. AI governance. If algorithms shape behavior and make collective decisions, their regulation and governance should not be purely economic or bureaucratic. We must think about ways to control algorithms, algorithmic institutions to make political orders created by always more democratic. Some ideas for the future. So these are the two last slides. Technology and algorithm does not operate in isolation. And this idea of institution puts together algorithms, people and other institutions. It exists along side of people integrating institutions and power dynamics. The governance framework of institutions provides a blueprint for exploring novel approaches to regulating algorithms. When I say the governance framework for institutions in other policy domains, such as environment, ensuring effective AI governance entails holding account of those who develop and implement technology for its impact on society. An idea is, for instance, an example to explore the use of institutions in other policy domains, such as environment. We can have, in this case, algorithm institutions related to specific algorithms. private or public. We can have this institution interact with national institutions that interact with global institutions. So we have to discuss here functional and structural theories, governance functions, and formulation. And this is finally the last slide. So the book outlines a conceptual proposal need to extend new institutional approach developed from other policy domain, environmental. governance to algorithm and AI governance. The idea of algorithm as institution accommodates and deals with institutional diversity as part of the solution for adaptive governance. Again, this was explored in the context of environmental governance. And finally, defining governance institutions goes beyond assessing bureaucratic and economic winners and losers. Democratization and social justice must be integral components of the governance mechanisms. Sorry for using more of my time. No, no, you were perfectly on time. Thank you very much indeed. So, I was going to say, now we have time for questions and we already have a question. from Paloma Crote. Are you able to speak to us, Paloma, to ask your question? That'd be nice. And otherwise, I would read it out. Okay, I shall read out Paloma's question. Thank you very much for your presentation, Virgilio. Oops, this is moving. Do you see their ideas are, at least to some extent, reflected in the EU AI Act? Kind regards from Estonia. So I don't know how familiar you are with the European AI Act, but it would be certainly for us based in Europe, it would be very nice to have your reflections on this. I think that some of the idea of risks that are part of the European AI Act, it's related to what we are seeing here in terms of impact and the need for institutions to control and to establish some sort of supervision on those systems. I think that the idea that we are proposing here of algorithmic institutions, they will be able to fit in the big scenario of the AI act. Maybe I need to learn more about the AI act in order to give precise answers. No, that's fine. That's fine. I believe George was the next person who raised their hand. Oh, the first person to raise their hand. Is that correct, George? Or was it Paul? Was it Paul then? It was Paul. It was Paul. Right. Then we'll do Paul. Thank you very much. Okay. I don't mind. That's very polite. Great to... To hear of your reflections, and I'm really intrigued. Do you hear me? Yes. Good. If I understand it well, you are also arguing that institutions as we have them may also have to change. So there's the governance and the institutional approach to AI itself, but it's also the institutions as we have them. And I was wondering whether you can say a bit more about that. And I'm thinking of two examples, law and democracy. So if we look at law, there are instances where we have to use AI. Think of the defense of cyber security defense of critical infrastructures that goes very fast. And we're actually law as we know it is not simply not suitable. Law as we know it is based upon political accountability. Responsibility is based upon human. uh response which is all too slow and too late and and you know and not of the right so how does law should laws change and the second question is democracy should democracy change okay well these are hard questions and let me try to answer and i'm going to use the example of of the brazilian and legislation we we are going to have elections this year 2024 And the media has presented many articles about the consequences of the use of AI in advertising and fake news and things like that. And there is a law, a bill in the Congress being discussed to regulate AI, but it will not be approved these days before the elections. So the idea that is being discussed in superior courts is to come up with norms. Norms for this election. And norms for this election will be an institution for the elections. Because it will define what is allowed and what is not allowed. So this is an example that an institution... composed of norms and rules, will interact with the algorithms of the social media platforms. That's one example. Another interesting example, and I try to go to the defense, to the democracy, but another interesting example is the case of marriage in India. It's a traditional institution. Very old. the way that people get married in India. And the dating algorithms are changing that, are changing an institution that is so old because the way that they put people together instead of waiting for the parents to define who is going to be your partner, for instance. So there's a change on the traditional institution marriage that was created by another institution that are the dating applications. And finally, democracy. I think that this is maybe the most important case to create some rules to protect democracy. And as you all know, the algorithms used to control media in the digital platforms. They are very opaque. There is no supervision of those algorithms. So I think that we could learn from other examples. And I will say that examples that come from the environment or governance could be very useful because they try to work with national examples and combine with a global example so that's that's part and also we have the uh the audience should uh at least to adapt to the democratic principles such as freedom such as participation so That's part of it. OK, thank you very much indeed. I have some other question askers lined up. George, I think you're now next. Thank you, Linda, and thank you, Professor Almeida, for your talk and for writing this book, which I had the pleasure to read. And since the issue of the AI Act came up by Linda. On page nine of your book, you say our primary emphasis is on high risk algorithms that may have significant public or impactful consequences on people's lives and fundamental rights. And then it goes on to name these categories, education, vocational training, employment, management, workers, law enforcement, and so on, which is very much in line with the categorization. by risk of the AI act. In that sense, it is very much in line. My question is that I got a bit confused reading your book about the various layers of institutionalism. Let me just put this as naively as I can. You mentioned the allocation for transplants algorithm. And then it's governance. So you have algorithms that evolve, as you correctly pointed out, they evolve with time, and you establish a governance to make sure that they evolve in the right direction. And in the definition of an institution that you gave, that definition called for relatively invariant and resilient. Institutions are supposed to be invariant and resilient. So to a simple mind, it seems that the institution is the governance and not the algorithm. And the democratization is the democratization of the governance of the algorithms. Otherwise, you have various layers of institutions. And to me, perhaps to my limitations, but it seems a bit confusing. Well, thank you, Vincent. It's important to have your points. It's important feedback for us. I think that when we say that institutions try to make the environment or the conditions more stable, that's what we try to point out. In the case of the transplant, an institution would be the set of rules defined by for the design of the algorithm, the process of auditing the algorithm, the participation of multiple stakeholders. This is the governance process that we envision for this. And this process has not changed over the time. The way that you define it, for instance, what will be the goals of the algorithm, what would be the objective functions, that can change, but you have some very stable norms that are to attend or to follow the definitions and the process of this. committee that supervise or that define the evolution, the design of the algorithm. So in this case, the institution is the set of norms and process defined by the governance of this transplant algorithm. So it's not the algorithm The focus is not the stability of the algorithms, but the stability of the rules that define and supervise this algorithm. But it's an important point that you need to understand these ideas of layers. That's something that we need to elaborate for the future, because if we think of the case of AI, we need different layers of governance, the governance of the local or national governance of AI. tools and systems and the rules for governing specific algorithms such as recommender systems, such as diagnostics algorithm used by doctors, and then you have to combine those different layers, algorithms national and global. But that's a part of the process that is being constructed. We are in the middle of this construction. The important point is that institutions are something that are clearly understood and political scientists are used to study the behavior of institutions and also to monitor, to assess the behavior of those institutions. So we need to learn from them. Okay, thank you very much indeed. I'd like to pass now the floor to Ricardo, who's got a question, I hope, or comment, or both. Yes, I may be both. So I will go, I will continue George's line because I really, I got a bit worried about this slide that says democratization of algorithmic systems. And yes, we can think that the institutions now are rhythmic systems, but when many people will read this sentence, they will imagine something different. So I agree with your answer, but many people will have a different perception. So because I think Wittgenstein will, I think someone said, sometimes said in the past, how important the semantic of the words. And in AI, we're seeing so many problems with semantics, starting with AI itself. So, for example, I would suggest that instead of using algorithmic system, we stress that institutions are becoming algorithmic. But, for example, for me, we use, for example, in ACM for the new principles of responsible algorithmic system, we were thinking on software. We were not thinking on institutions. So there you have like a different, same two words, different concepts behind. And I think algorithmic system, all people will see it as a... as a software system, not as an institution. So in the same way, we shouldn't humanize technology, like saying ethical AI that doesn't exist. I think it would be a bad idea to technologize society. Could you do it the other way? I think both ways are wrong, and we need to keep it separate, because at the end, the problems are social. I mean, technology might help solving the problem, but they will never solve this problem. This is one aspect of this title, algorithmic system. The second is democratization. I really hate that word. Because, for example, and it's not you, Virginia, of course. For example, 35% of the people don't have internet. Another big percentage are children or people that are not digital or too old to learn and so on. And for example, 15% of the people don't speak any of the languages supported by generative AI today. So democratization is like a nice idea, but it's a fallacy because maybe today, in the best case, we can reach half of the population of Earth. So we're not democratizing anything. What we are doing is we're increasing the digital divide in an amazing way. because we are doing it much faster and we're leaving a lot of people behind. Well, those people have some advantages. For example, there are still a lot of people that have privacy. We don't have that. So there are pros and cons of this. But my question would be, do you really think we're democratizing this? Well... Thank you very much, Ricardo. I would just like to say to Virgilio that we do have one more question. So while this answer could take... the rest of the day, if you can keep it relatively short, sorry. It's a really interesting question. I'm sorry, Linda. I'm sorry, Linda. Oh, thank you, Ricardo, for the points you raised. The motivation for this work was the following question. How can we govern algorithms? And we discussed with these colleagues from political science, political science is used to to create mechanisms to govern institutions. And that's the case of agencies and committees, commissions, and they have studied that and they came up with some methods and knowledge for that. So I think, can we benefit from their knowledge to govern algorithms? So that's the idea of viewing algorithms. We're not saying that algorithms a institution. We view them as institutions and try to use the knowledge from assessing and constructing institutions to make them useful for governance of algorithms. Regarding your question that democracy is a concept that does not It's not important for many parts of the population. I have an example that could show the importance of trying to have some democratic way of governing the algorithm. During the pandemics, the Brazilian governors implemented an app to provide social support for most of the people that could not work. But that app was constructed on some specific algorithms. It worked for some people, but for illiterate people was very difficult, not only because of the algorithm, but also because of the interface they could not use. But there was no way to govern that specific application in order to bring the characteristics of these people. to that application. I think that the idea of democratizing the art is to involve participation. So that's one of the points that maybe was part of our message in the book. Thank you very much indeed. And then I give the honor of the very last question to Luis. And after that, we'll move back to Hannes. After Virgilio has given the answer. Well, thank you very much for your interesting talk. My question has to do with the ability of contesting an algorithm's decision that is even argumenting, introducing argumentation, like in judicial institutions. You know, you can contest what the judge ruled. And you can even go up a layer and question at a higher level the righteousness of the judge. Not only that, you... So this transparency seems not enough. You would have to introduce some kind of contestability and argumentation. Now, it seems to me that in many cases, these algorithms will have ethical assumptions. So one would also be able to contest. The ethical assumptions that support the algorithm and the algorithms and algorithms decision. And that would surely necessitate moving up to to the level that established that what the ethics used in the algorithm are what's appropriate. And in that vein. One could also require an algorithm to be proven correct with respect to an ethics. Nowadays, we can prove algorithms correct with respect to, you know, how many things, dangers that could occur, you know, faults, cases not accounted for. And so... In the same way, computer science languages could be made to allow us to write ethical constraints in an algorithm and then develop proofs that the ethical constraints are satisfied by the algorithm, that it can never produce some solution not compatible. with the ethical constraints okay thank you very much i'd like to hear your opinion thank you well thank you i think that you touched a very important point that is the uh to how people react to uh decision making algorithms and i think that what we are saying in the book is that uh we should have in this idea of institutions, we should create a structure that accepts those contestations, those arguments, and to decide on that. I think that it would be useful in this case to look at the judicial system to see how they take the questions from... persons or groups affected by their decisions. So I think that to take advantage of other institutional mechanisms and bring them to the discretion of transparency, explainability. some of the properties that are needed in order to understand the decision and to contest the decision. So the point is that institutions in other domains have solved these questions. So can we use them in the context of digital services, digital societies? Thank you very much indeed. I think this is exactly the perfect note to finish on that we can't solve this as computer sciences on our own. This is why we need the collaborations amongst the different disciplines. So thank you so very much for your talk and your answers. Hannes, back to you. Thanks to both of you. I think the last answer, but also your presentation shows that digital humanism is a valid approach and you are, in some sense, I see you as a digital humanist following your talk. Virginia has chosen a piece of music and you want to say some words about your choice or should we just play it? Well, I'll just say a few words. The music is called The Girl from Ipanema, and it was part of a big musical movement in Brazil in the 60s that called Bossa Nova, that as an institution, it suffered a lot of influence from jazz, but at the same time, they influenced the jazz artists in the US. So it's interesting to see this. Bossa Nova as an institution that received contributions from other cultures and influenced other cultures. So let's listen to the Bossa Nova song. do do So thanks to all of you. See you next time. The next lecture will be announced in due time, due course. We still have not fixed the date, but you will get an information by our newsletter. Goodbye. Thank you all for being there. Thanks again, Michele. Thanks again, Linda. Bye. Thank you, Linda and all the friends there. Bye. Great.",
+  "segments": [
+    {
+      "start": 0.88,
+      "end": 30.128,
+      "text": "Hello, everybody. Welcome to our second lecture event in March. So March is a 10th month for us. It's now two lectures already. And I'm really looking forward to this interesting talk by Vigílio Ameda joining us today from Brazil. And he will talk on how algorithmic act is ruled for our society. So it's a mixture, I think, of political science and computer science and sociology."
+    },
+    {
+      "start": 30.128,
+      "end": 58.192,
+      "text": "Welcome, Virgilio, and really happy to have you with us. Moderator of today is Linda Hartman, and she will then introduce Virgilio in more detail. The choreography, you will know it already. It's talk for 30 minutes and then 30 minutes Q&A, moderated by Linda. And at the end, we have a nice piece of music proposed by Virgilio, who will also explain a little bit why he..."
+    },
+    {
+      "start": 58.224,
+      "end": 85.664,
+      "text": "has chosen to propose this. Our moderator, Linda Hartman, she is, besides her research in information visualization and human computer interaction, so she is really working on how we can move in this virtual semantic space. She's very active in managing and directing research, so she has several roles there, and it's really impressive."
+    },
+    {
+      "start": 85.664,
+      "end": 113.264,
+      "text": "managing research and strategy at the Centrum Viscunde Informatica in Amsterdam, which is a research center. At the same time, she is professor of multimedia discourse interaction at Utrecht University. She is also directing the Amsterdam data science, let's say network, which brings together academia, industry and civil society in this Amsterdam region."
+    },
+    {
+      "start": 113.264,
+      "end": 140.656,
+      "text": "and which is also very important in this moment of time. She is the European Director of LAMA, which is a research collaboration between INRIA in France, her research center in Amsterdam and the Chinese Academy of Science. So she keeps the contact and has this international cooperation. For this, I think we really have to thank you. And thanks for moderating and the floor is yours. Thank you very much."
+    },
+    {
+      "start": 140.656,
+      "end": 169.616,
+      "text": "I'd also like to say welcome to everyone and thank you for joining us today. If you have any questions or comments during the talk, then please feel free to write them in the chat of the Zoom call. And I look for a very lively discussion with lots of interesting questions after the talk. Of course, we're here today not for me or for Hannes. We're here today for our speaker. I'm very grateful that Professor Almeidi has agreed to speak to us today on algorithmic institutionalism. Professor Almeidi is Emeritus Professor."
+    },
+    {
+      "start": 169.616,
+      "end": 197.344,
+      "text": "at the Federal University of Minas Gerais in Brazil and faculty associate at Harvard University. His research interests include social computing, governance of algorithms and the social impact of AI. That's also why we're very, very happy that he's with us today. He's written several books on topics such as web technologies, e-commerce and governance for the digital world. His most recent book"
+    },
+    {
+      "start": 197.344,
+      "end": 227.264,
+      "text": "Algorithmic Institutionalism, The Changing Rules of Social and Political Life, is the topic for today's talk. Professor Almeidi, please go ahead. Thank you, Professor Linda Hartman, for this nice presentation. Well, I'm grateful for the invitation to speak before this very qualified audience. And it's an honor to share."
+    },
+    {
+      "start": 227.264,
+      "end": 257.136,
+      "text": "my thoughts with this audience. So I'm going to talk about these ideas that came out of this book. It's called Algorithmic Institutionalist. I'm going to use some slides here. So I'm going to share my screen. Just a second. Do you see the screen?"
+    },
+    {
+      "start": 257.584,
+      "end": 285.76,
+      "text": "Okay, great. Well, let me tell a little bit, a story about this book. Well, I'm a professor of computer science at the Federal University of Minas Gerais, and also I'm a faculty associate with the Berkman Klein Center at Harvard. I've been here for more than 40 years at this university in the computer science department."
+    },
+    {
+      "start": 285.76,
+      "end": 311.68,
+      "text": "For five years, I was responsible for the Brazilian national politics or policies for information technology. And so I learned the importance of governance, of new technology, of emerging technology. So when I went to Harvard and I spent..."
+    },
+    {
+      "start": 311.68,
+      "end": 339.696,
+      "text": "a year and a half teaching. So this topic was very important for me, governance. And most of my research, my past research, is on performance models, key network models, Petri Net and simulation. And what we basically did was try to collect"
+    },
+    {
+      "start": 339.696,
+      "end": 365.456,
+      "text": "measurements and to work in a quantitative approach to understand the behavior of those big platforms and big digital services. But I have worked with the students. We found some interesting things, but we always lack an understanding of."
+    },
+    {
+      "start": 365.456,
+      "end": 392.384,
+      "text": "What was the reason for that behavior? Seven years ago, we worked on a paper that had a lot of impact, called Auditing Radicalization Pathways in YouTube. And we showed how people got radicalized and went to extremely..."
+    },
+    {
+      "start": 392.384,
+      "end": 421.376,
+      "text": "However, we could not understand the nature of that movement going from the center to more extremist positions. So I said to myself, we need to have some people from social science and humanities to help us to understand what is going on."
+    },
+    {
+      "start": 421.376,
+      "end": 451.12,
+      "text": "And we need also to find some theoretical work to support our research, theoretical work from political science and social science. So this book came out of a work that I did with two colleagues from political science departments, Ricardo and Fernando, both are political."
+    },
+    {
+      "start": 451.12,
+      "end": 477.52,
+      "text": "political scientists. So it took us a long time to understand each other in terms of the concerns and the goals and the language. And the result was this book that tries to present a new view on algorithms, actually viewing algorithms as institutions. So let's see."
+    },
+    {
+      "start": 477.52,
+      "end": 502.096,
+      "text": "what we got from this multidisciplinary collaboration. We can say that we live in societies permeated by algorithms, and we depend on them for a growing number of daily activities. And this is"
+    },
+    {
+      "start": 502.096,
+      "end": 530.128,
+      "text": "This happens all over the world, not only in Europe or in the north, but also in global south countries. So urban mobility, such as Waze and Google Maps, relationships such as dating algorithms, always to define work shifts and schedules for employees, access to welfare."
+    },
+    {
+      "start": 530.128,
+      "end": 559.36,
+      "text": "policy that was really important during the pandemics. People needed this social support from government, medical decisions, police and criminal dosimetry. So these are a few examples of the role of algorithm in our daily life. So at the same time, we see that"
+    },
+    {
+      "start": 559.36,
+      "end": 586.384,
+      "text": "algorithms are also playing an important role in politics. And that has caught the attention of scientists from humanities and political science, especially in the context of social media. So some of the consequences of the role played by algorithms in the"
+    },
+    {
+      "start": 586.416,
+      "end": 615.92,
+      "text": "in social media platforms, that we see a fragmentation of the public sphere, a strong polarization, disinformation and denialism, censorship and bots. All those characteristics are not only consequences from algorithms, but algorithms play an important part in these characteristics."
+    },
+    {
+      "start": 616.464,
+      "end": 644.16,
+      "text": "So the question was, what can we do from a political science perspective to understand algorithms and to create or to propose mechanisms to govern algorithms? So that was the initial question. Let's take a few examples to understand."
+    },
+    {
+      "start": 644.16,
+      "end": 671.888,
+      "text": "the role of those algorithms these days. This Washington Post article shows that algorithms tipped the balance in the Ukraine war. But I want to call your attention for a few points here. The target algorithms that allow Ukraine to spot and destroy invading Russians are not all that different from"
+    },
+    {
+      "start": 671.888,
+      "end": 701.536,
+      "text": "the facial recognition algorithm that helped China repress its citizens. So we see here a dual use of algorithms for military purpose and in civil context. But the second point is even more important. What if AI advances eventually allowing the algorithm themselves"
+    },
+    {
+      "start": 701.536,
+      "end": 730.88,
+      "text": "to take control, making decisions for reasons that they cannot explain at speeds that humans cannot match. So this is maybe the most important question regarding the use of algorithms in military scenarios. And finally, democratic societies need to be constantly vigilant about"
+    },
+    {
+      "start": 730.88,
+      "end": 759.344,
+      "text": "algorithm technology that society does not understand in most cases. The second example is also a different example. And this is an example based on a book called Voices in the Cold. And the question that they tried to answer was, who gets a kidney transplant?"
+    },
+    {
+      "start": 760.336,
+      "end": 788.928,
+      "text": "And the answer was the algorithm that decides could be a model for that. So let's take a look at some characteristics of this algorithm used to order the line of people waiting for transplants. So some lessons that we can learn from this algorithm. What may appear as a purely technical inquiry"
+    },
+    {
+      "start": 788.928,
+      "end": 817.744,
+      "text": "could be a moral dilemma and its resolution should not be entrusted solely to technology experts. So the second point here is that a point that is also very common to computer science people. So the computer science view would be what is the accuracy of the algorithm? How many decimal places should they include?"
+    },
+    {
+      "start": 817.776,
+      "end": 847.456,
+      "text": "in the algorithm when calculating each patient's allocation score. And the score, in this case, is a key number, given that it somehow determines who lives and who dies in terms of waiting for the transplants. So there are some lessons that we learned from the evolution of this algorithm."
+    },
+    {
+      "start": 847.456,
+      "end": 877.328,
+      "text": "And this evolution is discussed from 2007 to these days. And there are four characteristics of this algorithm for ordering a transplant line that are part of our broader discussion here. The first one is participation. And the question is,"
+    },
+    {
+      "start": 877.776,
+      "end": 905.808,
+      "text": "Should the technical people be the only people that decides about the way and the goals of the algorithm? It is interesting because regarding this question, how many decimal places should they include in the algorithm, there is an example there that the score has more than..."
+    },
+    {
+      "start": 905.808,
+      "end": 934.704,
+      "text": "16 decimal places. And they ask a hypothetical question. If the difference between Bob and Alice is a difference in the 14th decimal place, what does it mean? Does it show that one of them should live and the other one should die? Who has?"
+    },
+    {
+      "start": 934.736,
+      "end": 960.56,
+      "text": "the responsibility to decide that. So they observed, starting in early 2000, that they need to include much more people in the definition, in the design of the algorithm. And this participation should include not only"
+    },
+    {
+      "start": 960.72,
+      "end": 989.36,
+      "text": "the algorithm designers, the software design and implementers, but also the families of the patients, healthcare people, doctors. So it was really an example of a multi-stakeholder participation."
+    },
+    {
+      "start": 989.36,
+      "end": 1018.848,
+      "text": "to define the changes of the algorithm. The second point was quite interesting. It's about transparency. And they tried to show how the algorithm worked and to make people comfortable with understanding the way the algorithm worked. In this case, there was an interesting"
+    },
+    {
+      "start": 1018.848,
+      "end": 1047.152,
+      "text": "question that we can ask now. It was a traditional algorithm that people understood how it worked. But let's move to these days. If that algorithm was a machine learning algorithm, could people understand in the same way the way that the algorithm worked? So it was an important point. The third characteristic that are part"
+    },
+    {
+      "start": 1047.152,
+      "end": 1071.344,
+      "text": "of what I call the governance strategy was forecasting. They tried to forecast the number of people that would be affected by that always as they move to the future. So to understand the size"
+    },
+    {
+      "start": 1071.344,
+      "end": 1100.88,
+      "text": "of the impact of that algorithm was something important. And finally, they show that periodic auditing process should be done in order to keep the algorithm working according to the specifications given by this multi-stakeholder system. So this was a quite interesting way of showing"
+    },
+    {
+      "start": 1100.88,
+      "end": 1130.384,
+      "text": "showing an algorithm that became a kind of institution because it somehow shaped the behavior of the people that needed the transplant, the behavior of the healthcare employees. And so it was a good example of four properties that should be a part of governance process."
+    },
+    {
+      "start": 1130.384,
+      "end": 1158.864,
+      "text": "And the other thing is that the governance reshaped the logic of the allocation algorithm, giving people voice to influence the goals of the algorithm. One interesting case that happened was they changed the algorithm very often during this 20 years. But one of the changes was the following."
+    },
+    {
+      "start": 1158.864,
+      "end": 1187.168,
+      "text": "Objective function of the algorithm in one specific year was to maximize the number of years saved by the algorithm. And after they discussed that with the community, some people put the following question. So in this case, only young people will be able to receive the transplant."
+    },
+    {
+      "start": 1187.168,
+      "end": 1215.344,
+      "text": "because of this function to maximize the years saved by the transplant. So they changed their way in order to be fair with old people that at that time were old. So these are some ideas that motivated us to work on this idea of"
+    },
+    {
+      "start": 1215.344,
+      "end": 1244.144,
+      "text": "algorithm as an institution. So the conceptual proposal, the book just came out and it was published by Oxford University Press. So the conceptual proposal of the book was algorithm as social technical artifacts, structuring our decision-making capacity. Algorithms as institutions."
+    },
+    {
+      "start": 1244.144,
+      "end": 1267.824,
+      "text": "that establish boundaries for individual behaviors with collective implications. And a dual movement between institutional theories and algorithmic societies. That was an important point because we wanted to bring some solid pillars."
+    },
+    {
+      "start": 1267.824,
+      "end": 1296.192,
+      "text": "for this idea of algorithm of institutions. So we relied on institutional theories. So the idea of institutions here is, an institution is a relatively enduring collection of rules and organized practices embedded in a structure of meaning and resources that are relatively invariant in the face of"
+    },
+    {
+      "start": 1296.192,
+      "end": 1325.504,
+      "text": "turnover of individuals and relatively resilient to the idiosyncratic preferences and the expectations of individuals and changing external circumstances. And that was based on a paper proposed by Nobel Prize Elinor Ostrom and other authors there. So that was the"
+    },
+    {
+      "start": 1325.504,
+      "end": 1354.864,
+      "text": "basic definition concept for institutions. And what are the role of institutions? They empower and constrain. We can have formal, we can have institutions with formal rules, such as laws, and also have some norms, and we can have some informal institutions, such as the concept of family."
+    },
+    {
+      "start": 1354.864,
+      "end": 1383.312,
+      "text": "is an institution that has a set of informal rules depending on the culture and on the region of the world. Institutions shape political actions by advancing logics of appropriate behavior, and they establish authorities with decision-making prerogatives."
+    },
+    {
+      "start": 1383.92,
+      "end": 1410.944,
+      "text": "We can ask now, what's the difference between institutions and the role played by algorithms? So this idea of algorithmic institutionalism allowed us to navigate between these dichotomies, algorithm as characterized by animism,"
+    },
+    {
+      "start": 1410.944,
+      "end": 1439.92,
+      "text": "or algorithms that are purely instruments to implement some organization. The two poles of this dichotomy is structure, algorithm as part of infrastructures, or the agency of algorithms relative to the agency of humans. And also determinism."
+    },
+    {
+      "start": 1440.016,
+      "end": 1467.408,
+      "text": "versus openness, because sometimes the outcomes of the algorithms influence people in unintended consequences. We're going to see some examples of these points in the next slides. So in order to analyze algorithms as institutions, we proposed"
+    },
+    {
+      "start": 1467.408,
+      "end": 1496.592,
+      "text": "a framework that was derived from the different institutional theories proposed by my colleagues, my co-authors that work with those theories. So the idea that in order to do this analysis, we need to understand the institutional construction and design"
+    },
+    {
+      "start": 1496.592,
+      "end": 1522.752,
+      "text": "associated with these algorithms. An important point is the evolution of the algorithm. As in the example of the transplants, past dependency was something very... was key in the development and also when they identified bias against some..."
+    },
+    {
+      "start": 1522.752,
+      "end": 1551.6,
+      "text": "some racial bias and some social bias in the process of selecting the people to receive the transplant. Rules and norms. What are rules and norms associated to the algorithms? And what are the consequences of those rules and norms or individual behavior?"
+    },
+    {
+      "start": 1552.528,
+      "end": 1581.552,
+      "text": "on collective consequences. And it's important to make the difference. Collective consequences are not the aggregation of the individual behaviors, as I will show in the examples. So we have six big items in this framework to analyze algorithm as an institution. Power implication of algorithmic systems."
+    },
+    {
+      "start": 1581.552,
+      "end": 1608.928,
+      "text": "It's easy to see that in the case of Uber, for instance. The Uber algorithms have a tremendous power over the behavior of drivers and even the behavior of customers. There is a huge asymmetry between the power of the organization and customers and drivers."
+    },
+    {
+      "start": 1608.928,
+      "end": 1637.328,
+      "text": "How individuals play with algorithms, try to avoid rules. And finally, discursive dimensions of an algorithm. So let's see an example of this case. The book is organized with theoretical chapters, but there are three case studies. One that analyzes the role of algorithms in security environments."
+    },
+    {
+      "start": 1637.328,
+      "end": 1665.584,
+      "text": "the role of algorithms in government and the role of recommendation systems. So let's see. Let's take the case of an algorithm that has a huge impact these days, not only on the population of several countries, but also on people of age."
+    },
+    {
+      "start": 1665.584,
+      "end": 1694.32,
+      "text": "in many countries. So, let's see some characteristics of these algorithmic recommenders. So, the idea here is to analyze recommender algorithms as institutions. So, in the contemporary world, it would be unfeasible, even impossible, to find"
+    },
+    {
+      "start": 1694.32,
+      "end": 1721.856,
+      "text": "relevant content, products, services without these algorithmic tools that make content visible. So they are very useful tools, but at the same time they create problems mainly in the context of politics. Recommended algorithms are institutions designed around systems that monitor"
+    },
+    {
+      "start": 1721.856,
+      "end": 1751.232,
+      "text": "behavioral data to compete for consumer attention. That's the case of the news feed algorithm in Facebook, TikTok, and other systems. Dating algorithms, they shape social and cultural specificities through informal rules that establish what is allowed,"
+    },
+    {
+      "start": 1751.232,
+      "end": 1779.92,
+      "text": "or prohibited in a social relationship. It is interesting to observe the difference between those dating algorithms. On Tinder, for instance, everyone can make the first move in an attempt to establish a communication. But on Bumble, only women can initiate communication. So this is a way to"
+    },
+    {
+      "start": 1780.336,
+      "end": 1809.872,
+      "text": "to show how these algorithms shape behavior and create norms and standards. You've got a few more minutes left. Okay, all right. Gaming an algorithm involves various strategies and practices to subvert rules and norms to gain visibility, avoid censorship, or inflate content reputation. So I'm going to skip this for the sake of time. So I'm going to move to..."
+    },
+    {
+      "start": 1809.872,
+      "end": 1838.992,
+      "text": "Two points. The democratization of algorithmic institutions are confusing and opaque. They have ambivalent consequences. They are useful, but at the same time they have consequences. Example, elections in 2024. And they lack two main pillars of legitimation, authorization and accountability. And there is a set of principles for democratization. So I would like to make"
+    },
+    {
+      "start": 1838.992,
+      "end": 1867.6,
+      "text": "Final comments on three specific things. Institutions are very important for this idea of responsible AI. For instance, responsible AI denotes the attempt to find practical ways of dealing with various ethical, social, and related issues. Algorithmic accountability presupposes an idea of responsibility of agents. And the principle of accountability..."
+    },
+    {
+      "start": 1867.6,
+      "end": 1892.496,
+      "text": "So it's important that this principle, the idea of responsibility and responsiveness is associated to institution, not to the algorithm. AI governance. If algorithms shape behavior and make collective decisions, their regulation and governance should not be purely economic or bureaucratic."
+    },
+    {
+      "start": 1892.496,
+      "end": 1922.112,
+      "text": "We must think about ways to control algorithms, algorithmic institutions to make political orders created by always more democratic. Some ideas for the future. So these are the two last slides. Technology and algorithm does not operate in isolation. And this idea of institution puts together algorithms, people and other institutions. It exists along"
+    },
+    {
+      "start": 1922.112,
+      "end": 1946.848,
+      "text": "side of people integrating institutions and power dynamics. The governance framework of institutions provides a blueprint for exploring novel approaches to regulating algorithms. When I say the governance framework for institutions in other policy domains, such as environment, ensuring effective AI governance entails holding"
+    },
+    {
+      "start": 1946.848,
+      "end": 1971.2,
+      "text": "account of those who develop and implement technology for its impact on society. An idea is, for instance, an example to explore the use of institutions in other policy domains, such as environment. We can have, in this case, algorithm institutions related to specific algorithms."
+    },
+    {
+      "start": 1971.2,
+      "end": 2000.272,
+      "text": "private or public. We can have this institution interact with national institutions that interact with global institutions. So we have to discuss here functional and structural theories, governance functions, and formulation. And this is finally the last slide. So the book outlines a conceptual proposal need to extend new institutional approach developed from other policy domain, environmental."
+    },
+    {
+      "start": 2000.272,
+      "end": 2029.616,
+      "text": "governance to algorithm and AI governance. The idea of algorithm as institution accommodates and deals with institutional diversity as part of the solution for adaptive governance. Again, this was explored in the context of environmental governance. And finally, defining governance institutions goes beyond assessing bureaucratic and economic"
+    },
+    {
+      "start": 2029.616,
+      "end": 2057.696,
+      "text": "winners and losers. Democratization and social justice must be integral components of the governance mechanisms. Sorry for using more of my time. No, no, you were perfectly on time. Thank you very much indeed. So, I was going to say, now we have time for questions and we already have a question."
+    },
+    {
+      "start": 2057.696,
+      "end": 2084.56,
+      "text": "from Paloma Crote. Are you able to speak to us, Paloma, to ask your question? That'd be nice. And otherwise, I would read it out. Okay, I shall read out Paloma's question. Thank you very much for your presentation, Virgilio. Oops, this is moving. Do you see their ideas are, at least to some extent, reflected in the EU AI Act?"
+    },
+    {
+      "start": 2084.752,
+      "end": 2114.256,
+      "text": "Kind regards from Estonia. So I don't know how familiar you are with the European AI Act, but it would be certainly for us based in Europe, it would be very nice to have your reflections on this. I think that some of the idea of risks that are part of the European AI Act, it's related to what we are seeing here in terms of impact and the need for"
+    },
+    {
+      "start": 2114.256,
+      "end": 2137.584,
+      "text": "institutions to control and to establish some sort of supervision on those systems. I think that the idea that we are proposing here of algorithmic institutions, they will be able to fit in the big scenario of the AI act."
+    },
+    {
+      "start": 2137.584,
+      "end": 2167.44,
+      "text": "Maybe I need to learn more about the AI act in order to give precise answers. No, that's fine. That's fine. I believe George was the next person who raised their hand. Oh, the first person to raise their hand. Is that correct, George? Or was it Paul? Was it Paul then? It was Paul. It was Paul. Right. Then we'll do Paul. Thank you very much. Okay. I don't mind. That's very polite. Great to..."
+    },
+    {
+      "start": 2167.44,
+      "end": 2196.896,
+      "text": "To hear of your reflections, and I'm really intrigued. Do you hear me? Yes. Good. If I understand it well, you are also arguing that institutions as we have them may also have to change. So there's the governance and the institutional approach to AI itself, but it's also the institutions as we have them. And I was wondering whether you can say a bit more about that. And I'm thinking of two examples, law and democracy."
+    },
+    {
+      "start": 2196.896,
+      "end": 2220.816,
+      "text": "So if we look at law, there are instances where we have to use AI. Think of the defense of cyber security defense of critical infrastructures that goes very fast. And we're actually law as we know it is not simply not suitable. Law as we know it is based upon political accountability. Responsibility is based upon human."
+    },
+    {
+      "start": 2220.816,
+      "end": 2250.208,
+      "text": "uh response which is all too slow and too late and and you know and not of the right so how does law should laws change and the second question is democracy should democracy change okay well these are hard questions and let me try to answer and i'm going to use the example of of the brazilian and legislation we we are going to have elections this year 2024"
+    },
+    {
+      "start": 2250.208,
+      "end": 2276.72,
+      "text": "And the media has presented many articles about the consequences of the use of AI in advertising and fake news and things like that. And there is a law, a bill in the Congress being discussed to regulate AI, but it will not be approved these days before the elections."
+    },
+    {
+      "start": 2277.104,
+      "end": 2306.384,
+      "text": "So the idea that is being discussed in superior courts is to come up with norms. Norms for this election. And norms for this election will be an institution for the elections. Because it will define what is allowed and what is not allowed. So this is an example that an institution..."
+    },
+    {
+      "start": 2307.12,
+      "end": 2336.192,
+      "text": "composed of norms and rules, will interact with the algorithms of the social media platforms. That's one example. Another interesting example, and I try to go to the defense, to the democracy, but another interesting example is the case of marriage in India. It's a traditional institution. Very old."
+    },
+    {
+      "start": 2336.192,
+      "end": 2362.816,
+      "text": "the way that people get married in India. And the dating algorithms are changing that, are changing an institution that is so old because the way that they put people together instead of waiting for the parents to define who is going to be your partner, for instance."
+    },
+    {
+      "start": 2362.816,
+      "end": 2392.16,
+      "text": "So there's a change on the traditional institution marriage that was created by another institution that are the dating applications. And finally, democracy. I think that this is maybe the most important case to create some rules to protect democracy. And as you all know,"
+    },
+    {
+      "start": 2392.16,
+      "end": 2420.592,
+      "text": "the algorithms used to control media in the digital platforms. They are very opaque. There is no supervision of those algorithms. So I think that we could learn from other examples. And I will say that"
+    },
+    {
+      "start": 2420.592,
+      "end": 2449.184,
+      "text": "examples that come from the environment or governance could be very useful because they try to work with national examples and combine with a global example so that's that's part and also we have the uh the audience should uh at least to adapt to the democratic principles such as freedom such as participation so"
+    },
+    {
+      "start": 2449.184,
+      "end": 2472.448,
+      "text": "That's part of it. OK, thank you very much indeed. I have some other question askers lined up. George, I think you're now next. Thank you, Linda, and thank you, Professor Almeida, for your talk and for writing this book, which I had the pleasure to read. And since the issue of the AI Act came up by Linda."
+    },
+    {
+      "start": 2472.448,
+      "end": 2501.744,
+      "text": "On page nine of your book, you say our primary emphasis is on high risk algorithms that may have significant public or impactful consequences on people's lives and fundamental rights. And then it goes on to name these categories, education, vocational training, employment, management, workers, law enforcement, and so on, which is very much in line with the categorization."
+    },
+    {
+      "start": 2501.744,
+      "end": 2529.328,
+      "text": "by risk of the AI act. In that sense, it is very much in line. My question is that I got a bit confused reading your book about the various layers of institutionalism. Let me just put this as naively as I can. You mentioned the allocation for transplants algorithm."
+    },
+    {
+      "start": 2529.456,
+      "end": 2550.16,
+      "text": "And then it's governance. So you have algorithms that evolve, as you correctly pointed out, they evolve with time, and you establish a governance to make sure that they evolve in the right direction."
+    },
+    {
+      "start": 2550.256,
+      "end": 2576.768,
+      "text": "And in the definition of an institution that you gave, that definition called for relatively invariant and resilient. Institutions are supposed to be invariant and resilient. So to a simple mind, it seems that the institution is the governance and not the algorithm."
+    },
+    {
+      "start": 2576.768,
+      "end": 2605.68,
+      "text": "And the democratization is the democratization of the governance of the algorithms. Otherwise, you have various layers of institutions. And to me, perhaps to my limitations, but it seems a bit confusing. Well, thank you, Vincent. It's important to have your points. It's important feedback for us."
+    },
+    {
+      "start": 2605.68,
+      "end": 2633.04,
+      "text": "I think that when we say that institutions try to make the environment or the conditions more stable, that's what we try to point out. In the case of the transplant, an institution would be the set of rules defined by"
+    },
+    {
+      "start": 2633.04,
+      "end": 2659.696,
+      "text": "for the design of the algorithm, the process of auditing the algorithm, the participation of multiple stakeholders. This is the governance process that we envision for this. And this process has not changed over the time. The way that you define it, for instance, what"
+    },
+    {
+      "start": 2659.696,
+      "end": 2689.328,
+      "text": "will be the goals of the algorithm, what would be the objective functions, that can change, but you have some very stable norms that are to attend or to follow the definitions and the process of this."
+    },
+    {
+      "start": 2689.328,
+      "end": 2717.216,
+      "text": "committee that supervise or that define the evolution, the design of the algorithm. So in this case, the institution is the set of norms and process defined by the governance of this transplant algorithm. So it's not the algorithm"
+    },
+    {
+      "start": 2717.216,
+      "end": 2741.728,
+      "text": "The focus is not the stability of the algorithms, but the stability of the rules that define and supervise this algorithm. But it's an important point that you need to understand these ideas of layers."
+    },
+    {
+      "start": 2741.728,
+      "end": 2762.672,
+      "text": "That's something that we need to elaborate for the future, because if we think of the case of AI, we need different layers of governance, the governance of the local or national governance of AI."
+    },
+    {
+      "start": 2762.672,
+      "end": 2790.832,
+      "text": "tools and systems and the rules for governing specific algorithms such as recommender systems, such as diagnostics algorithm used by doctors, and then you have to combine those different layers, algorithms national and global. But that's"
+    },
+    {
+      "start": 2790.832,
+      "end": 2820.656,
+      "text": "a part of the process that is being constructed. We are in the middle of this construction. The important point is that institutions are something that are clearly understood and political scientists are used to study the behavior of institutions and also to monitor, to assess"
+    },
+    {
+      "start": 2820.656,
+      "end": 2849.584,
+      "text": "the behavior of those institutions. So we need to learn from them. Okay, thank you very much indeed. I'd like to pass now the floor to Ricardo, who's got a question, I hope, or comment, or both. Yes, I may be both. So I will go, I will continue George's line because I really, I got a bit worried about this slide that says democratization of algorithmic systems."
+    },
+    {
+      "start": 2849.584,
+      "end": 2878.768,
+      "text": "And yes, we can think that the institutions now are rhythmic systems, but when many people will read this sentence, they will imagine something different. So I agree with your answer, but many people will have a different perception. So because I think Wittgenstein will, I think someone said, sometimes said in the past, how important the semantic of the words. And in AI, we're seeing so many problems with semantics, starting with AI itself."
+    },
+    {
+      "start": 2879.504,
+      "end": 2908.224,
+      "text": "So, for example, I would suggest that instead of using algorithmic system, we stress that institutions are becoming algorithmic. But, for example, for me, we use, for example, in ACM for the new principles of responsible algorithmic system, we were thinking on software. We were not thinking on institutions. So there you have like a different, same two words, different concepts behind. And I think algorithmic system, all people will see it as a..."
+    },
+    {
+      "start": 2908.224,
+      "end": 2937.248,
+      "text": "as a software system, not as an institution. So in the same way, we shouldn't humanize technology, like saying ethical AI that doesn't exist. I think it would be a bad idea to technologize society. Could you do it the other way? I think both ways are wrong, and we need to keep it separate, because at the end, the problems are social. I mean, technology might help solving the problem, but they will never solve this problem."
+    },
+    {
+      "start": 2937.248,
+      "end": 2964.448,
+      "text": "This is one aspect of this title, algorithmic system. The second is democratization. I really hate that word. Because, for example, and it's not you, Virginia, of course. For example, 35% of the people don't have internet. Another big percentage are children or people that are not digital or too old to learn and so on."
+    },
+    {
+      "start": 2964.448,
+      "end": 2987.136,
+      "text": "And for example, 15% of the people don't speak any of the languages supported by generative AI today. So democratization is like a nice idea, but it's a fallacy because maybe today, in the best case, we can reach half of the population of Earth. So we're not democratizing anything. What we are doing is we're increasing the digital divide in an amazing way."
+    },
+    {
+      "start": 2987.136,
+      "end": 3015.888,
+      "text": "because we are doing it much faster and we're leaving a lot of people behind. Well, those people have some advantages. For example, there are still a lot of people that have privacy. We don't have that. So there are pros and cons of this. But my question would be, do you really think we're democratizing this? Well... Thank you very much, Ricardo. I would just like to say to Virgilio that we do have one more question. So while this answer could take..."
+    },
+    {
+      "start": 3015.888,
+      "end": 3044.032,
+      "text": "the rest of the day, if you can keep it relatively short, sorry. It's a really interesting question. I'm sorry, Linda. I'm sorry, Linda. Oh, thank you, Ricardo, for the points you raised. The motivation for this work was the following question. How can we govern algorithms? And we discussed with these colleagues from political science, political science is used to"
+    },
+    {
+      "start": 3044.032,
+      "end": 3073.568,
+      "text": "to create mechanisms to govern institutions. And that's the case of agencies and committees, commissions, and they have studied that and they came up with some methods and knowledge for that. So I think, can we benefit from their knowledge to govern algorithms? So that's the idea of viewing algorithms. We're not saying that algorithms"
+    },
+    {
+      "start": 3073.568,
+      "end": 3101.472,
+      "text": "a institution. We view them as institutions and try to use the knowledge from assessing and constructing institutions to make them useful for governance of algorithms. Regarding your question that democracy is a concept that does not"
+    },
+    {
+      "start": 3101.472,
+      "end": 3130.448,
+      "text": "It's not important for many parts of the population. I have an example that could show the importance of trying to have some democratic way of governing the algorithm. During the pandemics, the Brazilian governors implemented an app to provide social support for most of the people that could not work."
+    },
+    {
+      "start": 3130.448,
+      "end": 3160.384,
+      "text": "But that app was constructed on some specific algorithms. It worked for some people, but for illiterate people was very difficult, not only because of the algorithm, but also because of the interface they could not use. But there was no way to govern that specific application in order to bring the characteristics of these people."
+    },
+    {
+      "start": 3160.384,
+      "end": 3189.2,
+      "text": "to that application. I think that the idea of democratizing the art is to involve participation. So that's one of the points that maybe was part of our message in the book. Thank you very much indeed. And then I give the honor of the very last question to Luis. And after that, we'll move back to Hannes."
+    },
+    {
+      "start": 3189.2,
+      "end": 3219.088,
+      "text": "After Virgilio has given the answer. Well, thank you very much for your interesting talk. My question has to do with the ability of contesting an algorithm's decision that is even argumenting, introducing argumentation, like in judicial institutions. You know, you can contest what the judge ruled."
+    },
+    {
+      "start": 3219.088,
+      "end": 3246.288,
+      "text": "And you can even go up a layer and question at a higher level the righteousness of the judge. Not only that, you..."
+    },
+    {
+      "start": 3248.496,
+      "end": 3276.144,
+      "text": "So this transparency seems not enough. You would have to introduce some kind of contestability and argumentation. Now, it seems to me that in many cases, these algorithms will have ethical assumptions. So one would also be able to contest."
+    },
+    {
+      "start": 3276.144,
+      "end": 3305.952,
+      "text": "The ethical assumptions that support the algorithm and the algorithms and algorithms decision. And that would surely necessitate moving up to to the level that established that what the ethics used in the algorithm are what's appropriate. And in that vein."
+    },
+    {
+      "start": 3305.952,
+      "end": 3335.136,
+      "text": "One could also require an algorithm to be proven correct with respect to an ethics. Nowadays, we can prove algorithms correct with respect to, you know, how many things, dangers that could occur, you know, faults, cases not accounted for. And so..."
+    },
+    {
+      "start": 3335.136,
+      "end": 3364.336,
+      "text": "In the same way, computer science languages could be made to allow us to write ethical constraints in an algorithm and then develop proofs that the ethical constraints are satisfied by the algorithm, that it can never produce some solution not compatible."
+    },
+    {
+      "start": 3364.336,
+      "end": 3387.584,
+      "text": "with the ethical constraints okay thank you very much i'd like to hear your opinion thank you well thank you i think that you touched a very important point that is the uh to how people react to uh decision making algorithms and i think that what we are saying in the book is that uh we should have"
+    },
+    {
+      "start": 3387.584,
+      "end": 3417.2,
+      "text": "in this idea of institutions, we should create a structure that accepts those contestations, those arguments, and to decide on that. I think that it would be useful in this case to look at the judicial system to see how they take the questions from..."
+    },
+    {
+      "start": 3417.328,
+      "end": 3440.88,
+      "text": "persons or groups affected by their decisions. So I think that to take advantage of other institutional mechanisms and bring them to the discretion of transparency, explainability."
+    },
+    {
+      "start": 3440.88,
+      "end": 3470.0,
+      "text": "some of the properties that are needed in order to understand the decision and to contest the decision. So the point is that institutions in other domains have solved these questions. So can we use them in the context of digital services, digital societies?"
+    },
+    {
+      "start": 3470.608,
+      "end": 3491.424,
+      "text": "Thank you very much indeed. I think this is exactly the perfect note to finish on that we can't solve this as computer sciences on our own. This is why we need the collaborations amongst the different disciplines. So thank you so very much for your talk and your answers. Hannes, back to you. Thanks to both of you."
+    },
+    {
+      "start": 3491.424,
+      "end": 3513.408,
+      "text": "I think the last answer, but also your presentation shows that digital humanism is a valid approach and you are, in some sense, I see you as a digital humanist following your talk. Virginia has chosen a piece of music and you want to say some words about your choice or should we just play it?"
+    },
+    {
+      "start": 3513.408,
+      "end": 3540.304,
+      "text": "Well, I'll just say a few words. The music is called The Girl from Ipanema, and it was part of a big musical movement in Brazil in the 60s that called Bossa Nova, that as an institution, it suffered a lot of influence from jazz, but at the same time, they influenced the jazz artists in the US. So it's interesting to see this."
+    },
+    {
+      "start": 3540.304,
+      "end": 3568.48,
+      "text": "Bossa Nova as an institution that received contributions from other cultures and influenced other cultures. So let's listen to the Bossa Nova song."
+    },
+    {
+      "start": 3568.48,
+      "end": 3587.44,
+      "text": "do do"
+    },
+    {
+      "start": 3713.008,
+      "end": 3737.52,
+      "text": "So thanks to all of you. See you next time. The next lecture will be announced in due time, due course. We still have not fixed the date, but you will get an information by our newsletter. Goodbye. Thank you all for being there. Thanks again, Michele. Thanks again, Linda. Bye. Thank you, Linda and all the friends there. Bye. Great."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

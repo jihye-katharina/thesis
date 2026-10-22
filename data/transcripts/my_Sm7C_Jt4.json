@@ -1,0 +1,706 @@
+{
+  "video_id": "my_Sm7C_Jt4",
+  "source": "whisper",
+  "language": "en",
+  "text": "I'm happy that we have Elisa Redmiles with us and the discussion is moderated by Jim. The topic is hot. The second wave is back, as it's called, the wave, and the numbers are sharply rising. And somehow the topic is accompanying our digital humanism lecture since the beginning, and we have three events already focusing on that topic. On the organizational parts, some notes. We usually have 30 minutes talk, and this is followed by a discussion moderated by Jim. And at the end, we have again Peter Knaes with his piece of music, and he has selected some nice piece of music for today. I also ask you to mute your phone during the presentation and then for the discussion, raise your hand. write your question into the chat. When you speak, please tell first your name so that we know who you are. I also want to point you at our website. There you can have a look at our future events and also have a look at our previous past events. And you have a link to the YouTube Digital Humanism channel where all the presentations and talks since one and a half year, you can... Look at them and you can view them. We have already, I think, 35 or 36 presentations and talks there, and it's already a rich body of knowledge. And if you're interested, you can either sign the manifesto on the website and support the manifesto for digital humanism, or you can, on the other side, also subscribe to the newsletter in the case you only want to be informed about our... The next one will be in two weeks on how AI is reshaping our world. And this discussion will be by three philosophers, one coming from the US, one from Europe and one from China. So I'm really looking forward to this event in two weeks. Today, I am happy to have here Jim Larisse as a moderator. He will introduce afterwards the speaker of today. Thanks, Jim, for moderating. He's a professor and dean of the computer science department of EPFL in Switzerland. Before that, he was at Microsoft Research, where he was acting as a researcher as well as a director. And before that, he was at the University of Wisconsin. Jim has written numerous papers and he also has fought the U.S. patents in the field of computer science. He received the Young Investigator Award from the National Science Foundation in the U.S. And he's also an ACM fellow. He studied in Berkeley and he has also studied applied mathematics in Harvard. And specifically for the topic of today. Jim co-led the project for developing the Swiss Corona app and where they had the DP3D decentralized privacy preserving architecture. And they also cooperated with Google and Apple who they agreed on this protocol. And this is the basic protocol today used in most of the worldwide Corona apps. And I am happy that you are with us, Jim, and to moderate this session. The floor is yours. Thank you, Hannes. It's a great pleasure today to introduce Eliza Redmiles. She's currently a researcher at Microsoft Research, but very soon she's also going to hold a position at the Max Planck Institute, I think next month. And so we'll be able to welcome her to Europe as well. I just wanted to say a few words and try to connect today's topic a little bit to the larger themes of digital humanism. And then I'll turn the floor over to Eliza. You know, for those of us who have been involved in this, it's been an interesting experience. You know, we built a digital app to solve a rather pressing emergency. And we went into it thinking that, of course, everybody's going to want to use this app because it seems fairly easy, fairly painless to use. And I think all of us were in pretty much every country were very surprised at the reaction that the app got. There was a great deal of skepticism, a great deal of suspicion, a great deal of reluctance to pick up the app. 30% adoption in a country is actually pretty good these days. And in spite of the fact that the app has demonstrated both efficacy with real numbers and real examples. And, you know, this was, I think, quite a bit of a surprise. And I think that the issues that Eliza is going to raise in her talk today go very much to this question. of the relationship between people and digital technology. And so I think that contact tracing is actually a very good lens, a very sort of immediate lens to see some of the issues that we face in the future in terms of our relationship as not only people, but also as governments, groups of people, establishments. to technology. So I won't say any more. I'll turn the floor over to Eliza. Thank you for the lovely introduction. Are you able to see my slides? Yes. Perfect. Wonderful. So today I would like to talk about how we can try to learn from potential users how they would like to be encouraged to adopt contact tracing apps. And this work kind of fits in a broader framework where we know that in general, computational problems or building new technologies requires constant decision making. So, for example, before coronavirus, there was a lot of debate about what features are fair to use when we're building new machine learning classifiers. And then as COVID started and we started developing COVID-19 technologies, questions got raised about what data was appropriate to use in those technologies, which features should we prioritize building? And typically, it's experts who sort of set best practices or make these decisions. And when they do that, experts are sort of trading off costs and benefits. Right. So there's this paper from a couple of years ago in which the authors discussed how people make the tradeoff of releasing data sets. So they were working on public health before COVID-19. And they said, well, you know, experts tend to make sort of normative decision where they trade off the risk to people's privacy from releasing some particular public health data set against the benefit to public health. We know from the past that experts don't always agree on best practices or on those trade-offs. So early on in coronavirus, there was disagreement about how best to tackle the disease. In AI, there's been disagreement. In security, there's been disagreement. There's always sort of disagreement. And maybe most importantly, users and experts may disagree about what decisions should be made in the trade-offs. that might determine either what data is released or what features are used in a classifier or what data is used in a COVID app. And this is especially critical because when users disagree with the decisions that have been made for them, that may lead them to choose not to adopt particular technologies. And well before we even got into the land of technology, this disagreement between experts prescribing best practice and users own behavior is something that moral philosophers were talking about when they were thinking about how do we make rules for a society? And they described that there were sort of two ways to make rules, right? A normative way where experts are prescribing the best practices or a descriptive way where experts learn from non-expert preference and behavior and infer best practice from that behavior. And in reality, we often want to find ourselves somewhere in a balance here. We can't expect non-experts to know everything and to be able to learn everything from them. But we also can't stay too trapped in sort of our own expert bubble because we may create something that other people are not willing to use. And so in general, a lot of my work and some other work in this area focuses on taking descriptive ethics approaches to developing technology. So trying to learn from people how we should handle their data, what functionality is ideal or acceptable and et cetera. So in today's talk, I'm going to specifically talk about a large project that I've been leading, applying descriptive ethics. ethics to trying to increase adoption of COVID-19 apps. And so in terms of COVID-19 apps, most of us probably know that the benefit of a contact tracing app, in particular, scales nearly quadratically with the number of users. And this chart on the right is from the now kind of infamous Oxford article that came out early in the pandemic, sort of showing how levels of adoption of a contact tracing app would affect the number of new cases. And so really, in sum, adoption matters. We really want to try to get people to adopt these apps. And so early on, when technologists were starting to talk about building these apps, experts, especially folks at EPFL, as well as across the world, were really focused on ensuring the apps protected user privacy. They saw a lot of risk for government surveillance and other privacy problems. And so that was a big focus. And that was particularly critical. But sort of after this push for privacy, there still remained the question, how do we get people to adopt? Right. Because we know that people are willing to adopt things that aren't private and they typically aren't willing to adopt things just because they're private. They none of us has sort of probably gone and installed an app just because it was private. And so then we're sort of at this crossroads. How do we get people to adopt these apps? And so the goal of this talk is to see whether we can understand and learn from potential users and get them to tell us how to get them to adopt. So today I'm going to talk about. how we identify what the considerations are in people's adoption decisions, how we can use descriptive approaches to predict people's adoption intent, and then how we can leverage these findings to actually try to drive change to app design and marketing that can improve adoption in the real world. So to start, we wanted to identify what are people's considerations when they think about adopting. In order to do that, We used a series of carefully constructed online surveys and all of the work that I talk about today, the results that I'm presenting are situated in the US. We have done some work in other countries, but what I'm presenting today just for simplicity is US oriented. And so in these surveys, we asked different types of questions. So closed answer questions, which are ones with answer choices regarding people's willingness to install different kinds of apps and kind of what. features would be a priority for them, as well as open answer questions where people sort of describe their reasoning for why they would or wouldn't install or why they're undecided. And in these surveys, we're using what are called census representative surveys. So there's an online panel and we sample from that panel in such a way that the people who are going to take our survey are going to have demographics that match those of the U.S. census on various demographic strata. And the goal of this is to get as wide and representative a view of people's sentiment as possible without going all the way to like a telephone survey or something you would use in a political. poll. And what we find from these surveys, which I'll go into the results in a little bit more depth in a minute, what we find is that there are many possible inputs to people's COVID-19 adoption decisions. So privacy is necessary, but for many people, it's not sufficient. And I think technologists knew this, but we didn't quite know where to go or what it was that people cared about. And what we find Is that people care about the benefits of the app? What is it giving to me? The provider, who is offering this app and do I trust them? Absolutely care about privacy. What data are you using? What are the risks of leakage? Mobile costs. So, you know, is this going to eat up my battery life? Is this going to consume mobile data that at least in the U.S. is quite expensive in monthly payments? Accuracy or efficacy. Is this thing going to work? You know, similar questions were raised about COVID vaccines and rapid tests. And finally, architecture of the app. Not that users, of course, express it in this way, but they're asking questions about how secure is this thing? Do I have control over deleting my data? So on and so forth. Things that sort of as technologists fit under app architecture. OK, so touching on a couple of these a little bit more deeply. We find that provider influences people's reported willingness to install or their intent to install. And what this chart shows is the proportion of survey respondents who said that they would be willing to install a contact tracing app from a particular provider. And the dark blue bar shows the people who were only willing to install from that one provider. And there's two things you kind of see off the back here. Right. One is that. At least Americans were most willing to install apps from health protection agencies, almost 40 percent of them. But there's also kind of a wide variation here. Right. So we have some people who are only willing to install from their health insurance, some people who are only willing to install from a tech company, so on and so forth. And so there's sort of not a universal preference. And this has some interesting implications, given the fact, of course, that. Most of the COVID-19 apps that are finally starting to come out in the U.S. are based on the Apple Google protocol, which requires that they're partnered with a health protection agency. So that covers a large portion of what we see in this chart here, but obviously not everything. And so there's some room to think about, you know, what do interoperable apps look like? What do health insurer provided apps look like, et cetera? And so we have a paper coming out soon and there's a short article in Scientific American that goes into this in more depth. OK. Next, we kind of want to look at, you know, those who don't want to install. Why don't they want to install? What we see is that they don't want to install because they're concerned about privacy. What mobile costs or I just don't use apps, so I don't want to do this thing. They're concerned about accuracy. Is it going to work? They're a little bit concerned about security. And then there's a big bar up here, right, which is they're concerned about necessity. And some of this may be kind of U.S. specific. We've had a lot of politicization around COVID, but that has been true in some other places as well. And it's not just that I don't believe in COVID, but in some cases it's. I'm overwhelmed by COVID. I don't want to do one more thing. I already feel it closing in on me. And so those people are kind of particularly difficult to get to adopt. Right. Because for some of the other concerns, you may be able to address those with marketing messaging. You may be able to design an app that doesn't have mobile costs or you may be able to prove to someone that it's accurate. But if they just don't want to hear it or they don't believe in it, that's sort of a larger problem. OK, so next we can ask the question, you know, which of these considerations matters the most? So all of these came up in our surveys, but we'd like to know what are the highest priority, because those are going to be the most important for us to go and tackle. And in order to answer this question, we're going to use what's called a conjoint analysis. So the conjoint analyses are. traditional like quantitative marketing research technique where you ask people to make a number of choices. And based on those choices, you infer, you know, how should I market a product or how should I what kind of product should I build? So, for example, if I'm building a new TV, I might use one of these analyses to figure out what colors of TV I should release and what dimensions of TV people prefer and so forth. We're going to do the same type of thing, except in this case, of course, we're considering COVID-19 apps instead of televisions. And the goal of this analysis is twofold. So first, it's going to allow us to figure out when we vary each of these and we make people make choices between the different apps with different attributes. We can figure out which of the attributes are most important. And then we can also figure out within a particular attribute, what is the strongest statement that we can make? So if we want to go and market this, is it best to say, hey, the benefit of this app is that you can reduce the number of people infected with coronavirus? Or is it better to say, well, the benefit is that it can alert you to if you've been exposed to someone with coronavirus. Those are both potential benefits of the app. Is there one of those that? is most salient to people and that we would want to use when we try to get them to adopt. Okay, so in our particular conjoint analyses, we were presenting people with the scenario, imagine there's a mobile phone app intended to combat coronavirus in the US. Different apps have different benefits and risks and they collect different types of information about you. Please look carefully at the app. options below. Each column represents an app with different attributes that will be designed and distributed by a health protection agency. So in this case, because we had already done some analysis on providers, we took the most popular provider that was also most likely to be used with GAN apps. Assume both apps are equally popular, which one would you choose? And we had a number of attention check questions and et cetera before this, but Then people got to make a choice between two apps. So they could say, oh, I would choose this one, that one, or I wouldn't choose either of these. And we're testing those different attributes that I showed on the prior screen. Once again, we used a census representative sort of representative sample like I had described before. And what we find is that accuracy and privacy are among the most important factors in at least Americans intent to install COVID apps. So if we look here on the right, we have created sort of a composition of people's intent to install, 29 percent of which depends on privacy and data use considerations. So experts were 100 percent correct to kind of go after those. 29 percent depends on accuracy considerations. So specifically the true positive rate. How many exposures is this app going to be able to detect? We also see that mobile data use and app benefits are also important to people. And this was sort of especially mobile data use and battery life was especially interesting to talk about since that hadn't really been a discussion as we were coming into things. And what we see and I'll discuss this a little bit more in a minute. But what we see is that emphasis on mobile data use and battery life is correlated, especially with socioeconomic status. And this is part of where descriptive approaches can really help us, because often as technologists, perhaps for us, mobile data or battery life considerations aren't particularly critical. But for certain populations, they're going to be especially critical. And so descriptive ethics approaches allow us to capture those other views that we might not automatically think about in our lives. OK, and getting to this point. not everyone values these attributes equally. And so these results are from linear regression models where we take the importance of an attribute and then include a number of controls. And I'll cover a few of the sort of top line results here. But in addition to the socioeconomic result that I mentioned, we also see that Democrats, so left leaning people in the US, have a tendency to put more weight in their decision on the accuracy of the app, while Republicans put more weight on the privacy. Younger adults tend to put more weight on what does the app offer me, what are the benefits, as well as its accuracy, while older adults put more weight on privacy and mobile costs. Those who are more engaged in consuming COVID-19 news tend to focus more on the benefits. Those who are less engaged focus more on privacy. Perhaps because the news is helping address some of the concerns people might kind of have by default. And then those who are more knowledgeable about COVID-19. And by that, I mean, they understand more about the infection vector and how they're likely to get sick and how many people have been infected are more likely to focus on the accuracy of the app. And so we now know sort of like what is the space of things that people are considering? when they're thinking about adopting these apps and which which features are most important to them, which is privacy and accuracy. But we can obviously dig further. Right. Which is it's great that they're really interested in privacy and accuracy. But how good do these apps actually have to be for people to be willing to adopt them or for us to reach majority adoption? And so in the next little bit, I would like to talk about how we're going to use descriptive approaches to try to predict adoption attempt to kind of figure out when is an app good enough. OK, so like I said, privacy and data use considerations are the most important in the numerous surveys that that we ran. And so how private does it have to be? How accurate? And basically we can decompose this question into like, does the amount of privacy and accuracy predict people's adoption intent? In order to answer that question, we're going to do more surveys. This time we're going to survey nearly 4000 crowd workers. We used crowd workers in this case because we needed such a large sample. We needed it rapidly. And we did a number of pretests to compare the responses of U.S. crowd workers with. the more demographically representative panels, and we saw no statistically significant differences on a number of tests. So that's why we went ahead with crowd workers, although we've done some replication of this later on census representative participants. And so we're going to try to predict people's reported intent to adopt apps, given quantified privacy and or accuracy. So specifically, we're going to address false negatives. So here we're going to first implicitly assess people's perception of the privacy of these apps. So we want to understand, you know, before we tell them anything about accuracy, how likely do they think it is that data will be leaked from this app? To do that, we're going to ask them to pick the likelihood of data leakage on this type of numeric chart. So the question says studies show that best attempts to protect the data of those who use this, that despite best attempts to protect the data of those who use this app, some people may have information about who they have been near compromised and used for purposes other than the fight against coronavirus. Please indicate on the chart below how many app users you think will have this information compromised over the next year. And this is a chart that has been used in a number of health risk studies where you get people to try to indicate, say, the cancer chance of cancer, a number of crime studies and then in security research that I've done as well. So people sort of pick what they think the probability of people having their data leaked is. After we get their implicit privacy exception. We ask their willingness to adopt, given some concrete false negative or true positive rate. So we say, imagine that you're exposed to someone who has coronavirus 100 times over the next year. If you do not use the app, one out of 100 times, public health workers will be able to detect and notify you that you are exposed. If you use the app, some true positive, which is some number that we use in the study, some true positive out of 100 times. the app will be able to detect and notify you that you were exposed. Would you install this app? And so here, the reason we're using this X out of 100 is from a lot of research, again, on health literacy and numeracy, where they figured out that this is sort of the best way to express percentages to people. And what we're trying to understand is, as that true positive rate goes up, does willingness to adopt also increase? And before doing this survey, we did a number of cognitive tests to make sure that people understood this question the way it was intended. OK, in a separate condition, so a different set of crowd workers saw a similar same implicit assessment of privacy perception, plus a willingness to adopt given some false positive rate. So in this case, they were offered an app that if they used it would have a perfect. sensitivity. It would detect every time they were exposed, but it would also incorrectly notify them an extra false positive number of times when they weren't actually exposed. And so we wanted to see, you know, are they willing to install? And then finally, we tested the impact of actually explicitly telling people privacy risk by giving them an explicit statement of privacy risk. So saying, you know, so you show despite the best attempts, some people have information compromised, some. P out of 1,000 people who use this app will have this information compromised. And so in this case, what we're trying to see is if we actually set their privacy perception instead of taking what they implicitly assume, how does that affect adoption intent? And then we again ask the false negative rate question. OK. What do we find out? Well, ideal is at least 50% sensitivity. So in this chart on the left, We're showing a logistic regression line on a test set and the different points at which we tested people's response to app sensitivity. And what we can see is once you hit sort of 50 percent sensitivity, we are our error bars are staying above 50 percent adoption. And of course, as sensitivity gets better. especially in that kind of, you know, when it becomes almost perfect at 97 or 99 percent detection, then adoption will go up even further. As you go below 50 percent, proportion who report being willing to install decreases. And of course, reported willingness to install isn't actual installation. Right. And so in a number of prior work studies that I and my colleagues have done, you know, we find that these kind of surveys tend to be directionally correct. So if we're seeing an increase like we see here, we will see that in the real world. But they're not necessarily like precise numeric estimates of what's going to happen. They tend to be overestimates. Right. So you can kind of imagine all of these data points shifting down a little bit, which is why especially getting to that 50 percent. sensitivity threshold or above is important for trying to get majority adoption. I want to briefly comment also on the prediction accuracy. So predicting sort of human behavior, human response, we tend to get much lower accuracy than we do. when predicting other kinds of things like we traditionally see in machine learning. So these kind of accuracies are actually what you would see when I've done commercial work and we want to predict how likely is someone to click on this ad or how likely is someone to click on this spam. So these are kind of in the range of what decent models of human behavior look like, even though if we were modeling computational data or other machine learning kind of non-human data, they would not be super exciting. I'll turn your attention to the chart on the right. And this is our chart of false positive notifications. And here we see we start dropping below kind of that majority 50 percent line as we have more than 10 percent false positives. And if you remember, this scenario was with an app that had perfect sensitivity. And that's incredibly unlikely. Right. So we're probably going to end up with 50 percent or better sensitivity. And some amount of false positives. So it's really important for us to try to keep that under 10 percent. And part of what's driving sort of a tighter range for false positives, of course, is that when we ask people an open answer questions, they said, oh, well, I can't go to work. I might not earn money. I can't see my family, et cetera. The consequences to them kind of directly from false positives in some ways are higher than they are from false negatives, where the consequences are more to others. The final thing I wanted to point out was in some other studies that we did. We found that when you don't tell people anything about the accuracy of the app, their default is to assume that it's 50 percent sensitive. So if you're able to evaluate that your app is better than that, it really behooves you to tell people. But if you don't know the accuracy of the app, people are going to get a center on that 50 percent assumption. And if the app is worse, then we could discuss the ethics of this. But from a marketing perspective, you'd probably just not want to say anything at all. OK, so finally touching on privacy expectations, privacy expectations improve the prediction accuracy that we have. So those logistic regression models I showed you, our accuracy of those goes up when we know people's like a priori privacy risk expectations. And what that means, right, is that. people's willingness to install is dependent both on privacy and accuracy, which we kind of knew from the prior experience that I showed you. But it's nice to confirm it in this sort of quantified place. And when we ask people for these privacy risk expectations, we see that on average, people expect there's like a 0.01 to 0.001 percent chance that information from a COVID app. will be compromised. And that's about the risk in the U.S. of like petty theft. So you leave something unattended and it gets picked up. So that's their expectation. As sort of context, people tend to expect that their bank accounts will be compromised more often. So this distribution would be shifted to the right if we ask them how likely they thought it was that someone would hack into their bank account. So they do expect that COVID apps are a little bit more secure or privacy protecting than potentially other online accounts. Finally, I said earlier on that we had wanted to see, you know, how does adoption rate differ if we just let people kind of rely on their implicit privacy assumptions versus when we quantify and make explicit or confirm those assumptions up front? And we find no statistically significant difference between those two things, which means that people really do have. of a concrete privacy expectation in their head and they're treating it as if it was reality. Okay, so the final step is how do we use this kind of stuff to actually help us improve adoption in the real world? It's nice we know, you know, what are people thinking about. It's nice that we know that we can semi-well predict, you know, people's intent to adopt based on quantified amounts of accuracy and privacy and that we sort of know where the line is on how good is good enough. We can use some of our experiments to tell us like, oh, people, this benefits that one. But how do we actually use this to drive adoption? Well, one question you might ask, right, is you might say, wait, I don't think we need to do all of this. Why don't we just pay people? Why don't we just incentivize them to adopt? Right. And this is often how we get people to do things. We say. I'm not going to worry about convincing you. I'm just going to pay you and I'm going to make you do it because you want the money. So before I get to how we might use these findings, let's actually test out this idea. So we use those conjoint analysis where people make choices between pairs of apps again to look at this question. And what we find is that offering people incentives which can take the form of gift cards. or can take the form of health care incentives. So you might say, I'll pay your insurance premium for the month if you install this app, or I'll give you three free doctor's appointments if you install this app, et cetera. Those kind of incentives change what apps people will adopt, but not how many people overall will adopt. So in all of our experiments, we see sort of a consistent 20% of people who are like, nope, I'm not adopting. You can't convince me to adopt. It's not happening. That same 20%. Does not matter if you incentivize them. For the other 80 percent, incentivizing them kind of changes their decision function. So if the chart on the left shows people's decision functions with intrinsic benefits. So things like this app will tell you you've been exposed. This app will protect people you love, etc. If we compare that to health care benefits, we'll pay your insurance premium. We'll give you doctor's appointments. We see that benefits become significantly more expensive. They go up by about 12 percent. And mobile data considerations become significantly less important. And part of this, we think, is that mobile data, right, you pay for it every month. And so when I incentivize you, I'm sort of giving a commensurable quantity that you're able to balance off. Oh, they're paying me. My mobile data only costs $30. So I guess if it uses that, that's fine. When we look at giving people gift cards. So here you can have a five to twenty dollar gift card to a retailer of your choice. We see an even slightly higher uptick in the importance of benefits. And we see again that the mobile data importance decreases. I can kind of compensate you for that. But something that's sort of interesting in this explicit monetary case is that we have a tiny uptick in the importance of battery life. And while this is not a huge effect size, this does align with some findings in economics where once you start offering monetary incentives, sometimes those non commensurable quantities become even more important. You can't really pay me for battery life. So now I'm kind of more wary or more suspicious or care a little bit more about that thing that you cannot compensate me for. OK, so in general, incentives change. you know, these decision functions. But importantly, they actually don't affect the top two important factors. Right. There's not a significant difference in the importance of privacy or accuracy in these incentive cases. And it doesn't make a dent in how many people are willing to adopt. OK, so we do actually have to try to encourage people to adopt and we want to try to use our findings to do that. This is what we're currently in the process of. So our results are being used directly in the marketing of COVID-19 apps in Israel and in other jurisdictions. And we're currently in the process of working with the state of Louisiana in the US to do a number of advertising field studies where we take. The benefits that were most effective in our surveys where we test whether making statements about privacy is or is not helpful, whether making statements about what data data is collected is or is not helpful. We're using kind of a number of specifically tailored advertising field studies to try to experiment with and measure how we can improve COVID-19 app adoption. The secondary goal of this work is to sort of validate. all of the self-report data that I've presented to you today. Because we want to make sure that we're able to, as we start to release these results, give people insight into, okay, the correction factor for people's intent to install, again, in the U.S., is X. So when, you know, when you do this kind of chart and you say, okay, at 50% sensitivity, you know, somewhere between 55 and 75 percent of people will adopt. Do I need to correct that down? And if so, by how much? And so we're able to do some direct comparison in the field, which will help us for kind of doing science in the future, as well as to directly improve app adoption right now. And so in some. And, you know, the goal of a lot of this work is not only how do we get people to adopt, but how do we do it ethically and responsibly? And how do we use people's data ethically and responsibly and respect what they want? And so what we find is, you know, while a lot of the talk in sort of the technology companies and et cetera is about privacy, et cetera, responsible data use goes beyond privacy. to provide technology that respects people's preferences. So if they really want apps that have a particular level of sensitivity or have a particular set of benefits or have a particular level of control over their data, which maybe sort of falls into privacy, but is a little bit different. You know, part of responsibly encouraging adoption and responsibly building these apps is providing technology that respects those preferences. And so much of the work that's been done by the academic community trying to create privacy preserving apps has been exactly in line with that. Right. For once, we were able to sort of get out ahead of the technology companies and sort of build that in at the beginning. And now we're hoping and working with public health agencies and et cetera to make sure that the way these apps. are advertised and as people start to build in new features like Apple built in a data donation feature and et cetera, that these features are aligned with people's preferences. They're going to help public health and they respect what people want and how they want their data to be used and how they want their time to be used in using these applications. Thank you. I'm happy to take questions or start the discussion now. Thank you very much, Eliza. I only wish We had known all of that when we started marketing the Swiss COVID app. You know, we were a bunch of academics. We set out saying, you know, we've spent two months working on this very privacy preserving app. It's great. Everybody's going to want it because it's privacy preserving. And that got us up to about 20 percent in Switzerland. So that was the market share for privacy. I think, yeah, it's good to look at it because I think that all of us pretty much probably come at this from a non-commercial, non-marketing perspective. And we don't really sort of understand, you know, people's preferences may be very different from what we perceive them to be. And they're the ones who make the final decision. So let me. open the floor to questions. Please use the raise hand feature. I see some comments in the sidebar, so maybe it'd be easier if we just did them as verbal questions to Eliza. So just raise your hand if you want to ask questions. I can read some of the questions. People don't want to repeat them themselves. I think I asked most of them and I haven't found the right hand feature. Okay, go ahead. I was going to call on you. Sorry. So, you know, my concern, you know, as I've put in is a typical contact as traced in South Korea or in Taiwan only has about a 1% chance of infection. and there's this huge gap. And clearly people, once they find out about the false positives, even with respect to exposures, let alone with respect to infections, that once they understand that, that very rapidly becomes their biggest concern. I've been, I've got no other word except shocked by some of the apps that have rolled out and what days they... issue exposure notifications for, which include days where there's really no risk of exposure at all. They're very focused on the distance and time and they've issued notifications for days where there's really no risk of infection whatsoever. And, you know, so in that case, we're talking about significantly less than a 1% chance of infection when you go and do that. And so I guess my concern is... You know, if the public knew, would they do that? And secondly, what should we be messaging the public? Like if we give them different positive notification screens, I mean, my own sense is that asking them to quarantine for up to 14 days, you know, they're never going to adopt if that is a consequence. And, you know, trialling alternative messages that would still have epidemiological use. And sort of, you know, this gulf. And I was on the phone to somebody from Apple the other day who literally didn't know that the consequence of sending this out was 14 day quarantine. That person at Apple thought that the only consequence was somebody would get tested and it was fine because they thought you could test out a quarantine. And yeah, so I, you know. To me, you know, I learned a lot, but I still believe that the biggest issue here is the fact that very few exposure notifications cause infection and that would lead to total collapse and will lead to total collapse. So can you comment on what are you doing and on forward on that? Sorry, I'll shut up now. No, that's a terrific question. I think you're touching on sort of a number of things, right, which is like originally I think in some of the conversations with... Google and Apple, right? It was like, oh, we're not responsible for the accuracy of these things. So there's sort of first the level of like, do we even know how accurate the exposure notifications are? And then of course, you know, how likely is the exposure to lead to infection? I think this is a great point. And even when we ask people, right, like, what do you intend to do after you get a notification if they're in a country where they're not forced to do something? At least 30% of them are like, now I would social distance. You know, they're like, oh, well, you know, I'll try to be a little extra careful. And sort of to your point, right, about what if we gave different levels of exposure notifications. This is like a common problem in security, right, where we try to say, OK, you know, someone might have gotten into your account. And a lot of times from, you know, the corporate side, we aren't actually sure whether someone got in. We got a bunch of signals that make it likely that someone got in. And once people get these over and over again. but no one had gotten into the account, they quickly go to just ignoring them. And so I think that's absolutely a problem here, where A, they're already, a large portion of the population is inclined to ignore it to begin with. And then if they keep getting kind of false positive, even if it's not a false positive exposure, but false positive infection, they're extra likely to ignore. You know, I think this is sort of... I'm not sure I have a good answer to it. It's something we're still kind of trying to probe into. And it depends a lot on the the culture community that you're doing this app work in. Right. So if it's a community where people really care about protecting others, you may be able to kind of push on that and make it less about like your direct infection. But if it's a really individualistic. community, it's going to be kind of a tough thing. And there's a really big stick, right, that comes from getting this notification. So the easiest thing to do is to go, I can't see you, which we know is happening even with manual contact tracing. So I don't have a great answer, but it's a very, very poignant question. Good. There's a question from Manfred. Hi, Melissa. Thank you very much for this interesting talk. So I'm based in Berlin. And in Berlin, we had a lot of, or Germany in general, we had a lot of problems with the Corona app. On the one side, privacy, you mentioned that. But on the other side, a very practical problem. A lot of the Corona tests didn't make it on time. So we had delays from up to one to two weeks because that tracing wasn't, well, it's digitized, but it didn't work very well, to be honest. Did you research the effect of this? of this not being able to test people in time onto your setting. The reason why I'm asking is the following. A lot of people who had installed the application, of course, were discouraged by this really large time lag in the testing because they said, okay, why do I need the tracing app if I don't get my Corona test in time? It's all over until I know. Yep. Yeah, so I would say in the US, we aren't even quite there yet. So part of what we're starting to look at now is even if people get the test, are they able to actually input that into the app and will they, right? Because there's a number of stages of dropout, which is like, are people going to adopt the app? Are they going to listen to the exposure notification? And then if they get a test and they get it in time and it's accurate, are they and are they able to put it into the app? So we're starting to look at some of these sort of we would call later stages after adoption. But we haven't looked specifically at the problem of people getting it. too late um i do think this kind of connects in some ways to joanna's question right which is sort of like as people we've been really focused on how to get people to adopt these apps but as people use them they then realize extra flaws right i don't get the test in time i don't actually get infected etc um and you know if if i again take analogies to other parts of tech usually what we see is like this steep drop off as people kind of go at Now, sometimes you get some benefit from adoption where it's a lot of effort to uninstall the app. Not necessarily a lot, but it's some effort. So sometimes people just sort of leave it there, but they may not be likely to like add their test results again. So I think a big problem we're sort of seeing is like, should it even be the end user who's the one who's entering these test results? But we have a lot of privacy issues if we wanted someone else to enter them. And so that's, you know, that's a bottleneck and we have not. We don't have any solutions to that one yet either, but we are starting to look at it. Can I ask a follow-up question? Sure. One of the additional problems that we experienced here was that not enough people had installed the app. So I think off the top of my head, it's still below 20% in Germany. I had a very interesting talk 10 days ago by one of the mathematicians, the simulation experts here in Berlin who run the simulations. By the way, a combination between agent-based and differential equations. It's really cool what they can do. And my direct question to this guy was, does the Corona data help you? They have access to all this information when they run their simulations and they said not at all. because it's not enough people, what helps them actually is the anonymized access data from mobile phone providers. That increased the accuracy of the predictions quite a bit. In your opinion now, with your background from the US, does it make sense? So I'm pro apps, and I'm telling this to everyone. Don't get me wrong. But in your opinion, how long can we uphold the motivation of people to actually install it? Because also these results will come out. Yeah, no, it's a great question. And you kind of touched on something that I wasn't able to cover during the talk, but that, you know, there's... often sort of trade-offs in terms of also what people want out of the app. So one of the benefits that we see that people would most like is to have sort of hotspot information where where is a location near me that has had the most people who are infected recently right and for privacy protecting reasons we haven't had location data in these apps which sort of prevents you um from having that hotspot information and that's something that would really incentivize people like in all of our tests that's like the number one thing they want and so we have this sort of funny tension where they you know and this is where sometimes there's like the trouble with trying to infer things from end users right they really want And they also want privacy. And you're like, OK, how do I give you the cake that you exactly want to eat? And so I think that what you're touching on is sort of a different kind of accuracy or efficacy in a way. Right. Which is not like how accurate is it for me, but like how helpful is it for public health? For that, I would sort of say two things. One in the U.S. helpfulness to public health is probably one of the least important benefits. So my suspicion is that may not sway people too much. But in other places where that is a big motivator for installing these apps, then I think you will see erosion depending on how well people are able to understand sort of what you just explained, right? So if they hear, okay, the apps aren't useful because other computing thingies are better, you know, you may not lose them too much. But if they're very effective at communicating that, then you absolutely might see that. In the US, I think less so just because people are very focused on what does it do for me? What does it do for my loved ones? Or this sort of joining the fight sentiment. And so they want to participate kind of whether or not it does anything useful. So are there other questions, people who didn't find the raise hand feature? You can wave your hand. In real life. If not, I'll ask a question. So, you know, one of the senses I've gotten from conversations with people who haven't installed the app and are reluctant to install the app is that they say privacy as a reason for not installing the app. But of course, if you ask them, they have WhatsApp and Facebook and Twitter and everything else on their phone. So they really are not. tremendously concerned with privacy. But my sense was that privacy is a sort of socially acceptable way of saying, I don't want to be notified by the app and put into quarantine. Is there any way to sort of separate these out and sort of get sort of a non-socially acceptable response like that? Yeah, that's a great question. So there's a number of techniques in survey methodology that they use a lot of times for like drug use or other kind of risky, unsociably acceptable behavior. One of which is to use what's called a list experiment. So you give people a list of, say, possible reasons or possible things that they might do. then you ask them, like, how many of those are true for you? And you can do this sort of statistical comparison to figure out basically what percentage of people are saying, no, I don't install it because I don't want the notification. We've thought a little bit about that. I think it's actually like a great follow up because, of course, even in, you know, computer based surveys have less of the social acceptability than like a face to face conversation or interview, but they still have some. And so that's kind of the best way of eliciting that. To your question, I think, too, one of the things we've found when we do sort of these open answer anonymous surveys that comes up is also that privacy gets mixed in with authoritarianism. So it's not so much like the privacy of my data, but, oh, the government is getting involved in my business. And despite the fact that, you know, they're Google or Apple based apps. I think the way that the conversation has sort of gone and the partnership with public health agencies, while useful, also has created this sense of like government sponsorship. And that seems to have raised kind of a different set of concerns for a specific set of people who maybe don't otherwise have technology privacy worries necessarily. So I think, you know, there's both this I don't want to know and it's because it's the government specifically. Good. I think we have time for one last question if there's someone out there who would like to pose a question. There are a few on the chat that somebody might want to bring up. No? Okay. Going. Going. Gone. Thank you very much, Eliza. Thank you. And I'll turn the floor over to Peter, who will give us the musical interlude for this evening. Thank you, Jim. And also thank you, Eliza. Let me briefly share this for the final thing. Yeah. Okay. Yeah. Well, to provide a smooth transition to the remainder of your day and to make a pretty bad joke, to follow up on the Corona discussions. For the final notes, I'll play a little bit of Fever by Peggy Lee. As a reminder, our next event will take place on November 3rd, and we'll deal with ethics and AI, how AI is reshaping our world. Panelists will be Deborah Johnson, Giulielmo Tamburini, and Yi Zheng, and the moderator will be Viola Scaffronati. So see you there. Thank you for joining. Goodbye, and enjoy, Peggy Lee. I love you. Never know how much I care when you put your arms around me. I get a fever that's so hard to bear. You give me fever when you kiss me. Fever when you hold me tight. Fever in the morning. Fever. the data moonlight",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.504,
+      "text": "I'm happy that we have Elisa Redmiles with us and the discussion is moderated by Jim. The topic is hot. The second wave is back, as it's called, the wave, and the numbers are sharply rising. And somehow the topic is accompanying our digital humanism lecture since the beginning, and we have three events already focusing on that topic."
+    },
+    {
+      "start": 27.92,
+      "end": 55.024,
+      "text": "On the organizational parts, some notes. We usually have 30 minutes talk, and this is followed by a discussion moderated by Jim. And at the end, we have again Peter Knaes with his piece of music, and he has selected some nice piece of music for today. I also ask you to mute your phone during the presentation and then for the discussion, raise your hand."
+    },
+    {
+      "start": 55.024,
+      "end": 83.712,
+      "text": "write your question into the chat. When you speak, please tell first your name so that we know who you are. I also want to point you at our website. There you can have a look at our future events and also have a look at our previous past events. And you have a link to the YouTube Digital Humanism channel where all the presentations and talks since one and a half year, you can..."
+    },
+    {
+      "start": 83.712,
+      "end": 111.376,
+      "text": "Look at them and you can view them. We have already, I think, 35 or 36 presentations and talks there, and it's already a rich body of knowledge. And if you're interested, you can either sign the manifesto on the website and support the manifesto for digital humanism, or you can, on the other side, also subscribe to the newsletter in the case you only want to be informed about our..."
+    },
+    {
+      "start": 111.408,
+      "end": 137.968,
+      "text": "The next one will be in two weeks on how AI is reshaping our world. And this discussion will be by three philosophers, one coming from the US, one from Europe and one from China. So I'm really looking forward to this event in two weeks. Today, I am happy to have here Jim Larisse as a moderator. He will introduce afterwards the speaker of today."
+    },
+    {
+      "start": 138.032,
+      "end": 163.904,
+      "text": "Thanks, Jim, for moderating. He's a professor and dean of the computer science department of EPFL in Switzerland. Before that, he was at Microsoft Research, where he was acting as a researcher as well as a director. And before that, he was at the University of Wisconsin."
+    },
+    {
+      "start": 163.904,
+      "end": 191.776,
+      "text": "Jim has written numerous papers and he also has fought the U.S. patents in the field of computer science. He received the Young Investigator Award from the National Science Foundation in the U.S. And he's also an ACM fellow. He studied in Berkeley and he has also studied applied mathematics in Harvard. And specifically for the topic of today."
+    },
+    {
+      "start": 191.776,
+      "end": 219.36,
+      "text": "Jim co-led the project for developing the Swiss Corona app and where they had the DP3D decentralized privacy preserving architecture. And they also cooperated with Google and Apple who they agreed on this protocol. And this is the basic protocol today used in most of the worldwide Corona apps."
+    },
+    {
+      "start": 219.36,
+      "end": 246.256,
+      "text": "And I am happy that you are with us, Jim, and to moderate this session. The floor is yours. Thank you, Hannes. It's a great pleasure today to introduce Eliza Redmiles. She's currently a researcher at Microsoft Research, but very soon she's also going to hold a position at the Max Planck Institute, I think next month."
+    },
+    {
+      "start": 246.256,
+      "end": 273.168,
+      "text": "And so we'll be able to welcome her to Europe as well. I just wanted to say a few words and try to connect today's topic a little bit to the larger themes of digital humanism. And then I'll turn the floor over to Eliza. You know, for those of us who have been involved in this, it's been an interesting experience. You know, we built a digital app to solve a rather pressing emergency."
+    },
+    {
+      "start": 273.168,
+      "end": 301.6,
+      "text": "And we went into it thinking that, of course, everybody's going to want to use this app because it seems fairly easy, fairly painless to use. And I think all of us were in pretty much every country were very surprised at the reaction that the app got. There was a great deal of skepticism, a great deal of suspicion, a great deal of reluctance to pick up the app."
+    },
+    {
+      "start": 301.6,
+      "end": 328.96,
+      "text": "30% adoption in a country is actually pretty good these days. And in spite of the fact that the app has demonstrated both efficacy with real numbers and real examples. And, you know, this was, I think, quite a bit of a surprise. And I think that the issues that Eliza is going to raise in her talk today go very much to this question."
+    },
+    {
+      "start": 328.96,
+      "end": 355.792,
+      "text": "of the relationship between people and digital technology. And so I think that contact tracing is actually a very good lens, a very sort of immediate lens to see some of the issues that we face in the future in terms of our relationship as not only people, but also as governments, groups of people, establishments."
+    },
+    {
+      "start": 355.792,
+      "end": 380.624,
+      "text": "to technology. So I won't say any more. I'll turn the floor over to Eliza. Thank you for the lovely introduction. Are you able to see my slides? Yes. Perfect. Wonderful. So today I would like to talk about how we can try to learn from potential users how they would like to be encouraged to adopt contact tracing apps."
+    },
+    {
+      "start": 380.784,
+      "end": 391.728,
+      "text": "And this work kind of fits in a broader framework where we know that in general, computational problems or building new technologies requires constant decision making."
+    },
+    {
+      "start": 391.728,
+      "end": 420.336,
+      "text": "So, for example, before coronavirus, there was a lot of debate about what features are fair to use when we're building new machine learning classifiers. And then as COVID started and we started developing COVID-19 technologies, questions got raised about what data was appropriate to use in those technologies, which features should we prioritize building? And typically, it's experts who sort of set best practices or make these decisions."
+    },
+    {
+      "start": 420.336,
+      "end": 434.192,
+      "text": "And when they do that, experts are sort of trading off costs and benefits. Right. So there's this paper from a couple of years ago in which the authors discussed how people make the tradeoff of releasing data sets."
+    },
+    {
+      "start": 434.192,
+      "end": 452.384,
+      "text": "So they were working on public health before COVID-19. And they said, well, you know, experts tend to make sort of normative decision where they trade off the risk to people's privacy from releasing some particular public health data set against the benefit to public health."
+    },
+    {
+      "start": 452.384,
+      "end": 480.288,
+      "text": "We know from the past that experts don't always agree on best practices or on those trade-offs. So early on in coronavirus, there was disagreement about how best to tackle the disease. In AI, there's been disagreement. In security, there's been disagreement. There's always sort of disagreement. And maybe most importantly, users and experts may disagree about what decisions should be made in the trade-offs."
+    },
+    {
+      "start": 480.288,
+      "end": 499.888,
+      "text": "that might determine either what data is released or what features are used in a classifier or what data is used in a COVID app. And this is especially critical because when users disagree with the decisions that have been made for them, that may lead them to choose not to adopt particular technologies."
+    },
+    {
+      "start": 499.888,
+      "end": 520.064,
+      "text": "And well before we even got into the land of technology, this disagreement between experts prescribing best practice and users own behavior is something that moral philosophers were talking about when they were thinking about how do we make rules for a society?"
+    },
+    {
+      "start": 520.064,
+      "end": 536.944,
+      "text": "And they described that there were sort of two ways to make rules, right? A normative way where experts are prescribing the best practices or a descriptive way where experts learn from non-expert preference and behavior and infer best practice from that behavior."
+    },
+    {
+      "start": 536.944,
+      "end": 555.664,
+      "text": "And in reality, we often want to find ourselves somewhere in a balance here. We can't expect non-experts to know everything and to be able to learn everything from them. But we also can't stay too trapped in sort of our own expert bubble because we may create something that other people are not willing to use."
+    },
+    {
+      "start": 556.336,
+      "end": 584.736,
+      "text": "And so in general, a lot of my work and some other work in this area focuses on taking descriptive ethics approaches to developing technology. So trying to learn from people how we should handle their data, what functionality is ideal or acceptable and et cetera. So in today's talk, I'm going to specifically talk about a large project that I've been leading, applying descriptive ethics."
+    },
+    {
+      "start": 584.736,
+      "end": 599.408,
+      "text": "ethics to trying to increase adoption of COVID-19 apps. And so in terms of COVID-19 apps, most of us probably know that the benefit of a contact tracing app, in particular,"
+    },
+    {
+      "start": 599.408,
+      "end": 625.904,
+      "text": "scales nearly quadratically with the number of users. And this chart on the right is from the now kind of infamous Oxford article that came out early in the pandemic, sort of showing how levels of adoption of a contact tracing app would affect the number of new cases. And so really, in sum, adoption matters. We really want to try to get people to adopt these apps."
+    },
+    {
+      "start": 626.384,
+      "end": 653.488,
+      "text": "And so early on, when technologists were starting to talk about building these apps, experts, especially folks at EPFL, as well as across the world, were really focused on ensuring the apps protected user privacy. They saw a lot of risk for government surveillance and other privacy problems. And so that was a big focus. And that was particularly critical."
+    },
+    {
+      "start": 653.488,
+      "end": 679.952,
+      "text": "But sort of after this push for privacy, there still remained the question, how do we get people to adopt? Right. Because we know that people are willing to adopt things that aren't private and they typically aren't willing to adopt things just because they're private. They none of us has sort of probably gone and installed an app just because it was private. And so then we're sort of at this crossroads. How do we get people to adopt these apps?"
+    },
+    {
+      "start": 679.952,
+      "end": 691.936,
+      "text": "And so the goal of this talk is to see whether we can understand and learn from potential users and get them to tell us how to get them to adopt. So today I'm going to talk about."
+    },
+    {
+      "start": 691.936,
+      "end": 721.104,
+      "text": "how we identify what the considerations are in people's adoption decisions, how we can use descriptive approaches to predict people's adoption intent, and then how we can leverage these findings to actually try to drive change to app design and marketing that can improve adoption in the real world. So to start, we wanted to identify what are people's considerations when they think about adopting. In order to do that,"
+    },
+    {
+      "start": 721.104,
+      "end": 750.256,
+      "text": "We used a series of carefully constructed online surveys and all of the work that I talk about today, the results that I'm presenting are situated in the US. We have done some work in other countries, but what I'm presenting today just for simplicity is US oriented. And so in these surveys, we asked different types of questions. So closed answer questions, which are ones with answer choices regarding people's willingness to install different kinds of apps and kind of what."
+    },
+    {
+      "start": 750.256,
+      "end": 765.216,
+      "text": "features would be a priority for them, as well as open answer questions where people sort of describe their reasoning for why they would or wouldn't install or why they're undecided. And in these surveys, we're using"
+    },
+    {
+      "start": 765.216,
+      "end": 794.752,
+      "text": "what are called census representative surveys. So there's an online panel and we sample from that panel in such a way that the people who are going to take our survey are going to have demographics that match those of the U.S. census on various demographic strata. And the goal of this is to get as wide and representative a view of people's sentiment as possible without going all the way to like a telephone survey or something you would use in a political."
+    },
+    {
+      "start": 794.752,
+      "end": 822.08,
+      "text": "poll. And what we find from these surveys, which I'll go into the results in a little bit more depth in a minute, what we find is that there are many possible inputs to people's COVID-19 adoption decisions. So privacy is necessary, but for many people, it's not sufficient. And I think technologists knew this, but we didn't quite know where to go or what it was that people cared about. And what we find"
+    },
+    {
+      "start": 822.08,
+      "end": 850.688,
+      "text": "Is that people care about the benefits of the app? What is it giving to me? The provider, who is offering this app and do I trust them? Absolutely care about privacy. What data are you using? What are the risks of leakage? Mobile costs. So, you know, is this going to eat up my battery life? Is this going to consume mobile data that at least in the U.S. is quite expensive in monthly payments? Accuracy or efficacy. Is this thing going to work?"
+    },
+    {
+      "start": 850.688,
+      "end": 878.832,
+      "text": "You know, similar questions were raised about COVID vaccines and rapid tests. And finally, architecture of the app. Not that users, of course, express it in this way, but they're asking questions about how secure is this thing? Do I have control over deleting my data? So on and so forth. Things that sort of as technologists fit under app architecture. OK, so touching on a couple of these a little bit more deeply."
+    },
+    {
+      "start": 878.832,
+      "end": 906.336,
+      "text": "We find that provider influences people's reported willingness to install or their intent to install. And what this chart shows is the proportion of survey respondents who said that they would be willing to install a contact tracing app from a particular provider. And the dark blue bar shows the people who were only willing to install from that one provider. And there's two things you kind of see off the back here. Right. One is that."
+    },
+    {
+      "start": 906.336,
+      "end": 932.624,
+      "text": "At least Americans were most willing to install apps from health protection agencies, almost 40 percent of them. But there's also kind of a wide variation here. Right. So we have some people who are only willing to install from their health insurance, some people who are only willing to install from a tech company, so on and so forth. And so there's sort of not a universal preference. And this has some interesting implications, given the fact, of course, that."
+    },
+    {
+      "start": 932.624,
+      "end": 958.08,
+      "text": "Most of the COVID-19 apps that are finally starting to come out in the U.S. are based on the Apple Google protocol, which requires that they're partnered with a health protection agency. So that covers a large portion of what we see in this chart here, but obviously not everything. And so there's some room to think about, you know, what do interoperable apps look like? What do health insurer provided apps look like, et cetera?"
+    },
+    {
+      "start": 958.08,
+      "end": 987.248,
+      "text": "And so we have a paper coming out soon and there's a short article in Scientific American that goes into this in more depth. OK. Next, we kind of want to look at, you know, those who don't want to install. Why don't they want to install? What we see is that they don't want to install because they're concerned about privacy. What mobile costs or I just don't use apps, so I don't want to do this thing."
+    },
+    {
+      "start": 987.248,
+      "end": 1012.128,
+      "text": "They're concerned about accuracy. Is it going to work? They're a little bit concerned about security. And then there's a big bar up here, right, which is they're concerned about necessity. And some of this may be kind of U.S. specific. We've had a lot of politicization around COVID, but that has been true in some other places as well. And it's not just that I don't believe in COVID, but in some cases it's."
+    },
+    {
+      "start": 1012.128,
+      "end": 1040.304,
+      "text": "I'm overwhelmed by COVID. I don't want to do one more thing. I already feel it closing in on me. And so those people are kind of particularly difficult to get to adopt. Right. Because for some of the other concerns, you may be able to address those with marketing messaging. You may be able to design an app that doesn't have mobile costs or you may be able to prove to someone that it's accurate. But if they just don't want to hear it or they don't believe in it, that's sort of a larger problem."
+    },
+    {
+      "start": 1041.392,
+      "end": 1070.24,
+      "text": "OK, so next we can ask the question, you know, which of these considerations matters the most? So all of these came up in our surveys, but we'd like to know what are the highest priority, because those are going to be the most important for us to go and tackle. And in order to answer this question, we're going to use what's called a conjoint analysis. So the conjoint analyses are."
+    },
+    {
+      "start": 1070.24,
+      "end": 1098.8,
+      "text": "traditional like quantitative marketing research technique where you ask people to make a number of choices. And based on those choices, you infer, you know, how should I market a product or how should I what kind of product should I build? So, for example, if I'm building a new TV, I might use one of these analyses to figure out what colors of TV I should release and what dimensions of TV people prefer and so forth."
+    },
+    {
+      "start": 1098.8,
+      "end": 1122.256,
+      "text": "We're going to do the same type of thing, except in this case, of course, we're considering COVID-19 apps instead of televisions. And the goal of this analysis is twofold. So first, it's going to allow us to figure out when we vary each of these and we make people make choices between the different apps with different attributes. We can figure out which of the attributes are most important."
+    },
+    {
+      "start": 1122.256,
+      "end": 1149.984,
+      "text": "And then we can also figure out within a particular attribute, what is the strongest statement that we can make? So if we want to go and market this, is it best to say, hey, the benefit of this app is that you can reduce the number of people infected with coronavirus? Or is it better to say, well, the benefit is that it can alert you to if you've been exposed to someone with coronavirus. Those are both potential benefits of the app. Is there one of those that?"
+    },
+    {
+      "start": 1149.984,
+      "end": 1175.344,
+      "text": "is most salient to people and that we would want to use when we try to get them to adopt. Okay, so in our particular conjoint analyses, we were presenting people with the scenario, imagine there's a mobile phone app intended to combat coronavirus in the US. Different apps have different benefits and risks and they collect different types of information about you. Please look carefully at the app."
+    },
+    {
+      "start": 1175.344,
+      "end": 1201.104,
+      "text": "options below. Each column represents an app with different attributes that will be designed and distributed by a health protection agency. So in this case, because we had already done some analysis on providers, we took the most popular provider that was also most likely to be used with GAN apps. Assume both apps are equally popular, which one would you choose? And we had a number of attention check questions and et cetera before this, but"
+    },
+    {
+      "start": 1201.136,
+      "end": 1229.216,
+      "text": "Then people got to make a choice between two apps. So they could say, oh, I would choose this one, that one, or I wouldn't choose either of these. And we're testing those different attributes that I showed on the prior screen. Once again, we used a census representative sort of representative sample like I had described before. And what we find is that accuracy and privacy are among the most important factors in at least Americans intent to install COVID apps."
+    },
+    {
+      "start": 1229.216,
+      "end": 1257.104,
+      "text": "So if we look here on the right, we have created sort of a composition of people's intent to install, 29 percent of which depends on privacy and data use considerations. So experts were 100 percent correct to kind of go after those. 29 percent depends on accuracy considerations. So specifically the true positive rate. How many exposures is this app going to be able to detect?"
+    },
+    {
+      "start": 1257.52,
+      "end": 1287.408,
+      "text": "We also see that mobile data use and app benefits are also important to people. And this was sort of especially mobile data use and battery life was especially interesting to talk about since that hadn't really been a discussion as we were coming into things. And what we see and I'll discuss this a little bit more in a minute. But what we see is that emphasis on mobile data use and battery life is correlated, especially with socioeconomic status."
+    },
+    {
+      "start": 1287.408,
+      "end": 1314.896,
+      "text": "And this is part of where descriptive approaches can really help us, because often as technologists, perhaps for us, mobile data or battery life considerations aren't particularly critical. But for certain populations, they're going to be especially critical. And so descriptive ethics approaches allow us to capture those other views that we might not automatically think about in our lives. OK, and getting to this point."
+    },
+    {
+      "start": 1314.896,
+      "end": 1343.024,
+      "text": "not everyone values these attributes equally. And so these results are from linear regression models where we take the importance of an attribute and then include a number of controls. And I'll cover a few of the sort of top line results here. But in addition to the socioeconomic result that I mentioned, we also see that Democrats, so left leaning people in the US, have a tendency to"
+    },
+    {
+      "start": 1343.024,
+      "end": 1370.4,
+      "text": "put more weight in their decision on the accuracy of the app, while Republicans put more weight on the privacy. Younger adults tend to put more weight on what does the app offer me, what are the benefits, as well as its accuracy, while older adults put more weight on privacy and mobile costs. Those who are more engaged in consuming COVID-19 news tend to focus more on the benefits. Those who are less engaged focus more on privacy."
+    },
+    {
+      "start": 1370.4,
+      "end": 1399.712,
+      "text": "Perhaps because the news is helping address some of the concerns people might kind of have by default. And then those who are more knowledgeable about COVID-19. And by that, I mean, they understand more about the infection vector and how they're likely to get sick and how many people have been infected are more likely to focus on the accuracy of the app. And so we now know sort of like what is the space of things that people are considering?"
+    },
+    {
+      "start": 1399.712,
+      "end": 1424.88,
+      "text": "when they're thinking about adopting these apps and which which features are most important to them, which is privacy and accuracy. But we can obviously dig further. Right. Which is it's great that they're really interested in privacy and accuracy. But how good do these apps actually have to be for people to be willing to adopt them or for us to reach majority adoption?"
+    },
+    {
+      "start": 1424.88,
+      "end": 1453.088,
+      "text": "And so in the next little bit, I would like to talk about how we're going to use descriptive approaches to try to predict adoption attempt to kind of figure out when is an app good enough. OK, so like I said, privacy and data use considerations are the most important in the numerous surveys that that we ran. And so how private does it have to be? How accurate?"
+    },
+    {
+      "start": 1453.088,
+      "end": 1482.624,
+      "text": "And basically we can decompose this question into like, does the amount of privacy and accuracy predict people's adoption intent? In order to answer that question, we're going to do more surveys. This time we're going to survey nearly 4000 crowd workers. We used crowd workers in this case because we needed such a large sample. We needed it rapidly. And we did a number of pretests to compare the responses of U.S. crowd workers with."
+    },
+    {
+      "start": 1482.624,
+      "end": 1510.672,
+      "text": "the more demographically representative panels, and we saw no statistically significant differences on a number of tests. So that's why we went ahead with crowd workers, although we've done some replication of this later on census representative participants. And so we're going to try to predict people's reported intent to adopt apps, given quantified privacy and or accuracy. So specifically, we're going to address false negatives."
+    },
+    {
+      "start": 1510.672,
+      "end": 1534.704,
+      "text": "So here we're going to first implicitly assess people's perception of the privacy of these apps. So we want to understand, you know, before we tell them anything about accuracy, how likely do they think it is that data will be leaked from this app? To do that, we're going to ask them to pick the likelihood of data leakage on this type of numeric chart."
+    },
+    {
+      "start": 1534.704,
+      "end": 1556.368,
+      "text": "So the question says studies show that best attempts to protect the data of those who use this, that despite best attempts to protect the data of those who use this app, some people may have information about who they have been near compromised and used for purposes other than the fight against coronavirus. Please indicate on the chart below how many app users you think will have this information compromised over the next year."
+    },
+    {
+      "start": 1556.528,
+      "end": 1581.76,
+      "text": "And this is a chart that has been used in a number of health risk studies where you get people to try to indicate, say, the cancer chance of cancer, a number of crime studies and then in security research that I've done as well. So people sort of pick what they think the probability of people having their data leaked is. After we get their implicit privacy exception."
+    },
+    {
+      "start": 1581.76,
+      "end": 1608.864,
+      "text": "We ask their willingness to adopt, given some concrete false negative or true positive rate. So we say, imagine that you're exposed to someone who has coronavirus 100 times over the next year. If you do not use the app, one out of 100 times, public health workers will be able to detect and notify you that you are exposed. If you use the app, some true positive, which is some number that we use in the study, some true positive out of 100 times."
+    },
+    {
+      "start": 1608.864,
+      "end": 1635.312,
+      "text": "the app will be able to detect and notify you that you were exposed. Would you install this app? And so here, the reason we're using this X out of 100 is from a lot of research, again, on health literacy and numeracy, where they figured out that this is sort of the best way to express percentages to people. And what we're trying to understand is, as that true positive rate goes up, does willingness to adopt also increase?"
+    },
+    {
+      "start": 1635.76,
+      "end": 1665.088,
+      "text": "And before doing this survey, we did a number of cognitive tests to make sure that people understood this question the way it was intended. OK, in a separate condition, so a different set of crowd workers saw a similar same implicit assessment of privacy perception, plus a willingness to adopt given some false positive rate. So in this case, they were offered an app that if they used it would have a perfect."
+    },
+    {
+      "start": 1665.088,
+      "end": 1694.288,
+      "text": "sensitivity. It would detect every time they were exposed, but it would also incorrectly notify them an extra false positive number of times when they weren't actually exposed. And so we wanted to see, you know, are they willing to install? And then finally, we tested the impact of actually explicitly telling people privacy risk by giving them an explicit statement of privacy risk. So saying, you know, so you show despite the best attempts, some people have information compromised, some."
+    },
+    {
+      "start": 1694.288,
+      "end": 1723.664,
+      "text": "P out of 1,000 people who use this app will have this information compromised. And so in this case, what we're trying to see is if we actually set their privacy perception instead of taking what they implicitly assume, how does that affect adoption intent? And then we again ask the false negative rate question. OK. What do we find out? Well, ideal is at least 50% sensitivity. So in this chart on the left,"
+    },
+    {
+      "start": 1723.888,
+      "end": 1749.392,
+      "text": "We're showing a logistic regression line on a test set and the different points at which we tested people's response to app sensitivity. And what we can see is once you hit sort of 50 percent sensitivity, we are our error bars are staying above 50 percent adoption. And of course, as sensitivity gets better."
+    },
+    {
+      "start": 1749.392,
+      "end": 1770.112,
+      "text": "especially in that kind of, you know, when it becomes almost perfect at 97 or 99 percent detection, then adoption will go up even further. As you go below 50 percent, proportion who report being willing to install decreases. And of course, reported willingness to install isn't actual installation. Right."
+    },
+    {
+      "start": 1770.112,
+      "end": 1797.76,
+      "text": "And so in a number of prior work studies that I and my colleagues have done, you know, we find that these kind of surveys tend to be directionally correct. So if we're seeing an increase like we see here, we will see that in the real world. But they're not necessarily like precise numeric estimates of what's going to happen. They tend to be overestimates. Right. So you can kind of imagine all of these data points shifting down a little bit, which is why especially getting to that 50 percent."
+    },
+    {
+      "start": 1797.76,
+      "end": 1814.496,
+      "text": "sensitivity threshold or above is important for trying to get majority adoption. I want to briefly comment also on the prediction accuracy. So predicting sort of human behavior, human response, we tend to get much lower accuracy than we do."
+    },
+    {
+      "start": 1814.496,
+      "end": 1841.232,
+      "text": "when predicting other kinds of things like we traditionally see in machine learning. So these kind of accuracies are actually what you would see when I've done commercial work and we want to predict how likely is someone to click on this ad or how likely is someone to click on this spam. So these are kind of in the range of what decent models of human behavior look like, even though if we were modeling computational data or other machine learning kind of non-human data, they would not be super exciting."
+    },
+    {
+      "start": 1841.424,
+      "end": 1867.2,
+      "text": "I'll turn your attention to the chart on the right. And this is our chart of false positive notifications. And here we see we start dropping below kind of that majority 50 percent line as we have more than 10 percent false positives. And if you remember, this scenario was with an app that had perfect sensitivity. And that's incredibly unlikely. Right. So we're probably going to end up with 50 percent or better sensitivity."
+    },
+    {
+      "start": 1867.2,
+      "end": 1895.024,
+      "text": "And some amount of false positives. So it's really important for us to try to keep that under 10 percent. And part of what's driving sort of a tighter range for false positives, of course, is that when we ask people an open answer questions, they said, oh, well, I can't go to work. I might not earn money. I can't see my family, et cetera. The consequences to them kind of directly from false positives in some ways are higher than they are from false negatives, where the consequences are more to others."
+    },
+    {
+      "start": 1896.496,
+      "end": 1925.328,
+      "text": "The final thing I wanted to point out was in some other studies that we did. We found that when you don't tell people anything about the accuracy of the app, their default is to assume that it's 50 percent sensitive. So if you're able to evaluate that your app is better than that, it really behooves you to tell people. But if you don't know the accuracy of the app, people are going to get a center on that 50 percent assumption."
+    },
+    {
+      "start": 1925.328,
+      "end": 1954.816,
+      "text": "And if the app is worse, then we could discuss the ethics of this. But from a marketing perspective, you'd probably just not want to say anything at all. OK, so finally touching on privacy expectations, privacy expectations improve the prediction accuracy that we have. So those logistic regression models I showed you, our accuracy of those goes up when we know people's like a priori privacy risk expectations. And what that means, right, is that."
+    },
+    {
+      "start": 1954.816,
+      "end": 1980.128,
+      "text": "people's willingness to install is dependent both on privacy and accuracy, which we kind of knew from the prior experience that I showed you. But it's nice to confirm it in this sort of quantified place. And when we ask people for these privacy risk expectations, we see that on average, people expect there's like a 0.01 to 0.001 percent chance that information from a COVID app."
+    },
+    {
+      "start": 1980.128,
+      "end": 2005.296,
+      "text": "will be compromised. And that's about the risk in the U.S. of like petty theft. So you leave something unattended and it gets picked up. So that's their expectation. As sort of context, people tend to expect that their bank accounts will be compromised more often. So this distribution would be shifted to the right if we ask them how likely they thought it was that someone would hack into their bank account. So they do expect that COVID apps"
+    },
+    {
+      "start": 2005.296,
+      "end": 2034.32,
+      "text": "are a little bit more secure or privacy protecting than potentially other online accounts. Finally, I said earlier on that we had wanted to see, you know, how does adoption rate differ if we just let people kind of rely on their implicit privacy assumptions versus when we quantify and make explicit or confirm those assumptions up front? And we find no statistically significant difference between those two things, which means that people really do have."
+    },
+    {
+      "start": 2034.32,
+      "end": 2060.448,
+      "text": "of a concrete privacy expectation in their head and they're treating it as if it was reality. Okay, so the final step is how do we use this kind of stuff to actually help us improve adoption in the real world? It's nice we know, you know, what are people thinking about. It's nice that we know that we can semi-well predict, you know, people's intent to adopt based on quantified"
+    },
+    {
+      "start": 2060.448,
+      "end": 2089.264,
+      "text": "amounts of accuracy and privacy and that we sort of know where the line is on how good is good enough. We can use some of our experiments to tell us like, oh, people, this benefits that one. But how do we actually use this to drive adoption? Well, one question you might ask, right, is you might say, wait, I don't think we need to do all of this. Why don't we just pay people? Why don't we just incentivize them to adopt? Right. And this is often how we get people to do things. We say."
+    },
+    {
+      "start": 2089.264,
+      "end": 2115.824,
+      "text": "I'm not going to worry about convincing you. I'm just going to pay you and I'm going to make you do it because you want the money. So before I get to how we might use these findings, let's actually test out this idea. So we use those conjoint analysis where people make choices between pairs of apps again to look at this question. And what we find is that offering people incentives which can take the form of gift cards."
+    },
+    {
+      "start": 2115.824,
+      "end": 2144.112,
+      "text": "or can take the form of health care incentives. So you might say, I'll pay your insurance premium for the month if you install this app, or I'll give you three free doctor's appointments if you install this app, et cetera. Those kind of incentives change what apps people will adopt, but not how many people overall will adopt. So in all of our experiments, we see sort of a consistent 20% of people who are like, nope, I'm not adopting. You can't convince me to adopt. It's not happening. That same 20%."
+    },
+    {
+      "start": 2144.112,
+      "end": 2171.968,
+      "text": "Does not matter if you incentivize them. For the other 80 percent, incentivizing them kind of changes their decision function. So if the chart on the left shows people's decision functions with intrinsic benefits. So things like this app will tell you you've been exposed. This app will protect people you love, etc. If we compare that to health care benefits, we'll pay your insurance premium. We'll give you doctor's appointments."
+    },
+    {
+      "start": 2171.968,
+      "end": 2200.224,
+      "text": "We see that benefits become significantly more expensive. They go up by about 12 percent. And mobile data considerations become significantly less important. And part of this, we think, is that mobile data, right, you pay for it every month. And so when I incentivize you, I'm sort of giving a commensurable quantity that you're able to balance off. Oh, they're paying me. My mobile data only costs $30. So I guess if it uses that, that's fine."
+    },
+    {
+      "start": 2200.224,
+      "end": 2224.704,
+      "text": "When we look at giving people gift cards. So here you can have a five to twenty dollar gift card to a retailer of your choice. We see an even slightly higher uptick in the importance of benefits. And we see again that the mobile data importance decreases. I can kind of compensate you for that. But something that's sort of interesting in this explicit monetary case is that we have a tiny uptick in the importance of battery life."
+    },
+    {
+      "start": 2224.704,
+      "end": 2252.896,
+      "text": "And while this is not a huge effect size, this does align with some findings in economics where once you start offering monetary incentives, sometimes those non commensurable quantities become even more important. You can't really pay me for battery life. So now I'm kind of more wary or more suspicious or care a little bit more about that thing that you cannot compensate me for. OK, so in general, incentives change."
+    },
+    {
+      "start": 2252.896,
+      "end": 2282.432,
+      "text": "you know, these decision functions. But importantly, they actually don't affect the top two important factors. Right. There's not a significant difference in the importance of privacy or accuracy in these incentive cases. And it doesn't make a dent in how many people are willing to adopt. OK, so we do actually have to try to encourage people to adopt and we want to try to use our findings to do that. This is what we're currently in the process of."
+    },
+    {
+      "start": 2282.432,
+      "end": 2298.512,
+      "text": "So our results are being used directly in the marketing of COVID-19 apps in Israel and in other jurisdictions. And we're currently in the process of working with the state of Louisiana in the US to do a number of advertising field studies where we take."
+    },
+    {
+      "start": 2298.512,
+      "end": 2326.528,
+      "text": "The benefits that were most effective in our surveys where we test whether making statements about privacy is or is not helpful, whether making statements about what data data is collected is or is not helpful. We're using kind of a number of specifically tailored advertising field studies to try to experiment with and measure how we can improve COVID-19 app adoption. The secondary goal of this work is to sort of validate."
+    },
+    {
+      "start": 2326.528,
+      "end": 2349.216,
+      "text": "all of the self-report data that I've presented to you today. Because we want to make sure that we're able to, as we start to release these results, give people insight into, okay, the correction factor for people's intent to install, again, in the U.S., is X. So when, you know, when you do this kind of chart and you say, okay, at 50% sensitivity, you know, somewhere between"
+    },
+    {
+      "start": 2349.216,
+      "end": 2368.608,
+      "text": "55 and 75 percent of people will adopt. Do I need to correct that down? And if so, by how much? And so we're able to do some direct comparison in the field, which will help us for kind of doing science in the future, as well as to directly improve app adoption right now. And so in some."
+    },
+    {
+      "start": 2368.608,
+      "end": 2393.936,
+      "text": "And, you know, the goal of a lot of this work is not only how do we get people to adopt, but how do we do it ethically and responsibly? And how do we use people's data ethically and responsibly and respect what they want? And so what we find is, you know, while a lot of the talk in sort of the technology companies and et cetera is about privacy, et cetera, responsible data use goes beyond privacy."
+    },
+    {
+      "start": 2393.936,
+      "end": 2418.608,
+      "text": "to provide technology that respects people's preferences. So if they really want apps that have a particular level of sensitivity or have a particular set of benefits or have a particular level of control over their data, which maybe sort of falls into privacy, but is a little bit different. You know, part of responsibly encouraging adoption and responsibly building these apps is providing technology that respects those preferences."
+    },
+    {
+      "start": 2418.608,
+      "end": 2440.832,
+      "text": "And so much of the work that's been done by the academic community trying to create privacy preserving apps has been exactly in line with that. Right. For once, we were able to sort of get out ahead of the technology companies and sort of build that in at the beginning. And now we're hoping and working with public health agencies and et cetera to make sure that the way these apps."
+    },
+    {
+      "start": 2440.832,
+      "end": 2469.776,
+      "text": "are advertised and as people start to build in new features like Apple built in a data donation feature and et cetera, that these features are aligned with people's preferences. They're going to help public health and they respect what people want and how they want their data to be used and how they want their time to be used in using these applications. Thank you. I'm happy to take questions or start the discussion now. Thank you very much, Eliza. I only wish"
+    },
+    {
+      "start": 2469.776,
+      "end": 2489.312,
+      "text": "We had known all of that when we started marketing the Swiss COVID app. You know, we were a bunch of academics. We set out saying, you know, we've spent two months working on this very privacy preserving app. It's great. Everybody's going to want it because it's privacy preserving. And that got us up to about 20 percent in Switzerland."
+    },
+    {
+      "start": 2489.312,
+      "end": 2515.28,
+      "text": "So that was the market share for privacy. I think, yeah, it's good to look at it because I think that all of us pretty much probably come at this from a non-commercial, non-marketing perspective. And we don't really sort of understand, you know, people's preferences may be very different from what we perceive them to be. And they're the ones who make the final decision. So let me."
+    },
+    {
+      "start": 2515.28,
+      "end": 2533.968,
+      "text": "open the floor to questions. Please use the raise hand feature. I see some comments in the sidebar, so maybe it'd be easier if we just did them as verbal questions to Eliza. So just raise your hand if you want to ask questions."
+    },
+    {
+      "start": 2540.016,
+      "end": 2567.568,
+      "text": "I can read some of the questions. People don't want to repeat them themselves. I think I asked most of them and I haven't found the right hand feature. Okay, go ahead. I was going to call on you. Sorry. So, you know, my concern, you know, as I've put in is a typical contact as traced in South Korea or in Taiwan only has about a 1% chance of infection."
+    },
+    {
+      "start": 2567.568,
+      "end": 2595.264,
+      "text": "and there's this huge gap. And clearly people, once they find out about the false positives, even with respect to exposures, let alone with respect to infections, that once they understand that, that very rapidly becomes their biggest concern. I've been, I've got no other word except shocked by some of the apps that have rolled out and what days they..."
+    },
+    {
+      "start": 2595.264,
+      "end": 2623.792,
+      "text": "issue exposure notifications for, which include days where there's really no risk of exposure at all. They're very focused on the distance and time and they've issued notifications for days where there's really no risk of infection whatsoever. And, you know, so in that case, we're talking about significantly less than a 1% chance of infection when you go and do that. And so I guess my concern is..."
+    },
+    {
+      "start": 2623.792,
+      "end": 2649.344,
+      "text": "You know, if the public knew, would they do that? And secondly, what should we be messaging the public? Like if we give them different positive notification screens, I mean, my own sense is that asking them to quarantine for up to 14 days, you know, they're never going to adopt if that is a consequence. And, you know, trialling alternative messages that would still have epidemiological use."
+    },
+    {
+      "start": 2649.344,
+      "end": 2670.416,
+      "text": "And sort of, you know, this gulf. And I was on the phone to somebody from Apple the other day who literally didn't know that the consequence of sending this out was 14 day quarantine. That person at Apple thought that the only consequence was somebody would get tested and it was fine because they thought you could test out a quarantine. And yeah, so I, you know."
+    },
+    {
+      "start": 2670.416,
+      "end": 2699.312,
+      "text": "To me, you know, I learned a lot, but I still believe that the biggest issue here is the fact that very few exposure notifications cause infection and that would lead to total collapse and will lead to total collapse. So can you comment on what are you doing and on forward on that? Sorry, I'll shut up now. No, that's a terrific question. I think you're touching on sort of a number of things, right, which is like originally I think in some of the conversations with..."
+    },
+    {
+      "start": 2699.312,
+      "end": 2729.04,
+      "text": "Google and Apple, right? It was like, oh, we're not responsible for the accuracy of these things. So there's sort of first the level of like, do we even know how accurate the exposure notifications are? And then of course, you know, how likely is the exposure to lead to infection? I think this is a great point. And even when we ask people, right, like, what do you intend to do after you get a notification if they're in a country where they're not forced to do something? At least 30% of them are like, now I would social distance."
+    },
+    {
+      "start": 2731.024,
+      "end": 2760.928,
+      "text": "You know, they're like, oh, well, you know, I'll try to be a little extra careful. And sort of to your point, right, about what if we gave different levels of exposure notifications. This is like a common problem in security, right, where we try to say, OK, you know, someone might have gotten into your account. And a lot of times from, you know, the corporate side, we aren't actually sure whether someone got in. We got a bunch of signals that make it likely that someone got in. And once people get these over and over again."
+    },
+    {
+      "start": 2760.928,
+      "end": 2786.336,
+      "text": "but no one had gotten into the account, they quickly go to just ignoring them. And so I think that's absolutely a problem here, where A, they're already, a large portion of the population is inclined to ignore it to begin with. And then if they keep getting kind of false positive, even if it's not a false positive exposure, but false positive infection, they're extra likely to ignore. You know, I think this is sort of..."
+    },
+    {
+      "start": 2786.336,
+      "end": 2807.44,
+      "text": "I'm not sure I have a good answer to it. It's something we're still kind of trying to probe into. And it depends a lot on the the culture community that you're doing this app work in. Right. So if it's a community where people really care about protecting others, you may be able to kind of push on that and make it less about like your direct infection. But if it's a really individualistic."
+    },
+    {
+      "start": 2807.44,
+      "end": 2835.472,
+      "text": "community, it's going to be kind of a tough thing. And there's a really big stick, right, that comes from getting this notification. So the easiest thing to do is to go, I can't see you, which we know is happening even with manual contact tracing. So I don't have a great answer, but it's a very, very poignant question. Good. There's a question from Manfred. Hi, Melissa. Thank you very much for this interesting talk. So I'm based in Berlin."
+    },
+    {
+      "start": 2835.472,
+      "end": 2863.376,
+      "text": "And in Berlin, we had a lot of, or Germany in general, we had a lot of problems with the Corona app. On the one side, privacy, you mentioned that. But on the other side, a very practical problem. A lot of the Corona tests didn't make it on time. So we had delays from up to one to two weeks because that tracing wasn't, well, it's digitized, but it didn't work very well, to be honest."
+    },
+    {
+      "start": 2863.376,
+      "end": 2870.656,
+      "text": "Did you research the effect of this?"
+    },
+    {
+      "start": 2870.656,
+      "end": 2897.12,
+      "text": "of this not being able to test people in time onto your setting. The reason why I'm asking is the following. A lot of people who had installed the application, of course, were discouraged by this really large time lag in the testing because they said, okay, why do I need the tracing app if I don't get my Corona test in time? It's all over until I know. Yep."
+    },
+    {
+      "start": 2897.12,
+      "end": 2925.76,
+      "text": "Yeah, so I would say in the US, we aren't even quite there yet. So part of what we're starting to look at now is even if people get the test, are they able to actually input that into the app and will they, right? Because there's a number of stages of dropout, which is like, are people going to adopt the app? Are they going to listen to the exposure notification? And then if they get a test and they get it in time and it's accurate, are they and are they able to put it into the app?"
+    },
+    {
+      "start": 2925.76,
+      "end": 2935.36,
+      "text": "So we're starting to look at some of these sort of we would call later stages after adoption. But we haven't looked specifically at the problem of people getting it."
+    },
+    {
+      "start": 2935.36,
+      "end": 2964.96,
+      "text": "too late um i do think this kind of connects in some ways to joanna's question right which is sort of like as people we've been really focused on how to get people to adopt these apps but as people use them they then realize extra flaws right i don't get the test in time i don't actually get infected etc um and you know if if i again take analogies to other parts of tech usually what we see is like this steep drop off as people kind of go at"
+    },
+    {
+      "start": 2964.96,
+      "end": 2994.24,
+      "text": "Now, sometimes you get some benefit from adoption where it's a lot of effort to uninstall the app. Not necessarily a lot, but it's some effort. So sometimes people just sort of leave it there, but they may not be likely to like add their test results again. So I think a big problem we're sort of seeing is like, should it even be the end user who's the one who's entering these test results? But we have a lot of privacy issues if we wanted someone else to enter them. And so that's, you know, that's a bottleneck and we have not."
+    },
+    {
+      "start": 2994.24,
+      "end": 3009.616,
+      "text": "We don't have any solutions to that one yet either, but we are starting to look at it. Can I ask a follow-up question? Sure. One of the additional problems that we experienced here"
+    },
+    {
+      "start": 3009.616,
+      "end": 3034.672,
+      "text": "was that not enough people had installed the app. So I think off the top of my head, it's still below 20% in Germany. I had a very interesting talk 10 days ago by one of the mathematicians, the simulation experts here in Berlin who run the simulations. By the way, a combination between agent-based and differential equations."
+    },
+    {
+      "start": 3034.672,
+      "end": 3051.504,
+      "text": "It's really cool what they can do. And my direct question to this guy was, does the Corona data help you? They have access to all this information when they run their simulations and they said not at all."
+    },
+    {
+      "start": 3051.504,
+      "end": 3070.752,
+      "text": "because it's not enough people, what helps them actually is the anonymized access data from mobile phone providers. That increased the accuracy of the predictions quite a bit."
+    },
+    {
+      "start": 3070.752,
+      "end": 3099.104,
+      "text": "In your opinion now, with your background from the US, does it make sense? So I'm pro apps, and I'm telling this to everyone. Don't get me wrong. But in your opinion, how long can we uphold the motivation of people to actually install it? Because also these results will come out. Yeah, no, it's a great question. And you kind of touched on something that I wasn't able to cover during the talk, but that, you know, there's..."
+    },
+    {
+      "start": 3099.104,
+      "end": 3106.16,
+      "text": "often sort of trade-offs in terms of also what people want out of the app. So one of the benefits that we see that people would"
+    },
+    {
+      "start": 3106.16,
+      "end": 3135.536,
+      "text": "most like is to have sort of hotspot information where where is a location near me that has had the most people who are infected recently right and for privacy protecting reasons we haven't had location data in these apps which sort of prevents you um from having that hotspot information and that's something that would really incentivize people like in all of our tests that's like the number one thing they want and so we have this sort of funny tension where they you know and this is where sometimes there's like the trouble with trying to infer things from end users right they really want"
+    },
+    {
+      "start": 3135.536,
+      "end": 3157.632,
+      "text": "And they also want privacy. And you're like, OK, how do I give you the cake that you exactly want to eat? And so I think that what you're touching on is sort of a different kind of accuracy or efficacy in a way. Right. Which is not like how accurate is it for me, but like how helpful is it for public health? For that, I would sort of say two things. One in the U.S."
+    },
+    {
+      "start": 3157.632,
+      "end": 3187.536,
+      "text": "helpfulness to public health is probably one of the least important benefits. So my suspicion is that may not sway people too much. But in other places where that is a big motivator for installing these apps, then I think you will see erosion depending on how well people are able to understand sort of what you just explained, right? So if they hear, okay, the apps aren't useful because other computing thingies are better, you know, you may not lose them too much. But if they're"
+    },
+    {
+      "start": 3187.536,
+      "end": 3216.88,
+      "text": "very effective at communicating that, then you absolutely might see that. In the US, I think less so just because people are very focused on what does it do for me? What does it do for my loved ones? Or this sort of joining the fight sentiment. And so they want to participate kind of whether or not it does anything useful. So are there other questions, people who didn't find the raise hand feature? You can wave your hand."
+    },
+    {
+      "start": 3216.88,
+      "end": 3245.152,
+      "text": "In real life. If not, I'll ask a question. So, you know, one of the senses I've gotten from conversations with people who haven't installed the app and are reluctant to install the app is that they say privacy as a reason for not installing the app. But of course, if you ask them, they have WhatsApp and Facebook and Twitter and everything else on their phone. So they really are not."
+    },
+    {
+      "start": 3245.152,
+      "end": 3268.368,
+      "text": "tremendously concerned with privacy. But my sense was that privacy is a sort of socially acceptable way of saying, I don't want to be notified by the app and put into quarantine. Is there any way to sort of separate these out and sort of get sort of a non-socially acceptable response like that?"
+    },
+    {
+      "start": 3268.368,
+      "end": 3289.824,
+      "text": "Yeah, that's a great question. So there's a number of techniques in survey methodology that they use a lot of times for like drug use or other kind of risky, unsociably acceptable behavior. One of which is to use what's called a list experiment. So you give people a list of, say, possible reasons or possible things that they might do."
+    },
+    {
+      "start": 3289.824,
+      "end": 3317.04,
+      "text": "then you ask them, like, how many of those are true for you? And you can do this sort of statistical comparison to figure out basically what percentage of people are saying, no, I don't install it because I don't want the notification. We've thought a little bit about that. I think it's actually like a great follow up because, of course, even in, you know, computer based surveys have less of the social acceptability than like a face to face conversation or interview, but they still have some. And so that's kind of the best way of eliciting that."
+    },
+    {
+      "start": 3317.04,
+      "end": 3342.704,
+      "text": "To your question, I think, too, one of the things we've found when we do sort of these open answer anonymous surveys that comes up is also that privacy gets mixed in with authoritarianism. So it's not so much like the privacy of my data, but, oh, the government is getting involved in my business. And despite the fact that, you know, they're Google or Apple based apps."
+    },
+    {
+      "start": 3342.704,
+      "end": 3372.4,
+      "text": "I think the way that the conversation has sort of gone and the partnership with public health agencies, while useful, also has created this sense of like government sponsorship. And that seems to have raised kind of a different set of concerns for a specific set of people who maybe don't otherwise have technology privacy worries necessarily. So I think, you know, there's both this I don't want to know and it's because it's the government specifically. Good."
+    },
+    {
+      "start": 3372.4,
+      "end": 3401.008,
+      "text": "I think we have time for one last question if there's someone out there who would like to pose a question. There are a few on the chat that somebody might want to bring up. No? Okay. Going. Going. Gone. Thank you very much, Eliza. Thank you."
+    },
+    {
+      "start": 3401.008,
+      "end": 3430.688,
+      "text": "And I'll turn the floor over to Peter, who will give us the musical interlude for this evening. Thank you, Jim. And also thank you, Eliza. Let me briefly share this for the final thing. Yeah. Okay. Yeah. Well, to provide a smooth transition to the remainder of your day and to make a pretty bad joke, to follow up on the Corona discussions."
+    },
+    {
+      "start": 3430.688,
+      "end": 3456.272,
+      "text": "For the final notes, I'll play a little bit of Fever by Peggy Lee. As a reminder, our next event will take place on November 3rd, and we'll deal with ethics and AI, how AI is reshaping our world. Panelists will be Deborah Johnson, Giulielmo Tamburini, and Yi Zheng, and the moderator will be Viola Scaffronati. So see you there. Thank you for joining. Goodbye, and enjoy, Peggy Lee."
+    },
+    {
+      "start": 3472.88,
+      "end": 3497.136,
+      "text": "I love you. Never know how much I care when you put your arms around me. I get a fever that's so hard to bear. You give me fever when you kiss me. Fever when you hold me tight. Fever in the morning. Fever."
+    },
+    {
+      "start": 3501.488,
+      "end": 3504.368,
+      "text": "the data moonlight"
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,701 @@
+{
+  "video_id": "wK4uPUfJbJo",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome, welcome everybody. When writing down and looking, I thought that it's already our 25th lecture in our lecture series. So we have already have even in these few years, we have a long history already. And on this special occasion, I am happy to welcome an outstanding speaker, Melanie Mitchell. She's coming from the Santa Fe Institute. And I am happy, Melanie, that you are with us today. The talk will be about AI and why it's harder than we think. Or in other words, and I would phrase this, do not believe everything you hear or everything you are promised. The moderation will be by Alison Stanger, who will then introduce Melanie in more detail. Just some notes on the procedure. We have a talk now for 30 minutes after this introduction by Alison, then 30 minutes Q&A. And after that, we have again. And why it's harder than we think. Somebody has not muted his mic. Everything you hear or everything you. The moderation will be back. Can you. Okay. And then we have, after this Q&A, we have again at the end a piece of music selected by Peter Knies. I'm happy to introduce as moderator Alison Stanger. Alison, you are with us since the early beginning. You have been at the first workshop on digital humanism, so you are a co-founding member of our initiative and also a writer of our manifesto. She's a Russell Lang professor of international politics and economics. You don't need to introduce me. You don't need to introduce me. A little bit, because some don't know you. Some don't know you. I was impressed by also your other affiliation, which are with Stanford University, with the Santa Fe Institute. And you are also with the Hannah Arendt Humanities Network. And you have also two well-known books, The Whistleblowers. and honesty in America from Washington to Trump and one a little bit older, one nation under contract. And you are not coming, she's not coming from computer science, but from political science. And Alison, thanks for being with us in our initiatives and also for moderating today's discussion. The floor is yours. Thank you. Thank you. Thank you. Well, that's very kind of you, Hannes. It's been a big pleasure to be involved with this initiative and all of my European colleagues. So it's the pleasure is all mine. It's now my great honor and pleasure to introduce my friend and colleague, Melanie Mitchell. Melanie is the Davis Professor of Complexity at the Santa Fe Institute. You've received her bio in the email introduction, so I'm not going to belabor her many accomplishments here. I'll just cite one new one. As of yesterday, her Phi Beta Kappa science award winning book, Complexity, a guided tour was just released in audio version yesterday. So that's great. More people have access to it. I would like to share just one thing that's not in her bio, but is in her most recent book, which I find beautiful. Melanie's life and career path were shaped by a book. The book was Douglas Hofstadter's Gödel, Escher, Bach. And she read it and knew thinking like that was something she wanted to do. So she tracked down Hofstadter, got his advice, and wound up studying with him at the University of Michigan. And the rest, as they say, is history. Given that story, I find there's something borderline poetic in her addressing our digital humanism Vienna-based group today. since Gerda Lescher-Bach are all Europeans. Her talk is titled, Why AI is Harder Than We Think. I'll moderate to ask a question. You can raise your hand or put your question in the chat, and I'll do my very best to make sure that we touch on all the topics that you raise. So, ladies and gentlemen, Melanie Mitchell. Thanks, Alison. It's great to be here. Thank you so much for inviting me. I'm going to be... Speaking on why AI is harder than we think. So hopefully you can see my screen. So I'm sure all of you have heard much about AI over the past decade or so, because it's become such a popular topic for the media and all other sort of science. humanities, et cetera, have been thinking about sort of the impact of AI on our lives. This plot that I'm showing here is really sort of the beginning of the modern era of AI. It's a plot of the performance or error rate. So lower is better on the so-called ImageNet Object Recognition Challenge, which was a major computer vision contest that happened every year. starting in 2010, to test the sort of the state of the art in computer vision. And you can see the human level line here. This is, again, lower is better because this is how many errors are made on this very challenging object recognition set. And starting in 2010, 12 was the first so-called deep neural network. And the decrease in error rate was dramatic. And over the years since then, you can see the best program, the winning program of this competition, had lower and lower error rate until it's below the level of human performance on this data set. And this is the era of deep neural networks, which has now revolutionized vision, computer vision, computer language processing, and many other areas. So what we get, though, is the media now starts to report on this and says things like computers are now better than humans at recognizing and sorting images, which actually is not true. We saw that These machines were better than humans on this particular data set, which had many kind of idiosyncratic qualities. But the general task of recognizing and sorting images is still humans are much better than machines. But we also get headlines like Google's AI can now caption images almost as well as humans. Also not true. Promises that I'm sure you've seen like 10 million self-driving cars will be on the road by 2020. Well, this did not happen. And in fact, none of these things have yet happened. Here's a quote from an AI expert. about this, perhaps expectations are too high and this will eventually result in disaster. Suppose that five years from now funding collapses miserably as autonomous vehicles fail to roll. Every startup company fails and there's a big backlash so you can't get money for anything connected with AI. Everybody hurriedly changes the names of their research projects to something else. This condition is called the AI winter. So this was actually a quote from Drew McDermott from Yale in 1984, when the same kinds of things were happening. AI systems were doing very well on specific data sets that had been created by humans. And the media and also the AI research community had been, in a sense, hyping. these results to something that actually AI had not yet accomplished. And the disappointment was very, when these promises did not come about, did in fact cause an AI winter when funding was scarce. I graduated from my PhD in 1990. in which was basically the second year of an AI winter. And I was, in fact, advised not to use the term artificial intelligence on my job applications. So we've seen these kinds of cycles since the very beginning of the field where we have these very high expectations and optimism that then doesn't come about. It's disappointing and funding dries up and then the cycle repeats. So, you know, right now there's some people who are predicting an AI winter for us quite soon. So this began really at the beginning of the field here in 1961. We have. Claude Shannon, the founder of information theory and an AI pioneer, predicting that within 10 or 15 years, we'll see something like the robots of science fiction fame. And a few years later, Herbert Simon, Nobel Prize winner and another AI founder, predicted that within 20 years of 1965, we'd see machines doing any work that a man can do. sexist language of 1965. A few years later, Marvin Minsky, founder of the MIT AI Lab, predicted that within a generation, 20, 25 years perhaps, the problem of creating AI would be substantially solved. So why did none of these predictions come true? Well, many years later, John McCarthy, another pioneer of the field, said the problem was that AI was harder than we thought. Indeed. But I would argue that it's still harder than we think. We still get very optimistic predictions coming about. Shane Legge, co-founder of DeepMind, which was acquired by Google, predicted that we'd see human-level AI passed in the mid-2020s. Mark Zuckerberg, CEO of Facebook, now called Meta, said that in 2015, that for the next five to 10 years, he was hoping that Facebook's AI would get better at all of the human abilities of vision, hearing, et cetera, including general cognition. And Stuart Russell, who I just learned that you had heard from in your lecture series, in his recent book, asked when will super intelligent AI arrive? And his prediction was within the lifetime of his children. And he admitted that this was more conservative than many other AI researchers. So we're still getting these kinds of predictions. But I would argue that AI is still harder than we think. Some of the problems that we are beginning to see in state-of-the-art AI include what's called shortcut learning. I'll talk about that in a minute. adversarial vulnerability, and lack of common sense. So I would say these are some of the main limitations of what we're seeing. Let me tell you a little bit about them. So shortcut learning, you know, we've heard a lot about machine learning in which machines like deep neural networks learn from many, many examples that are labeled by humans. This is an example from my own group. One of my graduate students trained a deep neural network to determine if a photograph contained an animal or not. It was trained on a set of nature photos and ended up doing very well on this task. But when he tried to in a sense, look under the hood of what the deep neural network had actually learned, he found that the network was often focusing on the background, not on the animal, to make his decision. And what it had actually learned is that if the background is blurry, There's probably an animal in the photo because, of course, the photographer focuses on the animal in the foreground, whereas if there's no animal, the background is clear. And this is what's called a shortcut. It's seen very often in machine learning where the system learns some feature that's correlated with the correct answer, but is not the feature that the humans had. hoped that the machine would learn or intended for the machine to learn. So this has been shown many times in this paper from 2018. A group showed that objects like school bus that had been recognized correctly by a deep neural network with here 100% confidence, if they were photoshopped into weird poses, Now the system was very confident that this is a garbage truck, a punching bag, a snowplow. And so somehow the machine has clearly learned features that are very different from what humans perceive in these images. And you can see this also with, for instance, fire trucks that. are photoshopped into slightly different poses now confidently recognized as school bus or fireboat or bobsled. And the question is, what exactly has the machine learned to sort of correct, be correct in this instance, but so wrong in all these other instances? So this is a, you know, kind of an amusing example, except this can have real world consequences. For instance, it's known that Tesla cars that are running the self-driving software have many times crashed into stopped fire trucks in weird, unexpected poses on the highway. So this kind of thing, really, if deployed in the real world, these systems can make catastrophic errors. So this notion of shortcut learning has been identified in many domains of machine learning, such as medical diagnosis, self-driving, other aspects of computer vision. And some researchers have made the analogy to the so-called Clever Hans phenomenon. Clever Hans, you may know, was a... horse that supposedly at the turn of the 19th century was able to do mathematics problems. You could give it some arithmetic problem and it would tap out its hoofs to give the correct answer. But it was found that it was actually not doing arithmetic, but it was responding to subtle unconscious cues from its trainer. from the body language of its trainer. So this is a great analogy for some of what's happening in machine learning is that the machines are not actually learning what we want them to learn, but they're responding to subtle features that we're perhaps unaware of in the data. A more nefarious problem is what's called adversarial vulnerability. So this was uncovered in a 2013 paper called Intriguing Properties of Neural Networks that showed that if you take a photograph like a school bus that's correctly identified by a network, you can add some image noise. You know, you just add the pixels. This is very highly magnified. So the result actually the noise is actually quite subtle, but the result looks exactly the same to us. But now the neural network. very confidently classifies this as an ostrich in all cases here. And what's happened is that the researchers have engineered this subtle noise or perturbation to the image that allows, that causes the network to identify the new image, which looks the same to us, but as a category of the adversary's choice. OK, so this has been shown, for example, in the real world, you can design glasses frames that look like something like this that are then 3D printed with this pattern. And those glasses frames cause a facial recognition system to mistake this fellow, who is one of the researchers in this paper, for the actress Mila Jovovich. So these are called adversarial attacks. on machine learning systems. They go as far as, for instance, a group of security researchers showing that you could put stickers in a certain configuration on a stop sign to cause a vision system in an autonomous car to recognize this as a speed limit 80 sign. In many distances from the stop sign and angles, you can see In most cases, the top class that is recognized by the vision system is speed limit 80. So these systems are fragile. They're brittle. They are often based on their learning is often based on features that are not the features that we humans would use to recognize these objects. And so the the final problem is. The lack of common sense. So. You may or may not know that the biggest accident that self-driving cars are involved in is rear ending. That means that they these self-driving cars are driving along and suddenly they slam on the brakes and the human driving behind them crashes into them. And the reason is, you know, the humans at fault, of course, but. The car has done something completely unexpected because it's perceiving obstacles where no human would perceive an obstacle. It's perceiving that it should stop for something like maybe a floating plastic bag that no human would stop for. Or here in New Mexico, we see tumbleweeds like this in the road. drivers know that they shouldn't stop for this kind of thing that a tumbleweed is going to just fall apart if you hit it it's not going to hurt your car but a self-driving car would have no way of knowing that you know we know that birds in the road are probably going to fly away before we crash into them but we probably shouldn't drive over a pile of glass and this Snowman is not going to dart across the road in front of our car. So we humans have this ability to use the vast knowledge we have about the world to predict what's going to happen in most situations, whereas self-driving cars don't. So they end up doing things that are very unexpected, like slamming on the brakes. AI researchers have called common sense the dark matter of AI, meaning that it's the thing that pervades our intelligence, but we don't really understand it and we don't know how to give it to machines. There's been a lot of research and funding recently into how to teach machines common sense. Paul Allen, who was the co-founder of Microsoft with Bill Gates, started his own institute in Seattle to teach machines common sense. And the US Department of Defense has put a lot of funding into what they call machine common sense. And interestingly, one of their grand challenge problems is to give a machine the common sense of an 18-month-old baby. So it's a paradox of AI that we have machines that can do all kinds of amazing things that require, we consider a lot of human intelligence, like beating the best humans at Go and chess, or translating between languages, or diagnosing diseases, and yet they... It's still a grand challenge to give machines the common sense of a baby. So that's a paradox of AI. So recently I wrote a paper called Why AI is Harder Than We Think that got a lot of feedback, both positive and negative. And what it did is it focused on four fallacies, I think, that affect the thinking of both the general public and also AI researchers themselves. So the first fallacy is that narrow AI is on a continuum with general AI, where general AI means something like human-like intelligence. So narrow AI is when you get systems that can do a particular narrow task, like object recognition or playing a game like chess or Go and so on. And the idea is that Progress in a narrow area is seen as progress on this so-called continuum to general AI. You know, we saw headlines like IBM's Watson program, which you might remember playing this game Jeopardy on television. IBM said that it represented a first step into cognitive systems, which is their term for general AI. And Alpha Zero, the program that learned to play chess and go and other games, was called the first step in creating real AI. GPT-2, a text generation program, was called a step towards general intelligence. And so this notion of the first step is this idea that we're sort of moving along this continuum from these narrow accomplishments to a more general. But the philosopher Hubert Dreyfus from Berkeley said a long time ago that this first step fallacy is wrong. He in fact called it the first step fallacy, which this idea of this continuum, at the end of which is AI or general intelligence. And he said there's in fact a discontinuity in the assumed continuum of steady progress. The unexpected obstacle is the common sense knowledge problem. And as you see, as you saw in my previous slides, this is this so-called dark matter of AI is still the obstacle that we don't know how to get over. His brother, Stuart Dreyfus, made an analogy saying that. This first step fallacy is like claiming that the first monkey that climbed a tree was making progress towards landing on the moon. The second fallacy is that easy things are easy and hard things are hard. So by that, I mean that things that we consider easy for us, we assume will be easy for machines and vice versa. So Herbert Simon, that AI pioneer I mentioned earlier. Said back in the 80s that everything of interest in cognition happens above the 100 millisecond level, the time it takes to recognize your mother. So he's what he's saying is that sort of this unconscious perception that happens instantaneously to us. Is not of interest. It's not going to be the hard thing in capturing intelligence. And more recently, Andrew Ng, another AI pioneer, especially in deep learning, said something similar. He said, if a typical person can do a mental task with less than one second of thought, we can probably automate it using AI either now or in the near future. So that's that same idea. If we can do something really fast, it's not going to be so hard. More subtly, Demis Hassibis, the co-founder of DeepMind. who created the AlphaGo program, called Go one of the most challenging of domains. But the question is, challenging for whom? For humans? Certainly, yes. But for machines? Turns out that games, simpler games, like, for instance, the game of charades, which you could play with your six-year-old, is much more challenging for AI systems than it is than Go, because... It involves things like language and human communication and theory of mind. So it's a simple game for humans, but one that is still far beyond any AI system. And this has often been called Moravec's paradox from Hans Moravec, an AI researcher who noted that it's comparatively easy to make computers exhibit adult level. performance on intelligence tests or plain checkers, but it's difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility. And I'll add common sense. Marvin Minsky, who made optimistic predictions in the 60s, said later that the real problem is that in general, we're least aware of what our minds do best. So we underestimate the complexity of intelligence. And we assume that things that are easy for us are going to be easy for machines. The third fallacy is what I call the lure of wishful mnemonics. So I got this term wishful mnemonics from Drew McDermott, that same AI researcher I quoted earlier. Way back in 1976, he wrote a paper basically criticizing his colleagues for doing things like calling their programs understand and assuming them that they understand. And he said, let's call these programs things like G0034 and see if we still think it understands. And he said many, he called this a wishful mnemonic and said there are many other examples. So this was many years ago, but I think there's still many modern wishful mnemonics. For example, IBM. told us that Watson can read all of the health care texts in the world in seconds. Using this word read, which in its human form actually implies understanding what we read. But in Watson's case, the Watson program, it didn't understand in any human-like sense at all. And here we have, you know, understand. This is another. comment. There's another kind of headline from IBM. And saying things like AlphaGo, the Go playing program, that it has a goal. Its goal is to beat the best human players, not just mimic them. So using this word goal in a very human-like sense where this program has nothing like a goal at all. We also call our benchmark data sets things like reading comprehension, object recognition, common sense understanding, language understanding. And when the machines actually do well on these data sets, often better than humans, then the message is that they've outperformed humans at these tasks, these underlying tasks, which they have not at all because the data sets don't actually test for the general task. We call our methods deep learning, even though what they do is very different from human learning. And neural networks, even though their structure is very different from the human brain. So these are all examples of modern wishful mnemonics. Let me skip the next things because I'm running out of time a little bit. But going to the last fallacy, intelligence is all in the brain. So this is something that's been assumed. in the AI community for a long time, that if we can just capture the computational capacity of the brain, we can then figure out how to create intelligence. So here's a quote from a recent report that says that it's more likely than not than 10 to the 15 floating point operations per second is enough to perform tasks as well as the human brain, given the right software. which might be hard to create. So assuming that if once we capture this computational sort of equivalence with the brain, we can then create AI. And Jeffrey Hinton, another deep learning pioneer, said a similar thing to understand documents at a human level. We're going to need human level resources, by which he means. The number of connections in our neural networks have to match the number of connections in the brain. But he says we're a few orders of magnitude off, but I'm sure the hardware people will fix that. And, you know, the problem is that it's known to many cognitive scientists that the brain is not the only thing supporting intelligence, that there's our intelligence is a function not only of our brains, but also our bodies. our social environments and our culture. So assuming that we can create this more sort of brain-like disembodied intelligence may actually not be a way to capture the complexity of human intelligence. So let me end by just summarizing the open questions I think are spurred by these fallacies. First, if narrow AI is not on a continuum, with general AI, how can we actually assess progress in our field? Second, if easy things for us are not easy for machines and vice versa, how can we assess the difficulty of a domain for AI? How do we talk to ourselves about what machines can and cannot do without fooling ourselves with our wishful mnemonics? And if intelligence is not all in the brain, how embodied Or socially, culturally embedded does intelligence need to be? So I don't have the answers to these questions. I think what we really need to create intelligence is a better understanding of what intelligence is and what it is not. And I think those are the big questions for making actual progress in AI. So I'll stop there. I talk a lot more about this in my recent book and happy to answer any questions. Yeah, this is great. The floor is now open and I see a hand from Moshe Vardy. So please, Moshe, the floor is yours. I have a question, but I'm the moderator, so I should shut up if there are other questions. You're muted, Moshe. Can you ask questions? I thought the moderator was the first right of question. No, no, no. That might be some of your concept, but I actually think the moderator should hold back. Thank you. Thank you for a very intriguing talk. I want to follow up in particular about autonomous vehicles, because I may be one of the people who really drank the Kool-Aid. I mean, the point is the social cost of the automobile is tremendous. We just learned to accept that, OK, a million people will be killed every year and this is the cost of doing business. And I saw that AVs in the middle of the previous decade, I thought AVs are going to save hundreds of thousands of lives per year. Is it going to happen in our lifetime in your estimates? That's a great question. I mean, it's hard to know. And the meaning of autonomous vehicle or self-driving car has changed. It seems like self-driving car should mean like you can just get in the car wherever you are, whatever the weather is, whenever a human could drive and drive anywhere. But that seems to be quite hard, harder than people thought. And so there's sort of a lot of things that are called. self-driving that are more constrained, you know, that can only drive in certain weathers, can only drive in certain parts of the city that are specially outfitted with the right sensors and the right detailed maps and so on. So this whole notion of what self-driving is, I think will adapt. And if it does happen in our lifetime, it will be because of both the self-driving technology and also the infrastructure. that we will provide for these self-driving cars. So I think it's a big question. And, you know, the hardest thing, if every car was self-driving, it would probably be a lot easier. But the hard problem is when you have interactions with autonomous vehicles and humans, either in other cars or pedestrians, because they, you know, they're using a different kind of way of perceiving and understanding the world. So, you know, it's hard to say. In fact, I would say what we learned from COVID is we have wonderful models for viruses, but predicting human behavior has been the killer seal of all the approaches to COVID, predicting human behavior. And I think the same would be true for AVs. It's the humans are the difficult element. Yeah, that's absolutely right. Sally, Sally Wyatt, please. The floor is yours. Thank you very much. Thank you, Melanie. That was a wonderful talk and very thought provoking. And there are lots of things that I'll kind of follow up from later. I suppose I have two questions. One is, first of all, about the notion of common sense, which I think is actually also really rather complicated and complex idea. And so, you know, things that we might have, you know, again, common sense for whom and when, you know, things we might have thought of as common sense 100 years ago, say about appropriate roles for women. We might not think of common sense now. So I was wondering if you could say a little bit more about what you think about common sense or some of the kind of people that you cited. And so that's one thing. The second thing is about. I mean, you talked a bit about, you know, the importance of kind of embodied idea in terms of knowledge and intelligence and common sense as well, probably, whether it's not all in the brain, you know, to get away from the brain in the back kind of idea of AI. But. And it came up a little bit in some of your examples, particularly around autonomous vehicles, about the material. circumstances that we need in order to make AI possible. So autonomous vehicles and robots are only going to work if we do an enormous kind of adjustment to the physical environment so that the little robots don't fall off cliffs or run into other people or wander off somewhere. So I was wondering maybe if you could, if that's another fallacy that we could perhaps think about. Some of the stuff I read around AI just seems to assume that we live in this kind of perfect material world that's been made for AI, whereas actually we live in a very different material world. Yeah, those are great questions. So common sense is, you know, it's one of those umbrella terms that doesn't, we don't know exactly what we mean by it and it means different things in different contexts. Like you might think that you're a teenager. It doesn't have very much common sense. But the kind of common sense that people are thinking about with respect to AI systems now is more of like the baby kind, where you know things like objects persist even when they disappear behind some screen or something, and that you know that the world has causation in it. Things cause other things, and there's... living things and non-living things. There's things with agency and not, you know, those kind of what psychologists have called core knowledge that perhaps we're even born with, you know. So the common sense that we think of is like, oh, people lack common sense. It's a different level than what we're talking about with respect to machines, which really have none at all. But it's something that needs to be clearly refined. to actually be useful in thinking about AI. The second comment's very perceptive. I think all technologies that we use have had a degree of us adapting to them as much as them adapting to us. So think about our computers, how much we've adapted to, had to adapt in order to successfully use computers at all. And we learn about them as much as they learn about us. So I think you're right that all of these technologies are going to involve our human world changing in response to the needs of AI systems, as well as the reverse. And I don't think people are very aware of that. You know, they've already changed quite a bit and they'll just change more. So I think those were the two. issues you brought up, and they're both very important. Thank you. George. George, the floor is yours. Thank you. Thank you. Thank you, Melanie. Wonderful talk. Excellent talk. There's an underlying message which could be deemed optimistic if one takes the view that the difficulty of AI slows down some applications and thus it gives more time to, let's say, poor humans to prepare for it or do something to prevent some of its more malign uses. Can one extend this optimistic message to the use of AI for military purposes? Can one be optimistic about that? I'm not sure. I think when people think about AI and the dangers, they often think, oh, we're going to get these kind of super intelligent. sentient systems that are going to enslave us or whatever, like we have in movies. But really, the real danger now is people using these systems, assuming they're more capable than they actually are. And that applies to the military as well. There's a lot of talk about autonomous weapons and how those might be beneficial and save lives and so on. where the decision making is such that there can't be a human in the loop. But that's assuming that the systems we have are ready to be autonomous in any way, which I think they're not. So I think that there's not enough focus on looking at the limitations of our current systems. rather than worrying about sort of the super intelligence of our future systems. And I do worry about military applications because I don't think people in the military really appreciate these limitations very well. Great. Renee, would you like to ask your question? Yes. Thank you. I really liked your talk. I have more or less like a comment when you say that intelligence is not all in the brain. I think bacteria, to my common sense, very smart, very intelligent. They have memory. With the discovery of the CRISPR-Cas system, they realized what the molecular mechanism of memory is in bacteria. Or they can make altruistic decisions to commit suicide to save the colony. So I think we really think that chemistry, biochemistry, physics is part of the intelligence. and it's not connected to a brain. So I think one should think, for example, now I think that I'm a molecular biologist. I did a lot of genomics. And when you have the data, the data analysis, you cannot ask the computer, what is the sense of this data? You have to look at the data really clearly, see if it's telling you something, and then you have to formulate a really intelligent, precise question. Then the computer will help you answer the question. And for example, working with the bacterium E. coli, the genome is quite small. So I can look at it step by step, by foot, by foot. But in the human genome, it was just too large. I couldn't do it anymore. And then I saw the difference because you see certain patterns that you have to think, what do these patterns mean? And this is you have to do by yourself. You cannot ask the computer, what does the data mean? So I think this is a big difference with what I understand, what is intelligence to what computer scientists think intelligence is. I think, I mean, I'm not in that field, but. Yeah, no, I think you're right. There's many meanings of intelligence and people use it in different ways and have talked about not only the intelligence of, for instance, a bacterium or. Perhaps even any cell, even in a multicellular organism, could be seen as having some intelligence, making decisions and so on. But also sort of intelligence of, say, groups like an ant colony or a social network. You know, there's all kinds of different intelligence. And I you know, we use this again umbrella term to mean. That that has needs needs to be refined in many ways. But, you know, it just shows that we we don't have a great sense of what we mean by this term intelligence in general. Yeah. Signal recognition is also the communication between cell to cell. It's a chemical point. Yeah, exactly. Thank you, Olivia. Thank you, Melanie. I appreciated every word that you said. It was wonderful. Thank you. I think that the model of all wishful mnemonics is learning itself. I think that how learning is presented now lures people to think that it has to do with human learning. And it is an unfortunate word, I think, and deep learning even worse because make people think even at some deeper cognitive process. This is one comment. And the second thing I would like to hear your opinion about is the fact that many people in AI now are busy working on trying to give transparency to black boxes, to try to explain an opaque behavior of systems, that in a way is a paradox for a scientific discipline that is inspired by human cognition. Why is not the accent in trying to explain human cognition instead? So a comment of yours on this, please. Yeah, I mean, I think some AI researchers are interested in explaining human cognition. I mean, many people have many different kind of research goals in this field. Some people are more engineering oriented. They just want to get something to work. Some people are interested in intelligence more generally, like in Renee's question. And some people want to specifically understand human. But so so AI itself is not sort of a unified field as to the goals. I think I agree with the comment that learning is a wishful mnemonic in the field, because, you know, typically when we learn something, the whole point is that we have learned it in a way that we can apply it in multiple ways, not just in the field we learned it in, which is totally not true for AI systems. Alison, you're muted. Sorry. Giuseppe, the floor is yours. And you're muted, too. Yeah. Oh, yes. Thank you. Thank you for a really intriguing talk. I'm looking for paradoxes here. So you rightly say that you cannot think that machines do actually read or understand or have common sense. But in the future, they might be evolved and get better to this. So will we ever be able to really decide whether they are actually be able to read or understand? Because we don't know what reading and understand means. Yeah. Yeah, that is a very tricky question. How do we know if they actually can do some aspect of intelligence? And we've all heard of the Turing test where Turing said, well, how do we know if a machine is thinking? Well, that word doesn't even make sense unless we have some behavioral correlate that we can talk about. And he proposed his test, which involved conversation. But most people in AI now think the Turing test isn't very useful. useful because it's so easy to fool people. So people are so prone to anthropomorphizing machines and other sort of non-sentient beings. But so this question of how do we know if something's actually reading or is actually intelligent or is actually understanding is really difficult. And the current methods that people use, which are, say, these benchmark data sets that they test their machines on have shown to allow this kind of shortcuts. So it's a big problem in the field. And I think there's a lot of people thinking like, what is the proper way to evaluate these systems? And I don't think anybody has a great answer, you know, except maybe use the same kinds of assessments that we try and use on humans, which doesn't always work very well. Okay, we're starting to run out of time. So what I think I'm going to do is ask Maria and Enrico. Is this okay, Melanie, if we bundle some questions? Yeah, yeah. Okay, so Enrico and Maria, or Maria can go first. Ask your questions, Melanie will answer, and then I'm going to summarize some excellent questions from the chat, and you can have a final response. Very, very interesting. Definitely, I agree that common sense. is very, very important. However, my question is, what kind of human intelligence are we comparing to AI intelligence? Because experts differ on how many types of human intelligence there are from emotional to music to kinesthetic, et cetera, et cetera. So what are we really comparing to when we talk about AI and general AI, et cetera? Yeah. I think different people are comparing different things. You know, there's this, there's this view that, that in the field that I think some, some researchers have that, that there's, you can kind of have this sort of pure rational intelligence that has to do with ability to make, to reason and make decisions and is separate from any social, or cultural, or other sort of soft, emotional intelligence. And that's, I think, a fallacy in itself, that that intelligence can be separated in those ways, that there is some kind of, you know, separate, pure intelligence that we can model, because I don't believe that. But it's controversial, you know. Stuart Kaufman would... I mean, sorry, Stuart Russell would disagree with me there. And we actually had a debate about this kind of topic. So I think we still don't have the kind of science of intelligence that we need to say how modular or entangled these different kinds of intelligences are. And also these days, especially when so many things are done in teams. Are we going to have team intelligence? Yeah, I mean, there's a whole area. I mean, all of us probably had been in the situation where we remember that part, we remember that part, but together we put it together and are able to solve a problem. Where are we when it comes to group AI? Yeah, it's something that people are thinking about, but don't really know how to do very well. Yeah. Very quickly, Enrico. Because that name always reminds me of geniuses. Okay, so thanks. First of all, sorry because I arrived late and I don't know if my question was already covered. My question covers the issue of the different kinds of intelligence. I think a fundamental distinction is between those entities having a self-awareness of their existence and their intelligence. and like human beings or mammals and those entities who do not have this self-awareness, like, for example, the bacteria. And the entities that do not have self-awareness cannot reason and reflect on their own intelligence and on their own role. And this is, to me, a fundamental distinction. So I would like to know which is your viewpoint concerning the artificial consciousness that should be attached to a real artificial intelligence. And Alison wants me to answer this in 30 seconds or less. There's three more questions. Yeah, no, that's like a big can of worms. And what self-awareness is, and Rene might disagree that bacteria don't have self-awareness, I don't know. That's a very tricky and a whole other... question that I could go on and on about. But, you know, even just figuring out which living systems have, quote unquote, self-awareness is absolutely hard to say and what it means. So I think just saying that that's a big area that I think no one really understands very well. Okay. And just three quick questions. I think one has been answered. The first concerns your views on ethics. And machines. The second would be some prominent counter arguments. I think you mentioned Stuart Russell and your debate there, but you might have something else to add. And the third, I think, is really important. What advice would you have for early researchers? Wow. OK. Ethics. So ethics has become very prominent because it's. For many reasons. One is that we can see that current AI systems often incorporate biases, you know, they perform better on certain demographics, you know, computer vision systems perform better on facial recognition for like lighter skinned individuals for many reasons. And We've seen that algorithms that are being used to make decisions can also incorporate the biases that are sort of latent in their data. So ethics is a really important area in AI, especially as it's being deployed more broadly so that people are actually suffering the biases that are embedded in these systems. And, you know, it turns out to be much. harder than we think to make unbiased and ethical AI systems. The second question was about like counter arguments. Well, there's been a lot of people who think that we should really be worried about the existential threat of AI systems that aren't aligned with our values. Stuart Russell. is one prominent person who's written quite a bit about this. But then the question is like, what are our values? And how do we get a machine that doesn't have any common sense or any real concepts to understand what a value is? That's a very big question. I mean, there's another entire talk I could give about that. But I'll just go to the third question. because we were running out of time, people just beginning their career. Oh, there's so many unanswered questions. There's so many great opportunities, I think, now in the field. So I would urge people. you know, who want to get into AI. There's so many different ways. There's so many, you know, even if you're not a technical person to get into these ideas of ethical and socially beneficial applications, because the technical people don't have all the answers. They, you know, the engineers at Google don't understand social systems in the way that sociologists and other humanists might understand them. So I think we need to get a lot more. diverse voices at the table and thinking about how AI interacts with society. And as somebody said earlier, the hardest problem is not the technology, it's the humans. And I think that's really true. And it's something that AI people are just beginning to really grasp. The problem is always the humans. Please just join me in giving a big round of virtual applause for Melanie. That was a tour de force. And thank you so much for being with us here today. Thank you. I really enjoyed it. Thanks for all the great questions. And, you know, maybe somebody could email me the chat because I didn't get a chance to read it. Absolutely. Absolutely. Yeah. I think Peter now has the floor. Thank you, Melanie. And I think you will also give us your slides. So we can put it on the website so everybody can have access to it. Maybe one wishful mnemonic is also the term of artificial intelligence. This is also one thing we should reflect on that. Thanks a lot. Thank you. Thanks, Alison. Then I will take over now for our final notes. Let me share the screen here. Make sure we have sound. All right, so. Right, I hope we can see it now. So, yeah, the topic why AI is harder than we think, what music could we play? Well, that immediately sparked the idea to play Harder, Badder, Faster, Stronger by Daft Punk. But even better than that, so Stephanie Vogelwich once again saved the day and had the brilliant idea to pick a version that was composed. uh by ai so this version we're going to play actually starts out as the original but then as soon as the lyrics set in the first nine seconds are used as an input to open ai jukebox which then goes on to generate the rest of the track You'll hear when that happens, no worries. So OpenAI Jukebox is a generative neural network, and more precisely, it's a variational autoencoder, and it's trained on 1.2 million songs in raw audio. So it's basically presented all this content and uses a transform architecture that can be conditioned on artist, genre, and lyrics. This is kind of where it gets its additional cues on what to do and where to go. And when you provide these cues on top of an audio input, It allows them to generate new content along these lines. And, well, we're going to hear that example. Before we start that, let me just point out the next event, which is a big one, next week already. So this is going to be the workshop in Vienna next week. So for those who are around and want to participate, please do not forget to register by sending us an email. And as it looks right now, we will probably be able to accommodate you there. So please, if you want to participate, tell us and we'll find space for you there. So, all right, we're going to play this now. So thanks again to Melanie and Alison. And we're going to end with a musical demonstration of why AI is harder than we think and music too. Enjoy and see you next week.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.808,
+      "text": "Welcome, welcome everybody. When writing down and looking, I thought that it's already our 25th lecture in our lecture series. So we have already have even in these few years, we have a long history already. And on this special occasion, I am happy to welcome an outstanding speaker, Melanie Mitchell. She's coming from the Santa Fe Institute. And I am happy, Melanie, that you are with us today."
+    },
+    {
+      "start": 30.0,
+      "end": 50.608,
+      "text": "The talk will be about AI and why it's harder than we think. Or in other words, and I would phrase this, do not believe everything you hear or everything you are promised. The moderation will be by Alison Stanger, who will then introduce Melanie in more detail."
+    },
+    {
+      "start": 50.608,
+      "end": 80.048,
+      "text": "Just some notes on the procedure. We have a talk now for 30 minutes after this introduction by Alison, then 30 minutes Q&A. And after that, we have again. And why it's harder than we think. Somebody has not muted his mic. Everything you hear or everything you. The moderation will be back. Can you."
+    },
+    {
+      "start": 80.048,
+      "end": 104.72,
+      "text": "Okay. And then we have, after this Q&A, we have again at the end a piece of music selected by Peter Knies. I'm happy to introduce as moderator Alison Stanger. Alison, you are with us since the early beginning. You have been at the first workshop on digital humanism, so you are a co-founding member of our initiative and also a writer of our manifesto."
+    },
+    {
+      "start": 104.784,
+      "end": 132.032,
+      "text": "She's a Russell Lang professor of international politics and economics. You don't need to introduce me. You don't need to introduce me. A little bit, because some don't know you. Some don't know you. I was impressed by also your other affiliation, which are with Stanford University, with the Santa Fe Institute. And you are also with the Hannah Arendt Humanities Network. And you have also two well-known books, The Whistleblowers."
+    },
+    {
+      "start": 132.032,
+      "end": 153.248,
+      "text": "and honesty in America from Washington to Trump and one a little bit older, one nation under contract. And you are not coming, she's not coming from computer science, but from political science. And Alison, thanks for being with us in our initiatives and also for moderating today's discussion. The floor is yours. Thank you."
+    },
+    {
+      "start": 153.248,
+      "end": 181.52,
+      "text": "Thank you. Thank you. Well, that's very kind of you, Hannes. It's been a big pleasure to be involved with this initiative and all of my European colleagues. So it's the pleasure is all mine. It's now my great honor and pleasure to introduce my friend and colleague, Melanie Mitchell. Melanie is the Davis Professor of Complexity at the Santa Fe Institute. You've received her bio in the email introduction, so I'm not going to belabor her many accomplishments here."
+    },
+    {
+      "start": 181.52,
+      "end": 209.616,
+      "text": "I'll just cite one new one. As of yesterday, her Phi Beta Kappa science award winning book, Complexity, a guided tour was just released in audio version yesterday. So that's great. More people have access to it. I would like to share just one thing that's not in her bio, but is in her most recent book, which I find beautiful. Melanie's life and career path were shaped by a book."
+    },
+    {
+      "start": 209.968,
+      "end": 239.088,
+      "text": "The book was Douglas Hofstadter's Gödel, Escher, Bach. And she read it and knew thinking like that was something she wanted to do. So she tracked down Hofstadter, got his advice, and wound up studying with him at the University of Michigan. And the rest, as they say, is history. Given that story, I find there's something borderline poetic in her addressing our digital humanism Vienna-based group today."
+    },
+    {
+      "start": 239.088,
+      "end": 268.72,
+      "text": "since Gerda Lescher-Bach are all Europeans. Her talk is titled, Why AI is Harder Than We Think. I'll moderate to ask a question. You can raise your hand or put your question in the chat, and I'll do my very best to make sure that we touch on all the topics that you raise. So, ladies and gentlemen, Melanie Mitchell. Thanks, Alison. It's great to be here. Thank you so much for inviting me. I'm going to be..."
+    },
+    {
+      "start": 269.424,
+      "end": 295.248,
+      "text": "Speaking on why AI is harder than we think. So hopefully you can see my screen. So I'm sure all of you have heard much about AI over the past decade or so, because it's become such a popular topic for the media and all other sort of science."
+    },
+    {
+      "start": 295.248,
+      "end": 322.752,
+      "text": "humanities, et cetera, have been thinking about sort of the impact of AI on our lives. This plot that I'm showing here is really sort of the beginning of the modern era of AI. It's a plot of the performance or error rate. So lower is better on the so-called ImageNet Object Recognition Challenge, which was a major computer vision contest that happened every year."
+    },
+    {
+      "start": 322.752,
+      "end": 350.672,
+      "text": "starting in 2010, to test the sort of the state of the art in computer vision. And you can see the human level line here. This is, again, lower is better because this is how many errors are made on this very challenging object recognition set. And starting in 2010,"
+    },
+    {
+      "start": 350.672,
+      "end": 380.032,
+      "text": "12 was the first so-called deep neural network. And the decrease in error rate was dramatic. And over the years since then, you can see the best program, the winning program of this competition, had lower and lower error rate until it's below the level of human performance on this data set. And this is the era of deep neural networks, which has now revolutionized"
+    },
+    {
+      "start": 380.032,
+      "end": 405.008,
+      "text": "vision, computer vision, computer language processing, and many other areas. So what we get, though, is the media now starts to report on this and says things like computers are now better than humans at recognizing and sorting images, which actually is not true. We saw that"
+    },
+    {
+      "start": 405.584,
+      "end": 431.184,
+      "text": "These machines were better than humans on this particular data set, which had many kind of idiosyncratic qualities. But the general task of recognizing and sorting images is still humans are much better than machines. But we also get headlines like Google's AI can now caption images almost as well as humans. Also not true."
+    },
+    {
+      "start": 431.184,
+      "end": 448.896,
+      "text": "Promises that I'm sure you've seen like 10 million self-driving cars will be on the road by 2020. Well, this did not happen. And in fact, none of these things have yet happened. Here's a quote from an AI expert."
+    },
+    {
+      "start": 448.896,
+      "end": 474.416,
+      "text": "about this, perhaps expectations are too high and this will eventually result in disaster. Suppose that five years from now funding collapses miserably as autonomous vehicles fail to roll. Every startup company fails and there's a big backlash so you can't get money for anything connected with AI. Everybody hurriedly changes the names of their research projects to something else. This condition is called the AI winter."
+    },
+    {
+      "start": 474.576,
+      "end": 501.68,
+      "text": "So this was actually a quote from Drew McDermott from Yale in 1984, when the same kinds of things were happening. AI systems were doing very well on specific data sets that had been created by humans. And the media and also the AI research community had been, in a sense, hyping."
+    },
+    {
+      "start": 501.68,
+      "end": 524.384,
+      "text": "these results to something that actually AI had not yet accomplished. And the disappointment was very, when these promises did not come about, did in fact cause an AI winter when funding was scarce. I graduated from my PhD in 1990."
+    },
+    {
+      "start": 524.384,
+      "end": 551.872,
+      "text": "in which was basically the second year of an AI winter. And I was, in fact, advised not to use the term artificial intelligence on my job applications. So we've seen these kinds of cycles since the very beginning of the field where we have these very high expectations and optimism that then doesn't come about."
+    },
+    {
+      "start": 551.872,
+      "end": 571.296,
+      "text": "It's disappointing and funding dries up and then the cycle repeats. So, you know, right now there's some people who are predicting an AI winter for us quite soon. So this began really at the beginning of the field here in 1961. We have."
+    },
+    {
+      "start": 571.296,
+      "end": 599.648,
+      "text": "Claude Shannon, the founder of information theory and an AI pioneer, predicting that within 10 or 15 years, we'll see something like the robots of science fiction fame. And a few years later, Herbert Simon, Nobel Prize winner and another AI founder, predicted that within 20 years of 1965, we'd see machines doing any work that a man can do."
+    },
+    {
+      "start": 599.648,
+      "end": 628.704,
+      "text": "sexist language of 1965. A few years later, Marvin Minsky, founder of the MIT AI Lab, predicted that within a generation, 20, 25 years perhaps, the problem of creating AI would be substantially solved. So why did none of these predictions come true? Well, many years later, John McCarthy, another pioneer of the field, said the problem was that"
+    },
+    {
+      "start": 628.704,
+      "end": 655.152,
+      "text": "AI was harder than we thought. Indeed. But I would argue that it's still harder than we think. We still get very optimistic predictions coming about. Shane Legge, co-founder of DeepMind, which was acquired by Google, predicted that we'd see human-level AI passed in the mid-2020s. Mark Zuckerberg, CEO of Facebook, now called Meta,"
+    },
+    {
+      "start": 655.152,
+      "end": 683.776,
+      "text": "said that in 2015, that for the next five to 10 years, he was hoping that Facebook's AI would get better at all of the human abilities of vision, hearing, et cetera, including general cognition. And Stuart Russell, who I just learned that you had heard from in your lecture series, in his recent book, asked when will super intelligent AI arrive?"
+    },
+    {
+      "start": 683.776,
+      "end": 713.424,
+      "text": "And his prediction was within the lifetime of his children. And he admitted that this was more conservative than many other AI researchers. So we're still getting these kinds of predictions. But I would argue that AI is still harder than we think. Some of the problems that we are beginning to see in state-of-the-art AI include what's called shortcut learning. I'll talk about that in a minute."
+    },
+    {
+      "start": 713.712,
+      "end": 743.04,
+      "text": "adversarial vulnerability, and lack of common sense. So I would say these are some of the main limitations of what we're seeing. Let me tell you a little bit about them. So shortcut learning, you know, we've heard a lot about machine learning in which machines like deep neural networks learn from many, many examples that are labeled by humans."
+    },
+    {
+      "start": 743.04,
+      "end": 769.056,
+      "text": "This is an example from my own group. One of my graduate students trained a deep neural network to determine if a photograph contained an animal or not. It was trained on a set of nature photos and ended up doing very well on this task. But when he tried to"
+    },
+    {
+      "start": 769.056,
+      "end": 790.32,
+      "text": "in a sense, look under the hood of what the deep neural network had actually learned, he found that the network was often focusing on the background, not on the animal, to make his decision. And what it had actually learned is that if the background is blurry,"
+    },
+    {
+      "start": 790.672,
+      "end": 818.672,
+      "text": "There's probably an animal in the photo because, of course, the photographer focuses on the animal in the foreground, whereas if there's no animal, the background is clear. And this is what's called a shortcut. It's seen very often in machine learning where the system learns some feature that's correlated with the correct answer, but is not the feature that the humans had."
+    },
+    {
+      "start": 818.672,
+      "end": 846.256,
+      "text": "hoped that the machine would learn or intended for the machine to learn. So this has been shown many times in this paper from 2018. A group showed that objects like school bus that had been recognized correctly by a deep neural network with here 100% confidence, if they were photoshopped into weird poses,"
+    },
+    {
+      "start": 846.96,
+      "end": 870.144,
+      "text": "Now the system was very confident that this is a garbage truck, a punching bag, a snowplow. And so somehow the machine has clearly learned features that are very different from what humans perceive in these images. And you can see this also with, for instance, fire trucks that."
+    },
+    {
+      "start": 870.144,
+      "end": 895.888,
+      "text": "are photoshopped into slightly different poses now confidently recognized as school bus or fireboat or bobsled. And the question is, what exactly has the machine learned to sort of correct, be correct in this instance, but so wrong in all these other instances? So this is a, you know, kind of an amusing example, except this can have real world consequences."
+    },
+    {
+      "start": 895.888,
+      "end": 920.56,
+      "text": "For instance, it's known that Tesla cars that are running the self-driving software have many times crashed into stopped fire trucks in weird, unexpected poses on the highway. So this kind of thing, really, if deployed in the real world, these systems can make catastrophic errors."
+    },
+    {
+      "start": 920.912,
+      "end": 950.336,
+      "text": "So this notion of shortcut learning has been identified in many domains of machine learning, such as medical diagnosis, self-driving, other aspects of computer vision. And some researchers have made the analogy to the so-called Clever Hans phenomenon. Clever Hans, you may know, was a..."
+    },
+    {
+      "start": 950.336,
+      "end": 976.448,
+      "text": "horse that supposedly at the turn of the 19th century was able to do mathematics problems. You could give it some arithmetic problem and it would tap out its hoofs to give the correct answer. But it was found that it was actually not doing arithmetic, but it was responding to subtle unconscious cues from its trainer."
+    },
+    {
+      "start": 976.448,
+      "end": 1002.704,
+      "text": "from the body language of its trainer. So this is a great analogy for some of what's happening in machine learning is that the machines are not actually learning what we want them to learn, but they're responding to subtle features that we're perhaps unaware of in the data. A more nefarious problem is what's called adversarial vulnerability. So this was uncovered in a"
+    },
+    {
+      "start": 1002.704,
+      "end": 1032.656,
+      "text": "2013 paper called Intriguing Properties of Neural Networks that showed that if you take a photograph like a school bus that's correctly identified by a network, you can add some image noise. You know, you just add the pixels. This is very highly magnified. So the result actually the noise is actually quite subtle, but the result looks exactly the same to us. But now the neural network."
+    },
+    {
+      "start": 1032.752,
+      "end": 1060.048,
+      "text": "very confidently classifies this as an ostrich in all cases here. And what's happened is that the researchers have engineered this subtle noise or perturbation to the image that allows, that causes the network to identify the new image, which looks the same to us, but as a category of the adversary's choice."
+    },
+    {
+      "start": 1060.048,
+      "end": 1089.568,
+      "text": "OK, so this has been shown, for example, in the real world, you can design glasses frames that look like something like this that are then 3D printed with this pattern. And those glasses frames cause a facial recognition system to mistake this fellow, who is one of the researchers in this paper, for the actress Mila Jovovich. So these are called adversarial attacks."
+    },
+    {
+      "start": 1089.568,
+      "end": 1118.656,
+      "text": "on machine learning systems. They go as far as, for instance, a group of security researchers showing that you could put stickers in a certain configuration on a stop sign to cause a vision system in an autonomous car to recognize this as a speed limit 80 sign. In many distances from the stop sign and angles, you can see"
+    },
+    {
+      "start": 1118.656,
+      "end": 1146.384,
+      "text": "In most cases, the top class that is recognized by the vision system is speed limit 80. So these systems are fragile. They're brittle. They are often based on their learning is often based on features that are not the features that we humans would use to recognize these objects. And so the the final problem is."
+    },
+    {
+      "start": 1146.384,
+      "end": 1172.896,
+      "text": "The lack of common sense. So. You may or may not know that the biggest accident that self-driving cars are involved in is rear ending. That means that they these self-driving cars are driving along and suddenly they slam on the brakes and the human driving behind them crashes into them. And the reason is, you know, the humans at fault, of course, but."
+    },
+    {
+      "start": 1172.896,
+      "end": 1195.552,
+      "text": "The car has done something completely unexpected because it's perceiving obstacles where no human would perceive an obstacle. It's perceiving that it should stop for something like maybe a floating plastic bag that no human would stop for. Or here in New Mexico, we see tumbleweeds like this in the road."
+    },
+    {
+      "start": 1195.552,
+      "end": 1220.448,
+      "text": "drivers know that they shouldn't stop for this kind of thing that a tumbleweed is going to just fall apart if you hit it it's not going to hurt your car but a self-driving car would have no way of knowing that you know we know that birds in the road are probably going to fly away before we crash into them but we probably shouldn't drive over a pile of glass and this"
+    },
+    {
+      "start": 1220.448,
+      "end": 1245.728,
+      "text": "Snowman is not going to dart across the road in front of our car. So we humans have this ability to use the vast knowledge we have about the world to predict what's going to happen in most situations, whereas self-driving cars don't. So they end up doing things that are very unexpected, like slamming on the brakes."
+    },
+    {
+      "start": 1245.728,
+      "end": 1271.168,
+      "text": "AI researchers have called common sense the dark matter of AI, meaning that it's the thing that pervades our intelligence, but we don't really understand it and we don't know how to give it to machines. There's been a lot of research and funding recently into how to teach machines common sense."
+    },
+    {
+      "start": 1271.168,
+      "end": 1298.32,
+      "text": "Paul Allen, who was the co-founder of Microsoft with Bill Gates, started his own institute in Seattle to teach machines common sense. And the US Department of Defense has put a lot of funding into what they call machine common sense. And interestingly, one of their grand challenge problems is to"
+    },
+    {
+      "start": 1298.32,
+      "end": 1325.888,
+      "text": "give a machine the common sense of an 18-month-old baby. So it's a paradox of AI that we have machines that can do all kinds of amazing things that require, we consider a lot of human intelligence, like beating the best humans at Go and chess, or translating between languages, or diagnosing diseases, and yet they..."
+    },
+    {
+      "start": 1325.888,
+      "end": 1353.84,
+      "text": "It's still a grand challenge to give machines the common sense of a baby. So that's a paradox of AI. So recently I wrote a paper called Why AI is Harder Than We Think that got a lot of feedback, both positive and negative. And what it did is it focused on four fallacies, I think, that affect the thinking of"
+    },
+    {
+      "start": 1353.84,
+      "end": 1383.552,
+      "text": "both the general public and also AI researchers themselves. So the first fallacy is that narrow AI is on a continuum with general AI, where general AI means something like human-like intelligence. So narrow AI is when you get systems that can do a particular narrow task, like object recognition or playing a game like chess or Go and so on. And the idea is that"
+    },
+    {
+      "start": 1383.552,
+      "end": 1412.704,
+      "text": "Progress in a narrow area is seen as progress on this so-called continuum to general AI. You know, we saw headlines like IBM's Watson program, which you might remember playing this game Jeopardy on television. IBM said that it represented a first step into cognitive systems, which is their term for general AI."
+    },
+    {
+      "start": 1412.704,
+      "end": 1442.512,
+      "text": "And Alpha Zero, the program that learned to play chess and go and other games, was called the first step in creating real AI. GPT-2, a text generation program, was called a step towards general intelligence. And so this notion of the first step is this idea that we're sort of moving along this continuum from these narrow accomplishments to a more general."
+    },
+    {
+      "start": 1442.512,
+      "end": 1466.992,
+      "text": "But the philosopher Hubert Dreyfus from Berkeley said a long time ago that this first step fallacy is wrong. He in fact called it the first step fallacy, which this idea of this continuum, at the end of which is AI or general intelligence."
+    },
+    {
+      "start": 1466.992,
+      "end": 1493.136,
+      "text": "And he said there's in fact a discontinuity in the assumed continuum of steady progress. The unexpected obstacle is the common sense knowledge problem. And as you see, as you saw in my previous slides, this is this so-called dark matter of AI is still the obstacle that we don't know how to get over. His brother, Stuart Dreyfus, made an analogy saying that."
+    },
+    {
+      "start": 1493.232,
+      "end": 1521.776,
+      "text": "This first step fallacy is like claiming that the first monkey that climbed a tree was making progress towards landing on the moon. The second fallacy is that easy things are easy and hard things are hard. So by that, I mean that things that we consider easy for us, we assume will be easy for machines and vice versa. So Herbert Simon, that AI pioneer I mentioned earlier."
+    },
+    {
+      "start": 1522.192,
+      "end": 1549.024,
+      "text": "Said back in the 80s that everything of interest in cognition happens above the 100 millisecond level, the time it takes to recognize your mother. So he's what he's saying is that sort of this unconscious perception that happens instantaneously to us. Is not of interest. It's not going to be the hard thing in capturing intelligence."
+    },
+    {
+      "start": 1549.024,
+      "end": 1578.288,
+      "text": "And more recently, Andrew Ng, another AI pioneer, especially in deep learning, said something similar. He said, if a typical person can do a mental task with less than one second of thought, we can probably automate it using AI either now or in the near future. So that's that same idea. If we can do something really fast, it's not going to be so hard. More subtly, Demis Hassibis, the co-founder of DeepMind."
+    },
+    {
+      "start": 1578.288,
+      "end": 1607.12,
+      "text": "who created the AlphaGo program, called Go one of the most challenging of domains. But the question is, challenging for whom? For humans? Certainly, yes. But for machines? Turns out that games, simpler games, like, for instance, the game of charades, which you could play with your six-year-old, is much more challenging for AI systems than it is than Go, because..."
+    },
+    {
+      "start": 1607.12,
+      "end": 1634.272,
+      "text": "It involves things like language and human communication and theory of mind. So it's a simple game for humans, but one that is still far beyond any AI system. And this has often been called Moravec's paradox from Hans Moravec, an AI researcher who noted that it's comparatively easy to make computers exhibit adult level."
+    },
+    {
+      "start": 1634.272,
+      "end": 1659.776,
+      "text": "performance on intelligence tests or plain checkers, but it's difficult or impossible to give them the skills of a one-year-old when it comes to perception and mobility. And I'll add common sense. Marvin Minsky, who made optimistic predictions in the 60s, said later that the real problem is that in general, we're least aware of what our minds do best. So we underestimate"
+    },
+    {
+      "start": 1659.776,
+      "end": 1688.816,
+      "text": "the complexity of intelligence. And we assume that things that are easy for us are going to be easy for machines. The third fallacy is what I call the lure of wishful mnemonics. So I got this term wishful mnemonics from Drew McDermott, that same AI researcher I quoted earlier. Way back in 1976, he wrote a paper basically criticizing his colleagues for doing things like"
+    },
+    {
+      "start": 1688.816,
+      "end": 1715.12,
+      "text": "calling their programs understand and assuming them that they understand. And he said, let's call these programs things like G0034 and see if we still think it understands. And he said many, he called this a wishful mnemonic and said there are many other examples. So this was many years ago, but I think there's still many modern wishful mnemonics. For example, IBM."
+    },
+    {
+      "start": 1715.12,
+      "end": 1740.576,
+      "text": "told us that Watson can read all of the health care texts in the world in seconds. Using this word read, which in its human form actually implies understanding what we read. But in Watson's case, the Watson program, it didn't understand in any human-like sense at all. And here we have, you know, understand. This is another."
+    },
+    {
+      "start": 1740.576,
+      "end": 1762.288,
+      "text": "comment. There's another kind of headline from IBM. And saying things like AlphaGo, the Go playing program, that it has a goal. Its goal is to beat the best human players, not just mimic them. So using this word goal in a very human-like sense where this program has nothing like a goal at all."
+    },
+    {
+      "start": 1763.44,
+      "end": 1792.624,
+      "text": "We also call our benchmark data sets things like reading comprehension, object recognition, common sense understanding, language understanding. And when the machines actually do well on these data sets, often better than humans, then the message is that they've outperformed humans at these tasks, these underlying tasks, which they have not at all because the data sets don't actually test for the general task."
+    },
+    {
+      "start": 1792.624,
+      "end": 1819.984,
+      "text": "We call our methods deep learning, even though what they do is very different from human learning. And neural networks, even though their structure is very different from the human brain. So these are all examples of modern wishful mnemonics. Let me skip the next things because I'm running out of time a little bit. But going to the last fallacy, intelligence is all in the brain. So this is something that's been assumed."
+    },
+    {
+      "start": 1819.984,
+      "end": 1849.2,
+      "text": "in the AI community for a long time, that if we can just capture the computational capacity of the brain, we can then figure out how to create intelligence. So here's a quote from a recent report that says that it's more likely than not than 10 to the 15 floating point operations per second is enough to perform tasks as well as the human brain, given the right software."
+    },
+    {
+      "start": 1849.2,
+      "end": 1874.768,
+      "text": "which might be hard to create. So assuming that if once we capture this computational sort of equivalence with the brain, we can then create AI. And Jeffrey Hinton, another deep learning pioneer, said a similar thing to understand documents at a human level. We're going to need human level resources, by which he means."
+    },
+    {
+      "start": 1874.896,
+      "end": 1904.08,
+      "text": "The number of connections in our neural networks have to match the number of connections in the brain. But he says we're a few orders of magnitude off, but I'm sure the hardware people will fix that. And, you know, the problem is that it's known to many cognitive scientists that the brain is not the only thing supporting intelligence, that there's our intelligence is a function not only of our brains, but also our bodies."
+    },
+    {
+      "start": 1904.08,
+      "end": 1931.264,
+      "text": "our social environments and our culture. So assuming that we can create this more sort of brain-like disembodied intelligence may actually not be a way to capture the complexity of human intelligence. So let me end by just summarizing the open questions I think are spurred by these fallacies. First, if narrow AI is not on a continuum,"
+    },
+    {
+      "start": 1931.264,
+      "end": 1960.928,
+      "text": "with general AI, how can we actually assess progress in our field? Second, if easy things for us are not easy for machines and vice versa, how can we assess the difficulty of a domain for AI? How do we talk to ourselves about what machines can and cannot do without fooling ourselves with our wishful mnemonics? And if intelligence is not all in the brain, how embodied"
+    },
+    {
+      "start": 1960.928,
+      "end": 1989.68,
+      "text": "Or socially, culturally embedded does intelligence need to be? So I don't have the answers to these questions. I think what we really need to create intelligence is a better understanding of what intelligence is and what it is not. And I think those are the big questions for making actual progress in AI. So I'll stop there. I talk a lot more about this in my recent book and happy to answer any questions."
+    },
+    {
+      "start": 1996.176,
+      "end": 2022.944,
+      "text": "Yeah, this is great. The floor is now open and I see a hand from Moshe Vardy. So please, Moshe, the floor is yours. I have a question, but I'm the moderator, so I should shut up if there are other questions. You're muted, Moshe. Can you ask questions?"
+    },
+    {
+      "start": 2022.944,
+      "end": 2050.416,
+      "text": "I thought the moderator was the first right of question. No, no, no. That might be some of your concept, but I actually think the moderator should hold back. Thank you. Thank you for a very intriguing talk. I want to follow up in particular about autonomous vehicles, because I may be one of the people who really drank the Kool-Aid."
+    },
+    {
+      "start": 2050.928,
+      "end": 2079.296,
+      "text": "I mean, the point is the social cost of the automobile is tremendous. We just learned to accept that, OK, a million people will be killed every year and this is the cost of doing business. And I saw that AVs in the middle of the previous decade, I thought AVs are going to save hundreds of thousands of lives per year. Is it going to happen in our lifetime in your estimates? That's a great question. I mean, it's hard to know."
+    },
+    {
+      "start": 2079.296,
+      "end": 2106.976,
+      "text": "And the meaning of autonomous vehicle or self-driving car has changed. It seems like self-driving car should mean like you can just get in the car wherever you are, whatever the weather is, whenever a human could drive and drive anywhere. But that seems to be quite hard, harder than people thought. And so there's sort of a lot of things that are called."
+    },
+    {
+      "start": 2106.976,
+      "end": 2134.768,
+      "text": "self-driving that are more constrained, you know, that can only drive in certain weathers, can only drive in certain parts of the city that are specially outfitted with the right sensors and the right detailed maps and so on. So this whole notion of what self-driving is, I think will adapt. And if it does happen in our lifetime, it will be because of both the self-driving technology and also the infrastructure."
+    },
+    {
+      "start": 2134.832,
+      "end": 2162.416,
+      "text": "that we will provide for these self-driving cars. So I think it's a big question. And, you know, the hardest thing, if every car was self-driving, it would probably be a lot easier. But the hard problem is when you have interactions with autonomous vehicles and humans, either in other cars or pedestrians, because they, you know, they're using a different kind of way of perceiving and understanding the world."
+    },
+    {
+      "start": 2162.704,
+      "end": 2192.08,
+      "text": "So, you know, it's hard to say. In fact, I would say what we learned from COVID is we have wonderful models for viruses, but predicting human behavior has been the killer seal of all the approaches to COVID, predicting human behavior. And I think the same would be true for AVs. It's the humans are the difficult element. Yeah, that's absolutely right. Sally, Sally Wyatt, please. The floor is yours."
+    },
+    {
+      "start": 2192.272,
+      "end": 2213.44,
+      "text": "Thank you very much. Thank you, Melanie. That was a wonderful talk and very thought provoking. And there are lots of things that I'll kind of follow up from later. I suppose I have two questions. One is, first of all, about the notion of common sense, which I think is actually also really rather complicated and complex idea."
+    },
+    {
+      "start": 2213.44,
+      "end": 2239.984,
+      "text": "And so, you know, things that we might have, you know, again, common sense for whom and when, you know, things we might have thought of as common sense 100 years ago, say about appropriate roles for women. We might not think of common sense now. So I was wondering if you could say a little bit more about what you think about common sense or some of the kind of people that you cited. And so that's one thing. The second thing is about."
+    },
+    {
+      "start": 2240.08,
+      "end": 2269.424,
+      "text": "I mean, you talked a bit about, you know, the importance of kind of embodied idea in terms of knowledge and intelligence and common sense as well, probably, whether it's not all in the brain, you know, to get away from the brain in the back kind of idea of AI. But. And it came up a little bit in some of your examples, particularly around autonomous vehicles, about the material."
+    },
+    {
+      "start": 2269.424,
+      "end": 2295.184,
+      "text": "circumstances that we need in order to make AI possible. So autonomous vehicles and robots are only going to work if we do an enormous kind of adjustment to the physical environment so that the little robots don't fall off cliffs or run into other people or wander off somewhere. So I was wondering maybe if you could, if that's another fallacy that we could perhaps think about."
+    },
+    {
+      "start": 2295.184,
+      "end": 2324.464,
+      "text": "Some of the stuff I read around AI just seems to assume that we live in this kind of perfect material world that's been made for AI, whereas actually we live in a very different material world. Yeah, those are great questions. So common sense is, you know, it's one of those umbrella terms that doesn't, we don't know exactly what we mean by it and it means different things in different contexts. Like you might think that you're a teenager."
+    },
+    {
+      "start": 2324.464,
+      "end": 2350.832,
+      "text": "It doesn't have very much common sense. But the kind of common sense that people are thinking about with respect to AI systems now is more of like the baby kind, where you know things like objects persist even when they disappear behind some screen or something, and that you know that the world has causation in it. Things cause other things, and there's..."
+    },
+    {
+      "start": 2350.832,
+      "end": 2380.704,
+      "text": "living things and non-living things. There's things with agency and not, you know, those kind of what psychologists have called core knowledge that perhaps we're even born with, you know. So the common sense that we think of is like, oh, people lack common sense. It's a different level than what we're talking about with respect to machines, which really have none at all. But it's something that needs to be clearly refined."
+    },
+    {
+      "start": 2380.704,
+      "end": 2409.872,
+      "text": "to actually be useful in thinking about AI. The second comment's very perceptive. I think all technologies that we use have had a degree of us adapting to them as much as them adapting to us. So think about our computers, how much we've adapted to, had to adapt in order to successfully use computers at all."
+    },
+    {
+      "start": 2409.872,
+      "end": 2437.984,
+      "text": "And we learn about them as much as they learn about us. So I think you're right that all of these technologies are going to involve our human world changing in response to the needs of AI systems, as well as the reverse. And I don't think people are very aware of that. You know, they've already changed quite a bit and they'll just change more. So I think those were the two."
+    },
+    {
+      "start": 2437.984,
+      "end": 2459.456,
+      "text": "issues you brought up, and they're both very important. Thank you. George. George, the floor is yours. Thank you. Thank you. Thank you, Melanie. Wonderful talk. Excellent talk."
+    },
+    {
+      "start": 2459.456,
+      "end": 2488.752,
+      "text": "There's an underlying message which could be deemed optimistic if one takes the view that the difficulty of AI slows down some applications and thus it gives more time to, let's say, poor humans to prepare for it or do something to prevent some of its more malign uses."
+    },
+    {
+      "start": 2488.816,
+      "end": 2515.744,
+      "text": "Can one extend this optimistic message to the use of AI for military purposes? Can one be optimistic about that? I'm not sure. I think when people think about AI and the dangers, they often think, oh, we're going to get these kind of super intelligent."
+    },
+    {
+      "start": 2515.744,
+      "end": 2544.208,
+      "text": "sentient systems that are going to enslave us or whatever, like we have in movies. But really, the real danger now is people using these systems, assuming they're more capable than they actually are. And that applies to the military as well. There's a lot of talk about autonomous weapons and how those might be beneficial and save lives and so on."
+    },
+    {
+      "start": 2544.496,
+      "end": 2568.8,
+      "text": "where the decision making is such that there can't be a human in the loop. But that's assuming that the systems we have are ready to be autonomous in any way, which I think they're not. So I think that there's not enough focus on looking at the limitations of our current systems."
+    },
+    {
+      "start": 2568.8,
+      "end": 2596.72,
+      "text": "rather than worrying about sort of the super intelligence of our future systems. And I do worry about military applications because I don't think people in the military really appreciate these limitations very well. Great. Renee, would you like to ask your question? Yes. Thank you. I really liked your talk. I have more or less like a comment when you say that intelligence is not all in the brain."
+    },
+    {
+      "start": 2596.88,
+      "end": 2626.304,
+      "text": "I think bacteria, to my common sense, very smart, very intelligent. They have memory. With the discovery of the CRISPR-Cas system, they realized what the molecular mechanism of memory is in bacteria. Or they can make altruistic decisions to commit suicide to save the colony. So I think we really think that chemistry, biochemistry, physics is part of the intelligence."
+    },
+    {
+      "start": 2626.304,
+      "end": 2655.216,
+      "text": "and it's not connected to a brain. So I think one should think, for example, now I think that I'm a molecular biologist. I did a lot of genomics. And when you have the data, the data analysis, you cannot ask the computer, what is the sense of this data? You have to look at the data really clearly, see if it's telling you something, and then you have to formulate a really intelligent, precise question."
+    },
+    {
+      "start": 2655.216,
+      "end": 2683.92,
+      "text": "Then the computer will help you answer the question. And for example, working with the bacterium E. coli, the genome is quite small. So I can look at it step by step, by foot, by foot. But in the human genome, it was just too large. I couldn't do it anymore. And then I saw the difference because you see certain patterns that you have to think, what do these patterns mean? And this is you have to do by yourself. You cannot ask the computer, what does the data mean?"
+    },
+    {
+      "start": 2684.016,
+      "end": 2709.68,
+      "text": "So I think this is a big difference with what I understand, what is intelligence to what computer scientists think intelligence is. I think, I mean, I'm not in that field, but. Yeah, no, I think you're right. There's many meanings of intelligence and people use it in different ways and have talked about not only the intelligence of, for instance, a bacterium or."
+    },
+    {
+      "start": 2709.68,
+      "end": 2733.456,
+      "text": "Perhaps even any cell, even in a multicellular organism, could be seen as having some intelligence, making decisions and so on. But also sort of intelligence of, say, groups like an ant colony or a social network. You know, there's all kinds of different intelligence. And I you know, we use this again umbrella term to mean."
+    },
+    {
+      "start": 2733.456,
+      "end": 2758.256,
+      "text": "That that has needs needs to be refined in many ways. But, you know, it just shows that we we don't have a great sense of what we mean by this term intelligence in general. Yeah. Signal recognition is also the communication between cell to cell. It's a chemical point. Yeah, exactly. Thank you, Olivia."
+    },
+    {
+      "start": 2759.024,
+      "end": 2784.864,
+      "text": "Thank you, Melanie. I appreciated every word that you said. It was wonderful. Thank you. I think that the model of all wishful mnemonics is learning itself. I think that how learning is presented now lures people to think that it has to do with human learning."
+    },
+    {
+      "start": 2784.864,
+      "end": 2814.24,
+      "text": "And it is an unfortunate word, I think, and deep learning even worse because make people think even at some deeper cognitive process. This is one comment. And the second thing I would like to hear your opinion about is the fact that many people in AI now are busy working on trying to"
+    },
+    {
+      "start": 2814.24,
+      "end": 2842.864,
+      "text": "give transparency to black boxes, to try to explain an opaque behavior of systems, that in a way is a paradox for a scientific discipline that is inspired by human cognition. Why is not the accent in trying to explain human cognition instead? So a comment of yours on this, please."
+    },
+    {
+      "start": 2844.336,
+      "end": 2873.44,
+      "text": "Yeah, I mean, I think some AI researchers are interested in explaining human cognition. I mean, many people have many different kind of research goals in this field. Some people are more engineering oriented. They just want to get something to work. Some people are interested in intelligence more generally, like in Renee's question. And some people want to specifically understand human."
+    },
+    {
+      "start": 2873.44,
+      "end": 2902.736,
+      "text": "But so so AI itself is not sort of a unified field as to the goals. I think I agree with the comment that learning is a wishful mnemonic in the field, because, you know, typically when we learn something, the whole point is that we have learned it in a way that we can apply it in multiple ways, not just in the field we learned it in, which is totally not true for AI systems."
+    },
+    {
+      "start": 2907.76,
+      "end": 2933.888,
+      "text": "Alison, you're muted. Sorry. Giuseppe, the floor is yours. And you're muted, too. Yeah. Oh, yes. Thank you. Thank you for a really intriguing talk. I'm looking for paradoxes here. So you rightly say that you cannot think that machines do actually read or understand or have common sense."
+    },
+    {
+      "start": 2933.888,
+      "end": 2963.248,
+      "text": "But in the future, they might be evolved and get better to this. So will we ever be able to really decide whether they are actually be able to read or understand? Because we don't know what reading and understand means. Yeah. Yeah, that is a very tricky question. How do we know if they actually can do some aspect of intelligence?"
+    },
+    {
+      "start": 2963.792,
+      "end": 2989.44,
+      "text": "And we've all heard of the Turing test where Turing said, well, how do we know if a machine is thinking? Well, that word doesn't even make sense unless we have some behavioral correlate that we can talk about. And he proposed his test, which involved conversation. But most people in AI now think the Turing test isn't very useful."
+    },
+    {
+      "start": 2989.44,
+      "end": 3018.224,
+      "text": "useful because it's so easy to fool people. So people are so prone to anthropomorphizing machines and other sort of non-sentient beings. But so this question of how do we know if something's actually reading or is actually intelligent or is actually understanding is really difficult. And the current methods that people use, which are, say, these benchmark data sets that they"
+    },
+    {
+      "start": 3018.224,
+      "end": 3042.352,
+      "text": "test their machines on have shown to allow this kind of shortcuts. So it's a big problem in the field. And I think there's a lot of people thinking like, what is the proper way to evaluate these systems? And I don't think anybody has a great answer, you know, except maybe use the same kinds of assessments that we try and use on humans, which doesn't always work very well."
+    },
+    {
+      "start": 3044.304,
+      "end": 3070.144,
+      "text": "Okay, we're starting to run out of time. So what I think I'm going to do is ask Maria and Enrico. Is this okay, Melanie, if we bundle some questions? Yeah, yeah. Okay, so Enrico and Maria, or Maria can go first. Ask your questions, Melanie will answer, and then I'm going to summarize some excellent questions from the chat, and you can have a final response. Very, very interesting. Definitely, I agree that common sense."
+    },
+    {
+      "start": 3070.144,
+      "end": 3099.888,
+      "text": "is very, very important. However, my question is, what kind of human intelligence are we comparing to AI intelligence? Because experts differ on how many types of human intelligence there are from emotional to music to kinesthetic, et cetera, et cetera. So what are we really comparing to when we talk about AI and general AI, et cetera?"
+    },
+    {
+      "start": 3101.04,
+      "end": 3130.848,
+      "text": "Yeah. I think different people are comparing different things. You know, there's this, there's this view that, that in the field that I think some, some researchers have that, that there's, you can kind of have this sort of pure rational intelligence that has to do with ability to make, to reason and make decisions and is separate from any social,"
+    },
+    {
+      "start": 3130.848,
+      "end": 3158.304,
+      "text": "or cultural, or other sort of soft, emotional intelligence. And that's, I think, a fallacy in itself, that that intelligence can be separated in those ways, that there is some kind of, you know, separate, pure intelligence that we can model, because I don't believe that. But it's controversial, you know. Stuart Kaufman would..."
+    },
+    {
+      "start": 3158.304,
+      "end": 3187.664,
+      "text": "I mean, sorry, Stuart Russell would disagree with me there. And we actually had a debate about this kind of topic. So I think we still don't have the kind of science of intelligence that we need to say how modular or entangled these different kinds of intelligences are. And also these days, especially when so many things are done in teams."
+    },
+    {
+      "start": 3187.728,
+      "end": 3216.896,
+      "text": "Are we going to have team intelligence? Yeah, I mean, there's a whole area. I mean, all of us probably had been in the situation where we remember that part, we remember that part, but together we put it together and are able to solve a problem. Where are we when it comes to group AI? Yeah, it's something that people are thinking about, but don't really know how to do very well. Yeah. Very quickly, Enrico."
+    },
+    {
+      "start": 3216.896,
+      "end": 3242.928,
+      "text": "Because that name always reminds me of geniuses. Okay, so thanks. First of all, sorry because I arrived late and I don't know if my question was already covered. My question covers the issue of the different kinds of intelligence. I think a fundamental distinction is between those entities having a self-awareness of their existence and their intelligence."
+    },
+    {
+      "start": 3242.928,
+      "end": 3270.752,
+      "text": "and like human beings or mammals and those entities who do not have this self-awareness, like, for example, the bacteria. And the entities that do not have self-awareness cannot reason and reflect on their own intelligence and on their own role. And this is, to me, a fundamental distinction. So I would like to know which is your viewpoint concerning the artificial"
+    },
+    {
+      "start": 3270.752,
+      "end": 3299.584,
+      "text": "consciousness that should be attached to a real artificial intelligence. And Alison wants me to answer this in 30 seconds or less. There's three more questions. Yeah, no, that's like a big can of worms. And what self-awareness is, and Rene might disagree that bacteria don't have self-awareness, I don't know. That's a very tricky and a whole other..."
+    },
+    {
+      "start": 3299.584,
+      "end": 3328.832,
+      "text": "question that I could go on and on about. But, you know, even just figuring out which living systems have, quote unquote, self-awareness is absolutely hard to say and what it means. So I think just saying that that's a big area that I think no one really understands very well. Okay. And just three quick questions. I think one has been answered. The first concerns your views on ethics."
+    },
+    {
+      "start": 3328.832,
+      "end": 3353.472,
+      "text": "And machines. The second would be some prominent counter arguments. I think you mentioned Stuart Russell and your debate there, but you might have something else to add. And the third, I think, is really important. What advice would you have for early researchers? Wow. OK. Ethics. So ethics has become very prominent because it's."
+    },
+    {
+      "start": 3353.472,
+      "end": 3377.68,
+      "text": "For many reasons. One is that we can see that current AI systems often incorporate biases, you know, they perform better on certain demographics, you know, computer vision systems perform better on facial recognition for like lighter skinned individuals for many reasons. And"
+    },
+    {
+      "start": 3377.68,
+      "end": 3404.016,
+      "text": "We've seen that algorithms that are being used to make decisions can also incorporate the biases that are sort of latent in their data. So ethics is a really important area in AI, especially as it's being deployed more broadly so that people are actually suffering the biases that are embedded in these systems. And, you know, it turns out to be much."
+    },
+    {
+      "start": 3404.016,
+      "end": 3427.44,
+      "text": "harder than we think to make unbiased and ethical AI systems. The second question was about like counter arguments. Well, there's been a lot of people who think that we should really be worried about the existential threat of AI systems that aren't aligned with our values. Stuart Russell."
+    },
+    {
+      "start": 3427.44,
+      "end": 3456.928,
+      "text": "is one prominent person who's written quite a bit about this. But then the question is like, what are our values? And how do we get a machine that doesn't have any common sense or any real concepts to understand what a value is? That's a very big question. I mean, there's another entire talk I could give about that. But I'll just go to the third question."
+    },
+    {
+      "start": 3456.928,
+      "end": 3471.408,
+      "text": "because we were running out of time, people just beginning their career. Oh, there's so many unanswered questions. There's so many great opportunities, I think, now in the field. So I would urge people."
+    },
+    {
+      "start": 3471.408,
+      "end": 3501.376,
+      "text": "you know, who want to get into AI. There's so many different ways. There's so many, you know, even if you're not a technical person to get into these ideas of ethical and socially beneficial applications, because the technical people don't have all the answers. They, you know, the engineers at Google don't understand social systems in the way that sociologists and other humanists might understand them. So I think we need to get a lot more."
+    },
+    {
+      "start": 3501.376,
+      "end": 3524.848,
+      "text": "diverse voices at the table and thinking about how AI interacts with society. And as somebody said earlier, the hardest problem is not the technology, it's the humans. And I think that's really true. And it's something that AI people are just beginning to really grasp. The problem is always the humans."
+    },
+    {
+      "start": 3524.88,
+      "end": 3553.904,
+      "text": "Please just join me in giving a big round of virtual applause for Melanie. That was a tour de force. And thank you so much for being with us here today. Thank you. I really enjoyed it. Thanks for all the great questions. And, you know, maybe somebody could email me the chat because I didn't get a chance to read it. Absolutely. Absolutely. Yeah. I think Peter now has the floor. Thank you, Melanie. And I think you will also give us your slides."
+    },
+    {
+      "start": 3553.904,
+      "end": 3583.408,
+      "text": "So we can put it on the website so everybody can have access to it. Maybe one wishful mnemonic is also the term of artificial intelligence. This is also one thing we should reflect on that. Thanks a lot. Thank you. Thanks, Alison. Then I will take over now for our final notes. Let me share the screen here. Make sure we have sound."
+    },
+    {
+      "start": 3584.368,
+      "end": 3613.12,
+      "text": "All right, so. Right, I hope we can see it now. So, yeah, the topic why AI is harder than we think, what music could we play? Well, that immediately sparked the idea to play Harder, Badder, Faster, Stronger by Daft Punk. But even better than that, so Stephanie Vogelwich once again saved the day and had the brilliant idea to pick a version that was composed."
+    },
+    {
+      "start": 3613.12,
+      "end": 3629.568,
+      "text": "uh by ai so this version we're going to play actually starts out as the original but then as soon as the lyrics set in the first nine seconds are used as an input to open ai jukebox which then goes on to generate the rest of the track"
+    },
+    {
+      "start": 3629.568,
+      "end": 3658.048,
+      "text": "You'll hear when that happens, no worries. So OpenAI Jukebox is a generative neural network, and more precisely, it's a variational autoencoder, and it's trained on 1.2 million songs in raw audio. So it's basically presented all this content and uses a transform architecture that can be conditioned on artist, genre, and lyrics. This is kind of where it gets its additional cues on what to do and where to go. And when you provide these cues on top of an audio input,"
+    },
+    {
+      "start": 3658.048,
+      "end": 3682.48,
+      "text": "It allows them to generate new content along these lines. And, well, we're going to hear that example. Before we start that, let me just point out the next event, which is a big one, next week already. So this is going to be the workshop in Vienna next week. So for those who are around and want to participate, please do not forget to register by sending us an email."
+    },
+    {
+      "start": 3682.512,
+      "end": 3708.72,
+      "text": "And as it looks right now, we will probably be able to accommodate you there. So please, if you want to participate, tell us and we'll find space for you there. So, all right, we're going to play this now. So thanks again to Melanie and Alison. And we're going to end with a musical demonstration of why AI is harder than we think and music too. Enjoy and see you next week."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,711 @@
+{
+  "video_id": "rjINDgHo9ro",
+  "source": "whisper",
+  "language": "en",
+  "text": "So good evening or good morning, wherever you are. I'm Hannes Wiertner and I'm one of the main organizers of this Digital Humanism lecture series. And I welcome you to the lecture of today. It's on the plan for the vaccination passport in Europe or also called Green Pass. And it's proposed by the European Union. And this is a highly topical issue. It shall enable access and travel across borders in the near future. And there we have an intense, this intensive discussion on that topic on a technical, ethical and privacy level. Why do we discuss it here at our digital humanism lecture series? And you know that digital humanism not only tries to describe and analyze the interplay of technology and humans and society, but is equally important, it also tries to influence the technological development with the objective of a better life and a better society. So we argue for a human-centered way into the digital future. And also where we see and use technology as a means to tackle issues and problems such as the pandemic. So the topic of today is on the design side, on the technology side, really at the center of our initiative. I'm happy to welcome a highly distinguished panel. This is Ron Rosenthal from the Dutch Ministry of Health, where he acts as CIO. And as respondent, Nikolaus Forgo from the University of Vienna. And as moderator, Walter Hötzendorfer, who will also introduce the two and moderate the discussion afterwards. I would like to remember you that after the discussion, we have, as always, a little piece of music selected by Dieter Gneiss. And I thank Peter for his ongoing effort to select always so excellent pieces of music, which is not a simple case. I just want to have a reminder to you that you have a look at our website and to our YouTube channel, which you can have access via the website where you have access to all our previous discussions, panels, as well as presentations. So you can have a look at the slides and listen to our presentations and discussion. It's a pleasure to introduce Walter Hötzendorf, and I'm happy that he accepted our invitation to moderate the panel. Walter is a senior researcher at the Research Institute Digital Human Rights Center in Vienna. Previously, he was with the Center for Computers and Law at the University of Vienna. His background is business informatics at TU Vienna at my home institution. And he was one of our excellent students. And he studied also law at the University of Vienna in Schaeffel. So he has a double degree in both in computer science and in law. His PhD is on the intersection on data protection and privacy by design. He's an advisor to many organizations on these issues, and he also lectures at Austrian and several international universities. And currently, and this is also one of the reasons he is an excellent moderator and engaged in the topic, he's an advisor for the Austrian Red Cross on the issue of data protection. And this Red Cross, in essence runs the Austrian stop corona app which is the tracing app in Austria and there he was also his focus was on privacy by design. Walter thank you for being with us the floor is yours and I ask you to start the discussion thank you. Many thanks for the kind introduction good afternoon it's a pleasure to chair this panel today. As a data protection researcher and consultant, I have been following closely the national and European activities for developing the so-called green pass from an academic and civil society perspective, as well as from a practical perspective. And so I'm very happy to be able to discuss this topic today with these distinguished colleagues. It is my pleasure to introduce you, Ron Rosendahl. He holds degrees both in informatics and psychology. And he is director of information policy and the CIO of the Dutch Ministry of Health, Welfare and Sport. Ron is responsible for information policy in the health sector in the Netherlands for the functioning of the Dutch Healthcare Information Council. and for quality assurance as to the aspect of information and ICT in the activities of the ministry. He's also the director of the program directorate tasked with the developments of digital solutions to address the COVID-19 pandemic. And in particular, the national notification app, which is called Corona Melder. And now the test and vaccination app he will speak about today. So now Ron Rosendahl will give his talk titled Vaccination Passports, a tool for liberation or the opposite. And after that, Nicholas Forgo will respond. And then I will take questions from the audience. So I would ask Mette to share the slides of Ron. And Ron, the floor is yours. Thank you very much, Walter. Thank you for the kind introduction. And I'm honored to be here. Indeed, I will talk about two things. Can I have the next slide, please? The Digital Green Certificate, which is the EU work. And what we do for domestic use in the Netherlands, in which we go still a step further. On top of what you said, I am also since November last year, the co-chair, the member state co-chair of the e-health network of the commission under which the green certificate is developed. Can I have the next slide, please? And there are many, many different free movement restrictions in place across the EU at the time. And the EU has become a patchwork of different border restrictions reflecting their current situation. Member states are juggling with several tools like mandatory quarantine rules, PCR testing, rapid testing, certificates, etc. And there is absolutely no common agreement among the member states on how to use those certificates. And now that the vaccination campaigns in all the EU member states are running full speed, it's only a matter of time that vaccination certificates will at some point in time be added to the toolbox. And that will add to the complexity already in place. And one can understand that the absence of standardized and secure formats could cause potential problems concerning mutual acceptation of certificates and possible fraud. And I understand that there is already a black market that deals in those certificates and all those complexities. They don't help us in allowing citizens to travel freely within the EU, within the union. May I have the next slide, please? And here what you see is several examples of vaccination certificates from member states on screen. The Greek, the Cypriot, the Luxembourg, the Polish and the Croatian version. And just imagine that 27 member states with each having their own type of certificate consisting of different data fields and different verification and authentication mechanisms, what that would lead to. So for me, as a EU citizen, that will be a nightmare. If wanting to cross borders, I would have to do a whole study on what is needed to enter the country. and to what conditions their certificate need to comply with. And that is unworkable and unwanted. Can I have the next slide, please? And since February last year, the European political leaders understood that we have to act now in order to prevent the horror scenario that I have mentioned. And it helped, of course, that our Greek friends had pushed the idea, especially the countries within the Union that rely on tourism in summer. have expressed the need for a common approach. The primary focus then is to return to free, unobstructed movement within the EU. But of course, we do not forget the global aspect of travel. So we work closely with WHO and ICAO and the other international fora that are working on it to ensure global convergence. But we have a very tight deadline in June. We want to get the job done by June, but still keep the door wide open for global interoperability. And once the EU solution is up and running, we should intensify that to converge, for example, the RKO solution. And that's most important for me, and that's why I'm happy to be here. We have to develop a solution that is in line with... Our European foundation, data protection, etc. And that takes me to the next slide, please. So what are the European principles and key values? Well, first and foremost, it should facilitate the free movement. The free movement of people is enshrined in the Lisbon Treaty that has shaped Europe as it is today. important principle is that the Digital Green Certificate should by no means be a vaccination obligation. Vaccination is and remains a choice for every EU citizen. Citizens who choose to pass on vaccination should in no way be discriminated when wanting to travel across borders. For that reason, the Green Certificate consists of three types of certificates. Besides vaccination, also test and recovery. And above all that, data protection is a fundamental right for every EU citizen. Can I have the next slide, please? So it is of the utmost importance that the green certificate complies to European data protection rules. For starters, we have the GDPR. And the notion of data minimization where only the bare minimum needed data is processed. And the GDPR provides a legal ground to process data for issuance and verification of certificates. Furthermore, if member states want to use the digital clean certificate solution for other purposes, for instance, access to bars or restaurants, they will need to create a separate legal base to process data for that purpose. So that's not in. And in addition, it is important to know that there will be no personal data retained and no EU database on vaccination test or recovery status. But it is up to the member states to decide how they build their digital solutions. I will later on demonstrate how we do that in the Dutch situation in the Netherlands, because we choose to develop a privacy preserving app. that not only ensures that all data is held on the private device of the citizen, but also ensures that this little information is shown on a digital certificate. For example, not the full name, but a shortened name, and not the full date of birth, but just a few elements of that. But furthermore, the system that Europe is building does not keep track of a citizen where they use their certificate. This is to ensure that citizens are not traceable. Can I have the next slide, please? So what is it, actually? Well, it is a certificate both on paper and in a digital form. And all have an interoperable barcode that is needed to verify the authenticity of the certificate. Furthermore, all will at least be readable in English and an official EU language. They should be provided free of charge. And it's not a replacement of other proofs. But it's not only a certificate, it's also a trust framework so that every EU member state can trust the issuer in another member state. And now I go, if you please go to the next slide, to what we do in the Netherlands to go even a step further for domestic use. We have a Dutch law in place, or in parliament at the time, and with pilots in place, that proof of a negative test result can be used to relax or release specific facilities, the measures that prohibit access to specific facilities or activities, which is a legal framework that regulates when the display of a test certificate is mandatory and who may ask for it and who may not ask for it. For example, this is about museums and events. Can I have the next? And the goal is a reopening of society in a responsible manner where this is not possible without asking for a negative test. So not in the long run, but just for a couple of months, we expect. And it's about access to specific facilities like venues where there would no. no way of having that venue without proof of negative test because of the current epidemiological situation. Can I go to the next slide, please? So we have developed two apps, one on the citizen side and one on the verified side. The CoronaCheck apps allow citizens to keep their certificate body files. And currently, This means test certificates. From June on, this also will mean vaccination. But for now, it's test certificates. And there is also the scanner app that everyone can use the scanner app in the App Store. And it's used by someone who wants to scan certificates to allow access to a venue. Can I have the next slide, please? So how does it work? A visitor with the app. wants to visit an event, gets tested at max 40 hours before the event, downloads the app, retrieves the test certificate, generates them from the result. The test certificate shows that to the venue where he or she wants to go. And the verifier just downloads the scanner app and starts it and then scans the certificate. Can I have the next slide? But then, what were the requirements we started with? One, first of all, there is no central storage whatsoever of certificates. There is a test result at a lab, and there is a certificate from that result on the device of a user. That's it. Secondly, there is no linkability. A digital system... can produce a new QR code at a regular interval to prevent people being traced from one venue to another, which is not possible on paper. So it's more privacy preserving than it was on paper. Only negative test results can be loaded. So a positive test result will not be accepted by the app. Only negative test results can lead to a certificate. And what we try to do is balance fraud prevention and privacy. And we'll come to that later on. Then accessibility was a key requirement. It should be usable for a majority of Dutch population, including those without mobile devices. So there is a print solution also. And we need to be able to generate and verify a certificate without online connection. Thirdly, and that's all about trust, it's open and it's transparent. Total code base is on GitHub, on the GitHub account of the Department of Health. And it can be followed across the development and production and use of all that we do. And verification can be done by everyone. I can verify my own certificate and see what the verifier would see if he or she would verify my certificate. Next slide, please. By nature, in law, there is a temporary law governing the use of the app. And that law stops after three months unless Parliament gives a green light for another three months. So there's a law governing the app. There's a kill switch in the app where if we push the switch, the app doesn't function anymore and it's stopped. And to prevent abuse, we had to deal with abuse scenarios. So we introduced the obligation to show ID. But then again, next slide, please. We do not show every detail to the verifier. So this is what the official looks is for the. A person actually making a test appointment and making a QR code to verify the result. Next slide, please. And then the left part, where you see first letter of first name, letter of last name and date. It is not possible with those details to know who I am. But one can verify against my ID that it might be me. And if I have a first name that starts with a Q, less detail will be shown after that. So some of those dates, for example, may not be present if my first name starts with a Q, as there are not enough people with that initials to make sure that the test result cannot be led back to me. So what we do is balance fraud and privacy in that the test result, when checked against my ID, it is highly possible that it is me, but one cannot make sure that that test result is my test result. And then on the right side, there is a QR. And that QR code will change every two minutes. To be sure that if I show it now and I show it to a next venue in about an hour, there is no possible way to link my two visits from one venue to another. Next slide, please. And then on the verifier side, one gets a green screen or a red screen. If it's a green screen. Only a few details are there to be able to link that to the ID I show. And that's it. If it's a red screen, there is no reason whatsoever mentioned why it's a red screen. It might be I don't even have a test. It might be I have a test that is too old. But there is no reason shown otherwise than there is no reason to show a green screen. So what we try to do is make it privacy preserving, but then again, a way to in a situation in which there is still a lot of fires going around and there is a lot of people having the coronavirus and opening venues would not be possible without such a proof that we have still a way to do that. Next slide, please. So. And what we try to do is balance the epidemiological ways of moving forward in this crisis, in this pandemic crisis, preserving privacy, do it in a way that all people can participate and do it in a way that's accessible to everyone without coming in a situation where every Dutch citizen would be or could be traced and linked. from visiting venue to venue, and then which a organizer of venue will be able to generate a database of all my test results. Thank you very much. Many, many thanks, Ron Rosendahl, for this excellent and really insightful talk. So I'm really impressed by the privacy by design measures you presented. And I am curious for looking for the implementation details. That sounds really great to me. It's based on serial knowledge proof. There's a lot of crypto in it. And all of it can be followed on the GitHub side of the Dutch Ministry of Health. I will do so for sure. And now I'm looking forward to the discussion. which will be kicked off by Nicolas Forgo. So it is my pleasure to introduce you to Nicolas Forgo. He is a professor of IT and IP law and the head of the Department of Innovation and Digitalization in Law of the University of Vienna, where he's also the head of a postgraduate program on information and media law. Until 2017, he was professor for IT law and legal informatics at the Leibniz University of Hannover. And he's also a member of the Austrian Data Protection Council, where we also have discussed the issue of the Green Pass on the European level and also on the national level. And so I'm looking forward. to your statement, Nicolas. Thank you very much, Walter. I will keep it rather brief and I will try to distinguish between the European and the Austrian situation because I assume that many of the listeners are Austrians. And I will also put a little bit more effort into the legal framework as I'm a lawyer by training. So to start with, what we are talking about at the moment is a proposal coming from the Commission, coming with the argument that there is some urgency here. And that because there is so much urgency, I quote literally now, in view of the urgency, the Commission did not carry out an impact assessment. End of quote. So the key argument of all this, what's happening at the moment is that we are in a kind of, you know, catastrophic situation and that because of this, we need something very quickly. We need it until June or July at the very latest. And my first argument would be that I, with all full respect, do not buy this argument because we have plenty of very urgent problems at the moment because of the pandemic. A digital certificate is, in my view, not one of the most important ones, at least not from a citizen's point of view. There are all kinds of economical reasons behind this. Obviously, in particular, the touristic season is important. And that's one of the reasons why so many countries in which tourism plays an important role are pushing this so strongly, including Austria. But from the average citizen's perspective, I think this is not a priority at the moment. But even if it were a priority, second argument, this will in many cases not help to solve the issues we are in for different reasons. And I would like to mention just two of them. We still don't know, nobody on this earth knows this, we still don't know anything from an epidemiological point of view about the status of people who are tested today but were infected yesterday and when and in how far they will be infectious and so on. We don't know anything at the moment about possible dangers coming from people who are vaccinated and get a second infection. And we don't know anything about in how far the fact that you went through the disease helps you in not infecting other people if you are reinfected with a mutation of the virus. So we are gambling here with a lot of epidemiological assumptions. Nobody really knows anything about. The only thing that people know is that allowing free movement in such a situation is possibly also from an epidemiological point of view, not the best choice to make. Third, it is not true that this brings us back into some kind of normality, because the normality before COVID was that within Schengen, I could move. freely around. I could go to Amsterdam without anybody checking anything because Amsterdam was within the borders of Schengen. And this is the normal status. It's not normal to be required to show something on your phone if you want to go to Amsterdam. So this helps us in making something which is a deviation from the normal. to some kind of the new normal, which is not the status that I would really very strongly support. And fourth, final argument, before I go then into the IT-related things a little bit more, final argument in this first round of arguments, this is very selective when it comes to the vaccinations that are accepted. So you are fully eligible for this if you are vaccinated by any of those which have the certificate within the EU at the moment. You are not eligible if you are vaccinated by something else, in particular, for example, by Sputnik. And there are EU member states running vaccination campaigns at the moment with such non-certified. vaccines such as Sputnik, such as in Hungary. And as the Austrians in the room know, Austria has been quite close to this decision. And fifth, everything which is about the IT components of all this is not really fully understandable and transparent in the sense that me or you could have a look into this. because it was prepared and it is still prepared by a governance body, this e-health network, which is a body of government representatives, so not the general public. So a lot in particular about the privacy risks, if there was any debate on this in this network, is unknown to academics such as me, because obviously we are not a member of this group. So that was the first part. fundamentally about vaccination campaigns. Secondly, now about the design of such things. Now, from an Austrian perspective, Austria, for many reasons, seems to have a very strong interest in this. And the outcome of the Austrian development so far seems to be different from the Dutch version. Not really in the sense that we can be very proud of what we are doing here in Austria for many reasons. One of them is, again, in Austria, there was no involvement or more or less no involvement of anyone who has a stake in this and who is not a member of the political system in the sense, not even the Data Protection Board had a close look into this before it was proposed. And many others, the Data Protection Authority, NGOs, academia, all of those were not really in this debate. And the Austrian solution that was then proposed on very short notice, and again under the claim that something is terribly urgent here, looked in one point very different from the Dutch system, which is that we in Austria seemingly seem to introduce a centralized solution. So something with a centralized database. And we seem to introduce this in a first round already for testing purposes. And the way this came into the law, or at least into the draft law, is very specific in my view for how we deal with these problems at the moment, because this was introduced one day, one day before it was then decided on in. the full chamber of the national parliament. So between the presentation and the decision, there was one day. And as some of you might know, it was then decided positively in the first chamber of the parliament, in the national chamber, but it was not decided positively in the federal chamber, in the Bundesrat, so that the situation at the moment is that if nothing is going to happen, we will have this first level of a centralized solution for purposes of testing certificates within eight weeks in the law, in the law on epidemics, in the epidemic assets, without anyone knowing anything about the privacy impact of this, because again, there was no privacy impact assessment happening because of the... because of the pretended urgency. Final remark, I think the example of the Corona app, as we have it in Austria, or as we don't have it in Austria, and as we don't have it in many other member states at the moment, should teach us two lessons. The first one is things are frustrating and things are urgent. But urgency is not always priority or should not always be priority number one, because if you don't take data protection issues seriously from the beginning, people simply do not follow you. And remark two. I really appreciate the openness of such debates like this one here, because I think that we need them in order to build up that trust that is needed for the acceptance of such solutions all over in Europe. Thank you. Many thanks, Nicolas. I fully agree. I highly welcome this discussion. And I think before we take the questions from the audience. which, by the way, you can ask on Zoom, in the chat, or also orally. I would want to give Ron the chance to respond to Nicolas Fogo, of course. Ron. Yes, thanks a lot. I will respond in two lines. I start with the Dutch approach. We do things with a law and we start with a privacy impact assessment and everything we do is open source, including the privacy assessments, including the security assessments. So not only the source code, but everything we do is open source, available for parliament and available for society. So that's one. I totally agree that for trust, openness is needed. And I think that we will show that what we do in the EOS network can be trusted also. And I take that argument seriously and I'll take that back because I think that openness and transparency is a key to trust and it's trust we need. Then the first arguments, I think we all remember for people who travel in the past. How we did travel to Amsterdam without a yellow booklet, but how we did travel to Africa with a yellow booklet. So there were a number of situations in which there were precursors of things we had to do before entering countries. And one of them was showing certificates of vaccination. And we are now in a situation we didn't have for about 200 years, where in the Spanish flu, tens of millions of people died. And now we have a vaccine we didn't have then. And now we have ways to know, to do research into what is possible within the current situation without making it worse and still have some more freedom than we would have if we didn't have all those tools. So I agree that we should not accept being in the situation where we're in. for decades to come to show certificates of whatever without the urgent need in the epidemiological situation. And we should see how far we go, privacy preserving, in helping us to become a bit more loose than we are now, helping to relax some of the borders we have now. and still preserve privacy and do that within the ethical borders we all in Europe agree upon. Thank you, Ron. I can see we have already one question from YouTube. In the meantime, I would ask others to raise their hand if they have a question. So, but before I read out the question from YouTube, Hannes Werner raised his hand. You are muted. Sorry, I have one comment and one very technical question. One comment to Nikolaus, because he's arguing that you are arguing a little bit to a zero one decision, because either we can travel fully. or it doesn't make, we have all those restrictions. And if you have some economic, let's say specifically from the tourism industry, wouldn't it make sense to release a little bit so that they can travel, so you have some inflow and outflow, and this would be at least to some layer, it would be possible. So this is a question to Nikolaus. And the second one is a very technical one to Ron. Ron, in your... process of handling the data, you are somehow accepting the test result, which I imagine is coming from some test server or from some IT solution, some database. Can you also handle paper documents? For example, in Austria, we have a situation where not always test results are purely electronically available, but you have it on paperwork. Could you handle those? This is a very technical issue. In the Dutch situation, there is no paper-only lab doing COVID testing. So all the COVID tests are available in a digital way. And as a patient or a citizen, it's my file. So what we do is I access my own file at a specific lab, get it in a digital form on my phone, and then transform that into a... certificate with less data than was on the result I just got in a digital way from the lab. Can I make just a side remark? This assumes, one, that you have formalized documents, first, and second, everything is electronically available, which is in several countries not the case. Yeah, that's true. Thank you. Just one comment very briefly. I think obviously it's not a zero one decision, but everything that we do in there comes with a price. Right. So you need to put things into relation. Right. And and it's it's the price is not or the option is not on the one hand, you get full freedom. And on the other hand, there is no privacy risk. Right. So it's a little bit more gray. And I think Ron did a very good job in explaining the gray areas also. Right. Thank you. So I take a question from the chat and later the question from YouTube, because I think that's the better order. So one question from the chat, is let's assume that I'm Italian and I wish to travel to Germany and attend a concert in Berlin. How? a pass issued in Italy could be accepted in Germany at the concert if they are based on different rules and technology. So I think there we have to distinguish between the border crossing, the EU level and the national level. So Ron, what would be your answer? Well, first answer is that the EU regulation does not see to domestic use. So that's for cross-border use. What we try to do in the Netherlands is have the scanner app that we allow by law. So there is only one scanner verifier app allowed by law in the Netherlands for specific situations for a specific time from now on. So it's a temporary law. And what we try to do is, I showed you the amount of information the verifier app shows, which is just a few initials and some elements of the date of birth. try to do that for the international certificates also. So we are going to accept in our domestic verifier app the certifications issued in other member states. But that's the Dutch situation, and that's regulated by law, and there is a privacy impact assessment on that. So if I understand that correctly, it could be different in different countries, for instance, in Germany. Yeah. Yeah. Let's say domestic use is up to these member states. Yeah. So I think one more sentence to this. And of course, this is a nice story to tell them what member states might have as ideas how to use this. Right. I mean, you could use this for all kinds of purposes. Right. So employers asking their employees to show this when entering. the campus students that are required to show this, everything. But the EU regulation does not provide a basis to do that. Yeah, but I would expect this to be part of a privacy impact assessment. If I were a EU legislator, I would put this as a risk into the assessment of the EU norm. If it could be reused on a national level to produce some kind of mass surveillance instrument on national level, this is a risk, isn't it? It is, but there is no basis in the GDPR to process the data for their use. And I strongly believe in democracy. So I strongly believe that European parliaments would not pass a law with such risks in it. So our parliament will pass a law with... with a privacy impact assessment and just with all those details cared for. Ron, sorry to tell you, I'm very happy to hear that it's not the case in the Netherlands, but I'm positively aware of several legislations in Europe not doing this right even before the pandemic. I'm not talking about the pandemic already. Yeah, but that was... Sorry. No, it's great that we are into such a discussion because these are exactly the points. But I have to come back to the YouTube question, which would be on the more international level. So how about US citizens if they are, for instance, vaccinated in the US? I think that's also a question to Ron. Yes. First steps first. So first, within the EU, we have to come to an agreement in which we, within the privacy laws of the EU, take step-step matter. And I say that with a reason. What I would not want to happen is that if we now start looking at the worldwide interoperability, that we would give away our values in that. So that, for example... Dutch citizens may be traced in another country somewhere in the world. So we are now looking into how we do that within the EU and try to harmonize that later on with other countries in the world. Thank you. So I think next is Helga Nowotny. So the floor is yours for your question. Thank you. We are mainly discussing so far the comparison between the Netherlands and Austria. I mean, the EU is in the background, but this is what we are really discussing. And I would like to know more. How long did it take you in the Netherlands to have the privacy assessment? And I would want to ask Nikolaus, what is needed in Austria to get this started? Because this seems to be the first step, the first hurdle to overcome. And you seem to sail through it in the Netherlands. And I'm wondering, you know, what keeps us back in Austria? Can I go answer first then? Please. We have... Dutch Parliament demands from us that if we... bring a law to parliament, there is a privacy impact assessment with it. And the data processed is described in the law and the other texts that go with it. So that's one. So we have to make a privacy impact assessment, otherwise parliament will not discuss the law. And secondly, the supervising body in the Netherlands also, of course, looks into the privacy assessment and will give their opinion on it. And that also is passed to Parliament. So Parliament gets the law, a description of what we are going to make, the privacy assessment, and the opinion on it of the supervising body in the Netherlands. And we do that in around four weeks. four to six weeks. And it includes getting the line to Japan. So this seems to be running very well in the Netherlands. How about Austria? Nikolaus. Walter, you are quite well aware of this, I would say. Yes, but that was the question. So first, when it comes to the, just to put things into context here, when it comes to the Corona tracing app, there is a privacy impact assessment and Walter was quite involved in this and it has about 140 pages and it's a rather complex legal text. So it's not that easy to... to produce something like this. So you need a lot of technical and legal expertise for producing something like this. But it would not be impossible to produce this within a reasonable amount of time, something three weeks, four weeks, five weeks, if there were the political will. But different from the Netherlands, there is no rule in Austria that such a privacy impact assessment would be a precondition for the parliament to pass a law. And actually, technically, as I said, it will come into force. And I'm at least at the moment not really aware of any privacy impact assessment of stage one of this. Yeah, I think transparency is a matter here because I should stay in the role of the moderator. But I have to add that I'm aware that there is a process of carrying out. the data protection impact assessment also for this in Austria. I'm not part of it this time. I'm not involved. But as we can see, there is obviously not enough transparency in the process. Also, from the perspective of the Data Protection Council, where we are both members of. So we didn't hear officially in the Data Protection Council about that. And let's see what will come out there. But next, I would want to give the floor to Jeff Kramer, who has raised his hand. Thanks, Volta. Thanks very much, both Ron and Niklas. It's really it's a very interesting discussion, I have to say. Ignoring the privacy side, which I think has become one of the focuses of this discussion, I'm actually also interested from the epidemic side and whether this makes how much sense this makes in the sense that. All these tests are very time dependent. So you can have a test and pick up the virus that afternoon. So how long, what is the validity, for instance, of these test results? It depends also whether you have a flow test or a PCR test, and then you get a different result as well as to how, let's say, valid that result is. And then finally, I mean, there's the integration of all of the vaccine information. So I wonder what kind of epidemic model or what kind of thinking goes behind this to ensure that this makes some kind of sense with respect to the spread of the virus. I don't know. I think one is probably the first. Yeah, what we try to do is, while the law was drafted, In agreement with the Parliament, we are now doing field labs. And in those field labs, there is lots of scientific research where people get tags on and their contacts are measured. There's previous testing, 40 hours max, and there is testing afterwards. So we are now doing a lot of scientific research. Is it really so that a negative test may lead to a safe? venue, etc. That's one. There's a lot of debate on how much of a safety a vaccine generates and for how long. And that's also true for having had an episode of COVID. So there's still a lot of debate and research on how to safely open society with all those means. Next, I would take some questions from the chat. And there we have on a very specific level, the question about the two class society. So especially what are we going to do with the people who are very late in the national vaccination plan, Ron? Excuse me, you are muted at the moment. Oh, you're right. First of all, that's both ethical and political. So how long do we wait till we open society? That's political. And in the Netherlands, the agreement is that not only vaccination, but also a negative test and also having had COVID may lead to a proof that one may show to have some more access to venues than one would have without. And that is a political, ethical debate that we need to take into account with everything we do, because that's very important for a society to open in a way that people accept and trust. And what we will do is that, for example, a green screen in the Verifier app in the Netherlands. will never show what the basis of that green screen is. It will not show if it's a vaccine or a negative test or having had COVID. So what we try to do is give people options in all of those different ways of showing that a venue may be visited in a more safer way. Thank you. So in the chat, we also have a comment by Michael Stampfer, which I read more as a valuable remark regarding we should think about traveling less because of climate change and global warming. But I would want to hand over to Hannes Wertner, who has raised his hand again. Thank you. I have a more political or marketplace question because there are also other players in the field, which is Google and Apple, who at the end decide whether an app is accepted in their respective marketplace. So it's not for granted if you develop your Corona app and access and so on. They only accept a limited number. So this is not only a political issue. They own, let's say at the moment, the public infrastructure of app stores and decide whether it can be distributed or not. So this is apart from the European and data protection issue. And this is a question to both of you. Yeah, I agree to that. In the Netherlands, we decided that we will, by law, only accept one app so that citizens know what app to trust and what not. So we have an app by law that should be used to show a negative test results in those situations that the law enables us to do that. So for us, it's not a big issue that those... giants only accept a couple of apps because by law we only accept one. But what is if they say no to you? Then we will have a huge discussion. What I see is that the positive side of this is that while the EU tries to operate within the crisis, the debate with giants like Google and Apple are now also more on a EU level, so that it's not a single country without having the force to do that. Much of the debates are now on a EU level and not on a single member state level, and that helps a bit in balancing power. So thank you. I suggest to stay at the political level. And I wanted to take Erich Prem's question and Michaela's question from the chat. But Erich, you raised your hand. Please ask your question. Thanks. I'll paraphrase what I asked in the chat. Thanks for the excellent presentation. A question both to Ron and Nikolaus. Ron, so interestingly, now we are... As a result of this discussion, we seem to be in a situation where we are facing very different, let's say, attitudes against privacy, let's say, testing of laws in general. And from what you said, Ron, you seemed relatively happy with the situation. would you say this is generally true and why is this the case in the Netherlands? And of course the opposite question then goes to Nikolaus. Why do you think there is so little discussion about these aspects and why do our leaders seem to rather hide these processes from us? Shall I start? Privacy and ethical considerations and behavioral considerations of all the things we do now to help come out of this pandemic are in every debate in parliament. And that's part of the society. It is a relic of World War II for a way. So in everything we do. ethical considerations, behavioural considerations, privacy considerations, information security considerations are all debated in Parliament. I think it's cultural and it really helps having a transparent process in which everything we do is looked upon from different sides by scientists, by scholars, by groups in society and it helps. Not always easy, but it helps gaining trust. I think my answer would be in brief. I mean, there's probably a lot of cultural issues behind this that I don't want to speculate about at the moment. But there's one point which is really important in my view, and that's not speculation. We are urgently lacking institutions and fora in Austria where independent academic exchange of opinions is happening. I think this is the problem, one of the problems. So we don't have this. And therefore, there is not too much input that is not politically biased coming. Walter, you are muted. I don't know whether this is on purpose. I'm sorry. No, I wanted to thank you very much for the discussion. Of course, it was an excellent one. But on the other hand, as it seemed, we were not able to solve the big questions, of course. But I think it's always worth discussing them. There are also some specific detail questions left on the chat. for instance, about the license of the open source, which was published, but I think this can easily be looked up. For everyone else, EUPL. Okay, so this was quick. Thank you. But I was also reminded to use EU instead of Europe when I'm speaking about EU level. Okay, taken. But I think we have come to an end. And therefore, I would give the floor back to Hannes Wertner to close this session. And thank you all again for your presentations and for participating in the discussion. Thank you all for this intense discussion and lively discussion. I just would like to remember to all who are in there. online that we have the presentations online so you can have access to the files via our website and you can also listen to the via our youtube channel regarding the comment from Nikolaus Forgo at the end that we missed somehow a place of exchange in the academia I support this but With this digital humanism lecture series, we also try to establish some kind, but this is an international place of exchange. It's not an Austrian one, and it has this international perspective. So I really want to thank you all, and I'd like to see you in two weeks, and I hand over to Peter Knies, who will announce our next event, as well as his piece of music. looking forward and peter thank you and thank you all for participating and following our discussion thank you and goodbye peter the floor is yours thank you very much um so yeah for today trying to find something fitting i actually wasn't aware of of pieces relating um to passports i tried that would be the right i thought that would be the right direction to go but um the band Passport came to my mind. You still have to share your screen. I will. Don't worry. I just have to make sure. No problem. Yeah. So let me check if this is right. So you can see it hopefully now. So the band Passport came to mind. And I found a track called Freedom Jazz Dance. So that ticked some boxes. And I picked this one. Just very quickly, Passport is a jazz ensemble led by Klaus Dortinger. Maybe the participants from the German-speaking countries at least are familiar with his work through the iconic Tato title score, among others. And other members of the band featured on this live track from 1974 are Brian Auger on keyboards. and on fire, one might want to add, and PDR work on drums. And yeah, before we get to it, let me announce the next event. On May 4th, actually on May 4th, we should play something Star Wars related. But anyway, on May 4th, Riccardo Baeza-Yates will speak on ethical challenges in AI and Carlo Ghezzi will be the moderator. So I hope to see you there. For now, let's enjoy Passport with Freedom Jazz Dance over its full glorious six minutes. And thank you for joining today and the vivid discussions and see you next time.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.576,
+      "text": "So good evening or good morning, wherever you are. I'm Hannes Wiertner and I'm one of the main organizers of this Digital Humanism lecture series. And I welcome you to the lecture of today."
+    },
+    {
+      "start": 24.576,
+      "end": 48.08,
+      "text": "It's on the plan for the vaccination passport in Europe or also called Green Pass. And it's proposed by the European Union. And this is a highly topical issue. It shall enable access and travel across borders in the near future. And there we have an intense, this intensive discussion on that topic on a technical, ethical and privacy level."
+    },
+    {
+      "start": 48.752,
+      "end": 76.704,
+      "text": "Why do we discuss it here at our digital humanism lecture series? And you know that digital humanism not only tries to describe and analyze the interplay of technology and humans and society, but is equally important, it also tries to influence the technological development with the objective of a better life and a better society. So we argue for a human-centered way into the digital future."
+    },
+    {
+      "start": 76.704,
+      "end": 106.48,
+      "text": "And also where we see and use technology as a means to tackle issues and problems such as the pandemic. So the topic of today is on the design side, on the technology side, really at the center of our initiative. I'm happy to welcome a highly distinguished panel. This is Ron Rosenthal from the Dutch Ministry of Health, where he acts as CIO. And as respondent, Nikolaus Forgo from the University of Vienna."
+    },
+    {
+      "start": 106.48,
+      "end": 133.696,
+      "text": "And as moderator, Walter Hötzendorfer, who will also introduce the two and moderate the discussion afterwards. I would like to remember you that after the discussion, we have, as always, a little piece of music selected by Dieter Gneiss. And I thank Peter for his ongoing effort to select always so excellent pieces of music, which is not a simple case."
+    },
+    {
+      "start": 133.696,
+      "end": 160.8,
+      "text": "I just want to have a reminder to you that you have a look at our website and to our YouTube channel, which you can have access via the website where you have access to all our previous discussions, panels, as well as presentations. So you can have a look at the slides and listen to our presentations and discussion. It's a pleasure to introduce Walter Hötzendorf, and I'm happy that he accepted our invitation to moderate the panel."
+    },
+    {
+      "start": 160.8,
+      "end": 189.936,
+      "text": "Walter is a senior researcher at the Research Institute Digital Human Rights Center in Vienna. Previously, he was with the Center for Computers and Law at the University of Vienna. His background is business informatics at TU Vienna at my home institution. And he was one of our excellent students. And he studied also law at the University of Vienna in Schaeffel. So he has a double degree in both in computer science and in law."
+    },
+    {
+      "start": 190.128,
+      "end": 219.952,
+      "text": "His PhD is on the intersection on data protection and privacy by design. He's an advisor to many organizations on these issues, and he also lectures at Austrian and several international universities. And currently, and this is also one of the reasons he is an excellent moderator and engaged in the topic, he's an advisor for the Austrian Red Cross on the issue of data protection. And this Red Cross,"
+    },
+    {
+      "start": 219.952,
+      "end": 245.136,
+      "text": "in essence runs the Austrian stop corona app which is the tracing app in Austria and there he was also his focus was on privacy by design. Walter thank you for being with us the floor is yours and I ask you to start the discussion thank you. Many thanks for the kind introduction good afternoon it's a pleasure to chair this panel today."
+    },
+    {
+      "start": 245.136,
+      "end": 274.32,
+      "text": "As a data protection researcher and consultant, I have been following closely the national and European activities for developing the so-called green pass from an academic and civil society perspective, as well as from a practical perspective. And so I'm very happy to be able to discuss this topic today with these distinguished colleagues. It is my pleasure to introduce you, Ron Rosendahl."
+    },
+    {
+      "start": 274.32,
+      "end": 303.472,
+      "text": "He holds degrees both in informatics and psychology. And he is director of information policy and the CIO of the Dutch Ministry of Health, Welfare and Sport. Ron is responsible for information policy in the health sector in the Netherlands for the functioning of the Dutch Healthcare Information Council."
+    },
+    {
+      "start": 303.472,
+      "end": 331.936,
+      "text": "and for quality assurance as to the aspect of information and ICT in the activities of the ministry. He's also the director of the program directorate tasked with the developments of digital solutions to address the COVID-19 pandemic. And in particular, the national notification app, which is called Corona Melder."
+    },
+    {
+      "start": 331.936,
+      "end": 359.312,
+      "text": "And now the test and vaccination app he will speak about today. So now Ron Rosendahl will give his talk titled Vaccination Passports, a tool for liberation or the opposite. And after that, Nicholas Forgo will respond. And then I will take questions from the audience."
+    },
+    {
+      "start": 359.312,
+      "end": 384.032,
+      "text": "So I would ask Mette to share the slides of Ron. And Ron, the floor is yours. Thank you very much, Walter. Thank you for the kind introduction. And I'm honored to be here. Indeed, I will talk about two things. Can I have the next slide, please? The Digital Green Certificate, which is the EU work."
+    },
+    {
+      "start": 384.032,
+      "end": 409.936,
+      "text": "And what we do for domestic use in the Netherlands, in which we go still a step further. On top of what you said, I am also since November last year, the co-chair, the member state co-chair of the e-health network of the commission under which the green certificate is developed. Can I have the next slide, please?"
+    },
+    {
+      "start": 411.632,
+      "end": 440.208,
+      "text": "And there are many, many different free movement restrictions in place across the EU at the time. And the EU has become a patchwork of different border restrictions reflecting their current situation. Member states are juggling with several tools like mandatory quarantine rules, PCR testing, rapid testing, certificates, etc. And there is absolutely no common agreement among the member states on how to use those certificates."
+    },
+    {
+      "start": 440.24,
+      "end": 469.392,
+      "text": "And now that the vaccination campaigns in all the EU member states are running full speed, it's only a matter of time that vaccination certificates will at some point in time be added to the toolbox. And that will add to the complexity already in place. And one can understand that the absence of standardized and secure formats could cause potential problems concerning mutual acceptation of certificates and possible fraud."
+    },
+    {
+      "start": 469.424,
+      "end": 498.224,
+      "text": "And I understand that there is already a black market that deals in those certificates and all those complexities. They don't help us in allowing citizens to travel freely within the EU, within the union. May I have the next slide, please? And here what you see is several examples of vaccination certificates from member states on screen."
+    },
+    {
+      "start": 498.224,
+      "end": 528.224,
+      "text": "The Greek, the Cypriot, the Luxembourg, the Polish and the Croatian version. And just imagine that 27 member states with each having their own type of certificate consisting of different data fields and different verification and authentication mechanisms, what that would lead to. So for me, as a EU citizen, that will be a nightmare. If wanting to cross borders, I would have to do a whole study on what is needed to enter the country."
+    },
+    {
+      "start": 528.224,
+      "end": 557.728,
+      "text": "and to what conditions their certificate need to comply with. And that is unworkable and unwanted. Can I have the next slide, please? And since February last year, the European political leaders understood that we have to act now in order to prevent the horror scenario that I have mentioned. And it helped, of course, that our Greek friends had pushed the idea, especially the countries within the Union that rely on tourism in summer."
+    },
+    {
+      "start": 557.728,
+      "end": 586.576,
+      "text": "have expressed the need for a common approach. The primary focus then is to return to free, unobstructed movement within the EU. But of course, we do not forget the global aspect of travel. So we work closely with WHO and ICAO and the other international fora that are working on it to ensure global convergence."
+    },
+    {
+      "start": 586.576,
+      "end": 616.096,
+      "text": "But we have a very tight deadline in June. We want to get the job done by June, but still keep the door wide open for global interoperability. And once the EU solution is up and running, we should intensify that to converge, for example, the RKO solution. And that's most important for me, and that's why I'm happy to be here. We have to develop a solution that is in line with..."
+    },
+    {
+      "start": 616.096,
+      "end": 640.864,
+      "text": "Our European foundation, data protection, etc. And that takes me to the next slide, please. So what are the European principles and key values? Well, first and foremost, it should facilitate the free movement. The free movement of people is enshrined in the Lisbon Treaty that has shaped Europe as it is today."
+    },
+    {
+      "start": 640.864,
+      "end": 668.88,
+      "text": "important principle is that the Digital Green Certificate should by no means be a vaccination obligation. Vaccination is and remains a choice for every EU citizen. Citizens who choose to pass on vaccination should in no way be discriminated when wanting to travel across borders. For that reason, the Green Certificate consists of three types of certificates. Besides vaccination, also test and recovery."
+    },
+    {
+      "start": 669.232,
+      "end": 694.128,
+      "text": "And above all that, data protection is a fundamental right for every EU citizen. Can I have the next slide, please? So it is of the utmost importance that the green certificate complies to European data protection rules. For starters, we have the GDPR."
+    },
+    {
+      "start": 694.128,
+      "end": 723.296,
+      "text": "And the notion of data minimization where only the bare minimum needed data is processed. And the GDPR provides a legal ground to process data for issuance and verification of certificates. Furthermore, if member states want to use the digital clean certificate solution for other purposes, for instance, access to bars or restaurants, they will need to create a separate legal base to process data for that purpose. So that's not in."
+    },
+    {
+      "start": 723.296,
+      "end": 749.376,
+      "text": "And in addition, it is important to know that there will be no personal data retained and no EU database on vaccination test or recovery status. But it is up to the member states to decide how they build their digital solutions. I will later on demonstrate how we do that in the Dutch situation in the Netherlands, because we choose to develop a privacy preserving app."
+    },
+    {
+      "start": 749.376,
+      "end": 776.72,
+      "text": "that not only ensures that all data is held on the private device of the citizen, but also ensures that this little information is shown on a digital certificate. For example, not the full name, but a shortened name, and not the full date of birth, but just a few elements of that. But furthermore, the system that Europe is building does not keep track of a citizen where they use their certificate. This is to ensure that citizens are not traceable."
+    },
+    {
+      "start": 778.0,
+      "end": 805.632,
+      "text": "Can I have the next slide, please? So what is it, actually? Well, it is a certificate both on paper and in a digital form. And all have an interoperable barcode that is needed to verify the authenticity of the certificate. Furthermore, all will at least be readable in English and an official EU language."
+    },
+    {
+      "start": 805.632,
+      "end": 834.672,
+      "text": "They should be provided free of charge. And it's not a replacement of other proofs. But it's not only a certificate, it's also a trust framework so that every EU member state can trust the issuer in another member state. And now I go, if you please go to the next slide, to what we do in the Netherlands to go even a step further for domestic use."
+    },
+    {
+      "start": 834.672,
+      "end": 864.528,
+      "text": "We have a Dutch law in place, or in parliament at the time, and with pilots in place, that proof of a negative test result can be used to relax or release specific facilities, the measures that prohibit access to specific facilities or activities, which is a legal framework that regulates when the display of a test certificate is mandatory and who may ask for it and who may not ask for it."
+    },
+    {
+      "start": 864.528,
+      "end": 894.224,
+      "text": "For example, this is about museums and events. Can I have the next? And the goal is a reopening of society in a responsible manner where this is not possible without asking for a negative test. So not in the long run, but just for a couple of months, we expect. And it's about access to specific facilities like venues where there would no."
+    },
+    {
+      "start": 894.288,
+      "end": 922.176,
+      "text": "no way of having that venue without proof of negative test because of the current epidemiological situation. Can I go to the next slide, please? So we have developed two apps, one on the citizen side and one on the verified side. The CoronaCheck apps allow citizens to keep their certificate body files. And currently,"
+    },
+    {
+      "start": 922.176,
+      "end": 951.664,
+      "text": "This means test certificates. From June on, this also will mean vaccination. But for now, it's test certificates. And there is also the scanner app that everyone can use the scanner app in the App Store. And it's used by someone who wants to scan certificates to allow access to a venue. Can I have the next slide, please? So how does it work? A visitor with the app."
+    },
+    {
+      "start": 951.664,
+      "end": 980.88,
+      "text": "wants to visit an event, gets tested at max 40 hours before the event, downloads the app, retrieves the test certificate, generates them from the result. The test certificate shows that to the venue where he or she wants to go. And the verifier just downloads the scanner app and starts it and then scans the certificate."
+    },
+    {
+      "start": 981.744,
+      "end": 1011.184,
+      "text": "Can I have the next slide? But then, what were the requirements we started with? One, first of all, there is no central storage whatsoever of certificates. There is a test result at a lab, and there is a certificate from that result on the device of a user. That's it. Secondly, there is no linkability. A digital system..."
+    },
+    {
+      "start": 1011.184,
+      "end": 1040.128,
+      "text": "can produce a new QR code at a regular interval to prevent people being traced from one venue to another, which is not possible on paper. So it's more privacy preserving than it was on paper. Only negative test results can be loaded. So a positive test result will not be accepted by the app. Only negative test results can lead to a certificate. And what we try to do is balance fraud prevention and privacy."
+    },
+    {
+      "start": 1040.128,
+      "end": 1068.864,
+      "text": "And we'll come to that later on. Then accessibility was a key requirement. It should be usable for a majority of Dutch population, including those without mobile devices. So there is a print solution also. And we need to be able to generate and verify a certificate without online connection. Thirdly, and that's all about trust, it's open and it's transparent."
+    },
+    {
+      "start": 1068.864,
+      "end": 1097.424,
+      "text": "Total code base is on GitHub, on the GitHub account of the Department of Health. And it can be followed across the development and production and use of all that we do. And verification can be done by everyone. I can verify my own certificate and see what the verifier would see if he or she would verify my certificate. Next slide, please."
+    },
+    {
+      "start": 1097.424,
+      "end": 1125.936,
+      "text": "By nature, in law, there is a temporary law governing the use of the app. And that law stops after three months unless Parliament gives a green light for another three months. So there's a law governing the app. There's a kill switch in the app where if we push the switch, the app doesn't function anymore and it's stopped."
+    },
+    {
+      "start": 1126.096,
+      "end": 1148.88,
+      "text": "And to prevent abuse, we had to deal with abuse scenarios. So we introduced the obligation to show ID. But then again, next slide, please. We do not show every detail to the verifier. So this is what the official looks is for the."
+    },
+    {
+      "start": 1148.88,
+      "end": 1177.632,
+      "text": "A person actually making a test appointment and making a QR code to verify the result. Next slide, please. And then the left part, where you see first letter of first name, letter of last name and date. It is not possible with those details to know who I am."
+    },
+    {
+      "start": 1177.632,
+      "end": 1206.336,
+      "text": "But one can verify against my ID that it might be me. And if I have a first name that starts with a Q, less detail will be shown after that. So some of those dates, for example, may not be present if my first name starts with a Q, as there are not enough people with that initials to make sure that the test result cannot be led back to me."
+    },
+    {
+      "start": 1206.336,
+      "end": 1235.28,
+      "text": "So what we do is balance fraud and privacy in that the test result, when checked against my ID, it is highly possible that it is me, but one cannot make sure that that test result is my test result. And then on the right side, there is a QR. And that QR code will change every two minutes."
+    },
+    {
+      "start": 1235.632,
+      "end": 1263.136,
+      "text": "To be sure that if I show it now and I show it to a next venue in about an hour, there is no possible way to link my two visits from one venue to another. Next slide, please. And then on the verifier side, one gets a green screen or a red screen. If it's a green screen."
+    },
+    {
+      "start": 1263.136,
+      "end": 1290.192,
+      "text": "Only a few details are there to be able to link that to the ID I show. And that's it. If it's a red screen, there is no reason whatsoever mentioned why it's a red screen. It might be I don't even have a test. It might be I have a test that is too old. But there is no reason shown otherwise than there is no reason to show a green screen."
+    },
+    {
+      "start": 1290.352,
+      "end": 1318.672,
+      "text": "So what we try to do is make it privacy preserving, but then again, a way to in a situation in which there is still a lot of fires going around and there is a lot of people having the coronavirus and opening venues would not be possible without such a proof that we have still a way to do that. Next slide, please. So."
+    },
+    {
+      "start": 1319.024,
+      "end": 1347.44,
+      "text": "And what we try to do is balance the epidemiological ways of moving forward in this crisis, in this pandemic crisis, preserving privacy, do it in a way that all people can participate and do it in a way that's accessible to everyone without coming in a situation where every Dutch citizen would be or could be traced and linked."
+    },
+    {
+      "start": 1347.44,
+      "end": 1370.32,
+      "text": "from visiting venue to venue, and then which a organizer of venue will be able to generate a database of all my test results. Thank you very much. Many, many thanks, Ron Rosendahl, for this excellent and really insightful talk. So I'm really impressed by the privacy by design measures you presented."
+    },
+    {
+      "start": 1370.48,
+      "end": 1396.752,
+      "text": "And I am curious for looking for the implementation details. That sounds really great to me. It's based on serial knowledge proof. There's a lot of crypto in it. And all of it can be followed on the GitHub side of the Dutch Ministry of Health. I will do so for sure. And now I'm looking forward to the discussion."
+    },
+    {
+      "start": 1396.752,
+      "end": 1423.168,
+      "text": "which will be kicked off by Nicolas Forgo. So it is my pleasure to introduce you to Nicolas Forgo. He is a professor of IT and IP law and the head of the Department of Innovation and Digitalization in Law of the University of Vienna, where he's also the head of a postgraduate program on information and media law."
+    },
+    {
+      "start": 1423.168,
+      "end": 1451.936,
+      "text": "Until 2017, he was professor for IT law and legal informatics at the Leibniz University of Hannover. And he's also a member of the Austrian Data Protection Council, where we also have discussed the issue of the Green Pass on the European level and also on the national level. And so I'm looking forward."
+    },
+    {
+      "start": 1451.936,
+      "end": 1476.736,
+      "text": "to your statement, Nicolas. Thank you very much, Walter. I will keep it rather brief and I will try to distinguish between the European and the Austrian situation because I assume that many of the listeners are Austrians. And I will also put a little bit more effort into the legal framework as I'm a lawyer by training."
+    },
+    {
+      "start": 1476.736,
+      "end": 1501.92,
+      "text": "So to start with, what we are talking about at the moment is a proposal coming from the Commission, coming with the argument that there is some urgency here. And that because there is so much urgency, I quote literally now, in view of the urgency, the Commission did not carry out an impact assessment. End of quote."
+    },
+    {
+      "start": 1501.92,
+      "end": 1531.872,
+      "text": "So the key argument of all this, what's happening at the moment is that we are in a kind of, you know, catastrophic situation and that because of this, we need something very quickly. We need it until June or July at the very latest. And my first argument would be that I, with all full respect, do not buy this argument because we have plenty of very urgent problems at the moment because of the pandemic."
+    },
+    {
+      "start": 1531.872,
+      "end": 1561.28,
+      "text": "A digital certificate is, in my view, not one of the most important ones, at least not from a citizen's point of view. There are all kinds of economical reasons behind this. Obviously, in particular, the touristic season is important. And that's one of the reasons why so many countries in which tourism plays an important role are pushing this so strongly, including Austria."
+    },
+    {
+      "start": 1561.28,
+      "end": 1588.912,
+      "text": "But from the average citizen's perspective, I think this is not a priority at the moment. But even if it were a priority, second argument, this will in many cases not help to solve the issues we are in for different reasons. And I would like to mention just two of them."
+    },
+    {
+      "start": 1588.912,
+      "end": 1617.248,
+      "text": "We still don't know, nobody on this earth knows this, we still don't know anything from an epidemiological point of view about the status of people who are tested today but were infected yesterday and when and in how far they will be infectious and so on. We don't know anything at the moment about possible"
+    },
+    {
+      "start": 1617.248,
+      "end": 1646.032,
+      "text": "dangers coming from people who are vaccinated and get a second infection. And we don't know anything about in how far the fact that you went through the disease helps you in not infecting other people if you are reinfected with a mutation of the virus. So we are gambling here with a lot of epidemiological assumptions."
+    },
+    {
+      "start": 1646.032,
+      "end": 1675.072,
+      "text": "Nobody really knows anything about. The only thing that people know is that allowing free movement in such a situation is possibly also from an epidemiological point of view, not the best choice to make. Third, it is not true that this brings us back into some kind of normality, because the normality before COVID was that within Schengen, I could move."
+    },
+    {
+      "start": 1675.072,
+      "end": 1703.696,
+      "text": "freely around. I could go to Amsterdam without anybody checking anything because Amsterdam was within the borders of Schengen. And this is the normal status. It's not normal to be required to show something on your phone if you want to go to Amsterdam. So this helps us in making something which is a deviation from the normal."
+    },
+    {
+      "start": 1703.696,
+      "end": 1728.768,
+      "text": "to some kind of the new normal, which is not the status that I would really very strongly support. And fourth, final argument, before I go then into the IT-related things a little bit more, final argument in this first round of arguments, this is very selective when it comes to the vaccinations that are accepted."
+    },
+    {
+      "start": 1728.768,
+      "end": 1757.712,
+      "text": "So you are fully eligible for this if you are vaccinated by any of those which have the certificate within the EU at the moment. You are not eligible if you are vaccinated by something else, in particular, for example, by Sputnik. And there are EU member states running vaccination campaigns at the moment with such non-certified."
+    },
+    {
+      "start": 1757.712,
+      "end": 1784.0,
+      "text": "vaccines such as Sputnik, such as in Hungary. And as the Austrians in the room know, Austria has been quite close to this decision. And fifth, everything which is about the IT components of all this is not really fully understandable and transparent in the sense that me or you could have a look into this."
+    },
+    {
+      "start": 1784.0,
+      "end": 1813.168,
+      "text": "because it was prepared and it is still prepared by a governance body, this e-health network, which is a body of government representatives, so not the general public. So a lot in particular about the privacy risks, if there was any debate on this in this network, is unknown to academics such as me, because obviously we are not a member of this group. So that was the first part."
+    },
+    {
+      "start": 1813.168,
+      "end": 1839.056,
+      "text": "fundamentally about vaccination campaigns. Secondly, now about the design of such things. Now, from an Austrian perspective, Austria, for many reasons, seems to have a very strong interest in this. And the outcome of the Austrian development so far seems to be different from the Dutch version."
+    },
+    {
+      "start": 1839.056,
+      "end": 1865.36,
+      "text": "Not really in the sense that we can be very proud of what we are doing here in Austria for many reasons. One of them is, again, in Austria, there was no involvement or more or less no involvement of anyone who has a stake in this and who is not a member of the political system in the sense, not even the Data Protection Board had a close look into this before it was proposed."
+    },
+    {
+      "start": 1865.36,
+      "end": 1893.952,
+      "text": "And many others, the Data Protection Authority, NGOs, academia, all of those were not really in this debate. And the Austrian solution that was then proposed on very short notice, and again under the claim that something is terribly urgent here, looked in one point very different from the Dutch system, which is that we in Austria seemingly seem to introduce a centralized solution."
+    },
+    {
+      "start": 1893.952,
+      "end": 1923.072,
+      "text": "So something with a centralized database. And we seem to introduce this in a first round already for testing purposes. And the way this came into the law, or at least into the draft law, is very specific in my view for how we deal with these problems at the moment, because this was introduced one day, one day before it was then decided on in."
+    },
+    {
+      "start": 1923.072,
+      "end": 1951.84,
+      "text": "the full chamber of the national parliament. So between the presentation and the decision, there was one day. And as some of you might know, it was then decided positively in the first chamber of the parliament, in the national chamber, but it was not decided positively in the federal chamber, in the Bundesrat, so that the situation at the moment is that if nothing is going to happen,"
+    },
+    {
+      "start": 1951.84,
+      "end": 1980.592,
+      "text": "we will have this first level of a centralized solution for purposes of testing certificates within eight weeks in the law, in the law on epidemics, in the epidemic assets, without anyone knowing anything about the privacy impact of this, because again, there was no privacy impact assessment happening because of the..."
+    },
+    {
+      "start": 1980.592,
+      "end": 2008.032,
+      "text": "because of the pretended urgency. Final remark, I think the example of the Corona app, as we have it in Austria, or as we don't have it in Austria, and as we don't have it in many other member states at the moment, should teach us two lessons. The first one is things are frustrating and things are urgent."
+    },
+    {
+      "start": 2008.032,
+      "end": 2025.952,
+      "text": "But urgency is not always priority or should not always be priority number one, because if you don't take data protection issues seriously from the beginning, people simply do not follow you. And remark two."
+    },
+    {
+      "start": 2025.952,
+      "end": 2052.976,
+      "text": "I really appreciate the openness of such debates like this one here, because I think that we need them in order to build up that trust that is needed for the acceptance of such solutions all over in Europe. Thank you. Many thanks, Nicolas. I fully agree. I highly welcome this discussion. And I think before we take the questions from the audience."
+    },
+    {
+      "start": 2052.976,
+      "end": 2080.88,
+      "text": "which, by the way, you can ask on Zoom, in the chat, or also orally. I would want to give Ron the chance to respond to Nicolas Fogo, of course. Ron. Yes, thanks a lot. I will respond in two lines. I start with the Dutch approach."
+    },
+    {
+      "start": 2080.88,
+      "end": 2107.344,
+      "text": "We do things with a law and we start with a privacy impact assessment and everything we do is open source, including the privacy assessments, including the security assessments. So not only the source code, but everything we do is open source, available for parliament and available for society. So that's one. I totally agree that for trust, openness is needed."
+    },
+    {
+      "start": 2107.664,
+      "end": 2134.752,
+      "text": "And I think that we will show that what we do in the EOS network can be trusted also. And I take that argument seriously and I'll take that back because I think that openness and transparency is a key to trust and it's trust we need. Then the first arguments, I think we all remember for people who travel in the past."
+    },
+    {
+      "start": 2134.752,
+      "end": 2164.656,
+      "text": "How we did travel to Amsterdam without a yellow booklet, but how we did travel to Africa with a yellow booklet. So there were a number of situations in which there were precursors of things we had to do before entering countries. And one of them was showing certificates of vaccination. And we are now in a situation we didn't have for about 200 years, where in the Spanish flu, tens of millions of people died."
+    },
+    {
+      "start": 2164.656,
+      "end": 2193.776,
+      "text": "And now we have a vaccine we didn't have then. And now we have ways to know, to do research into what is possible within the current situation without making it worse and still have some more freedom than we would have if we didn't have all those tools. So I agree that we should not accept being in the situation where we're in."
+    },
+    {
+      "start": 2193.776,
+      "end": 2220.384,
+      "text": "for decades to come to show certificates of whatever without the urgent need in the epidemiological situation. And we should see how far we go, privacy preserving, in helping us to become a bit more loose than we are now, helping to relax some of the borders we have now."
+    },
+    {
+      "start": 2220.384,
+      "end": 2247.456,
+      "text": "and still preserve privacy and do that within the ethical borders we all in Europe agree upon. Thank you, Ron. I can see we have already one question from YouTube. In the meantime, I would ask others to raise their hand if they have a question."
+    },
+    {
+      "start": 2247.456,
+      "end": 2273.968,
+      "text": "So, but before I read out the question from YouTube, Hannes Werner raised his hand. You are muted. Sorry, I have one comment and one very technical question. One comment to Nikolaus, because he's arguing that you are arguing a little bit to a zero one decision, because either we can travel fully."
+    },
+    {
+      "start": 2273.968,
+      "end": 2301.696,
+      "text": "or it doesn't make, we have all those restrictions. And if you have some economic, let's say specifically from the tourism industry, wouldn't it make sense to release a little bit so that they can travel, so you have some inflow and outflow, and this would be at least to some layer, it would be possible. So this is a question to Nikolaus. And the second one is a very technical one to Ron. Ron, in your..."
+    },
+    {
+      "start": 2301.696,
+      "end": 2331.568,
+      "text": "process of handling the data, you are somehow accepting the test result, which I imagine is coming from some test server or from some IT solution, some database. Can you also handle paper documents? For example, in Austria, we have a situation where not always test results are purely electronically available, but you have it on paperwork. Could you handle those? This is a very technical issue."
+    },
+    {
+      "start": 2332.08,
+      "end": 2359.936,
+      "text": "In the Dutch situation, there is no paper-only lab doing COVID testing. So all the COVID tests are available in a digital way. And as a patient or a citizen, it's my file. So what we do is I access my own file at a specific lab, get it in a digital form on my phone, and then transform that into a..."
+    },
+    {
+      "start": 2359.936,
+      "end": 2384.752,
+      "text": "certificate with less data than was on the result I just got in a digital way from the lab. Can I make just a side remark? This assumes, one, that you have formalized documents, first, and second, everything is electronically available, which is in several countries not the case. Yeah, that's true. Thank you."
+    },
+    {
+      "start": 2387.76,
+      "end": 2417.232,
+      "text": "Just one comment very briefly. I think obviously it's not a zero one decision, but everything that we do in there comes with a price. Right. So you need to put things into relation. Right. And and it's it's the price is not or the option is not on the one hand, you get full freedom. And on the other hand, there is no privacy risk. Right. So it's a little bit more gray. And I think Ron did a very good job in explaining the gray areas also. Right."
+    },
+    {
+      "start": 2417.264,
+      "end": 2443.696,
+      "text": "Thank you. So I take a question from the chat and later the question from YouTube, because I think that's the better order. So one question from the chat, is let's assume that I'm Italian and I wish to travel to Germany and attend a concert in Berlin. How?"
+    },
+    {
+      "start": 2443.696,
+      "end": 2472.784,
+      "text": "a pass issued in Italy could be accepted in Germany at the concert if they are based on different rules and technology. So I think there we have to distinguish between the border crossing, the EU level and the national level. So Ron, what would be your answer? Well, first answer is that the EU regulation does not see to domestic use. So that's for cross-border use. What we try to do in the Netherlands"
+    },
+    {
+      "start": 2472.784,
+      "end": 2502.544,
+      "text": "is have the scanner app that we allow by law. So there is only one scanner verifier app allowed by law in the Netherlands for specific situations for a specific time from now on. So it's a temporary law. And what we try to do is, I showed you the amount of information the verifier app shows, which is just a few initials and some elements of the date of birth."
+    },
+    {
+      "start": 2502.544,
+      "end": 2525.392,
+      "text": "try to do that for the international certificates also. So we are going to accept in our domestic verifier app the certifications issued in other member states. But that's the Dutch situation, and that's regulated by law, and there is a privacy impact assessment on that."
+    },
+    {
+      "start": 2526.48,
+      "end": 2555.84,
+      "text": "So if I understand that correctly, it could be different in different countries, for instance, in Germany. Yeah. Yeah. Let's say domestic use is up to these member states. Yeah. So I think one more sentence to this. And of course, this is a nice story to tell them what member states might have as ideas how to use this. Right. I mean, you could use this for all kinds of purposes. Right. So employers asking their employees to show this when entering."
+    },
+    {
+      "start": 2555.84,
+      "end": 2578.064,
+      "text": "the campus students that are required to show this, everything. But the EU regulation does not provide a basis to do that. Yeah, but I would expect this to be part of a privacy impact assessment. If I were a EU legislator, I would put this as a risk into the assessment of the EU norm."
+    },
+    {
+      "start": 2578.064,
+      "end": 2607.856,
+      "text": "If it could be reused on a national level to produce some kind of mass surveillance instrument on national level, this is a risk, isn't it? It is, but there is no basis in the GDPR to process the data for their use. And I strongly believe in democracy. So I strongly believe that European parliaments would not pass a law with such risks in it. So our parliament will pass a law with..."
+    },
+    {
+      "start": 2607.856,
+      "end": 2630.016,
+      "text": "with a privacy impact assessment and just with all those details cared for. Ron, sorry to tell you, I'm very happy to hear that it's not the case in the Netherlands, but I'm positively aware of several legislations in Europe not doing this right even before the pandemic. I'm not talking about the pandemic already. Yeah, but that was..."
+    },
+    {
+      "start": 2630.016,
+      "end": 2658.288,
+      "text": "Sorry. No, it's great that we are into such a discussion because these are exactly the points. But I have to come back to the YouTube question, which would be on the more international level. So how about US citizens if they are, for instance, vaccinated in the US? I think that's also a question to Ron."
+    },
+    {
+      "start": 2658.8,
+      "end": 2687.2,
+      "text": "Yes. First steps first. So first, within the EU, we have to come to an agreement in which we, within the privacy laws of the EU, take step-step matter. And I say that with a reason. What I would not want to happen is that if we now start looking at the worldwide interoperability, that we would give away our values in that. So that, for example..."
+    },
+    {
+      "start": 2687.2,
+      "end": 2713.424,
+      "text": "Dutch citizens may be traced in another country somewhere in the world. So we are now looking into how we do that within the EU and try to harmonize that later on with other countries in the world. Thank you. So I think next is Helga Nowotny. So the floor is yours for your question."
+    },
+    {
+      "start": 2713.424,
+      "end": 2742.944,
+      "text": "Thank you. We are mainly discussing so far the comparison between the Netherlands and Austria. I mean, the EU is in the background, but this is what we are really discussing. And I would like to know more. How long did it take you in the Netherlands to have the privacy assessment? And I would want to ask Nikolaus, what is needed in Austria to get this started?"
+    },
+    {
+      "start": 2742.944,
+      "end": 2772.352,
+      "text": "Because this seems to be the first step, the first hurdle to overcome. And you seem to sail through it in the Netherlands. And I'm wondering, you know, what keeps us back in Austria? Can I go answer first then? Please. We have... Dutch Parliament demands from us that if we..."
+    },
+    {
+      "start": 2772.352,
+      "end": 2801.92,
+      "text": "bring a law to parliament, there is a privacy impact assessment with it. And the data processed is described in the law and the other texts that go with it. So that's one. So we have to make a privacy impact assessment, otherwise parliament will not discuss the law. And secondly, the supervising body in the Netherlands also, of course,"
+    },
+    {
+      "start": 2801.92,
+      "end": 2830.992,
+      "text": "looks into the privacy assessment and will give their opinion on it. And that also is passed to Parliament. So Parliament gets the law, a description of what we are going to make, the privacy assessment, and the opinion on it of the supervising body in the Netherlands. And we do that in around four weeks."
+    },
+    {
+      "start": 2830.992,
+      "end": 2840.176,
+      "text": "four to six weeks. And it includes getting the line to Japan. So this seems to be running very well in the Netherlands. How about Austria?"
+    },
+    {
+      "start": 2840.176,
+      "end": 2861.36,
+      "text": "Nikolaus. Walter, you are quite well aware of this, I would say. Yes, but that was the question. So first, when it comes to the, just to put things into context here, when it comes to the Corona tracing app, there is a privacy impact assessment and Walter was quite involved in this and it has about 140 pages and it's a rather complex legal text. So it's not that easy to..."
+    },
+    {
+      "start": 2861.36,
+      "end": 2888.432,
+      "text": "to produce something like this. So you need a lot of technical and legal expertise for producing something like this. But it would not be impossible to produce this within a reasonable amount of time, something three weeks, four weeks, five weeks, if there were the political will. But different from the Netherlands, there is no rule in Austria that such a privacy impact assessment would be a precondition for the parliament to pass a law."
+    },
+    {
+      "start": 2888.432,
+      "end": 2912.144,
+      "text": "And actually, technically, as I said, it will come into force. And I'm at least at the moment not really aware of any privacy impact assessment of stage one of this. Yeah, I think transparency is a matter here because I should stay in the role of the moderator. But I have to add that I'm aware that there is a process of carrying out."
+    },
+    {
+      "start": 2912.144,
+      "end": 2938.496,
+      "text": "the data protection impact assessment also for this in Austria. I'm not part of it this time. I'm not involved. But as we can see, there is obviously not enough transparency in the process. Also, from the perspective of the Data Protection Council, where we are both members of. So we didn't hear officially in the Data Protection Council about that. And let's see what will come out there."
+    },
+    {
+      "start": 2938.496,
+      "end": 2966.64,
+      "text": "But next, I would want to give the floor to Jeff Kramer, who has raised his hand. Thanks, Volta. Thanks very much, both Ron and Niklas. It's really it's a very interesting discussion, I have to say. Ignoring the privacy side, which I think has become one of the focuses of this discussion, I'm actually also interested from the epidemic side and whether this makes how much sense this makes in the sense that."
+    },
+    {
+      "start": 2966.64,
+      "end": 2991.632,
+      "text": "All these tests are very time dependent. So you can have a test and pick up the virus that afternoon. So how long, what is the validity, for instance, of these test results? It depends also whether you have a flow test or a PCR test, and then you get a different result as well as to how, let's say, valid that result is."
+    },
+    {
+      "start": 2991.632,
+      "end": 3021.152,
+      "text": "And then finally, I mean, there's the integration of all of the vaccine information. So I wonder what kind of epidemic model or what kind of thinking goes behind this to ensure that this makes some kind of sense with respect to the spread of the virus. I don't know. I think one is probably the first. Yeah, what we try to do is, while the law was drafted,"
+    },
+    {
+      "start": 3021.152,
+      "end": 3050.016,
+      "text": "In agreement with the Parliament, we are now doing field labs. And in those field labs, there is lots of scientific research where people get tags on and their contacts are measured. There's previous testing, 40 hours max, and there is testing afterwards. So we are now doing a lot of scientific research. Is it really so that a negative test may lead to a safe?"
+    },
+    {
+      "start": 3050.016,
+      "end": 3078.672,
+      "text": "venue, etc. That's one. There's a lot of debate on how much of a safety a vaccine generates and for how long. And that's also true for having had an episode of COVID. So there's still a lot of debate and research on how to safely open society with all those means."
+    },
+    {
+      "start": 3082.256,
+      "end": 3107.376,
+      "text": "Next, I would take some questions from the chat. And there we have on a very specific level, the question about the two class society. So especially what are we going to do with the people who are very late in the national vaccination plan, Ron?"
+    },
+    {
+      "start": 3113.136,
+      "end": 3142.784,
+      "text": "Excuse me, you are muted at the moment. Oh, you're right. First of all, that's both ethical and political. So how long do we wait till we open society? That's political. And in the Netherlands, the agreement is that not only vaccination, but also a negative test and also having had COVID may lead to a proof that one may show to have some more access to venues than one would have without."
+    },
+    {
+      "start": 3142.784,
+      "end": 3169.904,
+      "text": "And that is a political, ethical debate that we need to take into account with everything we do, because that's very important for a society to open in a way that people accept and trust. And what we will do is that, for example, a green screen in the Verifier app in the Netherlands."
+    },
+    {
+      "start": 3169.904,
+      "end": 3191.536,
+      "text": "will never show what the basis of that green screen is. It will not show if it's a vaccine or a negative test or having had COVID. So what we try to do is give people options in all of those different ways of showing that a venue may be visited in a more safer way."
+    },
+    {
+      "start": 3195.344,
+      "end": 3220.88,
+      "text": "Thank you. So in the chat, we also have a comment by Michael Stampfer, which I read more as a valuable remark regarding we should think about traveling less because of climate change and global warming. But I would want to hand over to Hannes Wertner, who has raised his hand again."
+    },
+    {
+      "start": 3221.36,
+      "end": 3244.976,
+      "text": "Thank you. I have a more political or marketplace question because there are also other players in the field, which is Google and Apple, who at the end decide whether an app is accepted in their respective marketplace. So it's not for granted if you develop your Corona app and access and so on."
+    },
+    {
+      "start": 3244.976,
+      "end": 3271.952,
+      "text": "They only accept a limited number. So this is not only a political issue. They own, let's say at the moment, the public infrastructure of app stores and decide whether it can be distributed or not. So this is apart from the European and data protection issue. And this is a question to both of you."
+    },
+    {
+      "start": 3272.72,
+      "end": 3300.656,
+      "text": "Yeah, I agree to that. In the Netherlands, we decided that we will, by law, only accept one app so that citizens know what app to trust and what not. So we have an app by law that should be used to show a negative test results in those situations that the law enables us to do that. So for us, it's not a big issue that those..."
+    },
+    {
+      "start": 3300.656,
+      "end": 3329.424,
+      "text": "giants only accept a couple of apps because by law we only accept one. But what is if they say no to you? Then we will have a huge discussion. What I see is that the positive side of this is that while the EU tries to operate within the crisis, the debate with giants like Google and Apple"
+    },
+    {
+      "start": 3329.424,
+      "end": 3348.336,
+      "text": "are now also more on a EU level, so that it's not a single country without having the force to do that. Much of the debates are now on a EU level and not on a single member state level, and that helps a bit in balancing power."
+    },
+    {
+      "start": 3351.632,
+      "end": 3379.36,
+      "text": "So thank you. I suggest to stay at the political level. And I wanted to take Erich Prem's question and Michaela's question from the chat. But Erich, you raised your hand. Please ask your question. Thanks. I'll paraphrase what I asked in the chat. Thanks for the excellent presentation. A question both to Ron and Nikolaus. Ron, so interestingly, now we are..."
+    },
+    {
+      "start": 3379.36,
+      "end": 3400.256,
+      "text": "As a result of this discussion, we seem to be in a situation where we are facing very different, let's say, attitudes against privacy, let's say, testing of laws in general. And from what you said, Ron, you seemed relatively happy with the situation."
+    },
+    {
+      "start": 3400.256,
+      "end": 3426.816,
+      "text": "would you say this is generally true and why is this the case in the Netherlands? And of course the opposite question then goes to Nikolaus. Why do you think there is so little discussion about these aspects and why do our leaders seem to rather hide these processes from us? Shall I start?"
+    },
+    {
+      "start": 3426.816,
+      "end": 3451.92,
+      "text": "Privacy and ethical considerations and behavioral considerations of all the things we do now to help come out of this pandemic are in every debate in parliament. And that's part of the society. It is a relic of World War II for a way. So in everything we do."
+    },
+    {
+      "start": 3451.92,
+      "end": 3481.904,
+      "text": "ethical considerations, behavioural considerations, privacy considerations, information security considerations are all debated in Parliament. I think it's cultural and it really helps having a transparent process in which everything we do is looked upon from different sides by scientists, by scholars, by groups in society and it helps."
+    },
+    {
+      "start": 3481.904,
+      "end": 3502.144,
+      "text": "Not always easy, but it helps gaining trust. I think my answer would be in brief. I mean, there's probably a lot of cultural issues behind this that I don't want to speculate about at the moment. But there's one point which is really important in my view, and that's not speculation."
+    },
+    {
+      "start": 3502.144,
+      "end": 3526.736,
+      "text": "We are urgently lacking institutions and fora in Austria where independent academic exchange of opinions is happening. I think this is the problem, one of the problems. So we don't have this. And therefore, there is not too much input that is not politically biased coming."
+    },
+    {
+      "start": 3534.928,
+      "end": 3562.816,
+      "text": "Walter, you are muted. I don't know whether this is on purpose. I'm sorry. No, I wanted to thank you very much for the discussion. Of course, it was an excellent one. But on the other hand, as it seemed, we were not able to solve the big questions, of course. But I think it's always worth discussing them. There are also some specific detail questions left on the chat."
+    },
+    {
+      "start": 3562.816,
+      "end": 3587.328,
+      "text": "for instance, about the license of the open source, which was published, but I think this can easily be looked up. For everyone else, EUPL. Okay, so this was quick. Thank you. But I was also reminded to use EU instead of Europe when I'm speaking about EU level. Okay, taken."
+    },
+    {
+      "start": 3587.328,
+      "end": 3613.744,
+      "text": "But I think we have come to an end. And therefore, I would give the floor back to Hannes Wertner to close this session. And thank you all again for your presentations and for participating in the discussion. Thank you all for this intense discussion and lively discussion. I just would like to remember to all who are in there."
+    },
+    {
+      "start": 3613.744,
+      "end": 3634.784,
+      "text": "online that we have the presentations online so you can have access to the files via our website and you can also listen to the via our youtube channel regarding the comment from Nikolaus Forgo at the end that we missed somehow a place of exchange in the academia I support this but"
+    },
+    {
+      "start": 3634.784,
+      "end": 3659.952,
+      "text": "With this digital humanism lecture series, we also try to establish some kind, but this is an international place of exchange. It's not an Austrian one, and it has this international perspective. So I really want to thank you all, and I'd like to see you in two weeks, and I hand over to Peter Knies, who will announce our next event, as well as his piece of music."
+    },
+    {
+      "start": 3659.952,
+      "end": 3685.152,
+      "text": "looking forward and peter thank you and thank you all for participating and following our discussion thank you and goodbye peter the floor is yours thank you very much um so yeah for today trying to find something fitting i actually wasn't aware of of pieces relating um to passports i tried that would be the right i thought that would be the right direction to go but um the band"
+    },
+    {
+      "start": 3685.152,
+      "end": 3711.84,
+      "text": "Passport came to my mind. You still have to share your screen. I will. Don't worry. I just have to make sure. No problem. Yeah. So let me check if this is right. So you can see it hopefully now. So the band Passport came to mind. And I found a track called Freedom Jazz Dance. So that ticked some boxes. And I picked this one."
+    },
+    {
+      "start": 3711.84,
+      "end": 3735.152,
+      "text": "Just very quickly, Passport is a jazz ensemble led by Klaus Dortinger. Maybe the participants from the German-speaking countries at least are familiar with his work through the iconic Tato title score, among others. And other members of the band featured on this live track from 1974 are Brian Auger on keyboards."
+    },
+    {
+      "start": 3735.312,
+      "end": 3759.2,
+      "text": "and on fire, one might want to add, and PDR work on drums. And yeah, before we get to it, let me announce the next event. On May 4th, actually on May 4th, we should play something Star Wars related. But anyway, on May 4th, Riccardo Baeza-Yates will speak on ethical challenges in AI and Carlo Ghezzi will be the moderator."
+    },
+    {
+      "start": 3759.2,
+      "end": 3774.48,
+      "text": "So I hope to see you there. For now, let's enjoy Passport with Freedom Jazz Dance over its full glorious six minutes. And thank you for joining today and the vivid discussions and see you next time."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

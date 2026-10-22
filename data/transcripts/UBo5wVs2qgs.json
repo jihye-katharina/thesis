@@ -1,0 +1,761 @@
+{
+  "video_id": "UBo5wVs2qgs",
+  "source": "whisper",
+  "language": "en",
+  "text": "Walter, can I start? Yes. Okay. So hello, everybody from rainy and sunny Vienna. Welcome to the lecture of today. And we are now, I think, approaching the number 30 of lectures today. I think we have the 27th or the 28th. I'm happy to welcome David. Thanks. He's a professor of data science and philosophy, which is a very interesting combination, because with this combination, he's nearly or he is at the core of digital humanism. And he will give a talk on artificial intelligence. David, thanks for being with us. Just a short reminder, but everybody knows already that we have to talk for 30 minutes and then we have a 30 minutes question and answer. And after that, we have at the end, again, a piece of music, this time proposed by David. Again, the operation is done by Walter Palmetzhofer because Peter Knezis still is. He has a well-known disease at the moment, so he is not available to participate. Thanks, Walter. The second excuse regards Moshe because... He was foreseen as a moderator and I just had a phone call with him. He's also ill. So I will step in as a moderator for today. And I hope this is again okay with you, David, and you agree with that. Just some few words to David. Thanks for being with us. And it was proposed by Dana Scott. Dana, thanks for this proposal. David is professor, as I said, of data science and philosophy. And he is at the University of California, San Diego. And his research interest is really at the intersection of philosophy, cognitive science, machine learning. And this is where he does his research. And he also did some research and work on computational cognitive science. and causal discovery algorithms, so causal reasoning, which is really an interesting issue, always with respect to understandability. And he is also recipient of James MacDonald Foundation Scholar Award, and he also received the Andrew Carnegie Fellowship. David, thanks for being with us, and the floor is yours. Thank you. Thank you so much, Hannes. It's a pleasure to be here. The strange new world we live in where I can wake up in the morning in San Diego where it's supposed to be, I think, about 25 Celsius today and give a talk in Vienna where it's raining. Not that anyone should want what is happening in the world, but it does make it easier to give talks. So thank you for the opportunity to talk today. What I want to do today is talk about a topic that. I think is very much in the public space right now, which is this question of how we have more ethical AI. And I think with this particular group, I don't think it particularly, I don't know that I need to go through these first two slides, but I think it's important to remember that what we're witnessing right now is this spread of. certainly the rhetoric of AI, as transforming our lives, and in many cases, transforming them for the better. So this is, you know, you take about 15 seconds online and you can find all of these kinds of headlines. And at the same time, what we're finding is endless headlines about all the ways that AI can harm people. And so it is very much a technology that is I think, appropriately understood as basically a double-edged sword. On the one hand, it provides the potential for enormous benefit. On the other hand, it's providing the potential for enormous harm. And when you have something like this that could be used for good or for ill, I think it's very natural to think, well, what we need is we need ethical AI. Or we need to have AI ethics. I'll sort of use those interchangeably because I think those are things that they are largely used interchangeably by many people right now. Hopefully, by the end of this 30 minutes, you'll have some worries about whether we should be using them interchangeably in this way. But I think when we look at the real surge in research. and efforts to produce more ethical AI, more responsible AI. Over the last, I would say, three to four years, there's really been a boom in this language of ethical AI. The way I think it's perhaps best to think about it is that there's three different approaches that people have been using. And I'm going to go through each of the three, but I want to sort of foreshadow that my message is I don't think any of these three actually is going to work particularly well. I think we're going about this effort in the wrong way right now. And I want to try to make that case and then show what I think is a better way to approach this challenge of AI ethics, ethical AI. So the three... approaches that people have been taking. The first is to try to develop ethical AI principles or hallmark features. So we need AI systems that are trustworthy to define what it is to be trustworthy in some high level sense that's connected to having principles. A different approach is to have ethical algorithms in the sense of algorithms that explicitly implement and carry out some kind of ethical reasoning. And a third approach is to try to understand what are the behaviors of a system that would be ethical? When can we look and say, ah, that's an ethical AI with some sort of testing process or something like that? Now, I think these are the three that people are doing. Full disclosure, both the first and third, I've contributed to that literature. So in a sense, part of what this talk is, is the. awareness that I've been coming to over the last nine to 12 months that I think there are sort of fundamental challenges to any of these three succeeding. So first, let's think about ethical principles and features. This is. So the approach that I think is best known, for example, when I talk to my parents about what it is that I do research on, we see, you know, basically every major technology company now has their ethical principles or their principles, which typically have ethical components to them. The U.S. government has principles that are supposed to guide the development of AI and the use of it, whether in the entire federal government or the Department of Defense. There are principles in the UK. Germany has a set of principles. Every country is coming up with these principles. In fact, it's now gotten to the point that we're having articles that try to find the principles for the sets of principles. So we're now getting meta principles that people are developing to understand the landscape of ethical principles. So these are just ubiquitous now in terms of people working in this space who are trying to understand how to have more ethical and responsible AI systems. The core problem in the sort of first and foremost challenge, I think, with these ethical principles is that they almost never constrain practice. So when the Google principles first came out, I would give my students the assignment of pretending they were a software engineer at Google. And at the time I was at Carnegie Mellon. And so they all wanted to be software engineers at Google and ask them to figure out what they would do differently. After these principles went into effect and the students actually hated the assignment because it was so difficult for them to figure out any practical impact of most of these principles. Now, it's not that the principles are empty. They're not vacuous. But what they don't do is tell you how to implement or realize the principles. If I tell you that your AI system should be equitable. That massively underdetermines the possible space of what it is that my system might do. And so these principles are, while laudable in many ways, they don't actually help us get to more ethical AI, the AI that helps rather than harms. Now, even on top of that, these principles are, especially when people try to make them more practical, they typically end up being largely context insensitive. In the sense that they will say you should be equitable, but what equity means can vary radically across different situations or what fairness requires or governability involves. To the extent that they are becoming more context sensitive, it's under the heading of what people refer to as from principles to practice. So there are now many workshops happening where people are saying, how do we go from principles to practice? And part of the problem is that I think we're all learning that when we do this, the principles often become somewhat decoupled from where we end up. Enormous amounts of information and content are having to come in to get to those practices. At the same time, these principles, a number of people have shown are actually highly team sensitive, which is to say the team that is charged with making sure that these principles are realized make a big difference in terms of what is done. So you can give exactly the same principles in the same context to two different teams and they will realize it in radically different ways, which doesn't necessarily be it isn't necessarily a failure or a fault, but it is at least a worrisome signal. that perhaps this is not quite the right way to make sure that we are going to be able to reliably get to the AI that we're trying to achieve. There's also a real challenge that has not been discussed much. I'm not going to go into the details here. We've got a paper under review, actually, about this. But it turns out that most of these principles do not actually line up with each other. And so there's a problem of what you could think of as ethical interoperability. make principles your central focus, which is to say, say Hannes' company has a set of ethical principles. They produce a product and presumably, hopefully, the product fits their ethical principles. My company has a different set of ethical principles. And in modern technology, there is an enormous amount of collaboration and use of other people's technology. But the problem is we need to have I need to know that his technology satisfies my ethical principles. And it turns out that that's incredibly hard to do in a reliable way that actually would work in practice, given various kinds of legal and intellectual intellectual property kinds of constraints. People are not going to be willing to share the information that's needed. For me to know that somebody else's technology fits my ethical principles. So I think there's a lot of there was a lot of excitement around principles, but I think that they are not going to be the path that we're looking for. A different approach would be to just try and build algorithms that are ethical. Now, this I think mostly this comes from, you know, here's the kind of classic example. You have the old school trolley problem, which was very much discussed four or five years ago. which is not actually the right way to think about how these things work. But the idea was, well, if I have a self-driving car that is faced with a choice between swerving and killing one or continuing on its path and killing five, what should it do? And so there were a number of papers arguing and trying to develop actual decision making algorithms that could be implemented in an autonomous vehicle for it to make these kinds of choices. And you had companies such as either Mercedes-Benz or BMW came out and said, you know, when our car is faced with this choice, it will choose to protect the inhabitants of the occupants of the car, even if that means that it might harm somebody outside. We're going to put the occupants of the car first. The problem with building these kinds of ethical algorithms, though, is that they actually misunderstand the very way that these technologies are, by and large, built. So here is what the world looks like on the left to a self-driving car. And what you'll notice is, for example, if you just look, say, in the middle picture, you don't actually see people. What you see are bounding rectangles, solids that the vehicle says are no go zones. It's impermissible to, you know, it simply can't use a trajectory that would take it through one of those bounding rectangles. Or on the top, you can see basically you're getting point clouds. You don't get the information that a lot of the people who looked at trolley problem kinds of cases required for the algorithms that they were arguing that the vehicles should implement. There's just no place in these vehicles for a kind of trolley problem calculus. All there is is finding a low cost path through a landscape. And even that is done by relatively black box opaque algorithms. These days, largely deep learning ones. So if I came in and said, well, we need to be responsive to this contextual feature. And I say this to somebody who is building a self-driving vehicle. They're working at Aurora in Pittsburgh. They're going to look at me with a very confused look. Because there is no place to insert this kind of ethical reasoning. Now, you might say, well, OK, that's the case with self-driving cars, but that can't be universal. But another example that I like to use is my former colleague, Manuela Veloso at Carnegie Mellon, runs a group building these cobots. These are basically helpful robots that wander around the computer science building. They can deliver mail. If you have a meeting with Manuela, one of these robots will meet you at the front door and take you to her office and these kinds of things. Now, these robots, in all the years they've been deployed, have never initiated communication. a collision with a human. Now, they have run into humans, but only because you've got undergraduates who like to mess with robots walking in the hallways with them. But the robots have never initiated a collision. And I remember talking with Manuela and saying, this is really fantastic. I love that these are implementing these ethical values of prioritizing the humans in the space. And she gave me a very confused look and said, but that's not what they're doing. What the robots do is there is a single parameter in the roughly million lines of code that defines a buffer that the robots are not supposed to go into for key environmental features, one of which is the people. And that's how they've been able to be safe, not because they reason through any sort of. consequentialist calculus, not because they have some deep deontological perspective on the world, but simply because they coded it with an epsilon parameter that says, don't get too close to these kinds of things. And so, again, it's not to say that we should never try to implement algorithms for ethical decision making. It's to say the way that the technology is being built right now is simply There's no sort of interface to allow that kind of direct translation of a current AI that we might think is unethical or at least not sufficiently ethical to make it more ethical. We can't simply reach in and change around the ways that the algorithm works in this way. A third possibility that people have looked at is to say, well, what if we simply define. What is the space of ethical behaviors? And then we use testing and evaluation and audits to ask, does this system act ethically? You can think of this as almost a kind of Turing test for an ethical AI. We did we characterize what it is to act ethically. And then we step through and say, OK, what we're going to do is is check, for example. whether the system respects human rights when it is deployed or something like this. And these kinds of approaches sort of say, well, we're not going to worry about exactly how the system is implemented. We're not going to care. We're going to black box that. And instead, think about what it means to be ethical in terms of actions and behaviors. And I just mentioned for any philosophers in the audience, this is very much in line with the sort of tradition over the last 15 years of trying to what's called consequentialize various ethical theories to understand their observable or behavioral differences. Where can we see that one theory makes one judgment, whereas a different ethical theory gives a different judgment so we can actually find the points of disagreement? This is sort of the same idea to say, let's focus on ethical actions, ethical outcomes. This is particularly a common move that people make who work on fairness and equitability, where they say, well, we just need to operationalize what it means for the algorithm to be fair or unbiased. And then we can test for that. Now, the problem is that, first of all, this approach typically requires a kind of implausible. level of knowledge about exactly what it is to act ethically. If we think about something like an autonomous vehicle, what we want for its ethical behavior is we want it to drive safely. But what does drive safely mean? Well, as we all know, anybody who has a driver's license and any experience, what it means to drive safely can vary radically. And in particular, that We normally live in what we could think of as an open world, which is to say you cannot give a complete specification of everything that could matter in your environment. And the problem with audits is that they really work best for closed worlds, for situations where you actually can characterize not only all the features that matter. So you can say, here's what the system must be responsive to, but also the appropriate behaviors. But we almost never have this knowledge for the context in which we want to use AI, because the whole point of AI is that it will surprise us. We want our AI to do things that we would not have thought of. We like that AlphaGo and AlphaZero develop strategies that we humans did not think of. It's actually really important that the AI be capable of surprising us. We just want it to surprise us in the right ways. But if it's surprised, then by definition, we cannot say ahead of time what exactly it should be. The other challenges with these is that they tend to require that we prioritize particular groups. So we lose a kind of context sensitivity in in the audits that we build. And there's if you've ever heard of Goodhart's law, this is the idea that any measure that you attempt to optimize ceases to become a good measure. So if I want to optimize the quality of the students at UC San Diego, I might say, well, what I want to do is I want to pick the students who have highest test scores. But the problem is, as soon as I do that, the students will all focus just on getting good test scores, not on being the kinds of thinkers and learners that we necessarily wanted in the community. And when you focus just on the ethical behaviors, you open the door. to a new kind of good hearts law, the kind of cases where the system will optimize for certain values or certain behaviors to the point that it's not able to adjust when those are no longer the right kinds of behaviors. So I don't think that any of the three ways that people are doing this right now are working. Of course, it might be that, you know, breakthroughs are just around the corner. Could be that we're just about to figure out how to translate the principles into practice. But I think there's a sort of deeper underlying issue that suggests that maybe these are the wrong way to go about it. And that is that if we look at each of these three approaches, they're each focused on what we could think of as basic research on a single component of the complex sociotechnical system that produces. and realizes AI capabilities. And so as a result, each of them ignores certain key complexities. So, for example, when we think about the principles, the problem, almost all of those problems with focusing on ethical principles are really based on the fact that they ignore the practice by which AI systems are built and realized in the world. Or if we think about the algorithms, they ignore the way that the technology actually functions. And so they focus on one piece without thinking about the others. Or if we think about the behaviors, they ignore the ethical theories, models, constraints that are really doing the work. They elevate the behaviors rather than the ethical content, which is really at the core of what we should be caring about. So I think part of the problem is that each of these three approaches has done what we do with basic research, what probably everyone on this call has done, which is you narrow your focus to have a deep understanding of a piece of the puzzle. And the problem is that while that can be incredibly powerful and useful, it's not going to get us to the complex sociotechnical system design that is needed to have more ethical AI. Now, the immediate challenge that you're probably saying is, OK, but if not basic research, then what? What are we supposed to do instead? And so that's what I want to do here in the last 10 minutes is to make the case for a different kind of approach. So I want to start by thinking about an analogy or a parallel, which is the case of translational medicine. So translational medicine, translational medical research. This is my way of thinking about it. There's no single definition that one would give. But it's essentially the substantive research that's required to take the basic biomedical advances that happen in the lab, in the research space, and move them into clinical practice. So we discover that a particular kind of cancerous tumor is responsive to a particular drug. Translational research is the question of how do we take that basic insight and move it into the clinic? so that it can actually be used to improve people's health, advance people's lives and capabilities. So there's a very longstanding tradition in medicine that you've got your basic researchers, you've got your clinicians, and you've got these translational researchers who work to move between the two communities. And one of the really critical insights, I think, of translational medicine that has led to its success is that it requires both what we could call, following on some language of Alan Baddeley, the great memory researcher, it requires both applied basic research, which is the kind of straightforward thing I was just describing, where you say, OK, let's start with the basic research and figure out how to apply it. But it also requires what we could call basic applied research, which is where we start in the application domain. We start in the clinic and we move back to ask, what are the foundational research questions that need to be answered in this clinical setting? So translational research is not just I take my basic research and add a few parameters for the context of the application domain and then I'm done. The whole point of translational research, what has been transformative in medicine, is exactly that we also start with the applications and do, as it were, native basic research in the application domain. So what would this look like if we wanted to do translational AI ethics or translational ethical AI? Well, that would be a question of how we can do substantive research to apply our basic ethical advances and insights into the technological practice. Now, if we continue this analogy, what it means is that one part of it is going to be what I think we're already trying to do in those three different approaches, which is how do we translate our insights in AI, human computer interaction, ethics, sociology, anthropology, and on and on. Cognitive psychology. How do we take these basic research insights and apply them to particular domains? So when people say here we have basic research on ML algorithms that optimize for both accuracy and some measure of bias. How do I now apply it in the real world domain of policy for climate change mitigation in? oceanfront or coastal communities. So that's an application domain. We want to use AI to help us know where we should be building seawalls in San Diego to mitigate the impacts of climate change. We don't want to have those mitigations disproportionately help or harm communities that have been historically marginalized. How do we do this? Well, here's an AI system that can help us do it. How do we take the the research of folks like myself or others in computer science, and translate that to the application domain. That's the piece we're already doing. What we're missing, I think, by and large, is the basic applied research. How do we start with the applications? How do we start with the challenges and problems and do, as it were, the native research in those application domains to ensure that we're producing more ethical AI systems? How do we not continue to do the same kind of basic research where we start atomistically and hope we can put the pieces together, but rather start at the complexity and find which are the features that we need to focus on in order to make this happen? So what might this look like? So the first thing is that one of the hallmarks of basic applied research, basic applied science. is that you have to look at the complexity of the application case or domain and try to determine what are the intervention points? What are the places where we could make a difference? And I think when we think about that in the context of AI, it's very natural to focus on just the intervention point of development. The piece that we teach our students to do in a data science institute where I now spend part of my time or an AI lab. I've got my data and then I go to code. But if we want to think about basic applied research, we want to look at the complexity of technology creation. We actually need to think about the entire sort of this is a very caricatured pipeline that we have of everything from identification of a problem to be tackled all the way through the development to the use and then back to the refinement and revision of the technology. The sort of whole life cycle of an AI system. And importantly, when we think about this, these intervention points from the perspective of ethics, what we see is that there are a number of places. The exact questions here don't actually matter for what I'm trying to do here. What matters is that at every stage, at every step, we are asking ethical questions. And so the approach of basic applied research is to say we should be finding the best ways to ask and answer these questions. So if we look in the upper right, who should get access to a technology? A question you ask when you're deploying your your A.I., who am I going to give access to this technology? If I build a diagnostic medical system here in UC San Diego Health Center, do I then deploy it in rural Peru? Is it going to work there? Well, when we ask these questions about who should get access, the basic applied research is to start with that question and ask, what are the defensible, reliable, robust ways to answer that question in an ethical way? So what kinds of answers might we get? Well, I think of this in sort of four different categories. I think there are four different categories of places that we need this basic applied research. So one is on the people. So how do we have people who have an understanding of what goes on in other parts of this complex sociotechnical system? Not so they can do it themselves. I don't want my undergraduate philosophy majors. I don't care if they can code, but I do care that they can talk intelligently with people who code. And I don't care that my data science students are ethicists. I care that the data science students can talk to. So how do we teach people to collaborate in these settings? This is actually not a question that by and large is considered very much by, say, education researchers. There's some work on when teams are high functioning and some work on how to build good teams. But it's actually an underexplored area, especially in the context of technology and AI. We all think that we know. Oh, if you put people with different backgrounds in a room, we'll get better technology. Everybody says this now. We need diverse teams. And there's actually almost no research showing that diverse teams lead to better, more ethical AI systems. I happen to agree with that intuition. I think it's probably right. But we need research that actually checks if it is. And that is in some ways the epitome of basic applied research. It takes this application setting. The composition of a team in technology development and asks a basic research question about it. We need to also be thinking about processes. Now, here we're starting to see the growth of a number of different methods and techniques, whether it's data sheets, model cards. Audits actually, I think, would fit in here in some cases. But the idea is for the complex environment of AI creation. What are the processes that lead to more ethical outcomes? And I will say that here, even here where we have ideas, say model cards, which are essentially ways for developers of a model to encode all of the information about their model for people who are going to then use and deploy it, the engineers downstream. Even model cards, everybody has this intuition that they probably are helpful. And there's been almost no systematic research. Looking to, for example, have two groups that are trying to build the same technology. One group gets a model card. The other group does not. Does that lead to a difference in ethical outcomes? We actually don't know the answer to that question. I think they probably help. But part of this basic applied research is how do you go from intuition and rules of thumb to actual reliable, validated methods and processes? We also are going to need better policies, but they need to be policies that are tailored to the complexities of the technology. So we need smarter regulation. We need to not necessarily be trying to regulate AI as an ordinary system. This is an area where Europe, I think, is far ahead of America in terms of government regulation. At the same time, I think industry standards are pretty important as well. When we think about the self-regulation that invariably must occur. Finally, we need to think about the partnerships that we're building. I already mentioned this issue of ethical interoperability, but that's actually a topic that's going to require basic applied research as well. But I think it's also partnerships where I, as a consumer, have certain values. The developer at the company is writing code. And how do we have ways of translating or mapping between My values and the codes that are developed. These are particularly challenging things to build because they require us to really step back and think about the complexities of what we're trying to do to build these mappings and then validate the methods by which we're doing it. Now, what's shared between all of these is that they don't suffer from the diagnosis that I gave earlier, because all of these efforts require us to start with thinking about jointly the practice, the technology and the ethics. We can't think about these in separation from one another. Moreover, they all require multidisciplinarity. So they are all basic research in the sense that we're trying to build. knowledge that is generalizable across a wide range of technology creation settings. They are basic research in that sense, but they're basic applied research that starts with the real world challenge and moves back to ask, how can we realize ethical AI and systems of AI ethics? in these complex socio-technical systems. So with that, I think I'm hopefully not too far off on time, but I'll say thanks and happy to do questions for half an hour. Thanks a lot. I'm looking for questions. You can either raise your hand or you can write something in the chat. There was one question by Nina. And Edward is there. Edward, I see you maintaining your hands up because there were other hands up, but then they took it down. So, Edward, the floor is yours. Thank you, Hannes. And thank you, David. This was a great perspective. I think one of the things that I have been sort of drumming uh lately is this naive view of technology development which is kind of that technology gets designed developed and then deployed and design is done you know in kind of one step and then deployed but but every piece of technology that gets deployed these days is actually an amalgamation of a bunch of pre-existing technology and it doesn't just get designed and deployed it's continually being redesigned and there's this feedback process between the development of the technology and its use in society and i think your perspective really brings this to the foreground and puts kind of a nail in the coffin of the perceived silver bullet that all we have to do is, you know, teach ethics to the technologists and that will solve all the problems. So I don't know that this is a question, but it just, it is really more like a comment. But I think this is really a great perspective. No, I completely agree. And, you know, much of where this perspective comes from it you know I will say just as a piece of autobiography it much of it comes from trying to teach these kinds of classes where I have you know so this this quarter I have 70 undergraduates in a class on data ethics and I have philosophers sitting right next to computer scientists and realizing that what they need to know about what the other does is not what they're learning in any of their other classes. Because every class in philosophy, say, that thinks about technology adopts this sort of very simplistic view that you're saying of, well, the designers build specifications that are handed off to the developers who create the artifact, who hands it off to the engineer and the end user. And fail to understand, I mean, the computer scientists understand it's more complicated. But the philosophers don't. Meanwhile, the computer scientists are being told in their intro computer science class that fairness is this statistical skew in the model output that we can measure. Which is just not I mean, that's not what bias is. Right. Bias is not that we have a statistical disparity in in the outputs because that could be perfectly acceptable morally. And lack of disparity can actually be lack of skew can actually be morally problematic. And so. The philosophers get the complexity of bias, but the computer scientists are given the simplistic version. So the question that that I've been wrestling with in my own teaching and we're starting to do this research on is exactly how do you get them to work together so each can take advantage of the other's sophisticated knowledge? And, you know, of course, then the next step is how do we get once we can sort of build the supply on the student side, how do we make sure that companies and governments are demand side? requiring that the people coming into their teams have this kind of understanding of the full complexity of what they're doing. Thank you, David. So at the moment, we have already three persons to hand raised. I asked for short questions and short answers because I assume that others will come and jump in. George, the floor is yours. First, thank you for the very interesting insights in your talk. In the current stage of development of the European AI Act, which I'm sure you're familiar with, as you indicated, there is a categorization of high-risk AI applications and minimum-risk AI applications. And the first category is held to higher standards of... accountability and liability, the other not. Of course, in the context of the consequentialism direction that you touched upon, this has a time factor. In other words, some applications may look innocuous now, but not so further down the road. My question is, does your basic applied research approach provide the tool for, let's say, more reliable, more trustworthy classification as to what would constitute high risk and whatnot? That's a good question. So, yes, in the sense that when you start by thinking about the complexity of the development and use and the ways in which contexts and social systems change over time, What emerges is the importance of having a system of dynamic classification, dynamic regulation, dynamic verification that is able to move between certifying something as high risk, minimal risk into a monitoring mode that ensures that we know when the system changes category. And so the critical piece that comes, I think, from adopting a basic applied research. attitude towards what you're describing is a recognition that we need to move away from is it high risk or minimal risk to actually asking what are the reliable mechanisms of monitoring over time to detect when there are changes. And at least the last time I looked at the AI Act, there was almost no real discussion of how this was supposed to occur. And I think that that's going to be a potential shortcoming of it. I mean, it's still better than what we have here in the US, but yeah. Carlo. Yes, thank you very much for the very interesting lecture. And I cannot agree more with most of the things you said. I'm just wondering how much what you said holds in general, you know, for the complex social technical systems that we develop today, even if no AI component is there. It seems to me that what you say actually is much broader. Of course, you know, there is AI in these systems. It adds, you know, complexity and maybe. adds to the lack of transparency that you have in these systems. But what you said seems to be broader. And I would like just to understand what exactly you see as specific of the AI components that are in these systems to the global picture that you gave us. Yeah, that's a good point. It will not surprise you to hear that I am in general a fan of translational research, and I think there's not enough of it done in university settings. I think basic applied research is, you know, it often gets shunted off to a business school or something like that. And I think that it needs to be a more prominent part of many universities. So I agree in that sense. I do think that there is that AI systems are. at least special in the following ways. I think when we are talking about AI and complex socio-technical systems, what the AI does is it resides in this middle ground where we have some confidence that it's going to do the right thing, but we do not know what form that's going to take. So if I have the complex system of an airplane, I actually know what all the pieces do and I know exactly what they should do. The problem is, how do I put this together into something that is sort of stable in a way? But I know what each of the pieces is reliably going to do. The problem with AI systems is that precisely because of the lack of transparency, precisely because we want them to be at least have some autonomous capabilities. we're invariably in a position where we actually don't know what some of the components are going to do, at least not at a level of description that enables us to use all the tools that people have developed for many years for engineered systems. So I think the autonomy and opacity of those AI components means that our traditional methods for engineering design and engineering validation and verification don't translate in a straightforward way. So now we've got the need for basic applied research, where we start with the complexity of the AI systems being opaque and autonomous, and then move back to ask what are the basic processes by which, you know, can we adapt things from engineering design, for example. Okay, thank you. I take the freedom as moderator. I just have a short remark to Carlos' question, because this reminds me, your approach reminds me very much on the research in information systems research, where you have this design science approach by Ellen Hefner, who really shows that you start from the problem definition and then you have an iterative approach to create your artifacts and you involve your stakeholders or users or participants. throughout your software development. So this is very similar to this design science approach and there it's applicable to all software systems. So just as a short remark. Michael Heiss. Yeah, I like very much this aspect of the so-called value chain of of ethics in software development, which you mentioned today. So I call it value chain because in my field, we are talking at the moment about the CO2 footprint of a final product. And so we have also along the value chain, we have to measure all the CO2 footprints. in order to finally have the CO2 footprint of the final product. But in this case, this is much simpler because it's a technical measurement of technical things. But nevertheless, it is quite complex because you have to trust this measurement and so to make sure that nobody is cheating in this way. In your case, it's much more abstract because ethics is not so easily measurable. And so the question is, if you can give us some feeling how to approach this, to have this value chain that the final system contains of a lot of different components. What is your approach? Yeah, no, that's, you know, you raise a really good question. And I think what the approach that that I take to this is to start. By saying what we need to have is an articulation of the relevant values and interests for whatever we're going to be doing with the technology. So in this sense, it's it it looks a bit like the focus on ethical behavior idea of saying, all right, what is it we're actually trying to do or solve? It also, as I was mentioning, this design sort of thinking idea. But we start with that and then we can ask. You know, a straightforward thing one can do is to ask, all right, how do each of these components, sort of the intro version of this, is how does each component contribute to those values, to the satisfaction of those values? So if something that's important is promoting people's good health, then accuracy of diagnosis is clearly going to contribute to that. Now, so that we have a framework for essentially how do you articulate the overall values and interests? How do you articulate the the values and interests that are supported by each of the components? And then a kind of simple addition. Right. That's the naive way to do it. But that actually works pretty well as a first approximation because it leads to asking questions like, why is this component doing what it's doing? Because it's only contributing to this one value, but we actually need it to contribute to multiple. So it already can lead to revision by adopting this sort of additive view of what's going on. Now, the more complicated and this is where we're in the world now of basic applied research. The more complicated world is what do you do when the components now are starting to really interact? So a kind of. Classic example of this would be something like I'm building a diagnostic or therapeutic AI system to decide what treatment somebody needs for a medical condition. And this system is going to be used by, say, a doctor who is very racist. And I know that the doctor is biased in this way. So if I just let them use my system, if my system is accurate and I just let them use it, bad things are going to happen to people of color. Because of the racism of the doctor. So should I actually change my system to compensate for the known bias of the doctor? Now, that one people go, I don't know, maybe, except this is actually something that is taken as completely from people do this all the time in human computer interaction. You say humans are biased in the ways that we process information. So the algorithm gives the information in such a way that it leads to the right outcome. So we're already used to this kind of thinking. The question is now, how do we take that from a functional perspective in HCI to the more ethical? And lots of people get very nervous when I start talking about these kinds of possibilities, which is why I think we're still engaged in the task of the basic applied research to understand what are good methods of working through this, good in the sense of leading to ethical, more ethical outcomes and systems. Thank you. Thank you. Now we have from Hannover, I think it's you. People sent to the Internet. One representative. Hi. Hi. This is Maylin Fung. I'm actually here in Potsdam, Germany, but I'm normally based in California. I wanted to refer to a couple of points that David brought up because I lived. the whole thing about inventing something that ended up getting misused so in 1989 I was one of the first people to come up with customer relationship management and over time that's been really used in ways I never imagined and I'm very very concerned about thinking that At the time of invention, it's possible to imagine all the possible uses because I really know that that's not possible. However, I do want to confirm that I think translational research is the right way to go. But I would go even further than you insofar as looking at how a community evaluates. the actual outcomes, that we should not look at the ethical outcomes just from the point of view of a single person, because many of the outcomes actually affect whole communities. So I just wondered about your thoughts on that. And finally, a case study of how the components add up to something completely different than the people expected is the MAX Boeing MAX 737. Well, written about in Flying Blind. Yeah, no, I think on that last point, unfortunately, there are far too many examples that we have of where each component was entirely sensible and you put them together into a system that had catastrophic outcomes, even systems that have nothing to do with AI. And so there absolutely are limits to the kinds of engineering systems approaches that I was mentioning, I think, in response to Carlo's question. I agree. With regards to this question of measurement and, you know, sort of outcomes relative to whom, I think, you know, I think you're pointing towards a very deep problem and, well, not problem, a very deep challenge. So, you know, the question really is, ultimately, we want to understand how these systems are having, I would argue, multidimensional impacts on multiple communities. But if I'm now imagine I'm a regulator or I'm deciding, you know, I have the go no go decision at my company. Ultimately, we're either going to field it or we're not. And I think one of the things actually that ethics, ethical theory gives us a very good set of concepts to talk about multidimensional outcomes impacting multiple communities. I think ethical theory does not do a very good job of giving us. um decision procedures for resolving those so i'm afraid i'm going to have to say i don't have deep thoughts i mean you know people have spent a long time trying to think and i don't have something beyond i think the first step is having us be explicit about this multi-dimensionality multi-community impact that's step one like let's just at least have everybody on the same page about understanding the diverse impacts that our systems can have on different communities How we then move from here's what it will be to we're willing to do this. I don't have a great answer. I don't think we know very much about how to do that in a principled, ethical way. I wish we did. Thank you. Nima, the floor is yours. Thank you. And thank you, David, for this presentation. greetings to UCSD, which is actually my alma mater. I'm looking into causal discovery, causal inference, and what its potential applications could be in international development right now, so more in an applied way. And since you're very active in causal discovery and causal cognition, I would be interested in your view on where you see the ties between looking at these ethical principles and then on the other side, relying more on causal structures when designing these machine learning based systems, whether these causal structures maybe enable a more and more ethical approach to say, by relying on causality. I think Hannes would be very unhappy if I pulled up the the an entire hour long talk I could give on this. So I would just quickly say that I think three minutes. OK, yeah, I can give it a three. I can talk quickly, but not that quickly. I think that the short version is to say that ethics depends on causal knowledge because ethical choices and policies depend on us knowing in some sense that we're pulling the right levers to bring about the kinds of worlds that we want. The challenge is that ethics is, of course, not reducible to causal knowledge. And so one of the things that we're working on in my research group right now. is, if I may geek out for 30 seconds, is a graphical model semantics that is heterogeneous. So you can represent both causal structure and ethical constraints and social structural mechanisms of bias, all in a unified framework where, of course, the semantics gets very messy very quickly when you can have connections of different types. So that's what the research challenge has been, is how do you actually efficiently operate with these kinds of heterogeneous. graphical models, but it's exactly for the kind of idea that you're pointing to, which is how do we integrate together causal discovery, causal inference, that we can then leverage alongside our knowledge of values and social structures. So I'm 100% on board with what you're pointing towards. Thanks. Now we come to the last question by Paul, or is there anybody else who wants a further question? Because we are running out of time. Paul, your part. Yeah, if you still allow me. Thank you very much, David. I was really intrigued by your talk and also things like ethical interoperability. But I want to focus on something that I actually discussed this morning with Paul Waller. He's also on this seminar. That is about, you say, basic applied research. So that's really a domain perspective that matters. You need to understand the domain. And now perhaps I make a big leap. But would you say that... Perhaps it's fine that we have horizontal regulatory approaches like the AI Act, but is it the consequence of what you say is that we really need to look into vertical, so domain-specific regulatory approaches or rules, and that that is what really matters? So I think that it is critical that we have an understanding of AI and technology within the verticals. So here in the United States, one of the challenges is that the people who do medical device certification and approval. have very limited understanding of the AI that is embedded within a lot of these devices. It's changing, but it's a huge problem. But in fact, yes, actually, in general, I agree. I've long argued that it's a mistake to try to regulate and certify AI writ large, that I think it should be within the verticals. The problem is that within the verticals, things have to be done radically different than people have done historically. So there's a political science, a political challenge, which is that there are entrenched interests within the verticals to do things in particular ways who are not going to want to make the changes that are required when you introduce AI and systems with autonomous capabilities into that vertical. So the ideal is to keep it within the verticals, in my view, and I think for many of the reasons you just were articulating. Politically, I think things like the AI Act are powerful in shaking up those verticals and forcing them to have a new way of thinking about the things that they're doing, ideally, in a way that, for example, here in the US, we've really struggled to be able to do. We've kept it in the verticals, and the relevant regulatory bodies have simply not adapted with anything like the speed or facility that is needed. Thanks for your... The question in the last answer, I have a final short question that you have already partly answered. It's about in your model. Isn't there somebody missing, which is the owner of the system, which you mentioned somehow in your answer? And at the end, I would say that it's not about about ethics. It's about politics. I mean, I'm at heart a philosopher. And so I want to live in the world of the possible, not the world of the actual. And so but but I agree. I mean, I think one of the challenges that I personally wrestle with is who are the right people to change, to move things forward. And in many cases, it's politics. It's, you know, me. going to Washington, D.C. to talk to people. But in other cases, it's not being done by governments. It's being done by industry. It's being done by groups in Silicon Valley. It's being done by the IEEE and other professional societies. And I think that one of the challenges we have in this space as a community is exactly that there are so many owners for so many of these things. that it's actually led to a kind of what gets called the problem of many hands, which is everybody assumes it's someone else's job to deal with that. And I think one thing we need to do is reframe it so that everybody views it as their job to think about the ethical and societal impacts of what it is that we're building, rather than counting on somebody else will take care of that for me. But that kind of cultural community perspective shift is, that's tough to do. So sorry to end on a depressing note. No, no, but this is exactly what digital humanism is about. It's about interfering on a democratic level. This is an inner democratic process. David, thanks a lot for your exciting talk and presentation. Also thanks to all the others for their questions and remarks and comments. Now I hand over again to David before handing over to Walter to play the piece of music because David has selected. has chosen a short piece of music which we play today. And I just ask a few words what you have chosen and why you have chosen. In the meantime, Walter can already put online, put on the screen the music. Great. Well, thank you very much for the opportunity to be here and to talk with everybody. I'll just mention, by the way, I'm very easy to find on the Internet. I'm always happy to keep the conversation going. This particular song is a song by a musician named Bob Mould, and he has been playing for many years, but I selected it because actually it is near and dear to my heart. Three nights ago, I saw him play live in concert. It was the first concert I'd been to in two and a half years. And importantly, I got to go to it with my brother. And it was the first time I'd seen him physically in two and a half years because of the pandemic. And he's somebody, he was the best man at my wedding. I was the best man at his. We've always been very close. And yet because of COVID, we've not been able to see each other. So it's meaningful. Because I'm hopeful that maybe this means we can start to see one another again, both him and me and all of us in the physical world. Thanks a lot. Let's start. Goodbye to everybody. Thanks. And we see each other on the 26th of April. Okay. Have a nice Easter break. Bye. Bye, everyone. Bye. Thank you.",
+  "segments": [
+    {
+      "start": 0.048,
+      "end": 27.248,
+      "text": "Walter, can I start? Yes. Okay. So hello, everybody from rainy and sunny Vienna. Welcome to the lecture of today. And we are now, I think, approaching the number 30 of lectures today. I think we have the 27th or the 28th. I'm happy to welcome David. Thanks."
+    },
+    {
+      "start": 27.248,
+      "end": 57.2,
+      "text": "He's a professor of data science and philosophy, which is a very interesting combination, because with this combination, he's nearly or he is at the core of digital humanism. And he will give a talk on artificial intelligence. David, thanks for being with us. Just a short reminder, but everybody knows already that we have to talk for 30 minutes and then we have a 30 minutes question and answer."
+    },
+    {
+      "start": 57.2,
+      "end": 85.856,
+      "text": "And after that, we have at the end, again, a piece of music, this time proposed by David. Again, the operation is done by Walter Palmetzhofer because Peter Knezis still is. He has a well-known disease at the moment, so he is not available to participate. Thanks, Walter. The second excuse regards Moshe because..."
+    },
+    {
+      "start": 85.856,
+      "end": 115.04,
+      "text": "He was foreseen as a moderator and I just had a phone call with him. He's also ill. So I will step in as a moderator for today. And I hope this is again okay with you, David, and you agree with that. Just some few words to David. Thanks for being with us. And it was proposed by Dana Scott. Dana, thanks for this proposal."
+    },
+    {
+      "start": 115.04,
+      "end": 141.36,
+      "text": "David is professor, as I said, of data science and philosophy. And he is at the University of California, San Diego. And his research interest is really at the intersection of philosophy, cognitive science, machine learning. And this is where he does his research. And he also did some research and work on computational cognitive science."
+    },
+    {
+      "start": 141.36,
+      "end": 170.416,
+      "text": "and causal discovery algorithms, so causal reasoning, which is really an interesting issue, always with respect to understandability. And he is also recipient of James MacDonald Foundation Scholar Award, and he also received the Andrew Carnegie Fellowship. David, thanks for being with us, and the floor is yours. Thank you. Thank you so much, Hannes. It's a pleasure to be here."
+    },
+    {
+      "start": 170.704,
+      "end": 199.744,
+      "text": "The strange new world we live in where I can wake up in the morning in San Diego where it's supposed to be, I think, about 25 Celsius today and give a talk in Vienna where it's raining. Not that anyone should want what is happening in the world, but it does make it easier to give talks. So thank you for the opportunity to talk today. What I want to do today is talk about a topic that."
+    },
+    {
+      "start": 199.744,
+      "end": 219.936,
+      "text": "I think is very much in the public space right now, which is this question of how we have more ethical AI. And I think with this particular group, I don't think it particularly, I don't know that I need to go through these first two slides, but I think it's important to remember that what we're witnessing right now is this spread of."
+    },
+    {
+      "start": 219.936,
+      "end": 249.44,
+      "text": "certainly the rhetoric of AI, as transforming our lives, and in many cases, transforming them for the better. So this is, you know, you take about 15 seconds online and you can find all of these kinds of headlines. And at the same time, what we're finding is endless headlines about all the ways that AI can harm people. And so it is very much a technology that is"
+    },
+    {
+      "start": 249.44,
+      "end": 272.56,
+      "text": "I think, appropriately understood as basically a double-edged sword. On the one hand, it provides the potential for enormous benefit. On the other hand, it's providing the potential for enormous harm. And when you have something like this that could be used for good or for ill, I think it's very natural to think, well, what we need is we need ethical AI."
+    },
+    {
+      "start": 272.56,
+      "end": 299.472,
+      "text": "Or we need to have AI ethics. I'll sort of use those interchangeably because I think those are things that they are largely used interchangeably by many people right now. Hopefully, by the end of this 30 minutes, you'll have some worries about whether we should be using them interchangeably in this way. But I think when we look at the real surge in research."
+    },
+    {
+      "start": 299.472,
+      "end": 329.232,
+      "text": "and efforts to produce more ethical AI, more responsible AI. Over the last, I would say, three to four years, there's really been a boom in this language of ethical AI. The way I think it's perhaps best to think about it is that there's three different approaches that people have been using. And I'm going to go through each of the three, but I want to sort of foreshadow that my message is I don't think any of these three actually is going to work particularly well."
+    },
+    {
+      "start": 329.232,
+      "end": 345.904,
+      "text": "I think we're going about this effort in the wrong way right now. And I want to try to make that case and then show what I think is a better way to approach this challenge of AI ethics, ethical AI. So the three..."
+    },
+    {
+      "start": 345.936,
+      "end": 375.84,
+      "text": "approaches that people have been taking. The first is to try to develop ethical AI principles or hallmark features. So we need AI systems that are trustworthy to define what it is to be trustworthy in some high level sense that's connected to having principles. A different approach is to have ethical algorithms in the sense of algorithms that explicitly implement and carry out some kind of ethical reasoning."
+    },
+    {
+      "start": 375.84,
+      "end": 404.48,
+      "text": "And a third approach is to try to understand what are the behaviors of a system that would be ethical? When can we look and say, ah, that's an ethical AI with some sort of testing process or something like that? Now, I think these are the three that people are doing. Full disclosure, both the first and third, I've contributed to that literature. So in a sense, part of what this talk is, is the."
+    },
+    {
+      "start": 404.48,
+      "end": 418.496,
+      "text": "awareness that I've been coming to over the last nine to 12 months that I think there are sort of fundamental challenges to any of these three succeeding. So first, let's think about ethical principles and features. This is."
+    },
+    {
+      "start": 418.496,
+      "end": 448.224,
+      "text": "So the approach that I think is best known, for example, when I talk to my parents about what it is that I do research on, we see, you know, basically every major technology company now has their ethical principles or their principles, which typically have ethical components to them. The U.S. government has principles that are supposed to guide the development of AI and the use of it, whether in the entire federal government or the Department of Defense."
+    },
+    {
+      "start": 448.224,
+      "end": 477.424,
+      "text": "There are principles in the UK. Germany has a set of principles. Every country is coming up with these principles. In fact, it's now gotten to the point that we're having articles that try to find the principles for the sets of principles. So we're now getting meta principles that people are developing to understand the landscape of ethical principles. So these are just ubiquitous now in terms of people working in this space who are trying to understand how to have more ethical and responsible AI systems."
+    },
+    {
+      "start": 477.424,
+      "end": 506.0,
+      "text": "The core problem in the sort of first and foremost challenge, I think, with these ethical principles is that they almost never constrain practice. So when the Google principles first came out, I would give my students the assignment of pretending they were a software engineer at Google. And at the time I was at Carnegie Mellon. And so they all wanted to be software engineers at Google and ask them to figure out what they would do differently."
+    },
+    {
+      "start": 506.16,
+      "end": 534.704,
+      "text": "After these principles went into effect and the students actually hated the assignment because it was so difficult for them to figure out any practical impact of most of these principles. Now, it's not that the principles are empty. They're not vacuous. But what they don't do is tell you how to implement or realize the principles. If I tell you that your AI system should be equitable."
+    },
+    {
+      "start": 535.824,
+      "end": 564.88,
+      "text": "That massively underdetermines the possible space of what it is that my system might do. And so these principles are, while laudable in many ways, they don't actually help us get to more ethical AI, the AI that helps rather than harms. Now, even on top of that, these principles are, especially when people try to make them more practical, they typically end up being largely context insensitive."
+    },
+    {
+      "start": 564.88,
+      "end": 581.456,
+      "text": "In the sense that they will say you should be equitable, but what equity means can vary radically across different situations or what fairness requires or governability involves."
+    },
+    {
+      "start": 581.456,
+      "end": 608.096,
+      "text": "To the extent that they are becoming more context sensitive, it's under the heading of what people refer to as from principles to practice. So there are now many workshops happening where people are saying, how do we go from principles to practice? And part of the problem is that I think we're all learning that when we do this, the principles often become somewhat decoupled from where we end up. Enormous amounts of information and content are having to come in to get to those practices."
+    },
+    {
+      "start": 608.096,
+      "end": 637.728,
+      "text": "At the same time, these principles, a number of people have shown are actually highly team sensitive, which is to say the team that is charged with making sure that these principles are realized make a big difference in terms of what is done. So you can give exactly the same principles in the same context to two different teams and they will realize it in radically different ways, which doesn't necessarily be it isn't necessarily a failure or a fault, but it is at least a worrisome signal."
+    },
+    {
+      "start": 637.728,
+      "end": 666.688,
+      "text": "that perhaps this is not quite the right way to make sure that we are going to be able to reliably get to the AI that we're trying to achieve. There's also a real challenge that has not been discussed much. I'm not going to go into the details here. We've got a paper under review, actually, about this. But it turns out that most of these principles do not actually line up with each other. And so there's a problem of what you could think of as ethical interoperability."
+    },
+    {
+      "start": 666.688,
+      "end": 691.488,
+      "text": "make principles your central focus, which is to say, say Hannes' company has a set of ethical principles. They produce a product and presumably, hopefully, the product fits their ethical principles. My company has a different set of ethical principles. And in modern technology, there is an enormous amount of collaboration and use of other people's technology."
+    },
+    {
+      "start": 691.488,
+      "end": 717.92,
+      "text": "But the problem is we need to have I need to know that his technology satisfies my ethical principles. And it turns out that that's incredibly hard to do in a reliable way that actually would work in practice, given various kinds of legal and intellectual intellectual property kinds of constraints. People are not going to be willing to share the information that's needed."
+    },
+    {
+      "start": 717.92,
+      "end": 746.768,
+      "text": "For me to know that somebody else's technology fits my ethical principles. So I think there's a lot of there was a lot of excitement around principles, but I think that they are not going to be the path that we're looking for. A different approach would be to just try and build algorithms that are ethical. Now, this I think mostly this comes from, you know, here's the kind of classic example. You have the old school trolley problem, which was very much discussed four or five years ago."
+    },
+    {
+      "start": 746.768,
+      "end": 776.24,
+      "text": "which is not actually the right way to think about how these things work. But the idea was, well, if I have a self-driving car that is faced with a choice between swerving and killing one or continuing on its path and killing five, what should it do? And so there were a number of papers arguing and trying to develop actual decision making algorithms that could be implemented in an autonomous vehicle for it to make these kinds of choices."
+    },
+    {
+      "start": 776.752,
+      "end": 806.544,
+      "text": "And you had companies such as either Mercedes-Benz or BMW came out and said, you know, when our car is faced with this choice, it will choose to protect the inhabitants of the occupants of the car, even if that means that it might harm somebody outside. We're going to put the occupants of the car first. The problem with building these kinds of ethical algorithms, though, is that they actually misunderstand the very way that these technologies are, by and large, built."
+    },
+    {
+      "start": 806.544,
+      "end": 832.368,
+      "text": "So here is what the world looks like on the left to a self-driving car. And what you'll notice is, for example, if you just look, say, in the middle picture, you don't actually see people. What you see are bounding rectangles, solids that the vehicle says are no go zones. It's impermissible to, you know, it simply can't use a trajectory that would take it through one of those bounding rectangles."
+    },
+    {
+      "start": 832.688,
+      "end": 855.12,
+      "text": "Or on the top, you can see basically you're getting point clouds. You don't get the information that a lot of the people who looked at trolley problem kinds of cases required for the algorithms that they were arguing that the vehicles should implement. There's just no place in these vehicles for a kind of trolley problem calculus."
+    },
+    {
+      "start": 856.56,
+      "end": 884.128,
+      "text": "All there is is finding a low cost path through a landscape. And even that is done by relatively black box opaque algorithms. These days, largely deep learning ones. So if I came in and said, well, we need to be responsive to this contextual feature. And I say this to somebody who is building a self-driving vehicle. They're working at Aurora in Pittsburgh. They're going to look at me with a very confused look."
+    },
+    {
+      "start": 884.128,
+      "end": 894.048,
+      "text": "Because there is no place to insert this kind of ethical reasoning. Now, you might say, well, OK, that's the case with self-driving cars, but that can't be universal."
+    },
+    {
+      "start": 894.048,
+      "end": 924.048,
+      "text": "But another example that I like to use is my former colleague, Manuela Veloso at Carnegie Mellon, runs a group building these cobots. These are basically helpful robots that wander around the computer science building. They can deliver mail. If you have a meeting with Manuela, one of these robots will meet you at the front door and take you to her office and these kinds of things. Now, these robots, in all the years they've been deployed, have never initiated communication."
+    },
+    {
+      "start": 924.048,
+      "end": 951.152,
+      "text": "a collision with a human. Now, they have run into humans, but only because you've got undergraduates who like to mess with robots walking in the hallways with them. But the robots have never initiated a collision. And I remember talking with Manuela and saying, this is really fantastic. I love that these are implementing these ethical values of prioritizing the humans in the space. And she gave me a very confused look and said, but that's not what they're doing."
+    },
+    {
+      "start": 951.504,
+      "end": 978.128,
+      "text": "What the robots do is there is a single parameter in the roughly million lines of code that defines a buffer that the robots are not supposed to go into for key environmental features, one of which is the people. And that's how they've been able to be safe, not because they reason through any sort of."
+    },
+    {
+      "start": 978.128,
+      "end": 1005.36,
+      "text": "consequentialist calculus, not because they have some deep deontological perspective on the world, but simply because they coded it with an epsilon parameter that says, don't get too close to these kinds of things. And so, again, it's not to say that we should never try to implement algorithms for ethical decision making. It's to say the way that the technology is being built right now is simply"
+    },
+    {
+      "start": 1005.36,
+      "end": 1032.144,
+      "text": "There's no sort of interface to allow that kind of direct translation of a current AI that we might think is unethical or at least not sufficiently ethical to make it more ethical. We can't simply reach in and change around the ways that the algorithm works in this way. A third possibility that people have looked at is to say, well, what if we simply define."
+    },
+    {
+      "start": 1032.144,
+      "end": 1056.736,
+      "text": "What is the space of ethical behaviors? And then we use testing and evaluation and audits to ask, does this system act ethically? You can think of this as almost a kind of Turing test for an ethical AI. We did we characterize what it is to act ethically. And then we step through and say, OK, what we're going to do is is check, for example."
+    },
+    {
+      "start": 1056.736,
+      "end": 1077.408,
+      "text": "whether the system respects human rights when it is deployed or something like this. And these kinds of approaches sort of say, well, we're not going to worry about exactly how the system is implemented. We're not going to care. We're going to black box that. And instead, think about what it means to be ethical in terms of actions and behaviors."
+    },
+    {
+      "start": 1077.408,
+      "end": 1105.648,
+      "text": "And I just mentioned for any philosophers in the audience, this is very much in line with the sort of tradition over the last 15 years of trying to what's called consequentialize various ethical theories to understand their observable or behavioral differences. Where can we see that one theory makes one judgment, whereas a different ethical theory gives a different judgment so we can actually find the points of disagreement?"
+    },
+    {
+      "start": 1105.648,
+      "end": 1134.256,
+      "text": "This is sort of the same idea to say, let's focus on ethical actions, ethical outcomes. This is particularly a common move that people make who work on fairness and equitability, where they say, well, we just need to operationalize what it means for the algorithm to be fair or unbiased. And then we can test for that. Now, the problem is that, first of all, this approach typically requires a kind of implausible."
+    },
+    {
+      "start": 1134.704,
+      "end": 1160.88,
+      "text": "level of knowledge about exactly what it is to act ethically. If we think about something like an autonomous vehicle, what we want for its ethical behavior is we want it to drive safely. But what does drive safely mean? Well, as we all know, anybody who has a driver's license and any experience, what it means to drive safely can vary radically. And in particular, that"
+    },
+    {
+      "start": 1160.88,
+      "end": 1190.768,
+      "text": "We normally live in what we could think of as an open world, which is to say you cannot give a complete specification of everything that could matter in your environment. And the problem with audits is that they really work best for closed worlds, for situations where you actually can characterize not only all the features that matter. So you can say, here's what the system must be responsive to, but also the appropriate behaviors."
+    },
+    {
+      "start": 1191.376,
+      "end": 1219.632,
+      "text": "But we almost never have this knowledge for the context in which we want to use AI, because the whole point of AI is that it will surprise us. We want our AI to do things that we would not have thought of. We like that AlphaGo and AlphaZero develop strategies that we humans did not think of. It's actually really important that the AI be capable of surprising us. We just want it to surprise us in the right ways."
+    },
+    {
+      "start": 1220.272,
+      "end": 1246.56,
+      "text": "But if it's surprised, then by definition, we cannot say ahead of time what exactly it should be. The other challenges with these is that they tend to require that we prioritize particular groups. So we lose a kind of context sensitivity in in the audits that we build. And there's if you've ever heard of Goodhart's law, this is the idea that any measure that you attempt to optimize ceases to become a good measure."
+    },
+    {
+      "start": 1246.56,
+      "end": 1275.44,
+      "text": "So if I want to optimize the quality of the students at UC San Diego, I might say, well, what I want to do is I want to pick the students who have highest test scores. But the problem is, as soon as I do that, the students will all focus just on getting good test scores, not on being the kinds of thinkers and learners that we necessarily wanted in the community. And when you focus just on the ethical behaviors, you open the door."
+    },
+    {
+      "start": 1275.44,
+      "end": 1300.784,
+      "text": "to a new kind of good hearts law, the kind of cases where the system will optimize for certain values or certain behaviors to the point that it's not able to adjust when those are no longer the right kinds of behaviors. So I don't think that any of the three ways that people are doing this right now are working."
+    },
+    {
+      "start": 1300.784,
+      "end": 1329.44,
+      "text": "Of course, it might be that, you know, breakthroughs are just around the corner. Could be that we're just about to figure out how to translate the principles into practice. But I think there's a sort of deeper underlying issue that suggests that maybe these are the wrong way to go about it. And that is that if we look at each of these three approaches, they're each focused on what we could think of as basic research on a single component of the complex sociotechnical system that produces."
+    },
+    {
+      "start": 1329.44,
+      "end": 1356.528,
+      "text": "and realizes AI capabilities. And so as a result, each of them ignores certain key complexities. So, for example, when we think about the principles, the problem, almost all of those problems with focusing on ethical principles are really based on the fact that they ignore the practice by which AI systems are built and realized in the world."
+    },
+    {
+      "start": 1356.944,
+      "end": 1385.632,
+      "text": "Or if we think about the algorithms, they ignore the way that the technology actually functions. And so they focus on one piece without thinking about the others. Or if we think about the behaviors, they ignore the ethical theories, models, constraints that are really doing the work. They elevate the behaviors rather than the ethical content, which is really at the core of what we should be caring about."
+    },
+    {
+      "start": 1385.632,
+      "end": 1415.28,
+      "text": "So I think part of the problem is that each of these three approaches has done what we do with basic research, what probably everyone on this call has done, which is you narrow your focus to have a deep understanding of a piece of the puzzle. And the problem is that while that can be incredibly powerful and useful, it's not going to get us to the complex sociotechnical system design that is needed to have more ethical AI."
+    },
+    {
+      "start": 1416.368,
+      "end": 1446.336,
+      "text": "Now, the immediate challenge that you're probably saying is, OK, but if not basic research, then what? What are we supposed to do instead? And so that's what I want to do here in the last 10 minutes is to make the case for a different kind of approach. So I want to start by thinking about an analogy or a parallel, which is the case of translational medicine. So translational medicine, translational medical research. This is my way of thinking about it. There's no single definition that one would give."
+    },
+    {
+      "start": 1446.336,
+      "end": 1475.328,
+      "text": "But it's essentially the substantive research that's required to take the basic biomedical advances that happen in the lab, in the research space, and move them into clinical practice. So we discover that a particular kind of cancerous tumor is responsive to a particular drug. Translational research is the question of how do we take that basic insight and move it into the clinic?"
+    },
+    {
+      "start": 1475.328,
+      "end": 1505.312,
+      "text": "so that it can actually be used to improve people's health, advance people's lives and capabilities. So there's a very longstanding tradition in medicine that you've got your basic researchers, you've got your clinicians, and you've got these translational researchers who work to move between the two communities. And one of the really critical insights, I think, of translational medicine that has led to its success"
+    },
+    {
+      "start": 1505.312,
+      "end": 1526.128,
+      "text": "is that it requires both what we could call, following on some language of Alan Baddeley, the great memory researcher, it requires both applied basic research, which is the kind of straightforward thing I was just describing, where you say, OK, let's start with the basic research and figure out how to apply it."
+    },
+    {
+      "start": 1526.832,
+      "end": 1555.952,
+      "text": "But it also requires what we could call basic applied research, which is where we start in the application domain. We start in the clinic and we move back to ask, what are the foundational research questions that need to be answered in this clinical setting? So translational research is not just I take my basic research and add a few parameters for the context of the application domain and then I'm done."
+    },
+    {
+      "start": 1556.4,
+      "end": 1585.968,
+      "text": "The whole point of translational research, what has been transformative in medicine, is exactly that we also start with the applications and do, as it were, native basic research in the application domain. So what would this look like if we wanted to do translational AI ethics or translational ethical AI? Well, that would be a question of how we can do substantive research to apply our basic ethical"
+    },
+    {
+      "start": 1586.256,
+      "end": 1611.504,
+      "text": "advances and insights into the technological practice. Now, if we continue this analogy, what it means is that one part of it is going to be what I think we're already trying to do in those three different approaches, which is how do we translate our insights in AI, human computer interaction, ethics, sociology, anthropology, and on and on."
+    },
+    {
+      "start": 1611.76,
+      "end": 1641.456,
+      "text": "Cognitive psychology. How do we take these basic research insights and apply them to particular domains? So when people say here we have basic research on ML algorithms that optimize for both accuracy and some measure of bias. How do I now apply it in the real world domain of policy for climate change mitigation in?"
+    },
+    {
+      "start": 1641.456,
+      "end": 1668.688,
+      "text": "oceanfront or coastal communities. So that's an application domain. We want to use AI to help us know where we should be building seawalls in San Diego to mitigate the impacts of climate change. We don't want to have those mitigations disproportionately help or harm communities that have been historically marginalized. How do we do this? Well, here's an AI system that can help us do it. How do we take the"
+    },
+    {
+      "start": 1668.688,
+      "end": 1698.064,
+      "text": "the research of folks like myself or others in computer science, and translate that to the application domain. That's the piece we're already doing. What we're missing, I think, by and large, is the basic applied research. How do we start with the applications? How do we start with the challenges and problems and do, as it were, the native research in those application domains to ensure that we're producing more ethical AI systems?"
+    },
+    {
+      "start": 1698.064,
+      "end": 1724.144,
+      "text": "How do we not continue to do the same kind of basic research where we start atomistically and hope we can put the pieces together, but rather start at the complexity and find which are the features that we need to focus on in order to make this happen? So what might this look like? So the first thing is that one of the hallmarks of basic applied research, basic applied science."
+    },
+    {
+      "start": 1724.144,
+      "end": 1753.456,
+      "text": "is that you have to look at the complexity of the application case or domain and try to determine what are the intervention points? What are the places where we could make a difference? And I think when we think about that in the context of AI, it's very natural to focus on just the intervention point of development. The piece that we teach our students to do in a data science institute where I now spend part of my time or an AI lab. I've got my data and then I go to code."
+    },
+    {
+      "start": 1754.032,
+      "end": 1780.528,
+      "text": "But if we want to think about basic applied research, we want to look at the complexity of technology creation. We actually need to think about the entire sort of this is a very caricatured pipeline that we have of everything from identification of a problem to be tackled all the way through the development to the use and then back to the refinement and revision of the technology."
+    },
+    {
+      "start": 1780.592,
+      "end": 1805.648,
+      "text": "The sort of whole life cycle of an AI system. And importantly, when we think about this, these intervention points from the perspective of ethics, what we see is that there are a number of places. The exact questions here don't actually matter for what I'm trying to do here. What matters is that at every stage, at every step, we are asking ethical questions."
+    },
+    {
+      "start": 1805.68,
+      "end": 1835.152,
+      "text": "And so the approach of basic applied research is to say we should be finding the best ways to ask and answer these questions. So if we look in the upper right, who should get access to a technology? A question you ask when you're deploying your your A.I., who am I going to give access to this technology? If I build a diagnostic medical system here in UC San Diego Health Center, do I then deploy it in rural Peru?"
+    },
+    {
+      "start": 1835.152,
+      "end": 1864.816,
+      "text": "Is it going to work there? Well, when we ask these questions about who should get access, the basic applied research is to start with that question and ask, what are the defensible, reliable, robust ways to answer that question in an ethical way? So what kinds of answers might we get? Well, I think of this in sort of four different categories. I think there are four different categories of places that we need this basic applied research."
+    },
+    {
+      "start": 1864.816,
+      "end": 1894.512,
+      "text": "So one is on the people. So how do we have people who have an understanding of what goes on in other parts of this complex sociotechnical system? Not so they can do it themselves. I don't want my undergraduate philosophy majors. I don't care if they can code, but I do care that they can talk intelligently with people who code. And I don't care that my data science students are ethicists. I care that the data science students can talk to."
+    },
+    {
+      "start": 1894.512,
+      "end": 1919.744,
+      "text": "So how do we teach people to collaborate in these settings? This is actually not a question that by and large is considered very much by, say, education researchers. There's some work on when teams are high functioning and some work on how to build good teams. But it's actually an underexplored area, especially in the context of technology and AI. We all think that we know."
+    },
+    {
+      "start": 1919.744,
+      "end": 1948.544,
+      "text": "Oh, if you put people with different backgrounds in a room, we'll get better technology. Everybody says this now. We need diverse teams. And there's actually almost no research showing that diverse teams lead to better, more ethical AI systems. I happen to agree with that intuition. I think it's probably right. But we need research that actually checks if it is. And that is in some ways the epitome of basic applied research. It takes this application setting."
+    },
+    {
+      "start": 1948.544,
+      "end": 1978.256,
+      "text": "The composition of a team in technology development and asks a basic research question about it. We need to also be thinking about processes. Now, here we're starting to see the growth of a number of different methods and techniques, whether it's data sheets, model cards. Audits actually, I think, would fit in here in some cases. But the idea is for the complex environment of AI creation."
+    },
+    {
+      "start": 1978.32,
+      "end": 2008.24,
+      "text": "What are the processes that lead to more ethical outcomes? And I will say that here, even here where we have ideas, say model cards, which are essentially ways for developers of a model to encode all of the information about their model for people who are going to then use and deploy it, the engineers downstream. Even model cards, everybody has this intuition that they probably are helpful. And there's been almost no systematic research."
+    },
+    {
+      "start": 2008.336,
+      "end": 2036.688,
+      "text": "Looking to, for example, have two groups that are trying to build the same technology. One group gets a model card. The other group does not. Does that lead to a difference in ethical outcomes? We actually don't know the answer to that question. I think they probably help. But part of this basic applied research is how do you go from intuition and rules of thumb to actual reliable, validated methods and processes?"
+    },
+    {
+      "start": 2037.712,
+      "end": 2066.64,
+      "text": "We also are going to need better policies, but they need to be policies that are tailored to the complexities of the technology. So we need smarter regulation. We need to not necessarily be trying to regulate AI as an ordinary system. This is an area where Europe, I think, is far ahead of America in terms of government regulation. At the same time, I think industry standards are pretty important as well. When we think about"
+    },
+    {
+      "start": 2066.64,
+      "end": 2095.856,
+      "text": "the self-regulation that invariably must occur. Finally, we need to think about the partnerships that we're building. I already mentioned this issue of ethical interoperability, but that's actually a topic that's going to require basic applied research as well. But I think it's also partnerships where I, as a consumer, have certain values. The developer at the company is writing code. And how do we have ways of translating or mapping between"
+    },
+    {
+      "start": 2095.856,
+      "end": 2117.072,
+      "text": "My values and the codes that are developed. These are particularly challenging things to build because they require us to really step back and think about the complexities of what we're trying to do to build these mappings and then validate the methods by which we're doing it."
+    },
+    {
+      "start": 2117.68,
+      "end": 2143.584,
+      "text": "Now, what's shared between all of these is that they don't suffer from the diagnosis that I gave earlier, because all of these efforts require us to start with thinking about jointly the practice, the technology and the ethics. We can't think about these in separation from one another. Moreover, they all require multidisciplinarity. So they are all basic research in the sense that we're trying to build."
+    },
+    {
+      "start": 2143.584,
+      "end": 2164.688,
+      "text": "knowledge that is generalizable across a wide range of technology creation settings. They are basic research in that sense, but they're basic applied research that starts with the real world challenge and moves back to ask, how can we realize ethical AI and systems of AI ethics?"
+    },
+    {
+      "start": 2164.688,
+      "end": 2193.056,
+      "text": "in these complex socio-technical systems. So with that, I think I'm hopefully not too far off on time, but I'll say thanks and happy to do questions for half an hour. Thanks a lot. I'm looking for questions. You can either raise your hand or you can write something in the chat."
+    },
+    {
+      "start": 2193.056,
+      "end": 2222.832,
+      "text": "There was one question by Nina. And Edward is there. Edward, I see you maintaining your hands up because there were other hands up, but then they took it down. So, Edward, the floor is yours. Thank you, Hannes. And thank you, David. This was a great perspective. I think one of the things that I have been"
+    },
+    {
+      "start": 2222.832,
+      "end": 2248.272,
+      "text": "sort of drumming uh lately is this naive view of technology development which is kind of that technology gets designed developed and then deployed and design is done you know in kind of one step and then deployed but but every piece of technology that gets deployed these days is actually"
+    },
+    {
+      "start": 2248.272,
+      "end": 2269.008,
+      "text": "an amalgamation of a bunch of pre-existing technology and it doesn't just get designed and deployed it's continually being redesigned and there's this feedback process between the development of the technology and its use in society and i think your perspective really"
+    },
+    {
+      "start": 2269.008,
+      "end": 2296.656,
+      "text": "brings this to the foreground and puts kind of a nail in the coffin of the perceived silver bullet that all we have to do is, you know, teach ethics to the technologists and that will solve all the problems. So I don't know that this is a question, but it just, it is really more like a comment. But I think this is really a great perspective. No, I completely agree. And, you know, much of where this"
+    },
+    {
+      "start": 2296.656,
+      "end": 2324.336,
+      "text": "perspective comes from it you know I will say just as a piece of autobiography it much of it comes from trying to teach these kinds of classes where I have you know so this this quarter I have 70 undergraduates in a class on data ethics and I have philosophers sitting right next to computer scientists and realizing that what they need to know about what the other does"
+    },
+    {
+      "start": 2324.336,
+      "end": 2349.36,
+      "text": "is not what they're learning in any of their other classes. Because every class in philosophy, say, that thinks about technology adopts this sort of very simplistic view that you're saying of, well, the designers build specifications that are handed off to the developers who create the artifact, who hands it off to the engineer and the end user. And fail to understand, I mean, the computer scientists understand it's more complicated."
+    },
+    {
+      "start": 2349.36,
+      "end": 2379.28,
+      "text": "But the philosophers don't. Meanwhile, the computer scientists are being told in their intro computer science class that fairness is this statistical skew in the model output that we can measure. Which is just not I mean, that's not what bias is. Right. Bias is not that we have a statistical disparity in in the outputs because that could be perfectly acceptable morally. And lack of disparity can actually be lack of skew can actually be morally problematic. And so."
+    },
+    {
+      "start": 2379.28,
+      "end": 2408.912,
+      "text": "The philosophers get the complexity of bias, but the computer scientists are given the simplistic version. So the question that that I've been wrestling with in my own teaching and we're starting to do this research on is exactly how do you get them to work together so each can take advantage of the other's sophisticated knowledge? And, you know, of course, then the next step is how do we get once we can sort of build the supply on the student side, how do we make sure that companies and governments are demand side?"
+    },
+    {
+      "start": 2408.912,
+      "end": 2430.928,
+      "text": "requiring that the people coming into their teams have this kind of understanding of the full complexity of what they're doing. Thank you, David. So at the moment, we have already three persons to hand raised. I asked for short questions and short answers because I assume that others will come and jump in. George, the floor is yours."
+    },
+    {
+      "start": 2437.04,
+      "end": 2465.456,
+      "text": "First, thank you for the very interesting insights in your talk. In the current stage of development of the European AI Act, which I'm sure you're familiar with, as you indicated, there is a categorization of high-risk AI applications and minimum-risk AI applications. And the first category is held to higher standards of..."
+    },
+    {
+      "start": 2465.456,
+      "end": 2494.128,
+      "text": "accountability and liability, the other not. Of course, in the context of the consequentialism direction that you touched upon, this has a time factor. In other words, some applications may look innocuous now, but not so further down the road. My question is, does your basic applied research approach provide the tool"
+    },
+    {
+      "start": 2494.128,
+      "end": 2519.888,
+      "text": "for, let's say, more reliable, more trustworthy classification as to what would constitute high risk and whatnot? That's a good question. So, yes, in the sense that when you start by thinking about the complexity of the development and use and the ways in which contexts and social systems change over time,"
+    },
+    {
+      "start": 2519.888,
+      "end": 2549.68,
+      "text": "What emerges is the importance of having a system of dynamic classification, dynamic regulation, dynamic verification that is able to move between certifying something as high risk, minimal risk into a monitoring mode that ensures that we know when the system changes category. And so the critical piece that comes, I think, from adopting a basic applied research."
+    },
+    {
+      "start": 2549.68,
+      "end": 2577.04,
+      "text": "attitude towards what you're describing is a recognition that we need to move away from is it high risk or minimal risk to actually asking what are the reliable mechanisms of monitoring over time to detect when there are changes. And at least the last time I looked at the AI Act, there was almost no real discussion of how this was supposed to occur."
+    },
+    {
+      "start": 2577.04,
+      "end": 2606.208,
+      "text": "And I think that that's going to be a potential shortcoming of it. I mean, it's still better than what we have here in the US, but yeah. Carlo. Yes, thank you very much for the very interesting lecture. And I cannot agree more with most of the things you said. I'm just wondering how much what you said"
+    },
+    {
+      "start": 2606.208,
+      "end": 2628.32,
+      "text": "holds in general, you know, for the complex social technical systems that we develop today, even if no AI component is there. It seems to me that what you say actually is much broader. Of course, you know, there is AI in these systems. It adds, you know, complexity and maybe."
+    },
+    {
+      "start": 2628.32,
+      "end": 2654.224,
+      "text": "adds to the lack of transparency that you have in these systems. But what you said seems to be broader. And I would like just to understand what exactly you see as specific of the AI components that are in these systems to the global picture that you gave us. Yeah, that's a good point."
+    },
+    {
+      "start": 2654.224,
+      "end": 2678.48,
+      "text": "It will not surprise you to hear that I am in general a fan of translational research, and I think there's not enough of it done in university settings. I think basic applied research is, you know, it often gets shunted off to a business school or something like that. And I think that it needs to be a more prominent part of many universities. So I agree in that sense. I do think that there is that AI systems are."
+    },
+    {
+      "start": 2678.48,
+      "end": 2703.616,
+      "text": "at least special in the following ways. I think when we are talking about AI and complex socio-technical systems, what the AI does is it resides in this middle ground where we have some confidence that it's going to do the right thing, but we do not know what form that's going to take. So if I have the complex system of an airplane,"
+    },
+    {
+      "start": 2703.616,
+      "end": 2731.088,
+      "text": "I actually know what all the pieces do and I know exactly what they should do. The problem is, how do I put this together into something that is sort of stable in a way? But I know what each of the pieces is reliably going to do. The problem with AI systems is that precisely because of the lack of transparency, precisely because we want them to be at least have some autonomous capabilities."
+    },
+    {
+      "start": 2731.088,
+      "end": 2760.704,
+      "text": "we're invariably in a position where we actually don't know what some of the components are going to do, at least not at a level of description that enables us to use all the tools that people have developed for many years for engineered systems. So I think the autonomy and opacity of those AI components means that our traditional methods for engineering design and engineering validation and verification don't translate in a straightforward way."
+    },
+    {
+      "start": 2760.704,
+      "end": 2783.44,
+      "text": "So now we've got the need for basic applied research, where we start with the complexity of the AI systems being opaque and autonomous, and then move back to ask what are the basic processes by which, you know, can we adapt things from engineering design, for example. Okay, thank you. I take the freedom as moderator."
+    },
+    {
+      "start": 2783.44,
+      "end": 2810.704,
+      "text": "I just have a short remark to Carlos' question, because this reminds me, your approach reminds me very much on the research in information systems research, where you have this design science approach by Ellen Hefner, who really shows that you start from the problem definition and then you have an iterative approach to create your artifacts and you involve your stakeholders or users or participants."
+    },
+    {
+      "start": 2810.704,
+      "end": 2833.936,
+      "text": "throughout your software development. So this is very similar to this design science approach and there it's applicable to all software systems. So just as a short remark. Michael Heiss. Yeah, I like very much this aspect of the so-called value chain of"
+    },
+    {
+      "start": 2833.936,
+      "end": 2856.8,
+      "text": "of ethics in software development, which you mentioned today. So I call it value chain because in my field, we are talking at the moment about the CO2 footprint of a final product. And so we have also along the value chain, we have to measure all the CO2 footprints."
+    },
+    {
+      "start": 2856.8,
+      "end": 2886.288,
+      "text": "in order to finally have the CO2 footprint of the final product. But in this case, this is much simpler because it's a technical measurement of technical things. But nevertheless, it is quite complex because you have to trust this measurement and so to make sure that nobody is cheating in this way. In your case, it's much more abstract because ethics is not so easily"
+    },
+    {
+      "start": 2886.288,
+      "end": 2910.416,
+      "text": "measurable. And so the question is, if you can give us some feeling how to approach this, to have this value chain that the final system contains of a lot of different components. What is your approach?"
+    },
+    {
+      "start": 2910.416,
+      "end": 2923.792,
+      "text": "Yeah, no, that's, you know, you raise a really good question. And I think what the approach that that I take to this is to start."
+    },
+    {
+      "start": 2923.792,
+      "end": 2951.216,
+      "text": "By saying what we need to have is an articulation of the relevant values and interests for whatever we're going to be doing with the technology. So in this sense, it's it it looks a bit like the focus on ethical behavior idea of saying, all right, what is it we're actually trying to do or solve? It also, as I was mentioning, this design sort of thinking idea. But we start with that and then we can ask."
+    },
+    {
+      "start": 2951.216,
+      "end": 2974.688,
+      "text": "You know, a straightforward thing one can do is to ask, all right, how do each of these components, sort of the intro version of this, is how does each component contribute to those values, to the satisfaction of those values? So if something that's important is promoting people's good health, then accuracy of diagnosis is clearly going to contribute to that."
+    },
+    {
+      "start": 2974.688,
+      "end": 3002.08,
+      "text": "Now, so that we have a framework for essentially how do you articulate the overall values and interests? How do you articulate the the values and interests that are supported by each of the components? And then a kind of simple addition. Right. That's the naive way to do it. But that actually works pretty well as a first approximation because it leads to asking questions like, why is this component doing what it's doing?"
+    },
+    {
+      "start": 3002.08,
+      "end": 3030.88,
+      "text": "Because it's only contributing to this one value, but we actually need it to contribute to multiple. So it already can lead to revision by adopting this sort of additive view of what's going on. Now, the more complicated and this is where we're in the world now of basic applied research. The more complicated world is what do you do when the components now are starting to really interact? So a kind of."
+    },
+    {
+      "start": 3030.88,
+      "end": 3060.192,
+      "text": "Classic example of this would be something like I'm building a diagnostic or therapeutic AI system to decide what treatment somebody needs for a medical condition. And this system is going to be used by, say, a doctor who is very racist. And I know that the doctor is biased in this way. So if I just let them use my system, if my system is accurate and I just let them use it, bad things are going to happen to people of color."
+    },
+    {
+      "start": 3060.192,
+      "end": 3088.768,
+      "text": "Because of the racism of the doctor. So should I actually change my system to compensate for the known bias of the doctor? Now, that one people go, I don't know, maybe, except this is actually something that is taken as completely from people do this all the time in human computer interaction. You say humans are biased in the ways that we process information. So the algorithm gives the information in such a way that it leads to the right outcome."
+    },
+    {
+      "start": 3088.768,
+      "end": 3118.464,
+      "text": "So we're already used to this kind of thinking. The question is now, how do we take that from a functional perspective in HCI to the more ethical? And lots of people get very nervous when I start talking about these kinds of possibilities, which is why I think we're still engaged in the task of the basic applied research to understand what are good methods of working through this, good in the sense of leading to ethical, more ethical outcomes and systems. Thank you."
+    },
+    {
+      "start": 3118.464,
+      "end": 3147.376,
+      "text": "Thank you. Now we have from Hannover, I think it's you. People sent to the Internet. One representative. Hi. Hi. This is Maylin Fung. I'm actually here in Potsdam, Germany, but I'm normally based in California. I wanted to refer to a couple of points that David brought up because I lived."
+    },
+    {
+      "start": 3147.376,
+      "end": 3168.864,
+      "text": "the whole thing about inventing something that ended up getting misused so in 1989 I was one of the first people to come up with customer relationship management and over time that's been really used in ways I never imagined and I'm very very concerned about thinking that"
+    },
+    {
+      "start": 3168.864,
+      "end": 3193.376,
+      "text": "At the time of invention, it's possible to imagine all the possible uses because I really know that that's not possible. However, I do want to confirm that I think translational research is the right way to go. But I would go even further than you insofar as looking at how a community evaluates."
+    },
+    {
+      "start": 3193.376,
+      "end": 3221.52,
+      "text": "the actual outcomes, that we should not look at the ethical outcomes just from the point of view of a single person, because many of the outcomes actually affect whole communities. So I just wondered about your thoughts on that. And finally, a case study of how the components add up to something completely different than the people expected is the MAX Boeing MAX 737. Well,"
+    },
+    {
+      "start": 3221.52,
+      "end": 3224.08,
+      "text": "written about in Flying Blind."
+    },
+    {
+      "start": 3224.848,
+      "end": 3252.608,
+      "text": "Yeah, no, I think on that last point, unfortunately, there are far too many examples that we have of where each component was entirely sensible and you put them together into a system that had catastrophic outcomes, even systems that have nothing to do with AI. And so there absolutely are limits to the kinds of engineering systems approaches that I was mentioning, I think, in response to Carlo's question. I agree."
+    },
+    {
+      "start": 3252.608,
+      "end": 3281.872,
+      "text": "With regards to this question of measurement and, you know, sort of outcomes relative to whom, I think, you know, I think you're pointing towards a very deep problem and, well, not problem, a very deep challenge. So, you know, the question really is, ultimately, we want to understand how these systems are having, I would argue, multidimensional impacts on multiple communities."
+    },
+    {
+      "start": 3281.872,
+      "end": 3310.016,
+      "text": "But if I'm now imagine I'm a regulator or I'm deciding, you know, I have the go no go decision at my company. Ultimately, we're either going to field it or we're not. And I think one of the things actually that ethics, ethical theory gives us a very good set of concepts to talk about multidimensional outcomes impacting multiple communities. I think ethical theory does not do a very good job of giving us."
+    },
+    {
+      "start": 3310.016,
+      "end": 3339.136,
+      "text": "um decision procedures for resolving those so i'm afraid i'm going to have to say i don't have deep thoughts i mean you know people have spent a long time trying to think and i don't have something beyond i think the first step is having us be explicit about this multi-dimensionality multi-community impact that's step one like let's just at least have everybody on the same page about understanding the diverse impacts that our systems can have on different communities"
+    },
+    {
+      "start": 3339.136,
+      "end": 3365.616,
+      "text": "How we then move from here's what it will be to we're willing to do this. I don't have a great answer. I don't think we know very much about how to do that in a principled, ethical way. I wish we did. Thank you. Nima, the floor is yours. Thank you. And thank you, David, for this presentation."
+    },
+    {
+      "start": 3365.616,
+      "end": 3393.072,
+      "text": "greetings to UCSD, which is actually my alma mater. I'm looking into causal discovery, causal inference, and what its potential applications could be in international development right now, so more in an applied way. And since you're very active in causal discovery and causal cognition, I would be interested in your view on"
+    },
+    {
+      "start": 3393.072,
+      "end": 3420.896,
+      "text": "where you see the ties between looking at these ethical principles and then on the other side, relying more on causal structures when designing these machine learning based systems, whether these causal structures maybe enable a more and more ethical approach to say, by relying on causality."
+    },
+    {
+      "start": 3420.896,
+      "end": 3434.128,
+      "text": "I think Hannes would be very unhappy if I pulled up the the an entire hour long talk I could give on this. So I would just quickly say that I think three minutes. OK, yeah, I can give it a three. I can talk quickly, but not that quickly."
+    },
+    {
+      "start": 3434.128,
+      "end": 3461.12,
+      "text": "I think that the short version is to say that ethics depends on causal knowledge because ethical choices and policies depend on us knowing in some sense that we're pulling the right levers to bring about the kinds of worlds that we want. The challenge is that ethics is, of course, not reducible to causal knowledge. And so one of the things that we're working on in my research group right now."
+    },
+    {
+      "start": 3461.12,
+      "end": 3470.208,
+      "text": "is, if I may geek out for 30 seconds, is a graphical model semantics that is heterogeneous."
+    },
+    {
+      "start": 3470.208,
+      "end": 3492.528,
+      "text": "So you can represent both causal structure and ethical constraints and social structural mechanisms of bias, all in a unified framework where, of course, the semantics gets very messy very quickly when you can have connections of different types. So that's what the research challenge has been, is how do you actually efficiently operate with these kinds of heterogeneous."
+    },
+    {
+      "start": 3492.528,
+      "end": 3521.296,
+      "text": "graphical models, but it's exactly for the kind of idea that you're pointing to, which is how do we integrate together causal discovery, causal inference, that we can then leverage alongside our knowledge of values and social structures. So I'm 100% on board with what you're pointing towards. Thanks. Now we come to the last question by Paul, or is there anybody else who wants a further question? Because we are running out of time."
+    },
+    {
+      "start": 3521.296,
+      "end": 3547.872,
+      "text": "Paul, your part. Yeah, if you still allow me. Thank you very much, David. I was really intrigued by your talk and also things like ethical interoperability. But I want to focus on something that I actually discussed this morning with Paul Waller. He's also on this seminar. That is about, you say, basic applied research. So that's really a domain perspective that matters. You need to understand the domain. And now perhaps I make a big leap. But would you say that..."
+    },
+    {
+      "start": 3547.872,
+      "end": 3565.264,
+      "text": "Perhaps it's fine that we have horizontal regulatory approaches like the AI Act, but is it the consequence of what you say is that we really need to look into vertical, so domain-specific regulatory approaches or rules, and that that is what really matters?"
+    },
+    {
+      "start": 3565.264,
+      "end": 3583.296,
+      "text": "So I think that it is critical that we have an understanding of AI and technology within the verticals. So here in the United States, one of the challenges is that the people who do medical device certification and approval."
+    },
+    {
+      "start": 3583.296,
+      "end": 3612.272,
+      "text": "have very limited understanding of the AI that is embedded within a lot of these devices. It's changing, but it's a huge problem. But in fact, yes, actually, in general, I agree. I've long argued that it's a mistake to try to regulate and certify AI writ large, that I think it should be within the verticals. The problem is that within the verticals, things have to be done radically different than people have done historically."
+    },
+    {
+      "start": 3612.272,
+      "end": 3638.96,
+      "text": "So there's a political science, a political challenge, which is that there are entrenched interests within the verticals to do things in particular ways who are not going to want to make the changes that are required when you introduce AI and systems with autonomous capabilities into that vertical. So the ideal is to keep it within the verticals, in my view, and I think for many of the reasons you just were articulating."
+    },
+    {
+      "start": 3638.96,
+      "end": 3668.016,
+      "text": "Politically, I think things like the AI Act are powerful in shaking up those verticals and forcing them to have a new way of thinking about the things that they're doing, ideally, in a way that, for example, here in the US, we've really struggled to be able to do. We've kept it in the verticals, and the relevant regulatory bodies have simply not adapted with anything like the speed or facility that is needed. Thanks for your..."
+    },
+    {
+      "start": 3668.016,
+      "end": 3692.592,
+      "text": "The question in the last answer, I have a final short question that you have already partly answered. It's about in your model. Isn't there somebody missing, which is the owner of the system, which you mentioned somehow in your answer? And at the end, I would say that it's not about about ethics. It's about politics."
+    },
+    {
+      "start": 3693.296,
+      "end": 3717.84,
+      "text": "I mean, I'm at heart a philosopher. And so I want to live in the world of the possible, not the world of the actual. And so but but I agree. I mean, I think one of the challenges that I personally wrestle with is who are the right people to change, to move things forward. And in many cases, it's politics. It's, you know, me."
+    },
+    {
+      "start": 3717.84,
+      "end": 3742.464,
+      "text": "going to Washington, D.C. to talk to people. But in other cases, it's not being done by governments. It's being done by industry. It's being done by groups in Silicon Valley. It's being done by the IEEE and other professional societies. And I think that one of the challenges we have in this space as a community is exactly that there are so many owners for so many of these things."
+    },
+    {
+      "start": 3742.464,
+      "end": 3771.728,
+      "text": "that it's actually led to a kind of what gets called the problem of many hands, which is everybody assumes it's someone else's job to deal with that. And I think one thing we need to do is reframe it so that everybody views it as their job to think about the ethical and societal impacts of what it is that we're building, rather than counting on somebody else will take care of that for me. But that kind of cultural community perspective shift is, that's tough to do."
+    },
+    {
+      "start": 3771.888,
+      "end": 3801.744,
+      "text": "So sorry to end on a depressing note. No, no, but this is exactly what digital humanism is about. It's about interfering on a democratic level. This is an inner democratic process. David, thanks a lot for your exciting talk and presentation. Also thanks to all the others for their questions and remarks and comments. Now I hand over again to David before handing over to Walter to play the piece of music because David has selected."
+    },
+    {
+      "start": 3801.744,
+      "end": 3819.728,
+      "text": "has chosen a short piece of music which we play today. And I just ask a few words what you have chosen and why you have chosen. In the meantime, Walter can already put online, put on the screen the music."
+    },
+    {
+      "start": 3819.728,
+      "end": 3845.856,
+      "text": "Great. Well, thank you very much for the opportunity to be here and to talk with everybody. I'll just mention, by the way, I'm very easy to find on the Internet. I'm always happy to keep the conversation going. This particular song is a song by a musician named Bob Mould, and he has been playing for many years, but I selected it because actually it is near and dear to my heart."
+    },
+    {
+      "start": 3845.856,
+      "end": 3872.08,
+      "text": "Three nights ago, I saw him play live in concert. It was the first concert I'd been to in two and a half years. And importantly, I got to go to it with my brother. And it was the first time I'd seen him physically in two and a half years because of the pandemic. And he's somebody, he was the best man at my wedding. I was the best man at his. We've always been very close. And yet because of COVID, we've not been able to see each other. So it's meaningful."
+    },
+    {
+      "start": 3872.08,
+      "end": 3884.624,
+      "text": "Because I'm hopeful that maybe this means we can start to see one another again, both him and me and all of us in the physical world. Thanks a lot. Let's start."
+    },
+    {
+      "start": 4005.424,
+      "end": 4018.672,
+      "text": "Goodbye to everybody. Thanks. And we see each other on the 26th of April. Okay. Have a nice Easter break. Bye. Bye, everyone. Bye. Thank you."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

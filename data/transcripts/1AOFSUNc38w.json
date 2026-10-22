@@ -1,0 +1,656 @@
+{
+  "video_id": "1AOFSUNc38w",
+  "source": "whisper",
+  "language": "en",
+  "text": "And we move to the last speaker of the session, Manfred Hauswirth from TU Berlin. He's talking to us about fostering local excellence in a global context. Sorry to disturb you. Sorry. Oh, I'm sorry. Excuse me. usual joke, I'm the person standing between you and the lunch, so tick, we've done that. For me, it's really a pleasure to be here today, because TU Vienna, do you hear me actually? Okay, TU Vienna, no? TU Vienna is actually my alma mater, so it's coming full circle after many years. Before I start my presentation, I probably would like to react a little bit to Nikola's talk, which I really enjoyed. By the way, we do work. I'm a computer scientist by training. We do work with lawyers a lot. We just elected a lawyer, the speaker of the directors at the German National Internet Institute. Sorry? No. Axel actually has left. He was the founding director. It's Herbert Zech from Basel. He just joined us in Berlin. I wholeheartedly and fully agree with you from a technical point of view with what you have said on GDPR. I wish we could all team up and put some sense into the heads of some politicians. I have a plea as a computer scientist to all not computer scientists in the room. Please do not use screenshots of code on your slides because they are really bad. Usually they are some fragments of web pages. It's like a children's lullaby and claiming it's actually Mussorgsky's pictures at an exhibition. I mean, we have ignored that for many years, but please, if you do put code on it, put meaningful code on it. Please do not go down to the same level as Hollywood shows. Oh, it's a Unix system. Or if you see an AI and you think, oh, my God, please go away. It can only be worse if there are blinking lights on the screen. Then I have to disagree with Nikolaus. 5G. Don't look to Korea. Look to Germany. We are leading the development there, and I know that for sure because my Fraunhofer Institute, develops the technology that is used in Korea, that is used in the U.S., and that is used in all European telecoms. If you happen to be at, or if you have been at the Hannover Fair this week, which is the largest industry fair in the world, we have demoed how you can actually steer an industry robot with less than one millisecond latency over a 5G core network live through virtual reality. And then I again have to agree with you a whole lot regarding impact. Coming from fundamental research, that's also the reason why I've now gone into more applied research. We are largely ignored as scientists. And some of this, what I will talk about today, is how we get out of that being ignored as a scientist. And the basic learnings, I can give you already my conclusions at the beginning, is... Size matters, which means you have to team up in a location between universities and across different disciplines. Otherwise, there will be very little impact. And this was also, I mean, actually, the title was suggested by Hannes, Fostering Local Excellence in a Global Context, because I would, it's perfect. I couldn't have come up with it myself. The reason for that being, I want to take you a little bit on a personal journey, how we managed to get some, or we hope to get some impact with the German National Internet Institute and what was necessary. And I can already tell you, it was not science is an important agreement, but it was not the necessary agreement. The necessary ingredient is actually social processes, people talking to each other, exactly like in this workshop here, and trying to get across organizational boundaries. Then you probably have a chance that you actually, or we as a community, and I mean we as a research community, not as a community of computer scientists or sociologists or economists. have at least a small chance to move something. Okay, so this is about digital humanities. I take you on a very short personal, a little bit longer organizational, and a longer journey about the Weizenbaum Institute in Berlin. I'm a computer scientist. I first got in touch with the humanities actually during my studies here in Vienna when a friend of mine working for the Austrian Academy of Sciences, a linguist, German linguist, asked me, how can I create a digital resource for linguists? And I said, I have no idea. I'm a computer scientist. Let's talk. To cut the long story short, the result was a resource. It was about, for the German speakers or the Austrians in the room, it was the Fakler Wörterbuch. That won the prize for the best book at the Frankfurt Book Fair, I think, in 2005. Unfortunately, it no longer exists. But for me, it was the first exposure to something non-technical. And my learning from that was, okay, you have to listen and you have to understand what the other people are talking about and how you, as a computer scientist, can help to actually solve this problem. I moved on to Switzerland, to EPFL. I saw that my former dean, or it wasn't the dean, he wasn't the dean at then, gave a presentation yesterday, and there I was exposed to a lot of very interesting, also non-computer science work, more in the medical side and pharmacy and things like that, and got into touch with data protection, for example. and learning how difficult it was to actually get meaningful results. So I had exactly the same experience from trying to get medical cohorts on board, doing experiments, and get meaningful data out of it, which is close to impossible, and it's not technical problems, it's legal problems. And if, as a computer scientist, I'm not aware of these problems, I will not be able to make progress. Then I moved into the richest country in the world regarding Internet companies, at least on paper. I moved to Ireland. Science Foundation Ireland gave us the opportunity to build up a vet research center. I don't know whether dairy still means... I know it means something to you, Michael. At least in a web space, we, after eight years, were kind of the biggest center in the world in that space at the west coast of Ireland. This is also... because we worked a lot with Tim Berners-Lee, and Tim was a big friend of the institute, working as a board member. Very helpful if you have such a prominent name on the board. It still exists under a different name, and I'm happy that they thrive. Now, what I learned here in Ireland was that how can you actually create meaningful impact? I was one of the amateurs who created the web. and how important social processes are if you want to shape reality and technology. And actually, I would now claim it's the most important ingredient. Because, you know, the Internet and the Web, they do not have a central standardization authority. What you need to do is come up with a good idea, convince a lot of people, convince more people, and try... to get one of the organizations, be it the World Wide Web Consortium or the Internet Engineering Task Force, to endorse it as a recommendation. It's not a standard. And this is when, at least in my area, you have started to change or shape the world. But this is a social process. This is an agreement process. These are humans. And having worked in a lot of these committees, I can say it's never a technical problem. It's always a social problem if it takes so long until you can agree on a certain recommendation because, and that's a criticism towards the scientific community, every researcher likes to ride his hobby horse. And some of the Internet standards are a reflection exactly of that problem. There is a lot of stuff in, and fortunately later we get out of the system, that only came in because some researcher insisted on riding his hobby horse. But nevertheless... It's a social process. Equipped with that, moving to Germany and becoming a director in the Fraunhofer Institute, for me, the challenge was how can I combine basic research, the knowledge that I learned about social processes and trying to nudge big systems in the right direction, at least what I believe is the right direction, with something that has actually practical impact. And this is, I think, something really interesting also for a researcher to see some of the systems that you do in the real world. So, for example, all of you, you maybe don't know, are using technology out of my institute because if you use your mobile phone, you use voice over IP, and part of voice over IP was developed in my institute. If you're Austrian and you're being warned, you probably have Katwan on your mobile phone, which is the national warning infrastructure in Austria, also in Germany. That also comes out of my institute. Interestingly, it came out of a tsunami warning system in... the Far East. And there's a lot of other examples for that. Now, why does this matter to the Weizenbaum Institute? When I came to Berlin, the situation was exactly the same as in many other places. There were more than one university, a large number of really good and well-known researchers, and a local government. And the problem was Everybody was in the same boat. We were rowing, but we were not rowing in the same direction, and sometimes we were even refusing to talk to each other. So there was, in a nutshell, scientific excellence, like there will be in all the places you are from, but we couldn't really put it to action. We couldn't really get the rubber to the street and increase speed. Then interestingly, and this was pure luck, something interesting happened in Berlin. And this is also where Hannes and I met. You know, I cannot explain it, but we managed to get the so-called Einstein Center for the Digital Future. The basic idea being in Germany, because in Berlin we all hated each other, everybody, when you came out of Berlin as a researcher, said, okay, what are the guys in Munich doing? It's kind of a frustrating experience if you hear that over and over again. So actually the editor of the Berlin newspaper and the lawyer and the president of TU Berlin made a 10-bullet plan to how to get Berlin ahead of the crowd. Okay. Really good. No, no, really ahead of the crowd. But of course, Munich. And I know, I have a lot of dear, dear friends and very, very great collaborators. Yeah. You know, world domination by Friday. That was the secret plan. Okay, we have all seen a lot of these 10 bullet points plans and usually the evaporating to nothing after half a year. Here, we managed actually to get a lot of interested people on board. Obviously, the frustration was high enough. that a lot of people were thinking, okay, come on, now we really need to get it right or we can give up forever. And the idea behind it was the following. Let's convince industry to fund new professorships. Bavaria had announced 50. We said we go for 100 within the next three to five years. And then we work on the interesting topics that are pressing at the moment in the digital society. Now, cutting a long story short, getting the first three professorships was extremely difficult and extremely painful. Why should a company do that? We've reached the number of, say, 60 to 70, and now we stop because the faculties are getting too big. These are assistant professorships and some associate professorships. They are not tenure-track, but we are trying to create opportunities for young talent to actually work with the universities. The funding model is such that a company gives the money and the local government gives the overhead. Now you say, okay, so you're doing contract research for industry. You've compromised your scientific idols. The nice thing in Germany is that the legal situation is such that companies cannot influence your research. I mean, they can say, we would like to sponsor a professorship in Area A. They give money to... say, the Einstein Foundation, and then they're out of the game. As a young professor, I would say it makes sense that, say, if I work in an area like automotive information systems and, say, Daimler sponsors my professorship, then I have my first industry partner to do real work already attend to do that. But it's not a requirement. And this is one of the interesting learnings. So if you team up, if you have a good idea, And if you have support from your local university and you do the footwork, you will also get industry in Europe to fund professorships. When you're in Berlin, please visit us, because one of the outcomes is also that we've got a very, very nice building right behind the Deutsche Bundestag, so every member of parliament can just walk there within three minutes. We have an open-door policy. We have seminar rooms. So the idea really is get people in, network. Please do so. The second thing that we did, I mean, exactly the same situation we also had in Fraunhofer. We were all best enemies. Each Fraunhofer director has, say, 500 people. We need to earn two-thirds of our budget. And, well, if we are not forced by project grants, we usually don't work together. We managed to do that and come up also with the Center for Digital Transformation where we team up all the Fraunhofers. Then we won a couple of centers, like the Berlin Center of Machine Learning. I don't know whether Klaus-Robert Müller means something. He is heading that. The Berlin Big Data Center, which I'm also involved as a PI, is headed by Volker Makel. Then we had a lot of stuff on the societal side. For example, the Berlin Open Lab, the Humboldt Institute for Society. And that was kind of like the... The necessary ingredients, the necessary starting points, the necessary positive reinforcement that we got, that we said, okay, we also go for a bit for the German National Internet Institute. This is probably an interesting story. Say in 2015, the German government woke up and said, huh, there is this thing like the Internet. We have technical people working on it. We have social... People from the social sciences working on it. We have economists working on it. But we should do something more integrated, which is I think they were pretty late to the game. But nevertheless, they put in significant funding. The German Internet Institute is funded with 50 million euros. So that's not bad. And there was a national competition. I think it were initially 80 consortia cut down to 20. And to our own surprise, because our bets were actually on Munich and Karlsruhe, we won. And this is the Weizenbaum Institute that I will then talk about later in my presentation. Nevertheless, the necessary ingredient was a social process. Talking to each other, talking to each other in universities, between universities, across disciplines. And it was painful. And more than once, it looked like we would not succeed. This development is even further continued with something which is now known as the Berlin University Alliance. So traditionally, the three big universities didn't talk to each other. Also, the president of the university actually comes from TU, and there are multiple connections, Charité. interestingly, is a joint facility, a joint institution between Free University and Humboldt University. But nevertheless, it didn't really fully work. Now, in Germany, there is a funding available that's called Excellency Initiative. We all became excellent in the last round, also TU as the last one. And then there was additional funding put in place. Well, if you smile, also inside DU, of course, there are battles. For example, computer science has the most industry money, and most of the professors will say, why should I go for the excellence initiative? It's probably 5% of my funding. But the prestige matters. And the second round of funding said, if you have all excellency universities at one location, you can team up and ask for continuous structural funding. which in relation to the budgets of the universities, I mean, these three guys together have roughly 1 billion euros a year. In Charité, an additional 1.5. So in total, this is 2.5 billion euros, where, of course, the medical side has the most money because a lot of their machinery is the most expensive one. Okay. There were plenty of opportunities to miserably fail because, you know, your four university presidents, they are all... all alpha male and alpha women, and how do we manage to work together? And then I have to say, as they say in Berlin, chapeau, those four guys, one woman and three guys, sat together on the table and went on a really painful journey for two years and tried to iron out the differences. Just nobody outside knew that. Actually, also inside the university, you sometimes were surprised that, hey, come on, we like each other now. At least, you know, it's like in any relationship. There are ups and downs. But generally, it's moving in the right direction. And then this, we put in a joint proposal. I can only tell you that when we rehearsed, For the hearing, which happened in February, it was really bad because there was still a little bit of this idea that each president needed to say something. Finally, they decided one guy says something and the others don't sit in the audience and go like... You know, the usual things we teach our PhD students and postdocs, how you should not give a presentation, it sometimes seems to come back when you get higher into hierarchy. So that worked, and we now have this alliance. We have this joint proposal, we have had the hearing, and in July we will learn whether we were successful, but we are very positive that this might have worked. In conclusion, that means, and that's the first conclusion, you see, at one location, universities team up, disciplines team up. Do something together. Take the effort, even if it's really painful. Because if you're all talking to your funders and to politics and your government and the EU independently, nothing will change. Not for you and not for your environment. The Weizenbaum Institute, then we also took the guys in Potsdam on board because, I mean, that's just next door. So these are the Berlin University. We also have the University of Arts on board because there's a whole lot of really interesting and innovative stuff from the University of Arts. We have, I don't know actually how WCB is translated English. Do you know? WCB. So this is a very large research center in Berlin in social sciences, roughly 500. 500 people, and this is my Fraunhofer Institute, so that it's also the technical side. The idea being 80% of the center is completely non-technical. So it's lawyers, social scientists, communication scientists, political scientists, lawyers, economists, you name it. 20% of technical people on board because, you know, like what the other guys come up in theory, we probably need to implement in practice. And some of the things that you wish for on the legal or economic side is not possible technically. And what some things that we wish for on the technical side is not possible because of legislation, because of effects from the social sciences, etc. And it was also very interesting when we wrote that proposal because you learned where the shortcomings of your own discipline are. I will not talk about the other disciplines. I will talk about computer science, and I can only say computer scientists do not know how to do empirical work properly. Full stop. We should learn that from other disciplines. And maybe if you know people from the other institutions, you can ask them what they found out were their shortcomings. Now, the principal research question, because it's actually self-determination in a networked society, is that I read it to you. How can the goals of individual and collective self-determination be promoted in a world characterized by digitally mediated processes of transformation and transnationalization, and which framework conditions and resources are necessary for their realization? Essentially, bottom line, how do you survive in a world that's dominated by the Internet? And how can you actually know what's going on, and how can you do informed decisions? That's the underlying question. We came up with this jointly in a long collaborative. It looks like that. Yes. We had to do an academic review, so it needed to sound academic. That's the only excuse I have. If you look at the slides and if you look at the website, it's broken down into something which is human readable and understandable. Well, machines take anything you take. They can't resist. We named it after Joseph Weizenbaum because Joseph Weizenbaum comes out of Berlin and is a very well-known person and researcher who actually did a lot of very groundbreaking research in this border between technology and society. One of the reasons why we want that is we do not have a research program carved in stone. We started out of the competences of the principal investigators that we have on board, but I think what got us over the line is that we said, okay, we want to have young people leading the groups. The research program can change and must change over time. So it's not that we will continue to work on contracts and responsibilities on digital markets forever. If we have other interesting stuff, for example, in that area, that may go away and we do completely different thing. We are implementing a continuous monitoring process, what are the hot topics, and research can go in and go out. Besides these areas, I will not read them to you because we can read themself. We have also horizontal areas. That's digitalization and sustainability. For example, that's creating digital resources, scientific data infrastructures. How can I make resources available for non-technical people? How can I make them available easily? Because a whole lot of money is lost there. I think NASA has this nice estimate that 5 billion euros of their data that they gathered is lost because PhD students are no longer there, computers no longer exist, nobody knows where the data is, et cetera. And I claim it's way more. Autonomous systems and self-determination means these are areas like, say, automated driving, ethics, artificial intelligence, and security versus openness. There's very interesting research that, for example, you put a predictive policing system in place, and subjectively, people suddenly feel less secure. Also, objectively, nothing has changed, meaning you put a measure in place which is supposed to help people, but by just putting the measure in place, people feel less safe. So I would say... predictive policing and there are huge campaigns of American companies to put this in Europe in place all over the EU by giving the software for free. It's a big danger for European society. This is just in because we will distribute the slides so that you see what we do actually in detail. These are the current, this is the current research. groups. It may change. Maybe next year it looks completely different or probably in two years. It's on the slides. These are the faces behind that. Probably you recognize some of them by personal collaboration. So, this is, okay, me is first because Fraunhofer starts with an F. So, this is the only reason. These are the computer scientists and electrotechnical engineers, communication sciences, communication sciences, law, business informatics, informatics, informatics, networking and informatics, business informatics, business, business, arts, social sciences, social sciences. One guy is actually missing. We just hired him as a director. He's also from the University of Arts. That's a short timeline. So we were officially born in 2017, and we are roughly here. We are now doing an annual conference. If you're interested, the conference will be in three weeks' time. The date is on the slides. It would really be great if we could see and welcome some of you in Berlin. To have the Weizenbaum Institute as open as possible, we also planned in for visiting grants. So anything from two weeks to a year, we have money available as soon as you come. Say, I would like to work with this research group. This is the research group. This is the research question. The research group agrees. Give me money. So I encourage you, have a look at the website. If you have interesting research questions, present them to the research groups. That's the best fit for you. And if we agree, let's get started. Interestingly, we have... Oh, no, that's about employees. We very much focused also on gender balance. Because you see that the traditional thing is like the technical people, the technical disciplines tend to be more male dominated. And so the social sciences and communication science is more female dominated. And we did not want to try to fall into that trap and even manifest it more. So it was really important for us that the groups were also lead. roughly at the same amount by men and women. At the moment, we are 123 people. Regarding disciplines, it's just that you can take it home on the slides. You see computer sciences, social sciences. I forgot psychology, I have to say. Design studies is very interesting. And I have to say, I personally have worked with psychologists a lot, and they had this reproduced... Reproducibility crisis, thank you very much, 10 years ago. Yeah, but, you know, kind of like we are going down and they are already applying their learnings. And I think it's very useful for me as a technical person to take some of the learnings that they have found on board and not fall into the same trap. So this, even if it was just for that thing to learn, the Weizenbaum Institute personally for me was very, very interesting and helpful. Okay, this is just, you know, because we will make the slides public in any way, I think I am approaching the end of my talk here. You have the research areas and who is doing what, so that you know if you're interested in an area, whom to approach. And that's pretty much it. The rest is statistics. We're a young institute. We've started to publish. We've started to generate our research program. We currently are trying to come up with publication formats that work across disciplines, which is extremely difficult and extremely critical. So, for example, in my specific area in computer science, I can tell you journals don't matter. You publish in journals, say, you've worked in an area for five or ten years, and then you put the stuff together and say, okay, that's my combined finding. In other disciplines, of course, this is completely different. Conferences do not matter at all. What you need to do is you need to publish in journals. In other areas, it's actually that you need to write books. Now, how can we come up with publication and publication strategies and publication formats in an interdisciplinary institute that actually work for the individual disciplines? So this will also be a social process to convince a lot of the research community. Probably we will fail. Because there is no uniform agreement on how we actually should publish. Since we are trying to support young people and promote young people, it's like, what can I recommend to them? Go down the new route and probably never become a professor, or go down the existing route, you will become a professor. But it doesn't really contribute to the overall goal of the institute. It's a really tough question for us. Also, what we would like to do is for us in the Institute, practical impact is really important. And practical impact also means that you put the research that you're doing out in the real world. I mean, doing theoretical research, even from all possible angles on something like the Internet, which is in the practical world, and not having a practical impact seems a little bit odd. So, for example, in some disciplines like physics, You build an infrastructure, or you create the data set, and this is impact, and this is counted as impact. And say, the infrastructure papers in physics contribute a lot to your scientific reputation. If I talk to a social scientist, the picture completely changes. It takes years to create the data, and once you have created the data, you don't necessarily want to share it because this is what you're going to publish about. And this is how you build up your scientific records. Now, yeah, and that's the same in a lot of areas. So, okay, on the one side, sharing. On the one side, you need to keep it to yourself because you need to build a scientific career. How do you mediate between these two extremes? What is possible? So we are also trying to work a little bit on the science system itself. And it's easy to talk about cross-disciplinary research. also the way I talked about it at the beginning. But these are not the publications, if publications came out at all, that contributed to my scientific career. This was something which I thought, okay, it's interesting, it's necessary, I like to do it, so I do it. But none of it has helped me to build up my research record. These are some people, for example, who visited us. We have these senior fellows. We have fellows, but you can also come as a PhD researcher with us. Probably you recognize some of the names. A lot of the names don't mean anything to me as a computer scientist. Others is like, oh, wow, he visited us. You see, these are the people who are a little bit longer, younger, that were already there. And if you go on the website, then you probably have a much more up-to-date list. We do a lot of, I mean, we need to get heard. This is also why I would like to invite you and help us actually to make a name. But on the other hand, I think we also offer really interesting possibilities to work with a lot of interesting people. And I'm particularly proud of our PhD students because they jump into the cold water at the deep end. And it's not easy for them because it's not easy for professors to work together, but we have made our scientific career. If you're a PhD student, this is much harder. And I'll finish here because Carlo gets up with the slide for our Weizenbaum conference. And if you have time, I think it's even free. It's the second one. It will have proceedings. We will publish a little bit about the conference. It's probably not at the quality yet like you are used in your discipline, but we are working on it. Thank you very much. Thank you, Manfred. Let me start with a question since I don't see any hands raised yet. Actually, my question is, it looks very much like a top-down process. the process you went through. So I'm wondering how really people get involved into something like what you've been presenting. And so how open it was to bottom-up proposals from the people you already had there. And the other, maybe it's just a comment, but... For example, this morning, Helga was reminding us about the usefulness of useless research. And it seems to me that I can't see how useless research can be accommodated in your framework. Okay. The process itself was very open because we ran around and said... Do you want to work with us? I know we have little chance, but it's probably interesting. What about coming up with an interesting research proposal? And what you do not see in there is actually that a lot of these research groups came out of collaboration. So for example, me personally, I worked with Axel Metzger, who is a lawyer, on data as a currency. Because I learned a lot about the rights that come from or possible rights that may come from me as a person giving my data to a company or to the state. So essentially it was bottom-up, and it changed a lot. And, you know, there were people in that later said, okay, that's not for me, I will go out. It's not that, you know, like neither the university presidents nor... the faculty said, okay, you have to go that direction. And also the research idea was an agreement process where we came together, okay, what could possibly be the motivating theme behind the institute? Now, I have presented this, coming to the second question you asked, Carlo, I've presented this to be very practical. But in fact, it isn't. It's just that, you know, like when it comes to one, Painful learning I have heard, I have had, and also the others from the research system is if you do not talk in practically understandable terms, politicians take away your funding. What we basically do, for example, social scientists, we work with social scientists how to curate data that they can actually do experiments. There are seminars every week, which is across all kind of different groups, where, for example, they are educating each other on the different disciplines and on the tools from different disciplines, and also what are the pressing research questions in the different disciplines. And then, this is both what we want and how it's actually done and how we live it. When questions come out of these discussions, then they become research questions for the Internet Institute. It's not that the professors shape the agenda. It's more like, OK, talk to each other. I have an idea. Come up with an idea. Then we discuss it among the professors and the students and the postdocs and the research group leaders. And this is how we actually try to narrow down the really interesting questions. We do not have any need to be practical, but we decided to make the things that we do understandable and applicable because this is the question that we are going to be asked by our reviewers, who, interestingly enough, are only 50% researchers and 50% other people from completely other areas. I can go. Thank you, I believe. Thanks for your presentation. It sounds like a very vibrant and interactive institute, and probably we can all join one day. You're welcome. But I have a question on the interpretation, and we were talking here a lot about social science. But social science is such a big box full of all kinds of... and methodologies and you already answered a little bit of my second worries a little bit what kind of methodologies are you using and how we talk a lot about mixed methods and all these things which is very blurred we don't know exactly what we mean with it so I also working on these kind of methodology tools and and ways to really work together interdisciplinary But also what do you mean by social science? Because it's really big. And I'm at one end very qualitative, but there's very quantitative. Economics is in it. Anthropology. Methodology is a social science. Yeah. I mean, I have to give you a really, really incomplete answer as a computer scientist because that goes way beyond my expertise. What I can tell you in terms of the methodology... It's like we are performing open heart surgery at the moment without being properly trained medical persons. For the first time, we have the possibility actually to spend enough time, because time, I think, is the critical ingredient here that we can actually discuss. As Hannes said, we don't have time for that. I mean, of course, it's the same also in Berlin. we were given a lot of money, so we better take the time and talk to each other and develop an understanding, educate each other on the tools that the different disciplines have developed. And if you ask me what kind of social sciences we do, I have to say, I honestly don't know. I trust our social scientists in there that they know their area and we will come up with an interesting research agenda. And I trust our PhD students and I trust our postdocs. The problem with a lot of these institutes is, I mean, if they are designed very top down, there's usually one or two minds who have a very clear idea of a research agenda and how to implement it. And to be honest, we have a research question. We do not know how we actually get there and how we solve that. It's a journey. My question is pretty much related to yours, but as I'm also a technician, maybe it's better to answer for you. You mentioned you have 80% domain sciences, 20% technicians. Starting from technical university, we teamed up with all main universities and research groups in Vienna just for one small area. So health systems research, and there already were collided interests of health economics and HTA and so on. We tried to develop a process, not based from the domain area, but you mentioned, for example, from psychology, really important question, reproducibility of research in such complicated interdisciplinary networks. Do you think it could be a goal for you to start to develop such processes where you have a standardization, also in the meaning of scientific quality, how to go to the process based from data, system knowledge, research question, of course, at the end, to the question, how can we communicate results? Is there a possibility to think also from this way in your setup? Absolutely, but it is a double-edged sword. So on the one hand, what I've seen in a lot of research centers is like you're talking a lot about theory and possible approaches and what you could do. And after two or three years, you have a process in place, but you haven't accomplished anything. So I think this needs to happen in parallel, strictly tied up. And sometimes, and I'm saying this as a computer scientist, but at least in my area, we have very positive experience with this. It needs to be developed on the go. And something also we agreed, which is something which comes from computer science, is eat your own dog food. Whatever you develop, you apply to your own institute. You are your first lab rat. And if it doesn't work, throw it away. There's one principle in it's fail fast, fail early. I mean, also in computer science, we have these really great theoretical buildings. Essentially, we can solve any problem in the world, but the world won't listen. I'm impressed. No, really saying that you succeeded in doing such a thing, in founding such an impressive construct. We are a university to cooperate. We do not succeed in... In Vienna, and I look to Michael Stampfer, we have serious problems in finding corporations. You are successful. Just to give, because somehow there are some critical remarks here. But we do not find the money. We have problems with the politicians. And you obviously succeed. So congratulations to that. And Berlin is a nice city. Well, it took a very, very, very long time until we got there. And I know a few places succeeding in that. And Germany is obviously moving. I have two concrete questions. Do you have some methodological seminars which I think would be important relating to the question you had because this is really, I think, at the core. So what is the methodological, what's the scientific process which you have to combine from different disciplines? And the other one is an understanding, just to being more nervous. What is the funding you have? Did you tell us? No. Okay. It's 50 million euros over seven years. 50 million? 50, 5-0, with the possibility of being permanently instated. And at the moment, and this is mainly legalities, and this is still a big stone in our ways, how can we become an institution in our own right. Now, coming, because this is mandated by the funders. Regarding the methodologies, what we did is actually we sat together and presented to each other on a PI level what methodological tools we have in store which we think might be applicable outside our own discipline. We ranked those and we then decided to have interdisciplinary seminars. We make all the PhD students sit in there so that, for example, my PhD students learn how to do proper, for example, user studies. Not like five people and at the end we have a random outcome, but something that, for example, a psychologist or a communication scientist would consider as a scientific result. In the end, this will mean... probably the outcome of all that may be a curriculum. But we have not used, we deliberately did not use that word because as soon as you use that word in a university, everybody, red alert for everyone. There is a well-funded institution that tries to change something without talking to us. This is not the idea. It's more... It's really, I cannot say other than it's an incremental process where we're trying to learn from each other, and we are really trying to practically learn from each other, not say, okay, we write the paper together, but we do the nasty footwork that comes before that so that maybe in three to five years' time, I can really do proper empirical research that also in a different discipline would be considered proper empirical research. And we try to educate our students along these lines. And if we then come up with something where we say, okay, this has the potential that we also propose a program, we would then propose it to actually the Berlin University Alliance because it looks rather promising that also the universities will team up in teaching. So there are already examples. TU and FU do media informatics together where it's actually the computer science comes from. from TU Communication Sciences and the social side comes from FU and that's really successful with the students. I think that this is a great initiative with a lot of very interesting research. My question is what do you think you can contribute to digital humanism as we are talking about it? If we say the system is broken in some way, how can we repair it? That is the question I would like you... I think the contribution can be that we actually, on a scientific level, start to talk to each other and listen to each other. I think a lot of the problem... comes from the fact that we are all doing great research in our area. Sometimes we bridge over a little bit into other areas, but a lot of the interesting problems actually lie at the interfaces, and there's too little joint scientific work for that. So for example, this workshop, and I just have to compliment for that, is exactly something which we should do way more often. We should have a series of these workshops because, I mean, of course, I know a little bit about Africa, going back to our discussion yesterday. But, of course, I do not have the in-detail knowledge and, you know, the players and what's the economic and political situation behind it. And that's important for me. I mean, we may not do a joint project, but maybe in three years' time, I will remember, okay, I heard about that. There is actually something which we could do together. And for me, it's also we need to be open-minded also to talk to other disciplines, and we already need to embed this in our students. Did I answer your question, Hans, or was this too... Yes. Okay. I'm sorry. I think we have... Come on. Okay. There is a cutoff at some point. Thank you. Thank you. I understand cutoffs, and thank you for giving me this time now, but I think it's really... This would have been the second time already in two days. It happens, yeah, all right. Interface is very important. I think we're here also because ethics is a very important topic, but it could also maybe be the interface that you're talking about. It's one of those things that unites all of us, whether we come from computer science or social sciences. And I think that this event here and your talk also shows that we have a real need to discuss and take time to discuss something that I consider the two basic ethical questions. what is the good life, first of all, and second of all, what's the society or the good society we want to have, with or without technology now. And it requires, indeed, discourse and interdisciplinarity across disciplines, just as has been done, and just as you showed what you have achieved by now, that's very impressive. But I would like to... Excuse me, we have not achieved anything so far. Okay, what you're about to achieve... There's a lot of potential for failure. You see, we have... created the possibilities that we could achieve something. Okay, I appreciate your modesty here, but, you know, the effort is impressive in any way. But what I'd like to say that, you know, it is not that we are not interested in ethics here, for instance, at the University of Technology, but we have been forced recently to pay attention to a very narrow area of ethics, and that's coming from the funding bodies, and I know we have some here as well, and we're talking about research ethics. and research integrity. Very important, but these are very narrow scopes of ethics. The other option is, and unfortunately equally narrow, to go to the codes of declarations and so forth. So we are also here at the TUV and currently working on something to putting formal ethics procedures in place to help our researchers in getting funding and showing that their work is on a sound ethical basis. But in some ways, this is a little bit of old school tick box. ethics, even if I think that it's a very important exercise what we're going to be doing. And what I propose is that we really need a space for ethical reflection. And is that now in curricula and also in our work, of course, as seniors. And I think that this really should center on those two questions I already mentioned. What's the good society? What's the good life? And Helga Novotny already mentioned that this is a question the machines cannot answer. They cannot talk about the meaningful life, so that's a similar issue. This is a long comment, but I wanted to correct something. It looks like the Vice Rectorate for Research and Innovation and Technology has not been present in any way or form here. That's not the case. I'm the Research Ethics Coordinator at this university, and I've been here for two days and had an excellent time so far, so thank you. Okay, so... Thanks for attending this session, but before we end, there's a final announcement from Hannes. We have a panel discussion after lunch, so I hope you are still here. No, we start with lunch, and it will be very soon, Moshe. Just to remind you that not everybody... No, in the panel we will have, let's say, a summary of the discussion we had and some learnings, and the moderators will, the three moderators and Helga will participate in the panel, and obviously you're also invited to give your comments. And after the panel, we will start to discuss the Vienna Declaration on Digital Humanism, or we call it memorandum. We are still not sure of the title. There is some draft of it. I will distribute it now so you can have a look. And this is then the final wrap-up. And we will also discuss how this could be continued, how this is a first, let's say, event in a series of different events. It has not to be a second workshop. It can be a different format. second workshop, whatever. But I think we should take the chance to continue to take this as a positive experience, at least it was a very positive experience for me, and to summarize in the afternoon and draw some conclusions both on the content side as well as from an organizational practical side how we could continue. Have a nice lunch.",
+  "segments": [
+    {
+      "start": 0.304,
+      "end": 24.4,
+      "text": "And we move to the last speaker of the session, Manfred Hauswirth from TU Berlin. He's talking to us about fostering local excellence in a global context. Sorry to disturb you. Sorry. Oh, I'm sorry. Excuse me."
+    },
+    {
+      "start": 49.072,
+      "end": 75.76,
+      "text": "usual joke, I'm the person standing between you and the lunch, so tick, we've done that. For me, it's really a pleasure to be here today, because TU Vienna, do you hear me actually? Okay, TU Vienna, no? TU Vienna is actually my alma mater, so it's coming full circle after many years."
+    },
+    {
+      "start": 79.184,
+      "end": 105.024,
+      "text": "Before I start my presentation, I probably would like to react a little bit to Nikola's talk, which I really enjoyed. By the way, we do work. I'm a computer scientist by training. We do work with lawyers a lot. We just elected a lawyer, the speaker of the directors at the German National Internet Institute. Sorry? No."
+    },
+    {
+      "start": 105.024,
+      "end": 132.976,
+      "text": "Axel actually has left. He was the founding director. It's Herbert Zech from Basel. He just joined us in Berlin. I wholeheartedly and fully agree with you from a technical point of view with what you have said on GDPR. I wish we could all team up and put some sense into the heads of some politicians."
+    },
+    {
+      "start": 133.04,
+      "end": 162.72,
+      "text": "I have a plea as a computer scientist to all not computer scientists in the room. Please do not use screenshots of code on your slides because they are really bad. Usually they are some fragments of web pages. It's like a children's lullaby and claiming it's actually Mussorgsky's pictures at an exhibition. I mean, we have ignored that for many years, but please, if you do put code on it, put meaningful code on it."
+    },
+    {
+      "start": 162.72,
+      "end": 191.504,
+      "text": "Please do not go down to the same level as Hollywood shows. Oh, it's a Unix system. Or if you see an AI and you think, oh, my God, please go away. It can only be worse if there are blinking lights on the screen. Then I have to disagree with Nikolaus. 5G. Don't look to Korea. Look to Germany. We are leading the development there, and I know that for sure because my Fraunhofer Institute,"
+    },
+    {
+      "start": 191.504,
+      "end": 218.416,
+      "text": "develops the technology that is used in Korea, that is used in the U.S., and that is used in all European telecoms. If you happen to be at, or if you have been at the Hannover Fair this week, which is the largest industry fair in the world, we have demoed how you can actually steer an industry robot with less than one millisecond latency over a 5G core network live through virtual reality."
+    },
+    {
+      "start": 218.544,
+      "end": 247.536,
+      "text": "And then I again have to agree with you a whole lot regarding impact. Coming from fundamental research, that's also the reason why I've now gone into more applied research. We are largely ignored as scientists. And some of this, what I will talk about today, is how we get out of that being ignored as a scientist. And the basic learnings, I can give you already my conclusions at the beginning, is..."
+    },
+    {
+      "start": 247.536,
+      "end": 275.344,
+      "text": "Size matters, which means you have to team up in a location between universities and across different disciplines. Otherwise, there will be very little impact. And this was also, I mean, actually, the title was suggested by Hannes, Fostering Local Excellence in a Global Context, because I would, it's perfect."
+    },
+    {
+      "start": 275.344,
+      "end": 305.232,
+      "text": "I couldn't have come up with it myself. The reason for that being, I want to take you a little bit on a personal journey, how we managed to get some, or we hope to get some impact with the German National Internet Institute and what was necessary. And I can already tell you, it was not science is an important agreement, but it was not the necessary agreement."
+    },
+    {
+      "start": 305.232,
+      "end": 332.528,
+      "text": "The necessary ingredient is actually social processes, people talking to each other, exactly like in this workshop here, and trying to get across organizational boundaries. Then you probably have a chance that you actually, or we as a community, and I mean we as a research community, not as a community of computer scientists or sociologists or economists."
+    },
+    {
+      "start": 332.528,
+      "end": 353.52,
+      "text": "have at least a small chance to move something. Okay, so this is about digital humanities. I take you on a very short personal, a little bit longer organizational, and a longer journey about the Weizenbaum Institute in Berlin."
+    },
+    {
+      "start": 353.52,
+      "end": 381.008,
+      "text": "I'm a computer scientist. I first got in touch with the humanities actually during my studies here in Vienna when a friend of mine working for the Austrian Academy of Sciences, a linguist, German linguist, asked me, how can I create a digital resource for linguists? And I said, I have no idea. I'm a computer scientist. Let's talk. To cut the long story short, the result was a resource."
+    },
+    {
+      "start": 381.104,
+      "end": 409.376,
+      "text": "It was about, for the German speakers or the Austrians in the room, it was the Fakler Wörterbuch. That won the prize for the best book at the Frankfurt Book Fair, I think, in 2005. Unfortunately, it no longer exists. But for me, it was the first exposure to something non-technical. And my learning from that was, okay, you have to listen and you have to understand what the other people are talking about and how you, as a computer scientist,"
+    },
+    {
+      "start": 409.376,
+      "end": 435.072,
+      "text": "can help to actually solve this problem. I moved on to Switzerland, to EPFL. I saw that my former dean, or it wasn't the dean, he wasn't the dean at then, gave a presentation yesterday, and there I was exposed to a lot of very interesting, also non-computer science work, more in the medical side and pharmacy and things like that, and got into touch with data protection, for example."
+    },
+    {
+      "start": 435.072,
+      "end": 462.016,
+      "text": "and learning how difficult it was to actually get meaningful results. So I had exactly the same experience from trying to get medical cohorts on board, doing experiments, and get meaningful data out of it, which is close to impossible, and it's not technical problems, it's legal problems. And if, as a computer scientist, I'm not aware of these problems, I will not be able to make progress."
+    },
+    {
+      "start": 462.016,
+      "end": 490.4,
+      "text": "Then I moved into the richest country in the world regarding Internet companies, at least on paper. I moved to Ireland. Science Foundation Ireland gave us the opportunity to build up a vet research center. I don't know whether dairy still means... I know it means something to you, Michael. At least in a web space, we, after eight years, were kind of the biggest center in the world in that space at the west coast of Ireland. This is also..."
+    },
+    {
+      "start": 490.4,
+      "end": 517.184,
+      "text": "because we worked a lot with Tim Berners-Lee, and Tim was a big friend of the institute, working as a board member. Very helpful if you have such a prominent name on the board. It still exists under a different name, and I'm happy that they thrive. Now, what I learned here in Ireland was that how can you actually create meaningful impact? I was one of the amateurs who created the web."
+    },
+    {
+      "start": 517.184,
+      "end": 540.304,
+      "text": "and how important social processes are if you want to shape reality and technology. And actually, I would now claim it's the most important ingredient. Because, you know, the Internet and the Web, they do not have a central standardization authority. What you need to do is come up with a good idea, convince a lot of people, convince more people, and try..."
+    },
+    {
+      "start": 540.304,
+      "end": 566.288,
+      "text": "to get one of the organizations, be it the World Wide Web Consortium or the Internet Engineering Task Force, to endorse it as a recommendation. It's not a standard. And this is when, at least in my area, you have started to change or shape the world. But this is a social process. This is an agreement process. These are humans. And having worked in a lot of these committees, I can say it's never a technical problem."
+    },
+    {
+      "start": 566.288,
+      "end": 594.944,
+      "text": "It's always a social problem if it takes so long until you can agree on a certain recommendation because, and that's a criticism towards the scientific community, every researcher likes to ride his hobby horse. And some of the Internet standards are a reflection exactly of that problem. There is a lot of stuff in, and fortunately later we get out of the system, that only came in because some researcher insisted on riding his hobby horse. But nevertheless..."
+    },
+    {
+      "start": 594.944,
+      "end": 619.696,
+      "text": "It's a social process. Equipped with that, moving to Germany and becoming a director in the Fraunhofer Institute, for me, the challenge was how can I combine basic research, the knowledge that I learned about social processes and trying to nudge big systems in the right direction, at least what I believe is the right direction, with something that has actually practical impact."
+    },
+    {
+      "start": 620.112,
+      "end": 627.856,
+      "text": "And this is, I think, something really interesting also for a researcher to see some of the systems that you do in the real world."
+    },
+    {
+      "start": 627.856,
+      "end": 657.136,
+      "text": "So, for example, all of you, you maybe don't know, are using technology out of my institute because if you use your mobile phone, you use voice over IP, and part of voice over IP was developed in my institute. If you're Austrian and you're being warned, you probably have Katwan on your mobile phone, which is the national warning infrastructure in Austria, also in Germany. That also comes out of my institute. Interestingly, it came out of a tsunami warning system in..."
+    },
+    {
+      "start": 657.136,
+      "end": 685.664,
+      "text": "the Far East. And there's a lot of other examples for that. Now, why does this matter to the Weizenbaum Institute? When I came to Berlin, the situation was exactly the same as in many other places. There were more than one university, a large number of really good and well-known researchers, and a local government. And the problem was"
+    },
+    {
+      "start": 685.664,
+      "end": 711.312,
+      "text": "Everybody was in the same boat. We were rowing, but we were not rowing in the same direction, and sometimes we were even refusing to talk to each other. So there was, in a nutshell, scientific excellence, like there will be in all the places you are from, but we couldn't really put it to action. We couldn't really get the rubber to the street and increase speed."
+    },
+    {
+      "start": 711.312,
+      "end": 739.472,
+      "text": "Then interestingly, and this was pure luck, something interesting happened in Berlin. And this is also where Hannes and I met. You know, I cannot explain it, but we managed to get the so-called Einstein Center for the Digital Future. The basic idea being in Germany, because in Berlin we all hated each other, everybody, when you came out of Berlin as a researcher, said, okay, what are the guys in Munich doing?"
+    },
+    {
+      "start": 740.304,
+      "end": 768.048,
+      "text": "It's kind of a frustrating experience if you hear that over and over again. So actually the editor of the Berlin newspaper and the lawyer and the president of TU Berlin made a 10-bullet plan to how to get Berlin ahead of the crowd. Okay. Really good. No, no, really ahead of the crowd."
+    },
+    {
+      "start": 768.048,
+      "end": 795.984,
+      "text": "But of course, Munich. And I know, I have a lot of dear, dear friends and very, very great collaborators. Yeah. You know, world domination by Friday. That was the secret plan. Okay, we have all seen a lot of these 10 bullet points plans and usually the evaporating to nothing after half a year. Here, we managed actually to get a lot of interested people on board. Obviously, the frustration was high enough."
+    },
+    {
+      "start": 795.984,
+      "end": 820.208,
+      "text": "that a lot of people were thinking, okay, come on, now we really need to get it right or we can give up forever. And the idea behind it was the following. Let's convince industry to fund new professorships. Bavaria had announced 50. We said we go for 100 within the next three to five years. And then we work on the interesting topics that are pressing at the moment in the digital society."
+    },
+    {
+      "start": 820.272,
+      "end": 849.52,
+      "text": "Now, cutting a long story short, getting the first three professorships was extremely difficult and extremely painful. Why should a company do that? We've reached the number of, say, 60 to 70, and now we stop because the faculties are getting too big. These are assistant professorships and some associate professorships. They are not tenure-track, but we are trying to create opportunities for young talent to actually work with the universities."
+    },
+    {
+      "start": 849.936,
+      "end": 878.816,
+      "text": "The funding model is such that a company gives the money and the local government gives the overhead. Now you say, okay, so you're doing contract research for industry. You've compromised your scientific idols. The nice thing in Germany is that the legal situation is such that companies cannot influence your research. I mean, they can say, we would like to sponsor a professorship in Area A. They give money to..."
+    },
+    {
+      "start": 878.816,
+      "end": 906.496,
+      "text": "say, the Einstein Foundation, and then they're out of the game. As a young professor, I would say it makes sense that, say, if I work in an area like automotive information systems and, say, Daimler sponsors my professorship, then I have my first industry partner to do real work already attend to do that. But it's not a requirement. And this is one of the interesting learnings. So if you team up, if you have a good idea,"
+    },
+    {
+      "start": 906.496,
+      "end": 936.24,
+      "text": "And if you have support from your local university and you do the footwork, you will also get industry in Europe to fund professorships. When you're in Berlin, please visit us, because one of the outcomes is also that we've got a very, very nice building right behind the Deutsche Bundestag, so every member of parliament can just walk there within three minutes. We have an open-door policy. We have seminar rooms. So the idea really is get people in, network. Please do so."
+    },
+    {
+      "start": 936.368,
+      "end": 959.568,
+      "text": "The second thing that we did, I mean, exactly the same situation we also had in Fraunhofer. We were all best enemies. Each Fraunhofer director has, say, 500 people. We need to earn two-thirds of our budget. And, well, if we are not forced by project grants, we usually don't work together. We managed to do that and come up also with the Center for Digital Transformation where we team up all the Fraunhofers."
+    },
+    {
+      "start": 959.792,
+      "end": 987.136,
+      "text": "Then we won a couple of centers, like the Berlin Center of Machine Learning. I don't know whether Klaus-Robert Müller means something. He is heading that. The Berlin Big Data Center, which I'm also involved as a PI, is headed by Volker Makel. Then we had a lot of stuff on the societal side. For example, the Berlin Open Lab, the Humboldt Institute for Society. And that was kind of like the..."
+    },
+    {
+      "start": 987.136,
+      "end": 1015.696,
+      "text": "The necessary ingredients, the necessary starting points, the necessary positive reinforcement that we got, that we said, okay, we also go for a bit for the German National Internet Institute. This is probably an interesting story. Say in 2015, the German government woke up and said, huh, there is this thing like the Internet. We have technical people working on it. We have social..."
+    },
+    {
+      "start": 1015.696,
+      "end": 1041.264,
+      "text": "People from the social sciences working on it. We have economists working on it. But we should do something more integrated, which is I think they were pretty late to the game. But nevertheless, they put in significant funding. The German Internet Institute is funded with 50 million euros. So that's not bad. And there was a national competition. I think it were initially 80 consortia cut down to 20."
+    },
+    {
+      "start": 1041.264,
+      "end": 1068.72,
+      "text": "And to our own surprise, because our bets were actually on Munich and Karlsruhe, we won. And this is the Weizenbaum Institute that I will then talk about later in my presentation. Nevertheless, the necessary ingredient was a social process. Talking to each other, talking to each other in universities, between universities, across disciplines. And it was painful."
+    },
+    {
+      "start": 1068.72,
+      "end": 1097.072,
+      "text": "And more than once, it looked like we would not succeed. This development is even further continued with something which is now known as the Berlin University Alliance. So traditionally, the three big universities didn't talk to each other. Also, the president of the university actually comes from TU, and there are multiple connections, Charité."
+    },
+    {
+      "start": 1097.072,
+      "end": 1123.84,
+      "text": "interestingly, is a joint facility, a joint institution between Free University and Humboldt University. But nevertheless, it didn't really fully work. Now, in Germany, there is a funding available that's called Excellency Initiative. We all became excellent in the last round, also TU as the last one. And then there was additional funding put in place."
+    },
+    {
+      "start": 1123.84,
+      "end": 1153.824,
+      "text": "Well, if you smile, also inside DU, of course, there are battles. For example, computer science has the most industry money, and most of the professors will say, why should I go for the excellence initiative? It's probably 5% of my funding. But the prestige matters. And the second round of funding said, if you have all excellency universities at one location, you can team up and ask for continuous structural funding."
+    },
+    {
+      "start": 1153.824,
+      "end": 1182.448,
+      "text": "which in relation to the budgets of the universities, I mean, these three guys together have roughly 1 billion euros a year. In Charité, an additional 1.5. So in total, this is 2.5 billion euros, where, of course, the medical side has the most money because a lot of their machinery is the most expensive one. Okay. There were plenty of opportunities to miserably fail because, you know, your four university presidents, they are all..."
+    },
+    {
+      "start": 1182.448,
+      "end": 1207.712,
+      "text": "all alpha male and alpha women, and how do we manage to work together? And then I have to say, as they say in Berlin, chapeau, those four guys, one woman and three guys, sat together on the table and went on a really painful journey for two years and tried to iron out the differences."
+    },
+    {
+      "start": 1207.712,
+      "end": 1235.952,
+      "text": "Just nobody outside knew that. Actually, also inside the university, you sometimes were surprised that, hey, come on, we like each other now. At least, you know, it's like in any relationship. There are ups and downs. But generally, it's moving in the right direction. And then this, we put in a joint proposal. I can only tell you that when we rehearsed,"
+    },
+    {
+      "start": 1235.952,
+      "end": 1265.904,
+      "text": "For the hearing, which happened in February, it was really bad because there was still a little bit of this idea that each president needed to say something. Finally, they decided one guy says something and the others don't sit in the audience and go like... You know, the usual things we teach our PhD students and postdocs, how you should not give a presentation, it sometimes seems to come back when you get higher into hierarchy. So that worked, and we now have this alliance."
+    },
+    {
+      "start": 1266.608,
+      "end": 1288.192,
+      "text": "We have this joint proposal, we have had the hearing, and in July we will learn whether we were successful, but we are very positive that this might have worked. In conclusion, that means, and that's the first conclusion, you see, at one location, universities team up, disciplines team up."
+    },
+    {
+      "start": 1288.192,
+      "end": 1313.92,
+      "text": "Do something together. Take the effort, even if it's really painful. Because if you're all talking to your funders and to politics and your government and the EU independently, nothing will change. Not for you and not for your environment. The Weizenbaum Institute, then we also took the guys in Potsdam on board because, I mean, that's just next door."
+    },
+    {
+      "start": 1313.92,
+      "end": 1338.112,
+      "text": "So these are the Berlin University. We also have the University of Arts on board because there's a whole lot of really interesting and innovative stuff from the University of Arts. We have, I don't know actually how WCB is translated English. Do you know? WCB. So this is a very large research center in Berlin in social sciences, roughly 500."
+    },
+    {
+      "start": 1338.112,
+      "end": 1359.328,
+      "text": "500 people, and this is my Fraunhofer Institute, so that it's also the technical side. The idea being 80% of the center is completely non-technical. So it's lawyers, social scientists, communication scientists, political scientists, lawyers, economists, you name it."
+    },
+    {
+      "start": 1359.328,
+      "end": 1384.88,
+      "text": "20% of technical people on board because, you know, like what the other guys come up in theory, we probably need to implement in practice. And some of the things that you wish for on the legal or economic side is not possible technically. And what some things that we wish for on the technical side is not possible because of legislation, because of effects from the social sciences, etc."
+    },
+    {
+      "start": 1384.88,
+      "end": 1408.144,
+      "text": "And it was also very interesting when we wrote that proposal because you learned where the shortcomings of your own discipline are. I will not talk about the other disciplines. I will talk about computer science, and I can only say computer scientists do not know how to do empirical work properly. Full stop. We should learn that from other disciplines."
+    },
+    {
+      "start": 1408.528,
+      "end": 1423.232,
+      "text": "And maybe if you know people from the other institutions, you can ask them what they found out were their shortcomings. Now, the principal research question, because it's actually self-determination in a networked society, is that"
+    },
+    {
+      "start": 1423.232,
+      "end": 1453.008,
+      "text": "I read it to you. How can the goals of individual and collective self-determination be promoted in a world characterized by digitally mediated processes of transformation and transnationalization, and which framework conditions and resources are necessary for their realization? Essentially, bottom line, how do you survive in a world that's dominated by the Internet? And how can you actually know what's going on, and how can you do informed decisions? That's the underlying question."
+    },
+    {
+      "start": 1454.416,
+      "end": 1477.344,
+      "text": "We came up with this jointly in a long collaborative. It looks like that. Yes. We had to do an academic review, so it needed to sound academic. That's the only excuse I have. If you look at the slides and if you look at the website, it's broken down into something which is human readable and understandable."
+    },
+    {
+      "start": 1477.344,
+      "end": 1501.632,
+      "text": "Well, machines take anything you take. They can't resist. We named it after Joseph Weizenbaum because Joseph Weizenbaum comes out of Berlin and is a very well-known person and researcher who actually did a lot of very groundbreaking research in this border between technology and society."
+    },
+    {
+      "start": 1501.632,
+      "end": 1527.6,
+      "text": "One of the reasons why we want that is we do not have a research program carved in stone. We started out of the competences of the principal investigators that we have on board, but I think what got us over the line is that we said, okay, we want to have young people leading the groups. The research program can change and must change over time."
+    },
+    {
+      "start": 1527.6,
+      "end": 1551.6,
+      "text": "So it's not that we will continue to work on contracts and responsibilities on digital markets forever. If we have other interesting stuff, for example, in that area, that may go away and we do completely different thing. We are implementing a continuous monitoring process, what are the hot topics, and research can go in and go out."
+    },
+    {
+      "start": 1552.016,
+      "end": 1580.576,
+      "text": "Besides these areas, I will not read them to you because we can read themself. We have also horizontal areas. That's digitalization and sustainability. For example, that's creating digital resources, scientific data infrastructures. How can I make resources available for non-technical people? How can I make them available easily? Because a whole lot of money is lost there. I think NASA has this nice estimate that 5 billion euros"
+    },
+    {
+      "start": 1580.576,
+      "end": 1605.056,
+      "text": "of their data that they gathered is lost because PhD students are no longer there, computers no longer exist, nobody knows where the data is, et cetera. And I claim it's way more. Autonomous systems and self-determination means these are areas like, say, automated driving, ethics, artificial intelligence, and security versus openness."
+    },
+    {
+      "start": 1605.056,
+      "end": 1626.56,
+      "text": "There's very interesting research that, for example, you put a predictive policing system in place, and subjectively, people suddenly feel less secure. Also, objectively, nothing has changed, meaning you put a measure in place which is supposed to help people, but by just putting the measure in place, people feel less safe. So I would say..."
+    },
+    {
+      "start": 1626.56,
+      "end": 1655.376,
+      "text": "predictive policing and there are huge campaigns of American companies to put this in Europe in place all over the EU by giving the software for free. It's a big danger for European society. This is just in because we will distribute the slides so that you see what we do actually in detail. These are the current, this is the current research."
+    },
+    {
+      "start": 1655.376,
+      "end": 1681.28,
+      "text": "groups. It may change. Maybe next year it looks completely different or probably in two years. It's on the slides. These are the faces behind that. Probably you recognize some of them by personal collaboration. So, this is, okay, me is first because Fraunhofer starts with an F. So, this is the only reason."
+    },
+    {
+      "start": 1681.28,
+      "end": 1705.168,
+      "text": "These are the computer scientists and electrotechnical engineers, communication sciences, communication sciences, law, business informatics, informatics, informatics, networking and informatics, business informatics, business, business, arts, social sciences, social sciences."
+    },
+    {
+      "start": 1705.296,
+      "end": 1731.824,
+      "text": "One guy is actually missing. We just hired him as a director. He's also from the University of Arts. That's a short timeline. So we were officially born in 2017, and we are roughly here. We are now doing an annual conference. If you're interested, the conference will be in three weeks' time. The date is on the slides."
+    },
+    {
+      "start": 1731.824,
+      "end": 1760.784,
+      "text": "It would really be great if we could see and welcome some of you in Berlin. To have the Weizenbaum Institute as open as possible, we also planned in for visiting grants. So anything from two weeks to a year, we have money available as soon as you come. Say, I would like to work with this research group. This is the research group. This is the research question. The research group agrees. Give me money."
+    },
+    {
+      "start": 1762.256,
+      "end": 1788.464,
+      "text": "So I encourage you, have a look at the website. If you have interesting research questions, present them to the research groups. That's the best fit for you. And if we agree, let's get started. Interestingly, we have... Oh, no, that's about employees. We very much focused also on gender balance."
+    },
+    {
+      "start": 1788.752,
+      "end": 1814.048,
+      "text": "Because you see that the traditional thing is like the technical people, the technical disciplines tend to be more male dominated. And so the social sciences and communication science is more female dominated. And we did not want to try to fall into that trap and even manifest it more. So it was really important for us that the groups were also lead."
+    },
+    {
+      "start": 1814.048,
+      "end": 1842.48,
+      "text": "roughly at the same amount by men and women. At the moment, we are 123 people. Regarding disciplines, it's just that you can take it home on the slides. You see computer sciences, social sciences. I forgot psychology, I have to say. Design studies is very interesting. And I have to say, I personally have worked with psychologists a lot, and they had this reproduced..."
+    },
+    {
+      "start": 1842.48,
+      "end": 1870.016,
+      "text": "Reproducibility crisis, thank you very much, 10 years ago. Yeah, but, you know, kind of like we are going down and they are already applying their learnings. And I think it's very useful for me as a technical person to take some of the learnings that they have found on board and not fall into the same trap."
+    },
+    {
+      "start": 1870.016,
+      "end": 1899.152,
+      "text": "So this, even if it was just for that thing to learn, the Weizenbaum Institute personally for me was very, very interesting and helpful. Okay, this is just, you know, because we will make the slides public in any way, I think I am approaching the end of my talk here. You have the research areas and who is doing what, so that you know if you're interested in an area, whom to approach."
+    },
+    {
+      "start": 1899.792,
+      "end": 1927.76,
+      "text": "And that's pretty much it. The rest is statistics. We're a young institute. We've started to publish. We've started to generate our research program. We currently are trying to come up with publication formats that work across disciplines, which is extremely difficult and extremely critical."
+    },
+    {
+      "start": 1927.76,
+      "end": 1952.72,
+      "text": "So, for example, in my specific area in computer science, I can tell you journals don't matter. You publish in journals, say, you've worked in an area for five or ten years, and then you put the stuff together and say, okay, that's my combined finding. In other disciplines, of course, this is completely different. Conferences do not matter at all."
+    },
+    {
+      "start": 1952.72,
+      "end": 1976.432,
+      "text": "What you need to do is you need to publish in journals. In other areas, it's actually that you need to write books. Now, how can we come up with publication and publication strategies and publication formats in an interdisciplinary institute that actually work for the individual disciplines? So this will also be a social process to convince a lot of the research community. Probably we will fail."
+    },
+    {
+      "start": 1976.432,
+      "end": 2003.504,
+      "text": "Because there is no uniform agreement on how we actually should publish. Since we are trying to support young people and promote young people, it's like, what can I recommend to them? Go down the new route and probably never become a professor, or go down the existing route, you will become a professor. But it doesn't really contribute to the overall goal of the institute. It's a really tough question for us."
+    },
+    {
+      "start": 2003.504,
+      "end": 2033.264,
+      "text": "Also, what we would like to do is for us in the Institute, practical impact is really important. And practical impact also means that you put the research that you're doing out in the real world. I mean, doing theoretical research, even from all possible angles on something like the Internet, which is in the practical world, and not having a practical impact seems a little bit odd. So, for example, in some disciplines like physics,"
+    },
+    {
+      "start": 2033.264,
+      "end": 2059.648,
+      "text": "You build an infrastructure, or you create the data set, and this is impact, and this is counted as impact. And say, the infrastructure papers in physics contribute a lot to your scientific reputation. If I talk to a social scientist, the picture completely changes. It takes years to create the data, and once you have created the data, you don't necessarily want to share it because this is what you're going to publish about."
+    },
+    {
+      "start": 2059.648,
+      "end": 2088.8,
+      "text": "And this is how you build up your scientific records. Now, yeah, and that's the same in a lot of areas. So, okay, on the one side, sharing. On the one side, you need to keep it to yourself because you need to build a scientific career. How do you mediate between these two extremes? What is possible? So we are also trying to work a little bit on the science system itself. And it's easy to talk about cross-disciplinary research."
+    },
+    {
+      "start": 2088.8,
+      "end": 2112.624,
+      "text": "also the way I talked about it at the beginning. But these are not the publications, if publications came out at all, that contributed to my scientific career. This was something which I thought, okay, it's interesting, it's necessary, I like to do it, so I do it. But none of it has helped me to build up my research record."
+    },
+    {
+      "start": 2112.88,
+      "end": 2140.928,
+      "text": "These are some people, for example, who visited us. We have these senior fellows. We have fellows, but you can also come as a PhD researcher with us. Probably you recognize some of the names. A lot of the names don't mean anything to me as a computer scientist. Others is like, oh, wow, he visited us. You see, these are the people who are a little bit longer, younger, that were already there. And if you go on the website, then you probably have a much more up-to-date list."
+    },
+    {
+      "start": 2140.928,
+      "end": 2168.208,
+      "text": "We do a lot of, I mean, we need to get heard. This is also why I would like to invite you and help us actually to make a name. But on the other hand, I think we also offer really interesting possibilities to work with a lot of interesting people. And I'm particularly proud of our PhD students because they jump into the cold water at the deep end."
+    },
+    {
+      "start": 2168.496,
+      "end": 2193.36,
+      "text": "And it's not easy for them because it's not easy for professors to work together, but we have made our scientific career. If you're a PhD student, this is much harder. And I'll finish here because Carlo gets up with the slide for our Weizenbaum conference. And if you have time, I think it's even free. It's the second one. It will have proceedings."
+    },
+    {
+      "start": 2193.36,
+      "end": 2221.856,
+      "text": "We will publish a little bit about the conference. It's probably not at the quality yet like you are used in your discipline, but we are working on it. Thank you very much. Thank you, Manfred. Let me start with a question since I don't see any hands raised yet. Actually, my question is, it looks very much like a top-down process."
+    },
+    {
+      "start": 2221.856,
+      "end": 2246.656,
+      "text": "the process you went through. So I'm wondering how really people get involved into something like what you've been presenting. And so how open it was to bottom-up proposals from the people you already had there. And the other, maybe it's just a comment, but..."
+    },
+    {
+      "start": 2246.656,
+      "end": 2269.52,
+      "text": "For example, this morning, Helga was reminding us about the usefulness of useless research. And it seems to me that I can't see how useless research can be accommodated in your framework. Okay. The process itself was very open because we ran around and said..."
+    },
+    {
+      "start": 2269.52,
+      "end": 2298.24,
+      "text": "Do you want to work with us? I know we have little chance, but it's probably interesting. What about coming up with an interesting research proposal? And what you do not see in there is actually that a lot of these research groups came out of collaboration. So for example, me personally, I worked with Axel Metzger, who is a lawyer, on data as a currency. Because I learned a lot about the rights that come from"
+    },
+    {
+      "start": 2298.24,
+      "end": 2319.104,
+      "text": "or possible rights that may come from me as a person giving my data to a company or to the state. So essentially it was bottom-up, and it changed a lot. And, you know, there were people in that later said, okay, that's not for me, I will go out. It's not that, you know, like neither the university presidents nor..."
+    },
+    {
+      "start": 2319.104,
+      "end": 2347.008,
+      "text": "the faculty said, okay, you have to go that direction. And also the research idea was an agreement process where we came together, okay, what could possibly be the motivating theme behind the institute? Now, I have presented this, coming to the second question you asked, Carlo, I've presented this to be very practical. But in fact, it isn't. It's just that, you know, like when it comes to one,"
+    },
+    {
+      "start": 2347.008,
+      "end": 2374.592,
+      "text": "Painful learning I have heard, I have had, and also the others from the research system is if you do not talk in practically understandable terms, politicians take away your funding. What we basically do, for example, social scientists, we work with social scientists how to curate data that they can actually do experiments."
+    },
+    {
+      "start": 2374.592,
+      "end": 2397.088,
+      "text": "There are seminars every week, which is across all kind of different groups, where, for example, they are educating each other on the different disciplines and on the tools from different disciplines, and also what are the pressing research questions in the different disciplines. And then, this is both what we want and how it's actually done and how we live it."
+    },
+    {
+      "start": 2397.088,
+      "end": 2424.8,
+      "text": "When questions come out of these discussions, then they become research questions for the Internet Institute. It's not that the professors shape the agenda. It's more like, OK, talk to each other. I have an idea. Come up with an idea. Then we discuss it among the professors and the students and the postdocs and the research group leaders. And this is how we actually try to narrow down the really interesting questions."
+    },
+    {
+      "start": 2424.8,
+      "end": 2454.576,
+      "text": "We do not have any need to be practical, but we decided to make the things that we do understandable and applicable because this is the question that we are going to be asked by our reviewers, who, interestingly enough, are only 50% researchers and 50% other people from completely other areas. I can go."
+    },
+    {
+      "start": 2455.6,
+      "end": 2481.728,
+      "text": "Thank you, I believe. Thanks for your presentation. It sounds like a very vibrant and interactive institute, and probably we can all join one day. You're welcome. But I have a question on the interpretation, and we were talking here a lot about social science. But social science is such a big box full of all kinds of..."
+    },
+    {
+      "start": 2481.728,
+      "end": 2508.944,
+      "text": "and methodologies and you already answered a little bit of my second worries a little bit what kind of methodologies are you using and how we talk a lot about mixed methods and all these things which is very blurred we don't know exactly what we mean with it so I also working on these kind of methodology tools and and ways to really work together interdisciplinary"
+    },
+    {
+      "start": 2509.136,
+      "end": 2537.104,
+      "text": "But also what do you mean by social science? Because it's really big. And I'm at one end very qualitative, but there's very quantitative. Economics is in it. Anthropology. Methodology is a social science. Yeah. I mean, I have to give you a really, really incomplete answer as a computer scientist because that goes way beyond my expertise. What I can tell you in terms of the methodology..."
+    },
+    {
+      "start": 2537.168,
+      "end": 2566.768,
+      "text": "It's like we are performing open heart surgery at the moment without being properly trained medical persons. For the first time, we have the possibility actually to spend enough time, because time, I think, is the critical ingredient here that we can actually discuss. As Hannes said, we don't have time for that. I mean, of course, it's the same also in Berlin."
+    },
+    {
+      "start": 2566.768,
+      "end": 2596.656,
+      "text": "we were given a lot of money, so we better take the time and talk to each other and develop an understanding, educate each other on the tools that the different disciplines have developed. And if you ask me what kind of social sciences we do, I have to say, I honestly don't know. I trust our social scientists in there that they know their area and we will come up with an interesting"
+    },
+    {
+      "start": 2596.656,
+      "end": 2622.576,
+      "text": "research agenda. And I trust our PhD students and I trust our postdocs. The problem with a lot of these institutes is, I mean, if they are designed very top down, there's usually one or two minds who have a very clear idea of a research agenda and how to implement it. And to be honest, we have a research question. We do not know how we actually get there and how we solve that. It's a journey."
+    },
+    {
+      "start": 2624.496,
+      "end": 2648.832,
+      "text": "My question is pretty much related to yours, but as I'm also a technician, maybe it's better to answer for you. You mentioned you have 80% domain sciences, 20% technicians. Starting from technical university, we teamed up with all main universities and research groups in Vienna just for one small area."
+    },
+    {
+      "start": 2648.832,
+      "end": 2672.24,
+      "text": "So health systems research, and there already were collided interests of health economics and HTA and so on. We tried to develop a process, not based from the domain area, but you mentioned, for example, from psychology, really important question, reproducibility of research in such complicated interdisciplinary networks."
+    },
+    {
+      "start": 2672.24,
+      "end": 2701.232,
+      "text": "Do you think it could be a goal for you to start to develop such processes where you have a standardization, also in the meaning of scientific quality, how to go to the process based from data, system knowledge, research question, of course, at the end, to the question, how can we communicate results? Is there a possibility to think also from this way in your setup? Absolutely, but it is a double-edged sword."
+    },
+    {
+      "start": 2701.232,
+      "end": 2722.208,
+      "text": "So on the one hand, what I've seen in a lot of research centers is like you're talking a lot about theory and possible approaches and what you could do. And after two or three years, you have a process in place, but you haven't accomplished anything. So I think this needs to happen in parallel, strictly tied up."
+    },
+    {
+      "start": 2722.208,
+      "end": 2750.576,
+      "text": "And sometimes, and I'm saying this as a computer scientist, but at least in my area, we have very positive experience with this. It needs to be developed on the go. And something also we agreed, which is something which comes from computer science, is eat your own dog food. Whatever you develop, you apply to your own institute. You are your first lab rat. And if it doesn't work, throw it away. There's one principle in it's fail fast, fail early."
+    },
+    {
+      "start": 2750.576,
+      "end": 2779.712,
+      "text": "I mean, also in computer science, we have these really great theoretical buildings. Essentially, we can solve any problem in the world, but the world won't listen. I'm impressed. No, really saying that you succeeded in doing such a thing, in founding such an impressive construct. We are a university to cooperate. We do not succeed in..."
+    },
+    {
+      "start": 2779.712,
+      "end": 2809.104,
+      "text": "In Vienna, and I look to Michael Stampfer, we have serious problems in finding corporations. You are successful. Just to give, because somehow there are some critical remarks here. But we do not find the money. We have problems with the politicians. And you obviously succeed. So congratulations to that. And Berlin is a nice city. Well, it took a very, very, very long time until we got there. And I know a few places succeeding in that. And Germany is obviously moving."
+    },
+    {
+      "start": 2809.104,
+      "end": 2835.984,
+      "text": "I have two concrete questions. Do you have some methodological seminars which I think would be important relating to the question you had because this is really, I think, at the core. So what is the methodological, what's the scientific process which you have to combine from different disciplines? And the other one is an understanding, just to being more nervous. What is the funding you have? Did you tell us? No."
+    },
+    {
+      "start": 2835.984,
+      "end": 2863.216,
+      "text": "Okay. It's 50 million euros over seven years. 50 million? 50, 5-0, with the possibility of being permanently instated. And at the moment, and this is mainly legalities, and this is still a big stone in our ways, how can we become an institution in our own right. Now, coming, because this is mandated by the funders."
+    },
+    {
+      "start": 2863.216,
+      "end": 2890.352,
+      "text": "Regarding the methodologies, what we did is actually we sat together and presented to each other on a PI level what methodological tools we have in store which we think might be applicable outside our own discipline. We ranked those and we then decided to have interdisciplinary seminars."
+    },
+    {
+      "start": 2890.352,
+      "end": 2916.224,
+      "text": "We make all the PhD students sit in there so that, for example, my PhD students learn how to do proper, for example, user studies. Not like five people and at the end we have a random outcome, but something that, for example, a psychologist or a communication scientist would consider as a scientific result. In the end, this will mean..."
+    },
+    {
+      "start": 2916.224,
+      "end": 2943.376,
+      "text": "probably the outcome of all that may be a curriculum. But we have not used, we deliberately did not use that word because as soon as you use that word in a university, everybody, red alert for everyone. There is a well-funded institution that tries to change something without talking to us. This is not the idea. It's more..."
+    },
+    {
+      "start": 2943.376,
+      "end": 2971.952,
+      "text": "It's really, I cannot say other than it's an incremental process where we're trying to learn from each other, and we are really trying to practically learn from each other, not say, okay, we write the paper together, but we do the nasty footwork that comes before that so that maybe in three to five years' time, I can really do proper empirical research that also in a different discipline would be considered proper empirical research."
+    },
+    {
+      "start": 2972.56,
+      "end": 3002.16,
+      "text": "And we try to educate our students along these lines. And if we then come up with something where we say, okay, this has the potential that we also propose a program, we would then propose it to actually the Berlin University Alliance because it looks rather promising that also the universities will team up in teaching. So there are already examples. TU and FU do media informatics together where it's actually the computer science comes from."
+    },
+    {
+      "start": 3002.16,
+      "end": 3030.848,
+      "text": "from TU Communication Sciences and the social side comes from FU and that's really successful with the students. I think that this is a great initiative with a lot of very interesting research. My question is what do you think you can contribute to digital humanism as we are talking about it?"
+    },
+    {
+      "start": 3030.848,
+      "end": 3054.288,
+      "text": "If we say the system is broken in some way, how can we repair it? That is the question I would like you... I think the contribution can be that we actually, on a scientific level, start to talk to each other and listen to each other. I think a lot of the problem..."
+    },
+    {
+      "start": 3054.288,
+      "end": 3081.344,
+      "text": "comes from the fact that we are all doing great research in our area. Sometimes we bridge over a little bit into other areas, but a lot of the interesting problems actually lie at the interfaces, and there's too little joint scientific work for that. So for example, this workshop, and I just have to compliment for that, is exactly something which we should do way more often."
+    },
+    {
+      "start": 3081.344,
+      "end": 3096.816,
+      "text": "We should have a series of these workshops because, I mean, of course, I know a little bit about Africa, going back to our discussion yesterday. But, of course, I do not have the in-detail knowledge and, you know, the players and what's the economic and political situation behind it."
+    },
+    {
+      "start": 3096.816,
+      "end": 3124.336,
+      "text": "And that's important for me. I mean, we may not do a joint project, but maybe in three years' time, I will remember, okay, I heard about that. There is actually something which we could do together. And for me, it's also we need to be open-minded also to talk to other disciplines, and we already need to embed this in our students."
+    },
+    {
+      "start": 3127.024,
+      "end": 3151.6,
+      "text": "Did I answer your question, Hans, or was this too... Yes. Okay. I'm sorry. I think we have... Come on. Okay. There is a cutoff at some point. Thank you. Thank you. I understand cutoffs, and thank you for giving me this time now, but I think it's really... This would have been the second time already in two days."
+    },
+    {
+      "start": 3151.6,
+      "end": 3181.12,
+      "text": "It happens, yeah, all right. Interface is very important. I think we're here also because ethics is a very important topic, but it could also maybe be the interface that you're talking about. It's one of those things that unites all of us, whether we come from computer science or social sciences. And I think that this event here and your talk also shows that we have a real need to discuss and take time to discuss something that I consider the two basic ethical questions."
+    },
+    {
+      "start": 3181.12,
+      "end": 3209.776,
+      "text": "what is the good life, first of all, and second of all, what's the society or the good society we want to have, with or without technology now. And it requires, indeed, discourse and interdisciplinarity across disciplines, just as has been done, and just as you showed what you have achieved by now, that's very impressive. But I would like to... Excuse me, we have not achieved anything so far. Okay, what you're about to achieve... There's a lot of potential for failure. You see, we have..."
+    },
+    {
+      "start": 3209.776,
+      "end": 3237.68,
+      "text": "created the possibilities that we could achieve something. Okay, I appreciate your modesty here, but, you know, the effort is impressive in any way. But what I'd like to say that, you know, it is not that we are not interested in ethics here, for instance, at the University of Technology, but we have been forced recently to pay attention to a very narrow area of ethics, and that's coming from the funding bodies, and I know we have some here as well, and we're talking about research ethics."
+    },
+    {
+      "start": 3237.68,
+      "end": 3266.768,
+      "text": "and research integrity. Very important, but these are very narrow scopes of ethics. The other option is, and unfortunately equally narrow, to go to the codes of declarations and so forth. So we are also here at the TUV and currently working on something to putting formal ethics procedures in place to help our researchers in getting funding and showing that their work is on a sound ethical basis. But in some ways, this is a little bit of old school tick box."
+    },
+    {
+      "start": 3266.768,
+      "end": 3292.768,
+      "text": "ethics, even if I think that it's a very important exercise what we're going to be doing. And what I propose is that we really need a space for ethical reflection. And is that now in curricula and also in our work, of course, as seniors. And I think that this really should center on those two questions I already mentioned. What's the good society? What's the good life? And Helga Novotny already mentioned that this is a question the machines cannot answer."
+    },
+    {
+      "start": 3292.768,
+      "end": 3322.176,
+      "text": "They cannot talk about the meaningful life, so that's a similar issue. This is a long comment, but I wanted to correct something. It looks like the Vice Rectorate for Research and Innovation and Technology has not been present in any way or form here. That's not the case. I'm the Research Ethics Coordinator at this university, and I've been here for two days and had an excellent time so far, so thank you. Okay, so..."
+    },
+    {
+      "start": 3322.176,
+      "end": 3350.528,
+      "text": "Thanks for attending this session, but before we end, there's a final announcement from Hannes. We have a panel discussion after lunch, so I hope you are still here. No, we start with lunch, and it will be very soon, Moshe. Just to remind you that not everybody..."
+    },
+    {
+      "start": 3350.528,
+      "end": 3379.952,
+      "text": "No, in the panel we will have, let's say, a summary of the discussion we had and some learnings, and the moderators will, the three moderators and Helga will participate in the panel, and obviously you're also invited to give your comments. And after the panel, we will start to discuss the Vienna Declaration on Digital Humanism, or we call it memorandum. We are still not sure of the title. There is some draft of it. I will distribute it now so you can have a look."
+    },
+    {
+      "start": 3379.952,
+      "end": 3397.344,
+      "text": "And this is then the final wrap-up. And we will also discuss how this could be continued, how this is a first, let's say, event in a series of different events. It has not to be a second workshop. It can be a different format."
+    },
+    {
+      "start": 3397.344,
+      "end": 3417.232,
+      "text": "second workshop, whatever. But I think we should take the chance to continue to take this as a positive experience, at least it was a very positive experience for me, and to summarize in the afternoon and draw some conclusions both on the content side as well as from an organizational practical side how we could continue. Have a nice lunch."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

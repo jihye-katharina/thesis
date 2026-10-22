@@ -1,0 +1,1136 @@
+{
+  "video_id": "9N3LtoMUZas",
+  "source": "whisper",
+  "language": "en",
+  "text": "Okay, let's start. Good evening. Hello, everybody. First of all, a happy new year. I hope you had some relaxing days over Christmas and time for yourself and that you resisted COVID-19 and that you stay safe. Thanks for joining again. Welcome to this DECOM lecture of today. We have this timely topping on digital superpowers in geopolitics. with three outstanding panelists, with June Lowry-Kingston, Jan Hendrik Bassold, and Michael Weil. And the discussion will be moderated by Jim Larus. First of all, I have to excuse that we had to move the discussion to today. We originally had planned it on January the 19th, but we had some timing and organizational issues. Sorry for that. So it's one week later. And thanks for participating. The discussion will be moderated by Jim. He will introduce the panelists. And at the end, we have again a piece of music by Peter Knies. And I know that he has already problems finding all these new pieces of music for our discussion and lectures. But I hope that we will continue to find pieces. During the discussion and the presentations, I ask you to move your phone. And in case of comments or questions, you can raise your hand or you can use the Q&A. Plus, when you move your hand and say your question, please tell your name so that everybody knows who you are. It's a pleasure to introduce Jim as the moderator. He's a computer science professor and he's a dean of the School of Computer and Communications at EPFL in Lausanne, Switzerland. And before that, he was with Microsoft Research for 16 years as a researcher, manager, and at the end, even as a director. And before that, he was at the University of Wisconsin. He's not only a university professor, but he was also active and still is active in the development of software as a software engineer. And he co-led the Swiss Corona app project for contract tracing. And there they also cooperated and proposed a protocol to Google and Apple to interface with the proper operating systems. Jim is with us with the Digital Humanism Initiative since the early beginning, since April 2019. So it's nearly two years now. And I would like to thank Jim for that, for being with us and staying with us. Jim, the floor is yours. Thank you, Hannes. It's been a pleasure. I didn't realize it's been two years. That's quite a while. So it's actually my great pleasure and honor. to introduce our three panelists today. I will just give you sort of a brief background information on all three of them, and then I'll turn the floor over to them. So I'll do it in the order in which they speak as well. So Dr. Michael Veal is a lecturer in digital rights and regulation at the Faculty of Laws in the University College London. He's worked at the area of the emerging digital technologies, internet and data law, technology policy, and HCI, human computer interaction. He's currently focused on areas such as online tracking and advertising, data protection, legal tensions with... Encrypted data analysis, privacy enhancing techniques. Michael actually was a participant in the DP3T project that Hannes alluded to in Switzerland. And the implication also Michael works on the implications of synthetic content such as deep fakes. So that's Michael's background. Our second panelist is June Lowry Kinston. who is the head of unit and deputy to the director at the European Commission's Directorate for Communication Networks, Contents and Digital Technology. She's worked for the EU for 25 years and currently is responsible for issues such as web accessibility, language technology, online safety for children. Her biography says she's committed to making the digital world more accessible, secure and inclusive. Three very large challenges. So thank you, June. And our third panelist is Jan Hendrik Passoff, who is a professor of sociology of technology and the head of the science and technology studies group at the European New School for Digital Studies at the European University. Viendrina in Frankfurt, Germany. Jan Hendrik's research focuses on the role of digital infrastructure for democracy and politics on software development as a responsible social practice and the possibility of intervention and critique of digital projects through critical design. So I think we're very lucky to have these three panelists today. The format will be that we will give each of them an opportunity to present a short talk for 15 to 20 minutes. Afterwards, we will open the floor to questions from the audience and discussions with the audience and the panelists. So let me turn it over to you, Michael. Great. Thanks. Thanks, Gemma. Thanks for inviting me to be here. I think the topic's a really timely one. I want to give a bit of a narrative tour of some of the dynamics that I think characterize this area today. Some of them that are maybe more overlooked than others and allude to some of the regulatory context, which maybe June will be speaking more to. And so I don't want to go on top of that. And I think that from the attendees, I can see there'll be a really fascinating discussion. So I want to make sure we leave time for that. So one one thing when we look at the way that the large digital power is being wielded today, I think one thing that we can see cutting through it is the theme of indispensability. The there are a range of tactics that are being deployed by entities that we've come to call platforms. And I'll come in a bit later on about what that might actually mean. And these tactics are really to, in a global context, stick around. We can look back and remember MySpace and AOL and Yahoo, which still exists, but just pipes results from Microsoft Bing. And we can see their business models grew and waned very quickly and rapidly. And I think we can understand platforms and digital power on the Internet in the 21st century as characterized by a fear of loss. These large actors really fearing their sudden disappearance and the adaption and adoption of new techniques to ensure that that doesn't happen. And these techniques can be loosely grouped under indispensability. What we find as scholars of online power and the like is that many of the practices of technology platforms are really hard to characterize, taxonomize or grasp. And this should be totally expected. When we think about the way that power is wielded online. And we can look at some work. I would refer to it again as well of Julie Cohen at Georgetown University. And she has a lot in her book between truth and power. She has a lot of both overarching narrative as well as tidbits, I think, characterize this space really well. One of the ways that she characterizes it says that power is she's not going to define power in this book because power is as power does. Power flows and we'll see if we try and. grasp it identify and point to a certain kind of digital power then there's all the advantage in slipping away from that definition and doing something elsewhere with a different tactic so we can we know power when we see it online but the ways in which power are wielded in a as though you're an area of multiple stacks, a technology stack that is increasingly complex, spans the globe, integrates hardware and software and also socio-technical practices. It's really hard to get a grip on what that power is. Similarly, indispensability, we can only really understand well through the series of vignettes, I think, a series of vignettes about how current incumbents, examples of how they are using indispensability to stick around and to wield power online. So I'm going to run through a few of these vignettes. But suffice to say that that I think is also. tallies with the understanding of the European Commission right now. So the Digital Markets Act, which has been announced in draft, when you read it, the structure of the act is really applying some provisions, some specific provisions to large gatekeepers, identify large actors and say, oh, here are some specific practices we don't like. going to forbid. And I think that's that's reflective of the fact it's quite hard to get a unified theory for power online or indispensability. And instead, it has to be tackled through particular vignettes and implementing legislation. So I was was not really glad when I saw that because I would have liked the commission to come up with a very coherent theory of indispensability that alluded to me. But it resonated with with what I had with what I had noticed as well. So here's some examples. Let's run through. So let's take the first one that Jim has already mentioned in his in his intro, the DP3T project. The DP3T project was a project for to aid contact tracing through the creation of a technical protocol that allows privacy preserving proximity tracing using Bluetooth. For those of you in Switzerland, you'll be familiar with the StopCovid app. Swiss COVID, sorry, in Austria, which obviously where we are, there's Stop COVID, I think it's called, or something similar, it's got the word stop in it. And so there's a wide array of technologies that are deploying this protocol. What the research team that I was part of, with Jim, really a beacon of it from EPFL there, supporting institutionally and intellectually, And what we what we found with this project is that that you really had to work with these large platforms. You don't have an option because these people control the hardware and the software stack from the bottom to the top. And they also control the ways to distribute hardware and software onto people's devices into their hands. When it's when it was worked out, the Bluetooth was really the preferred technology for this. In order to make it function at all, it required the blessing of these companies in many forms. One of the forms was that it's very hard to run code on a device that truly accesses and makes use of sensors in a way that you want to, because there are significant hardware and software restrictions that are built into devices that we spend a lot of money on today. But another way is that app stores where content is delivered, it's very hard to start what's called sideload apps onto devices. On Google devices, it's a little bit easier to install your own software. On Apple devices, it's nearly impossible. These app stores also come with legal conditions. So you can't actually distribute software without being aware of these legal conditions. And we also saw platforms put on legal conditions through contract law. onto the distribution of tools that were using an adapted version of the DP3T contact or proximity tracing protocol that was called exposure notification. So you find that both you require things like an operating system update to even allow this software to function, but also require the legal blessing of these firms to distribute anything. So there's multiple layers of power and indispensability that are at play here. And this is only going to, I think, get more prevalent when we look at 5G, where much more data can be transmitted in real time from sensors and the general improvement of sensors on devices, technologies such as ultra wideband, new forms of Wi-Fi as well, and more sensitive gyrometers and microphones, cameras and similar devices and surely more sensors to come beyond that. So that's one area of indispensability. We no longer control the code we run on our own devices. It's not like a PC anymore. Another area is in the area of machine learning. We can look and see the data sets and the infrastructures needed to experiment to create data here become so big that only a few platforms can do this. We find that also interacts with questions of privacy in a very interesting way. So many have been demanding that less data on the way we use our devices flows from these devices constantly. So typically software developers. gather telemetry data on how devices are used or a function or function in order to update software and develop it in real time called agile processing. This comes with privacy risks. These have been also well documented in a great paper by Seda Gerses and Joris van Hoboken called Privacy After the Agile Turn. If anyone's into that, we we have additional considerations there. In collecting this telemetry data, while being respectful of privacy, some companies, Apple, for example, and Google, are applying a technique called differential privacy to gather this data. The idea is they can gather data on how their software and hardware is used, but without revealing individual patterns of usage. The catch for this is, again, one of indispensability. The particular type of algorithms they're deploying add noise before they send out data from every person's phone. They add a small amount of noise, really. That's kind of how they work. And that noise adds up to a really, really noisy data set in aggregate. Really noisy. It's the kind of data set that you cannot get any signal through, cannot get any signal from to find out what's actually going on unless you have billions of records. So that's structurally. These firms are also building in. practices of privacy, practices of compliance that structurally rely on being the largest players in the world, structurally rely on having, frankly, nearly a majority of individuals on the planet using their technology in order to statistically function at all. So we find these other more arcane forms of indispensability. It's not that there are people in the back room saying, what's the next way we become indispensable? It's that these approaches get a lot of traction. within these firms, I believe, and can be adopted that way. There are more trite examples. Google Fonts, for example, one of the reasons the web looks quite pretty now compared to how it used to do, where it was pretty inconsistent depending on what device you were accessing it on, is because Google has found a way to, by copy-pasting, place fonts access onto every website. If Google removed this, the web changes how it looks dramatically. So just little little things like that vignettes, we can see the insertion of trackers, insertion of code. And in doing so, every single page on the Web relies on Google code. Similarly to JavaScript files, which are often pulled from Google servers for generic libraries and platforms. Lots of little vignettes are becoming indispensable. We see in the pandemic huge rush to adopt Google services and education because they were they were cheap and developing tools much faster than than public providers were able to in the short time frame because they were operating again at global scale. Payment services to forming new payment intermediaries. So all of these just to give a bit of a flavor of of some of those areas. Now, what makes them so indispensable? And one of the reasons is that they are functioning at global scale. Some of these issues are very difficult to govern. Privacy is one when we've got cross-border data transfers and data flows. So we found that governing privacy through app stores or other forms of data collection or other intermediaries, really. has become a de facto norm. We've seen regulators have deputized a lot of their privacy governance to Apple and Google in their app store to say we're not going to allow certain kind of apps to run. There certainly isn't an appetite for regulators in Europe or elsewhere to be auditing apps, every app that's being able to be installed on people's phones or even carrying out regular audits themselves. They have delegated that function in practice to the platforms who are doing it for free. Security is another big issue. Since the millennium bug, we've seen people very panicking about the effect of systemic insecurity on the Internet and on devices. And the ability of devices to be connected with every other device, not all of which will be trustworthy or secure and which costs a lot of money to keep updated, make that a heightened problem and risk. So we see app stores again stepping in in the meantime to form a global governance solution where they prevent or limit the ability of insecure code. We don't have a clear public alternative for this. These alternatives would require global cooperation. They would require a capacity and money spent in the public sector to provide what ultimately are public goods, about being able to seek privacy that works, being able to seek systems that are secure and open. So there's an urgent need to create these public goods, I think, and to replace and displace the digital power that we see emerging and entrenching and becoming indispensable today. So to finish, I just want to think of what we might call for to do this. One of the things seems to be quite improbable. We need to, through public institutions. outpace the ability of platforms to establish settled norms and governance structures around new technology that requires coming together and it seems completely improbable impossible so any thoughts on how to do this would be great um uh coming together through countries and sectors and saying we will create capacities to audit software to create open source educational tools other tools in response to emerging situations emerging challenges together Actually, it won't cost that much if everyone came together and paid together for these public goods, released them openly and so on to tackle new security threats and so on. But we I think. If we don't do this, we de facto deputize it to infrastructures that are privately owned, which they use to entrench their power and make them de facto unregulable because they are too big to fail. If you remove them, you remove your entire regulatory de facto regulatory structure for the Internet as well. The last thing I think I want to say is that we should be demanding building blocks instead of finished products. We have outsourced the capacity to, and this is both the public and the private sector, to define our own problems in-house, to frame them, to say, OK, here's a human challenge. It may have technological approaches to solving or managing it. What do we need to do to do this? What building blocks would be useful to make this workflow run, to deliver this good or service to parts of the population, to educate people or whatever you're trying to achieve? Instead, people look at platforms or large technology companies for finished, polished products, import them, put them in and say, well, that's good. That's in my workflow. No, not good enough. We need to go back to the rudimentary building blocks. Think of how we can make really robust building blocks, make them interoperable and make them context dependent so we can say, OK, well, this context. That pre-built tool over there doesn't really fit. We're going to build our own tool. Maybe it's multilingual. Maybe it's properly in touch with different contexts, which are obviously very important in Europe to consider and think about. At the moment, off the shelf tools are not going to serve us well in the long run and will entrench power. So demanding more of those, achieving those public goods may help us deal with digital power today. But it requires a normative vision of what technology and the Internet should look like, what good looks like. And that's always been very hard to get in politics because political parties don't have a good, clear idea about this. So we need to build that normative vision. build resources, build capacity at a global scale and do it at a frightening pace. So a daunting challenge, but I think one that we should try and head towards. Thanks a lot. Thank you very much, Michael. It was quite a scary presentation. I'd now like to turn the floor over to June. OK, and I'm sorry to disappoint, Michael. That was a very, very interesting presentation. But I'm sorry, the EU is not noted for doing things at a frightening pace. So, you know, don't count on me. I'm really sorry. However, thank you very much for inviting me to be here as a policymaker showing things from a non-academic point of view. And I'd like to talk a little bit about how the EU is trying to change the geopolitics game as far as data is concerned. And in the questions afterwards, maybe there's a vignette I can share about language technology. So building on what Michael was just talking about. But we're talking about data, both the big data that looks so promising for economic growth and also obviously personal data in the hands of the GAFAM primarily at the moment. But I want to start probably with a very boring vignette. My life story, at least my overview of my professional life story, because what I don't put in the public bio is that before I joined the EU, I used to work in Germany as a British intelligence officer way, way back when in the last century. And back in those days, all the files were paper files and all the messages sent to London were handwritten on forms and sent by Telex, secure Telex by a dedicated comms officer. Now, when I joined the EU, the publications office in 1996, the publications were still. mostly on paper and public information, which was great to be working in, could still only be accessed by more or less well-defined set of gatekeepers. They were either sales agents or specific information networks like the European Documentation Centre. Some of you may have in your universities. And if you didn't know one of those or live close to one of those or could afford the priced publications, then just tough. Now, back in 1996, when I arrived, the publications office was also starting on this totally new venture of building a website called Your Lex, the first one we built. And the very first thing it offered was the recent official journals that were published that day, the same day that the paper journals were sent out. And that was a revolution. And Ulex, as I'm sure most of you know now, is the reference database for EU law, something like nine million items on it, 24-7, all 24 official languages, and is vast. And in contrast to the thousands of people who bought the official journal paper subscription back in 1996, in 2019, the last data I have is that Ulex attracted more than 56 million visits. The reason to take you down this memory lane is just to illustrate the impact and the speed, as Michael was saying, of the digital transformation during my working life, really the last 30 odd years. And just to remind ourselves again of the profoundly positive impact that access to digital access to information has had. Now, whether you're a business or an academic or a lawyer, a journalist, NGO, or even that most mythical of creatures, the EU citizen. Even if it was a European citizen at the time, Sir Tim Berners-Lee, who created the World Wide Web, with these key digital services being virtually now all American and all based on our data, worldwide data, what can we in Europe do about this? Well, I hope to show that we are at least trying and we are doing rather a lot. As you no doubt know, making Europe fit for the digital age is one of the six headline political ambitions of the von der Leyen Commission. And to quote the president's agenda for Europe with some abridging, I must say, she said, I want Europe to strive for more by grasping the opportunities from the digital age within safe and ethical boundaries. It's not too late to achieve digital sovereignty in some critical technology areas. algorithms and tools to allow data sharing and data usage. Because data and AI are the ingredients for innovation that can help us find solutions to societal challenges. In order to release that potential, we have to find our European way, balancing the flow and wide use of data while preserving high privacy, security, safety and ethical standards to release big data for innovations that can create wealth for our societies and our businesses. So let's first consider the measures on big data and the EU's vision, at least, of a data economy. Now, European data portals have existed for some time, offering a one stop shop access to public sector, non-personal data shared by member states and by the European institutions. But we have to do much more. data. Bit of a surprise for those who were expected to say artificial intelligence. He said data, big data, non-personal industrial data, but also personal data that's currently captured, like on paper, the health data, mobility data of citizens that people are reluctant to share. And his vision is for the EU to create a new model for data sharing and for us to be at the forefront of the second wave of the data revolution. So the political pressure was on and he meant business. And by February 2020, my colleagues had already delivered the European data strategy. The objective of that is to make sure the EU becomes a role model and a leader for a society empowered by data and the most attractive, most secure and most dynamic data economy, data agile economy in the world, which is quite an ambition. So the strategy gives a good analysis of the current issues blocking data sharing and proposes concrete measures across four pillars. Basically, it seeks more data for economic growth, that is, new business opportunities for small and large firms alike. Society should benefit from this better evidence-based policies and better solutions to address challenges like climate change and the COVID pandemic. Companies should stay in full control of the data they generate and its value. And individuals should get the rights and the tools and the skills to stay in full control of their data, being able to share, knowing that their data is being handled in full compliance with data protection rules. And this strategy offers a genuine alternative model to the data handling practices of the big tech platforms. So that was adopted in February. And already in November, it was followed by the first legal instrument, the proposed Data Governance Act, which aims to make more data available as well as to facilitate and strengthen trust in data sharing mechanisms, both across sectors and across member states. And this offers the new European approach based on the neutrality of the new data intermediaries to increase trust. Because the idea being that with legal certainty and increased trust, then both businesses and individuals would be more prepared to share and pool their data. So the Governance Act should facilitate the reuse of certain data held by the public sector with by natural or legal persons, stuff that is currently either ambiguous or restricted in terms of intellectual property rights. It creates new rules on neutrality, increasing trust in novel data intermediaries as bridges between data holders and potential data users. It promotes a higher degree of control of data by EU citizens and companies to strengthen Europe's digital sovereignty in the area of data. And it allows data use on altruistic grounds. That's data voluntarily made available by individuals or companies for the common good and using a common framework. So if you look at the related documents, which are all available. course, online. And the arguments for investing in a data agile economy, which respects European values and European rights, seem clear. And with the pandemic, we see the positive effect and the need of data sharing for the public good. And to be fair, the technology companies have played their part by sharing anonymized data on population movements, for example. And the strategy isn't just fine words. It's backed up by some serious funding under the Digital Horizon and Connecting Europe facility programmes. And in addition, the member states earmarked a minimum of 20 percent of the 670 billion recovery and resilience facility for the digital transformation. And why did they commit to such eye watering sums? Because the belief is that creating a single digital market for data that is open but sovereign. will be a powerful engine for innovation and for new jobs that are essential to help prepare the economic and social damage, of course, following the pandemic. And tackling the EU's over-reliance on third-party, third-country tech will provide us with digital strategic autonomy that we need. Veering away from external political and economic pressures will allow us to assert European values. And this is what Breton meant by the second wave of the data economy. Because with the ever increasing production of data, especially in the industrial sector, we make sure it's used and shared in a way that those who generate the data benefit from it and stay in control, whether individuals or businesses. Whereas in the current version of the data economy, as Michael has outlined, the benefits have gone to a handful of businesses, US based normally, and those who got the data first and acquired that dominant market position they're so reluctant to lose by offering us, to be fair, convenience and connections in one entertaining and possibly addictive bundle based on the transfer often of our personal data. And that's the data economy version one. It's in this context that the Data Governance Act seeks to offer this European alternative to the current business models around data. And this alternative path, we hope, will allow us to ride the second wave of the data economy instead of watching it from afar. And to quote a rather timely article in the Financial Times last Friday, the algorithms and I are in a tug of war. I'm addicted to a network of companies that are financially incentivized to simplify me. I despise them, but they give me the things I love. I feel like an addict and a pawn in someone else's game. Now, you could argue that we are in control and it's up to us, to each of us, to create or to check or TikTok or Facebook or Insta or Twitter account. But we're pretty bad at it. We may intellectually despise those business models behind the services, but most of us still use those digital services and we stay the porn in someone else's games. And as Michael said, those social media apps or other services are crafted to be indispensable. They're very, very sticky. And it's hard for us adults struggle to disconnect how much more difficult it is for younger users. And in practice, really, for the younger generation is already for some professions, then digital abstinence is just not an option. And we know things have got out of hand when even industry leaders are asking for more regulation. To quote Mark Zuckerberg from his Washington Post op ed article from March 2019, he requested new regulation in four areas, harmful content, election integrity, privacy and data portability. And said effective data protection needs a globally harmonized framework. People around the world have come for comprehensive privacy regulation in line with the EU's GDPR. And I agree. So what are we doing on this aspect? Let's consider personal data and European efforts to assert and insist on European values in that field. The EU view, at least, is that with the GDPR, the General Data Protection Regulation and the E-Privacy Directive, the EU has put in place a solid and a trusted legal framework for the protection of personal data and set a standard for the world. The GDPR, of course, doesn't prevent the transfer of data to third countries, but it guarantees the protection of personal data transferred outside the EU in full respect to those EU values and rules. And I guess many of you, like me, are starting to see the impact of these strengthened data protection rules and the recent court rulings on international transfer in how we work and the tools that we use. And the report on the first two years of the GDPR application is rather encouraging. And to quote from it, the adoption of the GDPR has spurred other countries in many regions of the world to consider following suit. The EU's leadership on data protection shows it can act. as a global standard setter for the regulation of the digital economy. But it's still too soon to draw definitive conclusions regarding the GDPR. But we note that it has changed things and it has increased awareness of users' rights. Though more certainly needs to be done, both on information to users about their rights and on creating effective and appropriate tools for informed consent. And certainly from my point of view, for safer Internet for children, also from age verification tools. And the GDPR, as I'm sure you know, goes hand in hand with the e-privacy rule still from 2002, as the EC proposal from 2017 is still in negotiation. Now, we have a plan to try and push this further forward because also in February, the five year digital strategy shaping Europe's digital future was adopted. And that refers to creating a trustworthy environment for the data that's provided both online and offline. And again, going back to the European strategy for data, it spells it out, saying in a society where individuals will generate ever increasing amounts of data. The way in which this data is collected and used must place the interests of the individual first in accordance with those famous European values, fundamental rights and rules. And the commission would be particularly vigilant in this regard. Individuals should be further supported in enforcing their rights with regard to the use of data they generate. And they can be empowered to be in control of their data through tools and means to decide at a granular level what is being done with their data. so-called personal data spaces. Now, this is important for all of us. But as I mentioned, I am particularly concerned for the younger generation, for many of whom life online and offline is basically fused, two invisible sides of the same coin. And with their detail shared even before birth, thanks in early years, at least entirely to their proud parents, it's vital we protect the younger generation from the algorithms and AI that could affect their health, their education or their professional prospects. Did you know that one third of parents surveyed share fetus photos of their babies, their bumps? And only 6% of parents surveyed said they never posted photos of their children online. And the data and security aspects of posting that your child sleepwalks or loves a certain toy or birthday photo so their birth date can easily be identified are obvious, but are all too often being ignored. So we have plans for a data economy version, too. We have funding assigned to build it. We have personal data rules that should match our European values. But that's not all. As Michael mentioned, the Digital Services Act and the Digital Market Act were two key legislative proposals adapted by the Commission in December. And they're really the European response to the impact that the online platforms have on our societies and our economies. So the Digital Services Act, the DSA, seeks to regulate the obligations of digital services that act as intermediaries, connecting the consumers with good services or contents online. It builds on the 2000 e-commerce directive and seeks to better protect customers and their fundamental rights online, consumers of all sorts, and to establish a powerful transparency and a clear accountability framework for the online platforms. It covers all different types of providers in a proportional way, with specific measures for the very large online platforms, the ones the key. topic of our discussion today, defined in the draft as reaching more than 10% of the EU population. There's many different aspects of this horizontal proposal, from flagging illegal content to identifying counterfeit goods and fraudulent traders, but of particular relevance here, there are wide-ranging transparency measures for the online platforms, including algorithms that they use for their recommendations. There are obligations for the very large online platforms to prevent abuse of their systems. Researchers will finally get access to data of key platforms and there are obligations on transparency on online ads. And this is complemented, as Michael said, by the Digital Markets Act, the DMA, which aims to ensure fair markets in the digital sector. I'm sorry, we couldn't have come up with the. The definition you wanted, Michael, I'll pass on that feedback for sure. But it aims to tackle unfair practices and this lack of contestability vis-a-vis the very large online platforms and business users to introduce rules for the gatekeepers in the digital sector. Again, it's horizontal legislation, but specifically gatekeepers may not use data obtained from their business users to compete with those business users. There's an obligation to provide effective data portability for end users and the techniques of profiling consumers should be reviewed. So there's a lot achieved in the first year of the commission, but there's a lot coming up in this year already. In the commission's work programme, we foresee a data act, another key proposal, which will aim at ensuring incentives to generate data and a fair distribution of value resulting from data. Not an easy thing to define. And the discussions are going on on that. But that also may consider rules on the Poema's personal data spaces. We'll see the health data space and the Green Deal data space being launched. We'll see a secure and trusted European ID to make online data sharing also help keep that in control. There will be a horizontal regulation on the ethical aspects of artificial intelligence and another initiative on political advertising. The open data directive should reach its transposition deadline on 17th of July. There should be an implementing act on high value data sets to be adopted. Funding will start on the strategic and personal data spaces under Horizon and Digital Europe programmes. And negotiations will continue on the alphabet soup of DMA, DSA and DGA. And remember those four areas where Zuckerberg had requested regulation? Well, they have pretty much. There are things in place. For harmful content, we already have the Audiovisual Media Services Directive and the DSA proposal foresees further codes of conduct for harmful content. The election integrity, well, the European Democracy Action Plan was adopted in December. And for privacy and data portability, we have the GDPR, e-privacy, as well as the multiple data initiatives I've mentioned. So I hope I've shown you, I hope I've convinced you that Europe is at least trying to tackle these digital superpowers. The Commission, this Commission, is actively proposing to change the rules of the game as far as data. is played in Europe. And then the data economy version two, we expect the processing of data to be much more decentralized, for example, in the case of self-driving vehicles, and less likely to depend on large players with their walled garden ecosystems. Data from sensor-equipped machines, other than these devices. So tools and Internet of Things devices, increasingly in data use, that's my 20 minutes, will become more important than the personal data that has so far dominated the data economy. And Europe has everything to play for in these new circumstances. It's not perfect. We're far from finished, but we are trying, as has been said in a different context, to take back control. And I hope that we'll soon look back on this period as the digital Wild West as being just as antiquated as my handwritten telex forms. Thank you very much for your attention. Thank you very much. Our final speaker is John Hendrick. And I'll turn the floor over to you. All right. Thanks a lot. And thanks a lot also for Michael and June for already. putting some of the points on the table that I have on my list so I can maybe keep them brief. Before I start, let me start with an appreciation or with a thank you for, because we did not only have a date change, we also had a name change of the panel we have today. I don't wanna spend a lot of time talking about. that term that we were previously using for the panel. But I would just start off my discussion today with a small kind of warning. There are some terms going around in digital policy discourse, specifically also in public discourse on digital policy currently, that... Well, carry some weight and that do have the potential to act as false friends, specifically in EU policy. One of them, of course, is the often used term of sovereignty. Torsten Thiel has wonderfully deconstructed that term. in, I think, yesterday's FAZ article. But at least it has the option for reinterpretation and appropriation in terms of civil and popular sovereignty in terms of giving citizens more rights, giving citizens fundamental rights in that regard. There are other terms currently floating around in the discourse on big tech and the problems of regulation that are... far more complicated. The one we have been, we've been having as a title digital colonialism is one of them, which might make sense in the US context, where the colonial experience has been some other type of experience than the European one, where we as Europeans have to always take into account that we have some background using these kind of terms specifically in combination with terms such as sovereignty. So just as an opening remark on that. My remark today is starting with an observation of a sea change in EU digital policy debates. And that's why I'm so glad that June has already highlighted some of the major points in that and took us through the whole complexity of current EU regulations. But after having lots of discussion only on digital industry policy for quite some time, mourning that there are no European companies, among the top 20 digital champions and then calling for deregulation and state aid to actually create something like national or European champions. We then entered the stage in where, which is still around, where claims of European digital sovereignty are connecting both calls for European champions and industry policy with references to public sovereignty, which give them some potential human rights and open meaning. But now... We are in a situation where and this is where it links into to June's talk already that we are seeing an area or an era of regulation with teeth coming up in specifically in terms of. the connected DSA, DMA and the DGA packages that are on the schedule and on the radar for the next year or years to come. Specifically because they introduce a set of rules and obligations for very different kinds of platforms and services and for the first time actually defining some of these, trying to define some of these services and put them into straightforward categories thereby allowing no longer the platforms to actually switch categories whenever that fits them well. And to just give you an idea, of course, June can highlight that much better than me. The basic rule is size matters, right? It's a question of different rules and obligations for... very different types of platforms, specifically highlighting the hard rules and regulations for VLOPs or very large online platforms. The 10% of the EU population user base or in the Digital Markets Act, the gatekeeping company category for that. And it also, this is really interesting from a sociological and social institutional point of view. It sets up a set of bodies and actors actually responsible for those types of enforcing of regulation and audit, specifically the digital services coordinators on national level, the European Board of Digital Services on the EU level, connecting those different national bodies. And of course, the commission itself having both in the DMA and the DSA, very specific new rights for investigations, for interviews, for getting information from those companies, which is really interesting. If you want to put it into one set, you could basically say it's decentralized for small platforms, so handled nationally or through these context points. But the interesting point made by these proposals is that there is the option for direct EC intervention for specifically the large or the very large online platforms. So based on this observation of a fundamental sea change in digital policy that I totally welcome in terms of how it played out, I would like to just add three comments or three arguments or three areas in which I think that those steps towards a more healthy digital public sphere and digital environment could be actually wrapped up. or pushed up a little further in lots of regards. Those three comments are based on the notion of infrastructure, the notion of regulation in industrial policy and the question of democratization and accountability. Those are the main headlines of my three points I would like to add. Infrastructure first. Infrastructure First links nicely to what Michael has already highlighted in terms of the full stack of indispensabilities. Linking also maybe for those who love to read philosophy, that's also wonderfully highlighted by Benjamin Bratton that this is actually the way in which... power in digital context is actually working in stacks. So what I think is still lacking from both the debates on digital industrial policy around and also in the drafts of the DSA and DMA and in the debates around their implementation. is a thorough understanding or a thorough conceptualization of what scholars in platform and infrastructure studies have called infrastructuralization. So maybe that's a term to be used for this indispensability that Michael described. So it's not that these very large online platforms are not only platforms. That's one of the major misunderstandings treating them for quite some time, but have been for the last two decades turned themselves into infrastructure providers of other digital platforms and other digital services in a cross-country sectoral way. They provide storage, compute services, cloud functions, frameworks, and so on and so forth. Examples of that, of course, are Amazon's AVS or Google's cloud platform, other services summarized under Microsoft Azure's systems, but also others, of course. And still in the regulations currently, we're talking about online platforms. So like, for example, citing the DSA. It's providers of a hosting service, which at the request of a recipient of the services stores, disseminates the public information. That's maybe one of the quotes here. And they are basically the icing. So the visible surface on a large stack of problematic infrastructure. So the question is, can EU and other types of digital policy dig down to that infrastructure level? And can it get a grasp on these points? The second argument would go to the, I think, still missing link between regulation and industrial policy. So the regulation with teeth I described in the beginning. is there on the one hand, but there's also claims for industrial policy on the other. And really made is a link between both that connects them in a way that votes for active intervention and ex-ante approaches instead of just passive regulation and ex-post evaluations. There's some moves made in the Data Governance Act, which are really interesting in that regard. But I guess there's more to do in that. that direction. I would like to just add a suggestion to try to add the DSA, DMA, DNA rationales to the funding schemes and the partnership programs. The DGA, that's actually happening in terms of the funding that is allocated in Horizon Europe funding and the various funding options available. But I would love to see some of these ideas that are floating around in the DSA, DMA discussions, finding their way into actual funding schemes to actually create maybe an option for what Michael referred to, to be able to actually help, for example, public institutions and other types of actors to start working together and provide digital infrastructure services as public goods. Because if you look at the landscape, in Europe and elsewhere, there are lots of really interesting examples of communities, of actor constellations, of projects that are trying very hard to come up with public good alternatives to the common infrastructure services that we're used to. One of them, for example, is the public spaces group in the Netherlands or the public signals groups, which has a US background, but still has also a European counterpart. But they're struggling for funding and they're struggling for money. They're struggling for help, actually. And they would be potential partners in actually producing alternative infrastructure technologies that could be framed in a public good scheme. So maybe the last intervention or the last point I wanted to raise is about governance or democratization. And it's all about accountability, transparency and public participation. While the DSA and the DMA actually introduce forms of public accountability or specifically political accountability for these platforms, which is a really cool move, it's interesting that the DSA and DMA framework, at least at its current formulation, because maybe it lacks implementation now, does not apply these accountability and transparency roles to itself in regard to that. There are some interesting problems, for example, in the institutional layout. For example, how do you deal with the independence of digital services coordinators who actually are these coordinators on a national level? How do you deal with the different types of institutionalization in different countries when they have to come together in the sport structure? on the EU level. Are there overlaps with other regulatory bodies such as the SDRGA, for example, the European Regulatory Bodies for Audiovisual Media Services, for example, or others? Is this compatible on the national and other levels with media and telecommunications regulation? Those are interesting issues actually on the radar now. But also it opens up the question of the independence of the EC when auditing very large online platforms. It also opens questions in terms of vetting. So how do you actually vet the auditors, the independent researchers? How is that implemented? That's a really interesting question of implementation that are simply not dealt with, I guess, yet. This is up to come. But most of all... What I find interestingly lacking in the current approaches is that transparency and accountability of the thereby established governance framework itself. So, of course, for example, there is the need for publication of reports, for example, by the DSCs or by the board, specifically also reports by the EC and platforms reporting, for example, numbers of cases, measures taken, these kind of things. But the question is, how do you actually build in public consultation measures into that? Do we create something like a closed shop of auditors and consultations? Or can we open this up for democratic discourse and can we open this up for public? for public participation. A suggestion could be to make the DSEA and DMA governance framework itself accountable and open for participation. For example, by adding co-production and co-consultation formats, by integrating civil society actors in the review of the reports, for example, or in the work of the boards. And by that, actually taking a huge step towards not only a safe and secure, but also a participatory and civil driven digital public area in Europe. All right. I guess that's my three points I wanted to make. And I'm really looking forward to the discussion we're having. Thank you very much. Great. That's a lot of ideas. We have a number of questions in the chat and I will start with some of those. If people would like to pose the questions themselves, you could raise your hand and I will also. call on people that way as well. So you use the raise hand mechanism in Zoom. I think it works better than the raise hand in video mechanism, if you can. These days, it's under reactions, if you haven't kept track with the latest versions of Zoom. So let me just start by, so people can find the raise hand. Let me ask one of the questions in the chat. Giuseppe Attardi asked the question, which I think is an interesting one, is that most of the services these days are nominally free in the sense that you use them without any economic ties. And the services collect information and sell it and use it to sell to advertisers, basically the people who are viewing the service. So it's an ad driven model, which is not original to the Internet, obviously. Is there a solution to the problem to outlaw this economic model and force the service providers, the services to go to other models such as a subscription based model? Or one of the suggestions in the question was an example like Wikipedia, which is funded externally through private donations and depends upon volunteer services. So I'll throw it out for any of the panelists to take. Michael? Yeah, speak quickly to that. You've got to distinguish between problems of the ad model that relate to surveillance, manipulation, data collection, and problems of the ad model that relate to commodifying attention. So the latter is any, you know, if you are charging advertisers based on valid clicks that they get to an advert or a number of eyeballs that get placed on advert, regardless of what the advert is, then you're going to have that problem with all types of adverts. And you may even have that problem to some degree with physical magazines and newspapers that rely in that way. And you're choosing which newspaper to buy and advertisers being paid in that way, for example. I think to outlaw or to at least regulate further or to exactly force the existing regulation of the data market and ecosystem around advertising isn't to outlaw the advertising business model. There's a huge amount of advertising that can work in contextual ways without having to profile individual users by just using the time of day, their rough location in terms of country and so on, and also what they've been looking at on that particular site, perhaps. There are also examples of just within that session or even... just what content it's next to exactly. All of this is not very invasive. And indeed, there is some evidence, and we'd like to have more studies of this. But for example, the New York Times in Europe allegedly reported itself. turning off real-time bidding and programmatic advertising and moving more towards contextual advertising and found a revenue uplift. You've got a lot of intermediaries that you can remove. And the amount of money that gets, when you take the amount of money an advertiser pays, they pay one euro for an advert. The publisher gets about 40 cents of that. It depends on your exact situation, but there's a lot of intermediary charges. There's a lot of ad fraud that happens in the middle. And if you can somehow focus on getting rid of this, then there's actually quite a lot. So behavioral advertising is not really the be all and end all of the Internet. It's just that's a myth largely peddled by those who make a lot of money from intermediating behavioral advertising. Good answer. So. I think Michael Stampfer had his hand raised. Many thanks. My name is Michael Stampfer from the Vienna Science and Technology Fund. I'm part of the group who tries to bring forward the digital humanism agenda here in Vienna. I have two questions to June. One is... I'm totally fascinated now by the speed and by the great amount of work Commission is doing. How can we, as I have three or four agendas to follow, not only the digital acts, how can you help people like me to keep track? Is there a kind of reader's digest of all these acts? I'm thinking of setting up in Vienna some kind of reading circle or something like that, where we meet regularly and read the documents. Otherwise, I'm totally at sea. So this is my first point. And you could really help people like me with that. The second is something completely different. The big platforms are successful because of their rogue capitalist mechanisms, but they are also successful because they are providing good services often. And I'm an inhabitant of a nation which provides abysmally bad platform services, which does not give access to government data and so on and so forth. And part of the huge distance and the huge gaps we... experience is not only how far off the Googles and Facebooks are, but also how reluctant the state is to professionally collect data, share them with scientists, researchers and citizens and so on. Can Brussels do anything in this respect to at least give some incentives to the nation states to be more open, transparent, and professional with their data? I know that's some other area, but I think there's a link to the success of some of the platforms also. Two good questions for June. Well, I'm glad someone notices there's been a lot of hard work going on in the last 12 months because my poor colleagues in the data unit have been working really literally every weekend since the commissioner took office. And there are times when it's good to have political visibility. There are times when it's good to be able to sleep occasionally as well. So I will certainly pass that on. I think the best way to stay abreast is really to look at the press releases, you know, that come particularly after the college meetings. But if you want to give me your email, I can see if there's anything specific, if it's particularly on the data issues. I don't know if they have mailing lists or things like that, but normally the press releases. And I think you can subscribe to those as well. Or, yeah, that's probably the best way of saying apart. And I wish you good. like with your reading circle initiative if it takes off. And for the big platforms, yes. And the lack of the lack of data from the public sector bodies. Well, if it's any consolation, probably, I don't know. Good. Maybe 10 years ago, eight years ago, when the data portals were first being set up and I was still at the publications office, which did the technical sort of back office stuff of those. We were having exactly the same discussion and going around knocking on doors of the institutions saying, we know you've got good data there. Come on, share it. Get it out there. And thank goodness with Eurostat obviously being a very, very good example of how to do it. So they have shamed some people into sharing their data. And I think the dialogue has moved on a bit that we're not having to make. the case and explain any more why data is important and why it's useful. However, for the member states, I don't know what the situation is. It's not my unit. But as I say, I think there is an implementing act meant to be coming out on high value data sets coming this year. So I'm not sure if that's for member states or just in general. But the attitude certainly is through things like the PSI directive that the default setting should be there's got to be a good reason not for making it public. And hopefully with the Data Governance Act and now with the new Data Act, we're trying to actually then remove some of those disincentives for the types of data that weren't sort of the obvious, non-personal, easy to share type public data. Thank you. Before I move to the next person, let me try to intersperse some questions from the chat with live questions. So a number of questions mentioned Tim Berners-Lee's solid architecture for a decentralized rep. I'd like to pose this to the panelists and ask whether they believe this is a solid way forward for building a new architecture for the Internet. Michael? So yeah, Tim Berners-Lee, as June said, at the time a European citizen. Although that's debated because the idea actually of European citizenship appeared in Maastricht in 1992. So if we're doing time-limited European citizenship, then I think he may have not been. But regardless, it's a solid idea. It's got some different features, but it's the same as this kind of personal data store idea. Edge computing. bring computing in a way physically to the edge that you'd have on a cloud server and have a sort of a space of data and computing that you can collaboratively run things like social networks or allow access to your data through, share it in certain ways, but refrain from sharing it in other ways. So there's a lot of kind of promise from this, but I think there are also a lot of problems too. So ultimately, If we're worried about people, groups, understanding and manipulating large portions of society or gaining power, then that comes from coordinating a protocol. We see that working already right now with devices like iPhones and so on. Your ability to coordinate a protocol is undiminished by the existence of solid. All you have to do is be the person who's the software everyone installs and downloads. And we've got, as I said, the indispensability part. These existing digital superpowers are expert in becoming indispensable protocols that everyone will have to run on their solid devices regardless. And also, people aren't going to purchase new devices or... Then they're either going to have to use the cloud, which is also then largely controlled by these organizations or use devices which are largely under control by these organizations. I don't think everyone is going to be purchasing a new device per se. So I think that's one of the major topics. I'd also lastly just say that these firms are heavily investing in the kind of privacy preserving data analysis that that solid purports to support the idea that they can. do all the things they do today without seeing any personal data whatsoever by binding their hands, having it encrypted on devices, be unable to respond to warrants, be unable to examine it for content regulation under the DSA or other acts. That's their dream. People act as if these companies want to sit on a load of personal data. They don't. They actually hate sitting on a load of personal data. They love the results of personal data, the ability to optimize over it, the ability to train systems on it, the results of it. They do not care about the exact. contents of Jim's email or whatever. This is not what they care about. So if you can separate that out, give them the ability to optimize with losing the actual thing that caused them the liability and the risk, they're going to do that. And it's the ability to optimize and similar, which is where their power comes from. So I don't think Tim Berners-Lee's proposal actually tackles that issue head on. So do other panelists have a... opinion on this, or I can proceed to Allison, who's next. Allison. Yeah, thanks. Great presentation and set of comments. I'm Allison Stanger. I'm presently at the Center for Advanced Study in the Behavioral Sciences at Stanford University. And I'm just fascinated by the Commission's or Europe's perspective on the notion of sovereignty, because I heard the terms digital sovereignty, civil sovereignty, popular sovereignty and public sovereignty used in today's talks. Could any of the panelists comment on what the differences are between those and which is most important from perspective of public policy? It's a big question, but I think words mean a lot. I don't know if I can give a full sketched answer to that, but as some others have brilliantly shown, the different notions of sovereignty that are blended currently in debates on digital sovereignty have some... some goods and bads attached to them. So if you, for example, look at the history of the concept of sovereignty in political theory and the question of the role it plays for defining Specifically, the sovereign powers of political entities such as the state and linking that up to an entity such as the EU is in itself an interesting move in terms of how to describe that. But that aside, that digital sovereignty has been introduced. specifically by approaches in China, in Russia and in Iran to actually come up with protectionist ideas of creating like walled garden, well, basically walled garden internet specialties is problematic in itself. And Thorsten Thiel has wonderfully shown that this is an interesting shift in the use of sovereignty when it comes to digital technologies, because in the very early beginnings of the liberals, Silicon Valley ideas. actually used as a counter argument that everything digital should be opposed to sovereignty, should be actually living in a space which is less controlled by state sovereignty. And now we see these moves of political entities to actually use the term to regain control and to regain these ideas. That's interesting. and that's problematic. In legal discourse, Michael might be able to share more thoughts about that. There is, of course, connected to theories of democracy and conceptions of how to set up democratic institutions, a concept of public sovereignty or of citizen sovereignty, which is basically linking it to the individual and linking it to the individual as being the carrier of certain rights and the ability to And this has been used in EU digital policy debates quite a lot to actually push the term as a defining feature of the European way. But of course, all these other connotations come with it and create a situation of unclarity. if it's also linked to a protective agenda or if it's also linked to a specific form of reestablishing specific centralized state-driven power. So there might be other terms that are better to use for pushing digital policy, but at least it's not as complicated as others that are floating around the agenda currently. michael or june like to come no uh george i think you had a question thank you and i want to thank the speakers first i i have a a question that perhaps is a address to june to start with but it cuts across also what michael and john hendrick said in that question is the timeline of impact of all these initiatives that Europe is undertaking. I think from what I gather there's nobody that disagrees with any of these or with the goals of any of these. But there's a timeline of impact inherent in it and in the meantime stuff happens. For example, it was mentioned that 20% of the huge recovery fund will go to digital investments to all member states. Now, these investments have already started, although not formally. And guess who are the recipients of all these large sums of money? The same big tech companies that, let's say, were discussed in a different context, because simply there is no alternative. Now, in some cases, for example, in, let's say, cloud service areas, which many countries now are investing very heavily in, the European service cloud service providers have one percent of the market of the european market and so what are they doing i mean amazon is building a new a whole new infrastructure in greece for example to mention my country question uh can can a timeline of impact be seen or understood while all these things are happening. And that, to end, would also have significant, I believe, geopolitical dimensions, which is another topic perhaps for another time. No, it's a very good comment and a very good question, George. And certainly, now as the member states start to... send their proposed plans for the digital well for the investment and I see well we see some of the ones that connect that can to look at them the commission has a right of regard or has to issue its approval I think to make sure they're in line with the The objectives of the RRF that clearly everyone is wondering if we haven't just shut ourselves in the foot with that, because it's exactly as you say, if you want quick and easy solutions and you want to spend the money quickly, then you're going to go for the people who can provide the service. If I can show anecdotally, and I don't think this is particularly confidential at all, but say in my unit, we look at language technologies and we have an in-house automated translation tool. called eTranslation, which we've now made available free of charge to European SMEs as a sort of rival, if you like, to Google Translate, because exactly so that firms can send their stuff to get translated and not think someone is reading it on the other side of the pond. But when the president wanted a multilingual sort of speech recognition system, where did we go to? We are trying to develop one in-house, but of course that takes time. And who has one ready to hand? Of course, it's Microsoft Azure. So we actually are caught in this dilemma in terms of the funding. And so there is a real tension there between doing it sort of quick and actually wanting to spend the money and see the practical impact in terms of digital transformation. And who is the beneficiaries of those of those money, even if it's obviously European subsidiaries of the firms concerned. And in terms of the other aspects, in terms of the legislation and the strategy, I mean, there really is. You know, I'm not joking that. My colleagues have been working every weekend this last year on data and they're likely to go on working every weekend for this year as well with the Data Act due. So there's a lot of work going into that. But then, of course, it goes into the legislative procedure, ordinary legislative procedure. And there we get the debates, you know, between Parliament and council. And as you see with the e-privacy proposal, things that. might look obvious from a certain point of view in fact are not necessarily obvious once they get to that level of the negotiation so the timeline for actually when these things become law is really not then in the commission's control the commission's done their bit right at the upstream and then what happens is obviously we're active players in that but It's not that we're the sole player in that. And that can be very frustrating because obviously for this commission, they've got five years, one year down in the mandate and they want to see a difference by the end of it. And that really is, I think, the whole tension between the way we do politics in Europe. And with the system that we have in the European Union, where we have all these checks and balances and these very cumbersome, you know, legislative procedures. And what Michael said, you know, we need to be able to sort of turn on a sixpence and get these things changed very quickly. And maybe this is really just a personal view. I don't see the systems changing, but I think the gravity of the situation perhaps has changed the willingness of people to actually come to very sort of quicker. adoption of proposals, perhaps, maybe. I mean, that's a hope there, because I think everyone realizes really what's at stake at the moment, and that we have to find this European way and actually be seen to be putting something into action. But I'm not sure I can offer you a better answer than that, I'm afraid. Thank you, June. We hopefully have time for one last question. Wolfgang Bolt has his hand up. quite a while, a virtual hand up. So could you please ask a brief question? Yeah, thank you. Well, actually, I had one in the chat and one I would like to raise now, but I'll start with the one that addresses sovereignty, because I heard, I think it was Jan Hendrik say that the concept itself is problematic. That applies to very many concepts like power and what you have. But still, it is a very practical issue. It is a practical issue when you want to start the fighter plane and you have to ask the U.S. whether you can operate the software which enables the plane to take off in the first place. Or it can be a problem when we find ourselves rather sooner than later in the situation where there will be Only two and finally, probably only one large scale manufacturer of integrated circuits. So far, we have been focusing in the discussion mainly on the software and the codes and what you have. But hardware concentration is an issue as well. And that relates to my second question. And that is. Jan Hendrik was referring to industrial policy as an approach to come to grips with some of these problems of sovereignty, not only digital, but also technological sovereignty in a broader sense. And he was mentioning just the... to inscribe the policy goal somehow into the funding and selection criteria for Horizon Europe. I think there are a lot of other options, like the important projects of common European interest as a policy tool, but there are others which we would have to develop rather quickly to have the toolboxes that are available to other geopolitical powers and that we as Europeans and European Union lack for the time being. And I would like to hear the opinions of the panel on this one. Thank you. Thank you. Who would like to go? Michael? Yeah, there's one small point which I think is interesting. I mean, of course, when you are practically restricted from, say, launching the fighter jet because of software, that's a worrying thing. But when we see a lot of talk by politicians about digital sovereignty, they really haven't explored all the options at their disposal first. So during the last year, we saw Cedric O up in arms about Google and Bluetooth and Apple and the inability to let their own contact tracing. France didn't try any powers of the state. In a way, it was, why aren't you just giving in when we just say things to you, private company? Sovereignty isn't a country just saying things without the force of law and the rest of the world acquiescing. So I think we actually need to bear in mind that unless we actually... pay money to regulators and take organizations to court and start to enforce the laws that we have on our books with actual force of the state, then we have no right to be talking about sovereignty. And I don't really have time for it because I just find it very, you know, there's not always the case. There are times where it is genuinely tangled and difficult, but there are many times when people just make sounds. You think, well, we'll do something using the powers at your disposal. You are a minister. John Henrik. Maybe to just add to what Wolfgang just mentioned, I actually had the common projects of common interest on my paper. I didn't mention it because I was thinking it would get too detailed because, of course, there are other instruments except from research funding that these ideas could go into. But I was voting for... not only adding those really good ideas that are now implemented in the DSA, the DGA, the DMA, not only implementing them into the ways in which we actually currently deal with the existing platforms and we try to come up with ways in which to produce oversight and audits and also for them, but also integrate them into an active agenda of actually producing. the types of services that we could use as alternatives, like, for example, the speech translation and speech recognition services that June was mentioning, to get to a situation where we actually have the option to choose between those, there needs to be support for those who want to build these kinds of applications. And they are out there. So if you look at the wonderful setups of european driven projects actually in all kinds of areas there are really good examples of of of groups and communities and and and projects that try to tackle very specific concrete problems but they often lack support and often lack funding i was just voting for not only pushing everything into the idea of building up finally a European, I don't know, microchip company, but putting it on the agenda to actually support these kinds of projects and initiatives that are out there already to be able to come together under a common umbrella. So that was the vote. So let me stop here. I think we probably could continue this discussion for a long time. It's a it's a big subject. It's a complicated subject, an interesting subject. And I would like to have time to thank our three panelists for their fascinating presentations and from their great answers to the questions. So let me give you a. physical hand and turn it back over to I think Peter at this point oh thank you Jim yeah let me quickly share the screen so we can end this on our final notes for today and the final notes are the message by MIA this is a track from her 2010 album Maya gravitates to various topics of information politics, and it's the opening track of the album, so it's a very short and powerful comment on online surveillance. Before I play it, as an announcement, our next lecture is already next week, on February 2nd, at 5pm, as per usual, and Sunimal Mendes will speak on the topic Freedom of Expression in the Digital Public Sphere, and Christiane Wendehorst will act as a respondent, and Erich Brehm as moderator. So that's it. See you next week. Thanks for joining today. And here's MIA's The Message. Thanks. Bye-bye. Thank you. Bye-bye. Good evening. Bye-bye. Thanks to all of you and see you next week. Goodbye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 28.992,
+      "text": "Okay, let's start. Good evening. Hello, everybody. First of all, a happy new year. I hope you had some relaxing days over Christmas and time for yourself and that you resisted COVID-19 and that you stay safe. Thanks for joining again. Welcome to this DECOM lecture of today. We have this timely topping on digital superpowers in geopolitics."
+    },
+    {
+      "start": 28.992,
+      "end": 58.08,
+      "text": "with three outstanding panelists, with June Lowry-Kingston, Jan Hendrik Bassold, and Michael Weil. And the discussion will be moderated by Jim Larus. First of all, I have to excuse that we had to move the discussion to today. We originally had planned it on January the 19th, but we had some timing and organizational issues. Sorry for that. So it's one week later."
+    },
+    {
+      "start": 58.08,
+      "end": 85.184,
+      "text": "And thanks for participating. The discussion will be moderated by Jim. He will introduce the panelists. And at the end, we have again a piece of music by Peter Knies. And I know that he has already problems finding all these new pieces of music for our discussion and lectures. But I hope that we will continue to find pieces."
+    },
+    {
+      "start": 85.184,
+      "end": 109.168,
+      "text": "During the discussion and the presentations, I ask you to move your phone. And in case of comments or questions, you can raise your hand or you can use the Q&A. Plus, when you move your hand and say your question, please tell your name so that everybody knows who you are."
+    },
+    {
+      "start": 109.168,
+      "end": 135.12,
+      "text": "It's a pleasure to introduce Jim as the moderator. He's a computer science professor and he's a dean of the School of Computer and Communications at EPFL in Lausanne, Switzerland. And before that, he was with Microsoft Research for 16 years as a researcher, manager, and at the end, even as a director. And before that, he was at the University of Wisconsin."
+    },
+    {
+      "start": 135.312,
+      "end": 162.352,
+      "text": "He's not only a university professor, but he was also active and still is active in the development of software as a software engineer. And he co-led the Swiss Corona app project for contract tracing. And there they also cooperated and proposed a protocol to Google and Apple to interface with the proper operating systems."
+    },
+    {
+      "start": 162.8,
+      "end": 191.872,
+      "text": "Jim is with us with the Digital Humanism Initiative since the early beginning, since April 2019. So it's nearly two years now. And I would like to thank Jim for that, for being with us and staying with us. Jim, the floor is yours. Thank you, Hannes. It's been a pleasure. I didn't realize it's been two years. That's quite a while. So it's actually my great pleasure and honor."
+    },
+    {
+      "start": 191.872,
+      "end": 220.432,
+      "text": "to introduce our three panelists today. I will just give you sort of a brief background information on all three of them, and then I'll turn the floor over to them. So I'll do it in the order in which they speak as well. So Dr. Michael Veal is a lecturer in digital rights and regulation at the Faculty of Laws in the University College London. He's worked at the area of the emerging"
+    },
+    {
+      "start": 220.432,
+      "end": 238.624,
+      "text": "digital technologies, internet and data law, technology policy, and HCI, human computer interaction. He's currently focused on areas such as online tracking and advertising, data protection, legal tensions with..."
+    },
+    {
+      "start": 238.624,
+      "end": 264.048,
+      "text": "Encrypted data analysis, privacy enhancing techniques. Michael actually was a participant in the DP3T project that Hannes alluded to in Switzerland. And the implication also Michael works on the implications of synthetic content such as deep fakes. So that's Michael's background. Our second panelist is June Lowry Kinston."
+    },
+    {
+      "start": 264.048,
+      "end": 290.688,
+      "text": "who is the head of unit and deputy to the director at the European Commission's Directorate for Communication Networks, Contents and Digital Technology. She's worked for the EU for 25 years and currently is responsible for issues such as web accessibility, language technology, online safety for children."
+    },
+    {
+      "start": 290.688,
+      "end": 319.952,
+      "text": "Her biography says she's committed to making the digital world more accessible, secure and inclusive. Three very large challenges. So thank you, June. And our third panelist is Jan Hendrik Passoff, who is a professor of sociology of technology and the head of the science and technology studies group at the European New School for Digital Studies at the European University."
+    },
+    {
+      "start": 319.952,
+      "end": 349.264,
+      "text": "Viendrina in Frankfurt, Germany. Jan Hendrik's research focuses on the role of digital infrastructure for democracy and politics on software development as a responsible social practice and the possibility of intervention and critique of digital projects through critical design. So I think we're very lucky to have these three panelists today."
+    },
+    {
+      "start": 349.264,
+      "end": 377.616,
+      "text": "The format will be that we will give each of them an opportunity to present a short talk for 15 to 20 minutes. Afterwards, we will open the floor to questions from the audience and discussions with the audience and the panelists. So let me turn it over to you, Michael. Great. Thanks. Thanks, Gemma. Thanks for inviting me to be here. I think the topic's a really timely one."
+    },
+    {
+      "start": 377.616,
+      "end": 404.464,
+      "text": "I want to give a bit of a narrative tour of some of the dynamics that I think characterize this area today. Some of them that are maybe more overlooked than others and allude to some of the regulatory context, which maybe June will be speaking more to. And so I don't want to go on top of that. And I think that from the attendees, I can see there'll be a really fascinating discussion. So I want to make sure we leave time for that."
+    },
+    {
+      "start": 404.784,
+      "end": 428.624,
+      "text": "So one one thing when we look at the way that the large digital power is being wielded today, I think one thing that we can see cutting through it is the theme of indispensability. The there are a range of tactics that are being deployed by entities that we've come to call platforms. And I'll come in a bit later on about what that might actually mean."
+    },
+    {
+      "start": 428.624,
+      "end": 454.08,
+      "text": "And these tactics are really to, in a global context, stick around. We can look back and remember MySpace and AOL and Yahoo, which still exists, but just pipes results from Microsoft Bing. And we can see their business models grew and waned very quickly and rapidly."
+    },
+    {
+      "start": 454.08,
+      "end": 479.728,
+      "text": "And I think we can understand platforms and digital power on the Internet in the 21st century as characterized by a fear of loss. These large actors really fearing their sudden disappearance and the adaption and adoption of new techniques to ensure that that doesn't happen. And these techniques can be loosely grouped under indispensability."
+    },
+    {
+      "start": 479.728,
+      "end": 499.424,
+      "text": "What we find as scholars of online power and the like is that many of the practices of technology platforms are really hard to characterize, taxonomize or grasp. And this should be totally expected. When we think about the way that power is wielded online."
+    },
+    {
+      "start": 499.424,
+      "end": 525.504,
+      "text": "And we can look at some work. I would refer to it again as well of Julie Cohen at Georgetown University. And she has a lot in her book between truth and power. She has a lot of both overarching narrative as well as tidbits, I think, characterize this space really well. One of the ways that she characterizes it says that power is she's not going to define power in this book because power is as power does. Power flows and we'll see if we try and."
+    },
+    {
+      "start": 525.504,
+      "end": 541.456,
+      "text": "grasp it identify and point to a certain kind of digital power then there's all the advantage in slipping away from that definition and doing something elsewhere with a different tactic so we can we know power when we see it online but the ways in which power are wielded in a"
+    },
+    {
+      "start": 541.456,
+      "end": 555.824,
+      "text": "as though you're an area of multiple stacks, a technology stack that is increasingly complex, spans the globe, integrates hardware and software and also socio-technical practices. It's really hard to get a grip on what that power is."
+    },
+    {
+      "start": 555.824,
+      "end": 578.592,
+      "text": "Similarly, indispensability, we can only really understand well through the series of vignettes, I think, a series of vignettes about how current incumbents, examples of how they are using indispensability to stick around and to wield power online. So I'm going to run through a few of these vignettes. But suffice to say that that I think is also."
+    },
+    {
+      "start": 578.592,
+      "end": 600.0,
+      "text": "tallies with the understanding of the European Commission right now. So the Digital Markets Act, which has been announced in draft, when you read it, the structure of the act is really applying some provisions, some specific provisions to large gatekeepers, identify large actors and say, oh, here are some specific practices we don't like."
+    },
+    {
+      "start": 600.0,
+      "end": 627.312,
+      "text": "going to forbid. And I think that's that's reflective of the fact it's quite hard to get a unified theory for power online or indispensability. And instead, it has to be tackled through particular vignettes and implementing legislation. So I was was not really glad when I saw that because I would have liked the commission to come up with a very coherent theory of indispensability that alluded to me. But it resonated with with what I had with what I had noticed as well."
+    },
+    {
+      "start": 627.76,
+      "end": 656.32,
+      "text": "So here's some examples. Let's run through. So let's take the first one that Jim has already mentioned in his in his intro, the DP3T project. The DP3T project was a project for to aid contact tracing through the creation of a technical protocol that allows privacy preserving proximity tracing using Bluetooth. For those of you in Switzerland, you'll be familiar with the StopCovid app."
+    },
+    {
+      "start": 656.32,
+      "end": 684.88,
+      "text": "Swiss COVID, sorry, in Austria, which obviously where we are, there's Stop COVID, I think it's called, or something similar, it's got the word stop in it. And so there's a wide array of technologies that are deploying this protocol. What the research team that I was part of, with Jim, really a beacon of it from EPFL there, supporting institutionally and intellectually,"
+    },
+    {
+      "start": 684.88,
+      "end": 711.504,
+      "text": "And what we what we found with this project is that that you really had to work with these large platforms. You don't have an option because these people control the hardware and the software stack from the bottom to the top. And they also control the ways to distribute hardware and software onto people's devices into their hands. When it's when it was worked out, the Bluetooth was really the preferred technology for this."
+    },
+    {
+      "start": 711.504,
+      "end": 731.936,
+      "text": "In order to make it function at all, it required the blessing of these companies in many forms. One of the forms was that it's very hard to run code on a device that truly accesses and makes use of sensors in a way that you want to, because there are significant hardware and software restrictions that are built into devices that we spend a lot of money on today."
+    },
+    {
+      "start": 731.936,
+      "end": 758.24,
+      "text": "But another way is that app stores where content is delivered, it's very hard to start what's called sideload apps onto devices. On Google devices, it's a little bit easier to install your own software. On Apple devices, it's nearly impossible. These app stores also come with legal conditions. So you can't actually distribute software without being aware of these legal conditions. And we also saw platforms put on legal conditions through contract law."
+    },
+    {
+      "start": 758.24,
+      "end": 785.488,
+      "text": "onto the distribution of tools that were using an adapted version of the DP3T contact or proximity tracing protocol that was called exposure notification. So you find that both you require things like an operating system update to even allow this software to function, but also require the legal blessing of these firms to distribute anything. So there's multiple layers of power and indispensability that are at play here."
+    },
+    {
+      "start": 785.488,
+      "end": 811.152,
+      "text": "And this is only going to, I think, get more prevalent when we look at 5G, where much more data can be transmitted in real time from sensors and the general improvement of sensors on devices, technologies such as ultra wideband, new forms of Wi-Fi as well, and more sensitive gyrometers and microphones, cameras and similar devices and surely more sensors to come beyond that."
+    },
+    {
+      "start": 811.472,
+      "end": 822.08,
+      "text": "So that's one area of indispensability. We no longer control the code we run on our own devices. It's not like a PC anymore. Another area is in the area of machine learning."
+    },
+    {
+      "start": 822.08,
+      "end": 848.976,
+      "text": "We can look and see the data sets and the infrastructures needed to experiment to create data here become so big that only a few platforms can do this. We find that also interacts with questions of privacy in a very interesting way. So many have been demanding that less data on the way we use our devices flows from these devices constantly. So typically software developers."
+    },
+    {
+      "start": 848.976,
+      "end": 876.2080000000001,
+      "text": "gather telemetry data on how devices are used or a function or function in order to update software and develop it in real time called agile processing. This comes with privacy risks. These have been also well documented in a great paper by Seda Gerses and Joris van Hoboken called Privacy After the Agile Turn. If anyone's into that, we we have additional considerations there."
+    },
+    {
+      "start": 876.2080000000001,
+      "end": 903.088,
+      "text": "In collecting this telemetry data, while being respectful of privacy, some companies, Apple, for example, and Google, are applying a technique called differential privacy to gather this data. The idea is they can gather data on how their software and hardware is used, but without revealing individual patterns of usage. The catch for this is, again, one of indispensability."
+    },
+    {
+      "start": 903.184,
+      "end": 933.168,
+      "text": "The particular type of algorithms they're deploying add noise before they send out data from every person's phone. They add a small amount of noise, really. That's kind of how they work. And that noise adds up to a really, really noisy data set in aggregate. Really noisy. It's the kind of data set that you cannot get any signal through, cannot get any signal from to find out what's actually going on unless you have billions of records. So that's structurally. These firms are also building in."
+    },
+    {
+      "start": 933.168,
+      "end": 962.832,
+      "text": "practices of privacy, practices of compliance that structurally rely on being the largest players in the world, structurally rely on having, frankly, nearly a majority of individuals on the planet using their technology in order to statistically function at all. So we find these other more arcane forms of indispensability. It's not that there are people in the back room saying, what's the next way we become indispensable? It's that these approaches get a lot of traction."
+    },
+    {
+      "start": 962.832,
+      "end": 988.352,
+      "text": "within these firms, I believe, and can be adopted that way. There are more trite examples. Google Fonts, for example, one of the reasons the web looks quite pretty now compared to how it used to do, where it was pretty inconsistent depending on what device you were accessing it on, is because Google has found a way to, by copy-pasting, place fonts access onto every website. If Google removed this, the web changes how it looks dramatically."
+    },
+    {
+      "start": 988.352,
+      "end": 1009.04,
+      "text": "So just little little things like that vignettes, we can see the insertion of trackers, insertion of code. And in doing so, every single page on the Web relies on Google code. Similarly to JavaScript files, which are often pulled from Google servers for generic libraries and platforms. Lots of little vignettes are becoming indispensable."
+    },
+    {
+      "start": 1009.04,
+      "end": 1035.792,
+      "text": "We see in the pandemic huge rush to adopt Google services and education because they were they were cheap and developing tools much faster than than public providers were able to in the short time frame because they were operating again at global scale. Payment services to forming new payment intermediaries. So all of these just to give a bit of a flavor of of some of those areas. Now, what makes them so indispensable?"
+    },
+    {
+      "start": 1035.792,
+      "end": 1054.96,
+      "text": "And one of the reasons is that they are functioning at global scale. Some of these issues are very difficult to govern. Privacy is one when we've got cross-border data transfers and data flows. So we found that governing privacy through app stores or other forms of data collection or other intermediaries, really."
+    },
+    {
+      "start": 1054.96,
+      "end": 1084.688,
+      "text": "has become a de facto norm. We've seen regulators have deputized a lot of their privacy governance to Apple and Google in their app store to say we're not going to allow certain kind of apps to run. There certainly isn't an appetite for regulators in Europe or elsewhere to be auditing apps, every app that's being able to be installed on people's phones or even carrying out regular audits themselves. They have delegated that function in practice to the platforms who are doing it for free."
+    },
+    {
+      "start": 1084.688,
+      "end": 1109.12,
+      "text": "Security is another big issue. Since the millennium bug, we've seen people very panicking about the effect of systemic insecurity on the Internet and on devices. And the ability of devices to be connected with every other device, not all of which will be trustworthy or secure and which costs a lot of money to keep updated, make that a heightened problem and risk."
+    },
+    {
+      "start": 1109.12,
+      "end": 1138.752,
+      "text": "So we see app stores again stepping in in the meantime to form a global governance solution where they prevent or limit the ability of insecure code. We don't have a clear public alternative for this. These alternatives would require global cooperation. They would require a capacity and money spent in the public sector to provide what ultimately are public goods, about being able to seek privacy that works, being able to seek systems that are secure and open."
+    },
+    {
+      "start": 1138.752,
+      "end": 1160.912,
+      "text": "So there's an urgent need to create these public goods, I think, and to replace and displace the digital power that we see emerging and entrenching and becoming indispensable today. So to finish, I just want to think of what we might call for to do this. One of the things seems to be quite improbable. We need to, through public institutions."
+    },
+    {
+      "start": 1160.912,
+      "end": 1189.568,
+      "text": "outpace the ability of platforms to establish settled norms and governance structures around new technology that requires coming together and it seems completely improbable impossible so any thoughts on how to do this would be great um uh coming together through countries and sectors and saying we will create capacities to audit software to create open source educational tools other tools in response to emerging situations emerging challenges together"
+    },
+    {
+      "start": 1189.568,
+      "end": 1200.0,
+      "text": "Actually, it won't cost that much if everyone came together and paid together for these public goods, released them openly and so on to tackle new security threats and so on. But we I think."
+    },
+    {
+      "start": 1200.0,
+      "end": 1224.24,
+      "text": "If we don't do this, we de facto deputize it to infrastructures that are privately owned, which they use to entrench their power and make them de facto unregulable because they are too big to fail. If you remove them, you remove your entire regulatory de facto regulatory structure for the Internet as well. The last thing I think I want to say is that we should be demanding building blocks instead of finished products."
+    },
+    {
+      "start": 1225.072,
+      "end": 1253.52,
+      "text": "We have outsourced the capacity to, and this is both the public and the private sector, to define our own problems in-house, to frame them, to say, OK, here's a human challenge. It may have technological approaches to solving or managing it. What do we need to do to do this? What building blocks would be useful to make this workflow run, to deliver this good or service to parts of the population, to educate people or whatever you're trying to achieve?"
+    },
+    {
+      "start": 1253.52,
+      "end": 1274.464,
+      "text": "Instead, people look at platforms or large technology companies for finished, polished products, import them, put them in and say, well, that's good. That's in my workflow. No, not good enough. We need to go back to the rudimentary building blocks. Think of how we can make really robust building blocks, make them interoperable and make them context dependent so we can say, OK, well, this context."
+    },
+    {
+      "start": 1274.464,
+      "end": 1287.104,
+      "text": "That pre-built tool over there doesn't really fit. We're going to build our own tool. Maybe it's multilingual. Maybe it's properly in touch with different contexts, which are obviously very important in Europe to consider and think about."
+    },
+    {
+      "start": 1287.104,
+      "end": 1313.632,
+      "text": "At the moment, off the shelf tools are not going to serve us well in the long run and will entrench power. So demanding more of those, achieving those public goods may help us deal with digital power today. But it requires a normative vision of what technology and the Internet should look like, what good looks like. And that's always been very hard to get in politics because political parties don't have a good, clear idea about this. So we need to build that normative vision."
+    },
+    {
+      "start": 1313.632,
+      "end": 1335.184,
+      "text": "build resources, build capacity at a global scale and do it at a frightening pace. So a daunting challenge, but I think one that we should try and head towards. Thanks a lot. Thank you very much, Michael. It was quite a scary presentation. I'd now like to turn the floor over to June."
+    },
+    {
+      "start": 1337.04,
+      "end": 1357.04,
+      "text": "OK, and I'm sorry to disappoint, Michael. That was a very, very interesting presentation. But I'm sorry, the EU is not noted for doing things at a frightening pace. So, you know, don't count on me. I'm really sorry. However, thank you very much for inviting me to be here as a policymaker showing things from a non-academic point of view."
+    },
+    {
+      "start": 1357.04,
+      "end": 1386.56,
+      "text": "And I'd like to talk a little bit about how the EU is trying to change the geopolitics game as far as data is concerned. And in the questions afterwards, maybe there's a vignette I can share about language technology. So building on what Michael was just talking about. But we're talking about data, both the big data that looks so promising for economic growth and also obviously personal data in the hands of the GAFAM primarily at the moment. But I want to start probably with a very boring vignette."
+    },
+    {
+      "start": 1386.56,
+      "end": 1415.856,
+      "text": "My life story, at least my overview of my professional life story, because what I don't put in the public bio is that before I joined the EU, I used to work in Germany as a British intelligence officer way, way back when in the last century. And back in those days, all the files were paper files and all the messages sent to London were handwritten on forms and sent by Telex, secure Telex by a dedicated comms officer. Now, when I joined the EU, the publications office in 1996, the publications were still."
+    },
+    {
+      "start": 1415.856,
+      "end": 1440.528,
+      "text": "mostly on paper and public information, which was great to be working in, could still only be accessed by more or less well-defined set of gatekeepers. They were either sales agents or specific information networks like the European Documentation Centre. Some of you may have in your universities. And if you didn't know one of those or live close to one of those or could afford the priced publications, then just tough."
+    },
+    {
+      "start": 1441.008,
+      "end": 1462.032,
+      "text": "Now, back in 1996, when I arrived, the publications office was also starting on this totally new venture of building a website called Your Lex, the first one we built. And the very first thing it offered was the recent official journals that were published that day, the same day that the paper journals were sent out. And that was a revolution."
+    },
+    {
+      "start": 1462.032,
+      "end": 1487.712,
+      "text": "And Ulex, as I'm sure most of you know now, is the reference database for EU law, something like nine million items on it, 24-7, all 24 official languages, and is vast. And in contrast to the thousands of people who bought the official journal paper subscription back in 1996, in 2019, the last data I have is that Ulex attracted more than 56 million visits."
+    },
+    {
+      "start": 1487.712,
+      "end": 1515.888,
+      "text": "The reason to take you down this memory lane is just to illustrate the impact and the speed, as Michael was saying, of the digital transformation during my working life, really the last 30 odd years. And just to remind ourselves again of the profoundly positive impact that access to digital access to information has had. Now, whether you're a business or an academic or a lawyer, a journalist, NGO, or even that most mythical of creatures, the EU citizen."
+    },
+    {
+      "start": 1515.888,
+      "end": 1538.288,
+      "text": "Even if it was a European citizen at the time, Sir Tim Berners-Lee, who created the World Wide Web, with these key digital services being virtually now all American and all based on our data, worldwide data, what can we in Europe do about this? Well, I hope to show that we are at least trying and we are doing rather a lot."
+    },
+    {
+      "start": 1538.576,
+      "end": 1564.592,
+      "text": "As you no doubt know, making Europe fit for the digital age is one of the six headline political ambitions of the von der Leyen Commission. And to quote the president's agenda for Europe with some abridging, I must say, she said, I want Europe to strive for more by grasping the opportunities from the digital age within safe and ethical boundaries. It's not too late to achieve digital sovereignty in some critical technology areas."
+    },
+    {
+      "start": 1564.592,
+      "end": 1593.84,
+      "text": "algorithms and tools to allow data sharing and data usage. Because data and AI are the ingredients for innovation that can help us find solutions to societal challenges. In order to release that potential, we have to find our European way, balancing the flow and wide use of data while preserving high privacy, security, safety and ethical standards to release big data for innovations that can create wealth for our societies and our businesses."
+    },
+    {
+      "start": 1594.0,
+      "end": 1623.952,
+      "text": "So let's first consider the measures on big data and the EU's vision, at least, of a data economy. Now, European data portals have existed for some time, offering a one stop shop access to public sector, non-personal data shared by member states and by the European institutions. But we have to do much more."
+    },
+    {
+      "start": 1623.952,
+      "end": 1650.368,
+      "text": "data. Bit of a surprise for those who were expected to say artificial intelligence. He said data, big data, non-personal industrial data, but also personal data that's currently captured, like on paper, the health data, mobility data of citizens that people are reluctant to share. And his vision is for the EU to create a new model for data sharing and for us to be at the forefront of the second wave of the data revolution."
+    },
+    {
+      "start": 1650.368,
+      "end": 1673.856,
+      "text": "So the political pressure was on and he meant business. And by February 2020, my colleagues had already delivered the European data strategy. The objective of that is to make sure the EU becomes a role model and a leader for a society empowered by data and the most attractive, most secure and most dynamic data economy, data agile economy in the world, which is quite an ambition."
+    },
+    {
+      "start": 1673.856,
+      "end": 1702.704,
+      "text": "So the strategy gives a good analysis of the current issues blocking data sharing and proposes concrete measures across four pillars. Basically, it seeks more data for economic growth, that is, new business opportunities for small and large firms alike. Society should benefit from this better evidence-based policies and better solutions to address challenges like climate change and the COVID pandemic. Companies should stay in full control of the data they generate and its value."
+    },
+    {
+      "start": 1702.704,
+      "end": 1721.5839999999998,
+      "text": "And individuals should get the rights and the tools and the skills to stay in full control of their data, being able to share, knowing that their data is being handled in full compliance with data protection rules. And this strategy offers a genuine alternative model to the data handling practices of the big tech platforms."
+    },
+    {
+      "start": 1721.5839999999998,
+      "end": 1746.6399999999999,
+      "text": "So that was adopted in February. And already in November, it was followed by the first legal instrument, the proposed Data Governance Act, which aims to make more data available as well as to facilitate and strengthen trust in data sharing mechanisms, both across sectors and across member states. And this offers the new European approach based on the neutrality of the new data intermediaries to increase trust."
+    },
+    {
+      "start": 1746.6399999999999,
+      "end": 1770.9279999999999,
+      "text": "Because the idea being that with legal certainty and increased trust, then both businesses and individuals would be more prepared to share and pool their data. So the Governance Act should facilitate the reuse of certain data held by the public sector with by natural or legal persons, stuff that is currently either ambiguous or restricted in terms of intellectual property rights."
+    },
+    {
+      "start": 1770.9279999999999,
+      "end": 1800.0,
+      "text": "It creates new rules on neutrality, increasing trust in novel data intermediaries as bridges between data holders and potential data users. It promotes a higher degree of control of data by EU citizens and companies to strengthen Europe's digital sovereignty in the area of data. And it allows data use on altruistic grounds. That's data voluntarily made available by individuals or companies for the common good and using a common framework. So if you look at the related documents, which are all available."
+    },
+    {
+      "start": 1800.0,
+      "end": 1823.856,
+      "text": "course, online. And the arguments for investing in a data agile economy, which respects European values and European rights, seem clear. And with the pandemic, we see the positive effect and the need of data sharing for the public good. And to be fair, the technology companies have played their part by sharing anonymized data on population movements, for example. And the strategy isn't just fine words."
+    },
+    {
+      "start": 1823.856,
+      "end": 1851.952,
+      "text": "It's backed up by some serious funding under the Digital Horizon and Connecting Europe facility programmes. And in addition, the member states earmarked a minimum of 20 percent of the 670 billion recovery and resilience facility for the digital transformation. And why did they commit to such eye watering sums? Because the belief is that creating a single digital market for data that is open but sovereign."
+    },
+    {
+      "start": 1851.952,
+      "end": 1881.1680000000001,
+      "text": "will be a powerful engine for innovation and for new jobs that are essential to help prepare the economic and social damage, of course, following the pandemic. And tackling the EU's over-reliance on third-party, third-country tech will provide us with digital strategic autonomy that we need. Veering away from external political and economic pressures will allow us to assert European values. And this is what Breton meant by the second wave of the data economy."
+    },
+    {
+      "start": 1881.1680000000001,
+      "end": 1894.992,
+      "text": "Because with the ever increasing production of data, especially in the industrial sector, we make sure it's used and shared in a way that those who generate the data benefit from it and stay in control, whether individuals or businesses."
+    },
+    {
+      "start": 1895.312,
+      "end": 1920.976,
+      "text": "Whereas in the current version of the data economy, as Michael has outlined, the benefits have gone to a handful of businesses, US based normally, and those who got the data first and acquired that dominant market position they're so reluctant to lose by offering us, to be fair, convenience and connections in one entertaining and possibly addictive bundle based on the transfer often of our personal data. And that's the data economy version one."
+    },
+    {
+      "start": 1921.744,
+      "end": 1936.592,
+      "text": "It's in this context that the Data Governance Act seeks to offer this European alternative to the current business models around data. And this alternative path, we hope, will allow us to ride the second wave of the data economy instead of watching it from afar."
+    },
+    {
+      "start": 1936.656,
+      "end": 1966.16,
+      "text": "And to quote a rather timely article in the Financial Times last Friday, the algorithms and I are in a tug of war. I'm addicted to a network of companies that are financially incentivized to simplify me. I despise them, but they give me the things I love. I feel like an addict and a pawn in someone else's game. Now, you could argue that we are in control and it's up to us, to each of us, to create or to check or TikTok or Facebook or Insta or Twitter account."
+    },
+    {
+      "start": 1966.192,
+      "end": 1994.416,
+      "text": "But we're pretty bad at it. We may intellectually despise those business models behind the services, but most of us still use those digital services and we stay the porn in someone else's games. And as Michael said, those social media apps or other services are crafted to be indispensable. They're very, very sticky. And it's hard for us adults struggle to disconnect how much more difficult it is for younger users."
+    },
+    {
+      "start": 1994.416,
+      "end": 2020.7359999999999,
+      "text": "And in practice, really, for the younger generation is already for some professions, then digital abstinence is just not an option. And we know things have got out of hand when even industry leaders are asking for more regulation. To quote Mark Zuckerberg from his Washington Post op ed article from March 2019, he requested new regulation in four areas, harmful content, election integrity, privacy and data portability."
+    },
+    {
+      "start": 2020.7359999999999,
+      "end": 2045.088,
+      "text": "And said effective data protection needs a globally harmonized framework. People around the world have come for comprehensive privacy regulation in line with the EU's GDPR. And I agree. So what are we doing on this aspect? Let's consider personal data and European efforts to assert and insist on European values in that field."
+    },
+    {
+      "start": 2045.088,
+      "end": 2071.68,
+      "text": "The EU view, at least, is that with the GDPR, the General Data Protection Regulation and the E-Privacy Directive, the EU has put in place a solid and a trusted legal framework for the protection of personal data and set a standard for the world. The GDPR, of course, doesn't prevent the transfer of data to third countries, but it guarantees the protection of personal data transferred outside the EU in full respect to those EU values and rules."
+    },
+    {
+      "start": 2071.68,
+      "end": 2099.04,
+      "text": "And I guess many of you, like me, are starting to see the impact of these strengthened data protection rules and the recent court rulings on international transfer in how we work and the tools that we use. And the report on the first two years of the GDPR application is rather encouraging. And to quote from it, the adoption of the GDPR has spurred other countries in many regions of the world to consider following suit. The EU's leadership on data protection shows it can act."
+    },
+    {
+      "start": 2099.04,
+      "end": 2114.608,
+      "text": "as a global standard setter for the regulation of the digital economy. But it's still too soon to draw definitive conclusions regarding the GDPR. But we note that it has changed things and it has increased awareness of users' rights."
+    },
+    {
+      "start": 2114.608,
+      "end": 2141.456,
+      "text": "Though more certainly needs to be done, both on information to users about their rights and on creating effective and appropriate tools for informed consent. And certainly from my point of view, for safer Internet for children, also from age verification tools. And the GDPR, as I'm sure you know, goes hand in hand with the e-privacy rule still from 2002, as the EC proposal from 2017 is still in negotiation."
+    },
+    {
+      "start": 2142.096,
+      "end": 2166.992,
+      "text": "Now, we have a plan to try and push this further forward because also in February, the five year digital strategy shaping Europe's digital future was adopted. And that refers to creating a trustworthy environment for the data that's provided both online and offline. And again, going back to the European strategy for data, it spells it out, saying in a society where individuals will generate ever increasing amounts of data."
+    },
+    {
+      "start": 2166.992,
+      "end": 2195.024,
+      "text": "The way in which this data is collected and used must place the interests of the individual first in accordance with those famous European values, fundamental rights and rules. And the commission would be particularly vigilant in this regard. Individuals should be further supported in enforcing their rights with regard to the use of data they generate. And they can be empowered to be in control of their data through tools and means to decide at a granular level what is being done with their data."
+    },
+    {
+      "start": 2195.024,
+      "end": 2211.296,
+      "text": "so-called personal data spaces. Now, this is important for all of us. But as I mentioned, I am particularly concerned for the younger generation, for many of whom life online and offline is basically fused, two invisible sides of the same coin."
+    },
+    {
+      "start": 2211.296,
+      "end": 2239.296,
+      "text": "And with their detail shared even before birth, thanks in early years, at least entirely to their proud parents, it's vital we protect the younger generation from the algorithms and AI that could affect their health, their education or their professional prospects. Did you know that one third of parents surveyed share fetus photos of their babies, their bumps? And only 6% of parents surveyed said they never posted photos of their children online."
+    },
+    {
+      "start": 2239.296,
+      "end": 2265.248,
+      "text": "And the data and security aspects of posting that your child sleepwalks or loves a certain toy or birthday photo so their birth date can easily be identified are obvious, but are all too often being ignored. So we have plans for a data economy version, too. We have funding assigned to build it. We have personal data rules that should match our European values. But that's not all."
+    },
+    {
+      "start": 2265.248,
+      "end": 2292.608,
+      "text": "As Michael mentioned, the Digital Services Act and the Digital Market Act were two key legislative proposals adapted by the Commission in December. And they're really the European response to the impact that the online platforms have on our societies and our economies. So the Digital Services Act, the DSA, seeks to regulate the obligations of digital services that act as intermediaries, connecting the consumers with good services or contents online."
+    },
+    {
+      "start": 2292.608,
+      "end": 2317.0879999999997,
+      "text": "It builds on the 2000 e-commerce directive and seeks to better protect customers and their fundamental rights online, consumers of all sorts, and to establish a powerful transparency and a clear accountability framework for the online platforms. It covers all different types of providers in a proportional way, with specific measures for the very large online platforms, the ones the key."
+    },
+    {
+      "start": 2317.0879999999997,
+      "end": 2341.568,
+      "text": "topic of our discussion today, defined in the draft as reaching more than 10% of the EU population. There's many different aspects of this horizontal proposal, from flagging illegal content to identifying counterfeit goods and fraudulent traders, but of particular relevance here, there are wide-ranging transparency measures for the online platforms, including algorithms that they use for their recommendations."
+    },
+    {
+      "start": 2341.568,
+      "end": 2366.432,
+      "text": "There are obligations for the very large online platforms to prevent abuse of their systems. Researchers will finally get access to data of key platforms and there are obligations on transparency on online ads. And this is complemented, as Michael said, by the Digital Markets Act, the DMA, which aims to ensure fair markets in the digital sector. I'm sorry, we couldn't have come up with the."
+    },
+    {
+      "start": 2366.432,
+      "end": 2392.928,
+      "text": "The definition you wanted, Michael, I'll pass on that feedback for sure. But it aims to tackle unfair practices and this lack of contestability vis-a-vis the very large online platforms and business users to introduce rules for the gatekeepers in the digital sector. Again, it's horizontal legislation, but specifically gatekeepers may not use data obtained from their business users to compete with those business users."
+    },
+    {
+      "start": 2392.928,
+      "end": 2400.0,
+      "text": "There's an obligation to provide effective data portability for end users and the techniques of profiling consumers should be reviewed."
+    },
+    {
+      "start": 2400.0,
+      "end": 2427.344,
+      "text": "So there's a lot achieved in the first year of the commission, but there's a lot coming up in this year already. In the commission's work programme, we foresee a data act, another key proposal, which will aim at ensuring incentives to generate data and a fair distribution of value resulting from data. Not an easy thing to define. And the discussions are going on on that. But that also may consider rules on the Poema's personal data spaces."
+    },
+    {
+      "start": 2427.344,
+      "end": 2454.448,
+      "text": "We'll see the health data space and the Green Deal data space being launched. We'll see a secure and trusted European ID to make online data sharing also help keep that in control. There will be a horizontal regulation on the ethical aspects of artificial intelligence and another initiative on political advertising. The open data directive should reach its transposition deadline on 17th of July."
+    },
+    {
+      "start": 2454.448,
+      "end": 2470.544,
+      "text": "There should be an implementing act on high value data sets to be adopted. Funding will start on the strategic and personal data spaces under Horizon and Digital Europe programmes. And negotiations will continue on the alphabet soup of DMA, DSA and DGA."
+    },
+    {
+      "start": 2470.736,
+      "end": 2493.36,
+      "text": "And remember those four areas where Zuckerberg had requested regulation? Well, they have pretty much. There are things in place. For harmful content, we already have the Audiovisual Media Services Directive and the DSA proposal foresees further codes of conduct for harmful content. The election integrity, well, the European Democracy Action Plan was adopted in December."
+    },
+    {
+      "start": 2493.36,
+      "end": 2515.44,
+      "text": "And for privacy and data portability, we have the GDPR, e-privacy, as well as the multiple data initiatives I've mentioned. So I hope I've shown you, I hope I've convinced you that Europe is at least trying to tackle these digital superpowers. The Commission, this Commission, is actively proposing to change the rules of the game as far as data."
+    },
+    {
+      "start": 2515.44,
+      "end": 2535.456,
+      "text": "is played in Europe. And then the data economy version two, we expect the processing of data to be much more decentralized, for example, in the case of self-driving vehicles, and less likely to depend on large players with their walled garden ecosystems. Data from sensor-equipped machines, other"
+    },
+    {
+      "start": 2535.456,
+      "end": 2558.896,
+      "text": "than these devices. So tools and Internet of Things devices, increasingly in data use, that's my 20 minutes, will become more important than the personal data that has so far dominated the data economy. And Europe has everything to play for in these new circumstances. It's not perfect. We're far from finished, but we are trying, as has been said in a different context, to take back control."
+    },
+    {
+      "start": 2558.896,
+      "end": 2585.248,
+      "text": "And I hope that we'll soon look back on this period as the digital Wild West as being just as antiquated as my handwritten telex forms. Thank you very much for your attention. Thank you very much. Our final speaker is John Hendrick. And I'll turn the floor over to you. All right. Thanks a lot. And thanks a lot also for Michael and June for already."
+    },
+    {
+      "start": 2585.248,
+      "end": 2608.48,
+      "text": "putting some of the points on the table that I have on my list so I can maybe keep them brief. Before I start, let me start with an appreciation or with a thank you for, because we did not only have a date change, we also had a name change of the panel we have today. I don't wanna spend a lot of time talking about."
+    },
+    {
+      "start": 2608.48,
+      "end": 2630.096,
+      "text": "that term that we were previously using for the panel. But I would just start off my discussion today with a small kind of warning. There are some terms going around in digital policy discourse, specifically also in public discourse on digital policy currently, that..."
+    },
+    {
+      "start": 2630.096,
+      "end": 2646.8,
+      "text": "Well, carry some weight and that do have the potential to act as false friends, specifically in EU policy. One of them, of course, is the often used term of sovereignty. Torsten Thiel has wonderfully deconstructed that term."
+    },
+    {
+      "start": 2646.8,
+      "end": 2676.08,
+      "text": "in, I think, yesterday's FAZ article. But at least it has the option for reinterpretation and appropriation in terms of civil and popular sovereignty in terms of giving citizens more rights, giving citizens fundamental rights in that regard. There are other terms currently floating around in the discourse on big tech and the problems of regulation that are..."
+    },
+    {
+      "start": 2676.08,
+      "end": 2688.896,
+      "text": "far more complicated. The one we have been, we've been having as a title digital colonialism is one of them, which might make sense in the US context, where"
+    },
+    {
+      "start": 2688.896,
+      "end": 2713.552,
+      "text": "the colonial experience has been some other type of experience than the European one, where we as Europeans have to always take into account that we have some background using these kind of terms specifically in combination with terms such as sovereignty. So just as an opening remark on that."
+    },
+    {
+      "start": 2713.552,
+      "end": 2742.832,
+      "text": "My remark today is starting with an observation of a sea change in EU digital policy debates. And that's why I'm so glad that June has already highlighted some of the major points in that and took us through the whole complexity of current EU regulations. But after having lots of discussion only on digital industry policy for quite some time, mourning that there are no European companies,"
+    },
+    {
+      "start": 2742.832,
+      "end": 2772.048,
+      "text": "among the top 20 digital champions and then calling for deregulation and state aid to actually create something like national or European champions. We then entered the stage in where, which is still around, where claims of European digital sovereignty are connecting both calls for European champions and industry policy with references to public sovereignty, which give them some potential human rights and open meaning. But now..."
+    },
+    {
+      "start": 2772.048,
+      "end": 2787.888,
+      "text": "We are in a situation where and this is where it links into to June's talk already that we are seeing an area or an era of regulation with teeth coming up in specifically in terms of."
+    },
+    {
+      "start": 2787.888,
+      "end": 2817.168,
+      "text": "the connected DSA, DMA and the DGA packages that are on the schedule and on the radar for the next year or years to come. Specifically because they introduce a set of rules and obligations for very different kinds of platforms and services and for the first time actually defining some of these, trying to define some of these services and put them into straightforward categories thereby allowing"
+    },
+    {
+      "start": 2817.168,
+      "end": 2836.688,
+      "text": "no longer the platforms to actually switch categories whenever that fits them well. And to just give you an idea, of course, June can highlight that much better than me. The basic rule is size matters, right? It's a question of different rules and obligations for..."
+    },
+    {
+      "start": 2836.688,
+      "end": 2855.6639999999998,
+      "text": "very different types of platforms, specifically highlighting the hard rules and regulations for VLOPs or very large online platforms. The 10% of the EU population user base or in the Digital Markets Act, the gatekeeping company category for that."
+    },
+    {
+      "start": 2855.6639999999998,
+      "end": 2884.944,
+      "text": "And it also, this is really interesting from a sociological and social institutional point of view. It sets up a set of bodies and actors actually responsible for those types of enforcing of regulation and audit, specifically the digital services coordinators on national level, the European Board of Digital Services on the EU level, connecting those different national bodies. And of course, the commission itself having"
+    },
+    {
+      "start": 2884.944,
+      "end": 2899.568,
+      "text": "both in the DMA and the DSA, very specific new rights for investigations, for interviews, for getting information from those companies, which is really interesting."
+    },
+    {
+      "start": 2900.08,
+      "end": 2925.552,
+      "text": "If you want to put it into one set, you could basically say it's decentralized for small platforms, so handled nationally or through these context points. But the interesting point made by these proposals is that there is the option for direct EC intervention for specifically the large or the very large online platforms."
+    },
+    {
+      "start": 2925.552,
+      "end": 2955.024,
+      "text": "So based on this observation of a fundamental sea change in digital policy that I totally welcome in terms of how it played out, I would like to just add three comments or three arguments or three areas in which I think that those steps towards a more healthy digital public sphere and digital environment could be actually wrapped up."
+    },
+    {
+      "start": 2955.024,
+      "end": 2980.768,
+      "text": "or pushed up a little further in lots of regards. Those three comments are based on the notion of infrastructure, the notion of regulation in industrial policy and the question of democratization and accountability. Those are the main headlines of my three points I would like to add. Infrastructure first."
+    },
+    {
+      "start": 2980.768,
+      "end": 3000.0,
+      "text": "Infrastructure First links nicely to what Michael has already highlighted in terms of the full stack of indispensabilities. Linking also maybe for those who love to read philosophy, that's also wonderfully highlighted by Benjamin Bratton that this is actually the way in which..."
+    },
+    {
+      "start": 3000.0,
+      "end": 3020.944,
+      "text": "power in digital context is actually working in stacks. So what I think is still lacking from both the debates on digital industrial policy around and also in the drafts of the DSA and DMA and in the debates around their implementation."
+    },
+    {
+      "start": 3020.944,
+      "end": 3037.088,
+      "text": "is a thorough understanding or a thorough conceptualization of what scholars in platform and infrastructure studies have called infrastructuralization. So maybe that's a term to be used for this indispensability that Michael described."
+    },
+    {
+      "start": 3037.088,
+      "end": 3056.56,
+      "text": "So it's not that these very large online platforms are not only platforms. That's one of the major misunderstandings treating them for quite some time, but have been for the last two decades turned themselves into infrastructure providers of other digital platforms and other digital services in a cross-country sectoral way."
+    },
+    {
+      "start": 3056.56,
+      "end": 3080.864,
+      "text": "They provide storage, compute services, cloud functions, frameworks, and so on and so forth. Examples of that, of course, are Amazon's AVS or Google's cloud platform, other services summarized under Microsoft Azure's systems, but also others, of course. And still in the regulations currently, we're talking about online platforms. So like, for example, citing the DSA."
+    },
+    {
+      "start": 3080.864,
+      "end": 3110.736,
+      "text": "It's providers of a hosting service, which at the request of a recipient of the services stores, disseminates the public information. That's maybe one of the quotes here. And they are basically the icing. So the visible surface on a large stack of problematic infrastructure. So the question is, can EU and other types of digital policy dig down to that infrastructure level? And can it get a grasp on these points?"
+    },
+    {
+      "start": 3110.736,
+      "end": 3123.408,
+      "text": "The second argument would go to the, I think, still missing link between regulation and industrial policy. So the regulation with teeth I described in the beginning."
+    },
+    {
+      "start": 3123.408,
+      "end": 3152.688,
+      "text": "is there on the one hand, but there's also claims for industrial policy on the other. And really made is a link between both that connects them in a way that votes for active intervention and ex-ante approaches instead of just passive regulation and ex-post evaluations. There's some moves made in the Data Governance Act, which are really interesting in that regard. But I guess there's more to do in that."
+    },
+    {
+      "start": 3152.688,
+      "end": 3174.544,
+      "text": "that direction. I would like to just add a suggestion to try to add the DSA, DMA, DNA rationales to the funding schemes and the partnership programs. The DGA, that's actually happening in terms of the funding that is allocated in Horizon Europe funding and the various funding options available."
+    },
+    {
+      "start": 3174.544,
+      "end": 3203.824,
+      "text": "But I would love to see some of these ideas that are floating around in the DSA, DMA discussions, finding their way into actual funding schemes to actually create maybe an option for what Michael referred to, to be able to actually help, for example, public institutions and other types of actors to start working together and provide digital infrastructure services as public goods. Because if you look at the landscape,"
+    },
+    {
+      "start": 3203.824,
+      "end": 3233.04,
+      "text": "in Europe and elsewhere, there are lots of really interesting examples of communities, of actor constellations, of projects that are trying very hard to come up with public good alternatives to the common infrastructure services that we're used to. One of them, for example, is the public spaces group in the Netherlands or the public signals groups, which has a US background, but still has also"
+    },
+    {
+      "start": 3233.04,
+      "end": 3261.952,
+      "text": "a European counterpart. But they're struggling for funding and they're struggling for money. They're struggling for help, actually. And they would be potential partners in actually producing alternative infrastructure technologies that could be framed in a public good scheme. So maybe the last intervention or the last point I wanted to raise is about governance or democratization. And it's all about accountability, transparency and public participation."
+    },
+    {
+      "start": 3261.952,
+      "end": 3283.4719999999998,
+      "text": "While the DSA and the DMA actually introduce forms of public accountability or specifically political accountability for these platforms, which is a really cool move, it's interesting that the DSA and DMA framework, at least at its current formulation, because maybe it lacks implementation now,"
+    },
+    {
+      "start": 3283.4719999999998,
+      "end": 3313.04,
+      "text": "does not apply these accountability and transparency roles to itself in regard to that. There are some interesting problems, for example, in the institutional layout. For example, how do you deal with the independence of digital services coordinators who actually are these coordinators on a national level? How do you deal with the different types of institutionalization in different countries when they have to come together in the sport structure?"
+    },
+    {
+      "start": 3313.04,
+      "end": 3336.864,
+      "text": "on the EU level. Are there overlaps with other regulatory bodies such as the SDRGA, for example, the European Regulatory Bodies for Audiovisual Media Services, for example, or others? Is this compatible on the national and other levels with media and telecommunications regulation? Those are interesting issues actually on the radar now."
+    },
+    {
+      "start": 3336.864,
+      "end": 3364.24,
+      "text": "But also it opens up the question of the independence of the EC when auditing very large online platforms. It also opens questions in terms of vetting. So how do you actually vet the auditors, the independent researchers? How is that implemented? That's a really interesting question of implementation that are simply not dealt with, I guess, yet. This is up to come. But most of all..."
+    },
+    {
+      "start": 3364.24,
+      "end": 3392.08,
+      "text": "What I find interestingly lacking in the current approaches is that transparency and accountability of the thereby established governance framework itself. So, of course, for example, there is the need for publication of reports, for example, by the DSCs or by the board, specifically also reports by the EC and platforms reporting, for example, numbers of cases, measures taken, these kind of things."
+    },
+    {
+      "start": 3392.08,
+      "end": 3414.5280000000002,
+      "text": "But the question is, how do you actually build in public consultation measures into that? Do we create something like a closed shop of auditors and consultations? Or can we open this up for democratic discourse and can we open this up for public?"
+    },
+    {
+      "start": 3414.5280000000002,
+      "end": 3435.76,
+      "text": "for public participation. A suggestion could be to make the DSEA and DMA governance framework itself accountable and open for participation. For example, by adding co-production and co-consultation formats, by integrating civil society actors in the review of the reports, for example, or in the work of the boards."
+    },
+    {
+      "start": 3435.76,
+      "end": 3462.112,
+      "text": "And by that, actually taking a huge step towards not only a safe and secure, but also a participatory and civil driven digital public area in Europe. All right. I guess that's my three points I wanted to make. And I'm really looking forward to the discussion we're having. Thank you very much."
+    },
+    {
+      "start": 3462.112,
+      "end": 3480.896,
+      "text": "Great. That's a lot of ideas. We have a number of questions in the chat and I will start with some of those. If people would like to pose the questions themselves, you could raise your hand and I will also."
+    },
+    {
+      "start": 3480.896,
+      "end": 3509.632,
+      "text": "call on people that way as well. So you use the raise hand mechanism in Zoom. I think it works better than the raise hand in video mechanism, if you can. These days, it's under reactions, if you haven't kept track with the latest versions of Zoom. So let me just start by, so people can find the raise hand. Let me ask one of the questions in the chat."
+    },
+    {
+      "start": 3509.632,
+      "end": 3539.456,
+      "text": "Giuseppe Attardi asked the question, which I think is an interesting one, is that most of the services these days are nominally free in the sense that you use them without any economic ties. And the services collect information and sell it and use it to sell to advertisers, basically the people who are viewing the service. So it's an ad driven model, which is not original to the Internet, obviously."
+    },
+    {
+      "start": 3539.456,
+      "end": 3568.8,
+      "text": "Is there a solution to the problem to outlaw this economic model and force the service providers, the services to go to other models such as a subscription based model? Or one of the suggestions in the question was an example like Wikipedia, which is funded externally through private donations and depends upon volunteer services."
+    },
+    {
+      "start": 3568.8,
+      "end": 3597.04,
+      "text": "So I'll throw it out for any of the panelists to take. Michael? Yeah, speak quickly to that. You've got to distinguish between problems of the ad model that relate to surveillance, manipulation, data collection, and problems of the ad model that relate to commodifying attention. So the latter is any, you know,"
+    },
+    {
+      "start": 3597.232,
+      "end": 3600.0,
+      "text": "if you are charging advertisers"
+    },
+    {
+      "start": 3600.0,
+      "end": 3621.488,
+      "text": "based on valid clicks that they get to an advert or a number of eyeballs that get placed on advert, regardless of what the advert is, then you're going to have that problem with all types of adverts. And you may even have that problem to some degree with physical magazines and newspapers that rely in that way. And you're choosing which newspaper to buy and advertisers being paid in that way, for example."
+    },
+    {
+      "start": 3621.488,
+      "end": 3650.768,
+      "text": "I think to outlaw or to at least regulate further or to exactly force the existing regulation of the data market and ecosystem around advertising isn't to outlaw the advertising business model. There's a huge amount of advertising that can work in contextual ways without having to profile individual users by just using the time of day, their rough location in terms of country and so on, and also what they've been looking at on that particular site, perhaps. There are also examples of just within that session or even..."
+    },
+    {
+      "start": 3650.768,
+      "end": 3665.824,
+      "text": "just what content it's next to exactly. All of this is not very invasive. And indeed, there is some evidence, and we'd like to have more studies of this. But for example, the New York Times in Europe allegedly reported itself."
+    },
+    {
+      "start": 3665.824,
+      "end": 3686.832,
+      "text": "turning off real-time bidding and programmatic advertising and moving more towards contextual advertising and found a revenue uplift. You've got a lot of intermediaries that you can remove. And the amount of money that gets, when you take the amount of money an advertiser pays, they pay one euro for an advert. The publisher gets about 40 cents of that."
+    },
+    {
+      "start": 3686.832,
+      "end": 3713.712,
+      "text": "It depends on your exact situation, but there's a lot of intermediary charges. There's a lot of ad fraud that happens in the middle. And if you can somehow focus on getting rid of this, then there's actually quite a lot. So behavioral advertising is not really the be all and end all of the Internet. It's just that's a myth largely peddled by those who make a lot of money from intermediating behavioral advertising. Good answer. So."
+    },
+    {
+      "start": 3713.712,
+      "end": 3736.064,
+      "text": "I think Michael Stampfer had his hand raised. Many thanks. My name is Michael Stampfer from the Vienna Science and Technology Fund. I'm part of the group who tries to bring forward the digital humanism agenda here in Vienna. I have two questions to June. One is..."
+    },
+    {
+      "start": 3736.064,
+      "end": 3759.296,
+      "text": "I'm totally fascinated now by the speed and by the great amount of work Commission is doing. How can we, as I have three or four agendas to follow, not only the digital acts, how can you help people like me to keep track?"
+    },
+    {
+      "start": 3759.296,
+      "end": 3766.8,
+      "text": "Is there a kind of reader's digest of all these acts?"
+    },
+    {
+      "start": 3766.8,
+      "end": 3790.784,
+      "text": "I'm thinking of setting up in Vienna some kind of reading circle or something like that, where we meet regularly and read the documents. Otherwise, I'm totally at sea. So this is my first point. And you could really help people like me with that. The second is something completely different."
+    },
+    {
+      "start": 3790.784,
+      "end": 3805.184,
+      "text": "The big platforms are successful because of their rogue capitalist mechanisms, but they are also successful because they are providing good services often."
+    },
+    {
+      "start": 3805.184,
+      "end": 3827.408,
+      "text": "And I'm an inhabitant of a nation which provides abysmally bad platform services, which does not give access to government data and so on and so forth. And part of the huge distance and the huge gaps we..."
+    },
+    {
+      "start": 3827.408,
+      "end": 3843.872,
+      "text": "experience is not only how far off the Googles and Facebooks are, but also how reluctant the state is to professionally collect data, share them with scientists, researchers and citizens and so on."
+    },
+    {
+      "start": 3843.872,
+      "end": 3871.488,
+      "text": "Can Brussels do anything in this respect to at least give some incentives to the nation states to be more open, transparent, and professional with their data? I know that's some other area, but I think there's a link to the success of some of the platforms also."
+    },
+    {
+      "start": 3871.488,
+      "end": 3895.088,
+      "text": "Two good questions for June. Well, I'm glad someone notices there's been a lot of hard work going on in the last 12 months because my poor colleagues in the data unit have been working really literally every weekend since the commissioner took office. And there are times when it's good to have political visibility."
+    },
+    {
+      "start": 3895.088,
+      "end": 3924.368,
+      "text": "There are times when it's good to be able to sleep occasionally as well. So I will certainly pass that on. I think the best way to stay abreast is really to look at the press releases, you know, that come particularly after the college meetings. But if you want to give me your email, I can see if there's anything specific, if it's particularly on the data issues. I don't know if they have mailing lists or things like that, but normally the press releases. And I think you can subscribe to those as well. Or, yeah, that's probably the best way of saying apart. And I wish you good."
+    },
+    {
+      "start": 3924.368,
+      "end": 3939.4719999999998,
+      "text": "like with your reading circle initiative if it takes off. And for the big platforms, yes. And the lack of the lack of data from the public sector bodies. Well, if it's any consolation, probably, I don't know. Good."
+    },
+    {
+      "start": 3939.4719999999998,
+      "end": 3968.88,
+      "text": "Maybe 10 years ago, eight years ago, when the data portals were first being set up and I was still at the publications office, which did the technical sort of back office stuff of those. We were having exactly the same discussion and going around knocking on doors of the institutions saying, we know you've got good data there. Come on, share it. Get it out there. And thank goodness with Eurostat obviously being a very, very good example of how to do it. So they have shamed some people into sharing their data. And I think the dialogue has moved on a bit that we're not having to make."
+    },
+    {
+      "start": 3968.88,
+      "end": 3989.808,
+      "text": "the case and explain any more why data is important and why it's useful. However, for the member states, I don't know what the situation is. It's not my unit. But as I say, I think there is an implementing act meant to be coming out on high value data sets coming this year. So I'm not sure if that's for member states or just in general."
+    },
+    {
+      "start": 3989.808,
+      "end": 4010.896,
+      "text": "But the attitude certainly is through things like the PSI directive that the default setting should be there's got to be a good reason not for making it public. And hopefully with the Data Governance Act and now with the new Data Act, we're trying to actually then remove some of those disincentives for the types of data that weren't sort of the obvious, non-personal, easy to share type public data."
+    },
+    {
+      "start": 4011.536,
+      "end": 4039.888,
+      "text": "Thank you. Before I move to the next person, let me try to intersperse some questions from the chat with live questions. So a number of questions mentioned Tim Berners-Lee's solid architecture for a decentralized rep. I'd like to pose this to the panelists and ask whether they believe this is a solid way forward for building a new architecture for the Internet."
+    },
+    {
+      "start": 4042.8,
+      "end": 4072.352,
+      "text": "Michael? So yeah, Tim Berners-Lee, as June said, at the time a European citizen. Although that's debated because the idea actually of European citizenship appeared in Maastricht in 1992. So if we're doing time-limited European citizenship, then I think he may have not been. But regardless, it's a solid idea. It's got some different features, but it's the same as this kind of personal data store idea. Edge computing."
+    },
+    {
+      "start": 4072.352,
+      "end": 4099.968,
+      "text": "bring computing in a way physically to the edge that you'd have on a cloud server and have a sort of a space of data and computing that you can collaboratively run things like social networks or allow access to your data through, share it in certain ways, but refrain from sharing it in other ways. So there's a lot of kind of promise from this, but I think there are also a lot of problems too. So ultimately,"
+    },
+    {
+      "start": 4099.968,
+      "end": 4125.584,
+      "text": "If we're worried about people, groups, understanding and manipulating large portions of society or gaining power, then that comes from coordinating a protocol. We see that working already right now with devices like iPhones and so on. Your ability to coordinate a protocol is undiminished by the existence of solid. All you have to do is be the person who's the software everyone installs and downloads. And we've got, as I said, the indispensability part."
+    },
+    {
+      "start": 4125.584,
+      "end": 4140.6720000000005,
+      "text": "These existing digital superpowers are expert in becoming indispensable protocols that everyone will have to run on their solid devices regardless. And also, people aren't going to purchase new devices or..."
+    },
+    {
+      "start": 4140.6720000000005,
+      "end": 4168.6720000000005,
+      "text": "Then they're either going to have to use the cloud, which is also then largely controlled by these organizations or use devices which are largely under control by these organizations. I don't think everyone is going to be purchasing a new device per se. So I think that's one of the major topics. I'd also lastly just say that these firms are heavily investing in the kind of privacy preserving data analysis that that solid purports to support the idea that they can."
+    },
+    {
+      "start": 4168.6720000000005,
+      "end": 4184.544,
+      "text": "do all the things they do today without seeing any personal data whatsoever by binding their hands, having it encrypted on devices, be unable to respond to warrants, be unable to examine it for content regulation under the DSA or other acts. That's their dream."
+    },
+    {
+      "start": 4184.544,
+      "end": 4200.0,
+      "text": "People act as if these companies want to sit on a load of personal data. They don't. They actually hate sitting on a load of personal data. They love the results of personal data, the ability to optimize over it, the ability to train systems on it, the results of it. They do not care about the exact."
+    },
+    {
+      "start": 4200.0,
+      "end": 4228.496,
+      "text": "contents of Jim's email or whatever. This is not what they care about. So if you can separate that out, give them the ability to optimize with losing the actual thing that caused them the liability and the risk, they're going to do that. And it's the ability to optimize and similar, which is where their power comes from. So I don't think Tim Berners-Lee's proposal actually tackles that issue head on. So do other panelists have a..."
+    },
+    {
+      "start": 4228.496,
+      "end": 4250.256,
+      "text": "opinion on this, or I can proceed to Allison, who's next. Allison. Yeah, thanks. Great presentation and set of comments. I'm Allison Stanger. I'm presently at the Center for Advanced Study in the Behavioral Sciences at Stanford University."
+    },
+    {
+      "start": 4250.256,
+      "end": 4276.752,
+      "text": "And I'm just fascinated by the Commission's or Europe's perspective on the notion of sovereignty, because I heard the terms digital sovereignty, civil sovereignty, popular sovereignty and public sovereignty used in today's talks. Could any of the panelists comment on what the differences are between those and which is most important from perspective of public policy?"
+    },
+    {
+      "start": 4279.952,
+      "end": 4304.608,
+      "text": "It's a big question, but I think words mean a lot. I don't know if I can give a full sketched answer to that, but as some others have brilliantly shown, the different notions of sovereignty that are blended currently in debates on digital sovereignty have some..."
+    },
+    {
+      "start": 4304.608,
+      "end": 4318.208,
+      "text": "some goods and bads attached to them. So if you, for example, look at the history of the concept of sovereignty in political theory and the question of the role it plays for defining"
+    },
+    {
+      "start": 4318.208,
+      "end": 4339.104,
+      "text": "Specifically, the sovereign powers of political entities such as the state and linking that up to an entity such as the EU is in itself an interesting move in terms of how to describe that. But that aside, that digital sovereignty has been introduced."
+    },
+    {
+      "start": 4339.104,
+      "end": 4368.4,
+      "text": "specifically by approaches in China, in Russia and in Iran to actually come up with protectionist ideas of creating like walled garden, well, basically walled garden internet specialties is problematic in itself. And Thorsten Thiel has wonderfully shown that this is an interesting shift in the use of sovereignty when it comes to digital technologies, because in the very early beginnings of the liberals,"
+    },
+    {
+      "start": 4368.4,
+      "end": 4370.544,
+      "text": "Silicon Valley ideas."
+    },
+    {
+      "start": 4370.544,
+      "end": 4399.824,
+      "text": "actually used as a counter argument that everything digital should be opposed to sovereignty, should be actually living in a space which is less controlled by state sovereignty. And now we see these moves of political entities to actually use the term to regain control and to regain these ideas. That's interesting."
+    },
+    {
+      "start": 4399.824,
+      "end": 4402.48,
+      "text": "and that's problematic."
+    },
+    {
+      "start": 4402.48,
+      "end": 4431.92,
+      "text": "In legal discourse, Michael might be able to share more thoughts about that. There is, of course, connected to theories of democracy and conceptions of how to set up democratic institutions, a concept of public sovereignty or of citizen sovereignty, which is basically linking it to the individual and linking it to the individual as being the carrier of certain rights and the ability to"
+    },
+    {
+      "start": 4431.92,
+      "end": 4456.0,
+      "text": "And this has been used in EU digital policy debates quite a lot to actually push the term as a defining feature of the European way. But of course, all these other connotations come with it and create a situation of unclarity."
+    },
+    {
+      "start": 4456.0,
+      "end": 4485.952,
+      "text": "if it's also linked to a protective agenda or if it's also linked to a specific form of reestablishing specific centralized state-driven power. So there might be other terms that are better to use for pushing digital policy, but at least it's not as complicated as others that are floating around the agenda currently."
+    },
+    {
+      "start": 4485.952,
+      "end": 4515.12,
+      "text": "michael or june like to come no uh george i think you had a question thank you and i want to thank the speakers first i i have a a question that perhaps is a address to june to start with but it cuts across also what michael and john hendrick said in that"
+    },
+    {
+      "start": 4515.152,
+      "end": 4544.88,
+      "text": "question is the timeline of impact of all these initiatives that Europe is undertaking. I think from what I gather there's nobody that disagrees with any of these or with the goals of any of these. But there's a timeline of impact inherent in it and in the meantime"
+    },
+    {
+      "start": 4544.88,
+      "end": 4573.28,
+      "text": "stuff happens. For example, it was mentioned that 20% of the huge recovery fund will go to digital investments to all member states. Now, these investments have already started, although not formally. And guess who are the recipients of all these large sums of money? The same"
+    },
+    {
+      "start": 4573.28,
+      "end": 4600.448,
+      "text": "big tech companies that, let's say, were discussed in a different context, because simply there is no alternative. Now, in some cases, for example, in, let's say, cloud service areas, which many countries now are investing very heavily in, the European service"
+    },
+    {
+      "start": 4600.448,
+      "end": 4626.144,
+      "text": "cloud service providers have one percent of the market of the european market and so what are they doing i mean amazon is building a new a whole new infrastructure in greece for example to mention my country question uh can can a timeline of impact be seen or understood"
+    },
+    {
+      "start": 4626.144,
+      "end": 4653.792,
+      "text": "while all these things are happening. And that, to end, would also have significant, I believe, geopolitical dimensions, which is another topic perhaps for another time. No, it's a very good comment and a very good question, George. And certainly, now as the member states start to..."
+    },
+    {
+      "start": 4653.792,
+      "end": 4668.272,
+      "text": "send their proposed plans for the digital well for the investment and I see well we see some of the ones that connect that can to look at them the commission has a right of regard or has to issue its approval I think to make sure they're in line with the"
+    },
+    {
+      "start": 4668.272,
+      "end": 4694.416,
+      "text": "The objectives of the RRF that clearly everyone is wondering if we haven't just shut ourselves in the foot with that, because it's exactly as you say, if you want quick and easy solutions and you want to spend the money quickly, then you're going to go for the people who can provide the service. If I can show anecdotally, and I don't think this is particularly confidential at all, but say in my unit, we look at language technologies and we have an in-house automated translation tool."
+    },
+    {
+      "start": 4694.416,
+      "end": 4723.232,
+      "text": "called eTranslation, which we've now made available free of charge to European SMEs as a sort of rival, if you like, to Google Translate, because exactly so that firms can send their stuff to get translated and not think someone is reading it on the other side of the pond. But when the president wanted a multilingual sort of speech recognition system, where did we go to? We are trying to develop one in-house, but of course that takes time."
+    },
+    {
+      "start": 4723.232,
+      "end": 4726.592,
+      "text": "And who has one ready to hand? Of course, it's Microsoft Azure."
+    },
+    {
+      "start": 4726.592,
+      "end": 4754.352,
+      "text": "So we actually are caught in this dilemma in terms of the funding. And so there is a real tension there between doing it sort of quick and actually wanting to spend the money and see the practical impact in terms of digital transformation. And who is the beneficiaries of those of those money, even if it's obviously European subsidiaries of the firms concerned. And in terms of the other aspects, in terms of the legislation and the strategy, I mean, there really is. You know, I'm not joking that."
+    },
+    {
+      "start": 4754.352,
+      "end": 4780.16,
+      "text": "My colleagues have been working every weekend this last year on data and they're likely to go on working every weekend for this year as well with the Data Act due. So there's a lot of work going into that. But then, of course, it goes into the legislative procedure, ordinary legislative procedure. And there we get the debates, you know, between Parliament and council. And as you see with the e-privacy proposal, things that."
+    },
+    {
+      "start": 4780.16,
+      "end": 4800.0,
+      "text": "might look obvious from a certain point of view in fact are not necessarily obvious once they get to that level of the negotiation so the timeline for actually when these things become law is really not then in the commission's control the commission's done their bit right at the upstream and then what happens is obviously we're active players in that but"
+    },
+    {
+      "start": 4800.0,
+      "end": 4817.168,
+      "text": "It's not that we're the sole player in that. And that can be very frustrating because obviously for this commission, they've got five years, one year down in the mandate and they want to see a difference by the end of it. And that really is, I think, the whole tension between the way we do politics in Europe."
+    },
+    {
+      "start": 4817.168,
+      "end": 4844.576,
+      "text": "And with the system that we have in the European Union, where we have all these checks and balances and these very cumbersome, you know, legislative procedures. And what Michael said, you know, we need to be able to sort of turn on a sixpence and get these things changed very quickly. And maybe this is really just a personal view. I don't see the systems changing, but I think the gravity of the situation perhaps has changed the willingness of people to actually come to very sort of quicker."
+    },
+    {
+      "start": 4844.576,
+      "end": 4873.792,
+      "text": "adoption of proposals, perhaps, maybe. I mean, that's a hope there, because I think everyone realizes really what's at stake at the moment, and that we have to find this European way and actually be seen to be putting something into action. But I'm not sure I can offer you a better answer than that, I'm afraid. Thank you, June. We hopefully have time for one last question. Wolfgang Bolt has his hand up."
+    },
+    {
+      "start": 4873.792,
+      "end": 4899.888,
+      "text": "quite a while, a virtual hand up. So could you please ask a brief question? Yeah, thank you. Well, actually, I had one in the chat and one I would like to raise now, but I'll start with the one that addresses sovereignty, because I heard, I think it was Jan Hendrik say that the concept itself is problematic."
+    },
+    {
+      "start": 4899.888,
+      "end": 4928.864,
+      "text": "That applies to very many concepts like power and what you have. But still, it is a very practical issue. It is a practical issue when you want to start the fighter plane and you have to ask the U.S. whether you can operate the software which enables the plane to take off in the first place. Or it can be a problem when we find ourselves rather sooner than later in the situation where there will be"
+    },
+    {
+      "start": 4928.864,
+      "end": 4955.072,
+      "text": "Only two and finally, probably only one large scale manufacturer of integrated circuits. So far, we have been focusing in the discussion mainly on the software and the codes and what you have. But hardware concentration is an issue as well. And that relates to my second question. And that is."
+    },
+    {
+      "start": 4955.072,
+      "end": 4977.632,
+      "text": "Jan Hendrik was referring to industrial policy as an approach to come to grips with some of these problems of sovereignty, not only digital, but also technological sovereignty in a broader sense. And he was mentioning just the..."
+    },
+    {
+      "start": 4977.632,
+      "end": 5004.528,
+      "text": "to inscribe the policy goal somehow into the funding and selection criteria for Horizon Europe. I think there are a lot of other options, like the important projects of common European interest as a policy tool, but there are others which we would have to develop rather quickly to have the toolboxes that are available to other"
+    },
+    {
+      "start": 5004.848,
+      "end": 5024.752,
+      "text": "geopolitical powers and that we as Europeans and European Union lack for the time being. And I would like to hear the opinions of the panel on this one. Thank you. Thank you. Who would like to go? Michael?"
+    },
+    {
+      "start": 5024.752,
+      "end": 5053.984,
+      "text": "Yeah, there's one small point which I think is interesting. I mean, of course, when you are practically restricted from, say, launching the fighter jet because of software, that's a worrying thing. But when we see a lot of talk by politicians about digital sovereignty, they really haven't explored all the options at their disposal first. So during the last year, we saw Cedric O up in arms about Google and Bluetooth and Apple and the inability to let their own contact tracing."
+    },
+    {
+      "start": 5053.984,
+      "end": 5075.648,
+      "text": "France didn't try any powers of the state. In a way, it was, why aren't you just giving in when we just say things to you, private company? Sovereignty isn't a country just saying things without the force of law and the rest of the world acquiescing. So I think we actually need to bear in mind that unless we actually..."
+    },
+    {
+      "start": 5075.648,
+      "end": 5103.76,
+      "text": "pay money to regulators and take organizations to court and start to enforce the laws that we have on our books with actual force of the state, then we have no right to be talking about sovereignty. And I don't really have time for it because I just find it very, you know, there's not always the case. There are times where it is genuinely tangled and difficult, but there are many times when people just make sounds. You think, well, we'll do something using the powers at your disposal. You are a minister."
+    },
+    {
+      "start": 5105.744,
+      "end": 5111.264,
+      "text": "John Henrik."
+    },
+    {
+      "start": 5111.264,
+      "end": 5138.384,
+      "text": "Maybe to just add to what Wolfgang just mentioned, I actually had the common projects of common interest on my paper. I didn't mention it because I was thinking it would get too detailed because, of course, there are other instruments except from research funding that these ideas could go into. But I was voting for..."
+    },
+    {
+      "start": 5138.384,
+      "end": 5166.256,
+      "text": "not only adding those really good ideas that are now implemented in the DSA, the DGA, the DMA, not only implementing them into the ways in which we actually currently deal with the existing platforms and we try to come up with ways in which to produce oversight and audits and also for them, but also integrate them into an active agenda of actually producing."
+    },
+    {
+      "start": 5166.256,
+      "end": 5194.736,
+      "text": "the types of services that we could use as alternatives, like, for example, the speech translation and speech recognition services that June was mentioning, to get to a situation where we actually have the option to choose between those, there needs to be support for those who want to build these kinds of applications. And they are out there. So if you look at the wonderful"
+    },
+    {
+      "start": 5194.736,
+      "end": 5215.6,
+      "text": "setups of european driven projects actually in all kinds of areas there are really good examples of of of groups and communities and and and projects that try to tackle very specific concrete problems but they often lack support and often lack funding i was just"
+    },
+    {
+      "start": 5215.6,
+      "end": 5239.088,
+      "text": "voting for not only pushing everything into the idea of building up finally a European, I don't know, microchip company, but putting it on the agenda to actually support these kinds of projects and initiatives that are out there already to be able to come together under a common umbrella. So that was the vote."
+    },
+    {
+      "start": 5239.856,
+      "end": 5264.176,
+      "text": "So let me stop here. I think we probably could continue this discussion for a long time. It's a it's a big subject. It's a complicated subject, an interesting subject. And I would like to have time to thank our three panelists for their fascinating presentations and from their great answers to the questions. So let me give you a."
+    },
+    {
+      "start": 5264.304,
+      "end": 5293.216,
+      "text": "physical hand and turn it back over to I think Peter at this point oh thank you Jim yeah let me quickly share the screen so we can end this on our final notes for today and the final notes are the message by MIA this is a track from her 2010 album Maya"
+    },
+    {
+      "start": 5293.216,
+      "end": 5322.496,
+      "text": "gravitates to various topics of information politics, and it's the opening track of the album, so it's a very short and powerful comment on online surveillance. Before I play it, as an announcement, our next lecture is already next week, on February 2nd, at 5pm, as per usual, and Sunimal Mendes will speak on the topic Freedom of Expression in the Digital Public Sphere, and Christiane Wendehorst will act as a respondent, and Erich Brehm as moderator."
+    },
+    {
+      "start": 5322.496,
+      "end": 5329.7119999999995,
+      "text": "So that's it. See you next week. Thanks for joining today. And here's MIA's The Message."
+    },
+    {
+      "start": 5403.632,
+      "end": 5418.576,
+      "text": "Thanks. Bye-bye. Thank you. Bye-bye. Good evening. Bye-bye. Thanks to all of you and see you next week. Goodbye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

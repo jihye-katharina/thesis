@@ -1,0 +1,1206 @@
+{
+  "video_id": "6vVKJAe8Wfg",
+  "source": "whisper",
+  "language": "en",
+  "text": "in a second, so please all take your seats. So for these two afternoon sessions, we're actually trying to focus a bit more on the concrete research challenges and existing contributions. So these are gonna be more technical talks, well, slightly more technical talks, but the idea is that We look into examples of what is there and what the actual practitioners and the people who are working in the relevant areas and who are already pursuing certain, let's say, digital humanistic values in their research, what they can tell us about what they're doing and where they think that the central challenges are for the next years to come. I'm very pleased to welcome three really distinguished speakers in this session. Two of which are going to be participating remotely. We're gonna start with Robin Burke. Then the second speaker is gonna be Paola Invarady. She's here, so she will give her talk from the room. And then Edward A. Lee will be the third presenter in this session. Let's start with Robin. Sorry, I'm just going to introduce you very quickly. And for that, I'm going to refer to your to your CV. So Robin is professor and chair of the Department of Information Science at the University of Colorado Boulder. He conducts research and personalized recommender systems. I feel to help found and develop his most recent project explore fairness, accountability and transparency in recommendation through the integration of objectives from diverse stakeholders. From what I know he's going to talk about, I can very much see that this is. a perfect fit and highly interesting to what we're discussing and being part of the recommender system community myself. I am very much looking forward to this and know how relevant this all is. Robin, please go ahead. The floor is yours. Thanks for being here with us today. All right. Let me know if you can hear me. Yes, now it's clear. Okay, and are the slides showing up? Not yet. Okay, suddenly. Okay, here we go. All right, so actually, you know, I think my talk may be a little bit less technical than Peter was describing. But anyway, so I hope it is relevant and interesting to the audience here. So I'm talking about personalization and its discontents. A little bit of introduction for myself. I've been working on recommender systems slash personalized information access since the early 1990s before the term recommender systems existed. And I have. I've explored a lot of different aspects of recommender systems in my research, conversational recommendation, robustness and stability, recommendation in social networks, multi-stakeholder aspects of recommendation, and most recently, fairness and transparency. And when I was thinking about this talk and digital humanism, I was... I was somehow reminded of this very well-known work by Sigmund Freud, Civilization and its Discontents from the 1930s, published in the aftermath of World War I. And in this work, maybe one of his most famous works, he argues that there's this tension between basic human desires, which are often kind of raw and destructive. This tension between those desires and sort of the taming influence of society and that this – the inhibition that's essential for civilization to exist is actually the source of certain kinds of psychopathology and other challenges that people face. The events of the last week have shown us that, in fact – Civilization doesn't always win in taming humanity's destructive impulses, and that was also something that was very much on his mind in 1930. But I'm talking about a different kind of discontent. As we know, Personalization and recommendation is expanding in more and more areas of people's lives as more transactions are conducted online, as more data is collected in a variety of different kinds of venues. It's not just product recommendation, but news, employment, housing, media of all kinds. And so we can argue that actually personalization is a kind of governing force in the digital realm. It controls what people see, what they hear, what they know about. There's actually not a whole lot of difference, if we think about it. There's not a whole lot of difference between the kind of sort of cancellation that happens when when you decide to remove someone from your platform, take down their videos, prevent them from contributing, there's not a whole lot of difference from doing that and from adjusting your recommender system so that those items aren't presented to anybody. And that's effectively a form of moderation. So that's one aspect. The other aspect, of course, is people's information environments are shaped by recommender systems and personalization to the extent that people may find themselves constrained and have to struggle against the intents of the algorithm in order to do what they're trying to do in order to preserve their autonomy. One of the big differences here is that there's a kind of social contract that exists, you know, that is maybe not explicit. It's implicit, but it's something that we, you know, that we at least have some voice about and that we can interrogate and talk about. And the codes of personalized systems are not like that. They're hidden. They're ungovernable. And that makes this conflict actually quite different from the one that Freud talked about. So I'm going to talk a little bit later on about some proposals. And they actually seem kind of modest as I'm talking about it here. But things that we don't have that I actually think we need to think more carefully about how we might be able to provide transparency and governance for personalized systems. And so I'll get there as I start, as I go through talking about some of the problems here. So, and the first thing I want to say really is, you know, I study personalization. You know, it's been my entire career. So I'm not somebody who is saying this is bad and let's shut it all off. And actually, you know, I don't know if there's anybody from Spotify there, but, you know, I have discovered so much music on Spotify that I don't think I would have ever found any other way through its personalization and recommendation system. So artists I didn't know about before, kind of sub-genres that I realized were related to things that I knew but hadn't heard about before. And this is really the promise, right? This is what we have been trying to achieve since this. work started almost 30 years ago, you know, the stuff that you want to know about, the stuff that you want to read, see, buy, it comes to you. And, you know, you have reduced effort in searching for it. Things that crop up in some obscure corner can be found in ways that that would be very difficult for a human individually to replicate. It scales up, and, you know, the promise here is, you know, information overload is fixed. The system, you know, goes through all of the dross and finds the gems that you're really interested in. And sometimes it works, right? And this is a – this is – this is – part of the power and part of the promise of personalization. So I don't want to deny that because then I'd be out of a job. Personalized systems, of course, are everywhere. I don't have to tell this crowd that. Our environment is saturated with systems that are providing. personalized results in media of the kinds that I described, but also Social media, online dating, travel, e-commerce, of course, you name it. So what's the problem, you know, with personalized systems? Why might we have – where does the discontent come from? And I think one of the challenges is that, you know, the personalization as it was conceived, as I – worked on it and my colleagues in recommender systems for a long time, we never really thought of it as being normative in the sense of being, here are all the things that you should know. It was much more a matter of let's see what it is that people do and try and make the things that they already do more efficient. But something that's purely personalized doesn't capture all of the values that are important in people's consumption. And especially this is true once you get beyond, say, consumer products to things like news or employment, for example. In news, there's this idea of what you ought to know. You ought to know that You know that there's a war going on in Ukraine, even if what you normally read in the newspaper is just the sports and the celebrity news. Right. So you ought to know that. And it's also the case that this idea of like things you would like. That's not really as well defined as as we might think. And I put the picture of a cup or cup of coffee here because. The you know, I do remember the first time I tried this grown up drink and it was like horrible. It's like, you know, why would anybody ever drink that bitter, awful tasting thing? And, you know, and my my impression of coffee changed over time. But the thing that the thing that. you might not like when you encounter it the first time, they actually turn out to be something that you grow to appreciate. And that's true for a lot of different things. And the danger in a system that is always retrospectively looking at what people liked is that that can't be part of it, right? The thing that you don't know yet that you're going to like or that you'll like five years from now. Because of that, everybody's specific filter is a little bit different, and it's not necessarily the case that we can kind of, and this is my research right now, if we want the system to enforce some ideas about what people ought to know or ought to experience, it's challenging to do that, and it's challenging to understand what it is that the system is doing as opposed to some other normative thing. Another problem, and this has kind of been well explored, is that these are inherently social systems, and they inherently will capture social biases. So people are not always nice. People's behaviors may be influenced by latent biases that they hold. We all have them. just your likes and dislikes are going to encode and inherit those biases and then the algorithmic systems inherit them. And one of the things that we know from the past five or six years of research is that not only do algorithmic systems, sorry, inherit people's biases, but they actually amplify them. And that's because it's easier to make predictions that follow the central tendencies of the crowd than to make predictions that go off in a slightly different direction. And so the system is always going to try and do the thing that's easy. And because that's where it gets the most, you know, benefit in terms of optimization. And so, you know, reinforcing societal biases is an easy thing for it to do. And something that in our research, you know, we try and build systems that avoid these problems, we have to struggle against in producing systems that work better. Now, we know that any AI system is optimized for a particular objective, and maybe it's some combination of objectives, but there's some set of things that we... that the system is being trained. Here's what a good result is. Here's what a less good result is. You know, shape your behavior towards the good results. Somebody has to tell it what the good is. And that's the objective. And in spite of kind of the way recommender systems present themselves to us, especially in the commercial sphere, the objectives of these systems are not always things that the user would choose. And so, for example, you know, a well-known objective is watch more ads or spend more time staring at this particular app. And maybe that isn't something that the user would choose as, you know, what should be optimized for in their own experience. And here's an example. This is from Amazon. the interface to Amazon.com. And you can see it says top picks for you. But what is, in what sense is that, are those the top picks for me? Are they the most profitable ones for Amazon? Are they the ones that, you know, are, that they think are most likely to expand my shopping cart? You know, what are the objectives? What is it that, the system is being trained for in order to identify these things as the top picks for me. There's no really way for me to find out. And if I interrogate the system a little, it might say a few things, but it's not going to really tell me what it is that the output is being optimized for. Another key issue in recommender systems is this. Again, this is something that has emerged in more recent research, is this idea of multi-sidedness. So usually we think about the end user getting recommendations, how does it impact them? But it's also the case that recommender systems have an impact on the livelihoods of people who provide the content that's being recommended. So obvious examples are things like, you know, creators on YouTube or on TikTok. But it's also true for, you know, musicians, journalists, other folks. And our definition of user, at least so far, doesn't really include those people in spite of the fact that they're being impacted. And we don't necessarily include their point of view when we're thinking about what the system should do, what its properties should be. And, you know, if we view the recommender system as sort of an intermediary in a sort of market or in a particular... set of interactions. What happens when the interests of the different parties conflict? What is it that a system needs to do in order to balance different sets of concerns? To the extent that a system does that, again, it's very much hidden from us behind something that says top picks for you, which is definitely not capturing everything that's going on. And then finally, the last issue I think is Very relevant here is this problem of surveillance. So personalized systems only exist if we can collect a lot of information about people. And the more we collect, usually the better they are. And as it turns out, you know, the data that's collected in that way, sure, it's useful for personalization, but it's also useful for a lot of other things. And Shoshana Zuboff's book. The Age of Surveillance Capitalism talks about this in terms of behavioral surplus. It's like, yes, our behavior is good for personalizing the system, but it also has additional value for the companies that are able to collect it and collect it at very, very large scale. And she argues that, in fact, predictive systems have a way of undermining people's autonomy. There's actually some technical. Kind of in addition to sort of the philosophical point of view, there's some technical heft behind that idea. The argument has been made that, in fact, the best way to make your system accurate is to manipulate people's desires so they only want the things you're recommending rather than trying to predict everything that they might really want. And this effect of. You know, the sort of burden of surveillance is particularly felt by vulnerable populations. This has very strong positive feedback effects. So as, you know, as companies collect more data, that enables the collation. the creation of more effective services, which enables more data gathering, which then creates this giant cumulative advantage, which we see to a large extent in the concentration of power in the tech industry today. Okay. So there are some problems. And if you talk to the folks in the tech industry, they will say, trust us. We're working on it. We have smart people. You don't need to worry about it. It's all under control. Folks like Mark Zuckerberg will say, oh, yes, we think there should be more regulation. But at the same time, he's writing millions of dollars in checks to lobby against regulation in all its different forms. I think you all in Europe have had a little bit more success in this realm than you have in the United States. But I think it's still the case that we're a long way from where we need to be. So what can we do? Obviously. I have to say this part. Keep doing research on personalized systems. Keep, you know, writing my research grants and funding my research grants. So, yeah, we'll do that. But I'm not going to talk about that so much. That's why it's a little bit in gray there. I think. What we need is a radically increased transparency and democratization for personalized systems. And I'm going to talk about two things in particular. I don't think these are the only things that you might do, but there are things that occur to me as maybe not easy to achieve, but essential in trying to reduce our discontent. Okay, so one is this transparency around system objectives. So we know that transparency in personalized systems is very difficult to achieve. If you want to know why is it that this item is being recommended to me, it's, sure, I could. tell you something about the model that produced that output. But these are very complex models, and you're probably not going to be able to make sense of my description of what it is that happened. But there's another kind of transparency that would be a lot easier to achieve, a kind of global transparency in which we make it clear what it is that the system has been optimized for. What is its objective or set of objectives? And that's got to be there in the system. Somebody wrote the loss function. What is it? And so that can provide a lot of information and go a long way towards understanding what the system is really achieving. Now, people will tell you, if you bring up this idea, is that That's going to enable adversarial behavior. So somebody who is trying to game the system and get their items recommended will be able to reverse and take those objectives and manipulate the system with it. Sorry, we couldn't hear you for the last couple minutes. Second, sorry. You were frozen for a bit. Okay. So anyway, making the objectives explicit might enable adversarial behavior. It's also the case that they might be very technical, things like regularization or something like that. So the average user might not make much sense of it. So and this argument has been made before the idea that we need kind of an FDA that for, you know. That's the Food and Drug Administration in the U.S. And, you know, the snake oil bottle is here. There was a time when, you know, you could put anything in a bottle and call it a drug and you didn't have to tell people what was in it. If, you know, and so this idea has been proposed by Kathy O'Neill and others that we need. A similar kind of agency to tell us what's in the bottle and what's in the bottle in some sense is a function of these of these objectives. And so this kind of accountability, accountability to the objectives is a form of transparency that I don't think it's discussed very much. I think it's probably the one that would be the most effective. The second thing I want to talk about is is unbundling. People talk about breaking up Facebook or these other tech giants. What could that possibly mean? Again, because the effect of these systems is a network effect. You want to be able to connect to people regardless of where they are or who they are. And so this sort of vertical partitioning or maybe you think about horizontal partitioning makes a lot, it doesn't make a whole lot of sense, but a kind of vertical partitioning might make sense. And so Francis Fukuyama and his colleagues have talked about what they call, I wouldn't call it this because I'm a computer scientist, the middleware solution. And the idea is that you separate the back end of the system from the personalization part. So there's a big... piece of Facebook that's like sending messages around and storing your images and caching stuff and all the things that it has to do on the back end, they don't have anything to do with presenting personalized feeds to people. And then you separate out that piece and you say, okay, we're going to let lots of different companies provide a personalized or maybe not even personalized front end that users actually interact with. And I know that this solution would work. And the reason why I know that it would work is because whenever I talk to people in industry about it, their eyes glaze over and they pretend that they didn't hear me because they know that it would work. And they also know that it would it would vastly diminish their power. So you could imagine, you know, a swappable sort of layer of personalization. You know, there could be the University of Colorado system. There could be one especially for parents, you know, et cetera. Of course, there might be, you know, you might want to have a floor, you know, in terms of what you would allow in terms of that. You might not want... ones that were promoting extremist content or things like that. But there's no reason why it just has to be one point of view captured in the personalization objectives. Now, there are a lot of challenges in putting this into practice. How do we divide up the money? because, you know, the personalized system is delivering ads as well, and how do we, you know, how do we appropriately divide that up between the front end and the back end? Sure, that's a problem to be solved. There are also some privacy issues in the sense that, you know, I give my data to Facebook, sort of, and now it's going to share it with all these different, you know, personalization providers, some of whom might be fly-by-night. You know, folks, I don't even know who they are because somebody else may be choosing a different system from me. I don't think those are insurmountable, but certainly those are things that we would have to address to make this happen. OK, so I'm running out of time here. I just want to say, you know. personalized systems bring a lot of benefits, but they are super powerful in ways that I think we are only just beginning to really understand and appreciate. There's a lot of research going on to make these systems better, and that's what my research group does. But I think that there's also fundamental aspects of their governance that need to be addressed and remedied. In his book from 1933, Freud argued that Individual psychopathology, his studies of his patients could actually teach us something about human society and its interaction with human desires. And I'm kind of arguing here that the that the challenges that we see in personalization also teach us something about big tech and point the way towards things we might do in in terms of governing that technology better. OK, and that's where I'm going to stop. Thank you. And I wish I could be there. It's much better to be able to discuss these things in person than to do it over Zoom. Thanks very much, Robin. If there are any questions, I would suggest that we, if there's anything that needs clarification, that we would do a short Q&A right now. So if there's any question that we can take right away, then do that. Otherwise, I would leave that for the discussion part later on, and then we'll have the panel. where we have more in-depth questions. So is there any question at the moment? I do see a question here. Oh, yeah. Yeah. Yes. Can you hear me? Do you see in this space of choosing your personalization? The null option, that is, I don't want any. Yes, I mean, I think that that's possible. I think that that has its own hazards. It's like if you, say, pick the reverse chronological, right, then you're very vulnerable to spam, right? Somebody can post every nanosecond, you know, and then you can't escape it, right? So I think that there's... Yeah, that is an option. It might not turn out to be a practical option. It can be spam, but as long as I have filter tools. that I know how to use. I really don't care about anybody else's personalization. Right, right. And so I do think that that's very much a possibility, right? So there would be like the extremely minimal or non-personalized type of option as well. I have a question as well. I'd like to know which are the... the possible consequences for education, for personalized education? Do you see this in a good manner or in a bad manner? So I think I've worked in this area a little bit. I think that there's some interesting questions there. So, for example, and it comes back to this question of objectives, what am I optimizing for, right? Am I optimizing for some notion of, you know, some notion of pedagogy? Am I, you know, if I'm providing personalized results to the students, say, read this, read that next, am I doing that on the basis of having some sound idea of what's good pedagogy? What's the pedagogical theory underlying, you know, your system's objectives? And if it's just... Well, and I've seen this kind of work. If it's just like, okay, recommend the thing that you're most likely to get an A on or you're most likely to get 100% on, I don't think that's a good theory of pedagogy. And oftentimes we default to things that are kind of easy to measure like that. So anyway, I think it's possible to have good personalized recommendations in that domain. But again, I would ask that question. It's like, okay, what's your objective? Okay, thanks. So I would suggest that now we move on to the next talk, and we're going to turn it over to Robin and everyone after the talk. Thanks very much. Next speaker is going to be Paola Ingaradi, and let me just bring up her presentation and share the screen, and then I can... So this should work now. Okay, great. So, Paola is professor of computer science at University of L'Aquila. She was rector of the University of L'Aquila from October 2018. 2013 to September 2019, Paula's research area is in the application of rigorous methods to software production in order to improve software quality. In the last decade, her research interests concentrated in the field of software architectures, mobile applications, and adaptive and autonomous systems. Currently, she leads a project to develop software solutions to protect users' ethics in the interaction with autonomous technologies. I think she's going to talk about that, so please. Thank you. Thank you, Peter. And actually, I'm very well positioned after the previous talk, because I would like to use Robin's technology to help the user. Let's see how the profiling can be very good also to remain human. So first of all, I mean, autonomous systems is my focus. I mean, it's not only autonomous car. No, I mean, it's the washing machine. Somebody this morning was mentioning these very smart washing machines that we very much may welcome because they, you know, take off of our burden, something that we might not like. Can be a queuing, a smart queuing system that help us, you know, use our waiting time in a fruitful way. All these systems, I mean, apparently are, you know, very good. They are helping us. But as we have been listening since this morning, they also bring a lot of worries, potential worries. I mean, the first, the big worries that I see is this, you know, what we call the arm of the digital society. So first of all, let me say one word. We haven't said it yet, but we are in a digital society. the idea, but we are in a digital society. So it's becoming very difficult to distinguish when part of our life is in the digital society or outside. They are so intermixed and will be so intermixed more and more in the future that it's really difficult to distinguish what is real and what is virtual. So we have listened. that this can bring worries. And my conclusion is that it is unavoidable. So we have to some extent, you know, went too far to just think that we want to go back. We are not going back. So we have to face a sort of evolutionary stage. We have to understand that we have to evolve in order to live as humans in this new. digital society. So the project we'll talk about has a vision that might seem apparently at the very beginning unfeasible. And it's a vision in which human beings are able to interact or pair with their digital peers, whatever they are. And of course, there are several steps to go towards the vision that can actually help us in many dimensions. also now in our present reality. So this is what Florida calls the mangrove society. It's difficult to distinguish what remains real and what is actually digital. So how do we defend ourselves? Again, I will not repeat and convince you here that we have to do things. We have been listening all this morning about that. Just look at what are the ethics guidelines for trustworthy AI. It's, of course, respecting the rule of law, being aligned with agreed ethical principles and values, including privacy, fairness, and human dignity. Here I am stressing this aspect of human dignities and then keeping us, the humans, in control. And then what we have already listened to, ensuring the system is transparent. the decision-making process is explainable, and then robust and safe and so on and so forth. So all requirements we have been familiar with at this point. But something that we haven't touched at all and our project is doing is really how can we keep the humans in control? What does it mean to keep the humans in control? And what does it mean human dignity? So what we are trying to do is to empower the individuals. So first of all, here the focus is on the individual, on the person. How do we interpret the principle of human dignity? We are following what the European Group on Ethics in Science and New Technologies said in their statement in 2018, that the principle of human dignity is understood as the recognition of the inherent... human state of being worthy of respect must not be violated by autonomous technologies. Means that autonomous technologies need to be programmed in such a way to respect the human. But where is the border? What does it mean respect? How many decisions as a system can I take by making sure that I'm still respecting the human dignity? Okay, here, you know, Viola said something about that. I mean, it's not a matter of for a system saying accept or not accept. This does not satisfy our freedom of choice, no? I mean, we might have individual preferences and our own moral views. So respect for us is not just saying, okay, I accept it or I do not accept it. As Viola said, there are nuances, differences. This is what makes us human. We are all different. However, in this interaction, we are unprotected and we have to accept the idea that whatever we can do in terms of transparency, explainability and law and regulation will not make us even in our interaction. Just one example. GDPR is a great law. It has been recalled this morning. It has been the most advanced law on privacy of data, personal data in the world. The effect of obeying this law has been an interaction with computers. system, which is a terrible burden for a user and does not actually protect him. I would like to know how many of you actually are passionate enough to go every time, try to access a website, the passions to go to the profiling and set all the settings as you want. Of course, it's respectful of the law. For us, it becomes a burden, and after a while, we don't care, or many don't care. So, I mean, role is not enough. Law is not enough. So, we need to empower the user in order to be able to actually interact properly. Users have to become active actors in the digital world. And this requires an architectural approach. I am a software engineer, so I mean, I think of systems. And here I'm thinking of a user, of an individual, as a piece of the system. So it remains the problem, how do we break the autonomy of the autonomous systems compared with the respect that the user wants? Here we rely on... on a philosophical suggestion by Luciano Floridi that actually talking of digital ethics divides it in hard ethics and soft ethics. I won't go into details, but just to be very, very, very, very rough. Hard ethics is more or less defined by regulation laws or... rules of conduct that everybody shared. Soft ethics is the space of our personal decisions that are not against the rules, against the law, but where we can actually express our freedom of choices. Here I have a very short example, very simple, which is not AI-fueled necessarily, or at least not as we might imagine. So just think of an automated queuing system. I mean, and what you do is that the system in red, the user in green, and the developers in blue. So the system registers users and downloads user's info. I mean, for example, if it is a queuing system to a health site. predicts waiting time, sends a message to user when time is approaching. Users instead registers, provides their telephone number, accepting all the disclosure rules when exiting. But it might happen that when exiting the registration room, the user sees somebody entering who might need to be served earlier. And at that point, the user may want to exchange position with the person's name. Is it possible? Is the system programmed in such a way that this choice of a user can be exercised? Of course, not all the users will do it, but this is because we are different. And the system is implementing apparently a fair a fair policy. I mean, the first in, first out. But is this something which actually respects my moral view, my way of living? Or is it imposing a policy? It may seem a stupid example. It's not a stupid example. Because these systems are, you know, everywhere. So we don't know. need to go to the autonomous car to understand. So, I mean, what would we learn from this example? We learned that putting human at the center requires to have a certain level of customization or enforcement of the decisions of the autonomous system. We postulate that this level corresponds to soft ethics of each individual. Soft ethics, of course, shall be consistent with hard ethics, with the rules, and individuals have different ethics, also depending on context. So, sorry. Oops. Soft ethics then is associated with individuals and hard ethics to systems. The two need to combine to some extent. Sometimes this is called, I mean, agreement can be a moral agreement. And when an individual and a system interact. And again, here the focus is at this architectural level. So I have a system, I have a user, they interact. I don't know how the system is. development. But I would like to interact with it and exchange interactions in order to agree on the best way to accomplish the task. Of course this puts requirements on the system. So basically this is more or less how the idea of soft ethics and hard ethics can lead us to think of a possible way of adapting systems, of a kind of flexibility that we would like to have in autonomous systems in order to preserve the human dignity of each user. Now, what are we doing? So basically, the Exosome project is a project that wants to produce software components that are like a software exoskeleton. They are personalized to the individuals. And this software exoskeleton actually mediates the interactions with the digital world according to the moral preferences of the user. So from a product point of view, this is... pieces of software personalized for the user that learn what are the moral preferences of the user, then I will say something more about it if there is time, and that actually protect the user in the interaction with the system. Now you may object, not all the system will be willing to interact with you, fine. I won't interact with those systems. It's a way to introduce a bit of balancing of power in the digital world. If we manage to have products, software that is on the side of the user, then also the system that would like to interact with those users that use this type of exoskeleton will need to adapt and will need to be willing to adapt. So this is the sketch. Basically, this exoskeleton is software. What does it mean that it's personalized to the user? It means that it's deployed on the user's device. You know, eventually deployed under our skin with a small chip. And they mediate the access to... the digital world. If you look at a functional architecture of an automotive vehicle then you see that here you have this decision of control and as you look at it now this is completely you know it's a completely closed box. If you take the vision of the exoskeleton and then the possibility to actually interact and adapt to the moral preferences of the user, then you need to open the box a little bit. You need to offer, as autonomous system, an interface that can actually be customized or can achieve an agreement with the user. This is a picture of this. What do we mean with exoskeleton? It's a personalized software layer. And once you assume that it's an autonomous car and you get on board, getting on board, if you have an exoskeleton, we'll actually customize, adapt the software vehicle, the decision software vehicle to you. the exoskeleton. Now, we are... Oh, what did I do? We have to go down. Okay, so, I mean, this is the kind of architecture that we have fought in terms of. We have to. Sorry. that we add what we have designed. And of course, I mean, in this exoskeleton, there is a medical actuator, which is a sort of filter that is synthesized depending on the application domain in which it is operating in order to filter out the interactions that are not. compliant with the moral preferences of the user. Okay. So we have, of course, a methodology to reach the goal, and I'm not going to tell everything about that. I mean, we have a very strong expertise in terms of synthesis of components, synthesis of actual mediators. This is completely in our field of expertise. And what instead is something that we are working at the moment is in the profiling exactly of the user preferences. We have started doing this work. We are starting experimenting and collecting data in order to understand how to profiling the ethical preferences of a user. Obviously, we are not thinking of profiling the ethical moral preferences of a user in a completely general way. But you have to recall that here we are working at the interface of what the user do with digital systems. So once you have chosen the domain, whether it is automotive or mobile applications, then the number of actions that a user can do and the number of actions that the system can do are finite, definitely. Our first experimentation, we have actually seen that we could achieve a good predictive power. So now, what are the components in terms of software engineering expertise? I mean, here we have this, you know, capability of expressing privacy preferences and ethical behavior and the key enabling technologies are specification and mining techniques for privacy analytics software architectures and synthesis and enforcing techniques and by combining all these pieces we can actually produce what are the two main components of the software exoskeleton. Can we do it ourselves? No, of course. So, I mean, there are a number of challenges. The first one is express the user's soft ethical preferences. We use a top-down and bottom-up approach. So top-down means that we have an idea of the ethical categories we are interested in and the user might find the health side. we have a bottom-up phase that actually learns by experience once deployed on a specific user profile. I just would like to go to the challenge because it is also something that we discussed today. So it is a multidisciplinary effort across different disciplines and inside computer science. Here, I would like to make a very strong statement. I think that what we have to do, which is very similar to what Carla was proposing today, is not to think of interdisciplinary knowledge, rather to have core disciplinary expertise that are able to work together. And this is different. So I don't think that we need a piece of this or that. I think that we need very strong, disciplinary expertise but with the by the able to develop communication capabilities and the ability to work together and this is a different objective different objective and i think that now we need that one um what we have we have philosopher i just go to to what is our team so in red we have computer scientists with different expertise In green we have the philosophers so we have and philosophers are different kind of philosophers and not always so we have metaphysics maybe Viola may be happy but we have also moral philosophers and then we have a sociologist we have a psychologist actually he is in the team working but we have also other support and we need psychologists because psychologists have been working with human beings. and have been collecting data, always. Maybe very fine-grained data, maybe even too much personalized, too much, no? But their expertise is precious. Then we have two law professors. Why do we need them? We do need them because we need to understand how much the law can say. to us, to what extent it can go the law with rules. This would mean hard edits. And we are actually working on the AI act exactly to understand. And if you think of the act now, you see that the AI act is much more on the side of the developers of the system pros users. And doesn't say too much in terms of the user, only as... guarantee offered by these transparency, explainability, and so on. And then we have two PhDs, and it's interesting because two PhDs, one has a master in philosophy, but he's doing a PhD in ICT, and the other one, she's a master in mathematics, and she's doing a PhD in artificial intelligence. So, I mean, it's tiring. But we have a one-week seminar and talk and brainstorming. And plus, we work in smaller groups. It's tiring. It takes time. But it's exciting and very nice. And we learn a lot of things. At my age, I do not remember what I learned, but I learned. Thank you. Are there any immediate questions that should be answered right away. In the room, or in the session. I see nothing in the chat so out there is one raised hand, Robin has a question, and wish us so please these two. So, I have a question about. I guess one concern I have about an architecture that looks like this is, you know, as we know, a lot of the technology that sort of exists on our devices and so forth sort of is only nominally ours. You know, it's like it really belongs to Google and, you know, the company. companies that are controlling it. And so my question is, what are the risks created by having your kind of, you know, even more intimate information about you, which would be, say, you know, my moral framework, whether I let the person in the waiting room go in front of me or not, that now becomes something that can be mined. in exactly the way that other kinds of my behavior, aspects of my behavior can be mined. And I'm sure that you've thought about this. I just wanted to push a little bit more on this question of just providing even more sort of personally fundamental information to sort of feed the beast of the surveillance age. Yeah. Sure. First of all, it's, you know, of course, the exoskeleton is a sensitive piece of software. It has to be protected in the best way. I mean, to the extent we can protect it up to the technology. But given that, I mean, don't be misled by the fact that I say moral preferences. What we collect is the way these moral preferences become actions in the digital world. And this is already collected to some extent. So, you know what I mean? The exoskeleton is not a personal assistant. It's really... Acting when I am acting, this is the vision. Actually, it will not be exactly that, because it might also appear when interactions, I'm not aware of some interactions that happened. But when, imagine the simplest thing is the cookies, no? Okay. When I set my cookies, if I'm able to set my cookies, this will be recorded. It's my action. But the way I set my cookie can be done automatically and always consistently, no matter how many websites I would like to access in one second, by the software that is mine and I can trust it. Now, here is another issue. It's the economic issue. I mean, it's like in the virus and the antivirus, no? I mean, of course, of course. The people who produce antivirus could cheat. This happens. But there is no market for them if they do that. The market is if they work. And that's my point. My point is, how can we introduce more power by producing technologies that have the economic advantage of safeguarding the user? So it's a recommended system for me, and it's certified that it's for me, and then I will buy it. Otherwise, I don't. So I think that we have to start thinking this way. We cannot just think that, you know, developers and law and something else will help us. And then we cannot do it ourself without digital means. So we need to become a little bit digital. And I didn't do a lot of it. So maybe I'm going to the right. Okay. Then very briefly, maybe it's your question. Also taking the risk that we might not have a lot of time afterwards, but let's ask a question now. Yes. My question is concerning the architecture that you were discussing, where it seems to me a lot of it is shown, at least in your slides and in your presentation, as sort of an external thing that is interacting with an existing system. It seems to me it equally needs to be changing the system itself. So if we take our experience from the past, for example, when one talks to a customer service representative of some company, Even though you're talking to a human, they are not empowered to change or fix a problem like a wrong credit card charge or something like that, or a faulty product that was delivered. They're not empowered by their companies. So even if that's replaced by software, something has to change there where it is able to interact with the exoskeleton and accommodate. the needs of that. So I was a little puzzled by the bias towards the external user side in your slides. No, actually, sorry, perhaps I didn't stress it, but it was in the slides. I said, but of course, this approach puts also architectural requirements on the systems. Now, again, here is an economic argument. Imagine that exoskeletons become actually widespread. and people actually start buying exoskeleton, immediately, people who are working on systems might decide to have a version which is compatible with the exoskeleton, so which is adaptable to the exoskeleton. And they might try to get it in the market. You know what I mean? I mean, I think that this economic... a push has to be leveraged on our advantage. That's what I mean. But of course, the system has to adapt. On the other hand, if we say that the autonomous system has to preserve the dignity of the user, they need to adapt. If we start saying that we don't like the idea that the system, even if it is fair, does not give us the freedom. to operate a choice that otherwise we might have operated. I don't know if I've been clear. Yeah. Okay. Thanks. So thanks for that again. And we're going to move to the third talk in the session by Edward Lee. I really hope we have some time to get to some common points and all that. Probably not, but let's hear Edward. See how we take it from there. OK, I'll try to recover some time. So I'm in a way up front, a little bit embarrassed to be talking about a topic like this in front of this particular audience, digital humanism crowd, probably. doesn't understand why someone would ask the question about whether there is a fundamental difference between humans and digital machines. But in my experience, actually, particularly among computer scientists, many people actually think the answer to this question is obvious. But some of them think the answer is, yes, there's a difference. And some of them think the answer is no, there is no difference. And there's actually very good reasons why. It's not such a simple question. So let me start with just talking about, you know, a key element of cognition, rational thought, which I'll define in the sense that that Herb Simon used this. OK, which is that rational thought in humans is step by step reasoning using clearly explicable rules of logic. OK. And I'm sure you all know that Herb Simon, who may be the only person to have received both a Nobel Prize and a Turing Award, he got the Nobel Prize for basically countering a prevailing view in economics, which was that humans were rational agents in this sense of using step by step reasoning. to optimize utility functions. And he said, well, actually humans are not very good at this, that the human mind has a very limited capacity to be able to handle the complexity of step-by-step reasoning in this sense. Now, the fact is that computers are actually very good at this. Step-by-step reasoning using clearly explicable rules of logic is the bread and butter of what computers do. And computers are able to handle enormous complexity compared to humans. You know, billions of steps, which is something that is way beyond what humans can do. Now, in the world of psychology, another Nobel Prize winner, Daniel Kahneman, is among the people who have also examined this limitation of humans in this sense of being able to do this step-by-step rational. decision-making. And Daniel Kahneman, in his very well-known, wonderful book called Thinking Fast and Slow, described the human cognitive mind, sort of partitioned it into these two systems, system one and system two, where system two is the rational decision-making in this sense of Herb Simon, and system one is the quick, intuitive. kind of inexplicable decision-making that dominates in this perspective, dominates an awful lot of human decision-making. Now, one thing that might be a little bit of a surprise to people is that deep neural networks, which have really changed the picture of AI in the last 10 to 15 years, are really much more like system one than system two. And this might be a surprise to some people and maybe a little bit counterintuitive because they are, in fact, realized on computers and computers are all about. step by step rational decision making. They're very algorithmic. However, if you look at the structure of deep neural networks, each of these boxes here actually represents simple arithmetic operations. And this picture vastly under represents the complexity of a typical deep neural network these days. There's there's, you know, hugely many more boxes involved. But basically, these are very simple. arithmetic operations that are going on in very large numbers, but nevertheless, simple arithmetic operations. And they're realized on computers in a step by step decision making kind of way. However, if you explain the operations that the computer is doing in realizing a deep neural networks, this gives you exactly zero insight into the outcome of the decision that the neural network gives you. These looking at the step by step logical decision, logical operations that the computer is doing gives you no insight into the outcome. Ultimately, that of the result that this deep neural network gives you, the classification, the decision. So. What's going on here, right? I mean, are are these. Deep neural networks actually rational decision makers in the sense of Herb Simon or or is there something a little bit more subtle? Now, this rational decision making sequential operations, according to rules of logic, are the underlying model behind computers and more precisely Turing machines. OK, Turing machines have the property that they're sequential. And by this, I mean very specifically that their operations consist of very discrete steps. So they're algorithmic in this sense. They're also digital. They operate on discrete data. And Turing machines also have the technical constraint that they need to halt to come to a conclusion. Otherwise, they're put into an equivalence class of non-halting machines, which are not within the. purview of Turing machines. Now, there's this very widespread misconception that Turing machines have a kind of universality. Now, there is a universal Turing machine, which is simply a Turing machine that can realize any other Turing machine. But many people misinterpret that, and they drop the Turing part of that, and they say that this is a universal machine. Now, the question is, is it really a universal machine? So here's a machine. This is a dishwasher. OK, is this actually a Turing machine? The fact is, it is neither digital nor algorithmic. Now, so modeling it as a Turing machine would be at the very least peculiar. Right. It is a machine. Now, the question then becomes if you pick some random machine in nature. So let's let's take as a hypothesis for the moment that. that my brain is a machine, okay? It's got stimulus coming in. It's got actuation going out. It's a machine. It's a machine that you find in nature. Here it is. Well, you're seeing it very indirectly through a digital means, but I assure you, I am not a deep fake. I am actually a physical human right here. And pick a random machine in nature. What are the odds that it's actually digital and algorithmic in the sense that its operations can be usefully described as these discrete steps? And that turns out to be a rather difficult question to answer. In fact, I've shown in a book that I published called Plato and the Nerd four years ago that. That question is actually untestable by experiment. So you cannot form a scientific hypothesis, scientific in the sense of Karl Popper, that all the machines that you could find in nature are in fact digital and algorithmic. It turns out to be a somewhat technical argument about why this is untestable. It's a consequence of a... a theorem that was proved by Claude Shannon, the Shannon channel capacity theorem. And I won't go into the technical details, but it's mathematically demonstrable that this hypothesis is not testable. It shouldn't be that surprising, however, that not all machines that you would find in nature are Turing machines. The reality is that the set of Turing machines is Kalam. Countable sets are, as shown by Georg Kantor, are the smallest of all the infinite sets that we know about. And the set of machines that you find in the world is probably not a countable set. Now, I use the word probably here because it's actually an untestable. It cannot be tested by experiment because of the Shannon channel capacity theorem. So it's really kind of a subtle point that you ultimately have to take on faith. But there's very compelling arguments that any model of the world that limits the world to digital and algorithmic operations is actually a more complex model of the world than one that does not. have such limitations. And there's also the question of why would nature be so limited? I mean, it seems like it's really quite a leap. And the models are significantly more complex when you impose that limitation on the world. And most of the models that we have of the physical world actually do not work with countable sets. They work with continuums and so forth. And as a consequence, it's really quite a leap of faith to assume fundamentally that all the machines you find in nature are digital and algorithmic. If they are not, then Turing machines are actually a subset of measure zero, which in a technical sense means that if you randomly pick a machine found in nature, the probability that it is a digital and algorithmic machine is zero. So what about deep neural networks, right? These seem to be, performing functions that are not rational functions in the sense of Herb Simon. So the ability to classify images, for example, is something that the human brain is very good at. The human brain does not do that in the rational sense that Herb Simon, where Herb Simon's use of the word rational. It's you don't. choose to classify an image on the basis of a sequence of logical decisions that lead you to the conclusion. It's a system one operation. Your brain sort of just instantaneously does it. It's an intuitive operation. And in fact, it's perhaps reasonable to view today's deep neural networks as actually brute force simulations of a process that is not fundamentally digital or algorithmic. So there's actually technical evidence of this. There's this whole field of reservoir computing which takes all of the intermediate layers of the deep neural networks and replaces them with some fixed physical system that provides a rich set of non-linear input-output functions. So these physical systems are distinctly not They are distinctly not Turing machines. One of the more famous ones that kind of launched this field and actually gave it its name is using a bucket of water as the reservoir. And in these reservoir computing systems, you do have digital algorithmic parts, but they only provide the input and output layers. And the reservoir itself serves a central role. in the decision making, and that is not, in fact, a computer. So these are not, in fact, Turing machines, and hence are not subject to the universality claim. So there's a very interesting hypothesis put forth by one of the key researchers, Tanaka, in Reservoir Computing, where he hypothesized that Some brain regions actually work as reservoirs. They're just fixed nonlinear input output functions and that the learning functions are layers that are that are put on top of that. So. The first fallacy is this idea that, you know. Universal Turing machines are, in fact, universal. They're, in fact, universal machines. And I think that that is ultimately a statement of faith, not a statement of science. And it's very difficult to defend statement of faith, ultimately. The second fallacy I would like... Edward? I really think we lost you. Oh, I can hear you. Can you hear me? I can hear you again now. OK. Yes, actually, I'm getting a message that my Internet connection is unstable, which unfortunately is not all that uncommon. But hopefully you can hear me now. OK, so it's clear that language and logic. are central to cognition. They play an enormous role. I mean, certainly Nietzsche and Wittgenstein made this point rather forcefully. But it's important to understand that the purpose of language is to communicate over a noisy channel. And the Shannon channel capacity theorem, again, tells us that such communication can only convey a finite number of bits of information. But there are aspects of cognitive thought that suggests that it's not all digital and discrete. We all know that language imperfectly encodes our thoughts. We all know that most of the truths in our heads never get expressed. We all know that ideas are never perfectly communicated. The ideas that are in my head right now that I'm trying to convey to you will not be perfectly communicated. In fact, they will be probably widely misinterpreted. The fact that consciousness is not actually externally observable may be a consequence of the fact that maybe consciousness is fundamentally not digital. And the Shannon channel capacity theorem tells us that no non-digital process is externally observable. You only can get a finite number of bits of information through a noisy channel. A third fallacy that I would like to bring to the foreground is the idea that neuron operation is discrete and therefore thought and cognition must be discrete. This is famously was famously shown by McCulloch and Pitts in the 1940s, who established this model where neurons fire discreetly and showed that neurons combine to realize logic functions. And then Hillary Putnam in the 1960s. used this to argue this multiple realizability, saying that effectively you could take what these neurons are doing and realize them in some other mechanism and they would perform exactly the same function. This is exactly the same cognitive function. But the fact is that it leaves out a whole bunch of mechanisms in the biological processes of the brain that are not so easily modeled as discrete. The timing of the neuron firing is the biggest one. I mean, to model that as discrete is extremely difficult and, in fact, really problematic. There's other mechanisms like chaotic feedback, the possibility of non-determinism in the brain. And I'll come back to the issue of embodiment in a minute. The fourth fallacy I'd like to highlight is that DNA is discrete. I mean, it really is. It's a base four number system. And there's a kind of a naive assumption that since the DNA encodes the information needed to create a human, therefore it encodes the information needed to create a mind. Therefore, the mind is ultimately a digital machine because you must be able to create it from this digital encoding. But the reality is that there's no demonstration that you can create a human. from DNA alone, from the information in DNA alone. And I'd like to point out that every one of us, every human alive today is actually the endpoint of a continuous unbroken biological process that dates back 4 million years. If there were any break in that biological process, you would not be here. Okay. And that continuous biological process conveys information as well. The DNA is not all of the information that was conveyed into the creation of the human beings that are alive today, because a great deal of information was conveyed through that continuous biological process. The fifth fallacy I'd like to highlight is this idea that, well, the brain viewed as a machine, you could think, well, then the cognitive function is something that that machine is doing internally inside of the skull. And I think that there's certainly a very strong school of thought in psychology that is known as embodied cognition that says that, in fact, the cognitive mind does not reside within the skull, but rather the cognitive mind is the interaction of the brain with its environment. And interaction is the key word there because Turing machines fundamentally are not interactive. As soon as you add interaction into the equation, you add a feedback mechanism, and that feedback mechanism changes the behavior of systems in fairly dramatic ways. And so once again, this pulls you outside of this universality claim of the universal Turing machine. So in conclusion, these arguments that I've made are actually much further developed in this trio of two books that I've published. But the summary here is that cognition certainly does involve digital and computational processes. But the question is, is that all there is? If it is all there is, then maybe, yes, then this universal, this artificial general intelligence is maybe an inevitable consequence of technology development. And we're going to see this happen. Maybe it's true. But if this... If cognition involves processes that are not fundamentally digital and computational, then we haven't actually invented the technology yet that's going to give us that universal machine that is capable of artificial general intelligence. And finally, the hypothesis that that's all there is, is really not a scientific hypothesis. It cannot be tested by experiment. But if you make the assumption that machines in nature are not limited to digital and computational processes, then the probability that any machine that you find in nature is a digital and computational process is zero. So with that, I will close and hopefully there is some time for a bit of discussion. Thank you, Edward. I also realized that in the hurry, I was so impolite to not properly introduce you. Sorry for that. So just to briefly do that, Edward is working in embedded software systems with a long experience for over 40 years. He's in Berkeley and professor of graduate school in ECS. and focuses on cyber physical systems and here for the digital humanism community as a member of the advisory board he was also very much very early on involved in the developments and the establishment of this initiative here and has basically been one of the founders and seeders of this initiative here in Vienna. Out of time, actually over time we started a bit late, but I'm going to be very, another time, very impolite and I'm going to like shorten the discussion here by just posing, basically taking Paula's talk as a, let's say as a connecting hypothesis here and ask Robin and Edward what they think about that. First of all, Edward, I would ask you after all what you described. What about moral style and ethics? Is that doable within a Turing machine? Because that's kind of the assumption that we have when we're building that and encoding it. I think that's a wonderful question. And I think that any system of morality and ethics, I think, ultimately relies on the embodiment of cognition. And so that makes it much more problematic. I do want to make a point to Robin's point. I still subscribe to a paper newspaper. And the primary reason that I still subscribe to a paper newspaper is that I know that it's not personalized. And it's very difficult with other media to even know whether it's being personalized. Paola's exoskeleton concept, frankly, makes me extremely nervous for many reasons, I think. Robin raised one of those, right, which is that it may in fact expose a great deal more of our inner nature than we really want to expose. It makes me very nervous. I would extend that then to Robin, because it seems like on a very pragmatic level, we could have had the same discussion some years ago, whether all these psychological factors, whether personality, whether these things are actually... whether you can actually model them and whether they should be modeled or if that is too personal. But now we see in recommender systems that many systems actually work on the basis of some, let's say, advanced but ultimately simple psychological model, five factors of personality and so on. And it seems to be just another feature that feeds into these systems. So could that happen to moral ethical values as well? Yes. It could, and it is something that I think is very concerning for exactly the reasons that I said, and I actually find the personality diagnosis issue problematic as well. Of course, you know, I think the other... point about this is that, of course, when you're dealing with a system that is essentially opaque, you know, those sort of deep learning mechanisms that we were just hearing about, we don't know what it's diagnosing, right? So, you know, maybe in there is, in fact, you know, something that is detected about personality or something that's detected about the user's moral framework or something like that, but we don't. you know, we don't have any way of knowing that that's, you know, that's a, you know, a regularity or something that the system has found in the data. So I do think that it's, that this, the issue of, you know, the capture of more and more aspects of individuals, you know, human preferences and identity, I think this is a central problem. And one of the reasons why I'm kind of arguing for a little bit less of a monolith in terms of the way these systems are designed is so that that information doesn't all end up in one place in some giant record that holds everything that can... be known about one's behavior because we know that that kind of concentration of information is actually also a concentration of power, especially at scale. So, you know, I think that the, you know, so that is, you know, that is my concern about something like the, you know, anything that says, you know, I'm going to capture more aspects of people's preferences because those preferences are actually, you know, part of our humanity. Paolo, you want to respond to that? I think we could argue that maybe some of these questions could also be, you know, if they're not centralized, if there's something that remains personal, if they're like on your personal devices and so on, maybe that would be a way of doing this. Paolo, what do you do? Yeah, no, the point is that it looks like that we forget that we are dealing with the digital systems. It's not that we are, you know. My point is that what we should collect is already collected. I mean, all of us go around with a phone that predicts where you go when you get in your car. Just tracking it. And you are completely unaware of that. Now, wouldn't it be much more comfortable to have a personalized software that if you don't like to be tracked from that issue, just turns off the GPS and so on? I mean, very pragmatically, I would like to be. I mean, and it's difficult to imagine that with the present technology, you can capture more of your darkness. Let's say darkness, no? what you capture is what is clear and if your own software captures it also the other software can capture it because it is an interface it's observable you know this is my point i mean it's so it's not that we are embedding something in our mind which you know discovers dark things that nobody sees we are just tracking what we do in our interactions with the digital systems. And then I think that the technology that help us in exploiting what the other systems like, you know, just setting your access rights. Why not? So I like to say, I like this aspect of the idea, which is sort of like, okay, can I to automate my interactions with what are otherwise extremely cumbersome, you know, tools like, you know, which cookies, you know, that I'm going to allow or whatever. So that makes a lot of sense to me. It's like, you know, there's... Organizations sometimes don't have the best incentives to make those things easy to use, right? So if there's something that can automate them from my point of view and not have to think about them as much, that's great. But I do think that the extent to which any piece of software, you know, really belongs to the user that's using it, that's something that I think is actually, you know, we've lost a little bit. You know, every piece of software kind of phones home these days. And so, you know, so that's – so I guess the claims that I would make about the software you're talking about might be different than the claims that you're making. You know, maybe it's – Yeah, I guess I wouldn't use the word soul if it was my project. Let me just add something. Let me put it in another way. Short answer. Very short answer. I mean, there is no doubt that we will embed as human species of software. No doubt. In the future, we will be. Maybe for help our view, for help our hearing, for help our arm, or, you know. There will be. So there is no doubt that we are going in that direction. So why should not we think of using software to protect us? Now, we might not agree on the way we can protect this, but why should we only rely on, you know, Safari now tells me that has blocked 78 access that I haven't said anything to Safari. How did you guess it? Yeah. So one way to think about this maybe is that the software is is ultimately a cognitive prosthesis that it actually it. I mean, this is part of the principle of embodied cognition is that the cognitive mind doesn't reside within the brain alone. It's actually all about the interaction between the brain and its environment. And that environment today includes software systems. And so. those software systems actually become a part of the cognitive mind in this principle of embodied cognition. It's a cognitive prosthesis. Okay, I think we take that as final words for the session. Thanks, Edward. Thanks, Robin. Thanks, Paola. Great discussion. I probably could go on for like another two hours easily. If I try to summarize it now, which is kind of unsatisfactory in the end, I feel like the future of personalization is hyper personalization and depersonalization at the same time in a way. But I think we kind of have different strategies or like different directions here. But anyway, as I said, many things that would still need some more discussion for sure. Thanks very much for all your input and for this very lively presentation and discussion. Thanks, everybody. Great to be here. Let's stay in touch. I have a question just in the break to to Edward. All right. Yeah. So Edward, can you can you hear me, Edward? Yeah, I hear you fine. The web is a countable set of Turing's machine. Is the web a Turing machine? Actually not. Interestingly enough, we use computers to build machines that don't fall within the model of Turing machines because they're interactive. And so, you know, the idea that computers are a subset of Turing machines is not actually correct. Okay. So it's the machine restriction. It's not the counterpart set of parallel machines who are non-deterministic in those issues. But this is also a part of it, no? Yes, that's right. And has it some similarity to the deep neural network? Because also there you have a layer of different. It has some, from an architectural point of view, there are some similarities. The complexity is much higher, no? Yeah. And so deep neural networks are the form of. AI that embraces feedback, right? The good old-fashioned AI is much more of a feed-forward system where you encode everything as production rules, if-then-else kind of statements. And there, you know, things do look a lot more like Herb Simon's rational processes, right? But deep neural networks don't look like that. And part of the reason they don't is because of this integration of feedback into the system. OK, so we are here. We are continuing. Actually, I have two little remarks. Actually, the second is more a question than a remark. So the first remark is that the formal model for systems like the web or interactive system are the red green machine. that contain some parts that are not Turing-compatible, that allow them to run infinitely, to modify their program and to interact with external parts. So they are a formal model, but they are not Turing-compatible. So this does not break any basis, any foundation of our decision. The question regards your statement about the... possibly uncountable mess of the physical machines because this may be a vocabulary problem because to me a machine is something mechanical that comport that that behaves in a predetermined way so of course i'm speaking of idealized idealized machine i mean because a physical machine they have a lot of soft parts that may increase the number of their behavior. But if I think to a machine, to the concept of a machine, then the concept of a machine is something that behaves always in the same way. So I'm not able to see how this could be possibly uncountable because the description of the behavior is the set of algorithms, which is the set of Turing machine, which is... So that's a very that's a very deep question that would take a while to address fully. I do address that in in my books. But first of all, you're assuming determinism when you say that the machine behaves in a predetermined way. And I've shown, in fact, that if you consider the set of all deterministic models. that are rich enough to encompass Newton's laws and that also have discrete behaviors, that that set is actually incomplete in a topological sense. So it doesn't include its own limit points, which suggests that non-deterministic phenomena are inevitably part of any rich enough model of the physical world. Okay, so the determinism hypothesis that you seem to be building on isn't... actually defensible. The second issue is the discreteness, right, that I think you're presupposing. Many processes in the physical world are best modeled as using continuums, right? We write down, we describe the physical world using differential equations, for example, not algorithms, okay? And in fact, there is no algorithm. that will exactly model a differential equation. And moreover, there is no algorithm that will even accurately approximate all differential equations, right? There's this chaos phenomenon. Even a deterministic nonlinear differential equation may be such that every algorithm, because of its discrete nature, will have unbounded error. in attempting to match the behavior of that differential equation and consequently discretizing the processes of a machine is going to lead to a mismatch between the behavior of that machine and the behavior of an actual physical system that that is describing. So I think that, you know, that machines The very notion of machines is not at all incompatible with uncountable behaviors. It does not require discreteness and it does not require determinism. OK, I understand. So the two key elements are the fact that they are continuous and the fact that they interact with an external world. So these are the two elements. OK, now I understand. In this sense, I agree with you. These kind of machines are more than the Turing machine. Okay, thanks. Actually, time for coffee break now. Thanks all. Thank you.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.16,
+      "text": "in a second, so please all take your seats. So for these two afternoon sessions, we're actually trying to focus a bit more on the concrete research challenges and existing contributions. So these are gonna be more technical talks, well, slightly more technical talks, but the idea is that"
+    },
+    {
+      "start": 24.16,
+      "end": 54.016,
+      "text": "We look into examples of what is there and what the actual practitioners and the people who are working in the relevant areas and who are already pursuing certain, let's say, digital humanistic values in their research, what they can tell us about what they're doing and where they think that the central challenges are for the next years to come. I'm very pleased to"
+    },
+    {
+      "start": 54.016,
+      "end": 80.688,
+      "text": "welcome three really distinguished speakers in this session. Two of which are going to be participating remotely. We're gonna start with Robin Burke. Then the second speaker is gonna be Paola Invarady. She's here, so she will give her talk from the room. And then Edward A. Lee will be the third presenter in this session. Let's start with Robin."
+    },
+    {
+      "start": 81.296,
+      "end": 111.184,
+      "text": "Sorry, I'm just going to introduce you very quickly. And for that, I'm going to refer to your to your CV. So Robin is professor and chair of the Department of Information Science at the University of Colorado Boulder. He conducts research and personalized recommender systems. I feel to help found and develop his most recent project explore fairness, accountability and transparency in recommendation through the integration of objectives from diverse stakeholders. From what I know he's going to talk about, I can very much see that this is."
+    },
+    {
+      "start": 111.184,
+      "end": 138.704,
+      "text": "a perfect fit and highly interesting to what we're discussing and being part of the recommender system community myself. I am very much looking forward to this and know how relevant this all is. Robin, please go ahead. The floor is yours. Thanks for being here with us today. All right. Let me know if you can hear me. Yes, now it's clear."
+    },
+    {
+      "start": 138.768,
+      "end": 164.896,
+      "text": "Okay, and are the slides showing up? Not yet. Okay, suddenly. Okay, here we go. All right, so actually, you know, I think my talk may be a little bit less technical than Peter was describing. But anyway, so I hope it is relevant and interesting to the audience here."
+    },
+    {
+      "start": 164.896,
+      "end": 184.784,
+      "text": "So I'm talking about personalization and its discontents. A little bit of introduction for myself. I've been working on recommender systems slash personalized information access since the early 1990s before the term recommender systems existed. And I have."
+    },
+    {
+      "start": 184.784,
+      "end": 210.912,
+      "text": "I've explored a lot of different aspects of recommender systems in my research, conversational recommendation, robustness and stability, recommendation in social networks, multi-stakeholder aspects of recommendation, and most recently, fairness and transparency. And when I was thinking about this talk and digital humanism, I was..."
+    },
+    {
+      "start": 210.912,
+      "end": 238.864,
+      "text": "I was somehow reminded of this very well-known work by Sigmund Freud, Civilization and its Discontents from the 1930s, published in the aftermath of World War I. And in this work, maybe one of his most famous works, he argues that there's this tension between basic human desires, which are often kind of raw and destructive."
+    },
+    {
+      "start": 238.864,
+      "end": 266.8,
+      "text": "This tension between those desires and sort of the taming influence of society and that this – the inhibition that's essential for civilization to exist is actually the source of certain kinds of psychopathology and other challenges that people face. The events of the last week have shown us that, in fact –"
+    },
+    {
+      "start": 266.8,
+      "end": 291.84,
+      "text": "Civilization doesn't always win in taming humanity's destructive impulses, and that was also something that was very much on his mind in 1930. But I'm talking about a different kind of discontent. As we know,"
+    },
+    {
+      "start": 291.84,
+      "end": 316.352,
+      "text": "Personalization and recommendation is expanding in more and more areas of people's lives as more transactions are conducted online, as more data is collected in a variety of different kinds of venues. It's not just product recommendation, but news, employment, housing, media of all kinds."
+    },
+    {
+      "start": 316.352,
+      "end": 345.696,
+      "text": "And so we can argue that actually personalization is a kind of governing force in the digital realm. It controls what people see, what they hear, what they know about. There's actually not a whole lot of difference, if we think about it. There's not a whole lot of difference between the kind of sort of cancellation that happens when"
+    },
+    {
+      "start": 345.696,
+      "end": 373.264,
+      "text": "when you decide to remove someone from your platform, take down their videos, prevent them from contributing, there's not a whole lot of difference from doing that and from adjusting your recommender system so that those items aren't presented to anybody. And that's effectively a form of moderation."
+    },
+    {
+      "start": 373.872,
+      "end": 401.488,
+      "text": "So that's one aspect. The other aspect, of course, is people's information environments are shaped by recommender systems and personalization to the extent that people may find themselves constrained and have to struggle against the intents of the algorithm in order to do what they're trying to do in order to preserve their autonomy."
+    },
+    {
+      "start": 401.488,
+      "end": 430.064,
+      "text": "One of the big differences here is that there's a kind of social contract that exists, you know, that is maybe not explicit. It's implicit, but it's something that we, you know, that we at least have some voice about and that we can interrogate and talk about. And the codes of personalized systems are not like that."
+    },
+    {
+      "start": 430.064,
+      "end": 455.712,
+      "text": "They're hidden. They're ungovernable. And that makes this conflict actually quite different from the one that Freud talked about. So I'm going to talk a little bit later on about some proposals. And they actually seem kind of modest as I'm talking about it here."
+    },
+    {
+      "start": 455.712,
+      "end": 479.776,
+      "text": "But things that we don't have that I actually think we need to think more carefully about how we might be able to provide transparency and governance for personalized systems. And so I'll get there as I start, as I go through talking about some of the problems here. So, and the first thing I want to say really is, you know,"
+    },
+    {
+      "start": 479.776,
+      "end": 496.032,
+      "text": "I study personalization. You know, it's been my entire career. So I'm not somebody who is saying this is bad and let's shut it all off. And actually, you know, I don't know if there's anybody from Spotify there, but, you know,"
+    },
+    {
+      "start": 496.032,
+      "end": 523.344,
+      "text": "I have discovered so much music on Spotify that I don't think I would have ever found any other way through its personalization and recommendation system. So artists I didn't know about before, kind of sub-genres that I realized were related to things that I knew but hadn't heard about before. And this is really the promise, right? This is what we have been trying to achieve since this."
+    },
+    {
+      "start": 523.344,
+      "end": 547.264,
+      "text": "work started almost 30 years ago, you know, the stuff that you want to know about, the stuff that you want to read, see, buy, it comes to you. And, you know, you have reduced effort in searching for it. Things that crop up in some obscure corner can be found in ways that"
+    },
+    {
+      "start": 547.264,
+      "end": 569.536,
+      "text": "that would be very difficult for a human individually to replicate. It scales up, and, you know, the promise here is, you know, information overload is fixed. The system, you know, goes through all of the dross and finds the gems that you're really interested in. And sometimes it works, right? And this is a – this is – this is –"
+    },
+    {
+      "start": 569.536,
+      "end": 593.824,
+      "text": "part of the power and part of the promise of personalization. So I don't want to deny that because then I'd be out of a job. Personalized systems, of course, are everywhere. I don't have to tell this crowd that. Our environment is saturated with systems that are providing."
+    },
+    {
+      "start": 593.824,
+      "end": 600.0,
+      "text": "personalized results in media of the kinds that I described, but also"
+    },
+    {
+      "start": 600.0,
+      "end": 628.944,
+      "text": "Social media, online dating, travel, e-commerce, of course, you name it. So what's the problem, you know, with personalized systems? Why might we have – where does the discontent come from? And I think one of the challenges is that, you know, the personalization as it was conceived, as I –"
+    },
+    {
+      "start": 628.944,
+      "end": 649.504,
+      "text": "worked on it and my colleagues in recommender systems for a long time, we never really thought of it as being normative in the sense of being, here are all the things that you should know. It was much more a matter of let's see what it is that people"
+    },
+    {
+      "start": 649.504,
+      "end": 676.4639999999999,
+      "text": "do and try and make the things that they already do more efficient. But something that's purely personalized doesn't capture all of the values that are important in people's consumption. And especially this is true once you get beyond, say, consumer products to things like news or employment, for example. In news, there's this idea of what you ought to know. You ought to know that"
+    },
+    {
+      "start": 676.496,
+      "end": 703.2,
+      "text": "You know that there's a war going on in Ukraine, even if what you normally read in the newspaper is just the sports and the celebrity news. Right. So you ought to know that. And it's also the case that this idea of like things you would like. That's not really as well defined as as we might think. And I put the picture of a cup or cup of coffee here because."
+    },
+    {
+      "start": 703.2,
+      "end": 723.856,
+      "text": "The you know, I do remember the first time I tried this grown up drink and it was like horrible. It's like, you know, why would anybody ever drink that bitter, awful tasting thing? And, you know, and my my impression of coffee changed over time. But the thing that the thing that."
+    },
+    {
+      "start": 723.856,
+      "end": 753.264,
+      "text": "you might not like when you encounter it the first time, they actually turn out to be something that you grow to appreciate. And that's true for a lot of different things. And the danger in a system that is always retrospectively looking at what people liked is that that can't be part of it, right? The thing that you don't know yet that you're going to like or that you'll like five years from now."
+    },
+    {
+      "start": 753.456,
+      "end": 782.832,
+      "text": "Because of that, everybody's specific filter is a little bit different, and it's not necessarily the case that we can kind of, and this is my research right now, if we want the system to enforce some ideas about what people ought to know or ought to experience, it's challenging to do that, and it's challenging to understand what it is that the system is doing as opposed to some other normative thing."
+    },
+    {
+      "start": 783.312,
+      "end": 808.736,
+      "text": "Another problem, and this has kind of been well explored, is that these are inherently social systems, and they inherently will capture social biases. So people are not always nice. People's behaviors may be influenced by latent biases that they hold. We all have them."
+    },
+    {
+      "start": 808.736,
+      "end": 838.448,
+      "text": "just your likes and dislikes are going to encode and inherit those biases and then the algorithmic systems inherit them. And one of the things that we know from the past five or six years of research is that not only do algorithmic systems, sorry, inherit people's biases, but they actually amplify them. And that's because it's easier to make predictions that follow the central tendencies of the crowd than to make"
+    },
+    {
+      "start": 838.448,
+      "end": 864.352,
+      "text": "predictions that go off in a slightly different direction. And so the system is always going to try and do the thing that's easy. And because that's where it gets the most, you know, benefit in terms of optimization. And so, you know, reinforcing societal biases is an easy thing for it to do. And something that in our research, you know,"
+    },
+    {
+      "start": 864.352,
+      "end": 891.488,
+      "text": "we try and build systems that avoid these problems, we have to struggle against in producing systems that work better. Now, we know that any AI system is optimized for a particular objective, and maybe it's some combination of objectives, but there's some set of things that we..."
+    },
+    {
+      "start": 891.488,
+      "end": 914.704,
+      "text": "that the system is being trained. Here's what a good result is. Here's what a less good result is. You know, shape your behavior towards the good results. Somebody has to tell it what the good is. And that's the objective. And in spite of kind of the way recommender systems present themselves to us, especially in the commercial sphere,"
+    },
+    {
+      "start": 914.704,
+      "end": 942.1120000000001,
+      "text": "the objectives of these systems are not always things that the user would choose. And so, for example, you know, a well-known objective is watch more ads or spend more time staring at this particular app. And maybe that isn't something that the user would choose as, you know, what should be optimized for in their own experience. And here's an example. This is from Amazon."
+    },
+    {
+      "start": 942.1120000000001,
+      "end": 968.832,
+      "text": "the interface to Amazon.com. And you can see it says top picks for you. But what is, in what sense is that, are those the top picks for me? Are they the most profitable ones for Amazon? Are they the ones that, you know, are, that they think are most likely to expand my shopping cart? You know, what are the objectives? What is it that,"
+    },
+    {
+      "start": 968.832,
+      "end": 995.568,
+      "text": "the system is being trained for in order to identify these things as the top picks for me. There's no really way for me to find out. And if I interrogate the system a little, it might say a few things, but it's not going to really tell me what it is that the output is being optimized for. Another key issue in recommender systems is this."
+    },
+    {
+      "start": 995.568,
+      "end": 1024.992,
+      "text": "Again, this is something that has emerged in more recent research, is this idea of multi-sidedness. So usually we think about the end user getting recommendations, how does it impact them? But it's also the case that recommender systems have an impact on the livelihoods of people who provide the content that's being recommended. So obvious examples are things like, you know, creators on YouTube or on TikTok. But it's also true for, you know, musicians, journalists, other folks."
+    },
+    {
+      "start": 1024.992,
+      "end": 1051.44,
+      "text": "And our definition of user, at least so far, doesn't really include those people in spite of the fact that they're being impacted. And we don't necessarily include their point of view when we're thinking about what the system should do, what its properties should be. And, you know, if we view the recommender system as sort of an intermediary in a sort of market or in a particular..."
+    },
+    {
+      "start": 1051.568,
+      "end": 1080.784,
+      "text": "set of interactions. What happens when the interests of the different parties conflict? What is it that a system needs to do in order to balance different sets of concerns? To the extent that a system does that, again, it's very much hidden from us behind something that says top picks for you, which is definitely not capturing everything that's going on. And then finally, the last issue I think is"
+    },
+    {
+      "start": 1080.784,
+      "end": 1107.184,
+      "text": "Very relevant here is this problem of surveillance. So personalized systems only exist if we can collect a lot of information about people. And the more we collect, usually the better they are. And as it turns out, you know, the data that's collected in that way, sure, it's useful for personalization, but it's also useful for a lot of other things. And Shoshana Zuboff's book."
+    },
+    {
+      "start": 1107.184,
+      "end": 1137.056,
+      "text": "The Age of Surveillance Capitalism talks about this in terms of behavioral surplus. It's like, yes, our behavior is good for personalizing the system, but it also has additional value for the companies that are able to collect it and collect it at very, very large scale. And she argues that, in fact, predictive systems have a way of undermining people's autonomy. There's actually some technical."
+    },
+    {
+      "start": 1137.056,
+      "end": 1163.568,
+      "text": "Kind of in addition to sort of the philosophical point of view, there's some technical heft behind that idea. The argument has been made that, in fact, the best way to make your system accurate is to manipulate people's desires so they only want the things you're recommending rather than trying to predict everything that they might really want. And this effect of."
+    },
+    {
+      "start": 1163.568,
+      "end": 1182.992,
+      "text": "You know, the sort of burden of surveillance is particularly felt by vulnerable populations. This has very strong positive feedback effects. So as, you know, as companies collect more data, that enables the collation."
+    },
+    {
+      "start": 1182.992,
+      "end": 1200.0,
+      "text": "the creation of more effective services, which enables more data gathering, which then creates this giant cumulative advantage, which we see to a large extent in the concentration of power in the tech industry today. Okay."
+    },
+    {
+      "start": 1200.0,
+      "end": 1214.672,
+      "text": "So there are some problems. And if you talk to the folks in the tech industry, they will say, trust us. We're working on it. We have smart people. You don't need to worry about it. It's all under control."
+    },
+    {
+      "start": 1214.672,
+      "end": 1244.304,
+      "text": "Folks like Mark Zuckerberg will say, oh, yes, we think there should be more regulation. But at the same time, he's writing millions of dollars in checks to lobby against regulation in all its different forms. I think you all in Europe have had a little bit more success in this realm than you have in the United States. But I think it's still the case that we're a long way from where we need to be. So what can we do? Obviously."
+    },
+    {
+      "start": 1244.304,
+      "end": 1259.424,
+      "text": "I have to say this part. Keep doing research on personalized systems. Keep, you know, writing my research grants and funding my research grants. So, yeah, we'll do that. But I'm not going to talk about that so much. That's why it's a little bit in gray there. I think."
+    },
+    {
+      "start": 1259.424,
+      "end": 1286.992,
+      "text": "What we need is a radically increased transparency and democratization for personalized systems. And I'm going to talk about two things in particular. I don't think these are the only things that you might do, but there are things that occur to me as maybe not easy to achieve, but essential in trying to reduce our discontent."
+    },
+    {
+      "start": 1287.856,
+      "end": 1309.024,
+      "text": "Okay, so one is this transparency around system objectives. So we know that transparency in personalized systems is very difficult to achieve. If you want to know why is it that this item is being recommended to me, it's, sure, I could."
+    },
+    {
+      "start": 1309.024,
+      "end": 1338.912,
+      "text": "tell you something about the model that produced that output. But these are very complex models, and you're probably not going to be able to make sense of my description of what it is that happened. But there's another kind of transparency that would be a lot easier to achieve, a kind of global transparency in which we make it clear what it is that the system has been optimized for. What is its objective or set of objectives?"
+    },
+    {
+      "start": 1338.912,
+      "end": 1363.2640000000001,
+      "text": "And that's got to be there in the system. Somebody wrote the loss function. What is it? And so that can provide a lot of information and go a long way towards understanding what the system is really achieving. Now, people will tell you, if you bring up this idea, is that"
+    },
+    {
+      "start": 1363.2640000000001,
+      "end": 1388.816,
+      "text": "That's going to enable adversarial behavior. So somebody who is trying to game the system and get their items recommended will be able to reverse and take those objectives and manipulate the system with it. Sorry, we couldn't hear you for the last couple minutes. Second, sorry. You were frozen for a bit. Okay."
+    },
+    {
+      "start": 1389.488,
+      "end": 1410.432,
+      "text": "So anyway, making the objectives explicit might enable adversarial behavior. It's also the case that they might be very technical, things like regularization or something like that. So the average user might not make much sense of it. So and this argument has been made before the idea that we need kind of an FDA that for, you know."
+    },
+    {
+      "start": 1410.432,
+      "end": 1430.24,
+      "text": "That's the Food and Drug Administration in the U.S. And, you know, the snake oil bottle is here. There was a time when, you know, you could put anything in a bottle and call it a drug and you didn't have to tell people what was in it. If, you know, and so this idea has been proposed by Kathy O'Neill and others that we need."
+    },
+    {
+      "start": 1430.24,
+      "end": 1455.808,
+      "text": "A similar kind of agency to tell us what's in the bottle and what's in the bottle in some sense is a function of these of these objectives. And so this kind of accountability, accountability to the objectives is a form of transparency that I don't think it's discussed very much. I think it's probably the one that would be the most effective. The second thing I want to talk about is is unbundling."
+    },
+    {
+      "start": 1455.808,
+      "end": 1483.52,
+      "text": "People talk about breaking up Facebook or these other tech giants. What could that possibly mean? Again, because the effect of these systems is a network effect. You want to be able to connect to people regardless of where they are or who they are. And so this sort of vertical partitioning"
+    },
+    {
+      "start": 1483.52,
+      "end": 1507.008,
+      "text": "or maybe you think about horizontal partitioning makes a lot, it doesn't make a whole lot of sense, but a kind of vertical partitioning might make sense. And so Francis Fukuyama and his colleagues have talked about what they call, I wouldn't call it this because I'm a computer scientist, the middleware solution. And the idea is that you separate the back end of the system from the personalization part. So there's a big..."
+    },
+    {
+      "start": 1507.008,
+      "end": 1532.048,
+      "text": "piece of Facebook that's like sending messages around and storing your images and caching stuff and all the things that it has to do on the back end, they don't have anything to do with presenting personalized feeds to people. And then you separate out that piece and you say, okay, we're going to let lots of different companies provide a personalized or maybe not even personalized front end that users actually interact with."
+    },
+    {
+      "start": 1532.048,
+      "end": 1554.624,
+      "text": "And I know that this solution would work. And the reason why I know that it would work is because whenever I talk to people in industry about it, their eyes glaze over and they pretend that they didn't hear me because they know that it would work. And they also know that it would it would vastly diminish their power."
+    },
+    {
+      "start": 1554.624,
+      "end": 1580.528,
+      "text": "So you could imagine, you know, a swappable sort of layer of personalization. You know, there could be the University of Colorado system. There could be one especially for parents, you know, et cetera. Of course, there might be, you know, you might want to have a floor, you know, in terms of what you would allow in terms of that. You might not want..."
+    },
+    {
+      "start": 1580.528,
+      "end": 1599.776,
+      "text": "ones that were promoting extremist content or things like that. But there's no reason why it just has to be one point of view captured in the personalization objectives. Now, there are a lot of challenges in putting this into practice. How do we divide up the money?"
+    },
+    {
+      "start": 1599.776,
+      "end": 1627.888,
+      "text": "because, you know, the personalized system is delivering ads as well, and how do we, you know, how do we appropriately divide that up between the front end and the back end? Sure, that's a problem to be solved. There are also some privacy issues in the sense that, you know, I give my data to Facebook, sort of, and now it's going to share it with all these different, you know, personalization providers, some of whom might be fly-by-night."
+    },
+    {
+      "start": 1627.888,
+      "end": 1647.5520000000001,
+      "text": "You know, folks, I don't even know who they are because somebody else may be choosing a different system from me. I don't think those are insurmountable, but certainly those are things that we would have to address to make this happen. OK, so I'm running out of time here. I just want to say, you know."
+    },
+    {
+      "start": 1647.5520000000001,
+      "end": 1676.6399999999999,
+      "text": "personalized systems bring a lot of benefits, but they are super powerful in ways that I think we are only just beginning to really understand and appreciate. There's a lot of research going on to make these systems better, and that's what my research group does. But I think that there's also fundamental aspects of their governance that need to be addressed and remedied. In his book from 1933, Freud argued that"
+    },
+    {
+      "start": 1676.6399999999999,
+      "end": 1705.2,
+      "text": "Individual psychopathology, his studies of his patients could actually teach us something about human society and its interaction with human desires. And I'm kind of arguing here that the that the challenges that we see in personalization also teach us something about big tech and point the way towards things we might do in in terms of governing that technology better. OK, and that's where I'm going to stop."
+    },
+    {
+      "start": 1705.2,
+      "end": 1734.88,
+      "text": "Thank you. And I wish I could be there. It's much better to be able to discuss these things in person than to do it over Zoom. Thanks very much, Robin. If there are any questions, I would suggest that we, if there's anything that needs clarification, that we would do a short Q&A right now. So if there's any question that we can take right away, then do that. Otherwise, I would leave that for the discussion part later on, and then we'll have the panel."
+    },
+    {
+      "start": 1734.88,
+      "end": 1764.176,
+      "text": "where we have more in-depth questions. So is there any question at the moment? I do see a question here. Oh, yeah. Yeah. Yes. Can you hear me? Do you see in this space of choosing your personalization?"
+    },
+    {
+      "start": 1764.176,
+      "end": 1792.528,
+      "text": "The null option, that is, I don't want any. Yes, I mean, I think that that's possible. I think that that has its own hazards. It's like if you, say, pick the reverse chronological, right, then you're very vulnerable to spam, right? Somebody can post every nanosecond, you know, and then you can't escape it, right? So I think that there's..."
+    },
+    {
+      "start": 1792.72,
+      "end": 1800.0,
+      "text": "Yeah, that is an option. It might not turn out to be a practical option. It can be spam, but as long as I have filter tools."
+    },
+    {
+      "start": 1800.0,
+      "end": 1828.368,
+      "text": "that I know how to use. I really don't care about anybody else's personalization. Right, right. And so I do think that that's very much a possibility, right? So there would be like the extremely minimal or non-personalized type of option as well. I have a question as well. I'd like to know which are the..."
+    },
+    {
+      "start": 1828.368,
+      "end": 1858.368,
+      "text": "the possible consequences for education, for personalized education? Do you see this in a good manner or in a bad manner? So I think I've worked in this area a little bit. I think that there's some interesting questions there. So, for example, and it comes back to this question of objectives, what am I optimizing for, right? Am I optimizing for some notion of,"
+    },
+    {
+      "start": 1858.368,
+      "end": 1880.432,
+      "text": "you know, some notion of pedagogy? Am I, you know, if I'm providing personalized results to the students, say, read this, read that next, am I doing that on the basis of having some sound idea of what's good pedagogy? What's the pedagogical theory underlying, you know, your system's objectives? And if it's just..."
+    },
+    {
+      "start": 1880.432,
+      "end": 1910.352,
+      "text": "Well, and I've seen this kind of work. If it's just like, okay, recommend the thing that you're most likely to get an A on or you're most likely to get 100% on, I don't think that's a good theory of pedagogy. And oftentimes we default to things that are kind of easy to measure like that. So anyway, I think it's possible to have good personalized recommendations in that domain. But again, I would ask that question. It's like, okay, what's your objective?"
+    },
+    {
+      "start": 1910.96,
+      "end": 1940.688,
+      "text": "Okay, thanks. So I would suggest that now we move on to the next talk, and we're going to turn it over to Robin and everyone after the talk. Thanks very much. Next speaker is going to be Paola Ingaradi, and let me just bring up her presentation and share the screen, and then I can..."
+    },
+    {
+      "start": 1940.688,
+      "end": 1970.688,
+      "text": "So this should work now. Okay, great. So, Paola is professor of computer science at University of L'Aquila. She was rector of the University of L'Aquila from October 2018."
+    },
+    {
+      "start": 1970.688,
+      "end": 1999.312,
+      "text": "2013 to September 2019, Paula's research area is in the application of rigorous methods to software production in order to improve software quality. In the last decade, her research interests concentrated in the field of software architectures, mobile applications, and adaptive and autonomous systems. Currently, she leads a project to develop software solutions to protect users' ethics in the interaction with autonomous technologies. I think she's going to talk about that, so please."
+    },
+    {
+      "start": 1999.792,
+      "end": 2027.984,
+      "text": "Thank you. Thank you, Peter. And actually, I'm very well positioned after the previous talk, because I would like to use Robin's technology to help the user. Let's see how the profiling can be very good also to remain human. So first of all, I mean, autonomous systems is my focus. I mean, it's not only autonomous car."
+    },
+    {
+      "start": 2028.208,
+      "end": 2057.776,
+      "text": "No, I mean, it's the washing machine. Somebody this morning was mentioning these very smart washing machines that we very much may welcome because they, you know, take off of our burden, something that we might not like. Can be a queuing, a smart queuing system that help us, you know, use our waiting time in a fruitful way."
+    },
+    {
+      "start": 2058.192,
+      "end": 2088.096,
+      "text": "All these systems, I mean, apparently are, you know, very good. They are helping us. But as we have been listening since this morning, they also bring a lot of worries, potential worries. I mean, the first, the big worries that I see is this, you know, what we call the arm of the digital society. So first of all, let me say one word. We haven't said it yet, but we are in a digital society."
+    },
+    {
+      "start": 2088.096,
+      "end": 2117.984,
+      "text": "the idea, but we are in a digital society. So it's becoming very difficult to distinguish when part of our life is in the digital society or outside. They are so intermixed and will be so intermixed more and more in the future that it's really difficult to distinguish what is real and what is virtual. So we have listened."
+    },
+    {
+      "start": 2117.984,
+      "end": 2146.608,
+      "text": "that this can bring worries. And my conclusion is that it is unavoidable. So we have to some extent, you know, went too far to just think that we want to go back. We are not going back. So we have to face a sort of evolutionary stage. We have to understand that we have to evolve in order to live as humans in this new."
+    },
+    {
+      "start": 2146.672,
+      "end": 2175.6,
+      "text": "digital society. So the project we'll talk about has a vision that might seem apparently at the very beginning unfeasible. And it's a vision in which human beings are able to interact or pair with their digital peers, whatever they are. And of course, there are several steps to go towards the vision that can actually help us in many dimensions."
+    },
+    {
+      "start": 2175.6,
+      "end": 2204.7200000000003,
+      "text": "also now in our present reality. So this is what Florida calls the mangrove society. It's difficult to distinguish what remains real and what is actually digital. So how do we defend ourselves? Again, I will not repeat and convince you here that we have to do things. We have been listening all this morning about that."
+    },
+    {
+      "start": 2204.7200000000003,
+      "end": 2234.384,
+      "text": "Just look at what are the ethics guidelines for trustworthy AI. It's, of course, respecting the rule of law, being aligned with agreed ethical principles and values, including privacy, fairness, and human dignity. Here I am stressing this aspect of human dignities and then keeping us, the humans, in control. And then what we have already listened to, ensuring the system is transparent."
+    },
+    {
+      "start": 2234.384,
+      "end": 2264.272,
+      "text": "the decision-making process is explainable, and then robust and safe and so on and so forth. So all requirements we have been familiar with at this point. But something that we haven't touched at all and our project is doing is really how can we keep the humans in control? What does it mean to keep the humans in control? And what does it mean human dignity?"
+    },
+    {
+      "start": 2264.656,
+      "end": 2292.288,
+      "text": "So what we are trying to do is to empower the individuals. So first of all, here the focus is on the individual, on the person. How do we interpret the principle of human dignity? We are following what the European Group on Ethics in Science and New Technologies said in their statement in 2018, that the principle of human dignity is understood as the recognition of the inherent..."
+    },
+    {
+      "start": 2292.288,
+      "end": 2322.176,
+      "text": "human state of being worthy of respect must not be violated by autonomous technologies. Means that autonomous technologies need to be programmed in such a way to respect the human. But where is the border? What does it mean respect? How many decisions as a system can I take by making sure that I'm still respecting the human dignity?"
+    },
+    {
+      "start": 2322.176,
+      "end": 2348.032,
+      "text": "Okay, here, you know, Viola said something about that. I mean, it's not a matter of for a system saying accept or not accept. This does not satisfy our freedom of choice, no? I mean, we might have individual preferences and our own moral views. So respect for us is not just saying, okay, I accept it or I do not accept it."
+    },
+    {
+      "start": 2348.032,
+      "end": 2377.312,
+      "text": "As Viola said, there are nuances, differences. This is what makes us human. We are all different. However, in this interaction, we are unprotected and we have to accept the idea that whatever we can do in terms of transparency, explainability and law and regulation will not make us even in our interaction. Just one example."
+    },
+    {
+      "start": 2377.312,
+      "end": 2400.0,
+      "text": "GDPR is a great law. It has been recalled this morning. It has been the most advanced law on privacy of data, personal data in the world. The effect of obeying this law has been an interaction with computers."
+    },
+    {
+      "start": 2400.0,
+      "end": 2428.272,
+      "text": "system, which is a terrible burden for a user and does not actually protect him. I would like to know how many of you actually are passionate enough to go every time, try to access a website, the passions to go to the profiling and set all the settings as you want. Of course, it's respectful of the law."
+    },
+    {
+      "start": 2428.272,
+      "end": 2456.768,
+      "text": "For us, it becomes a burden, and after a while, we don't care, or many don't care. So, I mean, role is not enough. Law is not enough. So, we need to empower the user in order to be able to actually interact properly. Users have to become active actors in the digital world."
+    },
+    {
+      "start": 2456.768,
+      "end": 2485.92,
+      "text": "And this requires an architectural approach. I am a software engineer, so I mean, I think of systems. And here I'm thinking of a user, of an individual, as a piece of the system. So it remains the problem, how do we break the autonomy of the autonomous systems compared with the respect that the user wants? Here we rely on..."
+    },
+    {
+      "start": 2485.92,
+      "end": 2510.608,
+      "text": "on a philosophical suggestion by Luciano Floridi that actually talking of digital ethics divides it in hard ethics and soft ethics. I won't go into details, but just to be very, very, very, very rough. Hard ethics is more or less defined by regulation laws or..."
+    },
+    {
+      "start": 2510.608,
+      "end": 2534.32,
+      "text": "rules of conduct that everybody shared. Soft ethics is the space of our personal decisions that are not against the rules, against the law, but where we can actually express our freedom of choices."
+    },
+    {
+      "start": 2535.28,
+      "end": 2564.4,
+      "text": "Here I have a very short example, very simple, which is not AI-fueled necessarily, or at least not as we might imagine. So just think of an automated queuing system. I mean, and what you do is that the system in red, the user in green, and the developers in blue. So the system registers users and downloads user's info. I mean, for example, if it is a queuing system to a health site."
+    },
+    {
+      "start": 2564.4,
+      "end": 2593.872,
+      "text": "predicts waiting time, sends a message to user when time is approaching. Users instead registers, provides their telephone number, accepting all the disclosure rules when exiting. But it might happen that when exiting the registration room, the user sees somebody entering who might need to be served earlier. And at that point, the user may"
+    },
+    {
+      "start": 2593.872,
+      "end": 2623.616,
+      "text": "want to exchange position with the person's name. Is it possible? Is the system programmed in such a way that this choice of a user can be exercised? Of course, not all the users will do it, but this is because we are different. And the system is implementing apparently a fair"
+    },
+    {
+      "start": 2623.616,
+      "end": 2650.496,
+      "text": "a fair policy. I mean, the first in, first out. But is this something which actually respects my moral view, my way of living? Or is it imposing a policy? It may seem a stupid example. It's not a stupid example. Because these systems are, you know, everywhere. So we don't know."
+    },
+    {
+      "start": 2650.496,
+      "end": 2679.6639999999998,
+      "text": "need to go to the autonomous car to understand. So, I mean, what would we learn from this example? We learned that putting human at the center requires to have a certain level of customization or enforcement of the decisions of the autonomous system. We postulate that this level corresponds to soft ethics of each individual. Soft ethics, of course, shall be consistent with hard ethics, with the rules, and individuals have different ethics, also depending on context."
+    },
+    {
+      "start": 2680.112,
+      "end": 2708.864,
+      "text": "So, sorry. Oops. Soft ethics then is associated with individuals and hard ethics to systems. The two need to combine to some extent. Sometimes this is called, I mean, agreement can be a moral agreement. And when an individual and a system interact. And again, here the focus is at this architectural level. So I have a system, I have a user, they interact. I don't know how the system is."
+    },
+    {
+      "start": 2708.864,
+      "end": 2736.464,
+      "text": "development. But I would like to interact with it and exchange interactions in order to agree on the best way to accomplish the task. Of course this puts requirements on the system. So basically this is more or less how the idea of soft ethics and hard ethics can lead us to"
+    },
+    {
+      "start": 2736.496,
+      "end": 2765.648,
+      "text": "think of a possible way of adapting systems, of a kind of flexibility that we would like to have in autonomous systems in order to preserve the human dignity of each user. Now, what are we doing? So basically, the Exosome project is a project that wants to produce"
+    },
+    {
+      "start": 2765.648,
+      "end": 2793.36,
+      "text": "software components that are like a software exoskeleton. They are personalized to the individuals. And this software exoskeleton actually mediates the interactions with the digital world according to the moral preferences of the user. So from a product point of view, this is..."
+    },
+    {
+      "start": 2793.36,
+      "end": 2822.032,
+      "text": "pieces of software personalized for the user that learn what are the moral preferences of the user, then I will say something more about it if there is time, and that actually protect the user in the interaction with the system. Now you may object, not all the system will be willing to interact with you, fine. I won't interact with those systems."
+    },
+    {
+      "start": 2822.064,
+      "end": 2850.288,
+      "text": "It's a way to introduce a bit of balancing of power in the digital world. If we manage to have products, software that is on the side of the user, then also the system that would like to interact with those users that use this type of exoskeleton will need to adapt and will need to be willing to adapt."
+    },
+    {
+      "start": 2851.344,
+      "end": 2879.792,
+      "text": "So this is the sketch. Basically, this exoskeleton is software. What does it mean that it's personalized to the user? It means that it's deployed on the user's device. You know, eventually deployed under our skin with a small chip. And they mediate the access to..."
+    },
+    {
+      "start": 2879.792,
+      "end": 2908.928,
+      "text": "the digital world. If you look at a functional architecture of an automotive vehicle then you see that here you have this decision of control and as you look at it now this is completely you know it's a completely closed box. If you take the vision of the exoskeleton and then the possibility to actually interact"
+    },
+    {
+      "start": 2908.928,
+      "end": 2932.816,
+      "text": "and adapt to the moral preferences of the user, then you need to open the box a little bit. You need to offer, as autonomous system, an interface that can actually be customized or can achieve an agreement with the user."
+    },
+    {
+      "start": 2933.904,
+      "end": 2963.2799999999997,
+      "text": "This is a picture of this. What do we mean with exoskeleton? It's a personalized software layer. And once you assume that it's an autonomous car and you get on board, getting on board, if you have an exoskeleton, we'll actually customize, adapt the software vehicle, the decision software vehicle to you."
+    },
+    {
+      "start": 2963.2799999999997,
+      "end": 2989.616,
+      "text": "the exoskeleton. Now, we are... Oh, what did I do?"
+    },
+    {
+      "start": 3014.896,
+      "end": 3044.432,
+      "text": "We have to go down."
+    },
+    {
+      "start": 3044.432,
+      "end": 3071.408,
+      "text": "Okay, so, I mean, this is the kind of architecture that we have fought in terms of. We have to. Sorry."
+    },
+    {
+      "start": 3081.424,
+      "end": 3108.016,
+      "text": "that we add what we have designed. And of course, I mean, in this exoskeleton, there is a medical actuator, which is a sort of filter that is synthesized depending on the application domain in which it is operating in order to filter out the interactions that are not."
+    },
+    {
+      "start": 3108.016,
+      "end": 3135.344,
+      "text": "compliant with the moral preferences of the user. Okay. So we have, of course, a methodology to reach the goal, and I'm not going to tell everything about that. I mean, we have a very strong expertise in terms of synthesis of components, synthesis of actual mediators."
+    },
+    {
+      "start": 3135.344,
+      "end": 3163.728,
+      "text": "This is completely in our field of expertise. And what instead is something that we are working at the moment is in the profiling exactly of the user preferences. We have started doing this work. We are starting experimenting and collecting data in order to understand how to"
+    },
+    {
+      "start": 3164.752,
+      "end": 3194.576,
+      "text": "profiling the ethical preferences of a user. Obviously, we are not thinking of profiling the ethical moral preferences of a user in a completely general way. But you have to recall that here we are working at the interface of what the user do with digital systems. So once you have chosen the domain,"
+    },
+    {
+      "start": 3194.576,
+      "end": 3209.168,
+      "text": "whether it is automotive or mobile applications, then the number of actions that a user can do and the number of actions that the system can do are finite, definitely."
+    },
+    {
+      "start": 3228.368,
+      "end": 3257.024,
+      "text": "Our first experimentation, we have actually seen that we could achieve a good predictive power. So now, what are the components in terms of software engineering expertise? I mean, here we have this, you know,"
+    },
+    {
+      "start": 3257.024,
+      "end": 3285.36,
+      "text": "capability of expressing privacy preferences and ethical behavior and the key enabling technologies are specification and mining techniques for privacy analytics software architectures and synthesis and enforcing techniques and by combining all these pieces we can actually produce what are the two main components of the software exoskeleton."
+    },
+    {
+      "start": 3285.808,
+      "end": 3314.512,
+      "text": "Can we do it ourselves? No, of course. So, I mean, there are a number of challenges. The first one is express the user's soft ethical preferences. We use a top-down and bottom-up approach. So top-down means that we have an idea of the ethical categories we are interested in and the user might find the health side."
+    },
+    {
+      "start": 3315.8559999999998,
+      "end": 3345.584,
+      "text": "we have a bottom-up phase that actually learns by experience once deployed on a specific user profile. I just would like to go to the challenge because it is also something that we discussed today. So it is a multidisciplinary effort across different disciplines and inside computer science."
+    },
+    {
+      "start": 3346.16,
+      "end": 3376.16,
+      "text": "Here, I would like to make a very strong statement. I think that what we have to do, which is very similar to what Carla was proposing today, is not to think of interdisciplinary knowledge, rather to have core disciplinary expertise that are able to work together. And this is different. So I don't think that we need a piece of this or that. I think that we need very strong,"
+    },
+    {
+      "start": 3376.16,
+      "end": 3404.4,
+      "text": "disciplinary expertise but with the by the able to develop communication capabilities and the ability to work together and this is a different objective different objective and i think that now we need that one um what we have we have philosopher i just go to to what is our team so in red we have computer scientists with different expertise"
+    },
+    {
+      "start": 3404.4,
+      "end": 3432.656,
+      "text": "In green we have the philosophers so we have and philosophers are different kind of philosophers and not always so we have metaphysics maybe Viola may be happy but we have also moral philosophers and then we have a sociologist we have a psychologist actually he is in the team working but we have also other support and we need psychologists because psychologists have been working with human beings."
+    },
+    {
+      "start": 3432.656,
+      "end": 3458.928,
+      "text": "and have been collecting data, always. Maybe very fine-grained data, maybe even too much personalized, too much, no? But their expertise is precious. Then we have two law professors. Why do we need them? We do need them because we need to understand how much the law can say."
+    },
+    {
+      "start": 3458.928,
+      "end": 3488.608,
+      "text": "to us, to what extent it can go the law with rules. This would mean hard edits. And we are actually working on the AI act exactly to understand. And if you think of the act now, you see that the AI act is much more on the side of the developers of the system pros users. And doesn't say too much in terms of the user, only as..."
+    },
+    {
+      "start": 3488.608,
+      "end": 3516.1440000000002,
+      "text": "guarantee offered by these transparency, explainability, and so on. And then we have two PhDs, and it's interesting because two PhDs, one has a master in philosophy, but he's doing a PhD in ICT, and the other one, she's a master in mathematics, and she's doing a PhD in artificial intelligence. So, I mean, it's tiring."
+    },
+    {
+      "start": 3516.304,
+      "end": 3541.84,
+      "text": "But we have a one-week seminar and talk and brainstorming. And plus, we work in smaller groups. It's tiring. It takes time. But it's exciting and very nice. And we learn a lot of things. At my age, I do not remember what I learned, but I learned. Thank you."
+    },
+    {
+      "start": 3547.824,
+      "end": 3574.736,
+      "text": "Are there any immediate questions that should be answered right away. In the room, or in the session. I see nothing in the chat so out there is one raised hand, Robin has a question, and wish us so please these two. So, I have a question about."
+    },
+    {
+      "start": 3574.864,
+      "end": 3600.0,
+      "text": "I guess one concern I have about an architecture that looks like this is, you know, as we know, a lot of the technology that sort of exists on our devices and so forth sort of is only nominally ours. You know, it's like it really belongs to Google and, you know, the company."
+    },
+    {
+      "start": 3600.0,
+      "end": 3626.96,
+      "text": "companies that are controlling it. And so my question is, what are the risks created by having your kind of, you know, even more intimate information about you, which would be, say, you know, my moral framework, whether I let the person in the waiting room go in front of me or not, that now becomes something that can be mined."
+    },
+    {
+      "start": 3627.088,
+      "end": 3655.888,
+      "text": "in exactly the way that other kinds of my behavior, aspects of my behavior can be mined. And I'm sure that you've thought about this. I just wanted to push a little bit more on this question of just providing even more sort of personally fundamental information to sort of feed the beast of the surveillance age. Yeah."
+    },
+    {
+      "start": 3655.888,
+      "end": 3683.8559999999998,
+      "text": "Sure. First of all, it's, you know, of course, the exoskeleton is a sensitive piece of software. It has to be protected in the best way. I mean, to the extent we can protect it up to the technology. But given that, I mean, don't be misled by the fact that I say moral preferences. What we collect is the way these moral preferences"
+    },
+    {
+      "start": 3683.952,
+      "end": 3698.544,
+      "text": "become actions in the digital world. And this is already collected to some extent. So, you know what I mean? The exoskeleton is not a personal assistant. It's really..."
+    },
+    {
+      "start": 3698.544,
+      "end": 3723.616,
+      "text": "Acting when I am acting, this is the vision. Actually, it will not be exactly that, because it might also appear when interactions, I'm not aware of some interactions that happened. But when, imagine the simplest thing is the cookies, no? Okay."
+    },
+    {
+      "start": 3723.616,
+      "end": 3751.216,
+      "text": "When I set my cookies, if I'm able to set my cookies, this will be recorded. It's my action. But the way I set my cookie can be done automatically and always consistently, no matter how many websites I would like to access in one second, by the software that is mine and I can trust it. Now, here is another issue."
+    },
+    {
+      "start": 3751.76,
+      "end": 3777.552,
+      "text": "It's the economic issue. I mean, it's like in the virus and the antivirus, no? I mean, of course, of course. The people who produce antivirus could cheat. This happens. But there is no market for them if they do that. The market is if they work."
+    },
+    {
+      "start": 3778.192,
+      "end": 3808.0,
+      "text": "And that's my point. My point is, how can we introduce more power by producing technologies that have the economic advantage of safeguarding the user? So it's a recommended system for me, and it's certified that it's for me, and then I will buy it. Otherwise, I don't. So I think that we have to start thinking this way. We cannot just think that, you know,"
+    },
+    {
+      "start": 3808.0,
+      "end": 3836.224,
+      "text": "developers and law and something else will help us. And then we cannot do it ourself without digital means. So we need to become a little bit digital. And I didn't do a lot of it. So maybe I'm going to the right. Okay. Then very briefly, maybe it's your question. Also taking the risk that we might not have a lot of time afterwards, but let's ask a question now. Yes."
+    },
+    {
+      "start": 3836.224,
+      "end": 3863.376,
+      "text": "My question is concerning the architecture that you were discussing, where it seems to me a lot of it is shown, at least in your slides and in your presentation, as sort of an external thing that is interacting with an existing system. It seems to me it equally needs to be changing the system itself. So if we take our experience from the past, for example, when one talks to a customer service representative of some company,"
+    },
+    {
+      "start": 3863.376,
+      "end": 3888.512,
+      "text": "Even though you're talking to a human, they are not empowered to change or fix a problem like a wrong credit card charge or something like that, or a faulty product that was delivered. They're not empowered by their companies. So even if that's replaced by software, something has to change there where it is able to interact with the exoskeleton and accommodate."
+    },
+    {
+      "start": 3888.512,
+      "end": 3918.192,
+      "text": "the needs of that. So I was a little puzzled by the bias towards the external user side in your slides. No, actually, sorry, perhaps I didn't stress it, but it was in the slides. I said, but of course, this approach puts also architectural requirements on the systems. Now, again, here is an economic argument. Imagine that exoskeletons become actually widespread."
+    },
+    {
+      "start": 3918.192,
+      "end": 3945.008,
+      "text": "and people actually start buying exoskeleton, immediately, people who are working on systems might decide to have a version which is compatible with the exoskeleton, so which is adaptable to the exoskeleton. And they might try to get it in the market. You know what I mean? I mean, I think that this economic..."
+    },
+    {
+      "start": 3945.008,
+      "end": 3971.824,
+      "text": "a push has to be leveraged on our advantage. That's what I mean. But of course, the system has to adapt. On the other hand, if we say that the autonomous system has to preserve the dignity of the user, they need to adapt. If we start saying that we don't like the idea that the system, even if it is fair, does not give us the freedom."
+    },
+    {
+      "start": 3971.824,
+      "end": 4001.36,
+      "text": "to operate a choice that otherwise we might have operated. I don't know if I've been clear. Yeah. Okay. Thanks. So thanks for that again. And we're going to move to the third talk in the session by Edward Lee. I really hope we have some time to get to some common points and all that. Probably not, but let's hear Edward."
+    },
+    {
+      "start": 4001.776,
+      "end": 4024.848,
+      "text": "See how we take it from there. OK, I'll try to recover some time. So I'm in a way up front, a little bit embarrassed to be talking about a topic like this in front of this particular audience, digital humanism crowd, probably."
+    },
+    {
+      "start": 4024.848,
+      "end": 4054.512,
+      "text": "doesn't understand why someone would ask the question about whether there is a fundamental difference between humans and digital machines. But in my experience, actually, particularly among computer scientists, many people actually think the answer to this question is obvious. But some of them think the answer is, yes, there's a difference. And some of them think the answer is no, there is no difference. And there's actually very good reasons why."
+    },
+    {
+      "start": 4054.512,
+      "end": 4080.608,
+      "text": "It's not such a simple question. So let me start with just talking about, you know, a key element of cognition, rational thought, which I'll define in the sense that that Herb Simon used this. OK, which is that rational thought in humans is step by step reasoning using clearly explicable rules of logic. OK."
+    },
+    {
+      "start": 4080.608,
+      "end": 4105.648,
+      "text": "And I'm sure you all know that Herb Simon, who may be the only person to have received both a Nobel Prize and a Turing Award, he got the Nobel Prize for basically countering a prevailing view in economics, which was that humans were rational agents in this sense of using step by step reasoning."
+    },
+    {
+      "start": 4105.7119999999995,
+      "end": 4134.32,
+      "text": "to optimize utility functions. And he said, well, actually humans are not very good at this, that the human mind has a very limited capacity to be able to handle the complexity of step-by-step reasoning in this sense. Now, the fact is that computers are actually very good at this. Step-by-step reasoning using clearly explicable rules of logic is the bread and butter of what computers do."
+    },
+    {
+      "start": 4134.32,
+      "end": 4163.744,
+      "text": "And computers are able to handle enormous complexity compared to humans. You know, billions of steps, which is something that is way beyond what humans can do. Now, in the world of psychology, another Nobel Prize winner, Daniel Kahneman, is among the people who have also examined this limitation of humans in this sense of being able to do this step-by-step rational."
+    },
+    {
+      "start": 4163.744,
+      "end": 4190.528,
+      "text": "decision-making. And Daniel Kahneman, in his very well-known, wonderful book called Thinking Fast and Slow, described the human cognitive mind, sort of partitioned it into these two systems, system one and system two, where system two is the rational decision-making in this sense of Herb Simon, and system one is the quick, intuitive."
+    },
+    {
+      "start": 4190.528,
+      "end": 4200.0,
+      "text": "kind of inexplicable decision-making that dominates in this perspective, dominates an awful lot of human decision-making."
+    },
+    {
+      "start": 4200.368,
+      "end": 4226.752,
+      "text": "Now, one thing that might be a little bit of a surprise to people is that deep neural networks, which have really changed the picture of AI in the last 10 to 15 years, are really much more like system one than system two. And this might be a surprise to some people and maybe a little bit counterintuitive because they are, in fact, realized on computers and computers are all about."
+    },
+    {
+      "start": 4226.752,
+      "end": 4254.4,
+      "text": "step by step rational decision making. They're very algorithmic. However, if you look at the structure of deep neural networks, each of these boxes here actually represents simple arithmetic operations. And this picture vastly under represents the complexity of a typical deep neural network these days. There's there's, you know, hugely many more boxes involved. But basically, these are very simple."
+    },
+    {
+      "start": 4254.4,
+      "end": 4284.048,
+      "text": "arithmetic operations that are going on in very large numbers, but nevertheless, simple arithmetic operations. And they're realized on computers in a step by step decision making kind of way. However, if you explain the operations that the computer is doing in realizing a deep neural networks, this gives you exactly zero insight into the outcome of the decision that the neural network gives you."
+    },
+    {
+      "start": 4284.048,
+      "end": 4309.904,
+      "text": "These looking at the step by step logical decision, logical operations that the computer is doing gives you no insight into the outcome. Ultimately, that of the result that this deep neural network gives you, the classification, the decision. So. What's going on here, right? I mean, are are these."
+    },
+    {
+      "start": 4309.904,
+      "end": 4337.968,
+      "text": "Deep neural networks actually rational decision makers in the sense of Herb Simon or or is there something a little bit more subtle? Now, this rational decision making sequential operations, according to rules of logic, are the underlying model behind computers and more precisely Turing machines. OK, Turing machines have the property that they're sequential."
+    },
+    {
+      "start": 4337.968,
+      "end": 4365.952,
+      "text": "And by this, I mean very specifically that their operations consist of very discrete steps. So they're algorithmic in this sense. They're also digital. They operate on discrete data. And Turing machines also have the technical constraint that they need to halt to come to a conclusion. Otherwise, they're put into an equivalence class of non-halting machines, which are not within the."
+    },
+    {
+      "start": 4365.952,
+      "end": 4395.632,
+      "text": "purview of Turing machines. Now, there's this very widespread misconception that Turing machines have a kind of universality. Now, there is a universal Turing machine, which is simply a Turing machine that can realize any other Turing machine. But many people misinterpret that, and they drop the Turing part of that, and they say that this is a universal machine. Now, the question is, is it really a universal machine? So here's a machine. This is a dishwasher."
+    },
+    {
+      "start": 4395.632,
+      "end": 4423.808,
+      "text": "OK, is this actually a Turing machine? The fact is, it is neither digital nor algorithmic. Now, so modeling it as a Turing machine would be at the very least peculiar. Right. It is a machine. Now, the question then becomes if you pick some random machine in nature. So let's let's take as a hypothesis for the moment that."
+    },
+    {
+      "start": 4423.808,
+      "end": 4451.264,
+      "text": "that my brain is a machine, okay? It's got stimulus coming in. It's got actuation going out. It's a machine. It's a machine that you find in nature. Here it is. Well, you're seeing it very indirectly through a digital means, but I assure you, I am not a deep fake. I am actually a physical human right here. And pick a random machine in nature."
+    },
+    {
+      "start": 4451.264,
+      "end": 4479.344,
+      "text": "What are the odds that it's actually digital and algorithmic in the sense that its operations can be usefully described as these discrete steps? And that turns out to be a rather difficult question to answer. In fact, I've shown in a book that I published called Plato and the Nerd four years ago that."
+    },
+    {
+      "start": 4479.408,
+      "end": 4509.136,
+      "text": "That question is actually untestable by experiment. So you cannot form a scientific hypothesis, scientific in the sense of Karl Popper, that all the machines that you could find in nature are in fact digital and algorithmic. It turns out to be a somewhat technical argument about why this is untestable. It's a consequence of a..."
+    },
+    {
+      "start": 4509.2,
+      "end": 4538.832,
+      "text": "a theorem that was proved by Claude Shannon, the Shannon channel capacity theorem. And I won't go into the technical details, but it's mathematically demonstrable that this hypothesis is not testable. It shouldn't be that surprising, however, that not all machines that you would find in nature are Turing machines. The reality is that the set of Turing machines is Kalam."
+    },
+    {
+      "start": 4538.832,
+      "end": 4558.688,
+      "text": "Countable sets are, as shown by Georg Kantor, are the smallest of all the infinite sets that we know about. And the set of machines that you find in the world is probably not a countable set. Now, I use the word probably here because it's actually an untestable."
+    },
+    {
+      "start": 4558.688,
+      "end": 4586.016,
+      "text": "It cannot be tested by experiment because of the Shannon channel capacity theorem. So it's really kind of a subtle point that you ultimately have to take on faith. But there's very compelling arguments that any model of the world that limits the world to digital and algorithmic operations is actually a more complex model of the world than one that does not."
+    },
+    {
+      "start": 4586.016,
+      "end": 4615.888,
+      "text": "have such limitations. And there's also the question of why would nature be so limited? I mean, it seems like it's really quite a leap. And the models are significantly more complex when you impose that limitation on the world. And most of the models that we have of the physical world actually do not work with countable sets. They work with continuums and so forth. And as a consequence,"
+    },
+    {
+      "start": 4615.888,
+      "end": 4645.84,
+      "text": "it's really quite a leap of faith to assume fundamentally that all the machines you find in nature are digital and algorithmic. If they are not, then Turing machines are actually a subset of measure zero, which in a technical sense means that if you randomly pick a machine found in nature, the probability that it is a digital and algorithmic machine is zero. So what about deep neural networks, right? These seem to be,"
+    },
+    {
+      "start": 4645.84,
+      "end": 4670.016,
+      "text": "performing functions that are not rational functions in the sense of Herb Simon. So the ability to classify images, for example, is something that the human brain is very good at. The human brain does not do that in the rational sense that Herb Simon, where Herb Simon's use of the word rational. It's you don't."
+    },
+    {
+      "start": 4670.016,
+      "end": 4698.416,
+      "text": "choose to classify an image on the basis of a sequence of logical decisions that lead you to the conclusion. It's a system one operation. Your brain sort of just instantaneously does it. It's an intuitive operation. And in fact, it's perhaps reasonable to view today's deep neural networks as actually brute force simulations of a process that is not fundamentally digital or algorithmic. So there's actually"
+    },
+    {
+      "start": 4698.416,
+      "end": 4722.144,
+      "text": "technical evidence of this. There's this whole field of reservoir computing which takes all of the intermediate layers of the deep neural networks and replaces them with some fixed physical system that provides a rich set of non-linear input-output functions. So these physical systems are distinctly not"
+    },
+    {
+      "start": 4722.144,
+      "end": 4748.592,
+      "text": "They are distinctly not Turing machines. One of the more famous ones that kind of launched this field and actually gave it its name is using a bucket of water as the reservoir. And in these reservoir computing systems, you do have digital algorithmic parts, but they only provide the input and output layers. And the reservoir itself serves a central role."
+    },
+    {
+      "start": 4748.592,
+      "end": 4777.904,
+      "text": "in the decision making, and that is not, in fact, a computer. So these are not, in fact, Turing machines, and hence are not subject to the universality claim. So there's a very interesting hypothesis put forth by one of the key researchers, Tanaka, in Reservoir Computing, where he hypothesized that"
+    },
+    {
+      "start": 4777.904,
+      "end": 4800.0,
+      "text": "Some brain regions actually work as reservoirs. They're just fixed nonlinear input output functions and that the learning functions are layers that are that are put on top of that. So. The first fallacy is this idea that, you know."
+    },
+    {
+      "start": 4800.0,
+      "end": 4828.432,
+      "text": "Universal Turing machines are, in fact, universal. They're, in fact, universal machines. And I think that that is ultimately a statement of faith, not a statement of science. And it's very difficult to defend statement of faith, ultimately. The second fallacy I would like... Edward?"
+    },
+    {
+      "start": 4832.08,
+      "end": 4856.8,
+      "text": "I really think we lost you. Oh, I can hear you. Can you hear me? I can hear you again now. OK. Yes, actually, I'm getting a message that my Internet connection is unstable, which unfortunately is not all that uncommon. But hopefully you can hear me now. OK, so it's clear that language and logic."
+    },
+    {
+      "start": 4856.8,
+      "end": 4885.12,
+      "text": "are central to cognition. They play an enormous role. I mean, certainly Nietzsche and Wittgenstein made this point rather forcefully. But it's important to understand that the purpose of language is to communicate over a noisy channel. And the Shannon channel capacity theorem, again, tells us that such communication can only convey a finite number of bits of information. But there are aspects of"
+    },
+    {
+      "start": 4885.12,
+      "end": 4914.688,
+      "text": "cognitive thought that suggests that it's not all digital and discrete. We all know that language imperfectly encodes our thoughts. We all know that most of the truths in our heads never get expressed. We all know that ideas are never perfectly communicated. The ideas that are in my head right now that I'm trying to convey to you will not be perfectly communicated. In fact, they will be probably widely misinterpreted."
+    },
+    {
+      "start": 4914.688,
+      "end": 4936.768,
+      "text": "The fact that consciousness is not actually externally observable may be a consequence of the fact that maybe consciousness is fundamentally not digital. And the Shannon channel capacity theorem tells us that no non-digital process is externally observable. You only can get a finite number of bits of information through a noisy channel."
+    },
+    {
+      "start": 4936.768,
+      "end": 4963.792,
+      "text": "A third fallacy that I would like to bring to the foreground is the idea that neuron operation is discrete and therefore thought and cognition must be discrete. This is famously was famously shown by McCulloch and Pitts in the 1940s, who established this model where neurons fire discreetly and showed that neurons combine to realize logic functions. And then Hillary Putnam in the 1960s."
+    },
+    {
+      "start": 4963.792,
+      "end": 4992.72,
+      "text": "used this to argue this multiple realizability, saying that effectively you could take what these neurons are doing and realize them in some other mechanism and they would perform exactly the same function. This is exactly the same cognitive function. But the fact is that it leaves out a whole bunch of mechanisms in the biological processes of the brain that are not so easily modeled as discrete. The timing of the neuron firing is the biggest one."
+    },
+    {
+      "start": 4992.72,
+      "end": 5020.928,
+      "text": "I mean, to model that as discrete is extremely difficult and, in fact, really problematic. There's other mechanisms like chaotic feedback, the possibility of non-determinism in the brain. And I'll come back to the issue of embodiment in a minute. The fourth fallacy I'd like to highlight is that DNA is discrete. I mean, it really is. It's a base four number system."
+    },
+    {
+      "start": 5020.928,
+      "end": 5046.48,
+      "text": "And there's a kind of a naive assumption that since the DNA encodes the information needed to create a human, therefore it encodes the information needed to create a mind. Therefore, the mind is ultimately a digital machine because you must be able to create it from this digital encoding. But the reality is that there's no demonstration that you can create a human."
+    },
+    {
+      "start": 5046.48,
+      "end": 5073.44,
+      "text": "from DNA alone, from the information in DNA alone. And I'd like to point out that every one of us, every human alive today is actually the endpoint of a continuous unbroken biological process that dates back 4 million years. If there were any break in that biological process, you would not be here. Okay. And that continuous biological process conveys information as well."
+    },
+    {
+      "start": 5073.44,
+      "end": 5102.416,
+      "text": "The DNA is not all of the information that was conveyed into the creation of the human beings that are alive today, because a great deal of information was conveyed through that continuous biological process. The fifth fallacy I'd like to highlight is this idea that, well, the brain viewed as a machine, you could think, well, then the cognitive function is something that that machine is doing internally inside of the skull."
+    },
+    {
+      "start": 5102.416,
+      "end": 5131.744,
+      "text": "And I think that there's certainly a very strong school of thought in psychology that is known as embodied cognition that says that, in fact, the cognitive mind does not reside within the skull, but rather the cognitive mind is the interaction of the brain with its environment. And interaction is the key word there because Turing machines fundamentally are not interactive."
+    },
+    {
+      "start": 5131.744,
+      "end": 5160.912,
+      "text": "As soon as you add interaction into the equation, you add a feedback mechanism, and that feedback mechanism changes the behavior of systems in fairly dramatic ways. And so once again, this pulls you outside of this universality claim of the universal Turing machine. So in conclusion, these arguments that I've made are actually much further developed in this trio of two books that I've published."
+    },
+    {
+      "start": 5160.912,
+      "end": 5189.36,
+      "text": "But the summary here is that cognition certainly does involve digital and computational processes. But the question is, is that all there is? If it is all there is, then maybe, yes, then this universal, this artificial general intelligence is maybe an inevitable consequence of technology development. And we're going to see this happen. Maybe it's true. But if this..."
+    },
+    {
+      "start": 5189.36,
+      "end": 5217.776,
+      "text": "If cognition involves processes that are not fundamentally digital and computational, then we haven't actually invented the technology yet that's going to give us that universal machine that is capable of artificial general intelligence. And finally, the hypothesis that that's all there is, is really not a scientific hypothesis. It cannot be tested by experiment."
+    },
+    {
+      "start": 5217.776,
+      "end": 5241.7119999999995,
+      "text": "But if you make the assumption that machines in nature are not limited to digital and computational processes, then the probability that any machine that you find in nature is a digital and computational process is zero. So with that, I will close and hopefully there is some time for a bit of discussion."
+    },
+    {
+      "start": 5248.88,
+      "end": 5276.064,
+      "text": "Thank you, Edward. I also realized that in the hurry, I was so impolite to not properly introduce you. Sorry for that. So just to briefly do that, Edward is working in embedded software systems with a long experience for over 40 years. He's in Berkeley and professor of graduate school in ECS."
+    },
+    {
+      "start": 5276.064,
+      "end": 5305.344,
+      "text": "and focuses on cyber physical systems and here for the digital humanism community as a member of the advisory board he was also very much very early on involved in the developments and the establishment of this initiative here and has basically been one of the founders and seeders of this initiative here in Vienna."
+    },
+    {
+      "start": 5305.344,
+      "end": 5331.3279999999995,
+      "text": "Out of time, actually over time we started a bit late, but I'm going to be very, another time, very impolite and I'm going to like shorten the discussion here by just posing, basically taking Paula's talk as a, let's say as a connecting hypothesis here and ask Robin and Edward what they think about that. First of all, Edward, I would ask you after all what you described."
+    },
+    {
+      "start": 5331.3279999999995,
+      "end": 5360.32,
+      "text": "What about moral style and ethics? Is that doable within a Turing machine? Because that's kind of the assumption that we have when we're building that and encoding it. I think that's a wonderful question. And I think that any system of morality and ethics, I think, ultimately relies on the embodiment of cognition. And so that makes it much more problematic."
+    },
+    {
+      "start": 5360.32,
+      "end": 5390.224,
+      "text": "I do want to make a point to Robin's point. I still subscribe to a paper newspaper. And the primary reason that I still subscribe to a paper newspaper is that I know that it's not personalized. And it's very difficult with other media to even know whether it's being personalized. Paola's exoskeleton concept, frankly, makes me extremely nervous for many reasons, I think."
+    },
+    {
+      "start": 5390.224,
+      "end": 5400.0,
+      "text": "Robin raised one of those, right, which is that it may in fact expose a great deal more of our"
+    },
+    {
+      "start": 5400.0,
+      "end": 5423.408,
+      "text": "inner nature than we really want to expose. It makes me very nervous. I would extend that then to Robin, because it seems like on a very pragmatic level, we could have had the same discussion some years ago, whether all these psychological factors, whether personality, whether these things are actually..."
+    },
+    {
+      "start": 5423.408,
+      "end": 5451.152,
+      "text": "whether you can actually model them and whether they should be modeled or if that is too personal. But now we see in recommender systems that many systems actually work on the basis of some, let's say, advanced but ultimately simple psychological model, five factors of personality and so on. And it seems to be just another feature that feeds into these systems. So could that happen to moral ethical values as well? Yes."
+    },
+    {
+      "start": 5451.152,
+      "end": 5471.536,
+      "text": "It could, and it is something that I think is very concerning for exactly the reasons that I said, and I actually find the personality diagnosis issue problematic as well. Of course, you know, I think the other..."
+    },
+    {
+      "start": 5471.536,
+      "end": 5497.136,
+      "text": "point about this is that, of course, when you're dealing with a system that is essentially opaque, you know, those sort of deep learning mechanisms that we were just hearing about, we don't know what it's diagnosing, right? So, you know, maybe in there is, in fact, you know, something that is detected about personality or something that's detected about the user's moral framework or something like that, but we don't."
+    },
+    {
+      "start": 5497.136,
+      "end": 5524.784,
+      "text": "you know, we don't have any way of knowing that that's, you know, that's a, you know, a regularity or something that the system has found in the data. So I do think that it's, that this, the issue of, you know, the capture of more and more aspects of individuals, you know,"
+    },
+    {
+      "start": 5524.88,
+      "end": 5554.032,
+      "text": "human preferences and identity, I think this is a central problem. And one of the reasons why I'm kind of arguing for a little bit less of a monolith in terms of the way these systems are designed is so that that information doesn't all end up in one place in some giant record that holds everything that can..."
+    },
+    {
+      "start": 5554.032,
+      "end": 5583.856,
+      "text": "be known about one's behavior because we know that that kind of concentration of information is actually also a concentration of power, especially at scale. So, you know, I think that the, you know, so that is, you know, that is my concern about something like the, you know, anything that says, you know, I'm going to capture more aspects of people's preferences because those preferences are actually, you know, part of our humanity."
+    },
+    {
+      "start": 5584.816,
+      "end": 5613.6,
+      "text": "Paolo, you want to respond to that? I think we could argue that maybe some of these questions could also be, you know, if they're not centralized, if there's something that remains personal, if they're like on your personal devices and so on, maybe that would be a way of doing this. Paolo, what do you do? Yeah, no, the point is that it looks like that we forget that we are dealing with the digital systems. It's not that we are, you know."
+    },
+    {
+      "start": 5613.6,
+      "end": 5632.24,
+      "text": "My point is that what we should collect is already collected. I mean, all of us go around with a phone that predicts where you go when you get in your car. Just tracking it. And you are completely unaware of that."
+    },
+    {
+      "start": 5632.752,
+      "end": 5660.608,
+      "text": "Now, wouldn't it be much more comfortable to have a personalized software that if you don't like to be tracked from that issue, just turns off the GPS and so on? I mean, very pragmatically, I would like to be. I mean, and it's difficult to imagine that with the present technology, you can capture more of your darkness. Let's say darkness, no?"
+    },
+    {
+      "start": 5660.608,
+      "end": 5685.504,
+      "text": "what you capture is what is clear and if your own software captures it also the other software can capture it because it is an interface it's observable you know this is my point i mean it's so it's not that we are embedding something in our mind which you know discovers dark things that nobody sees we are just tracking what we do"
+    },
+    {
+      "start": 5685.504,
+      "end": 5711.888,
+      "text": "in our interactions with the digital systems. And then I think that the technology that help us in exploiting what the other systems like, you know, just setting your access rights. Why not? So I like to say, I like this aspect of the idea, which is sort of like, okay, can I"
+    },
+    {
+      "start": 5712.528,
+      "end": 5730.256,
+      "text": "to automate my interactions with what are otherwise extremely cumbersome, you know, tools like, you know, which cookies, you know, that I'm going to allow or whatever. So that makes a lot of sense to me. It's like, you know, there's..."
+    },
+    {
+      "start": 5730.768,
+      "end": 5754.48,
+      "text": "Organizations sometimes don't have the best incentives to make those things easy to use, right? So if there's something that can automate them from my point of view and not have to think about them as much, that's great. But I do think that the extent to which any piece of software, you know,"
+    },
+    {
+      "start": 5754.512,
+      "end": 5784.208,
+      "text": "really belongs to the user that's using it, that's something that I think is actually, you know, we've lost a little bit. You know, every piece of software kind of phones home these days. And so, you know, so that's – so I guess the claims that I would make about the software you're talking about might be different than the claims that you're making. You know, maybe it's –"
+    },
+    {
+      "start": 5784.208,
+      "end": 5807.264,
+      "text": "Yeah, I guess I wouldn't use the word soul if it was my project. Let me just add something. Let me put it in another way. Short answer. Very short answer. I mean, there is no doubt that we will embed as human species of software. No doubt. In the future, we will be. Maybe for help our view, for help our hearing, for help our arm, or, you know."
+    },
+    {
+      "start": 5807.264,
+      "end": 5837.168,
+      "text": "There will be. So there is no doubt that we are going in that direction. So why should not we think of using software to protect us? Now, we might not agree on the way we can protect this, but why should we only rely on, you know, Safari now tells me that has blocked 78 access that I haven't said anything to Safari. How did you guess it?"
+    },
+    {
+      "start": 5837.232,
+      "end": 5865.216,
+      "text": "Yeah. So one way to think about this maybe is that the software is is ultimately a cognitive prosthesis that it actually it. I mean, this is part of the principle of embodied cognition is that the cognitive mind doesn't reside within the brain alone. It's actually all about the interaction between the brain and its environment. And that environment today includes software systems. And so."
+    },
+    {
+      "start": 5865.216,
+      "end": 5890.064,
+      "text": "those software systems actually become a part of the cognitive mind in this principle of embodied cognition. It's a cognitive prosthesis. Okay, I think we take that as final words for the session. Thanks, Edward. Thanks, Robin. Thanks, Paola. Great discussion. I probably could go on for like another two hours easily."
+    },
+    {
+      "start": 5890.064,
+      "end": 5914.928,
+      "text": "If I try to summarize it now, which is kind of unsatisfactory in the end, I feel like the future of personalization is hyper personalization and depersonalization at the same time in a way. But I think we kind of have different strategies or like different directions here. But anyway, as I said, many things that would still need some more discussion for sure. Thanks very much for all your input and for this very lively presentation and discussion."
+    },
+    {
+      "start": 5918.416,
+      "end": 5945.888,
+      "text": "Thanks, everybody. Great to be here. Let's stay in touch. I have a question just in the break to to Edward. All right. Yeah. So Edward, can you can you hear me, Edward? Yeah, I hear you fine. The web is a countable set of Turing's machine. Is the web a Turing machine?"
+    },
+    {
+      "start": 5945.888,
+      "end": 5967.344,
+      "text": "Actually not. Interestingly enough, we use computers to build machines that don't fall within the model of Turing machines because they're interactive. And so, you know, the idea that computers are a subset of Turing machines is not actually correct. Okay."
+    },
+    {
+      "start": 5967.568,
+      "end": 5994.736,
+      "text": "So it's the machine restriction. It's not the counterpart set of parallel machines who are non-deterministic in those issues. But this is also a part of it, no? Yes, that's right. And has it some similarity to the deep neural network? Because also there you have a layer of different. It has some, from an architectural point of view, there are some similarities. The complexity is much higher, no?"
+    },
+    {
+      "start": 5995.088,
+      "end": 6000.0,
+      "text": "Yeah. And so deep neural networks are the form of."
+    },
+    {
+      "start": 6000.0,
+      "end": 6022.784,
+      "text": "AI that embraces feedback, right? The good old-fashioned AI is much more of a feed-forward system where you encode everything as production rules, if-then-else kind of statements. And there, you know, things do look a lot more like Herb Simon's rational processes, right?"
+    },
+    {
+      "start": 6022.784,
+      "end": 6050.048,
+      "text": "But deep neural networks don't look like that. And part of the reason they don't is because of this integration of feedback into the system. OK, so we are here. We are continuing. Actually, I have two little remarks. Actually, the second is more a question than a remark. So the first remark is that the formal model for systems like the web or interactive system are the red green machine."
+    },
+    {
+      "start": 6050.048,
+      "end": 6076.512,
+      "text": "that contain some parts that are not Turing-compatible, that allow them to run infinitely, to modify their program and to interact with external parts. So they are a formal model, but they are not Turing-compatible. So this does not break any basis, any foundation of our decision. The question regards your statement about the..."
+    },
+    {
+      "start": 6076.512,
+      "end": 6103.648,
+      "text": "possibly uncountable mess of the physical machines because this may be a vocabulary problem because to me a machine is something mechanical that comport that that behaves in a predetermined way so of course i'm speaking of idealized idealized machine i mean because a physical machine they have a lot of"
+    },
+    {
+      "start": 6103.648,
+      "end": 6132.688,
+      "text": "soft parts that may increase the number of their behavior. But if I think to a machine, to the concept of a machine, then the concept of a machine is something that behaves always in the same way. So I'm not able to see how this could be possibly uncountable because the description of the behavior is the set of algorithms, which is the set of Turing machine, which is..."
+    },
+    {
+      "start": 6132.688,
+      "end": 6159.664,
+      "text": "So that's a very that's a very deep question that would take a while to address fully. I do address that in in my books. But first of all, you're assuming determinism when you say that the machine behaves in a predetermined way. And I've shown, in fact, that if you consider the set of all deterministic models."
+    },
+    {
+      "start": 6159.664,
+      "end": 6189.136,
+      "text": "that are rich enough to encompass Newton's laws and that also have discrete behaviors, that that set is actually incomplete in a topological sense. So it doesn't include its own limit points, which suggests that non-deterministic phenomena are inevitably part of any rich enough model of the physical world. Okay, so the determinism hypothesis that you seem to be building on isn't..."
+    },
+    {
+      "start": 6189.136,
+      "end": 6218.208,
+      "text": "actually defensible. The second issue is the discreteness, right, that I think you're presupposing. Many processes in the physical world are best modeled as using continuums, right? We write down, we describe the physical world using differential equations, for example, not algorithms, okay? And in fact, there is no algorithm."
+    },
+    {
+      "start": 6218.208,
+      "end": 6244.784,
+      "text": "that will exactly model a differential equation. And moreover, there is no algorithm that will even accurately approximate all differential equations, right? There's this chaos phenomenon. Even a deterministic nonlinear differential equation may be such that every algorithm, because of its discrete nature, will have unbounded error."
+    },
+    {
+      "start": 6244.784,
+      "end": 6271.936,
+      "text": "in attempting to match the behavior of that differential equation and consequently discretizing the processes of a machine is going to lead to a mismatch between the behavior of that machine and the behavior of an actual physical system that that is describing. So I think that, you know, that machines"
+    },
+    {
+      "start": 6271.936,
+      "end": 6298.768,
+      "text": "The very notion of machines is not at all incompatible with uncountable behaviors. It does not require discreteness and it does not require determinism. OK, I understand. So the two key elements are the fact that they are continuous and the fact that they interact with an external world. So these are the two elements. OK, now I understand."
+    },
+    {
+      "start": 6298.8,
+      "end": 6316.528,
+      "text": "In this sense, I agree with you. These kind of machines are more than the Turing machine. Okay, thanks. Actually, time for coffee break now. Thanks all."
+    },
+    {
+      "start": 6333.2,
+      "end": 6360.464,
+      "text": "Thank you."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

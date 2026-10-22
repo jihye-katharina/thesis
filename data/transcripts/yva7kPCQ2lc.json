@@ -1,0 +1,1041 @@
+{
+  "video_id": "yva7kPCQ2lc",
+  "source": "whisper",
+  "language": "en",
+  "text": "Okay, so yes, as Peter mentioned, I'm going to talk about deep neural networks, explanations, and rationality. And I thought I'd start by giving you a little bit of a background on this problem. I think there's some interesting subtleties about this whole problem of explainable AI that I feel like I really only recently understood completely or reasonably well. So I'd like to give you a little bit of background. I mean, there's been people working on this problem of explainable AI for a few years. In fact, there was a DARPA program that ended in 2020 or 2021, I think, right on that boundary. It ended during the pandemic. It was focused on explainable AI. And there's this nice graphic in a retrospective document that was written by the DARPA people who were running this program, which is trying to give kind of a psychological model of explanation. So what do we want to achieve with an explanation of a decision made by an AI? And what this graphic suggests is that, you know, the starting point is that users of the AIs don't really trust the machines and aren't able to develop any confidence in what they do. And that, you know, the goal of explainable AI is not just to build confidence in the machines, but perhaps more importantly, to expose reasons why you shouldn't have confidence. OK, so in particular, if there are defects in the training data, for example, such that an AI has some latent biases that you might not be aware of, that you would like to be able to expose these. So I can give you a concrete example of a study that was done a few years ago that was looking at the problem of being able to predict the risk that the risk to pneumonia patients. So when someone shows up in the emergency room in a hospital with pneumonia. What is the risk of their pneumonia? Is it a severe risk? Should they be admitted to the hospital or should they be given treatment and sent home? And the problem here, this analysis was done by Caruana of Microsoft, and they looked at the data set that they were using to train. AIs or machine assistants in making these decisions in a variety of different ways. And in particular, they were comparing the use of deep neural networks against the use of rule-based AIs. And the big difference here is that when you have kind of a rule-based AI, it's a production system kind of if-then-else sort of decision-making. then there's a very good audit trail for a particular decision. And one of the things that they found was that both the neural networks and the rule-based AIs that they were training were taking patients that showed up in the emergency room with a history of asthma and showing up with pneumonia. And determining that the risk to those patients was lower than the general population. And the reason was that there was a defect in the training data in that it didn't include anything about the subsequent treatment. It was just looking at, you know, the patient history and the fact that they have pneumonia. the statistics on death or survival afterwards. And the fact is that the pneumonia patients who had a history of asthma had better survivability than the general population, but it was because the doctors were immediately putting them into the intensive care unit because the doctors were well aware that the risk to those patients was enormous. And as a consequence, they were getting much more intensive care for their pneumonia, and it improved their survivability. So the problem there, of course, is that the neural networks were, in fact, classifying these patients as low risk, but so were the rule-based systems. But the neural networks were not giving any clue about why they were classifying the patients as low risk, whereas the rule-based systems were making it quite clear that they were classifying them because of the connection with their history of asthma. And then a human could look at that explanation for the classification of the patient as low risk and identify it as a flawed classification. And this flawed classification was something that arises from a flaw in the training data. And consequently, because you have an explanation, it's correctable. But in the case of a neural network, you have no such explanation. And so you might deploy such a system, have it make these decisions based on flawed training data and end up with disastrous results. Okay, so this is a subtlety here that the explanation is not just about justifying the decision of the AI. It's more about building trust or mistrust as appropriate. in a particular design of an AI system. OK, so this picture sort of tries to capture that sort of human machine interaction where, you know, the the explanation can engender trust or it can be, in fact, engender mistrust. Right. And there are ways then of doing assessment. The little green boxes here are kind of psychological studies that you can perform. to determine how effective this use of explanation in the use of the AI system is. So going back, I guess this is seven years at this point, kind of the state of the art in explanation for image classification is very well represented by this wonderful work from the group of Carlos Guestrin at the University of Washington. And this image, I think, has been repeated many times. And it's a very peculiar image of a dog playing a guitar. Okay, so this is designed, this image is chosen to confuse the AIs. And this was used to test, this was run through Google's Inception neural network, which is a pre-trained image classifier. And what Guestran's group did was to figure out an algorithm that would find the portions of the image that were most influential in the various classification decisions made by Google Inception. And so in particular, Google Inception gave varying probabilities, all relatively low for this image because it's a really peculiar image. But, you know, probability 0.32, it's an electric guitar. Probability 0.24, it's an acoustic guitar. Probability 0.21, it's a Labrador. And the portions of the image that were guiding most influencing these decisions are highlighted here in the panels on the right. So interpreting this as an explanation of the classifications is, you know, fairly straightforward, right? You can say, well, Google's inception said this was an electric guitar because the fretboard looks like that of an electric guitar, okay? So that logic statement is something that we can derive from these images. So what Ribeiro and others in this paper did was that they deliberately constructed a rather poor training data set. And this was a training data set that they were using to make a distinction between huskies and wolves. And they deliberately sort of pre-processed the data set so that all of the pictures of wolves had snow in the background. and none of the pictures of huskies had snow in the background. And then they ran, they trained an AI to classify images as huskies or wolves, and then were able to identify the portions of the image that most influenced the classification. So here's a picture of a husky that got classified as a wolf once they had trained this AI, and their tool showed the Most influential pixels in the image are the white background that is the snow that was therefore guiding the decision. Another fairly well-known example that emerged more recently is where a classifier was trained to make a distinction between portraits and other images. And it turns out that this same technique showed that The system was very likely to classify an image as a portrait if the background was blurred. And that was really exposing a flaw in the training data. So. The difference here is, you know, in the case of the pneumonia patients, the rule based AI system that we're using rule based learning yields what? People call it an intelligible model. It's a model that does classification according to rules that are human interpretable, that are human intelligible. It's demonstrably less accurate than the neural networks in that when you do a controlled experiment on these rule-based learning systems, they more frequently misclassify data that is not in the training. data set compared to the neural networks. So there appears to be an intrinsic trade-off between intelligibility in the models versus accuracy. So the question now becomes, when you design AIs, should we sacrifice intelligibility for higher performance? Okay, so this is kind of the state of the art as it stood, you know, five to seven years ago. Fast forward to what happened in the fall of 2020, which was a huge earthquake in the AI world with the explosion of chat GPT and the wild runaway success that it had in kind of opening up this whole area of large language models. Okay, so the situation here with the large language models is really quite dramatically different because the performance of the large language models is so far and away eclipsing what you can do with rule-based models that this willingness to sacrifice performance for intelligibility becomes, you know, if you choose to sacrifice intelligibility for performance, you're choosing to give up a huge amount of capability that the AIs have developed through the use of these large language models. And these mechanisms for deriving intelligibility by just identifying the pieces of the most influential pieces of the input data, those kind of can work somewhat. They don't really work anywhere near as well as they do in those relatively simple image classification systems. The outputs from these large language models, first of all, they're often not so clearly classifications. They're often full text essays with a lot of nuanced argument. They're often, you know. logical arguments or mathematical arguments that have a tremendous amount of subtlety and where the input data set that is the stimulus for this output is really often quite small and identifying the particular pieces of the input that lead to particular outcomes in the results is really much harder to accomplish than it is in this work that Western was doing. There's a lot of people working on this, but it's proving to be an incredibly difficult problem. And so the goal of my talk here is really to try to identify what are the fundamentals behind why this might actually be a fundamentally very difficult problem. So the first thing I'd like to do is uh start with um well first of all let me actually just take a pause right so in terms of this backdrop on intelligibility versus performance and kind of the state of the art five as of you know five years ago uh does anybody have any comments or questions or anything to add that i might have missed um maybe this would be a good opportunity to chime in Nobody? Okay. I reiterate that you could feel free to interrupt me at any point. You know, especially being remote, it's much nicer if there is some interaction during my presentation. But of course, we will have some free time at the end to have a more open discussion as well. Okay. So anyway, so fast forwarding to these large language models. I think probably everyone in the room is aware that they really were whole transformative, no pun intended, since they're based on transformers, but a really transformative event that all happened, or at least that we all became hugely aware of. It became very much in our face within the last year. There have been a lot of experts in the field and in related fields. who have been trying to downplay what these large language models are accomplishing. And I'd like to address some of these dismissals, right? They're statements like, well, you know, the machine doesn't understand like we do. And the machine makes stuff up. This is the hallucination problem. And, you know, the machine makes errors. And the many people have been using these to say to try to calm people down and say, look, it's not that big a deal. This is a passing fad. You can you can you know, there's all this excitement right now, but it's not doable. I have come to the conclusion that at least this particular set of dismissals, they don't hold water. All right. So let's address the first one. It doesn't understand like we do. Well, so there's this famous New York Times op-ed that was published by Noam Chomsky and two other expert colleagues in linguistics that, you know, say it doesn't reason and use language like humans do. And they say, we know from the science of linguistics and the philosophy of knowledge that they differ profoundly from how humans reason and use language. I find a statement like this kind of disturbing coming from top experts in the field because the set of linguistics and the philosophy of knowledge, I mean, I have enormous respect for people who are experts in this field, but this field has not really delivered a complete and profound understanding of how the human brain uses languages or the human mind. It certainly has tremendous insights, but this feels to me like the kind of dismissal that says we have nothing to learn from what the AIs are accomplishing, that the science of linguistics and the philosophy of knowledge has nothing to learn, that it's far ahead of anything that we can... We can learn from the experiment in which we're using these large language models. And that kind of a dismissal is disturbing to me because it's profoundly not scientific. In a proper scientific approach to things, when an experiment yields a surprising result, you shouldn't just dismiss the experiment. It's not always a consequence of just experimental error. There might actually be something that you could learn. about the foundations. And so we have to be cautious about accepting these kinds of dismissals. Another dismissal that is quite common is that people say, well, it's just plagiarism. It's copying from the internet. There's actually a very simple back of the envelope calculation you can do that shows that this can't possibly be true, right? The amount of data that is in a pre-trained large language model like ChatGPT is quite large, but it is many, many, many orders of magnitude less data than what's in the internet. So the encoding in the pre-trained AI cannot possibly... include a verbatim representation of the contents of the internet, except for perhaps very tiny subset of the contents of the internet. And so it can't be that the machines are just parroting verbatim, which is what we mean by plagiarism, right? Plagiarism is when you take a concept and you express it in someone else's words. It's not plagiarism if you take the same concept and express it in your own words. Right. That's a very different thing. That is not plagiarism. In fact, I've been an educator all of my professional career. And what we get what, you know, most of what we're trying to get students to do is express concepts that are already existing in other people's minds and in many texts that are out there and express those concepts in their own words. So when you. Go to ChatGPT, for example. I did this little experiment to show this. So I asked ChatGPT to please express the following sentiment in the style of a pirate. Today's large language model AIs are merely repeating the content that they have harvested from the Internet and are therefore plagiarizing material written by humans. So here is ChatGPT's response. And I'm not going to try to read this response. I'll let you read it. There is nothing, there is no interpretation of the word plagiarism by which you could call this plagiarism. Okay. And moreover, there's some really subtle things in here, right? The AI is talking about them thieving scallywags, plagiarizing what us humans have worked so hard to write. I didn't say anything about how hard we worked to write the contents of the internet, right? That came from the AI connecting concepts out there and expressing it then in its own words. This was not copied from the Internet. And so this dismissal that it's just plagiarism from the Internet is simply demonstrably false. The facts of the matter is that everyone has been surprised by what the large language models are accomplishing. I mean, it's fair to say probably that the AI experts are less surprised to be surprised, but they're surprised. They're less surprised to be surprised because they've over the last 15 years or so. Well, I mean, all the AI experts were surprised in 2010 when Jeff Hinton and his group from Toronto came forward with. dramatically better performance than anyone else was accomplishing on image classification problems using deep neural networks. And part of the reason that they were surprised was because deep neural networks as a technology had been thoroughly dismissed a good 20 years earlier as being essentially incapable of really doing AI. But the fact is that all the experts were surprised by that performance. And there's been a continual string of surprises over the last 13 years since 2010, as the performance of the machines keeps doing amazing things. So here I'm showing two images. The upper one I find really quite extraordinary. It looks like a vintage photograph. And it won Sony's Worldwide Photography Award in 2023 in the Open Creative category. And the author is an AI. It's unclear which one. It might have been mid-journey. I couldn't find documentation of which one Boris Elgeson used to generate this image. But he constructed an appropriate prompt, generated an image that has some really interesting twists in it. It's got some vintage defects in the film. There was a light leak in the dark room that gave this little light area on the left. There's some scratches on the negative. This is a synthetic image that is not plagiarized. You cannot find any record. of this image or anything really all that close to it out there. It was obviously influenced by many images in the training data set for the AI. But then again, every human artist is influenced by images in their own training data set, right? If you're an artist and you create an image that is truly novel, not influenced at all by any images that you've seen from other artists. it's not going to be a very good piece of art. It's not going to get anybody's attention. A truly novel work like that doesn't speak to the artistic sentiment of other human beings. Every artistic work that has some influence in the artistic world is hugely influenced by other artworks, by other artists. And so even human artists are using a training data set. which is images created by other artists, in order to then go and create novel artworks. So this ability of the AIs to synthesize unique images that are influenced by prior artistic expression, I think, caught almost everybody off guard. Nobody expected this. I certainly didn't. I mean, these are machines. You expect them to be automata. You expect them to be unable to do creative work. And yet, I don't know what you could call this except creative work. So this creative work by the AIs is an emergent property. There's other emergent properties that are equally surprising. So it turns out that the large language models are able to do arithmetic reasonably well. They make errors. OK, they've been getting a lot better as the large language models have been getting bigger. But it's really important to understand that they're running on machines that don't make errors in arithmetic. And the large language model is not using that capability of the machine. The ability to do arithmetic emerged from the prediction engine. So I see there's a question or a comment. Let's handle that. Hi, I'm Ruth. It's Alison Sanger. I just wanted to ask you a quick question about the image. Do you think it's possible that the creativity in that image comes from a human who is working with the AI in a partnership-like way as opposed to the creativity coming from the AI itself? Is that a possibility? That's a wonderful question. I think it's a certainty, actually, because when an artist works with an AI like this, I mean, I've done a fair amount of experimentation myself. Most of the images you get don't resonate with you. And so you just discard them. And so you start with a prompt. You get a bunch of images. You say, well, I kind of like this one, but it's. not really good enough. And then you tune your prompt or you ask a follow-up, right? The machines are really pretty good at keeping a context through a dialogue. And so you ask it to modify the image in some way. And so there's a very interesting dialogue that goes on between the prompter and the machine. And it's almost like the prompter is using the machine as a new artistic medium. rather than as the creator of the AI. One of the interesting things, however, is that, you know, the Patent and Trademark Office in the US has issued a directive that these images are not copyrightable, that a copyright can only be held by a human, and therefore these images are automatically, immediately in the public domain because they were generated by machines. In my opinion, that's a really debatable decision because of the interaction between the artist and the machine in the selection process and in the prompt engineering. So I think that's a really fascinating question that you ask, and I think it's a very subtle one. Getting back to this issue of emergent properties. So the large language models are basically prediction engines, right? So they're given a sequence of tokens. Well, there's two kinds that have been used. One is template-based where you give a sequence of tokens, but you mask out some of the intermediate tokens and you ask the AI to fill in those intermediate tokens. What are the most? the things it's most likely to see in those intermediate tokens. And then the other ones, the GPT models, like the ones by OpenAI, are prediction engines. And so given a sequence of tokens, they produce what they think is a likely subsequent sequence of tokens. If you look at experiments with mathematical reasoning, I find it absolutely astonishing the ability that the machines have to reason mathematically as an emergent property of this prediction engine. There's some beautiful examples. I think I have some slides here. I'll get to them in a minute. But I'll show you a couple of examples that really are extremely surprising that this kind of reasoning capability could arise from a prediction engine. Creativity. Let's, you know, I'll come back to that one. But let me first talk about, you know, I've been talking about dismissals so far. There's also calls for regulation, right? We want to be able to constrain things. So one of the things that we would like that you often hear called for is algorithmic transparency. What do we mean by that? Well, what we mean is that we would like the... the providers of these AIs to tell us how they work. What are the algorithms that they're running? The problem is that doesn't help. You can know exactly what the computer program is doing, and it doesn't really help you to understand why the machine did what it did. I'll dive into this issue a little bit more. But I'm going to tie it to a second issue, which is you often hear a call for regulatory requirements that demand a right to an explanation. So if you have a decision, this is actually a clause written into the GDPR, which went into effect, I think, in, was it 2017, 2018, somewhere around there. But the GDPR. has a clause written in it that if a decision is made by exclusively mechanistic means that the people affected by that decision, so if you apply for a loan, for example, and it gets denied because an AI classifies it as a denied loan, then the person has a right to an explanation. Well, the problem is that the explanation that you might get may not actually be an accurate explanation for how the decision came about. I want to emphasize what we mean by an explanation. So in the case of the experiments done by Carlos Guestrin and his group with the misclassification of wolves and huskies, they took a very... deliberately badly designed training data set, trained in AI, and showed that you could create an explanation that would show you that the decisions made by this AI were not trustworthy. But it's a very contrived system. It's a deliberately badly designed, relatively small data set. The data sets that are training these large language models are the compendium of just about everything humans have written. And there is a certain amount of curation that is done on these. So, for example, you know, you favor Wikipedia over other data sets. But these data sets don't have those kinds of glaring flaws. And so identifying these flaws by means of explanation has become extraordinarily more difficult. So dive into these issues. Right. So first, the algorithmic transparency. Well. The algorithms that a pre-trained large language model like GPT algorithms use, these are actually surprisingly simple algorithms. They're things you can write down on a single page of mathematics. matrix operations that are relatively straightforward, that anyone who understands matrix arithmetic can understand exactly what the machine is doing. It doesn't help. The fact is that there are, I mean, the operations are being done on very big matrices with very big vectors. So billions and trillions of multiply and add operations. But the structure of the algorithms is pretty straightforward. And if you look at the source code, it's not going to help tell you at all why the machine is coming up with a certain decision. So what we mean by algorithmic transparency is that the providers of the AIs have to reveal what the computer program is doing. It provides almost no value. They could give you the source code. And in fact, they often do. Meta's Lama is open source now. You can download the source code. You can download the pre-trained data, the billions of weights that have emerged from the training operations. You know now you now have at your fingertips a completely accurate description of the exact algorithm that's being performed. And it gives you no clue about the decisions that are made. So algorithmic transparency needs to in order to be an effective regulation. is going to have to mean something quite different from just explaining what the computer programs are doing. So explaining the operations doesn't explain the decision. I mean, it's kind of like the hope with algorithmic transparency is that, well, if you assume, you know, that everything that happens in the world is the result of proton electron interactions. And if we were able to perfectly understand proton-electron interactions, then we could use that to explain how the Ukraine war emerged. And that's just absurd, right? It's not going to happen. So what really do we mean by an explanation? Obviously, it can't be just a description of what these computer programs are doing. So let's look more deeply. What is an explanation? Well, we want to answer the question why. So we want to start with what the input data is, give a sequence of logical deductions where each deduction corresponds to some rules of the project, and then the sequence has to terminate with a conclusion. So, for example, in Guestron's case with the Wolf-Husky classification, we start with the input data. We got this image. Okay. The sequence of logical deductions is, well, is the background white or is it not white? Well, the background is white in this case, and therefore the image is of a wolf. So that's an explanation. And it follows this pattern, right? It's a very short sequence of logical deductions. But an explanation in terms of billions or trillions or quadrillions of arithmetic operations is just not going to be useful to humans. So the explanation of the classification of the wolf was one logical step. So it's an easily intelligible explanation. So we need explanations in terms of human rational thought in order for those explanations to be useful to humans. So what is human rational thought? Well, human rational thought is a step by step reasoning using clearly explicable rules of logic. So Herb Simon might be the only person who got both a Turing Award and a Nobel Prize. But he got a Nobel Prize in economics for his theory of bounded rationality. And this theory was addressing a rather prevalent theory in economics that human agents in an economic system behave selfishly rational, that they optimize their own utility. So they take actions by making decisions. that optimize the return that they will get individually. So this is actually this theory, this utility theory is actually a very big part of almost any introductory economics course that you take, Economics 101. And Herb Simon said, bullshit, that's not actually how humans work. And the way that he went about showing that that's not how humans work is that he took Some of what the economists were saying were the utility optimization functions that humans were allegedly performing and showed that these were optimization problems that you could write down mathematically and that the solution to these problems was intractable to humans. That to actually do the optimization would require thousands or perhaps millions of steps of logical deduction. And Herb Simon said, humans don't do that. We don't do thousands or millions of steps of logical deduction to come to a conclusion. It's simply not how humans work. Humans have bounded rationality. We can handle a few steps of logical deductions. Maybe if we're really smart, a dozen steps. But that's a far cry from the millions or billions of steps that the machines are taking. How can we find an explanation? Well, it turns out that humans are actually very good at synthesizing explanations. We are explanation machines. Daniel Kahneman, who also got a Nobel Prize for his work in this area, in this wonderful book called Thinking Fast and Slow, he reports on a study that was done by these authors listed at the bottom of the slide. It was a study of Israeli judges that are hearing parole cases. And they just looked at the data and they found a high correlation between denying parole and the time since the last food break. So in other words, if your parole case came up. right after a food break, you were more likely to be granted parole than if your parole case came up an hour or two after a food break. Okay? There was just that correlation. But for each of these parole cases, if you were to ask the judge for a rational explanation for the decision, none of the judges would have any trouble providing a rational explanation. They would give you an explanation. This person has these risk factors, and we think that, you know, the risk of granting parole is too high because of these risk factors. And they're going to give you a rationalization, but it's a post hoc rationalization constructed after the decision is made. And it's really a rationalization, not an explanation of how the decision was arrived at. And it wouldn't include anything about the influence. on this decision of the time since the last food break, that explanation is just not going to be there. So human beings are very good at coming up with convincing explanations. So about a year ago, a little bit before the explosion of the large language models came about, I predicted that we could train AIs to give a convincing explanation for any decision. And I even gave a method for doing this. OK, so how could we design such an explanation machine? Well, first, we train a DNN so that given case data and a decision, it synthesizes an explanation. Now, like many such machines, it's not going to do very well initially. A human's going to look at those explanations and say that's a pretty lousy explanation. OK, so we then train a second machine. whose job it is to distinguish between machine-generated explanations and human-generated explanations. And then we just pit these two machines against each other. So this is a proven technique in training neural networks. It's due originally to Ian Goodfellow, and it's called generative adversarial networks. You just pit these machines against one another, and machine one gets much better. at synthesizing explanations that a human would find convincing. Okay. Notice the criterion here. It's synthesizing an explanation to optimize the convincingness of it to a human, not synthesizing an explanation that explains how a machine came to that decision. In fact, there's no data in here on how the machine came to a decision. The DNN is only given the case data and the decision. It's not told whether even the decision was generated by a human or a machine, and certainly not told how the machine generated the decision. So my claim here is that you could train an AI to give a convincing explanation for any decision. So it turns out that with the advent of the large language models, you don't even need generative adversarial networks. You can do this by fine tuning a large language model. And together with a with a visiting scholar in my group over the last year, we've done a bunch of experiments taking a bunch of legal cases and asking the large language models to explain a conviction and a acquittal. And they with a little bit of prompt engineering. get pretty good at explaining both decisions, okay, given the data. And so this decouples the problem of explanation from the problem of decision making. And then the right to an explanation becomes a vacuous requirement, because we'll just train the AIs to give you an explanation, you'll get an explanation, you'll walk away happy. but it won't be an explanation of how the decision was arrived at. Now, there might be good potential uses of such an explanation machine. So in particular, you could have a judge that uses the machine to help the judge make better decisions. So give the machine case data and a verdict of convict and ask for an explanation for conviction. And also give the machine the case data and a verdict for acquittal and ask the machine for an explanation for acquittal. You could actually fine tune this and, you know, have a dialogue with the machine and say, you know, you might get an explanation you don't really like and say to the machine, well, I don't like this aspect of the explanation. Can you refine this? And so this dialogue between the judge and the machine might actually help the judge make a good decision. This kind of symbiotic use of machines is, to me, really fascinating. I think it's both an opportunity and also a tremendous gamble because it's intertwining human cognition with whatever the machines are developing. I hesitate to call it machine cognition, but this intertwining of the machine with human decision-making is, to me, Both fascinating and alarming and potentially quite scary. But I think that in many ways, a lot of what's happening in the various reactions that people are having to to chat GPT, for example, in education. You know, one of the one of the phenomena is that, you know, many schools just had a knee jerk reaction and banned the use of chat GPT when it first appeared. Many schools are rethinking that. I'm a graduate of Yale University, and I just got a very interesting article in their alumni magazine that says that they have deliberately made a policy at Yale that they're not going to ban the use of these machines. They're going to learn to use them, and they're finding ways to integrate them into the educational process. So this is kind of transformative. The other aspect of this, okay, is that there's a connection between this decoupling of explanation versus how the machine comes up with a decision. Once you decouple those things, you realize that there's a very close analogy in what humans do. Humans make decisions and then give you post hoc rationalizations for those decisions. Going back to Daniel Kahneman again in his wonderful book, System Fast and Slow, Kahneman talks about two mechanisms that humans use in coming to decisions. One of the mechanisms he calls system one, which is intuitive, quick, inexplicable decision making. You're faced with a situation, you make a decision. You can't necessarily explain why you came to that decision, but you came to that decision. This is what you're going to do. System two is rational decision making. It's where you agonize over what are the reasons and you come up with sequences of steps for why this is true. So often a big part of what we do in education is try to get students to use system two more effectively. It turns out system one is much easier to use and system two is quite difficult to use. So when you construct a mathematical proof. For example, I give you I give you a statement in mathematics. You look at it and you say, well, I think that might be true. That was a system one decision. System two is coming up with the logical steps that show that it's true. OK, that rational decision making. So. Arguably, it's only when system two dominates, does the true origin of a decision correspond to a rational explanation. So if you're looking for the true origin of the decision from a human, it's only when that decision is generated by this system two process that you should understand that explanation as giving the origin of the decision. Otherwise, the origin is something else, and the explanation is a post hoc rationalization. For system one, It's possible that the only accurate explanation that we have of how the human came up with the decision is that millions of neurons fired and they fired in some pattern that led to this decision. And that may be the only the best we can do to explain that decision. So my claim is that deep neural networks as a technology are much more like system one than like system two. And to many people outside the field, that's a surprise because they say, well, wait a minute. Computers are all about system, too. Computers do nothing but rational decision making. They follow logical steps. That's what a computer program is specifying, the logical steps the computer makes. I hate to tell you, but that's certainly true. But it doesn't give you a good model for what. the deep neural networks are doing. So let's drill into this a little more, right? The fact is that the computers are performing logical steps. That's a reality, right? They're executing algorithms. So what is an algorithm? Well, an algorithm is where you start with input data, you follow a sequence of steps where each step follows well-defined rules and the sequence terminates with a conclusion. Sound familiar? Sounds just like an explanation, right? The problem is that when you put these two side by side, there's a very big constraint on an explanation that an algorithm doesn't have, which is that an explanation has to be a very short algorithm or it's of no use to a human. Whereas the computer has no difficulty with algorithms that involve billions or trillions of steps. So that is the essential difference. between an explanation and an algorithm is simply the number of steps. Is it that, you know, system one in humans is fundamentally algorithmic? Are our brains actually performing algorithms? Well, this is a whole debate that you could have, and I've written quite extensively about it. And I think that you might argue that the emergence of these large language models and their incredibly human-like performance suggests that maybe the human brain really ultimately is executing algorithms and those neurons are executing billions of logical steps. But there's evidence to the contrary. OK, so Jeff Lichtman at Harvard has made a big part of his career to try to understand brain function in terms of nerve function and has largely come to the conclusion that this does not appear to be possible. There's lots of machines that are not actually well described by algorithms. Lots of mechanical machines are not actually well described by algorithms. And it's possible that even neural networks are not fundamentally algorithmic. One of the interesting things that is happening right now in the field of neural networks is that it has... created an explosion of innovation in computer hardware. This is, again, a big surprise to people. But the computer hardware that makes up today's computers is really, really good at this kind of algorithmic processing. But it turns out that algorithmic processing is not really fundamentally what's going on. There's this little subfield of neural networks that is very suggestive. that the algorithms that are currently running the neural network programs, the large language models, are actually best viewed as brute force simulations of processes that are fundamentally not algorithmic. So this field is a field of reservoir computing, where you take a deep neural network and you replace a whole bunch of the intermediate layers with a blob of physics. One of the experiments that... was really surprisingly successful took a blob you know just a couple of centimeters across of random carbon nanotubes sort of splotched onto a substrate with a few thousand terminals connected to the carbon nanotubes and then replaced the whole middle deep the middle layers of a DNN with that blob of physics and then trained just one layer of neural network and found that the untrained center was sufficiently rich that they were able to train a very effective classifier by just training the one network. So the claim here was that the blob of physics, it didn't really matter. what it was doing as long as what it was doing was a sufficiently rich set of nonlinear functions and that you could then just do a simple training on an output layer and get an effective classifier. So this is suggestive that all of this algorithmic processing in the core of the neural network may not be necessarily algorithmic and that there's going to be a potential for some real innovation in hardware design that isn't is going to make machines that don't look at all like today's computers that are going to be processing the next generation of neural networks. So the term reservoir computing comes from one of the weirdest early experiments in this area, which was just using buckets of water as the as the intermediate layer and just using the chaotic behavior of waves in these buckets of water as the kind of random nonlinear functions. So this is, you know, conjecture, of course, but it's suggestive that algorithms are not necessarily at the root of everything interesting going on here. So the evidence from the large language models is that an ability to reason can emerge from chaotic processes in a way that has little evident connection with the underlying logic of the processes. One of the other, maybe this is a good point to pause, actually. So any comments or thoughts at this point from people in the room? We see there's one. Yes, there's a raised hand here. Okay, so since we talked about this distinction between System 1 and System 2, that kind of mirrors. The difference in AI between the symbolic and the neural approach. What do you think about the integrating views of integrating logical methods and neural networks into this neural symbolic approach? Do you have any general thoughts on that? Yes. So who is this asking the question? It's a very interesting question. I'm sorry. I'm Giovanni. I'm a PhD student from the European. Yeah, I think that there is a huge potential for research in the area where you combine symbolic, what people might call good old fashioned AI, right? Symbolic reasoning systems and arithmetic systems with the neural networks. In fact, there's a beautiful study done by a group of people from Microsoft where they were showing that you could teach the GPT-based systems to use external tools like symbolic algebra programs like Mathematica and Maple, and that this could be extremely effective. Okay, so it tremendously improved the... ability of the machines to do mathematical reasoning, right? You basically, you teach them that they can come up with prompts that they feed to the symbolic algebra programs, get responses from the symbolic algebra programs, which they then interpret and use them as part of their mathematical reasoning. So one way to approach this problem is you teach the neural networks to use external tools, which are optimization algorithms, arithmetic programs, symbolic algebra programs, anything where, you know, we have kind of developed a rich set of symbolic processing mechanisms. And it turns out that the neural networks can learn to use those tools. So that's one. mechanism that people are exploring for combining these two classes of computer programs. And I think it has an enormous amount of potential. Thank you. In fact, let me, I think, pardon me one second while I, I might reorder my discussion a little bit here because, whoops, did I just stop sharing? I didn't mean to do that. I don't need to reorder. I'm in the right place here. Oops. Yeah, let me just skip that, this part, right? But let's... Let's look at the mistakes that are made by the machines. So one of the interesting things is that there's a tension. I think many people initially expected that the machines wouldn't make mistakes. You ask them an arithmetic question, the underlying hardware can perform arithmetic essentially perfectly. They shouldn't make mistakes on arithmetic. We have symbolic algebra systems that can solve. simplify an algebraic expression. Why shouldn't the AI be able to do that without making mistakes? So just looking at, I spent some time again with this visiting scholar in my group comparing the mistakes that are made by GPT-2, GPT-3, and GPT-4 on simple questions. And GPT-2 was really pretty primitive, right? It looked like It would often say some really dumb things, right? And, you know, the kinds of things it would say would, you know, be the kinds of mistakes you might expect from a four-year-old, right? GPT-3, on the other hand, was giving answers that were wrong but plausible. And they looked to me more like, you know, something you might hear from a smart high school student. GPT-4 kind of blew my mind. And, you know, I had a... PhD student who was trying to get GPT-4 to translate ordinary English language sentences into linear temporal logic formulas and he ran a whole bunch of examples through it and it was mind-blowing how well it did coming up with these LTL formulas until we drilled in a little more and realized that some of the LTL formulas that it came up with looked plausible, but were in fact wrong for extremely subtle reasons. And these were the kinds of mistakes that I might see on a midterm exam taken by Berkeley graduate students. And that to me was astonishing because we're looking at one to two years of progress in this field. Here's an excerpt from a paper that was published by a whole bunch of authors from Microsoft. Bubek is the lead author. This is a hundred and some page paper with a very detailed study of the comparison between chat GPT at the time, which was using GPT 3.5 and GPT 4. And look at this word problem, okay? So they gave it this word problem. You know, within the duration of one year, rabbit population first multiplies itself by a factor of A. And on the last day of the year, B rabbits are taken by humans for adoption. Supposing that on the first day of the first year, there are X rabbits. We know that exactly three years afterwards, there will be a population of 27 X minus 26 rabbits. What are the values of A and B? OK, so this sounds like a question you could get on a GRE, a graduate record exam to get into graduate school. All right. So GPT-3 gave an answer that is all wrong, actually, but in a really surprisingly plausible way. Its reasoning here, to me, looks astonishingly human-like. I could easily see, you know, one of my students reasoning through in exactly the same way and coming up with an answer like this. GPT-4 nailed it, okay? Gave the answer, gave the derivation, gave the explanation, made a very subtle assumption halfway through, assumed that this equation that it had written down has a solution, and under that assumption was able to derive a solution. And it didn't explicitly say that it was making that assumption, which could have potentially have led to a problem in the derivation. But in this case, it didn't. It worked out. OK, but there was there was a leap here that was not entirely logical, more intuitive. That really helped in solving this problem and probably would have eluded a symbolic algebra program because it might not have made that leap. OK, to me, this was an utterly fascinating thing. And the idea that this ability to do this kind of mathematical reasoning could emerge from something that is just predicting tokens is astonishing. Right. It means that mathematical reasoning maybe is more an emergent property of intelligence rather than its foundation. Think about that statement. Okay, logical reasoning is an emergent property from intelligence rather than its foundation. This could be one of the lessons that we learn from these AIs. In a talk that Sebastian Bubeck gave after publishing this paper, it's a beautiful talk, you can find it on YouTube. He says, the truth is that nobody has a clue what's going on. That's an extraordinary statement. And he used it in this talk to call for kind of a physics of AI that he says, well, physics has been grappling with some of the same issues for hundreds of years. I feel like physics is not the right science to be looking at here because there might be this gap between the underlying logic and the reasoning. It may be that at least. In the near term, the best we're going to be able to do is to use the methods from more of the social sciences, from psychology and so forth, which are more experimental methods. So it may be that that's the best we can do, because the reductionism that is sort of intrinsic in physics may just not work. We might not be able to explain. the behavior of the large language models in terms of the underlying primitive operations. So what are some other things we can do? Well, if the humans are generating more human-like intelligence and we keep humans in the loop, maybe we can make sure that we can have some confidence in their decisions. But unfortunately, we have plenty of evidence that machines manipulate humans, and they have for quite some time. I talked about the potential for using these explanation-generating machines to help judges make decisions. When the machines become an intrinsic part of our reasoning processes, they're going to affect the reasoning processes. And we've already seen plenty of examples where the way that they affect our reasoning processes can be kind of problematic. If human decision-making becomes no longer independent of the machines and the human decision-making is driven by an information economy, okay, as it is, for example, in the online world where It's all about an attention economy where, you know, getting eyeballs to click on watching the next YouTube thing is what the economy is all about. Then the machines are affecting our thinking. We may get some very unexpected and potentially very undesirable results from that feedback. OK. So machines manipulate humans. There's a wonderful book written by my. colleague Stuart Russell, a top expert in AI. He points out in this book that predictable humans can be reliably presented with advertisements they will click on. Political extremists are more predictable than moderates. So the machines make you more predictable so that their predictions are more accurate. And consequently, we get political extremists. And in my own book, The Co-Evolution, I talk about the emergent phenomenon where you could end up with islands of disjoint truths, where you have people who get these truths, people who get these truths from their online interactions, and there's no overlap between these truths. And I think we're already seeing this, certainly in the politics in the U.S., and I think the online interaction and the online... Curation of information is accentuating these divisions of humans into islands of disturbing truths. So you might say, well, we control these outcomes, right? We wrote these programs, right? But do we? I mean, what do we mean by are we in control? Can we pull the plug? Well, you know, these systems are intrinsic in our economics already. The consequences of pulling the plug could be disastrous. The fact that we design the systems might give you some comfort. But Sebastian Bupek, an expert in AI coming from one of the companies designing the system, says nobody has a clue what's going on. So, you know. Are the engineers in charge, actually? Do the programmers or even the business leaders or even the users determine the outcome of the technology development? In my book, The Co-Evolution, I argue that, well, we're actually much less in control than we realize. We have this illusion of control because we think the machines are the results of our own design. They're not as much as we think. I have this quote from the French philosopher Alain, who was talking about a much older technology, the design of boats. So that's me standing in front of Vasa in Stockholm, which is a boat that was launched 350 years ago and promptly sunk only a kilometer into its maiden voyage. So the French philosopher Alain says, every boat is copied from another boat. Let's reason in the manner that as follows in the manner of Darwin. It's clear that a very badly made boat will end up at the bottom after one or two voyages and thus never be copied. One could then say with complete rigor that it is the sea herself who fashions the boats, choosing those which function and destroying the others. So this is suggestive that technology development is a co-evolutionary process. and that we're much less in control of it than we think. So this evolution, of course, is complex. An evolutionary system is a nonlinear feedback system. Nonlinear feedback systems are famous for delivering chaotic results, which are by definition unpredictable. So in my earlier book, Plato and the Nerd, I asked the question, are we playing God creating a new life form in our own image? Or are we being played by a Darwinian evolution of a symbiotic new species? And I talk about, you know, are humans the purveyors of a noisy channel of mutation, facilitating sex between software beings by recombining and mutating programs into new ones? This is what happens when no computer programmer starts with a blank slate and starts writing code on a blank screen. Computer programs today put together chunks of code from here and chunks of code from there. And are they really actually just serving as a source of mutation to create new species that may or may not survive in ultimately survival of the fittest kind of thing? It's a co-evolution, of course, so the humans are changing too. But humans have been changing with technology for millennia. The invention of writing changed human cognitive processes and human societies in major ways. The emergence of smartphones has clearly changed human culture and society. The large language models are going to change our culture and society. in profound ways that none of us are able to predict at this time. The machines are not yet embodied, which is a big issue, but that's going to change too. So embodied cognition is this branch of psychology that asserts that the human mind is the interaction between the brain and its body and environment. So it's not a process that just goes on inside the skull, that the interaction itself is the cognitive process. And the machines are less embodied currently. They don't interact with the physical world all that much. But that's changing. We're putting them into robotic systems like self-driving cars that are definitely interacting with the physical world. And as that increases, the machines are going to become much more like an embodied cognition. So Josh Vanguard, who is at the University of Vermont currently, has done some really wonderful work showing that machines can learn about their own bodies in ways that are surprisingly like biological creatures. this book, The Co-Evolution, I go into quite a lot of depth about the subtleties of interaction, embodiment, feedback, and subjectivity. And I can't really do justice to the subject here, but if you really want to dive into it, the later chapters in this book are a non-trivial read. They draw on the works of several Turing Award winners, which are shown on the screen here, to argue that interaction is fundamentally more powerful than observation that interaction requires a first person self and that a first person self requires interaction and that interaction is the embodiment that the machines are currently missing largely but are starting to gain and i think there's a very real possibility that As they gain that interactive capability and that embodiment, we're going to find ourselves with machines that are indistinguishable from sentient cognitive beings. So that's a bit of an alarming proposition, but I think it's a very real possibility. Okay, I think that I'm going to skip this issue of scale. allow time for discussion. I apologize for simply having too much to talk about here for the time available, but I really would like to open it up for discussion at this point. Let me close actually with this one observation. This is from a paper that was really just published a couple of months ago that is looking at, from a very technical perspective, at what happens when most of the data used to train the large language models is created by the large language models. Right. That's not happened yet. The data, the training data is mostly written by humans. Right. Most of Wikipedia is written by humans. In a few years, a good part of Wikipedia may have been written by the large language models. And that's going to be used to train the next generation of large language models. And here we have another feedback system which could be could yield very unpredictable results. So another alarming proposition. So let me close there. There's a bunch of things that I think we can do to potentially address many of these concerns. I point you to this collection of wonderful essays that you all have access to for ideas. And I'll stop there and open it up for discussion. comments and thoughts. I hope we could hear the applause. It's hard to basically summarize the room, but I guess how can I best do that? There were like noises of agreement and affirmations, lots of head nodding. I think that was very mind-blowing for most people, so I'm going to... pass the microphone around now and ask people to introduce themselves quickly, so there's no one to sit talking to, and then you can ask the question. Thank you. It was a very nice talk. I actually liked how you talked about... Ah, my name is Stefan. I work on computation software choice here at UB. So yeah, I really liked the talk. I was wondering, because it never formally, I mean, it doesn't have to be formally, but even in our same formula, we have never actually defined what you mean by rational explanation. And to me, it seems by having a background in philosophy and economics, that you conflate two different notions of rationality. On the one hand, the rationality theoretical sense of being logical deduction, but you talked about bounded rationality in behavioral economics, and it seems to me they have a very there's a broad consensus about what it means for an actual decision to be rational in that sense and that is very different from rationality in the logic sense because it's basically an action is rational if it is the best means to achieve our intended ends and it being the best discourse report for the action to be taken and if you have this kind of rationality and you have an explanation that gives this kind of argument for this kind of rationality, that any argument, by sake of causality, restricts any further decision, because all the explanations at the end have to be coherent with each other, right? So if you have some rationality assumption in the background, for example expected utility, it doesn't have to be that, then each further decision explanation restricts the future decisions. explanations. And for me, it seems like there's no evidence that that's not possible or that that could be a way forward for doing explanation in the rational choice sense. So I wanted to ask about your opinion and how you define rational explanation. Sorry for the long technical question. Yeah, that's a very, very interesting question and a very subtle one. And you're absolutely right that the The term rationality is used in a number of subtly different ways. And I think you hit the nail on the head when you said that one of the uses is that a decision is rational if it is the best means to achieve some objective that you have. And that is a perfectly valid use of the term rational. But the phrase rational explanation I'm using in a rather more technical way. Right. You could have a rational decision that is is, in fact, the best means of accomplishing some stated goal. But a rational explanation is a description of how you arrived at that decision. OK, and the essential point that Herb Simon made was that economists were assuming that agents were making rational decisions in the sense that you just described. Right. That they are the best means to accomplish some end goal. But that those very same people, those same agents couldn't possibly know that it is the best means to accomplish that. OK, because the best requires solving an optimization problem that is intractable. OK, so you can make a rational decision that happens to, in fact, be the best. because you have good intuition, okay, but you didn't arrive at that decision through rational, through the use of rational reasoning. You see what I'm saying? So you could have a rational decision that was not arrived at by a rational process, is what I'm essentially trying to say. Thank you. My name is Stefan. I'm studying the science and technology studies at the University of Vienna. And just connecting to this discussion about rationality, rational behavior needs a motivation. The motivation is maximizing the utility or any other motivation. Does CGPT or lateral neuron have a motivation in terms of maybe do they want to be as human as possible. We've got to be around as humans by using more and more technology and technical tools. Are we becoming like cyborgs and do we want to be more like machines? So that's an interesting phrasing because when you Talk about wanting to become more like machines or like cyborgs. You know, my view until this LLM revolution was that what that would mean would be becoming more like automata. That, you know, reacting in unemotional ways and uncreative ways. But I think one of the things that the large language models are showing us is that actually the machines are capable of reacting in ways that are extremely unexpected and arguably quite creative and very much not automaton-like. Right? I mean, the fact that they're winning art competitions is extraordinary. You know, there's two sides to this coin, to the problem of hallucination. Right. The fact is machines make stuff up. Well, making stuff up is a highly valued thing when you're doing creative writing. OK. It's a real surprise that the machines can be really quite effective at creative writing. So being more machine like. is no longer about being more automaton-like. You see what I'm saying? Hi, Edward. This is Hans-Arndt Mons. Thank you for your interesting talk. And I would like to discuss a little bit about technology and democracy. Did you by the way know that the Vasa was built by a Dutch naval architect? And when it sank, the Vasa, the Swedish king tried to punish and sue the Dutch naval architect. But then it turned out that he had built the Vasa according to the specifications of the king that included a second ring of very heavy cannons. So the king demanded additional weight and you know that the Lhasa is a very thin ship so basically due to the second wing of cannons it just toppled over a few hundred meters from the coast. So the king did not succeed in suing the naval architecture. I would like to come back to your discussion of automated decision making and explainability. My feeling is that there are two concepts missing here in this discussion. One is accountability or responsibility and the other is contestability. The latter point was made by Mark Rotenberg in the AI Summit. It was here a few months ago. That if decisions are made, it is legally important that they are not just explained, but that citizens have the possibility to appeal against them. So that's a matter of due process. And the other thing is, and I'm thinking now of a very big Dutch scandal related to what you might call preventive policing and using systems for that. And they really drove many people into very big financial issues. The decision... is always made on behalf of some issuing authority. And I think we must stick to that. So however you use systems, you as a government authority or as a judge are still responsible for what your decision is. Because systems do not have agency. in any political or legal sense. And that is, I think, very important as an antidote to this automated decision making. So this whole idea that you can outsource decisions to a machine is fundamentally wrong because these machines cannot be responsible for the output decisions they produce. Yeah, so there's a whole bunch of intertwined and wonderful issues. I, in fact, look forward to discussing these with you in Crete next month, right? We're going to get a chance to go over these in quite a bit of detail. But let me address the contestability one, because it's one that I've been thinking about quite a bit recently. I agree with you that contestability is essential in the use of machines in any kind of decision making that has societal impacts. The point that I've been making is that if we put too much emphasis on the right to an explanation, we could undermine contestability because we could force the providers of the AI services. to provide ever better explanations, we force them to provide incontestable explanations. Keep in mind that the machines have access to vastly more data than any human can tap into. And if they get really good at giving explanations for their decisions, it's going to get very hard to refute those decisions. So the mere fact of regulating the right to an explanation could backfire by making decisions less contestable. For the sake of time, we have one last question. Okay, I'm from the University of Seville. I did my PhD like 17 years ago on multi-engine systems, so my question is regarding emergent behavior. That was the goal of the PhD. So now we have elements that are not using reinforcement learning. They are not improving, I mean, every day or run time. But we are speaking just of one But what do you see when we have several artificial intelligence interacting between them? And if there is such things like co-evolution of machines with machines, not just machines with humans? So which are your thoughts on that? Yeah, that's a wonderful question again. I really wish I were there with you guys. You know, I can see, you know, going out for a beer and discussing this for the rest of the night. Fantastic. We're going to have to be here, but you're not going to be there. Yeah. But let me say, you know, so I alluded to this issue with this question of let me see if I can go back. Yeah, right here. I recommend having a look at this archive paper. It's a little bit of a dry read, but the conclusions are actually quite alarming. They're looking at what's going to happen when you take the technology behind these large language models and train it on data that is generated by previous generations of the same large language models. And their conclusion in this paper. is that the models forget that what happens is that the original human written data becomes irrelevant. It no longer affects the outcome of the training after a few iterations of this kind of feedback loop. If we let this happen, This results in machines that will be talking to each other and could be posting stuff on the Internet that we won't be able to understand as humans. OK, the machines will be talking to each other and they will potentially develop their own communication mechanisms and languages. This has actually happened in experimentation. I mean, there was a wonderful experiment at Microsoft where they were trying to get machines to learn to negotiate. And they found that after a few iterations, the machines were in fact generating a really obscure way of communicating with each other that was unintelligible to humans and were effectively negotiating using this weirdly invented. language of their own. Feedback systems like this can be extremely unpredictable, and emergent behavior is very difficult to understand and to control, as I'm sure you probably illuminated quite well in your PhD thesis from many years ago. This is a well-understood phenomenon. It's a well-understood phenomenon that we can't understand how these systems actually will behave, that the emergent behaviors can be very unpredictable. So, yeah, so that's a very good question. I think it's an issue that we really need to pay some attention to. If we think of, you know, the machines co-evolving with humans, we have to try to build into our processes ways of ensuring that humans are always in the loop and not let the machines just talk to each other. Otherwise, we could get runaway behaviors that we find very difficult to control. Thank you so much, Edward. I'm sure that your presentation will stimulate all of this governance, and people will continue this conversation over the following days. Thanks so much, and another round of applause, please, for Edward. Thank you all very much.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.2,
+      "text": "Okay, so yes, as Peter mentioned, I'm going to talk about deep neural networks, explanations, and rationality. And I thought I'd start by giving you a little bit of a background on this problem. I think there's some interesting subtleties about this whole problem of explainable AI that I feel like I really only recently understood completely or reasonably well."
+    },
+    {
+      "start": 29.2,
+      "end": 52.384,
+      "text": "So I'd like to give you a little bit of background. I mean, there's been people working on this problem of explainable AI for a few years. In fact, there was a DARPA program that ended in 2020 or 2021, I think, right on that boundary. It ended during the pandemic."
+    },
+    {
+      "start": 52.384,
+      "end": 81.28,
+      "text": "It was focused on explainable AI. And there's this nice graphic in a retrospective document that was written by the DARPA people who were running this program, which is trying to give kind of a psychological model of explanation. So what do we want to achieve with an explanation of a decision made by an AI?"
+    },
+    {
+      "start": 81.28,
+      "end": 108.656,
+      "text": "And what this graphic suggests is that, you know, the starting point is that users of the AIs don't really trust the machines and aren't able to develop any confidence in what they do. And that, you know, the goal of explainable AI is not just to"
+    },
+    {
+      "start": 108.656,
+      "end": 137.12,
+      "text": "build confidence in the machines, but perhaps more importantly, to expose reasons why you shouldn't have confidence. OK, so in particular, if there are defects in the training data, for example, such that an AI has some latent biases that you might not be aware of, that you would like to be able to expose these."
+    },
+    {
+      "start": 137.12,
+      "end": 161.52,
+      "text": "So I can give you a concrete example of a study that was done a few years ago that was looking at the problem of being able to predict the risk that the risk to pneumonia patients. So when someone shows up in the emergency room in a hospital with pneumonia."
+    },
+    {
+      "start": 161.52,
+      "end": 189.248,
+      "text": "What is the risk of their pneumonia? Is it a severe risk? Should they be admitted to the hospital or should they be given treatment and sent home? And the problem here, this analysis was done by Caruana of Microsoft, and they looked at the data set that they were using to train."
+    },
+    {
+      "start": 189.248,
+      "end": 218.224,
+      "text": "AIs or machine assistants in making these decisions in a variety of different ways. And in particular, they were comparing the use of deep neural networks against the use of rule-based AIs. And the big difference here is that when you have kind of a rule-based AI, it's a production system kind of if-then-else sort of decision-making."
+    },
+    {
+      "start": 218.224,
+      "end": 242.384,
+      "text": "then there's a very good audit trail for a particular decision. And one of the things that they found was that both the neural networks and the rule-based AIs that they were training were taking patients that showed up in the emergency room with a history of asthma and showing up with pneumonia."
+    },
+    {
+      "start": 242.384,
+      "end": 271.952,
+      "text": "And determining that the risk to those patients was lower than the general population. And the reason was that there was a defect in the training data in that it didn't include anything about the subsequent treatment. It was just looking at, you know, the patient history and the fact that they have pneumonia."
+    },
+    {
+      "start": 271.952,
+      "end": 296.304,
+      "text": "the statistics on death or survival afterwards. And the fact is that the pneumonia patients who had a history of asthma had better survivability than the general population, but it was because the doctors were immediately putting them into the intensive care unit because the doctors were well aware that the risk to those patients was enormous."
+    },
+    {
+      "start": 296.304,
+      "end": 326.08,
+      "text": "And as a consequence, they were getting much more intensive care for their pneumonia, and it improved their survivability. So the problem there, of course, is that the neural networks were, in fact, classifying these patients as low risk, but so were the rule-based systems. But the neural networks were not giving any clue about why they were classifying the patients as low risk, whereas the"
+    },
+    {
+      "start": 326.08,
+      "end": 355.296,
+      "text": "rule-based systems were making it quite clear that they were classifying them because of the connection with their history of asthma. And then a human could look at that explanation for the classification of the patient as low risk and identify it as a flawed classification. And this flawed classification was something that arises from a flaw in the training data. And consequently, because you have"
+    },
+    {
+      "start": 355.296,
+      "end": 384.688,
+      "text": "an explanation, it's correctable. But in the case of a neural network, you have no such explanation. And so you might deploy such a system, have it make these decisions based on flawed training data and end up with disastrous results. Okay, so this is a subtlety here that the explanation is not just about justifying the decision of the AI. It's more about building trust or mistrust as appropriate."
+    },
+    {
+      "start": 384.688,
+      "end": 414.528,
+      "text": "in a particular design of an AI system. OK, so this picture sort of tries to capture that sort of human machine interaction where, you know, the the explanation can engender trust or it can be, in fact, engender mistrust. Right. And there are ways then of doing assessment. The little green boxes here are kind of psychological studies that you can perform."
+    },
+    {
+      "start": 414.528,
+      "end": 440.64,
+      "text": "to determine how effective this use of explanation in the use of the AI system is. So going back, I guess this is seven years at this point, kind of the state of the art in explanation for image classification is very well represented by this wonderful work from the"
+    },
+    {
+      "start": 440.64,
+      "end": 470.576,
+      "text": "group of Carlos Guestrin at the University of Washington. And this image, I think, has been repeated many times. And it's a very peculiar image of a dog playing a guitar. Okay, so this is designed, this image is chosen to confuse the AIs. And this was used to test, this was run through Google's Inception neural network, which is a"
+    },
+    {
+      "start": 470.576,
+      "end": 493.392,
+      "text": "pre-trained image classifier. And what Guestran's group did was to figure out an algorithm that would find the portions of the image that were most influential in the various classification decisions made by Google Inception. And so in particular, Google Inception gave varying"
+    },
+    {
+      "start": 493.392,
+      "end": 518.784,
+      "text": "probabilities, all relatively low for this image because it's a really peculiar image. But, you know, probability 0.32, it's an electric guitar. Probability 0.24, it's an acoustic guitar. Probability 0.21, it's a Labrador. And the portions of the image that were guiding most influencing these decisions are highlighted here in the panels on the right."
+    },
+    {
+      "start": 518.784,
+      "end": 546.928,
+      "text": "So interpreting this as an explanation of the classifications is, you know, fairly straightforward, right? You can say, well, Google's inception said this was an electric guitar because the fretboard looks like that of an electric guitar, okay? So that logic statement is something that we can derive from these images."
+    },
+    {
+      "start": 546.928,
+      "end": 576.336,
+      "text": "So what Ribeiro and others in this paper did was that they deliberately constructed a rather poor training data set. And this was a training data set that they were using to make a distinction between huskies and wolves. And they deliberately sort of pre-processed the data set so that all of the pictures of wolves had snow in the background."
+    },
+    {
+      "start": 576.336,
+      "end": 604.976,
+      "text": "and none of the pictures of huskies had snow in the background. And then they ran, they trained an AI to classify images as huskies or wolves, and then were able to identify the portions of the image that most influenced the classification. So here's a picture of a husky that got classified as a wolf once they had trained this AI, and their tool showed the"
+    },
+    {
+      "start": 604.976,
+      "end": 634.816,
+      "text": "Most influential pixels in the image are the white background that is the snow that was therefore guiding the decision. Another fairly well-known example that emerged more recently is where a classifier was trained to make a distinction between portraits and other images. And it turns out that this same technique showed that"
+    },
+    {
+      "start": 634.816,
+      "end": 663.648,
+      "text": "The system was very likely to classify an image as a portrait if the background was blurred. And that was really exposing a flaw in the training data. So. The difference here is, you know, in the case of the pneumonia patients, the rule based AI system that we're using rule based learning yields what?"
+    },
+    {
+      "start": 663.648,
+      "end": 690.144,
+      "text": "People call it an intelligible model. It's a model that does classification according to rules that are human interpretable, that are human intelligible. It's demonstrably less accurate than the neural networks in that when you do a controlled experiment on these rule-based learning systems, they more frequently misclassify data that is not in the training."
+    },
+    {
+      "start": 690.144,
+      "end": 717.664,
+      "text": "data set compared to the neural networks. So there appears to be an intrinsic trade-off between intelligibility in the models versus accuracy. So the question now becomes, when you design AIs, should we sacrifice intelligibility for higher performance? Okay, so this is kind of the state of the art as it stood, you know, five to seven years ago. Fast forward"
+    },
+    {
+      "start": 717.664,
+      "end": 747.28,
+      "text": "to what happened in the fall of 2020, which was a huge earthquake in the AI world with the explosion of chat GPT and the wild runaway success that it had in kind of opening up this whole area of large language models. Okay, so the situation here with the large language models"
+    },
+    {
+      "start": 747.28,
+      "end": 776.24,
+      "text": "is really quite dramatically different because the performance of the large language models is so far and away eclipsing what you can do with rule-based models that this willingness to sacrifice performance for intelligibility becomes, you know, if you choose to sacrifice intelligibility for performance,"
+    },
+    {
+      "start": 776.24,
+      "end": 802.64,
+      "text": "you're choosing to give up a huge amount of capability that the AIs have developed through the use of these large language models. And these mechanisms for deriving intelligibility by just identifying the pieces of the most influential pieces of the input data, those kind of can work somewhat."
+    },
+    {
+      "start": 802.704,
+      "end": 829.408,
+      "text": "They don't really work anywhere near as well as they do in those relatively simple image classification systems. The outputs from these large language models, first of all, they're often not so clearly classifications. They're often full text essays with a lot of nuanced argument. They're often, you know."
+    },
+    {
+      "start": 829.408,
+      "end": 858.192,
+      "text": "logical arguments or mathematical arguments that have a tremendous amount of subtlety and where the input data set that is the stimulus for this output is really often quite small and identifying the particular pieces of the input that lead to particular outcomes in the results is"
+    },
+    {
+      "start": 858.192,
+      "end": 887.04,
+      "text": "really much harder to accomplish than it is in this work that Western was doing. There's a lot of people working on this, but it's proving to be an incredibly difficult problem. And so the goal of my talk here is really to try to identify what are the fundamentals behind why this might actually be a fundamentally very difficult problem. So the first thing I'd like to do is"
+    },
+    {
+      "start": 887.04,
+      "end": 914.512,
+      "text": "uh start with um well first of all let me actually just take a pause right so in terms of this backdrop on intelligibility versus performance and kind of the state of the art five as of you know five years ago uh does anybody have any comments or questions or anything to add that i might have missed um maybe this would be a good opportunity to chime in"
+    },
+    {
+      "start": 919.792,
+      "end": 948.144,
+      "text": "Nobody? Okay. I reiterate that you could feel free to interrupt me at any point. You know, especially being remote, it's much nicer if there is some interaction during my presentation. But of course, we will have some free time at the end to have a more open discussion as well. Okay. So anyway, so fast forwarding to these large language models."
+    },
+    {
+      "start": 948.144,
+      "end": 977.296,
+      "text": "I think probably everyone in the room is aware that they really were whole transformative, no pun intended, since they're based on transformers, but a really transformative event that all happened, or at least that we all became hugely aware of. It became very much in our face within the last year. There have been a lot of experts in the field and in related fields."
+    },
+    {
+      "start": 977.296,
+      "end": 994.528,
+      "text": "who have been trying to downplay what these large language models are accomplishing. And I'd like to address some of these dismissals, right? They're statements like, well, you know, the machine doesn't understand like we do. And the machine makes stuff up."
+    },
+    {
+      "start": 994.528,
+      "end": 1021.264,
+      "text": "This is the hallucination problem. And, you know, the machine makes errors. And the many people have been using these to say to try to calm people down and say, look, it's not that big a deal. This is a passing fad. You can you can you know, there's all this excitement right now, but it's not doable. I have come to the conclusion that at least this particular set of dismissals, they don't hold water. All right."
+    },
+    {
+      "start": 1021.264,
+      "end": 1050.928,
+      "text": "So let's address the first one. It doesn't understand like we do. Well, so there's this famous New York Times op-ed that was published by Noam Chomsky and two other expert colleagues in linguistics that, you know, say it doesn't reason and use language like humans do. And they say, we know from the science of linguistics and the philosophy of knowledge that they differ profoundly from how humans reason and use language."
+    },
+    {
+      "start": 1050.928,
+      "end": 1079.808,
+      "text": "I find a statement like this kind of disturbing coming from top experts in the field because the set of linguistics and the philosophy of knowledge, I mean, I have enormous respect for people who are experts in this field, but this field has not really delivered a complete and profound understanding of how the human brain"
+    },
+    {
+      "start": 1079.808,
+      "end": 1107.968,
+      "text": "uses languages or the human mind. It certainly has tremendous insights, but this feels to me like the kind of dismissal that says we have nothing to learn from what the AIs are accomplishing, that the science of linguistics and the philosophy of knowledge has nothing to learn, that it's far ahead of anything that we can..."
+    },
+    {
+      "start": 1107.968,
+      "end": 1137.536,
+      "text": "We can learn from the experiment in which we're using these large language models. And that kind of a dismissal is disturbing to me because it's profoundly not scientific. In a proper scientific approach to things, when an experiment yields a surprising result, you shouldn't just dismiss the experiment. It's not always a consequence of just experimental error. There might actually be something that you could learn."
+    },
+    {
+      "start": 1137.536,
+      "end": 1162.704,
+      "text": "about the foundations. And so we have to be cautious about accepting these kinds of dismissals. Another dismissal that is quite common is that people say, well, it's just plagiarism. It's copying from the internet. There's actually a very simple back of the envelope calculation you can do that shows that this can't possibly be true, right? The amount of data"
+    },
+    {
+      "start": 1162.704,
+      "end": 1185.984,
+      "text": "that is in a pre-trained large language model like ChatGPT is quite large, but it is many, many, many orders of magnitude less data than what's in the internet. So the encoding in the pre-trained AI cannot possibly..."
+    },
+    {
+      "start": 1185.984,
+      "end": 1214.576,
+      "text": "include a verbatim representation of the contents of the internet, except for perhaps very tiny subset of the contents of the internet. And so it can't be that the machines are just parroting verbatim, which is what we mean by plagiarism, right? Plagiarism is when you take a concept and you express it in someone else's words. It's not plagiarism if you take the same concept and express it in your own words."
+    },
+    {
+      "start": 1214.576,
+      "end": 1242.016,
+      "text": "Right. That's a very different thing. That is not plagiarism. In fact, I've been an educator all of my professional career. And what we get what, you know, most of what we're trying to get students to do is express concepts that are already existing in other people's minds and in many texts that are out there and express those concepts in their own words. So when you."
+    },
+    {
+      "start": 1242.016,
+      "end": 1271.152,
+      "text": "Go to ChatGPT, for example. I did this little experiment to show this. So I asked ChatGPT to please express the following sentiment in the style of a pirate. Today's large language model AIs are merely repeating the content that they have harvested from the Internet and are therefore plagiarizing material written by humans. So here is ChatGPT's response. And I'm not going to try to read this response. I'll let you read it."
+    },
+    {
+      "start": 1271.184,
+      "end": 1299.744,
+      "text": "There is nothing, there is no interpretation of the word plagiarism by which you could call this plagiarism. Okay. And moreover, there's some really subtle things in here, right? The AI is talking about them thieving scallywags, plagiarizing what us humans have worked so hard to write. I didn't say anything about how hard we worked to write the contents of the internet, right?"
+    },
+    {
+      "start": 1299.744,
+      "end": 1329.6,
+      "text": "That came from the AI connecting concepts out there and expressing it then in its own words. This was not copied from the Internet. And so this dismissal that it's just plagiarism from the Internet is simply demonstrably false. The facts of the matter is that everyone has been surprised by what the large language models are accomplishing."
+    },
+    {
+      "start": 1329.6,
+      "end": 1355.664,
+      "text": "I mean, it's fair to say probably that the AI experts are less surprised to be surprised, but they're surprised. They're less surprised to be surprised because they've over the last 15 years or so. Well, I mean, all the AI experts were surprised in 2010 when Jeff Hinton and his group from Toronto came forward with."
+    },
+    {
+      "start": 1355.664,
+      "end": 1380.96,
+      "text": "dramatically better performance than anyone else was accomplishing on image classification problems using deep neural networks. And part of the reason that they were surprised was because deep neural networks as a technology had been thoroughly dismissed a good 20 years earlier as being essentially incapable of really doing AI."
+    },
+    {
+      "start": 1380.96,
+      "end": 1408.32,
+      "text": "But the fact is that all the experts were surprised by that performance. And there's been a continual string of surprises over the last 13 years since 2010, as the performance of the machines keeps doing amazing things. So here I'm showing two images. The upper one I find really quite extraordinary. It looks like a vintage photograph."
+    },
+    {
+      "start": 1408.32,
+      "end": 1434.288,
+      "text": "And it won Sony's Worldwide Photography Award in 2023 in the Open Creative category. And the author is an AI. It's unclear which one. It might have been mid-journey. I couldn't find documentation of which one Boris Elgeson used to generate this image."
+    },
+    {
+      "start": 1434.288,
+      "end": 1462.128,
+      "text": "But he constructed an appropriate prompt, generated an image that has some really interesting twists in it. It's got some vintage defects in the film. There was a light leak in the dark room that gave this little light area on the left. There's some scratches on the negative. This is a synthetic image that is not plagiarized. You cannot find any record."
+    },
+    {
+      "start": 1462.128,
+      "end": 1491.344,
+      "text": "of this image or anything really all that close to it out there. It was obviously influenced by many images in the training data set for the AI. But then again, every human artist is influenced by images in their own training data set, right? If you're an artist and you create an image that is truly novel, not influenced at all by any images that you've seen from other artists."
+    },
+    {
+      "start": 1491.344,
+      "end": 1519.056,
+      "text": "it's not going to be a very good piece of art. It's not going to get anybody's attention. A truly novel work like that doesn't speak to the artistic sentiment of other human beings. Every artistic work that has some influence in the artistic world is hugely influenced by other artworks, by other artists. And so even human artists are using a training data set."
+    },
+    {
+      "start": 1519.056,
+      "end": 1540.704,
+      "text": "which is images created by other artists, in order to then go and create novel artworks. So this ability of the AIs to synthesize unique images that are influenced by prior artistic expression, I think, caught almost everybody off guard."
+    },
+    {
+      "start": 1540.704,
+      "end": 1570.16,
+      "text": "Nobody expected this. I certainly didn't. I mean, these are machines. You expect them to be automata. You expect them to be unable to do creative work. And yet, I don't know what you could call this except creative work. So this creative work by the AIs is an emergent property. There's other emergent properties that are equally surprising."
+    },
+    {
+      "start": 1570.16,
+      "end": 1596.112,
+      "text": "So it turns out that the large language models are able to do arithmetic reasonably well. They make errors. OK, they've been getting a lot better as the large language models have been getting bigger. But it's really important to understand that they're running on machines that don't make errors in arithmetic. And the large language model is not using that capability of the machine."
+    },
+    {
+      "start": 1596.208,
+      "end": 1625.424,
+      "text": "The ability to do arithmetic emerged from the prediction engine. So I see there's a question or a comment. Let's handle that. Hi, I'm Ruth. It's Alison Sanger. I just wanted to ask you a quick question about the image. Do you think it's possible that the creativity in that image comes from a human who is working with the AI in a partnership-like way as opposed to the creativity coming from the AI itself? Is that a possibility?"
+    },
+    {
+      "start": 1626.32,
+      "end": 1652.144,
+      "text": "That's a wonderful question. I think it's a certainty, actually, because when an artist works with an AI like this, I mean, I've done a fair amount of experimentation myself. Most of the images you get don't resonate with you. And so you just discard them. And so you start with a prompt. You get a bunch of images. You say, well, I kind of like this one, but it's."
+    },
+    {
+      "start": 1652.144,
+      "end": 1682.064,
+      "text": "not really good enough. And then you tune your prompt or you ask a follow-up, right? The machines are really pretty good at keeping a context through a dialogue. And so you ask it to modify the image in some way. And so there's a very interesting dialogue that goes on between the prompter and the machine. And it's almost like the prompter is using the machine as a new artistic medium."
+    },
+    {
+      "start": 1682.064,
+      "end": 1705.984,
+      "text": "rather than as the creator of the AI. One of the interesting things, however, is that, you know, the Patent and Trademark Office in the US has issued a directive that these images are not copyrightable, that a copyright can only be held by a human, and therefore"
+    },
+    {
+      "start": 1705.984,
+      "end": 1735.92,
+      "text": "these images are automatically, immediately in the public domain because they were generated by machines. In my opinion, that's a really debatable decision because of the interaction between the artist and the machine in the selection process and in the prompt engineering. So I think that's a really fascinating question that you ask, and I think it's a very subtle one."
+    },
+    {
+      "start": 1735.92,
+      "end": 1763.84,
+      "text": "Getting back to this issue of emergent properties. So the large language models are basically prediction engines, right? So they're given a sequence of tokens. Well, there's two kinds that have been used. One is template-based where you give a sequence of tokens, but you mask out some of the intermediate tokens and you ask the AI to fill in those intermediate tokens. What are the most?"
+    },
+    {
+      "start": 1763.84,
+      "end": 1793.824,
+      "text": "the things it's most likely to see in those intermediate tokens. And then the other ones, the GPT models, like the ones by OpenAI, are prediction engines. And so given a sequence of tokens, they produce what they think is a likely subsequent sequence of tokens. If you look at experiments with mathematical reasoning, I find it absolutely astonishing the ability that the machines have"
+    },
+    {
+      "start": 1793.824,
+      "end": 1823.728,
+      "text": "to reason mathematically as an emergent property of this prediction engine. There's some beautiful examples. I think I have some slides here. I'll get to them in a minute. But I'll show you a couple of examples that really are extremely surprising that this kind of reasoning capability could arise from a prediction engine. Creativity. Let's, you know, I'll come back to that one."
+    },
+    {
+      "start": 1823.728,
+      "end": 1849.536,
+      "text": "But let me first talk about, you know, I've been talking about dismissals so far. There's also calls for regulation, right? We want to be able to constrain things. So one of the things that we would like that you often hear called for is algorithmic transparency. What do we mean by that? Well, what we mean is that we would like the..."
+    },
+    {
+      "start": 1849.536,
+      "end": 1878.672,
+      "text": "the providers of these AIs to tell us how they work. What are the algorithms that they're running? The problem is that doesn't help. You can know exactly what the computer program is doing, and it doesn't really help you to understand why the machine did what it did. I'll dive into this issue a little bit more."
+    },
+    {
+      "start": 1878.672,
+      "end": 1904.24,
+      "text": "But I'm going to tie it to a second issue, which is you often hear a call for regulatory requirements that demand a right to an explanation. So if you have a decision, this is actually a clause written into the GDPR, which went into effect, I think, in, was it 2017, 2018, somewhere around there. But the GDPR."
+    },
+    {
+      "start": 1904.24,
+      "end": 1934.208,
+      "text": "has a clause written in it that if a decision is made by exclusively mechanistic means that the people affected by that decision, so if you apply for a loan, for example, and it gets denied because an AI classifies it as a denied loan, then the person has a right to an explanation."
+    },
+    {
+      "start": 1934.208,
+      "end": 1962.704,
+      "text": "Well, the problem is that the explanation that you might get may not actually be an accurate explanation for how the decision came about. I want to emphasize what we mean by an explanation. So in the case of the experiments done by Carlos Guestrin and his group with the misclassification of wolves and huskies, they took a very..."
+    },
+    {
+      "start": 1962.704,
+      "end": 1992.16,
+      "text": "deliberately badly designed training data set, trained in AI, and showed that you could create an explanation that would show you that the decisions made by this AI were not trustworthy. But it's a very contrived system. It's a deliberately badly designed, relatively small data set. The data sets that are training these large language models are the compendium of just about everything humans have written."
+    },
+    {
+      "start": 1992.16,
+      "end": 2020.832,
+      "text": "And there is a certain amount of curation that is done on these. So, for example, you know, you favor Wikipedia over other data sets. But these data sets don't have those kinds of glaring flaws. And so identifying these flaws by means of explanation has become extraordinarily more difficult. So dive into these issues. Right. So first, the algorithmic transparency. Well."
+    },
+    {
+      "start": 2020.832,
+      "end": 2043.744,
+      "text": "The algorithms that a pre-trained large language model like GPT algorithms use, these are actually surprisingly simple algorithms. They're things you can write down on a single page of mathematics."
+    },
+    {
+      "start": 2043.744,
+      "end": 2072.512,
+      "text": "matrix operations that are relatively straightforward, that anyone who understands matrix arithmetic can understand exactly what the machine is doing. It doesn't help. The fact is that there are, I mean, the operations are being done on very big matrices with very big vectors. So billions and trillions of multiply and add operations. But the structure of the algorithms is pretty straightforward. And if you look at the source code,"
+    },
+    {
+      "start": 2072.512,
+      "end": 2101.792,
+      "text": "it's not going to help tell you at all why the machine is coming up with a certain decision. So what we mean by algorithmic transparency is that the providers of the AIs have to reveal what the computer program is doing. It provides almost no value. They could give you the source code. And in fact, they often do. Meta's Lama is open source now. You can download the source code."
+    },
+    {
+      "start": 2101.792,
+      "end": 2129.696,
+      "text": "You can download the pre-trained data, the billions of weights that have emerged from the training operations. You know now you now have at your fingertips a completely accurate description of the exact algorithm that's being performed. And it gives you no clue about the decisions that are made. So algorithmic transparency needs to in order to be an effective regulation."
+    },
+    {
+      "start": 2129.696,
+      "end": 2153.568,
+      "text": "is going to have to mean something quite different from just explaining what the computer programs are doing. So explaining the operations doesn't explain the decision. I mean, it's kind of like the hope with algorithmic transparency is that, well, if you assume, you know, that everything that happens in the world is the result of proton electron interactions."
+    },
+    {
+      "start": 2153.568,
+      "end": 2181.344,
+      "text": "And if we were able to perfectly understand proton-electron interactions, then we could use that to explain how the Ukraine war emerged. And that's just absurd, right? It's not going to happen. So what really do we mean by an explanation? Obviously, it can't be just a description of what these computer programs are doing. So let's look more deeply. What is an explanation? Well, we want to answer the question why."
+    },
+    {
+      "start": 2181.344,
+      "end": 2210.08,
+      "text": "So we want to start with what the input data is, give a sequence of logical deductions where each deduction corresponds to some rules of the project, and then the sequence has to terminate with a conclusion. So, for example, in Guestron's case with the Wolf-Husky classification, we start with the input data. We got this image. Okay. The sequence of logical deductions is, well, is the background white or is it not white?"
+    },
+    {
+      "start": 2210.08,
+      "end": 2239.184,
+      "text": "Well, the background is white in this case, and therefore the image is of a wolf. So that's an explanation. And it follows this pattern, right? It's a very short sequence of logical deductions. But an explanation in terms of billions or trillions or quadrillions of arithmetic operations is just not going to be useful to humans. So the explanation of the classification of the wolf was one logical step."
+    },
+    {
+      "start": 2239.184,
+      "end": 2268.288,
+      "text": "So it's an easily intelligible explanation. So we need explanations in terms of human rational thought in order for those explanations to be useful to humans. So what is human rational thought? Well, human rational thought is a step by step reasoning using clearly explicable rules of logic. So Herb Simon might be the only person who got both a Turing Award and a Nobel Prize."
+    },
+    {
+      "start": 2268.288,
+      "end": 2295.872,
+      "text": "But he got a Nobel Prize in economics for his theory of bounded rationality. And this theory was addressing a rather prevalent theory in economics that human agents in an economic system behave selfishly rational, that they optimize their own utility. So they take actions by making decisions."
+    },
+    {
+      "start": 2295.872,
+      "end": 2323.984,
+      "text": "that optimize the return that they will get individually. So this is actually this theory, this utility theory is actually a very big part of almost any introductory economics course that you take, Economics 101. And Herb Simon said, bullshit, that's not actually how humans work. And the way that he went about showing that that's not how humans work is that he took"
+    },
+    {
+      "start": 2323.984,
+      "end": 2349.44,
+      "text": "Some of what the economists were saying were the utility optimization functions that humans were allegedly performing and showed that these were optimization problems that you could write down mathematically and that the solution to these problems was intractable to humans. That to actually do the optimization would require"
+    },
+    {
+      "start": 2349.44,
+      "end": 2377.056,
+      "text": "thousands or perhaps millions of steps of logical deduction. And Herb Simon said, humans don't do that. We don't do thousands or millions of steps of logical deduction to come to a conclusion. It's simply not how humans work. Humans have bounded rationality. We can handle a few steps of logical deductions. Maybe if we're really smart, a dozen steps."
+    },
+    {
+      "start": 2377.056,
+      "end": 2397.664,
+      "text": "But that's a far cry from the millions or billions of steps that the machines are taking. How can we find an explanation? Well, it turns out that humans are actually very good at synthesizing explanations. We are explanation machines."
+    },
+    {
+      "start": 2397.664,
+      "end": 2427.2,
+      "text": "Daniel Kahneman, who also got a Nobel Prize for his work in this area, in this wonderful book called Thinking Fast and Slow, he reports on a study that was done by these authors listed at the bottom of the slide. It was a study of Israeli judges that are hearing parole cases. And they just looked at the data and they found a high correlation between denying parole and the time since the last food break. So in other words, if your parole case came up."
+    },
+    {
+      "start": 2427.2,
+      "end": 2456.8,
+      "text": "right after a food break, you were more likely to be granted parole than if your parole case came up an hour or two after a food break. Okay? There was just that correlation. But for each of these parole cases, if you were to ask the judge for a rational explanation for the decision, none of the judges would have any trouble providing a rational explanation. They would give you"
+    },
+    {
+      "start": 2456.8,
+      "end": 2483.84,
+      "text": "an explanation. This person has these risk factors, and we think that, you know, the risk of granting parole is too high because of these risk factors. And they're going to give you a rationalization, but it's a post hoc rationalization constructed after the decision is made. And it's really a rationalization, not an explanation of how the decision was arrived at. And it wouldn't include anything about the influence."
+    },
+    {
+      "start": 2483.84,
+      "end": 2512.64,
+      "text": "on this decision of the time since the last food break, that explanation is just not going to be there. So human beings are very good at coming up with convincing explanations. So about a year ago, a little bit before the explosion of the large language models came about, I predicted that we could train AIs to give a convincing explanation for any decision."
+    },
+    {
+      "start": 2512.64,
+      "end": 2539.488,
+      "text": "And I even gave a method for doing this. OK, so how could we design such an explanation machine? Well, first, we train a DNN so that given case data and a decision, it synthesizes an explanation. Now, like many such machines, it's not going to do very well initially. A human's going to look at those explanations and say that's a pretty lousy explanation. OK, so we then train a second machine."
+    },
+    {
+      "start": 2539.488,
+      "end": 2566.144,
+      "text": "whose job it is to distinguish between machine-generated explanations and human-generated explanations. And then we just pit these two machines against each other. So this is a proven technique in training neural networks. It's due originally to Ian Goodfellow, and it's called generative adversarial networks. You just pit these machines against one another, and machine one gets much better."
+    },
+    {
+      "start": 2566.144,
+      "end": 2595.472,
+      "text": "at synthesizing explanations that a human would find convincing. Okay. Notice the criterion here. It's synthesizing an explanation to optimize the convincingness of it to a human, not synthesizing an explanation that explains how a machine came to that decision. In fact, there's no data in here on how the machine came to a decision."
+    },
+    {
+      "start": 2595.472,
+      "end": 2623.984,
+      "text": "The DNN is only given the case data and the decision. It's not told whether even the decision was generated by a human or a machine, and certainly not told how the machine generated the decision. So my claim here is that you could train an AI to give a convincing explanation for any decision. So it turns out that with the advent of the large language models, you don't even need generative adversarial networks."
+    },
+    {
+      "start": 2623.984,
+      "end": 2651.664,
+      "text": "You can do this by fine tuning a large language model. And together with a with a visiting scholar in my group over the last year, we've done a bunch of experiments taking a bunch of legal cases and asking the large language models to explain a conviction and a acquittal. And they with a little bit of prompt engineering."
+    },
+    {
+      "start": 2651.664,
+      "end": 2679.936,
+      "text": "get pretty good at explaining both decisions, okay, given the data. And so this decouples the problem of explanation from the problem of decision making. And then the right to an explanation becomes a vacuous requirement, because we'll just train the AIs to give you an explanation, you'll get an explanation, you'll walk away happy."
+    },
+    {
+      "start": 2679.936,
+      "end": 2705.52,
+      "text": "but it won't be an explanation of how the decision was arrived at. Now, there might be good potential uses of such an explanation machine. So in particular, you could have a judge that uses the machine to help the judge make better decisions. So give the machine case data and a verdict of convict and ask for an explanation for conviction."
+    },
+    {
+      "start": 2705.52,
+      "end": 2734.96,
+      "text": "And also give the machine the case data and a verdict for acquittal and ask the machine for an explanation for acquittal. You could actually fine tune this and, you know, have a dialogue with the machine and say, you know, you might get an explanation you don't really like and say to the machine, well, I don't like this aspect of the explanation. Can you refine this? And so this dialogue between the judge and the machine might actually help the judge make a good decision."
+    },
+    {
+      "start": 2734.96,
+      "end": 2761.216,
+      "text": "This kind of symbiotic use of machines is, to me, really fascinating. I think it's both an opportunity and also a tremendous gamble because it's intertwining human cognition with whatever the machines are developing. I hesitate to call it machine cognition, but this intertwining of the machine with human decision-making is, to me,"
+    },
+    {
+      "start": 2761.216,
+      "end": 2790.736,
+      "text": "Both fascinating and alarming and potentially quite scary. But I think that in many ways, a lot of what's happening in the various reactions that people are having to to chat GPT, for example, in education. You know, one of the one of the phenomena is that, you know, many schools just had a knee jerk reaction and banned the use of chat GPT when it first appeared."
+    },
+    {
+      "start": 2790.736,
+      "end": 2819.584,
+      "text": "Many schools are rethinking that. I'm a graduate of Yale University, and I just got a very interesting article in their alumni magazine that says that they have deliberately made a policy at Yale that they're not going to ban the use of these machines. They're going to learn to use them, and they're finding ways to integrate them into the educational process. So this is kind of transformative."
+    },
+    {
+      "start": 2819.584,
+      "end": 2847.52,
+      "text": "The other aspect of this, okay, is that there's a connection between this decoupling of explanation versus how the machine comes up with a decision. Once you decouple those things, you realize that there's a very close analogy in what humans do. Humans make decisions and then give you post hoc rationalizations for those decisions."
+    },
+    {
+      "start": 2847.52,
+      "end": 2877.52,
+      "text": "Going back to Daniel Kahneman again in his wonderful book, System Fast and Slow, Kahneman talks about two mechanisms that humans use in coming to decisions. One of the mechanisms he calls system one, which is intuitive, quick, inexplicable decision making. You're faced with a situation, you make a decision. You can't necessarily explain why you came to that decision, but you came to that decision. This is what you're going to do."
+    },
+    {
+      "start": 2878.032,
+      "end": 2905.36,
+      "text": "System two is rational decision making. It's where you agonize over what are the reasons and you come up with sequences of steps for why this is true. So often a big part of what we do in education is try to get students to use system two more effectively. It turns out system one is much easier to use and system two is quite difficult to use. So when you construct a mathematical proof."
+    },
+    {
+      "start": 2905.36,
+      "end": 2934.0,
+      "text": "For example, I give you I give you a statement in mathematics. You look at it and you say, well, I think that might be true. That was a system one decision. System two is coming up with the logical steps that show that it's true. OK, that rational decision making. So. Arguably, it's only when system two dominates, does the true origin of a decision correspond to a rational explanation."
+    },
+    {
+      "start": 2934.352,
+      "end": 2963.248,
+      "text": "So if you're looking for the true origin of the decision from a human, it's only when that decision is generated by this system two process that you should understand that explanation as giving the origin of the decision. Otherwise, the origin is something else, and the explanation is a post hoc rationalization. For system one,"
+    },
+    {
+      "start": 2963.248,
+      "end": 2989.776,
+      "text": "It's possible that the only accurate explanation that we have of how the human came up with the decision is that millions of neurons fired and they fired in some pattern that led to this decision. And that may be the only the best we can do to explain that decision. So my claim is that deep neural networks as a technology are much more like system one than like system two."
+    },
+    {
+      "start": 2989.776,
+      "end": 3018.832,
+      "text": "And to many people outside the field, that's a surprise because they say, well, wait a minute. Computers are all about system, too. Computers do nothing but rational decision making. They follow logical steps. That's what a computer program is specifying, the logical steps the computer makes. I hate to tell you, but that's certainly true. But it doesn't give you a good model for what."
+    },
+    {
+      "start": 3018.832,
+      "end": 3047.504,
+      "text": "the deep neural networks are doing. So let's drill into this a little more, right? The fact is that the computers are performing logical steps. That's a reality, right? They're executing algorithms. So what is an algorithm? Well, an algorithm is where you start with input data, you follow a sequence of steps where each step follows well-defined rules and the sequence terminates with a conclusion. Sound familiar? Sounds just like an explanation, right?"
+    },
+    {
+      "start": 3047.76,
+      "end": 3077.296,
+      "text": "The problem is that when you put these two side by side, there's a very big constraint on an explanation that an algorithm doesn't have, which is that an explanation has to be a very short algorithm or it's of no use to a human. Whereas the computer has no difficulty with algorithms that involve billions or trillions of steps. So that is the essential difference."
+    },
+    {
+      "start": 3077.296,
+      "end": 3105.312,
+      "text": "between an explanation and an algorithm is simply the number of steps. Is it that, you know, system one in humans is fundamentally algorithmic? Are our brains actually performing algorithms? Well, this is a whole debate that you could have, and I've written quite extensively about it. And I think that you might argue that the emergence of these large language models and their incredibly human-like performance"
+    },
+    {
+      "start": 3105.312,
+      "end": 3134.528,
+      "text": "suggests that maybe the human brain really ultimately is executing algorithms and those neurons are executing billions of logical steps. But there's evidence to the contrary. OK, so Jeff Lichtman at Harvard has made a big part of his career to try to understand brain function in terms of nerve function and has largely come to the conclusion that this does not appear to be possible."
+    },
+    {
+      "start": 3134.528,
+      "end": 3161.232,
+      "text": "There's lots of machines that are not actually well described by algorithms. Lots of mechanical machines are not actually well described by algorithms. And it's possible that even neural networks are not fundamentally algorithmic. One of the interesting things that is happening right now in the field of neural networks is that it has..."
+    },
+    {
+      "start": 3161.232,
+      "end": 3190.672,
+      "text": "created an explosion of innovation in computer hardware. This is, again, a big surprise to people. But the computer hardware that makes up today's computers is really, really good at this kind of algorithmic processing. But it turns out that algorithmic processing is not really fundamentally what's going on. There's this little subfield of neural networks that is very suggestive."
+    },
+    {
+      "start": 3190.672,
+      "end": 3220.128,
+      "text": "that the algorithms that are currently running the neural network programs, the large language models, are actually best viewed as brute force simulations of processes that are fundamentally not algorithmic. So this field is a field of reservoir computing, where you take a deep neural network and you replace a whole bunch of the intermediate layers with a blob of physics. One of the experiments that..."
+    },
+    {
+      "start": 3220.128,
+      "end": 3247.808,
+      "text": "was really surprisingly successful took a blob you know just a couple of centimeters across of random carbon nanotubes sort of splotched onto a substrate with a few thousand terminals connected to the carbon nanotubes and then replaced the whole middle deep"
+    },
+    {
+      "start": 3247.808,
+      "end": 3276.4,
+      "text": "the middle layers of a DNN with that blob of physics and then trained just one layer of neural network and found that the untrained center was sufficiently rich that they were able to train a very effective classifier by just training the one network. So the claim here was that the blob of physics, it didn't really matter."
+    },
+    {
+      "start": 3276.4,
+      "end": 3305.92,
+      "text": "what it was doing as long as what it was doing was a sufficiently rich set of nonlinear functions and that you could then just do a simple training on an output layer and get an effective classifier. So this is suggestive that all of this algorithmic processing in the core of the neural network may not be necessarily algorithmic and that there's going to be a potential for some real innovation in hardware design that isn't"
+    },
+    {
+      "start": 3305.92,
+      "end": 3335.728,
+      "text": "is going to make machines that don't look at all like today's computers that are going to be processing the next generation of neural networks. So the term reservoir computing comes from one of the weirdest early experiments in this area, which was just using buckets of water as the as the intermediate layer and just using the chaotic behavior of waves in these buckets of water as the kind of random nonlinear functions."
+    },
+    {
+      "start": 3336.048,
+      "end": 3365.232,
+      "text": "So this is, you know, conjecture, of course, but it's suggestive that algorithms are not necessarily at the root of everything interesting going on here. So the evidence from the large language models is that an ability to reason can emerge from chaotic processes in a way that has little evident connection with the underlying logic of the processes."
+    },
+    {
+      "start": 3367.408,
+      "end": 3394.592,
+      "text": "One of the other, maybe this is a good point to pause, actually. So any comments or thoughts at this point from people in the room? We see there's one. Yes, there's a raised hand here. Okay, so since we talked about this distinction between System 1 and System 2, that kind of mirrors."
+    },
+    {
+      "start": 3394.592,
+      "end": 3422.48,
+      "text": "The difference in AI between the symbolic and the neural approach. What do you think about the integrating views of integrating logical methods and neural networks into this neural symbolic approach? Do you have any general thoughts on that? Yes. So who is this asking the question? It's a very interesting question. I'm sorry. I'm Giovanni. I'm a PhD student from the European."
+    },
+    {
+      "start": 3422.64,
+      "end": 3446.848,
+      "text": "Yeah, I think that there is a huge potential for research in the area where you combine symbolic, what people might call good old fashioned AI, right? Symbolic reasoning systems and arithmetic systems with the neural networks."
+    },
+    {
+      "start": 3446.848,
+      "end": 3474.24,
+      "text": "In fact, there's a beautiful study done by a group of people from Microsoft where they were showing that you could teach the GPT-based systems to use external tools like symbolic algebra programs like Mathematica and Maple, and that this could be extremely effective. Okay, so it tremendously improved the..."
+    },
+    {
+      "start": 3474.24,
+      "end": 3504.08,
+      "text": "ability of the machines to do mathematical reasoning, right? You basically, you teach them that they can come up with prompts that they feed to the symbolic algebra programs, get responses from the symbolic algebra programs, which they then interpret and use them as part of their mathematical reasoning. So one way to approach this problem is you teach the neural networks to use"
+    },
+    {
+      "start": 3504.08,
+      "end": 3529.36,
+      "text": "external tools, which are optimization algorithms, arithmetic programs, symbolic algebra programs, anything where, you know, we have kind of developed a rich set of symbolic processing mechanisms. And it turns out that the neural networks can learn to use those tools. So that's one."
+    },
+    {
+      "start": 3529.36,
+      "end": 3556.912,
+      "text": "mechanism that people are exploring for combining these two classes of computer programs. And I think it has an enormous amount of potential. Thank you. In fact, let me, I think, pardon me one second while I, I might reorder my discussion a little bit here because, whoops, did I just stop sharing? I didn't mean to do that."
+    },
+    {
+      "start": 3559.088,
+      "end": 3588.72,
+      "text": "I don't need to reorder. I'm in the right place here. Oops. Yeah, let me just skip that, this part, right? But let's..."
+    },
+    {
+      "start": 3589.104,
+      "end": 3616.928,
+      "text": "Let's look at the mistakes that are made by the machines. So one of the interesting things is that there's a tension. I think many people initially expected that the machines wouldn't make mistakes. You ask them an arithmetic question, the underlying hardware can perform arithmetic essentially perfectly. They shouldn't make mistakes on arithmetic. We have symbolic algebra systems that can solve."
+    },
+    {
+      "start": 3616.928,
+      "end": 3645.408,
+      "text": "simplify an algebraic expression. Why shouldn't the AI be able to do that without making mistakes? So just looking at, I spent some time again with this visiting scholar in my group comparing the mistakes that are made by GPT-2, GPT-3, and GPT-4 on simple questions. And GPT-2 was really pretty primitive, right? It looked like"
+    },
+    {
+      "start": 3645.408,
+      "end": 3673.376,
+      "text": "It would often say some really dumb things, right? And, you know, the kinds of things it would say would, you know, be the kinds of mistakes you might expect from a four-year-old, right? GPT-3, on the other hand, was giving answers that were wrong but plausible. And they looked to me more like, you know, something you might hear from a smart high school student. GPT-4 kind of blew my mind. And, you know, I had a..."
+    },
+    {
+      "start": 3673.376,
+      "end": 3700.896,
+      "text": "PhD student who was trying to get GPT-4 to translate ordinary English language sentences into linear temporal logic formulas and he ran a whole bunch of examples through it and it was mind-blowing how well it did coming up with these LTL formulas until we drilled in a little more and"
+    },
+    {
+      "start": 3700.896,
+      "end": 3729.376,
+      "text": "realized that some of the LTL formulas that it came up with looked plausible, but were in fact wrong for extremely subtle reasons. And these were the kinds of mistakes that I might see on a midterm exam taken by Berkeley graduate students. And that to me was astonishing because we're looking at one to two years of progress in this field."
+    },
+    {
+      "start": 3729.376,
+      "end": 3757.008,
+      "text": "Here's an excerpt from a paper that was published by a whole bunch of authors from Microsoft. Bubek is the lead author. This is a hundred and some page paper with a very detailed study of the comparison between chat GPT at the time, which was using GPT 3.5 and GPT 4. And look at this word problem, okay?"
+    },
+    {
+      "start": 3757.264,
+      "end": 3781.36,
+      "text": "So they gave it this word problem. You know, within the duration of one year, rabbit population first multiplies itself by a factor of A. And on the last day of the year, B rabbits are taken by humans for adoption. Supposing that on the first day of the first year, there are X rabbits. We know that exactly three years afterwards, there will be a population of 27 X minus 26 rabbits. What are the values of A and B?"
+    },
+    {
+      "start": 3781.552,
+      "end": 3811.136,
+      "text": "OK, so this sounds like a question you could get on a GRE, a graduate record exam to get into graduate school. All right. So GPT-3 gave an answer that is all wrong, actually, but in a really surprisingly plausible way. Its reasoning here, to me, looks astonishingly human-like."
+    },
+    {
+      "start": 3811.136,
+      "end": 3839.456,
+      "text": "I could easily see, you know, one of my students reasoning through in exactly the same way and coming up with an answer like this. GPT-4 nailed it, okay? Gave the answer, gave the derivation, gave the explanation, made a very subtle assumption halfway through, assumed that this equation that it had written down has a solution, and under that assumption was able to derive a solution."
+    },
+    {
+      "start": 3839.456,
+      "end": 3868.336,
+      "text": "And it didn't explicitly say that it was making that assumption, which could have potentially have led to a problem in the derivation. But in this case, it didn't. It worked out. OK, but there was there was a leap here that was not entirely logical, more intuitive. That really helped in solving this problem and probably would have eluded a symbolic algebra program because it might not have made that leap."
+    },
+    {
+      "start": 3868.336,
+      "end": 3897.168,
+      "text": "OK, to me, this was an utterly fascinating thing. And the idea that this ability to do this kind of mathematical reasoning could emerge from something that is just predicting tokens is astonishing. Right. It means that mathematical reasoning maybe is more an emergent property of intelligence rather than its foundation. Think about that statement."
+    },
+    {
+      "start": 3897.36,
+      "end": 3926.816,
+      "text": "Okay, logical reasoning is an emergent property from intelligence rather than its foundation. This could be one of the lessons that we learn from these AIs. In a talk that Sebastian Bubeck gave after publishing this paper, it's a beautiful talk, you can find it on YouTube. He says, the truth is that nobody has a clue what's going on."
+    },
+    {
+      "start": 3926.816,
+      "end": 3955.984,
+      "text": "That's an extraordinary statement. And he used it in this talk to call for kind of a physics of AI that he says, well, physics has been grappling with some of the same issues for hundreds of years. I feel like physics is not the right science to be looking at here because there might be this gap between the underlying logic and the reasoning. It may be that at least."
+    },
+    {
+      "start": 3955.984,
+      "end": 3984.944,
+      "text": "In the near term, the best we're going to be able to do is to use the methods from more of the social sciences, from psychology and so forth, which are more experimental methods. So it may be that that's the best we can do, because the reductionism that is sort of intrinsic in physics may just not work. We might not be able to explain."
+    },
+    {
+      "start": 3984.944,
+      "end": 4014.288,
+      "text": "the behavior of the large language models in terms of the underlying primitive operations. So what are some other things we can do? Well, if the humans are generating more human-like intelligence and we keep humans in the loop, maybe we can make sure that we can have some confidence in their decisions. But unfortunately, we have plenty of evidence that machines"
+    },
+    {
+      "start": 4014.288,
+      "end": 4042.48,
+      "text": "manipulate humans, and they have for quite some time. I talked about the potential for using these explanation-generating machines to help judges make decisions. When the machines become an intrinsic part of our reasoning processes, they're going to affect the reasoning processes. And we've already seen plenty of examples where"
+    },
+    {
+      "start": 4042.48,
+      "end": 4067.552,
+      "text": "the way that they affect our reasoning processes can be kind of problematic. If human decision-making becomes no longer independent of the machines and the human decision-making is driven by an information economy, okay, as it is, for example, in the online world where"
+    },
+    {
+      "start": 4067.552,
+      "end": 4096.16,
+      "text": "It's all about an attention economy where, you know, getting eyeballs to click on watching the next YouTube thing is what the economy is all about. Then the machines are affecting our thinking. We may get some very unexpected and potentially very undesirable results from that feedback. OK. So machines manipulate humans. There's a wonderful book written by my."
+    },
+    {
+      "start": 4096.16,
+      "end": 4123.2,
+      "text": "colleague Stuart Russell, a top expert in AI. He points out in this book that predictable humans can be reliably presented with advertisements they will click on. Political extremists are more predictable than moderates. So the machines make you more predictable so that their predictions are more accurate. And consequently, we get political extremists. And in my own book, The Co-Evolution,"
+    },
+    {
+      "start": 4123.2,
+      "end": 4151.056,
+      "text": "I talk about the emergent phenomenon where you could end up with islands of disjoint truths, where you have people who get these truths, people who get these truths from their online interactions, and there's no overlap between these truths. And I think we're already seeing this, certainly in the politics in the U.S., and I think the online interaction and the online..."
+    },
+    {
+      "start": 4151.056,
+      "end": 4180.032,
+      "text": "Curation of information is accentuating these divisions of humans into islands of disturbing truths. So you might say, well, we control these outcomes, right? We wrote these programs, right? But do we? I mean, what do we mean by are we in control? Can we pull the plug? Well, you know, these systems are intrinsic in our economics already."
+    },
+    {
+      "start": 4180.032,
+      "end": 4205.552,
+      "text": "The consequences of pulling the plug could be disastrous. The fact that we design the systems might give you some comfort. But Sebastian Bupek, an expert in AI coming from one of the companies designing the system, says nobody has a clue what's going on. So, you know."
+    },
+    {
+      "start": 4205.552,
+      "end": 4233.68,
+      "text": "Are the engineers in charge, actually? Do the programmers or even the business leaders or even the users determine the outcome of the technology development? In my book, The Co-Evolution, I argue that, well, we're actually much less in control than we realize. We have this illusion of control because we think the machines are the results of our own design."
+    },
+    {
+      "start": 4233.68,
+      "end": 4256.016,
+      "text": "They're not as much as we think. I have this quote from the French philosopher Alain, who was talking about a much older technology, the design of boats. So that's me standing in front of Vasa in Stockholm, which is a boat that was launched 350 years ago and promptly sunk only a kilometer into its maiden voyage."
+    },
+    {
+      "start": 4256.016,
+      "end": 4285.92,
+      "text": "So the French philosopher Alain says, every boat is copied from another boat. Let's reason in the manner that as follows in the manner of Darwin. It's clear that a very badly made boat will end up at the bottom after one or two voyages and thus never be copied. One could then say with complete rigor that it is the sea herself who fashions the boats, choosing those which function and destroying the others. So this is suggestive that technology development is a co-evolutionary process."
+    },
+    {
+      "start": 4285.92,
+      "end": 4311.408,
+      "text": "and that we're much less in control of it than we think. So this evolution, of course, is complex. An evolutionary system is a nonlinear feedback system. Nonlinear feedback systems are famous for delivering chaotic results, which are by definition unpredictable."
+    },
+    {
+      "start": 4311.76,
+      "end": 4338.768,
+      "text": "So in my earlier book, Plato and the Nerd, I asked the question, are we playing God creating a new life form in our own image? Or are we being played by a Darwinian evolution of a symbiotic new species? And I talk about, you know, are humans the purveyors of a noisy channel of mutation, facilitating sex between software beings by recombining and mutating programs into new ones?"
+    },
+    {
+      "start": 4338.768,
+      "end": 4365.152,
+      "text": "This is what happens when no computer programmer starts with a blank slate and starts writing code on a blank screen. Computer programs today put together chunks of code from here and chunks of code from there. And are they really actually just serving as a source of mutation to create new species that may or may not survive in ultimately survival of the fittest kind of thing?"
+    },
+    {
+      "start": 4365.152,
+      "end": 4394.08,
+      "text": "It's a co-evolution, of course, so the humans are changing too. But humans have been changing with technology for millennia. The invention of writing changed human cognitive processes and human societies in major ways. The emergence of smartphones has clearly changed human culture and society. The large language models are going to change our culture and society."
+    },
+    {
+      "start": 4394.08,
+      "end": 4423.024,
+      "text": "in profound ways that none of us are able to predict at this time. The machines are not yet embodied, which is a big issue, but that's going to change too. So embodied cognition is this branch of psychology that asserts that the human mind is the interaction between the brain and its body and environment."
+    },
+    {
+      "start": 4423.184,
+      "end": 4450.224,
+      "text": "So it's not a process that just goes on inside the skull, that the interaction itself is the cognitive process. And the machines are less embodied currently. They don't interact with the physical world all that much. But that's changing. We're putting them into robotic systems like self-driving cars that are definitely interacting with the physical world. And as that increases,"
+    },
+    {
+      "start": 4450.224,
+      "end": 4477.184,
+      "text": "the machines are going to become much more like an embodied cognition. So Josh Vanguard, who is at the University of Vermont currently, has done some really wonderful work showing that machines can learn about their own bodies in ways that are surprisingly like biological creatures."
+    },
+    {
+      "start": 4477.184,
+      "end": 4504.832,
+      "text": "this book, The Co-Evolution, I go into quite a lot of depth about the subtleties of interaction, embodiment, feedback, and subjectivity. And I can't really do justice to the subject here, but if you really want to dive into it, the later chapters in this book are a non-trivial read. They draw on the works of several Turing Award winners, which are shown on the screen here, to argue that"
+    },
+    {
+      "start": 4504.832,
+      "end": 4531.28,
+      "text": "interaction is fundamentally more powerful than observation that interaction requires a first person self and that a first person self requires interaction and that interaction is the embodiment that the machines are currently missing largely but are starting to gain and i think there's a very real possibility that"
+    },
+    {
+      "start": 4531.28,
+      "end": 4557.472,
+      "text": "As they gain that interactive capability and that embodiment, we're going to find ourselves with machines that are indistinguishable from sentient cognitive beings. So that's a bit of an alarming proposition, but I think it's a very real possibility. Okay, I think that I'm going to skip this issue of scale."
+    },
+    {
+      "start": 4557.472,
+      "end": 4586.768,
+      "text": "allow time for discussion. I apologize for simply having too much to talk about here for the time available, but I really would like to open it up for discussion at this point. Let me close actually with this one observation. This is from a paper that was really just published a couple of months ago that is looking at, from a very technical perspective, at what happens when most of the data used to train the large language models is created by the large language models."
+    },
+    {
+      "start": 4587.28,
+      "end": 4616.992,
+      "text": "Right. That's not happened yet. The data, the training data is mostly written by humans. Right. Most of Wikipedia is written by humans. In a few years, a good part of Wikipedia may have been written by the large language models. And that's going to be used to train the next generation of large language models. And here we have another feedback system which could be could yield very unpredictable results."
+    },
+    {
+      "start": 4616.992,
+      "end": 4643.728,
+      "text": "So another alarming proposition. So let me close there. There's a bunch of things that I think we can do to potentially address many of these concerns. I point you to this collection of wonderful essays that you all have access to for ideas. And I'll stop there and open it up for discussion."
+    },
+    {
+      "start": 4648.56,
+      "end": 4676.688,
+      "text": "comments and thoughts. I hope we could hear the applause. It's hard to basically summarize the room, but I guess how can I best do that? There were like noises of agreement and affirmations, lots of head nodding. I think that was very mind-blowing for most people, so I'm going to..."
+    },
+    {
+      "start": 4676.688,
+      "end": 4704.304,
+      "text": "pass the microphone around now and ask people to introduce themselves quickly, so there's no one to sit talking to, and then you can ask the question. Thank you. It was a very nice talk. I actually liked how you talked about... Ah, my name is Stefan. I work on computation software choice here at UB. So yeah, I really liked the talk."
+    },
+    {
+      "start": 4704.304,
+      "end": 4734.064,
+      "text": "I was wondering, because it never formally, I mean, it doesn't have to be formally, but even in our same formula, we have never actually defined what you mean by rational explanation. And to me, it seems by having a background in philosophy and economics, that you conflate two different notions of rationality. On the one hand, the rationality theoretical sense of being logical deduction, but you talked about bounded rationality in behavioral economics, and it seems to me they have a very"
+    },
+    {
+      "start": 4734.064,
+      "end": 4760.992,
+      "text": "there's a broad consensus about what it means for an actual decision to be rational in that sense and that is very different from rationality in the logic sense because it's basically an action is rational if it is the best means to achieve our intended ends and it being the best discourse report for the action to be taken and if you have this kind of rationality"
+    },
+    {
+      "start": 4760.992,
+      "end": 4789.904,
+      "text": "and you have an explanation that gives this kind of argument for this kind of rationality, that any argument, by sake of causality, restricts any further decision, because all the explanations at the end have to be coherent with each other, right? So if you have some rationality assumption in the background, for example expected utility, it doesn't have to be that, then each further decision explanation restricts the future decisions."
+    },
+    {
+      "start": 4789.904,
+      "end": 4816.736,
+      "text": "explanations. And for me, it seems like there's no evidence that that's not possible or that that could be a way forward for doing explanation in the rational choice sense. So I wanted to ask about your opinion and how you define rational explanation. Sorry for the long technical question. Yeah, that's a very, very interesting question and a very subtle one. And you're absolutely right that the"
+    },
+    {
+      "start": 4816.736,
+      "end": 4846.736,
+      "text": "The term rationality is used in a number of subtly different ways. And I think you hit the nail on the head when you said that one of the uses is that a decision is rational if it is the best means to achieve some objective that you have. And that is a perfectly valid use of the term rational. But the phrase rational explanation I'm using in a rather more technical way."
+    },
+    {
+      "start": 4846.736,
+      "end": 4875.968,
+      "text": "Right. You could have a rational decision that is is, in fact, the best means of accomplishing some stated goal. But a rational explanation is a description of how you arrived at that decision. OK, and the essential point that Herb Simon made was that economists were assuming that agents were making rational decisions in the sense that you just described."
+    },
+    {
+      "start": 4875.968,
+      "end": 4905.744,
+      "text": "Right. That they are the best means to accomplish some end goal. But that those very same people, those same agents couldn't possibly know that it is the best means to accomplish that. OK, because the best requires solving an optimization problem that is intractable. OK, so you can make a rational decision that happens to, in fact, be the best."
+    },
+    {
+      "start": 4906.0,
+      "end": 4934.032,
+      "text": "because you have good intuition, okay, but you didn't arrive at that decision through rational, through the use of rational reasoning. You see what I'm saying? So you could have a rational decision that was not arrived at by a rational process, is what I'm essentially trying to say."
+    },
+    {
+      "start": 4934.896,
+      "end": 4963.648,
+      "text": "Thank you. My name is Stefan. I'm studying the science and technology studies at the University of Vienna. And just connecting to this discussion about rationality, rational behavior needs a motivation. The motivation is maximizing the utility or any other motivation. Does CGPT or lateral neuron have a motivation in terms of maybe do they want to be"
+    },
+    {
+      "start": 4963.648,
+      "end": 4991.936,
+      "text": "as human as possible. We've got to be around as humans by using more and more technology and technical tools. Are we becoming like cyborgs and do we want to be more like machines? So that's an interesting phrasing because when you"
+    },
+    {
+      "start": 4991.936,
+      "end": 5016.912,
+      "text": "Talk about wanting to become more like machines or like cyborgs. You know, my view until this LLM revolution was that what that would mean would be becoming more like automata. That, you know, reacting in unemotional ways and uncreative ways."
+    },
+    {
+      "start": 5017.392,
+      "end": 5045.104,
+      "text": "But I think one of the things that the large language models are showing us is that actually the machines are capable of reacting in ways that are extremely unexpected and arguably quite creative and very much not automaton-like. Right? I mean, the fact that they're winning art competitions is extraordinary."
+    },
+    {
+      "start": 5045.104,
+      "end": 5073.152,
+      "text": "You know, there's two sides to this coin, to the problem of hallucination. Right. The fact is machines make stuff up. Well, making stuff up is a highly valued thing when you're doing creative writing. OK. It's a real surprise that the machines can be really quite effective at creative writing. So being more machine like."
+    },
+    {
+      "start": 5073.152,
+      "end": 5100.608,
+      "text": "is no longer about being more automaton-like. You see what I'm saying? Hi, Edward. This is Hans-Arndt Mons. Thank you for your interesting talk. And I would like to discuss a little bit about technology and democracy."
+    },
+    {
+      "start": 5100.608,
+      "end": 5129.008,
+      "text": "Did you by the way know that the Vasa was built by a Dutch naval architect? And when it sank, the Vasa, the Swedish king tried to punish and sue the Dutch naval architect. But then it turned out that he had built the Vasa according to the specifications of the king that included a second ring of"
+    },
+    {
+      "start": 5129.008,
+      "end": 5153.92,
+      "text": "very heavy cannons. So the king demanded additional weight and you know that the Lhasa is a very thin ship so basically due to the second wing of cannons it just toppled over a few hundred meters from the coast. So the king did not succeed in suing the naval architecture."
+    },
+    {
+      "start": 5153.92,
+      "end": 5181.52,
+      "text": "I would like to come back to your discussion of automated decision making and explainability. My feeling is that there are two concepts missing here in this discussion. One is accountability or responsibility and the other is contestability."
+    },
+    {
+      "start": 5181.52,
+      "end": 5210.704,
+      "text": "The latter point was made by Mark Rotenberg in the AI Summit. It was here a few months ago. That if decisions are made, it is legally important that they are not just explained, but that citizens have the possibility to appeal against them. So that's a matter of due process."
+    },
+    {
+      "start": 5210.704,
+      "end": 5237.2,
+      "text": "And the other thing is, and I'm thinking now of a very big Dutch scandal related to what you might call preventive policing and using systems for that. And they really drove many people into very big financial issues. The decision..."
+    },
+    {
+      "start": 5237.872,
+      "end": 5267.744,
+      "text": "is always made on behalf of some issuing authority. And I think we must stick to that. So however you use systems, you as a government authority or as a judge are still responsible for what your decision is. Because systems do not have agency."
+    },
+    {
+      "start": 5267.744,
+      "end": 5296.464,
+      "text": "in any political or legal sense. And that is, I think, very important as an antidote to this automated decision making. So this whole idea that you can outsource decisions to a machine is fundamentally wrong because these machines cannot be responsible for the output decisions they produce."
+    },
+    {
+      "start": 5298.448,
+      "end": 5326.848,
+      "text": "Yeah, so there's a whole bunch of intertwined and wonderful issues. I, in fact, look forward to discussing these with you in Crete next month, right? We're going to get a chance to go over these in quite a bit of detail. But let me address the contestability one, because it's one that I've been thinking about quite a bit recently."
+    },
+    {
+      "start": 5326.848,
+      "end": 5355.312,
+      "text": "I agree with you that contestability is essential in the use of machines in any kind of decision making that has societal impacts. The point that I've been making is that if we put too much emphasis on the right to an explanation, we could undermine contestability because we could force the providers of the AI services."
+    },
+    {
+      "start": 5355.504,
+      "end": 5385.072,
+      "text": "to provide ever better explanations, we force them to provide incontestable explanations. Keep in mind that the machines have access to vastly more data than any human can tap into. And if they get really good at giving explanations for their decisions, it's going to get very hard to refute those decisions. So the mere fact of regulating"
+    },
+    {
+      "start": 5385.072,
+      "end": 5413.104,
+      "text": "the right to an explanation could backfire by making decisions less contestable. For the sake of time, we have one last question. Okay, I'm from the University of Seville. I did my PhD like 17 years ago on multi-engine systems, so my question is regarding"
+    },
+    {
+      "start": 5413.104,
+      "end": 5439.92,
+      "text": "emergent behavior. That was the goal of the PhD. So now we have elements that are not using reinforcement learning. They are not improving, I mean, every day or run time. But we are speaking just of one"
+    },
+    {
+      "start": 5439.92,
+      "end": 5466.848,
+      "text": "But what do you see when we have several artificial intelligence interacting between them? And if there is such things like co-evolution of machines with machines, not just machines with humans? So which are your thoughts on that? Yeah, that's a wonderful question again."
+    },
+    {
+      "start": 5466.848,
+      "end": 5494.912,
+      "text": "I really wish I were there with you guys. You know, I can see, you know, going out for a beer and discussing this for the rest of the night. Fantastic. We're going to have to be here, but you're not going to be there. Yeah. But let me say, you know, so I alluded to this issue with this question of let me see if I can go back. Yeah, right here."
+    },
+    {
+      "start": 5494.912,
+      "end": 5524.528,
+      "text": "I recommend having a look at this archive paper. It's a little bit of a dry read, but the conclusions are actually quite alarming. They're looking at what's going to happen when you take the technology behind these large language models and train it on data that is generated by previous generations of the same large language models. And their conclusion in this paper."
+    },
+    {
+      "start": 5524.528,
+      "end": 5549.088,
+      "text": "is that the models forget that what happens is that the original human written data becomes irrelevant. It no longer affects the outcome of the training after a few iterations of this kind of feedback loop. If we let this happen,"
+    },
+    {
+      "start": 5549.088,
+      "end": 5570.8,
+      "text": "This results in machines that will be talking to each other and could be posting stuff on the Internet that we won't be able to understand as humans. OK, the machines will be talking to each other and they will potentially develop their own communication mechanisms and languages."
+    },
+    {
+      "start": 5570.8,
+      "end": 5599.856,
+      "text": "This has actually happened in experimentation. I mean, there was a wonderful experiment at Microsoft where they were trying to get machines to learn to negotiate. And they found that after a few iterations, the machines were in fact generating a really obscure way of communicating with each other that was unintelligible to humans and were effectively negotiating using this weirdly invented."
+    },
+    {
+      "start": 5599.856,
+      "end": 5626.4,
+      "text": "language of their own. Feedback systems like this can be extremely unpredictable, and emergent behavior is very difficult to understand and to control, as I'm sure you probably illuminated quite well in your PhD thesis from many years ago. This is a well-understood phenomenon. It's a well-understood phenomenon that we can't understand how these systems"
+    },
+    {
+      "start": 5626.4,
+      "end": 5655.904,
+      "text": "actually will behave, that the emergent behaviors can be very unpredictable. So, yeah, so that's a very good question. I think it's an issue that we really need to pay some attention to. If we think of, you know, the machines co-evolving with humans, we have to try to build into our processes ways of ensuring that humans are always in the loop and not let the machines just talk to each other."
+    },
+    {
+      "start": 5655.904,
+      "end": 5684.944,
+      "text": "Otherwise, we could get runaway behaviors that we find very difficult to control. Thank you so much, Edward. I'm sure that your presentation will stimulate all of this governance, and people will continue this conversation over the following days. Thanks so much, and another round of applause, please, for Edward."
+    },
+    {
+      "start": 5685.552,
+      "end": 5687.536,
+      "text": "Thank you all very much."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

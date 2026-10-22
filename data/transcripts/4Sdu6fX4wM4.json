@@ -1,0 +1,646 @@
+{
+  "video_id": "4Sdu6fX4wM4",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome today. This was a further innovation we have. We start and finish now with a piece of music. And this was proposed by our keynote speaker of today, by Ben. And I thank him for that. And I also thank Peter for selecting the piece together with Ben. So welcome to our first DECUM digital humanism lecture after the summer break. And looking at the sequence of presentations and talk, I see that we already have the 19th lecture. So this is really now a long story already. And today I'm happy that we have an outstanding speaker and I welcome you already now. Before passing over to our moderator and to the speaker, I want to present shortly our joint publication we have produced. And if you don't know, this is the perspective on digital humanism. This is accessible as an open access via website, but it will also be. published by Springer, and it will be on the market in November, so next month, and we are just doing the proofreading, and we are looking forward that it will be published. So if you have not had a look, I will also distribute the website via the chat function. Back to the lecture. As normal, we have the talk, 30 minutes, then we have 30 to 35 minutes, then we have the Q&A, and then we finish with a... with a piece of music again presented by peter knies it's now a pleasure to hand over to alison stanger i'm not going to introduce her because she's already well known for many of us she has been with us for the since the early beginning and she has a background this is shortly in political science, economics, and behavioral science. And this, I think, shows very well this spirit of digital humanism that we have somebody coming from, let's say, political science, moderating somebody coming from computer science. I think this will be a highlight today. And thank you, Alison, for doing that. And now the floor is yours. And now I stop the screen. Yes, thanks very much. We're very fortunate. Indeed, to have as our speaker today one of the leading lights in HCI, Ben Schneiderman. Professor Schneiderman is an Emeritus Distinguished University professor in the Department of Computer Science at the University of Maryland. He's also the founding director of the Human-Computer Interaction Laboratory there. He's a fellow of the AAAS, ACM, IEEE, NAI, and the Visualization Academy, and a member of the U.S. National Academy of Engineering. He's received many honorary doctorates in recognition of his pioneering contributions to HCI in information visualization. He's made all kinds of contributions from clickable highlighted web links to high-precision keyboard, touchscreen keyboards for mobile devices, also tagging for photos, and the list goes on. I don't want to take any more time away from him in his talk today, so I will hand the floor over to him, and we all look forward very much to hearing your insights and wisdom. Professor Schneiderman. Thank you. And good morning and guten morgen. I'm very pleased to be here speaking for Digital Humanism. I will share my screen. And good. So, yes, I thank you. And I'm pleased by this audience. I see among the audience respected colleagues like Sylvia Mix and Andreas Holsinger, James Larris, Moshe Vardy. Fabio Schreiber of Jero Stock and many others. So I really appreciate this opportunity and I appreciate the digital humanism movement. I have reviewed the online version of the 40, more than 40 papers, and I feel it's a fresh, a fresh and important voice that adds to the current discussions about. the future direction of not only the technology of AI, but of our civilization itself. And the input from humanist perspective is very important. Thank you, Alison, for that very nice description and introduction. And I'm ready to go. There we go. OK, so the central question is, what do we mean by human centered AI? And there are many discussions and that term is growing in its usage, doubling each year, it seems. And for me, the central notion is that it means to amplify, augment, empower and enhance people. It's a shift from the measurement of the technology and the algorithms to. understanding how we are improving human performance. So that's what we're after. And this has been a driving force for me for the past few years. And the book I've completed, which will be published in January 2022 by Oxford, is called Simply Human Centered AI. And it starts from a very digital humanism. point of view of human values, the rights, the human rights that we believe in, the social justice and the equal access to justice, and the notion of individual dignity, that people are special, people are different. And we move forward by looking at the notion of individual goals, that we want to increase self-efficacy, creativity, responsibility, and social connection. It's about how we make we give people more for their lives. And the way we do it is by the design process. And here's where I hope to bring a fresh perspective for the digital humanism community. The ethical values and the notions of interdisciplinarity and the notions of many perspectives are valuable. But I think it's important to add design. as a key notion so that we can turn those beliefs, those ideas into something that is actionable by a very different set of people than those who speak the humanist language. So we will look for the ways of reliable, safe, and trustworthy systems, and we'll do it by thinking about the interdisciplinary notions of teams, organizations, industry, and government. And here's what I say, that we're thinking about a different set of people, the researchers, the developers, the business leaders, the policymakers and the users and many more. There are 25 categories of users that we need to think about. And at the same time, we need to think about the threats that are faced by those who build such systems, the malicious actors that are acting in an adversarial way, the bias from the data. and the flawed software that can undermine the noble goals that we seek. So this presentation and the book brings three different perspectives. That's the new synthesis, the HCAI framework, a new way of thinking about design, the design metaphors, and the governance structures. I think there's been a request that you go to presenter view so people can go. I'm just going to do that. Perfect. Thanks. Let's go there. Let's go there. Why is it not going? That's peculiar. OK. There we go. So, all right. So the first of the three ideas I want to convey this morning, this afternoon, this evening for you is the HCI framework. It's a new way of thinking. The old way of thinking was predicated on Tom Sheridan's notions from 1980, which suggested that there were levels of automation. He had 10 of them going from full human control to full. Automation. And that notion was prevalent and I bought into it as well. And the assumption was that the more automation you had, the less human control. It was a zero sum game. And that notion was what I wrote about in 1986 in the first edition of my book, Designing the User Interface, Balancing Automation and Human Control. And I made the assumption. that you had to choose some point between human control and computer automation. And that idea remains popular, but I became more and more concerned. And I began to see that there was something wrong. There was something missing. There was something incomplete. And so in the later editions of the book, I shifted to the language of ensuring human control, ensuring human control while increasing automation. I became... aware that human control was the necessary part of technology. We didn't want machines that were out of control. And so that led to the very simple splitting from a one-dimensional model to a two-dimensional model. And the fact that you could independently increase the amount of human control and increase the levels of automation. And that's the aspiration we see now. That's the first of these fresh insights or syntheses that I want to bring to you. The notion that we really can assert high levels of human control, even with high levels of automation. At first, this was a puzzle, but I hope I will clarify how this is possible. We could start by making it a two dimensional model. And what we're looking for is the upper right hand corner to make reliable, safe and trustworthy systems like an elevator. Lots of automation, lots of AI in modern elevator systems, or maybe better still, the digital camera, where the user's in control. The user points the camera where he or she wishes, chooses the zoom level, composes the picture, and then clicks for their decisive moment. Remember words of Henri Cartier-Bresson, the decisive moment. It's their picture. At the same time, there's a lot of AI in place. It's the AI selects the focus and the aperture settings and reduces hand jitter. There's a great deal of AI at work. There's a high level of automation for those things that can be made reliable, safe and trustworthy. Yet the user has a high level of control. Now, that's not always possible. That's not the only mindset. We'll see that there are ways in which. high levels of computer control become attractive, that if you have a pacemaker embedded in your chest, it's acting more or less autonomous, although the later models are shifting to a supervisory model. Similarly, airbags in the car have to deploy within 200 milliseconds to be effective, so it has to be automatic. But the kind of supervisory control over them and managing their use over time becomes important. The early airbags in the U.S. saved 2,500 lives a year, but they killed more than 100 children or elders because of inadvertent deployments. And so only once we come to understand and monitor these systems can we make the decisions that will improve their quality. At the same time, human autonomy is equally important for those who play the piano or ride bicycles or care for children. We want to do it ourselves. We want the sense of creativity, of mastery. We want it to be our project. And so that lays out this two-dimensional table. At the same time, we have to remember there are dangers of excessive automation. most notably the Boeing 737 MAX story, where the designers were so entranced with the idea of a completely autonomous system, they did not even tell the pilots that it was available, that it was put into place. So there was no control panel. It was not obvious how to turn it off. It was possible, but the pilots just didn't figure it out because there was no visual display. They were not given a control panel or a user interface. because the designers believed in the idea of perfect autonomy. And so we have the deadly outcome of the two crashes. At the same time, there could be excessive human control, that people make mistakes. And so we are moving towards more and more safeguards, guardrails, interlocks, so that, for example, if you have a self-cleaning oven at home and you turn on self-cleaning, if the temperature is above 600 degrees Fahrenheit, it's impossible to open the door because that would be very harmful. And so the idea of preventing human mistakes is very much there. The same model, I'll take a look at medical devices for pain control designs. From World War II, the morphine drip bag provided morphine in a drip, drip pace. which was good for many patients, but sometimes too much morphine, which could be deadly, or too little morphine, which would not relieve their pain. So automatic dispensers were built to monitor the human heart rate and breathing rates to better control it, but then it could not determine the pain level. And so patient-guided dispensers gave humans more control, a trigger by which they could get more morphine. But there were limitations to prevent excessive morphine. So that got built in. But where we're moving to now is patient-guided, clinician-monitored systems where a central control center in them. And a hospital might monitor 50 of these devices and can provide supervisory control to see where they're going and collect the evidence about performance. And that evidence about performance can be used to do preventive maintenance, but also to improve the design over time. So that's how this two-dimensional framework plays out here. One more example is in wheelchairs, the push chair of the 1920s. was a heavy chair that required a caretaker and low automation, but then robotic devices that automatically took patients in wheelchairs were built and hand-powered user-guided ones instilling human autonomy and control became a great opening up of possibilities to give patients more of freedom of their own, but also led to creative notions like wheelchair basketball, wheelchair races, and so on. And the current directions are toward motorized, joystick-controlled, tele-operated, and programmable, so that there's a control center that will monitor thousands of wheelchairs. and be able to collect data to improve the quality of designs and even to improve the quality of the sidewalks that they run over, collecting the vibration data and providing cities with the information they need to improve their sidewalks to make it better for wheelchair use. So that's this framework. which I see more and more applied in a wide variety of applications. And it opens my mind to these new possibilities. The second notion I want to convey today is the shift in design metaphors and the ways of thinking and the very language we use and the images we present. You'll notice in my imagery, it's always people, people using technology. That's what we want to see, not machines and robots doing it, but people doing what they need to do, facilitated by technology. And that shift is brought home by this characterization of one set of compelling design metaphors that have been in place for 30, 40 years in the AI community, the notion of intelligent agents. The notion of teammates, collaborators and partners, assured autonomy and social robots. These are the language we hear and we hear about these being inevitable. And this is the only way forward in the future. I do not accept it. I think there's another view of the future, maybe less compelling and less exciting. but more successful commercially and more human-centered. The notions, the language I use is super tools, telebots, control centers, and active appliances. Let's take a look at these. And of course, there are ways that you can combine these notions, but I hope you will take in. It's not easy to change language and to change thinking, but I hope some of these terms will be helpful to you. It's important to remember the guiding forces that robots are simply not people, as Margaret Bowden said. Humans, not robots, are responsible agents. That's really why we need these new design metaphors. Only humans are liable legally and morally for the actions of machines. And, you know, it provides a clarity about design because if humans are responsible. then computers are not in the same category. They're a different category. We want to take advantage of the distinctive capabilities of computers, the sophisticated algorithms, huge databases, superhuman sensors, information abundant displays, and powerful effectors. And if you believe in an autonomous notion, then you may ignore some of these possibilities, as we saw in many other. failures of AI systems. And then what we always want to do is support human creativity. The passion, empathy, humility, and intuition of humans is special. And we want to support that as best we can. And here's how it works in my world. Super tools include the digital cameras I've already mentioned. Users have a great degree of control before they take the picture, after they take the picture. gives them many ways to do settings and different kinds of photos. They can change the lighting, the shadows, the luminance, the brilliance, the color balance, et cetera, et cetera. And so users are in control with a high degree of automation and a high degree of AI built into these systems in a very effective way. It's an excellent example of design. Similarly, the navigation choices in global positioning systems where, in this case, I've asked for a trip from the White House to College Park, the University of Maryland, just eight miles away. And the system provides three choices, gives me a recommendation, shows the current information, lots of AI, lots of machine learning. But it's very much users in control and they can. I'll preview the route. And then when they begin, they can always change. It's not locked in. They're in control. They can change the route. They can change the destination. It's a human-centered design. And that's why it's so effective. And we see again and again, the effective designs are ones that give humans control. Similarly, the successful notions of text autocompletion and search autocompletion. It gives the users recommendations from which they can choose or ignore. Spelling correction is the same idea. These are widely used tools. We come to accept them as part of our family of digital technologies. Another form of super tool is the information abundant display. In this case, the Bloomberg terminal provides a great deal of information. It's a great success story. Bloomberg processes 1.6 million articles every day. And natural language processing algorithms are very central to the success of this system. And its success is enormous. Success is that 300,000 people pay more than $20,000 a year to have this on their desk. And so we see the principles of information abundance, of tiled non-overlap displays. tailored to user needs and the idea of data exploration to support the rich and rapid decision making, often in financial but other situations as well. So the Bloomberg terminals become a notion of for every field we need a Bloomberg terminal. For your home, you also want active appliances, low cost, widely used, reliable devices from Google's Nest. to rice cookers and coffee makers and Roomba. And all those appliances are increasingly infused with AI technologies, machine learning and algorithms to make these more effective and to make your life better. And they are very much the kind of success stories of the present and the future. I mentioned the cardiac pacemaker embedded in your chest. The old versions were autonomous, but as we grow more capable, they now have a user control panel that users or patients can themselves set the parameters for the pacemaker. And then they're monitored by their clinicians. And the Medtronic company, which will get an overview of tens of thousands of users so as to understand that what works and to improve the machine learning algorithms that will make it better for everyone. So we've moved from an autonomous design to an active appliance and a control center model. The control centers are visible in examples like the Mars rovers that NASA operates. On one hand, they're labeled as autonomous. And yes, they can move, avoiding obstacles or precipices. They can turn their solar panels or their antenna to be optimally done or quite automatically. But at the same time, NASA maintains a control center with about 80 people who operate this autonomous device remotely, who manage the. the overall plans and decide what to do when problems arise. So I would call this a telebot and hope to convey the idea that it's a remote and operated device. And similarly, surgical devices. The newspapers love to report that robot surgeons are better than human surgeons, but that comparison is a false, misleading, problematic one. As the manufacturer says, robots don't perform surgery. Your surgeon performs surgery with da Vinci by using instruments that he or she guides via a console. This amplifies human performance and ability, allowing the surgeon to go very precisely deep into body cavities and make careful movements that they could not make any other way. And so it amplifies. It augments, it empowers and enhances their human abilities. And the control center notion here, a hospital which monitors the operations of the hospital, not just the emergency room, but patients in many different wards to keep track of what's happening, to see how the equipment's performing and improve performance over time. So the growth of control centers is another key idea. Here, a larger one. You can see people working closely together. And again, the notion of information abundant user interface displays is central to the success of these widely growing designs. OK, so that's the second. The third is the governance structures. This is a more complicated one, so I will be brief. But we have to go from the ethical principles that we all share of responsible, humane AI to the design principles. For me, there's a rich structure of the software engineers, the teams, the organizations they work in, where there may be dozens of software teams, the industries. those organizations work in, and the government regulation around. So there are 15 aspects. I'll just be brief about them here and focus on one or two of these examples. But the paper gives you a beginning point of understanding these in greater depth. So I'm going to focus on the team aspects. And there are five recommendations there. There's two I'd like to stress, the audit trails and analysis tools, the idea of tracking what a system does. The flight data recorders in aviation have been hugely important in their success and safety. And we need essentially a flight data recorder for every robot. so that when things go wrong, there's retrospective analyses to understand what went wrong and to prevent it from ever happening again. And so that's a central principle. And we need the analysis tools to go with it. I might add also incident reporting systems. NASA and the Food and Drug Administration all have systems that allow reporting of adverse events. And that provides further evidence of what went wrong. And so that's another important part. You may want to look at the partnership on AI as an AI incident database with already more than a thousand reports of AI failures so that we can understand the patterns and increase the success stories. I'm going to focus on explainable user interfaces and give one example here. That research topic has flourished, especially starting in Europe because of the GDPR regulations that ensure the right to an explanation. And that's a very positive thing, not only the explanation for the users or those affected, but for the developers. And the evidence grows daily. that explainable user interfaces are better because they help the designers make them even stronger and more reliable. Now, that huge research of maybe more than 10,000 papers on explainable user interfaces, or XAI as it's sometimes called, focus on the notion of retrospective explanations. The assumption is the AI machine has made a decision about a hiring, about a medical decision, about a parole application, about a mortgage application. And the system gives a decision. And then the user says, why did I get that decision? And the retrospective explanation goes into play. The main discussion is whether local or global explanations are the best. Local talk very specifically about the user's individual needs and requests. And then the global explains how the system works. What's the neural net? How machine learning operates? And this is the current way. I would like to propose a new perspective, which is to prevent the confusion and surprise that requires explanation. And this is the common practice that happened began 30 years ago with knowledge based expert systems and the shift towards a rule based business system, which made step by step movements with explanations along the way. The mature versions of this are Amazon's e-commerce process for checkout, which provides a very systematic approach. that lets you understand each step in the process. So I'm interested in prospective user interfaces that are interactive, visual, and support exploration. Let me take a look at a very simplified example. A common case is the mortgage loan explanation. This is a traditional approach, the post hoc report. The mortgage amount you request is $375,000. The monthly income here, the liquid assets you click submit, and you get what's considered to be a pretty good explanation for a retrospective system. We're sorry, your mortgage loan was not approved. You might be approved if you reduce the mortgage amount requested, increase your household monthly income, or increase your liquid assets. That's pretty good, but You don't know how much. You don't know which one will have the greatest influence. An alternate model would be this one, a slider-based prospective user interface that as you move the slider, it changes the amount of blue in your score, and your goal is to reach the score needed for approval. So if you reduce the amount requested for the mortgage, you get a higher score. If you increase your household monthly income, you'll see an increase in your score. If you increase your liquid assets, maybe borrowing from family members, you can also reach. This interface allows users to explore the sequential nature of this and to see if it's a linear or quadratic functions. And so sensitivity analysis becomes a possible alternative. And these strategies are becoming implemented. banking systems, and many others. This was a charming one I found from England, where some librarians put up this system, slider-based, which would let you find novels to read. And you could select four of the sliders. So you could choose the degree of funny versus serious, beautiful versus disgusting, no sexual content to explicit sexual. optimistic to bleak. And as you shift these sliders, the covers change to give you an idea. This notion, very simple one, was implemented in many systems like newspaper ones, where one case you had sliders for politics, sports, and entertainment. And as you move them, the recommendation window would update to give you a clearer picture. This is also in a Music recommender, we have five of Spotify's 14 variables are used as sliders. Acousticness, instrumentalness, danceability, valence, and energy. And as you move them, the recommendations change. The OECD's control panel for better life index shows a similar design. And so, okay, that's the notion there. So I've come to the end and the summary is with three pictures. three images that I hope will register with you. The idea of the framework that opens up from one dimensional to two dimensional. Yes, I know, maybe three dimensional, maybe four dimensional, but let's at least go to a two dimensional version to help us think through the design possibilities for different systems and how the same system could be implemented in each of these different quadrants. The second is the design metaphors that I want to encourage you to shift the language and the visual imagery and the way we think about design. And I advocate super tools, telebots, control centers, and active appliances. And the third idea, the third foundation is the governance structures. This is a larger issue. And in fact, it takes almost a half of the book. to fully describe all of these possibilities. But these are the practical ways in which the ideas of what we mean by human-centered get translated into a set of processes, guidelines, and principles by which we can build real systems, by which we can evaluate and measure them to see if they adhere to the goals we set. I hope this will give you a range of possibilities and think fresh thoughts and realize that sociotechnical systems are embedded in these complex environments. And that's what we need to design. Just one example about independent oversight. The insurance companies play a key role as they do in building and medical and transportation systems. But the question I might ask you is. What do you think insurance companies will do about premiums for self-driving cars? Will premiums for self-driving cars be higher than usual cars or lower? If they were higher, I would send a message that says there's something wrong. These are dangerous. If they're lower, that would be a great support for the growth in the industry. So I'll start with a simple question of, do you think Tesla... cars are safe or safer than regular cars. And the starting point is how many deaths do you think there have been with Tesla cars? And I used to think three, four, five, maybe a dozen that we've heard stories about, but there is a website called tesladeaths.com, tesladeaths.com. And last time I looked at that, there were more than 200 reports of deaths. Now we don't really know how many of them. were taking place on autopilot or how many were caused by a variety of different circumstances. So that does not give us the data we need. But Tesla assures us that Tesla cars are safer than usual cars. And yet we don't have the way to verify that report. Just a month ago in the U.S., the National Highway Transportation Safety Administration opened up an investigation of 11 cases. of Tesla cars on autopilot that crashed into fire and police and medical vehicles that had come to the site of an emergency. It caused one death, but quite a few injuries. And so that investigation may help us better understand and may give the data that the insurance companies need. They're very eager to know. from incident reports and from audit trails, what is going on? Because at this point, they have no basis for risk portfolio analysis. Okay, so that's this rich picture of governance structures. And I encourage you to take a look at my website and the set of three foundational papers published in the past year, which laid the foundation for the book. And the book will be out soon. Again, my cover here, and I appreciate the warm responses I've had from many. Alan Mackworth at the University of British Columbia said, the book is well-structured and a delight to read. The coverage is comprehensive, but it will be controversial. And indeed, it may well be controversial, but I invite that controversy. I have a passionate belief in the importance. of moving towards human-centered thinking. And I hope you'll gain that passion as well and join the group and community who are increasingly moving to say there is a different view of the future. There is a different view. And that view is, for me, captured in this summary diagram. But I'd like to invite you to a future that's human-centered and encourage you to join the Google group. that has now almost 1,700 members just in a few months. Our Twitter account, follow us on Twitter or come to the website for resources about this topic and help us build these resources to be even stronger. And so that's the end. The future for me is human-centered. I hope it is for you. And I hope this has been a way of opening your thinking. I invite your questions. Thank you very much again to Hannes Wirtner and Alison Stein. Well, thank you very much for a fantastic presentation. I didn't think you were going to keep concise with all those slides, but you did. It's wonderful. Floor is now open for questions. We have one in the chat. I can also. You know, exploit my. moderator's prerogative and ask one myself, but just let me get a sense of the room. I see a hand already from Moshe, and then we have Benjamin Gregg. So Moshe, why don't you fire away? And then Benjamin, if you want to ask your question directly, that'd be great. Thank you for this presentation, Ben. There is another kind of paradigm shift that people discuss, and I want to wonder how you think it's related. It's between AI and IA. with artificial intelligence and intelligence augmentation. They, to me, connote somewhat of a similar philosophy. What are your thoughts on that? Very interesting. Well, of course, intelligence augmentation goes back to 1960, to Doug Engelbart's notion of it. John Markoff's book, Machines of Loving Grace, is a full book that... goes through the battles between AI and IA. And it's a very interesting and readable book that I encourage you to take a look at. But it's more of a historical perspective. And that notion no longer seems relevant to me. I think if I had to choose one, I would choose intelligence augmentation. But Moshe, we're in a world that gives us the chance to choose both. And so we want artificial intelligence. that supports human augmentation. So I think we can get both. That's what the HCAI framework suggests, that you can have high levels of AI and high levels of augmentation that give human control. You want to respond to that? No, I mean, I think that it looks to me like this. Two trains of thoughts kind of converging at some point. Yes. Putting the human in the center in some sense in both perspectives. Right. You can get both. And if you look at Google's PAIR guidelines, people in AI research, their guidelines document, it does leave the door open to say that they show about how you might do it by AI and how you might do it by IA. But they do say. Clever designers can find ways to get both. And that's what we want to be, clever designers. Thank you. Benjamin Gregg? That's great. Yes. Can you hear me? Yeah. Thank you very much. Marvelous presentation. Very accessible. I look forward to reading the book. I hope it's equally accessible. In that case, I will be able to understand it well. My question. goes to the political realm where I want to emphasize for a liberal democratic political community, human responsibility is paramount. Now, it's amazing to me that we, not only in the United States, but certainly in the United States, do have difficulty counting ballots. Especially, you know, the system works when there is a great difference between the two candidates. But when it's close, we have very significant problems. And it would seem to me that it would be possible to deploy AI to help us get accurate accounts that would be persuasive to voters in terms of. the integrity of the vote. And yet at the same time, I wonder if there is a problem that seems to have surfaced several times in your own presentation with the fear of many people, a kind of technology and of responsibility being taken away from them when technology is deployed. I would be grateful for your thoughts on this particular issue. Well, voting systems are a complex issue. Barbara Simons, a dear colleague, former ACM president and winner of the ACM Policy Award. last year, was a great advocate. She worked for IBM, was a very strong technologist, but she stood for paper ballots. And that is a way that, you know, you overcome one of the concerns you raise, which is that the machine somehow is mysterious and hidden. So she favors the approach of human control. And the observers at election wards across the US are both Democratic and Republican. And when you can see the paper ballots and when you can recount them, it should improve the trustworthiness of that system. The US is in a tragic situation brought about by a history of lies, distortions, and conspiracies that no system can prevent. Actually, I mean, AI has amplified and made those even more virulent and more viral. And so we have a serious problem for the democratic institutions in the US. I agree with you. AI is widely used. And another response is that the election analyses are very guided by machine learning algorithms to predictive models about how each election ward, each county will go. And those models work pretty well. They're imperfect, but they work pretty well. But the question is, are they trusted by people? And when you have those who oppose these systems and spread lies, then our fundamental democratic systems become undermined. That's one of those forms of adversarial attacks. If we could find ways to put human-centered AI to work to limit those adversarial attacks, that would be great. I certainly, I mean, this is yet a third answer to you. The social media platforms were clearly at fault, clearly failed in their efforts to limit the use of robotic postings and accelerating of the... you know, the conspiracy and lies. So the governance structures that might have guided Facebook to better algorithms did not succeed in that case. Facebook's oversight board is an oversight board. It's not an independent oversight board. Still, I'm willing to give them a chance and they may have some influence. But I would say Facebook has many tragic aspects which have lately been described very publicly, and we need to understand those better. So I don't think AI is the remedy. I think stronger social courageous efforts by people of influence to ensure that truth is a foundation of democracy. James. Thank you, Ben, for a very nice talk. I look forward to reading the book when it's out. I have a question which sort of follows up on your last response, which is that you made a nice vision for AI working for the benefit of the users of AI, which I think we all would hope that it does. The users are not the ones who build the systems, pay the bills, and the incentives of the companies that make the money and pay the bills are not necessarily aligned with the users. And I think Facebook is a good example. They use AI to keep users engaged so they can show you more ads and create greater revenue. I mean, it's a very sort of simple system that they've perfected. And from their point of view, AI is working extremely well, even if there are some externalities like the destruction of political systems and governments. So how does this fit into the user-centric, the human-centric AI? You focus on the users, but remember, my model shows many users, many stakeholders, I use the term, which includes the researchers and the government regulators and the managers and businesses. And yes, the dilemma you pose is clear that users may have different values than developers. And so it's that rich community that we need to address and provide. a clarity so that we can understand who's in charge and who's in control. That's the first thing, to understand who's making the decisions and what their motivations are. And from there, we may need tools to rally public support or legal support or government intervention or industry standards. The governance structures provide that as well. We also may make I didn't mention it, but the safety culture of companies, of organizations that may have dozens of teams, the safety culture is another mechanism. Some would call this high reliability organizations, resilient organizations. I like the term safety culture. And there are five principles there by which companies can do it. And the argument to the companies is this is your competitive advantage. that spending money on a safety culture saves money. Investing in a safety culture saves money because it reduces accidents, it makes for better systems, and it leads to better corporate social responsibility, public image, and hopefully better products and services. So I think you highlight clearly the issue that looking just from a user point of view is not enough. that we have to take a larger systemic approach. And my 15 recommendations for governance are not simple and not easy to implement. There are many partners who have to take action. Would you like to respond to that? Is that something? No, I mean, you know, I can't disagree that there should be a safety culture, but that runs very much against the sort of move fast, break things culture of the organizations that are creating these new systems, the new AI systems. You know, the whole model out there is sort of going in the opposite direction of what you're advocating. That's a little too strong. Yes, the history is of move fast and break things, but the reports, the wonderful detailed documentation of Cathy O'Neill's book on weapons of mass destruction. Shoshana Zuboff's Surveillance Capitalism, Kate Crawford's Atlas of AI. All of these are documenting the problems that have occurred. And there's a growing awareness, both in government and industry and the journalists and the public, that something needs to change. So I'm an optimist, James, and I'd like to. Hope that the future will be better. It does require each of us to stand up and speak up for what we believe. Thank you. Thank you. We have one minute left. So, Hannes, you'll get the final question and hopefully it'll be a quick answer. I think you're muted. Hannes, you're muted. Yep. You're still muted. Now I'm not muted. OK. Yeah. Thanks for the excellent presentation. I would like to follow up to Jim's question somehow, because I fully understand now the use in the loop during the use. But I was somehow wondering in your governance structure picture, where is the user in the governance? Because you have the team, you have the company, you have the organization. Where is the user? But where is the user in this, let's say, engineering approach in the design? Here's my bumper sticker. Humans in the group, computers in the loop. OK. The notion of humans in the loop is an old one and it's OK, but it's done and spoken in a disparaging way in the sense of if we have to, we'll put humans in the loop. But the goal of many in the AI community is to make fully autonomous systems. So I would suggest the bumper sticker here. Humans in the group. Humans are social. They're connected. They work in organizations. And we need computers in the loop. And I hope my imagery throughout the talk shows people working together, connected and supported by technology. But that's my message. Humans in the group. Computers in the loop. And that's a wonderful message on which to close. Please join me in thanking Professor Schneiderman for a fantastic talk and joining us here today. Thank you for the opportunity. Let's get to work. Absolutely. Absolutely. Let's go to the music. Peter. I'm on it. I hope you can see my screen by now. All right, so for the final notes today, this was really easy, actually, as Ben had two suggestions for music to be played. Appalachian Spring by Aaron Copland, which we heard in the beginning, and also Violin Concerto by Mozart, as well as the suggestion to begin with a piece, which there's a chance we'll adopt for future future lectures. So that's a great evolution here of the music presence in the lecture series. So in terms of references and compositions, these two pieces are a very nice exchange between the US and Austria, of course. We started with Copland's Appalachian Spring, performed by the New York Philharmonic, conducted by Leonard Bernstein, and now we'll end on Mozart's Violin Concerto No. 2 in D. kirk for tennis 211 third movement rondo allegro um performed by gilon crema accompanied by the vienna philharmonic orchestra and conducted by nicholas i want to highlight that that both of these pieces are the allegro illegal pieces so that's the kind of message we want to we want to send here um before i play it let me announce the next event in our lecture series on november 9th mark rotenberg of the center for ai and digital policy in the us will speak on artificial intelligence and democratic values what is the path forward and paul timmers will moderate this lecture so that's it for today thanks to ben for for the great presentation allison for moderating and and all for your participation See you in November. Goodbye and treat yourself to some Mozart.",
+  "segments": [
+    {
+      "start": 77.424,
+      "end": 107.344,
+      "text": "Welcome today. This was a further innovation we have. We start and finish now with a piece of music. And this was proposed by our keynote speaker of today, by Ben. And I thank him for that. And I also thank Peter for selecting the piece together with Ben. So welcome to our first DECUM digital humanism lecture after the summer break. And looking at the sequence of presentations and talk, I see that we already have the 19th lecture."
+    },
+    {
+      "start": 107.344,
+      "end": 136.032,
+      "text": "So this is really now a long story already. And today I'm happy that we have an outstanding speaker and I welcome you already now. Before passing over to our moderator and to the speaker, I want to present shortly our joint publication we have produced. And if you don't know, this is the perspective on digital humanism. This is accessible as an open access via website, but it will also be."
+    },
+    {
+      "start": 136.032,
+      "end": 165.248,
+      "text": "published by Springer, and it will be on the market in November, so next month, and we are just doing the proofreading, and we are looking forward that it will be published. So if you have not had a look, I will also distribute the website via the chat function. Back to the lecture. As normal, we have the talk, 30 minutes, then we have 30 to 35 minutes, then we have the Q&A, and then we finish with a..."
+    },
+    {
+      "start": 165.248,
+      "end": 186.608,
+      "text": "with a piece of music again presented by peter knies it's now a pleasure to hand over to alison stanger i'm not going to introduce her because she's already well known for many of us she has been with us for the since the early beginning and she has a background this is shortly in"
+    },
+    {
+      "start": 186.608,
+      "end": 213.504,
+      "text": "political science, economics, and behavioral science. And this, I think, shows very well this spirit of digital humanism that we have somebody coming from, let's say, political science, moderating somebody coming from computer science. I think this will be a highlight today. And thank you, Alison, for doing that. And now the floor is yours. And now I stop the screen. Yes, thanks very much. We're very fortunate."
+    },
+    {
+      "start": 213.504,
+      "end": 233.04,
+      "text": "Indeed, to have as our speaker today one of the leading lights in HCI, Ben Schneiderman. Professor Schneiderman is an Emeritus Distinguished University professor in the Department of Computer Science at the University of Maryland. He's also the founding director of the Human-Computer Interaction Laboratory there."
+    },
+    {
+      "start": 233.52,
+      "end": 253.6,
+      "text": "He's a fellow of the AAAS, ACM, IEEE, NAI, and the Visualization Academy, and a member of the U.S. National Academy of Engineering. He's received many honorary doctorates in recognition of his pioneering contributions to HCI in information visualization."
+    },
+    {
+      "start": 253.6,
+      "end": 280.432,
+      "text": "He's made all kinds of contributions from clickable highlighted web links to high-precision keyboard, touchscreen keyboards for mobile devices, also tagging for photos, and the list goes on. I don't want to take any more time away from him in his talk today, so I will hand the floor over to him, and we all look forward very much to hearing your insights and wisdom. Professor Schneiderman."
+    },
+    {
+      "start": 284.016,
+      "end": 313.232,
+      "text": "Thank you. And good morning and guten morgen. I'm very pleased to be here speaking for Digital Humanism. I will share my screen. And good. So, yes, I thank you. And I'm pleased by this audience. I see among the audience respected colleagues like Sylvia Mix and Andreas Holsinger, James Larris, Moshe Vardy."
+    },
+    {
+      "start": 313.264,
+      "end": 336.736,
+      "text": "Fabio Schreiber of Jero Stock and many others. So I really appreciate this opportunity and I appreciate the digital humanism movement. I have reviewed the online version of the 40, more than 40 papers, and I feel it's a fresh, a fresh and important voice that adds to the current discussions about."
+    },
+    {
+      "start": 336.736,
+      "end": 358.704,
+      "text": "the future direction of not only the technology of AI, but of our civilization itself. And the input from humanist perspective is very important. Thank you, Alison, for that very nice description and introduction. And I'm ready to go."
+    },
+    {
+      "start": 359.376,
+      "end": 389.248,
+      "text": "There we go. OK, so the central question is, what do we mean by human centered AI? And there are many discussions and that term is growing in its usage, doubling each year, it seems. And for me, the central notion is that it means to amplify, augment, empower and enhance people. It's a shift from the measurement of the technology and the algorithms to."
+    },
+    {
+      "start": 389.248,
+      "end": 413.488,
+      "text": "understanding how we are improving human performance. So that's what we're after. And this has been a driving force for me for the past few years. And the book I've completed, which will be published in January 2022 by Oxford, is called Simply Human Centered AI. And it starts from a very digital humanism."
+    },
+    {
+      "start": 413.488,
+      "end": 443.232,
+      "text": "point of view of human values, the rights, the human rights that we believe in, the social justice and the equal access to justice, and the notion of individual dignity, that people are special, people are different. And we move forward by looking at the notion of individual goals, that we want to increase self-efficacy, creativity, responsibility, and social connection."
+    },
+    {
+      "start": 443.232,
+      "end": 470.624,
+      "text": "It's about how we make we give people more for their lives. And the way we do it is by the design process. And here's where I hope to bring a fresh perspective for the digital humanism community. The ethical values and the notions of interdisciplinarity and the notions of many perspectives are valuable. But I think it's important to add design."
+    },
+    {
+      "start": 470.624,
+      "end": 498.64,
+      "text": "as a key notion so that we can turn those beliefs, those ideas into something that is actionable by a very different set of people than those who speak the humanist language. So we will look for the ways of reliable, safe, and trustworthy systems, and we'll do it by thinking about the interdisciplinary notions of teams, organizations, industry, and government."
+    },
+    {
+      "start": 498.64,
+      "end": 527.904,
+      "text": "And here's what I say, that we're thinking about a different set of people, the researchers, the developers, the business leaders, the policymakers and the users and many more. There are 25 categories of users that we need to think about. And at the same time, we need to think about the threats that are faced by those who build such systems, the malicious actors that are acting in an adversarial way, the bias from the data."
+    },
+    {
+      "start": 527.904,
+      "end": 553.84,
+      "text": "and the flawed software that can undermine the noble goals that we seek. So this presentation and the book brings three different perspectives. That's the new synthesis, the HCAI framework, a new way of thinking about design, the design metaphors, and the governance structures."
+    },
+    {
+      "start": 553.84,
+      "end": 582.064,
+      "text": "I think there's been a request that you go to presenter view so people can go. I'm just going to do that. Perfect. Thanks. Let's go there. Let's go there. Why is it not going? That's peculiar. OK. There we go."
+    },
+    {
+      "start": 583.088,
+      "end": 612.704,
+      "text": "So, all right. So the first of the three ideas I want to convey this morning, this afternoon, this evening for you is the HCI framework. It's a new way of thinking. The old way of thinking was predicated on Tom Sheridan's notions from 1980, which suggested that there were levels of automation. He had 10 of them going from full human control to full."
+    },
+    {
+      "start": 612.704,
+      "end": 642.16,
+      "text": "Automation. And that notion was prevalent and I bought into it as well. And the assumption was that the more automation you had, the less human control. It was a zero sum game. And that notion was what I wrote about in 1986 in the first edition of my book, Designing the User Interface, Balancing Automation and Human Control. And I made the assumption."
+    },
+    {
+      "start": 642.352,
+      "end": 671.536,
+      "text": "that you had to choose some point between human control and computer automation. And that idea remains popular, but I became more and more concerned. And I began to see that there was something wrong. There was something missing. There was something incomplete. And so in the later editions of the book, I shifted to the language of ensuring human control, ensuring human control while increasing automation. I became..."
+    },
+    {
+      "start": 671.536,
+      "end": 701.28,
+      "text": "aware that human control was the necessary part of technology. We didn't want machines that were out of control. And so that led to the very simple splitting from a one-dimensional model to a two-dimensional model. And the fact that you could independently increase the amount of human control and increase the levels of automation. And that's the aspiration we see now. That's the first of these fresh insights or syntheses that I want to bring to you."
+    },
+    {
+      "start": 701.28,
+      "end": 726.752,
+      "text": "The notion that we really can assert high levels of human control, even with high levels of automation. At first, this was a puzzle, but I hope I will clarify how this is possible. We could start by making it a two dimensional model. And what we're looking for is the upper right hand corner to make reliable, safe and trustworthy systems like an elevator."
+    },
+    {
+      "start": 726.752,
+      "end": 752.176,
+      "text": "Lots of automation, lots of AI in modern elevator systems, or maybe better still, the digital camera, where the user's in control. The user points the camera where he or she wishes, chooses the zoom level, composes the picture, and then clicks for their decisive moment. Remember words of Henri Cartier-Bresson, the decisive moment. It's their picture."
+    },
+    {
+      "start": 752.176,
+      "end": 781.728,
+      "text": "At the same time, there's a lot of AI in place. It's the AI selects the focus and the aperture settings and reduces hand jitter. There's a great deal of AI at work. There's a high level of automation for those things that can be made reliable, safe and trustworthy. Yet the user has a high level of control. Now, that's not always possible. That's not the only mindset. We'll see that there are ways in which."
+    },
+    {
+      "start": 781.728,
+      "end": 809.984,
+      "text": "high levels of computer control become attractive, that if you have a pacemaker embedded in your chest, it's acting more or less autonomous, although the later models are shifting to a supervisory model. Similarly, airbags in the car have to deploy within 200 milliseconds to be effective, so it has to be automatic. But the kind of supervisory control over them"
+    },
+    {
+      "start": 809.984,
+      "end": 832.512,
+      "text": "and managing their use over time becomes important. The early airbags in the U.S. saved 2,500 lives a year, but they killed more than 100 children or elders because of inadvertent deployments. And so only once we come to understand and monitor these systems can we make the decisions that will improve their quality."
+    },
+    {
+      "start": 832.512,
+      "end": 856.24,
+      "text": "At the same time, human autonomy is equally important for those who play the piano or ride bicycles or care for children. We want to do it ourselves. We want the sense of creativity, of mastery. We want it to be our project. And so that lays out this two-dimensional table. At the same time, we have to remember there are dangers of excessive automation."
+    },
+    {
+      "start": 856.272,
+      "end": 885.536,
+      "text": "most notably the Boeing 737 MAX story, where the designers were so entranced with the idea of a completely autonomous system, they did not even tell the pilots that it was available, that it was put into place. So there was no control panel. It was not obvious how to turn it off. It was possible, but the pilots just didn't figure it out because there was no visual display. They were not given a control panel or a user interface."
+    },
+    {
+      "start": 885.536,
+      "end": 913.904,
+      "text": "because the designers believed in the idea of perfect autonomy. And so we have the deadly outcome of the two crashes. At the same time, there could be excessive human control, that people make mistakes. And so we are moving towards more and more safeguards, guardrails, interlocks, so that, for example, if you have a self-cleaning oven at home and you turn on self-cleaning, if the"
+    },
+    {
+      "start": 913.904,
+      "end": 942.24,
+      "text": "temperature is above 600 degrees Fahrenheit, it's impossible to open the door because that would be very harmful. And so the idea of preventing human mistakes is very much there. The same model, I'll take a look at medical devices for pain control designs. From World War II, the morphine drip bag provided morphine in a drip, drip pace."
+    },
+    {
+      "start": 942.24,
+      "end": 964.272,
+      "text": "which was good for many patients, but sometimes too much morphine, which could be deadly, or too little morphine, which would not relieve their pain. So automatic dispensers were built to monitor the human heart rate and breathing rates to better control it, but then it could not determine the pain level."
+    },
+    {
+      "start": 964.272,
+      "end": 985.408,
+      "text": "And so patient-guided dispensers gave humans more control, a trigger by which they could get more morphine. But there were limitations to prevent excessive morphine. So that got built in. But where we're moving to now is patient-guided, clinician-monitored systems where a central control center in them."
+    },
+    {
+      "start": 985.408,
+      "end": 1014.464,
+      "text": "And a hospital might monitor 50 of these devices and can provide supervisory control to see where they're going and collect the evidence about performance. And that evidence about performance can be used to do preventive maintenance, but also to improve the design over time. So that's how this two-dimensional framework plays out here. One more example is in wheelchairs, the push chair of the 1920s."
+    },
+    {
+      "start": 1014.464,
+      "end": 1042.336,
+      "text": "was a heavy chair that required a caretaker and low automation, but then robotic devices that automatically took patients in wheelchairs were built and hand-powered user-guided ones instilling human autonomy and control became a great opening up of possibilities to give patients more of freedom of their own, but also led to creative notions like"
+    },
+    {
+      "start": 1042.336,
+      "end": 1059.136,
+      "text": "wheelchair basketball, wheelchair races, and so on. And the current directions are toward motorized, joystick-controlled, tele-operated, and programmable, so that there's a control center that will monitor thousands of wheelchairs."
+    },
+    {
+      "start": 1059.136,
+      "end": 1084.016,
+      "text": "and be able to collect data to improve the quality of designs and even to improve the quality of the sidewalks that they run over, collecting the vibration data and providing cities with the information they need to improve their sidewalks to make it better for wheelchair use. So that's this framework."
+    },
+    {
+      "start": 1084.016,
+      "end": 1109.536,
+      "text": "which I see more and more applied in a wide variety of applications. And it opens my mind to these new possibilities. The second notion I want to convey today is the shift in design metaphors and the ways of thinking and the very language we use and the images we present. You'll notice in my imagery, it's always people, people using technology."
+    },
+    {
+      "start": 1109.536,
+      "end": 1137.744,
+      "text": "That's what we want to see, not machines and robots doing it, but people doing what they need to do, facilitated by technology. And that shift is brought home by this characterization of one set of compelling design metaphors that have been in place for 30, 40 years in the AI community, the notion of intelligent agents."
+    },
+    {
+      "start": 1137.744,
+      "end": 1160.352,
+      "text": "The notion of teammates, collaborators and partners, assured autonomy and social robots. These are the language we hear and we hear about these being inevitable. And this is the only way forward in the future. I do not accept it. I think there's another view of the future, maybe less compelling and less exciting."
+    },
+    {
+      "start": 1160.352,
+      "end": 1189.088,
+      "text": "but more successful commercially and more human-centered. The notions, the language I use is super tools, telebots, control centers, and active appliances. Let's take a look at these. And of course, there are ways that you can combine these notions, but I hope you will take in. It's not easy to change language and to change thinking, but I hope some of these terms will be helpful to you."
+    },
+    {
+      "start": 1189.088,
+      "end": 1217.28,
+      "text": "It's important to remember the guiding forces that robots are simply not people, as Margaret Bowden said. Humans, not robots, are responsible agents. That's really why we need these new design metaphors. Only humans are liable legally and morally for the actions of machines. And, you know, it provides a clarity about design because if humans are responsible."
+    },
+    {
+      "start": 1217.28,
+      "end": 1245.456,
+      "text": "then computers are not in the same category. They're a different category. We want to take advantage of the distinctive capabilities of computers, the sophisticated algorithms, huge databases, superhuman sensors, information abundant displays, and powerful effectors. And if you believe in an autonomous notion, then you may ignore some of these possibilities, as we saw in many other."
+    },
+    {
+      "start": 1245.456,
+      "end": 1272.224,
+      "text": "failures of AI systems. And then what we always want to do is support human creativity. The passion, empathy, humility, and intuition of humans is special. And we want to support that as best we can. And here's how it works in my world. Super tools include the digital cameras I've already mentioned. Users have a great degree of control before they take the picture, after they take the picture."
+    },
+    {
+      "start": 1272.224,
+      "end": 1299.888,
+      "text": "gives them many ways to do settings and different kinds of photos. They can change the lighting, the shadows, the luminance, the brilliance, the color balance, et cetera, et cetera. And so users are in control with a high degree of automation and a high degree of AI built into these systems in a very effective way. It's an excellent example of design."
+    },
+    {
+      "start": 1299.888,
+      "end": 1328.864,
+      "text": "Similarly, the navigation choices in global positioning systems where, in this case, I've asked for a trip from the White House to College Park, the University of Maryland, just eight miles away. And the system provides three choices, gives me a recommendation, shows the current information, lots of AI, lots of machine learning. But it's very much users in control and they can."
+    },
+    {
+      "start": 1328.864,
+      "end": 1356.544,
+      "text": "I'll preview the route. And then when they begin, they can always change. It's not locked in. They're in control. They can change the route. They can change the destination. It's a human-centered design. And that's why it's so effective. And we see again and again, the effective designs are ones that give humans control. Similarly, the successful notions of text autocompletion and search autocompletion."
+    },
+    {
+      "start": 1356.544,
+      "end": 1385.184,
+      "text": "It gives the users recommendations from which they can choose or ignore. Spelling correction is the same idea. These are widely used tools. We come to accept them as part of our family of digital technologies. Another form of super tool is the information abundant display. In this case, the Bloomberg terminal provides a great deal of information. It's a great success story."
+    },
+    {
+      "start": 1385.184,
+      "end": 1413.952,
+      "text": "Bloomberg processes 1.6 million articles every day. And natural language processing algorithms are very central to the success of this system. And its success is enormous. Success is that 300,000 people pay more than $20,000 a year to have this on their desk. And so we see the principles of information abundance, of tiled non-overlap displays."
+    },
+    {
+      "start": 1413.952,
+      "end": 1441.792,
+      "text": "tailored to user needs and the idea of data exploration to support the rich and rapid decision making, often in financial but other situations as well. So the Bloomberg terminals become a notion of for every field we need a Bloomberg terminal. For your home, you also want active appliances, low cost, widely used, reliable devices from Google's Nest."
+    },
+    {
+      "start": 1441.792,
+      "end": 1468.72,
+      "text": "to rice cookers and coffee makers and Roomba. And all those appliances are increasingly infused with AI technologies, machine learning and algorithms to make these more effective and to make your life better. And they are very much the kind of success stories of the present and the future."
+    },
+    {
+      "start": 1468.72,
+      "end": 1490.288,
+      "text": "I mentioned the cardiac pacemaker embedded in your chest. The old versions were autonomous, but as we grow more capable, they now have a user control panel that users or patients can themselves set the parameters for the pacemaker. And then they're monitored by their clinicians."
+    },
+    {
+      "start": 1490.288,
+      "end": 1519.344,
+      "text": "And the Medtronic company, which will get an overview of tens of thousands of users so as to understand that what works and to improve the machine learning algorithms that will make it better for everyone. So we've moved from an autonomous design to an active appliance and a control center model. The control centers are visible in examples like the Mars rovers that NASA operates."
+    },
+    {
+      "start": 1519.344,
+      "end": 1544.896,
+      "text": "On one hand, they're labeled as autonomous. And yes, they can move, avoiding obstacles or precipices. They can turn their solar panels or their antenna to be optimally done or quite automatically. But at the same time, NASA maintains a control center with about 80 people who operate this autonomous device remotely, who manage the."
+    },
+    {
+      "start": 1544.896,
+      "end": 1570.864,
+      "text": "the overall plans and decide what to do when problems arise. So I would call this a telebot and hope to convey the idea that it's a remote and operated device. And similarly, surgical devices. The newspapers love to report that robot surgeons are better than human surgeons, but that comparison is a false, misleading, problematic one."
+    },
+    {
+      "start": 1570.864,
+      "end": 1598.704,
+      "text": "As the manufacturer says, robots don't perform surgery. Your surgeon performs surgery with da Vinci by using instruments that he or she guides via a console. This amplifies human performance and ability, allowing the surgeon to go very precisely deep into body cavities and make careful movements that they could not make any other way. And so it amplifies."
+    },
+    {
+      "start": 1598.704,
+      "end": 1627.728,
+      "text": "It augments, it empowers and enhances their human abilities. And the control center notion here, a hospital which monitors the operations of the hospital, not just the emergency room, but patients in many different wards to keep track of what's happening, to see how the equipment's performing and improve performance over time. So the growth of control centers is another key idea."
+    },
+    {
+      "start": 1627.824,
+      "end": 1647.536,
+      "text": "Here, a larger one. You can see people working closely together. And again, the notion of information abundant user interface displays is central to the success of these widely growing designs. OK, so that's the second. The third is the governance structures."
+    },
+    {
+      "start": 1647.536,
+      "end": 1675.232,
+      "text": "This is a more complicated one, so I will be brief. But we have to go from the ethical principles that we all share of responsible, humane AI to the design principles. For me, there's a rich structure of the software engineers, the teams, the organizations they work in, where there may be dozens of software teams, the industries."
+    },
+    {
+      "start": 1675.232,
+      "end": 1697.008,
+      "text": "those organizations work in, and the government regulation around. So there are 15 aspects. I'll just be brief about them here and focus on one or two of these examples. But the paper gives you a beginning point of understanding these in greater depth. So I'm going to focus on the team aspects."
+    },
+    {
+      "start": 1697.008,
+      "end": 1718.08,
+      "text": "And there are five recommendations there. There's two I'd like to stress, the audit trails and analysis tools, the idea of tracking what a system does. The flight data recorders in aviation have been hugely important in their success and safety. And we need essentially a flight data recorder for every robot."
+    },
+    {
+      "start": 1718.08,
+      "end": 1745.28,
+      "text": "so that when things go wrong, there's retrospective analyses to understand what went wrong and to prevent it from ever happening again. And so that's a central principle. And we need the analysis tools to go with it. I might add also incident reporting systems. NASA and the Food and Drug Administration all have systems that allow reporting of adverse events."
+    },
+    {
+      "start": 1745.28,
+      "end": 1774.736,
+      "text": "And that provides further evidence of what went wrong. And so that's another important part. You may want to look at the partnership on AI as an AI incident database with already more than a thousand reports of AI failures so that we can understand the patterns and increase the success stories. I'm going to focus on explainable user interfaces and give one example here."
+    },
+    {
+      "start": 1774.736,
+      "end": 1797.696,
+      "text": "That research topic has flourished, especially starting in Europe because of the GDPR regulations that ensure the right to an explanation. And that's a very positive thing, not only the explanation for the users or those affected, but for the developers. And the evidence grows daily."
+    },
+    {
+      "start": 1797.696,
+      "end": 1824.672,
+      "text": "that explainable user interfaces are better because they help the designers make them even stronger and more reliable. Now, that huge research of maybe more than 10,000 papers on explainable user interfaces, or XAI as it's sometimes called, focus on the notion of retrospective explanations. The assumption is the AI machine"
+    },
+    {
+      "start": 1824.672,
+      "end": 1844.256,
+      "text": "has made a decision about a hiring, about a medical decision, about a parole application, about a mortgage application. And the system gives a decision. And then the user says, why did I get that decision? And the retrospective explanation goes into play."
+    },
+    {
+      "start": 1844.256,
+      "end": 1872.832,
+      "text": "The main discussion is whether local or global explanations are the best. Local talk very specifically about the user's individual needs and requests. And then the global explains how the system works. What's the neural net? How machine learning operates? And this is the current way. I would like to propose a new perspective, which is to prevent the confusion and surprise that requires explanation."
+    },
+    {
+      "start": 1872.832,
+      "end": 1897.584,
+      "text": "And this is the common practice that happened began 30 years ago with knowledge based expert systems and the shift towards a rule based business system, which made step by step movements with explanations along the way. The mature versions of this are Amazon's e-commerce process for checkout, which provides a very systematic approach."
+    },
+    {
+      "start": 1897.584,
+      "end": 1926.656,
+      "text": "that lets you understand each step in the process. So I'm interested in prospective user interfaces that are interactive, visual, and support exploration. Let me take a look at a very simplified example. A common case is the mortgage loan explanation. This is a traditional approach, the post hoc report. The mortgage amount you request is $375,000. The monthly"
+    },
+    {
+      "start": 1926.656,
+      "end": 1953.808,
+      "text": "income here, the liquid assets you click submit, and you get what's considered to be a pretty good explanation for a retrospective system. We're sorry, your mortgage loan was not approved. You might be approved if you reduce the mortgage amount requested, increase your household monthly income, or increase your liquid assets. That's pretty good, but"
+    },
+    {
+      "start": 1953.808,
+      "end": 1983.36,
+      "text": "You don't know how much. You don't know which one will have the greatest influence. An alternate model would be this one, a slider-based prospective user interface that as you move the slider, it changes the amount of blue in your score, and your goal is to reach the score needed for approval. So if you reduce the amount requested for the mortgage, you get a higher score. If you increase your household monthly income,"
+    },
+    {
+      "start": 1983.36,
+      "end": 2011.904,
+      "text": "you'll see an increase in your score. If you increase your liquid assets, maybe borrowing from family members, you can also reach. This interface allows users to explore the sequential nature of this and to see if it's a linear or quadratic functions. And so sensitivity analysis becomes a possible alternative. And these strategies are becoming implemented."
+    },
+    {
+      "start": 2011.904,
+      "end": 2039.264,
+      "text": "banking systems, and many others. This was a charming one I found from England, where some librarians put up this system, slider-based, which would let you find novels to read. And you could select four of the sliders. So you could choose the degree of funny versus serious, beautiful versus disgusting, no sexual content to explicit sexual."
+    },
+    {
+      "start": 2039.264,
+      "end": 2066.224,
+      "text": "optimistic to bleak. And as you shift these sliders, the covers change to give you an idea. This notion, very simple one, was implemented in many systems like newspaper ones, where one case you had sliders for politics, sports, and entertainment. And as you move them, the recommendation window would update to give you a clearer picture. This is also in a"
+    },
+    {
+      "start": 2066.224,
+      "end": 2095.392,
+      "text": "Music recommender, we have five of Spotify's 14 variables are used as sliders. Acousticness, instrumentalness, danceability, valence, and energy. And as you move them, the recommendations change. The OECD's control panel for better life index shows a similar design. And so, okay, that's the notion there. So I've come to the end and the summary is with three pictures."
+    },
+    {
+      "start": 2095.392,
+      "end": 2125.376,
+      "text": "three images that I hope will register with you. The idea of the framework that opens up from one dimensional to two dimensional. Yes, I know, maybe three dimensional, maybe four dimensional, but let's at least go to a two dimensional version to help us think through the design possibilities for different systems and how the same system could be implemented in each of these different quadrants. The second"
+    },
+    {
+      "start": 2125.376,
+      "end": 2155.056,
+      "text": "is the design metaphors that I want to encourage you to shift the language and the visual imagery and the way we think about design. And I advocate super tools, telebots, control centers, and active appliances. And the third idea, the third foundation is the governance structures. This is a larger issue. And in fact, it takes almost a half of the book."
+    },
+    {
+      "start": 2155.056,
+      "end": 2181.024,
+      "text": "to fully describe all of these possibilities. But these are the practical ways in which the ideas of what we mean by human-centered get translated into a set of processes, guidelines, and principles by which we can build real systems, by which we can evaluate and measure them to see if they adhere to the goals we set."
+    },
+    {
+      "start": 2181.024,
+      "end": 2209.712,
+      "text": "I hope this will give you a range of possibilities and think fresh thoughts and realize that sociotechnical systems are embedded in these complex environments. And that's what we need to design. Just one example about independent oversight. The insurance companies play a key role as they do in building and medical and transportation systems. But the question I might ask you is."
+    },
+    {
+      "start": 2209.712,
+      "end": 2239.568,
+      "text": "What do you think insurance companies will do about premiums for self-driving cars? Will premiums for self-driving cars be higher than usual cars or lower? If they were higher, I would send a message that says there's something wrong. These are dangerous. If they're lower, that would be a great support for the growth in the industry. So I'll start with a simple question of, do you think Tesla..."
+    },
+    {
+      "start": 2239.568,
+      "end": 2269.008,
+      "text": "cars are safe or safer than regular cars. And the starting point is how many deaths do you think there have been with Tesla cars? And I used to think three, four, five, maybe a dozen that we've heard stories about, but there is a website called tesladeaths.com, tesladeaths.com. And last time I looked at that, there were more than 200 reports of deaths. Now we don't really know how many of them."
+    },
+    {
+      "start": 2269.008,
+      "end": 2298.864,
+      "text": "were taking place on autopilot or how many were caused by a variety of different circumstances. So that does not give us the data we need. But Tesla assures us that Tesla cars are safer than usual cars. And yet we don't have the way to verify that report. Just a month ago in the U.S., the National Highway Transportation Safety Administration opened up an investigation of 11 cases."
+    },
+    {
+      "start": 2298.864,
+      "end": 2326.176,
+      "text": "of Tesla cars on autopilot that crashed into fire and police and medical vehicles that had come to the site of an emergency. It caused one death, but quite a few injuries. And so that investigation may help us better understand and may give the data that the insurance companies need. They're very eager to know."
+    },
+    {
+      "start": 2326.176,
+      "end": 2355.328,
+      "text": "from incident reports and from audit trails, what is going on? Because at this point, they have no basis for risk portfolio analysis. Okay, so that's this rich picture of governance structures. And I encourage you to take a look at my website and the set of three foundational papers published in the past year, which laid the foundation for the book. And the book will be out soon."
+    },
+    {
+      "start": 2355.328,
+      "end": 2380.896,
+      "text": "Again, my cover here, and I appreciate the warm responses I've had from many. Alan Mackworth at the University of British Columbia said, the book is well-structured and a delight to read. The coverage is comprehensive, but it will be controversial. And indeed, it may well be controversial, but I invite that controversy. I have a passionate belief in the importance."
+    },
+    {
+      "start": 2380.896,
+      "end": 2410.496,
+      "text": "of moving towards human-centered thinking. And I hope you'll gain that passion as well and join the group and community who are increasingly moving to say there is a different view of the future. There is a different view. And that view is, for me, captured in this summary diagram. But I'd like to invite you to a future that's human-centered and encourage you to join the Google group."
+    },
+    {
+      "start": 2410.496,
+      "end": 2437.184,
+      "text": "that has now almost 1,700 members just in a few months. Our Twitter account, follow us on Twitter or come to the website for resources about this topic and help us build these resources to be even stronger. And so that's the end. The future for me is human-centered. I hope it is for you. And I hope this has been a way of opening your thinking."
+    },
+    {
+      "start": 2437.184,
+      "end": 2465.088,
+      "text": "I invite your questions. Thank you very much again to Hannes Wirtner and Alison Stein. Well, thank you very much for a fantastic presentation. I didn't think you were going to keep concise with all those slides, but you did. It's wonderful. Floor is now open for questions. We have one in the chat. I can also. You know, exploit my."
+    },
+    {
+      "start": 2465.088,
+      "end": 2494.992,
+      "text": "moderator's prerogative and ask one myself, but just let me get a sense of the room. I see a hand already from Moshe, and then we have Benjamin Gregg. So Moshe, why don't you fire away? And then Benjamin, if you want to ask your question directly, that'd be great. Thank you for this presentation, Ben. There is another kind of paradigm shift that people discuss, and I want to wonder how you think it's related. It's between AI and IA."
+    },
+    {
+      "start": 2495.056,
+      "end": 2521.472,
+      "text": "with artificial intelligence and intelligence augmentation. They, to me, connote somewhat of a similar philosophy. What are your thoughts on that? Very interesting. Well, of course, intelligence augmentation goes back to 1960, to Doug Engelbart's notion of it. John Markoff's book, Machines of Loving Grace, is a full book that..."
+    },
+    {
+      "start": 2521.472,
+      "end": 2551.328,
+      "text": "goes through the battles between AI and IA. And it's a very interesting and readable book that I encourage you to take a look at. But it's more of a historical perspective. And that notion no longer seems relevant to me. I think if I had to choose one, I would choose intelligence augmentation. But Moshe, we're in a world that gives us the chance to choose both. And so we want artificial intelligence."
+    },
+    {
+      "start": 2551.328,
+      "end": 2575.472,
+      "text": "that supports human augmentation. So I think we can get both. That's what the HCAI framework suggests, that you can have high levels of AI and high levels of augmentation that give human control. You want to respond to that? No, I mean, I think that it looks to me like this."
+    },
+    {
+      "start": 2575.472,
+      "end": 2605.328,
+      "text": "Two trains of thoughts kind of converging at some point. Yes. Putting the human in the center in some sense in both perspectives. Right. You can get both. And if you look at Google's PAIR guidelines, people in AI research, their guidelines document, it does leave the door open to say that they show about how you might do it by AI and how you might do it by IA. But they do say."
+    },
+    {
+      "start": 2605.616,
+      "end": 2633.776,
+      "text": "Clever designers can find ways to get both. And that's what we want to be, clever designers. Thank you. Benjamin Gregg? That's great. Yes. Can you hear me? Yeah. Thank you very much. Marvelous presentation. Very accessible. I look forward to reading the book. I hope it's equally accessible. In that case, I will be able to understand it well. My question."
+    },
+    {
+      "start": 2633.872,
+      "end": 2660.48,
+      "text": "goes to the political realm where I want to emphasize for a liberal democratic political community, human responsibility is paramount. Now, it's amazing to me that we, not only in the United States, but certainly in the United States, do have difficulty counting ballots."
+    },
+    {
+      "start": 2660.48,
+      "end": 2690.288,
+      "text": "Especially, you know, the system works when there is a great difference between the two candidates. But when it's close, we have very significant problems. And it would seem to me that it would be possible to deploy AI to help us get accurate accounts that would be persuasive to voters in terms of."
+    },
+    {
+      "start": 2690.288,
+      "end": 2718.496,
+      "text": "the integrity of the vote. And yet at the same time, I wonder if there is a problem that seems to have surfaced several times in your own presentation with the fear of many people, a kind of technology and of"
+    },
+    {
+      "start": 2718.496,
+      "end": 2745.152,
+      "text": "responsibility being taken away from them when technology is deployed. I would be grateful for your thoughts on this particular issue. Well, voting systems are a complex issue. Barbara Simons, a dear colleague, former ACM president and winner of the ACM Policy Award."
+    },
+    {
+      "start": 2745.152,
+      "end": 2773.088,
+      "text": "last year, was a great advocate. She worked for IBM, was a very strong technologist, but she stood for paper ballots. And that is a way that, you know, you overcome one of the concerns you raise, which is that the machine somehow is mysterious and hidden. So she favors the approach of human control. And the observers at election wards"
+    },
+    {
+      "start": 2773.088,
+      "end": 2801.312,
+      "text": "across the US are both Democratic and Republican. And when you can see the paper ballots and when you can recount them, it should improve the trustworthiness of that system. The US is in a tragic situation brought about by a history of lies, distortions, and conspiracies that no system can prevent. Actually, I mean, AI has amplified and made those"
+    },
+    {
+      "start": 2801.312,
+      "end": 2831.008,
+      "text": "even more virulent and more viral. And so we have a serious problem for the democratic institutions in the US. I agree with you. AI is widely used. And another response is that the election analyses are very guided by machine learning algorithms to predictive models about how each election ward, each county will go."
+    },
+    {
+      "start": 2831.008,
+      "end": 2859.68,
+      "text": "And those models work pretty well. They're imperfect, but they work pretty well. But the question is, are they trusted by people? And when you have those who oppose these systems and spread lies, then our fundamental democratic systems become undermined. That's one of those forms of adversarial attacks."
+    },
+    {
+      "start": 2859.68,
+      "end": 2889.472,
+      "text": "If we could find ways to put human-centered AI to work to limit those adversarial attacks, that would be great. I certainly, I mean, this is yet a third answer to you. The social media platforms were clearly at fault, clearly failed in their efforts to limit the use of robotic postings and accelerating of the..."
+    },
+    {
+      "start": 2889.472,
+      "end": 2914.24,
+      "text": "you know, the conspiracy and lies. So the governance structures that might have guided Facebook to better algorithms did not succeed in that case. Facebook's oversight board is an oversight board. It's not an independent oversight board. Still, I'm willing to give them a chance and they may have some influence."
+    },
+    {
+      "start": 2914.24,
+      "end": 2941.968,
+      "text": "But I would say Facebook has many tragic aspects which have lately been described very publicly, and we need to understand those better. So I don't think AI is the remedy. I think stronger social courageous efforts by people of influence to ensure that truth is a foundation of democracy. James."
+    },
+    {
+      "start": 2944.944,
+      "end": 2967.472,
+      "text": "Thank you, Ben, for a very nice talk. I look forward to reading the book when it's out. I have a question which sort of follows up on your last response, which is that you made a nice vision for AI working for the benefit of the users of AI, which I think we all would hope that it does."
+    },
+    {
+      "start": 2967.472,
+      "end": 2994.064,
+      "text": "The users are not the ones who build the systems, pay the bills, and the incentives of the companies that make the money and pay the bills are not necessarily aligned with the users. And I think Facebook is a good example. They use AI to keep users engaged so they can show you more ads and create greater revenue. I mean, it's a very sort of simple system that they've perfected."
+    },
+    {
+      "start": 2994.064,
+      "end": 3010.448,
+      "text": "And from their point of view, AI is working extremely well, even if there are some externalities like the destruction of political systems and governments. So how does this fit into the user-centric, the human-centric AI?"
+    },
+    {
+      "start": 3010.448,
+      "end": 3039.856,
+      "text": "You focus on the users, but remember, my model shows many users, many stakeholders, I use the term, which includes the researchers and the government regulators and the managers and businesses. And yes, the dilemma you pose is clear that users may have different values than developers. And so it's that rich community that we need to address and provide."
+    },
+    {
+      "start": 3039.856,
+      "end": 3068.096,
+      "text": "a clarity so that we can understand who's in charge and who's in control. That's the first thing, to understand who's making the decisions and what their motivations are. And from there, we may need tools to rally public support or legal support or government intervention or industry standards. The governance structures provide that as well. We also may make"
+    },
+    {
+      "start": 3068.096,
+      "end": 3095.36,
+      "text": "I didn't mention it, but the safety culture of companies, of organizations that may have dozens of teams, the safety culture is another mechanism. Some would call this high reliability organizations, resilient organizations. I like the term safety culture. And there are five principles there by which companies can do it. And the argument to the companies is this is your competitive advantage."
+    },
+    {
+      "start": 3095.36,
+      "end": 3123.28,
+      "text": "that spending money on a safety culture saves money. Investing in a safety culture saves money because it reduces accidents, it makes for better systems, and it leads to better corporate social responsibility, public image, and hopefully better products and services. So I think you highlight clearly the issue that looking just from a user point of view is not enough."
+    },
+    {
+      "start": 3123.28,
+      "end": 3149.36,
+      "text": "that we have to take a larger systemic approach. And my 15 recommendations for governance are not simple and not easy to implement. There are many partners who have to take action. Would you like to respond to that? Is that something? No, I mean, you know, I can't disagree that there should be a safety culture, but that runs very much against the sort of"
+    },
+    {
+      "start": 3149.36,
+      "end": 3177.696,
+      "text": "move fast, break things culture of the organizations that are creating these new systems, the new AI systems. You know, the whole model out there is sort of going in the opposite direction of what you're advocating. That's a little too strong. Yes, the history is of move fast and break things, but the reports, the wonderful detailed documentation of Cathy O'Neill's book on weapons of mass destruction."
+    },
+    {
+      "start": 3177.696,
+      "end": 3202.224,
+      "text": "Shoshana Zuboff's Surveillance Capitalism, Kate Crawford's Atlas of AI. All of these are documenting the problems that have occurred. And there's a growing awareness, both in government and industry and the journalists and the public, that something needs to change. So I'm an optimist, James, and I'd like to."
+    },
+    {
+      "start": 3202.224,
+      "end": 3231.568,
+      "text": "Hope that the future will be better. It does require each of us to stand up and speak up for what we believe. Thank you. Thank you. We have one minute left. So, Hannes, you'll get the final question and hopefully it'll be a quick answer. I think you're muted. Hannes, you're muted. Yep. You're still muted. Now I'm not muted. OK. Yeah."
+    },
+    {
+      "start": 3231.792,
+      "end": 3261.088,
+      "text": "Thanks for the excellent presentation. I would like to follow up to Jim's question somehow, because I fully understand now the use in the loop during the use. But I was somehow wondering in your governance structure picture, where is the user in the governance? Because you have the team, you have the company, you have the organization. Where is the user? But where is the user in this, let's say, engineering approach in the design?"
+    },
+    {
+      "start": 3261.088,
+      "end": 3284.096,
+      "text": "Here's my bumper sticker. Humans in the group, computers in the loop. OK. The notion of humans in the loop is an old one and it's OK, but it's done and spoken in a disparaging way in the sense of if we have to, we'll put humans in the loop."
+    },
+    {
+      "start": 3284.096,
+      "end": 3313.248,
+      "text": "But the goal of many in the AI community is to make fully autonomous systems. So I would suggest the bumper sticker here. Humans in the group. Humans are social. They're connected. They work in organizations. And we need computers in the loop. And I hope my imagery throughout the talk shows people working together, connected and supported by technology. But that's my message. Humans in the group. Computers in the loop."
+    },
+    {
+      "start": 3313.248,
+      "end": 3342.016,
+      "text": "And that's a wonderful message on which to close. Please join me in thanking Professor Schneiderman for a fantastic talk and joining us here today. Thank you for the opportunity. Let's get to work. Absolutely. Absolutely. Let's go to the music. Peter. I'm on it."
+    },
+    {
+      "start": 3342.016,
+      "end": 3370.64,
+      "text": "I hope you can see my screen by now. All right, so for the final notes today, this was really easy, actually, as Ben had two suggestions for music to be played. Appalachian Spring by Aaron Copland, which we heard in the beginning, and also Violin Concerto by Mozart, as well as the suggestion to begin with a piece, which there's a chance we'll adopt for future"
+    },
+    {
+      "start": 3370.64,
+      "end": 3397.584,
+      "text": "future lectures. So that's a great evolution here of the music presence in the lecture series. So in terms of references and compositions, these two pieces are a very nice exchange between the US and Austria, of course. We started with Copland's Appalachian Spring, performed by the New York Philharmonic, conducted by Leonard Bernstein, and now we'll end on Mozart's Violin Concerto No. 2 in D."
+    },
+    {
+      "start": 3397.584,
+      "end": 3418.416,
+      "text": "kirk for tennis 211 third movement rondo allegro um performed by gilon crema accompanied by the vienna philharmonic orchestra and conducted by nicholas i want to highlight that that both of these pieces are the allegro illegal pieces so that's the kind of message we want to we want to send here"
+    },
+    {
+      "start": 3418.416,
+      "end": 3444.72,
+      "text": "um before i play it let me announce the next event in our lecture series on november 9th mark rotenberg of the center for ai and digital policy in the us will speak on artificial intelligence and democratic values what is the path forward and paul timmers will moderate this lecture so that's it for today thanks to ben for for the great presentation allison for moderating and and all for your participation"
+    },
+    {
+      "start": 3444.72,
+      "end": 3449.392,
+      "text": "See you in November. Goodbye and treat yourself to some Mozart."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

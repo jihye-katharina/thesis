@@ -1,0 +1,761 @@
+{
+  "video_id": "neBUPbyNh-s",
+  "source": "whisper",
+  "language": "en",
+  "text": "Hello, everybody. Good evening or good morning or have a good lunch. Welcome to today's lecture. It's already the second of this year, 2023. So we started in 2020. So it's already our third year. It's a long time already for IT terms. Before moving to our lecture of today and the guest of today, I am happy to announce that we. The Digital Humanism Initiative has a new partner, which is the Bavarian Research Institute for Digital Transformation. It's an institute within the Bavarian Academy of Science and Humanities. The institute deals with many aspects, not all, but maybe all aspects of digital transformation. And it's also dealing with digital humanism. So they have a branch on digital humanism. And this is the reason they are joining us. And I'm happy and I'm grateful for their cooperation and thanks for joining and also for distributing the news of digital humanism. For the lecture of today, we have a special guest. It's Dina Peterson from Rice University US, Austin. She's speaking on technology, abstraction, power and responsibility. And Dina, thanks a lot for being with us and taking this. And I take this opportunity really to thank. She will be introduced later in more detail by Carlo Ghezzi, who is the moderator of the day. Short, as you know already, the moderation, the choreography of the day. So we have first a talk of 30 minutes by Tina, then we have 30 minutes Q&A, moderated by Carlo. And at the end, as always, we have a piece of music. If you look at YouTube, we already have a music stream there. And the music is proposed by Tina. And thanks for proposing that. And it will be managed by Peter Knez. Thanks, Peter, for that. Now I would like to hand over to Carlo. I would like to welcome you, Carlo Ghezzi, a polytechnic of Milano. He's a digital humanist of the first hour since the early beginning. And I think I do not need to introduce you, Carlo. Thanks for being us, and thanks for being with us from the early beginning. The floor is yours. Thank you very much, Hannes. I'm very glad to be with you this afternoon, and I'm very glad to... you know, chair this seminar today, which is given by Tina Peterson. Tina is an assistant professor of instruction in the Department of Computer Science at the University of Texas at Austin, where she teaches undergraduate and graduate courses on ethics and social responsibility in computer science, including AI and robotics. She got her bachelor degree in journalism from the University of Colorado and the master degree in critical theory and cultural studies from the University of Nottingham and a Ph.D. degree in mass media and communication from Temple University. And as I said, she is now in a computer science department. So quite diverse background and experience, like other speakers in this seminar series. She has a very broad background and she's like, let's say, an example of what it means to cross the boundaries of traditional disciplinary borders, something that we need. to have more and more to create digital humanism. Among other things, she recently co-authored a very nice paper on abstracted power and responsibility, which is mostly the subject of her talk today and has been published on IEEE transactions. Actually, I didn't know that these transactions existed. on something like technology and society, or I forgot the name, but she will probably say something about it. Tina, the floor is yours. Thank you, Carlo, for that kind introduction. Good morning and afternoon and evening to all of you. Thank you for joining me today. I want to thank my colleague and co-author, Moshe Vardy, for nominating me as a participant in this series. When Moshe and Hannes invited me to deliver this talk, I looked over the roster of past presenters in the series. I'm humbled by the distinguished company of this group, and I want to start by distinguishing myself as a researcher, or situating myself as an educator rather than a researcher, like so many others in this series are. What I will present today is a concept that I have used quite successfully in my computer science ethics classes, and which I describe in the article Carlo just mentioned with my co-authors, Moshe and Rodrigo Ferreira. I'll share assignments and prompts that I've given to my students to try to drive this concept home and some of the reactions they've had to the material. I hope to make this talk more of a conversation than a lecture. I tend not to lecture for more than 20 minutes at a time in my classroom, and then I ask my students for their perspectives. I invite all of you to participate actively today, whether that's in the chat pane, which I have open, or by raising your digital hand. I'd like to begin by sharing. Actually, I'd like to begin by drinking some of my tea. And clearing my throat one more time. I'd like to begin by sharing a familiar experiment and encouraging you all to look at it in a different way. Many of you probably recognize the setup and the name associated with this experiment. In 1961, social psychologist Stanley Milgram set out to examine obedience to authority. In his experimental setup, which you see here, the subject called the teacher was instructed to help the learner with a memorization task. Specifically, the subject was told that the experiment would test the effect of punishment on learning ability. The punishment would be electric shocks that the teacher would give to the learner through a panel with switches. What the teacher didn't know was that the learner. that they would be shocking was actually another staff member who was working with the psychologist, what's called a confederate, so to speak. Milgram was greatly disturbed by what he observed in this. 65% of the subjects administered up to the maximum level of electric shock to the learner when they were prompted to do so by the experimenter. Some subjects continued to administer stronger and stronger shocks, even after the learner could be heard screaming in pain. on the other side of the one-way mirror. It's this one-way mirror in the experimental setup that is of most interest to me. We can see clearly in this photo from the reflection of the photographer in the panel on the right that the teacher sitting at the panel of switches was prevented from seeing the impact of their actions. The teacher who believed they were administering painful shocks could not see the learner who they believed was receiving them. I would like to ask all of you in the audience how you think the experiment might have turned out differently if the setup had been so that the subject had been able to see the person that they were hurting. Obviously this would have required more acting on the part of the person pretending to be shocked, but let's assume that they were talented performers who could believably fake this? If the subject could see the other person they believed they were hurting, how might this outcome have changed? If you want to share a thought, please raise your digital hand or type a comment in the chat pane. How might this experiment have turned out differently? All right, I think some people might be thinking as they type in the chat pane, but I'll share with you how I think this might have been different. Philip says he doubts it would have turned out differently. Not too much, unfortunately, says another person. You may be right. It could be that it would have turned out exactly the same way. It's hard to know. Human behavior is very complicated. There are a lot of things going on. in this interaction among humans. But one of the factors that I believe enabled the subject to continue to cause pain to the other was the fact that the humanity of the other person was abstracted via the machine and the one-way mirror. The subject, who believed they were giving the shocks, was not touching the person. They were flipping a switch. They weren't touching the other person. They weren't even seeing them. It follows that the subject's power over the other person was abstracted as well. And that brings me to my definition of abstracted power. My colleagues Moshe Vardy, Rodrigo Ferreira, and I define abstracted power in our forthcoming paper in this way. It is a human actor's influence or control over a system, process, or data set. which, as a function of the technology that enables it, obscures or distances the human actor from consequences of that influence or control. And here I would like to, if I can make this work, actually, I'm going to wait until the end to to paste in links to these articles. It's very Google-able. I'm sure you'll be able to find it. It's available as an early access version. on the IEEE Explore website. Also, if you search my name, Tina L. Peterson, you should be able to find my professional site, and there is a PDF of the full preprint article there. You're welcome to look at that. We have this concept of abstracted power. How do we introduce this to students? Well, like many ethics professors, I use the very well-worn and somewhat tired trolley problem in my classes. But I use a variation of this scenario that's quite different from what you may have seen. Rather than positioning the agent at the switch or on a bridge ready to push someone onto the tracks, I put the agent at a computer, completely removed from the scene. When my computer science students see this visual, they understand right away what's going on. The agent is programming the trolley to make a decision. This agent at the desk is writing code. This code will execute, pardon the pun, at an undefined point in the future and determine the path of the trolley that this agent will likely never see. That trolley Driven by their code will impact people the agent will never meet. And I'm going to take a moment and acknowledge the chat comments. Bron, I apologize if I'm mispronouncing. It strikes me that the concept of abstracted power extends beyond just a technologically induced distance. Yes, I agree. And I hope to I hope to gather other perspectives on this at the end of my talk, because I know that this applies more widely than than just technologically induced distance. Eric said loves the variation of the trolley problem. Very educational. Thank you. I like this variation as well. And Enrico says abstraction reminds me of what happens over social media. We're not seeing the other person makes people pay less attention to actual consequences of their actions. You are you are in agreement with my students. They actually brought that up as well. That's what I'm going to talk about next. This visualization resonates with students. I don't give them the full definition that we include in our article, and I don't have to. My computer science students grasp very quickly the difference between the two scenarios, and many of them continue to reference the concept of abstracted power throughout the semester. In fact, as Enrico has done, they start identifying it in new places. Here are just a handful of examples. My students commonly give of power that has been abstracted by technology. A military drone operator is a very obvious case and one with incredibly high stakes. The distance that drone operators may feel from their victims is illustrated quite disturbingly by a term quoted in a 2012 Rolling Stone article by Michael Hastings. He reported that some U.S. soldiers operating the drones referred to the image on their screen. of a human killed in a drone strike as bug splat. The abstraction of these soldiers' power is chillingly clear in that expression. However, most of my students will never be in a position to operate a drone and make life or death decisions at a great distance. A more relatable example that many have given is that of an online restaurant review. When you've had a disappointing meal in a restaurant, it's easy and comfortable to post a negative review of the business once you've returned home. Many of us, if we're being honest, we might say things in an online review that we would never say to the proprietor of the restaurant face to face. Another situation which gives us the comfort of anonymity is an online discussion space or a comment section. Anonymity in these spaces does two things. One, it abstracts the commenter's power and two, their sense of personal responsibility for what they're saying. They cannot see the target of their vitriol, just as the target cannot see them. If they're hidden behind a username and an avatar, they may feel that their behavior online does not connect with them personally. Their power over the other person is abstracted, as is their sense of personal responsibility. And Carlos says abstract abstracted power seems to be intrinsic in any design activity. The difference between design time and runtime introduces abstraction. Yes, absolutely. Sometimes that abstraction is temporal. It can be geographical. It can be cultural. Distance can exist in so many different ways. That's that's true. Here is where I reveal my disciplinary blinders. I see abstracted power as being a problem specific to computer science, because even though I have a background in the humanities, I'm surrounded by scholars and students of computer science all day long. I will ask later in this talk for examples that you, some of you have already shared that you see this in other places, examples that you have observed in your own fields. For now, though, I'd like to address factors that contribute to this phenomenon, specifically among computing professionals. First, there is intermediation by technology. Computing professionals tend not to act directly on other people. They do so through software, hardware, user interfaces, and such. This intermediation allows action at a distance. As I said earlier, geographical distance, temporal distance, cultural distance. It's easier to ignore the consequences of our actions when we're too far away to see them. The second factor is computational thinking, which is essential in the discipline. Computer scientists must work in abstractions in order to perform the complex calculations that are the basis of computing. One cannot compute unless one abstracts, at least to a degree. But as a result of this abstraction, the humanity behind the data is obfuscated. Differences among people become frequency distributions in the data. and vulnerable users become what we call in computer science edge cases. More specifically, advances in artificial intelligence, which we're seeing almost at breakneck speed these days, are also contributing to the abstraction of power. For example, when someone uses a generative model like DALI to create an image of something, they generally don't think about the thousands of artists whose labor created the works that were used to train the model. The people who are most likely to consider the artists of Dolly's training material are artists themselves. It's not abstract to them. It's very real to them. But if you're not an artist, you tend not to think about it. I'm actually the daughter of an artist, so I tend to think about it as well. But for most people, it is rather abstract. Another example is a machine learning system such as. A recidivism risk protector like the COMPAS system that ProPublica investigated a number of years ago in a very good piece called Machine Bias. Such a system finds patterns in hundreds of thousands of records of past human decisions, then makes predictions on new cases based on those patterns. In effect, it enables the humans who made those past decisions to continue to pass judgment ad infinitum. On fellow humans, they'll never meet through an automated system. Let me check in with the chat here. J.K. says making it explicit gives the opportunity and responsibility to take it into account. Yes. Yes, making it explicit. I agree with that. Giuseppe, I apologize for the mispronunciation. The FED, BCE and FMI exert huge abstract power on millions of people. They do not care at the pain they force on entire populations. I'm not familiar with those acronyms. Maybe you could maybe you could say more about that during Q&A. Enrico fully agrees with Carlo and says that's the main motivation for teaching designers of digital systems, the dangers hidden in the abstraction gulf. Ah, I was not familiar with the term abstraction gulf. Thank you for that. I will definitely read up on that. JK says abstraction is a necessary skill for computer science and software engineering, which makes it even more necessary to make it explicit and to consider the dangers. Yes, I completely agree. That's a very good point. We've identified this problem. Power can be easily abstracted by, oh, Giuseppe, thank you. Thank you for clarifying that. Power can be easily abstracted by technological intermediaries and computational thinking, both of which are inevitable in computer science. So then, how can we de-abstract and draw our students' attention to the humanity obscured by the technology? I like to use assignments that add friction to my students' understanding. to make strange that which seems familiar to them. I borrow this expression from Morrison and Wallace, whose paper I've cited here. Their approach of defamiliarization is especially apt and useful. I will also share a link to this paper during the Q&A. One of the first small group assignments I give my students in my computer science ethics classes is to write 10 lines of code to determine how an autonomous vehicle would handle an unavoidable collision. In this assignment, they're essentially programming the trolley problem, but with no constraints on who or what or how many people or objects are on each track. This assignment makes many of them squirm, which is by design. The abstraction made possible by computational thinking and technological intermediation is comfortable. This assignment is meant to disrupt that comfort zone and encourage them to imagine actual people involved in an accident. It is interesting that many of the groups include a clause toward the end of their code that picks a path randomly through a random number generator. When I question them about this, They usually tell me they're more comfortable leaving it up to chance than making a deliberate decision. This is very revealing to me. They are choosing to abstract their own power that rather than make a deliberate decision about the outcome of something, especially a life or death decision. In my 24 hour unplug assignment, the second item here, students collectively create a list of apps that they consider addictive or habit forming. They then abstain from using these apps for 24 hours and then write about the experience. Many of them go into the assignment assuming that because they're computer science students, they are somehow immune to the effects of these apps, maybe because they know how they're made. Most of them are quite surprised to see how difficult it is to quit them, even for a day. And they come away with a more concrete understanding of the power they may have one day. as an employee of a company behind these apps. These are two more assignments that I'd like to talk about. Some of my favorite Black Mirror episodes are Men Against Fire, Nosedive, and 15 Million Merits. I hope I have some fellow Black Mirror fans in the audience today. All of these prove quite thought provoking to students when I assign them to watch these episodes and write papers about them. They see very obvious parallels between the technologies portrayed in each episode and existing technology. Or in the case of the augmented reality system portrayed in Men Against Fire, many students identify parallels between the augmented reality system that changes the soldier's perception of other human beings with the low tech but very effective propaganda used by Nazis to portray particular groups of people as less than human. They get that almost immediately. The last item here. is perhaps my most effective de-abstraction exercise to date. I developed this human stakeholder assignment as part of a graduate level class I co-taught with Peter Stone here at UT last fall. The course was called Intro to Ethical AI and Robotics. For this assignment, we asked students to interview someone who has to use an automated system as part of their job. We advise them specifically to connect with people who don't have technical backgrounds to more accurately represent average human stakeholders who are impacted by such systems. We heard perspectives from an amazingly diverse group of people that students reached out to and were able to interview. We heard from physicians in India. We heard from food delivery drivers in Taiwan and head cashiers in a grocery store right here in Texas. All of them used automated systems. They had to use automated systems as part of their jobs. This assignment was very successful in the very first iteration of our course. Students reported learning a great deal from speaking with people well outside their academic and social circles. They formed real human connections with these people, people they would not have otherwise encountered. Now, one of the underlying goals of all of these assignments is to counter abstraction with human connection. Another place we've seen this working for decades, perhaps centuries is in charity appeals. It is too easy to dismiss news of tragedies and human suffering happening half a world away from us. Charities and aid groups know this. And they encourage donors to give by putting individual human faces on problems that may otherwise seem too big to wrap our heads around. They de-abstract the problem to make it human and to make people care more. We see this in news media as well. Journalists anchor stories about big unwieldy problems with individual accounts of people affected by them. Let me check in with the chat. And Rico just coined abstraction goal. That's great. I love that term. JK used the term abstraction gap in the paper on abstraction in CACM. Oh, that's great. I looked that up. Maybe it's first use to draw the analogy between the underground map and its reality as a geographical map. Ah, great. Thank you for that. I want to end by making the case. for de-abstraction as a kind of tonic for some of the ills that we face in the early 21st century. Computing is not going away. Its power will only continue to grow, and with it inevitably comes computational thinking and technological intermediation. But I would argue that if we can cultivate in our students habits of critical thinking about the distance between them and those affected by their decisions, we can perhaps motivate them to bridge that gap and wrangle meaningfully with their own power. With that, I want to invite all of you to share your perspectives from your own disciplines, as well as any other questions or comments. I thank you for your attention today and I welcome the conversation. Thank you. Thank you very much, Tina, for the timely presentation. We have, you know, our half an hour of question answers that I'm opening to the floor. So please raise your hand if you want to make comments or ask questions. While I don't see any hands, but I have one, actually. which is, again, in the line of trying to force students to think about the abstraction, if you want, and introducing friction. Actually, we live in universities where there's all disciplines. So I was wondering why we are not able. you know, to help students think about the, let's say, the consequences of their design. I'm speaking, you know, in particular for people who are designing software systems, right? So thinking about the possible consequences of the decisions that they make when they design systems by putting, you know, people from different disciplines together in design activities. I think that, you know, we live in an area in universities where, you know, these disciplines are there and the students, you know, from other areas need also to be able to talk to computer science people in, you know, when they develop systems. So is there, are you, do you think this might be useful? Do you have any plans to do it? Why we're not doing it enough? I know that, you know, we have departments, we have curricula, we are bound, you know, by, you know, the silences that we are building ourselves. But maybe it's time to break them in education and also in research. Yes, that's a good point, Carlo. I agree that we need to be much more cross-disciplinary. and interdisciplinary between computer science and many, many other fields. Peter Stone and I co-taught this class, Intro to Ethical AI and Robotics, last fall. This was the first time we'd ever done that. And the students commented in the course evaluations that it was very effective to bring someone with a humanities, social sciences background like me, together with a computer scientist and teach a course together. I think it... We complimented each other's knowledge in a good way. And I had to explain things to him and he had to explain things to me. We learned along with our students. And I think that there was there was a very useful dynamic that encouraged students to think outside. the boxes that they traditionally stay in as computer science grad students. And UT also has an initiative called Good Systems, which is bringing together a lot of people across many disciplines to talk about how to build systems that serve humans better. and can enable humans to be better, even perhaps. So I think that these initiatives are starting up, and I think that they've made more progress at other institutions than at mine sometimes, but I do think that's a trend in the future. I hope it is. Thank you. I see a couple of hands raised. Jeff, you were first. First of all, I'd really like to say thank you very much for your talk. I think it's very timely and absolutely essential that it is considered. I mean, I know that we're only considering it within the sort of computer science and software engineering kind of world at the moment, but it is actually an important aspect within engineering and professional engineering as a whole in terms of the kinds of systems we build. One of the things I have to say I found really disturbing, probably the most disturbing and probably the most indicative of the kinds of students that we often have and teach, is your notion that when you ask the students about the autonomous vehicle, that they chose to do a random result. I mean, this in terms of abrogation of responsibility for the kinds of system you've built is the most frightening. I think, in terms of their reaction. And I applaud the notion that obviously we need to teach ethics and so on. But for me, it still doesn't seem to be quite enough. And I think that example of the autonomous vehicle seems to still show that the kinds of professional practice that we teach and the ethics even that we teach is not enough. Do you think there's more scope for actually doing more? I know that. Carla has actually gone on and I think very well articulated the need for a wider spectrum of people involved in system development. But is there more that we should do? Well, I think one good step would be to make ethics classes required in all computer science and in all engineering programs. And I know they're not in all of them. At UT, we require students to take a class with an ethics flag. to graduate, but that ethics flag can come from a lot of different kinds of classes. Some of them might just be, it might be a moral philosophy class that is not directly related to computer science. And I think that they can still graduate with just that ethics flag in their transcript. I would, if I were in charge, I would make ethics classes required because I, or specifically computer science ethics classes required for anyone graduating with a degree in computer science. And related to your to respond to your first point, I'm also I'm also disturbed by by students choice to use a random number generator to decide the course. And I think that. Unfortunately, this is I don't think that they necessarily mean to avoid responsibility for it, but that they're more comfortable. They say they're more comfortable with with letting chance determine it than to make the decision themselves. And maybe that is abrogation of responsibility or avoidance of responsibility. I don't know. But I agree that it's an interesting reaction. But I like to think that it shows. Oh, is that the assignment has made them uncomfortable with which is exactly what I intend the assignment to do. So maybe it's a good sign. Maybe once they maybe one student stop using that random generator, I'll know that the assignment is working better. But very good observation. Let's see in the chat. Let's see. Oh, I think I have something to do. Oh, Eric, thank you for sharing. Thank you for sharing that link to to my paper. And Sarah says, I believe it is important to teach computer scientists to understand the consequences of the system they use. But how much can individual influence this actually? Because it is a bigger thing that only individual. It is a bigger thing than only individual decisions. That's a good point. And I actually use another variation on the abstracted power trolley problem where there isn't just one person sitting at a desk working on code. It's a group of four people. And I ask the students, how does this change the sense of personal responsibility felt by any one of those people sitting there coding? And we talk about how. You know, software engineering, computer science is done in teams. It's never a lone person writing an entire code base. And this makes it even more important to take personal responsibility for what you're contributing to that code base because it risks getting lost. in everyone else's contribution and then you um and then and then you risk not feeling any responsibility for it because well i was just part of a member of a team unfortunately we saw Potentially an example of this in the internal communications at Boeing regarding the 737 MAX disasters. It seemed like too many people had a little tiny bit of responsibility for those aircraft and nobody stopped and said, this isn't okay. In fact, some software engineers' internal emails surfaced and they were seen. really scoffing at this system that they were designing and saying, you know, would you put your family in one of these aircraft? I sure wouldn't. But they were ready to ship it out to the public, which is, I think that that's a pretty big, also disturbing example of how they felt that their power was abstracted and correspondingly their sense of personal responsibility. Thank you. There is a question by, hand raised by Hannes. Maybe. Oh, yes. Go ahead. Well pronounced, Tina. Thanks for your excellent presentation. I really liked it. I have a different observation because as I see, the abstraction is part of scientific activity. So we cannot we cannot do work scientifically. It's based on models, models of the world, models of some behavior. So abstraction is part of inherently part of. of our activity. I think of nearly every scientific activity. So it's not only computer science. What differentiates computer science or make it differently is that it materializes virtually this abstraction in a sense that we produce tools which materialize this distance between a human or the impact. software has. So I think we are on one side, it's really on this scientific endeavor where without abstraction would not work because you cannot only work on instances of all objects. So you need abstraction to have general rules. But on the other side, we implement it. And this makes computer science differently and maybe also such an important tool for our society. Yes, that's a good observation. I like to compare it with, say, civil engineering. I think it's much harder to have abstraction in civil engineering because you build public infrastructure and then you observe people using it. You build a bridge, you see people cross it. You observe the strength of that structure, the structural integrity of it. With software especially, you build it and then you might never see it execute. You ship it to part off to a code base and you you might never see it in action. And that's why I think the human stakeholder assignment is so useful. to de-abstract this power for students because they talk with people who have no technical expertise and sometimes they might even watch them use a system that they have to use. And I think that's really instructive to students. It might bring the experience of computer science as close to civil engineering as it might ever get. Hannes, did you have something else to add? Because I think there's one major difference because You have our artifacts everywhere. In civil engineering, you have your buildings, you have your bridges, you have your roads. So it's a limited, it's in space, but it's limited. Whereas we have this abstraction, it's first, it's everywhere. It can be used nearly everywhere. And you have this distance in time, in space, in cultural differences. So it's much, I think it's much stronger. And this is due to this virtual aspect we have. We materialize it virtually. So this is somehow. nearly a dialectic contradiction. So I stop just as a second observation. Yes, that's true. And I tell my students that software is so powerful, partly because it runs invisibly to the vast majority of the population. Software is increasingly, it's directing so many processes in our world. And the average person who has no knowledge of computing does not see that, does not see that in action. Eric, you had your hand up? No, no. Oh, sorry. Sorry, Carlo. Go ahead. No, no. It's George next. Oh, I'm sorry. Sorry. Go ahead. Thanks on my side to Tina. My question is the following. Suppose that the abstraction is successful and the designer. has a full view of the consequences, not only cares about the consequences, but then can actually see them. But while looking at them, he finds, as is often the case, that there are good ones and there are bad ones among the consequences. Where does the responsibility end? Does it suffice to point out that there are good and bad? Or does his or her responsibility extend to integrating tools for empowering the good and guarding against the bad? Good question. I encourage my students to think about all the it's difficult to think about the unforeseen uses of a particular technology, because by definition, you cannot anticipate them. But I encourage them to. Because everybody wants to think about the good uses of something that they're putting out into the world. It's more difficult to imagine how it may be twisted and used in a negative way. I encourage my students to do what I call putting their bad guy hat on. Put their bad guy hat on and imagine a nefarious actor using this technology and what would they do with it? Now, where does our responsibility end? with regard to future uses of the technology we create, that's a question that I've never come up with a satisfying answer for. I ask my students this every semester. They wrangle with it. Not all of them agree that they need to follow the technology that they create to make sure that no one ever does anything bad with it, because I don't know if that's possible. The 21st century is very collaborative and it's all about creative commons and putting your work out there. And, you know, the open source movement is all about putting things out there and making them available for other people. I do think, though, that the open source community has a very good sort of ethos about watching what's done with their work and sort of keeping tabs on it, which I think is useful. To sort of to more thoroughly answer your question, I don't have a good answer to that, but it is one that I post to my students and I hope that I make them think about that, how much response, how far their responsibility extends. Thank you. Eric, you're next. Many thanks and thank you for the talk. I think philosophically, the abstracted power concept is particularly interesting in connecting it. to especially computings, because I mean, this is obviously an area where this effect will be frequent, because I think so far it has been mostly debated in the change of weapons that increase the distance from our victims. And I think computing is really a different beast here. But on your final slide, when you presented your final slide, I think I heard you say You mentioned computational thinking, and if I understood you correctly, you mentioned it as something problematic, which I find interesting because I think when the term was originally coined, I think by Janet Wing very much, she always propagated it as a useful term. to be used in teaching computing concepts to basically all, especially science students, but everybody. And until today, I thought it was actually a useful thing to be used in biology, for example. But did I understand you correctly that you find it problematic? The example that you have given is, of course, one that could be highly problematic, but I'm not sure it is necessarily to be connected with computational thinking. So that's my question and comment. I do agree that computational thinking can be very positive. And I think that I think, honestly, it's an essential 21st century skill. I think that as we are as we are using computing. and artificial intelligence more in our everyday lives, equipping average people, people who don't have computer science degrees, equipping average people with the habits of computational thinking can actually be very useful, and it can enable them to succeed more in the 21st century. So I don't think it's a negative necessarily. I think that it's more a disciplinary habit that like all disciplinary habits, it's useful to to push back on it from time to time and see what what kinds of habits of thinking is this pushing us into? And what is this habit of thinking encouraging us to ignore? But I definitely don't think computational thinking is a negative. I didn't mean to position it as such. I just think it's an inevitable habit that is essential to computer science. But like any disciplinary habit, we should critically examine it and sort of see what it's encouraging us to pay attention to and what it's encouraging us to ignore. Thank you. Let me take a look at the chat pane because it's very active in the last few minutes. Walter, thank you for sharing that quote. That was a very unfortunate quote about the Boeing 737 MAX. Let me see. Braun said a while back, I'm sorry for ignoring this, software programming in particular is known to be seductive and even addictive and attracts personalities who are much more focused on the technology than more traditional engineering disciplines. Time spent on learning and understanding parties affected by their inventions is time that diverts them from the part they enjoy most, programming. I think that's true of some computer science students, but not all of them. I do believe I know this because I've met a critical mass of them. There are plenty of computer science students in my classes who are genuinely worried about the power that they and their their cohort, others in their cohort have. want to use that power in a more positive direction. So I do think it's true of some computer scientists and some computer science students, but certainly not all of them. I think that there's a lot of care increasingly being taken by people to focus, to expand their vision and not just think about the kind of gee whiz aspects of the technology. Can I comment on that? Sure. OK, yeah, I'm actually a practitioner, not an academic, maybe somewhat different from the rest of the folks here or most of the folks here. And I can tell you that in practice, the fact is that a lot of software developers, I don't know what they were like as students, but a lot of software developers, first of all, even dislike the whole concept of worrying about. an end user, and forget about the fact that it's more than just the end user that they have to worry about, right? In fact, I have an article where I said end user considered harmful because that narrows the focus far too much on the consequences of that. So in practice, I'm afraid this does. I see this syndrome over and over again. They don't want to talk to users. They don't want to think about users. Partly it has to do with the management structure and partly has to do with the business focus and so on. But I think it's particularly noticeable in software, much more so. I'm a traditional engineer by training, and I know that ethics was something that I worried about a lot and we were taught and it was part of the discipline, but it's not so much. part of the discipline among software developers. In fact, I wonder how many people take your course. What percentage of students take your course? Well, you may be encouraged to know that I offer I offer 80 spots in my in my classes every semester. And I have a waiting list of 80 who want to get in every semester. So encouraging. It's very popular. Students, I get I get a line out the door, virtually speaking, of students who are interested in taking my class. And and I would say a good quarter of them after they finish it and they submit an evaluation on the class, they say this class should be required. And I wish all of my fellow computer science majors had to take this in order to graduate. So I'm encouraged by that. I'm also encouraged by the response that that Peter Stone and I had in our intro to ethical AI and robotics class last fall. to the human stakeholder assignment. Students mentioned that assignment specifically in the course evaluations and said they thought it was very useful. And we got no pushback on that at all. The students, some of them struggled to make contact with the people they were interviewing because schedules and time zones were barriers. But those who managed to speak with someone really, they enjoyed the experience and they learned a lot from it. So I think... Maybe it hasn't occurred to a lot of a lot of software engineers or computer science students. But once you propose it to them, a critical mass of them are very interested in it and care about it. And I'm encouraged by that. It's very encouraging. Thank you. You're welcome. Thank you for that question. Let's see. Giuseppe quotes Renzo Piano saying that architecture is a dangerous discipline because its artifacts affect so many people. Yes, we need someone to say that in a very quotable way about computer science. And we need to get that quote out there and circulating so that people are talking about computer science and software that way. As Carlo pointed out in the next comment, software is more pervasive than architecture. Not only that, but you can see architecture. You can't see software. unless you're a computing professional and you know what you're looking at. Giuseppe says, I have trouble with the term abstract power since in CS abstraction has a particular, a peculiar technical meaning of something more general by removing details. In this thing, in this case, I think detached or remoted might be a better term. I can see how detached or remoted might be useful. My students respond really, really well to the concept of abstraction. It really seems to resonate with them. That's one of the reasons why I've stuck with that. And Sarah says, I have many thoughts on this subject. You're welcome. Lately, I've been finding Zestimate, which is an algorithm that estimates predict housing prices on the real estate market. It's publicly available, can be used by anyone. It gives homebuyers and home sellers more power, and it is considered to take power away from real estate agents. It can be seen as disruptive technology, but it can be seen to serve common people. There is interesting power dynamics intention in this context. Power is not necessarily a black and white concept. That's true. I think I mean, knowledge is power. Right. It's kind of a it's almost a cliche that knowledge is power. And this. I don't know how I would apply abstracted power to that, maybe because it's sort of taking the power. You're sort of taking the information away from someone in an online space in a way that you wouldn't maybe rip something out of a real estate agent's hands if you were face to face with them. Giuseppe comments about the Boeing 737 being an issue of greed. Yes, they definitely rushed that. From my knowledge of the case, they needed to rush it to compete with the new Airbus. Yes, I've read that too. Alessandro, you're welcome. Thank you. Thank you for that. Hi, Moshe. Moshe is joining us via the chat. Rice just decided to make the ethics class a requirement. Yay! That's wonderful news. I'm so glad to hear that. Enrico, thank you. And Carlo makes the good point that all classes should raise ethical issues, not leaving them only to ethics classes. I agree with this. Of course, this is another way to make ethics instruction required by embedding it in in regular classes instead of just giving students a one shot kind of inoculation and hoping that this makes them immune. excuse me, immune to outside pressures, conflicts of interest, greed, et cetera, we should be embedding ethics curriculum in all. And we are working on that at UT. We have a social impact stamp that we are applying to certain classes that incorporate ethics instruction. That's within the computer science department. And I know that there was a Mozilla grant a number of years ago that specifically awarded gave awards to faculty at various institutions who were working to embed ethics in regular computer science curriculum. George says, looking at some recent papers on AI ethics, there's a broad spectrum of positions, including contradictory ones. Sounds like moral philosophy professors we like to debate. So how does one decide what ethics to integrate into a course or is that enough to just raise the main questions? Well, I can only speak about my class. I include I touch on utilitarianism. I focus I use a lot of Kantian ethics and a lot of John Rawls concept of justice. Those are the three sort of ethical pegs that I hang my my course on. I don't overwhelm the students with moral philosophy. I pose the question, I give it to them as a loose framework, and then I ask them to do a lot of thinking and look through the lenses of those approaches at Tech News. There are case studies every day that we can apply this moral philosophy to. So that's the decision that I made at any rate in my class. Carlo, tell me if I'm going over. No, no, I think that we are almost at the end. There is one last question, probably by Jeff. Then I'd like to conclude and give the word to Peter. Jeff? Yeah, sorry to delay your departure. I just, again, thank you. But I was still trying to think about whether there's actually something within the software engineering world. that we could hang this on. I mean, in terms of privacy software and so on, they consider attackers and ways in which they can actually damage the security system. And we consider this in requirements engineering and so on. And what we're not doing is, although we're asking them to consider ethical questions and the moral dilemmas that that raises, and implications of what the software is going to do, we're not providing them with any tools to do something about it. I mean, it would be nice to have some kind of framework and propose something that one would then say, having considered this, both the positives and the negatives, how does one, I think, following on from the question that George raised, how does one actually then provide them with some tools to do something about it in the software, to actually consider this and to draw up whether it's... frameworks of positives and negatives and implications and so on, and then a framework to make the kinds of decisions. Is there anything that you're considering or perhaps Moshe is considering that you know of? Well, I know of a great resource called the Ethical OS Toolkit. I encourage you to search on that. I can't remember the source of it, but it's a very useful sort of systematic way of looking at systems and considering the ethical aspects of them. Another thing that I've been turning around in my head over the last few years and hoping to have enough time to devote to developing someday is an ethics-related code review. Usually in computing, in software engineering, code reviews are technically oriented. You know, they're meant to review the code and make sure that it does what it says on the tin. I think as as as the Brits say, to make sure that it meets all the specifications that it was designed to. I would love to see an ethics related code review that asks, asks. sort of more social impact questions. Look at the code and say, you know, is it fair? Is it safe? Is it predictable enough that it will operate consistently in the world? Will it endanger anyone? Will it discriminate against anyone? So I would love to see that. But a good starting point is the ethical OS toolkit. That's one of my favorite resources. Hannes, you're the last one since you're the boss. Yeah, thank you. No, just a very short comment, because this brings me that we possibly should invite somebody from the Bavarian Institute on Digital Transformation, because they run a project on software engineering guided by ethical design. So they have something where they include the stakeholders. They have, let's say, somehow how, let's say, a process model of this. And I think this would be an excellent presentation of one of the next lectures. And this brings me. This was just a remark to your excellent presentation, Tina, because it opens up a whole set of other questions, which is a good sign. And with this, I just want to thank you and to finish. Thanks. Thank you, Hannes, for that wonderful compliment. I appreciate it. Yeah. So let me conclude again, you know, thanking you again for, you know, starting this lively discussion on. you know, technologists thinking about the consequences of their decisions in what they do when they develop systems. I think this is a crucial question. And thank you very much for, you know, bringing up this issue in this community. I hand now the mic to Peter Knays, who is going to then, you know. bring us into the musical world of the end of this seminar. Thanks, Carlo. Actually, Tina will introduce the track herself and share her thoughts on this piece. So what I'm going to do is just to announce the next two lectures, which are a double feature already in two weeks, on March 7th and on March 9th. On March 7th, Corey Doctoroff will urge us to cease the memes of computation, and that will be moderated by Alison Stanger. And two days later, we will have a talk by Gary Marcus, psychologist, AI entrepreneur, critical commentator on AI developments, most recently ChatGPT. And on March 9th, we'll talk exactly on that, ChatGPT. And Helga Norbert will be the moderator. So you don't want to miss either of these talks. Now, let me thank Tina and Carlo for having done a wonderful job. And all of you for joining today. So see you next time. And I hand back to Tina. And I will share the screen. Thank you, Peter. I just want to share a brief thought on the musical selection. This is one of my favorite of Pink Floyd's songs. The turning away that the song describes seems more descriptive of, say, a human ignoring the pleas of another human asking for help, say, a destitute person begging on a street corner. But I think the lyrics are worth reconsidering in the light of 21st century technology and all the ways that it can enable us to turn away from each other. I hope it makes you think. And I thank you for your attention today. What's happening? Thanks, Dina. Thank you. Bye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.216,
+      "text": "Hello, everybody. Good evening or good morning or have a good lunch. Welcome to today's lecture. It's already the second of this year, 2023. So we started in 2020. So it's already our third year. It's a long time already for IT terms. Before moving to our lecture of today and the guest of today, I am happy to announce that we."
+    },
+    {
+      "start": 27.216,
+      "end": 53.392,
+      "text": "The Digital Humanism Initiative has a new partner, which is the Bavarian Research Institute for Digital Transformation. It's an institute within the Bavarian Academy of Science and Humanities. The institute deals with many aspects, not all, but maybe all aspects of digital transformation. And it's also dealing with digital humanism. So they have a branch on digital humanism. And this is the reason they are joining us."
+    },
+    {
+      "start": 53.392,
+      "end": 82.784,
+      "text": "And I'm happy and I'm grateful for their cooperation and thanks for joining and also for distributing the news of digital humanism. For the lecture of today, we have a special guest. It's Dina Peterson from Rice University US, Austin. She's speaking on technology, abstraction, power and responsibility. And Dina, thanks a lot for being with us and taking this. And I take this opportunity really to thank."
+    },
+    {
+      "start": 82.784,
+      "end": 104.304,
+      "text": "She will be introduced later in more detail by Carlo Ghezzi, who is the moderator of the day. Short, as you know already, the moderation, the choreography of the day. So we have first a talk of 30 minutes by Tina, then we have 30 minutes Q&A, moderated by Carlo. And at the end, as always, we have a piece of music."
+    },
+    {
+      "start": 104.304,
+      "end": 132.512,
+      "text": "If you look at YouTube, we already have a music stream there. And the music is proposed by Tina. And thanks for proposing that. And it will be managed by Peter Knez. Thanks, Peter, for that. Now I would like to hand over to Carlo. I would like to welcome you, Carlo Ghezzi, a polytechnic of Milano. He's a digital humanist of the first hour since the early beginning."
+    },
+    {
+      "start": 132.512,
+      "end": 151.52,
+      "text": "And I think I do not need to introduce you, Carlo. Thanks for being us, and thanks for being with us from the early beginning. The floor is yours. Thank you very much, Hannes. I'm very glad to be with you this afternoon, and I'm very glad to..."
+    },
+    {
+      "start": 151.52,
+      "end": 177.424,
+      "text": "you know, chair this seminar today, which is given by Tina Peterson. Tina is an assistant professor of instruction in the Department of Computer Science at the University of Texas at Austin, where she teaches undergraduate and graduate courses on ethics and social responsibility in computer science, including AI and robotics."
+    },
+    {
+      "start": 177.424,
+      "end": 202.416,
+      "text": "She got her bachelor degree in journalism from the University of Colorado and the master degree in critical theory and cultural studies from the University of Nottingham and a Ph.D. degree in mass media and communication from Temple University. And as I said, she is now in a computer science department."
+    },
+    {
+      "start": 202.416,
+      "end": 230.4,
+      "text": "So quite diverse background and experience, like other speakers in this seminar series. She has a very broad background and she's like, let's say, an example of what it means to cross the boundaries of traditional disciplinary borders, something that we need."
+    },
+    {
+      "start": 230.4,
+      "end": 255.968,
+      "text": "to have more and more to create digital humanism. Among other things, she recently co-authored a very nice paper on abstracted power and responsibility, which is mostly the subject of her talk today and has been published on IEEE transactions. Actually, I didn't know that these transactions existed."
+    },
+    {
+      "start": 255.968,
+      "end": 284.24,
+      "text": "on something like technology and society, or I forgot the name, but she will probably say something about it. Tina, the floor is yours. Thank you, Carlo, for that kind introduction. Good morning and afternoon and evening to all of you. Thank you for joining me today. I want to thank my colleague and co-author, Moshe Vardy, for nominating me as a participant in this series."
+    },
+    {
+      "start": 284.688,
+      "end": 291.2,
+      "text": "When Moshe and Hannes invited me to deliver this talk, I looked over the roster of past presenters in the series."
+    },
+    {
+      "start": 291.2,
+      "end": 318.736,
+      "text": "I'm humbled by the distinguished company of this group, and I want to start by distinguishing myself as a researcher, or situating myself as an educator rather than a researcher, like so many others in this series are. What I will present today is a concept that I have used quite successfully in my computer science ethics classes, and which I describe in the article Carlo just mentioned with my co-authors, Moshe and Rodrigo Ferreira."
+    },
+    {
+      "start": 318.832,
+      "end": 348.08,
+      "text": "I'll share assignments and prompts that I've given to my students to try to drive this concept home and some of the reactions they've had to the material. I hope to make this talk more of a conversation than a lecture. I tend not to lecture for more than 20 minutes at a time in my classroom, and then I ask my students for their perspectives. I invite all of you to participate actively today, whether that's in the chat pane, which I have open, or by raising your digital hand."
+    },
+    {
+      "start": 350.48,
+      "end": 379.536,
+      "text": "I'd like to begin by sharing. Actually, I'd like to begin by drinking some of my tea. And clearing my throat one more time. I'd like to begin by sharing a familiar experiment and encouraging you all to look at it in a different way. Many of you probably recognize the setup and the name associated with this experiment. In 1961, social psychologist Stanley Milgram set out to examine obedience to authority."
+    },
+    {
+      "start": 379.952,
+      "end": 405.296,
+      "text": "In his experimental setup, which you see here, the subject called the teacher was instructed to help the learner with a memorization task. Specifically, the subject was told that the experiment would test the effect of punishment on learning ability. The punishment would be electric shocks that the teacher would give to the learner through a panel with switches. What the teacher didn't know was that the learner."
+    },
+    {
+      "start": 405.296,
+      "end": 434.88,
+      "text": "that they would be shocking was actually another staff member who was working with the psychologist, what's called a confederate, so to speak. Milgram was greatly disturbed by what he observed in this. 65% of the subjects administered up to the maximum level of electric shock to the learner when they were prompted to do so by the experimenter. Some subjects continued to administer stronger and stronger shocks, even after the learner could be heard screaming in pain."
+    },
+    {
+      "start": 434.88,
+      "end": 463.584,
+      "text": "on the other side of the one-way mirror. It's this one-way mirror in the experimental setup that is of most interest to me. We can see clearly in this photo from the reflection of the photographer in the panel on the right that the teacher sitting at the panel of switches was prevented from seeing the impact of their actions. The teacher who believed they were administering painful shocks"
+    },
+    {
+      "start": 463.584,
+      "end": 492.192,
+      "text": "could not see the learner who they believed was receiving them. I would like to ask all of you in the audience how you think the experiment might have turned out differently if the setup had been so that the subject had been able to see the person that they were hurting. Obviously this would have required more acting on the part of the person pretending to be shocked, but let's assume that they were talented performers"
+    },
+    {
+      "start": 492.192,
+      "end": 520.048,
+      "text": "who could believably fake this? If the subject could see the other person they believed they were hurting, how might this outcome have changed? If you want to share a thought, please raise your digital hand or type a comment in the chat pane. How might this experiment have turned out differently?"
+    },
+    {
+      "start": 526.64,
+      "end": 555.248,
+      "text": "All right, I think some people might be thinking as they type in the chat pane, but I'll share with you how I think this might have been different. Philip says he doubts it would have turned out differently. Not too much, unfortunately, says another person. You may be right. It could be that it would have turned out exactly the same way. It's hard to know. Human behavior is very complicated. There are a lot of things going on."
+    },
+    {
+      "start": 555.248,
+      "end": 584.56,
+      "text": "in this interaction among humans. But one of the factors that I believe enabled the subject to continue to cause pain to the other was the fact that the humanity of the other person was abstracted via the machine and the one-way mirror. The subject, who believed they were giving the shocks, was not touching the person. They were flipping a switch. They weren't touching the other person. They weren't even seeing them."
+    },
+    {
+      "start": 584.816,
+      "end": 614.608,
+      "text": "It follows that the subject's power over the other person was abstracted as well. And that brings me to my definition of abstracted power. My colleagues Moshe Vardy, Rodrigo Ferreira, and I define abstracted power in our forthcoming paper in this way. It is a human actor's influence or control over a system, process, or data set."
+    },
+    {
+      "start": 614.608,
+      "end": 641.6,
+      "text": "which, as a function of the technology that enables it, obscures or distances the human actor from consequences of that influence or control. And here I would like to, if I can make this work, actually, I'm going to wait until the end to to paste in links to these articles. It's very Google-able. I'm sure you'll be able to find it. It's available as an early access version."
+    },
+    {
+      "start": 641.6,
+      "end": 665.744,
+      "text": "on the IEEE Explore website. Also, if you search my name, Tina L. Peterson, you should be able to find my professional site, and there is a PDF of the full preprint article there. You're welcome to look at that. We have this concept of abstracted power. How do we introduce this to students?"
+    },
+    {
+      "start": 665.904,
+      "end": 692.4,
+      "text": "Well, like many ethics professors, I use the very well-worn and somewhat tired trolley problem in my classes. But I use a variation of this scenario that's quite different from what you may have seen. Rather than positioning the agent at the switch or on a bridge ready to push someone onto the tracks, I put the agent at a computer, completely removed from the scene."
+    },
+    {
+      "start": 692.944,
+      "end": 720.112,
+      "text": "When my computer science students see this visual, they understand right away what's going on. The agent is programming the trolley to make a decision. This agent at the desk is writing code. This code will execute, pardon the pun, at an undefined point in the future and determine the path of the trolley that this agent will likely never see. That trolley"
+    },
+    {
+      "start": 720.112,
+      "end": 731.568,
+      "text": "Driven by their code will impact people the agent will never meet. And I'm going to take a moment and acknowledge the chat comments."
+    },
+    {
+      "start": 731.568,
+      "end": 751.936,
+      "text": "Bron, I apologize if I'm mispronouncing. It strikes me that the concept of abstracted power extends beyond just a technologically induced distance. Yes, I agree. And I hope to I hope to gather other perspectives on this at the end of my talk, because I know that this applies more widely than than just technologically induced distance."
+    },
+    {
+      "start": 751.936,
+      "end": 780.896,
+      "text": "Eric said loves the variation of the trolley problem. Very educational. Thank you. I like this variation as well. And Enrico says abstraction reminds me of what happens over social media. We're not seeing the other person makes people pay less attention to actual consequences of their actions. You are you are in agreement with my students. They actually brought that up as well. That's what I'm going to talk about next. This visualization resonates with students."
+    },
+    {
+      "start": 780.896,
+      "end": 808.032,
+      "text": "I don't give them the full definition that we include in our article, and I don't have to. My computer science students grasp very quickly the difference between the two scenarios, and many of them continue to reference the concept of abstracted power throughout the semester. In fact, as Enrico has done, they start identifying it in new places. Here are just a handful of examples."
+    },
+    {
+      "start": 808.032,
+      "end": 837.504,
+      "text": "My students commonly give of power that has been abstracted by technology. A military drone operator is a very obvious case and one with incredibly high stakes. The distance that drone operators may feel from their victims is illustrated quite disturbingly by a term quoted in a 2012 Rolling Stone article by Michael Hastings. He reported that some U.S. soldiers operating the drones referred to the image on their screen."
+    },
+    {
+      "start": 837.504,
+      "end": 865.2,
+      "text": "of a human killed in a drone strike as bug splat. The abstraction of these soldiers' power is chillingly clear in that expression. However, most of my students will never be in a position to operate a drone and make life or death decisions at a great distance. A more relatable example that many have given is that of an online restaurant review."
+    },
+    {
+      "start": 865.328,
+      "end": 892.72,
+      "text": "When you've had a disappointing meal in a restaurant, it's easy and comfortable to post a negative review of the business once you've returned home. Many of us, if we're being honest, we might say things in an online review that we would never say to the proprietor of the restaurant face to face. Another situation which gives us the comfort of anonymity is an online discussion space or a comment section."
+    },
+    {
+      "start": 892.72,
+      "end": 919.712,
+      "text": "Anonymity in these spaces does two things. One, it abstracts the commenter's power and two, their sense of personal responsibility for what they're saying. They cannot see the target of their vitriol, just as the target cannot see them. If they're hidden behind a username and an avatar, they may feel that their behavior online does not connect with them personally."
+    },
+    {
+      "start": 919.712,
+      "end": 948.816,
+      "text": "Their power over the other person is abstracted, as is their sense of personal responsibility. And Carlos says abstract abstracted power seems to be intrinsic in any design activity. The difference between design time and runtime introduces abstraction. Yes, absolutely. Sometimes that abstraction is temporal. It can be geographical. It can be cultural. Distance can exist in so many different ways. That's that's true."
+    },
+    {
+      "start": 951.632,
+      "end": 967.728,
+      "text": "Here is where I reveal my disciplinary blinders. I see abstracted power as being a problem specific to computer science, because even though I have a background in the humanities, I'm surrounded by scholars and students of computer science all day long."
+    },
+    {
+      "start": 969.008,
+      "end": 998.0,
+      "text": "I will ask later in this talk for examples that you, some of you have already shared that you see this in other places, examples that you have observed in your own fields. For now, though, I'd like to address factors that contribute to this phenomenon, specifically among computing professionals. First, there is intermediation by technology. Computing professionals tend not to act directly on other people."
+    },
+    {
+      "start": 998.0,
+      "end": 1024.176,
+      "text": "They do so through software, hardware, user interfaces, and such. This intermediation allows action at a distance. As I said earlier, geographical distance, temporal distance, cultural distance. It's easier to ignore the consequences of our actions when we're too far away to see them. The second factor is computational thinking, which is essential in the discipline."
+    },
+    {
+      "start": 1024.272,
+      "end": 1049.104,
+      "text": "Computer scientists must work in abstractions in order to perform the complex calculations that are the basis of computing. One cannot compute unless one abstracts, at least to a degree. But as a result of this abstraction, the humanity behind the data is obfuscated. Differences among people become frequency distributions in the data."
+    },
+    {
+      "start": 1049.104,
+      "end": 1077.936,
+      "text": "and vulnerable users become what we call in computer science edge cases. More specifically, advances in artificial intelligence, which we're seeing almost at breakneck speed these days, are also contributing to the abstraction of power. For example, when someone uses a generative model like DALI to create an image of something, they generally don't think about the thousands of artists"
+    },
+    {
+      "start": 1078.16,
+      "end": 1105.344,
+      "text": "whose labor created the works that were used to train the model. The people who are most likely to consider the artists of Dolly's training material are artists themselves. It's not abstract to them. It's very real to them. But if you're not an artist, you tend not to think about it. I'm actually the daughter of an artist, so I tend to think about it as well. But for most people, it is rather abstract. Another example is a machine learning system such as."
+    },
+    {
+      "start": 1105.344,
+      "end": 1134.112,
+      "text": "A recidivism risk protector like the COMPAS system that ProPublica investigated a number of years ago in a very good piece called Machine Bias. Such a system finds patterns in hundreds of thousands of records of past human decisions, then makes predictions on new cases based on those patterns. In effect, it enables the humans who made those past decisions to continue to pass judgment ad infinitum."
+    },
+    {
+      "start": 1134.112,
+      "end": 1150.144,
+      "text": "On fellow humans, they'll never meet through an automated system. Let me check in with the chat here. J.K. says making it explicit gives the opportunity and responsibility to take it into account. Yes."
+    },
+    {
+      "start": 1150.144,
+      "end": 1174.464,
+      "text": "Yes, making it explicit. I agree with that. Giuseppe, I apologize for the mispronunciation. The FED, BCE and FMI exert huge abstract power on millions of people. They do not care at the pain they force on entire populations. I'm not familiar with those acronyms. Maybe you could maybe you could say more about that during Q&A."
+    },
+    {
+      "start": 1174.464,
+      "end": 1202.608,
+      "text": "Enrico fully agrees with Carlo and says that's the main motivation for teaching designers of digital systems, the dangers hidden in the abstraction gulf. Ah, I was not familiar with the term abstraction gulf. Thank you for that. I will definitely read up on that. JK says abstraction is a necessary skill for computer science and software engineering, which makes it even more necessary to make it explicit and to consider the dangers. Yes, I completely agree. That's a very good point."
+    },
+    {
+      "start": 1204.912,
+      "end": 1234.88,
+      "text": "We've identified this problem. Power can be easily abstracted by, oh, Giuseppe, thank you. Thank you for clarifying that. Power can be easily abstracted by technological intermediaries and computational thinking, both of which are inevitable in computer science. So then, how can we de-abstract and draw our students' attention to the humanity obscured by the technology? I like to use assignments that add friction to my students' understanding."
+    },
+    {
+      "start": 1234.88,
+      "end": 1252.976,
+      "text": "to make strange that which seems familiar to them. I borrow this expression from Morrison and Wallace, whose paper I've cited here. Their approach of defamiliarization is especially apt and useful. I will also share a link to this paper during the Q&A."
+    },
+    {
+      "start": 1258.0,
+      "end": 1286.672,
+      "text": "One of the first small group assignments I give my students in my computer science ethics classes is to write 10 lines of code to determine how an autonomous vehicle would handle an unavoidable collision. In this assignment, they're essentially programming the trolley problem, but with no constraints on who or what or how many people or objects are on each track. This assignment makes many of them squirm, which is by design."
+    },
+    {
+      "start": 1287.056,
+      "end": 1314.768,
+      "text": "The abstraction made possible by computational thinking and technological intermediation is comfortable. This assignment is meant to disrupt that comfort zone and encourage them to imagine actual people involved in an accident. It is interesting that many of the groups include a clause toward the end of their code that picks a path randomly through a random number generator. When I question them about this,"
+    },
+    {
+      "start": 1314.768,
+      "end": 1342.112,
+      "text": "They usually tell me they're more comfortable leaving it up to chance than making a deliberate decision. This is very revealing to me. They are choosing to abstract their own power that rather than make a deliberate decision about the outcome of something, especially a life or death decision. In my 24 hour unplug assignment, the second item here, students collectively create a list of apps that they consider addictive or habit forming."
+    },
+    {
+      "start": 1342.112,
+      "end": 1370.208,
+      "text": "They then abstain from using these apps for 24 hours and then write about the experience. Many of them go into the assignment assuming that because they're computer science students, they are somehow immune to the effects of these apps, maybe because they know how they're made. Most of them are quite surprised to see how difficult it is to quit them, even for a day. And they come away with a more concrete understanding of the power they may have one day."
+    },
+    {
+      "start": 1370.208,
+      "end": 1397.84,
+      "text": "as an employee of a company behind these apps. These are two more assignments that I'd like to talk about. Some of my favorite Black Mirror episodes are Men Against Fire, Nosedive, and 15 Million Merits. I hope I have some fellow Black Mirror fans in the audience today."
+    },
+    {
+      "start": 1397.84,
+      "end": 1411.216,
+      "text": "All of these prove quite thought provoking to students when I assign them to watch these episodes and write papers about them. They see very obvious parallels between the technologies portrayed in each episode and existing technology."
+    },
+    {
+      "start": 1411.216,
+      "end": 1437.952,
+      "text": "Or in the case of the augmented reality system portrayed in Men Against Fire, many students identify parallels between the augmented reality system that changes the soldier's perception of other human beings with the low tech but very effective propaganda used by Nazis to portray particular groups of people as less than human. They get that almost immediately. The last item here."
+    },
+    {
+      "start": 1437.952,
+      "end": 1463.568,
+      "text": "is perhaps my most effective de-abstraction exercise to date. I developed this human stakeholder assignment as part of a graduate level class I co-taught with Peter Stone here at UT last fall. The course was called Intro to Ethical AI and Robotics. For this assignment, we asked students to interview someone who has to use an automated system as part of their job."
+    },
+    {
+      "start": 1463.568,
+      "end": 1490.992,
+      "text": "We advise them specifically to connect with people who don't have technical backgrounds to more accurately represent average human stakeholders who are impacted by such systems. We heard perspectives from an amazingly diverse group of people that students reached out to and were able to interview. We heard from physicians in India. We heard from food delivery drivers in Taiwan and head cashiers in a grocery store right here in Texas."
+    },
+    {
+      "start": 1490.992,
+      "end": 1519.616,
+      "text": "All of them used automated systems. They had to use automated systems as part of their jobs. This assignment was very successful in the very first iteration of our course. Students reported learning a great deal from speaking with people well outside their academic and social circles. They formed real human connections with these people, people they would not have otherwise encountered. Now, one of the underlying goals of all of these assignments is to counter"
+    },
+    {
+      "start": 1519.616,
+      "end": 1540.336,
+      "text": "abstraction with human connection. Another place we've seen this working for decades, perhaps centuries is in charity appeals. It is too easy to dismiss news of tragedies and human suffering happening half a world away from us. Charities and aid groups know this."
+    },
+    {
+      "start": 1540.336,
+      "end": 1568.544,
+      "text": "And they encourage donors to give by putting individual human faces on problems that may otherwise seem too big to wrap our heads around. They de-abstract the problem to make it human and to make people care more. We see this in news media as well. Journalists anchor stories about big unwieldy problems with individual accounts of people affected by them. Let me check in with the chat."
+    },
+    {
+      "start": 1568.544,
+      "end": 1598.32,
+      "text": "And Rico just coined abstraction goal. That's great. I love that term. JK used the term abstraction gap in the paper on abstraction in CACM. Oh, that's great. I looked that up. Maybe it's first use to draw the analogy between the underground map and its reality as a geographical map. Ah, great. Thank you for that. I want to end by making the case."
+    },
+    {
+      "start": 1598.32,
+      "end": 1626.768,
+      "text": "for de-abstraction as a kind of tonic for some of the ills that we face in the early 21st century. Computing is not going away. Its power will only continue to grow, and with it inevitably comes computational thinking and technological intermediation. But I would argue that if we can cultivate in our students habits of critical thinking about the distance between them"
+    },
+    {
+      "start": 1626.768,
+      "end": 1654.256,
+      "text": "and those affected by their decisions, we can perhaps motivate them to bridge that gap and wrangle meaningfully with their own power. With that, I want to invite all of you to share your perspectives from your own disciplines, as well as any other questions or comments. I thank you for your attention today and I welcome the conversation."
+    },
+    {
+      "start": 1659.376,
+      "end": 1688.576,
+      "text": "Thank you. Thank you very much, Tina, for the timely presentation. We have, you know, our half an hour of question answers that I'm opening to the floor. So please raise your hand if you want to make comments or ask questions. While I don't see any hands, but I have one, actually."
+    },
+    {
+      "start": 1688.576,
+      "end": 1717.728,
+      "text": "which is, again, in the line of trying to force students to think about the abstraction, if you want, and introducing friction. Actually, we live in universities where there's all disciplines. So I was wondering why we are not able."
+    },
+    {
+      "start": 1717.728,
+      "end": 1743.2,
+      "text": "you know, to help students think about the, let's say, the consequences of their design. I'm speaking, you know, in particular for people who are designing software systems, right? So thinking about the possible consequences of the decisions that they make when they design systems by putting, you know, people from different disciplines together in design activities."
+    },
+    {
+      "start": 1743.2,
+      "end": 1769.536,
+      "text": "I think that, you know, we live in an area in universities where, you know, these disciplines are there and the students, you know, from other areas need also to be able to talk to computer science people in, you know, when they develop systems. So is there, are you, do you think this might be useful? Do you have any plans to do it? Why we're not doing it enough?"
+    },
+    {
+      "start": 1769.536,
+      "end": 1792.832,
+      "text": "I know that, you know, we have departments, we have curricula, we are bound, you know, by, you know, the silences that we are building ourselves. But maybe it's time to break them in education and also in research. Yes, that's a good point, Carlo. I agree that we need to be much more cross-disciplinary."
+    },
+    {
+      "start": 1792.832,
+      "end": 1822.16,
+      "text": "and interdisciplinary between computer science and many, many other fields. Peter Stone and I co-taught this class, Intro to Ethical AI and Robotics, last fall. This was the first time we'd ever done that. And the students commented in the course evaluations that it was very effective to bring someone with a humanities, social sciences background like me, together with a computer scientist and teach a course together. I think it..."
+    },
+    {
+      "start": 1822.16,
+      "end": 1839.712,
+      "text": "We complimented each other's knowledge in a good way. And I had to explain things to him and he had to explain things to me. We learned along with our students. And I think that there was there was a very useful dynamic that encouraged students to think outside."
+    },
+    {
+      "start": 1839.712,
+      "end": 1859.04,
+      "text": "the boxes that they traditionally stay in as computer science grad students. And UT also has an initiative called Good Systems, which is bringing together a lot of people across many disciplines to talk about how to build systems that serve humans better."
+    },
+    {
+      "start": 1859.04,
+      "end": 1887.472,
+      "text": "and can enable humans to be better, even perhaps. So I think that these initiatives are starting up, and I think that they've made more progress at other institutions than at mine sometimes, but I do think that's a trend in the future. I hope it is. Thank you. I see a couple of hands raised. Jeff, you were first."
+    },
+    {
+      "start": 1887.472,
+      "end": 1914.64,
+      "text": "First of all, I'd really like to say thank you very much for your talk. I think it's very timely and absolutely essential that it is considered. I mean, I know that we're only considering it within the sort of computer science and software engineering kind of world at the moment, but it is actually an important aspect within engineering and professional engineering as a whole in terms of the kinds of systems we build."
+    },
+    {
+      "start": 1914.64,
+      "end": 1943.472,
+      "text": "One of the things I have to say I found really disturbing, probably the most disturbing and probably the most indicative of the kinds of students that we often have and teach, is your notion that when you ask the students about the autonomous vehicle, that they chose to do a random result. I mean, this in terms of abrogation of responsibility for the kinds of system you've built is the most frightening."
+    },
+    {
+      "start": 1943.472,
+      "end": 1972.128,
+      "text": "I think, in terms of their reaction. And I applaud the notion that obviously we need to teach ethics and so on. But for me, it still doesn't seem to be quite enough. And I think that example of the autonomous vehicle seems to still show that the kinds of professional practice that we teach and the ethics even that we teach is not enough. Do you think there's more scope for actually doing more? I know that."
+    },
+    {
+      "start": 1972.128,
+      "end": 2001.92,
+      "text": "Carla has actually gone on and I think very well articulated the need for a wider spectrum of people involved in system development. But is there more that we should do? Well, I think one good step would be to make ethics classes required in all computer science and in all engineering programs. And I know they're not in all of them. At UT, we require students to take a class with an ethics flag."
+    },
+    {
+      "start": 2001.92,
+      "end": 2030.608,
+      "text": "to graduate, but that ethics flag can come from a lot of different kinds of classes. Some of them might just be, it might be a moral philosophy class that is not directly related to computer science. And I think that they can still graduate with just that ethics flag in their transcript. I would, if I were in charge, I would make ethics classes required because I, or specifically computer science ethics classes required for anyone graduating with a degree in computer science."
+    },
+    {
+      "start": 2030.608,
+      "end": 2045.856,
+      "text": "And related to your to respond to your first point, I'm also I'm also disturbed by by students choice to use a random number generator to decide the course. And I think that."
+    },
+    {
+      "start": 2045.856,
+      "end": 2071.728,
+      "text": "Unfortunately, this is I don't think that they necessarily mean to avoid responsibility for it, but that they're more comfortable. They say they're more comfortable with with letting chance determine it than to make the decision themselves. And maybe that is abrogation of responsibility or avoidance of responsibility. I don't know. But I agree that it's an interesting reaction. But I like to think that it shows."
+    },
+    {
+      "start": 2071.728,
+      "end": 2093.808,
+      "text": "Oh, is that the assignment has made them uncomfortable with which is exactly what I intend the assignment to do. So maybe it's a good sign. Maybe once they maybe one student stop using that random generator, I'll know that the assignment is working better. But very good observation. Let's see in the chat. Let's see."
+    },
+    {
+      "start": 2093.808,
+      "end": 2114.832,
+      "text": "Oh, I think I have something to do. Oh, Eric, thank you for sharing. Thank you for sharing that link to to my paper. And Sarah says, I believe it is important to teach computer scientists to understand the consequences of the system they use. But how much can individual influence this actually? Because it is a bigger thing that only individual."
+    },
+    {
+      "start": 2114.832,
+      "end": 2144.0,
+      "text": "It is a bigger thing than only individual decisions. That's a good point. And I actually use another variation on the abstracted power trolley problem where there isn't just one person sitting at a desk working on code. It's a group of four people. And I ask the students, how does this change the sense of personal responsibility felt by any one of those people sitting there coding? And we talk about how."
+    },
+    {
+      "start": 2144.0,
+      "end": 2163.936,
+      "text": "You know, software engineering, computer science is done in teams. It's never a lone person writing an entire code base. And this makes it even more important to take personal responsibility for what you're contributing to that code base because it risks getting lost."
+    },
+    {
+      "start": 2163.936,
+      "end": 2175.712,
+      "text": "in everyone else's contribution and then you um and then and then you risk not feeling any responsibility for it because well i was just part of a member of a team unfortunately we saw"
+    },
+    {
+      "start": 2175.712,
+      "end": 2205.024,
+      "text": "Potentially an example of this in the internal communications at Boeing regarding the 737 MAX disasters. It seemed like too many people had a little tiny bit of responsibility for those aircraft and nobody stopped and said, this isn't okay. In fact, some software engineers' internal emails surfaced and they were seen."
+    },
+    {
+      "start": 2205.024,
+      "end": 2232.864,
+      "text": "really scoffing at this system that they were designing and saying, you know, would you put your family in one of these aircraft? I sure wouldn't. But they were ready to ship it out to the public, which is, I think that that's a pretty big, also disturbing example of how they felt that their power was abstracted and correspondingly their sense of personal responsibility. Thank you. There is a question by, hand raised by Hannes."
+    },
+    {
+      "start": 2232.864,
+      "end": 2260.784,
+      "text": "Maybe. Oh, yes. Go ahead. Well pronounced, Tina. Thanks for your excellent presentation. I really liked it. I have a different observation because as I see, the abstraction is part of scientific activity. So we cannot we cannot do work scientifically. It's based on models, models of the world, models of some behavior. So abstraction is part of inherently part of."
+    },
+    {
+      "start": 2260.784,
+      "end": 2285.392,
+      "text": "of our activity. I think of nearly every scientific activity. So it's not only computer science. What differentiates computer science or make it differently is that it materializes virtually this abstraction in a sense that we produce tools which materialize this distance between a human or the impact."
+    },
+    {
+      "start": 2285.392,
+      "end": 2315.12,
+      "text": "software has. So I think we are on one side, it's really on this scientific endeavor where without abstraction would not work because you cannot only work on instances of all objects. So you need abstraction to have general rules. But on the other side, we implement it. And this makes computer science differently and maybe also such an important tool for our society. Yes, that's a good observation."
+    },
+    {
+      "start": 2315.792,
+      "end": 2342.576,
+      "text": "I like to compare it with, say, civil engineering. I think it's much harder to have abstraction in civil engineering because you build public infrastructure and then you observe people using it. You build a bridge, you see people cross it. You observe the strength of that structure, the structural integrity of it. With software especially, you build it and then you might never see it execute."
+    },
+    {
+      "start": 2342.576,
+      "end": 2353.344,
+      "text": "You ship it to part off to a code base and you you might never see it in action. And that's why I think the human stakeholder assignment is so useful."
+    },
+    {
+      "start": 2353.344,
+      "end": 2382.32,
+      "text": "to de-abstract this power for students because they talk with people who have no technical expertise and sometimes they might even watch them use a system that they have to use. And I think that's really instructive to students. It might bring the experience of computer science as close to civil engineering as it might ever get. Hannes, did you have something else to add? Because I think there's one major difference because"
+    },
+    {
+      "start": 2382.32,
+      "end": 2411.968,
+      "text": "You have our artifacts everywhere. In civil engineering, you have your buildings, you have your bridges, you have your roads. So it's a limited, it's in space, but it's limited. Whereas we have this abstraction, it's first, it's everywhere. It can be used nearly everywhere. And you have this distance in time, in space, in cultural differences. So it's much, I think it's much stronger. And this is due to this virtual aspect we have. We materialize it virtually. So this is somehow."
+    },
+    {
+      "start": 2411.968,
+      "end": 2439.728,
+      "text": "nearly a dialectic contradiction. So I stop just as a second observation. Yes, that's true. And I tell my students that software is so powerful, partly because it runs invisibly to the vast majority of the population. Software is increasingly, it's directing so many processes in our world. And the average person who has no knowledge of computing does not see that, does not see that in action."
+    },
+    {
+      "start": 2440.4,
+      "end": 2464.8,
+      "text": "Eric, you had your hand up? No, no. Oh, sorry. Sorry, Carlo. Go ahead. No, no. It's George next. Oh, I'm sorry. Sorry. Go ahead. Thanks on my side to Tina. My question is the following. Suppose that the abstraction is successful and the designer."
+    },
+    {
+      "start": 2464.8,
+      "end": 2491.376,
+      "text": "has a full view of the consequences, not only cares about the consequences, but then can actually see them. But while looking at them, he finds, as is often the case, that there are good ones and there are bad ones among the consequences. Where does the responsibility end? Does it suffice to point out that there are good and bad?"
+    },
+    {
+      "start": 2491.376,
+      "end": 2519.984,
+      "text": "Or does his or her responsibility extend to integrating tools for empowering the good and guarding against the bad? Good question. I encourage my students to think about all the it's difficult to think about the unforeseen uses of a particular technology, because by definition, you cannot anticipate them. But I encourage them to."
+    },
+    {
+      "start": 2519.984,
+      "end": 2548.496,
+      "text": "Because everybody wants to think about the good uses of something that they're putting out into the world. It's more difficult to imagine how it may be twisted and used in a negative way. I encourage my students to do what I call putting their bad guy hat on. Put their bad guy hat on and imagine a nefarious actor using this technology and what would they do with it? Now, where does our responsibility end?"
+    },
+    {
+      "start": 2548.496,
+      "end": 2577.84,
+      "text": "with regard to future uses of the technology we create, that's a question that I've never come up with a satisfying answer for. I ask my students this every semester. They wrangle with it. Not all of them agree that they need to follow the technology that they create to make sure that no one ever does anything bad with it, because I don't know if that's possible."
+    },
+    {
+      "start": 2577.84,
+      "end": 2605.648,
+      "text": "The 21st century is very collaborative and it's all about creative commons and putting your work out there. And, you know, the open source movement is all about putting things out there and making them available for other people. I do think, though, that the open source community has a very good sort of ethos about watching what's done with their work and sort of keeping tabs on it, which I think is useful."
+    },
+    {
+      "start": 2605.648,
+      "end": 2632.768,
+      "text": "To sort of to more thoroughly answer your question, I don't have a good answer to that, but it is one that I post to my students and I hope that I make them think about that, how much response, how far their responsibility extends. Thank you. Eric, you're next. Many thanks and thank you for the talk. I think philosophically, the abstracted power concept is particularly interesting in connecting it."
+    },
+    {
+      "start": 2632.768,
+      "end": 2661.712,
+      "text": "to especially computings, because I mean, this is obviously an area where this effect will be frequent, because I think so far it has been mostly debated in the change of weapons that increase the distance from our victims. And I think computing is really a different beast here. But on your final slide, when you presented your final slide, I think I heard you say"
+    },
+    {
+      "start": 2661.712,
+      "end": 2685.952,
+      "text": "You mentioned computational thinking, and if I understood you correctly, you mentioned it as something problematic, which I find interesting because I think when the term was originally coined, I think by Janet Wing very much, she always propagated it as a useful term."
+    },
+    {
+      "start": 2685.952,
+      "end": 2709.488,
+      "text": "to be used in teaching computing concepts to basically all, especially science students, but everybody. And until today, I thought it was actually a useful thing to be used in biology, for example. But did I understand you correctly that you find it problematic?"
+    },
+    {
+      "start": 2709.488,
+      "end": 2735.92,
+      "text": "The example that you have given is, of course, one that could be highly problematic, but I'm not sure it is necessarily to be connected with computational thinking. So that's my question and comment. I do agree that computational thinking can be very positive. And I think that I think, honestly, it's an essential 21st century skill. I think that as we are as we are using computing."
+    },
+    {
+      "start": 2735.92,
+      "end": 2756.16,
+      "text": "and artificial intelligence more in our everyday lives, equipping average people, people who don't have computer science degrees, equipping average people with the habits of computational thinking can actually be very useful, and it can enable them to succeed more in the 21st century."
+    },
+    {
+      "start": 2756.16,
+      "end": 2777.584,
+      "text": "So I don't think it's a negative necessarily. I think that it's more a disciplinary habit that like all disciplinary habits, it's useful to to push back on it from time to time and see what what kinds of habits of thinking is this pushing us into? And what is this habit of thinking encouraging us to ignore?"
+    },
+    {
+      "start": 2779.472,
+      "end": 2807.248,
+      "text": "But I definitely don't think computational thinking is a negative. I didn't mean to position it as such. I just think it's an inevitable habit that is essential to computer science. But like any disciplinary habit, we should critically examine it and sort of see what it's encouraging us to pay attention to and what it's encouraging us to ignore. Thank you. Let me take a look at the chat pane because it's very active in the last few minutes."
+    },
+    {
+      "start": 2807.312,
+      "end": 2820.832,
+      "text": "Walter, thank you for sharing that quote. That was a very unfortunate quote about the Boeing 737 MAX. Let me see."
+    },
+    {
+      "start": 2820.832,
+      "end": 2843.824,
+      "text": "Braun said a while back, I'm sorry for ignoring this, software programming in particular is known to be seductive and even addictive and attracts personalities who are much more focused on the technology than more traditional engineering disciplines. Time spent on learning and understanding parties affected by their inventions is time that diverts them from the part they enjoy most, programming."
+    },
+    {
+      "start": 2843.824,
+      "end": 2865.408,
+      "text": "I think that's true of some computer science students, but not all of them. I do believe I know this because I've met a critical mass of them. There are plenty of computer science students in my classes who are genuinely worried about the power that they and their their cohort, others in their cohort have."
+    },
+    {
+      "start": 2865.408,
+      "end": 2893.568,
+      "text": "want to use that power in a more positive direction. So I do think it's true of some computer scientists and some computer science students, but certainly not all of them. I think that there's a lot of care increasingly being taken by people to focus, to expand their vision and not just think about the kind of gee whiz aspects of the technology. Can I comment on that? Sure."
+    },
+    {
+      "start": 2893.568,
+      "end": 2915.52,
+      "text": "OK, yeah, I'm actually a practitioner, not an academic, maybe somewhat different from the rest of the folks here or most of the folks here. And I can tell you that in practice, the fact is that a lot of software developers, I don't know what they were like as students, but a lot of software developers, first of all, even dislike the whole concept of worrying about."
+    },
+    {
+      "start": 2915.52,
+      "end": 2937.44,
+      "text": "an end user, and forget about the fact that it's more than just the end user that they have to worry about, right? In fact, I have an article where I said end user considered harmful because that narrows the focus far too much on the consequences of that. So in practice, I'm afraid this does. I see this syndrome over and over again."
+    },
+    {
+      "start": 2937.44,
+      "end": 2964.784,
+      "text": "They don't want to talk to users. They don't want to think about users. Partly it has to do with the management structure and partly has to do with the business focus and so on. But I think it's particularly noticeable in software, much more so. I'm a traditional engineer by training, and I know that ethics was something that I worried about a lot and we were taught and it was part of the discipline, but it's not so much."
+    },
+    {
+      "start": 2964.784,
+      "end": 2988.96,
+      "text": "part of the discipline among software developers. In fact, I wonder how many people take your course. What percentage of students take your course? Well, you may be encouraged to know that I offer I offer 80 spots in my in my classes every semester. And I have a waiting list of 80 who want to get in every semester. So encouraging. It's very popular."
+    },
+    {
+      "start": 2988.96,
+      "end": 3004.944,
+      "text": "Students, I get I get a line out the door, virtually speaking, of students who are interested in taking my class. And and I would say a good quarter of them after they finish it and they submit an evaluation on the class, they say this class should be required."
+    },
+    {
+      "start": 3004.944,
+      "end": 3020.944,
+      "text": "And I wish all of my fellow computer science majors had to take this in order to graduate. So I'm encouraged by that. I'm also encouraged by the response that that Peter Stone and I had in our intro to ethical AI and robotics class last fall."
+    },
+    {
+      "start": 3020.944,
+      "end": 3048.112,
+      "text": "to the human stakeholder assignment. Students mentioned that assignment specifically in the course evaluations and said they thought it was very useful. And we got no pushback on that at all. The students, some of them struggled to make contact with the people they were interviewing because schedules and time zones were barriers. But those who managed to speak with someone really, they enjoyed the experience and they learned a lot from it. So I think..."
+    },
+    {
+      "start": 3048.112,
+      "end": 3069.904,
+      "text": "Maybe it hasn't occurred to a lot of a lot of software engineers or computer science students. But once you propose it to them, a critical mass of them are very interested in it and care about it. And I'm encouraged by that. It's very encouraging. Thank you. You're welcome. Thank you for that question. Let's see."
+    },
+    {
+      "start": 3069.904,
+      "end": 3098.944,
+      "text": "Giuseppe quotes Renzo Piano saying that architecture is a dangerous discipline because its artifacts affect so many people. Yes, we need someone to say that in a very quotable way about computer science. And we need to get that quote out there and circulating so that people are talking about computer science and software that way. As Carlo pointed out in the next comment, software is more pervasive than architecture. Not only that, but you can see architecture. You can't see software."
+    },
+    {
+      "start": 3098.944,
+      "end": 3102.608,
+      "text": "unless you're a computing professional and you know what you're looking at."
+    },
+    {
+      "start": 3103.152,
+      "end": 3132.112,
+      "text": "Giuseppe says, I have trouble with the term abstract power since in CS abstraction has a particular, a peculiar technical meaning of something more general by removing details. In this thing, in this case, I think detached or remoted might be a better term. I can see how detached or remoted might be useful. My students respond really, really well to the concept of abstraction. It really seems to resonate with them. That's one of the reasons why I've stuck with that."
+    },
+    {
+      "start": 3132.112,
+      "end": 3160.432,
+      "text": "And Sarah says, I have many thoughts on this subject. You're welcome. Lately, I've been finding Zestimate, which is an algorithm that estimates predict housing prices on the real estate market. It's publicly available, can be used by anyone. It gives homebuyers and home sellers more power, and it is considered to take power away from real estate agents. It can be seen as disruptive technology, but it can be seen to serve common people."
+    },
+    {
+      "start": 3160.432,
+      "end": 3178.672,
+      "text": "There is interesting power dynamics intention in this context. Power is not necessarily a black and white concept. That's true. I think I mean, knowledge is power. Right. It's kind of a it's almost a cliche that knowledge is power. And this."
+    },
+    {
+      "start": 3179.344,
+      "end": 3196.304,
+      "text": "I don't know how I would apply abstracted power to that, maybe because it's sort of taking the power. You're sort of taking the information away from someone in an online space in a way that you wouldn't maybe rip something out of a real estate agent's hands if you were face to face with them."
+    },
+    {
+      "start": 3196.848,
+      "end": 3225.872,
+      "text": "Giuseppe comments about the Boeing 737 being an issue of greed. Yes, they definitely rushed that. From my knowledge of the case, they needed to rush it to compete with the new Airbus. Yes, I've read that too. Alessandro, you're welcome. Thank you. Thank you for that. Hi, Moshe. Moshe is joining us via the chat. Rice just decided to make the ethics class a requirement. Yay! That's wonderful news. I'm so glad to hear that."
+    },
+    {
+      "start": 3226.192,
+      "end": 3251.984,
+      "text": "Enrico, thank you. And Carlo makes the good point that all classes should raise ethical issues, not leaving them only to ethics classes. I agree with this. Of course, this is another way to make ethics instruction required by embedding it in in regular classes instead of just giving students a one shot kind of inoculation and hoping that this makes them immune."
+    },
+    {
+      "start": 3251.984,
+      "end": 3281.264,
+      "text": "excuse me, immune to outside pressures, conflicts of interest, greed, et cetera, we should be embedding ethics curriculum in all. And we are working on that at UT. We have a social impact stamp that we are applying to certain classes that incorporate ethics instruction. That's within the computer science department. And I know that there was a Mozilla grant a number of years ago that specifically awarded"
+    },
+    {
+      "start": 3281.264,
+      "end": 3301.344,
+      "text": "gave awards to faculty at various institutions who were working to embed ethics in regular computer science curriculum. George says, looking at some recent papers on AI ethics, there's a broad spectrum of positions, including contradictory ones. Sounds like moral philosophy professors we like to debate."
+    },
+    {
+      "start": 3301.344,
+      "end": 3328.208,
+      "text": "So how does one decide what ethics to integrate into a course or is that enough to just raise the main questions? Well, I can only speak about my class. I include I touch on utilitarianism. I focus I use a lot of Kantian ethics and a lot of John Rawls concept of justice. Those are the three sort of ethical pegs that I hang my my course on."
+    },
+    {
+      "start": 3328.208,
+      "end": 3355.28,
+      "text": "I don't overwhelm the students with moral philosophy. I pose the question, I give it to them as a loose framework, and then I ask them to do a lot of thinking and look through the lenses of those approaches at Tech News. There are case studies every day that we can apply this moral philosophy to. So that's the decision that I made at any rate in my class."
+    },
+    {
+      "start": 3355.888,
+      "end": 3382.912,
+      "text": "Carlo, tell me if I'm going over. No, no, I think that we are almost at the end. There is one last question, probably by Jeff. Then I'd like to conclude and give the word to Peter. Jeff? Yeah, sorry to delay your departure. I just, again, thank you. But I was still trying to think about whether there's actually something within the software engineering world."
+    },
+    {
+      "start": 3382.912,
+      "end": 3409.552,
+      "text": "that we could hang this on. I mean, in terms of privacy software and so on, they consider attackers and ways in which they can actually damage the security system. And we consider this in requirements engineering and so on. And what we're not doing is, although we're asking them to consider ethical questions and the moral dilemmas that that raises,"
+    },
+    {
+      "start": 3409.552,
+      "end": 3438.352,
+      "text": "and implications of what the software is going to do, we're not providing them with any tools to do something about it. I mean, it would be nice to have some kind of framework and propose something that one would then say, having considered this, both the positives and the negatives, how does one, I think, following on from the question that George raised, how does one actually then provide them with some tools to do something about it in the software, to actually consider this and to draw up whether it's..."
+    },
+    {
+      "start": 3438.352,
+      "end": 3462.464,
+      "text": "frameworks of positives and negatives and implications and so on, and then a framework to make the kinds of decisions. Is there anything that you're considering or perhaps Moshe is considering that you know of? Well, I know of a great resource called the Ethical OS Toolkit. I encourage you to search on that. I can't remember the source of it, but it's a very useful"
+    },
+    {
+      "start": 3462.464,
+      "end": 3483.152,
+      "text": "sort of systematic way of looking at systems and considering the ethical aspects of them. Another thing that I've been turning around in my head over the last few years and hoping to have enough time to devote to developing someday is an ethics-related code review."
+    },
+    {
+      "start": 3483.152,
+      "end": 3508.928,
+      "text": "Usually in computing, in software engineering, code reviews are technically oriented. You know, they're meant to review the code and make sure that it does what it says on the tin. I think as as as the Brits say, to make sure that it meets all the specifications that it was designed to. I would love to see an ethics related code review that asks, asks."
+    },
+    {
+      "start": 3508.928,
+      "end": 3538.56,
+      "text": "sort of more social impact questions. Look at the code and say, you know, is it fair? Is it safe? Is it predictable enough that it will operate consistently in the world? Will it endanger anyone? Will it discriminate against anyone? So I would love to see that. But a good starting point is the ethical OS toolkit. That's one of my favorite resources. Hannes, you're the last one since you're the boss."
+    },
+    {
+      "start": 3538.56,
+      "end": 3567.872,
+      "text": "Yeah, thank you. No, just a very short comment, because this brings me that we possibly should invite somebody from the Bavarian Institute on Digital Transformation, because they run a project on software engineering guided by ethical design. So they have something where they include the stakeholders. They have, let's say, somehow how, let's say, a process model of this. And I think this would be an excellent presentation of one of the next lectures. And this brings me."
+    },
+    {
+      "start": 3567.872,
+      "end": 3593.888,
+      "text": "This was just a remark to your excellent presentation, Tina, because it opens up a whole set of other questions, which is a good sign. And with this, I just want to thank you and to finish. Thanks. Thank you, Hannes, for that wonderful compliment. I appreciate it. Yeah. So let me conclude again, you know, thanking you again for, you know, starting this lively discussion on."
+    },
+    {
+      "start": 3593.888,
+      "end": 3619.888,
+      "text": "you know, technologists thinking about the consequences of their decisions in what they do when they develop systems. I think this is a crucial question. And thank you very much for, you know, bringing up this issue in this community. I hand now the mic to Peter Knays, who is going to then, you know."
+    },
+    {
+      "start": 3619.888,
+      "end": 3649.328,
+      "text": "bring us into the musical world of the end of this seminar. Thanks, Carlo. Actually, Tina will introduce the track herself and share her thoughts on this piece. So what I'm going to do is just to announce the next two lectures, which are a double feature already in two weeks, on March 7th and on March 9th. On March 7th, Corey Doctoroff will urge us to cease the memes of computation, and that will be moderated by Alison Stanger."
+    },
+    {
+      "start": 3649.328,
+      "end": 3677.136,
+      "text": "And two days later, we will have a talk by Gary Marcus, psychologist, AI entrepreneur, critical commentator on AI developments, most recently ChatGPT. And on March 9th, we'll talk exactly on that, ChatGPT. And Helga Norbert will be the moderator. So you don't want to miss either of these talks. Now, let me thank Tina and Carlo for having done a wonderful job. And all of you for joining today. So see you next time. And I hand back to Tina. And I will share the screen."
+    },
+    {
+      "start": 3677.552,
+      "end": 3680.592,
+      "text": "Thank you, Peter. I just want to share a brief thought"
+    },
+    {
+      "start": 3680.592,
+      "end": 3709.968,
+      "text": "on the musical selection. This is one of my favorite of Pink Floyd's songs. The turning away that the song describes seems more descriptive of, say, a human ignoring the pleas of another human asking for help, say, a destitute person begging on a street corner. But I think the lyrics are worth reconsidering in the light of 21st century technology and all the ways that it can enable us to turn away from each other. I hope it makes you think."
+    },
+    {
+      "start": 3709.968,
+      "end": 3712.784,
+      "text": "And I thank you for your attention today."
+    },
+    {
+      "start": 3751.344,
+      "end": 3752.592,
+      "text": "What's happening?"
+    },
+    {
+      "start": 4052.528,
+      "end": 4056.208,
+      "text": "Thanks, Dina. Thank you. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

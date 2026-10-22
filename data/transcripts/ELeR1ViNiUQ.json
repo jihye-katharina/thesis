@@ -1,0 +1,711 @@
+{
+  "video_id": "ELeR1ViNiUQ",
+  "source": "whisper",
+  "language": "en",
+  "text": "And we are ready to go. It's you are the master of the universe. Okay. Thank you. Thank you for joining and good evening or good morning. Welcome to the lecture of today on digital humanism. Today it's dealing with democracy and geopolitics and digital humanism. So it's not only. about IT, but it's also dealing with IT in a broader context. As we will also say, digital humanism is also a political issue, and it's about politics. In this context, I am really happy to welcome Alison Stanger. She's an internationally-owned academic in the field, coming from political science. And this session is moderated by Moshe Wadi, who will also then introduce Alison. Just to remember, the talk will be 30 minutes and then we have 30 minutes of Q&A. After the discussion, after these 30 minutes, we will end with a piece of music introduced by Peter. And this time it was selected by Alison together with Peter. And they had a long discussion on which piece of music to select. It's a pleasure to welcome Moshe as a moderator. It's hard to introduce Moshe, since there would be so many things to say, and I really have to restrict myself. He's a George Distinguished Service Professor and Professor of Computer Science at Rice University in the US. He's really one of the most cited computer scientists worldwide, and there are too many awards and fellowships in academic societies. I just want to mention two of them. which recently were awarded. One is the Donald Knuth Prize for Outstanding Contributions to Apply Mathematical Logic to Fundamental Areas of Computer Science. And the other one is the ACM AAAI L. Newell Award for Contributions also to Development of Logic as a Unifying Foundational Framework. Okay, Hannes. I just wanted to say that I'm really happy that you are with us, and I'm happy that the guy coming from theory is also taking care about societal and political impact of computer science. This is what I wanted to say, Moshe. Okay, thank you very much. Thank you, and the floor is yours. Thank you. So it's my pleasure to introduce today's speaker, Alison Stanger. She's a political scientist. split her time between Middlebury College and Stanford University and the Santa Fe Institute. And she's been one of the people I go to when I want to understand the interface between technology and politics. And she has deep experience in geopolitical affairs. She has been a member of the Council of Foreign Relations for more than 15 years. She's been consulting for the U.S. State Department. And she's going to tell us today. about digital humanism and democracy from a geopolitical perspective. Alison, please. Great. Well, thanks so much for that kind introduction, Moshe. I'm speaking to you today from Stanford, where I'm at the Center for Advanced Study in the Behavioral Sciences. This is a great place to spend a year, and it's open to all citizens of the world. So you should check it out. It's a good place. Ironically, I'm not speaking to you, though, from the Stanford campus, even though it's behind me. That's because, believe it or not, the Ethernet there is unstable. So I actually have a better situation here at my tiny flat in Menlo Park. Anyway, my aim today is twofold. I want to test drive part of an in-progress book proposal. which is now tentatively titled Who Elected Big Tech? And second, since the topic is multidisciplinary and this is a multidisciplinary audience, I want to share that new project first by very quickly situating this new project to be my most recent work. The core insight animating all my work is this. Liberal democracy is a complex adaptive system. as is the global economy. And my focus has been on the interaction of the two with technological innovation. And here my affiliation with SFI has been quite valuable. There is some noise. Please, people, mute your microphone. There's some background noise. Okay. So if you're interested in my theoretical point of departure, I'd recommend this book that just came out. which I co-edited with W. Brian Arthur and Eric Beinhart on complexity economics. Put another way, we need always to be aware that any political questions we might have for American democracy or for big tech has, they're just inextricably intertwined in a local and global interdependent world, which raises new and important questions for corporate, national, and international governance. And this insight that seems like common sense still often goes unacknowledged because of the disciplinary silos all scholars are in some way inhabiting. So my previous work, One Nation or Put Another Way, we need always to be aware that any political questions we might have for American democracy or for big tech are really embedded in both a local and a global interdependent world. And that raises all kinds of new and important questions for governance. And this previous work, One Nation Under Contract, told the story of how American foreign policy was privatized with unintended consequences for both business and government. The most important of which was our collective sense of those things that only government can do well. When the business of government becomes business, there's nothing to push back against corporate excess. Yet reigning in big tech is obviously imperative for sustainable democracy. This book came out in fall of 2019, just as the impeachment hearing was. was being initiated, the first one. It's going to come out in Chinese in 2022. What it does is it provides an episodic history of whistleblowing in America to illuminate the radical break with the past that the Trump administration intended to affect. Previously, whistleblowing in America had been a patriotic pursuit, and both Democrats and Republicans had always supported whistleblowers in the light of day. But as we all know, it all went differently with the first impeachment inquiry when Trump succeeded in making it a partisan issue, which was wholly unpatriotic, broke my heart in many ways and probably many of yours as well. So where does this new book fit into this mix? Well, I'm broadly interested in the impact of technology on democracy's public sphere and on citizenship. And I find leverage on this problem through comparison with how technological innovation functions in authoritarian and then in contrast, liberal democratic regimes. I published a piece in CACM that made a really simple argument from which this work departs. Recent events have clearly demonstrated that some of the things that we want as consumers are actually quite bad for us as. Citizens who are interested in social justice and the common good. So we need to rethink that tradeoff. And what follows is a contribution to that rethinking, which I believe has to be a collective enterprise between the United States and Europe and other liberal democracies. Here is a postcard of what the financial. Times called the Cornwall Consensus. I love this photo. It kind of reminds me of the opening shot of some kind of a Star Trek remake, if any of you are familiar with that American contribution to popular culture. What's the Cornwall Consensus? It's basically a G7 agreement that globalization and free markets have created vulnerabilities as well as opportunities, and liberal democracies need to collaborate. to address problems that are global in scope. It's also an implicit agreement that China is not an optimal collaborator. This is not rhetoric. I believe it is real, and there's been a real shift in how Washington views the world that we need to understand. So what I want to do today, this is kind of a romantic talk. I want to introduce the values alignment problem. I want to say a bit about what Elizabeth Anderson calls the distinction between private and public government, how it relates to authoritarianism and democracy. We'll move on to explore some of the connections between statistical machine learning and individual rights. I'll talk more about this book proposal in progress and we'll conclude with some reflections on how we might reboot public governance. So what is this values alignment problem? It means we need to consider China. China's technology sector has long lagged out of the United States in innovation. The deep learning that drives contemporary artificial intelligence is very much an American innovation. And Silicon Valley's spirit of discovery and dynamism is more difficult to generate under autocratic government. But China is uniquely well positioned to outperform the United States in AI implementation. And this is something to keep an eye on. keep an eye on because it's copycat tech sector can generate and harvest data without privacy restrictions. So Chinese super apps like WeChat, which we can describe as kind of a remote control for your life, allow the user to hail a ride, pay for groceries and street food, book a doctor's appointment, get a taxi, unlock shared bikes. message or photo a friend, play games. You can do all of this without leaving the WeChat platform. Each of those transactions generates vast amounts of data on which machine learning systems can train and produce still more efficiencies and patterns previously invisible to the naked eye. In July 2017, China released a master plan that announced its inspiration to lead the world in AI research and deployment by 2030, China's President Xi has said in private meetings that, quote, whoever controls data will have the initiative. So this was a response with a group of Americans that begs to differ. It's the final report of the National Security Commission on AI. This is a commission that was appointed in August 2018 primarily by Congress. And its March 2021 final report, which was chaired by former Google CEO Eric Schmidt and 14 other tech titans and academics, begs to differ with China's prediction. While motivated to emerge victorious, this report suggests that an ethical AI composition is unlikely without significant government support and guidance. And the chair and vice chair's opening letter emphasized. that the AI competition is also a, quote, values competition. The final report basically says that if we continue a laissez-faire approach to AI research and development, that's a recipe for catastrophe. Chinese autocracy may not be conducive to innovation or free thinking, but it is a comparative advantage for AI implementation, as many of you probably know, because successful machine learning applications need three things. Big data, computing power, and competent but not brilliant engineers. And then a shadow human army to categorize and tag this collected data. And the country with the most data is likely to win the AI applications race. But this competition is not only a battle for the best machine learning products, it's also a values competition that has powerful implementation. implications for each regime's legitimacy. So to prevent the automation of injustice, Americans and Europeans alike must understand that we have a values alignment problem in AI development that China does not. And we should not want to win any sort of AI arms race with China on Chinese terms. Watch out, I've got all sorts of trucks coming down my street. I apologize for the noise. The reason we don't want to do that is because it would destroy what we're committed to defend. So authoritarians and democracies define justice differently. In a liberal democracy, justice follows from the individual rather than any group membership other than the set of fellow citizens. Regime legitimacy, that is the moral right to rule, resides in a perceived correspondence. between those professed values and reality. It takes lived experience in a fact-based world rather than ideals as its point of departure. So justice in a liberal democracy therefore resides in the protection of individual rights. We might say that justice is fairness premised on human equality. For authoritarian regimes, in contrast, justice is defined very differently. It's based on utilitarian principles rather than on individual rights and security or hierarchy for the community is privileged over human equality. I think it's very useful to use Elizabeth Anderson's definition of private government. This is her book here. She says that the Chinese regime is an example of what she calls private government. Private government's distinguishing feature is that it does not recognize a protected public sphere that's free of government, of elite oversight. Private government is always authoritarian since it does not value liberal notions of democratic accountability. Private government, Anderson writes, is government that has arbitrary unaccountable power over those it governs. The ends of communist government, therefore, are neither liberty nor equality, but utilitarian progress and the perfectibility of human beings under the force of private government. So for Anderson, the only way to preserve and protect both equality and freedom is to make government a public affair accountable to the governed. So when she looks at the transition from monarchy to liberal democracy in Europe, she describes this. It is involving gradually replacing private government with public government. Public government utilizes the rule of law and substantive constitutional rights to advance and protect the liberties and interests of the governed rather than the governors. Monopolies are a form of state licensed private government. In the development of liberal democracy in Europe, opposition to economic monarchies was part of a broader agenda, she tells us, of dismantling. monopolies across all domains of life. So since the party is the regime's point of departure, communist autocracy and liberal democracy also part ways on the importance of an independent public sphere for human flourishing. The distinction between the private and public realms is not drawn the same way in China. So if we think about it, both Aristotle and Hannah Arendt saw the public sphere as a realm of self-actualization critical for becoming fully human, and the foundation for democratic political life, for the right to privacy, all those things, Karl Marx viewed the public sphere as something that had to wither away before the full potential of humans could be realized. So since the very idea of a right to privacy presupposes a public-private distinction, Privacy in China is easily sacrificed at the altar of national security and societal goals. And there are many, many examples of this. To see this more clearly, I think it's helpful to think of two models of man, bourgeois man and citizen man. For Marx and his heirs, the class struggle between bourgeois man and working man, between the oppressor and the oppressed, is the central dynamic. But Montesquieu, Machiavelli, Montaigne, and the American founders, in contrast, saw this very, very differently. Hannah Arendt tells us they ransacked the archives of antiquity to imagine a different model of man for the new republic. And the model man of this new system was built on the Roman conception of the public sphere and was based on the citizen of the Athenian polis. So the American Constitution's architects thus drew on both Greece and Rome in imagining the new republic of the United States. Inclusive citizen engagement in American political life is thus essential for both government and human flourishing, even though atavistic social hierarchies have long worked at cross-purposes with those ends. So to summarize, government is private in China because the Chinese reject the Americanistic. between the public and private spheres. Everything is public, which means nothing is private. So former FBI Director James Comey spoke at the Harvard Kennedy School in February 2020, and he put it this way. He said this is exactly where negotiations about technology transfer with China break down. And it's because the Chinese don't understand the American distinction between technology for private uses and for public uses. So the latter is the regulable space for Americans. And the same refusal to distinguish between the private and public realms underlies China's one-child policy, which began in 1979 and only ended in 2015, and the government's current efforts to encourage Chinese single women to marry and have children. So I think this is important to realize that the very idea of a right to privacy presupposes this public private distinction. And privacy in China is thus more easily sacrificed to larger country goals. This means that private government in China has a very different relationship to algorithms and big data. We know, I'm sure many of you are familiar with some of the things that Baidu, for example, does and the data it collects about its users. According to an account in Scientific American, every Chinese citizen will receive a so-called citizen score, which will be used to determine who gets scarce resources such as jobs, loans, travel visas. China also uses facial recognition software to monitor its Uyghur Muslim minority for law enforcement purposes. China's social credit system, which is designed to reward pro-social and punish anti-social behavior, is becoming operational. And new coronavirus data, I think, will certainly be valuable for this initiative. So if we think about this in the Chinese context, Deploying citizen scores in such a fashion may be just in a utilitarian sense, but it's also a government information monopoly inconsistent with democratic governance. In contrast, citizens in an individual rights based democracy should rightfully view algorithmic bias to the individuals as injustice. So I think we need to ask the question. when we look at market values of who benefits, that's a good way of assessing the gap between ideals, American ideals, and reality. And we need to do that to devise optimal means for realizing a better world. The aim is for human freedom and equality of opportunity to become more real than ideal over time. And here's a series of books that have been quite useful to me. They speak of the same thing. Amartya Sen has called this aim for human freedom and equality of opportunity development as freedom. Martha Nussbaum uses Sen as her point of departure in developing her capabilities approach. Danielle Allen has referred to the same as difference without domination. And Elizabeth Anderson has conceded. conceived of the freedom undergirding pluralism as absolutely essential. So China's utilitarian approach to justice, as well as its embrace of an automated world powered by statistical machine learning, accepts the world as it is and doesn't ask why. And this threatens all of these things. It threatens development as freedom, difference without domination, and pluralism itself. It does so because it threatens the very idea of public and individual rights-based government, where all are to be equal before the law. So I'm going to say something very briefly about statistical machine learning and individual rights, because I'm assuming most of us here are familiar with this. Let me just... I've got a... A problem here. Hang on. I think some of you, Stuart Russell has spoken to this group, correct? I believe so. So let's take a look at what he has to say. I think for this audience, I don't have to review the most recent technological advances for machine learning powered by neural networks. Let's just say that the great gains in image classification. Object detection, speech recognition, and natural language processing combine to make your smartphone a driver of your life. Most importantly for deep learning approaches, the more data that can be harvested and the greater the computing power that can be harnessed, the more powerful the results. So over-reliance on machine learning has potentially destructive political ramifications in a liberal democracy for at least three reasons. I'll go through these really quickly. because we're running short on time machine learning can be unreliable machines can be trained to identify people or objects but since they cannot understand context or common sense bias can easily creep in there are many examples of this facial recognition can make all sorts of errors we know that a lot of the recognition exhibits racial bias through the false positives it arrives at and the data that's used to generate these findings. That's why Microsoft's president, Brad Smith, has called for congressional regulation of facial recognition. Machine learning can also be opaque. We often don't know why results are produced. Since one can't argue with a machine when machines displace human injustice domains, Both citizen engagement and democratic deliberation are devalued. So secret algorithms, I would argue, are at odds with the rule of law, yet they're deployed in meeting out justice. And finally, machine learning can be vulnerable to attack. Even when computers have been trained to do a specific task, they can be surprisingly tricked. into producing spurious results. And this creates all sorts of opportunities for hacking and wreaking havoc on public infrastructure. So I'm going to skip through this in the interest of time, but Stuart Russell has made an argument about the three principles for beneficial machines. And I would just point out that that there's no safeguard here against tyranny of the majority, even if these beneficial systems are produced. And that's a problem for rights-based democracy, because obviously slavery was an instantiation of tyranny of the majority. And we can think of a variety of other abuses of power that arrive from those arrangements. In the liberal democracy, we might say that The confusion of correlation with causation, otherwise known as misrepresentation, is the root of most injustice. So my book proposal. I think you all know that in January 2021, big tech crossed the Rubicon when Facebook, Google, YouTube and Twitter de-platformed and canceled a freely elected U.S. president. And the bi-coastal Brahmin elite and most people of color applauded this collective decision, while a good portion of white working class Americans were outraged at the silencing of their perceived champion. White collar and rural whites had a good point. Who had elected big tech to make this momentous decision? It's not hard to guess where most of today's audience stood on the decision, but they had a good point. From the perspective of democratic theory in the First Amendment, endorsing big tech to do the work of government does not seem like a good idea. So despite being obscured by a madman U.S. president and a global pandemic, these unprecedented events raise questions that need answers. How and why do we reach this point? And what consequences follow from the transfer of power in a global interdependent world to companies rather than governments? And here I'd be very interested to learn how each of you would answer this question. But I think what we can do is start by acknowledging what has changed and what has stayed the same. Today's corporations, unlike their imperialist predecessors, are not national enterprises. They are multinational in scope. The East India Company, for example, was an extension of the British state. Coinbase, in contrast, which is the most trusted cryptocurrency platform, went public in 2021, and it has no physical headquarters. Coinbase mission is to use cryptocurrency to bring economic freedom to people all over the world. As such, it directly challenges the legitimacy of existing governments who back the world's currently fungible currencies. What has stayed the same? This is going to vary from country to country, but in the United States, the Telecommunications Act in 1996, which was designed to break up Ma Bell. So the government could encourage innovation and free market competition. That very same law governs social media today. Yet in the past 25 years, telecommunications have been transformed dramatically. And with the advent of the Internet are now global in scope. My working hypothesis is that Larry Lessig, who writing decades ago in this book I'm showing you, has been vindicated. Code is law. as Lessig claimed, yet law has lagged dramatically behind technological change to the point where the resultant imbalance of power has become dangerous to democracy, at least in the United States. I realize Europe is a separate matter, and we'll want to talk about that in the discussion. Today's corporations, unlike their imperial antecedents, are not national enterprises. They are multinational in scope, which means that corporations, in addition to the working class, today have no country. Monopoly power is also unaccountable power and hence private. Big tech is an example of private power in action. But I'd point out to you, this is not your classic antitrust issue, even though the U.S. government is presently presenting it as such. and relying on things like Tim Wu's work to reach these conclusions. That's another way of saying that the usual tools of trust busting in this new situation are unlikely to succeed and likely to produce unintended consequences, as they were designed for the world before globalization. Consider the differences between the first and second Gilded Age. First big point, big tech is global. Two thirds of Netflix. Alison, you need to wrap up in, let's say, four minutes. Yeah, absolutely. I can do that. All right. Very quickly. I have too much I want to say, but we want to leave time for questions. So thanks for the reminder. Big tech is global. And the price of the product. is zero in many instances, so monopolies are usually used to regulate prices and make them serve the consumer. This is clearly not the case with many of the ad-driven business models. And finally, physical space doesn't matter. If we look at Estonia's online incorporation payment and banking services, they allow companies to manage businesses from anywhere entirely online. There are currently over 80,000 e-residents from 100 plus 160 plus countries have started more than 10,000 businesses. Another big difference is that big tech wants to be regulated. This is a Facebook ad showing you that Facebook thinks it's time for updated regulation. This is extraordinarily unprecedented. Then we have the work of the Facebook Global Oversight Board, which is a highly interesting. Interesting institution, new institution. It's supposed to moderate content. It was announced in September 2019 and is funded by an independent trust. This is the body that ruled that Donald Trump should be his account should be deactivated. The 40 member board was devised after months of public consultation with experts and institutions around the world. In terms of its design, it is something wholly new. It's a para-governmental organization with no government or legal representation that floats above individual countries, yet renders judgments with local ramifications. Its composition circumvents nation states entirely, and it's not the European Union, nor the United States, nor the World Trade Organization. It looks like a court, but Facebook is not a country. aspire to serve law in any way, either domestic or international. It exists as a body of ultimate appeal, and in that sense resembles something old, the private government of the King's Court. Yet Zuckerberg insists Facebook will abide by its decisions. Twitter and Google's YouTube followed Facebook in suspending Trump's account after the January 6th intervention. The current state of play here is that Twitter's ban is permanent. YouTube's is indefinite. Facebook's is in a state of suspended animation. They recently announced that his account will be closed down for two years, after which they will reassess. Earlier this month, just in advance of the G7 meeting, I'll skip this. It's sad. It's the reasons why big tech have so much power. We can come back to it later if you like. But I want to talk about the new industrial policy bill, which passed with an overwhelming majority of both Democratic and Republicans and allocated a quarter of a trillion dollars to AI research and development. This legislation is a collaboration between Republicans and Democrats. The one thing Democrats and Republicans can agree on is that China is a threat. So just to conclude, how might we reboot public governance, which I think should be our goal? I'm in a rather optimistic mood. The grownups are back in charge in Washington, and there's the will and support to get things accomplished in collaboration with Europe. Chinese private government worries neither about protecting Chinese privacy rights nor the rights of foreigners. In terms of capability, China scholar Minxin Pei argues that China has no rival for the world's largest surveillance state. Pei estimates there are 10 million Chinese informers. As a result, while there are well-documented instances of Washington spying on foreigners for security reasons, and I wrote about this a lot in my last book if you're interested in... the rules that govern that kind of surveillance of foreigners. But there's not a single reported instance of commercial espionage on the part of the United States. And obviously, with China and Russia, there are countless examples. Just to give you a sense of the scope, FBI Director Christopher Wray, speaking in February 2021, reported that the FBI has about 1,000 investigations involving China's attempted theft. of US-based technology and all 56 of the FBI's field offices spanning almost every industry and sector. In response, Americans just have to do whatever we can as citizens to render both public and private governance more accountable, both in Washington and in Silicon Valley. America's national partners in this enterprise are other open societies that uphold individual rights. We should not expect authoritarian states to help us uphold liberal democratic values, nor should we expect corporations to do so voluntarily. In partnership with other liberal democracies, that is, government must incentivize the invention and deployment of technology that enforces rather than undermines the stability of open societies and the protection of individual rights. The bottom line is that this is a moment for new political thought on a global scale that's unmatched, in my view, since the age of liberal, democratic and communist revolutions. The EU is an extraordinary model of postmodern political thought. And I think it's quite imperative for the United States to turn to Europe for conversations about what has worked and what has not worked in that vision. I think the Cornwall Consensus, the U.S.-Russian Agreement on Cybersecurity, and the Senate Industrial Bill are pointing us in the right direction. But what all of this requires in conclusion is we really have to reimagine the role of technology in human affairs. And the pandemic has given us a unique opportunity to revitalize and extend the domain of public governance. both globally and domestically. So when the current crisis is behind us, we have a better understanding of what we value, the things that unite us rather than divide us, and the hard work that still needs to be done both at home and abroad. So with that, I'll thank you for your attention and welcome your questions on anything. Thank you very much. Thank you very much, Alison, for this very, very thought-provoking talk. I'll take the privilege of first question. And my question is, how do we regain the clarity of the Cold War? So the Cold War, you know, on one hand, we had this mad strategy. We had the threat of nuclear annihilation. But we had more clarity of the good guys and the bad guys. And we had a strategy. It was called containment. And ultimately, that combination of moral clarity and strategy, it worked. And I think it's I'm not trying to say that this is analogous situation, but we do have a global geopolitical competition. between the liberal view and the authoritarian view. It's not about communism and capitalism now. I think it's about democracy and authoritarianism. And we don't seem to have a strategy. We don't have moral clarity and we don't seem to have a strategy either. Yeah, I think that's an excellent question. And I think that's in the process of being born. You're absolutely right to point out the similarities as I was going through them, especially with this industrial policy bill. It's very much like the Cold War with this massive injection of funds into technology, research and development that built the weapons of the Cold War and actually built Silicon Valley. That's why Silicon Valley is here. The government spending that. flowed because of the Cold War. So I do see this analogous situation. There are a couple of differences that I think we have to keep in mind. First of all, while there is this values alignment problem, China is not the Soviet Union for at least three reasons. And I worry about us getting confused as this China rhetoric ramps up about those differences. Because Unlike the Soviet economy, the Chinese economy is intrinsically intertwined with the Western economy. The supply chains are so important, as we've seen in the pandemic. And one of the things that the United States wants to do, and I think Europe wants to do as well, is ensure that the supply of semiconductor chips, silicon chips, flows even if China makes some sort of move on Taiwan. That's the big, big worry. Taiwan is so important and the two China policy is so important because Taiwan supplies chips for both the United States and for China. So that's mitigating against any sort of war scenario. Plenty of room for hostility there. But I think we have to just rally around what we value and keep in mind that communism in theory sounds wonderful. But when we look at how it's been implemented in practice, it's something else entirely. And markets do serve their purpose. And I think a focus on individual rights, makes the difference between the West and China very clear. We want to ensure the independence of our supply chains. I think that's very important. But at the same time, work with China cooperatively on global problems where there is this coincidence of interest. So we don't want to ramp up the rhetoric to the point where China is, in some sense, evil. You know, another thing that's really different from the Cold War is that AI weapons are not nuclear weapons. When you think about how you might regulate them, that was a great mitigating force for conflict with the United States and Soviet Union. There are all these talks, many of which took place in Vienna, about arms control. But how you have them about AI weapons is different. I think this idea of protecting against hackers and cybersecurity. first start, that U.S.-Russia agreement could be extended to China, hopefully. And finally, yeah, there's the debt problem. Yeah, I just wanted to mention the debt problem, which, you know, the Americans are vastly indebted to China. So China has no incentive to start a war with the United States because what happens in history when two nations go to war? The first thing they do is declare all the debts are no longer valid. So there are powerful disincentives against a Cold War turning hot. But I think we have to rally around our common values. And that's what I hope we see happening. Edward had a question. Yeah. Thanks, Moshe. And thanks, Alison. It was a very thoughtful talk. There was one comment that you made that worries me a little bit because it sort of reflected, I think, a widespread complacency about China that's based on the belief that its technology development is imitative and not creative. And I think there's a lot of evidence that that's not true. The WeChat application, the WeChat platform, for example, is something that we don't have anything like that in the West. It's really... There's quite a bit of innovation in it. And I think in AI, we're also seeing a lot of innovation from China. And so my question is, really, can we afford to continue with this complacency and just assume that all the creative minds are going to come out of Silicon Valley? I'm not so sure. Yeah, I think that's an excellent, excellent point. And there are some really interesting developments in self-driving cars. I wish I had a picture I could pull up for you. I should have had that. If you look, the Chinese have a prototype that's based on, it's kind of riffing on the VW Beetle, you know, from the 60s. It's an electric car and it's cool, like you would want to drive it. And I think that's a good example of not taking China's possibilities for innovation and selling them short. You're right. But I also think that creativity does flourish. the best under circumstances of freedom. And when there's too much government involvement, it's a delicate balance to get this right because you want social welfare as well as innovation. And Americans have erred on the side of excess in that regard, I believe. But I just don't think you can get around some of the educational superiorities. of the U.S. educational system vis-a-vis the Chinese educational system, even though there are developments in that realm too. So the current position is in no way some kind of permanent state of affairs. But one of my big hobby horses is, I think, liberal education. Liberal arts education is extraordinarily important, even for people who are studying technology, because of this creativity factor. I just think that... Being able to move across different realms and having a broad training in the old-fashioned sense is useful, even in realms that people think it isn't useful. And it certainly helps people, computer scientists and engineers, recognize some of the value questions that we've been discussing in this group. But your point is well taken. We shouldn't overstate this. conventional wisdom that China is only good at copying and China can't innovate because I think it's a very powerful and impressive nation. Just to remind you, we used to say that about Japan. Yeah. Yeah, that's a good point. That's a good point. Renata has a question. Thank you. It's really thanks a lot for the talk. It's very great opportunity to be here. So I'm a bit skeptic about being hopeful now. Because it started by, you know, criticizing the authoritarianism in China. And I agree with you. There are many problems there. But then you went on also showing the authoritarian attitude of big techs in democratic countries. And I'm coming originally. I'm now in the Netherlands, but I'm originally from Brazil. And we also see a lot of authoritarianism there now. Yes. So there's a kind of a wave of these things happening, I guess. So is there any hope? Yeah, no, I think I think they're there. There really is hope. And I didn't have time to get into it. And I want to get into my books. I'm really glad you raised that question. Because the private public government distinction I was making so laboriously is actually relevant to this question of big tech in the United States. Because what we're seeing in the United States is increasing pushback from the employees of big tech firms against the corporation's policies. And it's changing attitudes and often changing their policies. And so I think the solution is we want to encourage public government that is accountable government, both within our national governments, but also within these firms itself. And there are a variety of ways you can do that. I have a bunch of policy solutions I'm sort of thinking about. One of them is just reviving the old concept of workers' councils. Remember workers' councils? Yeah. It's really important because there's an unacknowledged horrific labor cost in these developments. My colleague Mary Gray from Microsoft Research calls this the ghost workers. That's all the contractors behind the scenes. And those contractors, which I studied in my book on the privatization of American foreign policy, they don't get benefits, typically. So you've got these workers who drive Ubers, they don't have benefits. California recently ruled with Proposition 22 that they're not employees, they're contractors. What does that mean? They don't have to provide them with health care. So this is potentially disastrous, and maybe it will push us toward... national health care in the United States. I'm hopeful Europeans, you're you're better off because you've been sensible about this. Yeah. But, you know, unions, sometimes they also want power, a lot of power. I see that in my country, like the unions, they they get to be these bureaucratic organizations that also want to hold on to power. Yeah. I mean, it's the whole attitude, I guess. People want power, power, power wherever they are. I know. I know. And that's why that's right. Yeah, well, that's why I think we have to consider alternative models within company models, because young Americans, idealistic Americans don't want to work for a company that's evil. Silicon Valley really believes it's making the world a better place. And clearly, in many instances, it hasn't made the world a better place. So the one thing I can say to you that I. it makes me very optimistic is I've been living here for three months ever since I was able to get out here for my Stanford fellowship with the, with the pandemic. And people are talking about these issues I'm talking about. People are very receptive to me. The, the, the big tech companies are thinking about this and looking for expertise. And so this is a really important moment for, for the kind of work that the digital humanism group is doing to have an impact. So if we all work on this together, I think we can get somewhere positive. That's my hope. Thank you. Paul has a question. Yes, Paul. Thank you. Alison, this is so fascinating. I have many questions. So if you allow me, if the chair allows me, I just pose two questions. Very briefly. One is, I recently read a quite interesting article by the Dean of International Relations of Tsinghua University. Yan Zitong said, Chinese values versus liberalism. And he more or less said, I simplify, he said, you've got it all wrong in your thinking in the West, but your justice as fairness, you may have justice, but it doesn't deliver fairness. And we actually have from Chinese traditional values, a better system, which is the enlightened ruler, who ultimately... The enlightened emperor will deliver fairness. And so he says that literally, I think he says something that China may shape international relations by combining Chinese traditional values with selected liberal or liberalist values. So he says you're on the wrong page. You know, we've got a better thinking and it's coming from 2000, 3000 years of Chinese history. So it has some weight. That's one question. What do you think about that? Apparently, you're right. The second is, you said code is law, or Lawrence Lessig actually said that. I think nowadays we would quite often, and I would also argue, law is code, not code is law, but law is code. So it's the values that we want to have that have to be reflected in certain type of technology. And you see it in the debate about, for example, the COVID or the Corona apps, certainly in Europe. You know, what value do we want to have around privacy? Not every technology is compatible with that. So this technology, yes, that technology, no, you design the technology the way we want to have it in our value system. So I was suggesting, kind of perhaps suggestion for your conclusion, is you say rebooting public governance, perhaps together with that is rebooting technological construction. Because nowadays public governance goes a lot together with technology and not every. technology will fit with the reboot of public governance as you are perhaps aspiring it. Yeah. Well, I wholeheartedly agree with you on the last point. I like that formulation. So thank you for those questions. And I also love this quote. If you would send me that quote, I think that's fascinating. Because the point I'm really trying to make, and as I'm giving this talk, I'm often thinking about, do I sound like this strident American who's just bashing on China? That's not where I'm coming from at all. I have deep respect for Chinese culture. I want to learn more about it. I don't know that much about it. And I just think this is a very important distinction that, and it's a radical one, but one of my mentors, Judith Sklar at Harvard, who was the first tenured woman political scientist at Harvard, used to always say this. She used to say in this inimitable voice, she was from Europe. International justice? Contradiction in terms. In other words, what she meant was that justice has to be formed by one community. That's where justice derives from, what they decide the values are that reflect their community. And this is a legitimate way of looking at it, that the group matters more than the individual. I happen to think, because I'm the first one that would be like, thrown into a labor camp in one of those regimes that I like individual rights. But maybe that's unfair. Maybe I'm elitist because most people maybe want what China has. That's a really interesting philosophical question. And the final point I'd make about law and values, absolutely. We want to demand that the laws be upheld, that there's equality before the law. That's our problem in the United States. We don't have equality before the law right now. But we also want to get the right laws. With respect to technology and that's being born right now and that's where we can work together to make it happen. Exactly. Yeah. Thank you. Hello, it's me again because Moshe had to leave because he said he has just one hour sharp. So I will continue to moderate the discussion. There was one discussion. There is no hand raised, but there was one point made by James that you were somehow a preference of human behavior. Could you come to the question? Could you rephrase it, James? Yeah. Hey, Alison. I think you might have already answered this. I just didn't connect the dots or it flew by me. But I was interested when you flashed that Stuart Russell slide. I think the last bullet point was something like the ultimate source of information. about human preferences is human behavior. Maybe your previous comments were a segue. Just comment on that. What is your reaction to that Stuart Russell idea? The ultimate source of... I thought you commented on this and I missed it. You said the ultimate source of human preferences is human behavior. And I thought you said something about tyranny of the majority. I want you to clarify or just repeat what you said for me. Yeah, I don't like that. Yeah, I was racing through that. So I didn't probably didn't make much sense. I didn't like it either. I want you to unpack it for me, please. Yeah. Yeah. So so what I was trying to convey with that is, you know, that particular premise has a problem in that it allows no room for ideals. Because we're all human. We behave. And sometimes we don't like our own behavior. We're aspiring to be better. That's true of individuals as well as countries. So I didn't like that as a measure. Because it doesn't allow room for the progressive vision. Thank you. The liberal vision of getting closer and closer to this state where we're all equal before the law. Good. Thank you. Yeah. Okay. Being the moderator, I take the freedom for a last question. And I would like to follow up with Paul's comments. And I would phrase it differently. Shouldn't we somehow. Be afraid or be more aware that we don't come back to a bipolar world where we have the West and the East, where we have the evil on each respected side. I think we are more on a multipolar world. We have, for example, you also have the European way. So I think it has to be. It was also raised by Moshe's quote, in the Cold War, we knew exactly who was the good and who was the bad one. And I'm not so sure whether we all knew who was the good and the bad one. And I think we should be very careful before coming back to this trap where we say, okay, the Chinese behave like that. And the other way is the American liberal democratic way. I think we should not forget social... social justice or social welfare system. We have brought us forward in quite a substantial way. So this is my last question. So we are more moving in a multipolar world where we have different value system. And there's also some kind of specific respect before that. Yeah, it's an important point. We've been bad at this in the United States. in not looking to the examples of other countries for ideas. There's a tradition in American law judging where you footnote the cases that support your argument, and there had been a reluctance to footnote other countries. Now, I think increasingly that's seen as more relevant. So if we can approach these issues knowing what we stand for and knowing that we all have something to learn one from the other. I think it's absolutely critical. It's absolutely critical to begin from a position of respect because each system is trying to do the best by its values and its people in different ways. Now, if that breaks down, you've got a total dictator. I don't have nice things to say about that at all. But China's not like that. China's a much more complex society. And even that social credit system, when you discover it, is fascinating. Because when you push deeper, there's all sorts of decentralized initiatives that are part of it, where local communities are deciding certain ways in which it's going to be used. So there's a tension between centralization and decentralization in China that's quite interesting. We need to be careful both about using ideal types because they can distort the reality, the things that are actually in common between things that seem quite different at the ideal type level. But we also need to just respect, just show basic respect for our fellow human beings. And that will take us a long way toward avoiding the rhetoric of the Cold War. And I'm hoping we can avoid in the United States a repeat of the McCarthyite era. which came along with American anti-communism. So learn from our past mistakes and show respect for other humans. Those would be my two watchwords. Alison, thank you. Thank you all for participating. Now I hand over to Peter Knies, who will present a piece of music chosen by Alison, as far as I have understood. And he will also announce our... next and last lecture before the summer break. Peter, the floor is yours. And thank you all for participating. Yeah. And I can say that I have a fascination with national anthems. Right. So this gets us right to your suggestion. So I think, so Alison had a very bold suggestion, I think, for today with the... uh music could be to follow this talk um but interestingly it fits very well and and support supports the the points that she made earlier um let me just share the the window here all right so um more for information than entertainment purposes of course we're going to play to you the march of the volunteers which is the national anthem of the People's Republic of China. We're playing a YouTube clip that also shows the lyrics in English for you to follow along. It's not a karaoke session, so it might look like a karaoke session, but it's not a karaoke session. If you want to sing along, you can, but keep your mic muted, so then everything's fine. Before I start the video... I will announce the next event. So as you heard, it's the last lecture before the summer break. And in two weeks, on June 29th, Roberto de Cosmo will be speaking on should we preserve the world's software history and can we? And Edward Lee will moderate. So thanks for joining today. And here's the Chinese anthem for you. See you next time and goodbye. Thank you and goodbye and we'll see you on the 29th. Bye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 23.408,
+      "text": "And we are ready to go. It's you are the master of the universe. Okay. Thank you. Thank you for joining and good evening or good morning. Welcome to the lecture of today on digital humanism. Today it's dealing with democracy and geopolitics and digital humanism. So it's not only."
+    },
+    {
+      "start": 23.408,
+      "end": 50.272,
+      "text": "about IT, but it's also dealing with IT in a broader context. As we will also say, digital humanism is also a political issue, and it's about politics. In this context, I am really happy to welcome Alison Stanger. She's an internationally-owned academic in the field, coming from political science. And this session is moderated by Moshe Wadi, who will also then introduce Alison."
+    },
+    {
+      "start": 50.272,
+      "end": 80.096,
+      "text": "Just to remember, the talk will be 30 minutes and then we have 30 minutes of Q&A. After the discussion, after these 30 minutes, we will end with a piece of music introduced by Peter. And this time it was selected by Alison together with Peter. And they had a long discussion on which piece of music to select. It's a pleasure to welcome Moshe as a moderator."
+    },
+    {
+      "start": 80.096,
+      "end": 108.384,
+      "text": "It's hard to introduce Moshe, since there would be so many things to say, and I really have to restrict myself. He's a George Distinguished Service Professor and Professor of Computer Science at Rice University in the US. He's really one of the most cited computer scientists worldwide, and there are too many awards and fellowships in academic societies. I just want to mention two of them."
+    },
+    {
+      "start": 108.384,
+      "end": 134.832,
+      "text": "which recently were awarded. One is the Donald Knuth Prize for Outstanding Contributions to Apply Mathematical Logic to Fundamental Areas of Computer Science. And the other one is the ACM AAAI L. Newell Award for Contributions also to Development of Logic as a Unifying Foundational Framework."
+    },
+    {
+      "start": 134.832,
+      "end": 163.824,
+      "text": "Okay, Hannes. I just wanted to say that I'm really happy that you are with us, and I'm happy that the guy coming from theory is also taking care about societal and political impact of computer science. This is what I wanted to say, Moshe. Okay, thank you very much. Thank you, and the floor is yours. Thank you. So it's my pleasure to introduce today's speaker, Alison Stanger. She's a political scientist."
+    },
+    {
+      "start": 163.824,
+      "end": 192.016,
+      "text": "split her time between Middlebury College and Stanford University and the Santa Fe Institute. And she's been one of the people I go to when I want to understand the interface between technology and politics. And she has deep experience in geopolitical affairs. She has been a member of the Council of Foreign Relations for more than 15 years. She's been consulting for the U.S. State Department. And she's going to tell us today."
+    },
+    {
+      "start": 192.016,
+      "end": 220.72,
+      "text": "about digital humanism and democracy from a geopolitical perspective. Alison, please. Great. Well, thanks so much for that kind introduction, Moshe. I'm speaking to you today from Stanford, where I'm at the Center for Advanced Study in the Behavioral Sciences. This is a great place to spend a year, and it's open to all citizens of the world. So you should check it out."
+    },
+    {
+      "start": 221.488,
+      "end": 249.632,
+      "text": "It's a good place. Ironically, I'm not speaking to you, though, from the Stanford campus, even though it's behind me. That's because, believe it or not, the Ethernet there is unstable. So I actually have a better situation here at my tiny flat in Menlo Park. Anyway, my aim today is twofold. I want to test drive part of an in-progress book proposal."
+    },
+    {
+      "start": 249.632,
+      "end": 278.08,
+      "text": "which is now tentatively titled Who Elected Big Tech? And second, since the topic is multidisciplinary and this is a multidisciplinary audience, I want to share that new project first by very quickly situating this new project to be my most recent work. The core insight animating all my work is this. Liberal democracy is a complex adaptive system."
+    },
+    {
+      "start": 278.08,
+      "end": 307.808,
+      "text": "as is the global economy. And my focus has been on the interaction of the two with technological innovation. And here my affiliation with SFI has been quite valuable. There is some noise. Please, people, mute your microphone. There's some background noise. Okay. So if you're interested in my theoretical point of departure, I'd recommend this book that just came out."
+    },
+    {
+      "start": 307.808,
+      "end": 337.168,
+      "text": "which I co-edited with W. Brian Arthur and Eric Beinhart on complexity economics. Put another way, we need always to be aware that any political questions we might have for American democracy or for big tech has, they're just inextricably intertwined in a local and global interdependent world, which raises new and important questions for corporate, national,"
+    },
+    {
+      "start": 337.168,
+      "end": 363.168,
+      "text": "and international governance. And this insight that seems like common sense still often goes unacknowledged because of the disciplinary silos all scholars are in some way inhabiting. So my previous work, One Nation or Put Another Way, we need always to be aware"
+    },
+    {
+      "start": 363.168,
+      "end": 392.768,
+      "text": "that any political questions we might have for American democracy or for big tech are really embedded in both a local and a global interdependent world. And that raises all kinds of new and important questions for governance. And this previous work, One Nation Under Contract, told the story of how American foreign policy was privatized with unintended consequences for both business and government."
+    },
+    {
+      "start": 392.768,
+      "end": 421.04,
+      "text": "The most important of which was our collective sense of those things that only government can do well. When the business of government becomes business, there's nothing to push back against corporate excess. Yet reigning in big tech is obviously imperative for sustainable democracy. This book came out in fall of 2019, just as the impeachment hearing was."
+    },
+    {
+      "start": 421.04,
+      "end": 449.744,
+      "text": "was being initiated, the first one. It's going to come out in Chinese in 2022. What it does is it provides an episodic history of whistleblowing in America to illuminate the radical break with the past that the Trump administration intended to affect. Previously, whistleblowing in America had been a patriotic pursuit, and both Democrats and Republicans had always supported whistleblowers in the light of day."
+    },
+    {
+      "start": 449.744,
+      "end": 476.048,
+      "text": "But as we all know, it all went differently with the first impeachment inquiry when Trump succeeded in making it a partisan issue, which was wholly unpatriotic, broke my heart in many ways and probably many of yours as well. So where does this new book fit into this mix? Well, I'm broadly interested in the impact of technology on democracy's public sphere and on citizenship."
+    },
+    {
+      "start": 476.048,
+      "end": 504.864,
+      "text": "And I find leverage on this problem through comparison with how technological innovation functions in authoritarian and then in contrast, liberal democratic regimes. I published a piece in CACM that made a really simple argument from which this work departs. Recent events have clearly demonstrated that some of the things that we want as consumers are actually quite bad for us as."
+    },
+    {
+      "start": 504.864,
+      "end": 528.816,
+      "text": "Citizens who are interested in social justice and the common good. So we need to rethink that tradeoff. And what follows is a contribution to that rethinking, which I believe has to be a collective enterprise between the United States and Europe and other liberal democracies. Here is a postcard of what the financial."
+    },
+    {
+      "start": 528.816,
+      "end": 558.288,
+      "text": "Times called the Cornwall Consensus. I love this photo. It kind of reminds me of the opening shot of some kind of a Star Trek remake, if any of you are familiar with that American contribution to popular culture. What's the Cornwall Consensus? It's basically a G7 agreement that globalization and free markets have created vulnerabilities as well as opportunities, and liberal democracies need to collaborate."
+    },
+    {
+      "start": 558.288,
+      "end": 586.64,
+      "text": "to address problems that are global in scope. It's also an implicit agreement that China is not an optimal collaborator. This is not rhetoric. I believe it is real, and there's been a real shift in how Washington views the world that we need to understand. So what I want to do today, this is kind of a romantic talk. I want to introduce the values alignment problem. I want to say a bit about what Elizabeth Anderson"
+    },
+    {
+      "start": 586.64,
+      "end": 614.128,
+      "text": "calls the distinction between private and public government, how it relates to authoritarianism and democracy. We'll move on to explore some of the connections between statistical machine learning and individual rights. I'll talk more about this book proposal in progress and we'll conclude with some reflections on how we might reboot public governance. So what is this values alignment problem?"
+    },
+    {
+      "start": 615.952,
+      "end": 644.768,
+      "text": "It means we need to consider China. China's technology sector has long lagged out of the United States in innovation. The deep learning that drives contemporary artificial intelligence is very much an American innovation. And Silicon Valley's spirit of discovery and dynamism is more difficult to generate under autocratic government. But China is uniquely well positioned to outperform the United States in AI implementation. And this is something to keep an eye on."
+    },
+    {
+      "start": 644.768,
+      "end": 669.664,
+      "text": "keep an eye on because it's copycat tech sector can generate and harvest data without privacy restrictions. So Chinese super apps like WeChat, which we can describe as kind of a remote control for your life, allow the user to hail a ride, pay for groceries and street food, book a doctor's appointment, get a taxi, unlock shared bikes."
+    },
+    {
+      "start": 669.664,
+      "end": 699.184,
+      "text": "message or photo a friend, play games. You can do all of this without leaving the WeChat platform. Each of those transactions generates vast amounts of data on which machine learning systems can train and produce still more efficiencies and patterns previously invisible to the naked eye. In July 2017, China released a master plan that announced its inspiration to lead the world in AI research and deployment by"
+    },
+    {
+      "start": 699.184,
+      "end": 729.152,
+      "text": "2030, China's President Xi has said in private meetings that, quote, whoever controls data will have the initiative. So this was a response with a group of Americans that begs to differ. It's the final report of the National Security Commission on AI. This is a commission that was appointed in August 2018 primarily by Congress."
+    },
+    {
+      "start": 729.152,
+      "end": 757.728,
+      "text": "And its March 2021 final report, which was chaired by former Google CEO Eric Schmidt and 14 other tech titans and academics, begs to differ with China's prediction. While motivated to emerge victorious, this report suggests that an ethical AI composition is unlikely without significant government support and guidance. And the chair and vice chair's opening letter emphasized."
+    },
+    {
+      "start": 757.728,
+      "end": 787.392,
+      "text": "that the AI competition is also a, quote, values competition. The final report basically says that if we continue a laissez-faire approach to AI research and development, that's a recipe for catastrophe. Chinese autocracy may not be conducive to innovation or free thinking, but it is a comparative advantage for AI implementation, as many of you probably know, because successful machine learning applications need three things."
+    },
+    {
+      "start": 787.392,
+      "end": 817.088,
+      "text": "Big data, computing power, and competent but not brilliant engineers. And then a shadow human army to categorize and tag this collected data. And the country with the most data is likely to win the AI applications race. But this competition is not only a battle for the best machine learning products, it's also a values competition that has powerful implementation."
+    },
+    {
+      "start": 817.088,
+      "end": 847.04,
+      "text": "implications for each regime's legitimacy. So to prevent the automation of injustice, Americans and Europeans alike must understand that we have a values alignment problem in AI development that China does not. And we should not want to win any sort of AI arms race with China on Chinese terms. Watch out, I've got all sorts of trucks coming down my street. I apologize for the noise."
+    },
+    {
+      "start": 847.04,
+      "end": 874.208,
+      "text": "The reason we don't want to do that is because it would destroy what we're committed to defend. So authoritarians and democracies define justice differently. In a liberal democracy, justice follows from the individual rather than any group membership other than the set of fellow citizens. Regime legitimacy, that is the moral right to rule, resides in a perceived correspondence."
+    },
+    {
+      "start": 874.208,
+      "end": 901.136,
+      "text": "between those professed values and reality. It takes lived experience in a fact-based world rather than ideals as its point of departure. So justice in a liberal democracy therefore resides in the protection of individual rights. We might say that justice is fairness premised on human equality. For authoritarian regimes, in contrast, justice is defined very differently."
+    },
+    {
+      "start": 901.136,
+      "end": 929.232,
+      "text": "It's based on utilitarian principles rather than on individual rights and security or hierarchy for the community is privileged over human equality. I think it's very useful to use Elizabeth Anderson's definition of private government. This is her book here. She says that the Chinese regime is an example of what she calls private government."
+    },
+    {
+      "start": 929.232,
+      "end": 957.2,
+      "text": "Private government's distinguishing feature is that it does not recognize a protected public sphere that's free of government, of elite oversight. Private government is always authoritarian since it does not value liberal notions of democratic accountability. Private government, Anderson writes, is government that has arbitrary unaccountable power over those it governs."
+    },
+    {
+      "start": 957.36,
+      "end": 983.936,
+      "text": "The ends of communist government, therefore, are neither liberty nor equality, but utilitarian progress and the perfectibility of human beings under the force of private government. So for Anderson, the only way to preserve and protect both equality and freedom is to make government a public affair accountable to the governed. So when she looks at the transition from monarchy to liberal democracy in Europe, she describes this."
+    },
+    {
+      "start": 983.936,
+      "end": 1013.568,
+      "text": "It is involving gradually replacing private government with public government. Public government utilizes the rule of law and substantive constitutional rights to advance and protect the liberties and interests of the governed rather than the governors. Monopolies are a form of state licensed private government. In the development of liberal democracy in Europe, opposition to economic monarchies was part of a broader agenda, she tells us, of dismantling."
+    },
+    {
+      "start": 1013.568,
+      "end": 1041.728,
+      "text": "monopolies across all domains of life. So since the party is the regime's point of departure, communist autocracy and liberal democracy also part ways on the importance of an independent public sphere for human flourishing. The distinction between the private and public realms is not drawn the same way in China. So if we think about it, both Aristotle and Hannah Arendt saw the public sphere as a realm of self-actualization"
+    },
+    {
+      "start": 1041.728,
+      "end": 1068.112,
+      "text": "critical for becoming fully human, and the foundation for democratic political life, for the right to privacy, all those things, Karl Marx viewed the public sphere as something that had to wither away before the full potential of humans could be realized. So since the very idea of a right to privacy presupposes a public-private distinction,"
+    },
+    {
+      "start": 1068.24,
+      "end": 1096.368,
+      "text": "Privacy in China is easily sacrificed at the altar of national security and societal goals. And there are many, many examples of this. To see this more clearly, I think it's helpful to think of two models of man, bourgeois man and citizen man. For Marx and his heirs, the class struggle between bourgeois man and working man, between the oppressor and the oppressed, is the central dynamic."
+    },
+    {
+      "start": 1096.528,
+      "end": 1124.784,
+      "text": "But Montesquieu, Machiavelli, Montaigne, and the American founders, in contrast, saw this very, very differently. Hannah Arendt tells us they ransacked the archives of antiquity to imagine a different model of man for the new republic. And the model man of this new system was built on the Roman conception of the public sphere and was based on the citizen of the Athenian polis."
+    },
+    {
+      "start": 1124.848,
+      "end": 1152.544,
+      "text": "So the American Constitution's architects thus drew on both Greece and Rome in imagining the new republic of the United States. Inclusive citizen engagement in American political life is thus essential for both government and human flourishing, even though atavistic social hierarchies have long worked at cross-purposes with those ends. So to summarize, government is private in China because the Chinese reject the Americanistic."
+    },
+    {
+      "start": 1152.544,
+      "end": 1177.552,
+      "text": "between the public and private spheres. Everything is public, which means nothing is private. So former FBI Director James Comey spoke at the Harvard Kennedy School in February 2020, and he put it this way. He said this is exactly where negotiations about technology transfer with China break down."
+    },
+    {
+      "start": 1177.552,
+      "end": 1206.256,
+      "text": "And it's because the Chinese don't understand the American distinction between technology for private uses and for public uses. So the latter is the regulable space for Americans. And the same refusal to distinguish between the private and public realms underlies China's one-child policy, which began in 1979 and only ended in 2015, and the government's current efforts to encourage Chinese single women to marry and have children."
+    },
+    {
+      "start": 1206.736,
+      "end": 1231.376,
+      "text": "So I think this is important to realize that the very idea of a right to privacy presupposes this public private distinction. And privacy in China is thus more easily sacrificed to larger country goals. This means that private government in China has a very different relationship to algorithms and big data."
+    },
+    {
+      "start": 1231.376,
+      "end": 1254.688,
+      "text": "We know, I'm sure many of you are familiar with some of the things that Baidu, for example, does and the data it collects about its users. According to an account in Scientific American, every Chinese citizen will receive a so-called citizen score, which will be used to determine who gets scarce resources such as jobs, loans, travel visas."
+    },
+    {
+      "start": 1254.688,
+      "end": 1284.528,
+      "text": "China also uses facial recognition software to monitor its Uyghur Muslim minority for law enforcement purposes. China's social credit system, which is designed to reward pro-social and punish anti-social behavior, is becoming operational. And new coronavirus data, I think, will certainly be valuable for this initiative. So if we think about this in the Chinese context,"
+    },
+    {
+      "start": 1284.528,
+      "end": 1313.168,
+      "text": "Deploying citizen scores in such a fashion may be just in a utilitarian sense, but it's also a government information monopoly inconsistent with democratic governance. In contrast, citizens in an individual rights based democracy should rightfully view algorithmic bias to the individuals as injustice. So I think we need to ask the question."
+    },
+    {
+      "start": 1314.352,
+      "end": 1343.952,
+      "text": "when we look at market values of who benefits, that's a good way of assessing the gap between ideals, American ideals, and reality. And we need to do that to devise optimal means for realizing a better world. The aim is for human freedom and equality of opportunity to become more real than ideal over time. And here's a series of books that have been quite useful to me."
+    },
+    {
+      "start": 1344.144,
+      "end": 1371.184,
+      "text": "They speak of the same thing. Amartya Sen has called this aim for human freedom and equality of opportunity development as freedom. Martha Nussbaum uses Sen as her point of departure in developing her capabilities approach. Danielle Allen has referred to the same as difference without domination. And Elizabeth Anderson has conceded."
+    },
+    {
+      "start": 1371.184,
+      "end": 1397.776,
+      "text": "conceived of the freedom undergirding pluralism as absolutely essential. So China's utilitarian approach to justice, as well as its embrace of an automated world powered by statistical machine learning, accepts the world as it is and doesn't ask why. And this threatens all of these things. It threatens development as freedom, difference without domination, and pluralism itself."
+    },
+    {
+      "start": 1397.776,
+      "end": 1427.68,
+      "text": "It does so because it threatens the very idea of public and individual rights-based government, where all are to be equal before the law. So I'm going to say something very briefly about statistical machine learning and individual rights, because I'm assuming most of us here are familiar with this. Let me just... I've got a..."
+    },
+    {
+      "start": 1427.68,
+      "end": 1456.848,
+      "text": "A problem here. Hang on. I think some of you, Stuart Russell has spoken to this group, correct? I believe so. So let's take a look at what he has to say. I think for this audience, I don't have to review the most recent technological advances for machine learning powered by neural networks. Let's just say that the great gains in image classification."
+    },
+    {
+      "start": 1456.848,
+      "end": 1485.776,
+      "text": "Object detection, speech recognition, and natural language processing combine to make your smartphone a driver of your life. Most importantly for deep learning approaches, the more data that can be harvested and the greater the computing power that can be harnessed, the more powerful the results. So over-reliance on machine learning has potentially destructive political ramifications in a liberal democracy for at least three reasons. I'll go through these really quickly."
+    },
+    {
+      "start": 1486.096,
+      "end": 1509.024,
+      "text": "because we're running short on time machine learning can be unreliable machines can be trained to identify people or objects but since they cannot understand context or common sense bias can easily creep in there are many examples of this facial recognition can make all sorts of errors we know that a lot of the recognition"
+    },
+    {
+      "start": 1509.024,
+      "end": 1538.128,
+      "text": "exhibits racial bias through the false positives it arrives at and the data that's used to generate these findings. That's why Microsoft's president, Brad Smith, has called for congressional regulation of facial recognition. Machine learning can also be opaque. We often don't know why results are produced. Since one can't argue with a machine when machines displace human injustice domains,"
+    },
+    {
+      "start": 1538.128,
+      "end": 1561.136,
+      "text": "Both citizen engagement and democratic deliberation are devalued. So secret algorithms, I would argue, are at odds with the rule of law, yet they're deployed in meeting out justice. And finally, machine learning can be vulnerable to attack. Even when computers have been trained to do a specific task, they can be surprisingly tricked."
+    },
+    {
+      "start": 1561.136,
+      "end": 1591.008,
+      "text": "into producing spurious results. And this creates all sorts of opportunities for hacking and wreaking havoc on public infrastructure. So I'm going to skip through this in the interest of time, but Stuart Russell has made an argument about the three principles for beneficial machines. And I would just point out that"
+    },
+    {
+      "start": 1591.008,
+      "end": 1620.528,
+      "text": "that there's no safeguard here against tyranny of the majority, even if these beneficial systems are produced. And that's a problem for rights-based democracy, because obviously slavery was an instantiation of tyranny of the majority. And we can think of a variety of other abuses of power that arrive from those arrangements. In the liberal democracy, we might say that"
+    },
+    {
+      "start": 1620.528,
+      "end": 1648.512,
+      "text": "The confusion of correlation with causation, otherwise known as misrepresentation, is the root of most injustice. So my book proposal. I think you all know that in January 2021, big tech crossed the Rubicon when Facebook, Google, YouTube and Twitter de-platformed and canceled a freely elected U.S. president."
+    },
+    {
+      "start": 1648.512,
+      "end": 1678.368,
+      "text": "And the bi-coastal Brahmin elite and most people of color applauded this collective decision, while a good portion of white working class Americans were outraged at the silencing of their perceived champion. White collar and rural whites had a good point. Who had elected big tech to make this momentous decision? It's not hard to guess where most of today's audience stood on the decision, but they had a good point."
+    },
+    {
+      "start": 1678.368,
+      "end": 1703.856,
+      "text": "From the perspective of democratic theory in the First Amendment, endorsing big tech to do the work of government does not seem like a good idea. So despite being obscured by a madman U.S. president and a global pandemic, these unprecedented events raise questions that need answers. How and why do we reach this point?"
+    },
+    {
+      "start": 1704.24,
+      "end": 1729.248,
+      "text": "And what consequences follow from the transfer of power in a global interdependent world to companies rather than governments? And here I'd be very interested to learn how each of you would answer this question. But I think what we can do is start by acknowledging what has changed and what has stayed the same."
+    },
+    {
+      "start": 1729.248,
+      "end": 1754.512,
+      "text": "Today's corporations, unlike their imperialist predecessors, are not national enterprises. They are multinational in scope. The East India Company, for example, was an extension of the British state. Coinbase, in contrast, which is the most trusted cryptocurrency platform, went public in 2021, and it has no physical headquarters."
+    },
+    {
+      "start": 1755.44,
+      "end": 1782.096,
+      "text": "Coinbase mission is to use cryptocurrency to bring economic freedom to people all over the world. As such, it directly challenges the legitimacy of existing governments who back the world's currently fungible currencies. What has stayed the same? This is going to vary from country to country, but in the United States, the Telecommunications Act in 1996, which was designed to break up Ma Bell."
+    },
+    {
+      "start": 1782.096,
+      "end": 1811.664,
+      "text": "So the government could encourage innovation and free market competition. That very same law governs social media today. Yet in the past 25 years, telecommunications have been transformed dramatically. And with the advent of the Internet are now global in scope. My working hypothesis is that Larry Lessig, who writing decades ago in this book I'm showing you, has been vindicated. Code is law."
+    },
+    {
+      "start": 1812.112,
+      "end": 1838.336,
+      "text": "as Lessig claimed, yet law has lagged dramatically behind technological change to the point where the resultant imbalance of power has become dangerous to democracy, at least in the United States. I realize Europe is a separate matter, and we'll want to talk about that in the discussion. Today's corporations, unlike their imperial antecedents, are not national enterprises."
+    },
+    {
+      "start": 1838.336,
+      "end": 1868.272,
+      "text": "They are multinational in scope, which means that corporations, in addition to the working class, today have no country. Monopoly power is also unaccountable power and hence private. Big tech is an example of private power in action. But I'd point out to you, this is not your classic antitrust issue, even though the U.S. government is presently presenting it as such."
+    },
+    {
+      "start": 1868.272,
+      "end": 1896.144,
+      "text": "and relying on things like Tim Wu's work to reach these conclusions. That's another way of saying that the usual tools of trust busting in this new situation are unlikely to succeed and likely to produce unintended consequences, as they were designed for the world before globalization. Consider the differences between the first and second Gilded Age."
+    },
+    {
+      "start": 1896.272,
+      "end": 1920.544,
+      "text": "First big point, big tech is global. Two thirds of Netflix. Alison, you need to wrap up in, let's say, four minutes. Yeah, absolutely. I can do that. All right. Very quickly. I have too much I want to say, but we want to leave time for questions. So thanks for the reminder. Big tech is global. And the price of the product."
+    },
+    {
+      "start": 1920.544,
+      "end": 1949.024,
+      "text": "is zero in many instances, so monopolies are usually used to regulate prices and make them serve the consumer. This is clearly not the case with many of the ad-driven business models. And finally, physical space doesn't matter. If we look at Estonia's online incorporation payment and banking services, they allow companies to manage businesses from anywhere entirely online. There are currently over 80,000 e-residents from 100 plus"
+    },
+    {
+      "start": 1949.024,
+      "end": 1976.016,
+      "text": "160 plus countries have started more than 10,000 businesses. Another big difference is that big tech wants to be regulated. This is a Facebook ad showing you that Facebook thinks it's time for updated regulation. This is extraordinarily unprecedented. Then we have the work of the Facebook Global Oversight Board, which is a highly interesting."
+    },
+    {
+      "start": 1976.368,
+      "end": 2000.304,
+      "text": "Interesting institution, new institution. It's supposed to moderate content. It was announced in September 2019 and is funded by an independent trust. This is the body that ruled that Donald Trump should be his account should be deactivated. The 40 member board was devised after months of public consultation with experts and institutions around the world."
+    },
+    {
+      "start": 2000.304,
+      "end": 2029.824,
+      "text": "In terms of its design, it is something wholly new. It's a para-governmental organization with no government or legal representation that floats above individual countries, yet renders judgments with local ramifications. Its composition circumvents nation states entirely, and it's not the European Union, nor the United States, nor the World Trade Organization. It looks like a court, but Facebook is not a country."
+    },
+    {
+      "start": 2029.824,
+      "end": 2055.616,
+      "text": "aspire to serve law in any way, either domestic or international. It exists as a body of ultimate appeal, and in that sense resembles something old, the private government of the King's Court. Yet Zuckerberg insists Facebook will abide by its decisions. Twitter and Google's YouTube followed Facebook in suspending Trump's account after the January 6th intervention."
+    },
+    {
+      "start": 2055.616,
+      "end": 2082.384,
+      "text": "The current state of play here is that Twitter's ban is permanent. YouTube's is indefinite. Facebook's is in a state of suspended animation. They recently announced that his account will be closed down for two years, after which they will reassess. Earlier this month, just in advance of the G7 meeting, I'll skip this. It's sad."
+    },
+    {
+      "start": 2082.544,
+      "end": 2111.376,
+      "text": "It's the reasons why big tech have so much power. We can come back to it later if you like. But I want to talk about the new industrial policy bill, which passed with an overwhelming majority of both Democratic and Republicans and allocated a quarter of a trillion dollars to AI research and development. This legislation is a collaboration between Republicans and Democrats. The one thing Democrats and Republicans can agree on is that China is a threat."
+    },
+    {
+      "start": 2111.696,
+      "end": 2135.856,
+      "text": "So just to conclude, how might we reboot public governance, which I think should be our goal? I'm in a rather optimistic mood. The grownups are back in charge in Washington, and there's the will and support to get things accomplished in collaboration with Europe."
+    },
+    {
+      "start": 2136.176,
+      "end": 2164.096,
+      "text": "Chinese private government worries neither about protecting Chinese privacy rights nor the rights of foreigners. In terms of capability, China scholar Minxin Pei argues that China has no rival for the world's largest surveillance state. Pei estimates there are 10 million Chinese informers. As a result, while there are well-documented instances of Washington spying on foreigners for security reasons, and I wrote about this a lot in my last book if you're interested in..."
+    },
+    {
+      "start": 2164.096,
+      "end": 2190.416,
+      "text": "the rules that govern that kind of surveillance of foreigners. But there's not a single reported instance of commercial espionage on the part of the United States. And obviously, with China and Russia, there are countless examples. Just to give you a sense of the scope, FBI Director Christopher Wray, speaking in February 2021, reported that the FBI has about 1,000 investigations involving China's attempted theft."
+    },
+    {
+      "start": 2190.416,
+      "end": 2218.688,
+      "text": "of US-based technology and all 56 of the FBI's field offices spanning almost every industry and sector. In response, Americans just have to do whatever we can as citizens to render both public and private governance more accountable, both in Washington and in Silicon Valley. America's national partners in this enterprise are other open societies that uphold individual rights."
+    },
+    {
+      "start": 2218.688,
+      "end": 2244.976,
+      "text": "We should not expect authoritarian states to help us uphold liberal democratic values, nor should we expect corporations to do so voluntarily. In partnership with other liberal democracies, that is, government must incentivize the invention and deployment of technology that enforces rather than undermines the stability of open societies and the protection of individual rights."
+    },
+    {
+      "start": 2245.04,
+      "end": 2274.48,
+      "text": "The bottom line is that this is a moment for new political thought on a global scale that's unmatched, in my view, since the age of liberal, democratic and communist revolutions. The EU is an extraordinary model of postmodern political thought. And I think it's quite imperative for the United States to turn to Europe for conversations about what has worked and what has not worked in that vision."
+    },
+    {
+      "start": 2274.672,
+      "end": 2302.816,
+      "text": "I think the Cornwall Consensus, the U.S.-Russian Agreement on Cybersecurity, and the Senate Industrial Bill are pointing us in the right direction. But what all of this requires in conclusion is we really have to reimagine the role of technology in human affairs. And the pandemic has given us a unique opportunity to revitalize and extend the domain of public governance."
+    },
+    {
+      "start": 2302.816,
+      "end": 2328.032,
+      "text": "both globally and domestically. So when the current crisis is behind us, we have a better understanding of what we value, the things that unite us rather than divide us, and the hard work that still needs to be done both at home and abroad. So with that, I'll thank you for your attention and welcome your questions on anything. Thank you very much."
+    },
+    {
+      "start": 2328.032,
+      "end": 2356.944,
+      "text": "Thank you very much, Alison, for this very, very thought-provoking talk. I'll take the privilege of first question. And my question is, how do we regain the clarity of the Cold War? So the Cold War, you know, on one hand, we had this mad strategy. We had the threat of nuclear annihilation. But we had more clarity of the good guys and the bad guys."
+    },
+    {
+      "start": 2356.944,
+      "end": 2377.856,
+      "text": "And we had a strategy. It was called containment. And ultimately, that combination of moral clarity and strategy, it worked. And I think it's I'm not trying to say that this is analogous situation, but we do have a global geopolitical competition."
+    },
+    {
+      "start": 2377.856,
+      "end": 2398.864,
+      "text": "between the liberal view and the authoritarian view. It's not about communism and capitalism now. I think it's about democracy and authoritarianism. And we don't seem to have a strategy. We don't have moral clarity and we don't seem to have a strategy either. Yeah, I think that's an excellent question."
+    },
+    {
+      "start": 2398.864,
+      "end": 2428.832,
+      "text": "And I think that's in the process of being born. You're absolutely right to point out the similarities as I was going through them, especially with this industrial policy bill. It's very much like the Cold War with this massive injection of funds into technology, research and development that built the weapons of the Cold War and actually built Silicon Valley. That's why Silicon Valley is here. The government spending that."
+    },
+    {
+      "start": 2428.832,
+      "end": 2457.696,
+      "text": "flowed because of the Cold War. So I do see this analogous situation. There are a couple of differences that I think we have to keep in mind. First of all, while there is this values alignment problem, China is not the Soviet Union for at least three reasons. And I worry about us getting confused as this China rhetoric ramps up about those differences. Because"
+    },
+    {
+      "start": 2457.696,
+      "end": 2487.424,
+      "text": "Unlike the Soviet economy, the Chinese economy is intrinsically intertwined with the Western economy. The supply chains are so important, as we've seen in the pandemic. And one of the things that the United States wants to do, and I think Europe wants to do as well, is ensure that the supply of semiconductor chips, silicon chips, flows even if China makes some sort of move on Taiwan."
+    },
+    {
+      "start": 2487.424,
+      "end": 2513.632,
+      "text": "That's the big, big worry. Taiwan is so important and the two China policy is so important because Taiwan supplies chips for both the United States and for China. So that's mitigating against any sort of war scenario. Plenty of room for hostility there."
+    },
+    {
+      "start": 2513.632,
+      "end": 2543.584,
+      "text": "But I think we have to just rally around what we value and keep in mind that communism in theory sounds wonderful. But when we look at how it's been implemented in practice, it's something else entirely. And markets do serve their purpose. And I think a focus on individual rights,"
+    },
+    {
+      "start": 2543.584,
+      "end": 2573.04,
+      "text": "makes the difference between the West and China very clear. We want to ensure the independence of our supply chains. I think that's very important. But at the same time, work with China cooperatively on global problems where there is this coincidence of interest. So we don't want to ramp up the rhetoric to the point where China is, in some sense, evil."
+    },
+    {
+      "start": 2573.488,
+      "end": 2602.944,
+      "text": "You know, another thing that's really different from the Cold War is that AI weapons are not nuclear weapons. When you think about how you might regulate them, that was a great mitigating force for conflict with the United States and Soviet Union. There are all these talks, many of which took place in Vienna, about arms control. But how you have them about AI weapons is different. I think this idea of protecting against hackers and cybersecurity."
+    },
+    {
+      "start": 2602.944,
+      "end": 2630.896,
+      "text": "first start, that U.S.-Russia agreement could be extended to China, hopefully. And finally, yeah, there's the debt problem. Yeah, I just wanted to mention the debt problem, which, you know, the Americans are vastly indebted to China. So China has no incentive to start a war with the United States because what happens in history when two nations go to war?"
+    },
+    {
+      "start": 2631.056,
+      "end": 2657.92,
+      "text": "The first thing they do is declare all the debts are no longer valid. So there are powerful disincentives against a Cold War turning hot. But I think we have to rally around our common values. And that's what I hope we see happening. Edward had a question. Yeah. Thanks, Moshe."
+    },
+    {
+      "start": 2657.92,
+      "end": 2686.192,
+      "text": "And thanks, Alison. It was a very thoughtful talk. There was one comment that you made that worries me a little bit because it sort of reflected, I think, a widespread complacency about China that's based on the belief that its technology development is imitative and not creative. And I think there's a lot of evidence that that's not true. The WeChat application, the WeChat platform, for example, is something that we don't have anything like that in the West. It's really..."
+    },
+    {
+      "start": 2686.192,
+      "end": 2716.0,
+      "text": "There's quite a bit of innovation in it. And I think in AI, we're also seeing a lot of innovation from China. And so my question is, really, can we afford to continue with this complacency and just assume that all the creative minds are going to come out of Silicon Valley? I'm not so sure. Yeah, I think that's an excellent, excellent point. And there are some really interesting developments in self-driving cars. I wish I had a picture I could pull up for you. I should have had that."
+    },
+    {
+      "start": 2716.0,
+      "end": 2745.936,
+      "text": "If you look, the Chinese have a prototype that's based on, it's kind of riffing on the VW Beetle, you know, from the 60s. It's an electric car and it's cool, like you would want to drive it. And I think that's a good example of not taking China's possibilities for innovation and selling them short. You're right. But I also think that creativity does flourish."
+    },
+    {
+      "start": 2746.128,
+      "end": 2772.72,
+      "text": "the best under circumstances of freedom. And when there's too much government involvement, it's a delicate balance to get this right because you want social welfare as well as innovation. And Americans have erred on the side of excess in that regard, I believe. But I just don't think you can get around some of the educational superiorities."
+    },
+    {
+      "start": 2772.72,
+      "end": 2801.312,
+      "text": "of the U.S. educational system vis-a-vis the Chinese educational system, even though there are developments in that realm too. So the current position is in no way some kind of permanent state of affairs. But one of my big hobby horses is, I think, liberal education. Liberal arts education is extraordinarily important, even for people who are studying technology, because of this creativity factor. I just think that..."
+    },
+    {
+      "start": 2801.312,
+      "end": 2830.656,
+      "text": "Being able to move across different realms and having a broad training in the old-fashioned sense is useful, even in realms that people think it isn't useful. And it certainly helps people, computer scientists and engineers, recognize some of the value questions that we've been discussing in this group. But your point is well taken. We shouldn't overstate this."
+    },
+    {
+      "start": 2830.656,
+      "end": 2855.872,
+      "text": "conventional wisdom that China is only good at copying and China can't innovate because I think it's a very powerful and impressive nation. Just to remind you, we used to say that about Japan. Yeah. Yeah, that's a good point. That's a good point. Renata has a question. Thank you."
+    },
+    {
+      "start": 2855.872,
+      "end": 2885.568,
+      "text": "It's really thanks a lot for the talk. It's very great opportunity to be here. So I'm a bit skeptic about being hopeful now. Because it started by, you know, criticizing the authoritarianism in China. And I agree with you. There are many problems there. But then you went on also showing the authoritarian attitude of big techs in democratic countries."
+    },
+    {
+      "start": 2885.568,
+      "end": 2907.408,
+      "text": "And I'm coming originally. I'm now in the Netherlands, but I'm originally from Brazil. And we also see a lot of authoritarianism there now. Yes. So there's a kind of a wave of these things happening, I guess. So is there any hope? Yeah, no, I think I think they're there."
+    },
+    {
+      "start": 2907.792,
+      "end": 2935.632,
+      "text": "There really is hope. And I didn't have time to get into it. And I want to get into my books. I'm really glad you raised that question. Because the private public government distinction I was making so laboriously is actually relevant to this question of big tech in the United States. Because what we're seeing in the United States is increasing pushback from the employees of big tech firms against"
+    },
+    {
+      "start": 2936.144,
+      "end": 2964.192,
+      "text": "the corporation's policies. And it's changing attitudes and often changing their policies. And so I think the solution is we want to encourage public government that is accountable government, both within our national governments, but also within these firms itself. And there are a variety of ways you can do that. I have a bunch of policy solutions I'm sort of thinking about."
+    },
+    {
+      "start": 2964.192,
+      "end": 2993.872,
+      "text": "One of them is just reviving the old concept of workers' councils. Remember workers' councils? Yeah. It's really important because there's an unacknowledged horrific labor cost in these developments. My colleague Mary Gray from Microsoft Research calls this the ghost workers. That's all the contractors behind the scenes. And those contractors, which I studied in my book on the privatization of"
+    },
+    {
+      "start": 2993.872,
+      "end": 3019.12,
+      "text": "American foreign policy, they don't get benefits, typically. So you've got these workers who drive Ubers, they don't have benefits. California recently ruled with Proposition 22 that they're not employees, they're contractors. What does that mean? They don't have to provide them with health care. So this is potentially disastrous, and maybe it will push us toward..."
+    },
+    {
+      "start": 3019.216,
+      "end": 3047.92,
+      "text": "national health care in the United States. I'm hopeful Europeans, you're you're better off because you've been sensible about this. Yeah. But, you know, unions, sometimes they also want power, a lot of power. I see that in my country, like the unions, they they get to be these bureaucratic organizations that also want to hold on to power. Yeah. I mean, it's the whole attitude, I guess. People want power, power, power wherever they are. I know. I know. And that's why that's right."
+    },
+    {
+      "start": 3047.92,
+      "end": 3073.696,
+      "text": "Yeah, well, that's why I think we have to consider alternative models within company models, because young Americans, idealistic Americans don't want to work for a company that's evil. Silicon Valley really believes it's making the world a better place. And clearly, in many instances, it hasn't made the world a better place. So the one thing I can say to you that I."
+    },
+    {
+      "start": 3073.696,
+      "end": 3102.88,
+      "text": "it makes me very optimistic is I've been living here for three months ever since I was able to get out here for my Stanford fellowship with the, with the pandemic. And people are talking about these issues I'm talking about. People are very receptive to me. The, the, the big tech companies are thinking about this and looking for expertise. And so this is a really important moment for, for the kind of work that the digital humanism group is doing to have an impact."
+    },
+    {
+      "start": 3102.88,
+      "end": 3128.112,
+      "text": "So if we all work on this together, I think we can get somewhere positive. That's my hope. Thank you. Paul has a question. Yes, Paul. Thank you. Alison, this is so fascinating. I have many questions. So if you allow me, if the chair allows me, I just pose two questions. Very briefly."
+    },
+    {
+      "start": 3128.112,
+      "end": 3156.288,
+      "text": "One is, I recently read a quite interesting article by the Dean of International Relations of Tsinghua University. Yan Zitong said, Chinese values versus liberalism. And he more or less said, I simplify, he said, you've got it all wrong in your thinking in the West, but your justice as fairness, you may have justice, but it doesn't deliver fairness. And we actually have from Chinese traditional values, a better system, which is the enlightened ruler, who ultimately..."
+    },
+    {
+      "start": 3156.288,
+      "end": 3184.464,
+      "text": "The enlightened emperor will deliver fairness. And so he says that literally, I think he says something that China may shape international relations by combining Chinese traditional values with selected liberal or liberalist values. So he says you're on the wrong page. You know, we've got a better thinking and it's coming from 2000, 3000 years of Chinese history. So it has some weight. That's one question. What do you think about that?"
+    },
+    {
+      "start": 3184.464,
+      "end": 3209.424,
+      "text": "Apparently, you're right. The second is, you said code is law, or Lawrence Lessig actually said that. I think nowadays we would quite often, and I would also argue, law is code, not code is law, but law is code. So it's the values that we want to have that have to be reflected in certain type of technology. And you see it in the debate about, for example, the COVID or the Corona apps, certainly in Europe."
+    },
+    {
+      "start": 3209.424,
+      "end": 3236.304,
+      "text": "You know, what value do we want to have around privacy? Not every technology is compatible with that. So this technology, yes, that technology, no, you design the technology the way we want to have it in our value system. So I was suggesting, kind of perhaps suggestion for your conclusion, is you say rebooting public governance, perhaps together with that is rebooting technological construction. Because nowadays public governance goes a lot together with technology and not every."
+    },
+    {
+      "start": 3236.368,
+      "end": 3265.264,
+      "text": "technology will fit with the reboot of public governance as you are perhaps aspiring it. Yeah. Well, I wholeheartedly agree with you on the last point. I like that formulation. So thank you for those questions. And I also love this quote. If you would send me that quote, I think that's fascinating. Because the point I'm really trying to make, and as I'm giving this talk, I'm often thinking about, do I sound like this strident American who's just bashing on China?"
+    },
+    {
+      "start": 3265.264,
+      "end": 3294.256,
+      "text": "That's not where I'm coming from at all. I have deep respect for Chinese culture. I want to learn more about it. I don't know that much about it. And I just think this is a very important distinction that, and it's a radical one, but one of my mentors, Judith Sklar at Harvard, who was the first tenured woman political scientist at Harvard, used to always say this. She used to say in this inimitable voice, she was from Europe."
+    },
+    {
+      "start": 3294.256,
+      "end": 3322.288,
+      "text": "International justice? Contradiction in terms. In other words, what she meant was that justice has to be formed by one community. That's where justice derives from, what they decide the values are that reflect their community. And this is a legitimate way of looking at it, that the group matters more than the individual. I happen to think, because I'm the first one that would be like,"
+    },
+    {
+      "start": 3322.672,
+      "end": 3352.368,
+      "text": "thrown into a labor camp in one of those regimes that I like individual rights. But maybe that's unfair. Maybe I'm elitist because most people maybe want what China has. That's a really interesting philosophical question. And the final point I'd make about law and values, absolutely. We want to demand that the laws be upheld, that there's equality before the law. That's our problem in the United States. We don't have equality before the law right now. But we also want to get the right laws."
+    },
+    {
+      "start": 3352.464,
+      "end": 3379.04,
+      "text": "With respect to technology and that's being born right now and that's where we can work together to make it happen. Exactly. Yeah. Thank you. Hello, it's me again because Moshe had to leave because he said he has just one hour sharp. So I will continue to moderate the discussion. There was one discussion."
+    },
+    {
+      "start": 3379.04,
+      "end": 3408.88,
+      "text": "There is no hand raised, but there was one point made by James that you were somehow a preference of human behavior. Could you come to the question? Could you rephrase it, James? Yeah. Hey, Alison. I think you might have already answered this. I just didn't connect the dots or it flew by me. But I was interested when you flashed that Stuart Russell slide. I think the last bullet point was something like the ultimate source of information."
+    },
+    {
+      "start": 3408.88,
+      "end": 3435.984,
+      "text": "about human preferences is human behavior. Maybe your previous comments were a segue. Just comment on that. What is your reaction to that Stuart Russell idea? The ultimate source of... I thought you commented on this and I missed it. You said the ultimate source of human preferences is human behavior. And I thought you said something about tyranny of the majority. I want you to clarify or just repeat what you said for me."
+    },
+    {
+      "start": 3435.984,
+      "end": 3465.936,
+      "text": "Yeah, I don't like that. Yeah, I was racing through that. So I didn't probably didn't make much sense. I didn't like it either. I want you to unpack it for me, please. Yeah. Yeah. So so what I was trying to convey with that is, you know, that particular premise has a problem in that it allows no room for ideals. Because we're all human. We behave. And sometimes we don't like our own behavior. We're aspiring to be better. That's true of individuals as well as countries. So I didn't like that as a measure."
+    },
+    {
+      "start": 3465.936,
+      "end": 3494.8,
+      "text": "Because it doesn't allow room for the progressive vision. Thank you. The liberal vision of getting closer and closer to this state where we're all equal before the law. Good. Thank you. Yeah. Okay. Being the moderator, I take the freedom for a last question. And I would like to follow up with Paul's comments. And I would phrase it differently. Shouldn't we somehow."
+    },
+    {
+      "start": 3494.8,
+      "end": 3515.824,
+      "text": "Be afraid or be more aware that we don't come back to a bipolar world where we have the West and the East, where we have the evil on each respected side. I think we are more on a multipolar world. We have, for example, you also have the European way. So I think it has to be."
+    },
+    {
+      "start": 3515.824,
+      "end": 3540.592,
+      "text": "It was also raised by Moshe's quote, in the Cold War, we knew exactly who was the good and who was the bad one. And I'm not so sure whether we all knew who was the good and the bad one. And I think we should be very careful before coming back to this trap where we say, okay, the Chinese behave like that. And the other way is the American liberal democratic way. I think we should not forget social..."
+    },
+    {
+      "start": 3540.592,
+      "end": 3566.896,
+      "text": "social justice or social welfare system. We have brought us forward in quite a substantial way. So this is my last question. So we are more moving in a multipolar world where we have different value system. And there's also some kind of specific respect before that. Yeah, it's an important point. We've been bad at this in the United States."
+    },
+    {
+      "start": 3567.344,
+      "end": 3596.336,
+      "text": "in not looking to the examples of other countries for ideas. There's a tradition in American law judging where you footnote the cases that support your argument, and there had been a reluctance to footnote other countries. Now, I think increasingly that's seen as more relevant. So if we can approach these issues knowing what we stand for and knowing that we all have something to learn one from the other."
+    },
+    {
+      "start": 3596.592,
+      "end": 3624.912,
+      "text": "I think it's absolutely critical. It's absolutely critical to begin from a position of respect because each system is trying to do the best by its values and its people in different ways. Now, if that breaks down, you've got a total dictator. I don't have nice things to say about that at all."
+    },
+    {
+      "start": 3624.912,
+      "end": 3652.608,
+      "text": "But China's not like that. China's a much more complex society. And even that social credit system, when you discover it, is fascinating. Because when you push deeper, there's all sorts of decentralized initiatives that are part of it, where local communities are deciding certain ways in which it's going to be used. So there's a tension between centralization and decentralization in China that's quite interesting."
+    },
+    {
+      "start": 3652.608,
+      "end": 3682.096,
+      "text": "We need to be careful both about using ideal types because they can distort the reality, the things that are actually in common between things that seem quite different at the ideal type level. But we also need to just respect, just show basic respect for our fellow human beings. And that will take us a long way toward avoiding the rhetoric of the Cold War. And I'm hoping we can avoid in the United States a repeat of the McCarthyite era."
+    },
+    {
+      "start": 3682.416,
+      "end": 3712.096,
+      "text": "which came along with American anti-communism. So learn from our past mistakes and show respect for other humans. Those would be my two watchwords. Alison, thank you. Thank you all for participating. Now I hand over to Peter Knies, who will present a piece of music chosen by Alison, as far as I have understood. And he will also announce our..."
+    },
+    {
+      "start": 3712.096,
+      "end": 3736.064,
+      "text": "next and last lecture before the summer break. Peter, the floor is yours. And thank you all for participating. Yeah. And I can say that I have a fascination with national anthems. Right. So this gets us right to your suggestion. So I think, so Alison had a very bold suggestion, I think, for today with the..."
+    },
+    {
+      "start": 3736.064,
+      "end": 3764.112,
+      "text": "uh music could be to follow this talk um but interestingly it fits very well and and support supports the the points that she made earlier um let me just share the the window here all right so um more for information than entertainment purposes of course we're going to play to you the march of the volunteers which is the"
+    },
+    {
+      "start": 3764.112,
+      "end": 3787.44,
+      "text": "national anthem of the People's Republic of China. We're playing a YouTube clip that also shows the lyrics in English for you to follow along. It's not a karaoke session, so it might look like a karaoke session, but it's not a karaoke session. If you want to sing along, you can, but keep your mic muted, so then everything's fine. Before I start the video..."
+    },
+    {
+      "start": 3787.44,
+      "end": 3811.408,
+      "text": "I will announce the next event. So as you heard, it's the last lecture before the summer break. And in two weeks, on June 29th, Roberto de Cosmo will be speaking on should we preserve the world's software history and can we? And Edward Lee will moderate. So thanks for joining today. And here's the Chinese anthem for you. See you next time and goodbye."
+    },
+    {
+      "start": 3908.464,
+      "end": 3913.488,
+      "text": "Thank you and goodbye and we'll see you on the 29th. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,1271 @@
+{
+  "video_id": "gwbKdQgmmF8",
+  "source": "whisper",
+  "language": "en",
+  "text": "Are we ready to start? I cannot hear anyone. Can anyone hear me? I can hear you. You can hear me? Okay. Yes, I can see your slides too. Okay, good. Let me know when to start. Well, maybe the moderators haven't come back from coffee. Ah, okay. Okay, that's fine. Okay, yeah. Moshe, please start. Okay, hello everyone. Good to be with you in virtually. And as we hear every day now about machine learning, machine learning, machine learning, machine learning, and I'd like to look at machine learning and logic and combine it with another way of thinking about human intelligence. And this has been known as fast and slow thinking. So every day now we hear about big data and machine learning and data science, and some people say we are maybe at a peak hype or even beyond the peak hype. And there is a common perception that we are going now through a Kuhnian paradigm shift. Thomas Kuhn wrote a famous book, The Structure of Scientific Revolution, and introduced the phrase paradigm shift. Typical perception is that there is an old theory, we just throw it out, and there is a new theory. For example, the Ptolemaic theory of the planet versus the Copernican theory of the planets. So this perception, you throw the old theory, you have a whole new theory, total revolution. But in reality, it's a bit more complicated than that. And very often, new theories refine the old ones. I mean, we have general relativity introduced in the beginning of the 20th century. Did we throw out Newtonian mechanics? Absolutely not. We went to the moon using Newtonian mechanics. We've been building using Newtonian mechanics. So data science, I think my argument, data science, refined formal science. Formal science is about science with models. You know, much of my research is about formal models. And I argue that data science refined formal science. Now, Daniel Kahneman published a book about a decade ago called Thinking Fast and Slow, an argument that human intelligence has these two facets, fast thinking and slow thinking. What is fast thinking? You have an autonomous vehicle. It has to recognize, is this a stop sign? That takes, you need to do this in a second, in a fraction of a second. Identifying... A snake in the grass should take you a fraction of a second. You're not going to go and make observations. It takes you a fraction of a second. What do you do about the stop sign? The rule that stop signs require you to stop, this is logic. This is slow thinking. Anon Shashua, who is the CEO of Mobileye, it's a company that now subsidiary of Intel and promoting technology of autonomous vehicle. And Amnon Shashua wrote a paper about five years ago explaining why you cannot develop autonomous vehicles just by driving around and collecting data. He argued that it's a societal, social argument why autonomous vehicles need to be a factor of a thousand times safer than regular, than human-driven vehicles. And that means that we'll have to drive one billion miles to collect the data. So it's not feasible. We can drive millions of miles to collect data, but you have to combine it with reasoning. And I think this tells us if we want to combine fast and slow thinking, we have to learn how to combine logic, which I think of it as slow thinking, with machine learning, which is fast thinking. And that to me is one of the grand challenges today, how to combine logic and machine learning. And in a more specific context, I want to look at what's known as automated decision systems, ADS. In 2018, Jim Largus and Chris Hunkin wrote a column in a communication of the ACM about ADS, and they wrote that the question is, how do we regulate such a system? And they argued that we should regulate them. They wrote, the widespread adoption of ADS system will be economically disruptive and will raise new complex societal challenges. Disdain for regulation is pervasive throughout the tech industry. In the case of automated decision making, this attitude against regulation is mistaken. So how should we regulate automated decision system? That's a subject that we can discuss at length, but people now expect that this system are going to be fair, you know, lack of bias, they should be accountable, there should be transparency, and they should be explainable. So this has become now a common phrase in AI, to have explainable AI. So what is explainable AI? We want the results to be understood by humans. And if we want to have humans center the AI, one of the requirements is that AI decision by automatic system must be explainable. But how do you give explanation? You know, we're talking, for example, neural net, deep neural nets. How do you give explanation? You can't say, well, this neuron fired because that neuron fired because that neuron fired. You want to talk to people in their language, and that is, again, logic. And again, I go back to this grand challenge, combine logic with machine learning, which now many people call neurosymbolic reasoning, and that's a very hot topic. I will talk about my approach towards this integration, and this to make logic quantitative. And I'm going now to delve and become more technical, because partly I want to send a message here. that the digital humanism is not just some fuzzy, good-feeling type of research. They're actually technical, hard technical questions that we must address in order to fulfill the desire for digital humanism. So now I'm going to do a deep dive into more technical details. So Boolean satisfiability is a classical computer science problem. You have a Boolean expression using and, or, and not. And the variable gets value 0 or 1. And you want to know, can you assign values 0 and 1 to satisfy the formula, to make it true? So this is an example of a formula. It's a conjunction of these junctions. And you can, there are four variables. So there are two to the fourth, 16 possible assignments. So you can very quickly check to see this formula is satisfiable. And development of the last 25 years made Boolean logic some kind of an assembly language for reasoning. So they are now growing lots of applications about how can we use Boolean reasoning to solve all kinds of problems. Now, there is a long history here, which in fact goes back even to the 19th century. How do we solve this problem mechanically? And as soon as people built computers in the 1940s, within a decade, People started building computers to do the program, to do Boolean reasoning. The first was by Newell, Shaw, and Simon, only in 1955, nine years after the ENIAC was turned on. Then there was a sequence of papers by Davis and Putnam, and other Davis and Putnam, Davis, Putnam, and Davis, Logerman, and Loveland, and that led to the DPLL technique for Boolean satisfiability, which is convert to CNF. You run a backtracking search, and you have one heuristical unit clause preference. Now, it is an exponential time procedures, but we don't think we can do much better because Boolean satisfiability was shown by Cook and Levine to be NP-complete. When I was a PhD student, you know, you had solvers that could solve problems with hundreds of variables. And if you told them that's not big enough, they would say, well, what do you want? It's NP-complete. But sometimes in the mid-90s, we had so-called the Sutter Revolution. And a combination of heuristic was developed that had a huge, huge impact on the performance of these tools. It's now called CDCL, conflict-driven closed learning. I think that this name is a huge mistake. We should have called it deep solving. It would have been much popular then. What are heuristic? Like instead of doing backtracking, you do backjumping. You jump. Not one level at a time, but you can jump back. When you backtrack, you back jump. And smart unit closed preference, conflict-driven closed learning, smart choice heuristic, restart, a whole bunch. I can speak for a long time just on that. Big, important tool will develop, GRASP in the mid-90s, and a few years later, five years later, SHAF. And today we are solving problems with millions of variables and clauses. Really just dramatic progress. And a decade ago, Sanjit Cheshia at Berkeley wanted to understand how much progress has been made. So he took at the time about 12 years of such solvers and benchmarked them on the same problem on the same machine. These were solvers that published over a decade. He said, let's compare them to each other. And he showed that the problem that was took 800 seconds in 2000 were solved in one second by 2012. So you had improvement of three orders of magnitude within about a decade. And this progress has been continuing so much that people are now talking about Moore's law for such solvers. And nobody fully understands why are we still continuing to make such dramatic progress. And it turns out that once you have such a solver that can solve such a problem, you find real applications. So, again, this is a decade ago, a paper was published by Leonardo de Mura and Nicola Bioner in CSCM about how Microsoft is using their SAT solver Z3 for application in software engineering. In software development, these are not academic applications. These are all industrial applications. So as we speak now, there are hundreds of machines crunching, working on such problem, helping Microsoft develop software. And there are also huge applications in formal verification in the semiconductor industry. So such solvers are really up to the industrial, not just academic reality, industrial reality. Now, remember, my goal is to try to take logic and make it quantitative. Why do we want to make logic quantitative? Because it's important. The world has nuances. It's not just about true and false. It's about degree of truth, degree of false. If a neural net is making diagnosis, we know that it's not 100% correct. And we want to do what's called uncertainty quantification. We want to know how, you know, if you make a diagnosis and say this is cancer. How confident is the system of this diagnosis? What is the probability of error? And all this requires that we go to quantitative reasoning. In turn, even in the industry, in the hardware and software industry, there is application for quantitative reasoning. This has to be in the context of verification of hardware and software system, which is you, the industry, approaching a trillion dollars a year. How do you, when you, we all know that when you write a program, it's really hard to get it to do just what you intended to do it. You have something in mind, you build a program and you discover, no, it has a bug. The bug first may be just a syntactical bug, but there can be very subtle semantical bug. And then you, you know, think this is a product, you ship it to market. How do you know it's going to do the right thing? So I spent my career working on so-called formal verification. which is to construct a mathematical model and using logic to reason about the system. When you go to the industry and you say, okay, do you use formal verification? Many companies, yes, we do. But when you ask them to quantify how much do they use it, for example, how many out of all the verification engineers, how many do formal verification? My estimate is less than 10% of the effort. OK, this is it's a bit hard to get very rigorous data. But when I go and I talk to people from the industry and I said, OK, how many people, how many engineers do you have? How many of them do formal? I get answer that maybe around 10 percent. So what how do people really do formal verification? They do it using old fashioned technical testing. You simulate the system under different testing scenario and you check the result towards the ideal result. And this is at least 90 percent of the effort. So this is now the dominant approach. You have a design. You simulate it with respect to test vectors. The test vector, that's what they are called, input test vector. They present different scenarios. You know what the result should be, and you compare them. The problem is the test space can be astronomically large. How much would you test? And the answer is very often if you have no principle, you test until... the level of, you find fewer and fewer bugs, at some point it's become a management decision. Okay, we are done. So take, for example, one of the most famous bugs ever, which was the floating point division bug of the Pentium when the Pentium came out, mid-90s. So imagine that we are trying to verify floating point division for 128-bit numbers. Well, If we try to do exhaustive testing, then there are 2 to the 56 possibilities. And if we start now, when we do it with one test per one plank time constant, the sun will go nova before we are done. So this is just not scalable. So how should we do it? So the classical approach is that you take people, verification engineer, and they read the specification, and they write test cases. And they try to capture all kinds of important scenarios. What is important? It depends on the specification. It depends on past experience. You know, it's an art, not a science. And it turns out that a verification engineer can write about 20 per day. It's like writing code. So you have, let's suppose you have 100 verification engineers. They write 2,000 cases per day. You give it to a simulator. The simulator will be done in a few minutes. But just people writing test cases manually, we can never have really deep coverage of the test space. So a method that emerged in the mid-'90s at IBM and IBM Haifa is called random constraint. And the idea is that the verification engineer does not write test case test vectors. Rather, it writes constraints that describe problematic areas. And then we use constraint solver to solve the constraints and use the solution as test vectors. And now by generating many such solutions, we can generate many, many more test cases. And we can obtain a much higher coverage of the test space. And today, this is the standard methodology. People don't talk about it much in academia. But this is much of a new. Your laptop was tested a little bit using formal method. I said maybe 10%. But the other 90% was using random constraint verification. So that poses a very interesting technical question. How should we generate? We have a solver. The solver gave us a solution. What solution does it give us? It depends on the internal. It depends on heuristic. You know, it's just seed of the plant. We don't know what it gives you. And we would like to cover the test space somewhat uniformly. Imagine that you go to the theater and someone has, someone stole popcorn. What is your best, if you can't test everybody, what is your best shot of doing it? Just sample at random. So that gives rise to the following problem. Given a SAT formula, a Boolean formula, Generate solution uniformly at random. Uniformly at random. So you have a such solver. You can generate solution. That's not good enough. We need to generate solution uniformly at random. And, of course, we want to do it for industrial size problems. So it turns out that this problem of what I call constraint sampling has many applications. I talk about test generation. You know, one of the most interesting applications was for MOOCs. when you may have 50,000 students taking a course, and if you give them a homework assignment, you can't give just one assignment to everyone because they'll share information. So how do you generate 50,000 different problems? So one way to do it is to parameterize the problems, describe constraints, and then generate problems at random. And in the context of machine learning, If we have probabilistic inference, we have probabilistic models, we want to, again, sample solution. We have some evidence. Now we want to sample possible solution. This all requires, this all can be reduced to constraint sampling. And the problem has been studied by a theoretician going back to the mid-80s. And by 2000, there was a paper that offered a definitive solution. It was Bellari, Goldrach, and Petrank. I call it the BGP. And the paper was uniform generation of NP witnesses using an NP oracle. Like such solver is an NP oracle. And the algorithm is in BPP to the NP. BPP means randomized polynomial time. And with an NP oracle, SAT solver is an oracle. So when I started working on it about a decade ago, I first told the student, Kuldip Mil, who worked with me, let's implement this algorithm. So he implemented it. And it did not scale above 16 variables. And he said, oh, this is great. Let's publish a paper. I said, people will laugh at us if we submit a paper for n equals 16. Because now they are solving problems with hundreds of thousands, millions of variables, and we are going to come up with 16 variables. It will be a joke. We have to scale it bigger. So we've been spending now more than a decade just about scaling it, scaling it, scaling it, which require better theory and more algorithmic engineering and software engineering, building good tools. There are other approaches that people use. People use, suggesting to use BDDs. So if you have a BDD, then you can figure out, you can assign weights to each node in the BDD, depending on how many paths you have to the one terminal, and then you can generate solutions uniformly at random. But it's BDDs we know you cannot, BDDs do not scale more than maybe a thousand variables. That's pretty bad, actually even less, maybe 800 variables. After that, the BDD explodes. It's too large. There is a classical approach that people use for sampling. This is very classical. It's called the Metropolis algorithm. And it's called MCMC, Monte Carlo Markov Chain. And it's a method that gives you good scalability. in the following way. You create some Markov chain. One can give a whole lecture just on that. Then you take a random walk, and then you stop at some point, and that will give you uniform sampling. But to do really uniform sampling, you have to go exponentially long, which takes too long. What people do in practice, they don't go that far. They take a random walk. At some point, they stop it, and then they say, that's the sample. How uniform is it? Actually, it's not very uniform. People don't experiment. Uniformity is fairly poor. So there is a tension between uniformity and scalability. So based on the theory that was developed by theoreticians, as we said, all the way to the BGP, together with Supratik Chakraborty, Daniel Fremont, Kuldit Mil, Sanjit Cheshia, and myself, we show how you redo the theory, and then you get... Almost uniform generation in BPB to the NP. Again, BPB to the NP is random polynomial time with SAT or CL. Almost uniform, I'll explain. How do we do it? Use universal hashing and SMT solver. I'll explain both. And we scale it to hundreds of thousands of variables. So what is almost uniformity? Well, uniformity means that if you have kappa solution, the probability of each solution is 1 over kappa. And that's, as we said, that's very difficult to do. Instead, we have a factor, epsilon, and your probability is going to be within a factor of 1 plus epsilon from the ideal probability, which is 1 over kappa. So each solution would be almost uniform. So that's, first of all, we compromise a little bit, but you can tune epsilon as you want. Of course, you pay a price. The smaller epsilon, the more expensive it is. How do we do this? The idea is to take the whole solution space, divide it into uniformly, uniformly, roughly uniformly small cell. Then you pick a random cell and you sample that cell has a small number of solution. So you can enumerate them and sample uniformly. Excuse me. Now, how do we partition the space that we don't fully understand? Right. It's a space of solution into. equally small cells. Here we use universal hashing. So you remember that a hash function takes 0, 1 to the n, map it, let's say, to 0, 1 to the m, where n is much larger than m. Now, a good hash function will take random inputs and map them uniformly. But here we don't know that, in general, you don't know that the input space is uniform, probably not uniform. There's no password that people choose, clearly not uniform. So Carter and Wegman came up with a beautiful idea to have a universal family of hash function where you choose, you randomize, instead of randomizing the input, which you cannot control, you choose the hash function at random. And then with high probability, the mapping will be uniform. That means you'll get the cells will be roughly equal in expectation. And how do you do it in our context? In our context, you have CNF formula. And you add XOR constraints. What is an XOR constraint? It's going to be a random equation, X1 plus X2 plus plus plus plus, let's say equal 0 or 1. You put every variable there with probability half. So you have about n over 2 variables. And you can see that this will split the solution base into two. Now, it's not a geometric split. Split it into two. If you have M such XOR constraints, you'll have to do the M cells. And if you have enough cells, you'll make the cells small enough. But now to solve a cell, we have a combination of CNF and XOR constraints. And this is, SAT solvers are not good at it per se. But the whole theory developed of SMT, which is SAT plus some other theory. And again, this has shown tremendous progress in the last 20 years. And we stumbled into a solver called CryptoMiniSat by Matt Esus that was specialized for CNF and EXOS because it combines SAT solving with Gaussian elimination. These kind of equations, which are just equations modulo two, can be solved using Gaussian elimination. And we get a performance that's our performance. Remember, it's almost uniform. But statistically, it is indistinguishable from uniform sampler, which we have compared. And in terms of performance, we got two orders of magnitude and more improvement over previous samplers, like XOR sample prime. And the previous sampler did not offer any guarantee of uniformity. Well, we offer a guarantee, a formal guarantee of almost uniformity. So I want to do some reflection now before I close. One is that when I was a graduate student, NP-complete problems were considered scary. But today we solve NP-complete problems with huge industrial NP-complete problems. And complexity theory doesn't fully explain it. It's a real mystery. And in fact, a book was just published last year, Beyond Walls Has Complexity, by Tim Rathgarden as editor. which is how do we explain our success on solving this NP-Compute problem? We think they are hard, but in practice they are not so hard. And how can we leverage that? And what kind of complex theory do we need to do that? But I want to close on how I started. We are facing here not paradigm glide, but paradigm shift. And I think data-driven computer science, refined model-driven computer science. I say when my undergraduate major was in physics and, you know, year one of physics, you study classical physics, mechanics, electromagnetism, optics. Only later you go to more modern physics. But essentially you spend year one doing 19th century physics because this is the basic for all of physics. And we have to figure out how to bridge the gap between machine learning and logic to get human-centered AI. Thank you very much. Thank you very much. I hope you can hear me now. Yeah. Yeah. Yeah. So I apologize to the virtual audience that I was only recognized by the audience in the lecture room at the very beginning. But nonetheless, now we are back on track. so maybe for the moment is there any urgent question to moshe concerning clarification of some aspect check the audience the live audience and other audience so fine so in the meantime i might ask latina to set up for the next talk so moshe i hope you can stay with us I will stay for the whole session. Excellent. At the end we have a discussion about all the topics together. And I now am happy to introduce Martina Lindorfer from our university where she is assistant professor. She received several awards already. I remember and So she's working in the area of privacy and security. And again, without much further ado, thank you for being here. Thank you for inviting me. So yeah, my research, I'm more on the software engineering side and come from a background of applied security, software testing, and started with actually testing the apps or programs we have on our computers for malicious behavior. But along the way, what we found is that nowadays, a lot of apps we just have on our phones. actually have behavior that you could kind of classify as malicious already. So what we're doing is we're performing automated software testing on this farm of smartphone devices where we execute different kinds of apps and monitor the behavior to see what kind of data they're accessing and where they're sending to. So in a brief overview, we take our phones. install them on device, interact with them on the labs. We're not manually interacting with any devices. So the goal is to be able to scan hundreds of thousands of apps automatically. So we are also building techniques to automatically interact with the apps similar to how a user would do. And then intercept the network traffic to look for which kind of data is going to a different server. That was an early prototype we already built in 2016, so we've been working on this for a while. There's always the question, so we're doing a lot of measurement studies, but what's the benefit for the user ultimately? And unfortunately, this so far is only a prototype, but our idea was having this interface for users where they could see in real time the data that apps were accessing, and then on the other hand, also giving our system feedback if we were correctly classifying different types of information. And finally, giving the user the chance to either block connections to certain servers or replace information. Because if you're looking for a restaurant in Vienna, the restaurant app needs to know in which city you're in, but it doesn't need to know your exact location at all times and probably also share it with Facebook and Google and whatever library is in that. Yeah, that was a prototype that we used for a small-scale user study. We also did a larger-scale study where we... looked at apps for 2016 2018 to see um is the situation getting worse or not um yeah so um what we found is we analyzed different versions of a handful or hundreds of apps and um one very depressing thing was that well it's likely We're getting these new privacy features on our Android and iOS phones, but ultimately progress is really, really slow. Apps are not really adopting new privacy features because they're not required to. And then on the other hand, when we were trying to compare these different apps, one open challenge is also how do we quantify if this one app is more privacy-friendly than the other, or how this one app is more secure than the other. We have this checklist we're looking for for security vulnerabilities, but still it's... There's no consensus on any proper metrics and how to compare different systems and apps. So another project we did was on looking at if you have an app that can access the camera, what does it do with the data it has? Because we are always asked, you know, Facebook has access to the microphone. It's always listening. It has to because its recommendations are so great. Anyway, so in this project, we looked at what type of media is collected by apps and found that You know, there's photo filter apps that you can use on your selfies that make your face either look older or younger or add makeup or whatnot. You would think that those apps process the data on the device and then let the user decide whether they want to share it on social media or not. The thing is, not necessarily. And we found a lot of apps that even surprised us, even though we kind of always expect the worst. Those apps are... might be able to process the data on the device, but they're still sending it to some server. In this example, the Insta Beauty, it sends it to some server in the US on Amazon Cloud in an unsecure way. So anybody on, for example, the university campus could intercept the data and see what kind of pictures you're taking. If you look at the privacy policy, they're at least straightforward that you give them a license to the photos you're taking. Not that many people actually read this. So another example that was in the news a couple of years ago was the space app that was super popular on Twitter. Everybody was posting their photos. The thing was, in this case, the app was from Russia. And in the U.S., there were the security concerns. Now Russia is creating a photo-based database from all of our citizens, which might be a legitimate concern. And I want to stress it's not only about... different countries receiving the photos. It's also, you know, the companies are building huge databases of people's faces for face recognition and so on. So it's actually some very valuable data. How this issue with FaceApp was resolved was that in the beginning, at first they had in the Play Store the contact address in Russia. Afterwards, they just replaced it with essentially a mailbox address in the US. Now everyone's happy. Another app we found was, yeah, they had a developer in the Netherlands, but if you look at the company, it's owned by a Russian company and actually also sends all your images to Russia. And in the privacy policy, it's not even related to the app. They have a privacy policy because they have to, but there's nothing really in there. Another issue was also in our data set that turned up the screenshots of different apps. which was kind of surprising. And we found that there's the services developers can include in the app, not maliciously, like they want to improve the quality and usability of the apps and trace their users are clicking to make it more usable. But ultimately, they're collecting screenshots of how users are interacting with the app while you're typing messages, while you're typing in your credit card information. And yeah, we disclosed this to Google. We also quite got some press responses. In this case, the companies that provide those libraries went to Suez because that was their business. Google wasn't that happy. They gave us some vague response of they're monitoring the apps they have in the Play Store anyway, and they took the appropriate actions, which the appropriate action is the apps now have a line in the privacy policy that says we're doing this. this concludes kind of the first part of my talk because yeah, privacy policies are a fun thing. There's several other art projects and how to visualize them and actually show how incomprehensible and long they've been getting. And just been also some interesting studies on how many days people would actually need to spend out of the working year if they would read the privacy policy of every website and every app they're using. In this regard, there's some Nice development, actually. So I was really looking forward to this. Apple announced that they're introducing these privacy labels in the iOS store. So every app is required to tell the users in a predefined format which kind of data they're collecting and also sharing. And then there's also some details. So it's a nice overview. The thing is, if you look at the fine print, this information is something the developer provides. But there's, of course, Apple. It doesn't take any responsibility to verify this information. And it's maybe not surprising. I just had a master's student looking into this, and he only analyzed a small sample of apps for now and only looked for one specific type of information. But even in this case, 25% or a quarter of the apps declared they're not collecting any data, but they're still sending tracking identifiers around. Google is also announcing these kinds of labels. They announced it last year. They're postponed when they're actually gonna be enforced. But they have this point in there that they're gonna offer independent security review. There's not really any details yet on how this will look like, but I find it interesting. potentially good development for user privacy. But on the other hand, since I'm working with verifying and measuring what apps are doing, it's also not that trivial to give a checkmark to the app and verify the behavior under all circumstances. Mobile apps are super complex. Also, as a side note, if you look at the Google Play Store, Google claims that the Play Store is like the safe garden. shouldn't download any apps from any other sources. They verify everything, but ultimately they don't. It's always about shifting responsibility around and tossing the ball of responsibility for what the apps are doing. And Apple has similar wording in there. And as we've seen before, they don't verify the information they're getting from developers. But still... Go browser had this as an advertisement. Like you can at least use the labels to get a brief idea about. what different apps claim to use. And the difference between, for example, the Go browser and Google Chrome is pretty significant. That's also one of our research projects right now. I'm not going to talk too much about this, but browsers are also a special kind of app where we essentially trust them. We're visiting all kinds of different websites and are worried about the cookie banners we have on the websites. But on the other hand, the browser is between the website and the user. theoretically code and check any information you want, any scripts you want, extract any information. But on the positive side, also block tracker scripts and increase user privacy and security. And this is what we are trying to measure right now. I can only tell you there's a huge range of what browsers are doing, but they're currently finalizing the results. One point I also want to make is that When we're talking about apps, it's not necessarily the developers that are collecting information. It's just usually all kinds of apps nowadays have different third-party libraries integrated for monetizing the apps or just using different services and decreasing their development effort. And on the one hand, this is for the example of TikTok, how many trackers there are. So it looks like the number of trackers decreased, but on the other hand, it's also the big companies are just buying smaller tracker companies and getting on the user base. And what I found interesting in this example, it's like it's one social network, the TikTok app, but then it shares data with the Facebook app, with Google and with different other libraries. And yeah, this is only kind of the tip of the iceberg. There was not a few businesses doing a great job of going after certain apps that are especially privacy unfriendly. And for example, in this case, they looked at Grindr. So the app itself had 19 different third party or contacted 19 different third parties. But through partners and partners and data brokers, ultimately the data from one user was shared with over 4,000 different partners. Yeah, another open topic. I'm trying to keep it short so we can have a discussion afterwards. So we started with mobile apps, but nowadays everything is kind of connected to the internet. We all have our smartwatches and smart toasters and light bulbs and whatnot. And typically in security and privacy research, what people are doing is with the picture on the left. They just buy a handful of devices and look at them and see if they can identify any vulnerabilities, which then make huge headlines. The thing is, there's thousands of different devices out there. And what we know is they're still, unfortunately, not really built with security and privacy in mind. It's always getting the product to the market as fast as possible. Yeah, this is one fun example I always like to show is it also shows how sensitive those devices can be. Those are children's toys that have microphones embedded and that pretty much have any vulnerability you can ask for. And those devices were remote controlled by an app where the parents could use this as a monitor for their sleeping babies or talk to the children. And the data itself is stored on a third-party server or on the server of the company. but left completely unsecured. So we currently have a project like what to do. We can't buy all the devices that are out there and test them for vulnerabilities. So we have now a project funded by the WWTF where we are trying to, if we only look at the apps on a mobile device that control all these different IoT devices, how much information can we gain about their security posture and about the back ends they're communicating with? It looks promising, but it's currently an open project. Of course, we're still buying a couple of devices to verify how our techniques work. But ultimately, essentially, every device has a companion app because, of course, you want to turn off the lights or turn on the light at home while you're still at work. So nowadays, everything is pretty much in the internet. But still, the way that these devices communicate companion app on a mobile phone is the same or similar to how they communicate over the internet. So this way, we have some promising results. Promising and also kind of depressing. So what we found so far is that these companion apps communicate with the typical trackers that you would find in any other mobile app, but also some very specific trackers that we're looking into. And one thing to keep in mind here is you have your app on your phone, and it asks you for permission if it wants to access the location or your address book or any sensor on the device. But if the companion app talks to your light bulb, it can just take the data from the light bulb, use it however it wants, and send it to wherever it wants because there's no permission for any data that those IoT devices are collecting. It all just goes straight to me. apps that technically have all these permissions, but there's just no permission management for any IoT devices as soon as they're connected to the internet. Okay, is this, I'm already on my final, another topic, so I'm hoping we can have some discussions afterwards, but another project we're doing is also, now we know that where all our data is going and who receives the data, who's actually behind different servers. And this is a case study, not on IoT apps or mobile apps, which we are planning to do, but we started just looking at in-house at university, but actually the back ends and servers that are handling all our data and all our services and how dependent are we on just a small number of companies. And I'm sure the picture is the same for any app you have on the phone. Ultimately, any app and any service nowadays is outsourced to the cloud. And if it's in the cloud, it's either with Google, Amazon, or Microsoft. And yeah, we did this measure that was kind of a passion project for us in the university context. Because we as computer scientists have the ability to build our own cloud services and services in-house. all of academia is nowadays dependent on the technical services from these big companies, just because it's cheaper and universities like this, they can outsource stuff and it's cheaper and we don't have to hire personnel to take care of our services, but still, yeah. A point that we should discuss in my opinion. And with that, yeah, also for further discussion, another point that I find interesting to discuss is now that Google and Apple are doing essentially for marketing this privacy labels and to tell users that they're not so much secure because they can see what the apps are doing, but there's, yeah, it's essentially marketing. There's not much behind it. If you can verify that if the information that developers provide is actually correct. Okay. Thank you very much. Of course. something to digest, in particular this sheer amount of information in this condensed form. Nonetheless, maybe just a question from my side at that point, for me to prepare for the discussion. So if you want to, if you would put now at the end, so to say, a research challenge in connection with digital humanism in relation to what you have said, what would be the challenge to tackle? Is there any other question for clarification? No, this is a very quick question. You gave a very scary picture of what is going on. Actually, my question is, do you have an idea of how much awareness, you know, for example, you know, everybody is downloading apps on phones. So how much awareness you think that there is among people of the problems that you raised? I mean, did you. ever went back to people or sampled people and say, you know, this is actually what happens. What do you think? Have you thought about this? So I think there's two things. On the one hand, awareness is growing, but people don't understand the complexity. They're like, this app is collecting my location and different data points, but they have no understanding how this data then is actually used and how much you can infer from it. And then on the other hand is, yeah, but it's so convenient. And there's a lot of peer pressure to use different messengers. Even if you know that an app is not perfectly secure. shares the data, sometimes you just use it because you have to use it at work or because it's convenient or your friends are using it. Okay, thank you. Thank you, Martina. So I now hand over to Brigitte Grell to help you here today. So Brigitte is Deputy Director of the Austrian Research Institute for AI, UFI. call it here. Yeah, and she's an expert in natural language processing, formerly also had a position in Saarbrücken, and the slides are ready. Yeah, and I think we, good afternoon, I think we shouldn't really waste time because your talk, Martina, was really impressive. I know all this, yeah, lots of it, but when I see it, in so condensed i'm just and and when i think what i'm doing i'm doing the convenient stuff uh so and what could we do um there is so much uh we have to agree upon or to to to take uh okay uh get the get another cookie get another cookie in order just to read the newspaper for instance from whatever newspaper i'm not having paid access to yeah so there is so much and okay so I'm from natural language processing and what I'm interested in basically is how do we find out what's in natural language coming from computational linguistics I come basically I came from text at the beginning and this is still what I'm doing in an applied context, but I'm also interested in modeling human language capabilities, which might be dangerous, but we are so at the beginning, which then I'm always saying, okay, you know, we're so at the beginning and the methods are so, don't do what they claim to do. Natural language understanding is just one of those. which is absolutely ridiculous. We don't understand natural language, but still we can do a lot of things which might be useful and other things which won't be so useful. I try to talk about things which have been and still are useful when monitoring user-generated content. So what we do in OFI, since... many years is to work together with the standard which is an online newspaper it's a newspaper printed newspaper but which was one of the early european newspapers who did print and started tend to do online and then you've got a lot of user comments and more and more user comments so each article has its form and people are discussing in the forum so that's the standard thing What we were asked to do back in 2003 was to help the journalists to read all these comments and decide whether a comment could go online or not, because the difference between a newspaper and something like Facebook... these similar things is that the newspaper is liable on what they are posting on their servers and in their medium. And so we started to do machine learning, a classical machine learning task by then, and learn a classifier which distinguishes postings from being, that should be more, I say the bad word, censored or not go. online and postings which are safe to be just pushed to the website and then there is this amount of postings where the classifier is not so sure in which directions it should go so the human has to look up and the goal was just to reduce the human labor by a certain percentage and after the years Of course, there's more and more user-generated content going on and more and more discussion going on. And so it's impossible to do it manually. So we have to have the system. So we have this pre-moderation. And then when the postings are out in the forum, we have the post-moderation that could happen that there is content which is desirable. For instance, the newspaper has their... ideas of how diverse a discussion should be, how different positions should be fostered in a forum, etc., etc. And of course, how particular discussions should be kind of softened, which we can't do with the machine, but we can do with alerting people and alerting moderators to go. there and start a discussion so send the human in but the human needs to find where to go in so without the technology you absolutely can forget it and as an example I use pre-moderation which is an old decision tree. So it went online in 2004. So everybody, you can imagine what kind of technology is this. And it's, well, it's, yeah, it's an old version of a decision tree. The escalation board was this basic idea to kind of calm down when the emotions go up or early find out when emotions are going up and then trying to send a human aid to come. the discussion down. At the end, it was, it turned out that it was much more useful with all the classes we were looking in or the content to have some of desirable contents identified and so that they could be re-ranked and that when you go into the forum, you see them and can read them first and not just the posts which are the most recent ones. So this is just to highlight particular topics. And the third one is the last one we just recently finished. This was really to identify misogynist postings in order to create a context where women which is not so, so that's something we really have to kind of focus more on. So this is just a few numbers from a study which the standard did with approximately 2,000 users they were asking. And it was about how much time do people who post. actively spend in the forum post them actively and the difference you see uh half of women do this compared to men and we only can find it out by asking people because we don't know when we look at the person look at the at the profiles the user profiles we don't know whether these are female or male also how much time people spend in the forum So men, again, more than women, and women attach much more importance to a constructive discussion. And so that's why, at the end, we so do well here. And they are more often subject to derogative postings, and the derogative is a sexist posting. And that's much more facing women than this is the case for men. And so women really often decide not to post anymore. So we've got clearly a silencing effect. And this is part of the society doesn't take part in the discussions. Well, talking about multidisciplinary, just in order to realize the classifiers, urgently had to have people from different perspectives. So we need to have the domain experts, in this case, the moderators, because we, as computer scientists, data scientists, machine learners, we don't know what the goal and the result should be because we don't know the domain by heart. And the methods addressed are, on the one hand, the corpus creation. So we need to create the data we learn from. And on the other hand, all the methods we use for learning, for learning the models. And when you just look at what I've written down, you really see this is depending on when the system was implemented. We have the whole history of machine learning. And this is also gives us a hint of how important it also is to get access to the data and to have a broader access to the data exactly the other way around it's kind of us for us privacy is more hindering than helping for instance with the misogyny classifier we have the problem that we can't publish anything because the data are not freely available we're really struggling and fighting for getting a permission to make the corpus publicly available so that people can extend the corpus, can work with it, and also new methods can be used to train new classifiers. So, on the one hand, having access to data and giving data away freely to a broad group of people is something desirable. On the other hand, we have to be careful with our data. Yeah. And I just want to talk about the data and some related issues. We have to, again, as I already said, combine this knowledge of domain experts and machine learning people, because otherwise we wouldn't have the data or the right data to learn proper models from there. And the mothers wouldn't basically do what they should do. Then the next thing is creating the annotation guideline, because we always work in this case with supervised learning. So we need to know what we need to annotate, which was quite a tricky thing with the success. Because if you think of it, when you read postings and then you have to decide, is the success mean or not? There is a lot of. personal impression and we have to account for this so at the end we decided we will have a label system so we had these annotation guidelines defining what is sexism what is not sexism which cases etc different examples and then we had this label system say from what so either not sexist and then from one to four uh being mildly sexist to being uh harshly sexist yeah And then when we looked into the comparison, as when we compared the annotators, every posting was annotated by three people. Not always the same, three different. So we had eight people in total to do the annotations and three for each posting. And we had in each of these three, there were two moderators. And one person outside of this domain. And we have got with a lot of disagreement. Here I just brought some examples. For the German speaking people. I'm not sure whether the translation is sort of. gives a hint on what it is. And then we have three annotators, the A1 to A3, going from zero, not success, to two, which is kind of medium, so four is the highest number, and three is kind of rather quite successful. You see? And this is just a personal evaluation. And the problem is hard, right? Doing a classifier is a hard thing to do. For the manual annotations, we had approximately 8,000 to 7,900 postings labeled on a scale from 0 to 4. And the agreement, of course, you can imagine, was rather low. um and of course it's often a matter of opinion and what you also have here when you say a matter of opinion the opinion changes over the time uh what is uh called sexist today was maybe not called sexist when i was a kid so i remember going into uh pubs in rural areas where it was completely normal to kind of you know uh you wouldn't do that anymore and also how people talk about it so what we need if we have a sexism classifier we need to have something which is learning over the time or we need to do the retraining but it's not it's not one at the time and that's it um okay you see the overall agreements and that stuff that's uh and and quite uh yeah the classic rather well, they got rather close to human performance. And just two slides, no, we do just thoughts. So all those classifiers we do for postmoderation, where we try to find particular topics or... particular content in forum posts, they really need to have this tight cooperation between the domain experts from both sides, between the people who know about the content and what their goal is, because the goal of the newspaper and standard being having a particular goal in how they conceive their role in society. So, and if you don't have this part of the knowledge when developing the data you can't create a model which is appropriate and would do the thing and also if you don't know how to deal with data and do machine learning you can't do that so you ultimately need those two together and also in the model application so the the overall goal is to help the moderators to find relevant utterances let's say but what they then do and how they kind of evaluated it how they use this in their daily work is their decision the model or the system can only help to find in a huge pile of things something which is relevant and it's everything we do in natural language processing is not hundred percent so in many cases we we are happy if we are at let's say 80% or sometimes even 67% or something. So we need the human in the whole process. Another thing is who has access to the data and how is this regulated? As I told you, our problem is that we don't have access to the data and we can't do anything further with it and the community can't do anything further and it can kind of be improved and the data can't be made larger or with different annotations, etc. So here we need, we have on the one hand privacy laws, which are too restrictive. On the other hand, we have big companies which just use the data however they want because we can't control it anyway. So we have this dichotomy here. And we also have this imbalance between a publicly funded research, which is comparably small, it's fragmented, and then we have the really big internet companies, which just do what they want, basically. We don't know. And the last slide, we also have underrepresented languages. So German, for instance, is another representative language. When we do natural language processing, almost everything and the kind of best developed parts are for English. So German is, compared to other minor languages, rather developed in terms of tools, resources, etc. But on the other hand, when you say German, most of the machine learning models are German-German. We have standard Austrian-German, standard Swiss-German. And when you ever have tried to do automatic speech recognition and try to do it with Austrian and it's not some real dialect, you know what it is about. Then we have... In machine learning, just from a very narrow perspective of natural language processing, we learn from skewed data. When we look at the data in different categories, the numbers we have according to the categories are different, but also the positive and the negative examples. a standard thing when you work with real data. We need to learn from small data. When we need to annotate data, we definitely need to learn from small data. So that's why we're doing transfer learning and stuff like that. And we kind of can do okay with a few thousand data, but we can't train the base models. If we would train really a big, big, big... base model for German or for the varieties of German, we wouldn't have the money and the resources to train it. So it's again somewhere at the big companies. We actually would need continuous learning because the opinions and what changes, so what is sexist changes, just as an example, but many other things change over time. We haven't updated the format since 2004, for instance. And we also need to overcome this shortcut in learning where correlations kind of go for causal relations. And we have also this, I think we have to be more aware of, maybe we... as researchers are, but everybody should be more aware of this dichotomy of narrow AI and general AI. And that doesn't mean that, so all our systems, at least when we do classical machine learning, are narrow AI. They are just for a specific purpose, because I have to twist the data, I have to do hyperparameter search. Etc, etc. And this is just for a particular application. And that's it. And this is far away from being general. And I think we have to, at least in this area I've been talking about, we have to much more think of AI. machine learning as a tool for the human. It's like a hammer. It looks a bit different. It's like a toothbrush with more capabilities. So that's my opinion on it. Thank you. Thank you very much, Brigitte. So before entering in the discussion, a question direct to Brigitte. Yeah. So we see, we see coming. Yeah, it's been a long day. Oh, there they are again. Hello, people at home. Okay. Thank you very much, Burkita. That was really, really interesting. And there were a couple of things I wanted to ask. Did you need to get ethical approval to do this project? And I'm asking for two reasons. One, you know, you had human coders for the intercoder reliability. And probably for them, it wasn't a lot of fun having to read all of this misogynist content. So I think ethical approval is also about protecting the researcher as well as protecting. research subjects. So I was kind of curious about that. And I think that's also another imbalance between publicly funded, you know, scholarly research and private companies. I mean, we do hear stories of, you know, Facebook people who spend days looking at child porn, you know, having really horrible time. And OK, they just hire more when some of them burn out. But, you know, I think in academia we have a different kind of ethical responsibility. So I think. It's important for several reasons to think about what are the ethics of this kind of research. And also, as we're at the end of the day, it reminded me a lot of when I was learning Dutch. And I had one. This is the advanced class. And our homework was to come to the next class with three swear words in Dutch. The teacher then, this was 20 years ago, wrote them on the blackboard and then she classified them and said, OK, these are about men. These are about women. This is stronger than that. This you must never, ever, ever say. It was one of the most useful Dutch lessons I'd ever had. And then as we were leaving, she said, oh, I've got to kind of rub all of this out. Otherwise, my colleagues are going to come in and wonder what I'm teaching you all. But, yeah, that's a kind of, by the way. But I think, yeah, so I think the kind of ethical issues I think are important. And the other comment in question was really about I heard a presentation a month or two ago from somebody from Microsoft. And they were working on. deprioritizing content, not to remove it, because this was an American and, you know, the idea of removing things was just so anti-free speech, you just couldn't cope with it. So they wanted to keep it there, but just make it much, much harder to find, partly because of freedom of speech issues, but also because of future historians, as you were also suggesting, you know, people might be interested to understand, you know, what kind of words were seen as misogynistic. in 2020 that we're you know how does that change over time is kind of interesting and important so you don't necessarily want to get rid of stuff you just want to make it harder to find the sexism classifier and the other so the de-escalation but they are post-moderation and post-moderation that stays that's already online and this is just online it's got this it won't be deleted it's for um for in in the destination but it was really to to find some interesting parts and then rearrange the information make sure that people can read this when they enter it or people at the standard they have to they can decide you can select whether you just want to read from the news to the older ones or you want to have this prioritized ones first and the escalation at their successful classifier really was for the moderators. What we looked into was there are articles discussing more female topics and there are articles discussing more male topics and then we really looked into those articles or the follow-up of these articles and looked how many heaps did the classifier give us in the female. topics or in the mail topics and we we knew already from the forum because the moderators went through them and they said okay this is a more sexist forum or the discussion is more sexist this is a forum where the discussion is not sexist at all and we we really could see that the hits the classifier had on the different forum were comparable to what the people said So this is an alert. Imagine you've got thousands of articles live and you can't monitor them. But with this mechanism, you can monitor them and then the moderator goes in. So there are moderators who kind of bring the human part in and then start the discussion or say, OK, come on. that's enough or whatever um this is what was for the second question and for the first question no we didn't uh we didn't ask for uh ethical approval because this was kind of a partly um company project and they just decided that they wanted to have it and the moderators of the people who work and just read the stuff anyway uh were the annotators right oh okay But I think it is an interesting issue what the kind of different expectations and standards are also between social science and humanities in terms of ethical approval and computer science. Because I think historically, computer science, you know, you're just building machines, you're engineers. Why do you need to get ethical approval? But of course, you're reshaping the world. So it's kind of important. And it makes also a difference to have this success in jazzifier. a particular newspaper because they've got their standards and their opinions what they want to have in it or not or to have it as something let's say a general research project where we say okay we want to have a sexism classifier for social media, and we have annotators from just a group of indistinguished people, not just one particular group of coming from a newspaper and having an agenda. So I think that's a bit different. Okay, so maybe also to really have the opportunity to discuss the entire session. Gary, I think you were able to transform your question from a complete one to a more general one to all the speakers. Maybe let me just before the trial give a brief summary again of what we have heard now in the three talks in order to translate it into input for the roadmap. So I think it was very interesting Moshe telling us about logic-based AI, which now transforms in one way or another into this data-driven AI. And then we had two talks which talked about data in a different sense. The data is generated in different ways. One is unintended, where the user is not aware that data is delivered. And then with the user postings, of course, these are things where people... We have an intention to give the data, namely the text they provide. And we have heard, of course, that this leads to completely different challenges. On the one hand, we have the privacy issue here. And then, as Brigitte said, and you said, it's important to access the data, the metadata of the users, for instance, which is about the age and where they are coming from and so on. So that's very interesting to have this Janus here that, say, nature of the data. And what also surprised me is that in all three talks, although they were very different, they had the term verification in it. And I mean, in Marshall's talk, it was rather explicit, verification of software system, of programs to some extent. But in a sense, at the very end, you want to verify whether the apps do what they pretend. with the data, and Brigitte, you had it in the sense that you have to check whether postings violate the rules of the newspaper, which is also kind of a verification. And my question to the, maybe to the speakers then would be, but I also would open the floor, but maybe keep this question in the mind, is whether this verification aspect is one of this... the great challenges in a more concrete way where we need to combine these different AI methods, because as soon as I need to verify something, I need kind of a rule-based, logic-based specification of something, be it a law, be it a program code or whatsoever, or a set of rules. Yeah, that was my last comment, because this brings us back to this combination of logic and data driven AI. So we have maybe one more question first, and then I ask the speakers to comment a bit. So sorry, Eric. It's all right. You gave me time to generalize my question. It appears to me that in all of your talks, you also alluded to underlying very. fundamental underlying issues that lie under the surface of what you're doing. So let me give you, maybe I'll start with Moshe. As much as I think, yes, you're absolutely right. We need this logic. In the old days, we said symbolic and sub-symbolic way of doing things. But in the end, explanations by itself is a very difficult question. What is an explanation that really satisfies us? Very often explanations are about the purpose of a system. It's not just so much on the input side of that neural network. It's also about, you know, what did it want to do? And that shapes the concepts in the network. So whatever the explanation is going to be, we need to take that into account that in order to do X or Y, that decision came up. So I think there is a really more fundamental question to be asked about what is a good explanation. And in your sense, in your talk, Birgit, one of my hobbies is how bad does a discourse have to be in order to be productive? Because obviously, I mean, we could all talk about Mr. Putin as a person who misbehaved or, you know, that that was really not right. But that's not how we speak and how we want to speak. And there is a good reason for that. We want to use stronger language and sometimes we need stronger language. And I think to make to turn this into something positive, there may be something very important about the fact that you are targeting a small newspaper with journalistic expertise. of people who understand what they are trying to do in that forum, which is very different from, let's say, regulating online content on Facebook, where everything is out in the open, you know, and you have to come up with general rules for every discourse, every possible discourse. That's probably not doable. Probably that's the wrong thing to do. And for Martina, I'm really not sure. I just want to add a comment. It seems to me that a lot of what you discovered is just simply illegal. Right? Question mark. Thank you. Thank you, Eric. Maybe let's go through the order of the thoughts. So Moshe, you may want to comment. Yeah. I mean, so Eric raised a very good question, which is what is, you know, it's almost a philosophical question, right? What is a good explanation? And I mean, in some sense, we are all... This is a kind of a question. We write things. You know, you submit a paper. You're making an argument for why, you know, make an argument why the program committee should accept your paper. You have to provide some explanation. And as we know, people disagree. What is a compelling explanation? I mean, I don't know that I have a good answer. What is a good explanation? What I do know is that it's not a low-level explanation. You can say, oh, this neuron fire, and then that neuron fire, and so that's the answer, right? We have to have some, you know, it connects to human language, connect to NLP. I think that's kind of a central question that, you know, I mean, I'm coming from one angle, and then the other speaker came from a very different angle, but it does raise the question. Perhaps we need also philosophers to come and help us. I mean, I know from the logic point of view, if P implies Q and P is true, then Q follows. But human mind doesn't always work like that. And it connects the question to the head, which is how do we combine it with common sense reasoning? You know, if you want to understand comments of people, there's always context. It's very, very difficult to just read the word. you know, the same comment could be innocent comment or a very nasty comment, depending on the context in which it lives. Okay, thanks. Martina, maybe you want to reply to Eric's question about the legality of what apps are doing. In the best, the gray area, in the worst, it's illegal. It's just the amount of services we're using, the same amount of apps, it's just a game of whack, I'm all going. after all of them. We have all these regulations. In the US, it is perfectly legal, unfortunately, I'm afraid. I think if I can chime in, if you can hear me. Maybe let's have one round on the podium and then I have you on the list as the next one. Okay. This was good. This was strong all the way. Yeah, that's like at the standard. Yeah, of course, you're right. It depends on the policy of the medium, how strong you want people to interact and how strong the language should be. This is one thing. But the other thing is in Austria, you've got regulations. So you have got already the pre-moderation, which you have to do. Otherwise, you as a content provider are kind of get a problem with the law. So you have both sides. And a standard, of course, is a... absolutely highly moderated and relegated content provider in the fall but even if you read it you don't believe it like that because it's dreadful really what people are kind of talking about but it's highly it is already very kind of behaved and that makes the task even harder because it's more subtle. The nasty things are more subtle than they come in a non-moderated social media context. Okay, thank you. So for the second round, I first have a comment in the chat by Paul Dimmers. Maybe I just read it. So he says, Master in digital complexity should. a core team in the digital humanism research roadmap? Mastering digital complexity should be a core team in the digital humanism research roadmap. I mean, it was at a certain point in one of the talks, so maybe Paul can comment on the content. And then I have two raised hands. Paul, are you here? Yes, shall I? Do you hear me? Maybe briefly explain your question. What I mean is I was trying to look a little bit at what is kind of like a common theme that comes from the various presentations of this afternoon. And complexity, digital complexity risks to overwhelm us, either on purpose or accidentally. And as Moshe said, for example, we need to have math, hard software engineering for that. But as Otto said. Perhaps you also need to have legal and policy engineering for that. But anyway, digital complexity is something like has an incompatibility or risk of incompatibility or real risk for digital humanism. So I tried to condense it in a very short sentence. Should digital complexity be a core theme in the digital humanism roadmap? Okay, thanks for the clarification. Now I hand over to Ed. Maybe let's collect two or three questions from the audience. Ask the panelists to reply. So now it's your turn. Sorry for interrupting. No, sorry to interrupt. This is always awkward doing these things in hybrid mode. Yeah. So on this question of what constitutes a useful or valid explanation, I think there's a key insight that you can get from Daniel Kahneman's book, Thinking Fast and Slow, which Moshe mentioned. which is that humans are actually very good at coming up with post-hoc rationalizations that are explanations of decisions that they made. But in many situations, it's actually demonstrable that these explanations are invalid, that they don't actually explain how the human came about, came to that decision. And in fact, I would conjecture that someone before long using GAN, using generative adversarial networks, is going to figure out how to train a deep neural network to give a valid explanation or a convincing explanation for any decision. So you just give it the data, the decision, and it will come up with a convincing explanation. Humans do this. So I don't see any particular reason why we shouldn't be able to create an AI that does this. So I'll tell you a funny story about this. So one of the universities in the UC system is University of California at Santa Cruz, which was founded in the 60s. It was a very liberal school. And one of the things they decided when they founded it, they didn't like numerical grades. How can you reduce a human being to just a number between a zero and a hundred? It seems not humane. So instead, they require professors to give what's called narrative evaluation. For each student, you have to write a paragraph that assesses the evaluation of the student in the course. And one of my colleagues at the computer science department wrote a program. He would give numerical grades, and the program would generate a paragraph of narrative evaluation that he can then submit and be in compliance with the rules. So exactly what you have proposed, Edward. Maybe let's have a question for this round. So I see one more hand. Yes. Good afternoon. My question is actually for Moshe and actually maybe related also to Ed Lee. So and here here's the question. Here's first of all, an observation. It seems to me that humans are able to explain how they. came to a decision because we are able to simultaneously in real time work at many meta levels not only the problem at hand but we can observe ourselves solving it we can observe ourselves observing ourselves solving it we can remember and compare it with how we solved other problems before we have mental models of other people and how they solve it and we can compare it with that and all of these inform how we explain how we solved a particular problem. So it seems to me there's an architecture here of many, many layers of models inherent in how we do things. And it seems to me in the machine learning phase, we are nowhere close to that. And it seems to me that's a prerequisite for being able to have explainable solutions, explainable decisions. What do you think about that? There are researchers in AI, like Cynthia Rudin, I think at Doof, who argues, again, explainable AI. And he said, if you have very, very low-level models, then what is an explanation? I mean, in some sense, it's not clear how you provide it. So he said, what we need to do is to work with what she called interpretable machine learning. where the models are interpretable rather than, and this is the research area, and I use the phrase explainable AI, but there are some good arguments why this is partly, the various reasons have been mentioned here. This is not necessarily a good term, and again, that's why there's some argument people need that currently technology, dominant technology in machine learning, which is deep learning, The models are too low-level, and that's why we need to figure out how to integrate the low-level reasoning with higher-level reasoning that we can express in various high-level formalism. So you should take a look at interpretable machine learning. Yeah, maybe now let's keep for the moment this important thing of explainability. I would like to ask Brigitte first maybe. So in this standard BBL, in these forums, if a posting gets removed, then the users often, I can imagine, would like to know why. So is this something which is also on the agenda? an explanation why my postings are removed in in practice no because the the the first removal in the pre-moderation this is just gone uh okay and there's no explanation and people start complaining and they they start saying oh i'm censored and why i'm censored again and they already have so people start joking about the censoring and said i imagine when they write this Then I get censored. Maybe I write it this way. Things like that and trying to kind of fool the system. This is, yeah, this is one thing. And then there is this inbuilt censorship of the people who can, you can alert as a co-poster or fellow reader in this forum. You just can alert and say this is inappropriate. And can also give a reason why that's. a part how we got our data which were positive as a positive data we're looking at into these comments right and the explainability i think yes explainability would be really good for the for the users because you want to know why a person got removed the explainability is sort of debugging for us sort of a high-level debugging for us. And it's also a sort of high-level debugging for the moderators. But for the moderators, it's much more important to get the highest hits that they are in their sense so that they can work with the data, right? So I think explainability has a number of different angles to look at, depending on who. is talking about explainability or wishing for explainability. Martina, what about in the context of your research, would it be something reasonable to try to explain the users what will happen with the data if they get this and that? I think that's a general problem. People should have more of an understanding how the technology runs their daily lives. So one example is... Kind of not related, but so we are trying to recruit more people for computer science and going into schools and figuring out how to get people to be interested. And what we're seeing is that, yes, we have this digital agenda in the schools, but not really any good solid curriculum. But it should be like basic knowledge of even already at early stages in schools, teaching about how machines work, how software works. what's behind what's powering essentially all the services we're using. So if you talk to someone on the street about machine learning, it's like magic box and AI and nobody really has any idea what's going on. Okay. So for the final round now, I think we'll start with the audience. Carlo gets it. I have a question, which is basically for Martina. You know, the examples that she gave, you know, were kind of scary. And we are using apps for everything on our phone. Now you can use your phone to do whatever you do in your home, and everybody does that. So I'm wondering if, at least in Europe, since there is this kind of sensibility towards privacy, which came out through a GPR as a very strong statement, Isn't this mature for use of verification technologies like the ones that you have been using to identify those threats and those problems in those applications? Be used for some kind of, let's say, official certification that those things that we use every day are safe. Today, if you buy any electric appliance for your home, it has to be certified, right? So shouldn't this be the same for apps that people use every day? Let's say Apple and Google, they put them, at least in Europe, on their market only if... They have been cleared, you know, through some kind of verification. Isn't this some strong statement that, you know, we should make, you know, for those? And so verification techniques are there for us to propose that they should be used, right? I totally, fully, 100% agree. Maybe let's also have a final question from the audience and then make a... Final round of statements. Just one short question before this final question. Could you relate the term explainability to the term objective function Robin Burke used? Because I think we are talking about similar things. And he did not say how to explain, but he said, what is the objective of the system, which might be much easier than explaining and finding, let's say, a causal reasoning for something which was not causal. This might be something. My question to all of you and maybe also to Edward is I'm thinking of the guys who sit down tomorrow afternoon and write a roadmap, okay? And I would like to have your input to this roadmap in very concrete terms so that when Erich and Paul and Linda are trying to write it down. They have, okay, from your specific area, what would be one or two challenges which have to be on a roadmap? Without $1 million, which Helga wanted to have this morning. Okay. Okay, so let's have now this final round with the panel extended by Ed's lead now. So we have two complete question or remark comments on the table about the verification of the system, of the apps. Then about the explanation versus objective function. Maybe this is something Moshe wants to say something, but of course everyone is. And then we have this general, and I think Hannes, your idea to add Edward now to this final round is that these were the four. talks, which were really from a computer science perspective, computer science-like questions and challenges. So maybe let's, that's what, but in any case, I don't know. I could imagine. Yeah, let's put it that way. From Edward, I know that we should think about the difference of man and machine, which is a very fundamental question, but it is hard to put on the road. Yes. Ed, could you understand Hannes now? Because he was not speaking to the mic anymore. I caught a few words, but not all of it. It was a comment to Stefan that I put you on the table as well, because from Paola's and also Robin's presentation, I immediately got the feeling what would be issues we have to solve in the roadmap. From yours, I have... It's very fundamental observation and it's somehow the difference between man and machine, but what would be on a roadmap to go into this direction? Okay. From a concrete project proposal and things like that. So this is the reason I was asking you. Okay. Thanks. So maybe let's start around with Martina. I'm starting with the verification question. So I know. know personally how difficult this is to really certify an app and make sure you cover all the behavior but one thing i'm seeing in an either ideal world it would be nice to just start from scratch and design the systems in a way that you can verify the behavior and put your seat of approval on there and i have the feeling that's connecting to the question before it's just smartphones are around since like 2008 and they've just grown and newer features and just make it easy to develop and whatnot with little thought behind it what the implications are. And it's just a mess. We should really start from scratch and think about how we can design those systems in a better way. But still, when you look at these labels that Apple has in the App Store, those say the app is accessing your photos. But there's no connection. And on the device, there's permissions to access the photos. There should be some connection, but there isn't. And that's, again, not really a technical solution, but we should have some way to hold the companies more accountable for what assistance they're providing. Thanks, Martina. Brigitte, your final concluding remarks. I think that... From my perspective, how data is used and who has access to data is something which is very important. So on the one hand, from my example, there are reasons why we want to give data to the community so that people can re-extend the data, re-label the data, train new models with the data because the machine learning technology changes. quite quickly so this is the one type of data and on the other hand there are data so there are all those companies they just collecting data partially without us knowing and just ignoring it because we it's really i really wonder can you uh just use uh applications that are safe or do you use stuff which is kind of according to your terms not safe at all and you shouldn't use it so i I don't find a way out. So I think we need these two parts of the data and that would be something which should on this roadmap. So on the one hand, make data accessible, make it transparent that they are accessible and what is done with it. And on the other hand, make sure that the companies not just take the data and do whatever they want. Thank you, Brigitte. So maybe not it. Your final comments in reply to Hannes? Yeah, I guess in some ways my sense is that my message is more about what to keep off the roadmap rather than what to put on it. And specifically, the thing that I think should be kept off the roadmap is all this discussion about AIs just as drop-in replacements for humans. And I think that we should recognize that that's Probably not really the way it's going to play out that AIs are going to be working in conjunction with humans in almost any scenario that we imagine. They will be working, functioning as cognitive prosthesis for humans. So they could become, you know, kind of a part of our own cognitive functioning rather than just, you know, external tools. But, you know, even I mean, in the in the principles of embodied cognition, any tool that's used by a human becomes part of that human. Right. It's you know, when you use a hammer, it's an extension of your arm and your brain adapts to being able to understand the motor dynamics of how the arm has changed by holding that hammer. And the same thing is going to be true when we're using. AIs as, you know, in the context of any of our societal functions. And so I guess, you know, the big message is that stop thinking of it as replacement and start thinking of it as, you know, the interaction and partnership that emerges when the AIs are working together with the humans in a societal function. Thank you very much. Moshe, your final remarks. So we have to go back to the very beginning. And humans wondered why humans seem to be working hard and other animals don't seem to be working so hard. So they came up with a story how we got expelled from the Garden of Eden and there was a curse and the curse is in the sweat of thy brow thou shalt eat bread. So the answer is we never liked it. So the Eastern Revolution gave us a way to replace hard work by machines. Okay. We liked it. We don't have to do hard work the same way that we used to do it. We can build now a much bigger building because we have cranes. And then we came up with a way to process knowledge, and we could compute things much faster than we had to do it by hand. And again, we liked it. It's just much easier. We don't like to work very hard. But somewhere down the line, this prosthesis that we have been developing for us went to something else that we don't like doing. We don't like making hard decisions. I mean, humans have to make sometimes very hard decisions. Think of people who, you know, in countries, in Texas, we have the death penalty. That means that, you know, juries have to vote for the death penalty. These are hard decisions. And there are many other hard decisions humans have to make. And gradually, using the same technology that allows us to just do, you know, compute ballistic tables, we are now having prostheses that are going to make decisions. The decisions are not just which edge should I show Vardy when he clicks on the link, but also much more profound decisions. And the big question we should ask ourselves is, wait a minute, should machines make this kind of decision? And if they do... Under what kind of guardrails do we want to establish? Sustainability is just one aspect of it. But the first question should be, should we allow a machine to make these kind of decisions? They have to do profound implications for human life. And if we do, under what conditions? And right now, it's just a wild west. A company can come, and we have a technology, and they can sell it, and people are using it, because there's no law. Technology is running way ahead of the law. And the mantra is innovation, innovation. We have to pursue innovation. Regulation stifles innovation. The answer is innovation. If innovation is bad, then by all means, let's stifle it. And so I think the big question is not just, you know, is do we want AI to do this? And what kind of AI do we need? And what are the other, what are the implications of having technology to do that? And, you know, you may remember the movie, what was called War Games. War Games was essentially kind of that movie about should we let AI decide to launch a nuclear war? And we don't have to go. I mean, this was taken to an extreme. There are many other cases we should ask ourselves. Should we allow machines to do that? Okay. Thank you very much, Moshe. I think these are very well-structured and important concluding remarks for our first Let me say a big thank you to all three speakers of this session and to the people who engaged in the discussion and to the audience who looks hungry and we now here go for dinner. And I send greetings to all virtual participants and hope to see you tomorrow again. Bye bye. a beer now. A beer? Yeah, a beer. Hannes emphasized that there's also beer. Sorry to you. Sorry to the guys out there. Abend. Abend. Gute Abend.",
+  "segments": [
+    {
+      "start": 51.6,
+      "end": 53.136,
+      "text": "Are we ready to start?"
+    },
+    {
+      "start": 90.352,
+      "end": 119.056,
+      "text": "I cannot hear anyone. Can anyone hear me? I can hear you. You can hear me? Okay. Yes, I can see your slides too. Okay, good. Let me know when to start. Well, maybe the moderators haven't come back from coffee. Ah, okay. Okay, that's fine. Okay, yeah. Moshe, please start."
+    },
+    {
+      "start": 120.816,
+      "end": 145.168,
+      "text": "Okay, hello everyone. Good to be with you in virtually. And as we hear every day now about machine learning, machine learning, machine learning, machine learning, and I'd like to look at machine learning and logic and combine it with another way of thinking about human intelligence. And this has been known as fast and slow thinking."
+    },
+    {
+      "start": 146.256,
+      "end": 173.168,
+      "text": "So every day now we hear about big data and machine learning and data science, and some people say we are maybe at a peak hype or even beyond the peak hype. And there is a common perception that we are going now through a Kuhnian paradigm shift. Thomas Kuhn wrote a famous book, The Structure of Scientific Revolution, and introduced the phrase paradigm shift."
+    },
+    {
+      "start": 173.168,
+      "end": 202.32,
+      "text": "Typical perception is that there is an old theory, we just throw it out, and there is a new theory. For example, the Ptolemaic theory of the planet versus the Copernican theory of the planets. So this perception, you throw the old theory, you have a whole new theory, total revolution. But in reality, it's a bit more complicated than that. And very often, new theories refine the old ones."
+    },
+    {
+      "start": 202.32,
+      "end": 230.0,
+      "text": "I mean, we have general relativity introduced in the beginning of the 20th century. Did we throw out Newtonian mechanics? Absolutely not. We went to the moon using Newtonian mechanics. We've been building using Newtonian mechanics. So data science, I think my argument, data science, refined formal science. Formal science is about science with models. You know, much of my research is about formal models. And I argue that data science refined formal science."
+    },
+    {
+      "start": 231.568,
+      "end": 257.872,
+      "text": "Now, Daniel Kahneman published a book about a decade ago called Thinking Fast and Slow, an argument that human intelligence has these two facets, fast thinking and slow thinking. What is fast thinking? You have an autonomous vehicle. It has to recognize, is this a stop sign? That takes, you need to do this in a second, in a fraction of a second. Identifying..."
+    },
+    {
+      "start": 257.872,
+      "end": 285.936,
+      "text": "A snake in the grass should take you a fraction of a second. You're not going to go and make observations. It takes you a fraction of a second. What do you do about the stop sign? The rule that stop signs require you to stop, this is logic. This is slow thinking. Anon Shashua, who is the CEO of Mobileye, it's a company that now subsidiary of Intel and promoting technology of autonomous vehicle."
+    },
+    {
+      "start": 286.032,
+      "end": 316.0,
+      "text": "And Amnon Shashua wrote a paper about five years ago explaining why you cannot develop autonomous vehicles just by driving around and collecting data. He argued that it's a societal, social argument why autonomous vehicles need to be a factor of a thousand times safer than regular, than human-driven vehicles. And that means that we'll have to drive one billion miles to collect the data. So it's not feasible."
+    },
+    {
+      "start": 316.0,
+      "end": 345.712,
+      "text": "We can drive millions of miles to collect data, but you have to combine it with reasoning. And I think this tells us if we want to combine fast and slow thinking, we have to learn how to combine logic, which I think of it as slow thinking, with machine learning, which is fast thinking. And that to me is one of the grand challenges today, how to combine logic and machine learning. And in a more specific context, I want to look at what's known as automated decision systems, ADS."
+    },
+    {
+      "start": 345.712,
+      "end": 372.288,
+      "text": "In 2018, Jim Largus and Chris Hunkin wrote a column in a communication of the ACM about ADS, and they wrote that the question is, how do we regulate such a system? And they argued that we should regulate them. They wrote, the widespread adoption of ADS system will be economically disruptive and will raise new complex societal challenges."
+    },
+    {
+      "start": 372.288,
+      "end": 398.48,
+      "text": "Disdain for regulation is pervasive throughout the tech industry. In the case of automated decision making, this attitude against regulation is mistaken. So how should we regulate automated decision system? That's a subject that we can discuss at length, but people now expect that this system are going to be fair, you know, lack of bias, they should be accountable, there should be transparency, and they should be explainable."
+    },
+    {
+      "start": 398.832,
+      "end": 428.576,
+      "text": "So this has become now a common phrase in AI, to have explainable AI. So what is explainable AI? We want the results to be understood by humans. And if we want to have humans center the AI, one of the requirements is that AI decision by automatic system must be explainable. But how do you give explanation? You know, we're talking, for example, neural net, deep neural nets. How do you give explanation? You can't say, well, this neuron fired because that neuron fired because that neuron fired."
+    },
+    {
+      "start": 428.576,
+      "end": 456.56,
+      "text": "You want to talk to people in their language, and that is, again, logic. And again, I go back to this grand challenge, combine logic with machine learning, which now many people call neurosymbolic reasoning, and that's a very hot topic. I will talk about my approach towards this integration, and this to make logic quantitative. And I'm going now to delve and become more technical, because partly I want to send a message here."
+    },
+    {
+      "start": 456.816,
+      "end": 482.544,
+      "text": "that the digital humanism is not just some fuzzy, good-feeling type of research. They're actually technical, hard technical questions that we must address in order to fulfill the desire for digital humanism. So now I'm going to do a deep dive into more technical details. So Boolean satisfiability is a classical"
+    },
+    {
+      "start": 482.544,
+      "end": 511.44,
+      "text": "computer science problem. You have a Boolean expression using and, or, and not. And the variable gets value 0 or 1. And you want to know, can you assign values 0 and 1 to satisfy the formula, to make it true? So this is an example of a formula. It's a conjunction of these junctions. And you can, there are four variables. So there are two to the fourth, 16 possible assignments. So you can very quickly check to see this formula is satisfiable."
+    },
+    {
+      "start": 511.44,
+      "end": 541.296,
+      "text": "And development of the last 25 years made Boolean logic some kind of an assembly language for reasoning. So they are now growing lots of applications about how can we use Boolean reasoning to solve all kinds of problems. Now, there is a long history here, which in fact goes back even to the 19th century. How do we solve this problem mechanically? And as soon as people built computers in the 1940s, within a decade,"
+    },
+    {
+      "start": 541.488,
+      "end": 569.84,
+      "text": "People started building computers to do the program, to do Boolean reasoning. The first was by Newell, Shaw, and Simon, only in 1955, nine years after the ENIAC was turned on. Then there was a sequence of papers by Davis and Putnam, and other Davis and Putnam, Davis, Putnam, and Davis, Logerman, and Loveland, and that led to the DPLL technique for Boolean satisfiability, which is convert to CNF."
+    },
+    {
+      "start": 569.84,
+      "end": 598.8,
+      "text": "You run a backtracking search, and you have one heuristical unit clause preference. Now, it is an exponential time procedures, but we don't think we can do much better because Boolean satisfiability was shown by Cook and Levine to be NP-complete. When I was a PhD student, you know, you had solvers that could solve problems with hundreds of variables. And if you told them that's not big enough, they would say, well, what do you want? It's NP-complete."
+    },
+    {
+      "start": 600.0,
+      "end": 627.552,
+      "text": "But sometimes in the mid-90s, we had so-called the Sutter Revolution. And a combination of heuristic was developed that had a huge, huge impact on the performance of these tools. It's now called CDCL, conflict-driven closed learning. I think that this name is a huge mistake. We should have called it deep solving. It would have been much popular then. What are heuristic? Like instead of doing backtracking, you do backjumping. You jump."
+    },
+    {
+      "start": 627.552,
+      "end": 653.408,
+      "text": "Not one level at a time, but you can jump back. When you backtrack, you back jump. And smart unit closed preference, conflict-driven closed learning, smart choice heuristic, restart, a whole bunch. I can speak for a long time just on that. Big, important tool will develop, GRASP in the mid-90s, and a few years later, five years later, SHAF."
+    },
+    {
+      "start": 653.408,
+      "end": 682.992,
+      "text": "And today we are solving problems with millions of variables and clauses. Really just dramatic progress. And a decade ago, Sanjit Cheshia at Berkeley wanted to understand how much progress has been made. So he took at the time about 12 years of such solvers and benchmarked them on the same problem on the same machine. These were solvers that published over a decade. He said, let's compare them to each other. And he showed that the problem that was"
+    },
+    {
+      "start": 682.992,
+      "end": 708.944,
+      "text": "took 800 seconds in 2000 were solved in one second by 2012. So you had improvement of three orders of magnitude within about a decade. And this progress has been continuing so much that people are now talking about Moore's law for such solvers. And nobody fully understands why are we still continuing to make such dramatic progress."
+    },
+    {
+      "start": 711.056,
+      "end": 733.744,
+      "text": "And it turns out that once you have such a solver that can solve such a problem, you find real applications. So, again, this is a decade ago, a paper was published by Leonardo de Mura and Nicola Bioner in CSCM about how Microsoft is using their SAT solver Z3 for application in software engineering."
+    },
+    {
+      "start": 733.744,
+      "end": 762.576,
+      "text": "In software development, these are not academic applications. These are all industrial applications. So as we speak now, there are hundreds of machines crunching, working on such problem, helping Microsoft develop software. And there are also huge applications in formal verification in the semiconductor industry. So such solvers are really up to the industrial, not just academic reality, industrial reality."
+    },
+    {
+      "start": 764.752,
+      "end": 793.984,
+      "text": "Now, remember, my goal is to try to take logic and make it quantitative. Why do we want to make logic quantitative? Because it's important. The world has nuances. It's not just about true and false. It's about degree of truth, degree of false. If a neural net is making diagnosis, we know that it's not 100% correct. And we want to do what's called uncertainty quantification. We want to know how, you know, if you make a diagnosis and say this is cancer."
+    },
+    {
+      "start": 793.984,
+      "end": 823.184,
+      "text": "How confident is the system of this diagnosis? What is the probability of error? And all this requires that we go to quantitative reasoning. In turn, even in the industry, in the hardware and software industry, there is application for quantitative reasoning. This has to be in the context of verification of hardware and software system, which is you, the industry, approaching a trillion dollars a year."
+    },
+    {
+      "start": 823.312,
+      "end": 852.672,
+      "text": "How do you, when you, we all know that when you write a program, it's really hard to get it to do just what you intended to do it. You have something in mind, you build a program and you discover, no, it has a bug. The bug first may be just a syntactical bug, but there can be very subtle semantical bug. And then you, you know, think this is a product, you ship it to market. How do you know it's going to do the right thing? So I spent my career working on so-called formal verification."
+    },
+    {
+      "start": 852.672,
+      "end": 876.304,
+      "text": "which is to construct a mathematical model and using logic to reason about the system. When you go to the industry and you say, okay, do you use formal verification? Many companies, yes, we do. But when you ask them to quantify how much do they use it, for example, how many out of all the verification engineers, how many do formal verification? My estimate is less than 10% of the effort."
+    },
+    {
+      "start": 876.336,
+      "end": 906.096,
+      "text": "OK, this is it's a bit hard to get very rigorous data. But when I go and I talk to people from the industry and I said, OK, how many people, how many engineers do you have? How many of them do formal? I get answer that maybe around 10 percent. So what how do people really do formal verification? They do it using old fashioned technical testing. You simulate the system under different testing scenario and you check the result towards the ideal result. And this is at least 90 percent of the effort."
+    },
+    {
+      "start": 906.096,
+      "end": 934.64,
+      "text": "So this is now the dominant approach. You have a design. You simulate it with respect to test vectors. The test vector, that's what they are called, input test vector. They present different scenarios. You know what the result should be, and you compare them. The problem is the test space can be astronomically large. How much would you test? And the answer is very often if you have no principle, you test until..."
+    },
+    {
+      "start": 934.704,
+      "end": 962.592,
+      "text": "the level of, you find fewer and fewer bugs, at some point it's become a management decision. Okay, we are done. So take, for example, one of the most famous bugs ever, which was the floating point division bug of the Pentium when the Pentium came out, mid-90s. So imagine that we are trying to verify floating point division for 128-bit numbers. Well,"
+    },
+    {
+      "start": 962.592,
+      "end": 989.488,
+      "text": "If we try to do exhaustive testing, then there are 2 to the 56 possibilities. And if we start now, when we do it with one test per one plank time constant, the sun will go nova before we are done. So this is just not scalable. So how should we do it? So the classical approach is that you take people, verification engineer, and they read the specification, and they write test cases."
+    },
+    {
+      "start": 989.488,
+      "end": 1016.832,
+      "text": "And they try to capture all kinds of important scenarios. What is important? It depends on the specification. It depends on past experience. You know, it's an art, not a science. And it turns out that a verification engineer can write about 20 per day. It's like writing code. So you have, let's suppose you have 100 verification engineers. They write 2,000 cases per day. You give it to a simulator."
+    },
+    {
+      "start": 1016.832,
+      "end": 1046.288,
+      "text": "The simulator will be done in a few minutes. But just people writing test cases manually, we can never have really deep coverage of the test space. So a method that emerged in the mid-'90s at IBM and IBM Haifa is called random constraint. And the idea is that the verification engineer does not write test case test vectors. Rather, it writes constraints that describe problematic areas."
+    },
+    {
+      "start": 1046.48,
+      "end": 1069.584,
+      "text": "And then we use constraint solver to solve the constraints and use the solution as test vectors. And now by generating many such solutions, we can generate many, many more test cases. And we can obtain a much higher coverage of the test space. And today, this is the standard methodology. People don't talk about it much in academia."
+    },
+    {
+      "start": 1069.584,
+      "end": 1098.56,
+      "text": "But this is much of a new. Your laptop was tested a little bit using formal method. I said maybe 10%. But the other 90% was using random constraint verification. So that poses a very interesting technical question. How should we generate? We have a solver. The solver gave us a solution. What solution does it give us? It depends on the internal. It depends on heuristic."
+    },
+    {
+      "start": 1098.56,
+      "end": 1128.528,
+      "text": "You know, it's just seed of the plant. We don't know what it gives you. And we would like to cover the test space somewhat uniformly. Imagine that you go to the theater and someone has, someone stole popcorn. What is your best, if you can't test everybody, what is your best shot of doing it? Just sample at random. So that gives rise to the following problem. Given a SAT formula, a Boolean formula,"
+    },
+    {
+      "start": 1129.328,
+      "end": 1159.328,
+      "text": "Generate solution uniformly at random. Uniformly at random. So you have a such solver. You can generate solution. That's not good enough. We need to generate solution uniformly at random. And, of course, we want to do it for industrial size problems. So it turns out that this problem of what I call constraint sampling has many applications. I talk about test generation. You know, one of the most interesting applications was for MOOCs."
+    },
+    {
+      "start": 1159.328,
+      "end": 1186.72,
+      "text": "when you may have 50,000 students taking a course, and if you give them a homework assignment, you can't give just one assignment to everyone because they'll share information. So how do you generate 50,000 different problems? So one way to do it is to parameterize the problems, describe constraints, and then generate problems at random. And in the context of machine learning,"
+    },
+    {
+      "start": 1186.72,
+      "end": 1199.28,
+      "text": "If we have probabilistic inference, we have probabilistic models, we want to, again, sample solution. We have some evidence. Now we want to sample possible solution. This all requires, this all can be reduced to constraint sampling."
+    },
+    {
+      "start": 1200.624,
+      "end": 1230.416,
+      "text": "And the problem has been studied by a theoretician going back to the mid-80s. And by 2000, there was a paper that offered a definitive solution. It was Bellari, Goldrach, and Petrank. I call it the BGP. And the paper was uniform generation of NP witnesses using an NP oracle. Like such solver is an NP oracle. And the algorithm is in BPP to the NP. BPP means randomized polynomial time."
+    },
+    {
+      "start": 1230.416,
+      "end": 1255.712,
+      "text": "And with an NP oracle, SAT solver is an oracle. So when I started working on it about a decade ago, I first told the student, Kuldip Mil, who worked with me, let's implement this algorithm. So he implemented it. And it did not scale above 16 variables. And he said, oh, this is great. Let's publish a paper. I said, people will laugh at us if we submit a paper for n equals 16."
+    },
+    {
+      "start": 1255.712,
+      "end": 1282.16,
+      "text": "Because now they are solving problems with hundreds of thousands, millions of variables, and we are going to come up with 16 variables. It will be a joke. We have to scale it bigger. So we've been spending now more than a decade just about scaling it, scaling it, scaling it, which require better theory and more algorithmic engineering and software engineering, building good tools. There are other approaches that people use."
+    },
+    {
+      "start": 1282.16,
+      "end": 1309.664,
+      "text": "People use, suggesting to use BDDs. So if you have a BDD, then you can figure out, you can assign weights to each node in the BDD, depending on how many paths you have to the one terminal, and then you can generate solutions uniformly at random. But it's BDDs we know you cannot, BDDs do not scale more than maybe a thousand variables. That's pretty bad, actually even less, maybe 800 variables."
+    },
+    {
+      "start": 1309.664,
+      "end": 1329.856,
+      "text": "After that, the BDD explodes. It's too large. There is a classical approach that people use for sampling. This is very classical. It's called the Metropolis algorithm. And it's called MCMC, Monte Carlo Markov Chain. And it's a method that gives you good scalability."
+    },
+    {
+      "start": 1329.856,
+      "end": 1359.056,
+      "text": "in the following way. You create some Markov chain. One can give a whole lecture just on that. Then you take a random walk, and then you stop at some point, and that will give you uniform sampling. But to do really uniform sampling, you have to go exponentially long, which takes too long. What people do in practice, they don't go that far. They take a random walk. At some point, they stop it, and then they say, that's the sample. How uniform is it?"
+    },
+    {
+      "start": 1359.056,
+      "end": 1388.368,
+      "text": "Actually, it's not very uniform. People don't experiment. Uniformity is fairly poor. So there is a tension between uniformity and scalability. So based on the theory that was developed by theoreticians, as we said, all the way to the BGP, together with Supratik Chakraborty, Daniel Fremont, Kuldit Mil, Sanjit Cheshia, and myself, we show how you redo the theory, and then you get..."
+    },
+    {
+      "start": 1388.368,
+      "end": 1414.4,
+      "text": "Almost uniform generation in BPB to the NP. Again, BPB to the NP is random polynomial time with SAT or CL. Almost uniform, I'll explain. How do we do it? Use universal hashing and SMT solver. I'll explain both. And we scale it to hundreds of thousands of variables. So what is almost uniformity? Well, uniformity means that if you have kappa solution, the probability of each solution is 1 over kappa."
+    },
+    {
+      "start": 1414.4,
+      "end": 1441.616,
+      "text": "And that's, as we said, that's very difficult to do. Instead, we have a factor, epsilon, and your probability is going to be within a factor of 1 plus epsilon from the ideal probability, which is 1 over kappa. So each solution would be almost uniform. So that's, first of all, we compromise a little bit, but you can tune epsilon as you want. Of course, you pay a price. The smaller epsilon, the more expensive it is."
+    },
+    {
+      "start": 1442.128,
+      "end": 1468.0,
+      "text": "How do we do this? The idea is to take the whole solution space, divide it into uniformly, uniformly, roughly uniformly small cell. Then you pick a random cell and you sample that cell has a small number of solution. So you can enumerate them and sample uniformly. Excuse me. Now, how do we partition the space that we don't fully understand? Right. It's a space of solution into."
+    },
+    {
+      "start": 1468.0,
+      "end": 1497.12,
+      "text": "equally small cells. Here we use universal hashing. So you remember that a hash function takes 0, 1 to the n, map it, let's say, to 0, 1 to the m, where n is much larger than m. Now, a good hash function will take random inputs and map them uniformly. But here we don't know that, in general, you don't know that the input space is uniform, probably not uniform. There's no password that people choose, clearly not uniform."
+    },
+    {
+      "start": 1497.12,
+      "end": 1523.488,
+      "text": "So Carter and Wegman came up with a beautiful idea to have a universal family of hash function where you choose, you randomize, instead of randomizing the input, which you cannot control, you choose the hash function at random. And then with high probability, the mapping will be uniform. That means you'll get the cells will be roughly equal in expectation. And how do you do it in our context? In our context, you have CNF formula."
+    },
+    {
+      "start": 1523.488,
+      "end": 1546.864,
+      "text": "And you add XOR constraints. What is an XOR constraint? It's going to be a random equation, X1 plus X2 plus plus plus plus, let's say equal 0 or 1. You put every variable there with probability half. So you have about n over 2 variables. And you can see that this will split the solution base into two. Now, it's not a geometric split."
+    },
+    {
+      "start": 1546.864,
+      "end": 1569.1680000000001,
+      "text": "Split it into two. If you have M such XOR constraints, you'll have to do the M cells. And if you have enough cells, you'll make the cells small enough. But now to solve a cell, we have a combination of CNF and XOR constraints. And this is, SAT solvers are not good at it per se. But the whole theory developed of SMT, which is SAT plus some other theory."
+    },
+    {
+      "start": 1569.1680000000001,
+      "end": 1595.68,
+      "text": "And again, this has shown tremendous progress in the last 20 years. And we stumbled into a solver called CryptoMiniSat by Matt Esus that was specialized for CNF and EXOS because it combines SAT solving with Gaussian elimination. These kind of equations, which are just equations modulo two, can be solved using Gaussian elimination. And we get a performance that's our performance. Remember, it's almost uniform."
+    },
+    {
+      "start": 1595.68,
+      "end": 1620.464,
+      "text": "But statistically, it is indistinguishable from uniform sampler, which we have compared. And in terms of performance, we got two orders of magnitude and more improvement over previous samplers, like XOR sample prime. And the previous sampler did not offer any guarantee of uniformity. Well, we offer a guarantee, a formal guarantee of almost uniformity."
+    },
+    {
+      "start": 1622.288,
+      "end": 1646.48,
+      "text": "So I want to do some reflection now before I close. One is that when I was a graduate student, NP-complete problems were considered scary. But today we solve NP-complete problems with huge industrial NP-complete problems. And complexity theory doesn't fully explain it. It's a real mystery. And in fact, a book was just published last year, Beyond Walls Has Complexity, by Tim Rathgarden as editor."
+    },
+    {
+      "start": 1646.48,
+      "end": 1673.936,
+      "text": "which is how do we explain our success on solving this NP-Compute problem? We think they are hard, but in practice they are not so hard. And how can we leverage that? And what kind of complex theory do we need to do that? But I want to close on how I started. We are facing here not paradigm glide, but paradigm shift. And I think data-driven computer science, refined model-driven computer science."
+    },
+    {
+      "start": 1674.128,
+      "end": 1702.48,
+      "text": "I say when my undergraduate major was in physics and, you know, year one of physics, you study classical physics, mechanics, electromagnetism, optics. Only later you go to more modern physics. But essentially you spend year one doing 19th century physics because this is the basic for all of physics. And we have to figure out how to bridge the gap between machine learning and logic to get human-centered AI."
+    },
+    {
+      "start": 1703.632,
+      "end": 1731.0720000000001,
+      "text": "Thank you very much. Thank you very much. I hope you can hear me now. Yeah. Yeah. Yeah. So I apologize to the virtual audience that I was only recognized by the audience in the lecture room at the very beginning. But nonetheless, now we are back on track."
+    },
+    {
+      "start": 1731.0720000000001,
+      "end": 1759.712,
+      "text": "so maybe for the moment is there any urgent question to moshe concerning clarification of some aspect check the audience the live audience and other audience so fine so in the meantime i might ask latina to set up for the next talk so moshe i hope you can stay with us"
+    },
+    {
+      "start": 1759.712,
+      "end": 1787.3600000000001,
+      "text": "I will stay for the whole session. Excellent. At the end we have a discussion about all the topics together. And I now am happy to introduce Martina Lindorfer from our university where she is assistant professor. She received several awards already. I remember and"
+    },
+    {
+      "start": 1787.3600000000001,
+      "end": 1800.0,
+      "text": "So she's working in the area of privacy and security. And again, without much further ado, thank you for being here."
+    },
+    {
+      "start": 1800.0,
+      "end": 1828.576,
+      "text": "Thank you for inviting me. So yeah, my research, I'm more on the software engineering side and come from a background of applied security, software testing, and started with actually testing the apps or programs we have on our computers for malicious behavior. But along the way, what we found is that nowadays, a lot of apps we just have on our phones."
+    },
+    {
+      "start": 1828.576,
+      "end": 1855.056,
+      "text": "actually have behavior that you could kind of classify as malicious already. So what we're doing is we're performing automated software testing on this farm of smartphone devices where we execute different kinds of apps and monitor the behavior to see what kind of data they're accessing and where they're sending to. So in a brief overview, we take our phones."
+    },
+    {
+      "start": 1855.056,
+      "end": 1884.72,
+      "text": "install them on device, interact with them on the labs. We're not manually interacting with any devices. So the goal is to be able to scan hundreds of thousands of apps automatically. So we are also building techniques to automatically interact with the apps similar to how a user would do. And then intercept the network traffic to look for which kind of data is going to a different server."
+    },
+    {
+      "start": 1884.816,
+      "end": 1913.648,
+      "text": "That was an early prototype we already built in 2016, so we've been working on this for a while. There's always the question, so we're doing a lot of measurement studies, but what's the benefit for the user ultimately? And unfortunately, this so far is only a prototype, but our idea was having this interface for users where they could see in real time the data that apps were accessing, and then on the other hand, also giving our system feedback if we were correctly classifying different types of information."
+    },
+    {
+      "start": 1913.648,
+      "end": 1941.936,
+      "text": "And finally, giving the user the chance to either block connections to certain servers or replace information. Because if you're looking for a restaurant in Vienna, the restaurant app needs to know in which city you're in, but it doesn't need to know your exact location at all times and probably also share it with Facebook and Google and whatever library is in that. Yeah, that was a prototype that we used for a small-scale user study. We also did a larger-scale study where we..."
+    },
+    {
+      "start": 1941.936,
+      "end": 1964.784,
+      "text": "looked at apps for 2016 2018 to see um is the situation getting worse or not um yeah so um what we found is we analyzed different versions of a handful or hundreds of apps and um one very depressing thing was that well it's likely"
+    },
+    {
+      "start": 1964.944,
+      "end": 1992.944,
+      "text": "We're getting these new privacy features on our Android and iOS phones, but ultimately progress is really, really slow. Apps are not really adopting new privacy features because they're not required to. And then on the other hand, when we were trying to compare these different apps, one open challenge is also how do we quantify if this one app is more privacy-friendly than the other, or how this one app is more secure than the other. We have this checklist we're looking for for security vulnerabilities, but still it's..."
+    },
+    {
+      "start": 1992.944,
+      "end": 2021.552,
+      "text": "There's no consensus on any proper metrics and how to compare different systems and apps. So another project we did was on looking at if you have an app that can access the camera, what does it do with the data it has? Because we are always asked, you know, Facebook has access to the microphone. It's always listening. It has to because its recommendations are so great. Anyway, so in this project, we looked at what type of media is collected by apps and found that"
+    },
+    {
+      "start": 2021.904,
+      "end": 2047.872,
+      "text": "You know, there's photo filter apps that you can use on your selfies that make your face either look older or younger or add makeup or whatnot. You would think that those apps process the data on the device and then let the user decide whether they want to share it on social media or not. The thing is, not necessarily. And we found a lot of apps that even surprised us, even though we kind of always expect the worst. Those apps are..."
+    },
+    {
+      "start": 2047.872,
+      "end": 2076.608,
+      "text": "might be able to process the data on the device, but they're still sending it to some server. In this example, the Insta Beauty, it sends it to some server in the US on Amazon Cloud in an unsecure way. So anybody on, for example, the university campus could intercept the data and see what kind of pictures you're taking. If you look at the privacy policy, they're at least straightforward that you give them a license to the photos you're taking."
+    },
+    {
+      "start": 2076.608,
+      "end": 2105.76,
+      "text": "Not that many people actually read this. So another example that was in the news a couple of years ago was the space app that was super popular on Twitter. Everybody was posting their photos. The thing was, in this case, the app was from Russia. And in the U.S., there were the security concerns. Now Russia is creating a photo-based database from all of our citizens, which might be a legitimate concern. And I want to stress it's not only about..."
+    },
+    {
+      "start": 2105.76,
+      "end": 2132.432,
+      "text": "different countries receiving the photos. It's also, you know, the companies are building huge databases of people's faces for face recognition and so on. So it's actually some very valuable data. How this issue with FaceApp was resolved was that in the beginning, at first they had in the Play Store the contact address in Russia. Afterwards, they just replaced it with essentially a mailbox address in the US. Now everyone's happy."
+    },
+    {
+      "start": 2134.992,
+      "end": 2163.152,
+      "text": "Another app we found was, yeah, they had a developer in the Netherlands, but if you look at the company, it's owned by a Russian company and actually also sends all your images to Russia. And in the privacy policy, it's not even related to the app. They have a privacy policy because they have to, but there's nothing really in there. Another issue was also in our data set that turned up the screenshots of different apps."
+    },
+    {
+      "start": 2163.248,
+      "end": 2192.816,
+      "text": "which was kind of surprising. And we found that there's the services developers can include in the app, not maliciously, like they want to improve the quality and usability of the apps and trace their users are clicking to make it more usable. But ultimately, they're collecting screenshots of how users are interacting with the app while you're typing messages, while you're typing in your credit card information. And yeah, we disclosed this to Google. We also quite got some press responses."
+    },
+    {
+      "start": 2193.296,
+      "end": 2219.712,
+      "text": "In this case, the companies that provide those libraries went to Suez because that was their business. Google wasn't that happy. They gave us some vague response of they're monitoring the apps they have in the Play Store anyway, and they took the appropriate actions, which the appropriate action is the apps now have a line in the privacy policy that says we're doing this."
+    },
+    {
+      "start": 2219.712,
+      "end": 2248.848,
+      "text": "this concludes kind of the first part of my talk because yeah, privacy policies are a fun thing. There's several other art projects and how to visualize them and actually show how incomprehensible and long they've been getting. And just been also some interesting studies on how many days people would actually need to spend out of the working year if they would read the privacy policy of every website and every app they're using. In this regard, there's some"
+    },
+    {
+      "start": 2249.072,
+      "end": 2277.36,
+      "text": "Nice development, actually. So I was really looking forward to this. Apple announced that they're introducing these privacy labels in the iOS store. So every app is required to tell the users in a predefined format which kind of data they're collecting and also sharing. And then there's also some details. So it's a nice overview. The thing is, if you look at the fine print, this information is something the developer provides. But there's, of course, Apple."
+    },
+    {
+      "start": 2277.36,
+      "end": 2306.512,
+      "text": "It doesn't take any responsibility to verify this information. And it's maybe not surprising. I just had a master's student looking into this, and he only analyzed a small sample of apps for now and only looked for one specific type of information. But even in this case, 25% or a quarter of the apps declared they're not collecting any data, but they're still sending tracking identifiers around."
+    },
+    {
+      "start": 2306.736,
+      "end": 2334.24,
+      "text": "Google is also announcing these kinds of labels. They announced it last year. They're postponed when they're actually gonna be enforced. But they have this point in there that they're gonna offer independent security review. There's not really any details yet on how this will look like, but I find it interesting."
+    },
+    {
+      "start": 2334.24,
+      "end": 2362.944,
+      "text": "potentially good development for user privacy. But on the other hand, since I'm working with verifying and measuring what apps are doing, it's also not that trivial to give a checkmark to the app and verify the behavior under all circumstances. Mobile apps are super complex. Also, as a side note, if you look at the Google Play Store, Google claims that the Play Store is like the safe garden."
+    },
+    {
+      "start": 2362.944,
+      "end": 2390.944,
+      "text": "shouldn't download any apps from any other sources. They verify everything, but ultimately they don't. It's always about shifting responsibility around and tossing the ball of responsibility for what the apps are doing. And Apple has similar wording in there. And as we've seen before, they don't verify the information they're getting from developers. But still..."
+    },
+    {
+      "start": 2390.944,
+      "end": 2399.984,
+      "text": "Go browser had this as an advertisement. Like you can at least use the labels to get a brief idea about."
+    },
+    {
+      "start": 2400.944,
+      "end": 2429.36,
+      "text": "what different apps claim to use. And the difference between, for example, the Go browser and Google Chrome is pretty significant. That's also one of our research projects right now. I'm not going to talk too much about this, but browsers are also a special kind of app where we essentially trust them. We're visiting all kinds of different websites and are worried about the cookie banners we have on the websites. But on the other hand, the browser is between the website and the user."
+    },
+    {
+      "start": 2429.36,
+      "end": 2456.624,
+      "text": "theoretically code and check any information you want, any scripts you want, extract any information. But on the positive side, also block tracker scripts and increase user privacy and security. And this is what we are trying to measure right now. I can only tell you there's a huge range of what browsers are doing, but they're currently finalizing the results. One point I also want to make is that"
+    },
+    {
+      "start": 2456.72,
+      "end": 2484.928,
+      "text": "When we're talking about apps, it's not necessarily the developers that are collecting information. It's just usually all kinds of apps nowadays have different third-party libraries integrated for monetizing the apps or just using different services and decreasing their development effort. And on the one hand, this is for the example of TikTok, how many trackers there are."
+    },
+    {
+      "start": 2484.928,
+      "end": 2512.336,
+      "text": "So it looks like the number of trackers decreased, but on the other hand, it's also the big companies are just buying smaller tracker companies and getting on the user base. And what I found interesting in this example, it's like it's one social network, the TikTok app, but then it shares data with the Facebook app, with Google and with different other libraries. And yeah, this is only kind of the tip of the iceberg."
+    },
+    {
+      "start": 2512.336,
+      "end": 2540.848,
+      "text": "There was not a few businesses doing a great job of going after certain apps that are especially privacy unfriendly. And for example, in this case, they looked at Grindr. So the app itself had 19 different third party or contacted 19 different third parties. But through partners and partners and data brokers, ultimately the data from one user was shared with over 4,000 different partners."
+    },
+    {
+      "start": 2542.8,
+      "end": 2569.952,
+      "text": "Yeah, another open topic. I'm trying to keep it short so we can have a discussion afterwards. So we started with mobile apps, but nowadays everything is kind of connected to the internet. We all have our smartwatches and smart toasters and light bulbs and whatnot. And typically in security and privacy research, what people are doing is with the picture on the left."
+    },
+    {
+      "start": 2569.952,
+      "end": 2592.992,
+      "text": "They just buy a handful of devices and look at them and see if they can identify any vulnerabilities, which then make huge headlines. The thing is, there's thousands of different devices out there. And what we know is they're still, unfortunately, not really built with security and privacy in mind. It's always getting the product to the market as fast as possible."
+    },
+    {
+      "start": 2592.992,
+      "end": 2622.48,
+      "text": "Yeah, this is one fun example I always like to show is it also shows how sensitive those devices can be. Those are children's toys that have microphones embedded and that pretty much have any vulnerability you can ask for. And those devices were remote controlled by an app where the parents could use this as a monitor for their sleeping babies or talk to the children. And the data itself is stored on a third-party server or on the server of the company."
+    },
+    {
+      "start": 2622.48,
+      "end": 2651.056,
+      "text": "but left completely unsecured. So we currently have a project like what to do. We can't buy all the devices that are out there and test them for vulnerabilities. So we have now a project funded by the WWTF where we are trying to, if we only look at the apps on a mobile device that control all these different IoT devices, how much information can we gain about their security posture and about the back ends they're communicating with?"
+    },
+    {
+      "start": 2652.176,
+      "end": 2682.064,
+      "text": "It looks promising, but it's currently an open project. Of course, we're still buying a couple of devices to verify how our techniques work. But ultimately, essentially, every device has a companion app because, of course, you want to turn off the lights or turn on the light at home while you're still at work. So nowadays, everything is pretty much in the internet. But still, the way that these devices communicate"
+    },
+    {
+      "start": 2682.16,
+      "end": 2709.152,
+      "text": "companion app on a mobile phone is the same or similar to how they communicate over the internet. So this way, we have some promising results. Promising and also kind of depressing. So what we found so far is that these companion apps communicate with the typical trackers that you would find in any other mobile app, but also some very specific trackers that we're looking into."
+    },
+    {
+      "start": 2709.152,
+      "end": 2738.944,
+      "text": "And one thing to keep in mind here is you have your app on your phone, and it asks you for permission if it wants to access the location or your address book or any sensor on the device. But if the companion app talks to your light bulb, it can just take the data from the light bulb, use it however it wants, and send it to wherever it wants because there's no permission for any data that those IoT devices are collecting. It all just goes straight to me."
+    },
+    {
+      "start": 2738.944,
+      "end": 2768.464,
+      "text": "apps that technically have all these permissions, but there's just no permission management for any IoT devices as soon as they're connected to the internet. Okay, is this, I'm already on my final, another topic, so I'm hoping we can have some discussions afterwards, but another project we're doing is also, now we know that"
+    },
+    {
+      "start": 2769.232,
+      "end": 2795.984,
+      "text": "where all our data is going and who receives the data, who's actually behind different servers. And this is a case study, not on IoT apps or mobile apps, which we are planning to do, but we started just looking at in-house at university, but actually the back ends and servers that are handling all our data and all our services and how dependent are we on just a small number of companies."
+    },
+    {
+      "start": 2796.272,
+      "end": 2825.68,
+      "text": "And I'm sure the picture is the same for any app you have on the phone. Ultimately, any app and any service nowadays is outsourced to the cloud. And if it's in the cloud, it's either with Google, Amazon, or Microsoft. And yeah, we did this measure that was kind of a passion project for us in the university context. Because we as computer scientists have the ability to build our own cloud services and services in-house."
+    },
+    {
+      "start": 2825.68,
+      "end": 2854.352,
+      "text": "all of academia is nowadays dependent on the technical services from these big companies, just because it's cheaper and universities like this, they can outsource stuff and it's cheaper and we don't have to hire personnel to take care of our services, but still, yeah. A point that we should discuss in my opinion. And with that, yeah, also for further discussion, another point that I find interesting to discuss is now that Google and Apple are"
+    },
+    {
+      "start": 2854.352,
+      "end": 2882.416,
+      "text": "doing essentially for marketing this privacy labels and to tell users that they're not so much secure because they can see what the apps are doing, but there's, yeah, it's essentially marketing. There's not much behind it. If you can verify that if the information that developers provide is actually correct. Okay. Thank you very much. Of course."
+    },
+    {
+      "start": 2882.416,
+      "end": 2910.96,
+      "text": "something to digest, in particular this sheer amount of information in this condensed form. Nonetheless, maybe just a question from my side at that point, for me to prepare for the discussion. So if you want to, if you would put now at the end, so to say, a research challenge in connection with digital humanism in relation to what you have said, what would be the challenge to tackle?"
+    },
+    {
+      "start": 2912.592,
+      "end": 2941.136,
+      "text": "Is there any other question for clarification? No, this is a very quick question. You gave a very scary picture of what is going on."
+    },
+    {
+      "start": 2941.136,
+      "end": 2964.24,
+      "text": "Actually, my question is, do you have an idea of how much awareness, you know, for example, you know, everybody is downloading apps on phones. So how much awareness you think that there is among people of the problems that you raised? I mean, did you."
+    },
+    {
+      "start": 2964.24,
+      "end": 2991.808,
+      "text": "ever went back to people or sampled people and say, you know, this is actually what happens. What do you think? Have you thought about this? So I think there's two things. On the one hand, awareness is growing, but people don't understand the complexity. They're like, this app is collecting my location and different data points, but they have no understanding how this data then is actually used and how much you can infer from it. And then on the other hand is, yeah, but it's so convenient."
+    },
+    {
+      "start": 2991.808,
+      "end": 3000.0,
+      "text": "And there's a lot of peer pressure to use different messengers. Even if you know that an app is not perfectly secure."
+    },
+    {
+      "start": 3000.112,
+      "end": 3028.72,
+      "text": "shares the data, sometimes you just use it because you have to use it at work or because it's convenient or your friends are using it. Okay, thank you. Thank you, Martina. So I now hand over to Brigitte Grell to help you here today. So Brigitte is Deputy Director of the Austrian Research Institute for AI, UFI."
+    },
+    {
+      "start": 3028.72,
+      "end": 3057.552,
+      "text": "call it here. Yeah, and she's an expert in natural language processing, formerly also had a position in Saarbrücken, and the slides are ready. Yeah, and I think we, good afternoon, I think we shouldn't really waste time because your talk, Martina, was really impressive. I know all this, yeah, lots of it, but when I see it,"
+    },
+    {
+      "start": 3057.552,
+      "end": 3084.176,
+      "text": "in so condensed i'm just and and when i think what i'm doing i'm doing the convenient stuff uh so and what could we do um there is so much uh we have to agree upon or to to to take uh okay uh get the get another cookie get another cookie in order just to read the newspaper for instance from whatever newspaper i'm not"
+    },
+    {
+      "start": 3084.176,
+      "end": 3111.872,
+      "text": "having paid access to yeah so there is so much and okay so I'm from natural language processing and what I'm interested in basically is how do we find out what's in natural language coming from computational linguistics I come basically I came from text at the beginning and this is still what I'm doing in an applied"
+    },
+    {
+      "start": 3111.872,
+      "end": 3136.4,
+      "text": "context, but I'm also interested in modeling human language capabilities, which might be dangerous, but we are so at the beginning, which then I'm always saying, okay, you know, we're so at the beginning and the methods are so, don't do what they claim to do. Natural language understanding is just one of those."
+    },
+    {
+      "start": 3136.4,
+      "end": 3165.52,
+      "text": "which is absolutely ridiculous. We don't understand natural language, but still we can do a lot of things which might be useful and other things which won't be so useful. I try to talk about things which have been and still are useful when monitoring user-generated content. So what we do in OFI, since..."
+    },
+    {
+      "start": 3165.52,
+      "end": 3195.472,
+      "text": "many years is to work together with the standard which is an online newspaper it's a newspaper printed newspaper but which was one of the early european newspapers who did print and started tend to do online and then you've got a lot of user comments and more and more user comments so each article has its form and people are discussing in the forum so that's the standard thing"
+    },
+    {
+      "start": 3196.848,
+      "end": 3223.152,
+      "text": "What we were asked to do back in 2003 was to help the journalists to read all these comments and decide whether a comment could go online or not, because the difference between a newspaper and something like Facebook..."
+    },
+    {
+      "start": 3223.152,
+      "end": 3252.976,
+      "text": "these similar things is that the newspaper is liable on what they are posting on their servers and in their medium. And so we started to do machine learning, a classical machine learning task by then, and learn a classifier which distinguishes postings from being, that should be more, I say the bad word, censored or not go."
+    },
+    {
+      "start": 3252.976,
+      "end": 3279.2,
+      "text": "online and postings which are safe to be just pushed to the website and then there is this amount of postings where the classifier is not so sure in which directions it should go so the human has to look up and the goal was just to reduce the human labor by a certain percentage and after the years"
+    },
+    {
+      "start": 3279.2,
+      "end": 3308.24,
+      "text": "Of course, there's more and more user-generated content going on and more and more discussion going on. And so it's impossible to do it manually. So we have to have the system. So we have this pre-moderation. And then when the postings are out in the forum, we have the post-moderation that could happen that there is content which is desirable. For instance, the newspaper has their..."
+    },
+    {
+      "start": 3308.784,
+      "end": 3338.416,
+      "text": "ideas of how diverse a discussion should be, how different positions should be fostered in a forum, etc., etc. And of course, how particular discussions should be kind of softened, which we can't do with the machine, but we can do with alerting people and alerting moderators to go."
+    },
+    {
+      "start": 3338.416,
+      "end": 3363.808,
+      "text": "there and start a discussion so send the human in but the human needs to find where to go in so without the technology you absolutely can forget it and as an example I use pre-moderation which is"
+    },
+    {
+      "start": 3363.808,
+      "end": 3392.8,
+      "text": "an old decision tree. So it went online in 2004. So everybody, you can imagine what kind of technology is this. And it's, well, it's, yeah, it's an old version of a decision tree. The escalation board was this basic idea to kind of calm down when the emotions go up or early find out when emotions are going up and then trying to send a human aid to come."
+    },
+    {
+      "start": 3392.8,
+      "end": 3422.704,
+      "text": "the discussion down. At the end, it was, it turned out that it was much more useful with all the classes we were looking in or the content to have some of desirable contents identified and so that they could be re-ranked and that when you go into the forum, you see them and can read them first and not just the posts which are the most recent ones. So this is just to highlight particular topics."
+    },
+    {
+      "start": 3422.704,
+      "end": 3448.24,
+      "text": "And the third one is the last one we just recently finished. This was really to identify misogynist postings in order to create a context where women"
+    },
+    {
+      "start": 3450.8,
+      "end": 3478.1440000000002,
+      "text": "which is not so, so that's something we really have to kind of focus more on. So this is just a few numbers from a study which the standard did with approximately 2,000 users they were asking. And it was about how much time do people who post."
+    },
+    {
+      "start": 3478.1440000000002,
+      "end": 3508.112,
+      "text": "actively spend in the forum post them actively and the difference you see uh half of women do this compared to men and we only can find it out by asking people because we don't know when we look at the person look at the at the profiles the user profiles we don't know whether these are female or male also how much time people spend in the forum"
+    },
+    {
+      "start": 3508.112,
+      "end": 3535.6,
+      "text": "So men, again, more than women, and women attach much more importance to a constructive discussion. And so that's why, at the end, we so do well here. And they are more often subject to derogative postings, and the derogative is a sexist posting. And that's much more facing women than this is the case for men."
+    },
+    {
+      "start": 3535.6,
+      "end": 3564.88,
+      "text": "And so women really often decide not to post anymore. So we've got clearly a silencing effect. And this is part of the society doesn't take part in the discussions. Well, talking about multidisciplinary, just in order to realize the classifiers,"
+    },
+    {
+      "start": 3565.52,
+      "end": 3595.024,
+      "text": "urgently had to have people from different perspectives. So we need to have the domain experts, in this case, the moderators, because we, as computer scientists, data scientists, machine learners, we don't know what the goal and the result should be because we don't know the domain by heart."
+    },
+    {
+      "start": 3595.024,
+      "end": 3600.0,
+      "text": "And the methods addressed are, on the one hand, the corpus creation."
+    },
+    {
+      "start": 3600.0,
+      "end": 3628.768,
+      "text": "So we need to create the data we learn from. And on the other hand, all the methods we use for learning, for learning the models. And when you just look at what I've written down, you really see this is depending on when the system was implemented. We have the whole history of machine learning. And this is also gives us a hint of how"
+    },
+    {
+      "start": 3628.768,
+      "end": 3657.712,
+      "text": "important it also is to get access to the data and to have a broader access to the data exactly the other way around it's kind of us for us privacy is more hindering than helping for instance with the misogyny classifier we have the problem that we can't publish anything because the data are not freely available we're really struggling and fighting for getting a permission"
+    },
+    {
+      "start": 3657.712,
+      "end": 3687.312,
+      "text": "to make the corpus publicly available so that people can extend the corpus, can work with it, and also new methods can be used to train new classifiers. So, on the one hand, having access to data and giving data away freely to a broad group of people is something desirable. On the other hand, we have to be careful with our data."
+    },
+    {
+      "start": 3688.24,
+      "end": 3718.176,
+      "text": "Yeah. And I just want to talk about the data and some related issues. We have to, again, as I already said, combine this knowledge of domain experts and machine learning people, because otherwise we wouldn't have the data or the right data to learn proper models from there."
+    },
+    {
+      "start": 3718.176,
+      "end": 3746.672,
+      "text": "And the mothers wouldn't basically do what they should do. Then the next thing is creating the annotation guideline, because we always work in this case with supervised learning. So we need to know what we need to annotate, which was quite a tricky thing with the success. Because if you think of it, when you read postings and then you have to decide, is the success mean or not? There is a lot of."
+    },
+    {
+      "start": 3747.472,
+      "end": 3777.232,
+      "text": "personal impression and we have to account for this so at the end we decided we will have a label system so we had these annotation guidelines defining what is sexism what is not sexism which cases etc different examples and then we had this label system say from what so either not sexist and then from one to four uh being mildly sexist to being uh harshly sexist yeah"
+    },
+    {
+      "start": 3777.232,
+      "end": 3807.056,
+      "text": "And then when we looked into the comparison, as when we compared the annotators, every posting was annotated by three people. Not always the same, three different. So we had eight people in total to do the annotations and three for each posting. And we had in each of these three, there were two moderators."
+    },
+    {
+      "start": 3807.056,
+      "end": 3836.048,
+      "text": "And one person outside of this domain. And we have got with a lot of disagreement. Here I just brought some examples. For the German speaking people. I'm not sure whether the translation is sort of."
+    },
+    {
+      "start": 3836.048,
+      "end": 3865.824,
+      "text": "gives a hint on what it is. And then we have three annotators, the A1 to A3, going from zero, not success, to two, which is kind of medium, so four is the highest number, and three is kind of rather quite successful. You see? And this is just a personal evaluation."
+    },
+    {
+      "start": 3865.824,
+      "end": 3895.696,
+      "text": "And the problem is hard, right? Doing a classifier is a hard thing to do. For the manual annotations, we had approximately 8,000 to 7,900 postings labeled on a scale from 0 to 4. And the agreement, of course, you can imagine, was rather low."
+    },
+    {
+      "start": 3895.696,
+      "end": 3924.08,
+      "text": "um and of course it's often a matter of opinion and what you also have here when you say a matter of opinion the opinion changes over the time uh what is uh called sexist today was maybe not called sexist when i was a kid so i remember going into uh pubs in rural areas where it was completely normal to kind of you know uh you wouldn't do that anymore"
+    },
+    {
+      "start": 3924.08,
+      "end": 3951.232,
+      "text": "and also how people talk about it so what we need if we have a sexism classifier we need to have something which is learning over the time or we need to do the retraining but it's not it's not one at the time and that's it um okay you see the overall agreements and that stuff that's uh and and quite uh yeah the classic"
+    },
+    {
+      "start": 3951.232,
+      "end": 3978.064,
+      "text": "rather well, they got rather close to human performance. And just two slides, no, we do just thoughts. So all those classifiers we do for postmoderation, where we try to find particular topics or..."
+    },
+    {
+      "start": 3978.416,
+      "end": 4007.984,
+      "text": "particular content in forum posts, they really need to have this tight cooperation between the domain experts from both sides, between the people who know about the content and what their goal is, because the goal of the newspaper and standard being having a particular goal in how they conceive their role in society. So, and if you don't"
+    },
+    {
+      "start": 4007.984,
+      "end": 4036.464,
+      "text": "have this part of the knowledge when developing the data you can't create a model which is appropriate and would do the thing and also if you don't know how to deal with data and do machine learning you can't do that so you ultimately need those two together and also in the model application so the the overall goal is to help the moderators to find relevant"
+    },
+    {
+      "start": 4037.424,
+      "end": 4065.776,
+      "text": "utterances let's say but what they then do and how they kind of evaluated it how they use this in their daily work is their decision the model or the system can only help to find in a huge pile of things something which is relevant and it's everything we do in natural language processing is not hundred percent so in many cases we we are happy if we are at"
+    },
+    {
+      "start": 4065.776,
+      "end": 4095.68,
+      "text": "let's say 80% or sometimes even 67% or something. So we need the human in the whole process. Another thing is who has access to the data and how is this regulated? As I told you, our problem is that we don't have access to the data and we can't do anything further with it and the community can't do anything further and it can kind of be improved and the data can't be"
+    },
+    {
+      "start": 4095.68,
+      "end": 4121.3279999999995,
+      "text": "made larger or with different annotations, etc. So here we need, we have on the one hand privacy laws, which are too restrictive. On the other hand, we have big companies which just use the data however they want because we can't control it anyway. So we have this dichotomy here."
+    },
+    {
+      "start": 4121.3279999999995,
+      "end": 4148.448,
+      "text": "And we also have this imbalance between a publicly funded research, which is comparably small, it's fragmented, and then we have the really big internet companies, which just do what they want, basically. We don't know. And the last slide, we also have underrepresented languages."
+    },
+    {
+      "start": 4148.448,
+      "end": 4177.616,
+      "text": "So German, for instance, is another representative language. When we do natural language processing, almost everything and the kind of best developed parts are for English. So German is, compared to other minor languages, rather developed in terms of tools, resources, etc. But on the other hand, when you say German, most of the"
+    },
+    {
+      "start": 4177.616,
+      "end": 4200.0,
+      "text": "machine learning models are German-German. We have standard Austrian-German, standard Swiss-German. And when you ever have tried to do automatic speech recognition and try to do it with Austrian and it's not some real dialect, you know what it is about. Then we have..."
+    },
+    {
+      "start": 4200.528,
+      "end": 4229.328,
+      "text": "In machine learning, just from a very narrow perspective of natural language processing, we learn from skewed data. When we look at the data in different categories, the numbers we have according to the categories are different, but also the positive and the negative examples."
+    },
+    {
+      "start": 4229.328,
+      "end": 4254.544,
+      "text": "a standard thing when you work with real data. We need to learn from small data. When we need to annotate data, we definitely need to learn from small data. So that's why we're doing transfer learning and stuff like that. And we kind of can do okay with a few thousand data, but we can't train the base models. If we would train really a big, big, big..."
+    },
+    {
+      "start": 4254.544,
+      "end": 4284.016,
+      "text": "base model for German or for the varieties of German, we wouldn't have the money and the resources to train it. So it's again somewhere at the big companies. We actually would need continuous learning because the opinions and what changes, so what is sexist changes, just as an example, but many other things change over time."
+    },
+    {
+      "start": 4284.016,
+      "end": 4313.296,
+      "text": "We haven't updated the format since 2004, for instance. And we also need to overcome this shortcut in learning where correlations kind of go for causal relations. And we have also this, I think we have to be more aware of, maybe we..."
+    },
+    {
+      "start": 4313.296,
+      "end": 4340.112,
+      "text": "as researchers are, but everybody should be more aware of this dichotomy of narrow AI and general AI. And that doesn't mean that, so all our systems, at least when we do classical machine learning, are narrow AI. They are just for a specific purpose, because I have to twist the data, I have to do hyperparameter search."
+    },
+    {
+      "start": 4340.112,
+      "end": 4364.544,
+      "text": "Etc, etc. And this is just for a particular application. And that's it. And this is far away from being general. And I think we have to, at least in this area I've been talking about, we have to much more think of AI."
+    },
+    {
+      "start": 4364.544,
+      "end": 4393.408,
+      "text": "machine learning as a tool for the human. It's like a hammer. It looks a bit different. It's like a toothbrush with more capabilities. So that's my opinion on it. Thank you. Thank you very much, Brigitte. So before entering in the discussion, a question direct to Brigitte."
+    },
+    {
+      "start": 4393.408,
+      "end": 4422.928,
+      "text": "Yeah. So we see, we see coming."
+    },
+    {
+      "start": 4422.928,
+      "end": 4449.904,
+      "text": "Yeah, it's been a long day. Oh, there they are again. Hello, people at home. Okay. Thank you very much, Burkita. That was really, really interesting. And there were a couple of things I wanted to ask."
+    },
+    {
+      "start": 4449.904,
+      "end": 4473.36,
+      "text": "Did you need to get ethical approval to do this project? And I'm asking for two reasons. One, you know, you had human coders for the intercoder reliability. And probably for them, it wasn't a lot of fun having to read all of this misogynist content. So I think ethical approval is also about protecting the researcher as well as protecting."
+    },
+    {
+      "start": 4473.36,
+      "end": 4501.52,
+      "text": "research subjects. So I was kind of curious about that. And I think that's also another imbalance between publicly funded, you know, scholarly research and private companies. I mean, we do hear stories of, you know, Facebook people who spend days looking at child porn, you know, having really horrible time. And OK, they just hire more when some of them burn out. But, you know, I think in academia we have a different kind of ethical responsibility. So I think."
+    },
+    {
+      "start": 4501.52,
+      "end": 4522.144,
+      "text": "It's important for several reasons to think about what are the ethics of this kind of research. And also, as we're at the end of the day, it reminded me a lot of when I was learning Dutch. And I had one. This is the advanced class. And our homework was to come to the next class with three swear words in Dutch."
+    },
+    {
+      "start": 4522.144,
+      "end": 4542.512,
+      "text": "The teacher then, this was 20 years ago, wrote them on the blackboard and then she classified them and said, OK, these are about men. These are about women. This is stronger than that. This you must never, ever, ever say. It was one of the most useful Dutch lessons I'd ever had."
+    },
+    {
+      "start": 4542.512,
+      "end": 4568.24,
+      "text": "And then as we were leaving, she said, oh, I've got to kind of rub all of this out. Otherwise, my colleagues are going to come in and wonder what I'm teaching you all. But, yeah, that's a kind of, by the way. But I think, yeah, so I think the kind of ethical issues I think are important. And the other comment in question was really about I heard a presentation a month or two ago from somebody from Microsoft. And they were working on."
+    },
+    {
+      "start": 4568.24,
+      "end": 4597.152,
+      "text": "deprioritizing content, not to remove it, because this was an American and, you know, the idea of removing things was just so anti-free speech, you just couldn't cope with it. So they wanted to keep it there, but just make it much, much harder to find, partly because of freedom of speech issues, but also because of future historians, as you were also suggesting, you know, people might be interested to understand, you know, what kind of words were seen as misogynistic."
+    },
+    {
+      "start": 4597.152,
+      "end": 4626.2880000000005,
+      "text": "in 2020 that we're you know how does that change over time is kind of interesting and important so you don't necessarily want to get rid of stuff you just want to make it harder to find the sexism classifier and the other so the de-escalation but they are post-moderation and post-moderation that stays that's already online and this is just online it's got this it won't be deleted it's for"
+    },
+    {
+      "start": 4626.2880000000005,
+      "end": 4656.176,
+      "text": "um for in in the destination but it was really to to find some interesting parts and then rearrange the information make sure that people can read this when they enter it or people at the standard they have to they can decide you can select whether you just want to read from the news to the older ones or you want to have this prioritized ones first and the escalation at their"
+    },
+    {
+      "start": 4656.176,
+      "end": 4683.472,
+      "text": "successful classifier really was for the moderators. What we looked into was there are articles discussing more female topics and there are articles discussing more male topics and then we really looked into those articles or the follow-up of these articles and looked how many heaps did the classifier give us in the female."
+    },
+    {
+      "start": 4683.472,
+      "end": 4706.864,
+      "text": "topics or in the mail topics and we we knew already from the forum because the moderators went through them and they said okay this is a more sexist forum or the discussion is more sexist this is a forum where the discussion is not sexist at all and we we really could see that the hits the classifier had on the different forum were comparable to what the people said"
+    },
+    {
+      "start": 4706.864,
+      "end": 4729.488,
+      "text": "So this is an alert. Imagine you've got thousands of articles live and you can't monitor them. But with this mechanism, you can monitor them and then the moderator goes in. So there are moderators who kind of bring the human part in and then start the discussion or say, OK, come on."
+    },
+    {
+      "start": 4729.488,
+      "end": 4755.632,
+      "text": "that's enough or whatever um this is what was for the second question and for the first question no we didn't uh we didn't ask for uh ethical approval because this was kind of a partly um company project and they just decided that they wanted to have it and the moderators of the people who work and just read the stuff anyway uh were the annotators right oh okay"
+    },
+    {
+      "start": 4756.112,
+      "end": 4782.864,
+      "text": "But I think it is an interesting issue what the kind of different expectations and standards are also between social science and humanities in terms of ethical approval and computer science. Because I think historically, computer science, you know, you're just building machines, you're engineers. Why do you need to get ethical approval? But of course, you're reshaping the world. So it's kind of important. And it makes also a difference to have this success in jazzifier."
+    },
+    {
+      "start": 4782.864,
+      "end": 4800.0,
+      "text": "a particular newspaper because they've got their standards and their opinions what they want to have in it or not or to have it as something let's say a general research project where we say okay we want to have a sexism classifier"
+    },
+    {
+      "start": 4800.0,
+      "end": 4828.944,
+      "text": "for social media, and we have annotators from just a group of indistinguished people, not just one particular group of coming from a newspaper and having an agenda. So I think that's a bit different. Okay, so maybe also to really have the opportunity to discuss the entire session."
+    },
+    {
+      "start": 4828.944,
+      "end": 4858.608,
+      "text": "Gary, I think you were able to transform your question from a complete one to a more general one to all the speakers. Maybe let me just before the trial give a brief summary again of what we have heard now in the three talks in order to translate it into input for the roadmap. So I think it was very interesting Moshe telling us about"
+    },
+    {
+      "start": 4858.608,
+      "end": 4884.448,
+      "text": "logic-based AI, which now transforms in one way or another into this data-driven AI. And then we had two talks which talked about data in a different sense. The data is generated in different ways. One is unintended, where the user is not aware that data is delivered. And then with the user postings, of course, these are things where people..."
+    },
+    {
+      "start": 4884.448,
+      "end": 4909.984,
+      "text": "We have an intention to give the data, namely the text they provide. And we have heard, of course, that this leads to completely different challenges. On the one hand, we have the privacy issue here. And then, as Brigitte said, and you said, it's important to access the data, the metadata of the users, for instance, which is about the age and where they are coming from and so on. So that's very interesting to have this Janus here that, say,"
+    },
+    {
+      "start": 4909.984,
+      "end": 4933.632,
+      "text": "nature of the data. And what also surprised me is that in all three talks, although they were very different, they had the term verification in it. And I mean, in Marshall's talk, it was rather explicit, verification of software system, of programs to some extent. But in a sense, at the very end, you want to verify whether the apps do what they pretend."
+    },
+    {
+      "start": 4933.632,
+      "end": 4960.64,
+      "text": "with the data, and Brigitte, you had it in the sense that you have to check whether postings violate the rules of the newspaper, which is also kind of a verification. And my question to the, maybe to the speakers then would be, but I also would open the floor, but maybe keep this question in the mind, is whether this verification aspect is one of this..."
+    },
+    {
+      "start": 4960.64,
+      "end": 4983.568,
+      "text": "the great challenges in a more concrete way where we need to combine these different AI methods, because as soon as I need to verify something, I need kind of a rule-based, logic-based specification of something, be it a law, be it a program code or whatsoever, or a set of rules."
+    },
+    {
+      "start": 4983.568,
+      "end": 5012.224,
+      "text": "Yeah, that was my last comment, because this brings us back to this combination of logic and data driven AI. So we have maybe one more question first, and then I ask the speakers to comment a bit. So sorry, Eric. It's all right. You gave me time to generalize my question. It appears to me that in all of your talks, you also alluded to underlying very."
+    },
+    {
+      "start": 5012.224,
+      "end": 5041.424,
+      "text": "fundamental underlying issues that lie under the surface of what you're doing. So let me give you, maybe I'll start with Moshe. As much as I think, yes, you're absolutely right. We need this logic. In the old days, we said symbolic and sub-symbolic way of doing things. But in the end, explanations by itself is a very difficult question. What is an explanation that really satisfies us?"
+    },
+    {
+      "start": 5041.424,
+      "end": 5071.264,
+      "text": "Very often explanations are about the purpose of a system. It's not just so much on the input side of that neural network. It's also about, you know, what did it want to do? And that shapes the concepts in the network. So whatever the explanation is going to be, we need to take that into account that in order to do X or Y, that decision came up. So I think there is a really more fundamental question to be asked about what is a good explanation."
+    },
+    {
+      "start": 5071.264,
+      "end": 5082.88,
+      "text": "And in your sense, in your talk, Birgit, one of my hobbies is how bad does a discourse have to be in order to be productive?"
+    },
+    {
+      "start": 5082.88,
+      "end": 5112.336,
+      "text": "Because obviously, I mean, we could all talk about Mr. Putin as a person who misbehaved or, you know, that that was really not right. But that's not how we speak and how we want to speak. And there is a good reason for that. We want to use stronger language and sometimes we need stronger language. And I think to make to turn this into something positive, there may be something very important about the fact that you are targeting a small newspaper with journalistic expertise."
+    },
+    {
+      "start": 5112.336,
+      "end": 5141.2,
+      "text": "of people who understand what they are trying to do in that forum, which is very different from, let's say, regulating online content on Facebook, where everything is out in the open, you know, and you have to come up with general rules for every discourse, every possible discourse. That's probably not doable. Probably that's the wrong thing to do. And for Martina, I'm really not sure. I just want to add a comment. It seems to me that a lot of what you discovered is just simply illegal."
+    },
+    {
+      "start": 5142.192,
+      "end": 5169.536,
+      "text": "Right? Question mark. Thank you. Thank you, Eric. Maybe let's go through the order of the thoughts. So Moshe, you may want to comment. Yeah. I mean, so Eric raised a very good question, which is what is, you know, it's almost a philosophical question, right? What is a good explanation? And I mean, in some sense, we are all..."
+    },
+    {
+      "start": 5169.536,
+      "end": 5193.3279999999995,
+      "text": "This is a kind of a question. We write things. You know, you submit a paper. You're making an argument for why, you know, make an argument why the program committee should accept your paper. You have to provide some explanation. And as we know, people disagree. What is a compelling explanation? I mean, I don't know that I have a good answer. What is a good explanation?"
+    },
+    {
+      "start": 5193.3279999999995,
+      "end": 5220.272,
+      "text": "What I do know is that it's not a low-level explanation. You can say, oh, this neuron fire, and then that neuron fire, and so that's the answer, right? We have to have some, you know, it connects to human language, connect to NLP. I think that's kind of a central question that, you know, I mean, I'm coming from one angle, and then the other speaker came from a very different angle, but it does raise the question."
+    },
+    {
+      "start": 5220.272,
+      "end": 5247.664,
+      "text": "Perhaps we need also philosophers to come and help us. I mean, I know from the logic point of view, if P implies Q and P is true, then Q follows. But human mind doesn't always work like that. And it connects the question to the head, which is how do we combine it with common sense reasoning? You know, if you want to understand comments of people, there's always context. It's very, very difficult to just read the word."
+    },
+    {
+      "start": 5247.664,
+      "end": 5276.736,
+      "text": "you know, the same comment could be innocent comment or a very nasty comment, depending on the context in which it lives. Okay, thanks. Martina, maybe you want to reply to Eric's question about the legality of what apps are doing. In the best, the gray area, in the worst, it's illegal. It's just the amount of services we're using, the same amount of apps, it's just a game of whack, I'm all going."
+    },
+    {
+      "start": 5276.736,
+      "end": 5303.808,
+      "text": "after all of them. We have all these regulations. In the US, it is perfectly legal, unfortunately, I'm afraid. I think if I can chime in, if you can hear me. Maybe let's have one round on the podium and then I have you on the list as the next one. Okay."
+    },
+    {
+      "start": 5303.808,
+      "end": 5313.744,
+      "text": "This was good. This was strong all the way. Yeah, that's like at the standard. Yeah, of course, you're right."
+    },
+    {
+      "start": 5314.0,
+      "end": 5342.128,
+      "text": "It depends on the policy of the medium, how strong you want people to interact and how strong the language should be. This is one thing. But the other thing is in Austria, you've got regulations. So you have got already the pre-moderation, which you have to do. Otherwise, you as a content provider are kind of get a problem with the law. So you have both sides. And a standard, of course, is a..."
+    },
+    {
+      "start": 5342.128,
+      "end": 5360.992,
+      "text": "absolutely highly moderated and relegated content provider in the fall but even if you read it you don't believe it like that because it's dreadful really what people are kind of talking about but it's highly it is already"
+    },
+    {
+      "start": 5360.992,
+      "end": 5390.896,
+      "text": "very kind of behaved and that makes the task even harder because it's more subtle. The nasty things are more subtle than they come in a non-moderated social media context. Okay, thank you. So for the second round, I first have a comment in the chat by Paul Dimmers. Maybe I just read it. So he says,"
+    },
+    {
+      "start": 5390.896,
+      "end": 5400.0,
+      "text": "Master in digital complexity should."
+    },
+    {
+      "start": 5400.0,
+      "end": 5428.816,
+      "text": "a core team in the digital humanism research roadmap? Mastering digital complexity should be a core team in the digital humanism research roadmap. I mean, it was at a certain point in one of the talks, so maybe Paul can comment on the content. And then I have two raised hands. Paul, are you here? Yes, shall I? Do you hear me? Maybe briefly explain your question."
+    },
+    {
+      "start": 5428.816,
+      "end": 5455.84,
+      "text": "What I mean is I was trying to look a little bit at what is kind of like a common theme that comes from the various presentations of this afternoon. And complexity, digital complexity risks to overwhelm us, either on purpose or accidentally. And as Moshe said, for example, we need to have math, hard software engineering for that. But as Otto said."
+    },
+    {
+      "start": 5455.84,
+      "end": 5485.584,
+      "text": "Perhaps you also need to have legal and policy engineering for that. But anyway, digital complexity is something like has an incompatibility or risk of incompatibility or real risk for digital humanism. So I tried to condense it in a very short sentence. Should digital complexity be a core theme in the digital humanism roadmap? Okay, thanks for the clarification. Now I hand over to Ed. Maybe let's collect two or three questions from the audience."
+    },
+    {
+      "start": 5485.584,
+      "end": 5512.24,
+      "text": "Ask the panelists to reply. So now it's your turn. Sorry for interrupting. No, sorry to interrupt. This is always awkward doing these things in hybrid mode. Yeah. So on this question of what constitutes a useful or valid explanation, I think there's a key insight that you can get from Daniel Kahneman's book, Thinking Fast and Slow, which Moshe mentioned."
+    },
+    {
+      "start": 5512.24,
+      "end": 5539.248,
+      "text": "which is that humans are actually very good at coming up with post-hoc rationalizations that are explanations of decisions that they made. But in many situations, it's actually demonstrable that these explanations are invalid, that they don't actually explain how the human came about, came to that decision. And in fact, I would conjecture that someone before long using GAN, using generative adversarial networks,"
+    },
+    {
+      "start": 5539.248,
+      "end": 5565.968,
+      "text": "is going to figure out how to train a deep neural network to give a valid explanation or a convincing explanation for any decision. So you just give it the data, the decision, and it will come up with a convincing explanation. Humans do this. So I don't see any particular reason why we shouldn't be able to create an AI that does this."
+    },
+    {
+      "start": 5566.608,
+      "end": 5593.344,
+      "text": "So I'll tell you a funny story about this. So one of the universities in the UC system is University of California at Santa Cruz, which was founded in the 60s. It was a very liberal school. And one of the things they decided when they founded it, they didn't like numerical grades. How can you reduce a human being to just a number between a zero and a hundred? It seems not humane."
+    },
+    {
+      "start": 5593.344,
+      "end": 5622.112,
+      "text": "So instead, they require professors to give what's called narrative evaluation. For each student, you have to write a paragraph that assesses the evaluation of the student in the course. And one of my colleagues at the computer science department wrote a program. He would give numerical grades, and the program would generate a paragraph of narrative evaluation that he can then submit and be in compliance with the rules."
+    },
+    {
+      "start": 5622.112,
+      "end": 5650.736,
+      "text": "So exactly what you have proposed, Edward. Maybe let's have a question for this round. So I see one more hand. Yes. Good afternoon. My question is actually for Moshe and actually maybe related also to Ed Lee. So and here here's the question. Here's first of all, an observation. It seems to me that humans are able to explain how they."
+    },
+    {
+      "start": 5650.736,
+      "end": 5677.504,
+      "text": "came to a decision because we are able to simultaneously in real time work at many meta levels not only the problem at hand but we can observe ourselves solving it we can observe ourselves observing ourselves solving it we can remember and compare it with how we solved other problems before we have mental models of other people and how they solve it and we can compare it with that and all of these inform how we"
+    },
+    {
+      "start": 5677.504,
+      "end": 5703.632,
+      "text": "explain how we solved a particular problem. So it seems to me there's an architecture here of many, many layers of models inherent in how we do things. And it seems to me in the machine learning phase, we are nowhere close to that. And it seems to me that's a prerequisite for being able to have explainable solutions, explainable decisions. What do you think about that?"
+    },
+    {
+      "start": 5703.632,
+      "end": 5730.48,
+      "text": "There are researchers in AI, like Cynthia Rudin, I think at Doof, who argues, again, explainable AI. And he said, if you have very, very low-level models, then what is an explanation? I mean, in some sense, it's not clear how you provide it. So he said, what we need to do is to work with what she called interpretable machine learning."
+    },
+    {
+      "start": 5730.576,
+      "end": 5757.968,
+      "text": "where the models are interpretable rather than, and this is the research area, and I use the phrase explainable AI, but there are some good arguments why this is partly, the various reasons have been mentioned here. This is not necessarily a good term, and again, that's why there's some argument people need that currently technology, dominant technology in machine learning, which is deep learning,"
+    },
+    {
+      "start": 5757.968,
+      "end": 5785.2,
+      "text": "The models are too low-level, and that's why we need to figure out how to integrate the low-level reasoning with higher-level reasoning that we can express in various high-level formalism. So you should take a look at interpretable machine learning. Yeah, maybe now let's keep for the moment this important thing of explainability."
+    },
+    {
+      "start": 5785.2,
+      "end": 5810.912,
+      "text": "I would like to ask Brigitte first maybe. So in this standard BBL, in these forums, if a posting gets removed, then the users often, I can imagine, would like to know why. So is this something which is also on the agenda?"
+    },
+    {
+      "start": 5810.912,
+      "end": 5837.536,
+      "text": "an explanation why my postings are removed in in practice no because the the the first removal in the pre-moderation this is just gone uh okay and there's no explanation and people start complaining and they they start saying oh i'm censored and why i'm censored again and they already have so people start joking about the censoring and said i imagine when they write this"
+    },
+    {
+      "start": 5837.536,
+      "end": 5864.08,
+      "text": "Then I get censored. Maybe I write it this way. Things like that and trying to kind of fool the system. This is, yeah, this is one thing. And then there is this inbuilt censorship of the people who can, you can alert as a co-poster or fellow reader in this forum. You just can alert and say this is inappropriate. And can also give a reason why that's."
+    },
+    {
+      "start": 5864.08,
+      "end": 5889.3279999999995,
+      "text": "a part how we got our data which were positive as a positive data we're looking at into these comments right and the explainability i think yes explainability would be really good for the for the users because you want to know why a person got removed the explainability is sort of debugging for us"
+    },
+    {
+      "start": 5889.3279999999995,
+      "end": 5916.368,
+      "text": "sort of a high-level debugging for us. And it's also a sort of high-level debugging for the moderators. But for the moderators, it's much more important to get the highest hits that they are in their sense so that they can work with the data, right? So I think explainability has a number of different angles to look at, depending on who."
+    },
+    {
+      "start": 5916.368,
+      "end": 5945.968,
+      "text": "is talking about explainability or wishing for explainability. Martina, what about in the context of your research, would it be something reasonable to try to explain the users what will happen with the data if they get this and that? I think that's a general problem. People should have more of an understanding how the technology runs their daily lives. So one example is..."
+    },
+    {
+      "start": 5946.48,
+      "end": 5973.776,
+      "text": "Kind of not related, but so we are trying to recruit more people for computer science and going into schools and figuring out how to get people to be interested. And what we're seeing is that, yes, we have this digital agenda in the schools, but not really any good solid curriculum. But it should be like basic knowledge of even already at early stages in schools, teaching about how machines work, how software works."
+    },
+    {
+      "start": 5973.776,
+      "end": 6000.0,
+      "text": "what's behind what's powering essentially all the services we're using. So if you talk to someone on the street about machine learning, it's like magic box and AI and nobody really has any idea what's going on. Okay. So for the final round now, I think we'll start with the audience. Carlo gets it. I have a question, which is basically for Martina. You know, the examples that she gave, you know, were kind of scary."
+    },
+    {
+      "start": 6000.0,
+      "end": 6028.288,
+      "text": "And we are using apps for everything on our phone. Now you can use your phone to do whatever you do in your home, and everybody does that. So I'm wondering if, at least in Europe, since there is this kind of sensibility towards privacy, which came out through a GPR as a very strong statement,"
+    },
+    {
+      "start": 6028.288,
+      "end": 6057.664,
+      "text": "Isn't this mature for use of verification technologies like the ones that you have been using to identify those threats and those problems in those applications? Be used for some kind of, let's say, official certification that those things that we use every day are safe. Today, if you buy any electric appliance for your home, it has to be certified, right?"
+    },
+    {
+      "start": 6057.664,
+      "end": 6079.376,
+      "text": "So shouldn't this be the same for apps that people use every day? Let's say Apple and Google, they put them, at least in Europe, on their market only if..."
+    },
+    {
+      "start": 6079.376,
+      "end": 6105.952,
+      "text": "They have been cleared, you know, through some kind of verification. Isn't this some strong statement that, you know, we should make, you know, for those? And so verification techniques are there for us to propose that they should be used, right? I totally, fully, 100% agree. Maybe let's also have a final question from the audience and then make a..."
+    },
+    {
+      "start": 6105.952,
+      "end": 6133.68,
+      "text": "Final round of statements. Just one short question before this final question. Could you relate the term explainability to the term objective function Robin Burke used? Because I think we are talking about similar things. And he did not say how to explain, but he said, what is the objective of the system, which might be much easier than explaining and finding, let's say, a causal reasoning for something which was not causal."
+    },
+    {
+      "start": 6133.7119999999995,
+      "end": 6157.552,
+      "text": "This might be something. My question to all of you and maybe also to Edward is I'm thinking of the guys who sit down tomorrow afternoon and write a roadmap, okay? And I would like to have your input to this roadmap in very concrete terms so that when Erich and Paul and Linda are trying to write it down."
+    },
+    {
+      "start": 6157.552,
+      "end": 6180.0,
+      "text": "They have, okay, from your specific area, what would be one or two challenges which have to be on a roadmap? Without $1 million, which Helga wanted to have this morning. Okay. Okay, so let's have now this final round with the panel extended by Ed's lead now."
+    },
+    {
+      "start": 6180.0,
+      "end": 6209.12,
+      "text": "So we have two complete question or remark comments on the table about the verification of the system, of the apps. Then about the explanation versus objective function. Maybe this is something Moshe wants to say something, but of course everyone is. And then we have this general, and I think Hannes, your idea to add Edward now to this final round is that these were the four."
+    },
+    {
+      "start": 6209.12,
+      "end": 6236.2880000000005,
+      "text": "talks, which were really from a computer science perspective, computer science-like questions and challenges. So maybe let's, that's what, but in any case, I don't know. I could imagine. Yeah, let's put it that way. From Edward, I know that we should think about the difference of man and machine, which is a very fundamental question, but it is hard to put on the road. Yes."
+    },
+    {
+      "start": 6236.2880000000005,
+      "end": 6265.696,
+      "text": "Ed, could you understand Hannes now? Because he was not speaking to the mic anymore. I caught a few words, but not all of it. It was a comment to Stefan that I put you on the table as well, because from Paola's and also Robin's presentation, I immediately got the feeling what would be issues we have to solve in the roadmap. From yours, I have..."
+    },
+    {
+      "start": 6265.696,
+      "end": 6292.496,
+      "text": "It's very fundamental observation and it's somehow the difference between man and machine, but what would be on a roadmap to go into this direction? Okay. From a concrete project proposal and things like that. So this is the reason I was asking you. Okay. Thanks. So maybe let's start around with Martina. I'm starting with the verification question. So I know."
+    },
+    {
+      "start": 6292.496,
+      "end": 6315.632,
+      "text": "know personally how difficult this is to really certify an app and make sure you cover all the behavior but one thing i'm seeing in an either ideal world it would be nice to just start from scratch and design the systems in a way that you can verify the behavior and put your seat of approval on there and i have the feeling that's connecting to the question before it's just"
+    },
+    {
+      "start": 6316.496,
+      "end": 6344.448,
+      "text": "smartphones are around since like 2008 and they've just grown and newer features and just make it easy to develop and whatnot with little thought behind it what the implications are. And it's just a mess. We should really start from scratch and think about how we can design those systems in a better way. But still, when you look at these labels that Apple has in the App Store, those say the app is accessing your photos."
+    },
+    {
+      "start": 6344.448,
+      "end": 6369.6,
+      "text": "But there's no connection. And on the device, there's permissions to access the photos. There should be some connection, but there isn't. And that's, again, not really a technical solution, but we should have some way to hold the companies more accountable for what assistance they're providing. Thanks, Martina. Brigitte, your final concluding remarks. I think that..."
+    },
+    {
+      "start": 6369.6,
+      "end": 6397.744,
+      "text": "From my perspective, how data is used and who has access to data is something which is very important. So on the one hand, from my example, there are reasons why we want to give data to the community so that people can re-extend the data, re-label the data, train new models with the data because the machine learning technology changes."
+    },
+    {
+      "start": 6397.744,
+      "end": 6427.3279999999995,
+      "text": "quite quickly so this is the one type of data and on the other hand there are data so there are all those companies they just collecting data partially without us knowing and just ignoring it because we it's really i really wonder can you uh just use uh applications that are safe or do you use stuff which is kind of according to your terms not safe at all and you shouldn't use it so i"
+    },
+    {
+      "start": 6427.3279999999995,
+      "end": 6456.56,
+      "text": "I don't find a way out. So I think we need these two parts of the data and that would be something which should on this roadmap. So on the one hand, make data accessible, make it transparent that they are accessible and what is done with it. And on the other hand, make sure that the companies not just take the data and do whatever they want. Thank you, Brigitte. So maybe not it."
+    },
+    {
+      "start": 6456.56,
+      "end": 6485.36,
+      "text": "Your final comments in reply to Hannes? Yeah, I guess in some ways my sense is that my message is more about what to keep off the roadmap rather than what to put on it. And specifically, the thing that I think should be kept off the roadmap is all this discussion about AIs just as drop-in replacements for humans. And I think that we should recognize that that's"
+    },
+    {
+      "start": 6485.36,
+      "end": 6508.384,
+      "text": "Probably not really the way it's going to play out that AIs are going to be working in conjunction with humans in almost any scenario that we imagine. They will be working, functioning as cognitive prosthesis for humans. So they could become, you know, kind of a part of our own cognitive functioning rather than just, you know, external tools."
+    },
+    {
+      "start": 6508.384,
+      "end": 6533.392,
+      "text": "But, you know, even I mean, in the in the principles of embodied cognition, any tool that's used by a human becomes part of that human. Right. It's you know, when you use a hammer, it's an extension of your arm and your brain adapts to being able to understand the motor dynamics of how the arm has changed by holding that hammer. And the same thing is going to be true when we're using."
+    },
+    {
+      "start": 6533.392,
+      "end": 6560.832,
+      "text": "AIs as, you know, in the context of any of our societal functions. And so I guess, you know, the big message is that stop thinking of it as replacement and start thinking of it as, you know, the interaction and partnership that emerges when the AIs are working together with the humans in a societal function. Thank you very much."
+    },
+    {
+      "start": 6560.832,
+      "end": 6589.008,
+      "text": "Moshe, your final remarks. So we have to go back to the very beginning. And humans wondered why humans seem to be working hard and other animals don't seem to be working so hard. So they came up with a story how we got expelled from the Garden of Eden and there was a curse and the curse is in the sweat of thy brow thou shalt eat bread. So the answer is we never liked it."
+    },
+    {
+      "start": 6589.808,
+      "end": 6598.416,
+      "text": "So the Eastern Revolution gave us a way to replace hard work by machines. Okay."
+    },
+    {
+      "start": 6600.0,
+      "end": 6629.552,
+      "text": "We liked it. We don't have to do hard work the same way that we used to do it. We can build now a much bigger building because we have cranes. And then we came up with a way to process knowledge, and we could compute things much faster than we had to do it by hand. And again, we liked it. It's just much easier. We don't like to work very hard. But somewhere down the line, this prosthesis that we have been developing for us went to something else that we don't like doing. We don't like making hard decisions."
+    },
+    {
+      "start": 6630.672,
+      "end": 6660.064,
+      "text": "I mean, humans have to make sometimes very hard decisions. Think of people who, you know, in countries, in Texas, we have the death penalty. That means that, you know, juries have to vote for the death penalty. These are hard decisions. And there are many other hard decisions humans have to make. And gradually, using the same technology that allows us to just do, you know, compute ballistic tables, we are now having prostheses that are going to make decisions."
+    },
+    {
+      "start": 6660.064,
+      "end": 6678.032,
+      "text": "The decisions are not just which edge should I show Vardy when he clicks on the link, but also much more profound decisions. And the big question we should ask ourselves is, wait a minute, should machines make this kind of decision? And if they do..."
+    },
+    {
+      "start": 6678.384,
+      "end": 6707.056,
+      "text": "Under what kind of guardrails do we want to establish? Sustainability is just one aspect of it. But the first question should be, should we allow a machine to make these kind of decisions? They have to do profound implications for human life. And if we do, under what conditions? And right now, it's just a wild west. A company can come, and we have a technology, and they can sell it, and people are using it, because there's no law. Technology is running way ahead of the law."
+    },
+    {
+      "start": 6707.056,
+      "end": 6736.112,
+      "text": "And the mantra is innovation, innovation. We have to pursue innovation. Regulation stifles innovation. The answer is innovation. If innovation is bad, then by all means, let's stifle it. And so I think the big question is not just, you know, is do we want AI to do this? And what kind of AI do we need? And what are the other, what are the implications of having technology to do that? And, you know, you may remember the movie, what was called War Games."
+    },
+    {
+      "start": 6736.4,
+      "end": 6762.592,
+      "text": "War Games was essentially kind of that movie about should we let AI decide to launch a nuclear war? And we don't have to go. I mean, this was taken to an extreme. There are many other cases we should ask ourselves. Should we allow machines to do that? Okay. Thank you very much, Moshe. I think these are very well-structured and important concluding remarks for our first"
+    },
+    {
+      "start": 6762.592,
+      "end": 6784.272,
+      "text": "Let me say a big thank you to all three speakers of this session and to the people who engaged in the discussion and to the audience who looks hungry and we now here go for dinner. And I send greetings to all virtual participants and hope to see you tomorrow again. Bye bye."
+    },
+    {
+      "start": 6793.744,
+      "end": 6813.936,
+      "text": "a beer now. A beer? Yeah, a beer. Hannes emphasized that there's also beer. Sorry to you. Sorry to the guys out there. Abend. Abend. Gute Abend."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

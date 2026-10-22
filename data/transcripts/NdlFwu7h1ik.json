@@ -1,0 +1,696 @@
+{
+  "video_id": "NdlFwu7h1ik",
+  "source": "whisper",
+  "language": "en",
+  "text": "Two, one, and we are live. Hello, everybody. Thanks, Walter, for discounting. Welcome to the lecture of today. I think we have already received number 30 of our lectures. Special welcome to Carlos Sierra. He is from the AI Research Institute in Spain, and he is the current president of the European Association for AI. and he will talk about responsible artificial intelligence. Karl, thanks for being with us. Thanks for inviting me. The moderation will be done by Olivero Stock, who will then also introduce you, Karl, in more detail. Just a short reminder, but you all know it already, we have to talk for 30 minutes. Then we have 30 minutes Q&A, and the Q&A is moderated by Olivero. After that, we end, as always, with a piece of music. Today, proposed by Karls. Thanks for proposing that. And thanks to Peter Kness for managing this music part of our lectures. I am happy to introduce now the moderator, Oliviero Stock. He is a distinguished fellow of the FAB Kappa, as it's called, the Fondazione Bruno Kessler, in Trento, Italy, which is a non-university research institution, a rather big one, with a focus on AI. where he also was the previous director of this institution. His work is in AI, mainly natural language processing and intelligence user interfaces, very often applied to cultural heritage. And he is also what I really like. He has work on computational humor. So it's funny listening also to this AI-generated humor he does. He was the chairman of the European Coordinating Committee for AI, which is now called OERI. He was the president of the Association for Computational Linguistics and also the president of the Italian Association for AI. He's a fellow of OERI, an AAI fellow, and a DFKI fellow. Olivero also received a doctorate honoris causa from the University of Haifa. And he's a good friend since a long time, Oleg. Thanks for being with us. And the floor is yours now. Oleg, you're muted. Okay. Thank you, Hannes. Thank you to all participants. Good afternoon or good morning. i i don't think i have to say good night i don't think we have attendance from the far east or from australia um by the way today we shall connect two parts of the mediterranean because i'm speaking from trieste and carlos who will deliver his talk is in barcelona so it's a mediterranean afternoon and just two words about responsibility and ethics i mean this is a i think a common theme for basically all disciplines for many scientific disciplines it is really a key issue think of biology biomedical matters or even physics and there is something special about ai of course where not only it's a matter of decision about about research about methodology about application but it is also involving the object of our research in the decision making so i think that a title like today's title is a very appropriate title responsible artificial intelligence which i believe includes everything um specifically i'm delighted that we have with us carlos sierra carlos is a key figure in ai uh in europe currently as harness has said is uh the uh chair of your e u r ai so the european ai association and his whole background is in artificial intelligence so i think he he he's got his phd from the technical university of barcelona in 1989 and after that he has always been very, very present in the AI scene. He published 300 papers and he's a key figure especially for agents, for artificial agents to which he devoted a lot of work and he has been also the chair of AMAS, the main agent conference. And by the way, he's been chair also of FIJCAI, which is the worldwide most important AI conference. So currently, as Hannes has said, Carlos is the rector. of the AI Research Institute in Barcelona. And I'm delighted now to hear what Carlos will tell us this afternoon. Carlos, you're muted. can you hear me now yes now we hear okay now do you see my slides yes yes okay okay so i was saying that um thank you very much olivero for this introduction um it is an honor for me to be with you this afternoon or this morning depending on what part of the world you are and as you said i mean responsible ai um is as in many other fields something we should have in our minds when we develop our work. In AI perhaps a bit more because I mean the use of AI in all sorts of activities in human life is making our work much more visible and much more kind of under debate. I will touch upon one particular aspect of responsible AI today which is that of values and how can we somehow embed values in AI systems. This is joint work with Nadine Osman and Nieves Montes from my institute. which my institute is located, as you said, in Barcelona. So we are shared by the Mediterranean, who, by the way, someone, I don't know who was a poet that said that the Mediterranean is not a sea, but it's a continent that kind of puts together the people around it. So I strongly believe that, that the Mediterranean is something that unites the different nations around it. It is an institute that has 80 people doing research on AI. We have 25 AI senior researchers, out of which six are your AI fellows. So it has a long tradition. We have is not a big institute, but it has a long tradition and it has graduated already over 100 PhDs in artificial intelligence. Why responsible AI? Well, as I said, AI is currently reaching an ethical frontier that. is being analyzed by journalists, by the media, by politicians, by the society in general. We remember, I will not insist on this because in this kind of community, everybody is very well aware of the problems that AI is facing. The case of Cambridge Analytica, the works of the AI high-level expert group defining what trustworthy AI should be, the discussion at the European Parliament level of an AI Act, which is quite odd in some sense. regulating a technology like AI at political level by politicians that are not really experts on the field. It's not the time to debate that, but this is probably something to discuss at length. The Barcelona Declaration that happened in 2017, asking for a kind of a reasonable use of AI technologies. Even there is business around ethics in AI. There is this London School of Economics. that is kind of selling an online certificate on ethics for AI. So ethics is kind of invading our desks. And we not only have to deal with it, but we are sometimes facing legal charges, depending on what we do. For instance, in case of fake news, we see here a law by Singapore that is, it can put you to jail if you develop AI technology that is either creating fake news. or propagating fake news. So it's very serious the fact that you are involved in some activity developing AI that is not respecting ethics. However, this is not just for the big principles. There are functionalities that are very difficult to somehow achieve in technology. This is an example, the YouTube Kids app. in which parents wanted to have a control over what kids could see or could not see. It took them years to manage YouTube to change the specification, to change the implementation, so that the parents could have that control. So even for very small functionality changes, users, humans, we, society, are a bit abandoned by the large corporations. So it's not just the big words. privacy security manipulation is also basic features and functionality that we would like human users to be in control. The question then from a scientific point of view is can we AI developers put humans in control? Can we do that? Can we really put humans in control? And the question is should we? Sometimes when you can do things you have to ask the question should you do it? And the question here is whether humans are moral or not. As you know, there are many kinds of humans. I'm sure you know a large variety of them. Here I am putting in front of you the case of the psychopaths, the case of amoral minds. These people enjoy the other's suffering or the other's losses. They're insensible to signs of physical pain. They lack fear and they're totally insensible to punishment. They like instrumental or gracious violence. They don't have any remorse, any guilt, any shame. You can say, well, my God, these people, they cannot exist. Well, there are plenty of them in history. You have Pol Pot. More than one million people have been killed in Cambodia. Leopold II, the king of Belgium, making atrocities in Congo, in Africa. Heinrich Himmler, the organizer of the Holocaust. Or in Spain, Torquemada in the 15th century that was in charge of the Spanish Inquisition. All these guys are clear psychopaths in the definition that you see here. So moral humans. Are these humans moral? Confronting the typical dilemmas that you have all seen in many shapes, I will just put you in front of one that I especially like. You have a patient. That he's actually not a patient. He's a malade imaginaire. So he's someone that goes to the hospital, but he's completely healthy. But he's annoying nurses and doctors saying that he is ill of many different illnesses. But he is very, very healthy. He's so healthy that his organs could save the life of five people that will die in the next 24 hours unless they receive a transplant. Now, the question of the moral dilemma for this nurse. is should I kill this guy, take the organs off and save the life of the other five? Formally speaking, this is very similar to the trolley classical examples, but this is a much more difficult dilemma because it's the nurse that has to kill the person in order to save the other's life. I don't know what would you do in this situation. You could think for a few seconds, what would you do? The answer is that the psychopaths would give in almost 60% is that they would kill them. They will kill the guy. So they have no problem in killing the guy for a good purpose, which is saving the other five. Normally, people would say, no, I will not kill the person. In this case, the control group said in a 13.6%, yes, they would kill the person. And look, the control group were the nurses themselves in the hospital. So be careful when you go to a hospital from now on. So even people that are there to save lives, like the nurses or the doctors, they may be tempted to apply this radical measure to save lives. So humans in control, yes, but as communities, and this will be the motto of the talk I will give in the next 25 minutes. We as individuals take different decisions in front of similar situations. The case of the psychopaths I explained is an extreme case. But in many other kinds of decisions, we take different decisions. We interpret social and moral values differently. That's why we take decisions differently. What is more important, the life of five people, the life of one person? People weigh things differently, depending on their culture, depending on many other factors. We need, therefore, a social contract with technology that enables communities to rule, not just individuals. Because if we leave technology to the decision of an individual, then basically what we have in social choice terms is a dictatorship. It's what will probably happen now with Twitter. There will be one person taking decisions on behalf of everybody in the planet. Now, the idea, what I will defend here is that it would be much better if we allow communities to rule. the decisions on technology. So as a community we will need to decide what rights do we agree to surrender as a society or group to technology in exchange for the protection of our remaining rights and the maintenance of the social order. This is the same as Rousseau had at the end of the 18th century. So it's okay, we cannot probably have all our values respected by technology because in particular values are conflicting. But what do we agree to surrender? And in exchange of what? This is something that we as a community need to decide. So from an AI perspective, that calls, of course, to build more AI. So how can we do then value engineering? How can we embed values into systems? Why that? Well, the first thing is that it has to be us. I mean, the AI designers. I mean, it has to be us who takes the lead on this. on this question. We need to put people in control because AI must be social. So the idea of having communities of individuals or even of devices taking the lead in defining what values to respect is because we are going to live, we are actually living in a massive AI, sorry, in a massive multi-agent system. And there will be billions of AI systems interacting, interacting among themselves and interacting with humans. Our future society is a colossal multi-agent system. And you have plenty of examples. I mean, the work by Peter Stone on the crossings without lights that makes, if cars communicate among them, makes the crossings much safer and much more efficient. Or the fact that you have multi-robot systems in which robots with different capacities need to communicate and collaborate in order to solve complex problems. Or different IoT. systems in our home or in our neighborhood that can coordinate as well in order to improve the use of energy or the use of other resources. So a colossal multi-agent system. So we need technology that would put humans in control, and that includes a large number of technologies that we have developed to move from individual rationality, which was a classical AI for a long time, into social intelligence, like communicative interaction. You see a picture here of kids. This was a system that we built in a museum in London where kids were using the mediation of a tablet in order to decide which would be the paintings to put on an exhibit in the museum. And basically, they were just arguing. They were just voting in order to decide. They were expressing their preferences. And through this interaction, they managed to create an exhibit. So they used all these technologies, communicative interaction. social coordination in when they were discussing agreement technologies like negotiation and argumentation, social choice, voting for what to do, and so on. So there is a number of technologies that allow for these multi-agent systems to coordinate among them. The problem when we have this situation is how do we guarantee that values are respected when entities are autonomous? This is a big question. Values are social constructs, not universals. I mean, we cannot think that we share all the same interpretation of values. They are in particular context dependent, but they are also cultural dependent. So it is not possible to have once and for all the values that we are going to use. When systems are fully autonomous, we cannot guarantee behavior. So this adds another complexity to the coordination of systems. So how can we... guarantee that the behavior of such systems will abide by the values we want the system to abide. What can we do? Well, we can do what human beings have been doing for a long time. For instance, when some unacceptable behavior is observed, generate or suggest repair actions or punishments. This is the legal approach. Or if you want a desirable behavior, You can gear it via incentives. This is the economic approach. We can get inspiration from how we humans model responsible behavior. And I will show you three examples. One is a very classical one, Wesley Hoffeld. This person at the beginning of the 20th century defined, well, he was fed up with the judges interpreting the notion of right in as many ways as you can imagine. So he wanted to formalize once and for all, the concept of and the meaning of right. So he ended up with an ontology based on eight concepts. You can see them here, right, no right, privilege, duty, and so on. That could be understood as opposites. So right and no right, one is the negation of the other. But also they introduce the notion of a correlative. So if I have the right about something, then someone has the obligation about that thing. So I cannot have a right if there is no obligation. no duty kind of associated to it. So that was very original in its modeling and it was used for the first half of the 20th century to represent legal knowledge and basically the system is so powerful that almost all legal corpus can be represented using his ontology. He's at the basics of future works during the 20th century on deontic logic and other kind of legal representation of the system. Again, here laws for him were understood as constraints, were understood as norms. Another example much later in the 20th century, Douglas North with the new institutional economics. Basically, Douglas North understood that societies of humans basically are shaped by constraints that determine the structure from a political, economic, and social point of view. Again, what humans do when they organize themselves is determine the constraints that fix how they are going to interact. He deserved the Nobel Prize in 1992 for that work. Along the same line, and this is the one that I will spend a bit more time, is Elinor Ostrom. Elinor Ostrom worked at the end of the last century, beginning of this one, on the concept of commons. She wanted to explain that collective action can be sustainable, that the tragedy of commons is not unavoidable, as many people would think. And she defined self-governing institutions. This is a beautiful book, Governing the Commons, that I really recommend all of you to. to read in case you have not read it. She was the first woman to receive the Nobel Prize on Economics in 2009. What she did was to study communities across the world. We were talking about the Mediterranean. This is the east coast of Spain. You see here the city of Valencia, Alicante. Okay, so in this region, rain is very irregular. There are periods in which there is no rain. There are periods where there is a lot of rain. The point is how to sustain the crops in such a situation. Well, from the 15th century and even before, people organized themselves. In that date, May 29th, 1435, a number of irrigators approved formal regulations on how to share water. They defined or they set a number of rules that actually were being used for much earlier than that date. The rules are about maintenance of the canals. to share water, the fines to be put when someone would not respect the particular rules, the officials that will put those fines, and how the water would be used depending on the environment, depending on how much rain is being received on a particular period of crops. These are a fantastic example of situatedness of a community. And the conclusion of her work and her book is that in many, many societies, human communities, are successful. So it's not true that they necessarily will be failing to be sustainable working together. She created the basic principles, Ostrom's principles. I don't have time to go into too much detail, but the eight principles that makes a community sustainable are based on clearly defined boundaries, who is or is not a member of the community. Appropriation and provision, what do you should provide to the community? What can you get out of the community? Collective choice, how do you elect officials in the court to determine then who will be punished, who will be not punished? The monitoring, for instance, the tourno system they took, it was very clever. So when someone is watering her field, then the next one is waiting for that field to finish the watering so that you can open the gate. and water yours. And that is interesting because the one next in the queue is monitoring what the other guy is doing. Sanctions, conflict, rights to organize. These are the eight dimensions that she studied in more than 90 communities. Here you have a number of community norms, like each farm on a canal receives water in a rotation order. If a farmer fails to open his head gate when the water arrives there, he misses his turn and must wait for the next rotation. You have three norms here, very funny. The households receive timber. This is about another community in Switzerland in which families would send a representative to cut trees and make piles of timber for the winter. And they had all these rules. For instance, the workers will make equally sized piles of logs. Why that? Because a lottery will determine which pile goes to which household. So there is no incentive in making one pile bigger than the other one. So everybody will work for making the piles and then a lottery will determine who takes the logs home. Very clever norms determined and created by a long period of time and making the community successful. Now, how are norms created? OK, this is not because these norms are somehow seem unchangeable for centuries in many cases. How are they created? How humans can. get to the norms and how do they relate to human shared values? The question is that these norms are based on that we want everybody to keep their crops because we want everybody to have food at table and the same we want everybody to heat up in winter in Switzerland. So there are a number of values that are those that inspire the norms. So the values are the primitive elements. In the digital world values as primitive elements appear also in many of our discussions. You can have here an example. I'm checking my time. And as usual, I mean, I'm talking too much. I will just go to one of them. So you can have a tool. I will show you. You can imagine a community of users of an application on photographs that at some point, one of them trigger an evolution point saying, I'm not happy that anyone can tag anyone else in a photo. I suggest we change the rule. Me too. My photos page is cluttered. I suggest we disable timing. Okay. You can imagine a discussion argumentation here, perhaps a voting, as you see at the top of that screen on the left. And then what you would like is that the technology, once that decision has been made by the community of people that has decided on a good norm to regulate their interactions, that automatically through two... three and four becomes part of the code gets coded into the system so that the system behavior changes for that community so that that new norm is actually implemented so this is another example in in single mothers communities that we developed but it's similar to the previous one so i will i will just skip that and i will go to the relationship between values and norms okay i mentioned before that the future is a massive multi-agent system we have human software agents And so far, we understand that humans should be responsible of embedding values into autonomous agents. I mean, we want technology to serve us, to extend our capabilities. We want technology to respect our values. So we should, humans, be those defining the values we want, and we should be those embedding the values into the autonomous agents. So the programmers need to turn values into code. But what are values? So this is a long discussion. It will go beyond the time we have here. But value for many, here there is Schwartz's theory, who is one of the most used. Understanding values as abstract concepts that are basically grounded as permanent goals. For Schwartz, the values serves a purpose. For instance, biological needs for humans, like eating, surviving, social coordination, working as a group. survival of the group and welfare of the group. And the goal basically what aims is accomplishing that purpose for which the value is serving. Of course, in the case of software agents, probably that purpose cannot be a biological aspect, but we can still retain the left part of that triangle so that moral values can be grounded as motivational goals. So these are permanent goals that agents pursue. So the goals become the proxies for values. is how values manifest in the real world. Goals are related to the state of affairs. You can check whether a goal is achieved or not. And you have history of actions that allow you to see whether a particular goal or you're approaching a goal or not. They have a permanent status. So if you want something like, I don't know, women and men should have similar salaries. So if that is a goal, then you can, if something will be permanent, you can check. every year along a long time. And also, if you have a value hierarchy, some values more important than another hierarchy, you can also translate that into goal hierarchies. So it seems like translating moral values into goals, this is good because it is talking the language of AI. So once we have values turned into permanent goals, then agents can evaluate the state of the world and see whether the values are respected or not. The only thing we want humans to have control, and this is the key issue, we said at the beginning we want humans to control the technology. The way I suggest we do that is to make humans control the meaning of values. What does a value mean? And once this is done through the definition of these motivational goals, leave the autonomous agents to take that and act autonomously up to the level of those values. How? Basically using norms, as human societies have done, as legal experts from the 20th century explained, as the neo-institutional economics has explained that in the 20th century. Let's promote values using norms. Norms basically tell us the do and don'ts over the actions that autonomous agents can make, under what circumstances, with what effects. Norms are basically the main value-promoting mechanism that we can use in our systems. What they do basically is they change the incentive structure and they steer systems towards outcomes that are better viewed in terms of values. So they're closer to the grounding goals. This is the idea. You can summarize in this schema. So a value legitimizes a norm because a norm promotes that value. How? Steering the system towards outcomes that where the goals evaluate in a positive way. And these goals are basically the semantics we are giving to values. So this is the idea of the system. When that is the case, we will say that the norms are aligned with respect to the values. In mathematics, this is the only equation here in this presentation. So basically, what do norms? Norms basically select which are the possible action paths that a community has. given these outcomes restricted by the norms, we can evaluate with this function f, we can evaluate a certain value, a certain value's interpretation as a goal, up to which point it is satisfied. And what is the alignment? The expected value of that. So a set of norms is more aligned with a particular value if it steers the system towards paths of action for which the value the goal associated to the value has a better outcome. So that's the notion of alignment of norms with respect to values. That leads to a methodology that we can implement in systems. So again, I mean, it's AI, more AI to have responsible AI. Define the variables that determine the state of the system. Then define the parametric norms that regulate the transitions, that regulate the behavior of the different agents. define the set of values of interest. Which values do we want to embed into the system? This is a human decision. It will not be the agents, it will be the users that determine which are the interest and the values of interest. And then apply an optimization algorithm to find the parameters that maximize the alignment. So which are the actual norms that will better defend, better abide by the values that we are interested in. And then we can make a number of other analysis like sharply value of norms, so which is the norm that is more valuable? Value compatibility, if we optimize for a value, are we satisfying other values or not? And then we can iterate this process as much as we want. We have a paper on this topic last year in Amas, now appearing in Now, there is an example here, like a tax system, in which basically we are talking about two values, equality and fairness. Let me see if I can go through it quickly. But you can imagine a normative system, which is how much should this agent pay, so taxing, how to redistribute the taxes that they have collected, how often should evaders be detected, is the probability of detecting evaders, and how much to find evaders when detected. And then once we define the normative system, we can optimize and we can then find what you see in this table. I will basically, I will quickly go to it. I said, what are humans doing here? It's interpreting, giving the semantics to equality. In this case, equality, we can model it as the Gini measure. Gini measure is a way of understanding how dispersed, how different are the salaries of people, how different are the bank accounts of people. Fairness. Here it is interpreted, the semantics are given by making the cheaters the poorest in society. It's kind of a revenge semantics for fairness. Aggregation is trying to do both things at the same time. Okay, the optimal normative parameters are those that you see here. For collection, society is divided into five chunks of salaries, like most taxing systems, and this is the percentage that you apply to each one of them. blocks of people. Predistribution, what is the percentage of the money you collected that you give back to people in the same chunks. Catch, probability of catching a cheater. Find, the percentage that you find that particular person. With these parameters, you optimize for equality with an alignment of 0.95. It's almost perfect. That means these are the optimal parameters to make the best you can with these norms for this kind of problem. So we give the semantic of values, the system finds the right set of norms. Okay, this is telling me I spent 30 minutes already. I'll try to finish very quickly. So you see a different set of values for fairness with a good alignment. For aggregation, things are not so good, as you can see. I mean, what is that telling us already? When you have two values, optimizing for both values at the same time is not necessarily possible. Not only that, Shapley values. you can see here, I will not go into the details, that for equality, the most relevant norm is the one collecting taxes. If you see at the top n sub 1, 0.5, Shapley value is how much, what part of the alignment is responsibility of that norm? A large part. For fairness, not that much. And for the aggregation, nothing. It's totally irrelevant. It's the other norms that matter in that situation. I will finish very soon. Value compatibility. If you optimize for equality, bad news for fairness. But if you optimize for fairness, good news, relatively good news for equality. Again, depending on what, how do you organize the optimization for the different values, you may have different results. Okay. And you can, as I said, once you optimize that, you can add a new value. You can modify the semantics. This is the way of playing. with the system. And again, a community of people may use this methodology in order to explore what are the values they want to have and what are the norms that should be defined. It can be even more challenging. It can be agents autonomously propose, negotiate, and agree on the norms. So it could be the AI exploring the space of norms, trying to find, given the semantics for a value, what are the actual norms that should be implemented. This is part of our current work. So norms then will refrain not just the proposals of individual value structures but the aggregation of them, the emergent social values. Okay, I will just do a summary. So values are coded into agents as permanent goals designed by an outside human team. Technical norms promote values by shifting the system towards outcomes that come closer to the grounding goals. Agents could autonomously negotiate over which norms to adopt in order to improve the value alignment. A norm negotiation not explained here could be a form of value aggregation of individual values into these emergent community or social values. Conclusion, we leverage agent autonomy to promote ethical behavior through the crafting of norms to keep humans in control who will define, decide what is the meaning of values. And this will be the important element on humans. And basically, I will just finish here. There are plenty of open research questions that you can see a few of those here. When are two values similar? How do you extract a normative position from text? Olivier, this is for people in natural language. How to deal with ethical conflict, conflicting norms? How to assess the impact of a normative change? How to learn norms from behavior? This is a big and difficult problem. And so on. So there is a research program for the multi-agent systems community. trying to answer all these and other questions so thank you very much for your attention and i'm going to be very happy to answer questions thanks thank you very much carlos it was a wonderful talk very deep and full of food for thought so now wants to intervene please raise your hand or or send a message whatever you want so we have moshe moshe please unmute yourself yes so thank you for this enlightening talk and my question is is in some sense about the title but about the philosophy of the whole thing should we should we be talking about responsible ai or about responsible use of AI. Because when you talk about responsible AI, somehow the technology has to be responsible. And when I look at what's happening now, it's the technology is technology. It's just a tool. It's being used irresponsibly by corporations. And somehow by talking about responsible AI, we are shoving the problem towards somehow let's design a better AI system instead of putting responsibility where it should be. on the people who deploy these systems? Thanks for the question. It is a very important and part of the debate. So, of course, corporations must be responsible. That's no doubt of it. The question is, in order for corporations to be responsible, one possibility is to develop further technology that makes these corporations create AIs. that are value aware so that the technology itself knows what the values of the users are so that it can adapt to those values. So it's building more flexible technology. So in the same way that we humans, when we decide how do we organize as a community and we define the charter, the bylaws of how are we going to behave, we should have the same thing for technology. So it cannot be that the charter is in the hands. of the corporations and that the users have no say in that charter. The charter should be part of the technology itself and the community should be able to modify and adapt the charter to their needs based on the values. So this is what I'm proposing here is generating new technology to make technology value aware. So again, I'm sorry, you're... Your question. I think corporations must be responsible. And in order to do that, we are developing now, how to say that, regulations, for instance, at the level of the European Parliament I mentioned at the beginning. So there are a number of regulations that will force corporations to have certain behavior when generating, when selling, when producing technology. This has to be in place. But what I am promoting or what I am aiming at. is that having technology that is more flexible than what we have now and that is capable of understanding our values among other things because we will need to ask for explanations to that technology and if the technology is not value aware it will be very difficult that it explains us why a certain decision is being made while if the technology understands our values it will be able to explain why certain decisions were made thank you thanks Maybe there is something. Thank you. Thank you, Carlos. Really very interesting, stimulating presentation. And it kind of provoked me a little bit to think that you also are you going to look into the inverse of your methodology. So what I mean is you go from with the methodology you go from value to norms to code. So to say. And actually, the example that you gave is the inverse of that, which is the example of the tagging of the photos. The code was already there and implicitly it already had encoded a norm. Namely, you know, everybody could do tagging and that was a norm. And if you go from code to norms or to values, that may be quite difficult because it's not only about what the code does, but also what has been left out of the code. Can you imagine that you do the inverse? Because that's actually the whole argument of Lessig also, Lawrence Lessig at the time, code as law. There is already a norm setting happening through the software and the coding itself. Do you see that as a possibility? Are you looking into that? Yeah. So maybe the way I explained that maybe was not completely clear. It was very fast in that bit. But my point there was that. human beings arguing in natural language. And once there is an agreement on what is the accepted norm, coding that. So it's really going from natural language to a formalization of the norm out of the language and embedding of the code into the system. So it is really from value description in natural language into code. So this is the point. Of course, once you do that, when you are at the code level, you can ask yourself many questions. For instance, is the norm equivalent to another one you already have? Is this norm in contradiction with someone that you already have? So these are the questions that you can put yourself. The inverse way, if I, so is how can you go from, in a sense, behavior to values? This is a very difficult one. So when you observe human beings doing actions, trying to deduce out of it or induce out of it what are the values they are defending, this is very difficult. And I don't have an answer for that. So my position so far is from humans expressing in natural language or formally the semantics of a value and the preferences over the values and then going into code. This is what I propose. Thanks. Hannes. Thanks, Carlos, for this talk. I think it's an excellent example of operationalization of this, let's say, ethical approaches. And I think this is a very good example of that. So it's more and more a remark because it also shows how to put the human into the loop. Because the central role here is the human and it's not so much the... technology, it's not the software, it's even the human being there. As such, it's really uncovering and moderating this discussion among a group of people. Is this understanding correct? Yes, this is a perfect assessment of what I explained. And actually, my position is that Actually, we cannot leave a single human to take decisions. It has to be a collective democratic process. And I think that should be at the level of communities. This is Elinor Ostrom's approach. Human beings have been working well in small communities. And I don't know, I can imagine the parents of a school defining how they would like to use their WhatsApp group and what should be the rules of the WhatsApp discussion they might have. So this is the way I see things. Of course, the question here always raises, how do you scale that? I mean, it's very difficult. And Eleanor Ostrom says it is really difficult. How do you go from, I don't know, a 1,000 community organizing themselves into a nation or a large state? It's very difficult. So probably this technology or what I'm proposing is good for small groups and not for large communities. But still, the important aspect is that people have a say. And they understand that the technology is at their service and not they at the service of the technology. Thank you. Eric, please. Thank you. Thank you, Carlos. Very, very interesting talk and rather complex, I should say. I'd like to ask you a slightly critical question. I mean, I'm sure you are familiar with the work of Hubert Dreyfus, who in the 70s. criticized AI for its efforts to put everything into rules and argued from a hermeneutical and phenomenological background that this was unlikely because humans usually take into account context very much and the slightest context change may change how we assess situations. Now it seems to me that what you're trying to do is is a little bit prone to that criticism because um and then the trolley problem you were using is actually is actually a good example because You know that the trolley problem, when you change who the people are involved on the tracks, if you make them old or young, if you make them criminals or mothers, people will change their mind. And it's very difficult to see what are the values that people are using. Well, you may be possible to elucidate some values, but that doesn't mean that values actually are there in the sense of a stable value that people actually have. They may change their mind three times during a day and parts of a society may differ very well in their values. But it seems to me that this kind of at least, let's say, some degree of fixed values would be really important in your approach, because otherwise it's really difficult to derive the rules that you're trying to derive. So a few things on these. So when the sociologists like Schwartz define their theories on values, I mean, most of them are based on the idea that there is a universal set of values. So the notion of fairness is something universal. What they say, and you are completely right on that, is that it is contextual. So the way that you interpret fairness will depend on the particular context you are. And in the example of the irrigators in the Mediterranean coast, it was exactly like that. So the thing is, the way you are going to use the water will depend on the meteorological context in which you are situated. Depending on that, you will apply certain rules or you will apply others. Of course, you may say the contexts are infinite. Well, in certain applications, I would challenge that in the context of the irrigation. I mean, the contexts are not infinite. I mean, it's the amount of water that you're having in a spring. And that is, you can categorize that into a few cases. So you can probably generalize or define chunks of rules that apply to different kinds of contexts. And actually, law is about that. All law that we have developed in human history is about defining what rules to apply to what particular context. So I would say... Yeah, it is difficult, but we are able to organize ourselves and we are able to determine how we organize our life in a family, in our neighborhood, and we are able to express that in natural language in a way that we all understand. So the thing here would be to put natural language technologies, knowledge representation technologies, to the service of the extraction of those normative positions so that we can code them. I think that's doable. And in our experience with small communities of people, this is an approach that we can take. So in theory, context could be infinite, but in reality, they are not that much. That would be my point on that. Thanks. Next one is Gregor Rosenauer. Yeah, thanks. So I wrote my question in the chat, but it's probably... Oh, sorry. easier to repeat it here. So from what you've said, and you also briefly talked about Twitter, which is a pretty interesting field of research now, maybe even, because Elon Musk talked about open sourcing the algorithm that drives Twitter's timeline and filtering. So I see a huge window of opportunity to apply the methodologies you described and which are also still in research and development. Yeah. The nice thing here in case of Twitter is that you could, up to some point, create sub communities within it that would organize the way you receive email, the one you want to trade, hate the speech or not. I mean, these kind of things. And then you associate to a particular community, to a particular way of interacting through Twitter. Of course, some people say, yeah, but then how do you when you disagree with the norms of a particular community, how do you do then? Well, what happens in many human societies when. When a community, there is a strong disagreement in a community, then a community drifts away. So you can have from one community the birth of two other communities. And this is absolutely normal in human life. Communities appear and disappear. There is an ecology of communities, and each one of them is identified by the way they want to interact. So I think if it opens, the algorithm is... Good news, but it should go beyond that and should allow people to shape the algorithm to what they want. Thank you. We have Ari Reza. Yes. Hello. Thank you for your interesting talk, Carlos. Hi. I want to add something to your talk based on my some experiences. Naturally, when we face two human things, human issues, we face two interrelationships of some values and also some norms. I mean, if we study interrelationship or interaffection of human values, we make new values, we provide new values. And based on these values, we make new norms. So some of the responsibility of AI development solutions, AI-based development solutions. For example, in intelligent agents, you talk about that. We try to build new norms by the AI tools, by the AI functions or algorithms. Because I have some experiences with... solutions to study some communities between some parties in Iran. And I see after, for example, six months that new norms come to our solution after we study interrelationship and interaffection of norms and values. Thank you. I just want to add the things to your very interesting talk. Thanks for the remark. I agree. And actually defining the meaning of values is not an easy job. So what equality means in the abstract, when it gets particular, you can have many different views on that. And that's why what is needed is some not only normative positions, but also how do you aggregate the semantics of values? Can you have a slightly different notion of equality than me? And can we put that, can we reach an agreement on some intermediary semantics between yours and me so that we agree on a particular norm? I think this is what human beings we do all the time. It's kind of balancing these norm, these value definitions. And I agree. Sometimes we may go into a normative position. We put that into practice and we see that doesn't work. And actually, it's not aligned with the values that we want to defend. And this is a dynamic process. um in human societies and i expect that this will happen also in the future thank you thank you thank you if there are no further questions i would ask a question myself um you started from fake news your talk and in general if you address the problem of communication from the machine toward humans there are norms in our values in the first place in our society the value of truth for instance that different communities may again be different but also the means that you have for communicating basically there are to actions. What is the final goal in communication? You want the other person to change the state of mind or do something, whatever. And there is the means that you use for communicating. For instance, argumentation or regard to positive emotional feeling or negative emotional feeling or even... in certain extreme situations lie to achieve the goal. So, any thoughts about this area of yours? Yeah, I mean, the case of fake news is something, yeah, well, it's a big issue for all of us. The question is, how do you attach that from a value perspective? I think in most value, well, let's assume that you have a value system in which truth, as you said, is important and you want to have your technology abide by that, then it would be totally aligned with that value, the fact that you ban from a community someone that spreads fake news. What does it mean? You can generate norms that says if a certain number of reputable members of the community mentions that the certain news are fake, then the person that is propagating it will be banned from the community. That could be a norm. that would regulate the boundaries of the community that you are in. The question is, how do you generate these norms? What I'm promoting is that it should be the community itself, those that discuss about these norms, and put them in practice. And if a community likes fake news for the fun of it, you are an expert on humor, then that's fine. It is a community about fake news. Who makes the biggest fake news and let's all laugh about it? And that would be a different regulation. So what I'm saying is... Values belong to humans. Values belong to communities. The semantics of values have to be set by humans. And the norms have to be aligned with that definition of value. This is my point. Thank you. Thank you. I think it's one hour, so it's time for music now. Is it right? We can, if you want. Thank you. Thank you very much, Carlos. It was a wonderful afternoon for all of us. Thanks to you. So if you want me to take over right away, then I'm happy to do that, because Carlos picked a very well-known and very nice piece to end today's lecture, namely Johann Sebastian Bach's Prelude of the Cello Suite No. 1 in G Major. And I just picked a quite popular interpretation by Yo-Yo Ma. Before we hear it, I'm going to announce our next event very quickly. And that is going to be on May 17th. And we have a very special speaker, Francis Hagen, computer engineer, former Facebook employee, and probably best known as Facebook whistleblower. So we're very excited about that and you should not miss it. But now... without much further ado, Yo-Yo Ma playing Bach, so enjoy. Thanks for joining today, particularly Carlos and Oliviero, and see you next time. Thanks. Thank you. Thank you. Thank you. Thanks to all of you. Goodbye. Goodbye. Thank you. Bye. Goodbye. Thank you. Bye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 26.912,
+      "text": "Two, one, and we are live. Hello, everybody. Thanks, Walter, for discounting. Welcome to the lecture of today. I think we have already received number 30 of our lectures. Special welcome to Carlos Sierra. He is from the AI Research Institute in Spain, and he is the current president of the European Association for AI."
+    },
+    {
+      "start": 26.912,
+      "end": 56.096,
+      "text": "and he will talk about responsible artificial intelligence. Karl, thanks for being with us. Thanks for inviting me. The moderation will be done by Olivero Stock, who will then also introduce you, Karl, in more detail. Just a short reminder, but you all know it already, we have to talk for 30 minutes. Then we have 30 minutes Q&A, and the Q&A is moderated by Olivero. After that, we end, as always, with a piece of music."
+    },
+    {
+      "start": 56.096,
+      "end": 84.24,
+      "text": "Today, proposed by Karls. Thanks for proposing that. And thanks to Peter Kness for managing this music part of our lectures. I am happy to introduce now the moderator, Oliviero Stock. He is a distinguished fellow of the FAB Kappa, as it's called, the Fondazione Bruno Kessler, in Trento, Italy, which is a non-university research institution, a rather big one, with a focus on AI."
+    },
+    {
+      "start": 84.24,
+      "end": 111.568,
+      "text": "where he also was the previous director of this institution. His work is in AI, mainly natural language processing and intelligence user interfaces, very often applied to cultural heritage. And he is also what I really like. He has work on computational humor. So it's funny listening also to this AI-generated humor he does."
+    },
+    {
+      "start": 111.568,
+      "end": 139.728,
+      "text": "He was the chairman of the European Coordinating Committee for AI, which is now called OERI. He was the president of the Association for Computational Linguistics and also the president of the Italian Association for AI. He's a fellow of OERI, an AAI fellow, and a DFKI fellow. Olivero also received a doctorate honoris causa from the University of Haifa."
+    },
+    {
+      "start": 139.728,
+      "end": 166.336,
+      "text": "And he's a good friend since a long time, Oleg. Thanks for being with us. And the floor is yours now. Oleg, you're muted. Okay. Thank you, Hannes. Thank you to all participants. Good afternoon or good morning."
+    },
+    {
+      "start": 166.336,
+      "end": 194.704,
+      "text": "i i don't think i have to say good night i don't think we have attendance from the far east or from australia um by the way today we shall connect two parts of the mediterranean because i'm speaking from trieste and carlos who will deliver his talk is in barcelona so it's a mediterranean afternoon and"
+    },
+    {
+      "start": 194.704,
+      "end": 222.128,
+      "text": "just two words about responsibility and ethics i mean this is a i think a common theme for basically all disciplines for many scientific disciplines it is really a key issue think of biology biomedical matters or even physics and there is something special"
+    },
+    {
+      "start": 222.128,
+      "end": 249.952,
+      "text": "about ai of course where not only it's a matter of decision about about research about methodology about application but it is also involving the object of our research in the decision making so"
+    },
+    {
+      "start": 249.952,
+      "end": 277.104,
+      "text": "i think that a title like today's title is a very appropriate title responsible artificial intelligence which i believe includes everything um specifically i'm delighted that we have with us carlos sierra carlos is a key figure in ai"
+    },
+    {
+      "start": 277.104,
+      "end": 305.84,
+      "text": "uh in europe currently as harness has said is uh the uh chair of your e u r ai so the european ai association and his whole background is in artificial intelligence so i think he he he's got his phd from the technical university of barcelona"
+    },
+    {
+      "start": 305.84,
+      "end": 334.208,
+      "text": "in 1989 and after that he has always been very, very present in the AI scene. He published 300 papers and he's a key figure especially for agents, for artificial agents to which he devoted a lot of work and he has been also the"
+    },
+    {
+      "start": 334.208,
+      "end": 359.632,
+      "text": "chair of AMAS, the main agent conference. And by the way, he's been chair also of FIJCAI, which is the worldwide most important AI conference. So currently, as Hannes has said, Carlos is the rector."
+    },
+    {
+      "start": 359.632,
+      "end": 386.608,
+      "text": "of the AI Research Institute in Barcelona. And I'm delighted now to hear what Carlos will tell us this afternoon. Carlos, you're muted."
+    },
+    {
+      "start": 401.328,
+      "end": 429.936,
+      "text": "can you hear me now yes now we hear okay now do you see my slides yes yes okay okay so i was saying that um thank you very much olivero for this introduction um it is an honor for me to be with you this afternoon or this morning depending on what part of the world you are and as you said i mean responsible ai um is as in many other fields something we should have"
+    },
+    {
+      "start": 429.936,
+      "end": 459.28,
+      "text": "in our minds when we develop our work. In AI perhaps a bit more because I mean the use of AI in all sorts of activities in human life is making our work much more visible and much more kind of under debate. I will touch upon one particular aspect of responsible AI today which is that of values and how can we somehow embed values in AI systems. This is joint work with Nadine Osman and Nieves Montes from my institute."
+    },
+    {
+      "start": 459.792,
+      "end": 488.08,
+      "text": "which my institute is located, as you said, in Barcelona. So we are shared by the Mediterranean, who, by the way, someone, I don't know who was a poet that said that the Mediterranean is not a sea, but it's a continent that kind of puts together the people around it. So I strongly believe that, that the Mediterranean is something that unites the different nations around it. It is an institute that has 80 people doing research on AI."
+    },
+    {
+      "start": 488.08,
+      "end": 515.008,
+      "text": "We have 25 AI senior researchers, out of which six are your AI fellows. So it has a long tradition. We have is not a big institute, but it has a long tradition and it has graduated already over 100 PhDs in artificial intelligence. Why responsible AI? Well, as I said, AI is currently reaching an ethical frontier that."
+    },
+    {
+      "start": 515.008,
+      "end": 542.928,
+      "text": "is being analyzed by journalists, by the media, by politicians, by the society in general. We remember, I will not insist on this because in this kind of community, everybody is very well aware of the problems that AI is facing. The case of Cambridge Analytica, the works of the AI high-level expert group defining what trustworthy AI should be, the discussion at the European Parliament level of an AI Act, which is quite odd in some sense."
+    },
+    {
+      "start": 542.928,
+      "end": 571.296,
+      "text": "regulating a technology like AI at political level by politicians that are not really experts on the field. It's not the time to debate that, but this is probably something to discuss at length. The Barcelona Declaration that happened in 2017, asking for a kind of a reasonable use of AI technologies. Even there is business around ethics in AI. There is this London School of Economics."
+    },
+    {
+      "start": 571.296,
+      "end": 600.752,
+      "text": "that is kind of selling an online certificate on ethics for AI. So ethics is kind of invading our desks. And we not only have to deal with it, but we are sometimes facing legal charges, depending on what we do. For instance, in case of fake news, we see here a law by Singapore that is, it can put you to jail if you develop AI technology that is either creating fake news."
+    },
+    {
+      "start": 600.752,
+      "end": 627.792,
+      "text": "or propagating fake news. So it's very serious the fact that you are involved in some activity developing AI that is not respecting ethics. However, this is not just for the big principles. There are functionalities that are very difficult to somehow achieve in technology. This is an example, the YouTube Kids app."
+    },
+    {
+      "start": 627.792,
+      "end": 655.024,
+      "text": "in which parents wanted to have a control over what kids could see or could not see. It took them years to manage YouTube to change the specification, to change the implementation, so that the parents could have that control. So even for very small functionality changes, users, humans, we, society, are a bit abandoned by the large corporations. So it's not just the big words."
+    },
+    {
+      "start": 655.024,
+      "end": 682.176,
+      "text": "privacy security manipulation is also basic features and functionality that we would like human users to be in control. The question then from a scientific point of view is can we AI developers put humans in control? Can we do that? Can we really put humans in control? And the question is should we? Sometimes when you can do things you have to ask the question should you do it?"
+    },
+    {
+      "start": 682.176,
+      "end": 711.248,
+      "text": "And the question here is whether humans are moral or not. As you know, there are many kinds of humans. I'm sure you know a large variety of them. Here I am putting in front of you the case of the psychopaths, the case of amoral minds. These people enjoy the other's suffering or the other's losses. They're insensible to signs of physical pain. They lack fear and they're totally insensible to punishment."
+    },
+    {
+      "start": 711.248,
+      "end": 737.44,
+      "text": "They like instrumental or gracious violence. They don't have any remorse, any guilt, any shame. You can say, well, my God, these people, they cannot exist. Well, there are plenty of them in history. You have Pol Pot. More than one million people have been killed in Cambodia. Leopold II, the king of Belgium, making atrocities in Congo, in Africa. Heinrich Himmler, the organizer of the Holocaust."
+    },
+    {
+      "start": 737.44,
+      "end": 765.072,
+      "text": "Or in Spain, Torquemada in the 15th century that was in charge of the Spanish Inquisition. All these guys are clear psychopaths in the definition that you see here. So moral humans. Are these humans moral? Confronting the typical dilemmas that you have all seen in many shapes, I will just put you in front of one that I especially like. You have a patient."
+    },
+    {
+      "start": 765.424,
+      "end": 793.616,
+      "text": "That he's actually not a patient. He's a malade imaginaire. So he's someone that goes to the hospital, but he's completely healthy. But he's annoying nurses and doctors saying that he is ill of many different illnesses. But he is very, very healthy. He's so healthy that his organs could save the life of five people that will die in the next 24 hours unless they receive a transplant. Now, the question of the moral dilemma for this nurse."
+    },
+    {
+      "start": 793.616,
+      "end": 822.176,
+      "text": "is should I kill this guy, take the organs off and save the life of the other five? Formally speaking, this is very similar to the trolley classical examples, but this is a much more difficult dilemma because it's the nurse that has to kill the person in order to save the other's life. I don't know what would you do in this situation. You could think for a few seconds, what would you do? The answer is that the psychopaths would give"
+    },
+    {
+      "start": 822.176,
+      "end": 849.472,
+      "text": "in almost 60% is that they would kill them. They will kill the guy. So they have no problem in killing the guy for a good purpose, which is saving the other five. Normally, people would say, no, I will not kill the person. In this case, the control group said in a 13.6%, yes, they would kill the person. And look, the control group were the nurses themselves in the hospital."
+    },
+    {
+      "start": 849.472,
+      "end": 877.456,
+      "text": "So be careful when you go to a hospital from now on. So even people that are there to save lives, like the nurses or the doctors, they may be tempted to apply this radical measure to save lives. So humans in control, yes, but as communities, and this will be the motto of the talk I will give in the next 25 minutes."
+    },
+    {
+      "start": 877.456,
+      "end": 904.384,
+      "text": "We as individuals take different decisions in front of similar situations. The case of the psychopaths I explained is an extreme case. But in many other kinds of decisions, we take different decisions. We interpret social and moral values differently. That's why we take decisions differently. What is more important, the life of five people, the life of one person? People weigh things differently, depending on their culture, depending on many other factors."
+    },
+    {
+      "start": 904.384,
+      "end": 932.784,
+      "text": "We need, therefore, a social contract with technology that enables communities to rule, not just individuals. Because if we leave technology to the decision of an individual, then basically what we have in social choice terms is a dictatorship. It's what will probably happen now with Twitter. There will be one person taking decisions on behalf of everybody in the planet. Now, the idea, what I will defend here is that it would be much better if we allow communities to rule."
+    },
+    {
+      "start": 932.784,
+      "end": 960.896,
+      "text": "the decisions on technology. So as a community we will need to decide what rights do we agree to surrender as a society or group to technology in exchange for the protection of our remaining rights and the maintenance of the social order. This is the same as Rousseau had at the end of the 18th century. So it's okay, we cannot probably have all our values respected by technology because in particular values are conflicting."
+    },
+    {
+      "start": 960.896,
+      "end": 988.88,
+      "text": "But what do we agree to surrender? And in exchange of what? This is something that we as a community need to decide. So from an AI perspective, that calls, of course, to build more AI. So how can we do then value engineering? How can we embed values into systems? Why that? Well, the first thing is that it has to be us. I mean, the AI designers. I mean, it has to be us who takes the lead on this."
+    },
+    {
+      "start": 988.88,
+      "end": 1018.416,
+      "text": "on this question. We need to put people in control because AI must be social. So the idea of having communities of individuals or even of devices taking the lead in defining what values to respect is because we are going to live, we are actually living in a massive AI, sorry, in a massive multi-agent system. And there will be billions of AI systems interacting, interacting among themselves and interacting with humans."
+    },
+    {
+      "start": 1018.416,
+      "end": 1045.68,
+      "text": "Our future society is a colossal multi-agent system. And you have plenty of examples. I mean, the work by Peter Stone on the crossings without lights that makes, if cars communicate among them, makes the crossings much safer and much more efficient. Or the fact that you have multi-robot systems in which robots with different capacities need to communicate and collaborate in order to solve complex problems. Or different IoT."
+    },
+    {
+      "start": 1045.68,
+      "end": 1074.672,
+      "text": "systems in our home or in our neighborhood that can coordinate as well in order to improve the use of energy or the use of other resources. So a colossal multi-agent system. So we need technology that would put humans in control, and that includes a large number of technologies that we have developed to move from individual rationality, which was a classical AI for a long time, into social intelligence, like communicative interaction."
+    },
+    {
+      "start": 1074.672,
+      "end": 1104.384,
+      "text": "You see a picture here of kids. This was a system that we built in a museum in London where kids were using the mediation of a tablet in order to decide which would be the paintings to put on an exhibit in the museum. And basically, they were just arguing. They were just voting in order to decide. They were expressing their preferences. And through this interaction, they managed to create an exhibit. So they used all these technologies, communicative interaction."
+    },
+    {
+      "start": 1104.384,
+      "end": 1129.584,
+      "text": "social coordination in when they were discussing agreement technologies like negotiation and argumentation, social choice, voting for what to do, and so on. So there is a number of technologies that allow for these multi-agent systems to coordinate among them. The problem when we have this situation is how do we guarantee that values are respected when entities are autonomous?"
+    },
+    {
+      "start": 1129.584,
+      "end": 1158.544,
+      "text": "This is a big question. Values are social constructs, not universals. I mean, we cannot think that we share all the same interpretation of values. They are in particular context dependent, but they are also cultural dependent. So it is not possible to have once and for all the values that we are going to use. When systems are fully autonomous, we cannot guarantee behavior. So this adds another complexity to the coordination of systems. So how can we..."
+    },
+    {
+      "start": 1158.544,
+      "end": 1187.568,
+      "text": "guarantee that the behavior of such systems will abide by the values we want the system to abide. What can we do? Well, we can do what human beings have been doing for a long time. For instance, when some unacceptable behavior is observed, generate or suggest repair actions or punishments. This is the legal approach. Or if you want a desirable behavior,"
+    },
+    {
+      "start": 1187.568,
+      "end": 1217.504,
+      "text": "You can gear it via incentives. This is the economic approach. We can get inspiration from how we humans model responsible behavior. And I will show you three examples. One is a very classical one, Wesley Hoffeld. This person at the beginning of the 20th century defined, well, he was fed up with the judges interpreting the notion of right in as many ways as you can imagine. So he wanted to formalize once and for all,"
+    },
+    {
+      "start": 1217.504,
+      "end": 1246.72,
+      "text": "the concept of and the meaning of right. So he ended up with an ontology based on eight concepts. You can see them here, right, no right, privilege, duty, and so on. That could be understood as opposites. So right and no right, one is the negation of the other. But also they introduce the notion of a correlative. So if I have the right about something, then someone has the obligation about that thing. So I cannot have a right if there is no obligation."
+    },
+    {
+      "start": 1246.72,
+      "end": 1275.344,
+      "text": "no duty kind of associated to it. So that was very original in its modeling and it was used for the first half of the 20th century to represent legal knowledge and basically the system is so powerful that almost all legal corpus can be represented using his ontology."
+    },
+    {
+      "start": 1275.344,
+      "end": 1304.56,
+      "text": "He's at the basics of future works during the 20th century on deontic logic and other kind of legal representation of the system. Again, here laws for him were understood as constraints, were understood as norms. Another example much later in the 20th century, Douglas North with the new institutional economics. Basically, Douglas North understood that societies of humans basically are"
+    },
+    {
+      "start": 1304.56,
+      "end": 1332.016,
+      "text": "shaped by constraints that determine the structure from a political, economic, and social point of view. Again, what humans do when they organize themselves is determine the constraints that fix how they are going to interact. He deserved the Nobel Prize in 1992 for that work. Along the same line, and this is the one that I will spend a bit more time,"
+    },
+    {
+      "start": 1332.016,
+      "end": 1358.88,
+      "text": "is Elinor Ostrom. Elinor Ostrom worked at the end of the last century, beginning of this one, on the concept of commons. She wanted to explain that collective action can be sustainable, that the tragedy of commons is not unavoidable, as many people would think. And she defined self-governing institutions. This is a beautiful book, Governing the Commons, that I really recommend all of you to."
+    },
+    {
+      "start": 1358.88,
+      "end": 1387.856,
+      "text": "to read in case you have not read it. She was the first woman to receive the Nobel Prize on Economics in 2009. What she did was to study communities across the world. We were talking about the Mediterranean. This is the east coast of Spain. You see here the city of Valencia, Alicante. Okay, so in this region, rain is very irregular. There are periods in which there is no rain. There are periods where there is a lot of rain."
+    },
+    {
+      "start": 1388.176,
+      "end": 1417.872,
+      "text": "The point is how to sustain the crops in such a situation. Well, from the 15th century and even before, people organized themselves. In that date, May 29th, 1435, a number of irrigators approved formal regulations on how to share water. They defined or they set a number of rules that actually were being used for much earlier than that date. The rules are about maintenance of the canals."
+    },
+    {
+      "start": 1417.872,
+      "end": 1446.416,
+      "text": "to share water, the fines to be put when someone would not respect the particular rules, the officials that will put those fines, and how the water would be used depending on the environment, depending on how much rain is being received on a particular period of crops. These are a fantastic example of situatedness of a community. And the conclusion of her work and her book is that in many, many societies, human communities,"
+    },
+    {
+      "start": 1446.416,
+      "end": 1473.232,
+      "text": "are successful. So it's not true that they necessarily will be failing to be sustainable working together. She created the basic principles, Ostrom's principles. I don't have time to go into too much detail, but the eight principles that makes a community sustainable are based on clearly defined boundaries, who is or is not a member of the community."
+    },
+    {
+      "start": 1473.232,
+      "end": 1499.456,
+      "text": "Appropriation and provision, what do you should provide to the community? What can you get out of the community? Collective choice, how do you elect officials in the court to determine then who will be punished, who will be not punished? The monitoring, for instance, the tourno system they took, it was very clever. So when someone is watering her field, then the next one is waiting for that field to finish the watering so that you can open the gate."
+    },
+    {
+      "start": 1499.456,
+      "end": 1529.184,
+      "text": "and water yours. And that is interesting because the one next in the queue is monitoring what the other guy is doing. Sanctions, conflict, rights to organize. These are the eight dimensions that she studied in more than 90 communities. Here you have a number of community norms, like each farm on a canal receives water in a rotation order. If a farmer fails to open his head gate when the water arrives there, he misses his turn and must wait for the next rotation."
+    },
+    {
+      "start": 1529.184,
+      "end": 1554.64,
+      "text": "You have three norms here, very funny. The households receive timber. This is about another community in Switzerland in which families would send a representative to cut trees and make piles of timber for the winter. And they had all these rules. For instance, the workers will make equally sized piles of logs. Why that? Because a lottery will determine which pile goes to which household. So there is no incentive in making one pile bigger than the other one."
+    },
+    {
+      "start": 1554.64,
+      "end": 1581.264,
+      "text": "So everybody will work for making the piles and then a lottery will determine who takes the logs home. Very clever norms determined and created by a long period of time and making the community successful. Now, how are norms created? OK, this is not because these norms are somehow seem unchangeable for centuries in many cases. How are they created? How humans can."
+    },
+    {
+      "start": 1581.264,
+      "end": 1610.864,
+      "text": "get to the norms and how do they relate to human shared values? The question is that these norms are based on that we want everybody to keep their crops because we want everybody to have food at table and the same we want everybody to heat up in winter in Switzerland. So there are a number of values that are those that inspire the norms. So the values are the primitive elements. In the digital world values as primitive elements appear also in many of our discussions. You can have here an example."
+    },
+    {
+      "start": 1611.888,
+      "end": 1638.24,
+      "text": "I'm checking my time. And as usual, I mean, I'm talking too much. I will just go to one of them. So you can have a tool. I will show you. You can imagine a community of users of an application on photographs that at some point, one of them trigger an evolution point saying, I'm not happy that anyone can tag anyone else in a photo. I suggest we change the rule."
+    },
+    {
+      "start": 1638.24,
+      "end": 1662.464,
+      "text": "Me too. My photos page is cluttered. I suggest we disable timing. Okay. You can imagine a discussion argumentation here, perhaps a voting, as you see at the top of that screen on the left. And then what you would like is that the technology, once that decision has been made by the community of people that has decided on a good norm to regulate their interactions, that automatically through two..."
+    },
+    {
+      "start": 1662.464,
+      "end": 1691.952,
+      "text": "three and four becomes part of the code gets coded into the system so that the system behavior changes for that community so that that new norm is actually implemented so this is another example in in single mothers communities that we developed but it's similar to the previous one so i will i will just skip that and i will go to the relationship between values and norms okay i mentioned before that the future is a massive multi-agent system we have human software agents"
+    },
+    {
+      "start": 1691.952,
+      "end": 1720.656,
+      "text": "And so far, we understand that humans should be responsible of embedding values into autonomous agents. I mean, we want technology to serve us, to extend our capabilities. We want technology to respect our values. So we should, humans, be those defining the values we want, and we should be those embedding the values into the autonomous agents. So the programmers need to turn values into code."
+    },
+    {
+      "start": 1720.912,
+      "end": 1749.424,
+      "text": "But what are values? So this is a long discussion. It will go beyond the time we have here. But value for many, here there is Schwartz's theory, who is one of the most used. Understanding values as abstract concepts that are basically grounded as permanent goals. For Schwartz, the values serves a purpose. For instance, biological needs for humans, like eating, surviving, social coordination, working as a group."
+    },
+    {
+      "start": 1749.424,
+      "end": 1777.248,
+      "text": "survival of the group and welfare of the group. And the goal basically what aims is accomplishing that purpose for which the value is serving. Of course, in the case of software agents, probably that purpose cannot be a biological aspect, but we can still retain the left part of that triangle so that moral values can be grounded as motivational goals. So these are permanent goals that agents pursue. So the goals become the proxies for values."
+    },
+    {
+      "start": 1777.248,
+      "end": 1806.048,
+      "text": "is how values manifest in the real world. Goals are related to the state of affairs. You can check whether a goal is achieved or not. And you have history of actions that allow you to see whether a particular goal or you're approaching a goal or not. They have a permanent status. So if you want something like, I don't know, women and men should have similar salaries. So if that is a goal, then you can, if something will be permanent, you can check."
+    },
+    {
+      "start": 1806.048,
+      "end": 1835.76,
+      "text": "every year along a long time. And also, if you have a value hierarchy, some values more important than another hierarchy, you can also translate that into goal hierarchies. So it seems like translating moral values into goals, this is good because it is talking the language of AI. So once we have values turned into permanent goals, then agents can evaluate the state of the world and see whether the values are respected or not."
+    },
+    {
+      "start": 1835.824,
+      "end": 1865.648,
+      "text": "The only thing we want humans to have control, and this is the key issue, we said at the beginning we want humans to control the technology. The way I suggest we do that is to make humans control the meaning of values. What does a value mean? And once this is done through the definition of these motivational goals, leave the autonomous agents to take that and act autonomously up to the level of those values."
+    },
+    {
+      "start": 1865.84,
+      "end": 1894.96,
+      "text": "How? Basically using norms, as human societies have done, as legal experts from the 20th century explained, as the neo-institutional economics has explained that in the 20th century. Let's promote values using norms. Norms basically tell us the do and don'ts over the actions that autonomous agents can make, under what circumstances, with what effects. Norms are basically the main value-promoting mechanism that we can use in our systems."
+    },
+    {
+      "start": 1895.664,
+      "end": 1922.912,
+      "text": "What they do basically is they change the incentive structure and they steer systems towards outcomes that are better viewed in terms of values. So they're closer to the grounding goals. This is the idea. You can summarize in this schema. So a value legitimizes a norm because a norm promotes that value. How? Steering the system towards outcomes that where the goals evaluate in a positive way."
+    },
+    {
+      "start": 1922.912,
+      "end": 1951.28,
+      "text": "And these goals are basically the semantics we are giving to values. So this is the idea of the system. When that is the case, we will say that the norms are aligned with respect to the values. In mathematics, this is the only equation here in this presentation. So basically, what do norms? Norms basically select which are the possible action paths that a community has."
+    },
+    {
+      "start": 1951.28,
+      "end": 1979.68,
+      "text": "given these outcomes restricted by the norms, we can evaluate with this function f, we can evaluate a certain value, a certain value's interpretation as a goal, up to which point it is satisfied. And what is the alignment? The expected value of that. So a set of norms is more aligned with a particular value if it steers the system towards paths of action for which the value"
+    },
+    {
+      "start": 1979.68,
+      "end": 2007.904,
+      "text": "the goal associated to the value has a better outcome. So that's the notion of alignment of norms with respect to values. That leads to a methodology that we can implement in systems. So again, I mean, it's AI, more AI to have responsible AI. Define the variables that determine the state of the system. Then define the parametric norms that regulate the transitions, that regulate the behavior of the different agents."
+    },
+    {
+      "start": 2007.904,
+      "end": 2037.424,
+      "text": "define the set of values of interest. Which values do we want to embed into the system? This is a human decision. It will not be the agents, it will be the users that determine which are the interest and the values of interest. And then apply an optimization algorithm to find the parameters that maximize the alignment. So which are the actual norms that will better defend, better abide by the values that we are interested in. And then we can make a number of other analysis like"
+    },
+    {
+      "start": 2037.424,
+      "end": 2056.352,
+      "text": "sharply value of norms, so which is the norm that is more valuable? Value compatibility, if we optimize for a value, are we satisfying other values or not? And then we can iterate this process as much as we want. We have a paper on this topic last year in Amas, now appearing in"
+    },
+    {
+      "start": 2056.352,
+      "end": 2082.672,
+      "text": "Now, there is an example here, like a tax system, in which basically we are talking about two values, equality and fairness. Let me see if I can go through it quickly. But you can imagine a normative system, which is how much should this agent pay, so taxing, how to redistribute the taxes that they have collected, how often should evaders be detected, is the probability of detecting evaders, and how much to find evaders when detected."
+    },
+    {
+      "start": 2082.8,
+      "end": 2112.384,
+      "text": "And then once we define the normative system, we can optimize and we can then find what you see in this table. I will basically, I will quickly go to it. I said, what are humans doing here? It's interpreting, giving the semantics to equality. In this case, equality, we can model it as the Gini measure. Gini measure is a way of understanding how dispersed, how different are the salaries of people, how different are the bank accounts of people. Fairness."
+    },
+    {
+      "start": 2112.384,
+      "end": 2140.416,
+      "text": "Here it is interpreted, the semantics are given by making the cheaters the poorest in society. It's kind of a revenge semantics for fairness. Aggregation is trying to do both things at the same time. Okay, the optimal normative parameters are those that you see here. For collection, society is divided into five chunks of salaries, like most taxing systems, and this is the percentage that you apply to each one of them."
+    },
+    {
+      "start": 2140.416,
+      "end": 2167.184,
+      "text": "blocks of people. Predistribution, what is the percentage of the money you collected that you give back to people in the same chunks. Catch, probability of catching a cheater. Find, the percentage that you find that particular person. With these parameters, you optimize for equality with an alignment of 0.95. It's almost perfect. That means these are the optimal parameters to make the best you can with these norms for this kind of problem."
+    },
+    {
+      "start": 2167.184,
+      "end": 2197.152,
+      "text": "So we give the semantic of values, the system finds the right set of norms. Okay, this is telling me I spent 30 minutes already. I'll try to finish very quickly. So you see a different set of values for fairness with a good alignment. For aggregation, things are not so good, as you can see. I mean, what is that telling us already? When you have two values, optimizing for both values at the same time is not necessarily possible. Not only that, Shapley values."
+    },
+    {
+      "start": 2197.152,
+      "end": 2225.456,
+      "text": "you can see here, I will not go into the details, that for equality, the most relevant norm is the one collecting taxes. If you see at the top n sub 1, 0.5, Shapley value is how much, what part of the alignment is responsibility of that norm? A large part. For fairness, not that much. And for the aggregation, nothing. It's totally irrelevant. It's the other norms that matter in that situation."
+    },
+    {
+      "start": 2225.68,
+      "end": 2253.232,
+      "text": "I will finish very soon. Value compatibility. If you optimize for equality, bad news for fairness. But if you optimize for fairness, good news, relatively good news for equality. Again, depending on what, how do you organize the optimization for the different values, you may have different results. Okay. And you can, as I said, once you optimize that, you can add a new value. You can modify the semantics. This is the way of playing."
+    },
+    {
+      "start": 2253.232,
+      "end": 2281.488,
+      "text": "with the system. And again, a community of people may use this methodology in order to explore what are the values they want to have and what are the norms that should be defined. It can be even more challenging. It can be agents autonomously propose, negotiate, and agree on the norms. So it could be the AI exploring the space of norms, trying to find, given the semantics for a value, what are the actual norms that should be implemented. This is part of our current work."
+    },
+    {
+      "start": 2281.488,
+      "end": 2308.992,
+      "text": "So norms then will refrain not just the proposals of individual value structures but the aggregation of them, the emergent social values. Okay, I will just do a summary. So values are coded into agents as permanent goals designed by an outside human team. Technical norms promote values by shifting the system towards outcomes that come closer to the grounding goals. Agents could autonomously negotiate over which norms to adopt in order to improve the value alignment."
+    },
+    {
+      "start": 2308.992,
+      "end": 2337.888,
+      "text": "A norm negotiation not explained here could be a form of value aggregation of individual values into these emergent community or social values. Conclusion, we leverage agent autonomy to promote ethical behavior through the crafting of norms to keep humans in control who will define, decide what is the meaning of values. And this will be the important element on humans. And basically, I will just finish here."
+    },
+    {
+      "start": 2337.888,
+      "end": 2365.44,
+      "text": "There are plenty of open research questions that you can see a few of those here. When are two values similar? How do you extract a normative position from text? Olivier, this is for people in natural language. How to deal with ethical conflict, conflicting norms? How to assess the impact of a normative change? How to learn norms from behavior? This is a big and difficult problem. And so on. So there is a research program for the multi-agent systems community."
+    },
+    {
+      "start": 2365.44,
+      "end": 2389.728,
+      "text": "trying to answer all these and other questions so thank you very much for your attention and i'm going to be very happy to answer questions thanks thank you very much carlos it was a wonderful talk very deep and full of food for thought so now"
+    },
+    {
+      "start": 2389.728,
+      "end": 2417.568,
+      "text": "wants to intervene please raise your hand or or send a message whatever you want so we have moshe moshe please unmute yourself yes so thank you for this enlightening talk and my question is is in some sense about the title but about the philosophy of the whole thing should we should we be talking about responsible ai"
+    },
+    {
+      "start": 2417.568,
+      "end": 2447.408,
+      "text": "or about responsible use of AI. Because when you talk about responsible AI, somehow the technology has to be responsible. And when I look at what's happening now, it's the technology is technology. It's just a tool. It's being used irresponsibly by corporations. And somehow by talking about responsible AI, we are shoving the problem towards somehow let's design a better AI system instead of putting responsibility where it should be."
+    },
+    {
+      "start": 2447.408,
+      "end": 2475.232,
+      "text": "on the people who deploy these systems? Thanks for the question. It is a very important and part of the debate. So, of course, corporations must be responsible. That's no doubt of it. The question is, in order for corporations to be responsible, one possibility is to develop further technology that makes these corporations create AIs."
+    },
+    {
+      "start": 2475.232,
+      "end": 2504.88,
+      "text": "that are value aware so that the technology itself knows what the values of the users are so that it can adapt to those values. So it's building more flexible technology. So in the same way that we humans, when we decide how do we organize as a community and we define the charter, the bylaws of how are we going to behave, we should have the same thing for technology. So it cannot be that the charter is in the hands."
+    },
+    {
+      "start": 2504.88,
+      "end": 2532.384,
+      "text": "of the corporations and that the users have no say in that charter. The charter should be part of the technology itself and the community should be able to modify and adapt the charter to their needs based on the values. So this is what I'm proposing here is generating new technology to make technology value aware. So again, I'm sorry, you're..."
+    },
+    {
+      "start": 2532.384,
+      "end": 2561.008,
+      "text": "Your question. I think corporations must be responsible. And in order to do that, we are developing now, how to say that, regulations, for instance, at the level of the European Parliament I mentioned at the beginning. So there are a number of regulations that will force corporations to have certain behavior when generating, when selling, when producing technology. This has to be in place. But what I am promoting or what I am aiming at."
+    },
+    {
+      "start": 2561.008,
+      "end": 2589.712,
+      "text": "is that having technology that is more flexible than what we have now and that is capable of understanding our values among other things because we will need to ask for explanations to that technology and if the technology is not value aware it will be very difficult that it explains us why a certain decision is being made while if the technology understands our values it will be able to explain why certain decisions were made thank you thanks"
+    },
+    {
+      "start": 2593.552,
+      "end": 2615.6,
+      "text": "Maybe there is something. Thank you. Thank you, Carlos. Really very interesting, stimulating presentation. And it kind of provoked me a little bit to think that you also are you going to look into the inverse of your methodology. So what I mean is you go from with the methodology you go from value to norms to code."
+    },
+    {
+      "start": 2615.6,
+      "end": 2644.512,
+      "text": "So to say. And actually, the example that you gave is the inverse of that, which is the example of the tagging of the photos. The code was already there and implicitly it already had encoded a norm. Namely, you know, everybody could do tagging and that was a norm. And if you go from code to norms or to values, that may be quite difficult because it's not only about what the code does, but also what has been left out of the code."
+    },
+    {
+      "start": 2644.512,
+      "end": 2672.464,
+      "text": "Can you imagine that you do the inverse? Because that's actually the whole argument of Lessig also, Lawrence Lessig at the time, code as law. There is already a norm setting happening through the software and the coding itself. Do you see that as a possibility? Are you looking into that? Yeah. So maybe the way I explained that maybe was not completely clear. It was very fast in that bit. But my point there was that."
+    },
+    {
+      "start": 2672.624,
+      "end": 2697.504,
+      "text": "human beings arguing in natural language. And once there is an agreement on what is the accepted norm, coding that. So it's really going from natural language to a formalization of the norm out of the language and embedding of the code into the system. So it is really from value description in natural language into code."
+    },
+    {
+      "start": 2697.504,
+      "end": 2726.96,
+      "text": "So this is the point. Of course, once you do that, when you are at the code level, you can ask yourself many questions. For instance, is the norm equivalent to another one you already have? Is this norm in contradiction with someone that you already have? So these are the questions that you can put yourself. The inverse way, if I, so is how can you go from, in a sense, behavior to values? This is a very difficult one."
+    },
+    {
+      "start": 2727.152,
+      "end": 2756.208,
+      "text": "So when you observe human beings doing actions, trying to deduce out of it or induce out of it what are the values they are defending, this is very difficult. And I don't have an answer for that. So my position so far is from humans expressing in natural language or formally the semantics of a value and the preferences over the values and then going into code. This is what I propose. Thanks. Hannes."
+    },
+    {
+      "start": 2757.072,
+      "end": 2781.296,
+      "text": "Thanks, Carlos, for this talk. I think it's an excellent example of operationalization of this, let's say, ethical approaches. And I think this is a very good example of that. So it's more and more a remark because it also shows how to put the human into the loop. Because the central role here is the human and it's not so much the..."
+    },
+    {
+      "start": 2781.296,
+      "end": 2803.232,
+      "text": "technology, it's not the software, it's even the human being there. As such, it's really uncovering and moderating this discussion among a group of people. Is this understanding correct? Yes, this is a perfect assessment of what I explained. And actually, my position is that"
+    },
+    {
+      "start": 2803.232,
+      "end": 2831.68,
+      "text": "Actually, we cannot leave a single human to take decisions. It has to be a collective democratic process. And I think that should be at the level of communities. This is Elinor Ostrom's approach. Human beings have been working well in small communities. And I don't know, I can imagine the parents of a school defining how they would like to use their WhatsApp group and what should be the rules of the WhatsApp discussion they might have. So this is the way I see things."
+    },
+    {
+      "start": 2831.68,
+      "end": 2861.68,
+      "text": "Of course, the question here always raises, how do you scale that? I mean, it's very difficult. And Eleanor Ostrom says it is really difficult. How do you go from, I don't know, a 1,000 community organizing themselves into a nation or a large state? It's very difficult. So probably this technology or what I'm proposing is good for small groups and not for large communities. But still, the important aspect is that people have a say."
+    },
+    {
+      "start": 2861.68,
+      "end": 2889.664,
+      "text": "And they understand that the technology is at their service and not they at the service of the technology. Thank you. Eric, please. Thank you. Thank you, Carlos. Very, very interesting talk and rather complex, I should say. I'd like to ask you a slightly critical question. I mean, I'm sure you are familiar with the work of Hubert Dreyfus, who in the 70s."
+    },
+    {
+      "start": 2889.664,
+      "end": 2917.968,
+      "text": "criticized AI for its efforts to put everything into rules and argued from a hermeneutical and phenomenological background that this was unlikely because humans usually take into account context very much and the slightest context change may change how we assess situations. Now it seems to me that what you're trying to do"
+    },
+    {
+      "start": 2917.968,
+      "end": 2929.312,
+      "text": "is is a little bit prone to that criticism because um and then the trolley problem you were using is actually is actually a good example because"
+    },
+    {
+      "start": 2929.312,
+      "end": 2959.296,
+      "text": "You know that the trolley problem, when you change who the people are involved on the tracks, if you make them old or young, if you make them criminals or mothers, people will change their mind. And it's very difficult to see what are the values that people are using. Well, you may be possible to elucidate some values, but that doesn't mean that values actually are there in the sense of a stable value that people actually have."
+    },
+    {
+      "start": 2959.296,
+      "end": 2988.992,
+      "text": "They may change their mind three times during a day and parts of a society may differ very well in their values. But it seems to me that this kind of at least, let's say, some degree of fixed values would be really important in your approach, because otherwise it's really difficult to derive the rules that you're trying to derive. So a few things on these."
+    },
+    {
+      "start": 2988.992,
+      "end": 3008.064,
+      "text": "So when the sociologists like Schwartz define their theories on values, I mean, most of them are based on the idea that there is a universal set of values. So the notion of fairness is something universal. What they say, and you are completely right on that, is that it is contextual."
+    },
+    {
+      "start": 3008.064,
+      "end": 3037.184,
+      "text": "So the way that you interpret fairness will depend on the particular context you are. And in the example of the irrigators in the Mediterranean coast, it was exactly like that. So the thing is, the way you are going to use the water will depend on the meteorological context in which you are situated. Depending on that, you will apply certain rules or you will apply others. Of course, you may say the contexts are infinite. Well, in certain applications, I would challenge that in the context of the irrigation."
+    },
+    {
+      "start": 3037.184,
+      "end": 3065.76,
+      "text": "I mean, the contexts are not infinite. I mean, it's the amount of water that you're having in a spring. And that is, you can categorize that into a few cases. So you can probably generalize or define chunks of rules that apply to different kinds of contexts. And actually, law is about that. All law that we have developed in human history is about defining what rules to apply to what particular context. So I would say..."
+    },
+    {
+      "start": 3065.76,
+      "end": 3091.536,
+      "text": "Yeah, it is difficult, but we are able to organize ourselves and we are able to determine how we organize our life in a family, in our neighborhood, and we are able to express that in natural language in a way that we all understand. So the thing here would be to put natural language technologies, knowledge representation technologies, to the service of the extraction of those normative positions so that we can code them."
+    },
+    {
+      "start": 3091.536,
+      "end": 3117.568,
+      "text": "I think that's doable. And in our experience with small communities of people, this is an approach that we can take. So in theory, context could be infinite, but in reality, they are not that much. That would be my point on that. Thanks. Next one is Gregor Rosenauer. Yeah, thanks. So I wrote my question in the chat, but it's probably... Oh, sorry."
+    },
+    {
+      "start": 3117.568,
+      "end": 3145.2,
+      "text": "easier to repeat it here. So from what you've said, and you also briefly talked about Twitter, which is a pretty interesting field of research now, maybe even, because Elon Musk talked about open sourcing the algorithm that drives Twitter's timeline and filtering. So I see a huge window of opportunity to apply the methodologies you described and which are also still in research and development."
+    },
+    {
+      "start": 3145.456,
+      "end": 3175.36,
+      "text": "Yeah. The nice thing here in case of Twitter is that you could, up to some point, create sub communities within it that would organize the way you receive email, the one you want to trade, hate the speech or not. I mean, these kind of things. And then you associate to a particular community, to a particular way of interacting through Twitter. Of course, some people say, yeah, but then how do you when you disagree with the norms of a particular community, how do you do then? Well, what happens in many human societies when."
+    },
+    {
+      "start": 3175.36,
+      "end": 3203.68,
+      "text": "When a community, there is a strong disagreement in a community, then a community drifts away. So you can have from one community the birth of two other communities. And this is absolutely normal in human life. Communities appear and disappear. There is an ecology of communities, and each one of them is identified by the way they want to interact. So I think if it opens, the algorithm is..."
+    },
+    {
+      "start": 3203.68,
+      "end": 3232.08,
+      "text": "Good news, but it should go beyond that and should allow people to shape the algorithm to what they want. Thank you. We have Ari Reza. Yes. Hello. Thank you for your interesting talk, Carlos. Hi. I want to add something to your talk based on my some experiences."
+    },
+    {
+      "start": 3232.08,
+      "end": 3261.872,
+      "text": "Naturally, when we face two human things, human issues, we face two interrelationships of some values and also some norms. I mean, if we study interrelationship or interaffection of human values, we make new values, we provide new values. And based on these values, we make new norms."
+    },
+    {
+      "start": 3261.872,
+      "end": 3287.344,
+      "text": "So some of the responsibility of AI development solutions, AI-based development solutions. For example, in intelligent agents, you talk about that. We try to build new norms by the AI tools, by the AI functions or algorithms. Because I have some experiences with..."
+    },
+    {
+      "start": 3287.344,
+      "end": 3316.56,
+      "text": "solutions to study some communities between some parties in Iran. And I see after, for example, six months that new norms come to our solution after we study interrelationship and interaffection of norms and values. Thank you. I just want to add the things to your very interesting talk."
+    },
+    {
+      "start": 3316.56,
+      "end": 3346.56,
+      "text": "Thanks for the remark. I agree. And actually defining the meaning of values is not an easy job. So what equality means in the abstract, when it gets particular, you can have many different views on that. And that's why what is needed is some not only normative positions, but also how do you aggregate the semantics of values? Can you have a slightly different notion of equality than me?"
+    },
+    {
+      "start": 3346.56,
+      "end": 3375.328,
+      "text": "And can we put that, can we reach an agreement on some intermediary semantics between yours and me so that we agree on a particular norm? I think this is what human beings we do all the time. It's kind of balancing these norm, these value definitions. And I agree. Sometimes we may go into a normative position. We put that into practice and we see that doesn't work. And actually, it's not aligned with the values that we want to defend. And this is a dynamic process."
+    },
+    {
+      "start": 3375.328,
+      "end": 3404.944,
+      "text": "um in human societies and i expect that this will happen also in the future thank you thank you thank you if there are no further questions i would ask a question myself um you started from fake news your talk and in general if you address the problem of communication from the machine toward humans"
+    },
+    {
+      "start": 3406.992,
+      "end": 3431.488,
+      "text": "there are norms in our values in the first place in our society the value of truth for instance that different communities may again be different but also the means that you have for communicating basically there are"
+    },
+    {
+      "start": 3431.488,
+      "end": 3458.64,
+      "text": "to actions. What is the final goal in communication? You want the other person to change the state of mind or do something, whatever. And there is the means that you use for communicating. For instance, argumentation or regard to positive emotional feeling or negative emotional feeling or even..."
+    },
+    {
+      "start": 3458.8,
+      "end": 3487.632,
+      "text": "in certain extreme situations lie to achieve the goal. So, any thoughts about this area of yours? Yeah, I mean, the case of fake news is something, yeah, well, it's a big issue for all of us. The question is, how do you attach that from a value perspective? I think in most value, well, let's assume that you have a value system in which truth, as you said,"
+    },
+    {
+      "start": 3487.632,
+      "end": 3514.784,
+      "text": "is important and you want to have your technology abide by that, then it would be totally aligned with that value, the fact that you ban from a community someone that spreads fake news. What does it mean? You can generate norms that says if a certain number of reputable members of the community mentions that the certain news are fake, then the person that is propagating it will be banned from the community. That could be a norm."
+    },
+    {
+      "start": 3514.784,
+      "end": 3542.608,
+      "text": "that would regulate the boundaries of the community that you are in. The question is, how do you generate these norms? What I'm promoting is that it should be the community itself, those that discuss about these norms, and put them in practice. And if a community likes fake news for the fun of it, you are an expert on humor, then that's fine. It is a community about fake news. Who makes the biggest fake news and let's all laugh about it? And that would be a different regulation. So what I'm saying is..."
+    },
+    {
+      "start": 3542.768,
+      "end": 3571.92,
+      "text": "Values belong to humans. Values belong to communities. The semantics of values have to be set by humans. And the norms have to be aligned with that definition of value. This is my point. Thank you. Thank you. I think it's one hour, so it's time for music now. Is it right? We can, if you want. Thank you."
+    },
+    {
+      "start": 3572.08,
+      "end": 3598.944,
+      "text": "Thank you very much, Carlos. It was a wonderful afternoon for all of us. Thanks to you. So if you want me to take over right away, then I'm happy to do that, because Carlos picked a very well-known and very nice piece to end today's lecture, namely Johann Sebastian Bach's Prelude of the Cello Suite No. 1 in G Major."
+    },
+    {
+      "start": 3598.944,
+      "end": 3624.8,
+      "text": "And I just picked a quite popular interpretation by Yo-Yo Ma. Before we hear it, I'm going to announce our next event very quickly. And that is going to be on May 17th. And we have a very special speaker, Francis Hagen, computer engineer, former Facebook employee, and probably best known as Facebook whistleblower. So we're very excited about that and you should not miss it. But now..."
+    },
+    {
+      "start": 3624.8,
+      "end": 3650.832,
+      "text": "without much further ado, Yo-Yo Ma playing Bach, so enjoy. Thanks for joining today, particularly Carlos and Oliviero, and see you next time. Thanks."
+    },
+    {
+      "start": 3650.896,
+      "end": 3678.688,
+      "text": "Thank you."
+    },
+    {
+      "start": 3678.688,
+      "end": 3706.896,
+      "text": "Thank you."
+    },
+    {
+      "start": 3712.976,
+      "end": 3732.944,
+      "text": "Thank you."
+    },
+    {
+      "start": 3757.36,
+      "end": 3787.104,
+      "text": "Thanks to all of you. Goodbye. Goodbye. Thank you."
+    },
+    {
+      "start": 3787.104,
+      "end": 3802.736,
+      "text": "Bye. Goodbye. Thank you. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

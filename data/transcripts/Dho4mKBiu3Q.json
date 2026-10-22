@@ -1,0 +1,31 @@
+{
+  "video_id": "Dho4mKBiu3Q",
+  "source": "whisper",
+  "language": "en",
+  "text": "TTT test. So. Hello. My name is Wendy Hall. I'm a professor. Hello, my name is Wendy Hall. I'm a professor of computer science at the University of Southampton and one of the founders of the Web Science Trust. It's my pleasure to welcome you to the Summer School on behalf of the Web Science Trust. Until very recently, I was the CEO of the trust. And just handed that baton over to Professor Nosheer Contractor from Northwestern University in the US, who I know will take our initiative on and grow it over the coming years.",
+  "segments": [
+    {
+      "start": 0.08,
+      "end": 27.216,
+      "text": "TTT test. So. Hello. My name is Wendy Hall. I'm a professor."
+    },
+    {
+      "start": 49.328,
+      "end": 75.456,
+      "text": "Hello, my name is Wendy Hall. I'm a professor of computer science at the University of Southampton and one of the founders of the Web Science Trust. It's my pleasure to welcome you to the Summer School on behalf of the Web Science Trust. Until very recently, I was the CEO of the trust."
+    },
+    {
+      "start": 75.456,
+      "end": 89.675,
+      "text": "And just handed that baton over to Professor Nosheer Contractor from Northwestern University in the US, who I know will take our initiative on and grow it over the coming years."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

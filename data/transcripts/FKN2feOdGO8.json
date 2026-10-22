@@ -1,0 +1,891 @@
+{
+  "video_id": "FKN2feOdGO8",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome and thanks for joining this online session. I'm Hannes Wertner from TU Vienna and the main organizer of this event. We have now the third event in our DECOM lecture series since we decided to move from the physical world to the online world when we were blocked with the coronavirus. I think we have also managed quite well to have these online meetings. The last event was with Moshe in June, where he spoke about our lessons we had from the corona. But in essence, he spoke about efficiency versus resilience and how we can build systems. Today, we talk again about a specific case. We already discussed once. It's on the Corona Tracing app. It's not one presentation, but we have two speakers, each of them approximately 20 minutes and then discussion. And the moderation is done by Jeff Kramer. And at the end, we have again a piece of music presented by Peter Knies. who has prepared something. Before moving to the moderator and introducing the moderator, I would have some technical issues. This event is recorded and streamed both on Zoom and YouTube. So you can also access afterward to the YouTube Digital Humanism channel. So we have there already. A huge piece of many different presentations from our different online workshops and also physical workshops. I ask you to mute your microphone while the presentations. And after the presentations for the discussion, I ask you to raise your hands. So we will see that in the list of participants we see. Those raising their hand and then Jeff will give you the word. We also ask you to say your name before you start speaking and keep your questions short so that we have time for more questions and more discussion. I'm happy that Jeff Kramer from the Imperial College London is moderating this event. Jeff has a long history. In software engineering, he had also some managerial positions at Imperial College. He was the head of the department and the dean of the faculty of engineering, and he was also senior team. In software engineering, he was mainly doing this evolving software architectures and also self-organizing adaptive software systems. Due to this work, he was also editor-in-chief of the IEEE transaction of software engineering. And he received several awards from ACM special interest group on software engineering. He is a fellow of the Royal Academy of Engineering in the UK. He's a fellow of the ACM and also member of the Academia Europea. I hope the Brits can still be a member of the Academia. europea even when they have left europe but okay this this we still have to to to discover sorry jeff for this question not at all thank you honest i i hope so too uh yes the floor is yours okay thank you I'd like to thank you and DIGM for actually organizing this event. I think it's very timely and it's very fortunate that I think we've got two excellent speakers, both experts in the area and both of whom have contributed, I think, considerably to the development and the involvement in app development for the tracing in each of their respective countries. So I think first I'd like to introduce Professor Alfonso Foggetta, who's a full professor at Politecnico Milano. He's also, since 2003, been the scientific director of CEFRIEL, which is the major organization and innovation center in North Italy, in the Lombardy region, and involved with a number of international companies. He's also been a member of a number of governmental panels and committees in Italy and has most recently been involved with the contact tracing app and the app development within Italy. So I'm very happy to introduce Alfonso and I'll leave the floor to him. Alfonso, it's yours. Thank you very much, Jeff. So let me share my presentation. Here it is. So thanks a lot for this invitation. It's really a pleasure and an honor to be here with you. I will try to share in this 20 minutes I have some of the experiences we had with this contact tracing problem, both in Italy and also with some of the activities done at the european level in order to define an interoperability framework for the national contact tracing apps so just to remind a bit what the situation we are dealing with this is a very deceptive enemy as we well known why because for A significant amount of time for many people, this disease is basically invisible, or we do not see strong symptoms that can be instrumental in identifying an infected and healed person. So the real problem with this disease is that it can spread quickly across a large part of the population. It's difficult to recognize when this happens. At the same time, for a small portion of people, this disease is very dangerous. It can lead to, as we saw, it can lead to death. At the same time, it can saturate or you can push to the extreme the ability of our health organizations to deal with the number of ill people we have in our countries. In particular, the stresses on intensive care units in all the different countries. So this is something we have seen during the past months, unfortunately. And this is the domain, the scenario where we are supposed to operate and work. There are two possible approaches or two complementary approaches to deal with the situation. One is to put in effect some lockdown or shutdowns. And this is what we have done, for instance, in Europe, in many countries, in Italy, especially when you have a large diffusion of the disease, which can be contained only by enforcing a strict separation among people. Once this disease is put under control, we can adopt a different strategy, which is based on the famous test, track, and isolate expression. And here is when contact tracing comes into place, because in order to put in place this kind of strategy, we need basically to reduce the amount of time between symptoms and the treatment of people at risk. So we have to reduce this interval. In order to do that, we need to put in place. very fast testing tools and processes. At the same time, we need very fast tracing processes in order to quickly jump from infected people to people at risk of getting ill at the same time. So in order to do this, during the past decades, we have adopted we have created a technique a process which is called the contact tracing we have been doing it this manually for in many occasions basically people infected are interviewed by physicians by operators and they are asking about all the contracts places where they have been to and this way we can basically identify other people that could be potentially be infected and so alert them and put them into isolation in order to limit or block the diffusion of the disease. The real issue is that if you do this manually it is extremely time consuming and it requires a high number of operators doing this job. This is a table taken from a report by the European Center for Disease Prevention and Control. And as you can see, I think you can read it. Well, in order to complete the analysis of the tracing for one individual, you need several hours and a number of people doing this job. So if this has to be done on a larger scale, of course, it does not scale up. The idea is, well, why don't we use technology in order to complement it at least, complement, not just replace, but complement and better support the manual contact tracing activity. This is a scheme from the University of Oxford, which in a very simple diagram explains what digital contact tracing is. Basically, you install some application on digital devices, on smartphones. And as we will see, using Bluetooth Low Energy or other kinds of techniques, you are able to identify when devices for people are getting close to each other. These contacts can be traced. And once you identify a person which is positive after a COVID test, you can immediately spread the alert or distribute an alert for a signal. to all the potential people who have been close sufficiently for a sufficient amount of time close to the positive person and therefore activate very quickly an isolation and treatment procedure in addition if you have information about the location where this contact occurred then you can also activate some the contamination activity or sanitization process in order to reduce environmental infections and environmental diffusion of the virus. So this is basically the technique that we have developed. I mean, we as countries and communities, we have developed in order to support the control of the disease. What are the issues and problems that we are facing in... accomplishing this strategy, in pursuing this strategy? Well, there are several problems. The first one is that as far as effectiveness is concerned, most solutions are based on Bluetooth Low Energy. So basically, they are able to trace the proximity of devices, but you do not know anything about where that contact took place. So it's just information about proximity, not about location. These are several problems. First, Bluetooth is not precise enough. We can have false positives. But also, if we had used GPS, most nations have ruled out the possibility of using GPS or other kinds of localization techniques. We could have identified also critical spots. For instance, if a positive person enters a school, it could be meaningful to know, useful to know, because you can activate operation and sanitization activities within that school. So this has been ruled out. So the first issue that we are facing is how effective is this approach since we had these limitations? The second one is privacy. Indeed, we are traced every single second of our life, as long as we have cell phones with us. Still, tracing performed by governments has raised a lot of concern in all countries, everywhere, almost everywhere. And this has basically forced a sort of reduction or limitation of the extent by which we do tracing. For instance, all the notification and all the communication of the keys of the infected people, this is done manually. It's not an automatic process. So a person might ignore the alert or ignore the information and avoiding transmitting the keys to alert other people. As a matter of fact, most of this application are called exposed notification apps, not tracing apps, because this is a kind of approach that for privacy reason we have decided to use, but this is still a problem because we have a trade-off between protection of the privacy of people at the same time effectiveness of the approach we are using. In reality, no critical information are collected, at least in a trusted and safe application that are checked by government and also by the distributors of this application. There is no critical data that are collected. But as a matter of fact, in order to reduce the impact from a privacy perspective of this application, we have lowered the level of tracing that we are able to perform using this technology. Another issue is adoption. At the beginning of this crisis, many researchers said that we needed a minimum amount of people using the apps in order to guarantee the effectiveness of the approach. Now, more recent studies have demonstrated that first But this was well known. We do not need 100% adoption of the dressing apps. At the same time, of course, effectiveness increases with adoption. And this problem is something that we are still dealing with in all countries. The adoption rate is not very high. Another important issue is interoperability. Now we are opening our borders. So what happens when people from different countries are traveling abroad? And we have here a technical problem. The technical problem is that in many countries, we are using a content tracing approach based on decentralized technologies and procedures. In particular, most of them use the Apple-Google protocols. In other countries, a few ones, France, for instance, we use a centralized approach. Now, as I will show you in a few seconds, there is now a... interoperable protocol for decentralized applications. We are still working, at least until a few days ago, we are still working on the identification of viable protocol that allows us to basically have interoperability across different applications using different approaches. So there are technical issues, but there is also the role of Apple and Google. I think Jim will talk more extensively about this later on. But still, I just want to mention that in order to put in place these protocols, you have to also see if this is compatible, if you want to use the Apple-Google protocol, if this approach is compatible with their algorithm and their approach. So this is another important issue. Just to give you an idea, this is a couple of slides from the European Commission, the working group that has delivered and created this interoperable protocol. Basically, the idea is that each country has a back-end collecting the keys, the infected keys from people that have tested positive. And the idea is that using forwarding gateways at the European level, The infected keys of people that got infected in different countries or that have been exposed to people traveling from different countries can be forwarded to the different backend servers and this way enabling the check of the matching between keys, not only for the people of a specific country, but also with people traveling from or to other countries. within the federation that we are considering here. So this protocol has been defined, there is a specification, and now all the countries using at least the centralized approach are implementing this protocol in order to provide, let's say, the equivalent of the roaming service that we are experiencing in the telecommunication services, communication domain. What are the challenges? Clearly, we have a huge problem of trust and confidence, at least in Italy, but also in other countries. We have seen that citizens are tempted to trust the companies more than our governments. Every single second, we... We give our information to the different social networks or developers or providers of our cell phones. So they have a lot of information about us. And it seems quite crazy, but we feel more confident in giving this information to those companies while we have a lot of concern in sharing some anonymous information with our governments. One can say this is just a problem with the people not willing to share information. I think that is also a problem with our governments, because why people do not trust our governments and force them to have this kind of behavior? It's not just a problem of bad communication, because we have really a lot of bad communication in this crisis. Probably there is really a problem, an issue of establishing a different way of relating and managing the relationship between our governments, the institution and citizens. Because one of the main problems we have nowadays is really this lack or this insufficient trust and confidence of citizens with respect to our governments. The second problem is the relationship, and I think Jim will talk about this, between tech giants and nations. Basically, tech giants operate globally. The virus is global. But we have institutions that are more and more national by definition. But also our international organizations are weaker nowadays. And so we have a problem which is global, technologies that are global, and institutions that are more and more fragmented. And we have to make quick decisions that have a worldwide validity, because the virus does not recognize borders. So if we make a wrong decision in one nation, that will sooner or later affect also the other nations. So basically, we have a world with global problems and local policies, because maybe not the politicians, but I would say that we have failed to institutionalize globalization. Or we have, during the past years, weakened all the institutions, including the World Health Organization, that are in charge of managing. worldwide crisis such as this emergency we are living nowadays. So I think this is one of the most concerning issues we are dealing with. We have to basically deal with increasingly global problems and at the same time we have increasingly weak organization or international organization in charge of dealing with these problems. Or at least this is the trend. We are now more and more dealing about our national institution and weakening our international connection, relationship, and governance models. And I think this has emerged clearly during the past months. But one might say, but this is something, you know, this is once in a lifetime event. So it does will not occur very frequently. So why do we bother? Well, this is a chart that I've taken from a recent number of McKinsey quarterly. And it clearly shows that if you consider also just the past 15 years and what can happen nowadays, we see that we will we have to face. a global crisis more and more caused by different kinds of events, political, geomilitary events, economic events, health events like this one. So either we are, since our world is global, our society is global, either we are able to deal with this kind of a situation or we will suffer increasingly damages. from a crisis that will occur, inevitably. We cannot avoid it. So I think this is one of the major problems we have to think about, not just for this crisis, but also for our, hopefully we will not see many of them, but if we will have crisis in the future, we should learn from this experience and be ready to deal with them. more effectively than what we did this time with COVID-19. And I think as academicians and researchers, I think the most important thing for us is to learn from the past, from the mistakes we made, from the good thing we did. And I think this is essential to be able to prepare our communities to better deal with the critical situation that might occur in the future. Thank you very much. Thank you very much, Alfonso. That was an excellent talk. And I think you've raised a number of issues, which I think we can all think about in the next few minutes. But rather than going into questions at this stage, we're going to have our next talk. And that's given by James Larris, who is a professor and dean at the School of Computer and Communication Sciences at École Polytechnique Fédérale de Lausanne. He worked prior to working there, he worked at Microsoft. And he has been, since earlier this year, deeply involved in the development of the DP3T. That's the Decentralized Privacy Preserving Proximity Tracing Protocol, which is used in the decentralized app. And so I'm very interested and very pleased to welcome him to talk about his experiences and to tell us also about the involvement of the two tech giants. So, James, the floor is yours. Thank you, Jeff. And thank you for the invitation. It's a pleasure to be here. And I entirely concur with your remarks about Alfonso's excellent presentation. It lets me skip quite a bit of the background material. I'm not going to use slides. I don't find them that effective in this kind of format. So I thought what I would do is basically proceed in a historical and explain how DP3T got so enmeshed with the two tech giants, Google and Apple, or as we call them, Gapple. So early this spring. As Switzerland got locked down, we were approached by a group at the Fraunhofer Institute in Berlin that was developing a privacy preserving contact tracing application. The group eventually was called PEPPT. And we worked with them for a period of time until we had a schism. They were implementing a centralized app where the server. did the matching between the beacons that were broadcast by a person who was diagnosed with COVID and the beacons that were received by various other users of the app. We had an alternative proposal, which was a decentralized proposal, where the matching was done on the individual cell phones. So the beacons that you received were never uploaded to a centralized server, only the beacons that were broadcast by somebody who was diagnosed with COVID. That's the difference between centralized and decentralized in a nutshell. You can make good arguments for both sides, and there are a lot of arguments that are going on. I'm not going to pursue them. The argument that we had is that the decentralized was inherently more privacy preserving because the information about who you encountered never left your phone and that it was therefore impossible for the central server to be repurposed by an entity or for its information to be stolen by hackers. And so that's the approach that we advocated. It led to a sort of schism with the group at the Fraunhofer Institute and we pursued our own approach. We wrote a white paper on the approach and the group was called DP3T for Decentralized Privacy Preserving Technology. All these names are terrible. My kids make fun of me, say that it's a good thing I never went into advertising. We wrote this white paper and we, at the same time, started to build an app for use in Switzerland. And we, like everybody else, were quickly made aware that you cannot successfully build this app. on standard iOS. You can build it on Android phones, Google Android phones, without any difficulty because it's possible to send and receive Bluetooth beacons or Bluetooth advertisements in the background on Android. iOS does not allow this in Apple's world. This is prohibited as a privacy-preserving measure. They believe that these beacons could be used by applications on your phone to enable people to track, enable advertisers or companies to track individual users by listening to the beacons that were broadcast by an app on their phone. So you can imagine scenarios where you like walked into a store and you had an app for the store and they could track you through the store by just listening to the beacons. And so. Apple decided that this was not allowed. And so while you can send Bluetooth beacons while your app is running in the foreground, if it goes into the background or if your phone goes to sleep or anything like that, it stops sending and receiving the beacons. And so there's no way to build a Bluetooth app on iOS without the help of Apple. Several countries tried, in particular Singapore's app used Bluetooth and they tried to do it without the assistance of it and got very low adoption. It basically required you to keep your phone unlocked and it required the app to sort of force itself to stay in the foreground and consume battery life extremely quickly. And so it was a very undesirable product. We approached... both Apple and Google through our contacts. So I and several of the other professors at EPFL had contacts at Apple and Google. We didn't know they were working together, but we were approaching both companies with the message that it would be great if they helped us solve this problem. At some point, we got contacted by some people very high up who said we would like to have a joint meeting with you. And they revealed that Apple and Google had been discussing this for several weeks and had come to the agreement that it was necessary for them to agree on a common set of protocols and that the protocols that they wanted to use were essentially the ones that we had published, the DP3T decentralized protocols. And so that started a pretty... close engagement with both of the companies. We had regular phone calls with them. We saw the documents early. We got early releases of the code. At the same time, we got the authority to build the Swiss app, which is called Swiss COVID. And so we hired a small startup company which had built a number of successful apps in switzerland and started doing a development with them and brought them into the collaboration with apple and google and um you know the process had its usual ups and downs anybody who's ever sort of tried to do commercial software development uh particularly with sort of new code and code that was being rushed into production can probably understand what I was talking about. It was very sort of difficult on both of the companies. The release process for software for phones is very complicated. There are essentially billions of these phones in existence. When Apple decides that it's going to release a new release of iOS, it has to get it basically right. I mean, it's not going to get it perfectly right, but even, you know, a 1% error, you're talking about millions of phones that may not work. And so the process is not easy to navigate. And we were trying to push it about as hard as you could push it because we were still developing the app and developing the protocols and trying to work with the companies at the same time. And the collaboration between the companies, needless to say, was not. the easiest thing in the world. There's no history between the companies and there's no love lost between the two companies either. Still, we made it work. We got the initial version released roughly on time. I will not say it was not difficult. Apple and Google went into this with a mindset that they understood everything. They understood the problems. They were going to give us a solution. And we sort of have to push back very hard to explain to them that their solution did not work. So, you know, I'll give you two very specific examples. So, you know, they came up with a algorithm for scoring how close you were to another phone. Basically, they didn't want to expose the beacons that you receive because that would be invasive, perhaps, of someone's privacy. It could be used for other purposes. Instead, they wanted to basically give you a way of giving them a very restricted formula about how many beacons you saw over what period of time and what the attenuation strength of the signals were from the beacons. And they would give you back a score, which you then would use to decide whether this was a sufficient exposure. Unfortunately, what they engineered didn't work, even in a very simple case. So the Swiss model that we decided on with the epidemiologists in Switzerland, which corresponded to the WHO recommendation, is that you were exposed if you were within two meters of someone who was diagnosed for a period of 15 minutes or more. model actually was a little different. We said that you were within two meters of any number of people who were diagnosed positive for 15 minutes or more, which caused further complications because Apple and Google had sort of assumed that it was only one person. And that's not what eventually was passed in the Swiss law that codified all of this. So it was quite difficult to sort of convinced them that we could not implement what was written into the Swiss law and that they actually had to change their interface, which they did. And we sort of kept on pushing. And the next release, which will come out this summer, is even more flexible and will allow pretty much. any standard to be implemented. They are exposing a lot more information about the beacons that are responsible and allowing you to compute your own formulas over the information that your phone sees, as opposed to trying to do it all for you. But again, that's many, many months of pushing back and forth. Another example is that both companies sort of assumed that they knew everything about which app was appropriate for any user. So they wanted to sort of say, you know, this is the app that you should install on your phone if you turn on exposure notification, which is a service in both operating systems. They then wanted to say, we'll download the app for you and start it running once you turn on the exposure notification. And we tried to explain to them that this is just not something that makes any sense in Europe. And we're explaining this to a bunch of people who are sitting in the Silicon Valley in California. And we're trying to explain to them that it's not uncommon in Switzerland to have someone who lives in France across the border, works in Switzerland, may have a phone from a carrier in a third country and is using the app store in a fourth country. and is covered by who knows which health system. And the sort of control over which app you should install really should be devolved on the user because they're the only ones who are really going to get it right. Again, we had many arguments about this. The current situation is you can install your app. They don't like it. They feel that They would get higher adoption if they controlled the install process. Maybe they would, but they would also get a much higher error rate in terms of which apps would be installed. Again, it's sort of this belief that they knew more than the people on the ground who were building it. You know, we successfully built the Swiss COVID app. We did a lot of work with both companies. to calibrate the Bluetooth. This is one of those sort of issues is that Bluetooth is extremely approximate as a measurement technique. Fortunately, we don't have to measure anything exactly. We don't have to be able to say, you know, at two meters, all of a sudden the infection risk goes away. So if you're at two meters and a few centimeters, you're safe. And if you're a few centimeters on the other side of that line, you're exposed. It's much, much more approximate than that. The epidemiologists sort of use these round numbers because they think of them as approximate values. Everybody else hears them and thinks of them as sort of absolute boundaries. And that's caused a great deal of confusion throughout the whole process. On the other hand, it's quite a challenge. It turns out that every cell phone broadcast. at different power levels. This isn't such a big problem in Apple's world where they have a handful of phones in existence and they understand pretty well how they work. It is a huge problem in the Android world where there are literally thousands, if not tens of thousands of different Android phones in existence. And we did a lot of work with Google to sort of come up with reasonable calibrations. We came up with a reasonable set of standards, which Switzerland adopted for the attenuation levels that indicate that you're likely within the distance. And we've published that information for the use of other countries as well. But it's been a real sort of challenge to get the information out of both companies to make this happen. Fortunately, there have been some very good people working in the companies who helped us. Let me sort of now step up a little level and start talking about the policy issues, which I think are interesting. So it goes back to the original issue, which is that we could not build an app. Nobody could build an app that was going to be successful without the involvement of the two companies. And the two companies decided early on that they were going to use the decentralized app. We think that that's great. I can understand that there are other people in other countries who disagree with us on that for a variety of reasons. France is still insisting that their centralized app that came out of INRIA is superior and they're insisting that they should do it. So a very interesting quote in the National Assembly in France in late May. Cedric Oh, who is the state minister for digital economy, basically was complaining about the behavior of Apple and Google. They would not assist France in building their app because it was a centralized app. And he basically at the time, the UK was also pursuing this route. Subsequently, they changed and agreed that they were going to use the Google Apple framework. He basically sort of said very explicitly. The two countries in Europe that are trying to build their own apps in their own way are also the two countries in Europe that have nuclear weapons. So if he had not been minister of digital economy and maybe been the minister of state or the minister of defense, that might have been taken as a threat to use nuclear weapons on Apple and Google. And I think it had reached that level of frustration in that country. Certainly, there was a lot of very, very high level pressure. applied to Apple and Google, you know, all the way up to sort of the heads of state sort of making calls to Tim Cook, insisting that that, you know, Apple and Google should allow them to build the apps they want. This is an interesting question, right? I mean, in in many cases, Apple's behavior is extremely admirable. They have stood up to the United States. in terms of defending end-to-end encryption and refusing to sort of install backdoors in it in spite of a huge amount of pressure from the law enforcement community and the presidents and the politicians in the US. You know, in that case, it's very easy to see their stand as a very principled stand. In this case, you know, It's, you know, it's a different argument. You could argue that will the citizens of France be any more threatened if the government is running a centralized server that's collecting the information? And I don't think anybody really seriously believes the citizens of France are. going to be at more danger. There are plenty of other countries where the information that is collected in the centralized server could be used to recreate social networks and determine who was in contact with whom. And that's not hard to see that being perverted in other countries. And so you can argue again that Apple acted on principle. But the question is, should a company be able to determine a country's national health policy. You know, as Alfonso said, you know, there's an argument that other information might be useful for epidemiology. You know, the epidemiologists we worked with, Marcel Solité, who's both a professor of computer science and a professor of life sciences, believe that That information is not useful, that a lot of epidemiological information is collected for sort of later studies or, as he said, basically for your next 10 years of PhD graduate students research. And that for the contact tracing, we didn't need all of that other information. We certainly didn't need GPS information, which is extremely privacy revealing. So we built an app with absolute minimum privacy. I'd like to try to share a poster we made. I don't know how well it's going to work. Maybe the wrong form factor for this, but I'll try. Let's see, where is it? Okay. Can people see that? Hello? Yes. Something is there. It's not very readable. Sorry. Yeah, it's unfortunate. Yeah, there's no probably no good way. So maybe I'll stop sharing it. Basically, it's a poster we made which listed the permissions that the Swiss COVID app required on your phone versus the permissions that Facebook and WhatsApp. required on your phone. And, you know, the Swiss COVID app is seven sort of fairly generic permissions to, you know, run in the background, use the network, interact with Bluetooth. And Facebook and Google, Facebook and WhatsApp are sort of very long lists, which are much, much more intrusive. And we created this poster basically to make the point. that you didn't need to worry about the Swiss COVID app because lots of people sort of worried about the privacy in Switzerland. We heard a lot from our friends, all of whom had WhatsApp running on their phone without a second thought. This goes back to Alphonse's point, which is that people seem either oblivious or willing to trust companies to a level that is quite surprising to people who understand what the companies are doing. But then you come along with something like Swiss COVID, which was designed from first principles to be absolutely privacy preserving and minimal. And it's very difficult to explain the situation that's going on there. So, you know, this is a very interesting challenge for anybody who's sort of built one of these apps and tried to deploy it. You know, the current numbers in Switzerland are that we have. slightly under a million active instances of it, which is probably in the low 20% of the population. It was a little over a million for a while, and then it has started dropping down. There are definitely examples of people being notified that they were exposed and going into isolation and then later being diagnosed. People have tweeted those examples. And so we know that the app is working, but it's still very hard to explain to people exactly what privacy means and why they should trust this particular app. And, you know, this is in Switzerland where, you know, the app was developed by EPFL and ETH or the two Swiss federal technical universities, which are widely known. The app. is authorized by a law that was passed by Swiss parliament overwhelmingly, which is sort of a prototypical law, which every other country should look at in terms of sort of setting out the conditions under which the app can be used, under which nobody could be required to use the app for any terms of service or employment, setting out what happens if you get asked to go into quarantine. Sort of an extremely strong, extremely well thought out law backing it up. And still we have this problem of convincing people that their privacy will not be invaded by this. It's a real challenge that we thought we had licked in the beginning by building an app that was privacy preserving, but it's been much more difficult to convey that message than we ever anticipated. So those are two of the key points. You know, there is a book I would refer you to by a law professor, Lawrence Lessing. I don't remember the exact title, but it's basically something like Code is Law, where he basically made the point that the big tech companies that write software. are basically writing rules and regulations that govern how the world will behave into their systems by writing code. And that this gives the companies both immense control over the rest of society, as well as sort of a complete lack of accountability. and democracy when this function that used to be the function of the legislative branch or the executive branch in certain countries was unwillingly and unknowingly delegated to large companies. So I think it was a very prescient book. The book came out over a decade ago, maybe even close to two decades ago, soon after the dot-com bust. I definitely recommend that people read it. It makes a very, very strong point, which I think is very relevant to this discussion. So that's my presentation. That's great. That's perfect timing. Thank you very much. That's really very interesting. I found it fascinating to hear about the interaction with the two tech giants, which I have to say has... certainly raised quite a few heckles here in the UK, where there was quite a lot of feeling that the cooperation from Apple was not what it should have been, given the various attempts. The UK had a few problems of its own. Oh, absolutely. I think that's completely true. But I think I know that there are a number of questions already coming up. Moshe was certainly very keen to to want to ask a question even after alfonso so moshe if you're there if you'd like to come in now yeah can you hear me yes so i think that to me the the issue come from the two presentations and it's almost one of the you can think of it is the issue of i would say is societal governance globally so as a as alfonso put it we have We have global problems. We have local politics. I mean, whether locally is at the country level, but even at the country level. And then we have global corporations with very, I would say, at best are lightly regulated. So they have enormous unregulated power. And then there is, on the other hand, government has one thing that corporations do not have, And that's the ability to use physical power over us. We have essentially delegated the privilege of physical power over us to governments. And so we end up with governments where we don't trust because they have too much power over us. But corporations, as Jim pointed out, they have tremendous power over us, but it's invisible power. So we trust corporations and they are not accountable to governments, to global governments in some sense. That is in a nutshell, you know, one can make a five minute spiel on the state of the world as it is now. Yeah, I have to say I completely agree with you, Moshe, but I don't know whether Alfonso or Jim, whether you would like to respond. I will agree with Moshe as well. I think the issue of lack of trust in government is a complicated, deep one. I'm more familiar with the situation in the US since I spent most of my life there. I personally believe that it's part of a larger campaign by a certain right-wing segment of society to undercut. the legitimacy of the government and basically has left people with a sort of deeply corrosive view of what the government can and should do. And that's made it very difficult in the U.S. to effectively respond to a crisis of this sort. You don't see that in Switzerland, but still there was a surprising level of distrust of this app, which is you know may have been developed by us but was basically put out there by the swiss government backed up by the swiss parliament and the swiss executive very surprising to me that that happened here as well um i i must say i i listened previously to a presentation by the people from singapore where their app not only does GPS, but it connects whenever you use your credit card. It goes into your health care system and it goes into all of the various movements that you make. And they actually consider this adoption is extremely high. And people consider their in their society to be completely acceptable. So these are things which seem to vary considerably from one culture to another. But I'd like to move on to, there was a question from Alberto Vincentelli. Jeff? Yes. Put me on your list. Jeff? Sorry, I don't know who's speaking, so. Radu. Oh, Radu. Okay, sure. So my comments are pretty much in line of what you said. I'm very familiar with Singapore. I live in part of my life in the United States and part in Europe. And the key point is what we are observing is a complete distrust of governments. Now, in Singapore, there is a consensus that the government is doing good things for you on one side. And the other side, you know that you're not following what the government says. you are going to pay for it. So Singapore is not exactly a fully democratic country. So the key question, my opinion, is that how do we contrast the need of privacy with the societal needs? And so this is a general issue. I don't think it's only for COVID, but it's just what is appropriate to give up in terms of privacy for the good of everybody. And if you look at what we have done in the past, privacy is always a relative concept. So you're willing to give up your privacy if you receive in exchange something that you like. And so you can tell everybody that if they carry a cell phone, their privacy is gone, long gone. Everybody can find out where you are and things of that sort. But they will not give up their cell phone because it's a service that they consider indispensable. And so the issue is, how can we make the social good something that is indispensable for all of us? I don't know if you want to respond now, or do you want to take some more questions, German Alfonso? I would be sure to listen to some more questions. Okay. I think the next person who wanted to ask was Giuseppe Attardi. Yes, thank you. Thank you for your presentation, really interesting and rich of information. I've been following the situation in Italy and discussing this and writing papers and participating to mailing lists of computer scientists in Italy and it was really surprising to see their reaction to the idea that we as researchers, as a community, could actually take a role, have a role in building something that fits our societal and societal needs. And the question I have is about from Larus, is I've read a letter from various ministers, including the Italian minister. Paolo Pisano, that are asking to Google and Apple to provide them more freedom or more facilities, more availability to data. But the letter didn't say much about this. Does it have an idea about what they need, what they want, and whether Google and Apple will be willing to provide it? Thank you. When was this letter? I haven't seen the letter. Is it a recent letter? It is a few weeks ago, yes. It was sent, signed by... several ministers, and they were just asking to have more freedom to use the data, something like this, but they weren't really making precise what their requests were. So there is a couple possibilities. I don't know exactly what they're referring to either. One of the... possibilities is that, I didn't mention this, but to use the Google and Apple exposure notification interface, the API that allows you to send and broadcast these beacons, you have to be given special authorization by either Google or Apple, depending on who you're building the app for. That authorization is only given under certain conditions, one of which is that you agree not to build an app that uses this interface plus location tracking information. So for instance, you cannot build an app that uses the exposure notification and GPS. That is forbidden by the powers that be in the two companies. Another aspect of it is they actually only allow one app per country. And so, you know, there's no marketplace of apps. within the country. So you can't have people competing and trying to produce better apps. So there's quite a bit of control. There's quite a bit of things that people have proposed that they would find helpful. Going back to this and to an earlier comment, I think it's very important to keep in mind the function of the app. that we built for the exposure notification and contact tracing. It is literally sort of limited to this one scenario. Think of reproducing the scenario that Alfonso talked about where there's a human contact tracer. They basically ask you, yesterday you were in a meeting. Who was in the meeting? Where were they sitting around the table? So they could judge who you were next to for how long. That is the functionality that these apps are supposed to reproduce. And it turns out that it's not really relevant where that meeting occurred. It's more relevant who was at the meeting because, you know, the table doesn't get exposed. We're not really worried about that form of transmission very much. So we built an absolute minimum functionality. And this is the approach that. Google and Apple took, because the epidemiologist we were working with, Marcel Solité, said, look, this is what contact tracing is about in the real world. You don't sort of collect lots of information that you aren't going to need. You really want to know who was exposed to the person for what period of time. And that's it. You can argue, and lots of other epidemiologists disagree. Lots of our countries disagree. Apple and Google have taken a very absolute position, as I've tried to describe. In certain circumstances, you can argue that it's a very admirable position that they've taken, that they've put their companies at risk. In this situation, you could argue that maybe it's just an absolute position that shows their enormous power. over this application platform. Yeah, thank you. Thanks, Jim. I think there are still a number of people who really want to jump in. I know Radu wants to come next and then Hannes and then Carlo. So should we start with Radu, please, if you want to come in? Well, yeah, of course. Do you hear me? Yes. Okay, fine. My name is Radu Popescu-Zeretin. I'm situated in Berlin. And I'm very surprised that you never referred about the app which was installed in Germany one week ago. It's an official starting in the first one week. There are 16 million downloads. And it seems to me it's a decentralized solution. And they succeed actually to put Apple and Google together. So all the different arguments till now, from a German point of view, they have in a way solved. The big problem actually what we have is actually the legal framework in which these systems are built in. And this refers actually to the GDPR in the European Commission, which was actually the law on privacy, which is already in place for the last... I don't know how many years, probably two years. If you conform to this law, the only solution is to go towards a decentralized solution, like in Germany. The acceptance of a centralized solution is probably bound to not trusting the government. The question I have is, especially at Professor Fugeta, is actually, it's about interoperability. As you probably know, Germans are traveling like hell everywhere. And I wonder actually how the German solution, a decentralized... a solution actually which was deployed in Germany, can be put in place with the solution you presented in your transparencies. Thank you. Actually, the answer is very simple. The interoperable framework that I presented has been defined by a working group at the European Union level. in which German was a major actor. Actually, the formal specification, the precise specification of the interoperability protocol has been written by a group of German professionals. And since most of the countries in Europe are using the decentralized approach based on the Apple-Google protocol, I think that at least within the framework, within the borders of European Union, we should have quite quickly, except for the privacy issues that are still there, but there are still some problems that have to be solved. But from a technical viewpoint, it should not be difficult to have an interoperable solution within Europe for European countries. Are you sure on that? Yes. It's not a difficult problem if everybody's... And since most countries use the Apple-Google protocol, but even with other decentralized approach, I don't think there is a major problem because the protocol is not very complicated. The real issue is what happens when we will start traveling or we resume a large traveling with other countries if we really want to have the same kind of features also when you travel... But it's exactly my point, actually. As you probably know, actually, the German starts the vacation now and they are all over in the world. And a lot of arguments actually in Germany is, so what shall we do with our German solution? Let me finish with that. Actually, what I'd like to say, It's something different. Actually, I think the European Commission missed its role again in this pandemic. And I think actually, you know, it's a matter of European-wide solutions which should be, in a way, actually put in place. in conformance with their own legislation like the GDPR. I think we should actually move this on because I know that Hannes is dying to also come in. So if you'd like to come in Hannes. Okay, just very shortly, so I think on a very upper level, the most important thing was said also by Jim is that code becomes rules, laws, and also norms. And I think this is a principal observation that... It's a political issue and I think politics on technology is becoming an overall political issue. And I think here it's also the importance of the initiative we have is this digital humanism where we somehow try to discuss those things and also to bring together academics with civil society and funding agencies. So to raise awareness on this and also have a look at those different aspects. So this is... In essence, digital humanism is not just an academic endeavor. It's a political one. And I think we should be aware of that. And the presentations made it very clear. I completely agree with you. The only problem is actually that we are all engineers. And in general, an engineer finds always a good solution. But that is not sure that it's... adopted and complying with existing regulation. I think that you're quite right, Hannes. I think they have made this as a major issue. And we really, although it's in this context, we really do have to consider this. I know Carlo and then Sally Wyatt also wants to make some comments. So Carlo, if you can be brief, please. Yes, I'd be very brief. Can you hear me? Yes. Okay, so again, I would like to go back to the comment that was made regarding the fact that we distrust government and we trust the tech giants. I would like to propose that maybe one reason for that is that people largely still don't understand the threat. of surveillance capitalism. I mean, there's a lot that is hidden to most of the public. The public is unaware of a lot of what the tech giants actually are doing. And my comment is that perhaps the governments have a role here because they haven't taken any serious stand. on the side of the citizens, defending their rights against the tech giants. So maybe there could be more trust in governments if governments had taken actions, especially with respect to the tech giants. So maybe this is just a comment, but I would like to hear if the people here share this comment that I made. Thank you. I have to say, I certainly feel that. And I really sometimes wonder whether we've sold our souls to the devil in the way in which we deal with many of the companies. But I reserve that because I think Sally wanted to also make a comment. So if you can come in, Sally. Thank you. My name is Sally White. I'm professor of digital cultures at Maastricht University in the Netherlands and a social scientist by background. And I think my question is, I guess, really for Professor Laras, who told us about his very interesting experiences of working with Google and Apple over the last kind of weeks and months. And now and then you kind of hinted at some of the challenges of doing that, which I'm sure I certainly believe there were challenges. And I mean, both speakers identified some of those to do with, you know, that we've got a kind of global problem. nation states, questions of kind of how citizens trust or don't trust governments and companies, how people understand questions of risk and uncertainty, particularly when it comes to health problems. And what I was wondering was whether or not in your kind of collaboration now, but in other kinds of collaboration, there was any involvement of political scientists, media studies scholars, communication studies people, for whom these sorts of questions are actually central to their work. And I think it would have been interesting if Google and Apple and governments had engaged people with these kinds of backgrounds. Absolutely. I agree with you. It was a very interesting experience. I have to say, if you're going to lock me in my apartment for four months, give me something like this. It was like doing a startup. where you never sort of saw your collaborators face to face. You know, fortunately, one of the other professors, Ed Bunyan, and I both had a fairly long experience working in industry and had some pretty good contacts, as well as knowledge of how things work in companies, which made this possible. I think it would have been fairly difficult to accomplish this. In answer to your other question, One of our sort of closest collaborators is Michael Veal, who is a professor in, I think it's Imperial College in London, who's a law professor, who has been sort of very closely engaged with us from very early on. And, you know, he actually wrote a very nice piece for The Guardian last week. about this issue of Apple and Google's control of the interface. So yeah, we have engaged with that. We've engaged with a number of other people from civil society in various countries, from NGOs that are interested in this. They tend to be people who have a tech background who are very interested in the privacy issues because that was our real central theme. We have not yet gone out to sort of a larger group, I think. If we had had more time and sort of a better set of contacts, it would have been fantastic to engage with social scientists and try to understand people's attitudes, people's views, people's worldview, and how to address some of the concerns in terms of what we were building. We didn't. do it. I don't think it's too late. We're actually hoping to pursue this as a sort of larger long-term research project involving many of the same people that were involved in building the Swiss COVID app. And so I think we will engage with a much more diverse community in the future. Thanks very much, James. I'd like to, I think we've now come to the end. It's been difficult since I can see there are a number of people who want to ask and there are a number of questions and there's certainly a lot more we could discuss. But I'd certainly raise a lot of issues and I'd like to thank particularly Alfonso and James for their presentations. And again, to thank Hannes for organising this event. I think it's certainly been informative. and with enough to both trouble us and make us think about what we should do in the future. So it's over to you, Hannes. Thank you, Jeff. Thanks to the participants and thanks to the speakers. One comment might be that maybe there should be some adoption studies with social scientists and technology guys for looking why and how which... app is used and why not and I think this would be very also for diffusion aspects of innovation this would be really thanks Sally for this comment I think this would be an interesting study and we could do it also Europe wide because I think it's also depending on the socio-cultural context but now I would really like to hand off thanking you all but I would like to hand over to Peter Knies who will do his final piece of music with some short intro. Peter, the floor is yours. Can we thank the speakers and the moderators? Sorry? Can we thank the speakers and the moderator? Yes, we have already done, Moshe. We have already thanked them. You did. We did. You did. We did. Okay. All of you raise your hands. But if you all raise your hands, we thought that you might want to say something. We do this. We do this. Okay. Thanks, Moshe. Peter, the floor is yours with music. Thank you very much. Let's keep this short. Today's musical piece does not have a digital dimension to it, but it's a rather friendly greeting from Vienna to France on this July 14th. I'm not sure if you noticed, but it's July 14th. It's the French National Day commemorating the Storming of the Bastille, which is, of course, a crucial event in the French Revolution. So for this occasion, I've picked the Paris Waltz by Johann Strauss. the father, which ends with a reminiscence to the Marseillais in Dakota. And since two of Johann Strauss' sons, Johann Strauss, the son, and Josef Strauss were students at what is now the Theowien, it feels like an appropriate salute to play a few minutes from this piece, performed by the Vienna Philharmonic Orchestra, conducted by Georges Pretre. So we jump right into the Paris Waltz. Let me share the screen or share the video. I hope you can. See it by now. So again, thank you for joining and see you again on September 8th, which is our next event at the talk, how not to destroy the world with AI by Stuart Russell from UC Berkeley. And until then, enjoy the holidays. If you have that option, stay safe. And this is Johan Strauss. Download the COVID app.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 25.232,
+      "text": "Welcome and thanks for joining this online session. I'm Hannes Wertner from TU Vienna and the main organizer of this event. We have now the third event in our DECOM lecture series since we decided to move from the physical world to the online world when we were blocked with the coronavirus."
+    },
+    {
+      "start": 25.232,
+      "end": 50.848,
+      "text": "I think we have also managed quite well to have these online meetings. The last event was with Moshe in June, where he spoke about our lessons we had from the corona. But in essence, he spoke about efficiency versus resilience and how we can build systems. Today, we talk again about a specific case."
+    },
+    {
+      "start": 50.848,
+      "end": 73.584,
+      "text": "We already discussed once. It's on the Corona Tracing app. It's not one presentation, but we have two speakers, each of them approximately 20 minutes and then discussion. And the moderation is done by Jeff Kramer. And at the end, we have again a piece of music presented by Peter Knies."
+    },
+    {
+      "start": 73.584,
+      "end": 96.192,
+      "text": "who has prepared something. Before moving to the moderator and introducing the moderator, I would have some technical issues. This event is recorded and streamed both on Zoom and YouTube. So you can also access afterward to the YouTube Digital Humanism channel. So we have there already."
+    },
+    {
+      "start": 96.192,
+      "end": 125.12,
+      "text": "A huge piece of many different presentations from our different online workshops and also physical workshops. I ask you to mute your microphone while the presentations. And after the presentations for the discussion, I ask you to raise your hands. So we will see that in the list of participants we see."
+    },
+    {
+      "start": 125.12,
+      "end": 153.84,
+      "text": "Those raising their hand and then Jeff will give you the word. We also ask you to say your name before you start speaking and keep your questions short so that we have time for more questions and more discussion. I'm happy that Jeff Kramer from the Imperial College London is moderating this event. Jeff has a long history."
+    },
+    {
+      "start": 153.84,
+      "end": 180.56,
+      "text": "In software engineering, he had also some managerial positions at Imperial College. He was the head of the department and the dean of the faculty of engineering, and he was also senior team. In software engineering, he was mainly doing this evolving software architectures and also self-organizing adaptive software systems."
+    },
+    {
+      "start": 180.56,
+      "end": 210.448,
+      "text": "Due to this work, he was also editor-in-chief of the IEEE transaction of software engineering. And he received several awards from ACM special interest group on software engineering. He is a fellow of the Royal Academy of Engineering in the UK. He's a fellow of the ACM and also member of the Academia Europea. I hope the Brits can still be a member of the Academia."
+    },
+    {
+      "start": 210.448,
+      "end": 230.336,
+      "text": "europea even when they have left europe but okay this this we still have to to to discover sorry jeff for this question not at all thank you honest i i hope so too uh yes the floor is yours okay thank you"
+    },
+    {
+      "start": 230.336,
+      "end": 258.064,
+      "text": "I'd like to thank you and DIGM for actually organizing this event. I think it's very timely and it's very fortunate that I think we've got two excellent speakers, both experts in the area and both of whom have contributed, I think, considerably to the development and the involvement in app development for the tracing in each of their respective countries."
+    },
+    {
+      "start": 258.064,
+      "end": 286.608,
+      "text": "So I think first I'd like to introduce Professor Alfonso Foggetta, who's a full professor at Politecnico Milano. He's also, since 2003, been the scientific director of CEFRIEL, which is the major organization and innovation center in North Italy, in the Lombardy region, and involved with a number of"
+    },
+    {
+      "start": 286.608,
+      "end": 315.104,
+      "text": "international companies. He's also been a member of a number of governmental panels and committees in Italy and has most recently been involved with the contact tracing app and the app development within Italy. So I'm very happy to introduce Alfonso and I'll leave the floor to him. Alfonso, it's yours. Thank you very much, Jeff."
+    },
+    {
+      "start": 315.104,
+      "end": 344.976,
+      "text": "So let me share my presentation. Here it is. So thanks a lot for this invitation. It's really a pleasure and an honor to be here with you. I will try to share in this 20 minutes I have some of the experiences we had with this contact tracing problem, both in Italy and also with some of the"
+    },
+    {
+      "start": 344.976,
+      "end": 366.784,
+      "text": "activities done at the european level in order to define an interoperability framework for the national contact tracing apps so just to remind a bit what the situation we are dealing with this is a very deceptive enemy as we well known why because for"
+    },
+    {
+      "start": 366.784,
+      "end": 395.2,
+      "text": "A significant amount of time for many people, this disease is basically invisible, or we do not see strong symptoms that can be instrumental in identifying an infected and healed person. So the real problem with this disease is that it can spread quickly across a large part of the population."
+    },
+    {
+      "start": 395.2,
+      "end": 424.624,
+      "text": "It's difficult to recognize when this happens. At the same time, for a small portion of people, this disease is very dangerous. It can lead to, as we saw, it can lead to death. At the same time, it can saturate or you can push to the extreme the ability of our health organizations to deal with the number of ill people we have in our countries."
+    },
+    {
+      "start": 424.624,
+      "end": 454.592,
+      "text": "In particular, the stresses on intensive care units in all the different countries. So this is something we have seen during the past months, unfortunately. And this is the domain, the scenario where we are supposed to operate and work. There are two possible approaches or two complementary approaches to deal with the situation. One is to put in effect some lockdown or shutdowns."
+    },
+    {
+      "start": 454.592,
+      "end": 482.912,
+      "text": "And this is what we have done, for instance, in Europe, in many countries, in Italy, especially when you have a large diffusion of the disease, which can be contained only by enforcing a strict separation among people. Once this disease is put under control, we can adopt a different strategy, which is based on the famous test, track, and isolate expression."
+    },
+    {
+      "start": 482.912,
+      "end": 504.288,
+      "text": "And here is when contact tracing comes into place, because in order to put in place this kind of strategy, we need basically to reduce the amount of time between symptoms and the treatment of people at risk. So we have to reduce this interval. In order to do that, we need to put in place."
+    },
+    {
+      "start": 504.288,
+      "end": 529.12,
+      "text": "very fast testing tools and processes. At the same time, we need very fast tracing processes in order to quickly jump from infected people to people at risk of getting ill at the same time. So in order to do this, during the past decades, we have"
+    },
+    {
+      "start": 529.12,
+      "end": 557.152,
+      "text": "adopted we have created a technique a process which is called the contact tracing we have been doing it this manually for in many occasions basically people infected are interviewed by physicians by operators and they are asking about all the contracts places where they have been to and this way we can basically identify other people"
+    },
+    {
+      "start": 557.152,
+      "end": 580.88,
+      "text": "that could be potentially be infected and so alert them and put them into isolation in order to limit or block the diffusion of the disease. The real issue is that if you do this manually it is extremely time consuming and it requires a high number of operators doing this job."
+    },
+    {
+      "start": 580.88,
+      "end": 607.68,
+      "text": "This is a table taken from a report by the European Center for Disease Prevention and Control. And as you can see, I think you can read it. Well, in order to complete the analysis of the tracing for one individual, you need several hours and a number of people doing this job. So if this has to be done on a larger scale, of course, it does not scale up."
+    },
+    {
+      "start": 607.68,
+      "end": 637.344,
+      "text": "The idea is, well, why don't we use technology in order to complement it at least, complement, not just replace, but complement and better support the manual contact tracing activity. This is a scheme from the University of Oxford, which in a very simple diagram explains what digital contact tracing is. Basically, you install some application on digital devices, on smartphones."
+    },
+    {
+      "start": 637.344,
+      "end": 665.792,
+      "text": "And as we will see, using Bluetooth Low Energy or other kinds of techniques, you are able to identify when devices for people are getting close to each other. These contacts can be traced. And once you identify a person which is positive after a COVID test, you can immediately spread the alert or distribute an alert for a signal."
+    },
+    {
+      "start": 665.792,
+      "end": 694.416,
+      "text": "to all the potential people who have been close sufficiently for a sufficient amount of time close to the positive person and therefore activate very quickly an isolation and treatment procedure in addition if you have information about the location where this contact occurred then you can also activate some the contamination activity or sanitization process"
+    },
+    {
+      "start": 694.416,
+      "end": 723.216,
+      "text": "in order to reduce environmental infections and environmental diffusion of the virus. So this is basically the technique that we have developed. I mean, we as countries and communities, we have developed in order to support the control of the disease. What are the issues and problems that we are facing in..."
+    },
+    {
+      "start": 723.376,
+      "end": 752.88,
+      "text": "accomplishing this strategy, in pursuing this strategy? Well, there are several problems. The first one is that as far as effectiveness is concerned, most solutions are based on Bluetooth Low Energy. So basically, they are able to trace the proximity of devices, but you do not know anything about where that contact took place."
+    },
+    {
+      "start": 753.776,
+      "end": 779.776,
+      "text": "So it's just information about proximity, not about location. These are several problems. First, Bluetooth is not precise enough. We can have false positives. But also, if we had used GPS, most nations have ruled out the possibility of using GPS or other kinds of localization techniques."
+    },
+    {
+      "start": 779.776,
+      "end": 809.376,
+      "text": "We could have identified also critical spots. For instance, if a positive person enters a school, it could be meaningful to know, useful to know, because you can activate operation and sanitization activities within that school. So this has been ruled out. So the first issue that we are facing is how effective is this approach since we had these limitations? The second one is privacy."
+    },
+    {
+      "start": 809.376,
+      "end": 838.656,
+      "text": "Indeed, we are traced every single second of our life, as long as we have cell phones with us. Still, tracing performed by governments has raised a lot of concern in all countries, everywhere, almost everywhere. And this has basically forced a sort of reduction or limitation of the extent by which we do tracing."
+    },
+    {
+      "start": 838.656,
+      "end": 865.808,
+      "text": "For instance, all the notification and all the communication of the keys of the infected people, this is done manually. It's not an automatic process. So a person might ignore the alert or ignore the information and avoiding transmitting the keys to alert other people. As a matter of fact,"
+    },
+    {
+      "start": 865.808,
+      "end": 894.032,
+      "text": "most of this application are called exposed notification apps, not tracing apps, because this is a kind of approach that for privacy reason we have decided to use, but this is still a problem because we have a trade-off between protection of the privacy of people at the same time effectiveness of the approach we are using. In reality,"
+    },
+    {
+      "start": 894.032,
+      "end": 919.584,
+      "text": "no critical information are collected, at least in a trusted and safe application that are checked by government and also by the distributors of this application. There is no critical data that are collected. But as a matter of fact, in order to reduce the impact from a privacy perspective of this application, we have"
+    },
+    {
+      "start": 919.584,
+      "end": 946.304,
+      "text": "lowered the level of tracing that we are able to perform using this technology. Another issue is adoption. At the beginning of this crisis, many researchers said that we needed a minimum amount of people using the apps in order to guarantee the effectiveness of the approach. Now, more recent studies have demonstrated that first"
+    },
+    {
+      "start": 946.304,
+      "end": 975.264,
+      "text": "But this was well known. We do not need 100% adoption of the dressing apps. At the same time, of course, effectiveness increases with adoption. And this problem is something that we are still dealing with in all countries. The adoption rate is not very high. Another important issue is interoperability. Now we are opening our borders. So what happens when people from different countries are traveling abroad?"
+    },
+    {
+      "start": 975.264,
+      "end": 1004.448,
+      "text": "And we have here a technical problem. The technical problem is that in many countries, we are using a content tracing approach based on decentralized technologies and procedures. In particular, most of them use the Apple-Google protocols. In other countries, a few ones, France, for instance, we use a centralized approach. Now, as I will show you in a few seconds, there is now a..."
+    },
+    {
+      "start": 1004.448,
+      "end": 1033.008,
+      "text": "interoperable protocol for decentralized applications. We are still working, at least until a few days ago, we are still working on the identification of viable protocol that allows us to basically have interoperability across different applications using different approaches."
+    },
+    {
+      "start": 1033.008,
+      "end": 1061.2,
+      "text": "So there are technical issues, but there is also the role of Apple and Google. I think Jim will talk more extensively about this later on. But still, I just want to mention that in order to put in place these protocols, you have to also see if this is compatible, if you want to use the Apple-Google protocol, if this approach is compatible with their algorithm and their approach. So this is another important issue."
+    },
+    {
+      "start": 1061.2,
+      "end": 1090.128,
+      "text": "Just to give you an idea, this is a couple of slides from the European Commission, the working group that has delivered and created this interoperable protocol. Basically, the idea is that each country has a back-end collecting the keys, the infected keys from people that have tested positive. And the idea is that using forwarding gateways at the European level,"
+    },
+    {
+      "start": 1090.128,
+      "end": 1119.52,
+      "text": "The infected keys of people that got infected in different countries or that have been exposed to people traveling from different countries can be forwarded to the different backend servers and this way enabling the check of the matching between keys, not only for the people of a specific country, but also with people traveling from or to other countries."
+    },
+    {
+      "start": 1119.52,
+      "end": 1148.72,
+      "text": "within the federation that we are considering here. So this protocol has been defined, there is a specification, and now all the countries using at least the centralized approach are implementing this protocol in order to provide, let's say, the equivalent of the roaming service that we are experiencing in the telecommunication services, communication domain. What are the challenges?"
+    },
+    {
+      "start": 1149.36,
+      "end": 1174.992,
+      "text": "Clearly, we have a huge problem of trust and confidence, at least in Italy, but also in other countries. We have seen that citizens are tempted to trust the companies more than our governments. Every single second, we..."
+    },
+    {
+      "start": 1175.216,
+      "end": 1203.488,
+      "text": "We give our information to the different social networks or developers or providers of our cell phones. So they have a lot of information about us. And it seems quite crazy, but we feel more confident in giving this information to those companies while we have a lot of concern in sharing some anonymous information with our governments."
+    },
+    {
+      "start": 1203.488,
+      "end": 1231.808,
+      "text": "One can say this is just a problem with the people not willing to share information. I think that is also a problem with our governments, because why people do not trust our governments and force them to have this kind of behavior? It's not just a problem of bad communication, because we have really a lot of bad communication in this crisis."
+    },
+    {
+      "start": 1231.808,
+      "end": 1260.784,
+      "text": "Probably there is really a problem, an issue of establishing a different way of relating and managing the relationship between our governments, the institution and citizens. Because one of the main problems we have nowadays is really this lack or this insufficient trust and confidence of citizens with respect to our governments."
+    },
+    {
+      "start": 1261.936,
+      "end": 1290.608,
+      "text": "The second problem is the relationship, and I think Jim will talk about this, between tech giants and nations. Basically, tech giants operate globally. The virus is global. But we have institutions that are more and more national by definition. But also our international organizations are weaker nowadays."
+    },
+    {
+      "start": 1290.704,
+      "end": 1318.352,
+      "text": "And so we have a problem which is global, technologies that are global, and institutions that are more and more fragmented. And we have to make quick decisions that have a worldwide validity, because the virus does not recognize borders. So if we make a wrong decision in one nation, that will sooner or later affect also the other nations."
+    },
+    {
+      "start": 1320.752,
+      "end": 1349.44,
+      "text": "So basically, we have a world with global problems and local policies, because maybe not the politicians, but I would say that we have failed to institutionalize globalization. Or we have, during the past years, weakened all the institutions, including the World Health Organization, that are in charge of managing."
+    },
+    {
+      "start": 1349.44,
+      "end": 1374.512,
+      "text": "worldwide crisis such as this emergency we are living nowadays. So I think this is one of the most concerning issues we are dealing with. We have to basically deal with increasingly global problems and at the same time we have increasingly"
+    },
+    {
+      "start": 1374.512,
+      "end": 1403.6,
+      "text": "weak organization or international organization in charge of dealing with these problems. Or at least this is the trend. We are now more and more dealing about our national institution and weakening our international connection, relationship, and governance models. And I think this has emerged clearly during the past months."
+    },
+    {
+      "start": 1403.6,
+      "end": 1432.384,
+      "text": "But one might say, but this is something, you know, this is once in a lifetime event. So it does will not occur very frequently. So why do we bother? Well, this is a chart that I've taken from a recent number of McKinsey quarterly. And it clearly shows that if you consider also just the past 15 years and what can happen nowadays, we see that we will we have to face."
+    },
+    {
+      "start": 1432.384,
+      "end": 1460.56,
+      "text": "a global crisis more and more caused by different kinds of events, political, geomilitary events, economic events, health events like this one. So either we are, since our world is global, our society is global, either we are able to deal with this kind of a situation or we will suffer increasingly damages."
+    },
+    {
+      "start": 1460.56,
+      "end": 1487.648,
+      "text": "from a crisis that will occur, inevitably. We cannot avoid it. So I think this is one of the major problems we have to think about, not just for this crisis, but also for our, hopefully we will not see many of them, but if we will have crisis in the future, we should learn from this experience and be ready to deal with them."
+    },
+    {
+      "start": 1487.648,
+      "end": 1513.104,
+      "text": "more effectively than what we did this time with COVID-19. And I think as academicians and researchers, I think the most important thing for us is to learn from the past, from the mistakes we made, from the good thing we did. And I think this is essential to be able to prepare our communities to better deal with the critical situation that might occur in the future. Thank you very much."
+    },
+    {
+      "start": 1514.128,
+      "end": 1544.112,
+      "text": "Thank you very much, Alfonso. That was an excellent talk. And I think you've raised a number of issues, which I think we can all think about in the next few minutes. But rather than going into questions at this stage, we're going to have our next talk. And that's given by James Larris, who is a professor and dean at the School of Computer and Communication Sciences at École Polytechnique Fédérale de Lausanne."
+    },
+    {
+      "start": 1544.112,
+      "end": 1566.224,
+      "text": "He worked prior to working there, he worked at Microsoft. And he has been, since earlier this year, deeply involved in the development of the DP3T. That's the Decentralized Privacy Preserving Proximity Tracing Protocol, which is used in the decentralized app."
+    },
+    {
+      "start": 1566.224,
+      "end": 1596.112,
+      "text": "And so I'm very interested and very pleased to welcome him to talk about his experiences and to tell us also about the involvement of the two tech giants. So, James, the floor is yours. Thank you, Jeff. And thank you for the invitation. It's a pleasure to be here. And I entirely concur with your remarks about Alfonso's excellent presentation. It lets me skip quite a bit of the background material. I'm not going to use slides."
+    },
+    {
+      "start": 1596.112,
+      "end": 1622.176,
+      "text": "I don't find them that effective in this kind of format. So I thought what I would do is basically proceed in a historical and explain how DP3T got so enmeshed with the two tech giants, Google and Apple, or as we call them, Gapple. So early this spring."
+    },
+    {
+      "start": 1622.176,
+      "end": 1649.568,
+      "text": "As Switzerland got locked down, we were approached by a group at the Fraunhofer Institute in Berlin that was developing a privacy preserving contact tracing application. The group eventually was called PEPPT. And we worked with them for a period of time until we had a schism. They were implementing a centralized app where the server."
+    },
+    {
+      "start": 1649.568,
+      "end": 1673.488,
+      "text": "did the matching between the beacons that were broadcast by a person who was diagnosed with COVID and the beacons that were received by various other users of the app. We had an alternative proposal, which was a decentralized proposal, where the matching was done on the individual cell phones."
+    },
+    {
+      "start": 1673.488,
+      "end": 1702.032,
+      "text": "So the beacons that you received were never uploaded to a centralized server, only the beacons that were broadcast by somebody who was diagnosed with COVID. That's the difference between centralized and decentralized in a nutshell. You can make good arguments for both sides, and there are a lot of arguments that are going on. I'm not going to pursue them. The argument that we had is that"
+    },
+    {
+      "start": 1702.032,
+      "end": 1727.824,
+      "text": "the decentralized was inherently more privacy preserving because the information about who you encountered never left your phone and that it was therefore impossible for the central server to be repurposed by an entity or for its information to be stolen by hackers. And so that's the approach that we advocated."
+    },
+    {
+      "start": 1727.824,
+      "end": 1755.264,
+      "text": "It led to a sort of schism with the group at the Fraunhofer Institute and we pursued our own approach. We wrote a white paper on the approach and the group was called DP3T for Decentralized Privacy Preserving Technology. All these names are terrible. My kids make fun of me, say that it's a good thing I never went into advertising."
+    },
+    {
+      "start": 1755.264,
+      "end": 1771.488,
+      "text": "We wrote this white paper and we, at the same time, started to build an app for use in Switzerland. And we, like everybody else, were quickly made aware that you cannot successfully build this app."
+    },
+    {
+      "start": 1771.488,
+      "end": 1799.584,
+      "text": "on standard iOS. You can build it on Android phones, Google Android phones, without any difficulty because it's possible to send and receive Bluetooth beacons or Bluetooth advertisements in the background on Android. iOS does not allow this in Apple's world. This is prohibited as a privacy-preserving measure."
+    },
+    {
+      "start": 1799.584,
+      "end": 1828.048,
+      "text": "They believe that these beacons could be used by applications on your phone to enable people to track, enable advertisers or companies to track individual users by listening to the beacons that were broadcast by an app on their phone. So you can imagine scenarios where you like walked into a store and you had an app for the store and they could track you through the store by just listening to the beacons. And so."
+    },
+    {
+      "start": 1828.048,
+      "end": 1852.032,
+      "text": "Apple decided that this was not allowed. And so while you can send Bluetooth beacons while your app is running in the foreground, if it goes into the background or if your phone goes to sleep or anything like that, it stops sending and receiving the beacons. And so there's no way to build a Bluetooth app on iOS without the help of Apple."
+    },
+    {
+      "start": 1852.032,
+      "end": 1878.336,
+      "text": "Several countries tried, in particular Singapore's app used Bluetooth and they tried to do it without the assistance of it and got very low adoption. It basically required you to keep your phone unlocked and it required the app to sort of force itself to stay in the foreground and consume battery life extremely quickly. And so it was a very undesirable product. We approached..."
+    },
+    {
+      "start": 1878.336,
+      "end": 1906.32,
+      "text": "both Apple and Google through our contacts. So I and several of the other professors at EPFL had contacts at Apple and Google. We didn't know they were working together, but we were approaching both companies with the message that it would be great if they helped us solve this problem. At some point, we got contacted by some people very high up who said we would like to have a joint meeting with you."
+    },
+    {
+      "start": 1906.32,
+      "end": 1928.208,
+      "text": "And they revealed that Apple and Google had been discussing this for several weeks and had come to the agreement that it was necessary for them to agree on a common set of protocols and that the protocols that they wanted to use were essentially the ones that we had published, the DP3T decentralized protocols. And so that started a pretty..."
+    },
+    {
+      "start": 1928.208,
+      "end": 1951.76,
+      "text": "close engagement with both of the companies. We had regular phone calls with them. We saw the documents early. We got early releases of the code. At the same time, we got the authority to build the Swiss app, which is called Swiss COVID. And so we hired"
+    },
+    {
+      "start": 1951.76,
+      "end": 1981.136,
+      "text": "a small startup company which had built a number of successful apps in switzerland and started doing a development with them and brought them into the collaboration with apple and google and um you know the process had its usual ups and downs anybody who's ever sort of tried to do commercial software development uh particularly with sort of new code and code that was being rushed into production can probably understand"
+    },
+    {
+      "start": 1981.136,
+      "end": 2006.784,
+      "text": "what I was talking about. It was very sort of difficult on both of the companies. The release process for software for phones is very complicated. There are essentially billions of these phones in existence. When Apple decides that it's going to release a new release of iOS, it has to get it basically right."
+    },
+    {
+      "start": 2006.784,
+      "end": 2034.176,
+      "text": "I mean, it's not going to get it perfectly right, but even, you know, a 1% error, you're talking about millions of phones that may not work. And so the process is not easy to navigate. And we were trying to push it about as hard as you could push it because we were still developing the app and developing the protocols and trying to work with the companies at the same time. And the collaboration between the companies, needless to say, was not."
+    },
+    {
+      "start": 2034.176,
+      "end": 2063.456,
+      "text": "the easiest thing in the world. There's no history between the companies and there's no love lost between the two companies either. Still, we made it work. We got the initial version released roughly on time. I will not say it was not difficult. Apple and Google went into this with a mindset that they understood everything. They understood the problems."
+    },
+    {
+      "start": 2063.456,
+      "end": 2084.496,
+      "text": "They were going to give us a solution. And we sort of have to push back very hard to explain to them that their solution did not work. So, you know, I'll give you two very specific examples. So, you know, they came up with a algorithm for scoring how close you were to another phone."
+    },
+    {
+      "start": 2084.496,
+      "end": 2111.088,
+      "text": "Basically, they didn't want to expose the beacons that you receive because that would be invasive, perhaps, of someone's privacy. It could be used for other purposes. Instead, they wanted to basically give you a way of giving them a very restricted formula about how many beacons you saw over what period of time and what the attenuation strength of the signals were from the beacons."
+    },
+    {
+      "start": 2111.088,
+      "end": 2140.928,
+      "text": "And they would give you back a score, which you then would use to decide whether this was a sufficient exposure. Unfortunately, what they engineered didn't work, even in a very simple case. So the Swiss model that we decided on with the epidemiologists in Switzerland, which corresponded to the WHO recommendation, is that you were exposed if you were within two meters of someone who was diagnosed for a period of 15 minutes or more."
+    },
+    {
+      "start": 2140.928,
+      "end": 2166.4,
+      "text": "model actually was a little different. We said that you were within two meters of any number of people who were diagnosed positive for 15 minutes or more, which caused further complications because Apple and Google had sort of assumed that it was only one person. And that's not what eventually was passed in the Swiss law that codified all of this. So it was quite difficult to sort of"
+    },
+    {
+      "start": 2166.4,
+      "end": 2185.504,
+      "text": "convinced them that we could not implement what was written into the Swiss law and that they actually had to change their interface, which they did. And we sort of kept on pushing. And the next release, which will come out this summer, is even more flexible and will allow pretty much."
+    },
+    {
+      "start": 2185.504,
+      "end": 2214.624,
+      "text": "any standard to be implemented. They are exposing a lot more information about the beacons that are responsible and allowing you to compute your own formulas over the information that your phone sees, as opposed to trying to do it all for you. But again, that's many, many months of pushing back and forth. Another example is that both companies sort of assumed that they knew everything about which app was appropriate for any user."
+    },
+    {
+      "start": 2214.624,
+      "end": 2240.944,
+      "text": "So they wanted to sort of say, you know, this is the app that you should install on your phone if you turn on exposure notification, which is a service in both operating systems. They then wanted to say, we'll download the app for you and start it running once you turn on the exposure notification. And we tried to explain to them that this is just not something that makes any sense in Europe."
+    },
+    {
+      "start": 2240.944,
+      "end": 2269.728,
+      "text": "And we're explaining this to a bunch of people who are sitting in the Silicon Valley in California. And we're trying to explain to them that it's not uncommon in Switzerland to have someone who lives in France across the border, works in Switzerland, may have a phone from a carrier in a third country and is using the app store in a fourth country."
+    },
+    {
+      "start": 2269.728,
+      "end": 2294.192,
+      "text": "and is covered by who knows which health system. And the sort of control over which app you should install really should be devolved on the user because they're the only ones who are really going to get it right. Again, we had many arguments about this. The current situation is you can install your app. They don't like it. They feel that"
+    },
+    {
+      "start": 2294.192,
+      "end": 2317.504,
+      "text": "They would get higher adoption if they controlled the install process. Maybe they would, but they would also get a much higher error rate in terms of which apps would be installed. Again, it's sort of this belief that they knew more than the people on the ground who were building it. You know, we successfully built the Swiss COVID app. We did a lot of work with both companies."
+    },
+    {
+      "start": 2317.504,
+      "end": 2344.8,
+      "text": "to calibrate the Bluetooth. This is one of those sort of issues is that Bluetooth is extremely approximate as a measurement technique. Fortunately, we don't have to measure anything exactly. We don't have to be able to say, you know, at two meters, all of a sudden the infection risk goes away. So if you're at two meters and a few centimeters, you're safe. And if you're a few centimeters on the other side of that line, you're exposed."
+    },
+    {
+      "start": 2344.8,
+      "end": 2370.768,
+      "text": "It's much, much more approximate than that. The epidemiologists sort of use these round numbers because they think of them as approximate values. Everybody else hears them and thinks of them as sort of absolute boundaries. And that's caused a great deal of confusion throughout the whole process. On the other hand, it's quite a challenge. It turns out that every cell phone broadcast."
+    },
+    {
+      "start": 2370.768,
+      "end": 2398.848,
+      "text": "at different power levels. This isn't such a big problem in Apple's world where they have a handful of phones in existence and they understand pretty well how they work. It is a huge problem in the Android world where there are literally thousands, if not tens of thousands of different Android phones in existence. And we did a lot of work with Google to sort of come up with reasonable calibrations."
+    },
+    {
+      "start": 2398.848,
+      "end": 2428.368,
+      "text": "We came up with a reasonable set of standards, which Switzerland adopted for the attenuation levels that indicate that you're likely within the distance. And we've published that information for the use of other countries as well. But it's been a real sort of challenge to get the information out of both companies to make this happen. Fortunately, there have been some very good people working in the companies who helped us."
+    },
+    {
+      "start": 2428.368,
+      "end": 2457.28,
+      "text": "Let me sort of now step up a little level and start talking about the policy issues, which I think are interesting. So it goes back to the original issue, which is that we could not build an app. Nobody could build an app that was going to be successful without the involvement of the two companies. And the two companies decided early on that they were going to use the decentralized app."
+    },
+    {
+      "start": 2457.28,
+      "end": 2484.768,
+      "text": "We think that that's great. I can understand that there are other people in other countries who disagree with us on that for a variety of reasons. France is still insisting that their centralized app that came out of INRIA is superior and they're insisting that they should do it. So a very interesting quote in the National Assembly in France in late May."
+    },
+    {
+      "start": 2484.768,
+      "end": 2512.896,
+      "text": "Cedric Oh, who is the state minister for digital economy, basically was complaining about the behavior of Apple and Google. They would not assist France in building their app because it was a centralized app. And he basically at the time, the UK was also pursuing this route. Subsequently, they changed and agreed that they were going to use the Google Apple framework. He basically sort of said very explicitly."
+    },
+    {
+      "start": 2512.896,
+      "end": 2542.832,
+      "text": "The two countries in Europe that are trying to build their own apps in their own way are also the two countries in Europe that have nuclear weapons. So if he had not been minister of digital economy and maybe been the minister of state or the minister of defense, that might have been taken as a threat to use nuclear weapons on Apple and Google. And I think it had reached that level of frustration in that country. Certainly, there was a lot of very, very high level pressure."
+    },
+    {
+      "start": 2542.832,
+      "end": 2571.376,
+      "text": "applied to Apple and Google, you know, all the way up to sort of the heads of state sort of making calls to Tim Cook, insisting that that, you know, Apple and Google should allow them to build the apps they want. This is an interesting question, right? I mean, in in many cases, Apple's behavior is extremely admirable. They have stood up to the United States."
+    },
+    {
+      "start": 2571.376,
+      "end": 2600.048,
+      "text": "in terms of defending end-to-end encryption and refusing to sort of install backdoors in it in spite of a huge amount of pressure from the law enforcement community and the presidents and the politicians in the US. You know, in that case, it's very easy to see their stand as a very principled stand. In this case, you know,"
+    },
+    {
+      "start": 2600.496,
+      "end": 2620.752,
+      "text": "It's, you know, it's a different argument. You could argue that will the citizens of France be any more threatened if the government is running a centralized server that's collecting the information? And I don't think anybody really seriously believes the citizens of France are."
+    },
+    {
+      "start": 2620.752,
+      "end": 2649.376,
+      "text": "going to be at more danger. There are plenty of other countries where the information that is collected in the centralized server could be used to recreate social networks and determine who was in contact with whom. And that's not hard to see that being perverted in other countries. And so you can argue again that Apple acted on principle. But the question is, should a company"
+    },
+    {
+      "start": 2649.376,
+      "end": 2672.528,
+      "text": "be able to determine a country's national health policy. You know, as Alfonso said, you know, there's an argument that other information might be useful for epidemiology. You know, the epidemiologists we worked with, Marcel Solité, who's both a professor of computer science and a professor of life sciences, believe that"
+    },
+    {
+      "start": 2672.528,
+      "end": 2699.088,
+      "text": "That information is not useful, that a lot of epidemiological information is collected for sort of later studies or, as he said, basically for your next 10 years of PhD graduate students research. And that for the contact tracing, we didn't need all of that other information. We certainly didn't need GPS information, which is extremely privacy revealing."
+    },
+    {
+      "start": 2699.344,
+      "end": 2729.088,
+      "text": "So we built an app with absolute minimum privacy. I'd like to try to share a poster we made. I don't know how well it's going to work. Maybe the wrong form factor for this, but I'll try. Let's see, where is it? Okay. Can people see that? Hello?"
+    },
+    {
+      "start": 2729.088,
+      "end": 2752.512,
+      "text": "Yes. Something is there. It's not very readable. Sorry. Yeah, it's unfortunate. Yeah, there's no probably no good way. So maybe I'll stop sharing it. Basically, it's a poster we made which listed the permissions that the Swiss COVID app required on your phone versus the permissions that Facebook and WhatsApp."
+    },
+    {
+      "start": 2752.512,
+      "end": 2779.392,
+      "text": "required on your phone. And, you know, the Swiss COVID app is seven sort of fairly generic permissions to, you know, run in the background, use the network, interact with Bluetooth. And Facebook and Google, Facebook and WhatsApp are sort of very long lists, which are much, much more intrusive. And we created this poster basically to make the point."
+    },
+    {
+      "start": 2779.392,
+      "end": 2808.24,
+      "text": "that you didn't need to worry about the Swiss COVID app because lots of people sort of worried about the privacy in Switzerland. We heard a lot from our friends, all of whom had WhatsApp running on their phone without a second thought. This goes back to Alphonse's point, which is that people seem either oblivious or willing to trust companies to a level that is quite surprising to people who understand what the companies are doing."
+    },
+    {
+      "start": 2808.24,
+      "end": 2837.456,
+      "text": "But then you come along with something like Swiss COVID, which was designed from first principles to be absolutely privacy preserving and minimal. And it's very difficult to explain the situation that's going on there. So, you know, this is a very interesting challenge for anybody who's sort of built one of these apps and tried to deploy it. You know, the current numbers in Switzerland are that we have."
+    },
+    {
+      "start": 2837.456,
+      "end": 2862.816,
+      "text": "slightly under a million active instances of it, which is probably in the low 20% of the population. It was a little over a million for a while, and then it has started dropping down. There are definitely examples of people being notified that they were exposed and going into isolation and then later being diagnosed."
+    },
+    {
+      "start": 2862.816,
+      "end": 2889.744,
+      "text": "People have tweeted those examples. And so we know that the app is working, but it's still very hard to explain to people exactly what privacy means and why they should trust this particular app. And, you know, this is in Switzerland where, you know, the app was developed by EPFL and ETH or the two Swiss federal technical universities, which are widely known. The app."
+    },
+    {
+      "start": 2889.744,
+      "end": 2918.672,
+      "text": "is authorized by a law that was passed by Swiss parliament overwhelmingly, which is sort of a prototypical law, which every other country should look at in terms of sort of setting out the conditions under which the app can be used, under which nobody could be required to use the app for any terms of service or employment, setting out what happens if you get asked to go into quarantine."
+    },
+    {
+      "start": 2918.672,
+      "end": 2948.56,
+      "text": "Sort of an extremely strong, extremely well thought out law backing it up. And still we have this problem of convincing people that their privacy will not be invaded by this. It's a real challenge that we thought we had licked in the beginning by building an app that was privacy preserving, but it's been much more difficult to convey that message than we ever anticipated."
+    },
+    {
+      "start": 2948.56,
+      "end": 2976.32,
+      "text": "So those are two of the key points. You know, there is a book I would refer you to by a law professor, Lawrence Lessing. I don't remember the exact title, but it's basically something like Code is Law, where he basically made the point that the big tech companies that write software."
+    },
+    {
+      "start": 2976.32,
+      "end": 3004.736,
+      "text": "are basically writing rules and regulations that govern how the world will behave into their systems by writing code. And that this gives the companies both immense control over the rest of society, as well as sort of a complete lack of accountability."
+    },
+    {
+      "start": 3004.736,
+      "end": 3032.416,
+      "text": "and democracy when this function that used to be the function of the legislative branch or the executive branch in certain countries was unwillingly and unknowingly delegated to large companies. So I think it was a very prescient book. The book came out over a decade ago, maybe even close to two decades ago, soon after the dot-com bust."
+    },
+    {
+      "start": 3032.416,
+      "end": 3058.032,
+      "text": "I definitely recommend that people read it. It makes a very, very strong point, which I think is very relevant to this discussion. So that's my presentation. That's great. That's perfect timing. Thank you very much. That's really very interesting. I found it fascinating to hear about the interaction with the two tech giants, which I have to say has..."
+    },
+    {
+      "start": 3058.032,
+      "end": 3086.768,
+      "text": "certainly raised quite a few heckles here in the UK, where there was quite a lot of feeling that the cooperation from Apple was not what it should have been, given the various attempts. The UK had a few problems of its own. Oh, absolutely. I think that's completely true. But I think I know that there are a number of questions already coming up. Moshe was certainly"
+    },
+    {
+      "start": 3086.768,
+      "end": 3115.552,
+      "text": "very keen to to want to ask a question even after alfonso so moshe if you're there if you'd like to come in now yeah can you hear me yes so i think that to me the the issue come from the two presentations and it's almost one of the you can think of it is the issue of i would say is societal governance globally so as a as alfonso put it we have"
+    },
+    {
+      "start": 3115.552,
+      "end": 3145.536,
+      "text": "We have global problems. We have local politics. I mean, whether locally is at the country level, but even at the country level. And then we have global corporations with very, I would say, at best are lightly regulated. So they have enormous unregulated power. And then there is, on the other hand, government has one thing that corporations do not have,"
+    },
+    {
+      "start": 3145.536,
+      "end": 3170.832,
+      "text": "And that's the ability to use physical power over us. We have essentially delegated the privilege of physical power over us to governments. And so we end up with governments where we don't trust because they have too much power over us. But corporations, as Jim pointed out, they have tremendous power over us, but it's invisible power."
+    },
+    {
+      "start": 3170.832,
+      "end": 3196.656,
+      "text": "So we trust corporations and they are not accountable to governments, to global governments in some sense. That is in a nutshell, you know, one can make a five minute spiel on the state of the world as it is now. Yeah, I have to say I completely agree with you, Moshe, but I don't know whether Alfonso or Jim, whether you would like to respond."
+    },
+    {
+      "start": 3196.656,
+      "end": 3225.84,
+      "text": "I will agree with Moshe as well. I think the issue of lack of trust in government is a complicated, deep one. I'm more familiar with the situation in the US since I spent most of my life there. I personally believe that it's part of a larger campaign by a certain right-wing segment of society to undercut."
+    },
+    {
+      "start": 3225.84,
+      "end": 3253.808,
+      "text": "the legitimacy of the government and basically has left people with a sort of deeply corrosive view of what the government can and should do. And that's made it very difficult in the U.S. to effectively respond to a crisis of this sort. You don't see that in Switzerland, but still there was a surprising level of distrust of this app, which is"
+    },
+    {
+      "start": 3253.808,
+      "end": 3276.544,
+      "text": "you know may have been developed by us but was basically put out there by the swiss government backed up by the swiss parliament and the swiss executive very surprising to me that that happened here as well um i i must say i i listened previously to a presentation by the people from singapore"
+    },
+    {
+      "start": 3276.544,
+      "end": 3305.376,
+      "text": "where their app not only does GPS, but it connects whenever you use your credit card. It goes into your health care system and it goes into all of the various movements that you make. And they actually consider this adoption is extremely high. And people consider their in their society to be completely acceptable. So these are things which seem to vary considerably from one culture to another."
+    },
+    {
+      "start": 3305.376,
+      "end": 3324.464,
+      "text": "But I'd like to move on to, there was a question from Alberto Vincentelli. Jeff? Yes. Put me on your list. Jeff? Sorry, I don't know who's speaking, so. Radu. Oh, Radu. Okay, sure."
+    },
+    {
+      "start": 3324.656,
+      "end": 3354.336,
+      "text": "So my comments are pretty much in line of what you said. I'm very familiar with Singapore. I live in part of my life in the United States and part in Europe. And the key point is what we are observing is a complete distrust of governments. Now, in Singapore, there is a consensus that the government is doing good things for you on one side. And the other side, you know that you're not following what the government says."
+    },
+    {
+      "start": 3354.336,
+      "end": 3380.016,
+      "text": "you are going to pay for it. So Singapore is not exactly a fully democratic country. So the key question, my opinion, is that how do we contrast the need of privacy with the societal needs? And so this is a general issue. I don't think it's only for COVID, but it's just what is appropriate to give up in terms of privacy for the good of everybody."
+    },
+    {
+      "start": 3380.016,
+      "end": 3408.88,
+      "text": "And if you look at what we have done in the past, privacy is always a relative concept. So you're willing to give up your privacy if you receive in exchange something that you like. And so you can tell everybody that if they carry a cell phone, their privacy is gone, long gone. Everybody can find out where you are and things of that sort. But they will not give up their cell phone because it's a service that they consider indispensable."
+    },
+    {
+      "start": 3408.88,
+      "end": 3437.456,
+      "text": "And so the issue is, how can we make the social good something that is indispensable for all of us? I don't know if you want to respond now, or do you want to take some more questions, German Alfonso? I would be sure to listen to some more questions. Okay. I think the next person who wanted to ask was Giuseppe Attardi."
+    },
+    {
+      "start": 3438.48,
+      "end": 3466.368,
+      "text": "Yes, thank you. Thank you for your presentation, really interesting and rich of information. I've been following the situation in Italy and discussing this and writing papers and participating to mailing lists of computer scientists in Italy and it was really surprising to see their reaction to the idea that"
+    },
+    {
+      "start": 3466.368,
+      "end": 3490.112,
+      "text": "we as researchers, as a community, could actually take a role, have a role in building something that fits our societal and societal needs. And the question I have is about from Larus, is I've read a letter from various ministers, including the Italian minister."
+    },
+    {
+      "start": 3490.112,
+      "end": 3519.936,
+      "text": "Paolo Pisano, that are asking to Google and Apple to provide them more freedom or more facilities, more availability to data. But the letter didn't say much about this. Does it have an idea about what they need, what they want, and whether Google and Apple will be willing to provide it? Thank you. When was this letter? I haven't seen the letter. Is it a recent letter? It is a few weeks ago, yes. It was sent, signed by..."
+    },
+    {
+      "start": 3519.936,
+      "end": 3542.448,
+      "text": "several ministers, and they were just asking to have more freedom to use the data, something like this, but they weren't really making precise what their requests were. So there is a couple possibilities. I don't know exactly what they're referring to either. One of the..."
+    },
+    {
+      "start": 3542.448,
+      "end": 3571.36,
+      "text": "possibilities is that, I didn't mention this, but to use the Google and Apple exposure notification interface, the API that allows you to send and broadcast these beacons, you have to be given special authorization by either Google or Apple, depending on who you're building the app for. That authorization is only given under certain conditions, one of which is that you agree"
+    },
+    {
+      "start": 3571.36,
+      "end": 3599.296,
+      "text": "not to build an app that uses this interface plus location tracking information. So for instance, you cannot build an app that uses the exposure notification and GPS. That is forbidden by the powers that be in the two companies. Another aspect of it is they actually only allow one app per country. And so, you know, there's no marketplace of apps."
+    },
+    {
+      "start": 3599.296,
+      "end": 3629.2,
+      "text": "within the country. So you can't have people competing and trying to produce better apps. So there's quite a bit of control. There's quite a bit of things that people have proposed that they would find helpful. Going back to this and to an earlier comment, I think it's very important to keep in mind the function of the app."
+    },
+    {
+      "start": 3629.2,
+      "end": 3657.584,
+      "text": "that we built for the exposure notification and contact tracing. It is literally sort of limited to this one scenario. Think of reproducing the scenario that Alfonso talked about where there's a human contact tracer. They basically ask you, yesterday you were in a meeting. Who was in the meeting? Where were they sitting around the table? So they could judge who you were next to for how long."
+    },
+    {
+      "start": 3657.584,
+      "end": 3682.736,
+      "text": "That is the functionality that these apps are supposed to reproduce. And it turns out that it's not really relevant where that meeting occurred. It's more relevant who was at the meeting because, you know, the table doesn't get exposed. We're not really worried about that form of transmission very much. So we built an absolute minimum functionality. And this is the approach that."
+    },
+    {
+      "start": 3682.736,
+      "end": 3705.936,
+      "text": "Google and Apple took, because the epidemiologist we were working with, Marcel Solité, said, look, this is what contact tracing is about in the real world. You don't sort of collect lots of information that you aren't going to need. You really want to know who was exposed to the person for what period of time. And that's it."
+    },
+    {
+      "start": 3705.936,
+      "end": 3734.832,
+      "text": "You can argue, and lots of other epidemiologists disagree. Lots of our countries disagree. Apple and Google have taken a very absolute position, as I've tried to describe. In certain circumstances, you can argue that it's a very admirable position that they've taken, that they've put their companies at risk. In this situation, you could argue that maybe it's just an absolute position that shows their enormous power."
+    },
+    {
+      "start": 3734.832,
+      "end": 3758.992,
+      "text": "over this application platform. Yeah, thank you. Thanks, Jim. I think there are still a number of people who really want to jump in. I know Radu wants to come next and then Hannes and then Carlo. So should we start with Radu, please, if you want to come in? Well, yeah, of course. Do you hear me? Yes. Okay, fine."
+    },
+    {
+      "start": 3759.728,
+      "end": 3789.328,
+      "text": "My name is Radu Popescu-Zeretin. I'm situated in Berlin. And I'm very surprised that you never referred about the app which was installed in Germany one week ago. It's an official starting in the first one week. There are 16 million downloads."
+    },
+    {
+      "start": 3789.36,
+      "end": 3815.6,
+      "text": "And it seems to me it's a decentralized solution. And they succeed actually to put Apple and Google together. So all the different arguments till now, from a German point of view, they have in a way solved."
+    },
+    {
+      "start": 3815.632,
+      "end": 3842.048,
+      "text": "The big problem actually what we have is actually the legal framework in which these systems are built in. And this refers actually to the GDPR in the European Commission, which was actually the law on privacy, which is already in place for the last..."
+    },
+    {
+      "start": 3842.048,
+      "end": 3871.072,
+      "text": "I don't know how many years, probably two years. If you conform to this law, the only solution is to go towards a decentralized solution, like in Germany. The acceptance of a centralized solution is probably bound to not trusting the government."
+    },
+    {
+      "start": 3871.072,
+      "end": 3894.592,
+      "text": "The question I have is, especially at Professor Fugeta, is actually, it's about interoperability. As you probably know, Germans are traveling like hell everywhere. And I wonder actually how the German solution, a decentralized..."
+    },
+    {
+      "start": 3894.592,
+      "end": 3922.64,
+      "text": "a solution actually which was deployed in Germany, can be put in place with the solution you presented in your transparencies. Thank you. Actually, the answer is very simple. The interoperable framework that I presented has been defined by a working group at the European Union level."
+    },
+    {
+      "start": 3922.64,
+      "end": 3946.64,
+      "text": "in which German was a major actor. Actually, the formal specification, the precise specification of the interoperability protocol has been written by a group of German professionals. And since most of the countries in Europe are using the decentralized approach based on the Apple-Google protocol,"
+    },
+    {
+      "start": 3946.64,
+      "end": 3972.608,
+      "text": "I think that at least within the framework, within the borders of European Union, we should have quite quickly, except for the privacy issues that are still there, but there are still some problems that have to be solved. But from a technical viewpoint, it should not be difficult to have an interoperable solution within Europe for European countries. Are you sure on that? Yes."
+    },
+    {
+      "start": 3972.608,
+      "end": 4002.08,
+      "text": "It's not a difficult problem if everybody's... And since most countries use the Apple-Google protocol, but even with other decentralized approach, I don't think there is a major problem because the protocol is not very complicated. The real issue is what happens when we will start traveling or we resume a large traveling with other countries if we really want to have the same kind of features also when you travel... But it's exactly my point, actually."
+    },
+    {
+      "start": 4002.08,
+      "end": 4031.632,
+      "text": "As you probably know, actually, the German starts the vacation now and they are all over in the world. And a lot of arguments actually in Germany is, so what shall we do with our German solution? Let me finish with that. Actually, what I'd like to say,"
+    },
+    {
+      "start": 4031.632,
+      "end": 4058.128,
+      "text": "It's something different. Actually, I think the European Commission missed its role again in this pandemic. And I think actually, you know, it's a matter of European-wide solutions which should be, in a way, actually put in place."
+    },
+    {
+      "start": 4058.128,
+      "end": 4078.528,
+      "text": "in conformance with their own legislation like the GDPR. I think we should actually move this on because I know that Hannes is dying to also come in. So if you'd like to come in Hannes."
+    },
+    {
+      "start": 4078.528,
+      "end": 4093.856,
+      "text": "Okay, just very shortly, so I think on a very upper level, the most important thing was said also by Jim is that code becomes rules, laws, and also norms. And I think this is a principal observation that..."
+    },
+    {
+      "start": 4093.856,
+      "end": 4121.536,
+      "text": "It's a political issue and I think politics on technology is becoming an overall political issue. And I think here it's also the importance of the initiative we have is this digital humanism where we somehow try to discuss those things and also to bring together academics with civil society and funding agencies. So to raise awareness on this and also have a look at those different aspects. So this is..."
+    },
+    {
+      "start": 4121.536,
+      "end": 4148.56,
+      "text": "In essence, digital humanism is not just an academic endeavor. It's a political one. And I think we should be aware of that. And the presentations made it very clear. I completely agree with you. The only problem is actually that we are all engineers. And in general, an engineer finds always a good solution. But that is not sure that it's..."
+    },
+    {
+      "start": 4148.56,
+      "end": 4177.824,
+      "text": "adopted and complying with existing regulation. I think that you're quite right, Hannes. I think they have made this as a major issue. And we really, although it's in this context, we really do have to consider this. I know Carlo and then Sally Wyatt also wants to make some comments. So Carlo, if you can be brief, please. Yes, I'd be very brief. Can you hear me? Yes."
+    },
+    {
+      "start": 4177.824,
+      "end": 4206.576,
+      "text": "Okay, so again, I would like to go back to the comment that was made regarding the fact that we distrust government and we trust the tech giants. I would like to propose that maybe one reason for that is that people largely still don't understand the threat."
+    },
+    {
+      "start": 4206.576,
+      "end": 4234.528,
+      "text": "of surveillance capitalism. I mean, there's a lot that is hidden to most of the public. The public is unaware of a lot of what the tech giants actually are doing. And my comment is that perhaps the governments have a role here because they haven't taken any serious stand."
+    },
+    {
+      "start": 4234.528,
+      "end": 4264.208,
+      "text": "on the side of the citizens, defending their rights against the tech giants. So maybe there could be more trust in governments if governments had taken actions, especially with respect to the tech giants. So maybe this is just a comment, but I would like to hear if the people here share this comment that I made."
+    },
+    {
+      "start": 4264.208,
+      "end": 4292.224,
+      "text": "Thank you. I have to say, I certainly feel that. And I really sometimes wonder whether we've sold our souls to the devil in the way in which we deal with many of the companies. But I reserve that because I think Sally wanted to also make a comment. So if you can come in, Sally. Thank you. My name is Sally White. I'm professor of digital cultures at Maastricht University in the Netherlands and a social scientist by background."
+    },
+    {
+      "start": 4292.224,
+      "end": 4318.64,
+      "text": "And I think my question is, I guess, really for Professor Laras, who told us about his very interesting experiences of working with Google and Apple over the last kind of weeks and months. And now and then you kind of hinted at some of the challenges of doing that, which I'm sure I certainly believe there were challenges. And I mean, both speakers identified some of those to do with, you know, that we've got a kind of global problem."
+    },
+    {
+      "start": 4318.64,
+      "end": 4347.984,
+      "text": "nation states, questions of kind of how citizens trust or don't trust governments and companies, how people understand questions of risk and uncertainty, particularly when it comes to health problems. And what I was wondering was whether or not in your kind of collaboration now, but in other kinds of collaboration, there was any involvement of political scientists, media studies scholars, communication studies people, for whom these sorts of questions"
+    },
+    {
+      "start": 4347.984,
+      "end": 4375.248,
+      "text": "are actually central to their work. And I think it would have been interesting if Google and Apple and governments had engaged people with these kinds of backgrounds. Absolutely. I agree with you. It was a very interesting experience. I have to say, if you're going to lock me in my apartment for four months, give me something like this. It was like doing a startup."
+    },
+    {
+      "start": 4375.248,
+      "end": 4403.104,
+      "text": "where you never sort of saw your collaborators face to face. You know, fortunately, one of the other professors, Ed Bunyan, and I both had a fairly long experience working in industry and had some pretty good contacts, as well as knowledge of how things work in companies, which made this possible. I think it would have been fairly difficult to accomplish this. In answer to your other question,"
+    },
+    {
+      "start": 4403.104,
+      "end": 4429.44,
+      "text": "One of our sort of closest collaborators is Michael Veal, who is a professor in, I think it's Imperial College in London, who's a law professor, who has been sort of very closely engaged with us from very early on. And, you know, he actually wrote a very nice piece for The Guardian last week."
+    },
+    {
+      "start": 4429.44,
+      "end": 4458.928,
+      "text": "about this issue of Apple and Google's control of the interface. So yeah, we have engaged with that. We've engaged with a number of other people from civil society in various countries, from NGOs that are interested in this. They tend to be people who have a tech background who are very interested in the privacy issues because that was our real central theme. We have not yet gone out to sort of a larger group, I think."
+    },
+    {
+      "start": 4458.928,
+      "end": 4484.368,
+      "text": "If we had had more time and sort of a better set of contacts, it would have been fantastic to engage with social scientists and try to understand people's attitudes, people's views, people's worldview, and how to address some of the concerns in terms of what we were building. We didn't."
+    },
+    {
+      "start": 4484.368,
+      "end": 4504.048,
+      "text": "do it. I don't think it's too late. We're actually hoping to pursue this as a sort of larger long-term research project involving many of the same people that were involved in building the Swiss COVID app. And so I think we will engage with a much more diverse community in the future."
+    },
+    {
+      "start": 4504.4,
+      "end": 4533.808,
+      "text": "Thanks very much, James. I'd like to, I think we've now come to the end. It's been difficult since I can see there are a number of people who want to ask and there are a number of questions and there's certainly a lot more we could discuss. But I'd certainly raise a lot of issues and I'd like to thank particularly Alfonso and James for their presentations. And again, to thank Hannes for organising this event. I think it's certainly been informative."
+    },
+    {
+      "start": 4533.808,
+      "end": 4555.776,
+      "text": "and with enough to both trouble us and make us think about what we should do in the future. So it's over to you, Hannes. Thank you, Jeff. Thanks to the participants and thanks to the speakers. One comment might be that maybe there should be some adoption studies with social scientists and technology guys for looking why and how which..."
+    },
+    {
+      "start": 4555.776,
+      "end": 4584.624,
+      "text": "app is used and why not and I think this would be very also for diffusion aspects of innovation this would be really thanks Sally for this comment I think this would be an interesting study and we could do it also Europe wide because I think it's also depending on the socio-cultural context but now I would really like to hand off thanking you all but I would like to hand over to Peter Knies"
+    },
+    {
+      "start": 4584.624,
+      "end": 4602.496,
+      "text": "who will do his final piece of music with some short intro. Peter, the floor is yours. Can we thank the speakers and the moderators? Sorry? Can we thank the speakers and the moderator?"
+    },
+    {
+      "start": 4602.496,
+      "end": 4630.816,
+      "text": "Yes, we have already done, Moshe. We have already thanked them. You did. We did. You did. We did. Okay. All of you raise your hands. But if you all raise your hands, we thought that you might want to say something. We do this. We do this. Okay. Thanks, Moshe. Peter, the floor is yours with music. Thank you very much. Let's keep this short."
+    },
+    {
+      "start": 4630.816,
+      "end": 4656.8,
+      "text": "Today's musical piece does not have a digital dimension to it, but it's a rather friendly greeting from Vienna to France on this July 14th. I'm not sure if you noticed, but it's July 14th. It's the French National Day commemorating the Storming of the Bastille, which is, of course, a crucial event in the French Revolution. So for this occasion, I've picked the Paris Waltz by Johann Strauss."
+    },
+    {
+      "start": 4656.8,
+      "end": 4686.48,
+      "text": "the father, which ends with a reminiscence to the Marseillais in Dakota. And since two of Johann Strauss' sons, Johann Strauss, the son, and Josef Strauss were students at what is now the Theowien, it feels like an appropriate salute to play a few minutes from this piece, performed by the Vienna Philharmonic Orchestra, conducted by Georges Pretre. So we jump right into the Paris Waltz. Let me share the screen or share the video. I hope you can."
+    },
+    {
+      "start": 4688.016,
+      "end": 4712.304,
+      "text": "See it by now. So again, thank you for joining and see you again on September 8th, which is our next event at the talk, how not to destroy the world with AI by Stuart Russell from UC Berkeley. And until then, enjoy the holidays. If you have that option, stay safe. And this is Johan Strauss. Download the COVID app."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

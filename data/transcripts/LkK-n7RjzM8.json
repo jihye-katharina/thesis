@@ -1,0 +1,1036 @@
+{
+  "video_id": "LkK-n7RjzM8",
+  "source": "whisper",
+  "language": "en",
+  "text": "Hello, everybody. Welcome to the panel of today, which is not a lecture, a special welcome to this panel. But before moving to our panel, just a short notice that, as you all probably know, the European member states, the Parliament and the European Commission, they have agreed on the so-called European AI Act. This was the so-called three log process. And this is the first legally binding regulation worldwide. And I think this will have some impact. These were hard negotiations. It took 37 hours, but at the end they agreed. And also we, as the Initiative for Digital Humanism, did our share. We published a statement of support and asked also for support signatures. Many of you have signed. And also many other initiatives and persons signed such. and communicated with the commission with a good end, I think. And this shows that civil society in a broader sense with this academia, civil society, NGOs, also industry can interfere with the development and also influence somehow. And this is a positive sign beyond the concrete EU-AI Act. It shows that engagement counts and this is an important issue for us. The panel of today discusses an equally important topic. It's in the field of AI. What's the relationship between U.S. and China? It's cooperation or competition. And also what's about Europe and other parts of the world. And I am happy to welcome really distinguished speaker, Mei-Lin Fung, Gianclaudio Maglieri, and Joseph Sifakis in alphabetic order. Thank you for having accepted the invitation and for taking part in this discussion. You will be introduced in more detail by Erich Brehm, who acts as a moderator of today. Also, the choreography of today has slightly changed. It will be explained by Erich. But most important at the end, again, we have a piece of music. So stay online. It was selected this time by Mei Lin, and you will be excited by the piece she has selected. I welcome. Erich is the moderator. I'm not introducing him because he's well known in our community. And Erich, the floor is yours. Many thanks, Hannes. It's really great being able to moderate this panel today. I'm quite excited. It's not only an important topic, as we just said, but it's really three excellent speakers today coming together in this panel. The title is AI competition or cooperation between US and China. And then in bracket, it says, and what's about Europe and other parts of the world, which reads a bit like a footnote. And I think we should explain that, of course, the or in the question about competition or cooperation doesn't have to be an exclusive or. Probably the answer is going to be and slash or. But I think that will be subject of our debate. Now, let me briefly introduce how we are going to manage this today. So the idea was we have two rounds of panelists discussion. So statements from each panelist. And then if we have time, a short interaction between the panelists. And after that, we'll open the floor to everybody for some Q&A. All in all, we should be done by. after 90 minutes approximately. So that's the plan for today. Now, when I said I'm really proud to manage this panel, then it's, of course, because of the achievements of our speakers. Let me start in the opposite order in which we are going to start the panel. Let me start with Dr. Gianclaudio Maglieri. He is an associate professor of law and technology. and a board member at eLaw, which is the Center for Law and Digital Technologies. He serves as the co-director of the Brussels Privacy Hub at the Free University of Brussels and as an affiliated researcher at the Augmented Law Institute of the EDHEC Business School in Lille. He's an associate editor of Computer Law and Security Review, an external ethics expert of the European Commission and an advisory board member of EPIC. He also coordinates Vulnera, the International Observatory of Vulnerable People in Data Protection, and conducts research on and teaches data protection law, privacy, AI regulation, digital law, consumer protection in the digital market, data sustainability, and intellectual property law. He got his LLM with honors at the University of Pisa and a JD with honors from Sant'Anna School of Advanced Studies in Pisa. He was a visiting student in London, in Bern, in Paris, and in Oxford, and obtained a PhD in law at the three-year University of Brussels, where he is now a guest professor and affiliated researcher, where his thesis focused on vulnerable data subjects in the GDPR, and he also conducts research on automated decision-making, privacy and fundamental rights, surveillance, data ownership, intellectual privacy, and consumer law. It's a great honor and pleasure to have you here, John Claudio. Thank you very much. Thank you. Joseph Sifakis doesn't really need much presentation, but I'll do it anyway because it's a real pleasure just listing his achievements. He is a Meritor Senior CNRS Researcher at Verimark. He, I think, is most well known for his research interests in embedded systems design with a strong focus on formalization of system design as a process leading from requirements to trustworthy, optimized and correct by construction implementations. He was a full professor at École Polytechnique Fédérale de Lausanne, EPFL, and he's the founder of the Embedded Systems and Other Sorts of Things Lab, VERIMAG, in Grenoble, which he directed for 13 years. In 2007, of course, Joseph Sifakis received the Turing Award for his contribution to the theory and application of model checking, which is now the most widely used system verification technique. And he was extremely active at the French and EU policy levels, especially in embedded systems research policy. He's a member of the French Academy of Sciences, a member of the French National Academy of Engineering, a member of Academia Europaea, and a member of the American Academy of Arts and Sciences, as well as a member of the National Academy of Engineering. He's a Grand Officer of the French National Order of Merit, a Commander of the French Legion of Honor, and received the Leonardo da Vinci Medal in 2012, and in 2009, the award of the Hellenic Parliament Foundation for Parliamentarism and Democracy. It is a great pleasure, Joseph. to have you here today. Thank you. Thank you. And last, but by no means least, Mai-Ling Fung. And I do again apologize that in one of the messages that went out, her name was misspelled. It's Mai-Ling Fung. She is the chair and co-founder of the People-Centered Internet. Through People-Centered Internet, she works to ensure that people are, as the name suggests, at the center of the Internet as digital interdependence reshapes societies and economies. A key focus of her work as people-centered internet chair is to promote resilient communities financed with digital assets using data so that communities can connect and members can thrive. She draws on her early training as a financial analyst at Intel, in operations research at Shell, and her extensive experience in developing customer relationship management approaches to bring systematic evidence-based analysis to the complex supply and demand for information. She also worked as a socio-technical lead for federal health futures at the DoD. And through people-centered internet, she has built alliances based on people-centered ecosystems with the IEEE, the World Economic Forum, the World Bank, the UN, and others at country and at regional level. She was a fellow of the Hasso Plattner Institute. She won the Women of the Forum Award of the Women's Economic Forum in 2020, a top 10 finalist of the GIA Challenge. She was shortlisted for Women of the Year, and she is a winner of the Philip R. Crosby Golden Medallion of the American Society of Competitiveness. Mai-Ling Fong, it's a great pleasure to have you here today. Thank you. Let's start with you. Obviously, ladies first. So let's have a quick look at the status of especially AI science and technology in China and the US. Let's try and do a quick assessment. Where are they? Where are the differences? Where are the dependencies and in what way are they reciprocal? That would be my first question. And then the second follow up might be. Both the US and China are pushing currently towards greater technological self-sufficiency in industries such as semiconductors, cloud computing batteries. How does that affect AI-related developments in cooperation and competition? Well, you've certainly thrown me a lot of curveballs, but I'm up to it, so let's go. I'm speaking here from New Delhi, India. And I have to say the world looks very different. This is the opening. of the Global Partnership for Artificial Intelligence. I just, not three hours ago, saw the handover from Japan from the Global Partnership for AI to India, and it was inaugurated by India's prime minister. It's interesting that the topic of today is US versus China, and I have lived in the US for four decades. I also was born in Singapore and I have had clients in China. So I do have hands on, so to speak, a foot on the ground experience in both countries, China and the US. And I wonder whether the topic, as it's being stated, is really rather missing the target. that we are distracted with this geopolitical clash that seems so interesting to the world's journalists, but I'm much more interested in what is interesting for the world's people. I will try to say a few things about U.S. and China, but then I want to shift to the global south. The U.S. has had technological leadership. I've been living in Silicon Valley now, working at Intel and Oracle, and to some degree been at the heart of some of the change. The biggest, biggest thing is the Internet. The A.I. would not be so important if it wasn't the Internet. The fact that we are all able to be connected and that artificial intelligence. can allow us to communicate our findings and our insights or our biases really expands their impact. So. As I see it, the U.S. has actually launched the first new green industrial deal since the New Deal about 70, 80 years ago. Five hundred and fourteen billion dollars of new green deal. semiconductor manufacturing, energy, self-sufficiency, all of this stuff, renewable energy. And in a way, it may not have happened if there wasn't the geopolitical clash with China, because it really took sort of the competition to get going. And yet when I go to China, the last time I was in China was 2008, so it was quite a while ago, but I was actually helping Microsoft address the piracy problem that it had in China. In China, I see a lot of people who finally were able to come out of poverty, 800 million people out of poverty. There are different priorities in China than it looks like from, oh. You know, people in China are just happy to have a future. They're interested in what they can do. The fact that Chinese leaders might have stronger ideas doesn't mean that the Chinese people have any idea of taking over the world. They never have. This is the history of China. China is the center of the world. Everything else is peripheral. It's a different kind of approach. There's no sort of sense of. colonization as Europe looks at it. So those are my observations about the geopolitical clash. And that's why I want to shift to, there's a lot more people in the world. Here I am in India, 1.4 billion people, now the most populous country. The concerns here are about equity, about not increasing the digital divide. I'm here with the AI launch. And the biggest question is, how can we have responsible AI? The speech by the prime minister of India was the strongest speech I've heard as a world leader. And I truly encourage you to look at the news coverage about his speech. He knew what he was talking about as a longtime technologist. I can tell the difference between somebody who's had a speech written for them about technology and somebody who really is very, very clear what AI is going to do for India. And he was absolutely clear. He is going there no matter what. And what he sees is the opportunity for prosperity and thriving for people who have been in poverty for a very, very long time. It's still shocking to me to come to New Delhi and see the poverty. And when it's all around you, you want to fix it. And the thing is, AI makes it fixable for India. One and a half months ago, I was in Bangladesh for the AI and Digital Public Infrastructure Summit. Bangladesh has set a goal of zero digital divide. I put into the chat paper I wrote for the Edelman Trust Barometer. It was just out last week. I described one of the AI projects in Bangladesh. Floods are a huge problem in Bangladesh. 40 million people now have a flood warning system because of AI. Thousands of people used to die when the floods came. Now it's just like a dozen. This is what AI can do for people. I don't want to talk about, you know, all these abstract things. Floods no longer kill people in Bangladesh because of AI, because of being able to predict when the water rises and people get out of the way in time. This is a project between Google and A2I. A2I has aspired to innovate out of the prime minister's office. The possibility of public digital public infrastructure making a huge difference in the rest of the world is what I'm most interested in. So back to you. Thank you very much, Marlene. Thank you also for reminding us about India in particular, but the rest of the world. Point very well taken. Nevertheless, I'll hand over to Joseph now, who also I know is experienced. both in the U.S. and with China. Joseph, what's your view? What's your take on this? Yes, okay, thank you. I would like to start by saying that I take a comparison between the U.S. AI and the Chinese AI and respective strengths and weaknesses. First of all, I would like to emphasize that there is a difference in the AI vision. The AI vision in the United States is defined by major tech companies such as OpenAI and DeepMind that see artificial general intelligence as the primary goal. suggesting that artificial general intelligence can be achieved through machine learning and its further developments. And to say it simply, machine learning is the end of the story. So artificial general intelligence is a kind of brain-like intelligence capable of reasoning, creative thought, and perhaps even consciousness. I think that China's vision is not limited to conversational systems. but encompasses a broader vision that attempts to marry machine learning and ICT to develop autonomous systems like those envisioned by the industrial Internet of Things, such as autonomous transport systems, smart cities, smart factories, farms, smart grids, etc. So China, I think, strategically tries to leverage... its strengths in many areas of industry and services. So they try to develop different kinds of systems, AI monitors that are very important for the management of complex systems. So you have this difference, this diversification in China. They focus more on industrial applications and I think this difference in the implementation of the AI vision. is important to be emphasized. And the question is whether in the long term, AI competition will be judged on technologies other than machine learning and transformative AI. Now, this is the first remark. And the second remark concerns the differences in innovation and development in two countries. We know that the U.S. has been indisputably the leader in disruptive innovation, in information and communication technologies, what we call ICT, and more recently in artificial intelligence and ICT supremacy. almost to every field, from hardware components, supercomputers, software, services industry, the Internet, etc. And this supremacy is also supported by technology from Taiwan and South Korea. And in the U.S., you have something very important that is the existence of innovation ecosystems. The concept is well understood. centers of excellence that can develop cutting-edge research and the ecosystems can help transfer of results. We know this. Now the situation in China is a bit different. I think that the scientific and technological innovation is organized I mean, you don't have this interesting interaction between university research and large technology companies, and you don't have the same, at least you don't have the same degree of cross-fertilization. You have an impressive increase of research publications in China, but I think the average does not match that of the US or even the most advanced European countries. So China perhaps lags behind in disruptive innovation, but is strong in integrative innovation in many areas, and this should not be neglected. Now regarding AI, I think that Chinese research is rapidly catching up with the United States. And Chinese researchers now publish more papers on artificial intelligence and obtain more patents than American researchers. Also a strong point in the Chinese strategy is telecommunications, where Chinese occupy a strong position, in particular with 5G technology. Now, the Chinese approach is based on strong and consistent commitment on the part of the state, we know this, to develop visions that are pursued whatever the cost. And this approach has paid off, as China has been able to catch up spectacularly in a number of industrial fields, such as construction, sheet building, automotive industry, telecommunications, etc. Another question, but I don't know whether I have time, is whether there is competition between the U.S. and China. Of course there is competition, but we should not forget or neglect the fact that I don't think that China sees itself as a competitor to the U.S. or Europe. They have a closed ecosystem and they try to build based on its own strengths and assets. Of course, we know this is a national priority and they are pushing a lot in that direction. And here I would like, perhaps because I know a little bit about China, I would like to emphasize some advantages of China. Beyond expressions of political will, China has some important advantages. They have a very large community of smartphone users, 800 million iPhone users to pay for goods and services, voice recognition, all the kinds of services you can imagine. And these users generate a vast amount of digital information, which is widely accessible due to regulations. And another advantage is that the Chinese public has accepted that robots fill labor shortages in hotels, in any hospitals, banks, any kind of service. China also has a large pool of skilled workers. And experts, they are producing a lot of experts, especially in AI. There are some figures about that, if you have questions. And some papers say that China is an undisputed champion in AI research papers. But I have no strong opinion about that. Finally, I think that... Artificial intelligence industry in China is developing very fast, and this development has impacted many areas, including agriculture, transportation, accommodation, food, services, etc. And it is being orchestrated, of course, by the central government, which has drawn up a list of national AI teams. comprising the big Chinese companies like Baidu, Tencent, Alibaba, etc. And each company, so they have a very clear plan about how to make progress. And this is also something very, very important to be noticed. Then perhaps I should stop here. And okay, so I will stop here. Thank you. Thank you very much, Joseph. Good timing and not a problem. Gianclaudio, so we have touched upon China, talked about the US and mentioned India. Now, the obvious question to ask you would be, where does this leave Europe and perhaps the rest of the world? And especially also since we have already touched upon the nearly a billion smartphone users in China creating data all the time. Gianclaudio. Yeah, thank you very much. And thank you to the previous speakers for their super interesting and deep analysis. So, yeah, I think we cannot address the topic of AI policy without talking about governance and regulation, actually. And yeah, I think the general approaches that we have observed between the, let's say, the two. big countries that are in the title of this panel, somehow reflecting consistently what we could expect from two different approaches to law in general, to values in general, etc. So it's no surprise that the US preferred for several decades Let's say digital, we could say anarchy, giving, I mean, leaving a big tax to grow and addressing the issue just from a competition slash weak privacy perspective. Consumer, let's say consumer privacy, because it goes more, they don't have a general privacy law in the States. At the same time, in China, the fear is exactly big companies that could jeopardize the central power. And so we observed, actually. As the other speakers mentioned, we observed the sovereignty, AI sovereignty in China, having companies that are based in China, etc. And you can see, and they represent two totally different aspects of the same issue. The issue is that digital market and the AI market is totally fluid, borderless, etc. And the United States wants to maybe even emphasize this borderlessness because most of the major AI industries are based in the States. And so having this de facto control would be basically Interesting for them. So new things happened just this year. So we had the executive order of Biden on AI, trustworthy, safe, responsible and trustworthy AI two months ago, less than two months ago, let's say six weeks ago. And it was kind of a surprise. And of course, that executive order is a bit of contradiction to what they just said. They said there was anarchy, but they produced a huge executive. I mean, Biden produced a long executive order where there are many, I would say, accountability duties for AI developers. Still, it's an executive order and not a law. Executive orders have a legal power, but they don't have a stability. Next president, hopefully not in a few months, can overturn and just delete the executive power. And in addition to that, most of the rules that this Biden executive order on AI bring are not redlining AI practices, are not putting a red zone where you cannot go. There are no prohibitions. There are many procedural duties, rules, which is anyway good because design is a procedure. And so AI design is a procedure and law is based on procedures and proceduralizing towards human rights, fundamental rights is something that is necessary. Then in China, we have other regulations. We have the personal data regulation, the cybersecurity regulation, and many soft tools for AI regulations. But the most important aspects of a Chinese approach to AI is not based on written text. It's based on their policy and they are strict. And so, yeah, without any limit, like limitless control on the companies that are producing AI in the country. So avoiding external influences and so on, which seems kind of a contradiction to their approach of being market leaders. Anyway, you mentioned Europe. So Europe is in between and Europe was in between, not just for AI regulation. Europe was in between also for data protection, but also before for consumer protection. And the most important and most interesting thing is on which values we build our AI policy. Because if we read the data protection rules in China, for example, there is some indirect references to some values, etc. And then we found what these values are. There are two lines in the law referring to positive energies and to mainstream values of the party. So these values refer to a specific. homogeneous values of the ruling party and more ambiguous positive energy values, which I think refer again to a specific cultural approach to regulation. While U.S. pushes a lot for, you know, trustworthiness and even the word trustworthiness as a value is very interesting because it doesn't focus on the protection of individual itself. It focuses on how the individual would feel as consumers of AI systems. So it's still a market oriented approach to reliable and safe AI. So just to say we have different values and Europe is in between. Why? Because Europe decided that we didn't want to. have full sovereignty. We cannot have full sovereignty in Europe for big techs, for platforms, for AI systems. We have important developers, important providers, important producers, but we couldn't be self-serving. On the other hand, yeah, I think this is the main consideration that European Union legislators need also when regulating big techs, for example, not just the GDPR, but the Digital Services Act, the DSA. It's a super ambitious, a bit over, a bit underestimated because people don't talk a lot about it, but it's super important. for limiting dark patterns on social media, for enforcing impact assessment of fundamental rights for social media, for making sure that there's no abuse of data sharing, etc., in connection with the Digital Markets Act. So Europe decided that we couldn't get rid of US or Chinese companies providing AI, so we didn't want sovereignty. At the same time, we didn't want anarchism, we can say. And so I think the AI Act is indeed, and in general, the EU digital strategy, is indeed kind of a compromise between... allowing free flow of companies, free market from China and US, but at the same time, putting strong limits on them. And these limits are not justified just by the market. Usually when there's a regulation in the States, it's justified on competition law. So it's justified on a better market regulation. Here, what Europe decided to do is that if you produce very risky things, So social media or AI, for example, just to make two important business models. I mean, AI is not a business model. AI is everything. But just to say you have a big burden to respect and to carry out. And so imposing quasi public duties to AI providers, to social media provider was the European way. So we say you can come from US and from China and India and other parts of the world. And you can, of course, commercialize here. But you will have duties that in a liberal market would be considered. an outrage because they're too much. But we will put those duties to protect people, etc. So maybe we will talk about the specific rules about the AI Act later. But just maybe one word to say, one sentence to say, many commentators said the AI Act was the first AI rule in the world. And some people say, well, no, we have the executive order of Biden already. We have China that has already rules on AI. Yes. But I mentioned already that these two different tools were not comprehensive enough, both in their scope and in their stability. So we can say that Europe, and also one last thing, Europe was the first to prohibit some practices, some AI practices. So in that sense, we might say that Europe decided to take this brave, but we will see because we are still waiting for the final text and for the official approval of the parliament and the council. So, yeah. Thank you. Thank you. Thank you, Gianclaudio. That brings me back to Mai-Ling Fung. I'm tempted to ask you now about regulation in India, but I think that's probably not what I would like to ask you. But coming back to this question of approaches to regulation and governance, I mean, obviously there is some consensus now that regulation is required and we see some laws emerging. But maybe you could elaborate a bit on what you have been saying before. that also AI plays a big role in what's certainly called AI for good in this play of enabling. But then also, what is the role again between this competition versus cooperation in precisely this game? Because, again, there seems to be a duality of these approaches. And perhaps you could also add a little bit from the perspective of generative AI, which without any doubt, is behind this massive interest, behind the change in dynamics that we've seen over the last one or two years. You're still muted. I'm glad you used the word cooperation in the question. I think it has been thought. too neglected, that in fact one of the most powerful uses of artificial intelligence is for us to improve our collective intelligence. That in fact all of this data allows us to go much, much further than coming up with insurance and actuarial tables, but to actually come back to what for me is the core of why you all gather. Why, I gather with you, digital humanism. What is the role of digital in supporting our humanity? And all of the talk about competition, what has that got to do with how digital supports our humanity? I want to call you back to this core question and what it means to me. And quite apart from the issue of privacy is that for the first time we can look at a human from conception to death and actually try to work out how we can have the best possible flourishing lives in between. If we begin to have that kind of ability, to look at what interventions we could do so that more people could flourish in the Aristotle notion of human flourishing. Why do we spend all our time talking about competition when, in fact, we've got all these lives, right? My life, your life, grandmother's life, our children's lives. And what are we doing to help them flourish? us flourish. And we could do a whole lot more. I'm reminded of Alice in Wonderland. She met the Cheshire Cat. She said, where should I go? Cat says, where do you want to go? She says, I don't know. Cat says, it doesn't matter where you go. So I'm saying it doesn't matter, U.S., China, whatever. We have to decide what we want for our lives, what you want in Europe, what you want in Austria, what India wants in India. And miraculously, what digital. could do is allow us to distribute our resources and our physical goods and our interchanges so that we could optimize flourishing on the planet. I say that's a worthy goal. So cooperation or doing something that helps all people lead better lives and better in their own cultural context. It's possible. What I work on today is the idea of digital trade that allows each country to do their own thing, but it's federated. You prioritize whatever you prioritize and exchange what you want to exchange, and we can all be better off. So if you do the sigma of everybody's lives, you want to make that big. What I saw in India today. is a complete grasp of what I've just said. And it will be challenging to the world when the global South starts looking at the sigma of people's lives and maximizing flourishing. Back to you. Thank you. Thank you, Malin. I think digital humanists would all agree with you. There is little doubt. But then there is always a but. I don't know. Actually, to the key point, regulation. In the article that I shared in the chat, it says, make AI work for everyone. Regulation should be governed by the people, should be fed and navigated by the people. Physics is physics labs. Chemistry is chemistry labs. What are the labs for digital? I claim they should be community learning and living labs. We can only see the cumulative effect of all our digital interventions, whether they're innovation or regulation. If we look at it in situ, in people's lives, how are they living? Why are they changing? How has it affected them? So we need community learning and living labs for us to evaluate the impact of innovation, of regulation. If we don't do that, we're just mired in the swamp of anecdotes and clever arguments. We really actually have data if we chose to collect it. I'll give one final thing. Digital health in the United States, the NIH was investing in a lot of digital health startups. And they realized that 80% of the funding to these digital health startups was to recruit the cohort of people that would be testing. It was so expensive to get that. So they decided that they would actually fund a project. That could have a sustainable business model for having standing cohorts for testing digital health innovations, products, gadgets, interventions. This gave me the idea of we should have community learning and living labs. The EU is already doing this. They're called community living labs. They're used in very scientific, strict scientific ways. hard science, not so much social science, not so much social technical science. We should have community learning and living labs in which we use AI to help us understand what is the impact of these decisions that we're making, these innovations we're introducing. We should have labeling and licensing based on testing inside. these community learning and living labs, and they're just normal communities, except they might put their hands up and say, we're willing to be measured so that our measurements can help all of the EU or all of India understand better which technologies, what AI interventions actually do more good than harm and how they should be used. I'm an advocate of labeling. licensing, interoperability, and identity. And identity is not just for people, but they're for all our devices, and not just all our devices at one point in time. They should be for our devices over the life cycle of that device, including end of life. And how is it disposed? How is it created? So there's a lot to think about. But first, we've got to decide what we want to emphasize. And I say it's people and planet. Thanks, Malin. I think not many people in this group will probably disagree. Joseph, however, looking back at your past history, I'm sure you know that things are not always quite as simple. What's your take on these questions? And you're still muted. still muted. Yes, yes, yes. Okay, you can hear me now. Okay, so thank you for this hint, okay. I would like to talk from my systems engineering perspective, and I'd like to have some time to analyze the situation of the techs, technically speaking. There is a consensus that now we need the regulations, of course. And the problem, however, is that there is no agreement on what exactly can or should be regulated and what are the risks involved in using AI. So nobody, I mean, there is no agreement about that and how this can be achieved in practice also. This is a very important question and I would like to take some time to explain what are the technical difficulties behind. I think it's very important to reach an agreement finally and not to repeat the mistakes that we did of being late to regulate the internet and the social media and this is something we are paying for now. So let me summarize the differences in the points of view between Europe and the approaches between Europe, China, and the U.S. So Europe has the strongest and the more complete AI regulations for sure with two basic texts. There are complementary texts. These are the AI Act and the Digital Services Act. Now, China follows a very different approach. This is a vertical approach. There are many texts, but the main texts are regulating three types of systems. Recommendation systems, deep synthesis systems, and generative systems. And one characteristic of the Chinese texts is that they impose very strict constraints on the content. that, in my opinion, require very careful design from the outside. And then in the US, you have a set of texts. The most important is the AI executive order that has been published end of October. This is a text that is less coercive. It includes recommendations and guidelines and relies more on the cooperation of commercial developers of AI models and the US government. Something else I would like to emphasize is that major American technology companies promote the principles of ethical AI. This is something I would like to discuss because it's becoming a very, very important question what these principles mean exactly. There are papers about that, a lot of discussion. For instance, Google advocates responsible AI practices. Microsoft proposes a responsible AI standard. So these are the differences in the approaches between the three players I have mentioned. Now, I would like to explain what it means risk management and what are the technical difficulties for regulating AI. So regulations are designed to identify risks and impose measures to mitigate them or to eradicate them. Usually we distinguish between technology risk, anthropogenic risk and physical risk. So in the case of the AI, the important distinction is between technology risk and anthropogenic risk. The technology risk, I think it's a very important distinction, and the debate about AI-induced risks often ignores this distinction. So technology risk is associated with hazards that compromise the system's ability to meet technical requirements, in particular safety and security risks. On the other hand, anthropogenic risks arise from the intentional or unintentional misuse of technology violating regulatory or legal frameworks. Just to give an example, even if an LLM can generate deepfakes, this can be considered as a technology risk, using LLMs to produce deepfakes can be prohibited by law. So anthropogenic risks can be regulated by law. So the question is now how the technology risks can be regulate. Now, technology risk is managed by taking what we call the risk-based approach, and I would like to say that the AI Act takes definitely a risk-based approach, and this is an approach that is applied today to all kinds of artifacts and services. So, the concept of risk is very simple to understand. The risk associated with the hazard of an artifact is measured as the product of two factors. The severity of the damage that can be caused by the hazard and the probability of the hazard to occur. So, if you want to manage the risk, you need first to define the degree of criticality of the system's function to various causes of risk. And this is determined by independent institutions. For instance, we have a degree of criticality for lifts, for aircraft, for toys. And then you need an assessment of the system's transworthiness. And here I would disagree, because transworthiness is a technical term that covers many different properties, including safety, security, reliability, etc. So it's a well-defined term, at least technically speaking. And transworthiness is the probability that the system will withstand the hazards provided by the system manufacturer, and this should be validated by independent authorities. So, the basic principle of risk management is the following. For each degree of criticality, this should be matched by a corresponding level of transworthiness. Just to give you an example, for instance, For safety-critical systems like an aircraft, the degree of transcorporation required is less than 10 to the minus 9 over 1 over a billion failures per hour of flight. So these are rules that are applied in systems engineering and very successfully, in my opinion. And for traditional systems, we consider mainly two technical properties, safety and security. And I think that these properties are well understood. There are rules, international rules, that we apply to any kind of artifact today, but unfortunately for ICT systems, and in particular for AI systems, we have no such rules. And I would like to explain that one inherent difficulty in evaluating the transworthiness of AI systems is that AI systems are black boxes. They are non-explainable. And when we estimate the reliability or the transworthiness of an artifact, we use models. We use mathematical models and we make some calculations to prove that, to provide transworthiness guarantees. So this is an inherent difficulty. I don't know how to solve this problem today. And this will be a difficulty when we want to apply, for instance, the AEI Act. that adopts this approach. Okay, something else that I would like to emphasize is that today we don't have standards for AI systems and this lack of standards also is compounded by some permissive policies. For instance, in the US, competent authorities allow self-certification for autonomous cars or for medical devices. Self-certification means that you don't apply standards. No independent authority will guarantee the safety, for instance, of your self-driving car. This is guaranteed by manufacturers. So this is also an important trend today. And I think some U.S. agencies are pushing in that direction, self-certification. Don't forget this term. Now to... If I have time to give some more detailed analysis of what European text proposes, so the European AI Act is a unique text, a very important text, because it adopts this risk-based approach for AI systems. I don't know what will be the consequences of that or whether the text will be applied or not, but it distinguishes four different categories of systems. Unacceptable risk systems, And for unacceptable risk systems, you have the systems that are clear fit to safety, livelihoods and the rights of people, social scoring systems and things like that. And I think that these systems will be banned just because of the application of what in Europe we call the precautionary principle that is incorporated into the European legislation since 2006. and I think that these systems will be excluded. Then you have high-risk systems. High-risk systems is AI technology used in critical infrastructures like transport, so this includes self-driving cars typically, that could put the life and health of citizens at risk, educational or vocational training, etc., systems for scoring of exams, safety components for products. So if I understand well, high-risk systems correspond to what we call safety or security-critical systems, for which, according to international standards, we require very, very strong transportness guarantees. And technically speaking, today, it's impossible to obtain for AI systems. Just because I said AI systems are black boxes, you cannot apply any mathematical analysis. I think this, if we apply the European text rigorously, we will exclude these two types of systems. And then you have limited risk and the minimal or no risk system. OK, so this is easy. And then another European text is the Digital Services Act. And the Digital Services Act regulates online intermediaries and platforms. Probably you know about this text. So the European Commission has designated 19 platforms that must comply with specific requirements. And these are requirements that are very hard to achieve and also to validate. Such as, for instance, to be audited by an independent auditor at least once per year and adopt the measures or share the data with the Commission. I mean, these are... I don't believe that any company would accept this, or it's very hard to enforce the application of these rules. Yes, so I think that here this is a challenge for the EU. The EU probably does not have the technical means and methods to enforce the application of these standards we will see. Then you have the Chinese AI Registry. And the Chinese AI regulations, as I said, they are vertical and they take a progressive approach. So there are many texts, but the main texts are distinguished between recommendation systems, so typically e-commerce platforms, deep synthesis AI systems that use generation and synthesis algorithms that combine learning and virtual reality, for instance, face recognition, face replacement, etc. and generative AI systems. Now, I think that here the requirements are very strong, and this perhaps explains also some delay, I mean, the problems they have to progress, I mean, to build something that can compete with ChatGPT, for instance. And these impose a very careful development. from the outset. Data acquisition and preparation, system development and training, so they require that you build systems that are correct by design, because otherwise they will not be accepted. Now, to say a few words about the US regulatory framework. Very briefly, Joseph, sorry, very briefly. Yes, okay, so I will stop here, because the US executive order have been discussed. I think that it's too vague. It makes reference to other texts, in particular the missed AI risk management framework that tries to define the concept of risk but has nothing very, very concrete. So I think, okay, there are a lot of things to be done on the U.S. side at the moment. You have just wishes and nothing more. Okay. So I'll stop here. Thank you. Thank you, Joseph. Sorry for interrupting, but I would like to have some time for Q&A. John Claudio, now we have talked a lot about regulation and we have talked a little bit about competition and cooperation. But what's the role of regulation for competition? Or as I think both speakers, Mai-Ling Fung and Joseph Sivakis just mentioned, also, what are the opportunities for cooperation in regulation? I mean, in the end, this is perhaps something that, as Joseph just mentioned, where we also need global standards. But then then whenever Europe acts, it's accused of, you know, basically just trying to to regulate the large tech companies. And that's that's one of its main interests. So what's your take on this? Yeah. Yeah. Thank you very much. Yeah. So I assume you mean competition and cooperation at the global. Yeah, competition between different markets and cooperation between different states. Okay. Yeah, I think this was an argument that was raised a lot in the AI negotiation. You know, we are going to kill our internal AI market. and we are going to succumb and race for AI. I think similar arguments were raised by tech industry friends and lobbyists 10 years ago when the GDPR was proposed and after four years when it was approved. And it was false. We were not back with innovation because of the GDPR. The GDPR proved to be. And I'm now responding to competition, then we will go to cooperation. The GDPR proved to be flexible even for pandemics, even for privacy pandemics. The GDPR proved to be as. Not not limiting the free flow of data. And also we imposed our we imposed the Brussels effect. So actually, the GDPR was a model for other countries and for other systems. So I don't think I don't think the AI Act will will have the same in terms of positive contagion. because GDPR is very based on some specific technical principles like accountability, transparency, purpose limitation, data minimization and so on, while the AI Act is based on fundamental rights in the regulatory part. So it was conceived as a safety instrument, as a consumer safety, and now it's actually become a fundamental rights instrument in some parts, thanks to the great work that the European Parliament did. And for that, I don't think we will have a positive contagion in other countries, because we have fundamental rights are deeply in the DNA of the European Union. While in China, there are no individual human rights and the concept doesn't exist, like theoretically. And in the United States, we don't have the idea of fundamental rights. We have constitutional rights. We have liberties, constitutional liberties. So the framework is... And in other countries, like in the Global South, which is very important, We there's this risk of legal colonialization that we could export our values to African countries. countries, etc. And of course, I think it's important that we focus a lot on the values of the regulation. So this is an important, I think, consideration we should make. We will not have a Brussels effect with AI for now, not just for the GDPR. But this is good because every, as Maylene was saying, every country has its own values on which AI should be based. So in one sentence, I would say that I don't see a big competition problem because the AI Act is also providing predictability and clarity, while the status quo ante, so the situation before the AI Act, which is the situation now, is based on different forms of inconsistent enforcement of data protection authorities, consumer authorities, competition law. Authorities with little clarity of whether, for example, generative AI is admissible at all. Charged GPT is admissible at all, you know. So these are considerations that are very, very much rooted on the law. In terms of cooperation, I think even though we will not have a positive process effect, That should there will be I think there will be cooperation, very low level cooperation. So based, I think, a lot on bottom up accountability duties, voluntary codes of conduct and all this kind of stuff. And this is kind of weak in terms of enforcement, of course. And we need international cooperation for that. So now I am conducting a couple of studies on that. And I'm also leading a research track at CERRE in Brussels about global convergence for AI governance. And of course, the risk based approach that AI proposes is a first basis for cooperation. We could build at least an agreement of the most riskier of the riskiest systems, even though, as I said before, it's kind of difficult because we have different values. So I think we could all agree that, I mean, in Western world, we would all agree that social scoring is bad. But in China it is used and it's on their public values. You know what I mean? So I don't want to be totally relativistic here, but at least the approach of a research impact, sorry, risk impact assessment. So risk assessment, impact assessment and also the risk based regulation might be the key for that. And maybe one sentence and then we go to the Q&A. So I think the risk-based approach, just to connect to the two speakers before, one thing, participation is important. The impact assessment, the mental right impact assessment in the AI Act foresees participatory approaches to impact assessment. So we hear the impacted people, we hear them. And the second thing is on the word trustworthy. That was mentioned before by Joseph also. Yes, I agree that in the technical field, there's a strong literature on trustworthiness. But as a social scholar, I like to argue on terminology. And I think that the terminology is never neutral. So even though there's a solid literature on concepts that have specific terminology, I think we should wonder why some terminology was preferred over others. But, yeah, this is another story. Just I think this is enough for me. Thank you. Many thanks, Cenk Daugherty, and thanks to all three speakers. I'd rather open the floor now because of time limitations to everybody and see if there are questions to our speakers. And I think it would probably like to take one or two and then see who would like to answer them. So any questions from the audience? You can either use the chat or just raise your hand or speak up if you are not interfering with anybody. Yes, George and then Moshe. I'll take the two of you. George first. George, you're still muted. Thank you, Eric, and thanks to our three. Taking a cue from what Joseph Sifakis said about not repeating the same mistake as in the 90s and paying a bit more attention to the negative aspects of our digital artifacts, can we find a way so that a certain degree of harmonization, being at the level of standards, or at the level of regulation would allow for global cooperation that can harness the power of AI for the benefit of humanity. certainly I would imagine not disrupt any high risk or unacceptable risk categories, but would be more in the limited risk. So my question is, can we achieve a certain degree of harmonization? And if so, what can an organization like digital humanism together with like-minded organizations promote to achieve that? Many thanks, George. I noted the question. Moshe, please. In a way, this is somewhat related. A theme that did not come up in the discussion by the panelists is how much the climate in the United States has changed regarding relationships, research relationship with China. I mean, if you go back, you know, maybe 20 years ago, there was encouragement, go, go, build relationship with China. Rice had a joint PhD program in nanomaterials with Beijing University. I just went to check the webpage at Rice. It is gone. And I went to China in September, and I had to go security briefing to prepare for such a trip. So there is a climate of chill, and this climate is affecting even more researchers where we have many people who came from China, did a PhD in the United States, and even people who are... Chinese ancestry who were born in the United States, even they feel that they are suspect because of their ancestry. And that comes from Washington. There's been even some pushback. Even the National Academies have tried to push back on the federal government on that. But right now, unfortunately, the geopolitics theme seems to be dominant. So when we think about coordinating regulations, I'm not holding my breath. Moshe, thank you very much. I would like to add that before our meeting, George Metakid has pointed out to me how this is also impacting the role of Chinese students in the US, especially in IT, of course, and that now India is becoming the number one country in terms of influx for that very reason, presumably. So I think this is a big question. So to the panel, there were two questions. Learning from the past, how can we ensure harmonization? And this question by Moshe about the changing relationship. Who would like to go first? I'm happy to go first. Yes. I think we should absolutely aim for having some global coordination on protocols. This is what science is about. We don't have Chinese science and Western science. We have science. And we cannot let humanity lose the collaboration for all the people in the world. There's no people in the world who don't deserve the benefits of science. I believe that the AI governance approach that I'm talking about, that could be actually a common protocol, which is that we should get feedback. We should fight fire with fire, that AI is such a fire. We should use AI for this. We can use conversational AI to get citizen. participation and feedback. And how each country decides to take and use that feedback, up to them. But we can still have common, very good, world-class feedback mechanisms that are best, that can be used by any country, no matter what. The Telegraph is another example of this. The ITU is really an organization where the protocols dominated and we continue. to be able to send messages to each other. I would like us as academicians, as engineers, to really drive for that, that there is a common humanity which deserves common innovation, independent of who is the ruler in each country. Thank you, Malin. I don't know, Joseph, Jean-Claude, would you like to? Add to those questions raised by Moshe and George. Joseph, you're still muted. Yes, I think that reaching an agreement, a global agreement, has a technical problem behind. And, of course, if you want to agree to build protocols, there are committees, and this is another simple problem. I think that for AI the problem is non-explainability and this is a very hard problem. We have to deal with a different kind of artifacts and this is a technical problem. The other important question is the relationship between the US and China. US policy has changed in a spectacular manner. And, of course, China is suffering because of the ban, the U.S. ban that is also extended to Taiwan and South Korea. And, yes, this is a spectacular change of U.S. policy. China is currently suffering from restrictions, but I don't think that this will be a decisive factor in the competition between the two countries because the Chinese have resources. and will overcome, I think. Thank you, Joseph. Jean-Claude? No, maybe just emphasizing what Mei-Lin said about protocols and about international cooperation and protocols. But with the small disclaimer, protocols and standards are not the solution to fundamental rights. So they might be a good basis, a good framework, but the framework needs the substantiation of fundamental rights. And also, it's very key that the standards are not designed by just... the same technical engineers that have dominated the design in the last months and years and decades. So it's very important. Diversity is not a matter of rainbow washing, pink washing, ethics washing, blue washing, whatever. Diversity is a form of mitigating power imbalances of marginalized communities, avoiding the trap between fake consent and paternalism. So basically, if we call impacted communities to AI decision making, we will be able to have Their diversity of perspectives when analyzing impacts, when analyzing harm, because we don't know what is a harm to AI. I'm a lawyer working, I'm a legal researcher working on harms of AI and I can tell there's no unique definition of harm. It's just a mass of definitions and maybe nobody is super comprehensive. So just to say that we need to... Of course, in the methods, we need participatory approaches. And yeah, I think this is all I have to add. Let me follow up with a very short question to all panelists, also the closing question. So what can and should an initiative like digital humanism do in collaboration with other initiatives around the world? What is the way forward to navigate? this maze between competition and cooperation, be it regulation, be it policy. What's our role? What should our role be? I guess my lingfong would be a good first response. Well, I do feel that I answered it earlier. You should call for flourishing. You should call for having ways of measuring flourishing and that We should be competing on which communities allow their people to flourish. And we should be cooperating about ways to flourish better. So that's it for me. Brilliant. Thank you very much. Joseph? Yes. So I think that an important task today would be to help clarified concepts, and there is a debate. And I think that in this debate, there is a lot of confusion. The confusion is cultivated by some players, and we should clarify the debate. I don't agree that writing regulations is a matter of values. Because all this discussion about ethical IA, I think the debate is completely... I mean, technically it is completely empty, completely non-tenant. So I think our role could be to contribute to clarifying the debate, okay, and putting the debate on some technical basis. The answer will be technical. Either we agree on technical issues or they don't agree. And there are people that don't want to reach an agreement. This is clear. And I'm really happy that... The European Union adopted this text that is risk-based. This is the right way to go and we should put in that direction. Thank you. Thank you, Joseph. Gianclaudio, the way forward for digital humanism and as an initiative teaming up with others, what should we do? Yeah, but maybe just follow up, because I think there's an open debate between Joseph and me on how different approaches. He has a technical approach and they have a humanist approach, let's say more like social, let's say social science approach. And I like this dialogue a lot. So just to say. I don't think, I mean, looking at my background and my perspective, I don't think that the solution to AI issue or cooperation, et cetera, can be purely technical in terms of engineering. I think even the AI Act is not technical. The AI Act is based on political values, very, very problematic political decisions at a very human, let's say, yeah, political decisions about where do we set the borderline. law enforcement policy makers, sorry, police doing AI, exploiting vulnerabilities. So it's really based on what are the political decisions and values that we decided to have. And I think, but of course, we need technical expertise. We need both. We need both. Just a word. I don't want to be misunderstood, okay? Because, of course, The AI has a strong background in human values. This is clear and this I fully respect. But if we stay at this level of discussion about what is a fair AI, about what is AI for good, etc., then these are concepts that should be refined. And bottom line, we should... have a method to check that AI is good and we should have criteria for that, okay? And this joins, of course, and the criteria can depend on human values, etc. But we need criteria. We need a rigorous framework to do that. As much as possible, I think we agree. Yeah, yeah. And as a follow up, there's this interesting debate whether human rights are more of a, how to say, legal technical concept or more political concept. So there's a ways even in the enforcement when we proposed how to enforce the AI Act. Now it's the commission that will have in the future to update the high risk list. And if we think of the commission, this is a politically driven public administrative body. Our proposal, proposal of many lawyers was, why don't we have bottom up? So data protection authorities at the national level, they receive, they hear what's happening at the local level and they go up, you know, and they have a board for consistency. And so this is the topic of where, but if we push a lot of national bodies, we are saying that basically the enforcement. of human and fundamental rights is a purely legal decision, while the European Commission is also a political component. But this is a very open issue and very interesting. And I think there are, of course, different layers of implementation. And I think our time is over, so I will stop. Yes, it is. Thank you very much. We need another panel. We need at least one more panel. Yes, Joseph. Let me thank all our three panelists very much for this debate. It went a bit in a different direction than what I had anticipated, but that's, I guess, good. Let me briefly mention in the discussion, there was a comment by Luis Monif Pereira that we should also talk about labor impact issues. Point well taken. We'll take it on the list. And Joaquin Peña-Siles, I think, suggested that we should plant a seed for a global cooperation. on AI around global common problems. Also, I think, a very good proposal. With this being said, I'm looking forward to a practical way of improving human mankind because someone said, I think it was Andra Schiff, that after listening to Bach's Goldberg Variations, however, that's the full 90 minutes, you are becoming a better person. And I think Peter Gnes has the details for this. Back to you, Peter. And again, thanks to everybody. Thank you. Thanks, Erich. And thanks, everybody. The final notes, Maylin proposed the Goldberg variations by Johann Sebastian Bach. And while we technically already had a variation in an early lecture, for those who remember, we had variation one with a technical twist. We could very easily agree that. that we could play something from the Goldberg Variations. And Eric suggested the aria as an interpretation, an interpretation by Wikingur Olofsson, as he witnessed his performance recently live in Vienna. And luckily, this performance was recorded and broadcast by Austrian radio station, so I took the liberty of taking exactly this version for a closing today. with all the coughing and all the noises of the concert. So maybe you remember this, Erich. But before I play it, and I hope this will work because I have to update soon, so I hope this didn't break my installation, I will quickly announce our next events, too, because there's one already happening next week to respond to the recent developments regarding the AI Act. So on December 19th, we'll have a panel on the... UAI Act, a success story with George Metakidis and Kai Zinner, who is head of office and digital advisor to the German member of European Parliament, Axel Voss. And Hannes Wertner will moderate this. And then already for next year, for January 9th, the announcement that we will have a panel on educating future computing professionals to ethical and social impacts of digital technologies. with Clara Knepper of IEEE, Rodrigo Ferreira of Rice University, and Anna Bohn of VU Amsterdam already confirmed as panelists. And note that this will start a bit later than usual at 5.30 and will go on until 7 p.m. So thanks to May Lin, John Claudio, and Joseph, and Erich. And we will close with Wicking Gear Olofsson's live rendition of the aria from Bach's Goldberg Variations. So fingers crossed you can hear the audio and see you next week. Buona notte. Goodbye. Thanks to all of you.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 25.2,
+      "text": "Hello, everybody. Welcome to the panel of today, which is not a lecture, a special welcome to this panel. But before moving to our panel, just a short notice that, as you all probably know, the European member states, the Parliament and the European Commission, they have agreed on the so-called European AI Act. This was the so-called three log process."
+    },
+    {
+      "start": 25.744,
+      "end": 54.192,
+      "text": "And this is the first legally binding regulation worldwide. And I think this will have some impact. These were hard negotiations. It took 37 hours, but at the end they agreed. And also we, as the Initiative for Digital Humanism, did our share. We published a statement of support and asked also for support signatures. Many of you have signed. And also many other initiatives and persons signed such."
+    },
+    {
+      "start": 54.192,
+      "end": 80.416,
+      "text": "and communicated with the commission with a good end, I think. And this shows that civil society in a broader sense with this academia, civil society, NGOs, also industry can interfere with the development and also influence somehow. And this is a positive sign beyond the concrete EU-AI Act. It shows that engagement counts and this is an important issue for us."
+    },
+    {
+      "start": 80.416,
+      "end": 110.112,
+      "text": "The panel of today discusses an equally important topic. It's in the field of AI. What's the relationship between U.S. and China? It's cooperation or competition. And also what's about Europe and other parts of the world. And I am happy to welcome really distinguished speaker, Mei-Lin Fung, Gianclaudio Maglieri, and Joseph Sifakis in alphabetic order. Thank you for having accepted the invitation and for taking part in this discussion."
+    },
+    {
+      "start": 110.112,
+      "end": 138.816,
+      "text": "You will be introduced in more detail by Erich Brehm, who acts as a moderator of today. Also, the choreography of today has slightly changed. It will be explained by Erich. But most important at the end, again, we have a piece of music. So stay online. It was selected this time by Mei Lin, and you will be excited by the piece she has selected. I welcome."
+    },
+    {
+      "start": 138.816,
+      "end": 168.528,
+      "text": "Erich is the moderator. I'm not introducing him because he's well known in our community. And Erich, the floor is yours. Many thanks, Hannes. It's really great being able to moderate this panel today. I'm quite excited. It's not only an important topic, as we just said, but it's really three excellent speakers today coming together in this panel."
+    },
+    {
+      "start": 168.528,
+      "end": 197.232,
+      "text": "The title is AI competition or cooperation between US and China. And then in bracket, it says, and what's about Europe and other parts of the world, which reads a bit like a footnote. And I think we should explain that, of course, the or in the question about competition or cooperation doesn't have to be an exclusive or. Probably the answer is going to be and slash or. But I think that will be subject of our debate."
+    },
+    {
+      "start": 197.328,
+      "end": 222.992,
+      "text": "Now, let me briefly introduce how we are going to manage this today. So the idea was we have two rounds of panelists discussion. So statements from each panelist. And then if we have time, a short interaction between the panelists. And after that, we'll open the floor to everybody for some Q&A. All in all, we should be done by."
+    },
+    {
+      "start": 222.992,
+      "end": 248.912,
+      "text": "after 90 minutes approximately. So that's the plan for today. Now, when I said I'm really proud to manage this panel, then it's, of course, because of the achievements of our speakers. Let me start in the opposite order in which we are going to start the panel. Let me start with Dr. Gianclaudio Maglieri. He is an associate professor of law and technology."
+    },
+    {
+      "start": 248.912,
+      "end": 276.256,
+      "text": "and a board member at eLaw, which is the Center for Law and Digital Technologies. He serves as the co-director of the Brussels Privacy Hub at the Free University of Brussels and as an affiliated researcher at the Augmented Law Institute of the EDHEC Business School in Lille. He's an associate editor of Computer Law and Security Review, an external ethics expert of the European Commission and an advisory board member of EPIC."
+    },
+    {
+      "start": 276.256,
+      "end": 303.216,
+      "text": "He also coordinates Vulnera, the International Observatory of Vulnerable People in Data Protection, and conducts research on and teaches data protection law, privacy, AI regulation, digital law, consumer protection in the digital market, data sustainability, and intellectual property law. He got his LLM with honors at the University of Pisa and a JD with honors from Sant'Anna School of Advanced Studies in Pisa."
+    },
+    {
+      "start": 303.216,
+      "end": 332.528,
+      "text": "He was a visiting student in London, in Bern, in Paris, and in Oxford, and obtained a PhD in law at the three-year University of Brussels, where he is now a guest professor and affiliated researcher, where his thesis focused on vulnerable data subjects in the GDPR, and he also conducts research on automated decision-making, privacy and fundamental rights, surveillance, data ownership, intellectual privacy, and consumer law. It's a great honor and pleasure to have you here, John Claudio."
+    },
+    {
+      "start": 332.784,
+      "end": 353.488,
+      "text": "Thank you very much. Thank you. Joseph Sifakis doesn't really need much presentation, but I'll do it anyway because it's a real pleasure just listing his achievements. He is a Meritor Senior CNRS Researcher at Verimark."
+    },
+    {
+      "start": 353.488,
+      "end": 370.176,
+      "text": "He, I think, is most well known for his research interests in embedded systems design with a strong focus on formalization of system design as a process leading from requirements to trustworthy, optimized and correct by construction implementations."
+    },
+    {
+      "start": 370.176,
+      "end": 395.936,
+      "text": "He was a full professor at École Polytechnique Fédérale de Lausanne, EPFL, and he's the founder of the Embedded Systems and Other Sorts of Things Lab, VERIMAG, in Grenoble, which he directed for 13 years. In 2007, of course, Joseph Sifakis received the Turing Award for his contribution to the theory and application of model checking, which is now the most widely used system verification technique."
+    },
+    {
+      "start": 395.936,
+      "end": 402.88,
+      "text": "And he was extremely active at the French and EU policy levels, especially in embedded systems research policy."
+    },
+    {
+      "start": 402.88,
+      "end": 432.176,
+      "text": "He's a member of the French Academy of Sciences, a member of the French National Academy of Engineering, a member of Academia Europaea, and a member of the American Academy of Arts and Sciences, as well as a member of the National Academy of Engineering. He's a Grand Officer of the French National Order of Merit, a Commander of the French Legion of Honor, and received the Leonardo da Vinci Medal in 2012, and in 2009, the award of the Hellenic Parliament Foundation for Parliamentarism and Democracy. It is a great pleasure, Joseph."
+    },
+    {
+      "start": 432.176,
+      "end": 461.936,
+      "text": "to have you here today. Thank you. Thank you. And last, but by no means least, Mai-Ling Fung. And I do again apologize that in one of the messages that went out, her name was misspelled. It's Mai-Ling Fung. She is the chair and co-founder of the People-Centered Internet. Through People-Centered Internet, she works to ensure that people are, as the name suggests, at the center of the Internet as digital interdependence reshapes societies and economies."
+    },
+    {
+      "start": 461.936,
+      "end": 490.704,
+      "text": "A key focus of her work as people-centered internet chair is to promote resilient communities financed with digital assets using data so that communities can connect and members can thrive. She draws on her early training as a financial analyst at Intel, in operations research at Shell, and her extensive experience in developing customer relationship management approaches to bring systematic evidence-based analysis to the complex supply and demand for information."
+    },
+    {
+      "start": 490.704,
+      "end": 508.528,
+      "text": "She also worked as a socio-technical lead for federal health futures at the DoD. And through people-centered internet, she has built alliances based on people-centered ecosystems with the IEEE, the World Economic Forum, the World Bank, the UN, and others at country and at regional level."
+    },
+    {
+      "start": 508.528,
+      "end": 536.512,
+      "text": "She was a fellow of the Hasso Plattner Institute. She won the Women of the Forum Award of the Women's Economic Forum in 2020, a top 10 finalist of the GIA Challenge. She was shortlisted for Women of the Year, and she is a winner of the Philip R. Crosby Golden Medallion of the American Society of Competitiveness. Mai-Ling Fong, it's a great pleasure to have you here today. Thank you."
+    },
+    {
+      "start": 536.512,
+      "end": 566.128,
+      "text": "Let's start with you. Obviously, ladies first. So let's have a quick look at the status of especially AI science and technology in China and the US. Let's try and do a quick assessment. Where are they? Where are the differences? Where are the dependencies and in what way are they reciprocal? That would be my first question. And then the second follow up might be."
+    },
+    {
+      "start": 566.128,
+      "end": 594.8,
+      "text": "Both the US and China are pushing currently towards greater technological self-sufficiency in industries such as semiconductors, cloud computing batteries. How does that affect AI-related developments in cooperation and competition? Well, you've certainly thrown me a lot of curveballs, but I'm up to it, so let's go. I'm speaking here from New Delhi, India."
+    },
+    {
+      "start": 595.44,
+      "end": 600.0,
+      "text": "And I have to say the world looks very different. This is the opening."
+    },
+    {
+      "start": 600.0,
+      "end": 628.192,
+      "text": "of the Global Partnership for Artificial Intelligence. I just, not three hours ago, saw the handover from Japan from the Global Partnership for AI to India, and it was inaugurated by India's prime minister. It's interesting that the topic of today is US versus China, and I have lived in the US for four decades."
+    },
+    {
+      "start": 628.192,
+      "end": 654.24,
+      "text": "I also was born in Singapore and I have had clients in China. So I do have hands on, so to speak, a foot on the ground experience in both countries, China and the US. And I wonder whether the topic, as it's being stated, is really rather missing the target."
+    },
+    {
+      "start": 654.24,
+      "end": 681.84,
+      "text": "that we are distracted with this geopolitical clash that seems so interesting to the world's journalists, but I'm much more interested in what is interesting for the world's people. I will try to say a few things about U.S. and China, but then I want to shift to the global south."
+    },
+    {
+      "start": 682.4159999999999,
+      "end": 711.648,
+      "text": "The U.S. has had technological leadership. I've been living in Silicon Valley now, working at Intel and Oracle, and to some degree been at the heart of some of the change. The biggest, biggest thing is the Internet. The A.I. would not be so important if it wasn't the Internet. The fact that we are all able to be connected and that artificial intelligence."
+    },
+    {
+      "start": 711.648,
+      "end": 739.92,
+      "text": "can allow us to communicate our findings and our insights or our biases really expands their impact. So. As I see it, the U.S. has actually launched the first new green industrial deal since the New Deal about 70, 80 years ago. Five hundred and fourteen billion dollars of new green deal."
+    },
+    {
+      "start": 740.112,
+      "end": 763.12,
+      "text": "semiconductor manufacturing, energy, self-sufficiency, all of this stuff, renewable energy. And in a way, it may not have happened if there wasn't the geopolitical clash with China, because it really took sort of the competition to get going."
+    },
+    {
+      "start": 763.6320000000001,
+      "end": 793.056,
+      "text": "And yet when I go to China, the last time I was in China was 2008, so it was quite a while ago, but I was actually helping Microsoft address the piracy problem that it had in China. In China, I see a lot of people who finally were able to come out of poverty, 800 million people out of poverty. There are different priorities in China than it looks like from, oh."
+    },
+    {
+      "start": 793.056,
+      "end": 822.208,
+      "text": "You know, people in China are just happy to have a future. They're interested in what they can do. The fact that Chinese leaders might have stronger ideas doesn't mean that the Chinese people have any idea of taking over the world. They never have. This is the history of China. China is the center of the world. Everything else is peripheral. It's a different kind of approach. There's no sort of sense of."
+    },
+    {
+      "start": 822.208,
+      "end": 851.136,
+      "text": "colonization as Europe looks at it. So those are my observations about the geopolitical clash. And that's why I want to shift to, there's a lot more people in the world. Here I am in India, 1.4 billion people, now the most populous country. The concerns here are about equity, about not increasing the digital divide. I'm here with the AI launch."
+    },
+    {
+      "start": 851.136,
+      "end": 876.8,
+      "text": "And the biggest question is, how can we have responsible AI? The speech by the prime minister of India was the strongest speech I've heard as a world leader. And I truly encourage you to look at the news coverage about his speech. He knew what he was talking about as a longtime technologist."
+    },
+    {
+      "start": 876.8,
+      "end": 902.2719999999999,
+      "text": "I can tell the difference between somebody who's had a speech written for them about technology and somebody who really is very, very clear what AI is going to do for India. And he was absolutely clear. He is going there no matter what. And what he sees is the opportunity for prosperity and thriving for people who have been in poverty for a very, very long time."
+    },
+    {
+      "start": 902.2719999999999,
+      "end": 931.616,
+      "text": "It's still shocking to me to come to New Delhi and see the poverty. And when it's all around you, you want to fix it. And the thing is, AI makes it fixable for India. One and a half months ago, I was in Bangladesh for the AI and Digital Public Infrastructure Summit. Bangladesh has set a goal of zero digital divide."
+    },
+    {
+      "start": 931.616,
+      "end": 959.104,
+      "text": "I put into the chat paper I wrote for the Edelman Trust Barometer. It was just out last week. I described one of the AI projects in Bangladesh. Floods are a huge problem in Bangladesh. 40 million people now have a flood warning system because of AI. Thousands of people used to die when the floods came. Now it's just like a dozen."
+    },
+    {
+      "start": 959.104,
+      "end": 988.848,
+      "text": "This is what AI can do for people. I don't want to talk about, you know, all these abstract things. Floods no longer kill people in Bangladesh because of AI, because of being able to predict when the water rises and people get out of the way in time. This is a project between Google and A2I. A2I has aspired to innovate out of the prime minister's office."
+    },
+    {
+      "start": 988.848,
+      "end": 1018.752,
+      "text": "The possibility of public digital public infrastructure making a huge difference in the rest of the world is what I'm most interested in. So back to you. Thank you very much, Marlene. Thank you also for reminding us about India in particular, but the rest of the world. Point very well taken. Nevertheless, I'll hand over to Joseph now, who also I know is experienced."
+    },
+    {
+      "start": 1018.752,
+      "end": 1043.76,
+      "text": "both in the U.S. and with China. Joseph, what's your view? What's your take on this? Yes, okay, thank you. I would like to start by saying that I take a comparison between the U.S. AI and the Chinese AI and respective strengths and weaknesses."
+    },
+    {
+      "start": 1043.76,
+      "end": 1068.224,
+      "text": "First of all, I would like to emphasize that there is a difference in the AI vision. The AI vision in the United States is defined by major tech companies such as OpenAI and DeepMind that see artificial general intelligence as the primary goal."
+    },
+    {
+      "start": 1068.224,
+      "end": 1097.0720000000001,
+      "text": "suggesting that artificial general intelligence can be achieved through machine learning and its further developments. And to say it simply, machine learning is the end of the story. So artificial general intelligence is a kind of brain-like intelligence capable of reasoning, creative thought, and perhaps even consciousness. I think that China's vision is not limited to conversational systems."
+    },
+    {
+      "start": 1097.0720000000001,
+      "end": 1122.6399999999999,
+      "text": "but encompasses a broader vision that attempts to marry machine learning and ICT to develop autonomous systems like those envisioned by the industrial Internet of Things, such as autonomous transport systems, smart cities, smart factories, farms, smart grids, etc. So China, I think, strategically tries to leverage..."
+    },
+    {
+      "start": 1122.6399999999999,
+      "end": 1150.496,
+      "text": "its strengths in many areas of industry and services. So they try to develop different kinds of systems, AI monitors that are very important for the management of complex systems. So you have this difference, this diversification in China. They focus more on industrial applications and I think this difference in the implementation of the AI vision."
+    },
+    {
+      "start": 1150.496,
+      "end": 1180.432,
+      "text": "is important to be emphasized. And the question is whether in the long term, AI competition will be judged on technologies other than machine learning and transformative AI. Now, this is the first remark. And the second remark concerns the differences in innovation and development in two countries."
+    },
+    {
+      "start": 1180.432,
+      "end": 1200.0,
+      "text": "We know that the U.S. has been indisputably the leader in disruptive innovation, in information and communication technologies, what we call ICT, and more recently in artificial intelligence and ICT supremacy."
+    },
+    {
+      "start": 1200.0,
+      "end": 1227.84,
+      "text": "almost to every field, from hardware components, supercomputers, software, services industry, the Internet, etc. And this supremacy is also supported by technology from Taiwan and South Korea. And in the U.S., you have something very important that is the existence of innovation ecosystems. The concept is well understood."
+    },
+    {
+      "start": 1227.84,
+      "end": 1256.256,
+      "text": "centers of excellence that can develop cutting-edge research and the ecosystems can help transfer of results. We know this. Now the situation in China is a bit different. I think that the scientific and technological innovation is organized"
+    },
+    {
+      "start": 1256.256,
+      "end": 1284.912,
+      "text": "I mean, you don't have this interesting interaction between university research and large technology companies, and you don't have the same, at least you don't have the same degree of cross-fertilization. You have an impressive increase of research publications in China, but I think the average does not match that of the US or even the most advanced European countries."
+    },
+    {
+      "start": 1284.912,
+      "end": 1305.136,
+      "text": "So China perhaps lags behind in disruptive innovation, but is strong in integrative innovation in many areas, and this should not be neglected. Now regarding AI, I think that Chinese research is rapidly catching up with the United States."
+    },
+    {
+      "start": 1305.136,
+      "end": 1327.488,
+      "text": "And Chinese researchers now publish more papers on artificial intelligence and obtain more patents than American researchers. Also a strong point in the Chinese strategy is telecommunications, where Chinese occupy a strong position, in particular with 5G technology."
+    },
+    {
+      "start": 1327.488,
+      "end": 1355.12,
+      "text": "Now, the Chinese approach is based on strong and consistent commitment on the part of the state, we know this, to develop visions that are pursued whatever the cost. And this approach has paid off, as China has been able to catch up spectacularly in a number of industrial fields, such as construction, sheet building, automotive industry, telecommunications, etc."
+    },
+    {
+      "start": 1355.12,
+      "end": 1383.056,
+      "text": "Another question, but I don't know whether I have time, is whether there is competition between the U.S. and China. Of course there is competition, but we should not forget or neglect the fact that I don't think that China sees itself as a competitor to the U.S. or Europe."
+    },
+    {
+      "start": 1383.056,
+      "end": 1408.912,
+      "text": "They have a closed ecosystem and they try to build based on its own strengths and assets. Of course, we know this is a national priority and they are pushing a lot in that direction. And here I would like, perhaps because I know a little bit about China, I would like to emphasize some advantages of China."
+    },
+    {
+      "start": 1408.912,
+      "end": 1436.048,
+      "text": "Beyond expressions of political will, China has some important advantages. They have a very large community of smartphone users, 800 million iPhone users to pay for goods and services, voice recognition, all the kinds of services you can imagine."
+    },
+    {
+      "start": 1436.048,
+      "end": 1465.952,
+      "text": "And these users generate a vast amount of digital information, which is widely accessible due to regulations. And another advantage is that the Chinese public has accepted that robots fill labor shortages in hotels, in any hospitals, banks, any kind of service. China also has a large pool of skilled workers."
+    },
+    {
+      "start": 1465.952,
+      "end": 1493.632,
+      "text": "And experts, they are producing a lot of experts, especially in AI. There are some figures about that, if you have questions. And some papers say that China is an undisputed champion in AI research papers. But I have no strong opinion about that. Finally, I think that..."
+    },
+    {
+      "start": 1493.632,
+      "end": 1519.0720000000001,
+      "text": "Artificial intelligence industry in China is developing very fast, and this development has impacted many areas, including agriculture, transportation, accommodation, food, services, etc. And it is being orchestrated, of course, by the central government, which has drawn up a list of national AI teams."
+    },
+    {
+      "start": 1519.0720000000001,
+      "end": 1545.28,
+      "text": "comprising the big Chinese companies like Baidu, Tencent, Alibaba, etc. And each company, so they have a very clear plan about how to make progress. And this is also something very, very important to be noticed. Then perhaps I should stop here. And okay, so I will stop here."
+    },
+    {
+      "start": 1545.28,
+      "end": 1573.904,
+      "text": "Thank you. Thank you very much, Joseph. Good timing and not a problem. Gianclaudio, so we have touched upon China, talked about the US and mentioned India. Now, the obvious question to ask you would be, where does this leave Europe and perhaps the rest of the world? And especially also since we have already touched upon the nearly a billion smartphone users in China creating data all the time. Gianclaudio."
+    },
+    {
+      "start": 1574.768,
+      "end": 1602.672,
+      "text": "Yeah, thank you very much. And thank you to the previous speakers for their super interesting and deep analysis. So, yeah, I think we cannot address the topic of AI policy without talking about governance and regulation, actually. And yeah, I think the general approaches that we have observed between the, let's say, the two."
+    },
+    {
+      "start": 1602.672,
+      "end": 1624.704,
+      "text": "big countries that are in the title of this panel, somehow reflecting consistently what we could expect from two different approaches to law in general, to values in general, etc. So it's no surprise that the US preferred for several decades"
+    },
+    {
+      "start": 1624.704,
+      "end": 1653.6480000000001,
+      "text": "Let's say digital, we could say anarchy, giving, I mean, leaving a big tax to grow and addressing the issue just from a competition slash weak privacy perspective. Consumer, let's say consumer privacy, because it goes more, they don't have a general privacy law in the States."
+    },
+    {
+      "start": 1653.6480000000001,
+      "end": 1671.4560000000001,
+      "text": "At the same time, in China, the fear is exactly big companies that could jeopardize the central power. And so we observed, actually."
+    },
+    {
+      "start": 1671.4560000000001,
+      "end": 1699.856,
+      "text": "As the other speakers mentioned, we observed the sovereignty, AI sovereignty in China, having companies that are based in China, etc. And you can see, and they represent two totally different aspects of the same issue. The issue is that digital market and the AI market is totally fluid, borderless, etc."
+    },
+    {
+      "start": 1699.856,
+      "end": 1720.0320000000002,
+      "text": "And the United States wants to maybe even emphasize this borderlessness because most of the major AI industries are based in the States. And so having this de facto control would be basically"
+    },
+    {
+      "start": 1720.0320000000002,
+      "end": 1745.7759999999998,
+      "text": "Interesting for them. So new things happened just this year. So we had the executive order of Biden on AI, trustworthy, safe, responsible and trustworthy AI two months ago, less than two months ago, let's say six weeks ago. And it was kind of a surprise."
+    },
+    {
+      "start": 1745.7759999999998,
+      "end": 1773.568,
+      "text": "And of course, that executive order is a bit of contradiction to what they just said. They said there was anarchy, but they produced a huge executive. I mean, Biden produced a long executive order where there are many, I would say, accountability duties for AI developers. Still, it's an executive order and not a law."
+    },
+    {
+      "start": 1773.568,
+      "end": 1800.0,
+      "text": "Executive orders have a legal power, but they don't have a stability. Next president, hopefully not in a few months, can overturn and just delete the executive power. And in addition to that, most of the rules that this Biden executive order on AI"
+    },
+    {
+      "start": 1800.0,
+      "end": 1828.576,
+      "text": "bring are not redlining AI practices, are not putting a red zone where you cannot go. There are no prohibitions. There are many procedural duties, rules, which is anyway good because design is a procedure. And so AI design is a procedure and law is based on procedures and proceduralizing towards human rights, fundamental rights is something that is necessary."
+    },
+    {
+      "start": 1828.576,
+      "end": 1857.44,
+      "text": "Then in China, we have other regulations. We have the personal data regulation, the cybersecurity regulation, and many soft tools for AI regulations. But the most important aspects of a Chinese approach to AI is not based on written text. It's based on their policy and they are strict."
+    },
+    {
+      "start": 1857.44,
+      "end": 1885.296,
+      "text": "And so, yeah, without any limit, like limitless control on the companies that are producing AI in the country. So avoiding external influences and so on, which seems kind of a contradiction to their approach of being market leaders. Anyway, you mentioned Europe. So Europe is in between and Europe was in between, not just for AI regulation."
+    },
+    {
+      "start": 1885.296,
+      "end": 1900.976,
+      "text": "Europe was in between also for data protection, but also before for consumer protection. And the most important and most interesting thing is on which values we build our AI policy."
+    },
+    {
+      "start": 1900.976,
+      "end": 1924.496,
+      "text": "Because if we read the data protection rules in China, for example, there is some indirect references to some values, etc. And then we found what these values are. There are two lines in the law referring to positive energies and to mainstream values of the party. So these values refer to a specific."
+    },
+    {
+      "start": 1924.496,
+      "end": 1953.584,
+      "text": "homogeneous values of the ruling party and more ambiguous positive energy values, which I think refer again to a specific cultural approach to regulation. While U.S. pushes a lot for, you know, trustworthiness and even the word trustworthiness as a value is very interesting because it doesn't focus on the protection of individual itself."
+    },
+    {
+      "start": 1953.584,
+      "end": 1975.824,
+      "text": "It focuses on how the individual would feel as consumers of AI systems. So it's still a market oriented approach to reliable and safe AI. So just to say we have different values and Europe is in between. Why? Because Europe decided that we didn't want to."
+    },
+    {
+      "start": 1975.824,
+      "end": 1996.88,
+      "text": "have full sovereignty. We cannot have full sovereignty in Europe for big techs, for platforms, for AI systems. We have important developers, important providers, important producers, but we couldn't be self-serving."
+    },
+    {
+      "start": 1996.88,
+      "end": 2019.024,
+      "text": "On the other hand, yeah, I think this is the main consideration that European Union legislators need also when regulating big techs, for example, not just the GDPR, but the Digital Services Act, the DSA. It's a super ambitious, a bit over, a bit underestimated because people don't talk a lot about it, but it's super important."
+    },
+    {
+      "start": 2019.024,
+      "end": 2034.128,
+      "text": "for limiting dark patterns on social media, for enforcing impact assessment of fundamental rights for social media, for making sure that there's no abuse of data sharing, etc., in connection with the Digital Markets Act."
+    },
+    {
+      "start": 2034.128,
+      "end": 2057.376,
+      "text": "So Europe decided that we couldn't get rid of US or Chinese companies providing AI, so we didn't want sovereignty. At the same time, we didn't want anarchism, we can say. And so I think the AI Act is indeed, and in general, the EU digital strategy, is indeed kind of a compromise between..."
+    },
+    {
+      "start": 2057.376,
+      "end": 2086.176,
+      "text": "allowing free flow of companies, free market from China and US, but at the same time, putting strong limits on them. And these limits are not justified just by the market. Usually when there's a regulation in the States, it's justified on competition law. So it's justified on a better market regulation. Here, what Europe decided to do is that if you produce very risky things,"
+    },
+    {
+      "start": 2086.176,
+      "end": 2100.064,
+      "text": "So social media or AI, for example, just to make two important business models. I mean, AI is not a business model. AI is everything. But just to say you have a big burden to respect and to carry out."
+    },
+    {
+      "start": 2100.064,
+      "end": 2124.48,
+      "text": "And so imposing quasi public duties to AI providers, to social media provider was the European way. So we say you can come from US and from China and India and other parts of the world. And you can, of course, commercialize here. But you will have duties that in a liberal market would be considered."
+    },
+    {
+      "start": 2124.48,
+      "end": 2154.096,
+      "text": "an outrage because they're too much. But we will put those duties to protect people, etc. So maybe we will talk about the specific rules about the AI Act later. But just maybe one word to say, one sentence to say, many commentators said the AI Act was the first AI rule in the world. And some people say, well, no, we have the executive order of Biden already. We have China that has already rules on AI. Yes. But I mentioned already that these two different tools were"
+    },
+    {
+      "start": 2154.096,
+      "end": 2183.296,
+      "text": "not comprehensive enough, both in their scope and in their stability. So we can say that Europe, and also one last thing, Europe was the first to prohibit some practices, some AI practices. So in that sense, we might say that Europe decided to take this brave, but we will see because we are still waiting for the final text and for the official approval of the parliament and the council. So, yeah. Thank you. Thank you. Thank you, Gianclaudio."
+    },
+    {
+      "start": 2183.296,
+      "end": 2212.432,
+      "text": "That brings me back to Mai-Ling Fung. I'm tempted to ask you now about regulation in India, but I think that's probably not what I would like to ask you. But coming back to this question of approaches to regulation and governance, I mean, obviously there is some consensus now that regulation is required and we see some laws emerging. But maybe you could elaborate a bit on what you have been saying before."
+    },
+    {
+      "start": 2212.432,
+      "end": 2241.904,
+      "text": "that also AI plays a big role in what's certainly called AI for good in this play of enabling. But then also, what is the role again between this competition versus cooperation in precisely this game? Because, again, there seems to be a duality of these approaches. And perhaps you could also add a little bit from the perspective of generative AI, which without any doubt,"
+    },
+    {
+      "start": 2241.904,
+      "end": 2266.656,
+      "text": "is behind this massive interest, behind the change in dynamics that we've seen over the last one or two years. You're still muted. I'm glad you used the word cooperation in the question. I think it has been thought."
+    },
+    {
+      "start": 2266.656,
+      "end": 2295.36,
+      "text": "too neglected, that in fact one of the most powerful uses of artificial intelligence is for us to improve our collective intelligence. That in fact all of this data allows us to go much, much further than coming up with insurance and actuarial tables, but to actually come back to what for me is the core of why you all gather."
+    },
+    {
+      "start": 2295.36,
+      "end": 2323.6639999999998,
+      "text": "Why, I gather with you, digital humanism. What is the role of digital in supporting our humanity? And all of the talk about competition, what has that got to do with how digital supports our humanity? I want to call you back to this core question and what it means to me."
+    },
+    {
+      "start": 2324.1440000000002,
+      "end": 2353.536,
+      "text": "And quite apart from the issue of privacy is that for the first time we can look at a human from conception to death and actually try to work out how we can have the best possible flourishing lives in between. If we begin to have that kind of ability,"
+    },
+    {
+      "start": 2353.536,
+      "end": 2383.008,
+      "text": "to look at what interventions we could do so that more people could flourish in the Aristotle notion of human flourishing. Why do we spend all our time talking about competition when, in fact, we've got all these lives, right? My life, your life, grandmother's life, our children's lives. And what are we doing to help them flourish?"
+    },
+    {
+      "start": 2383.008,
+      "end": 2400.0,
+      "text": "us flourish. And we could do a whole lot more. I'm reminded of Alice in Wonderland. She met the Cheshire Cat. She said, where should I go?"
+    },
+    {
+      "start": 2400.0,
+      "end": 2426.88,
+      "text": "Cat says, where do you want to go? She says, I don't know. Cat says, it doesn't matter where you go. So I'm saying it doesn't matter, U.S., China, whatever. We have to decide what we want for our lives, what you want in Europe, what you want in Austria, what India wants in India. And miraculously, what digital."
+    },
+    {
+      "start": 2426.88,
+      "end": 2456.24,
+      "text": "could do is allow us to distribute our resources and our physical goods and our interchanges so that we could optimize flourishing on the planet. I say that's a worthy goal. So cooperation or doing something that helps all people lead better lives and better in their own cultural context."
+    },
+    {
+      "start": 2456.24,
+      "end": 2483.408,
+      "text": "It's possible. What I work on today is the idea of digital trade that allows each country to do their own thing, but it's federated. You prioritize whatever you prioritize and exchange what you want to exchange, and we can all be better off. So if you do the sigma of everybody's lives, you want to make that big. What I saw in India today."
+    },
+    {
+      "start": 2484.592,
+      "end": 2513.136,
+      "text": "is a complete grasp of what I've just said. And it will be challenging to the world when the global South starts looking at the sigma of people's lives and maximizing flourishing. Back to you. Thank you. Thank you, Malin. I think digital humanists would all agree with you."
+    },
+    {
+      "start": 2513.136,
+      "end": 2540.176,
+      "text": "There is little doubt. But then there is always a but. I don't know. Actually, to the key point, regulation. In the article that I shared in the chat, it says, make AI work for everyone. Regulation should be governed by the people, should be fed and navigated by the people."
+    },
+    {
+      "start": 2540.176,
+      "end": 2567.296,
+      "text": "Physics is physics labs. Chemistry is chemistry labs. What are the labs for digital? I claim they should be community learning and living labs. We can only see the cumulative effect of all our digital interventions, whether they're innovation or regulation. If we look at it in situ, in people's lives, how are they living? Why are they changing? How has it affected them?"
+    },
+    {
+      "start": 2567.296,
+      "end": 2596.528,
+      "text": "So we need community learning and living labs for us to evaluate the impact of innovation, of regulation. If we don't do that, we're just mired in the swamp of anecdotes and clever arguments. We really actually have data if we chose to collect it. I'll give one final thing."
+    },
+    {
+      "start": 2596.624,
+      "end": 2622.64,
+      "text": "Digital health in the United States, the NIH was investing in a lot of digital health startups. And they realized that 80% of the funding to these digital health startups was to recruit the cohort of people that would be testing. It was so expensive to get that. So they decided that they would actually fund a project."
+    },
+    {
+      "start": 2622.704,
+      "end": 2651.84,
+      "text": "That could have a sustainable business model for having standing cohorts for testing digital health innovations, products, gadgets, interventions. This gave me the idea of we should have community learning and living labs. The EU is already doing this. They're called community living labs. They're used in very scientific, strict scientific ways."
+    },
+    {
+      "start": 2651.84,
+      "end": 2681.728,
+      "text": "hard science, not so much social science, not so much social technical science. We should have community learning and living labs in which we use AI to help us understand what is the impact of these decisions that we're making, these innovations we're introducing. We should have labeling and licensing based on testing inside."
+    },
+    {
+      "start": 2681.728,
+      "end": 2711.6,
+      "text": "these community learning and living labs, and they're just normal communities, except they might put their hands up and say, we're willing to be measured so that our measurements can help all of the EU or all of India understand better which technologies, what AI interventions actually do more good than harm and how they should be used. I'm an advocate of labeling."
+    },
+    {
+      "start": 2711.6,
+      "end": 2740.24,
+      "text": "licensing, interoperability, and identity. And identity is not just for people, but they're for all our devices, and not just all our devices at one point in time. They should be for our devices over the life cycle of that device, including end of life. And how is it disposed? How is it created? So there's a lot to think about."
+    },
+    {
+      "start": 2740.272,
+      "end": 2767.44,
+      "text": "But first, we've got to decide what we want to emphasize. And I say it's people and planet. Thanks, Malin. I think not many people in this group will probably disagree. Joseph, however, looking back at your past history, I'm sure you know that things are not always quite as simple. What's your take on these questions? And you're still muted."
+    },
+    {
+      "start": 2773.328,
+      "end": 2801.232,
+      "text": "still muted. Yes, yes, yes. Okay, you can hear me now. Okay, so thank you for this hint, okay. I would like to talk from my systems engineering perspective, and I'd like to have some time to analyze the situation of the techs, technically speaking. There is a consensus that now we need the regulations, of course."
+    },
+    {
+      "start": 2801.232,
+      "end": 2822.624,
+      "text": "And the problem, however, is that there is no agreement on what exactly can or should be regulated and what are the risks involved in using AI. So nobody, I mean, there is no agreement about that and how this can be achieved in practice also."
+    },
+    {
+      "start": 2822.624,
+      "end": 2850.464,
+      "text": "This is a very important question and I would like to take some time to explain what are the technical difficulties behind. I think it's very important to reach an agreement finally and not to repeat the mistakes that we did of being late to regulate the internet and the social media and this is something we are paying for now."
+    },
+    {
+      "start": 2850.464,
+      "end": 2875.376,
+      "text": "So let me summarize the differences in the points of view between Europe and the approaches between Europe, China, and the U.S. So Europe has the strongest and the more complete AI regulations for sure with two basic texts. There are complementary texts. These are the AI Act and the Digital Services Act."
+    },
+    {
+      "start": 2875.4719999999998,
+      "end": 2900.8,
+      "text": "Now, China follows a very different approach. This is a vertical approach. There are many texts, but the main texts are regulating three types of systems. Recommendation systems, deep synthesis systems, and generative systems. And one characteristic of the Chinese texts is that they impose very strict constraints on the content."
+    },
+    {
+      "start": 2900.8,
+      "end": 2928.496,
+      "text": "that, in my opinion, require very careful design from the outside. And then in the US, you have a set of texts. The most important is the AI executive order that has been published end of October. This is a text that is less coercive. It includes recommendations and guidelines and relies more on the cooperation of commercial developers of AI models and the US government."
+    },
+    {
+      "start": 2928.88,
+      "end": 2958.128,
+      "text": "Something else I would like to emphasize is that major American technology companies promote the principles of ethical AI. This is something I would like to discuss because it's becoming a very, very important question what these principles mean exactly. There are papers about that, a lot of discussion. For instance, Google advocates responsible AI practices. Microsoft"
+    },
+    {
+      "start": 2958.128,
+      "end": 2987.4719999999998,
+      "text": "proposes a responsible AI standard. So these are the differences in the approaches between the three players I have mentioned. Now, I would like to explain what it means risk management and what are the technical difficulties for regulating AI. So regulations are designed to identify risks and impose measures to mitigate them or to eradicate them."
+    },
+    {
+      "start": 2987.504,
+      "end": 3000.0,
+      "text": "Usually we distinguish between technology risk, anthropogenic risk and physical risk. So in the case of the AI, the important distinction is between technology risk and anthropogenic risk."
+    },
+    {
+      "start": 3000.0,
+      "end": 3022.24,
+      "text": "The technology risk, I think it's a very important distinction, and the debate about AI-induced risks often ignores this distinction. So technology risk is associated with hazards that compromise the system's ability to meet technical requirements, in particular safety and security risks."
+    },
+    {
+      "start": 3022.24,
+      "end": 3051.456,
+      "text": "On the other hand, anthropogenic risks arise from the intentional or unintentional misuse of technology violating regulatory or legal frameworks. Just to give an example, even if an LLM can generate deepfakes, this can be considered as a technology risk, using LLMs to produce deepfakes can be prohibited by law. So anthropogenic risks can be regulated by law. So the question is now how the technology risks can be"
+    },
+    {
+      "start": 3051.456,
+      "end": 3076.16,
+      "text": "regulate. Now, technology risk is managed by taking what we call the risk-based approach, and I would like to say that the AI Act takes definitely a risk-based approach, and this is an approach that is applied today to all kinds of artifacts and services. So, the concept of risk is very simple to understand."
+    },
+    {
+      "start": 3076.16,
+      "end": 3101.232,
+      "text": "The risk associated with the hazard of an artifact is measured as the product of two factors. The severity of the damage that can be caused by the hazard and the probability of the hazard to occur. So, if you want to manage the risk, you need first to define the degree of criticality of the system's function to various causes of risk."
+    },
+    {
+      "start": 3101.232,
+      "end": 3128.08,
+      "text": "And this is determined by independent institutions. For instance, we have a degree of criticality for lifts, for aircraft, for toys. And then you need an assessment of the system's transworthiness. And here I would disagree, because transworthiness is a technical term that covers many different properties, including safety, security, reliability, etc. So it's a well-defined term, at least technically speaking."
+    },
+    {
+      "start": 3128.08,
+      "end": 3155.424,
+      "text": "And transworthiness is the probability that the system will withstand the hazards provided by the system manufacturer, and this should be validated by independent authorities. So, the basic principle of risk management is the following. For each degree of criticality, this should be matched by a corresponding level of transworthiness. Just to give you an example, for instance,"
+    },
+    {
+      "start": 3155.424,
+      "end": 3185.36,
+      "text": "For safety-critical systems like an aircraft, the degree of transcorporation required is less than 10 to the minus 9 over 1 over a billion failures per hour of flight. So these are rules that are applied in systems engineering and very successfully, in my opinion. And for traditional systems, we consider mainly two technical properties, safety and security. And I think that these properties are well understood."
+    },
+    {
+      "start": 3185.36,
+      "end": 3214.912,
+      "text": "There are rules, international rules, that we apply to any kind of artifact today, but unfortunately for ICT systems, and in particular for AI systems, we have no such rules. And I would like to explain that one inherent difficulty in evaluating the transworthiness of AI systems is that AI systems are black boxes. They are non-explainable."
+    },
+    {
+      "start": 3214.912,
+      "end": 3242.544,
+      "text": "And when we estimate the reliability or the transworthiness of an artifact, we use models. We use mathematical models and we make some calculations to prove that, to provide transworthiness guarantees. So this is an inherent difficulty. I don't know how to solve this problem today. And this will be a difficulty when we want to apply, for instance, the AEI Act."
+    },
+    {
+      "start": 3242.544,
+      "end": 3268.848,
+      "text": "that adopts this approach. Okay, something else that I would like to emphasize is that today we don't have standards for AI systems and this lack of standards also is compounded by some permissive policies. For instance, in the US, competent authorities allow"
+    },
+    {
+      "start": 3268.848,
+      "end": 3297.152,
+      "text": "self-certification for autonomous cars or for medical devices. Self-certification means that you don't apply standards. No independent authority will guarantee the safety, for instance, of your self-driving car. This is guaranteed by manufacturers. So this is also an important trend today. And I think some U.S. agencies are pushing in that direction, self-certification. Don't forget this term. Now to..."
+    },
+    {
+      "start": 3297.152,
+      "end": 3327.056,
+      "text": "If I have time to give some more detailed analysis of what European text proposes, so the European AI Act is a unique text, a very important text, because it adopts this risk-based approach for AI systems. I don't know what will be the consequences of that or whether the text will be applied or not, but it distinguishes four different categories of systems. Unacceptable risk systems,"
+    },
+    {
+      "start": 3327.056,
+      "end": 3354.768,
+      "text": "And for unacceptable risk systems, you have the systems that are clear fit to safety, livelihoods and the rights of people, social scoring systems and things like that. And I think that these systems will be banned just because of the application of what in Europe we call the precautionary principle that is incorporated into the European legislation since 2006."
+    },
+    {
+      "start": 3354.768,
+      "end": 3382.8,
+      "text": "and I think that these systems will be excluded. Then you have high-risk systems. High-risk systems is AI technology used in critical infrastructures like transport, so this includes self-driving cars typically, that could put the life and health of citizens at risk, educational or vocational training, etc., systems for scoring of exams, safety components for products."
+    },
+    {
+      "start": 3382.8,
+      "end": 3411.6,
+      "text": "So if I understand well, high-risk systems correspond to what we call safety or security-critical systems, for which, according to international standards, we require very, very strong transportness guarantees. And technically speaking, today, it's impossible to obtain for AI systems. Just because I said AI systems are black boxes, you cannot apply any mathematical analysis."
+    },
+    {
+      "start": 3411.6,
+      "end": 3441.52,
+      "text": "I think this, if we apply the European text rigorously, we will exclude these two types of systems. And then you have limited risk and the minimal or no risk system. OK, so this is easy. And then another European text is the Digital Services Act. And the Digital Services Act regulates online intermediaries and platforms. Probably you know about this text."
+    },
+    {
+      "start": 3441.52,
+      "end": 3468.048,
+      "text": "So the European Commission has designated 19 platforms that must comply with specific requirements. And these are requirements that are very hard to achieve and also to validate. Such as, for instance, to be audited by an independent auditor at least once per year and adopt the measures or share the data with the Commission. I mean, these are..."
+    },
+    {
+      "start": 3468.048,
+      "end": 3494.544,
+      "text": "I don't believe that any company would accept this, or it's very hard to enforce the application of these rules. Yes, so I think that here this is a challenge for the EU. The EU probably does not have the technical means and methods to enforce the application of these standards we will see. Then you have the Chinese AI Registry."
+    },
+    {
+      "start": 3494.544,
+      "end": 3523.2799999999997,
+      "text": "And the Chinese AI regulations, as I said, they are vertical and they take a progressive approach. So there are many texts, but the main texts are distinguished between recommendation systems, so typically e-commerce platforms, deep synthesis AI systems that use generation and synthesis algorithms that combine learning and virtual reality, for instance, face recognition, face replacement, etc."
+    },
+    {
+      "start": 3523.2799999999997,
+      "end": 3550.1440000000002,
+      "text": "and generative AI systems. Now, I think that here the requirements are very strong, and this perhaps explains also some delay, I mean, the problems they have to progress, I mean, to build something that can compete with ChatGPT, for instance. And these impose a very careful development."
+    },
+    {
+      "start": 3550.1440000000002,
+      "end": 3579.008,
+      "text": "from the outset. Data acquisition and preparation, system development and training, so they require that you build systems that are correct by design, because otherwise they will not be accepted. Now, to say a few words about the US regulatory framework. Very briefly, Joseph, sorry, very briefly. Yes, okay, so I will stop here, because the US executive order"
+    },
+    {
+      "start": 3579.008,
+      "end": 3600.0,
+      "text": "have been discussed. I think that it's too vague. It makes reference to other texts, in particular the missed AI risk management framework that tries to define the concept of risk but has nothing very, very concrete."
+    },
+    {
+      "start": 3600.0,
+      "end": 3629.648,
+      "text": "So I think, okay, there are a lot of things to be done on the U.S. side at the moment. You have just wishes and nothing more. Okay. So I'll stop here. Thank you. Thank you, Joseph. Sorry for interrupting, but I would like to have some time for Q&A. John Claudio, now we have talked a lot about regulation and we have talked a little bit about competition and cooperation."
+    },
+    {
+      "start": 3629.648,
+      "end": 3651.616,
+      "text": "But what's the role of regulation for competition? Or as I think both speakers, Mai-Ling Fung and Joseph Sivakis just mentioned, also, what are the opportunities for cooperation in regulation? I mean, in the end, this is perhaps something that, as Joseph just mentioned, where we also need global standards."
+    },
+    {
+      "start": 3651.616,
+      "end": 3677.92,
+      "text": "But then then whenever Europe acts, it's accused of, you know, basically just trying to to regulate the large tech companies. And that's that's one of its main interests. So what's your take on this? Yeah. Yeah. Thank you very much. Yeah. So I assume you mean competition and cooperation at the global."
+    },
+    {
+      "start": 3677.92,
+      "end": 3704.0,
+      "text": "Yeah, competition between different markets and cooperation between different states. Okay. Yeah, I think this was an argument that was raised a lot in the AI negotiation. You know, we are going to kill our internal AI market."
+    },
+    {
+      "start": 3704.0,
+      "end": 3733.344,
+      "text": "and we are going to succumb and race for AI. I think similar arguments were raised by tech industry friends and lobbyists 10 years ago when the GDPR was proposed and after four years when it was approved."
+    },
+    {
+      "start": 3733.344,
+      "end": 3759.536,
+      "text": "And it was false. We were not back with innovation because of the GDPR. The GDPR proved to be. And I'm now responding to competition, then we will go to cooperation. The GDPR proved to be flexible even for pandemics, even for privacy pandemics. The GDPR proved to be as."
+    },
+    {
+      "start": 3760.624,
+      "end": 3784.72,
+      "text": "Not not limiting the free flow of data. And also we imposed our we imposed the Brussels effect. So actually, the GDPR was a model for other countries and for other systems. So I don't think I don't think the AI Act will will have the same in terms of positive contagion."
+    },
+    {
+      "start": 3784.72,
+      "end": 3804.64,
+      "text": "because GDPR is very based on some specific technical principles like accountability, transparency, purpose limitation, data minimization and so on, while the AI Act is based on fundamental rights in the regulatory part."
+    },
+    {
+      "start": 3804.64,
+      "end": 3831.184,
+      "text": "So it was conceived as a safety instrument, as a consumer safety, and now it's actually become a fundamental rights instrument in some parts, thanks to the great work that the European Parliament did. And for that, I don't think we will have a positive contagion in other countries, because we have fundamental rights are deeply in the DNA of the European Union."
+    },
+    {
+      "start": 3831.184,
+      "end": 3857.104,
+      "text": "While in China, there are no individual human rights and the concept doesn't exist, like theoretically. And in the United States, we don't have the idea of fundamental rights. We have constitutional rights. We have liberties, constitutional liberties. So the framework is... And in other countries, like in the Global South, which is very important,"
+    },
+    {
+      "start": 3857.104,
+      "end": 3869.968,
+      "text": "We there's this risk of legal colonialization that we could export our values to African countries."
+    },
+    {
+      "start": 3869.968,
+      "end": 3896.5280000000002,
+      "text": "countries, etc. And of course, I think it's important that we focus a lot on the values of the regulation. So this is an important, I think, consideration we should make. We will not have a Brussels effect with AI for now, not just for the GDPR. But this is good because every, as Maylene was saying, every country has its own values on which AI should be based."
+    },
+    {
+      "start": 3896.5280000000002,
+      "end": 3926.096,
+      "text": "So in one sentence, I would say that I don't see a big competition problem because the AI Act is also providing predictability and clarity, while the status quo ante, so the situation before the AI Act, which is the situation now, is based on different forms of inconsistent enforcement of data protection authorities, consumer authorities, competition law."
+    },
+    {
+      "start": 3926.096,
+      "end": 3952.48,
+      "text": "Authorities with little clarity of whether, for example, generative AI is admissible at all. Charged GPT is admissible at all, you know. So these are considerations that are very, very much rooted on the law. In terms of cooperation, I think even though we will not have a positive process effect,"
+    },
+    {
+      "start": 3952.48,
+      "end": 3969.728,
+      "text": "That should there will be I think there will be cooperation, very low level cooperation. So based, I think, a lot on bottom up accountability duties, voluntary codes of conduct and all this kind of stuff."
+    },
+    {
+      "start": 3969.728,
+      "end": 3996.208,
+      "text": "And this is kind of weak in terms of enforcement, of course. And we need international cooperation for that. So now I am conducting a couple of studies on that. And I'm also leading a research track at CERRE in Brussels about global convergence for AI governance."
+    },
+    {
+      "start": 3996.208,
+      "end": 4024.7200000000003,
+      "text": "And of course, the risk based approach that AI proposes is a first basis for cooperation. We could build at least an agreement of the most riskier of the riskiest systems, even though, as I said before, it's kind of difficult because we have different values. So I think we could all agree that, I mean, in Western world, we would all agree that social scoring is bad."
+    },
+    {
+      "start": 4024.7200000000003,
+      "end": 4050.544,
+      "text": "But in China it is used and it's on their public values. You know what I mean? So I don't want to be totally relativistic here, but at least the approach of a research impact, sorry, risk impact assessment. So risk assessment, impact assessment and also the risk based regulation might be the key for that. And maybe one sentence and then we go to the Q&A."
+    },
+    {
+      "start": 4050.544,
+      "end": 4070.272,
+      "text": "So I think the risk-based approach, just to connect to the two speakers before, one thing, participation is important. The impact assessment, the mental right impact assessment in the AI Act foresees participatory approaches to impact assessment. So we hear the impacted people, we hear them."
+    },
+    {
+      "start": 4070.272,
+      "end": 4097.888,
+      "text": "And the second thing is on the word trustworthy. That was mentioned before by Joseph also. Yes, I agree that in the technical field, there's a strong literature on trustworthiness. But as a social scholar, I like to argue on terminology. And I think that the terminology is never neutral. So even though there's a solid literature on concepts that have specific terminology,"
+    },
+    {
+      "start": 4097.888,
+      "end": 4124.224,
+      "text": "I think we should wonder why some terminology was preferred over others. But, yeah, this is another story. Just I think this is enough for me. Thank you. Many thanks, Cenk Daugherty, and thanks to all three speakers. I'd rather open the floor now because of time limitations to everybody and see if there are questions to our speakers."
+    },
+    {
+      "start": 4124.224,
+      "end": 4152.24,
+      "text": "And I think it would probably like to take one or two and then see who would like to answer them. So any questions from the audience? You can either use the chat or just raise your hand or speak up if you are not interfering with anybody. Yes, George and then Moshe. I'll take the two of you. George first. George, you're still muted."
+    },
+    {
+      "start": 4156.048,
+      "end": 4183.952,
+      "text": "Thank you, Eric, and thanks to our three. Taking a cue from what Joseph Sifakis said about not repeating the same mistake as in the 90s and paying a bit more attention to the negative aspects of our digital artifacts, can we find a way so that a certain degree of harmonization, being at the level of standards,"
+    },
+    {
+      "start": 4183.952,
+      "end": 4200.0,
+      "text": "or at the level of regulation would allow for global cooperation that can harness the power of AI for the benefit of humanity."
+    },
+    {
+      "start": 4200.0,
+      "end": 4221.296,
+      "text": "certainly I would imagine not disrupt any high risk or unacceptable risk categories, but would be more in the limited risk. So my question is, can we achieve a certain degree of harmonization?"
+    },
+    {
+      "start": 4221.296,
+      "end": 4250.256,
+      "text": "And if so, what can an organization like digital humanism together with like-minded organizations promote to achieve that? Many thanks, George. I noted the question. Moshe, please. In a way, this is somewhat related. A theme that did not come up in the discussion by the panelists is how much the climate in the United States"
+    },
+    {
+      "start": 4250.256,
+      "end": 4279.296,
+      "text": "has changed regarding relationships, research relationship with China. I mean, if you go back, you know, maybe 20 years ago, there was encouragement, go, go, build relationship with China. Rice had a joint PhD program in nanomaterials with Beijing University. I just went to check the webpage at Rice. It is gone."
+    },
+    {
+      "start": 4279.296,
+      "end": 4307.072,
+      "text": "And I went to China in September, and I had to go security briefing to prepare for such a trip. So there is a climate of chill, and this climate is affecting even more researchers where we have many people who came from China, did a PhD in the United States, and even people who are..."
+    },
+    {
+      "start": 4307.072,
+      "end": 4335.856,
+      "text": "Chinese ancestry who were born in the United States, even they feel that they are suspect because of their ancestry. And that comes from Washington. There's been even some pushback. Even the National Academies have tried to push back on the federal government on that. But right now, unfortunately, the geopolitics theme seems to be dominant. So when we think about coordinating regulations,"
+    },
+    {
+      "start": 4336.08,
+      "end": 4364.464,
+      "text": "I'm not holding my breath. Moshe, thank you very much. I would like to add that before our meeting, George Metakid has pointed out to me how this is also impacting the role of Chinese students in the US, especially in IT, of course, and that now India is becoming the number one country in terms of influx for that very reason, presumably. So I think this is a big question."
+    },
+    {
+      "start": 4364.464,
+      "end": 4392.144,
+      "text": "So to the panel, there were two questions. Learning from the past, how can we ensure harmonization? And this question by Moshe about the changing relationship. Who would like to go first? I'm happy to go first. Yes. I think we should absolutely aim for having some global coordination on protocols."
+    },
+    {
+      "start": 4392.176,
+      "end": 4420.176,
+      "text": "This is what science is about. We don't have Chinese science and Western science. We have science. And we cannot let humanity lose the collaboration for all the people in the world. There's no people in the world who don't deserve the benefits of science."
+    },
+    {
+      "start": 4421.488,
+      "end": 4449.968,
+      "text": "I believe that the AI governance approach that I'm talking about, that could be actually a common protocol, which is that we should get feedback. We should fight fire with fire, that AI is such a fire. We should use AI for this. We can use conversational AI to get citizen."
+    },
+    {
+      "start": 4449.968,
+      "end": 4479.296,
+      "text": "participation and feedback. And how each country decides to take and use that feedback, up to them. But we can still have common, very good, world-class feedback mechanisms that are best, that can be used by any country, no matter what. The Telegraph is another example of this. The ITU is really an organization where the protocols dominated and we continue."
+    },
+    {
+      "start": 4479.296,
+      "end": 4506.352,
+      "text": "to be able to send messages to each other. I would like us as academicians, as engineers, to really drive for that, that there is a common humanity which deserves common innovation, independent of who is the ruler in each country. Thank you, Malin. I don't know, Joseph, Jean-Claude, would you like to?"
+    },
+    {
+      "start": 4506.416,
+      "end": 4535.28,
+      "text": "Add to those questions raised by Moshe and George. Joseph, you're still muted. Yes, I think that reaching an agreement, a global agreement, has a technical problem behind. And, of course, if you want to agree to build protocols, there are committees, and this is another simple problem."
+    },
+    {
+      "start": 4535.28,
+      "end": 4561.92,
+      "text": "I think that for AI the problem is non-explainability and this is a very hard problem. We have to deal with a different kind of artifacts and this is a technical problem. The other important question is the relationship between the US and China. US policy has changed in a spectacular manner."
+    },
+    {
+      "start": 4561.92,
+      "end": 4590.512,
+      "text": "And, of course, China is suffering because of the ban, the U.S. ban that is also extended to Taiwan and South Korea. And, yes, this is a spectacular change of U.S. policy. China is currently suffering from restrictions, but I don't think that this will be a decisive factor in the competition between the two countries because the Chinese have resources."
+    },
+    {
+      "start": 4590.512,
+      "end": 4617.696,
+      "text": "and will overcome, I think. Thank you, Joseph. Jean-Claude? No, maybe just emphasizing what Mei-Lin said about protocols and about international cooperation and protocols. But with the small disclaimer, protocols and standards"
+    },
+    {
+      "start": 4617.696,
+      "end": 4639.136,
+      "text": "are not the solution to fundamental rights. So they might be a good basis, a good framework, but the framework needs the substantiation of fundamental rights. And also, it's very key that the standards are not designed by just..."
+    },
+    {
+      "start": 4639.136,
+      "end": 4662.688,
+      "text": "the same technical engineers that have dominated the design in the last months and years and decades. So it's very important. Diversity is not a matter of rainbow washing, pink washing, ethics washing, blue washing, whatever. Diversity is a form of"
+    },
+    {
+      "start": 4662.688,
+      "end": 4685.424,
+      "text": "mitigating power imbalances of marginalized communities, avoiding the trap between fake consent and paternalism. So basically, if we call impacted communities to AI decision making, we will be able to have"
+    },
+    {
+      "start": 4685.424,
+      "end": 4709.76,
+      "text": "Their diversity of perspectives when analyzing impacts, when analyzing harm, because we don't know what is a harm to AI. I'm a lawyer working, I'm a legal researcher working on harms of AI and I can tell there's no unique definition of harm. It's just a mass of definitions and maybe nobody is super comprehensive. So just to say that we need to..."
+    },
+    {
+      "start": 4709.76,
+      "end": 4736.736,
+      "text": "Of course, in the methods, we need participatory approaches. And yeah, I think this is all I have to add. Let me follow up with a very short question to all panelists, also the closing question. So what can and should an initiative like digital humanism do in collaboration with other initiatives around the world? What is the way forward to navigate?"
+    },
+    {
+      "start": 4736.736,
+      "end": 4766.352,
+      "text": "this maze between competition and cooperation, be it regulation, be it policy. What's our role? What should our role be? I guess my lingfong would be a good first response. Well, I do feel that I answered it earlier. You should call for flourishing. You should call for having ways of measuring flourishing and that"
+    },
+    {
+      "start": 4766.352,
+      "end": 4794.192,
+      "text": "We should be competing on which communities allow their people to flourish. And we should be cooperating about ways to flourish better. So that's it for me. Brilliant. Thank you very much. Joseph? Yes. So I think that an important task today would be to help"
+    },
+    {
+      "start": 4794.192,
+      "end": 4800.0,
+      "text": "clarified concepts, and there is a debate."
+    },
+    {
+      "start": 4800.0,
+      "end": 4826.0,
+      "text": "And I think that in this debate, there is a lot of confusion. The confusion is cultivated by some players, and we should clarify the debate. I don't agree that writing regulations is a matter of values. Because all this discussion about ethical IA, I think the debate is completely..."
+    },
+    {
+      "start": 4826.0,
+      "end": 4852.88,
+      "text": "I mean, technically it is completely empty, completely non-tenant. So I think our role could be to contribute to clarifying the debate, okay, and putting the debate on some technical basis. The answer will be technical. Either we agree on technical issues or they don't agree. And there are people that don't want to reach an agreement. This is clear. And I'm really happy that..."
+    },
+    {
+      "start": 4852.88,
+      "end": 4870.992,
+      "text": "The European Union adopted this text that is risk-based. This is the right way to go and we should put in that direction. Thank you. Thank you, Joseph. Gianclaudio, the way forward for digital humanism and as an initiative teaming up with others, what should we do?"
+    },
+    {
+      "start": 4870.992,
+      "end": 4890.112,
+      "text": "Yeah, but maybe just follow up, because I think there's an open debate between Joseph and me on how different approaches. He has a technical approach and they have a humanist approach, let's say more like social, let's say social science approach. And I like this dialogue a lot. So just to say."
+    },
+    {
+      "start": 4890.112,
+      "end": 4908.624,
+      "text": "I don't think, I mean, looking at my background and my perspective, I don't think that the solution to AI issue or cooperation, et cetera, can be purely technical in terms of engineering."
+    },
+    {
+      "start": 4908.624,
+      "end": 4932.672,
+      "text": "I think even the AI Act is not technical. The AI Act is based on political values, very, very problematic political decisions at a very human, let's say, yeah, political decisions about where do we set the borderline."
+    },
+    {
+      "start": 4932.672,
+      "end": 4961.04,
+      "text": "law enforcement policy makers, sorry, police doing AI, exploiting vulnerabilities. So it's really based on what are the political decisions and values that we decided to have. And I think, but of course, we need technical expertise. We need both. We need both. Just a word. I don't want to be misunderstood, okay? Because, of course,"
+    },
+    {
+      "start": 4961.04,
+      "end": 4989.68,
+      "text": "The AI has a strong background in human values. This is clear and this I fully respect. But if we stay at this level of discussion about what is a fair AI, about what is AI for good, etc., then these are concepts that should be refined. And bottom line, we should..."
+    },
+    {
+      "start": 4989.68,
+      "end": 5005.184,
+      "text": "have a method to check that AI is good and we should have criteria for that, okay? And this joins, of course, and the criteria can depend on human values, etc. But we need criteria. We need a rigorous framework to do that."
+    },
+    {
+      "start": 5005.184,
+      "end": 5030.032,
+      "text": "As much as possible, I think we agree. Yeah, yeah. And as a follow up, there's this interesting debate whether human rights are more of a, how to say, legal technical concept or more political concept. So there's a ways even in the enforcement when we proposed how to enforce the AI Act. Now it's the commission that will have in the future to update the high risk list."
+    },
+    {
+      "start": 5030.032,
+      "end": 5059.312,
+      "text": "And if we think of the commission, this is a politically driven public administrative body. Our proposal, proposal of many lawyers was, why don't we have bottom up? So data protection authorities at the national level, they receive, they hear what's happening at the local level and they go up, you know, and they have a board for consistency. And so this is the topic of where, but if we push a lot of national bodies, we are saying that basically the enforcement."
+    },
+    {
+      "start": 5059.312,
+      "end": 5084.688,
+      "text": "of human and fundamental rights is a purely legal decision, while the European Commission is also a political component. But this is a very open issue and very interesting. And I think there are, of course, different layers of implementation. And I think our time is over, so I will stop. Yes, it is. Thank you very much. We need another panel. We need at least one more panel. Yes, Joseph."
+    },
+    {
+      "start": 5084.688,
+      "end": 5114.304,
+      "text": "Let me thank all our three panelists very much for this debate. It went a bit in a different direction than what I had anticipated, but that's, I guess, good. Let me briefly mention in the discussion, there was a comment by Luis Monif Pereira that we should also talk about labor impact issues. Point well taken. We'll take it on the list. And Joaquin Peña-Siles, I think, suggested that we should plant a seed for a global cooperation."
+    },
+    {
+      "start": 5114.304,
+      "end": 5144.096,
+      "text": "on AI around global common problems. Also, I think, a very good proposal. With this being said, I'm looking forward to a practical way of improving human mankind because someone said, I think it was Andra Schiff, that after listening to Bach's Goldberg Variations, however, that's the full 90 minutes, you are becoming a better person. And I think Peter Gnes has the details for this."
+    },
+    {
+      "start": 5144.096,
+      "end": 5172.352,
+      "text": "Back to you, Peter. And again, thanks to everybody. Thank you. Thanks, Erich. And thanks, everybody. The final notes, Maylin proposed the Goldberg variations by Johann Sebastian Bach. And while we technically already had a variation in an early lecture, for those who remember, we had variation one with a technical twist. We could very easily agree that."
+    },
+    {
+      "start": 5172.352,
+      "end": 5197.248,
+      "text": "that we could play something from the Goldberg Variations. And Eric suggested the aria as an interpretation, an interpretation by Wikingur Olofsson, as he witnessed his performance recently live in Vienna. And luckily, this performance was recorded and broadcast by Austrian radio station, so I took the liberty of taking exactly this version for a closing today."
+    },
+    {
+      "start": 5197.248,
+      "end": 5223.568,
+      "text": "with all the coughing and all the noises of the concert. So maybe you remember this, Erich. But before I play it, and I hope this will work because I have to update soon, so I hope this didn't break my installation, I will quickly announce our next events, too, because there's one already happening next week to respond to the recent developments regarding the AI Act. So on December 19th, we'll have a panel on the..."
+    },
+    {
+      "start": 5223.568,
+      "end": 5251.152,
+      "text": "UAI Act, a success story with George Metakidis and Kai Zinner, who is head of office and digital advisor to the German member of European Parliament, Axel Voss. And Hannes Wertner will moderate this. And then already for next year, for January 9th, the announcement that we will have a panel on educating future computing professionals to ethical and social impacts of digital technologies."
+    },
+    {
+      "start": 5251.248,
+      "end": 5280.624,
+      "text": "with Clara Knepper of IEEE, Rodrigo Ferreira of Rice University, and Anna Bohn of VU Amsterdam already confirmed as panelists. And note that this will start a bit later than usual at 5.30 and will go on until 7 p.m. So thanks to May Lin, John Claudio, and Joseph, and Erich. And we will close with Wicking Gear Olofsson's live rendition of the aria from Bach's Goldberg Variations. So fingers crossed you can hear the audio and see you next week."
+    },
+    {
+      "start": 5565.744,
+      "end": 5568.72,
+      "text": "Buona notte. Goodbye. Thanks to all of you."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

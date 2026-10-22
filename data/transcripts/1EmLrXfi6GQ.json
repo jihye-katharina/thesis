@@ -1,0 +1,811 @@
+{
+  "video_id": "1EmLrXfi6GQ",
+  "source": "whisper",
+  "language": "en",
+  "text": "All right. Good evening, everyone. Good evening in the stream. Good evening here in our lecture about the digital humanism. Summer school, it's the O-Win. So once again, we do it, our lecture today, in a hybrid format. And you can see all the students here. So my name is Stefan Wolter. But I will not say too much. I'm very happy that we have a very renowned speaker. this evening, but in order to introduce the speaker, I first introduce our moderator. Let's welcome Carlo Ghezzi here. Carlo, thanks a lot for moderating this evening. Carlo is an emeritus professor at Politecnico di Milano. He is ACM fellow at the Iberia and member of the Italian Academy of Sciences. He received the ACM Sixth Outstanding Research Award in his published hundreds of papers in journals and conferences and co-authored six books, mainly on programming languages and software engineering, if I'm mistaken. I think there's not much more to say. Ah, I wanted to also just, for our Digital Humanism Summer School students, we have this lecture series for the students with 5PM or attitude about every two or three weeks. at ikrun.org you can find the whole archive of lectures. It's now over 80 lectures. And I hope that you will also join me in the near future. We have plenty of interesting events already fixed for September and October, but I think this will be announced at the very end on the slides. So, therefore, without further ado, I hand over to Carlo, and wish us all an interesting Thank you. Welcome, everybody. Can you hear me now? Yes, we can. Okay. Okay. So, you know, welcome everybody to this seminar today. I'm very happy to coordinate this seminar, which is titled Why Generative AI Won't Replace Software Engineers. And it's always good to start in such a positive mood. that will not be replaced by AI. The speaker is Alexander Prechner. He's a professor of software and systems engineering at Technical University of Munich, is founding director of the Bavarian Research Institute for Digital Transition, which is an interdisciplinary research institution in Bavaria. and director of Fortis, which is the Bavarian research and transfer institution. The research that he has been doing has been at least partly, you know, on aligning software engineering with principles that refer to digital humanism. And in fact, I can show you here, there's a volume that we produced and on. digital humanism, and there is a very nice paper that is authored by Alex and colleagues on this alignment, as I was saying. He has been recently focusing on the effects of AI on education, universities, and how AI is changing software development, and especially due to AI-generated code. In the case of education, he designed one tutor, which is a very interesting platform, which has been designed to support teaching by providing personalized assistance and tutorship, which can be personalized by the tutor and directed to students. I think it's a very interesting effort. And regarding coding, well, this is the main subject of this talk, so I won't say anything about it, but just give the floor to Alex. Right. Thank you very much, Carlo, for that introduction. Thanks very much to the organizers for having me. Let me just make sure I share my screen. And can you confirm that you can see it in full screen mode? Can you see it? Not yet. Not yet. Okay. then we need to find a okay here we go nice can you see it yes Perfect. Then let's go. Once again, thanks very much for having me. This topic is very dear to my heart as I'm a professor of software engineering. And it's also very dear to my heart with respect to what Carlo has said, because I've worked on the alignment of software engineering with digital humanism. And I believe that the main ideas that I'm presenting here, in fact, are more general than just software engineering. So I hope you can profit from them. various ways. Now, my answer to that question, will generative AI replace software engineers, is situated somewhere in between no and it depends. And you may say, isn't that really trivial? Of course, it won't. And the answer is, no, I don't think it's trivial, because depending on what country you are in, you will have seen newspaper articles of the kind that you are seeing here that tell us, oh, Software engineers will be replaced within the next couple of years. And I think the major shock really came when Mark Zuckerberg said in February, I believe that I could soon do the work of Meta's mid-level engineers. It's interesting to look into that or to listen into that interview, by the way, because once he has said that, you get the impression that he's trying to. to retract from what he has just said. He's obviously shocked himself by the points that he has made. I'm going to make a point as to why I think this statement is problematic in a variety of different ways. I will structure my talk into three parts. I'll talk about software engineers, I'll talk about software engineering, and I'll talk about where I think and where I don't think that generative AI can take over. And the main point is that generative AI will... assist but not replace, which is a point that isn't too original. You can read that everywhere. But I'm going to try to understand why that is, in my opinion, necessarily the case. And I'd like to make my main argument up front so that you can see where I'm getting it with a different set of ideas that I'm going to present to you. That argument is the following. Software engineers make explicit and conscious choices of what we intend. Not understanding our intentions and offloading these choices to an AI likely leads to incorrect or inadequate results. And as we are going to see, there is varying evidence about the productivity gains imposed by generative AI and software engineering, which can be explained by that idea of not understanding intentions, in my understanding. And moreover, it conflicts with the very idea of digital humanism, at least my understanding of digital humanism, which is about agency. and taking responsibility. Only humans can take responsibility and therefore we cannot and should not offload the kind of choices that we are going to talk about to a machine. So what do software engineers do? Paolo initially asked me what to talk about coding, and I thought, well, we should rather talk about software engineering. And in fact, it's not too easy to differentiate between coding and software engineering. So software engineering, software development consists of a bunch of activities that are related with a set of concepts or artifacts. So we see the needs. What is a system supposed to do? And then we write down these needs and call that requirements. That is done by product managers or requirements engineers or, in fact, sometimes even coders. Now, these needs, when they are written down, we call that requirements. Needs and requirements aren't the same thing because in the process of going from implicit needs to explicit requirements, usually plenty of things go wrong. We have various ways of formulating them. But this is also what software engineers do. Software engineers. prepare and create data that is going to be used. Software engineers or AI experts train and validate machine learn models that are a small part, by the way, of today's software. Then we have architects that build the component architecture of a system, that build the data architecture of a system. And then we have developers that write algorithms, that write code, and that write tests. So if we talk about software engineers, we talk about a bunch of different activities that they are performing. And in fact, they may be performing all of these activities as software is developed. And that immediately raises the question of what Zuckerberg was meaning when he was talking about mid-level engineers. Mid-level probably refers to a hierarchy in his company. But what is an engineer? Can we replace an engineer with respect to all the activities that lead to the artifacts that I've mentioned here? And my response is no. And I'm going to make that argument. Now, software engineering is a difficult... Because when we talk about software engineers, we also need to take into consideration that most software engineers are not trained software engineers. We have total laymen who have never coded before and who can now use generative AI to create codes. Soccer dads that write soccer applications. We have a bunch of professional, if you wish, software engineers that have never been trained as software engineers. Music teachers turned website developers. And these write rather comparatively simple programs. In fact, they may indeed be replaced by generative AI. And that is why I said in the beginning, well, the answer to my initial question is it depends. Then we have professionals that. are using software that are writing software professionally but that have never been trained as software engineers and a prime example here is electrical engineers working in the automotive industries for instance they understand the business domain the technical domain usually better than the software domain and here i would argue hey those will be assisted but not replaced and then we have professional software engineers that have undergone formal education as software engineers and those depending on the activities that they are undertaking won't be And the next level of complication is that these software engineers in these different categories come at different levels of seniority. And you may have seen that figure, which is from a recent study from Stanford, where it is shown that before ChatGPT, the number of people that were employed in software engineering or in the IT sector was steadily increasing. And then after CHPT, well, things were continuing to increase, but at a smaller slope. And for certain age category, each of these colors corresponds to one age cohort. Well, it went down and it went down for the juniors. It went down for those in between 20 and 22. And it went down for those in between 26 and 30. And that means that juniors are not hired anymore. And that means that lowly skilled software engineers are not hired anymore. And we'll have to understand why that is the case. So what's the point? The point is software engineering is very complex. And when we talk about software engineers, we have to tackle a very complex. beast here we have different activities and different artifacts we have different kinds of software engineers ranging from total layman to professionally educated software engineers we have different levels of juniority and seniority and then moreover software is developed in totally different contexts and it is context specific with respect to the application domain we have medical software for instance we have zoom software we have simple scripts that are written and these differ fundamentally with respect to a variety of context factors such as risk such as level of standardness and with respect to the trade-offs that they incur we have to talk about trade-offs um in the following they defer these software engineering activities with respect to different kinds of how software engineering is organized, which is called the development process. And they defer with respect to the tech stack that has been used. Some people are still using very old programming languages from the 60s. Some use more modern languages. And the difficulty now with tackling the problem that I try to tackle here in this presentation is that we somehow need to cope with that complexity that we need to... somehow make sure we get all these different dimensions into what we are talking. And that is why I would argue that that point about Zuckerberg stating that engineers will be replaced, mid-level engineers, is really meaningless because what is that, a mid-level engineer, with respect to the different dimensions that we have seen here? That's the first part. That's what I wanted to talk about in terms of software engineers. Turn our attention to software engineering. And as I understand, not everybody in the audience is a software engineer. So maybe it's a good idea to simply recap what software is doing. Software is implementing functions. And what do functions do? Well, functions are like mathematical functions that you may remember from school. They map input to output. So, for instance, we may have a calculator where we have operators and operands. We somehow put. 2 plus 2 into that machine, which is the input, and we get 4 as a result, which is the output. If we use Google search, then we enter a search string, and what we get is a bunch of websites. Input is the search string, output is a list of these search strings. And there's a huge class of systems that we call cyber-physical systems, such as a controller for a radiator here, where we say, hey, the desired temperature in my room should be 25 degrees, and then... That input is translated into movements of a valve that controls the flow of hot water in that radiator. And software implements that kind of function. It's important to distinguish between the notion of a function and the implementation of a function. What a function is supposed to compute is usually described in some form of specification. There's a variety of different ways of describing these specifications. Sometimes they come as user stories, we call that simple text. Sometimes they are elaborate formal documents. So there is a wide range of specifications. But the point is you need to understand that specifications describe the intended behavior. And then the implementation is one of two things as of today. We can implement a function by an algorithm, which essentially breaks down the computation of that function into a set of steps. It's like a recipe for baking cake. And the other option is to use a so-called machine-learn model, such as a neural network. And both of these ways of implementing functions have different pros and cons. Now, software engineering relies on one crucial... design principle and that crucial design principle is what we call dvd at emperor partition and rule the idea is that we break down a big problem into smaller problems and then we repeat that process until the sub problems that we have created are so small that we can solve them and now the interesting part for us here in this context is that if we have a function then there's different ways of breaking the problem of computing that function down in a variety of different ways. And in fact, for each functions, there is not one implementation, there are N implementations. And these implementations differ with respect to the structure in terms of how the problem was decomposed, with respect to the algorithm that is used to implement that function or the machine learned model that is used to implement that function. And then there are consequences with respect to time. to timing behavior of that program or that machine learning model or memory efficiency or security or performance and so on and so on. And the point that you need to remember for today's talk is the following. Software engineers take decisions when they break down a problem into a smaller problem and decide on one of the different options that they can use to implement a function. And that usually is not the one best decision, but there's many. Because there are different trade-offs that software engineers need to be aware of. There are different solutions. All of them may be okay, but they come with different quality properties. They design different trade-offs. And these trade-offs, for instance, in between security and performance, are related to what we want. And the question is, who specifies what we want? Who specifies these goals? Now, to make sure we understand what that means, that idea of decomposition or of refinement. Software engineering, abstractly speaking, is the following. We have some input domain that we map to some output domain. And in the beginning, we don't really know a lot about the input and we don't really know a lot about the output. So let's say we somehow map some input to some output. And as we develop software, we... understand what the different parts of the input domain are that are mapped to certain other parts of the output. And think of that as different modes of functionality. For instance, an AC can be used to cool down or to heat up. So what we do is we partition the input domain into blocks and then we treat each of these blocks separately. We implement or we say what these what the respective outputs for these inputs should be. That is that notion of decomposition that I've mentioned before. And the way that we structure this decomposition here is something that we are free to decide. So we now come up with mappings from input domains, smaller input domains to certain output domains. And then we iterate on that process we come up with further refinements we partition the sub partitions of the blocks that we have created into sub blocks and we map these sub blocks to certain outputs and we repeat that process until we are done so in that sense software engineering is the idea of breaking down a function into smaller parts and then implementing the different parts separately And that idea now comes in different ways of implementing it. In the 70s, people used to think, hey, this idea of decomposition is something that we can capture in a formal way. And that was called stepwise refinement and was formally founded. And the idea was to understand software engineering as a mathematical process. In the 90s, people realized, oh, the way that we are doing software engineering, in fact, that formal way was never executed to a full extent, except for very few exceptions. In the 90s, people realized, oh, there's so much incertitude in the process of developing software that we need to come up with an agile way. I'm going to have a word on agile development here, which essentially states we cannot really come up with a linear way. of refining our problem, but rather we need to do that in a bottom-up manner. And then there was something in between that was also called stepwise refinement by one of our heroes, I would say, Niklas Wild, who said essentially, well, that idea of software engineering is dividet impera, as I've mentioned before. But he said, well, there will be mistakes. As we proceed, we will realize that we got things wrong. And what you can see is, in particular, software developers must be taught to revoke earlier decisions and to back up. if necessary, even to the top, even to the beginning. What I think is noteworthy here is that that point was made as early as 1971. And now what's the point here? The point is, even though that idea of capturing the different artifacts and the different development steps as mathematical refinements didn't work out in practice, conceptually what we are doing is still that. We are refining our problem into smaller problems. And now remember the different kinds of artifacts that I've mentioned. We have talked about needs and requirements, certain kinds of needs and requirements, architecture and implementation. And if you look at these things from an abstract perspective, they refine each other. There is that refinement relationship from user needs to implementation because all of these artifacts that you are seeing here essentially are nothing but functions that are being decomposed, that are being refined in the way that I've mentioned before. And that is perfectly in line with a development model that you may have heard about, which is called the waterfall model, which was developed also as early as 1970, which describes different phases of development and assumes that linear process of going from system requirements to operations. Now, what is often forgotten today is that even in that original paper, it was perfectly clear to the author already in 1970 that there will be the need to get back to the earlier activities. And in fact, that there may even be the need to jump back to earlier activities that have been undertaken. But still, the idea is that we have that refinement. But as we proceed, we may not have proceed with the development. We may not have. a strict refinement relation. And in fact, the agile software development movement has said, well, that idea of refinement doesn't really work. We cannot know upfront what exactly the problem is that we want to solve. Instead, we understand as we go on with the development, only by doing that development, we better understand what... The problem is, and then we implement that step by step. So rather than saying in the beginning, here's a specification of what the system is supposed to do. We say, hey, let's start with a vague description of what we want to do. And then we proceed and we implement some parts to a certain extent. We completely implement certain parts of that. and once we have done that, we go on to the next part, which means that now all of a sudden it's comparatively easy to cope with change because one reality of software development is that everything is changing all the time. There are some numbers that state after a year, 30% of the functionality in business information systems is obsolete, is not used anymore. And the idea of agile development is, well, we need to embrace that idea of change. We somehow need to come up with a way of developing software that allows us to be very flexible with respect to changes. Plus, we accept the idea that we cannot understand and know upfront what exactly the function is that we want to implement. Rather, as we go on, we need to understand. And we need to implement certain parts in order to be able to understand what the next part of the system is supposed to be. And this, in a sense, is a principle that we realize all the time. Now, I can't do an interactive talk here, but I would ask you, if I were around, how many of you... are capable of dictating emails what you see here is a dictaphone very old piece of technology so how many of you can sit down think about what they want to say and then dictate an email Very few people can, and it also depends, of course, on the complexity of the email that we are writing. If you think about it, rather what we do is we start with an email, and as we write that email, we correct it. We go back, we shift the argument, we shift the order of certain parts of the argument, we change the tonality, and we do that step by step. And for most of us, the most used key on the keyboard is the backspace key, because we need to... remove what we have done before what isn't correct and in fact that is exactly the idea that is also behind agile software development we can't know up front what we want to do therefore we need to develop that over time and that idea by the way also applies to speaking when i'm speaking right now i don't know what i'm going to say within the next 10 seconds or 10 minutes rather as i speak i'm thinking about what i'm saying and there's a famous essay by a german author Heinrich von Kleist dating back to 1805, stating that as we speak, we think. And if you think about that, that is very similar to that idea of address software development. As we develop, we understand what we want to develop. Good. Now, what's the point? The point is that in most cases, it's not the case that we know upfront what the system that we want to develop is supposed. So the idea of writing a prompt, pushing a button, and then getting some generated code that does what that specification is stipulating doesn't work technically because systems aren't good enough yet. But moreover, it doesn't work because we don't know upfront what the specification is. Rather, as we develop the system, we need to co-develop the specification. So as we iteratively develop the system, we understand what we want to build in terms of the functionality, in terms of the structure, and in terms of extra functional. We call that extra functional properties such as security or performance. And we decide on design alternatives because remember that each problem can be solved in a variety of different ways. And what a software engineer is doing is picking the most adequate. implementation at a given stage of development. And that is something that we can only do if we understand software engineering and that we can only do if we also understand the domain within which the software is supposed to operate. And this process, this process of iteratively deciding on what we want to do is something that can't be done by a machine. This is something that needs to be done by a human and maybe assisted by a machine. Why? Because somebody needs to say what we want and somebody needs to develop over time what it is that we want. Because my argument is that in most cases, we don't know upfront what it is that we want. And this is the point about taking decisions. Also, Niklas Wirth. in the same paper that I've mentioned before, perfectly clearly saw that point before. Each design step involves a set of decisions, and it may be that we have to revoke these decisions, but these decisions involve an understanding of how efficient the code should be, how maintainable the code could be, and... so on. And it needs to be taught to students to be conscious of these involved decisions. And now, again, my point will be, hey, who can take decisions? Is that a machine? Most likely not. It's the man, the human that is taking these decisions. So an LLM can possibly take that decision, statistically picking just one solution, but with respect to which goal? Who specifies the trade-offs? Who understands the trade-offs that I've talked about and who knows what the respective goal would be. This is something that we need to describe. We need to come up with a description of our intentions. Good. Now, I have alluded to the idea that software engineers operate in two domains. One is the technical software domain and the other one is the business domain, the domain within which the software is operating, such as a car, such as a business application, whatever we have there. And over time, Software engineering has come up with a bunch of techniques to cope with both kinds of domains. For the technical domains, we have what we call libraries or frameworks or languages or patterns that help us solve recurring problems. And that works rather well. Now, in terms of the business domain, it turns out to be more difficult to come up with capturing or with an idea of capturing the recurring design elements of these domains. And why is that? That is because there tends to be too much contextual variation in the business. But the good news is now we can add that context information to a prompt when building code with an LLM. And that leads me to my last part here. How, in principle, does it work that we generate code with a generative AI? Well, we somehow describe the functionality to a certain extent. We describe structural preferences and maybe some tradeoffs that we are interested in. Then we add further context to the prompt, for instance, legislative constraints and further extra functional properties. And then we push a button to generate the code. Or there's further other ways of doing that doesn't really matter to us here. Then we need to check if what the system has described really corresponds to our intentions. And then we iterate on that process. And obviously, the more context we provide, the better the code in a certain sense will be. And now the point is the AI cannot know what we want. What it can do is the following. It can pick a statistically likely solution to a partially specified problem, which is the most standard solution. Whether or not that solution is a good solution, an adequate solution, of course, totally depends on the context within which we are. If we have a total standard problem, that is perfectly fine. If we have a slightly non-standard problem, that is difficult. I would argue that this way of picking just some of just making a more or less arbitrary choice is exactly what junior or non-professional software engineers would do. They see the problem, they just have one solution in mind and they pick that one solution. Whereas senior software engineers, professional software engineers will understand that there's a bunch of design alternatives and they will pick the most adequate one simply because they understand the different trade-offs and they have an idea of the impact of these design decisions. And if you ask me, this may be one explanation as to why we are seeing the drop of employment in software engineering here for the juniors. Because essentially an AI, a generative AI, creates code like a junior software developer would do. Now, one last thing that we need to talk about here is that I may have... given the impression that we just write a prompt and we get code that implements that prompt correctly. That is, in most cases, not true. Rather, we get some result that we need to verify. So there may be incorrect solutions or code that is created that doesn't conform to what we have intended to describe. And what everybody is seeing in that domain is that there will be a shift from creation to verification. We will maybe spend less time on creating problems, on creating code, but maybe we need to invest more time on verifying if that code adheres to our intentions. And remember now that my argument was, well, we can't really know in most cases upfront what we want to do. And therefore, one way of developing code with a generative ai is the following well we start with some understanding of mapping input to output of some understanding of our function then here this is meant to be a certain piece of code or machine learned model that is being created then we refine that we create a new set of code that we verify again and we go back in that circle so the idea is i prompt i generate code i verify the code i re-prompt and so on and this is well we co-evolve or we co-create the specification along with the code which is exactly the schema that we have seen before another question of course is well if that process is problematic if that process isn't guaranteed to provide correct results all the time then the question is under which circumstances it is worth using a generative ai rather than a human program and in fact the answer there isn't clearly yes or no the answer as usual is that depends now the first idea is where we need to talk about cost effectiveness right if we have the following distribution of effort for creation and verification without a generative ai then if we just shift that boundary here and now we spend less time on creating but more time and verifying but the net time overall is the same then we haven't gained anything and therefore well it's not worth using generative air and that does happen in certain places now if in fact it's happens that we can reduce the overall effort, then that is cost effective. That is perfectly fine. But that, of course, depends also on the domain, as we have seen in the beginning, on the riskiness of the domain, on the security properties that you may have, and the question of how acceptable it is if there are undetected hallucinations. For a medical device, that is different for a simple script that we are writing. Good. And in terms of productivity gains, the literature is unclear. Today's answer is we don't know. We have evidence to the left and we have evidence to the right. So what you see here is a study from Google, for instance, where we see that in a certain context, in a certain setting, the productivity is. improved speed up of solving specific problems with using generative AI is plus 21%. In a different paper, what we see is, oh, the productivity goes down by 20%. And why is that? Well, my response is it depends really on the kind of context within which we are developing software. It depends on if we have a junior problem at hand or a senior problem at hand. It depends on how standard the problem is that we are seeing here. Good. And now the idea is the following. The more standard a problem is, the better generated code, code generated by generative AI, will... be better at least in terms of that functional um correctness and most of us would most of our software engineers would argue okay simple low risk problems can be offloaded to the machine writing test harnesses writing structural code writing boilerplate code and so on that's perfectly fine and the machine can also help you with making suggestions as how to decompose a problem but as we have seen now Software engineering is about understanding what to be implemented, what is to be implemented, which needs to be done in that iterative way, because humans need to come up with what they want in the first place and then taking decisions about the trade-offs. And this then leads to the question, how can an AI decide that? It cannot. And in fact, I would argue it is unethical to offload that kind of decisions to an AI if we have no idea what we really want. to happen and that conflicts as i said in the beginning with my understanding of digital humanism which is about agency and which is about responsibility machines in that sense cannot implement agency and they cannot assume responsibility as a somewhat snarky side remark of course the question is how many software engineers really know what they are doing when they're writing software that is also not the case good and that then brings me to The end. My point is that software engineering, regardless of how that is actually done, is a set of iterative refinements. That means that we learn what we want to do. We understand better what the problem is that we want to solve. And we may realize, oh, we got it wrong. We need to replace the code that we have generated. The idea is that at each stage of development, there are many possible refinements, irrespective of the concrete development process that we are choosing. And it is up to somebody to pick the adequate solution there. And adequacy here with respect to the solution that is picked depends on the goals. And that goal needs to be specified by a human. It's impossible, as I've said in the beginning, to generally specify the problem up front. Good. And now the idea is that if the correctness is impossible to determine, or the goals are not explicit, or trade-offs are unclear, then why would we pick one refinement rather than another? Which of the possible choices is better than... And the AI will just pick any. And as I've argued before, a junior software developer will probably do the same. They just pick any solution or an untrained software developer. They will just pick any solution that works. It's a statistically likely refinement that may or may not be adequate. And this is where I'd like to conclude. And thank you for your attention. Thank you very much, Alex. Your talk has been gorgeous, very informative, very stimulating. I have tons of questions that I would like to ask, but I think I should first give an opportunity to our participants who are remotely participating to ask questions, and I already see hands raised, and then also ask the audience in Vienna to ask questions. So I think that the hand that I see raised is by Daniel Peters. You can ask your question. This is Daniel. Am I audible? Yes. Excellent. Great presentation. Very interesting question for you. In your experience, which tool, which AI tools have you found that can actually iterate in a graphical form? on the requirements specification for software because walls of text and requirements are difficult for humans to understand. If it can be in state machines or in flow charts, it makes systems much easier for humans to understand. But the LLMs are very, that I've discovered so far, are very poor at generating graphics for human beings that are not hallucinations. Yeah, I don't have too much experience with that. I have made the same experience, irrespective of the model that you pick. The graphics that are created tend to be problematic. I'm sorry, I can't really tell you what the best one is here. I am aware of that problem, and I think this is something that things will improve. Thank you. I see a hand raised in the room, so I give it to the audience in Vienna. Is there someone? Yes. Can you hear me? Yes. Yes. Okay. My thanks, Alexander, also. Things are much clearer after your talk on a number of issues and that I'm very thankful for. Two questions, they're actually related. One is... In the development so far of LLMs, there is discussion of the curve kind of leveling, of a wall being hit, that Chachi Pt5 was not as better as expected compared to Chachi Pt4 and the same for most of the others. In terms of their usage in practice for coding, Is that the same curve? In other words, has that flattened or not? And the second question, which is related, is are you expecting a new generation of verification tools in the way you describe them? Yeah, two difficult questions. First one, are we hitting a wall or are we seeing a flattening curve here? I can't really answer that question because we have that problem of shit in, shit out. If I come up with small problems that are sufficiently well specified, the generation of code is fabulous. My personal favorite is Claude Saunet. I think it's really outrageously good. I think it's difficult to say that we hit a wall here because I would say if we manage to refine the problem into sufficiently small parts, then we are already good enough. If, however, we expect to solve a big problem in one shot, then that's not going to happen anyway. So that doesn't really answer your question. I hope you don't get the impression that I'm dodging the question, but I really think it depends on how you frame the problem that you want to solve. If you come up with a 200-page specification, Will you come up with a good piece of software? Certainly not. I'm sure that that is not going to happen. But it can also happen because, as I said before, as you go through the development of that system, you will realize there's plenty of small things that you have never thought about in the beginning. And we realize it every day. We develop a piece of software and say, hey, we haven't considered that case. What is going on here? So, sorry, what was the second question again? whether you expect a new generation of verification tools in the context that you described. Yes, I do. Now, the point about verification is that verification contrasts an implementation with a specification. And if we don't have a good specification, of course, it's difficult to say what that would be, right? I think... These systems can be good at generating tests. My background really is in testing. I worked a lot on generating test cases for a variety of cases. And I'm surprised at seeing how good the generation of test cases really, really works. But the problem, of course, is, you know. I guess you're a computer scientist. You know the difference between verification and validation. If you write down what you want to be developed, that doesn't necessarily mean that this is what you have had in mind when you described the problem to be solved. So I think we will have the greatest progress in terms of testing technology, but I'm not sure how we will solve the problem that ultimately a human needs to check if what the specification is really. describes what we want to be described, but also somewhat intricate and twisted answer. But I think it's two very difficult questions that you have asked. There is a question, you know, from remote participants that are in the chat. And I take one by Bashar Nusebe. So he says, you know, great talk. Many thanks. He's in a noisy conference. So you want me to ask the question for you. Although I understand your framing, Bashar says, however, to what extent do you think we need to reframe the software engineering discipline from building functions to building experiences as more and more non-technical people express their requirements in relation to the world they live in rather than the software to be developed? Yeah, that's a Bashar question. Yes, of course. Very, very, very good question. So I guess my response will be that also depends. Remember that in the very beginning, I said there's different kinds of software development of software engineers. There are professional software engineers and there are laymen that say, hey, I would like to have that kind of software. And depending on the context, that may be. perfectly fine um if i want to write an app for my apple i watch that i can use to count the number of goals that my kids have scored on the soccer place that is something that that is going to work and yes we need i guess help and we will have a rephrasing or an additional understanding of software engineering that is going to go into that direction that Pasha, maybe that is a technical answer to you, that we speak about software development more in terms of user requirements than in terms of system requirements. At the same time, that doesn't really counteract the main argument that I have been making. And the main argument that I have been making is that as we develop code, we take decisions. And the question is, do we want to offload these decisions to systems? In some cases, it's totally unproblematic. Who cares about... my soccer goal counting app nobody cares if we build safety critical software if we build security critical software that's a different different game and there we need to understand what we are doing so my answer bashar will be no it's not a replacement but i would agree that there will be no code that's the technical term that we are using here right there will be a field of no code software engineering where people can write code that just does something that is not totally critical the question however is what does it mean to be totally critical what we have recently seen here in germany is a study that was looking into how correct the software is that researchers that are not software engineers that are not computer science engineers how correct is that software so biologists or chemists that somehow write their their data evaluation pipelines turns out that they are almost always incorrect and people realize that in hindsight then the question is well research software is that a critical piece of software Well, you can argue either way. I would argue absolutely it is critical because ultimately we are claiming truth when we come up with our research results. But you could also say, hey, it's not going to do too much harm, right? Okay. Thank you very much for your answer. You know, there's maybe others, but I want at least, you know, take advantage of coordinating this to ask you a very short question. Do we still need to teach programming? Based on what you say. So my answer is absolutely yes. And in fact, I'm teaching informatics 101 or programming introduction to Java in my university. And I decided to do it the way or essentially do it the way I've done it in the last couple of years. Why is that? Because the code that is generated needs to be verified. And you need to have somebody who can understand what that code is doing in a set of scenarios. Again, if you write your soccer, iWatch app, it doesn't matter. But if we are talking about serious software. And my argument would be that you can only understand code if you can write code. That's not the case for all disciplines, right? There are many disciplines where you can judge the quality of something without being able of doing it yourself. So I guess everybody here has a certain understanding of how good a certain cuisine is without being a chef or without necessarily being a chef. Most of us will be able to evaluate if a presentation was good or bad without being a good or bad presenter themselves. But for conductors of an orchestra, maybe that's a different story. And for code, that certainly, in my opinion, also is a different story. By the way, also for legally related fields, I also believe it's the case there. So my answer to that would be, yes, we need to teach programming if we want to. to maintain the capability to understand what the code is doing. And then we need to, depending on what kind of software we are writing, once again, we need to deeply understand what is going on. And I would argue that we can only gather that knowledge by learning how to do it. Thank you. Do we have time for getting more questions or do we need to switch to the music? I leave it to the local organizers, let's say, Walter and... Can you? Yes, kind of. So my question was, can we. proceed you know with questions there as others or do we need to uh give it back to you locally uh walter can you hear me yes okay thank you i wanted to ask um if we assume for now that ai can replace or replace entry-level software engineers or junior software engineers, how do you want to still get senior software engineers? If we now see 20-year-old people in 30 years, these people will be 50. How is the process? What is your vision? Yeah, that's the $1 million question. I have no idea. I don't really know. Also, by the way, we are seeing that kind of situation not just in software engineering. We see that in many different other fields as well. Yeah, I'm scared quite. Quite frankly, I can understand now in a short-sighted matter of arguments, you can say, hey, it's cheaper to offload certain tasks to the AI, but in the long term, of course, that will lead to a lack of senior people. Let me give you one example that I sometimes use as an argument here. If you think about the capability of taking minutes of a meeting, then most of us have learned that by doing it. Right. We have written minutes of meetings and most of us will remember that the very first set of minutes that we have written, we were totally nervous about them and we were essentially writing down every single argument that was being made. And it took us some time, maybe 20, 30 or 40 of these minutes until we were capable of saying, hey, this is the main set of points that was made. And now most of us can. attend a meeting for three hours and after that we can say hey the three points that were made are a b and c something that needs to be acquired something that needs to be done now if we take an ai that does summarization and minute taking of minutes for us then we will likely end up with people who can't capture a situation and bringing it and getting it to the point that is something that is scaring me um i don't have a response to your question it's it's I think it will be one of the major societal challenges that we'll have to cope with. But don't you think, Alex, that this is because exactly in the education we are only focusing or we are mostly focusing on coding in the education of computer scientists, software engineers, and much less. on the refinement type of game that you were describing, which is something that people learn in the real setting instead of learning in the university. So we have to change the way we teach, I think, and provide, you know, better, you know, software engineers through the real world instead of, you know, just growing them in practice. So I totally can see your point, Carlo, here. I mean, let's also be honest. Most students, when they leave university, they are not great software engineers simply because they lack experience. On the other hand, they need to have understood the major. abstractions and concepts of coding that they still need to understand, that they still need to know. I think what we need to teach, rather, is a certain set of competences that relate to critical thinking, to reflecting on what is going on. But that is true for all disciplines, also beyond software engineering, beyond everything that we do in software engineering. This is what I think we need to focus more on. There's, again, a question from Daniel, unless I'm wrong, and this is the hand that was raised before. No, there is a question, Alex. Question for you. Software verification for safety-critical systems is an incredibly difficult task that involves lots of minutia. It seems to me, just intuitively, and you're the expert that I defer to, how quickly or what process do you think we might accomplish? That will allow a formal verification of safety critical software, because that is a tedious process, a tedious and very easy to get wrong system. Is there any way AI can help? Most likely, yes. I mean, you know that as well as I know, right? There have been promises of formal verification for quite some time. And I'm not sure how far we have gotten. Also, to be fair, whenever it works, we don't call it verification technology anymore, right? Then we call it something else. I'm not sure I can help a lot with that. So I think it can help with maybe pointing you to certain standard problems that maybe you haven't been aware of. But I would argue that, and I've made that point before, I believe. I've tried to make that point, believe. The major problem really is what is the specification that we want to write down? I have worked on firm verification in contrast with testing for some time. And my experience is... Really writing down the specification is extremely difficult. You know that just understanding what an implication really means, a vacuously holding implication, that is something that is extremely complex. And understanding the difference between a conjunction and an implication, not too many people can do that. I think that discussion is independent of the discussion on AI that we are having here. precisely saying what we want is the major difficulty here. And there, in fact, I can imagine that an AI can help with that because it can point you to possible omissions. It can point you to questions of the kind, hey, are you sure you meant an implication? Maybe you meant a conjunction here. And didn't you forget that in that case? This is, I think, where I can be helpful in terms of improving. or helping to come up with specifications in terms of really performing the reasoning, I don't see AI to be of a lot of help here. Would you point to an AI model that might do a good job on that, making a robust specification? As of today, I cannot. Okay. Thank you. But also you need to remember, right, what is a robust specification that is always relative to what the needs are? And who is it who is going to validate if that supposedly robust specification corresponds to the needs? That's the difficult question. And that, again, is something that needs to be done by a human because obviously it can't be done by an AI because the AI cannot know what we want. Maybe if you just simplify the problem, like, for example, the airbag. We airbag in a car. It's sort of a small number of inputs, a small number of outputs. And if the scope is not too large, it makes it accessible in one page that you can draw, I hope, the specification. Thank you very much, though. OK, I think, you know, we are at the end of this talk. You must be very tired. It was very exciting for all of us. And we need an inspiring piece of music. to conclude. And you're going to present why you chose this, I guess. All right. So first of all, thanks very much, everybody, for attending. And once again, thanks for having me. Yeah, the piece of music that I've chosen this time is one of the motets of Johann Sebastian Bach, Komm, Jesu, komm. And I think it's... I need to admit that I'm a complete atheist. I think it's the most touching or these motets are the most touching pieces of music that I'm aware of, although they are deeply religious. And maybe you have heard of the term back Christians. I'm afraid I'm a back Christian in that sense. And what I really. Love about the motet that we are going to hear is it's about dying and then about eternal life. And I think that motet manages in an incomparable way to convey the essence of the transcendence in Christian faith and the esperance and the hope that is buried in Christian faith. For me, it's an absolute masterpiece. Thank you very much. Thank you, thank you everybody. is is is is . . . . Thank you for watching. Thank you for watching. Amen. Thank you. Thank you. Thank you. Thank you. Amen.",
+  "segments": [
+    {
+      "start": 1.424,
+      "end": 29.04,
+      "text": "All right. Good evening, everyone. Good evening in the stream. Good evening here in our lecture about the digital humanism. Summer school, it's the O-Win. So once again, we do it, our lecture today, in a hybrid format. And you can see all the students here. So my name is Stefan Wolter. But I will not say too much. I'm very happy that we have a very renowned speaker."
+    },
+    {
+      "start": 29.04,
+      "end": 58.688,
+      "text": "this evening, but in order to introduce the speaker, I first introduce our moderator. Let's welcome Carlo Ghezzi here. Carlo, thanks a lot for moderating this evening. Carlo is an emeritus professor at Politecnico di Milano. He is ACM fellow at the Iberia and member of the Italian Academy of Sciences. He received the ACM Sixth Outstanding Research Award in his"
+    },
+    {
+      "start": 58.688,
+      "end": 84.56,
+      "text": "published hundreds of papers in journals and conferences and co-authored six books, mainly on programming languages and software engineering, if I'm mistaken. I think there's not much more to say. Ah, I wanted to also just, for our Digital Humanism Summer School students, we have this lecture series for the students with 5PM or attitude about every two or three weeks."
+    },
+    {
+      "start": 84.56,
+      "end": 114.192,
+      "text": "at ikrun.org you can find the whole archive of lectures. It's now over 80 lectures. And I hope that you will also join me in the near future. We have plenty of interesting events already fixed for September and October, but I think this will be announced at the very end on the slides. So, therefore, without further ado, I hand over to Carlo, and wish us all an interesting"
+    },
+    {
+      "start": 114.192,
+      "end": 135.248,
+      "text": "Thank you. Welcome, everybody."
+    },
+    {
+      "start": 143.952,
+      "end": 171.584,
+      "text": "Can you hear me now? Yes, we can. Okay. Okay. So, you know, welcome everybody to this seminar today. I'm very happy to coordinate this seminar, which is titled Why Generative AI Won't Replace Software Engineers. And it's always good to start in such a positive mood."
+    },
+    {
+      "start": 171.584,
+      "end": 197.408,
+      "text": "that will not be replaced by AI. The speaker is Alexander Prechner. He's a professor of software and systems engineering at Technical University of Munich, is founding director of the Bavarian Research Institute for Digital Transition, which is an interdisciplinary research institution in Bavaria."
+    },
+    {
+      "start": 197.408,
+      "end": 227.248,
+      "text": "and director of Fortis, which is the Bavarian research and transfer institution. The research that he has been doing has been at least partly, you know, on aligning software engineering with principles that refer to digital humanism. And in fact, I can show you here, there's a volume that we produced and on."
+    },
+    {
+      "start": 227.344,
+      "end": 255.552,
+      "text": "digital humanism, and there is a very nice paper that is authored by Alex and colleagues on this alignment, as I was saying. He has been recently focusing on the effects of AI on education, universities, and how AI is changing software development, and especially due to AI-generated code. In the case of education, he designed"
+    },
+    {
+      "start": 255.552,
+      "end": 284.304,
+      "text": "one tutor, which is a very interesting platform, which has been designed to support teaching by providing personalized assistance and tutorship, which can be personalized by the tutor and directed to students. I think it's a very interesting effort. And regarding coding, well, this is the main subject of this talk, so I won't say anything about it, but just give the floor to Alex."
+    },
+    {
+      "start": 285.424,
+      "end": 315.28,
+      "text": "Right. Thank you very much, Carlo, for that introduction. Thanks very much to the organizers for having me. Let me just make sure I share my screen. And can you confirm that you can see it in full screen mode? Can you see it? Not yet. Not yet. Okay."
+    },
+    {
+      "start": 315.28,
+      "end": 325.936,
+      "text": "then we need to find a okay here we go nice can you see it yes"
+    },
+    {
+      "start": 325.936,
+      "end": 354.88,
+      "text": "Perfect. Then let's go. Once again, thanks very much for having me. This topic is very dear to my heart as I'm a professor of software engineering. And it's also very dear to my heart with respect to what Carlo has said, because I've worked on the alignment of software engineering with digital humanism. And I believe that the main ideas that I'm presenting here, in fact, are more general than just software engineering. So I hope you can profit from them."
+    },
+    {
+      "start": 354.88,
+      "end": 380.992,
+      "text": "various ways. Now, my answer to that question, will generative AI replace software engineers, is situated somewhere in between no and it depends. And you may say, isn't that really trivial? Of course, it won't. And the answer is, no, I don't think it's trivial, because depending on what country you are in, you will have seen newspaper articles of the kind that you are seeing here that tell us, oh,"
+    },
+    {
+      "start": 380.992,
+      "end": 404.624,
+      "text": "Software engineers will be replaced within the next couple of years. And I think the major shock really came when Mark Zuckerberg said in February, I believe that I could soon do the work of Meta's mid-level engineers. It's interesting to look into that or to listen into that interview, by the way, because once he has said that, you get the impression that he's trying to."
+    },
+    {
+      "start": 404.624,
+      "end": 430.112,
+      "text": "to retract from what he has just said. He's obviously shocked himself by the points that he has made. I'm going to make a point as to why I think this statement is problematic in a variety of different ways. I will structure my talk into three parts. I'll talk about software engineers, I'll talk about software engineering, and I'll talk about where I think and where I don't think that generative AI can take over. And the main point is that generative AI will..."
+    },
+    {
+      "start": 430.112,
+      "end": 458.048,
+      "text": "assist but not replace, which is a point that isn't too original. You can read that everywhere. But I'm going to try to understand why that is, in my opinion, necessarily the case. And I'd like to make my main argument up front so that you can see where I'm getting it with a different set of ideas that I'm going to present to you. That argument is the following. Software engineers make explicit and conscious choices of what we intend."
+    },
+    {
+      "start": 458.048,
+      "end": 487.408,
+      "text": "Not understanding our intentions and offloading these choices to an AI likely leads to incorrect or inadequate results. And as we are going to see, there is varying evidence about the productivity gains imposed by generative AI and software engineering, which can be explained by that idea of not understanding intentions, in my understanding. And moreover, it conflicts with the very idea of digital humanism, at least my understanding of digital humanism, which is about agency."
+    },
+    {
+      "start": 487.408,
+      "end": 504.16,
+      "text": "and taking responsibility. Only humans can take responsibility and therefore we cannot and should not offload the kind of choices that we are going to talk about to a machine. So what do software engineers do?"
+    },
+    {
+      "start": 504.16,
+      "end": 533.712,
+      "text": "Paolo initially asked me what to talk about coding, and I thought, well, we should rather talk about software engineering. And in fact, it's not too easy to differentiate between coding and software engineering. So software engineering, software development consists of a bunch of activities that are related with a set of concepts or artifacts. So we see the needs. What is a system supposed to do? And then we write down these needs and call that requirements."
+    },
+    {
+      "start": 533.712,
+      "end": 562.848,
+      "text": "That is done by product managers or requirements engineers or, in fact, sometimes even coders. Now, these needs, when they are written down, we call that requirements. Needs and requirements aren't the same thing because in the process of going from implicit needs to explicit requirements, usually plenty of things go wrong. We have various ways of formulating them. But this is also what software engineers do. Software engineers."
+    },
+    {
+      "start": 562.848,
+      "end": 573.936,
+      "text": "prepare and create data that is going to be used. Software engineers or AI experts train and validate machine learn models that"
+    },
+    {
+      "start": 573.936,
+      "end": 602.784,
+      "text": "are a small part, by the way, of today's software. Then we have architects that build the component architecture of a system, that build the data architecture of a system. And then we have developers that write algorithms, that write code, and that write tests. So if we talk about software engineers, we talk about a bunch of different activities that they are performing. And in fact, they may be performing all of these activities as software is developed."
+    },
+    {
+      "start": 602.784,
+      "end": 628.384,
+      "text": "And that immediately raises the question of what Zuckerberg was meaning when he was talking about mid-level engineers. Mid-level probably refers to a hierarchy in his company. But what is an engineer? Can we replace an engineer with respect to all the activities that lead to the artifacts that I've mentioned here? And my response is no. And I'm going to make that argument. Now, software engineering is a difficult..."
+    },
+    {
+      "start": 628.384,
+      "end": 657.696,
+      "text": "Because when we talk about software engineers, we also need to take into consideration that most software engineers are not trained software engineers. We have total laymen who have never coded before and who can now use generative AI to create codes. Soccer dads that write soccer applications. We have a bunch of professional, if you wish, software engineers that have never been trained as software engineers. Music teachers turned website developers."
+    },
+    {
+      "start": 657.696,
+      "end": 673.2,
+      "text": "And these write rather comparatively simple programs. In fact, they may indeed be replaced by generative AI. And that is why I said in the beginning, well, the answer to my initial question is it depends. Then we have professionals that."
+    },
+    {
+      "start": 674.16,
+      "end": 704.112,
+      "text": "are using software that are writing software professionally but that have never been trained as software engineers and a prime example here is electrical engineers working in the automotive industries for instance they understand the business domain the technical domain usually better than the software domain and here i would argue hey those will be assisted but not replaced and then we have professional software engineers that have undergone formal education as software engineers and those depending on the activities that they are undertaking won't be"
+    },
+    {
+      "start": 704.112,
+      "end": 727.664,
+      "text": "And the next level of complication is that these software engineers in these different categories come at different levels of seniority. And you may have seen that figure, which is from a recent study from Stanford, where it is shown that before ChatGPT,"
+    },
+    {
+      "start": 727.664,
+      "end": 752.304,
+      "text": "the number of people that were employed in software engineering or in the IT sector was steadily increasing. And then after CHPT, well, things were continuing to increase, but at a smaller slope. And for certain age category, each of these colors corresponds to one age cohort. Well, it went down and it went down for the juniors."
+    },
+    {
+      "start": 752.304,
+      "end": 780.208,
+      "text": "It went down for those in between 20 and 22. And it went down for those in between 26 and 30. And that means that juniors are not hired anymore. And that means that lowly skilled software engineers are not hired anymore. And we'll have to understand why that is the case. So what's the point? The point is software engineering is very complex. And when we talk about software engineers, we have to tackle a very complex."
+    },
+    {
+      "start": 780.208,
+      "end": 806.32,
+      "text": "beast here we have different activities and different artifacts we have different kinds of software engineers ranging from total layman to professionally educated software engineers we have different levels of juniority and seniority and then moreover software is developed in totally different contexts and it is context specific with respect to the application domain we have medical software for instance we have"
+    },
+    {
+      "start": 806.32,
+      "end": 825.744,
+      "text": "zoom software we have simple scripts that are written and these differ fundamentally with respect to a variety of context factors such as risk such as level of standardness and with respect to the trade-offs that they incur we have to talk about trade-offs um in the following they"
+    },
+    {
+      "start": 825.744,
+      "end": 851.904,
+      "text": "defer these software engineering activities with respect to different kinds of how software engineering is organized, which is called the development process. And they defer with respect to the tech stack that has been used. Some people are still using very old programming languages from the 60s. Some use more modern languages. And the difficulty now with tackling the problem that I try to tackle here in this presentation is that we somehow need to cope with that complexity that we need to..."
+    },
+    {
+      "start": 851.904,
+      "end": 881.872,
+      "text": "somehow make sure we get all these different dimensions into what we are talking. And that is why I would argue that that point about Zuckerberg stating that engineers will be replaced, mid-level engineers, is really meaningless because what is that, a mid-level engineer, with respect to the different dimensions that we have seen here? That's the first part. That's what I wanted to talk about in terms of software engineers."
+    },
+    {
+      "start": 881.872,
+      "end": 909.792,
+      "text": "Turn our attention to software engineering. And as I understand, not everybody in the audience is a software engineer. So maybe it's a good idea to simply recap what software is doing. Software is implementing functions. And what do functions do? Well, functions are like mathematical functions that you may remember from school. They map input to output. So, for instance, we may have a calculator where we have operators and operands. We somehow put."
+    },
+    {
+      "start": 909.792,
+      "end": 938.368,
+      "text": "2 plus 2 into that machine, which is the input, and we get 4 as a result, which is the output. If we use Google search, then we enter a search string, and what we get is a bunch of websites. Input is the search string, output is a list of these search strings. And there's a huge class of systems that we call cyber-physical systems, such as a controller for a radiator here, where we say, hey, the desired temperature in my room should be 25 degrees, and then..."
+    },
+    {
+      "start": 938.368,
+      "end": 959.936,
+      "text": "That input is translated into movements of a valve that controls the flow of hot water in that radiator. And software implements that kind of function. It's important to distinguish between the notion of a function and the implementation of a function."
+    },
+    {
+      "start": 959.936,
+      "end": 989.728,
+      "text": "What a function is supposed to compute is usually described in some form of specification. There's a variety of different ways of describing these specifications. Sometimes they come as user stories, we call that simple text. Sometimes they are elaborate formal documents. So there is a wide range of specifications. But the point is you need to understand that specifications describe the intended behavior. And then the implementation is one of two things as of today."
+    },
+    {
+      "start": 989.728,
+      "end": 1016.768,
+      "text": "We can implement a function by an algorithm, which essentially breaks down the computation of that function into a set of steps. It's like a recipe for baking cake. And the other option is to use a so-called machine-learn model, such as a neural network. And both of these ways of implementing functions have different pros and cons. Now, software engineering relies on one crucial..."
+    },
+    {
+      "start": 1016.768,
+      "end": 1045.408,
+      "text": "design principle and that crucial design principle is what we call dvd at emperor partition and rule the idea is that we break down a big problem into smaller problems and then we repeat that process until the sub problems that we have created are so small that we can solve them and now the interesting part for us here in this context is that if we have a function then there's different ways of breaking the problem of"
+    },
+    {
+      "start": 1045.408,
+      "end": 1075.008,
+      "text": "computing that function down in a variety of different ways. And in fact, for each functions, there is not one implementation, there are N implementations. And these implementations differ with respect to the structure in terms of how the problem was decomposed, with respect to the algorithm that is used to implement that function or the machine learned model that is used to implement that function. And then there are consequences with respect to time."
+    },
+    {
+      "start": 1075.008,
+      "end": 1104.4,
+      "text": "to timing behavior of that program or that machine learning model or memory efficiency or security or performance and so on and so on. And the point that you need to remember for today's talk is the following. Software engineers take decisions when they break down a problem into a smaller problem and decide on one of the different options that they can use to implement a function. And that usually is not the one best decision, but there's many."
+    },
+    {
+      "start": 1104.4,
+      "end": 1134.256,
+      "text": "Because there are different trade-offs that software engineers need to be aware of. There are different solutions. All of them may be okay, but they come with different quality properties. They design different trade-offs. And these trade-offs, for instance, in between security and performance, are related to what we want. And the question is, who specifies what we want? Who specifies these goals?"
+    },
+    {
+      "start": 1134.608,
+      "end": 1163.168,
+      "text": "Now, to make sure we understand what that means, that idea of decomposition or of refinement. Software engineering, abstractly speaking, is the following. We have some input domain that we map to some output domain. And in the beginning, we don't really know a lot about the input and we don't really know a lot about the output. So let's say we somehow map some input to some output. And as we develop software, we..."
+    },
+    {
+      "start": 1163.168,
+      "end": 1187.6,
+      "text": "understand what the different parts of the input domain are that are mapped to certain other parts of the output. And think of that as different modes of functionality. For instance, an AC can be used to cool down or to heat up. So what we do is we partition the input domain into blocks and then we treat each of these blocks separately. We implement or we say what these"
+    },
+    {
+      "start": 1187.6,
+      "end": 1209.552,
+      "text": "what the respective outputs for these inputs should be. That is that notion of decomposition that I've mentioned before. And the way that we structure this decomposition here is something that we are free to decide. So we now come up with mappings from input domains, smaller input domains to certain output domains. And then we"
+    },
+    {
+      "start": 1209.552,
+      "end": 1236.048,
+      "text": "iterate on that process we come up with further refinements we partition the sub partitions of the blocks that we have created into sub blocks and we map these sub blocks to certain outputs and we repeat that process until we are done so in that sense software engineering is the idea of breaking down a function into smaller parts and then implementing the different parts separately"
+    },
+    {
+      "start": 1237.232,
+      "end": 1260.944,
+      "text": "And that idea now comes in different ways of implementing it. In the 70s, people used to think, hey, this idea of decomposition is something that we can capture in a formal way. And that was called stepwise refinement and was formally founded. And the idea was to understand software engineering as a mathematical process."
+    },
+    {
+      "start": 1261.424,
+      "end": 1287.328,
+      "text": "In the 90s, people realized, oh, the way that we are doing software engineering, in fact, that formal way was never executed to a full extent, except for very few exceptions. In the 90s, people realized, oh, there's so much incertitude in the process of developing software that we need to come up with an agile way. I'm going to have a word on agile development here, which essentially states we cannot really come up with a linear way."
+    },
+    {
+      "start": 1287.328,
+      "end": 1292.944,
+      "text": "of refining our problem, but rather we need to do that in a bottom-up manner."
+    },
+    {
+      "start": 1292.944,
+      "end": 1320.976,
+      "text": "And then there was something in between that was also called stepwise refinement by one of our heroes, I would say, Niklas Wild, who said essentially, well, that idea of software engineering is dividet impera, as I've mentioned before. But he said, well, there will be mistakes. As we proceed, we will realize that we got things wrong. And what you can see is, in particular, software developers must be taught to revoke earlier decisions and to back up."
+    },
+    {
+      "start": 1320.976,
+      "end": 1350.72,
+      "text": "if necessary, even to the top, even to the beginning. What I think is noteworthy here is that that point was made as early as 1971. And now what's the point here? The point is, even though that idea of capturing the different artifacts and the different development steps as mathematical refinements didn't work out in practice, conceptually what we are doing is still that. We are refining"
+    },
+    {
+      "start": 1350.72,
+      "end": 1362.768,
+      "text": "our problem into smaller problems. And now remember the different kinds of artifacts that I've mentioned. We have talked about needs and requirements, certain kinds of needs and requirements, architecture and implementation."
+    },
+    {
+      "start": 1362.768,
+      "end": 1385.008,
+      "text": "And if you look at these things from an abstract perspective, they refine each other. There is that refinement relationship from user needs to implementation because all of these artifacts that you are seeing here essentially are nothing but functions that are being decomposed, that are being refined in the way that I've mentioned before."
+    },
+    {
+      "start": 1385.104,
+      "end": 1406.416,
+      "text": "And that is perfectly in line with a development model that you may have heard about, which is called the waterfall model, which was developed also as early as 1970, which describes different phases of development and assumes that linear process of going from system requirements to operations."
+    },
+    {
+      "start": 1406.416,
+      "end": 1434.272,
+      "text": "Now, what is often forgotten today is that even in that original paper, it was perfectly clear to the author already in 1970 that there will be the need to get back to the earlier activities. And in fact, that there may even be the need to jump back to earlier activities that have been undertaken. But still, the idea is that we have that refinement. But as we proceed, we may not have proceed with the development. We may not have."
+    },
+    {
+      "start": 1434.272,
+      "end": 1461.328,
+      "text": "a strict refinement relation. And in fact, the agile software development movement has said, well, that idea of refinement doesn't really work. We cannot know upfront what exactly the problem is that we want to solve. Instead, we understand as we go on with the development, only by doing that development, we better understand what..."
+    },
+    {
+      "start": 1461.328,
+      "end": 1479.52,
+      "text": "The problem is, and then we implement that step by step. So rather than saying in the beginning, here's a specification of what the system is supposed to do. We say, hey, let's start with a vague description of what we want to do. And then we proceed and we implement some parts to a certain extent. We completely implement certain parts of that."
+    },
+    {
+      "start": 1479.52,
+      "end": 1503.424,
+      "text": "and once we have done that, we go on to the next part, which means that now all of a sudden it's comparatively easy to cope with change because one reality of software development is that everything is changing all the time. There are some numbers that state after a year, 30% of the functionality in business information systems is obsolete, is not used anymore."
+    },
+    {
+      "start": 1503.424,
+      "end": 1529.344,
+      "text": "And the idea of agile development is, well, we need to embrace that idea of change. We somehow need to come up with a way of developing software that allows us to be very flexible with respect to changes. Plus, we accept the idea that we cannot understand and know upfront what exactly the function is that we want to implement. Rather, as we go on, we need to understand."
+    },
+    {
+      "start": 1529.344,
+      "end": 1551.168,
+      "text": "And we need to implement certain parts in order to be able to understand what the next part of the system is supposed to be. And this, in a sense, is a principle that we realize all the time. Now, I can't do an interactive talk here, but I would ask you, if I were around, how many of you..."
+    },
+    {
+      "start": 1551.168,
+      "end": 1563.728,
+      "text": "are capable of dictating emails what you see here is a dictaphone very old piece of technology so how many of you can sit down think about what they want to say and then dictate an email"
+    },
+    {
+      "start": 1563.728,
+      "end": 1591.984,
+      "text": "Very few people can, and it also depends, of course, on the complexity of the email that we are writing. If you think about it, rather what we do is we start with an email, and as we write that email, we correct it. We go back, we shift the argument, we shift the order of certain parts of the argument, we change the tonality, and we do that step by step. And for most of us, the most used key on the keyboard is the backspace key, because we need to..."
+    },
+    {
+      "start": 1591.984,
+      "end": 1620.416,
+      "text": "remove what we have done before what isn't correct and in fact that is exactly the idea that is also behind agile software development we can't know up front what we want to do therefore we need to develop that over time and that idea by the way also applies to speaking when i'm speaking right now i don't know what i'm going to say within the next 10 seconds or 10 minutes rather as i speak i'm thinking about what i'm saying and there's a famous essay by a german"
+    },
+    {
+      "start": 1620.416,
+      "end": 1649.392,
+      "text": "author Heinrich von Kleist dating back to 1805, stating that as we speak, we think. And if you think about that, that is very similar to that idea of address software development. As we develop, we understand what we want to develop. Good. Now, what's the point? The point is that in most cases, it's not the case that we know upfront what the system that we want to develop is supposed."
+    },
+    {
+      "start": 1649.392,
+      "end": 1676.944,
+      "text": "So the idea of writing a prompt, pushing a button, and then getting some generated code that does what that specification is stipulating doesn't work technically because systems aren't good enough yet. But moreover, it doesn't work because we don't know upfront what the specification is. Rather, as we develop the system, we need to co-develop the specification."
+    },
+    {
+      "start": 1677.392,
+      "end": 1704.336,
+      "text": "So as we iteratively develop the system, we understand what we want to build in terms of the functionality, in terms of the structure, and in terms of extra functional. We call that extra functional properties such as security or performance. And we decide on design alternatives because remember that each problem can be solved in a variety of different ways. And what a software engineer is doing is picking the most adequate."
+    },
+    {
+      "start": 1704.336,
+      "end": 1732.56,
+      "text": "implementation at a given stage of development. And that is something that we can only do if we understand software engineering and that we can only do if we also understand the domain within which the software is supposed to operate. And this process, this process of iteratively deciding on what we want to do is something that can't be done by a machine. This is something that needs to be"
+    },
+    {
+      "start": 1732.56,
+      "end": 1754.768,
+      "text": "done by a human and maybe assisted by a machine. Why? Because somebody needs to say what we want and somebody needs to develop over time what it is that we want. Because my argument is that in most cases, we don't know upfront what it is that we want. And this is the point about taking decisions. Also, Niklas Wirth."
+    },
+    {
+      "start": 1754.768,
+      "end": 1775.312,
+      "text": "in the same paper that I've mentioned before, perfectly clearly saw that point before. Each design step involves a set of decisions, and it may be that we have to revoke these decisions, but these decisions involve an understanding of how efficient the code should be, how maintainable the code could be, and..."
+    },
+    {
+      "start": 1775.312,
+      "end": 1803.888,
+      "text": "so on. And it needs to be taught to students to be conscious of these involved decisions. And now, again, my point will be, hey, who can take decisions? Is that a machine? Most likely not. It's the man, the human that is taking these decisions. So an LLM can possibly take that decision, statistically picking just one solution, but with respect to which goal? Who specifies the trade-offs? Who understands the trade-offs that I've"
+    },
+    {
+      "start": 1803.888,
+      "end": 1831.216,
+      "text": "talked about and who knows what the respective goal would be. This is something that we need to describe. We need to come up with a description of our intentions. Good. Now, I have alluded to the idea that software engineers operate in two domains. One is the technical software domain and the other one is the business domain, the domain within which the software is operating, such as a car, such as a business application, whatever we have there. And over time,"
+    },
+    {
+      "start": 1831.216,
+      "end": 1846.88,
+      "text": "Software engineering has come up with a bunch of techniques to cope with both kinds of domains. For the technical domains, we have what we call libraries or frameworks or languages or patterns that help us solve recurring problems. And that works rather well."
+    },
+    {
+      "start": 1846.88,
+      "end": 1875.68,
+      "text": "Now, in terms of the business domain, it turns out to be more difficult to come up with capturing or with an idea of capturing the recurring design elements of these domains. And why is that? That is because there tends to be too much contextual variation in the business. But the good news is now we can add that context information to a prompt when building code with an LLM. And that leads me to my last part here."
+    },
+    {
+      "start": 1875.68,
+      "end": 1901.152,
+      "text": "How, in principle, does it work that we generate code with a generative AI? Well, we somehow describe the functionality to a certain extent. We describe structural preferences and maybe some tradeoffs that we are interested in. Then we add further context to the prompt, for instance, legislative constraints and further extra functional properties. And then we push a button to generate the code."
+    },
+    {
+      "start": 1901.152,
+      "end": 1926.688,
+      "text": "Or there's further other ways of doing that doesn't really matter to us here. Then we need to check if what the system has described really corresponds to our intentions. And then we iterate on that process. And obviously, the more context we provide, the better the code in a certain sense will be. And now the point is the AI cannot know what we want."
+    },
+    {
+      "start": 1926.688,
+      "end": 1952.144,
+      "text": "What it can do is the following. It can pick a statistically likely solution to a partially specified problem, which is the most standard solution. Whether or not that solution is a good solution, an adequate solution, of course, totally depends on the context within which we are. If we have a total standard problem, that is perfectly fine. If we have a slightly non-standard problem, that is difficult."
+    },
+    {
+      "start": 1952.144,
+      "end": 1956.88,
+      "text": "I would argue that this way of picking just some"
+    },
+    {
+      "start": 1956.88,
+      "end": 1986.32,
+      "text": "of just making a more or less arbitrary choice is exactly what junior or non-professional software engineers would do. They see the problem, they just have one solution in mind and they pick that one solution. Whereas senior software engineers, professional software engineers will understand that there's a bunch of design alternatives and they will pick the most adequate one simply because they understand the different trade-offs and they have an idea of the impact of these design decisions."
+    },
+    {
+      "start": 1986.32,
+      "end": 2010.96,
+      "text": "And if you ask me, this may be one explanation as to why we are seeing the drop of employment in software engineering here for the juniors. Because essentially an AI, a generative AI, creates code like a junior software developer would do. Now, one last thing that we need to talk about here is that I may have..."
+    },
+    {
+      "start": 2010.96,
+      "end": 2038.688,
+      "text": "given the impression that we just write a prompt and we get code that implements that prompt correctly. That is, in most cases, not true. Rather, we get some result that we need to verify. So there may be incorrect solutions or code that is created that doesn't conform to what we have intended to describe."
+    },
+    {
+      "start": 2038.688,
+      "end": 2068.096,
+      "text": "And what everybody is seeing in that domain is that there will be a shift from creation to verification. We will maybe spend less time on creating problems, on creating code, but maybe we need to invest more time on verifying if that code adheres to our intentions. And remember now that my argument was, well, we can't really know in most cases upfront what we want to do. And therefore, one way of developing"
+    },
+    {
+      "start": 2068.096,
+      "end": 2089.472,
+      "text": "code with a generative ai is the following well we start with some understanding of mapping input to output of some understanding of our function then here this is meant to be a certain piece of code or machine learned model that is being created then we refine that we create a new set of"
+    },
+    {
+      "start": 2089.472,
+      "end": 2117.488,
+      "text": "code that we verify again and we go back in that circle so the idea is i prompt i generate code i verify the code i re-prompt and so on and this is well we co-evolve or we co-create the specification along with the code which is exactly the schema that we have seen before another question of course is well if that"
+    },
+    {
+      "start": 2117.488,
+      "end": 2144.176,
+      "text": "process is problematic if that process isn't guaranteed to provide correct results all the time then the question is under which circumstances it is worth using a generative ai rather than a human program and in fact the answer there isn't clearly yes or no the answer as usual is that depends now the first idea is where we need to talk about cost effectiveness right if"
+    },
+    {
+      "start": 2144.176,
+      "end": 2169.472,
+      "text": "we have the following distribution of effort for creation and verification without a generative ai then if we just shift that boundary here and now we spend less time on creating but more time and verifying but the net time overall is the same then we haven't gained anything and therefore well it's not worth using generative air and that does happen in certain places now if in fact it's"
+    },
+    {
+      "start": 2169.472,
+      "end": 2196.56,
+      "text": "happens that we can reduce the overall effort, then that is cost effective. That is perfectly fine. But that, of course, depends also on the domain, as we have seen in the beginning, on the riskiness of the domain, on the security properties that you may have, and the question of how acceptable it is if there are undetected hallucinations. For a medical device, that is different for a simple script that we are writing."
+    },
+    {
+      "start": 2196.72,
+      "end": 2218.976,
+      "text": "Good. And in terms of productivity gains, the literature is unclear. Today's answer is we don't know. We have evidence to the left and we have evidence to the right. So what you see here is a study from Google, for instance, where we see that in a certain context, in a certain setting, the productivity is."
+    },
+    {
+      "start": 2218.976,
+      "end": 2248.4,
+      "text": "improved speed up of solving specific problems with using generative AI is plus 21%. In a different paper, what we see is, oh, the productivity goes down by 20%. And why is that? Well, my response is it depends really on the kind of context within which we are developing software. It depends on if we have a junior problem at hand or a senior problem at hand. It depends on how standard the problem is that we are seeing here."
+    },
+    {
+      "start": 2249.328,
+      "end": 2262.448,
+      "text": "Good. And now the idea is the following. The more standard a problem is, the better generated code, code generated by generative AI, will..."
+    },
+    {
+      "start": 2262.448,
+      "end": 2290.048,
+      "text": "be better at least in terms of that functional um correctness and most of us would most of our software engineers would argue okay simple low risk problems can be offloaded to the machine writing test harnesses writing structural code writing boilerplate code and so on that's perfectly fine and the machine can also help you with making suggestions as how to decompose a problem but as we have seen now"
+    },
+    {
+      "start": 2290.048,
+      "end": 2317.536,
+      "text": "Software engineering is about understanding what to be implemented, what is to be implemented, which needs to be done in that iterative way, because humans need to come up with what they want in the first place and then taking decisions about the trade-offs. And this then leads to the question, how can an AI decide that? It cannot. And in fact, I would argue it is unethical to offload that kind of decisions to an AI if we have no idea what we really want."
+    },
+    {
+      "start": 2317.536,
+      "end": 2346.64,
+      "text": "to happen and that conflicts as i said in the beginning with my understanding of digital humanism which is about agency and which is about responsibility machines in that sense cannot implement agency and they cannot assume responsibility as a somewhat snarky side remark of course the question is how many software engineers really know what they are doing when they're writing software that is also not the case good and that then brings me to"
+    },
+    {
+      "start": 2347.12,
+      "end": 2368.208,
+      "text": "The end. My point is that software engineering, regardless of how that is actually done, is a set of iterative refinements. That means that we learn what we want to do. We understand better what the problem is that we want to solve. And we may realize, oh, we got it wrong. We need to replace the code that we have generated."
+    },
+    {
+      "start": 2369.328,
+      "end": 2395.28,
+      "text": "The idea is that at each stage of development, there are many possible refinements, irrespective of the concrete development process that we are choosing. And it is up to somebody to pick the adequate solution there. And adequacy here with respect to the solution that is picked depends on the goals. And that goal needs to be specified by a human."
+    },
+    {
+      "start": 2395.92,
+      "end": 2423.888,
+      "text": "It's impossible, as I've said in the beginning, to generally specify the problem up front. Good. And now the idea is that if the correctness is impossible to determine, or the goals are not explicit, or trade-offs are unclear, then why would we pick one refinement rather than another? Which of the possible choices is better than..."
+    },
+    {
+      "start": 2423.888,
+      "end": 2451.712,
+      "text": "And the AI will just pick any. And as I've argued before, a junior software developer will probably do the same. They just pick any solution or an untrained software developer. They will just pick any solution that works. It's a statistically likely refinement that may or may not be adequate. And this is where I'd like to conclude. And thank you for your attention. Thank you very much, Alex."
+    },
+    {
+      "start": 2451.712,
+      "end": 2479.04,
+      "text": "Your talk has been gorgeous, very informative, very stimulating. I have tons of questions that I would like to ask, but I think I should first give an opportunity to our participants who are remotely participating to ask questions, and I already see hands raised, and then also ask the audience in Vienna to ask questions."
+    },
+    {
+      "start": 2479.04,
+      "end": 2506.416,
+      "text": "So I think that the hand that I see raised is by Daniel Peters. You can ask your question. This is Daniel. Am I audible? Yes. Excellent. Great presentation. Very interesting question for you. In your experience, which tool, which AI tools have you found that can actually iterate in a graphical form?"
+    },
+    {
+      "start": 2506.416,
+      "end": 2533.936,
+      "text": "on the requirements specification for software because walls of text and requirements are difficult for humans to understand. If it can be in state machines or in flow charts, it makes systems much easier for humans to understand. But the LLMs are very, that I've discovered so far, are very poor at generating graphics for human beings that are not hallucinations."
+    },
+    {
+      "start": 2534.288,
+      "end": 2563.792,
+      "text": "Yeah, I don't have too much experience with that. I have made the same experience, irrespective of the model that you pick. The graphics that are created tend to be problematic. I'm sorry, I can't really tell you what the best one is here. I am aware of that problem, and I think this is something that things will improve. Thank you. I see a hand raised in the room, so I give it to the audience in Vienna."
+    },
+    {
+      "start": 2563.792,
+      "end": 2588.48,
+      "text": "Is there someone? Yes. Can you hear me? Yes. Yes. Okay. My thanks, Alexander, also."
+    },
+    {
+      "start": 2588.48,
+      "end": 2601.04,
+      "text": "Things are much clearer after your talk on a number of issues and that I'm very thankful for. Two questions, they're actually related. One is..."
+    },
+    {
+      "start": 2601.36,
+      "end": 2629.952,
+      "text": "In the development so far of LLMs, there is discussion of the curve kind of leveling, of a wall being hit, that Chachi Pt5 was not as better as expected compared to Chachi Pt4 and the same for most of the others. In terms of their usage in practice for coding,"
+    },
+    {
+      "start": 2629.952,
+      "end": 2657.792,
+      "text": "Is that the same curve? In other words, has that flattened or not? And the second question, which is related, is are you expecting a new generation of verification tools in the way you describe them? Yeah, two difficult questions. First one, are we hitting a wall or are we seeing a flattening curve here?"
+    },
+    {
+      "start": 2657.792,
+      "end": 2683.088,
+      "text": "I can't really answer that question because we have that problem of shit in, shit out. If I come up with small problems that are sufficiently well specified, the generation of code is fabulous. My personal favorite is Claude Saunet. I think it's really outrageously good."
+    },
+    {
+      "start": 2685.072,
+      "end": 2714.576,
+      "text": "I think it's difficult to say that we hit a wall here because I would say if we manage to refine the problem into sufficiently small parts, then we are already good enough. If, however, we expect to solve a big problem in one shot, then that's not going to happen anyway. So that doesn't really answer your question. I hope you don't get the impression that I'm dodging the question, but I really think it depends on how you frame the problem that you want to solve. If you come up with a 200-page specification,"
+    },
+    {
+      "start": 2714.576,
+      "end": 2742.912,
+      "text": "Will you come up with a good piece of software? Certainly not. I'm sure that that is not going to happen. But it can also happen because, as I said before, as you go through the development of that system, you will realize there's plenty of small things that you have never thought about in the beginning. And we realize it every day. We develop a piece of software and say, hey, we haven't considered that case. What is going on here? So, sorry, what was the second question again?"
+    },
+    {
+      "start": 2742.912,
+      "end": 2771.184,
+      "text": "whether you expect a new generation of verification tools in the context that you described. Yes, I do. Now, the point about verification is that verification contrasts an implementation with a specification. And if we don't have a good specification, of course, it's difficult to say what that would be, right? I think..."
+    },
+    {
+      "start": 2771.184,
+      "end": 2789.472,
+      "text": "These systems can be good at generating tests. My background really is in testing. I worked a lot on generating test cases for a variety of cases. And I'm surprised at seeing how good the generation of test cases really, really works. But the problem, of course, is, you know."
+    },
+    {
+      "start": 2789.472,
+      "end": 2817.552,
+      "text": "I guess you're a computer scientist. You know the difference between verification and validation. If you write down what you want to be developed, that doesn't necessarily mean that this is what you have had in mind when you described the problem to be solved. So I think we will have the greatest progress in terms of testing technology, but I'm not sure how we will solve the problem that ultimately a human needs to check if what the specification is really."
+    },
+    {
+      "start": 2817.552,
+      "end": 2832.432,
+      "text": "describes what we want to be described, but also somewhat intricate and twisted answer. But I think it's two very difficult questions that you have asked."
+    },
+    {
+      "start": 2832.432,
+      "end": 2850.976,
+      "text": "There is a question, you know, from remote participants that are in the chat. And I take one by Bashar Nusebe. So he says, you know, great talk. Many thanks. He's in a noisy conference. So you want me to ask the question for you."
+    },
+    {
+      "start": 2850.976,
+      "end": 2876.752,
+      "text": "Although I understand your framing, Bashar says, however, to what extent do you think we need to reframe the software engineering discipline from building functions to building experiences as more and more non-technical people express their requirements in relation to the world they live in rather than the software to be developed?"
+    },
+    {
+      "start": 2877.904,
+      "end": 2906.032,
+      "text": "Yeah, that's a Bashar question. Yes, of course. Very, very, very good question. So I guess my response will be that also depends. Remember that in the very beginning, I said there's different kinds of software development of software engineers. There are professional software engineers and there are laymen that say, hey, I would like to have that kind of software. And depending on the context, that may be."
+    },
+    {
+      "start": 2906.032,
+      "end": 2932.64,
+      "text": "perfectly fine um if i want to write an app for my apple i watch that i can use to count the number of goals that my kids have scored on the soccer place that is something that that is going to work and yes we need i guess help and we will have a rephrasing or an additional understanding of software engineering that is going to go into that direction that"
+    },
+    {
+      "start": 2932.64,
+      "end": 2961.488,
+      "text": "Pasha, maybe that is a technical answer to you, that we speak about software development more in terms of user requirements than in terms of system requirements. At the same time, that doesn't really counteract the main argument that I have been making. And the main argument that I have been making is that as we develop code, we take decisions. And the question is, do we want to offload these decisions to systems? In some cases, it's totally unproblematic. Who cares about..."
+    },
+    {
+      "start": 2961.488,
+      "end": 2983.168,
+      "text": "my soccer goal counting app nobody cares if we build safety critical software if we build security critical software that's a different different game and there we need to understand what we are doing so my answer bashar will be no it's not a replacement but i would agree that there will be"
+    },
+    {
+      "start": 2983.168,
+      "end": 2998.128,
+      "text": "no code that's the technical term that we are using here right there will be a field of no code software engineering where people can write code that just does something that is not totally critical the question however is what does it mean to be totally critical what"
+    },
+    {
+      "start": 2998.128,
+      "end": 3025.04,
+      "text": "we have recently seen here in germany is a study that was looking into how correct the software is that researchers that are not software engineers that are not computer science engineers how correct is that software so biologists or chemists that somehow write their their data evaluation pipelines turns out that they are almost always incorrect and people realize that in hindsight then the question is well research software is that a critical piece of software"
+    },
+    {
+      "start": 3025.04,
+      "end": 3053.712,
+      "text": "Well, you can argue either way. I would argue absolutely it is critical because ultimately we are claiming truth when we come up with our research results. But you could also say, hey, it's not going to do too much harm, right? Okay. Thank you very much for your answer. You know, there's maybe others, but I want at least, you know, take advantage of coordinating this to ask you a very short question. Do we still need to teach programming?"
+    },
+    {
+      "start": 3054.032,
+      "end": 3081.856,
+      "text": "Based on what you say. So my answer is absolutely yes. And in fact, I'm teaching informatics 101 or programming introduction to Java in my university. And I decided to do it the way or essentially do it the way I've done it in the last couple of years. Why is that? Because the code that is generated needs to be verified."
+    },
+    {
+      "start": 3081.856,
+      "end": 3103.184,
+      "text": "And you need to have somebody who can understand what that code is doing in a set of scenarios. Again, if you write your soccer, iWatch app, it doesn't matter. But if we are talking about serious software. And my argument would be that you can only understand code if you can write code."
+    },
+    {
+      "start": 3103.184,
+      "end": 3128.912,
+      "text": "That's not the case for all disciplines, right? There are many disciplines where you can judge the quality of something without being able of doing it yourself. So I guess everybody here has a certain understanding of how good a certain cuisine is without being a chef or without necessarily being a chef. Most of us will be able to evaluate if a presentation was good or bad without being a good or bad presenter themselves."
+    },
+    {
+      "start": 3128.912,
+      "end": 3151.568,
+      "text": "But for conductors of an orchestra, maybe that's a different story. And for code, that certainly, in my opinion, also is a different story. By the way, also for legally related fields, I also believe it's the case there. So my answer to that would be, yes, we need to teach programming if we want to."
+    },
+    {
+      "start": 3151.568,
+      "end": 3181.312,
+      "text": "to maintain the capability to understand what the code is doing. And then we need to, depending on what kind of software we are writing, once again, we need to deeply understand what is going on. And I would argue that we can only gather that knowledge by learning how to do it. Thank you. Do we have time for getting more questions or do we need to switch to the music? I leave it to the local organizers, let's say, Walter and..."
+    },
+    {
+      "start": 3181.312,
+      "end": 3208.768,
+      "text": "Can you? Yes, kind of. So my question was, can we."
+    },
+    {
+      "start": 3208.768,
+      "end": 3238.672,
+      "text": "proceed you know with questions there as others or do we need to uh give it back to you locally uh walter can you hear me yes okay thank you i wanted to ask um if we assume for now that ai can replace"
+    },
+    {
+      "start": 3238.672,
+      "end": 3265.424,
+      "text": "or replace entry-level software engineers or junior software engineers, how do you want to still get senior software engineers? If we now see 20-year-old people in 30 years, these people will be 50. How is the process? What is your vision? Yeah, that's the $1 million question. I have no idea."
+    },
+    {
+      "start": 3265.424,
+      "end": 3280.432,
+      "text": "I don't really know. Also, by the way, we are seeing that kind of situation not just in software engineering. We see that in many different other fields as well. Yeah, I'm scared quite."
+    },
+    {
+      "start": 3280.432,
+      "end": 3310.0,
+      "text": "Quite frankly, I can understand now in a short-sighted matter of arguments, you can say, hey, it's cheaper to offload certain tasks to the AI, but in the long term, of course, that will lead to a lack of senior people. Let me give you one example that I sometimes use as an argument here. If you think about the capability of taking minutes of a meeting, then most of us have learned that by doing it."
+    },
+    {
+      "start": 3310.0,
+      "end": 3335.312,
+      "text": "Right. We have written minutes of meetings and most of us will remember that the very first set of minutes that we have written, we were totally nervous about them and we were essentially writing down every single argument that was being made. And it took us some time, maybe 20, 30 or 40 of these minutes until we were capable of saying, hey, this is the main set of points that was made. And now most of us can."
+    },
+    {
+      "start": 3335.312,
+      "end": 3361.52,
+      "text": "attend a meeting for three hours and after that we can say hey the three points that were made are a b and c something that needs to be acquired something that needs to be done now if we take an ai that does summarization and minute taking of minutes for us then we will likely end up with people who can't capture a situation and bringing it and getting it to the point that is something that is scaring me um i don't have a response to your question it's it's"
+    },
+    {
+      "start": 3361.52,
+      "end": 3387.456,
+      "text": "I think it will be one of the major societal challenges that we'll have to cope with. But don't you think, Alex, that this is because exactly in the education we are only focusing or we are mostly focusing on coding in the education of computer scientists, software engineers, and much less."
+    },
+    {
+      "start": 3387.456,
+      "end": 3413.856,
+      "text": "on the refinement type of game that you were describing, which is something that people learn in the real setting instead of learning in the university. So we have to change the way we teach, I think, and provide, you know, better, you know, software engineers through the real world instead of, you know, just growing them in practice."
+    },
+    {
+      "start": 3413.856,
+      "end": 3428.048,
+      "text": "So I totally can see your point, Carlo, here. I mean, let's also be honest. Most students, when they leave university, they are not great software engineers simply because they lack experience. On the other hand, they need to have understood the major."
+    },
+    {
+      "start": 3428.464,
+      "end": 3454.704,
+      "text": "abstractions and concepts of coding that they still need to understand, that they still need to know. I think what we need to teach, rather, is a certain set of competences that relate to critical thinking, to reflecting on what is going on. But that is true for all disciplines, also beyond software engineering, beyond everything that we do in software engineering. This is what I think we need to focus more on."
+    },
+    {
+      "start": 3456.432,
+      "end": 3485.872,
+      "text": "There's, again, a question from Daniel, unless I'm wrong, and this is the hand that was raised before. No, there is a question, Alex. Question for you. Software verification for safety-critical systems is an incredibly difficult task that involves lots of minutia. It seems to me, just intuitively, and you're the expert that I defer to, how quickly or what process do you think we might accomplish?"
+    },
+    {
+      "start": 3485.872,
+      "end": 3504.576,
+      "text": "That will allow a formal verification of safety critical software, because that is a tedious process, a tedious and very easy to get wrong system. Is there any way AI can help?"
+    },
+    {
+      "start": 3504.576,
+      "end": 3528.464,
+      "text": "Most likely, yes. I mean, you know that as well as I know, right? There have been promises of formal verification for quite some time. And I'm not sure how far we have gotten. Also, to be fair, whenever it works, we don't call it verification technology anymore, right? Then we call it something else."
+    },
+    {
+      "start": 3529.808,
+      "end": 3557.808,
+      "text": "I'm not sure I can help a lot with that. So I think it can help with maybe pointing you to certain standard problems that maybe you haven't been aware of. But I would argue that, and I've made that point before, I believe. I've tried to make that point, believe. The major problem really is what is the specification that we want to write down? I have worked on firm verification in contrast with testing for some time. And my experience is..."
+    },
+    {
+      "start": 3557.808,
+      "end": 3586.272,
+      "text": "Really writing down the specification is extremely difficult. You know that just understanding what an implication really means, a vacuously holding implication, that is something that is extremely complex. And understanding the difference between a conjunction and an implication, not too many people can do that. I think that discussion is independent of the discussion on AI that we are having here."
+    },
+    {
+      "start": 3586.272,
+      "end": 3612.48,
+      "text": "precisely saying what we want is the major difficulty here. And there, in fact, I can imagine that an AI can help with that because it can point you to possible omissions. It can point you to questions of the kind, hey, are you sure you meant an implication? Maybe you meant a conjunction here. And didn't you forget that in that case? This is, I think, where I can be helpful in terms of improving."
+    },
+    {
+      "start": 3612.48,
+      "end": 3638.192,
+      "text": "or helping to come up with specifications in terms of really performing the reasoning, I don't see AI to be of a lot of help here. Would you point to an AI model that might do a good job on that, making a robust specification? As of today, I cannot. Okay. Thank you."
+    },
+    {
+      "start": 3638.576,
+      "end": 3666.384,
+      "text": "But also you need to remember, right, what is a robust specification that is always relative to what the needs are? And who is it who is going to validate if that supposedly robust specification corresponds to the needs? That's the difficult question. And that, again, is something that needs to be done by a human because obviously it can't be done by an AI because the AI cannot know what we want. Maybe if you just simplify the problem, like, for example, the airbag."
+    },
+    {
+      "start": 3666.384,
+      "end": 3695.056,
+      "text": "We airbag in a car. It's sort of a small number of inputs, a small number of outputs. And if the scope is not too large, it makes it accessible in one page that you can draw, I hope, the specification. Thank you very much, though. OK, I think, you know, we are at the end of this talk. You must be very tired. It was very exciting for all of us. And we need an inspiring piece of music."
+    },
+    {
+      "start": 3695.056,
+      "end": 3723.376,
+      "text": "to conclude. And you're going to present why you chose this, I guess. All right. So first of all, thanks very much, everybody, for attending. And once again, thanks for having me. Yeah, the piece of music that I've chosen this time is one of the motets of Johann Sebastian Bach, Komm, Jesu, komm. And I think it's..."
+    },
+    {
+      "start": 3723.504,
+      "end": 3748.24,
+      "text": "I need to admit that I'm a complete atheist. I think it's the most touching or these motets are the most touching pieces of music that I'm aware of, although they are deeply religious. And maybe you have heard of the term back Christians. I'm afraid I'm a back Christian in that sense. And what I really."
+    },
+    {
+      "start": 3748.24,
+      "end": 3774.064,
+      "text": "Love about the motet that we are going to hear is it's about dying and then about eternal life. And I think that motet manages in an incomparable way to convey the essence of the transcendence in Christian faith and the esperance and the hope that is buried in Christian faith. For me, it's an absolute masterpiece. Thank you very much."
+    },
+    {
+      "start": 3777.296,
+      "end": 3794.736,
+      "text": "Thank you, thank you everybody."
+    },
+    {
+      "start": 3811.92,
+      "end": 3838.672,
+      "text": "is is is is"
+    },
+    {
+      "start": 3846.768,
+      "end": 3866.352,
+      "text": ". . . ."
+    },
+    {
+      "start": 3887.696,
+      "end": 3893.2,
+      "text": "Thank you for watching."
+    },
+    {
+      "start": 3917.488,
+      "end": 3942.512,
+      "text": "Thank you for watching."
+    },
+    {
+      "start": 3952.784,
+      "end": 3953.776,
+      "text": "Amen."
+    },
+    {
+      "start": 4040.56,
+      "end": 4046.416,
+      "text": "Thank you."
+    },
+    {
+      "start": 4080.944,
+      "end": 4093.488,
+      "text": "Thank you."
+    },
+    {
+      "start": 4158.992,
+      "end": 4183.248,
+      "text": "Thank you. Thank you."
+    },
+    {
+      "start": 4245.872,
+      "end": 4248.048,
+      "text": "Amen."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

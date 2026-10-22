@@ -1,0 +1,566 @@
+{
+  "video_id": "a28TaKmbWLI",
+  "source": "whisper",
+  "language": "en",
+  "text": "And next we're going to hear from Marco Aiello, who is from the University of Stuttgart in Germany, who's talking about the implications of a web done by amateurs. And while Marco is setting up, I'd like to just point out that Hannes Wirtner has made a commitment to posting online all of the PDFs of the slides subject to, of course, agreeing to let us do that, but for all the speakers who do provide them, we will collect them online, so you can limit your note-taking if you need to. All right. Marco. I also like to thank for this opportunity to be here and to speak at this very interesting event. So thanks to organizers for the invitation. And what I want to look at is also history, but history of a specific technology, and that is the web. And it's based on a book that I've recently edited and just came out, which is called, indeed, The Web Was Done by Amateurs. So the call for this event talks about a digital global operating system. And if I have to look at this digital global operating system for society, I do think that the web is a central part. It's a core component of such revolution that is happening to society. We're in the 30th birthday of the web. It was just a few weeks ago when it actually turned 30 since its original proposal. And what is interesting to understand is how much was it designed, how much was designed for the user, because the impact on the user I think we're all agreeing on. And perhaps a more fair question would be, was it designed at all? And it did succeed. I think that's actually hard to argue. And why did it succeed? So I think it would be trivial to ask who has used the web yesterday. It would be more interesting to see if there's anybody who has not used the web in the last days. Anybody? That was my expectation. So the web is part of our daily life. Now, let me go back to the title of my book to tell you where it comes from. It actually comes from an interview of Alan Kay. Alan Kay is an ACM Turing Award from 2003. The ACM Turing Award is our most important recognition in computer science. And in that interview, he says the following. The internet was done so well that most people think of it as a natural resource, like the Pacific Ocean, rather than something that was man-made. When was the last time a technology with a scale like that was so error-free? The web, in comparison, is a joke. The web was done by amateurs. So it takes a while to digest this sentence. For sure, I would like you to remark immediately that there's a distinction between the internet and the web. And that's important because if you know the technology, you know they're different. But today in society, we always talk about them as the same thing. So we say, oh, I did this on the web. Oh, the internet has this flaw. But they're actually two very different things. And I'll just give you an illustration. It might be boring for some of you, but just to make sure that we're on the same page. The internet is something like this. Roads, sidewalks, bike paths, and so on. Then you have things that run on top of it. Emails, for instance, like people walking on these pedestrian roads. There's the web. It could be a bicycle. There's voice over IP. There's file exchange things like torrent, right? Different applications. And what Alan Kay is saying is, well, the web was kind of an ill design for a transportation, you know, that beautiful infrastructure that is the internet, right? So in this talk, there are actually three key figures that will appear. One I've just introduced, which is Alan Kay. And now it was in Tim Berners-Lee, who was actually the guy who invented the web three years ago. And another important figure is Ted Nelson, and I'll come back to him in a moment. He's, just to say the first thing, the one who came up with the term hypertext and hypermedia. So the one which we own, let's say, the idea of, at least the formal ideas of hypertextuality. Alan Kay. Alan Kay is, as I said, a Turing Award winner from 2003. He contributed to a lot of fields in computer science. Object-generated programming is one of them. But here I want to remember him for his work on something he called a Dynabook. So in his PhD thesis and his first work after his graduation, he was talking about a device which would be used by children to learn. This device had a stylus, had a screen, had a keyboard, and you can write on them, do various things. And his focus was really on society. He said, kids need to have new tools to learn. The world is complex. There's a lot to be learned. And as I'm saying this, I'm sure you're thinking, yeah, of course, what is this? You all have it in your hands right now. But you have to put it into perspective and remind that these were the computers of the time he was talking about this. He's also famous for a lot of quotes, like the best way to predict the future is to invent it. which relates also to some of his contributions, or if you're serious about software, you should build your own hardware, and so on. So he's a person who is quite outspoken, quite perhaps controversial, but comes often to the point. So he said, among the other things, the web was done by amateurs. And to justify that claim, I need to look at the prehistory of the web and what happened before. Why can he say that someone was an amateur? So there has been quite some work that can hint at hypertextuality. And for sure, this is considered one of the milestones, which is the Memex. There's a very important person, which is Vannevar Bush, who's acting in World War II for the American government, and he's participating in a number of projects, including supporting the Manhattan Project. The war finishes, and he thinks, well, we need help and support to manage information. And he proposes in an article of 1945 a machinery, which is this one, which is called a Memex. And the idea is that there's information. It's stored. It's stored on a mean of the time, which is microfilms. And then based on these microfilms, you can actually make connections and say how this information is linked to each other. This machine was never built, but I'll show you a small video of a reproduction or a simulation of what this machine would look like and what it would do. The owner of the Memex, let us say, is interested in the properties of the bow and arrow. He has dozens of possibly pertinent books and articles in his Memex. First he runs through an encyclopedia, finds an interesting but sketchy article, and leaves it projected. Next, in a history, he finds another pertinent item and ties the two together. Thus he goes, building a trail of many items. Occasionally, he inserts a comment of his own, either linking it into the main trail or joining it by a side trail to a particular item. his trails do not fade several years later his talk with a friend turns to the turkish bow in fact he has a trail on it it is an interesting trail pertinent to the discussion so he sets a reproducer in action photographs the whole trail out and passes it to his friend for insertion in his own So you see how revolutionary this already was. And the idea is that you have information that's interlinked. You have this tape, which is basically a USB stick in which you can exchange your ideas with somebody else. And this work was very influential. So a number of scientists later, which were aware of this, said, I want to go out and build this machinery or something that goes in this direction. And among the people who were influenced by this was Ted Nelson, which was trying to build... the memex, also with technology was moving fast forward in that time. And he comes in the 60s with a proposal which is called Xanadu. And in Xanadu, basically you have text which is not sequential. He was complaining about the fact that text that is sequential is not natural. So you need to have different ways of organizing it and actually reading it. And in his idea, there's two types of links. Some are references. So there's some text that might reference to other texts. And others are what he calls transclusions. So pieces of text which are really incorporating other pieces of text. So you can go and read your text and then jump to a transclusion, jump back, go to a reference, and so on. And he has been building this system since the 60s. There still is a version of it that you can use. And he's been arguing a lot about how this would be a good system. He's also complete against cut and paste. It says cut and paste is a sin. What you should really do is acknowledge the text or the components that you're bringing into your own text. He's the one who came up, as I said before, to the terms of hypertext. He's also someone that speaks his mind even more direct than Alan Kay. So he's known for saying the following. After all, dumbing down Xanadu sure worked well for Tim Berners-Lee. Another key figure which was influenced by the work of Vannevar Bush was Ted Nelson. Ted Nelson studied and had a clear passion for information and said, I want to do something that will change the world. And what he thought is... Engelbart, sorry. Thank you. Thank you, Moshe. So Douglas Engelbart. Also a Turing Award winner. So Douglas Engelbart had this idea that the world is complex. There's an increasing complexity, and people have a hard time with dealing with that complexity. So they need tools that can help them in their everyday life, something that allows them to, let's say, narrow down that complexity. So he goes to the Stanford Research Institute and comes up with a very long-lasting project, about 10 years. And after 10 years, he's ready to show the results. And in 1968, at the San Francisco Conference of Computer Science, he does what is now known as the mother of all demos. He sets up a screen that he borrows from NASA in San Francisco. He himself is in Menlo Park, which is about 50 miles south of Stanford, with a dedicated wireless link. And he shows out what he has built with his team. And these are some of the screenshots. But again, I will leave him to his words to show you at least the opening of this demo. And then we can discuss a little bit what he has done. Oh, wait, sorry, too fast. I hope you'll go along with this rather unusual setting and the fact that I remain seated when I get introduced and the fact that I'm going to come to you mostly through this medium here for the rest of the show. And I should tell you that I'm backed up by quite a staff of people between here and Menlo Park, where Stanford Research is located, some 30 miles south of here. If every one of us does our job well, it'll all go very interesting. So I'm putting in an entity called a statement, and that's full of other entities called words. And if I make some mistakes, I can back up a little bit. So I have a... a statement with some entities words and i can do some operations on these i can copy a word say that word like copy after itself in fact the pair words i like to copy after itself and i can just do this a few times and get a bit of material there and there are other entities like text say after there i'd like to copy from that point to that point and it'll copy it right so i could get myself some material on my blank piece of paper And then I'd say, well, this is going to be more important than it looks. So I'd like to set up a file. So I tell the machine, all right, output to a file. And it says, well, I need a name. I'll give it a name. I'll say a sample file. And I'll say, please output it. It says it did. And then it comes back automatically with an origin statement or header telling me the name of the file and the date and the time and who established it. And thereafter, I can always do something. I can ask for the status of a file, and it'll tell me that information. Very small file now, owned by me, last written by me, very shortly ago, et cetera, and other interesting data. So the whole video is on YouTube. It's about 50 minutes, and you can see the whole demo. But again, this might look trivial to you now because of the tools you're using, but it's the first time that someone has ever seen a graphical user interface. The mouse is actually a patent that comes from this project. This is where the mouse was actually introduced. And he had built a version of Memex. You could actually create links between files. You could create the files. You can point to components and you can jump back and forth. So he had actually built something that was working. And again, the technology of the time... was this. I mean, you had the punch cards that we had mentioned before. You had line terminals. So this was what was out there and what people were working at. Incidentally, Alan Kay was in the audience of that talk and also influenced him and his later works at Xerox PARC for sure. There's many more examples. I don't have time to cite them all, but at least I think it's worthwhile to put a little bit of them on a timeline. So the memex, we're really talking about 1945. Here you can compare with the hardware evolution of the same time. You have Xanadu in the early 60s. The online system, which we have just seen coming out and being demoed in the 60s. And then in the 80s, you start seeing more proposals. There's one which I find pretty fundamental, which is HyperCard. Because HyperCard, for those of you who know it, adds computation to the hypertextuality. It's where you start putting scripts that do action and change the state of content as you're using it. And the web actually comes at the end of this long evolution, which is 1989. So this comes to Tim Berners-Lee. He's working at CERN in Switzerland. And he comes up with this proposal, which is about having a system to organize information. He's frustrated with the complexity of the information at CERN, with the fact that he cannot find information about the various labs, the various experiments, and said, well, we could organize this in a better way. And in this better way, you can see there is a hierarchy that identifies peoples and groups and so on. There's concepts which are related to each other. Interestingly, the relationships are qualified. So in the original proposal, we had qualifiers like refers to, describes, and so on. And this, what he said, would be a better way of organizing things. He does mention HyperCard because he himself was using HyperCard as a tool back then. Now, I let him speak for himself. This video that I'll show you next is very recent, a couple of weeks, at the celebration for 30 years in which he says what the web was designed for. He doesn't want to say it. I just made it so that when you click on a link, you get to somebody else's page. You can make a link, and you can choose who you make the link to. And there's a sort of process there whereby I would want to link to good stuff because I would want you to think of my page as being a valuable page because I want you to link to my page because I want lots of links to my page because I want lots of readers because I love readers. Now, we talked about scrutiny. We should also take care of this. This is 30 years later, so, okay. I don't want to say more. What he really did is came up with three protocols, and this was the basis of this web, and they were very simple and effective. And I think you are familiar with these. One is the URL to identify resources. One is HTTP, which is for the transfer of information back and forth with various machines. Actually, HTTP, in my opinion, was something that was really strong. That was way better than a competitor of the time, which was FTP, and perhaps one of the drivers why we used a lot of the web for other things beyond the web. And then hypertext markup language was a simple, is a simple markup language for content and creating links inside text. So very successful, quite fast. If you look at the growth as an exponential, it's been exponential since its first introduction. But I called him, or well, better, Alan Kay called him an amateur. So what is an amateur? Well, this is Oxford Dictionary that tells someone who's lacking experience or competence in art or science. Someone who engages in a pursuit, study, science, or sport as a pastime rather than as a profession. And I think we can argue quite reasonably that this is the fact. So he did not have the background in education. He had an education in physics. He was not aware of all the history that I told you before. While the other people said, oh, I know the memex. That's an incredible idea. Let's go and build it. Oh, I know the mother of all demos. Let's go do something. He's rather frustrated with the local problem and built something as a hobby. And he says it himself in the book that he writes 10 years after the web. And he says, I wrote it, meaning the system which was built for the initial web, so Enquire, in my spare time and for my personal use and for no loftier reason than to help me remember the connections among the various people, computers, and projects at the lab, where the lab is CERN. And he also says in the same book that he becomes aware of the mother of all demos in 1994, which is five years later. his original proposal. So in that respect, he is an amateur. And what we see, if you look at the evolution of what he built, it has been constantly updated and modified and changed. So here's a visualization that shows you from those three original technologies, URL, HTTP, and so on, how many additional technologies we've put. You also see the browsers that came into the history of it. And you can see how it is very intricate and very complex. There's a lot of components that get added to it. This is a video in which he talks about technology, but for the sake of time, I will skip it. What I would like to point out, and this is what I do in my book, is how much we have patched the web since its original introduction. Especially from a computational point of view, We have changed it because it was not a computational infrastructure. Information was not qualified. We only had links. That was what the web was in the beginning. And then what happens is that companies start to act on this and see a potential, and they can't use it. So cookies, something that you see all the time, do you accept these cookies, is one of the oldest introductions to the web. It was done very early, and why? Well, it was done by a company called Netscape because they needed to do online. marketing, not marketing, online sales, and they couldn't with that infrastructure. Then they added SSL. Then the layout was not enough. Then we had XML coming up because we wanted to do more than just presentation, but we wanted to do computation and interaction with backends directly. And then we introduced XML HTTP requests so we can finally download only pieces of web pages, not whole web pages, when we want to change one bit. And we got to WebSockets. So bi-directional communication only a few years ago. So it's clearly not the infrastructure that you want as a computer scientist or an engineer. What Alan Kay says also about the browser and the system, he says they flunk operating system 101. The browser should have been an operating system. So a full machine, a container of objects rather than just a viewer of images. And that is a little bit the problem that basically you see as this world is changing. So to go back in my book, basically I identify the computational patches, I list over the security ones and the layout ones, and then the computational patches identify this five as the most relevant one, some of which basically are with us unchanged. Cookies and JavaScript have evolved a little bit, but the main idea is there since the early 90s. But beyond the... the evolution or how we got there, for sure we can say that the web is successful. The latest figures give the number of websites at over a billion. I think we passed the billion mark in 2017. The penetration on the public is very much high, pretty much the same as the internet. So we're talking about billions of people who have access to these things. And now I feel a bit uncomfortable talking about facts after the previous talk, but I prepared the word facts for this slide. For sure, I would say the web is successful. We use it. It works for many purposes, and it's there. It has an transformational impact on society, on our economy, on the way we do things, on the way in which we... I don't have to even mention it to you. You know it. We all use it all the time. And at the same time, I would argue as a fact that the web was done by amateurs. So does it have problems? And I think that Tim Berners-Lee himself does talk of a number of them. And it just picks up some videos in which he talks about issues. This was when he received the ACM Turing Award, an interview by Bloomberg. So two years ago. We need to go to people. Sorry, again. Privacy on the web is something which is a really well-established principle. Then you also put them on my data. Then a more complicated thing is, okay, but what about the data that's all my clinical results in a hospital, for example? But in fact, we're moving in a really good direction there in that particularly hospitals are required in a lot of countries to give me my data. I can go to the website, I can download it. Obviously, there's a question of whether if I then end up in another hospital, whether I can... give it, upload it to them so they'll be able to use it is an interesting question. But I think we're starting to establish for things like medical fitness data and that sort of thing that this is about me and in fact it's really important for me to be able to have that data and control who has access to it. So clearly he recognizes issues with security and data. We need to go to people like Twitter and Facebook and Reddit and so on and get them to really look at the systems they've built. and maybe look at how we can tweak them to be better? Will we make new systems? We should bear this in mind, and we should try to build systems so that we've got not just the local interactions, but the large-scale effect in mind at the end. Okay, so there's awareness of issues and things that have to be changed. There's a lot of, I think, work and study on how things should be changed. Technically, but mostly legislative. And I think the tension that I'm trying to present to you is the following one, when you build a system. And there's a tension between a formal approach and a liberal approach. So a formal approach would be one in which you design a system which you can explain. You can go into the details and say what it does. It is a little bit what the criticism of Kay and Nelson comes from. Kay is basically saying, well... something I cannot explain. It's not a nice object-oriented, distributed object-oriented system in which I exchange information, I receive as power information an object of which I know the behavior, I know how it interacts with, and then I know what it's going to do. And I can predict what it's going to do, and I know perhaps the source. Ted Nelson is more attacking the hypertextuality side and says, well, why do I have links that I don't know where they come from? Why can't I go back on a link? Why can't I have a dangling link? These are things that in his design should not happen. So they would like a much more formal approach. Well, what the web came to be, from this beginning, was a liberal system, a system in which you don't really care about the exact syntax of things as long as they work, in which you're saying, this is just text. I don't care what it actually means or the semantics of the text. It's just text there, and I can add links. And basically follows what is known as postal law. Postal was someone who was very active on the internet, so building on TCPAP. And his law says, Be liberal in what you accept and strict in what you send. So basically the idea is we want system that can interoperate and we don't care about precision, we don't care about precise semantics, as long as this system can interact. Better to send a message which is slightly corrupted and make something happen on the other side rather than be sure that it is absolutely correct. And you can see the tension and the advantages and the disadvantages of both. This kind of approaches typically mean also more overheads, much more heavyweight machinery to make it work, and also harder to adopt. On the other hand, this system means all flaws and possible flaws on security, all possible flaws on accountability, on tracing, and perhaps also on fact-checking, finding out where information comes from. So, I cannot say I have a final answer on why the web was successful. I tried to reflect on that. and try to understand why did this system make it. And I think that openness and mass engagement was a key factor here. So Tim Berners-Lee, from the very beginning, as soon as there was a project that was about the web, he would go there and help himself. There's someone who's building a browser in Finland. Okay, let's go and help and give them support. They understand. There is an initiative at NCSA about building a browser that then become most like. He goes there and gets engaged with them. Immediately, he's focusing and helping this thing to grow. And the other thing that he manages is to get the whole thing open source and open standards so that anybody can develop. There's no licensing fee and so on. So people get involved. They enjoy to get involved. And it's also easy to get involved. This brings me to the second point, which is the simple effectiveness. These three protocols he has designed, they are very simple. You can build a web browser. I do it with my students. two hours with modern programming languages. A browser but also a server. So it's very simple technology and it does not have too many layers, too many things that you have to change to go from the application level to the presentation level to the networking level. You have similar arguments for the internet. The internet is successful because it does not fill all the requirements of the seven layers of networking. So it's a simple system that is easier to implement and is effective in that respect. And so it's also lightweight. And then there's also an issue of timing. It was the right system in the right place at the right time. So we went from the mimics of Vannevar Bush in 1945. Then you see another example 20 years later. But in the 80s, there was a lot of examples. We had Gopher. We had Usenet. We had Brown University Intermedia. Triggers TextNet. Xanadu itself. So there's clearly some turmoil. in this field. There's clearly something that's coming out. The internet is becoming more widely accessible. And then the web comes out. So one could argue, was just that one by chance that gets a little advantage on the others and goes out? Was it just because Gopher decided to have licensing fee and make a payment system and the web was for free that that made the web successful? But for sure, it was the right moment. And if it wasn't the web, I would argue there would be some other system that would have prevailed in that moment. Okay, but so independently of what is the reason, one of the things that I like to argue, and again I have to borrow the sentence from Alan Kay, is that we as engineers or computer scientists that are engaged in this should know about our own history. And in Alan Kay's words he says, the lack of interest, the disdain for history is what makes computing not quite a field. And it's true. I notice this with my own students when I go to them and say, oh, when was the web built? 1950. You have these things. So they're very competent on a specific technology and completely ignorant of the context of which it emerged. And then we do mistakes. We reinvent the wheel. And what Alan Kay says, well, if we were inventing the wheel, at least we would be moving forward. But actually, with the web, we have reinvented the flat tire. Again, it's his words. I am only reporting them. With this, I would like to conclude with my own personal quote, which is, thank you for your attention. Wait, wait, wait, wait, wait. There's still one slide. So the book came out. I have a few copies with me, if you want. And e-book, paper book. And I know. It's a paperback also, not only in a web-based version. I usually get that question when I present it. Thank you. We will have some commission. Sure, sure, sure. The more you sell, the more I give you commissions. Okay, one thing you might have noticed is that there's a pattern that the people near the front get the microphone. So after the break, you might want to sit towards the front. But I'll try to migrate the microphone further back this time. So thank you for the talk. It was a very nice talk. There's an obvious question in the title of your talk, which is, if the web was done by amateurs, who are the professionals? Well, I would stick with the Oxford dictionary, right? So someone who is engaging in a profession because he's not doing it as a hobby and because he has the right background knowledge and perhaps know the history. But if you build something for the first time, who is the professional? I mean, who has the... the right knowledge to build something for the first time. Aren't you always an amateur when you create something that's new, that you engineer something that's new? Sure, but if you have a background in mechanical engineering, you're more likely to be able to contribute to something that has some mechanical components, right? OK, in other terms, computer scientist is a young field. And so there's a lot of innovation that comes from little experiments. HyperCard, if you go back to Bill Atkinson, says, well, I dreamt a bit about it in the night after an ecstasy trip, an LCD trip. Right? So... Yeah, exactly. But it was an LCD trip, apparently, that gave HyperCard to us. Yeah, very nice talk. But I have a question. You seem to imply that, you know, the fact that the web has been evolving so much by adding new things over time is because it... was done by amateurs. But I'm not so sure that this is the truth. Systems evolve because there's needs that you cannot anticipate at all. So for example, the fact that cookies were added because you want to support sales over the web. How could you imagine that something that you built just to link information would be also a way to do sales online? So this is something that you cannot anticipate. So the fact that there is an evolution I don't think is a good argument to say that it was done by amateurs. Now, the question is whether if the system would have been built according to different principles, like object orientation, for example, instead of highly dynamic languages, Would it have been easier to govern the evolution or not? But actually, you may say that the evolution was pretty successful even with this kind of very simple technology. So I don't know. What's your point on this? Sure. So in general, evolution is normal because you come up with uses which you didn't have at design time. The amount of evolution of the web I find quite appalling in terms of amounts. And to me, the question is more, why did this make and not something else? So if you look at the same time, you had a programming language like Oblique. And Oblique was, I think, what Alan Kay might have thought of. So an object-oriented programming language with containers and objects that move around and change their status based on the context they're in. Think of having that as an infrastructure for e-commerce. It would have been a completely different game. So the question to me is, like, why did not make a success, and this did? And complexity and simple effectiveness and mass engagement, to me, are the answers. So I'm not saying that he was an amateur just because then we had to modify it so much, but I don't think there was a real plan there. And for sure, there was already solutions out there which were better and was not considered. So for sure, Xanato had some interesting ideas. Hard to implement, but there were some ideas, and it was already a prototype which people were using. I know that Wired called the biggest vaporware project in the history of computing, but it had a lot of things that was completely ignored in the first design. So I think the evolution could have been faster at least, if not less complex. Two observations, because maybe it was successful because it was simple and extendable. So it was a simple design. It was not very complicated, so it could be easy extended. And the second one, you have this distinction, this, let's say, formal versus liberal. You could phrase it as central versus distributed chaotic. And if you have an ecosystem and you look at not central governments, but you have a decentral government, they are easier to adapt and maybe easier to grow. So it's not just formal versus liberal, but also from the structural point of view. And there's a design principle, design in the small and deploy at the large. So maybe this was also an issue of success of the web. But heaven save this. Thanks for the talk because it shows the limits we have and we are relying on an infrastructure, on an artifact, which is by no means what we would like to have. Thanks. Yeah, so my impression is that the first step was... The first step was always a little too small and the second step by far too large. Examples, the ASCII code was by far too simple and only concentrated in English, but Unicode is enormous. for example is 2.9 epsilon it doesn't go on to 3.0 because all the developers they went away and started MathML but MathML is so complicated that it never takes off and so we scientists are with this tech 2.9 epsilon, and it doesn't seem to go on. So it seems that the first step in the development, if it is successful, it's too small, and the second, instead of being pragmatic, is always too large. I don't have much to say. I don't have data to support it or not, but, yeah, I see the point, yeah. Hi, Marco. Hi. Good seeing you again, and thank you for the nice talk. So I start with a comment and then give you my question. I think the comparison is absolutely unfair because you're comparing a project which was funded by the DARPA with a project that came out of a physics lab. But coming back to success, I mean, you know, I'm a hardcore computer scientist. I'm in the web area for 30 years. And I think we are looking at the success of the web from a way too technical perspective. Because, for example, I use Tim's HTTP specification usually as an example how not to design a distributed protocol because it's really bad design. But... Having said that, on the other hand, it gives you a lot of ways to communicate the essentials of the distributed systems. You can modify it. You actually discover its shortcomings and you can make it better, although sometimes for the worse. Coming back to my original area and the question for you, I think we should not look at the web as a technical system but more as a socioeconomic technical system where actually you have a triangle and each of these areas has influenced changes in other areas. I mean, we've been doing e-commerce forever. The web made it real, although there were e-commerce systems. You've mentioned a couple of the good information systems that existed on the Internet, but their problems were, in short, licenses. By the way, there is a very famous system coming out of Austria, Hyperwave. And also, what none of these systems did, they stayed purely academic and they had absolutely no engagement process. And you kind of hinted towards that when you said, okay, Tim went there and actually talked to the people which first they know that he does. So I think understanding the success of the web is built on license freeness. an engagement process where everyone could actually get involved and got involved and the simplicity of the original design even with flaws which ties back to me what was said before is actually how simple is, how usable is a system. In your book, that would actually be my question for you. Do you also address these other dimensions, or are you more looking at the web from a technical angle? So I'm not exactly sure what you mean by these other aspects, but in the end, I try to make a reflection on why it was successful. To me, the question as an engineer is, when I design a system, should I go for simplicity and just adoption, or should I still try to give good formal grounds to it? And the impression or the argument I have is that the web was really in the right place at the right time. So indeed, easy to use, adoptable, open so that people can extend it. But what more? And somehow it's a bit of a discomforting story for someone who says, I like to engineer a system and spend a lot of time in my design, when then the success comes from a system like this. Ted Nelson is completely frustrated, of course, because it's a lifetime. if you wish, failure. So there's no judgment against the amateurs. I should have said this before. That's not the point of my book. The point is to try to analyze a success story and root it back to where it came from. Yeah. Sorry. I just want to tie it back to digital humanism and say maybe the Internet and the web is a very good metaphor for... what humans do to technology in a way that, you know, the Internet, as you said, it was a beautiful technical kind of infrastructure, and then humanity came and kind of did the messy web on top of that. And the lesson that we maybe can draw from that as technologists is that... You know, your web title says that, sorry, your book title says the web was done by amateurs and it has a slightly negative connotation to that because it's the amateurs, right? Ask Alan Cain and me. Yeah, you just said there's no value judgment. But the thing is, you know, if you turn it around, how amazing the internet was so that even amateurs could build the web on top of that. would need to kind of make us think as technologies? Do we need to kind of stop doing the requirements engineering thing that we've been doing for a long time and build systems that are capable of being designed in use and designed after design and empower people to do their own thing? it totally changes the requirements for infrastructures and how we think about infrastructuring, which is a concept in social sciences and has been a concept in social sciences for quite a while. So maybe this is telling us a story. I just kind of have the dual view. To me, it's more like... While we have all those requirements in engineering, those good designs, we cannot ensure success. So that's more the way I see it rather than the other way around. It's not saying, no, stop doing good designs and thoughtful design, but it's like that is not going to be a guarantee of success. In some cases, it might be even overproducting. This is an example of a product which I loved, which was the Apple Newton from the 90s, which was not a success. And it's interesting to analyze why that thing was not a success. Well, now we have smartphones which we can write on top and have stylus and so on. My bridge to digital humanism is the use of history and what history offers here. History of technology is still history. And every history is framed through the questions we have in the present. And accordingly, the questions change. Now, asking for success is something that is very natural. You look at history, you want to draw some kind of lessons. And you cannot get an answer because so much of it is as you keep on repeating. You have to be at the right time with the right tools in order to make it a success. So you have a lot of randomness in the process. but you also have what historians of technology called locked-in technologies. Once you are on a pass where you are stuck, it's very difficult to get out to change the system. You have systems inertia, where you keep on changing some components, but it takes a long time to change the overall system. You have something that historians of technology like Edgerton calls the shock of the old. If you take off the blinkers of the present and if you really go and look, the old is all around you because the new and innovation is a recombination of elements that were already there. So there is a lot to be learned from history to bring it forward. And I wish that you can get your students interested in it. But my last point is really... to look at the Internet, the web, in a larger context. And again, historians of innovation speak about general purpose technologies. They're based on these radical innovations that are rare, but that keep changing, like steam engine, electricity, and where we are now with the digital transformation. And as a general purpose technology, it opens up the use, where does the economy come in, where do you have economic interests, the role that institutions, that firms played in the history, the role that education, you know, how open is it, come in, et cetera. And this allows you to bring in the wider perspective. But I applaud your attempts to get your students interested in it. Thank you. So the good news in my remark is that history is about interpretation, so that once there's one good study of something, it doesn't mean there's not an opportunity for somebody else to write about it again. And as I was listening to your talk, I was thinking about Shane Greenstein. As you may know, Shane Greenstein is a professor in the Harvard Business School, and he's written a book about the history of this same period of time. But his book has a completely different story in it from the one that you tell. In his, he foregrounds certain things that you background. So, for example... Cookies are an important story for him because they're essential to doing commerce online, for example. He talks about people that you call amateurs. He calls them outsiders. Outsiders have a certain kind of advantage. They're not beholden to some of the things that a whole set of insider companies are. They can think new ways. They're not tied to certain... previous technologies, they've already advanced. And so he has a very much more positive view of some of these things that are going on. I just was struck by how different his story is and your story is, even though they're both about the same topic. So in the CACM paper that's going to come out, I actually touched on that. And I do say that people who are sure. external armatures have that advantage of being free from constraints. But they repeat mistakes. Okay, last question before the coffee break. Just a comment, I think, in line with a few of the other comments. The question of why this system was successful and not another one has to do a lot with the context. I think history of technology and innovation shows us that, that looking at sort of the diffusion of a technology based on the properties of the technology is a too limited view. I think also linking back to the digital humanities discussion from a societal perspective, it's very interesting to ask how much variability do we have to afford ourselves to experiment around with things like that? Because the engineering perspective, to say that I built the best possible system and then this will be a go, apparently is not working. But do you need 5,000 or whatever attempts? It's a very interesting question to history as well. So the model I use in my book is the following one. It comes from statistical physics. But the idea is you have a pile of sand. And you start throwing little grains of sand on top. At some point, randomly, one creates a landslide. And I think this is what happened here. So there was all HyperCards, Web, Usenet, Gopher. And then the Web created this landslide. And once that is gone, the whole system is changing. And you have this kind of power loss effect. That's, to a large extent, my explanation of the success. Okay, so we will resume again at 11.20 properly. So let's thank Marco again. Thank you, Marco.",
+  "segments": [
+    {
+      "start": 1.936,
+      "end": 31.248,
+      "text": "And next we're going to hear from Marco Aiello, who is from the University of Stuttgart in Germany, who's talking about the implications of a web done by amateurs. And while Marco is setting up, I'd like to just point out that Hannes Wirtner has made a commitment to posting online all of the PDFs of the slides subject to, of course,"
+    },
+    {
+      "start": 31.248,
+      "end": 46.768,
+      "text": "agreeing to let us do that, but for all the speakers who do provide them, we will collect them online, so you can limit your note-taking if you need to. All right. Marco."
+    },
+    {
+      "start": 78.352,
+      "end": 107.264,
+      "text": "I also like to thank for this opportunity to be here and to speak at this very interesting event. So thanks to organizers for the invitation. And what I want to look at is also history, but history of a specific technology, and that is the web. And it's based on a book that I've recently edited and just came out, which is called, indeed, The Web Was Done by Amateurs. So the call for this event talks about a digital global operating system."
+    },
+    {
+      "start": 107.264,
+      "end": 134.928,
+      "text": "And if I have to look at this digital global operating system for society, I do think that the web is a central part. It's a core component of such revolution that is happening to society. We're in the 30th birthday of the web. It was just a few weeks ago when it actually turned 30 since its original proposal. And what is interesting to understand is how much was it designed, how much was designed for the user, because the impact on the user I think we're all agreeing on."
+    },
+    {
+      "start": 134.928,
+      "end": 161.008,
+      "text": "And perhaps a more fair question would be, was it designed at all? And it did succeed. I think that's actually hard to argue. And why did it succeed? So I think it would be trivial to ask who has used the web yesterday. It would be more interesting to see if there's anybody who has not used the web in the last days. Anybody?"
+    },
+    {
+      "start": 163.568,
+      "end": 188.688,
+      "text": "That was my expectation. So the web is part of our daily life. Now, let me go back to the title of my book to tell you where it comes from. It actually comes from an interview of Alan Kay. Alan Kay is an ACM Turing Award from 2003. The ACM Turing Award is our most important recognition in computer science. And in that interview, he says the following."
+    },
+    {
+      "start": 188.752,
+      "end": 214.448,
+      "text": "The internet was done so well that most people think of it as a natural resource, like the Pacific Ocean, rather than something that was man-made. When was the last time a technology with a scale like that was so error-free? The web, in comparison, is a joke. The web was done by amateurs. So it takes a while to digest this sentence. For sure, I would like you to remark immediately that there's a distinction between the internet and the web."
+    },
+    {
+      "start": 214.608,
+      "end": 240.624,
+      "text": "And that's important because if you know the technology, you know they're different. But today in society, we always talk about them as the same thing. So we say, oh, I did this on the web. Oh, the internet has this flaw. But they're actually two very different things. And I'll just give you an illustration. It might be boring for some of you, but just to make sure that we're on the same page. The internet is something like this. Roads, sidewalks, bike paths, and so on. Then you have things that run on top of it."
+    },
+    {
+      "start": 240.624,
+      "end": 268.032,
+      "text": "Emails, for instance, like people walking on these pedestrian roads. There's the web. It could be a bicycle. There's voice over IP. There's file exchange things like torrent, right? Different applications. And what Alan Kay is saying is, well, the web was kind of an ill design for a transportation, you know, that beautiful infrastructure that is the internet, right? So in this talk, there are actually three key figures that will appear."
+    },
+    {
+      "start": 268.032,
+      "end": 296.336,
+      "text": "One I've just introduced, which is Alan Kay. And now it was in Tim Berners-Lee, who was actually the guy who invented the web three years ago. And another important figure is Ted Nelson, and I'll come back to him in a moment. He's, just to say the first thing, the one who came up with the term hypertext and hypermedia. So the one which we own, let's say, the idea of, at least the formal ideas of hypertextuality. Alan Kay. Alan Kay is, as I said, a Turing Award winner from 2003."
+    },
+    {
+      "start": 296.336,
+      "end": 321.12,
+      "text": "He contributed to a lot of fields in computer science. Object-generated programming is one of them. But here I want to remember him for his work on something he called a Dynabook. So in his PhD thesis and his first work after his graduation, he was talking about a device which would be used by children to learn. This device had a stylus, had a screen, had a keyboard, and you can write on them, do various things."
+    },
+    {
+      "start": 321.12,
+      "end": 347.408,
+      "text": "And his focus was really on society. He said, kids need to have new tools to learn. The world is complex. There's a lot to be learned. And as I'm saying this, I'm sure you're thinking, yeah, of course, what is this? You all have it in your hands right now. But you have to put it into perspective and remind that these were the computers of the time he was talking about this. He's also famous for a lot of quotes, like the best way to predict the future is to invent it."
+    },
+    {
+      "start": 347.408,
+      "end": 376.416,
+      "text": "which relates also to some of his contributions, or if you're serious about software, you should build your own hardware, and so on. So he's a person who is quite outspoken, quite perhaps controversial, but comes often to the point. So he said, among the other things, the web was done by amateurs. And to justify that claim, I need to look at the prehistory of the web and what happened before. Why can he say that someone was an amateur? So there has been quite some work"
+    },
+    {
+      "start": 376.416,
+      "end": 400.496,
+      "text": "that can hint at hypertextuality. And for sure, this is considered one of the milestones, which is the Memex. There's a very important person, which is Vannevar Bush, who's acting in World War II for the American government, and he's participating in a number of projects, including supporting the Manhattan Project. The war finishes, and he thinks, well, we need help and support to manage information."
+    },
+    {
+      "start": 400.496,
+      "end": 427.92,
+      "text": "And he proposes in an article of 1945 a machinery, which is this one, which is called a Memex. And the idea is that there's information. It's stored. It's stored on a mean of the time, which is microfilms. And then based on these microfilms, you can actually make connections and say how this information is linked to each other. This machine was never built, but I'll show you a small video of a reproduction or a simulation of what this machine would look like and what it would do."
+    },
+    {
+      "start": 429.36,
+      "end": 458.944,
+      "text": "The owner of the Memex, let us say, is interested in the properties of the bow and arrow. He has dozens of possibly pertinent books and articles in his Memex. First he runs through an encyclopedia, finds an interesting but sketchy article, and leaves it projected. Next, in a history,"
+    },
+    {
+      "start": 458.944,
+      "end": 483.344,
+      "text": "he finds another pertinent item and ties the two together. Thus he goes, building a trail of many items. Occasionally, he inserts a comment of his own, either linking it into the main trail or joining it by a side trail to a particular item."
+    },
+    {
+      "start": 486.512,
+      "end": 509.936,
+      "text": "his trails do not fade several years later his talk with a friend turns to the turkish bow in fact he has a trail on it it is an interesting trail pertinent to the discussion so he sets a reproducer in action photographs the whole trail out and passes it to his friend for insertion in his own"
+    },
+    {
+      "start": 524.72,
+      "end": 552.336,
+      "text": "So you see how revolutionary this already was. And the idea is that you have information that's interlinked. You have this tape, which is basically a USB stick in which you can exchange your ideas with somebody else. And this work was very influential. So a number of scientists later, which were aware of this, said, I want to go out and build this machinery or something that goes in this direction. And among the people who were influenced by this was Ted Nelson, which was trying to build..."
+    },
+    {
+      "start": 552.336,
+      "end": 580.432,
+      "text": "the memex, also with technology was moving fast forward in that time. And he comes in the 60s with a proposal which is called Xanadu. And in Xanadu, basically you have text which is not sequential. He was complaining about the fact that text that is sequential is not natural. So you need to have different ways of organizing it and actually reading it. And in his idea, there's two types of links. Some are references. So there's some text that might reference to other texts."
+    },
+    {
+      "start": 580.432,
+      "end": 605.04,
+      "text": "And others are what he calls transclusions. So pieces of text which are really incorporating other pieces of text. So you can go and read your text and then jump to a transclusion, jump back, go to a reference, and so on. And he has been building this system since the 60s. There still is a version of it that you can use. And he's been arguing a lot about how this would be a good system."
+    },
+    {
+      "start": 605.04,
+      "end": 631.28,
+      "text": "He's also complete against cut and paste. It says cut and paste is a sin. What you should really do is acknowledge the text or the components that you're bringing into your own text. He's the one who came up, as I said before, to the terms of hypertext. He's also someone that speaks his mind even more direct than Alan Kay. So he's known for saying the following. After all, dumbing down Xanadu sure worked well for Tim Berners-Lee."
+    },
+    {
+      "start": 633.232,
+      "end": 662.128,
+      "text": "Another key figure which was influenced by the work of Vannevar Bush was Ted Nelson. Ted Nelson studied and had a clear passion for information and said, I want to do something that will change the world. And what he thought is... Engelbart, sorry. Thank you. Thank you, Moshe. So Douglas Engelbart. Also a Turing Award winner. So Douglas Engelbart had this idea that the world is complex."
+    },
+    {
+      "start": 662.128,
+      "end": 691.024,
+      "text": "There's an increasing complexity, and people have a hard time with dealing with that complexity. So they need tools that can help them in their everyday life, something that allows them to, let's say, narrow down that complexity. So he goes to the Stanford Research Institute and comes up with a very long-lasting project, about 10 years. And after 10 years, he's ready to show the results. And in 1968, at the San Francisco Conference of Computer Science, he does what is now known as the mother of all demos."
+    },
+    {
+      "start": 691.024,
+      "end": 719.968,
+      "text": "He sets up a screen that he borrows from NASA in San Francisco. He himself is in Menlo Park, which is about 50 miles south of Stanford, with a dedicated wireless link. And he shows out what he has built with his team. And these are some of the screenshots. But again, I will leave him to his words to show you at least the opening of this demo. And then we can discuss a little bit what he has done."
+    },
+    {
+      "start": 719.968,
+      "end": 746.064,
+      "text": "Oh, wait, sorry, too fast. I hope you'll go along with this rather unusual setting and the fact that I remain seated when I get introduced and the fact that I'm going to come to you mostly through this medium here for the rest of the show. And I should tell you that I'm backed up by quite a staff of people between here and Menlo Park, where Stanford Research is located, some 30 miles south of here."
+    },
+    {
+      "start": 746.768,
+      "end": 774.496,
+      "text": "If every one of us does our job well, it'll all go very interesting. So I'm putting in an entity called a statement, and that's full of other entities called words. And if I make some mistakes, I can back up a little bit. So I have a..."
+    },
+    {
+      "start": 774.496,
+      "end": 802.752,
+      "text": "a statement with some entities words and i can do some operations on these i can copy a word say that word like copy after itself in fact the pair words i like to copy after itself and i can just do this a few times and get a bit of material there and there are other entities like text say after there i'd like to copy from that point to that point and it'll copy it right so i could get myself some material on my blank piece of paper"
+    },
+    {
+      "start": 802.752,
+      "end": 830.832,
+      "text": "And then I'd say, well, this is going to be more important than it looks. So I'd like to set up a file. So I tell the machine, all right, output to a file. And it says, well, I need a name. I'll give it a name. I'll say a sample file. And I'll say, please output it. It says it did. And then it comes back automatically with an origin statement or header telling me the name of the file and the date and the time and who established it."
+    },
+    {
+      "start": 830.832,
+      "end": 859.728,
+      "text": "And thereafter, I can always do something. I can ask for the status of a file, and it'll tell me that information. Very small file now, owned by me, last written by me, very shortly ago, et cetera, and other interesting data. So the whole video is on YouTube. It's about 50 minutes, and you can see the whole demo. But again, this might look trivial to you now because of the tools you're using, but it's the first time that someone has ever seen a graphical user interface."
+    },
+    {
+      "start": 859.728,
+      "end": 883.456,
+      "text": "The mouse is actually a patent that comes from this project. This is where the mouse was actually introduced. And he had built a version of Memex. You could actually create links between files. You could create the files. You can point to components and you can jump back and forth. So he had actually built something that was working. And again, the technology of the time..."
+    },
+    {
+      "start": 883.456,
+      "end": 910.368,
+      "text": "was this. I mean, you had the punch cards that we had mentioned before. You had line terminals. So this was what was out there and what people were working at. Incidentally, Alan Kay was in the audience of that talk and also influenced him and his later works at Xerox PARC for sure. There's many more examples. I don't have time to cite them all, but at least I think it's worthwhile to put a little bit of them on a timeline. So the memex, we're really talking about 1945."
+    },
+    {
+      "start": 910.368,
+      "end": 935.552,
+      "text": "Here you can compare with the hardware evolution of the same time. You have Xanadu in the early 60s. The online system, which we have just seen coming out and being demoed in the 60s. And then in the 80s, you start seeing more proposals. There's one which I find pretty fundamental, which is HyperCard. Because HyperCard, for those of you who know it, adds computation to the hypertextuality."
+    },
+    {
+      "start": 935.552,
+      "end": 960.544,
+      "text": "It's where you start putting scripts that do action and change the state of content as you're using it. And the web actually comes at the end of this long evolution, which is 1989. So this comes to Tim Berners-Lee. He's working at CERN in Switzerland. And he comes up with this proposal, which is about having a system to organize information."
+    },
+    {
+      "start": 960.544,
+      "end": 990.304,
+      "text": "He's frustrated with the complexity of the information at CERN, with the fact that he cannot find information about the various labs, the various experiments, and said, well, we could organize this in a better way. And in this better way, you can see there is a hierarchy that identifies peoples and groups and so on. There's concepts which are related to each other. Interestingly, the relationships are qualified. So in the original proposal, we had qualifiers like refers to, describes, and so on. And this, what he said, would be a better way of organizing things."
+    },
+    {
+      "start": 990.304,
+      "end": 1017.888,
+      "text": "He does mention HyperCard because he himself was using HyperCard as a tool back then. Now, I let him speak for himself. This video that I'll show you next is very recent, a couple of weeks, at the celebration for 30 years in which he says what the web was designed for. He doesn't want to say it."
+    },
+    {
+      "start": 1017.888,
+      "end": 1046.976,
+      "text": "I just made it so that when you click on a link, you get to somebody else's page. You can make a link, and you can choose who you make the link to. And there's a sort of process there whereby I would want to link to good stuff because I would want you to think of my page as being a valuable page because I want you to link to my page because I want lots of links to my page because I want lots of readers because I love readers. Now, we talked about scrutiny. We should also take care of this. This is 30 years later, so, okay. I don't want to say more."
+    },
+    {
+      "start": 1046.976,
+      "end": 1076.416,
+      "text": "What he really did is came up with three protocols, and this was the basis of this web, and they were very simple and effective. And I think you are familiar with these. One is the URL to identify resources. One is HTTP, which is for the transfer of information back and forth with various machines. Actually, HTTP, in my opinion, was something that was really strong. That was way better than a competitor of the time, which was FTP, and perhaps one of the drivers why we used a lot of the web for other things beyond the web."
+    },
+    {
+      "start": 1076.416,
+      "end": 1103.472,
+      "text": "And then hypertext markup language was a simple, is a simple markup language for content and creating links inside text. So very successful, quite fast. If you look at the growth as an exponential, it's been exponential since its first introduction. But I called him, or well, better, Alan Kay called him an amateur. So what is an amateur? Well, this is Oxford Dictionary that tells someone who's lacking experience or competence in art or science."
+    },
+    {
+      "start": 1103.472,
+      "end": 1131.568,
+      "text": "Someone who engages in a pursuit, study, science, or sport as a pastime rather than as a profession. And I think we can argue quite reasonably that this is the fact. So he did not have the background in education. He had an education in physics. He was not aware of all the history that I told you before. While the other people said, oh, I know the memex. That's an incredible idea. Let's go and build it. Oh, I know the mother of all demos. Let's go do something. He's rather frustrated with the local problem and built something as a hobby."
+    },
+    {
+      "start": 1131.568,
+      "end": 1160.512,
+      "text": "And he says it himself in the book that he writes 10 years after the web. And he says, I wrote it, meaning the system which was built for the initial web, so Enquire, in my spare time and for my personal use and for no loftier reason than to help me remember the connections among the various people, computers, and projects at the lab, where the lab is CERN. And he also says in the same book that he becomes aware of the mother of all demos in 1994, which is five years later."
+    },
+    {
+      "start": 1160.512,
+      "end": 1182.256,
+      "text": "his original proposal. So in that respect, he is an amateur. And what we see, if you look at the evolution of what he built, it has been constantly updated and modified and changed. So here's a visualization that shows you from those three original technologies, URL, HTTP, and so on, how many additional technologies we've put."
+    },
+    {
+      "start": 1182.256,
+      "end": 1212.032,
+      "text": "You also see the browsers that came into the history of it. And you can see how it is very intricate and very complex. There's a lot of components that get added to it. This is a video in which he talks about technology, but for the sake of time, I will skip it. What I would like to point out, and this is what I do in my book, is how much we have patched the web since its original introduction. Especially from a computational point of view,"
+    },
+    {
+      "start": 1212.032,
+      "end": 1237.744,
+      "text": "We have changed it because it was not a computational infrastructure. Information was not qualified. We only had links. That was what the web was in the beginning. And then what happens is that companies start to act on this and see a potential, and they can't use it. So cookies, something that you see all the time, do you accept these cookies, is one of the oldest introductions to the web. It was done very early, and why? Well, it was done by a company called Netscape because they needed to do online."
+    },
+    {
+      "start": 1237.744,
+      "end": 1264.832,
+      "text": "marketing, not marketing, online sales, and they couldn't with that infrastructure. Then they added SSL. Then the layout was not enough. Then we had XML coming up because we wanted to do more than just presentation, but we wanted to do computation and interaction with backends directly. And then we introduced XML HTTP requests so we can finally download only pieces of web pages, not whole web pages, when we want to change one bit. And we got to WebSockets."
+    },
+    {
+      "start": 1264.832,
+      "end": 1293.584,
+      "text": "So bi-directional communication only a few years ago. So it's clearly not the infrastructure that you want as a computer scientist or an engineer. What Alan Kay says also about the browser and the system, he says they flunk operating system 101. The browser should have been an operating system. So a full machine, a container of objects rather than just a viewer of images. And that is a little bit the problem that basically you see as this world is changing."
+    },
+    {
+      "start": 1294.48,
+      "end": 1322.64,
+      "text": "So to go back in my book, basically I identify the computational patches, I list over the security ones and the layout ones, and then the computational patches identify this five as the most relevant one, some of which basically are with us unchanged. Cookies and JavaScript have evolved a little bit, but the main idea is there since the early 90s. But beyond the..."
+    },
+    {
+      "start": 1323.184,
+      "end": 1348.88,
+      "text": "the evolution or how we got there, for sure we can say that the web is successful. The latest figures give the number of websites at over a billion. I think we passed the billion mark in 2017. The penetration on the public is very much high, pretty much the same as the internet. So we're talking about billions of people who have access to these things."
+    },
+    {
+      "start": 1348.88,
+      "end": 1378.4,
+      "text": "And now I feel a bit uncomfortable talking about facts after the previous talk, but I prepared the word facts for this slide. For sure, I would say the web is successful. We use it. It works for many purposes, and it's there. It has an transformational impact on society, on our economy, on the way we do things, on the way in which we... I don't have to even mention it to you. You know it. We all use it all the time. And at the same time, I would argue as a fact that the web was done by amateurs. So does it have problems?"
+    },
+    {
+      "start": 1378.4,
+      "end": 1403.792,
+      "text": "And I think that Tim Berners-Lee himself does talk of a number of them. And it just picks up some videos in which he talks about issues. This was when he received the ACM Turing Award, an interview by Bloomberg. So two years ago. We need to go to people. Sorry, again. Privacy on the web is something which is a really well-established principle."
+    },
+    {
+      "start": 1403.792,
+      "end": 1426.784,
+      "text": "Then you also put them on my data. Then a more complicated thing is, okay, but what about the data that's all my clinical results in a hospital, for example? But in fact, we're moving in a really good direction there in that particularly hospitals are required in a lot of countries to give me my data. I can go to the website, I can download it. Obviously, there's a question of whether if I then end up in another hospital, whether I can..."
+    },
+    {
+      "start": 1426.784,
+      "end": 1456.064,
+      "text": "give it, upload it to them so they'll be able to use it is an interesting question. But I think we're starting to establish for things like medical fitness data and that sort of thing that this is about me and in fact it's really important for me to be able to have that data and control who has access to it. So clearly he recognizes issues with security and data. We need to go to people like Twitter and Facebook and Reddit and so on and get them to really look at the systems they've built."
+    },
+    {
+      "start": 1456.064,
+      "end": 1485.216,
+      "text": "and maybe look at how we can tweak them to be better? Will we make new systems? We should bear this in mind, and we should try to build systems so that we've got not just the local interactions, but the large-scale effect in mind at the end. Okay, so there's awareness of issues and things that have to be changed. There's a lot of, I think, work and study on how things should be changed."
+    },
+    {
+      "start": 1485.216,
+      "end": 1511.568,
+      "text": "Technically, but mostly legislative. And I think the tension that I'm trying to present to you is the following one, when you build a system. And there's a tension between a formal approach and a liberal approach. So a formal approach would be one in which you design a system which you can explain. You can go into the details and say what it does. It is a little bit what the criticism of Kay and Nelson comes from. Kay is basically saying, well..."
+    },
+    {
+      "start": 1512.816,
+      "end": 1542.768,
+      "text": "something I cannot explain. It's not a nice object-oriented, distributed object-oriented system in which I exchange information, I receive as power information an object of which I know the behavior, I know how it interacts with, and then I know what it's going to do. And I can predict what it's going to do, and I know perhaps the source. Ted Nelson is more attacking the hypertextuality side and says, well, why do I have links that I don't know where they come from? Why can't I go back on a link? Why can't I have a dangling link? These are things that in his design should not happen."
+    },
+    {
+      "start": 1542.768,
+      "end": 1572.752,
+      "text": "So they would like a much more formal approach. Well, what the web came to be, from this beginning, was a liberal system, a system in which you don't really care about the exact syntax of things as long as they work, in which you're saying, this is just text. I don't care what it actually means or the semantics of the text. It's just text there, and I can add links. And basically follows what is known as postal law. Postal was someone who was very active on the internet, so building on TCPAP. And his law says,"
+    },
+    {
+      "start": 1572.784,
+      "end": 1599.312,
+      "text": "Be liberal in what you accept and strict in what you send. So basically the idea is we want system that can interoperate and we don't care about precision, we don't care about precise semantics, as long as this system can interact. Better to send a message which is slightly corrupted and make something happen on the other side rather than be sure that it is absolutely correct. And you can see the tension and the advantages and the disadvantages of both."
+    },
+    {
+      "start": 1599.312,
+      "end": 1629.28,
+      "text": "This kind of approaches typically mean also more overheads, much more heavyweight machinery to make it work, and also harder to adopt. On the other hand, this system means all flaws and possible flaws on security, all possible flaws on accountability, on tracing, and perhaps also on fact-checking, finding out where information comes from. So, I cannot say I have a final answer on why the web was successful. I tried to reflect on that."
+    },
+    {
+      "start": 1629.28,
+      "end": 1658.304,
+      "text": "and try to understand why did this system make it. And I think that openness and mass engagement was a key factor here. So Tim Berners-Lee, from the very beginning, as soon as there was a project that was about the web, he would go there and help himself. There's someone who's building a browser in Finland. Okay, let's go and help and give them support. They understand. There is an initiative at NCSA about building a browser that then become most like. He goes there and gets engaged with them."
+    },
+    {
+      "start": 1658.304,
+      "end": 1687.312,
+      "text": "Immediately, he's focusing and helping this thing to grow. And the other thing that he manages is to get the whole thing open source and open standards so that anybody can develop. There's no licensing fee and so on. So people get involved. They enjoy to get involved. And it's also easy to get involved. This brings me to the second point, which is the simple effectiveness. These three protocols he has designed, they are very simple. You can build a web browser. I do it with my students."
+    },
+    {
+      "start": 1687.312,
+      "end": 1717.072,
+      "text": "two hours with modern programming languages. A browser but also a server. So it's very simple technology and it does not have too many layers, too many things that you have to change to go from the application level to the presentation level to the networking level. You have similar arguments for the internet. The internet is successful because it does not fill all the requirements of the seven layers of networking. So it's a simple system that is easier to implement and is effective in that respect. And so it's also lightweight."
+    },
+    {
+      "start": 1718.0,
+      "end": 1745.216,
+      "text": "And then there's also an issue of timing. It was the right system in the right place at the right time. So we went from the mimics of Vannevar Bush in 1945. Then you see another example 20 years later. But in the 80s, there was a lot of examples. We had Gopher. We had Usenet. We had Brown University Intermedia. Triggers TextNet. Xanadu itself. So there's clearly some turmoil."
+    },
+    {
+      "start": 1745.216,
+      "end": 1773.072,
+      "text": "in this field. There's clearly something that's coming out. The internet is becoming more widely accessible. And then the web comes out. So one could argue, was just that one by chance that gets a little advantage on the others and goes out? Was it just because Gopher decided to have licensing fee and make a payment system and the web was for free that that made the web successful? But for sure, it was the right moment. And if it wasn't the web, I would argue there would be some other system that would have prevailed in that moment."
+    },
+    {
+      "start": 1774.896,
+      "end": 1803.952,
+      "text": "Okay, but so independently of what is the reason, one of the things that I like to argue, and again I have to borrow the sentence from Alan Kay, is that we as engineers or computer scientists that are engaged in this should know about our own history. And in Alan Kay's words he says, the lack of interest, the disdain for history is what makes computing not quite a field."
+    },
+    {
+      "start": 1804.048,
+      "end": 1833.856,
+      "text": "And it's true. I notice this with my own students when I go to them and say, oh, when was the web built? 1950. You have these things. So they're very competent on a specific technology and completely ignorant of the context of which it emerged. And then we do mistakes. We reinvent the wheel. And what Alan Kay says, well, if we were inventing the wheel, at least we would be moving forward. But actually, with the web, we have reinvented the flat tire. Again, it's his words. I am only reporting them."
+    },
+    {
+      "start": 1833.856,
+      "end": 1861.216,
+      "text": "With this, I would like to conclude with my own personal quote, which is, thank you for your attention. Wait, wait, wait, wait, wait. There's still one slide. So the book came out. I have a few copies with me, if you want. And e-book, paper book. And I know."
+    },
+    {
+      "start": 1861.216,
+      "end": 1890.96,
+      "text": "It's a paperback also, not only in a web-based version. I usually get that question when I present it. Thank you. We will have some commission. Sure, sure, sure. The more you sell, the more I give you commissions. Okay, one thing you might have noticed is that there's a pattern that the people near the front get the microphone. So after the break, you might want to sit towards the front. But I'll try to migrate the microphone further back this time. So thank you for the talk. It was a very nice talk."
+    },
+    {
+      "start": 1890.96,
+      "end": 1916.512,
+      "text": "There's an obvious question in the title of your talk, which is, if the web was done by amateurs, who are the professionals? Well, I would stick with the Oxford dictionary, right? So someone who is engaging in a profession because he's not doing it as a hobby and because he has the right background knowledge and perhaps know the history. But if you build something for the first time, who is the professional? I mean, who has the..."
+    },
+    {
+      "start": 1916.512,
+      "end": 1944.32,
+      "text": "the right knowledge to build something for the first time. Aren't you always an amateur when you create something that's new, that you engineer something that's new? Sure, but if you have a background in mechanical engineering, you're more likely to be able to contribute to something that has some mechanical components, right? OK, in other terms, computer scientist is a young field. And so there's a lot of innovation that comes from little experiments."
+    },
+    {
+      "start": 1944.32,
+      "end": 1973.472,
+      "text": "HyperCard, if you go back to Bill Atkinson, says, well, I dreamt a bit about it in the night after an ecstasy trip, an LCD trip. Right? So... Yeah, exactly. But it was an LCD trip, apparently, that gave HyperCard to us. Yeah, very nice talk. But I have a question. You seem to imply that, you know, the fact that the web has been evolving so much by adding new things over time is because it..."
+    },
+    {
+      "start": 1973.472,
+      "end": 2002.32,
+      "text": "was done by amateurs. But I'm not so sure that this is the truth. Systems evolve because there's needs that you cannot anticipate at all. So for example, the fact that cookies were added because you want to support sales over the web. How could you imagine that something that you built just to link information would be also a way to do sales online?"
+    },
+    {
+      "start": 2002.32,
+      "end": 2029.504,
+      "text": "So this is something that you cannot anticipate. So the fact that there is an evolution I don't think is a good argument to say that it was done by amateurs. Now, the question is whether if the system would have been built according to different principles, like object orientation, for example, instead of highly dynamic languages,"
+    },
+    {
+      "start": 2029.504,
+      "end": 2056.816,
+      "text": "Would it have been easier to govern the evolution or not? But actually, you may say that the evolution was pretty successful even with this kind of very simple technology. So I don't know. What's your point on this? Sure. So in general, evolution is normal because you come up with uses which you didn't have at design time."
+    },
+    {
+      "start": 2056.816,
+      "end": 2084.992,
+      "text": "The amount of evolution of the web I find quite appalling in terms of amounts. And to me, the question is more, why did this make and not something else? So if you look at the same time, you had a programming language like Oblique. And Oblique was, I think, what Alan Kay might have thought of. So an object-oriented programming language with containers and objects that move around and change their status based on the context they're in. Think of having that as an infrastructure for e-commerce. It would have been a completely different game."
+    },
+    {
+      "start": 2084.992,
+      "end": 2114.88,
+      "text": "So the question to me is, like, why did not make a success, and this did? And complexity and simple effectiveness and mass engagement, to me, are the answers. So I'm not saying that he was an amateur just because then we had to modify it so much, but I don't think there was a real plan there. And for sure, there was already solutions out there which were better and was not considered. So for sure, Xanato had some interesting ideas. Hard to implement, but there were some ideas, and it was already a prototype which people were using."
+    },
+    {
+      "start": 2114.88,
+      "end": 2143.632,
+      "text": "I know that Wired called the biggest vaporware project in the history of computing, but it had a lot of things that was completely ignored in the first design. So I think the evolution could have been faster at least, if not less complex. Two observations, because maybe it was successful because it was simple and extendable. So it was a simple design. It was not very complicated, so it could be easy extended. And the second one, you have this distinction, this, let's say, formal versus liberal."
+    },
+    {
+      "start": 2143.632,
+      "end": 2172.752,
+      "text": "You could phrase it as central versus distributed chaotic. And if you have an ecosystem and you look at not central governments, but you have a decentral government, they are easier to adapt and maybe easier to grow. So it's not just formal versus liberal, but also from the structural point of view. And there's a design principle, design in the small and deploy at the large. So maybe this was also an issue of success of the web. But heaven save this."
+    },
+    {
+      "start": 2172.752,
+      "end": 2201.52,
+      "text": "Thanks for the talk because it shows the limits we have and we are relying on an infrastructure, on an artifact, which is by no means what we would like to have. Thanks. Yeah, so my impression is that the first step was..."
+    },
+    {
+      "start": 2202.352,
+      "end": 2218.224,
+      "text": "The first step was always a little too small and the second step by far too large. Examples, the ASCII code was by far too simple and only concentrated in English, but Unicode is enormous."
+    },
+    {
+      "start": 2218.704,
+      "end": 2242.144,
+      "text": "for example is 2.9 epsilon it doesn't go on to 3.0 because all the developers they went away and started MathML but MathML is so complicated that it never takes off and so we scientists are with this tech"
+    },
+    {
+      "start": 2242.144,
+      "end": 2269.6,
+      "text": "2.9 epsilon, and it doesn't seem to go on. So it seems that the first step in the development, if it is successful, it's too small, and the second, instead of being pragmatic, is always too large. I don't have much to say."
+    },
+    {
+      "start": 2269.6,
+      "end": 2292.0,
+      "text": "I don't have data to support it or not, but, yeah, I see the point, yeah. Hi, Marco. Hi. Good seeing you again, and thank you for the nice talk. So I start with a comment and then give you my question. I think the comparison is absolutely unfair because you're comparing a project which was funded by the DARPA with a project that came out of a physics lab."
+    },
+    {
+      "start": 2292.0,
+      "end": 2318.832,
+      "text": "But coming back to success, I mean, you know, I'm a hardcore computer scientist. I'm in the web area for 30 years. And I think we are looking at the success of the web from a way too technical perspective. Because, for example, I use Tim's HTTP specification usually as an example how not to design a distributed protocol because it's really bad design. But..."
+    },
+    {
+      "start": 2318.832,
+      "end": 2337.184,
+      "text": "Having said that, on the other hand, it gives you a lot of ways to communicate the essentials of the distributed systems. You can modify it. You actually discover its shortcomings and you can make it better, although sometimes for the worse."
+    },
+    {
+      "start": 2337.184,
+      "end": 2359.792,
+      "text": "Coming back to my original area and the question for you, I think we should not look at the web as a technical system but more as a socioeconomic technical system where actually you have a triangle and each of these areas has influenced changes in other areas. I mean, we've been doing e-commerce forever."
+    },
+    {
+      "start": 2359.792,
+      "end": 2375.744,
+      "text": "The web made it real, although there were e-commerce systems. You've mentioned a couple of the good information systems that existed on the Internet, but their problems were, in short, licenses. By the way, there is a very famous system coming out of Austria, Hyperwave."
+    },
+    {
+      "start": 2375.744,
+      "end": 2402.192,
+      "text": "And also, what none of these systems did, they stayed purely academic and they had absolutely no engagement process. And you kind of hinted towards that when you said, okay, Tim went there and actually talked to the people which first they know that he does. So I think understanding the success of the web is built on license freeness."
+    },
+    {
+      "start": 2402.192,
+      "end": 2427.536,
+      "text": "an engagement process where everyone could actually get involved and got involved and the simplicity of the original design even with flaws which ties back to me what was said before is actually how simple is, how usable is a system."
+    },
+    {
+      "start": 2427.664,
+      "end": 2456.064,
+      "text": "In your book, that would actually be my question for you. Do you also address these other dimensions, or are you more looking at the web from a technical angle? So I'm not exactly sure what you mean by these other aspects, but in the end, I try to make a reflection on why it was successful. To me, the question as an engineer is, when I design a system, should I go for simplicity and just adoption, or should I still try to give good formal grounds to it?"
+    },
+    {
+      "start": 2456.064,
+      "end": 2484.976,
+      "text": "And the impression or the argument I have is that the web was really in the right place at the right time. So indeed, easy to use, adoptable, open so that people can extend it. But what more? And somehow it's a bit of a discomforting story for someone who says, I like to engineer a system and spend a lot of time in my design, when then the success comes from a system like this. Ted Nelson is completely frustrated, of course, because it's a lifetime."
+    },
+    {
+      "start": 2484.976,
+      "end": 2513.472,
+      "text": "if you wish, failure. So there's no judgment against the amateurs. I should have said this before. That's not the point of my book. The point is to try to analyze a success story and root it back to where it came from. Yeah. Sorry. I just want to tie it back to digital humanism and say maybe the Internet and the web is a very good metaphor for..."
+    },
+    {
+      "start": 2513.472,
+      "end": 2534.0,
+      "text": "what humans do to technology in a way that, you know, the Internet, as you said, it was a beautiful technical kind of infrastructure, and then humanity came and kind of did the messy web on top of that. And the lesson that we maybe can draw from that as technologists is that..."
+    },
+    {
+      "start": 2534.0,
+      "end": 2559.376,
+      "text": "You know, your web title says that, sorry, your book title says the web was done by amateurs and it has a slightly negative connotation to that because it's the amateurs, right? Ask Alan Cain and me. Yeah, you just said there's no value judgment. But the thing is, you know, if you turn it around, how amazing the internet was so that even amateurs could build the web on top of that."
+    },
+    {
+      "start": 2559.44,
+      "end": 2581.2,
+      "text": "would need to kind of make us think as technologies? Do we need to kind of stop doing the requirements engineering thing that we've been doing for a long time and build systems that are capable of being designed in use and designed after design and empower people to do their own thing?"
+    },
+    {
+      "start": 2581.2,
+      "end": 2607.552,
+      "text": "it totally changes the requirements for infrastructures and how we think about infrastructuring, which is a concept in social sciences and has been a concept in social sciences for quite a while. So maybe this is telling us a story. I just kind of have the dual view. To me, it's more like..."
+    },
+    {
+      "start": 2607.552,
+      "end": 2637.392,
+      "text": "While we have all those requirements in engineering, those good designs, we cannot ensure success. So that's more the way I see it rather than the other way around. It's not saying, no, stop doing good designs and thoughtful design, but it's like that is not going to be a guarantee of success. In some cases, it might be even overproducting. This is an example of a product which I loved, which was the Apple Newton from the 90s, which was not a success. And it's interesting to analyze why that thing was not a success. Well, now we have smartphones which we can write on top and have stylus and so on."
+    },
+    {
+      "start": 2638.448,
+      "end": 2663.136,
+      "text": "My bridge to digital humanism is the use of history and what history offers here. History of technology is still history. And every history is framed through the questions we have in the present. And accordingly, the questions change. Now, asking for success is something that is very natural. You look at history, you want to draw some kind of lessons."
+    },
+    {
+      "start": 2663.136,
+      "end": 2678.896,
+      "text": "And you cannot get an answer because so much of it is as you keep on repeating. You have to be at the right time with the right tools in order to make it a success. So you have a lot of randomness in the process."
+    },
+    {
+      "start": 2678.896,
+      "end": 2707.456,
+      "text": "but you also have what historians of technology called locked-in technologies. Once you are on a pass where you are stuck, it's very difficult to get out to change the system. You have systems inertia, where you keep on changing some components, but it takes a long time to change the overall system. You have something that historians of technology like Edgerton calls the shock of the old."
+    },
+    {
+      "start": 2707.456,
+      "end": 2734.048,
+      "text": "If you take off the blinkers of the present and if you really go and look, the old is all around you because the new and innovation is a recombination of elements that were already there. So there is a lot to be learned from history to bring it forward. And I wish that you can get your students interested in it. But my last point is really..."
+    },
+    {
+      "start": 2734.048,
+      "end": 2759.424,
+      "text": "to look at the Internet, the web, in a larger context. And again, historians of innovation speak about general purpose technologies. They're based on these radical innovations that are rare, but that keep changing, like steam engine, electricity, and where we are now with the digital transformation."
+    },
+    {
+      "start": 2759.424,
+      "end": 2788.96,
+      "text": "And as a general purpose technology, it opens up the use, where does the economy come in, where do you have economic interests, the role that institutions, that firms played in the history, the role that education, you know, how open is it, come in, et cetera. And this allows you to bring in the wider perspective. But I applaud your attempts to get your students interested in it."
+    },
+    {
+      "start": 2788.96,
+      "end": 2817.792,
+      "text": "Thank you. So the good news in my remark is that history is about interpretation, so that once there's one good study of something, it doesn't mean there's not an opportunity for somebody else to write about it again. And as I was listening to your talk, I was thinking about Shane Greenstein."
+    },
+    {
+      "start": 2817.792,
+      "end": 2841.6,
+      "text": "As you may know, Shane Greenstein is a professor in the Harvard Business School, and he's written a book about the history of this same period of time. But his book has a completely different story in it from the one that you tell. In his, he foregrounds certain things that you background. So, for example..."
+    },
+    {
+      "start": 2841.6,
+      "end": 2870.352,
+      "text": "Cookies are an important story for him because they're essential to doing commerce online, for example. He talks about people that you call amateurs. He calls them outsiders. Outsiders have a certain kind of advantage. They're not beholden to some of the things that a whole set of insider companies are. They can think new ways. They're not tied to certain..."
+    },
+    {
+      "start": 2870.352,
+      "end": 2896.992,
+      "text": "previous technologies, they've already advanced. And so he has a very much more positive view of some of these things that are going on. I just was struck by how different his story is and your story is, even though they're both about the same topic. So in the CACM paper that's going to come out, I actually touched on that. And I do say that people who are sure."
+    },
+    {
+      "start": 2896.992,
+      "end": 2925.008,
+      "text": "external armatures have that advantage of being free from constraints. But they repeat mistakes. Okay, last question before the coffee break. Just a comment, I think, in line with a few of the other comments. The question of why this system was successful and not another one has to do a lot with the context. I think history of technology and innovation shows us that, that looking at sort of the diffusion of a technology based on the properties of the technology is a too limited view."
+    },
+    {
+      "start": 2925.008,
+      "end": 2950.256,
+      "text": "I think also linking back to the digital humanities discussion from a societal perspective, it's very interesting to ask how much variability do we have to afford ourselves to experiment around with things like that? Because the engineering perspective, to say that I built the best possible system and then this will be a go, apparently is not working. But do you need 5,000 or whatever attempts? It's a very interesting question to history as well."
+    },
+    {
+      "start": 2950.416,
+      "end": 2980.304,
+      "text": "So the model I use in my book is the following one. It comes from statistical physics. But the idea is you have a pile of sand. And you start throwing little grains of sand on top. At some point, randomly, one creates a landslide. And I think this is what happened here. So there was all HyperCards, Web, Usenet, Gopher. And then the Web created this landslide. And once that is gone, the whole system is changing. And you have this kind of power loss effect."
+    },
+    {
+      "start": 2980.304,
+      "end": 2996.112,
+      "text": "That's, to a large extent, my explanation of the success. Okay, so we will resume again at 11.20 properly. So let's thank Marco again. Thank you, Marco."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

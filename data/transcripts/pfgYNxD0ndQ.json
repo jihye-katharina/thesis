@@ -1,0 +1,691 @@
+{
+  "video_id": "pfgYNxD0ndQ",
+  "source": "whisper",
+  "language": "en",
+  "text": "Hello, everybody. Good morning or good evening. Welcome to today's lecture, which is a special one due to two reasons. One is that for the first time we moved our start date. We start earlier. It's due to the location of our speaker who comes from Australia. And the second reason is that it's not our classical format with a presentation and then a longer. discussion Q&A, but it's more a discussion between the speaker and the moderator, or in our case, it's the discussant. Today's topic is a little bit provocative and probably controversial. It's about the uselessness of AI ethics, so it's not useful. And I'm happy to welcome Luke Mann from the University of Queensland. Hi. Luke and he wrote the paper on with the same title which had some quite a response on this paper and he will be introduced later by Erich Brehm who is our moderator and discussing of today. The procedure the choreography today is a little bit different since we start with a short presentation or introduction by Luke about 15 minutes and then he will discuss with Erich. some of his statements. And then we have 30 minutes Q&A. And we will finish again by a piece of music proposed by Luke and managed by Peter Knies. And I thank Peter for managing that. Before handing over to Erich, I'm happy to have him with us. Erich, he is well known to us. And he has what is not very often the case. He has two PhDs. So he's by education. two high-level degrees, one in computer science and one in philosophy, which is, I think, a crucial precondition for our topic of today. And Erich has been with our Digital Humanism Initiative since the early beginning, and he has done a lot of input, and I thank you for that, Erich. Now the floor is yours. Thank you so much, Hannes, and thanks, Luke, for joining us. Indeed, we are looking forward to a discussion that already has raised a lot of interest even before we started today. So I hope we can live up to people's expectation. I'm really happy Luke is joining us from Australia, although I believe originally Luke is a Kiwi. He's a media studies scholar and now a research fellow in digital cultures and societies at the University of Queensland in Brisbane. And his research investigates the sociocultural impacts of digital cultures and their broader intersections with race, with politics and the environment. and that ranges from data infrastructures in Asia to platform labor or far-right radicalization and occasionally also to artificial intelligence as that's the topic of our of our presentation today. Luke has published in a number of highly regarded journals such as Cultural Politics, Big Data and Society, New Media and Society as well as also in popular in the Guardian, in the Los Angeles Times, the Washington Post. And he has written five books, of which I believe three are out. There is one which I would like to recommend to everybody. It's this one here, which is Automation is a Myth, which could be easily another provocative topic that we could talk about. But we're not going to do that today. We will be talking about... the uselessness of AI ethics. And with that being said, Luke, the floor is yours. Great. Thanks, Eric, for the great introduction and for the invitation as well. Yeah, kia ora koutou katoa. Before I would begin, I want to pay my respects to the traditional custodians of the land that I'm on now, which is the Turbala-Nuguru peoples. of Brisbane and acknowledge the elders past and present. So it's becoming increasingly clear, I think, that AI technologies are very powerful, but they can also have the potential to cause problems, to cause real harm. And that harm manifests in many different ways, whether it's racial discrimination, whether it's gendered bias, whether it's discrimination based on race or religion or disability, whether it's, you know, technologies that make very opaque decisions and contribute in different ways to exacerbating inequalities. And I think it's, we see this even more, I think, as AI technologies roll out into these high stakes areas, right? So things like healthcare. Things like welfare, justice system, where the decisions really make a huge difference and can really cause suffering on lives and livelihoods. And so that's the problem. And I think the de facto response that we've seen to this issue in the last few years has really been this turn to produce these ethical principles. Right. So these are ethical frameworks with a list of different values. that tech products and services are supposed to adhere to, right? And really, there's been 80 plus of these frameworks put out in the last few years by countries, by tech companies, and also by industry bodies like the IEEE. So we have a huge number of these ethical frameworks, ethical principles. And in the paper, I argue that This move to ethical principles is useless. It's useless because it fails to meaningfully address the issue of AI technologies and mitigate harms that they can cause on social, political, environmental levels. And that's a provocative statement, but it's actually one that's echoed by quite a bit of research in the last couple of years. So different scholars have essentially said. that these principles are really failing to address the problem, right? They're ineffective. And so in the paper, I give three reasons why I think these principles are ineffective. And the first is that they're meaningless principles. So these ethical frameworks list these very high-minded ideals, things like transparency, privacy, humaneness, sustainability, right? That sounds amazing in theory. The problem is that these are actually really difficult concepts to nail down. Right. They have many different definitions, different understandings of what they mean. Right. And privacy here is a sort of notorious example of something that's very hard to pin down historically. And actually, the definition of privacy that's got the most traction is a kind of umbrella term. different schools of thought with all these different ideas of what privacy means, what it looks like in practice. And so all of this means that when we go to translate these principles into something technical, into something concrete, right, we can't agree on what it means from the very beginning and so fails to be implemented in any way. So that's the first reason. The second reason, I think, is that these principles are isolated. So by isolated, I mean that they're really situated in a industry education system that often ignores ethics. Right. When we think about the tech industry, it's often a very unethical or at least a ethical space where we see actually a lot of founders and CEOs celebrated and lionized for the way that they flaunt principles and get away with it. And you can look at many different examples of this in the tech industry. I would say in the paper I mentioned gender, for example, is a big one. Right. So misogyny throughout the tech industry, issues of sexual harassment, sexual attacks testified by many, many different female workers in the tech sector. Same thing goes with race. We can point to racial discrimination, racism, allegations of many. high profile tech companies. And these, I think, are linked in some way to the culture of the tech and the startup scene, which has historically been dominated by white male heteronormative kind of culture, right, a program of culture. And the same thing goes, I think, when we look at the education system that leads up into that industry. So here we're talking about computer science. We're talking about software engineering courses at universities. And unfortunately, many of these really fail to integrate ethics into the courses in any meaningful way. A lot of them, ethics doesn't appear at all. Or if it does, it's nice to have at the very end of the course if there's time. Right. So. That all that said, then we have this kind of education in this industry where ethics really doesn't play a part in any meaningful way in day to day operations. And so then it's no surprise when these ethical principles get ignored. And then thirdly, the last reason I think is because these ethical principles are toothless. Right. And by toothless, I mean that they are not accompanied by any kind of enforcement. So these principles are suggestions, they're recommendations, they're guidelines, they're best practice, right? But they're not actually compulsory in any way. And they're not linked to any kind of penalties for violating these principles. And in that sense, you know, ethics has really been asked to do something that regulation should be doing. When we start to think about laws, about fines, about jail time, about actual concrete repercussions for for violating these principles, right? So then it's no surprise that they get ignored. I think this is the second more subtle reason why they're toothless, and that's because these ethical principles get interpreted in a way where they line up with business principles, right? So that you interpret things like privacy and sustainability and more humane tech. in a way that already aligns with your sort of corporate agenda. And in that way, you really don't have to make any significant changes to products or services, to the way your organization is structured. And this is really a form of what's become known as ethics washing, right, where companies get to burnish their reputation to look very good. by adhering to this, by putting out these high-minded principles while actually continuing business as usual. So those are the three reasons, I think, why these principles fail. And what we wind up with in the end then is this gap, right, a gap between principles and practice. between these high-minded ideals, these norms, these values on the one hand, and then way over here, actual AI production, technical development, and so on, happening on a day-to-day level. And this is a kind of chasm, right, between these two things. And that gap is really being, I think, acknowledged in recent years. And we do see more research then looking at ways to operationalize ethics. to turn these principles into something that is actionable, functional, computational in some way, right? But that's a very non-trivial task. And for the reasons I mentioned before, these concepts are actually very nuanced, very difficult. And so taking a principle like fairness, for example, or justice, And working through these kind of sociocultural meanings all the way through to something that's actually embedded in a product, I would argue that engineers are often not equipped to do that. And, in fact, I went to a workshop a couple weeks ago, AI workshop at the engineering school here at UQ, and the professor said point blank the same kind of thing, that we cannot do this alone. We're not set up to do this kind of work alone. And so. You know, in a bit more recent work, I've talked about this bridging mechanism or bridging roles, which might do this kind of translation work that we really need. So for all these reasons, then I argue that these ethical principles are useless. And in fact, they're worse than useless, I would argue, because they divert so much resources. into them, right? Limited resources. So we're talking about capital, human resources, time, and so on. And just something that's been largely ineffective. And in that sense, diverting resources away from more effective avenues. And so then to close, I just want to point to a couple moves that I think we could make here that could be helpful. And to be clear, there's no solution. There's no silver bullet solution here. This is a really Difficult space, really challenging space. But I think there are a couple moves that would be helpful. And so the first is to zoom out a little bit. So rather than looking at a particular product, to actually look at the zoom out, look at the organization, look at things like the economic imperatives around your company, around a product or service, look at societal values. Things like history. So here we're talking about keywords like inequality, about power and power relationships, power asymmetries, talking about things like justice. Right. These kind of broader, broader views, broader systemic issues that really shape the way a company acts and shape the way eventually a product or services is produced. and thinking about the ways and reflecting on those, that we might alter those. And that's a long-term project, but I think one set of conversations that's actually helpful. And then the second move I think that's helpful, if that was zooming out, this is zooming in. So rather than thinking about these vague, ill-defined principles, we can actually zoom in very closely to look at very fine-grained problems. Right. So here we're talking about a particular AI technology in a particular domain with a set of very tractable problems that we can actually make progress on. And so keywords here would be things like alignment, accuracy, mismatch. Right. Where we can actually define a problem and then define what success looks like within that space. And I call this this move kind of designing move. and the previous move, a decolonizing move. And I think these two moves go together in a way. They augment or complement each other. And so companies are really engaged seriously within this space, which needs to do both of these things. And I think together, these twin approaches then make progress in this critical area by reflecting deeply and radically about the potentials and the pitfalls of AI. Thanks. Thanks, Luke. A great summary. Wonderful. I've seen that in the meantime, the link to the paper we are talking about is in the chat. So for those of you interested in that, you can just have a look at the paper, which, of course, contains a bit more detail about the arguments that Luke has just presented. But the structure is pretty much. uh like like it was presented now and let me briefly maybe elaborate on it and before before our discussion we didn't really talk about what i would comment on but we just i was just promising luke to be kind of on his side rather than taking an opposing view. So I'll try to do that. And I want to start, let me just comment on the first part, which is the question of the meaningless principles, because I think we have a bunch of computer scientists joining us and the question could arise, well, why not principles? What's wrong with principles? And I think one important aspect here is that As you said, Luke, I think in the meantime, the number of principle frameworks has increased to over 100. I've seen this figure somewhere. So there's no shortage in principles. But the problem is that these principles are... Well, they are just principles. They are necessarily general because otherwise they wouldn't be principles. So they cannot carry a lot of detail, a lot of explanation. Now, to be fair, there are, I believe, technical domains where principles play a practical role and where they have been useful. One is the field of medicine. In the medical area, for reasons that we could discuss, principles played a big role. Actually, I think principalism was even invented in that field. However, and I think this is an important point, within a rather limited set of questions, questions that have arisen from medical practice, such as the question when to perform surgery or not. to whom donate an organ and who doesn't get an organ. So a rather, let's say, prototypical set of cases, which quite frankly, in computer science or in the application areas of artificial intelligence, we don't have that. For the very reason that AI is such a broad field, it's applied anywhere from vacation to shopping, from the medical domain to... driving a car. So it's highly unlikely that we would be able to develop a similar narrow set as in like medical practice where this has emerged from practically. So that's one point. The second one, maybe one more point. So in your paper, I think you also make an argument, which you mentioned briefly, that some of these underlying concepts in those principles, they are We don't understand them very well. You mentioned privacy. Privacy, we still, as philosophers, we're struggling what this is. Is this a right? Is this a human trait? Is this something I own? And people debate the advantages and disadvantages of various conceptions. So really, we don't know yet. So it's unsurprising that it's very difficult to come up with how to act on the topic. Fairness is another one, which I think is... is easier to explain maybe to computer scientists because fairness has been debated a lot with reference to questions of biased AI systems. But in the end, fairness is a very political construct. It is something that we have to agree on in a society, in a group. It is not a mathematical equation that you could simply write down and define. Well, you can, of course, define it, but then you define it. You say this is fairness. And the question then arises, is this fair within the context that you're dealing with? And this is sometimes forgotten. And if you so so in one of my my own research, I did a lot of analyses of what people have proposed in practice and they come up with all sorts of. And fairness is one of the main areas where people have suggested algorithms and frameworks and process models, all that. But implicitly, of course, always using a definition of fairness, which may or may not be adequate to the problem. So what that means is you can certainly ask for fairness, but then what is actually, you know. What then becomes implemented is a whole different matter. And again, up for argumentation. Maybe another point when we talk about isolated principles is that also typically in principalism, we never have a hierarchy between the principles. So that's something on top of what you are mentioning is that even if you have principles and a set of them, then typically that doesn't help you. deciding between those principles and many principles actually will compete with each other. So the typical one in artificial intelligence is, for example, explanation and accuracy. That is something that typically comes with a trade-off and you have to make up your mind, but a set of principles will not help you address the question. And then as regards the question of toothlessness, maybe that's something I don't want to comment on too much. Of course, you certainly know that in Europe there is an initiative to make AI principles more toothless. I don't know what's the opposite of toothlessness. Give them more teeth by coming up with an AI regulation. We'll see how that ends up. Maybe that's all I want to say here. But let's final comment. from my side, on the question of putting all this to practice. So what we have seen or what we are seeing now when you look at the literature is literally hundreds and hundreds of proposals, what to do with all those principles and how to address these various issues. And people have come up with algorithms, they come up with data sets, they come up with criteria, checklists. codes of practice, even standards, metrics have been proposed, software libraries. So there's a whole large number of different things. And I believe this already tells you that there is a challenge here. The challenge is that you cannot simply map isolated principles, as you say. on an algorithm without as you rightly say taking into account the context of the application where it's situated or zooming in as you have suggested on some of the more detailed question, what is the real problem here? Maybe there is a way here to the, and that would be my proposal, to look much more into the practice of what people are doing and into developing prototypical situations, into arguing about them, into publicizing and then debating the quality of how certain ethical issues are addressed in those prototypes. situations. But that is really a bottom-up approach rather than the principlism approach that I think we are both criticizing. And I think I'll stop here and Luke give you maybe a moment to react to what I just said. Yeah, thanks, Eric. A lot of really good points there, I think. It actually made me think of Julie Cohen's work on privacy. You know, you talk about privacy being a very contested and term, which it is really, and historically being very difficult to pin down, right? And her response is to kind of say, well, rather than taking these very, these kind of long-running definitions of privacy, right, and projecting them onto technologies, actually we should do it the other way around, like you talked about, from the bottom up, right? And she talks about operationalizing privacy, because Tech products and services, AI platforms and so on, they already produce a version of privacy. They either, you know, enhance privacy or infringe upon privacy based on very particular design decisions. Right. And so what she's sort of saying, right, is that every tech product actually does construct a version of privacy by itself. And actually we can evaluate. Or we could build on that sort of insight, I guess, to say, well, yeah, these prototypes, we could sort of evaluate one against the other, right? Almost like A-B testing to say that if we anonymize this piece of information, what's the consequence, right? Or if we allow people to have some flexibility here, would they choose more or less privacy, right? really experimenting on the technical level and on the design level with these decisions and then seeing what the result is. And in that sense, I think this design move that I'm calling is almost about improving your product. It's like product quality, right? In the sense that you would improve the quality of a car or, I don't know, a crockery or something. basic kind of product that you put out there is you refine it over time, you do different versions, and then you choose the best one. Look, there is one thing that I said, I wouldn't be too critical, but I have to ask one question because that struck me when analyzing your paper in more detail. In the last section, and you didn't mention it very much now, but in the last section, you talk about AI justice. which I think is the approach that you have briefly explained. And there are two terms that you're using, which are, I think, really important ones, which are transparency and accountability. And you're proposing that we need much more of that. I mean, now the paradoxic situation, the paradox is that. Many AI principles framework also talk about transparency and accountability. Now, I have to ask you, so is this the same or is this something different here? What do you mean when you talk about it as a possible approach to solving the problem? I think that's. Yes, I'm just skimming back over the sections where I talk about transparency. Actually, the transparency and accountability is more about the design. So the fine grain booth that I'm talking about. Yeah, I mean, transparency and accountability, I think they're necessary. I would say that they're necessary, but inadequate. I think in my field of media studies, the last, I would say, five years, there's been quite a lot of push toward transparency. If we could only make things more transparent and find out what's happening behind the scenes, then we could really produce better kinds of technologies. But actually, what we find is that transparency is not enough, that accountability, there needs to be some sort of redress by users. where actually once you understand what's happening, then maybe you get to change what the technology is doing in some meaningful way. And this brings us back to things like regulation, right, or to things like penalties for not complying, which I think the GDPR, you know, has really established a kind of culture where I think that's starting to become. More of the de facto standard in a way. And we do see other legal frameworks that are then using the GDPR as a kind of precedent. Right. And and then using that to establish certain kinds of rights for users. So I do think, you know, this space is changing all the time and transparency and accountability are part of that. But I think we do need to go a lot further. Yeah, especially also because if you rely only on transparency, for example, what you do is you shift the burden of ethical responsibility to the user of the system. Right. Yeah. So you could have known. Right. Yeah. And I think that is that has become rather popular in in computing or in. Yeah, in software applications generally, let the user decide. But that is also a very tricky issue, I believe. Yeah, or tech companies saying, you know, we're just doing what the user wants, right? Whereas actually, in some ways, like public infrastructure is a better model in some ways, because I don't need to know everything about how electricity works or plumbing or water works, right? But I know that they're not going to harm me. And I know that they're going to function every day when I need them. And in that sense, it's offloads. I put some trust in particular stakeholders and they deliver on that trust. Maybe maybe one last point before we conclude and open to questions from from the audience. I think it's also worthwhile to note that the various principles which which have been. proposed in the various frameworks are addressed by, let's say, practitioners in artificial intelligence to varying degrees. What I mean is that, for example, the question of fairness, as I mentioned, uh is is one that has really caught researchers interest a lot because of bias and it has been debated a lot explainability is another one where which i think is an active research field within within machine learning it has become a whole sub-discipline of machine learning nowadays which also tells you how difficult the problem is because now we have a whole field of research is trying to do just that. But when you read an ethical framework, it says, well, aim for explainability. But then what you end up is with a whole research field trying to address that. So obviously, there is a gap here. Whereas some other ethical issues, interestingly, have not been equally well addressed. So for example, accountability, there is very little that is systematically proposed. There is maybe more recently a little bit in the area of defining, for example, describing your data better, your training data a bit better, but there's not really that much and few of the things are standardized, which I think could also be a way in some cases to go. Privacy is also, well, again, a whole field of research, but not... a lot that is radically usable nowadays. So it just remains very much a research field. It remains an expert topic, which I think is also quite important because it also creates a gap to those people who are just trying out artificial intelligence, playing around with it, and maybe the less informed practitioners who just want to get their systems to work. For them, it is at this point. extremely difficult to address whatever is called for in those principles. I don't know, Luke, do you want to say anything about this? And then we open the floor for discussion, I suggest. Yeah, I think we could just go. I think that's a good summary. And I think we could probably just segue into questions. Yeah. Yeah, I didn't see in the chat, I didn't see so many questions. I think Alison Stanger commented that principalism basically comes up with a laundry list of, but I'm not sure what laundry list implies. I don't know, Alison, are you there? Can I? I'm here, yeah. Yes, go for it. Laundry Lish just means a list of unrelated things that you want to attend to that may be in conflict one with the other. So you just throw everything into the list so that you can appease every member of a committee. And that's what those AI principles read like to me. Yes. That's why there's such similarity between them. Yeah. I see Luke and myself are nodding, so we agree. Yes, I think we can. Then I'd like to, George, George Metaklides has his hand up, please. Yes. Thank you, Luke, for this very well-framed and provocative talk. Let me take what you said at the beginning. principles are ineffective and toothless. And you add it because they try to do the job of regulation, thus kind of separating the two. But isn't it true for example, in the case of privacy, which remains not well defined under discussion, as both you and Eric said, that we have had a whole slew of laws and regulations from the Fourth Amendment to the GDPR that you mentioned, without ever defining precisely the principle of privacy in a way that is universally accepted. And the connection between principles and regulation, at least the way Louis Brandeis phrased it at the time of the Fourth Amendment in the US, was that law has to float on a sea of ethics, meaning that unless there is a broad support of certain, sometimes unknowledged, as Alison said in the chat, principles and quotes. laws are not going to work. So in that sense, regulation provides the teeth to the discussion on ethics that should continue. And sometimes even, let's say, take a step to take a link from Eric's medical analogy. I mean, the Hippocratic principle of... First, do no harm. That's very much like what Assemoğlu is putting forward now in his forthcoming book, Harms of AI, which he calls the precautionary regulatory principle. In other words, stop something if you think it may cause harm. before the harm gets integrated in a way that is difficult to extricate afterwards. So I would like you to comment on this juxtaposition between, let's say, the philosophical discussion on principles, which has been ongoing for centuries, and the fact that in spite of not ever arriving at the clearly defined axiom from which we can then, by syllogism, draw theorems and other conclusions, we enact laws and legislation that presumably improve matters. Yep, yep. Thanks for that question. Yeah, there's a lot there I guess we could talk about. Yeah, I would say, I mean, in the paper, I'm essentially talking about the highlighting, I guess, that the fact that we have all these principles without any regulation. Right. I think when we look to something like medicine, what we have is off is this kind of long standing, long existing. mixture right or the set of structures and these set of structures are legislative but they're also ethical principles and governance structures like medical practitioner boards right that actually penalize people if they if they go against these ethical principles and can you actually lose your license right and so when you look at medicine then I think you know there's a reason why those ethical principles work so much better within that context is because they have all these layers of, layers of governance and structure and organization wrapped around them, including regulation legislation. And, and then really when we look at the tech sector, that doesn't exist. Like I said, there's really not this culture. of um ethics and in fact like i said um people get ahead by flaunting ethics um pretty consistently um and this is exactly you know i've looked at um uh platforms pretty extensively in prior research like uber airbnb and so on um and their entire business model is really about moving ahead of regulation right moving faster than regulation um so that they can get out there before any laws actually require them to do anything. And in that sense, I think this move to ethical principles is really a boon for tech companies. It's a boon for AI technology companies because the two things are separate, because there is principles but no regulation. We have these sort of high-minded morals and values and norms. but no real consequences or governance or organization wrapped around them. Look, if you allow me to add on to that and also answer George's question, I think really what we are entering here is... in bringing these two levels together is the realm of politics. I mean, very clearly, of course, very clearly here we enter into a political decision as to, in this case, where the laws should be, but more generally, what a society considers worthy of being done or not being done. And this is precisely the debate that we need to have, but it cannot be, and I think that is the answer, it cannot be just summarized in a few ethical... principles that, as Jacques Buss pointed out, is very much dependent on the culture in which we live. Luke, if you don't mind me, I want to quote three sentences from your paper, because George asked about do no harm. And you are saying, well, these ideals sound wonderful. After all, who could be against beneficence? However, problems immediately arise. when we start to define what beneficence means. In the Montreal Principles, for instance, well-being is the term used, suggesting that AI development should promote the well-being of all sentient creatures, while laudable clearly their attentions to consider. And I think that is a good summary of the kind of problems you run into. There's another question by Elizabeth Hild, who I would like to speak up. Yes, Elizabeth, please. Thank you for your provocative talk. I thought this was interesting. And in some aspects, I would agree that guidelines and just dropping principles is not really helpful. I mean, yeah, I would agree. But let me just really take the opposite position because no one has done this yet. And I think it's really important to do it. Because I don't think it's a solution to first criticize principles and then come up with suggesting transparency and accountability as a solution or fairness to the problem of dropping principles because these are exactly those principles that we criticize. So you should do something else if you want to. solve this problem of criticizing principles. And I also think that there is a misunderstanding of the role of principles in general in the way of ethical argumentation, in the way we all think about morality, norms, and so on. Because when we ask a really fundamental question of ethics, what are we to do around AI? What would be a good thing to do or whatever? We will begin with kind of this question and then end up with norms, rules. And then at a more abstract level, there are those principles. And then on a more top level, there will be the ethical theories. And these principles, they are, to start with, just nothing else like respect of autonomy, fairness, justice, whatever we can think of, kind of central values we hold. at least in Western contexts. And so these are, I think, central to all sorts of ethical reasoning. We can't get rid of them. They are just a level of abstraction. And what I understand what you criticize is the kind of name dropping of these principles, especially in ethics guidelines and by companies and so on. And yes, I would agree. And what you criticized, and Erich Brin mentioned this, is the principalism, the beach and shoulders approach. But the way out, I think, would be to suggest a different theoretical approach, something like a deontological approach, an utilitarian approach, a virtual ethics approach or something. And, yeah. This would be my question. So how do you want to get out of this? I mean, you mentioned a lot of downsides of those principles, and I agree. But I think the way out would be to have a clear analysis of what we really mean, let's say, by transparency in the specific context of a specific case study, of a specific use case, or whatever. I mean, this would be the way out. There have been centuries of philosophical reflection about, let's say, autonomy, privacy, justice, whatever. Hundreds of philosophers have thought about this, and it's not kind of a real reason to say, okay, you know, these people, they have used different conceptions of this or that principle, and that's why it's useless. I mean, it's not useless. It's about how can we apply, how can we make... apply this, operationalize it. I mean, it's not about the term. How can we make this useful in a specific context? Thank you, Elisabeth. Luke, do you want to answer to that and explain again what the uselessness precisely refers to? Probably not the principles themselves. Yeah, no, thanks for that point. Yeah, so, I mean, my paper is really focused on the problem. rather than offering solutions and really, I guess, one of the trying to synthesize, I guess, all the different failures, I guess, I saw in the tech sector of applying these ethical principles to AI and providing some structural reasons and providing some cultural reasons and so on for why they fail. So the paper is definitely focused on the problem rather than solution, as you said. I would say, as a media scholar, that's generally what I do. I'm not in the policy area or offering kind of concrete solutions. But yeah, I think, like I said, those two moves that I mentioned could be beneficial in some ways. Or like you said, analyzing a version of transparency, what transparency looks like in a particular context. One of the issues here, I think, with these principles is that they are framed as universal, right? And it's often this... white European Westerners kind of providing their so-called universal list of ethics, which should apply to technologies across the globe. And I think that's a problem. If we actually wanted to make progress in particular areas, and particularly when we think about justice and equality, then I think we need to think narrower to think about a particular kind of technology. like something in the welfare system in Australia, right, for Aboriginal and Torres Strait Islanders, right? That's a very particular case with very particular kinds of requirements for a particular community. And in that way, I think you could start to make some kind of progress when we develop more or less ethical technologies. That kind of follows on, I would say, from this sort of operationalizing move I talked about with Julie Cohen, where, you know, you would be meeting up with community, you would be maybe looking at their values, and then essentially co-designing, right, with that community in order to produce something that actually works for them. Thank you, Luke. I just want to maybe also say that the principles themselves are fine. That's uncontested. But what the uselessness, I think, refers to is that it doesn't help you design a concrete system. It leaves you all in the open how to make all these decisions, that it is not operationalizable to the extent that you come up with a functioning system in the end. I just want to mention, Alison also, I think, seconded what you just said, Luke, regarding Western ethics and made a point there. I think we can take one more question if Jenny promises me to be short in her question. Eugenia Stamboulev. who is a colleague from the Institute of Philosophy here in Vienna. Yes, thank you. I try my best. Luke, thank you very much. I really like your paper and I'm using it for many other things. I'm working at the moment. I'm very, very happy that it came out. I think that, so, okay, to keep it short, I think one of the things we keep mixing up a little bit, and that's why I hope, Luke, I really get your position quite well, in the sense that it's not so much maybe that ethical principle, what just Eri said, are not there, or that they are vague, or we have to debate them, or we have westernized them, and so on and so forth. All those things can be open for debate. But what I see also from my work now in between AI ethics and, let's say, platform work, is that there is a huge kind of gap between what ethicists think is a principle that can be actually applied and the reality of what is the norm in the business sector and in the company sector. And the more vagueness there is, I think that might be an ethical issue for who agrees on what and what kind of ethical school leads. But it's a practical issue for how actually people are being, well, exploited or how data is being used and so on and so forth. So not really taking into account that technology is in itself socioeconomically and political. It's just a huge problem for how you design the norms. And maybe we have to move away more, at least I think so, from the norms from an ideal society of what is the perfect transparency and into really addressing a critique of business norms as they happen because they exist. And they're very often based on exploitation and not on. the amazing citizen that is completely free and transparent and private and so on. So maybe we should turn it the other way around. It would be just one of my suggestions. And I actually would really hope ethicists would look more into how company and business systems work, really work. Yeah. Yeah, absolutely. I mean, you know, companies have particular imperatives, a particular set of values that they're trying to maximize. We see that in platforms all the time, like you mentioned, in terms of something like engagement, right? The more time you spend on a platform, the more money is made, the more they can charge advertisers. That's the value above all, right? And that value then determines the kinds of content that you're looking at, kinds of decisions that are made. And so if you really wanted to do some kind of ethical intervention within that space, you would say, what's another kind of logic that this technology could function with perhaps? And I would say, you know, I think that's also where we looking broader is actually helpful. Just think about capital, right? Capitalism has particular logics that it tries that are like deeply embedded within it. And so when we're trying to develop something better, we need to either acknowledge those or try to inflect those slightly. And we do see some kinds of like tech for good, right? This kind of issue, these kinds of sector that do try to, yeah, try to shift that conversation a little bit. And they do so by pointing to the kind of core, behind companies that really shape a lot of what they do. Thanks, Luke. Hannes has his hand up, and I'm not sure whether it is to end the discussion or to ask a question. Maybe both of it. Hannes, you're up. Just a comment. Thanks a lot, Luke. And I would like to comment in the sense that I like very much the issue of zooming out. And I would like to zoom out of the discussion we have here and would like to put it into context because also our discussion is an example of an intellectual movement where we're discussing issues we would not have done five years ago. And we are putting it in parentheses. We are connecting it with... with other pressing issues. So I think there is already an intellectual political movement also somehow putting pressure on policy. So politicians react already and recognizing that the things we are discussing is a major societal challenge. I think there are two societal challenges. One is the ecological crisis and also one is how we are dealing with this digitalization issue in a proper democratic sense. And I think in this sense, the discussion we have is putting it into the right frame. How we can implement ethical, let's say, considerations in our concrete systems and how can we make them better? I think this is the context we are discussing. And I try to zoom out from the concrete discussion of principles and implementations. Thanks, Luke, for your contribution. Thank you, Hannes. Luke, do you want to comment on that very quickly? Because we have to wrap up soon. I think that's a great summary. And yeah, I would just say, absolutely, we need to have more of these kinds of discussions and conversations, right? And have the debate in order to be able to make better decisions and better technologies. Thank you very much, Luke. Thanks for being with us. And thanks for the great discussion also to everybody in the audience. As usual, we conclude with a piece of music that Luke has proposed and Peter Knies has the details. And with that, I hand over to Peter and thank everybody in the team. Thanks, Eric. Thanks also, Luke. Since you mentioned the tech for good, I think this is a good segue to our next lecture, which I'm going to announce first now. And this will be the first one in 2023. On January 24th, James Landay from the Stanford Institute for Human-Centered AI will talk and he will claim that AI for good isn't good enough. And he will call for a human-centered AI instead. So I think this actually continues exactly that. that conversation um so uh for the final notes um let me share the screen i hope you can see it now um yeah luke proposed radiohead exit music for a film today also for our lecture and actually also the exit music for this year um so um thank you all for joining uh for supporting us throughout another exciting year i think in digital humanism and our initiative here with lots of activities from our roadmap workshop to the summer school, many more. We will, of course, continue that next year and I hope you'll join us in these efforts. And yeah, that's it. So enjoy the holidays. Merry Christmas. Happy New Year. See you in January. Thank you. Goodbye. We're asleep We're drying up Your tears Today We escape Thank you. Thank you. everybody thanks for joining and happy christmas and as we say a happy new year yes season's greetings okay season greetings bye bye bye everybody right by the way it makes fun okay it's not only work okay when when now all the time yeah of course yeah of course this is fun yeah yeah have wonderful holidays",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 24.576,
+      "text": "Hello, everybody. Good morning or good evening. Welcome to today's lecture, which is a special one due to two reasons. One is that for the first time we moved our start date. We start earlier. It's due to the location of our speaker who comes from Australia. And the second reason is that it's not our classical format with a presentation and then a longer."
+    },
+    {
+      "start": 24.576,
+      "end": 50.32,
+      "text": "discussion Q&A, but it's more a discussion between the speaker and the moderator, or in our case, it's the discussant. Today's topic is a little bit provocative and probably controversial. It's about the uselessness of AI ethics, so it's not useful. And I'm happy to welcome Luke Mann from the University of Queensland. Hi."
+    },
+    {
+      "start": 50.32,
+      "end": 78.288,
+      "text": "Luke and he wrote the paper on with the same title which had some quite a response on this paper and he will be introduced later by Erich Brehm who is our moderator and discussing of today. The procedure the choreography today is a little bit different since we start with a short presentation or introduction by Luke about 15 minutes and then he will discuss with Erich."
+    },
+    {
+      "start": 78.288,
+      "end": 107.392,
+      "text": "some of his statements. And then we have 30 minutes Q&A. And we will finish again by a piece of music proposed by Luke and managed by Peter Knies. And I thank Peter for managing that. Before handing over to Erich, I'm happy to have him with us. Erich, he is well known to us. And he has what is not very often the case. He has two PhDs. So he's by education."
+    },
+    {
+      "start": 107.392,
+      "end": 133.632,
+      "text": "two high-level degrees, one in computer science and one in philosophy, which is, I think, a crucial precondition for our topic of today. And Erich has been with our Digital Humanism Initiative since the early beginning, and he has done a lot of input, and I thank you for that, Erich. Now the floor is yours. Thank you so much, Hannes, and thanks, Luke, for joining us."
+    },
+    {
+      "start": 133.632,
+      "end": 154.128,
+      "text": "Indeed, we are looking forward to a discussion that already has raised a lot of interest even before we started today. So I hope we can live up to people's expectation. I'm really happy Luke is joining us from Australia, although I believe originally Luke is a Kiwi."
+    },
+    {
+      "start": 154.128,
+      "end": 175.856,
+      "text": "He's a media studies scholar and now a research fellow in digital cultures and societies at the University of Queensland in Brisbane. And his research investigates the sociocultural impacts of digital cultures and their broader intersections with race, with politics and the environment."
+    },
+    {
+      "start": 175.856,
+      "end": 202.592,
+      "text": "and that ranges from data infrastructures in Asia to platform labor or far-right radicalization and occasionally also to artificial intelligence as that's the topic of our of our presentation today. Luke has published in a number of highly regarded journals such as Cultural Politics, Big Data and Society, New Media and Society as well as also in popular"
+    },
+    {
+      "start": 202.592,
+      "end": 231.328,
+      "text": "in the Guardian, in the Los Angeles Times, the Washington Post. And he has written five books, of which I believe three are out. There is one which I would like to recommend to everybody. It's this one here, which is Automation is a Myth, which could be easily another provocative topic that we could talk about. But we're not going to do that today. We will be talking about..."
+    },
+    {
+      "start": 231.328,
+      "end": 258.224,
+      "text": "the uselessness of AI ethics. And with that being said, Luke, the floor is yours. Great. Thanks, Eric, for the great introduction and for the invitation as well. Yeah, kia ora koutou katoa. Before I would begin, I want to pay my respects to the traditional custodians of the land that I'm on now, which is the Turbala-Nuguru peoples."
+    },
+    {
+      "start": 258.224,
+      "end": 283.936,
+      "text": "of Brisbane and acknowledge the elders past and present. So it's becoming increasingly clear, I think, that AI technologies are very powerful, but they can also have the potential to cause problems, to cause real harm. And that harm manifests in many different ways, whether it's racial discrimination,"
+    },
+    {
+      "start": 283.936,
+      "end": 313.664,
+      "text": "whether it's gendered bias, whether it's discrimination based on race or religion or disability, whether it's, you know, technologies that make very opaque decisions and contribute in different ways to exacerbating inequalities. And I think it's, we see this even more, I think, as AI technologies roll out into these high stakes areas, right? So things like healthcare."
+    },
+    {
+      "start": 313.664,
+      "end": 341.584,
+      "text": "Things like welfare, justice system, where the decisions really make a huge difference and can really cause suffering on lives and livelihoods. And so that's the problem. And I think the de facto response that we've seen to this issue in the last few years has really been this turn to produce these ethical principles. Right. So these are ethical frameworks with a list of different values."
+    },
+    {
+      "start": 341.584,
+      "end": 367.472,
+      "text": "that tech products and services are supposed to adhere to, right? And really, there's been 80 plus of these frameworks put out in the last few years by countries, by tech companies, and also by industry bodies like the IEEE. So we have a huge number of these ethical frameworks, ethical principles. And in the paper, I argue that"
+    },
+    {
+      "start": 367.472,
+      "end": 392.832,
+      "text": "This move to ethical principles is useless. It's useless because it fails to meaningfully address the issue of AI technologies and mitigate harms that they can cause on social, political, environmental levels. And that's a provocative statement, but it's actually one that's echoed by quite a bit of research in the last couple of years. So different scholars have essentially said."
+    },
+    {
+      "start": 392.832,
+      "end": 421.792,
+      "text": "that these principles are really failing to address the problem, right? They're ineffective. And so in the paper, I give three reasons why I think these principles are ineffective. And the first is that they're meaningless principles. So these ethical frameworks list these very high-minded ideals, things like transparency, privacy, humaneness, sustainability, right? That sounds amazing in theory."
+    },
+    {
+      "start": 421.792,
+      "end": 449.344,
+      "text": "The problem is that these are actually really difficult concepts to nail down. Right. They have many different definitions, different understandings of what they mean. Right. And privacy here is a sort of notorious example of something that's very hard to pin down historically. And actually, the definition of privacy that's got the most traction is a kind of umbrella term."
+    },
+    {
+      "start": 449.344,
+      "end": 477.104,
+      "text": "different schools of thought with all these different ideas of what privacy means, what it looks like in practice. And so all of this means that when we go to translate these principles into something technical, into something concrete, right, we can't agree on what it means from the very beginning and so fails to be implemented in any way. So that's the first reason. The second reason, I think, is that these principles are isolated."
+    },
+    {
+      "start": 477.328,
+      "end": 506.608,
+      "text": "So by isolated, I mean that they're really situated in a industry education system that often ignores ethics. Right. When we think about the tech industry, it's often a very unethical or at least a ethical space where we see actually a lot of founders and CEOs celebrated and lionized for the way that they flaunt principles and get away with it."
+    },
+    {
+      "start": 506.704,
+      "end": 536.384,
+      "text": "And you can look at many different examples of this in the tech industry. I would say in the paper I mentioned gender, for example, is a big one. Right. So misogyny throughout the tech industry, issues of sexual harassment, sexual attacks testified by many, many different female workers in the tech sector. Same thing goes with race. We can point to racial discrimination, racism, allegations of many."
+    },
+    {
+      "start": 536.384,
+      "end": 565.264,
+      "text": "high profile tech companies. And these, I think, are linked in some way to the culture of the tech and the startup scene, which has historically been dominated by white male heteronormative kind of culture, right, a program of culture. And the same thing goes, I think, when we look at the education system that leads up into that industry."
+    },
+    {
+      "start": 565.264,
+      "end": 591.504,
+      "text": "So here we're talking about computer science. We're talking about software engineering courses at universities. And unfortunately, many of these really fail to integrate ethics into the courses in any meaningful way. A lot of them, ethics doesn't appear at all. Or if it does, it's nice to have at the very end of the course if there's time. Right. So."
+    },
+    {
+      "start": 591.504,
+      "end": 621.296,
+      "text": "That all that said, then we have this kind of education in this industry where ethics really doesn't play a part in any meaningful way in day to day operations. And so then it's no surprise when these ethical principles get ignored. And then thirdly, the last reason I think is because these ethical principles are toothless. Right. And by toothless, I mean that they are not accompanied by any kind of enforcement."
+    },
+    {
+      "start": 621.424,
+      "end": 651.216,
+      "text": "So these principles are suggestions, they're recommendations, they're guidelines, they're best practice, right? But they're not actually compulsory in any way. And they're not linked to any kind of penalties for violating these principles. And in that sense, you know, ethics has really been asked to do something that regulation should be doing. When we start to think about laws, about fines, about jail time, about actual concrete repercussions for"
+    },
+    {
+      "start": 651.632,
+      "end": 678.88,
+      "text": "for violating these principles, right? So then it's no surprise that they get ignored. I think this is the second more subtle reason why they're toothless, and that's because these ethical principles get interpreted in a way where they line up with business principles, right? So that you interpret things like privacy and sustainability and more humane tech."
+    },
+    {
+      "start": 678.88,
+      "end": 703.216,
+      "text": "in a way that already aligns with your sort of corporate agenda. And in that way, you really don't have to make any significant changes to products or services, to the way your organization is structured. And this is really a form of what's become known as ethics washing, right, where companies get to burnish their reputation to look very good."
+    },
+    {
+      "start": 703.216,
+      "end": 726.512,
+      "text": "by adhering to this, by putting out these high-minded principles while actually continuing business as usual. So those are the three reasons, I think, why these principles fail. And what we wind up with in the end then is this gap, right, a gap between principles and practice."
+    },
+    {
+      "start": 726.672,
+      "end": 756.512,
+      "text": "between these high-minded ideals, these norms, these values on the one hand, and then way over here, actual AI production, technical development, and so on, happening on a day-to-day level. And this is a kind of chasm, right, between these two things. And that gap is really being, I think, acknowledged in recent years. And we do see more research then looking at ways to operationalize ethics."
+    },
+    {
+      "start": 756.512,
+      "end": 784.912,
+      "text": "to turn these principles into something that is actionable, functional, computational in some way, right? But that's a very non-trivial task. And for the reasons I mentioned before, these concepts are actually very nuanced, very difficult. And so taking a principle like fairness, for example, or justice,"
+    },
+    {
+      "start": 784.912,
+      "end": 814.224,
+      "text": "And working through these kind of sociocultural meanings all the way through to something that's actually embedded in a product, I would argue that engineers are often not equipped to do that. And, in fact, I went to a workshop a couple weeks ago, AI workshop at the engineering school here at UQ, and the professor said point blank the same kind of thing, that we cannot do this alone. We're not set up to do this kind of work alone. And so."
+    },
+    {
+      "start": 814.224,
+      "end": 838.8,
+      "text": "You know, in a bit more recent work, I've talked about this bridging mechanism or bridging roles, which might do this kind of translation work that we really need. So for all these reasons, then I argue that these ethical principles are useless. And in fact, they're worse than useless, I would argue, because they divert so much resources."
+    },
+    {
+      "start": 838.8,
+      "end": 866.992,
+      "text": "into them, right? Limited resources. So we're talking about capital, human resources, time, and so on. And just something that's been largely ineffective. And in that sense, diverting resources away from more effective avenues. And so then to close, I just want to point to a couple moves that I think we could make here that could be helpful. And to be clear, there's no solution. There's no silver bullet solution here. This is a really"
+    },
+    {
+      "start": 866.992,
+      "end": 896.656,
+      "text": "Difficult space, really challenging space. But I think there are a couple moves that would be helpful. And so the first is to zoom out a little bit. So rather than looking at a particular product, to actually look at the zoom out, look at the organization, look at things like the economic imperatives around your company, around a product or service, look at societal values."
+    },
+    {
+      "start": 896.656,
+      "end": 922.864,
+      "text": "Things like history. So here we're talking about keywords like inequality, about power and power relationships, power asymmetries, talking about things like justice. Right. These kind of broader, broader views, broader systemic issues that really shape the way a company acts and shape the way eventually a product or services is produced."
+    },
+    {
+      "start": 923.28,
+      "end": 953.168,
+      "text": "and thinking about the ways and reflecting on those, that we might alter those. And that's a long-term project, but I think one set of conversations that's actually helpful. And then the second move I think that's helpful, if that was zooming out, this is zooming in. So rather than thinking about these vague, ill-defined principles, we can actually zoom in very closely to look at very fine-grained problems."
+    },
+    {
+      "start": 953.168,
+      "end": 980.864,
+      "text": "Right. So here we're talking about a particular AI technology in a particular domain with a set of very tractable problems that we can actually make progress on. And so keywords here would be things like alignment, accuracy, mismatch. Right. Where we can actually define a problem and then define what success looks like within that space. And I call this this move kind of designing move."
+    },
+    {
+      "start": 980.864,
+      "end": 1009.168,
+      "text": "and the previous move, a decolonizing move. And I think these two moves go together in a way. They augment or complement each other. And so companies are really engaged seriously within this space, which needs to do both of these things. And I think together, these twin approaches then make progress in this critical area by reflecting deeply and radically about the potentials and the pitfalls of AI."
+    },
+    {
+      "start": 1010.32,
+      "end": 1037.936,
+      "text": "Thanks. Thanks, Luke. A great summary. Wonderful. I've seen that in the meantime, the link to the paper we are talking about is in the chat. So for those of you interested in that, you can just have a look at the paper, which, of course, contains a bit more detail about the arguments that Luke has just presented. But the structure is pretty much."
+    },
+    {
+      "start": 1037.936,
+      "end": 1052.032,
+      "text": "uh like like it was presented now and let me briefly maybe elaborate on it and before before our discussion we didn't really talk about what i would comment on but we just i was just promising luke to be"
+    },
+    {
+      "start": 1052.032,
+      "end": 1078.592,
+      "text": "kind of on his side rather than taking an opposing view. So I'll try to do that. And I want to start, let me just comment on the first part, which is the question of the meaningless principles, because I think we have a bunch of computer scientists joining us and the question could arise, well, why not principles? What's wrong with principles? And I think one important aspect here is that"
+    },
+    {
+      "start": 1078.592,
+      "end": 1097.776,
+      "text": "As you said, Luke, I think in the meantime, the number of principle frameworks has increased to over 100. I've seen this figure somewhere. So there's no shortage in principles. But the problem is that these principles are..."
+    },
+    {
+      "start": 1097.776,
+      "end": 1122.4,
+      "text": "Well, they are just principles. They are necessarily general because otherwise they wouldn't be principles. So they cannot carry a lot of detail, a lot of explanation. Now, to be fair, there are, I believe, technical domains where principles play a practical role and where they have been useful. One is the field of medicine."
+    },
+    {
+      "start": 1122.4,
+      "end": 1149.248,
+      "text": "In the medical area, for reasons that we could discuss, principles played a big role. Actually, I think principalism was even invented in that field. However, and I think this is an important point, within a rather limited set of questions, questions that have arisen from medical practice, such as the question when to perform surgery or not."
+    },
+    {
+      "start": 1149.248,
+      "end": 1175.904,
+      "text": "to whom donate an organ and who doesn't get an organ. So a rather, let's say, prototypical set of cases, which quite frankly, in computer science or in the application areas of artificial intelligence, we don't have that. For the very reason that AI is such a broad field, it's applied anywhere from vacation to shopping, from the medical domain to..."
+    },
+    {
+      "start": 1175.904,
+      "end": 1204.912,
+      "text": "driving a car. So it's highly unlikely that we would be able to develop a similar narrow set as in like medical practice where this has emerged from practically. So that's one point. The second one, maybe one more point. So in your paper, I think you also make an argument, which you mentioned briefly, that some of these underlying concepts in those principles, they are"
+    },
+    {
+      "start": 1204.912,
+      "end": 1234.144,
+      "text": "We don't understand them very well. You mentioned privacy. Privacy, we still, as philosophers, we're struggling what this is. Is this a right? Is this a human trait? Is this something I own? And people debate the advantages and disadvantages of various conceptions. So really, we don't know yet. So it's unsurprising that it's very difficult to come up with how to act on the topic. Fairness is another one, which I think is..."
+    },
+    {
+      "start": 1234.144,
+      "end": 1251.792,
+      "text": "is easier to explain maybe to computer scientists because fairness has been debated a lot with reference to questions of biased AI systems. But in the end, fairness is a very political construct."
+    },
+    {
+      "start": 1251.792,
+      "end": 1281.072,
+      "text": "It is something that we have to agree on in a society, in a group. It is not a mathematical equation that you could simply write down and define. Well, you can, of course, define it, but then you define it. You say this is fairness. And the question then arises, is this fair within the context that you're dealing with? And this is sometimes forgotten. And if you so so in one of my my own research, I did a lot of analyses of what people have proposed in practice and they come up with all sorts of."
+    },
+    {
+      "start": 1281.072,
+      "end": 1305.968,
+      "text": "And fairness is one of the main areas where people have suggested algorithms and frameworks and process models, all that. But implicitly, of course, always using a definition of fairness, which may or may not be adequate to the problem. So what that means is you can certainly ask for fairness, but then what is actually, you know."
+    },
+    {
+      "start": 1305.968,
+      "end": 1330.8,
+      "text": "What then becomes implemented is a whole different matter. And again, up for argumentation. Maybe another point when we talk about isolated principles is that also typically in principalism, we never have a hierarchy between the principles. So that's something on top of what you are mentioning is that even if you have principles and a set of them, then typically that doesn't help you."
+    },
+    {
+      "start": 1330.8,
+      "end": 1350.944,
+      "text": "deciding between those principles and many principles actually will compete with each other. So the typical one in artificial intelligence is, for example, explanation and accuracy. That is something that typically comes with a trade-off and you have to make up your mind, but a set of principles will not help you address the question."
+    },
+    {
+      "start": 1350.944,
+      "end": 1380.4,
+      "text": "And then as regards the question of toothlessness, maybe that's something I don't want to comment on too much. Of course, you certainly know that in Europe there is an initiative to make AI principles more toothless. I don't know what's the opposite of toothlessness. Give them more teeth by coming up with an AI regulation. We'll see how that ends up. Maybe that's all I want to say here. But let's final comment."
+    },
+    {
+      "start": 1380.4,
+      "end": 1405.952,
+      "text": "from my side, on the question of putting all this to practice. So what we have seen or what we are seeing now when you look at the literature is literally hundreds and hundreds of proposals, what to do with all those principles and how to address these various issues. And people have come up with algorithms, they come up with data sets, they come up with criteria, checklists."
+    },
+    {
+      "start": 1405.952,
+      "end": 1430.736,
+      "text": "codes of practice, even standards, metrics have been proposed, software libraries. So there's a whole large number of different things. And I believe this already tells you that there is a challenge here. The challenge is that you cannot simply map isolated principles, as you say."
+    },
+    {
+      "start": 1430.736,
+      "end": 1441.488,
+      "text": "on an algorithm without as you rightly say taking into account the context of the application where it's situated or zooming in as you have suggested"
+    },
+    {
+      "start": 1441.488,
+      "end": 1470.768,
+      "text": "on some of the more detailed question, what is the real problem here? Maybe there is a way here to the, and that would be my proposal, to look much more into the practice of what people are doing and into developing prototypical situations, into arguing about them, into publicizing and then debating the quality of how certain ethical issues are addressed in those prototypes."
+    },
+    {
+      "start": 1470.768,
+      "end": 1499.648,
+      "text": "situations. But that is really a bottom-up approach rather than the principlism approach that I think we are both criticizing. And I think I'll stop here and Luke give you maybe a moment to react to what I just said. Yeah, thanks, Eric. A lot of really good points there, I think. It actually made me think of Julie Cohen's work on privacy. You know, you talk about privacy being a very contested and"
+    },
+    {
+      "start": 1499.648,
+      "end": 1529.296,
+      "text": "term, which it is really, and historically being very difficult to pin down, right? And her response is to kind of say, well, rather than taking these very, these kind of long-running definitions of privacy, right, and projecting them onto technologies, actually we should do it the other way around, like you talked about, from the bottom up, right? And she talks about operationalizing privacy, because"
+    },
+    {
+      "start": 1529.296,
+      "end": 1556.912,
+      "text": "Tech products and services, AI platforms and so on, they already produce a version of privacy. They either, you know, enhance privacy or infringe upon privacy based on very particular design decisions. Right. And so what she's sort of saying, right, is that every tech product actually does construct a version of privacy by itself. And actually we can evaluate."
+    },
+    {
+      "start": 1556.912,
+      "end": 1582.816,
+      "text": "Or we could build on that sort of insight, I guess, to say, well, yeah, these prototypes, we could sort of evaluate one against the other, right? Almost like A-B testing to say that if we anonymize this piece of information, what's the consequence, right? Or if we allow people to have some flexibility here, would they choose more or less privacy, right?"
+    },
+    {
+      "start": 1582.816,
+      "end": 1611.472,
+      "text": "really experimenting on the technical level and on the design level with these decisions and then seeing what the result is. And in that sense, I think this design move that I'm calling is almost about improving your product. It's like product quality, right? In the sense that you would improve the quality of a car or, I don't know, a crockery or something."
+    },
+    {
+      "start": 1611.472,
+      "end": 1640.016,
+      "text": "basic kind of product that you put out there is you refine it over time, you do different versions, and then you choose the best one. Look, there is one thing that I said, I wouldn't be too critical, but I have to ask one question because that struck me when analyzing your paper in more detail. In the last section, and you didn't mention it very much now, but in the last section, you talk about AI justice."
+    },
+    {
+      "start": 1640.016,
+      "end": 1659.488,
+      "text": "which I think is the approach that you have briefly explained. And there are two terms that you're using, which are, I think, really important ones, which are transparency and accountability. And you're proposing that we need much more of that. I mean, now the paradoxic situation, the paradox is that."
+    },
+    {
+      "start": 1659.488,
+      "end": 1688.496,
+      "text": "Many AI principles framework also talk about transparency and accountability. Now, I have to ask you, so is this the same or is this something different here? What do you mean when you talk about it as a possible approach to solving the problem? I think that's. Yes, I'm just skimming back over the sections where I talk about transparency."
+    },
+    {
+      "start": 1688.496,
+      "end": 1717.2,
+      "text": "Actually, the transparency and accountability is more about the design. So the fine grain booth that I'm talking about. Yeah, I mean, transparency and accountability, I think they're necessary. I would say that they're necessary, but inadequate. I think in my field of media studies, the last, I would say, five years, there's been quite a lot of push toward transparency."
+    },
+    {
+      "start": 1717.2,
+      "end": 1737.552,
+      "text": "If we could only make things more transparent and find out what's happening behind the scenes, then we could really produce better kinds of technologies. But actually, what we find is that transparency is not enough, that accountability, there needs to be some sort of redress by users."
+    },
+    {
+      "start": 1737.648,
+      "end": 1764.512,
+      "text": "where actually once you understand what's happening, then maybe you get to change what the technology is doing in some meaningful way. And this brings us back to things like regulation, right, or to things like penalties for not complying, which I think the GDPR, you know, has really established a kind of culture where I think that's starting to become."
+    },
+    {
+      "start": 1764.512,
+      "end": 1794.048,
+      "text": "More of the de facto standard in a way. And we do see other legal frameworks that are then using the GDPR as a kind of precedent. Right. And and then using that to establish certain kinds of rights for users. So I do think, you know, this space is changing all the time and transparency and accountability are part of that. But I think we do need to go a lot further."
+    },
+    {
+      "start": 1794.048,
+      "end": 1815.808,
+      "text": "Yeah, especially also because if you rely only on transparency, for example, what you do is you shift the burden of ethical responsibility to the user of the system. Right. Yeah. So you could have known. Right. Yeah. And I think that is that has become rather popular in in computing or in."
+    },
+    {
+      "start": 1815.808,
+      "end": 1843.984,
+      "text": "Yeah, in software applications generally, let the user decide. But that is also a very tricky issue, I believe. Yeah, or tech companies saying, you know, we're just doing what the user wants, right? Whereas actually, in some ways, like public infrastructure is a better model in some ways, because I don't need to know everything about how electricity works or plumbing or water works, right? But I know that they're not going to harm me."
+    },
+    {
+      "start": 1843.984,
+      "end": 1871.456,
+      "text": "And I know that they're going to function every day when I need them. And in that sense, it's offloads. I put some trust in particular stakeholders and they deliver on that trust. Maybe maybe one last point before we conclude and open to questions from from the audience. I think it's also worthwhile to note that the various principles which which have been."
+    },
+    {
+      "start": 1871.456,
+      "end": 1884.528,
+      "text": "proposed in the various frameworks are addressed by, let's say, practitioners in artificial intelligence to varying degrees. What I mean is that, for example, the question of fairness, as I mentioned,"
+    },
+    {
+      "start": 1884.528,
+      "end": 1907.056,
+      "text": "uh is is one that has really caught researchers interest a lot because of bias and it has been debated a lot explainability is another one where which i think is an active research field within within machine learning it has become a whole sub-discipline of machine learning nowadays which also tells you how difficult the problem is because now we have a whole"
+    },
+    {
+      "start": 1907.056,
+      "end": 1933.92,
+      "text": "field of research is trying to do just that. But when you read an ethical framework, it says, well, aim for explainability. But then what you end up is with a whole research field trying to address that. So obviously, there is a gap here. Whereas some other ethical issues, interestingly, have not been equally well addressed. So for example, accountability, there is very little"
+    },
+    {
+      "start": 1933.92,
+      "end": 1960.544,
+      "text": "that is systematically proposed. There is maybe more recently a little bit in the area of defining, for example, describing your data better, your training data a bit better, but there's not really that much and few of the things are standardized, which I think could also be a way in some cases to go. Privacy is also, well, again, a whole field of research, but not..."
+    },
+    {
+      "start": 1960.544,
+      "end": 1988.72,
+      "text": "a lot that is radically usable nowadays. So it just remains very much a research field. It remains an expert topic, which I think is also quite important because it also creates a gap to those people who are just trying out artificial intelligence, playing around with it, and maybe the less informed practitioners who just want to get their systems to work. For them, it is at this point."
+    },
+    {
+      "start": 1988.72,
+      "end": 2013.984,
+      "text": "extremely difficult to address whatever is called for in those principles. I don't know, Luke, do you want to say anything about this? And then we open the floor for discussion, I suggest. Yeah, I think we could just go. I think that's a good summary. And I think we could probably just segue into questions. Yeah. Yeah, I didn't see in the chat, I didn't see so many questions."
+    },
+    {
+      "start": 2013.984,
+      "end": 2038.624,
+      "text": "I think Alison Stanger commented that principalism basically comes up with a laundry list of, but I'm not sure what laundry list implies. I don't know, Alison, are you there? Can I? I'm here, yeah. Yes, go for it."
+    },
+    {
+      "start": 2038.624,
+      "end": 2066.528,
+      "text": "Laundry Lish just means a list of unrelated things that you want to attend to that may be in conflict one with the other. So you just throw everything into the list so that you can appease every member of a committee. And that's what those AI principles read like to me. Yes. That's why there's such similarity between them. Yeah. I see Luke and myself are nodding, so we agree. Yes, I think we can."
+    },
+    {
+      "start": 2066.528,
+      "end": 2088.432,
+      "text": "Then I'd like to, George, George Metaklides has his hand up, please. Yes. Thank you, Luke, for this very well-framed and provocative talk. Let me take what you said at the beginning."
+    },
+    {
+      "start": 2088.432,
+      "end": 2104.336,
+      "text": "principles are ineffective and toothless. And you add it because they try to do the job of regulation, thus kind of separating the two. But isn't it true"
+    },
+    {
+      "start": 2104.336,
+      "end": 2132.896,
+      "text": "for example, in the case of privacy, which remains not well defined under discussion, as both you and Eric said, that we have had a whole slew of laws and regulations from the Fourth Amendment to the GDPR that you mentioned, without ever defining precisely the principle of privacy in a way that is universally accepted."
+    },
+    {
+      "start": 2132.896,
+      "end": 2161.616,
+      "text": "And the connection between principles and regulation, at least the way Louis Brandeis phrased it at the time of the Fourth Amendment in the US, was that law has to float on a sea of ethics, meaning that unless there is a broad support of certain, sometimes unknowledged, as Alison said in the chat, principles and quotes."
+    },
+    {
+      "start": 2161.616,
+      "end": 2189.744,
+      "text": "laws are not going to work. So in that sense, regulation provides the teeth to the discussion on ethics that should continue. And sometimes even, let's say, take a step to take a link from Eric's medical analogy. I mean, the Hippocratic principle of..."
+    },
+    {
+      "start": 2189.744,
+      "end": 2211.056,
+      "text": "First, do no harm. That's very much like what Assemoğlu is putting forward now in his forthcoming book, Harms of AI, which he calls the precautionary regulatory principle. In other words, stop something if you think it may cause harm."
+    },
+    {
+      "start": 2211.056,
+      "end": 2238.72,
+      "text": "before the harm gets integrated in a way that is difficult to extricate afterwards. So I would like you to comment on this juxtaposition between, let's say, the philosophical discussion on principles, which has been ongoing for centuries, and the fact that in spite of not ever arriving"
+    },
+    {
+      "start": 2238.72,
+      "end": 2264.496,
+      "text": "at the clearly defined axiom from which we can then, by syllogism, draw theorems and other conclusions, we enact laws and legislation that presumably improve matters. Yep, yep. Thanks for that question. Yeah, there's a lot there I guess we could talk about."
+    },
+    {
+      "start": 2265.776,
+      "end": 2290.864,
+      "text": "Yeah, I would say, I mean, in the paper, I'm essentially talking about the highlighting, I guess, that the fact that we have all these principles without any regulation. Right. I think when we look to something like medicine, what we have is off is this kind of long standing, long existing."
+    },
+    {
+      "start": 2290.864,
+      "end": 2319.856,
+      "text": "mixture right or the set of structures and these set of structures are legislative but they're also ethical principles and governance structures like medical practitioner boards right that actually penalize people if they if they go against these ethical principles and can you actually lose your license right and so when you look at medicine then I think you know there's a reason why"
+    },
+    {
+      "start": 2319.856,
+      "end": 2347.824,
+      "text": "those ethical principles work so much better within that context is because they have all these layers of, layers of governance and structure and organization wrapped around them, including regulation legislation. And, and then really when we look at the tech sector, that doesn't exist. Like I said, there's really not this culture."
+    },
+    {
+      "start": 2347.824,
+      "end": 2377.584,
+      "text": "of um ethics and in fact like i said um people get ahead by flaunting ethics um pretty consistently um and this is exactly you know i've looked at um uh platforms pretty extensively in prior research like uber airbnb and so on um and their entire business model is really about moving ahead of regulation right moving faster than regulation um so that"
+    },
+    {
+      "start": 2377.648,
+      "end": 2404.432,
+      "text": "they can get out there before any laws actually require them to do anything. And in that sense, I think this move to ethical principles is really a boon for tech companies. It's a boon for AI technology companies because the two things are separate, because there is principles but no regulation. We have these sort of high-minded morals and values and norms."
+    },
+    {
+      "start": 2404.432,
+      "end": 2420.608,
+      "text": "but no real consequences or governance or organization wrapped around them. Look, if you allow me to add on to that and also answer George's question, I think really what we are entering here is..."
+    },
+    {
+      "start": 2420.608,
+      "end": 2448.16,
+      "text": "in bringing these two levels together is the realm of politics. I mean, very clearly, of course, very clearly here we enter into a political decision as to, in this case, where the laws should be, but more generally, what a society considers worthy of being done or not being done. And this is precisely the debate that we need to have, but it cannot be, and I think that is the answer, it cannot be just summarized in a few ethical..."
+    },
+    {
+      "start": 2448.16,
+      "end": 2475.392,
+      "text": "principles that, as Jacques Buss pointed out, is very much dependent on the culture in which we live. Luke, if you don't mind me, I want to quote three sentences from your paper, because George asked about do no harm. And you are saying, well, these ideals sound wonderful. After all, who could be against beneficence? However, problems immediately arise."
+    },
+    {
+      "start": 2475.392,
+      "end": 2499.76,
+      "text": "when we start to define what beneficence means. In the Montreal Principles, for instance, well-being is the term used, suggesting that AI development should promote the well-being of all sentient creatures, while laudable clearly their attentions to consider. And I think that is a good summary of the kind of problems you run into."
+    },
+    {
+      "start": 2499.76,
+      "end": 2524.944,
+      "text": "There's another question by Elizabeth Hild, who I would like to speak up. Yes, Elizabeth, please. Thank you for your provocative talk. I thought this was interesting. And in some aspects, I would agree that guidelines and just dropping principles is not really helpful. I mean, yeah, I would agree."
+    },
+    {
+      "start": 2524.944,
+      "end": 2553.248,
+      "text": "But let me just really take the opposite position because no one has done this yet. And I think it's really important to do it. Because I don't think it's a solution to first criticize principles and then come up with suggesting transparency and accountability as a solution or fairness to the problem of dropping principles because these are exactly those principles that we criticize. So you should do something else if you want to."
+    },
+    {
+      "start": 2553.248,
+      "end": 2581.68,
+      "text": "solve this problem of criticizing principles. And I also think that there is a misunderstanding of the role of principles in general in the way of ethical argumentation, in the way we all think about morality, norms, and so on. Because when we ask a really fundamental question of ethics, what are we to do around AI? What would be a good thing to do or whatever?"
+    },
+    {
+      "start": 2581.68,
+      "end": 2611.312,
+      "text": "We will begin with kind of this question and then end up with norms, rules. And then at a more abstract level, there are those principles. And then on a more top level, there will be the ethical theories. And these principles, they are, to start with, just nothing else like respect of autonomy, fairness, justice, whatever we can think of, kind of central values we hold."
+    },
+    {
+      "start": 2611.312,
+      "end": 2639.376,
+      "text": "at least in Western contexts. And so these are, I think, central to all sorts of ethical reasoning. We can't get rid of them. They are just a level of abstraction. And what I understand what you criticize is the kind of name dropping of these principles, especially in ethics guidelines and by companies and so on. And yes, I would agree."
+    },
+    {
+      "start": 2639.376,
+      "end": 2666.256,
+      "text": "And what you criticized, and Erich Brin mentioned this, is the principalism, the beach and shoulders approach. But the way out, I think, would be to suggest a different theoretical approach, something like a deontological approach, an utilitarian approach, a virtual ethics approach or something. And, yeah."
+    },
+    {
+      "start": 2666.256,
+      "end": 2690.704,
+      "text": "This would be my question. So how do you want to get out of this? I mean, you mentioned a lot of downsides of those principles, and I agree. But I think the way out would be to have a clear analysis of what we really mean, let's say, by transparency in the specific context of a specific case study, of a specific use case, or whatever. I mean, this would be the way out."
+    },
+    {
+      "start": 2690.704,
+      "end": 2717.936,
+      "text": "There have been centuries of philosophical reflection about, let's say, autonomy, privacy, justice, whatever. Hundreds of philosophers have thought about this, and it's not kind of a real reason to say, okay, you know, these people, they have used different conceptions of this or that principle, and that's why it's useless. I mean, it's not useless. It's about how can we apply, how can we make..."
+    },
+    {
+      "start": 2717.936,
+      "end": 2745.456,
+      "text": "apply this, operationalize it. I mean, it's not about the term. How can we make this useful in a specific context? Thank you, Elisabeth. Luke, do you want to answer to that and explain again what the uselessness precisely refers to? Probably not the principles themselves. Yeah, no, thanks for that point. Yeah, so, I mean, my paper is really focused on the problem."
+    },
+    {
+      "start": 2745.456,
+      "end": 2775.04,
+      "text": "rather than offering solutions and really, I guess, one of the trying to synthesize, I guess, all the different failures, I guess, I saw in the tech sector of applying these ethical principles to AI and providing some structural reasons and providing some cultural reasons and so on for why they fail."
+    },
+    {
+      "start": 2775.04,
+      "end": 2802.096,
+      "text": "So the paper is definitely focused on the problem rather than solution, as you said. I would say, as a media scholar, that's generally what I do. I'm not in the policy area or offering kind of concrete solutions. But yeah, I think, like I said, those two moves that I mentioned could be beneficial in some ways."
+    },
+    {
+      "start": 2802.096,
+      "end": 2823.136,
+      "text": "Or like you said, analyzing a version of transparency, what transparency looks like in a particular context. One of the issues here, I think, with these principles is that they are framed as universal, right? And it's often this..."
+    },
+    {
+      "start": 2823.136,
+      "end": 2850.448,
+      "text": "white European Westerners kind of providing their so-called universal list of ethics, which should apply to technologies across the globe. And I think that's a problem. If we actually wanted to make progress in particular areas, and particularly when we think about justice and equality, then I think we need to think narrower to think about a particular kind of technology."
+    },
+    {
+      "start": 2850.448,
+      "end": 2876.832,
+      "text": "like something in the welfare system in Australia, right, for Aboriginal and Torres Strait Islanders, right? That's a very particular case with very particular kinds of requirements for a particular community. And in that way, I think you could start to make some kind of progress when we develop more or less ethical technologies."
+    },
+    {
+      "start": 2876.832,
+      "end": 2899.152,
+      "text": "That kind of follows on, I would say, from this sort of operationalizing move I talked about with Julie Cohen, where, you know, you would be meeting up with community, you would be maybe looking at their values, and then essentially co-designing, right, with that community in order to produce something that actually works for them."
+    },
+    {
+      "start": 2900.4,
+      "end": 2915.104,
+      "text": "Thank you, Luke. I just want to maybe also say that the principles themselves are fine. That's uncontested. But what the uselessness, I think, refers to is that it doesn't help you design a concrete system."
+    },
+    {
+      "start": 2915.104,
+      "end": 2944.32,
+      "text": "It leaves you all in the open how to make all these decisions, that it is not operationalizable to the extent that you come up with a functioning system in the end. I just want to mention, Alison also, I think, seconded what you just said, Luke, regarding Western ethics and made a point there. I think we can take one more question if Jenny promises me to be short in her question. Eugenia Stamboulev."
+    },
+    {
+      "start": 2944.32,
+      "end": 2960.048,
+      "text": "who is a colleague from the Institute of Philosophy here in Vienna. Yes, thank you. I try my best. Luke, thank you very much. I really like your paper and I'm using it for many other things. I'm working at the moment. I'm very, very happy that it came out."
+    },
+    {
+      "start": 2960.048,
+      "end": 2988.144,
+      "text": "I think that, so, okay, to keep it short, I think one of the things we keep mixing up a little bit, and that's why I hope, Luke, I really get your position quite well, in the sense that it's not so much maybe that ethical principle, what just Eri said, are not there, or that they are vague, or we have to debate them, or we have westernized them, and so on and so forth. All those things can be open for debate. But what I see also from my work now in between AI ethics and, let's say, platform work,"
+    },
+    {
+      "start": 2988.144,
+      "end": 3004.24,
+      "text": "is that there is a huge kind of gap between what ethicists think is a principle that can be actually applied and the reality of what is the norm in the business sector and in the company sector. And the more vagueness there is,"
+    },
+    {
+      "start": 3004.24,
+      "end": 3018.992,
+      "text": "I think that might be an ethical issue for who agrees on what and what kind of ethical school leads. But it's a practical issue for how actually people are being, well, exploited or how data is being used and so on and so forth."
+    },
+    {
+      "start": 3018.992,
+      "end": 3045.184,
+      "text": "So not really taking into account that technology is in itself socioeconomically and political. It's just a huge problem for how you design the norms. And maybe we have to move away more, at least I think so, from the norms from an ideal society of what is the perfect transparency and into really addressing a critique of business norms as they happen because they exist. And they're very often based on exploitation and not on."
+    },
+    {
+      "start": 3045.184,
+      "end": 3074.112,
+      "text": "the amazing citizen that is completely free and transparent and private and so on. So maybe we should turn it the other way around. It would be just one of my suggestions. And I actually would really hope ethicists would look more into how company and business systems work, really work. Yeah. Yeah, absolutely. I mean, you know, companies have particular imperatives, a particular set of values that they're trying to maximize."
+    },
+    {
+      "start": 3074.112,
+      "end": 3098.72,
+      "text": "We see that in platforms all the time, like you mentioned, in terms of something like engagement, right? The more time you spend on a platform, the more money is made, the more they can charge advertisers. That's the value above all, right? And that value then determines the kinds of content that you're looking at, kinds of decisions that are made."
+    },
+    {
+      "start": 3098.72,
+      "end": 3128.352,
+      "text": "And so if you really wanted to do some kind of ethical intervention within that space, you would say, what's another kind of logic that this technology could function with perhaps? And I would say, you know, I think that's also where we looking broader is actually helpful. Just think about capital, right? Capitalism has particular logics that it tries that are like deeply embedded within it."
+    },
+    {
+      "start": 3128.352,
+      "end": 3157.936,
+      "text": "And so when we're trying to develop something better, we need to either acknowledge those or try to inflect those slightly. And we do see some kinds of like tech for good, right? This kind of issue, these kinds of sector that do try to, yeah, try to shift that conversation a little bit. And they do so by pointing to the kind of core,"
+    },
+    {
+      "start": 3157.936,
+      "end": 3176.752,
+      "text": "behind companies that really shape a lot of what they do. Thanks, Luke. Hannes has his hand up, and I'm not sure whether it is to end the discussion or to ask a question. Maybe both of it. Hannes, you're up. Just a comment."
+    },
+    {
+      "start": 3176.752,
+      "end": 3201.088,
+      "text": "Thanks a lot, Luke. And I would like to comment in the sense that I like very much the issue of zooming out. And I would like to zoom out of the discussion we have here and would like to put it into context because also our discussion is an example of an intellectual movement where we're discussing issues we would not have done five years ago. And we are putting it in parentheses. We are connecting it with..."
+    },
+    {
+      "start": 3201.088,
+      "end": 3225.28,
+      "text": "with other pressing issues. So I think there is already an intellectual political movement also somehow putting pressure on policy. So politicians react already and recognizing that the things we are discussing is a major societal challenge. I think there are two societal challenges. One is the ecological crisis and also one is how we are"
+    },
+    {
+      "start": 3225.28,
+      "end": 3253.504,
+      "text": "dealing with this digitalization issue in a proper democratic sense. And I think in this sense, the discussion we have is putting it into the right frame. How we can implement ethical, let's say, considerations in our concrete systems and how can we make them better? I think this is the context we are discussing. And I try to zoom out from the concrete discussion of principles and implementations. Thanks, Luke, for your contribution."
+    },
+    {
+      "start": 3253.504,
+      "end": 3279.456,
+      "text": "Thank you, Hannes. Luke, do you want to comment on that very quickly? Because we have to wrap up soon. I think that's a great summary. And yeah, I would just say, absolutely, we need to have more of these kinds of discussions and conversations, right? And have the debate in order to be able to make better decisions and better technologies. Thank you very much, Luke. Thanks for being with us."
+    },
+    {
+      "start": 3279.456,
+      "end": 3301.648,
+      "text": "And thanks for the great discussion also to everybody in the audience. As usual, we conclude with a piece of music that Luke has proposed and Peter Knies has the details. And with that, I hand over to Peter and thank everybody in the team."
+    },
+    {
+      "start": 3303.44,
+      "end": 3332.144,
+      "text": "Thanks, Eric. Thanks also, Luke. Since you mentioned the tech for good, I think this is a good segue to our next lecture, which I'm going to announce first now. And this will be the first one in 2023. On January 24th, James Landay from the Stanford Institute for Human-Centered AI will talk and he will claim that AI for good isn't good enough. And he will call for a human-centered AI instead. So I think this actually continues exactly that."
+    },
+    {
+      "start": 3332.144,
+      "end": 3361.664,
+      "text": "that conversation um so uh for the final notes um let me share the screen i hope you can see it now um yeah luke proposed radiohead exit music for a film today also for our lecture and actually also the exit music for this year um so um thank you all for joining uh for supporting us throughout another exciting year i think in digital humanism and our initiative here"
+    },
+    {
+      "start": 3361.664,
+      "end": 3379.696,
+      "text": "with lots of activities from our roadmap workshop to the summer school, many more. We will, of course, continue that next year and I hope you'll join us in these efforts. And yeah, that's it. So enjoy the holidays. Merry Christmas. Happy New Year. See you in January. Thank you. Goodbye."
+    },
+    {
+      "start": 3409.488,
+      "end": 3426.416,
+      "text": "We're asleep We're drying up Your tears Today We escape"
+    },
+    {
+      "start": 3441.552,
+      "end": 3442.416,
+      "text": "Thank you."
+    },
+    {
+      "start": 3540.08,
+      "end": 3540.944,
+      "text": "Thank you."
+    },
+    {
+      "start": 3650.448,
+      "end": 3680.015,
+      "text": "everybody thanks for joining and happy christmas and as we say a happy new year yes season's greetings okay season greetings bye bye bye everybody right by the way it makes fun okay it's not only work okay when when now all the time yeah of course yeah of course this is fun yeah yeah have wonderful holidays"
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

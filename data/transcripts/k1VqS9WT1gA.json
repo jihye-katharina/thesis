@@ -1,0 +1,791 @@
+{
+  "video_id": "k1VqS9WT1gA",
+  "source": "whisper",
+  "language": "en",
+  "text": "Yes, good evening. My name is Andreas Steininger. I have the pleasure to welcome you to this talk by Professor Hans Ackermann. Professor Hans Ackermann is giving a course currently for our doctoral school, for our doctoral students, together with Anna Bohn. And he is also kind enough to give a talk for a more general audience, which is happening now. And we are looking forward to that before we go into the details there. I would like to notify the students that do the current trends in computer science. I will give the list now through the classroom. And please make sure to have your signature beside your name. If your name is not on the list, just add it at the end of the list. This is just a proof of your presence, of course. Yes. Otherwise, I am happy to hand over to Stefan Voltran to introduce our speaker. Thank you very much, Andreas. A warm welcome also from my side and on behalf of the Digital Humanism Initiative at TU Wien and IWM, the Institute for Human Science. Our initiative is streaming this talk also. It's part of the lecture series. So what is about IWM? What has IWM to do with today's talk? So we have a joint cooperation. IWM has a fellowship program for digital humanism where they invite each term one senior fellow and two junior fellows. And this term, the senior fellow is Hans Ackermann. I will say a few words about him in a minute. And we have, as part of this cooperation, the senior fellow at IWM. also acts as guest professor here at TU Wien. And as Andreas has already mentioned, together this year, it's together with Anna Bohn, who is sitting there. And I'm mentioning Anna Bohn not also because she will be in the Digital Humanism Conference at the end of May. I think it's 26 to 28 of May, where we will have a session about teaching digital humanism. It's not only Anna on the panel, but also our dean. Gerti Kappel, who are welcome also here very much. So what else to say? Ah, yeah, this Digital Humanism Fellowship Program is now in place since 2021. Ludger, help me. It's the fourth year, so it's not completely wrong what I'm saying. And it's funded by what is now the Ministry of Innovation, Mobility, and Infrastructure. which has been the BMK, the famous BMK before. And I would also like to take the opportunity to say a big thank you to Ludger Hagedorn from IWM who is here for this, I would say, very fruitful and valuable cooperation that EUWIN has together with IWM in connection with this fellowship program. Thank you very much, Ludger, for this. So, what else? Now I'm coming to our speakers. Thanks, Hans, for... for your passion and for waiting. Hans Ackermans is Professor Emeritus for Business Informatics from Freie Universität Amsterdam, VU Amsterdam. But by education, he worked in physics, and he has received a cum laude PhD in theoretical physics in the field of nuclear reactions. So that's a quite interesting genesis. Besides that, he's the founding director of the Interdisciplinary Network Institute at Amsterdam. So this institute studies the interaction between digital technology and society, and this also already kind of bridges the gap to digital humanism, where Hans has been part of our initiative here at TU Wien since the very beginning. I would like to mention that he was on the advisory board of our faculty where this has been discussed and then started under the responsibility and by the motion of our former team, Hannes Wertner. What else do I want to say? He is now very engaged in projects in the Global South, but I think you will say a few things about this during your talk. Yeah. Yeah. And, yeah, I've mentioned that he's a digital humanist from the very beginning, and we are very happy to have you as guest professor at the Uwin, this term, and to have you for this talk today, and we are looking forward very much to your presentation. Stefan, thank you very much for your kind introduction. Decolonizing the future. I happen to be rather fond of inventing attractive titles for articles and talks I give. So I will not talk about decolonization in the usual sense of... let's say stolen symbolic art objects that need to be returned to the countries and peoples of where they came from but I use it more in a metaphorical way with respect to computer science and as a program of action I think So decolonization should be directed at the future, in a sense, not at the past. Although the roots are in the past, and I will say a few words on that in the realm of computer science, broadly speaking. For those who are in a hurry, I here give away the whole summary of the talk. The key point I want to make is that the nature and the position of computer science has changed drastically over the decades. And I think I am, given my old age, I am now entitled to say these kinds of things because I don't know them just from the history books, but I have... lived experience through all these things and what is interesting is that computer science used to be a very technical subject and it had become more and more and more and more social until the point that now digital technologies are a central force and source of power in our society and that means that computer science also has a very different societal position and cannot continue in, let's say, the old-fashioned safe ways. That's why I say it's at the crossroads. Indeed, I'm working with Anna a lot on issues of education and big European projects. And I think that... One of the issues we have to address rather urgently is how to redesign our curricula so that they reflect the current situation, the future situation, and not a long past situation. And as a sideshow, I will use, like decolonization, I will use metaphor as a kind of organizing principle. This is a very old 1986 famous book, business school book, on images of organization. It's a bestseller book. And what it does, this I took from Wikipedia, it describes organizations from different viewpoints in a metaphorical sense. So the claim of the book is that you have different metaphors to describe organizations and that gives different insights into organizations. Basically, you can see an organization as a machine type of thing, or you can see it as an organism living type of thing, or as a dynamic, or as a political system. Also as an instrument of domination. So this is a really interesting book. I can recommend it. If you want to see a psychic prison, then already given the results of the recent US election, you see here what a psychic prison in our society might be. The point I want to make here is that we can apply it to industrial organizations or business organizations, but we can apply it to science as well, including computer science, and that is basically what I'm going to do. I think that, so that is what I call images of informatics and computer science. In the very old days, As Stefan said, I am a theoretical physicist. Originally, I published quite a lot of theoretical physics and nuclear reactions. And then I came into computer science and especially AI in the 80s. And that was a kind of cultural change because I knew how to publish in journals. But if you switch from theoretical physics to AI, how the game is played and what the issues are is really very different. So these are different cultures. And one important, that was quite striking as a physicist, one important general idea about what computer science is, and the word does already say it, is it's about the machine and the whole machine idea. This is a book from my former colleague, Andy Tenenbaum, and he is a really hardcore engineer, no compromises, and this is the cover of one of his very well-known books. But that is what computer science is. It's all about the machine. Nothing else exists. So why not? I always have thought that computer science is a very strange name because we do not call telecommunications handy science. And I think statisticians would be very happy to call themselves dice science. But still, this is a picture or an image of what computer science is. And actually, at that time, It has been dominant for decades. And so there is no social element in it. Then you had a kind of competing tradition. And that is more the theoretical idea that it is not a machine and the engineering of the machine. But it is the theoretical correct description of the machine and what it does. And that is something like in the high ground of science and in theoretical physics, which of course was way more scientific than the new kid on the block, which was computer science. And you wanted to get rid also this messy trial and error engineering. So the theory people looked down upon the engineers because that was not really scientific. And a good example here is another Dutch, very well-known figure, Edgar Dijkstra. He wrote a famous article in 1968. Go-to statement considered harmful. And basically, that was the other dominating stream of thought about computer science. So that was more theoretical, symbolic logic, mathematical equations. And the idea was that computer science should become a real exact science modeled after. Especially theoretical physics and mathematics. And actually that was also, you had different branches in computer science already from the beginning. But these two were the dominating ones at many universities. And you see here, that is interesting, that even the term itself scientific is used as a power instrument in... in the fight for money and prestige. And this is where you see, I think, the interesting, metaphorically interesting notion of organization. Then, that humans exist became clear very slowly to computer scientists after a long time. And human-computer interaction established itself slowly with a lot of resistance. And I know that from my personal experience. Also in my university, which has similar sizes here, the first person on human-computer interaction was only appointed somewhere in the 90s. And this is a very well-known book. I have it in my own library. So this stuff is from the 1990s. Also notions like socio-technical system was a very big new invention that a technical system could have social aspects. This also at my university, it was always the talk. This is soft stuff. And actually business informatics suffered the same fate and your dean will know that and the previous dean also. Business informatics was also, yeah, very practical and useful. And especially business informatics more than human computer. You can earn a lot of money with it. So that's ranked up a little bit. But then the questions in the fight were, is this scientific? Then the question is, do you have a theory modeled after, let's say, general relativity or whatever? that is the other branch, is this good engineering or are you just trying out things and see what happens? That was a lot of criticism on human-computer interaction. Then, first the human entered in the 1990s, but artificial intelligence also came in as a kind of Alien immigrant. I do recall at my own university, when I was appointed in the early 90s and in Amsterdam in the late 90s, there was a whole debate in our faculty, is AI actually a part of computer science or a proper part of computer science? And that was directed actually to my colleague Frank van Harmelen. He just came back from Edinburgh where he did his PhD in AI and he was on the road to be appointed to a professor of artificial intelligence. And the debate was whether we should have a professor of artificial intelligence in the first place. Actually, in my own case, I was appointed as professor of business informatics. Then when I came in Amsterdam, I found out, and they told me, that they had been worrying for more than two years about the issue of whether or not to appoint a professor of business informatics. In AI, you had indeed the same kind of question. What is the theory of AI? Or is it just... Heuristic programming. You can't be serious. So one of the objections was these AI people are not able to provide us with an algorithmic complexity analysis. And rebuttal was more or less. We work on so difficult problems that they are always NP-hard that doesn't... You cannot give an easy complexity analysis. Also, this heuristic rule of thumb, also the reasoning on the basis of rule of thumb, that is fishy and not exact. Talking about metaphor, AI itself is full of metaphor. And I do not mean that in a pejorative sense, but if you just take a list of major AI fields, expert systems, then there's a whole rather metaphorical use of the notion of expert. But it comes with all kinds of connotations, some good. Some not so good, some totally wrong. The same holds for knowledge as a thing or ontology. I have done a lot of work on ontology. Philosophers really hated the use of ontology, the term ontology by computer scientists. And it's true, the way it is used in computer science is totally different from what philosophers mean by that. On the other hand, you can say what ontology or the notion of ontology did was moving away the attention from the machine stuff to the real world. The claim for ontology, that's a bit, let's say. kind of philosophical realism is if you say, if you have a string, a table in a computer, then table refers to something like this. And what you try to do is model some kind of world in computer terms, but the reference is to Real things are outside the machine. And it really helped to do that. And that was a big change in computer science. The same holds for neural networks. Do neurons in computer science have anything to do with real neurons? I don't think so. I worked a lot on agents and multi-agents. And it was always intelligent agent systems. I worked in the area of the energy transition, smart electricity grids, where agents represent machines, devices, windmills, solar refrigerator. And then you find out that multi-agent systems are very useful, but the agents are pretty stupid, actually. And the secret is in their interaction, not in what they know. So this is a work of Luke Stills. He was at the workshop some months ago. He was very active in this early period of knowledge-based systems. He developed his own approach, components of expertise. At that time, I worked with him quite a lot. So if you look at how the... center of gravity in computer science has switched over time. So you had a very technical and theoretical dominance in the 1950s, in the 1960s, in the 1970s. Then it moved to, with especially human-computer interaction, there was this notion of socio-technical. And now I would claim that the social has not only become increasingly central to informatics, but it's also the other way around. Information and digital technologies are major forces of power in restructuring society itself. And in that sense, they are at the center of our era. For better or worse? This is an interesting article with which I personally disagree, but the point is interesting. So this is, I think, 2020 by Connolly claiming or saying that computing under the current circumstances actually belongs in the social science. I think this is interesting to think about. I do not believe it. I did a lot of interdisciplinary work in different sciences. My experience is that what is different in social science is that it typically does not have a design, a notion of design. Social scientists see themselves as observing and analyzing. some piece of social reality. But computer scientists do design in some way. You make machines that do or systems that do something. And this design notion is pretty alien already traditionally to social science. What is, I think, important to see is that digital technology, and this is basically what Habermas says, Habermas became well-known around 1960, and his first book was actually a structural change of the public sphere and deliberative politics. The claim basically is that emergence of mass media, and at that time especially television, actually has influenced and restructured the wider societal discussion on politics and social issues. So it changed public and political discourse. And more recently, this book is I think from 23 or something, he claims that there is another structural change of public discourse created by, in this case, digital technologies, especially social media, and that actually the algorithms that were used to add algorithms that were used to manipulate consumer behavior, has told big tech how to use these algorithms also to manipulate social and political behavior. That is a structural change. I think given the recent political developments, there's a lot to say in favor of such a viewpoint. So to come to decolonization or colonization, if you see the digital space or the digital world and you see it as an image of a world like our planet, then what is going on now digitally is big companies try to conquer. Different parts of the digital space in competition with each other. They lead to enormous concentration of power already in the digital technology sector. But these days also broader because they penetrate in very different sectors. For example, the digitization of health. In the governance of society, where, for example, AI systems are blindly used to make decisions about social security. There has been a very big scandal in the Netherlands itself on that, where 70,000 children were the victim of wrong decisions. by the administrative authorities and even many cases that children, because of the financial troubles in withdrawing social security and social benefits, that families ran into extreme financial difficulties, had to sell their houses, separated. Children were even placed into custody only because there was a very harsh policy on so-called combating fraud. So digital big tech is not only a big sector in itself where you see land grabbing and mining and digital value extraction. It has now installed itself in the heart of the political system. It is installing itself with now the current build-up of defense spending that goes with very big contracts. In the same way as you saw in the Cold War, I think there are a lot of parallels between the Cold War and the current situation, but with the different technologies. At that time, it was the atom bomb. And at this time it's a digital, but I think the parallels are very clear. What you also see is an attack on civil society. So apparently intellectuals, universities, artists are seen as some kind of enemy that must be, we must get rid of them. And the attack on education in the United States, so the winding down of the education department, because they are all radicals and Marxists. So we have an important situation. It's not just that digital technology is... lobbying for its own interests. Like every company of a certain size has a lobby office in Brussels. And so they try to prevent basically something like the AI Act. Any regulation stifles innovation is the slogan. And that is lobbying. But now it's a bit different. Now the lobbyists are themselves the government and make the rules. So that is a qualitatively different situation. And given where things go, even the very idea of human rights, equality, justice, democracy, universal human values are endangered by that. And you see that very clearly with respect to, let's say, the racial issues in countries, immigrants, women, more and more. So that is, I think, a task for digital humanism to address these kinds of things. So I think there is a kind of what you might call a kind of Oppenheimer moment. The famous story is that Oppenheimer cited the Bhagavad Gita when the first atomic bomb explosion happened. And that came really as a shock to the 5,000 to 10,000 physicists that had been working on the atom bomb. And I think for digital technologies, so also for computer science, I think this is a kind of Oppenheimer moment that it is really a crossroads that things can go very wrong if you don't do anything. So that is what I mean with digital decolonization. There is land grabbing of the digital space. There is mining of value extraction, especially via digital data. And that is not to the benefit of society as a whole and really is exclusive. So that's... So we need some kind of program. These are the United Nations Sustainable Development Goals. And my colleague Anna Bonn in one of her talks some time ago, I think it was at the summer school here, invented a digital sustainable development goal for a fair and inclusive digital society. And indeed, this is... It's only partly a joke. Indeed, I think we need such a program to think about these kinds of things. And in terms of education, given the totally different position of computer science, the different position of digital technology and the effect it has, I think we must really, and I'm talking here in a university, So we really have to rethink our curricula fundamentally. And I think that must be rather fundamental. We already have these discussions, okay, shouldn't there be some kind of philosophy of computer science as part of the curriculum or ethics? And I think that is not enough. My experience with ethics, for example, is in the West at least, ethics goes with the notion of individual behavior. What should I do? What shouldn't I do? The experience is that many of the real issues in computer science are not individual. and are not solved by just individual action, but are societal and are systematic. And a good example is the notion of bias. The notion of bias has a connotation that these are individuals that have biased views, but there is a whole literature, and I have up there a few very good books on this, Bias is really a social thing and cannot simply be made smaller or may vanish by individual actions. Also, I think, given the developments and given the societal position of digital technology, we have to think about governance issues. how to run technology and policy. And that should be addressed, I think, in some way in our curricula. That is not so easy, but I think current times ask for that. And I also think the idea that you can stay neutral is very difficult or apolitical. I think it becomes increasingly implausible. But of course the question is, okay, you want to give your students good stuff, but it cannot be neutral as if you are looking at the stars and are just a disinterested observer, as the old positivist philosophy had it. And actually, we are working on these kinds of issues. So Anna is the coordinator of a 10 million euro international project on developing a new international master study, which is interdisciplinary. So if you take it more to the extreme, one way is you have computer science curricula, you have to enrich them with a number of other topics, and then the question is what they are and how you do it. This idea is, our idea is that we are working on a master in principle for all directions, and that you need some... grounding in computing, but also on regulation. You have to have an understanding of what the legal principles are on the basis of which, for example, the AI Act or GDPR works. So we have a lot of, and the same holds for social science, humanities involved, economics. So this is a pretty complicated design issue. And also the issue is how far you can get given the people, also as teachers you have. But this is at least an attempt to think about education that is really up to date and covers important issues that will... be there to stay for a very long time. So then I come to the summary again. So this is exactly the same slide as the second one. So the nature, the position and also the self image has been changing. roughly speaking, very roughly speaking, from purely technical and mathematical to socio-technical to what I now call techno-social. Once the social aspects are dominant, then you have to switch it around. But that is just my terminology. I also think that the self-image of computer science or informatics is actually lagging behind. That has always been the case, by the way. But we can less and less afford that. Digital technology is not just technology, but it is really a source of power, an instrument of domination, like Gareth Morgan also says. So we have to rethink what computer science is these days. And that includes, I think, how to redesign education curricula, but also issues of governance. And I would say democratization of technology come on to the computer science agenda. Thank you very much. And then my proposal would be that we do not have a Q&A. but the other way around. Because I am interested, because I do this work on curricula, I don't want you to ask the questions and I give the answers. I would like to have it the other way around. I would like to ask the question, okay, what should we do with the curricula? You give me the answers. Who wants to answer? By the way, thank you for this excellent talk, Hans. Erich has an answer. I have an answer. I have a short of an answer. Thank you so much. Wonderful issues that, of course, as you know, resonate beautifully with digital humanism and what we've been doing. So one answer would be, I think there is a problem in the term computer science, and the problem is with science. In German, it's a bit better because we tend to call it informatics, which makes it very clear it's an engineering discipline. And engineering is about the creation of system. So I think this is important to emphasize. When you emphasize the design aspect, then you make it very clear that this also involves the human side, rather than just saying it's only about formal computer science, which I think is a completely different way. And then the distance to this techno-science, philosophers of technology would argue that science has always been techno-science, but it's a different route. Then the difference is a bit smaller because then we know it's about design. It's about interacting with systems and, of course, also with people. I think that makes it easier. Emphasize the design aspect if you want an answer. And can I just say something about philosophy? Of course, Aristotle knew that ethics was about the good life and that humans are not just the individuals but are political animals and live in society. Aristotle doesn't use the good life in the individual sense. Somehow he was forgotten later, yeah. No, I agree. Computer science. I found it always a very strange and wrong term, but it's the American term. In Europe, generally, it's more informatics. In Dutch, it's informatica, informatiek, informatiek. That also says it's not about a machine. It's about information and communication. That happens to be at least partly. I think the design notion is important. That makes it into some sort of engineering thing that might also be partly social in nature. Maybe even a bit artistic and playful because it's about creation, so it's creativity, and then it becomes a completely different thing. Then it becomes clearer that it's about creating something. interacts with people, as I said. Further answers? Thank you very much. Thank you very much for the talk. I'm also at IBM as a fellow. I would like to turn the question around to the Oppenheimer moment. So what happened after Oppenheimer? Did we begin to teach nuclear physicists morality? Did we include something in the physics? physical curriculum that was distilled from the experience that those physicists have back in the 40s, to just judge what are we going to do now with computer science? Well, as a physicist, I would say that the physicists did not a very good job. What typically happened, actually, nuclear physics was one of the biggest areas in the 1950s and the 60s of physics broadly. And these issues were not discussed in the regular physics literature. What you did have was, let's say, like with digital humanism, concerned scientists. That formed committees and organized conferences. So for example, Albert Einstein is very well known as an activist against the nuclear arms race and war. Although he wrote in 1940 a letter to Roosevelt. basically saying there are very dangerous developments in Hitler Germany in developing the atomic bomb and it is important that they don't get it first. So he recommended Roosevelt to act upon this. That happened through the Los Alamos project that you see in the Oppenheimer film. These were, let's say, individuals making a choice to do that. There were different committees and organizations that have had an effect on developments. For example, the Non-Nuclear Proliferation Treaty was a result also of physicists. trying to invent solutions for the Cold War issues. So they were influential, but it was a small branch. For example, I studied in the 70s, and the only place where this came up was not in the regular curriculum, but there was a professor who was committed to these kinds of things, and he gave a special extra curriculum. curricular course, the social responsibility of the scientist. So that happened. But it was not part of a normal curriculum. I think we should strive for making these kinds of issues, they are simply professionally important. So they must be in the curriculum. If you want to be a good professional, this must be in the curriculum and not a kind of outside show. So I think in terms of physics, so-so. But that's my personal view, of course. Andreas Steininger. I want to come back to your question, Hans, about the curricula and maybe coming back to what you said in your talk and what Erich Brehm also commented about defining computer science. I think it's completely fuzzy what computer science actually means to... to many people, actually to most of us, and I would bet if in this room we were to define computer science in two sentences, we would sit here for hours and maybe not come out with a single result there. And I think that's a problem, because if you want to teach computer science and you don't know even what it is, the curriculum makers don't know so exactly what it means, the teachers don't know exactly what it means, and then you're going to teach it. So I think we should... First of all, be more clear about what we want to teach if we want to teach computer science. But do you think that will ever be successful? I don't know. But I think if we don't answer this question, how should a teacher teach computer science? I recall my son in school, they had computer science. And what they did was putting the right color into Excel sheets. Photoshop, I think the Excel was compulsory and Photoshop was elective. That's what they think is computer science in a school. And I think this is really a problem. I must admit I'm personally in favor of some level of vagueness and openness. So many of these issues are practically resolved. I have been developing a new curriculum myself in business informatics, by the way. Then, of course, you have many of these delineation issues, but my experience is you never solve them, but you make some kind of practical decision. Okay, this is sufficiently important, but that would be nice, but we have only 120 ECTS. We don't have any good teacher on this. So it's a kind of emergent thing, and then it more or less condenses into something that you call computer science or whatever you call it. And I do think the advantage is that that is a bit more bottom-up and flexible, and you can change it more easily. It's questionable whether we ever will come to a real agreement in terms of a definition of what computer science is. There's also no definition of physics. And actually, I had a colleague that, well, I was in Groningen at the physics department and there were two professors. One was physical chemistry and the other was... Chemical physics. And they were in different departments. They were always fighting. So they were on each other PhD committees and they hated each other. And the PhD students were the victims of this. And actually, a colleague of mine actually wrote his PhD thesis called The Aborted Takeover. of chemistry by physics. So you could see chemistry as a branch of physics. You can actually find technical scientific arguments about why it should be, but that does not help. I think that the idea of disciplines is also kind of social organization things and not something inherent in science itself. Maybe let me add one point to this discussion about the naming of disciplines. So when I was a teenager, I was looking for a high school. So we have in Austria these technical high schools. And there was the new branch in Wiener Neustadt called EDVO. electronic data processing and organization, which was the informatics school. And I think no one nowadays uses the term EDV. In this time, now we have IT, now IKT. So I think it's also changing over time, the way things are branded. But I wanted to ask whether there are further answers. In particular, Walter, are there any remarks or answers, or maybe questions, if Hans accepts it, in the chat of our... lecture series session. No. Oh, ah. Maybe I give Astrid the word first. Thank you. To add to your curriculum question, I don't want to say that we are amazing here at TU Wien, but it comes a bit with the answer. What we have here in the informatics bachelor is a course that we call Ways of Thinking in Informatics. I think it's the first step because you mentioned it so nicely. I love this project that you introduced in the end. But one of the challenging things with all these projects is that you try to educate people in very different things, in whatever now is computer science, in engineering, in social sciences, in law. And all these things require different thinking styles. And we all have different thinking styles where we're really good at. Some are more analytic. Others are more creative. Others are more responsible in their thinking styles. And we all don't, yeah, we are all not brilliant in all of these. But what this ways of thinking and informatics course is teaching is that computer science is something different depending on your thinking style. You can have computational thinking. Then it's this and that. You can have responsible thinking. Then you look more at these matters. You can have criminal thinking even. Then you're interested in hacking and what you can do with technology. And that's an introduction and a bachelor. And now we are realizing the master, and what we're trying to do is for all the different master programs to have embedded ethics in there. So not to have this one ethics course that is this add-on. If you do this ethics course, you have the tick in your CV as well. but to have ethics as a module in different courses and to try to address it like that. But still, that's also not an easy, straightforward thing because you need to have the capabilities to teach these things. You need to know about policies. You need to know about governance to have that in there. And I'm originally a sociologist by training, ended already up in the PhD in human-computer interaction. And I can just tell the story a bit from the other side, that in sociology, for a long time, there was also the problem not only that we only love to describe what we observe and stop there and never feed it back, which frustrated me so much that I ended up in HCI, but there was also for a long time this, technology is not... a social actor we cannot socially interact with technology that's a very separate thing and it's still today like that in sociology that there's one camp saying okay there are socio-technical systems and another camp saying not really so also a long way to go at that end it's not only it's not only computer science that are lagging behind yeah Yeah, so the second point you make of embedded ethics, that happens more. Also Harvard, for example, has such a program that was part of the lecture series. Indeed, it's not just the individual ethics, but it's more the social governance issues. So that is certainly an approach you can take, and I think it's more useful also because then it's for students easier to see it in the context of a specific branch rather than very general. The first point is more it's quite common to have courses like computational thinking. And indeed, certainly if you look at different sciences, have their own indeed style of thinking. In that sense, it's cultural. That's why I also, when I came into AI, it was kind of different culture and different ways of argument, different kinds of issues, and you have to learn that. And especially computational thinking, I think the issue... is what are algorithms, what they do. I think that is a kind of central thing because you don't find that typically in other sciences. Okay, here we have one more answer. Just a brief remark regarding nuclear physics. I remember 25 years ago that several Austrian companies addressed me into looking for informaticians with this add-on expertise in nuclear physics. I asked them why, and they said, because in those countries, they were teaching a different form of mathematics, so we had to reach out for Russia, Ukraine, Belarus, and other countries, because this expertise was not available. So it seems there's a demand for that, at least in the IT sector. But I'm not sure whether the universities are not addressing it. Oh, that's a question. So, one more. Thanks. So the first thing that came to my mind was this problem calls for innovative ideas. And what came to my mind is to have some kind of hackathon in a curricula where students can freely bring innovative ideas to life. We do this in our university in some courses where we have legal tech hackathons or makeathons with students from electronics and computer science. But, I mean, this is something that calls for innovative ideas. Yeah. Thanks. I see one more hand. You have been on the list already. So thank you for the talk. I find the idea that we can influence the minds of people on a global scale with education very fascinating, and I think it's actually true. But I think that the whole core of affecting the whole globe and really resolving those issues of manipulating technology for nefarious purposes lies in the idea that we have to change education everywhere. education here, to make it more ethical, to make it more conscious of its impact on society, we change it in Europe, let's say even in the whole European Union, but United States, China, Russia, North Korea stay the same way they are right now in terms of their education, then we will not be able to achieve the global shift in the mind. in the mindsets. Or imagine a student who graduates from a very ethical computer science course, but then goes to work in a corporate where he or she is pressured into their culture of basically not looking at the consequences of their algorithms and so on. So I think we need to also find how we can exert influence over other countries. to make even small changes into the curriculums so that they are also on track with the ethical changes into the education system. And maybe perhaps we could also look at not only the secondary education, but also on the primary education and how we can even teach awareness about dangers of computer science and digital technologies, not only to computer scientists, but also to any... school student, so anyone who studies in the middle or high school, who will not end up maybe a computer scientist, they will end up in a completely different profession, but they will be aware of the dangers of digital technologies because they have been taught. And perhaps that could also diminish the danger somehow. Thank you. Yes, that would be indeed desirable. And personally, I'm very pragmatic. You have to start somewhere, and you have your own, I agree, very small area where you have some influence. There's also, I think, with the digital humanism initiative. We developed a textbook, actually. And actually I'm lecturing together with Anna from pieces from the textbook, so it's actually used. And the Digital Humanism Initiative also has developed a textbook for high schools in German. It is now and will be translated. So we are trying to do these kinds of things. The only thing you can do as a kind of movement is team up with other movements and publish stuff and try to influence things, and then we see how far it goes. In general, it's way too big, but also in the Cold War, at some point it changed. Kings and popes and emperors, were gone at some point in time, although this was kind of an eternal situation. So this is apparently the human deficit or something like that. So I agree, but the important point is to come to concrete actions on the ground and work from there. You don't know what your influence will be, and sometimes you are lucky, and sometimes you are not so lucky. That is the way it is. But it doesn't change the duties you have as a professional or as a scientist or as a citizen. Let's see whether the dean has an answer. No, the dean is doing marketing. I totally agree. First, we should change the whole world, but I agree with Hans, we have to start somewhere. And kind of to say information about that, that was the question or the kind of the request that we have to go to schools. We have our EduLab initiative at the Faculty of Informatics where they go into secondary schools. higher and lower, but they go also to primary schools, and they really try to kind of address these different issues of, you know, the pros and the cons of digitalization in our world. And the second kind of advertisement is that there are schools now who kind of try to teach more than Word and Excel in the high school. And one of the schools is kind of teaming up with the EduLab team and with the UNESCO Chair on Digital Humanism, and they are introducing a new subject called AI and Digital Humanism in the higher secondary. school and, you know, it's a first. I mean, you can say, what about the 30 or 50 kids which kind of, but at least it's a start and perhaps they spread the word and there's a snowball effect and, yeah, whatever. Yeah, also in my country, it came slowly into high schools and then it was basically, typically, a button push course for Word, Excel. which is totally useless because any 10-year-old can do that already. So you want to have some real thinking about computational issues and also the social impact of it. Just one remark in general about this discussion and definition of computer science. What I have learned from Christiane Floyd, she was the first female professor in computer science in the German-speaking part of the world at TU Berlin 1978. Informatics is a gestaltgebende Wissenschaft. It's a constructive science. And by constructing, you also... kind of change the environment where it is used. That is precisely the reason why hardcore theoretical physicists say it's not scientific. And therefore we are at a university so we can discuss this. We have arguments and contra-arguments and all is good. Maybe time for a final answer question. I have to ask you to pass the mic. Okay, thank you for your talk. So I totally agree about building it into the curriculum and so on. But again, we already heard that here. I mean, I started my bachelor's in 2018. And back then, we already had these course ways of thinking in informatics. In the fifth semester, there is another course like sociological foundations of informatics. But the issue I want to bring to you is that I felt like that most of my colleagues were not interested in this stuff. How do you deal with this issue that technical people generally just want to do technical stuff and not bother with all the social aspects attached to it? Because we can have the curriculum in so many forms. If the students don't like it and don't engage with it, how does this help? Yes, I know this. As a business informatics professor, I know this from personal experience. So I gave – that was in the beginning of the e-commerce period around just a bit before 2000. And I gave an introduction to information systems and electronic commerce. And you could – it was quite a big course with 100, 150 people. And then you could see – The computer scientists sitting over there and they were utterly bored. And indeed, precisely as you're saying, you had also business informatics people that found it interesting. Yeah. You can also say from a professional point of view. You have to have certain knowledge about, let's say, the social or the economic or the philosophical aspects of your discipline. Otherwise, you are not a fully grown professional or scientist. Because also in physics, personally, I find, let's say, General relativity, interesting, but I find electrodynamics for some reason totally boring, but still you have to do it. Yeah, okay. That's what becoming a physicist brings with it. You need to know about... In computer science, I'm personally totally not interested in operating systems, but if you want to be a complete... Computer scientists, yeah, you have to at least have some knowledge of it. So you can, educationally, you can think of ways to make it more interesting. I think that is possible. It's more, but then you have to, let's say, segment the different branches, because for computer scientists, it works differently than for information. So it is doable, but you do not always have the resources to split the group up and do something that really caters for their interests. This is the way it is. All right, I think we can... Come to an end, I want to say three thanks. So first of all, thanks to you for the lively discussion. We, in fact, can continue this now on an informal basis. And thanks to IWM, we even have some food with us here to do so. And finally, I would like to thank Hans for his presentation. Thank you very much.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.776,
+      "text": "Yes, good evening. My name is Andreas Steininger. I have the pleasure to welcome you to this talk by Professor Hans Ackermann. Professor Hans Ackermann is giving a course currently for our doctoral school, for our doctoral students, together with Anna Bohn. And he is also kind enough to give a talk for a more general audience, which is happening now. And we are looking forward to that before we go into the details there."
+    },
+    {
+      "start": 29.776,
+      "end": 58.576,
+      "text": "I would like to notify the students that do the current trends in computer science. I will give the list now through the classroom. And please make sure to have your signature beside your name. If your name is not on the list, just add it at the end of the list. This is just a proof of your presence, of course. Yes. Otherwise, I am happy to hand over to Stefan Voltran to introduce our speaker."
+    },
+    {
+      "start": 59.248,
+      "end": 86.656,
+      "text": "Thank you very much, Andreas. A warm welcome also from my side and on behalf of the Digital Humanism Initiative at TU Wien and IWM, the Institute for Human Science. Our initiative is streaming this talk also. It's part of the lecture series. So what is about IWM? What has IWM to do with today's talk?"
+    },
+    {
+      "start": 86.656,
+      "end": 111.648,
+      "text": "So we have a joint cooperation. IWM has a fellowship program for digital humanism where they invite each term one senior fellow and two junior fellows. And this term, the senior fellow is Hans Ackermann. I will say a few words about him in a minute. And we have, as part of this cooperation, the senior fellow at IWM."
+    },
+    {
+      "start": 111.648,
+      "end": 140.768,
+      "text": "also acts as guest professor here at TU Wien. And as Andreas has already mentioned, together this year, it's together with Anna Bohn, who is sitting there. And I'm mentioning Anna Bohn not also because she will be in the Digital Humanism Conference at the end of May. I think it's 26 to 28 of May, where we will have a session about teaching digital humanism. It's not only Anna on the panel, but also our dean."
+    },
+    {
+      "start": 140.768,
+      "end": 167.904,
+      "text": "Gerti Kappel, who are welcome also here very much. So what else to say? Ah, yeah, this Digital Humanism Fellowship Program is now in place since 2021. Ludger, help me. It's the fourth year, so it's not completely wrong what I'm saying. And it's funded by what is now the Ministry of Innovation, Mobility, and Infrastructure."
+    },
+    {
+      "start": 167.904,
+      "end": 196.832,
+      "text": "which has been the BMK, the famous BMK before. And I would also like to take the opportunity to say a big thank you to Ludger Hagedorn from IWM who is here for this, I would say, very fruitful and valuable cooperation that EUWIN has together with IWM in connection with this fellowship program. Thank you very much, Ludger, for this. So, what else? Now I'm coming to our speakers. Thanks, Hans, for..."
+    },
+    {
+      "start": 196.832,
+      "end": 223.696,
+      "text": "for your passion and for waiting. Hans Ackermans is Professor Emeritus for Business Informatics from Freie Universität Amsterdam, VU Amsterdam. But by education, he worked in physics, and he has received a cum laude PhD in theoretical physics in the field of nuclear reactions. So that's a quite interesting genesis."
+    },
+    {
+      "start": 223.76,
+      "end": 246.8,
+      "text": "Besides that, he's the founding director of the Interdisciplinary Network Institute at Amsterdam. So this institute studies the interaction between digital technology and society, and this also already kind of bridges the gap to digital humanism, where Hans has been part of our initiative here at TU Wien since the very beginning."
+    },
+    {
+      "start": 246.8,
+      "end": 275.504,
+      "text": "I would like to mention that he was on the advisory board of our faculty where this has been discussed and then started under the responsibility and by the motion of our former team, Hannes Wertner. What else do I want to say? He is now very engaged in projects in the Global South, but I think you will say a few things about this during your talk."
+    },
+    {
+      "start": 275.536,
+      "end": 304.528,
+      "text": "Yeah. Yeah. And, yeah, I've mentioned that he's a digital humanist from the very beginning, and we are very happy to have you as guest professor at the Uwin, this term, and to have you for this talk today, and we are looking forward very much to your presentation. Stefan, thank you very much for your kind introduction."
+    },
+    {
+      "start": 304.848,
+      "end": 329.28,
+      "text": "Decolonizing the future. I happen to be rather fond of inventing attractive titles for articles and talks I give. So I will not talk about decolonization in the usual sense of..."
+    },
+    {
+      "start": 329.28,
+      "end": 354.192,
+      "text": "let's say stolen symbolic art objects that need to be returned to the countries and peoples of where they came from but I use it more in a metaphorical way with respect to computer science and as a program of action I think"
+    },
+    {
+      "start": 354.192,
+      "end": 382.96,
+      "text": "So decolonization should be directed at the future, in a sense, not at the past. Although the roots are in the past, and I will say a few words on that in the realm of computer science, broadly speaking. For those who are in a hurry, I here give away the whole summary of the talk."
+    },
+    {
+      "start": 384.112,
+      "end": 410.544,
+      "text": "The key point I want to make is that the nature and the position of computer science has changed drastically over the decades. And I think I am, given my old age, I am now entitled to say these kinds of things because I don't know them just from the history books, but I have..."
+    },
+    {
+      "start": 410.544,
+      "end": 440.192,
+      "text": "lived experience through all these things and what is interesting is that computer science used to be a very technical subject and it had become more and more and more and more social until the point that now digital technologies are a central force and source of power in our society and that means that computer science also has a very different"
+    },
+    {
+      "start": 440.192,
+      "end": 460.928,
+      "text": "societal position and cannot continue in, let's say, the old-fashioned safe ways. That's why I say it's at the crossroads. Indeed, I'm working with Anna a lot on issues of education and big European projects. And I think that..."
+    },
+    {
+      "start": 460.928,
+      "end": 488.848,
+      "text": "One of the issues we have to address rather urgently is how to redesign our curricula so that they reflect the current situation, the future situation, and not a long past situation. And as a sideshow, I will use, like decolonization, I will use metaphor as a kind of organizing principle."
+    },
+    {
+      "start": 490.288,
+      "end": 520.24,
+      "text": "This is a very old 1986 famous book, business school book, on images of organization. It's a bestseller book. And what it does, this I took from Wikipedia, it describes organizations from different viewpoints in a metaphorical sense."
+    },
+    {
+      "start": 520.784,
+      "end": 548.96,
+      "text": "So the claim of the book is that you have different metaphors to describe organizations and that gives different insights into organizations. Basically, you can see an organization as a machine type of thing, or you can see it as an organism living type of thing, or as a dynamic, or as a political system."
+    },
+    {
+      "start": 548.96,
+      "end": 576.4,
+      "text": "Also as an instrument of domination. So this is a really interesting book. I can recommend it. If you want to see a psychic prison, then already given the results of the recent US election, you see here what a psychic prison in our society might be."
+    },
+    {
+      "start": 577.104,
+      "end": 602.128,
+      "text": "The point I want to make here is that we can apply it to industrial organizations or business organizations, but we can apply it to science as well, including computer science, and that is basically what I'm going to do. I think that, so that is what I call images of informatics and computer science. In the very old days,"
+    },
+    {
+      "start": 606.0,
+      "end": 635.088,
+      "text": "As Stefan said, I am a theoretical physicist. Originally, I published quite a lot of theoretical physics and nuclear reactions. And then I came into computer science and especially AI in the 80s. And that was a kind of cultural change because I knew how to publish in journals."
+    },
+    {
+      "start": 635.088,
+      "end": 664.896,
+      "text": "But if you switch from theoretical physics to AI, how the game is played and what the issues are is really very different. So these are different cultures. And one important, that was quite striking as a physicist, one important general idea about what computer science is, and the word does already say it,"
+    },
+    {
+      "start": 664.896,
+      "end": 694.432,
+      "text": "is it's about the machine and the whole machine idea. This is a book from my former colleague, Andy Tenenbaum, and he is a really hardcore engineer, no compromises, and this is the cover of one of his very well-known books. But that is what computer science is. It's all about the machine. Nothing else exists."
+    },
+    {
+      "start": 694.432,
+      "end": 723.984,
+      "text": "So why not? I always have thought that computer science is a very strange name because we do not call telecommunications handy science. And I think statisticians would be very happy to call themselves dice science. But still, this is a picture or an image of what computer science is. And actually, at that time,"
+    },
+    {
+      "start": 723.984,
+      "end": 751.84,
+      "text": "It has been dominant for decades. And so there is no social element in it. Then you had a kind of competing tradition. And that is more the theoretical idea that it is not a machine and the engineering of the machine."
+    },
+    {
+      "start": 751.84,
+      "end": 780.96,
+      "text": "But it is the theoretical correct description of the machine and what it does. And that is something like in the high ground of science and in theoretical physics, which of course was way more scientific than the new kid on the block, which was computer science. And you wanted to get rid also this messy trial and error engineering."
+    },
+    {
+      "start": 780.96,
+      "end": 806.88,
+      "text": "So the theory people looked down upon the engineers because that was not really scientific. And a good example here is another Dutch, very well-known figure, Edgar Dijkstra. He wrote a famous article in 1968."
+    },
+    {
+      "start": 806.88,
+      "end": 834.336,
+      "text": "Go-to statement considered harmful. And basically, that was the other dominating stream of thought about computer science. So that was more theoretical, symbolic logic, mathematical equations. And the idea was that computer science should become a real exact science modeled after."
+    },
+    {
+      "start": 834.336,
+      "end": 863.84,
+      "text": "Especially theoretical physics and mathematics. And actually that was also, you had different branches in computer science already from the beginning. But these two were the dominating ones at many universities. And you see here, that is interesting, that even the term itself scientific is used as a power instrument in..."
+    },
+    {
+      "start": 863.84,
+      "end": 891.824,
+      "text": "in the fight for money and prestige. And this is where you see, I think, the interesting, metaphorically interesting notion of organization. Then, that humans exist became clear very slowly to computer scientists after a long time."
+    },
+    {
+      "start": 892.24,
+      "end": 918.832,
+      "text": "And human-computer interaction established itself slowly with a lot of resistance. And I know that from my personal experience. Also in my university, which has similar sizes here, the first person on human-computer interaction was only appointed somewhere in the 90s."
+    },
+    {
+      "start": 919.088,
+      "end": 947.248,
+      "text": "And this is a very well-known book. I have it in my own library. So this stuff is from the 1990s. Also notions like socio-technical system was a very big new invention that a technical system could have social aspects. This also at my university, it was always the talk."
+    },
+    {
+      "start": 947.248,
+      "end": 973.968,
+      "text": "This is soft stuff. And actually business informatics suffered the same fate and your dean will know that and the previous dean also. Business informatics was also, yeah, very practical and useful."
+    },
+    {
+      "start": 974.0,
+      "end": 1003.216,
+      "text": "And especially business informatics more than human computer. You can earn a lot of money with it. So that's ranked up a little bit. But then the questions in the fight were, is this scientific? Then the question is, do you have a theory modeled after, let's say, general relativity or whatever?"
+    },
+    {
+      "start": 1003.216,
+      "end": 1032.336,
+      "text": "that is the other branch, is this good engineering or are you just trying out things and see what happens? That was a lot of criticism on human-computer interaction. Then, first the human entered in the 1990s, but artificial intelligence also came in as a kind of"
+    },
+    {
+      "start": 1032.4,
+      "end": 1060.8,
+      "text": "Alien immigrant. I do recall at my own university, when I was appointed in the early 90s and in Amsterdam in the late 90s, there was a whole debate in our faculty, is AI actually a part of computer science or a proper part of computer science? And that was directed actually to my colleague Frank van Harmelen."
+    },
+    {
+      "start": 1060.8,
+      "end": 1088.608,
+      "text": "He just came back from Edinburgh where he did his PhD in AI and he was on the road to be appointed to a professor of artificial intelligence. And the debate was whether we should have a professor of artificial intelligence in the first place. Actually, in my own case, I was appointed as professor of business informatics."
+    },
+    {
+      "start": 1088.608,
+      "end": 1116.144,
+      "text": "Then when I came in Amsterdam, I found out, and they told me, that they had been worrying for more than two years about the issue of whether or not to appoint a professor of business informatics. In AI, you had indeed the same kind of question. What is the theory of AI? Or is it just..."
+    },
+    {
+      "start": 1116.176,
+      "end": 1146.0,
+      "text": "Heuristic programming. You can't be serious. So one of the objections was these AI people are not able to provide us with an algorithmic complexity analysis. And rebuttal was more or less. We work on so difficult problems that they are always NP-hard that doesn't..."
+    },
+    {
+      "start": 1146.864,
+      "end": 1175.184,
+      "text": "You cannot give an easy complexity analysis. Also, this heuristic rule of thumb, also the reasoning on the basis of rule of thumb, that is fishy and not exact. Talking about metaphor, AI itself is full of metaphor."
+    },
+    {
+      "start": 1176.272,
+      "end": 1205.088,
+      "text": "And I do not mean that in a pejorative sense, but if you just take a list of major AI fields, expert systems, then there's a whole rather metaphorical use of the notion of expert. But it comes with all kinds of connotations, some good."
+    },
+    {
+      "start": 1205.088,
+      "end": 1229.312,
+      "text": "Some not so good, some totally wrong. The same holds for knowledge as a thing or ontology. I have done a lot of work on ontology. Philosophers really hated the use of ontology, the term ontology by computer scientists."
+    },
+    {
+      "start": 1229.312,
+      "end": 1254.592,
+      "text": "And it's true, the way it is used in computer science is totally different from what philosophers mean by that. On the other hand, you can say what ontology or the notion of ontology did was moving away the attention from the machine stuff to the real world. The claim for ontology, that's a bit, let's say."
+    },
+    {
+      "start": 1254.592,
+      "end": 1278.4,
+      "text": "kind of philosophical realism is if you say, if you have a string, a table in a computer, then table refers to something like this. And what you try to do is model some kind of world in computer terms, but the reference is to"
+    },
+    {
+      "start": 1278.4,
+      "end": 1306.656,
+      "text": "Real things are outside the machine. And it really helped to do that. And that was a big change in computer science. The same holds for neural networks. Do neurons in computer science have anything to do with real neurons? I don't think so. I worked a lot on agents and multi-agents. And it was always intelligent agent systems."
+    },
+    {
+      "start": 1306.656,
+      "end": 1335.696,
+      "text": "I worked in the area of the energy transition, smart electricity grids, where agents represent machines, devices, windmills, solar refrigerator. And then you find out that multi-agent systems are very useful, but the agents are pretty stupid, actually. And the secret is in their interaction, not in what they know."
+    },
+    {
+      "start": 1339.152,
+      "end": 1368.432,
+      "text": "So this is a work of Luke Stills. He was at the workshop some months ago. He was very active in this early period of knowledge-based systems. He developed his own approach, components of expertise. At that time, I worked with him quite a lot. So if you look at how the..."
+    },
+    {
+      "start": 1368.432,
+      "end": 1396.176,
+      "text": "center of gravity in computer science has switched over time. So you had a very technical and theoretical dominance in the 1950s, in the 1960s, in the 1970s. Then it moved to, with especially human-computer interaction, there was this notion of socio-technical."
+    },
+    {
+      "start": 1396.304,
+      "end": 1425.36,
+      "text": "And now I would claim that the social has not only become increasingly central to informatics, but it's also the other way around. Information and digital technologies are major forces of power in restructuring society itself. And in that sense, they are at the center of our era."
+    },
+    {
+      "start": 1425.36,
+      "end": 1455.168,
+      "text": "For better or worse? This is an interesting article with which I personally disagree, but the point is interesting. So this is, I think, 2020 by Connolly claiming or saying that computing under the current circumstances actually belongs in the social science."
+    },
+    {
+      "start": 1455.168,
+      "end": 1483.632,
+      "text": "I think this is interesting to think about. I do not believe it. I did a lot of interdisciplinary work in different sciences. My experience is that what is different in social science is that it typically does not have a design, a notion of design. Social scientists see themselves as observing and analyzing."
+    },
+    {
+      "start": 1483.632,
+      "end": 1512.784,
+      "text": "some piece of social reality. But computer scientists do design in some way. You make machines that do or systems that do something. And this design notion is pretty alien already traditionally to social science."
+    },
+    {
+      "start": 1514.352,
+      "end": 1543.984,
+      "text": "What is, I think, important to see is that digital technology, and this is basically what Habermas says, Habermas became well-known around 1960, and his first book was actually a structural change of the public sphere and deliberative politics."
+    },
+    {
+      "start": 1543.984,
+      "end": 1567.6,
+      "text": "The claim basically is that emergence of mass media, and at that time especially television, actually has influenced and restructured the wider societal discussion on politics and social issues. So it changed public and political discourse."
+    },
+    {
+      "start": 1567.6,
+      "end": 1593.04,
+      "text": "And more recently, this book is I think from 23 or something, he claims that there is another structural change of public discourse created by, in this case, digital technologies, especially social media, and that actually the algorithms that were used"
+    },
+    {
+      "start": 1593.04,
+      "end": 1620.016,
+      "text": "to add algorithms that were used to manipulate consumer behavior, has told big tech how to use these algorithms also to manipulate social and political behavior. That is a structural change. I think given the recent political developments, there's a lot to say in favor of such a viewpoint."
+    },
+    {
+      "start": 1624.528,
+      "end": 1652.896,
+      "text": "So to come to decolonization or colonization, if you see the digital space or the digital world and you see it as an image of a world like our planet, then what is going on now digitally is big companies try to conquer."
+    },
+    {
+      "start": 1652.896,
+      "end": 1680.928,
+      "text": "Different parts of the digital space in competition with each other. They lead to enormous concentration of power already in the digital technology sector. But these days also broader because they penetrate in very different sectors. For example, the digitization of health."
+    },
+    {
+      "start": 1680.928,
+      "end": 1704.384,
+      "text": "In the governance of society, where, for example, AI systems are blindly used to make decisions about social security. There has been a very big scandal in the Netherlands itself on that, where 70,000 children were the victim of wrong decisions."
+    },
+    {
+      "start": 1704.384,
+      "end": 1731.008,
+      "text": "by the administrative authorities and even many cases that children, because of the financial troubles in withdrawing social security and social benefits, that families ran into extreme financial difficulties, had to sell their houses, separated."
+    },
+    {
+      "start": 1731.008,
+      "end": 1760.256,
+      "text": "Children were even placed into custody only because there was a very harsh policy on so-called combating fraud. So digital big tech is not only a big sector in itself where you see land grabbing and mining and digital value extraction."
+    },
+    {
+      "start": 1760.256,
+      "end": 1783.744,
+      "text": "It has now installed itself in the heart of the political system. It is installing itself with now the current build-up of defense spending that goes with very big contracts."
+    },
+    {
+      "start": 1783.744,
+      "end": 1800.432,
+      "text": "In the same way as you saw in the Cold War, I think there are a lot of parallels between the Cold War and the current situation, but with the different technologies. At that time, it was the atom bomb."
+    },
+    {
+      "start": 1801.072,
+      "end": 1829.68,
+      "text": "And at this time it's a digital, but I think the parallels are very clear. What you also see is an attack on civil society. So apparently intellectuals, universities, artists are seen as some kind of enemy that must be, we must get rid of them."
+    },
+    {
+      "start": 1832.304,
+      "end": 1861.392,
+      "text": "And the attack on education in the United States, so the winding down of the education department, because they are all radicals and Marxists. So we have an important situation. It's not just that digital technology is..."
+    },
+    {
+      "start": 1861.392,
+      "end": 1890.208,
+      "text": "lobbying for its own interests. Like every company of a certain size has a lobby office in Brussels. And so they try to prevent basically something like the AI Act. Any regulation stifles innovation is the slogan. And that is lobbying."
+    },
+    {
+      "start": 1890.208,
+      "end": 1916.848,
+      "text": "But now it's a bit different. Now the lobbyists are themselves the government and make the rules. So that is a qualitatively different situation. And given where things go, even the very idea of human rights, equality, justice, democracy, universal human values are endangered by that."
+    },
+    {
+      "start": 1916.848,
+      "end": 1946.064,
+      "text": "And you see that very clearly with respect to, let's say, the racial issues in countries, immigrants, women, more and more. So that is, I think, a task for digital humanism to address these kinds of things. So I think there is a kind of what you might call a kind of Oppenheimer moment."
+    },
+    {
+      "start": 1946.608,
+      "end": 1973.264,
+      "text": "The famous story is that Oppenheimer cited the Bhagavad Gita when the first atomic bomb explosion happened. And that came really as a shock to the 5,000 to 10,000 physicists that had been working on the atom bomb."
+    },
+    {
+      "start": 1974.672,
+      "end": 2002.928,
+      "text": "And I think for digital technologies, so also for computer science, I think this is a kind of Oppenheimer moment that it is really a crossroads that things can go very wrong if you don't do anything. So that is what I mean with digital decolonization."
+    },
+    {
+      "start": 2004.496,
+      "end": 2032.576,
+      "text": "There is land grabbing of the digital space. There is mining of value extraction, especially via digital data. And that is not to the benefit of society as a whole and really is exclusive. So that's..."
+    },
+    {
+      "start": 2032.576,
+      "end": 2061.36,
+      "text": "So we need some kind of program. These are the United Nations Sustainable Development Goals. And my colleague Anna Bonn in one of her talks some time ago, I think it was at the summer school here, invented a digital sustainable development goal for a fair and inclusive digital society. And indeed, this is..."
+    },
+    {
+      "start": 2061.968,
+      "end": 2091.392,
+      "text": "It's only partly a joke. Indeed, I think we need such a program to think about these kinds of things. And in terms of education, given the totally different position of computer science, the different position of digital technology and the effect it has, I think we must really, and I'm talking here in a university,"
+    },
+    {
+      "start": 2091.392,
+      "end": 2118.512,
+      "text": "So we really have to rethink our curricula fundamentally. And I think that must be rather fundamental. We already have these discussions, okay, shouldn't there be some kind of philosophy of computer science as part of the curriculum or ethics? And I think that is not enough."
+    },
+    {
+      "start": 2118.832,
+      "end": 2143.664,
+      "text": "My experience with ethics, for example, is in the West at least, ethics goes with the notion of individual behavior. What should I do? What shouldn't I do? The experience is that many of the real issues in computer science are not individual."
+    },
+    {
+      "start": 2143.664,
+      "end": 2170.864,
+      "text": "and are not solved by just individual action, but are societal and are systematic. And a good example is the notion of bias. The notion of bias has a connotation that these are individuals that have biased views, but there is a whole literature, and I have up there a few very good books on this,"
+    },
+    {
+      "start": 2170.864,
+      "end": 2200.592,
+      "text": "Bias is really a social thing and cannot simply be made smaller or may vanish by individual actions. Also, I think, given the developments and given the societal position of digital technology, we have to think about governance issues."
+    },
+    {
+      "start": 2201.744,
+      "end": 2230.32,
+      "text": "how to run technology and policy. And that should be addressed, I think, in some way in our curricula. That is not so easy, but I think current times ask for that. And I also think the idea that you can stay neutral is very difficult or apolitical."
+    },
+    {
+      "start": 2230.96,
+      "end": 2256.016,
+      "text": "I think it becomes increasingly implausible. But of course the question is, okay, you want to give your students good stuff, but it cannot be neutral as if you are looking at the stars and are just a disinterested observer, as the old positivist philosophy had it."
+    },
+    {
+      "start": 2258.448,
+      "end": 2280.816,
+      "text": "And actually, we are working on these kinds of issues. So Anna is the coordinator of a 10 million euro international project on developing a new international master study, which is interdisciplinary."
+    },
+    {
+      "start": 2280.816,
+      "end": 2308.272,
+      "text": "So if you take it more to the extreme, one way is you have computer science curricula, you have to enrich them with a number of other topics, and then the question is what they are and how you do it. This idea is, our idea is that we are working on a master in principle for all directions, and that you need some..."
+    },
+    {
+      "start": 2308.272,
+      "end": 2337.824,
+      "text": "grounding in computing, but also on regulation. You have to have an understanding of what the legal principles are on the basis of which, for example, the AI Act or GDPR works. So we have a lot of, and the same holds for social science, humanities involved, economics."
+    },
+    {
+      "start": 2337.824,
+      "end": 2365.888,
+      "text": "So this is a pretty complicated design issue. And also the issue is how far you can get given the people, also as teachers you have. But this is at least an attempt to think about education that is really up to date and covers important issues that will..."
+    },
+    {
+      "start": 2365.888,
+      "end": 2388.432,
+      "text": "be there to stay for a very long time. So then I come to the summary again. So this is exactly the same slide as the second one. So the nature, the position and also the self image has been changing."
+    },
+    {
+      "start": 2389.168,
+      "end": 2417.904,
+      "text": "roughly speaking, very roughly speaking, from purely technical and mathematical to socio-technical to what I now call techno-social. Once the social aspects are dominant, then you have to switch it around. But that is just my terminology. I also think that the self-image of computer science or informatics is actually lagging behind."
+    },
+    {
+      "start": 2419.024,
+      "end": 2448.128,
+      "text": "That has always been the case, by the way. But we can less and less afford that. Digital technology is not just technology, but it is really a source of power, an instrument of domination, like Gareth Morgan also says. So we have to rethink what computer science is these days. And that includes, I think,"
+    },
+    {
+      "start": 2448.128,
+      "end": 2476.096,
+      "text": "how to redesign education curricula, but also issues of governance. And I would say democratization of technology come on to the computer science agenda. Thank you very much. And then my proposal would be that we do not have a Q&A."
+    },
+    {
+      "start": 2476.096,
+      "end": 2506.064,
+      "text": "but the other way around. Because I am interested, because I do this work on curricula, I don't want you to ask the questions and I give the answers. I would like to have it the other way around. I would like to ask the question, okay, what should we do with the curricula? You give me the answers. Who wants to answer?"
+    },
+    {
+      "start": 2506.096,
+      "end": 2535.344,
+      "text": "By the way, thank you for this excellent talk, Hans. Erich has an answer. I have an answer. I have a short of an answer. Thank you so much. Wonderful issues that, of course, as you know, resonate beautifully with digital humanism and what we've been doing. So one answer would be, I think there is a problem in the term computer science, and the problem is with science."
+    },
+    {
+      "start": 2535.344,
+      "end": 2564.048,
+      "text": "In German, it's a bit better because we tend to call it informatics, which makes it very clear it's an engineering discipline. And engineering is about the creation of system. So I think this is important to emphasize. When you emphasize the design aspect, then you make it very clear that this also involves the human side, rather than just saying it's only about formal computer science, which I think is a completely different way."
+    },
+    {
+      "start": 2564.048,
+      "end": 2589.488,
+      "text": "And then the distance to this techno-science, philosophers of technology would argue that science has always been techno-science, but it's a different route. Then the difference is a bit smaller because then we know it's about design. It's about interacting with systems and, of course, also with people. I think that makes it easier. Emphasize the design aspect if you want an answer."
+    },
+    {
+      "start": 2589.488,
+      "end": 2616.32,
+      "text": "And can I just say something about philosophy? Of course, Aristotle knew that ethics was about the good life and that humans are not just the individuals but are political animals and live in society. Aristotle doesn't use the good life in the individual sense. Somehow he was forgotten later, yeah. No, I agree. Computer science."
+    },
+    {
+      "start": 2616.32,
+      "end": 2644.176,
+      "text": "I found it always a very strange and wrong term, but it's the American term. In Europe, generally, it's more informatics. In Dutch, it's informatica, informatiek, informatiek. That also says it's not about a machine. It's about information and communication. That happens to be at least partly."
+    },
+    {
+      "start": 2644.176,
+      "end": 2673.712,
+      "text": "I think the design notion is important. That makes it into some sort of engineering thing that might also be partly social in nature. Maybe even a bit artistic and playful because it's about creation, so it's creativity, and then it becomes a completely different thing. Then it becomes clearer that it's about creating something."
+    },
+    {
+      "start": 2673.712,
+      "end": 2703.712,
+      "text": "interacts with people, as I said. Further answers? Thank you very much. Thank you very much for the talk. I'm also at IBM as a fellow. I would like to turn the question around to the Oppenheimer moment. So what happened after Oppenheimer? Did we begin to teach nuclear physicists morality? Did we include something in the physics?"
+    },
+    {
+      "start": 2703.712,
+      "end": 2730.16,
+      "text": "physical curriculum that was distilled from the experience that those physicists have back in the 40s, to just judge what are we going to do now with computer science? Well, as a physicist, I would say that the physicists did not a very good job."
+    },
+    {
+      "start": 2731.984,
+      "end": 2761.072,
+      "text": "What typically happened, actually, nuclear physics was one of the biggest areas in the 1950s and the 60s of physics broadly. And these issues were not discussed in the regular physics literature. What you did have was, let's say, like with digital humanism, concerned scientists."
+    },
+    {
+      "start": 2761.488,
+      "end": 2786.032,
+      "text": "That formed committees and organized conferences. So for example, Albert Einstein is very well known as an activist against the nuclear arms race and war. Although he wrote in 1940 a letter to Roosevelt."
+    },
+    {
+      "start": 2786.224,
+      "end": 2812.896,
+      "text": "basically saying there are very dangerous developments in Hitler Germany in developing the atomic bomb and it is important that they don't get it first. So he recommended Roosevelt to act upon this. That happened through the Los Alamos project that you see in the Oppenheimer film."
+    },
+    {
+      "start": 2812.896,
+      "end": 2842.112,
+      "text": "These were, let's say, individuals making a choice to do that. There were different committees and organizations that have had an effect on developments. For example, the Non-Nuclear Proliferation Treaty was a result also of physicists."
+    },
+    {
+      "start": 2842.112,
+      "end": 2871.04,
+      "text": "trying to invent solutions for the Cold War issues. So they were influential, but it was a small branch. For example, I studied in the 70s, and the only place where this came up was not in the regular curriculum, but there was a professor who was committed to these kinds of things, and he gave a special extra curriculum."
+    },
+    {
+      "start": 2871.04,
+      "end": 2900.624,
+      "text": "curricular course, the social responsibility of the scientist. So that happened. But it was not part of a normal curriculum. I think we should strive for making these kinds of issues, they are simply professionally important. So they must be in the curriculum. If you want to be a good professional, this must be in the curriculum and not a kind of outside show."
+    },
+    {
+      "start": 2901.68,
+      "end": 2929.568,
+      "text": "So I think in terms of physics, so-so. But that's my personal view, of course. Andreas Steininger. I want to come back to your question, Hans, about the curricula and maybe coming back to what you said in your talk and what Erich Brehm also commented about defining computer science. I think it's completely fuzzy what computer science actually means to..."
+    },
+    {
+      "start": 2929.568,
+      "end": 2955.872,
+      "text": "to many people, actually to most of us, and I would bet if in this room we were to define computer science in two sentences, we would sit here for hours and maybe not come out with a single result there. And I think that's a problem, because if you want to teach computer science and you don't know even what it is, the curriculum makers don't know so exactly what it means, the teachers don't know exactly what it means, and then you're going to teach it. So I think we should..."
+    },
+    {
+      "start": 2955.872,
+      "end": 2977.68,
+      "text": "First of all, be more clear about what we want to teach if we want to teach computer science. But do you think that will ever be successful? I don't know. But I think if we don't answer this question, how should a teacher teach computer science? I recall my son in school, they had computer science. And what they did was putting the right color into Excel sheets."
+    },
+    {
+      "start": 2977.68,
+      "end": 3004.656,
+      "text": "Photoshop, I think the Excel was compulsory and Photoshop was elective. That's what they think is computer science in a school. And I think this is really a problem. I must admit I'm personally in favor of some level of vagueness and openness. So many of these issues are practically resolved."
+    },
+    {
+      "start": 3004.784,
+      "end": 3034.112,
+      "text": "I have been developing a new curriculum myself in business informatics, by the way. Then, of course, you have many of these delineation issues, but my experience is you never solve them, but you make some kind of practical decision. Okay, this is sufficiently important, but that would be nice, but we have only 120 ECTS."
+    },
+    {
+      "start": 3034.112,
+      "end": 3060.112,
+      "text": "We don't have any good teacher on this. So it's a kind of emergent thing, and then it more or less condenses into something that you call computer science or whatever you call it. And I do think the advantage is that that is a bit more bottom-up and flexible, and you can change it more easily."
+    },
+    {
+      "start": 3061.776,
+      "end": 3090.832,
+      "text": "It's questionable whether we ever will come to a real agreement in terms of a definition of what computer science is. There's also no definition of physics. And actually, I had a colleague that, well, I was in Groningen at the physics department and there were two professors. One was physical chemistry and the other was..."
+    },
+    {
+      "start": 3090.832,
+      "end": 3119.76,
+      "text": "Chemical physics. And they were in different departments. They were always fighting. So they were on each other PhD committees and they hated each other. And the PhD students were the victims of this. And actually, a colleague of mine actually wrote his PhD thesis called The Aborted Takeover."
+    },
+    {
+      "start": 3119.76,
+      "end": 3148.944,
+      "text": "of chemistry by physics. So you could see chemistry as a branch of physics. You can actually find technical scientific arguments about why it should be, but that does not help. I think that the idea of disciplines is also kind of social organization things and not something inherent in science itself."
+    },
+    {
+      "start": 3152.688,
+      "end": 3172.944,
+      "text": "Maybe let me add one point to this discussion about the naming of disciplines. So when I was a teenager, I was looking for a high school. So we have in Austria these technical high schools. And there was the new branch in Wiener Neustadt called EDVO."
+    },
+    {
+      "start": 3172.944,
+      "end": 3201.872,
+      "text": "electronic data processing and organization, which was the informatics school. And I think no one nowadays uses the term EDV. In this time, now we have IT, now IKT. So I think it's also changing over time, the way things are branded. But I wanted to ask whether there are further answers. In particular, Walter, are there any remarks or answers, or maybe questions, if Hans accepts it, in the chat of our..."
+    },
+    {
+      "start": 3201.872,
+      "end": 3229.088,
+      "text": "lecture series session. No. Oh, ah. Maybe I give Astrid the word first. Thank you. To add to your curriculum question, I don't want to say that we are amazing here at TU Wien, but it comes a bit with the answer. What we have here in the informatics bachelor is a course that we call Ways of Thinking in Informatics."
+    },
+    {
+      "start": 3229.088,
+      "end": 3257.808,
+      "text": "I think it's the first step because you mentioned it so nicely. I love this project that you introduced in the end. But one of the challenging things with all these projects is that you try to educate people in very different things, in whatever now is computer science, in engineering, in social sciences, in law. And all these things require different thinking styles. And we all have different thinking styles where we're really good at."
+    },
+    {
+      "start": 3257.808,
+      "end": 3284.928,
+      "text": "Some are more analytic. Others are more creative. Others are more responsible in their thinking styles. And we all don't, yeah, we are all not brilliant in all of these. But what this ways of thinking and informatics course is teaching is that computer science is something different depending on your thinking style. You can have computational thinking. Then it's this and that. You can have responsible thinking."
+    },
+    {
+      "start": 3284.928,
+      "end": 3311.904,
+      "text": "Then you look more at these matters. You can have criminal thinking even. Then you're interested in hacking and what you can do with technology. And that's an introduction and a bachelor. And now we are realizing the master, and what we're trying to do is for all the different master programs to have embedded ethics in there. So not to have this one ethics course that is this add-on. If you do this ethics course, you have the tick in your CV as well."
+    },
+    {
+      "start": 3311.904,
+      "end": 3341.648,
+      "text": "but to have ethics as a module in different courses and to try to address it like that. But still, that's also not an easy, straightforward thing because you need to have the capabilities to teach these things. You need to know about policies. You need to know about governance to have that in there. And I'm originally a sociologist by training, ended already up in the PhD in human-computer interaction."
+    },
+    {
+      "start": 3341.648,
+      "end": 3367.008,
+      "text": "And I can just tell the story a bit from the other side, that in sociology, for a long time, there was also the problem not only that we only love to describe what we observe and stop there and never feed it back, which frustrated me so much that I ended up in HCI, but there was also for a long time this, technology is not..."
+    },
+    {
+      "start": 3367.008,
+      "end": 3395.84,
+      "text": "a social actor we cannot socially interact with technology that's a very separate thing and it's still today like that in sociology that there's one camp saying okay there are socio-technical systems and another camp saying not really so also a long way to go at that end it's not only it's not only computer science that are lagging behind yeah"
+    },
+    {
+      "start": 3395.84,
+      "end": 3424.032,
+      "text": "Yeah, so the second point you make of embedded ethics, that happens more. Also Harvard, for example, has such a program that was part of the lecture series. Indeed, it's not just the individual ethics, but it's more the social governance issues."
+    },
+    {
+      "start": 3424.032,
+      "end": 3449.552,
+      "text": "So that is certainly an approach you can take, and I think it's more useful also because then it's for students easier to see it in the context of a specific branch rather than very general. The first point is more it's quite common to have courses like computational thinking."
+    },
+    {
+      "start": 3449.936,
+      "end": 3478.192,
+      "text": "And indeed, certainly if you look at different sciences, have their own indeed style of thinking. In that sense, it's cultural. That's why I also, when I came into AI, it was kind of different culture and different ways of argument, different kinds of issues, and you have to learn that. And especially computational thinking, I think the issue..."
+    },
+    {
+      "start": 3478.64,
+      "end": 3508.544,
+      "text": "is what are algorithms, what they do. I think that is a kind of central thing because you don't find that typically in other sciences. Okay, here we have one more answer. Just a brief remark regarding nuclear physics. I remember 25 years ago that several Austrian companies addressed me into looking for informaticians with this add-on expertise in nuclear physics."
+    },
+    {
+      "start": 3508.544,
+      "end": 3538.064,
+      "text": "I asked them why, and they said, because in those countries, they were teaching a different form of mathematics, so we had to reach out for Russia, Ukraine, Belarus, and other countries, because this expertise was not available. So it seems there's a demand for that, at least in the IT sector. But I'm not sure whether the universities are not addressing it. Oh, that's a question. So, one more."
+    },
+    {
+      "start": 3538.512,
+      "end": 3558.432,
+      "text": "Thanks. So the first thing that came to my mind was this problem calls for innovative ideas. And what came to my mind is to have some kind of hackathon in a curricula where students can freely bring innovative ideas to life."
+    },
+    {
+      "start": 3558.432,
+      "end": 3585.712,
+      "text": "We do this in our university in some courses where we have legal tech hackathons or makeathons with students from electronics and computer science. But, I mean, this is something that calls for innovative ideas. Yeah. Thanks. I see one more hand. You have been on the list already."
+    },
+    {
+      "start": 3587.888,
+      "end": 3617.456,
+      "text": "So thank you for the talk. I find the idea that we can influence the minds of people on a global scale with education very fascinating, and I think it's actually true. But I think that the whole core of affecting the whole globe and really resolving those issues of manipulating technology for nefarious purposes lies in the idea that we have to change education everywhere."
+    },
+    {
+      "start": 3617.456,
+      "end": 3641.28,
+      "text": "education here, to make it more ethical, to make it more conscious of its impact on society, we change it in Europe, let's say even in the whole European Union, but United States, China, Russia, North Korea stay the same way they are right now in terms of their education, then we will not be able to achieve the global shift in the mind."
+    },
+    {
+      "start": 3641.28,
+      "end": 3669.056,
+      "text": "in the mindsets. Or imagine a student who graduates from a very ethical computer science course, but then goes to work in a corporate where he or she is pressured into their culture of basically not looking at the consequences of their algorithms and so on. So I think we need to also find how we can exert influence over other countries."
+    },
+    {
+      "start": 3669.056,
+      "end": 3698.48,
+      "text": "to make even small changes into the curriculums so that they are also on track with the ethical changes into the education system. And maybe perhaps we could also look at not only the secondary education, but also on the primary education and how we can even teach awareness about dangers of computer science and digital technologies, not only to computer scientists, but also to any..."
+    },
+    {
+      "start": 3698.48,
+      "end": 3727.824,
+      "text": "school student, so anyone who studies in the middle or high school, who will not end up maybe a computer scientist, they will end up in a completely different profession, but they will be aware of the dangers of digital technologies because they have been taught. And perhaps that could also diminish the danger somehow. Thank you. Yes, that would be indeed desirable."
+    },
+    {
+      "start": 3728.24,
+      "end": 3755.136,
+      "text": "And personally, I'm very pragmatic. You have to start somewhere, and you have your own, I agree, very small area where you have some influence. There's also, I think, with the digital humanism initiative. We developed a textbook, actually."
+    },
+    {
+      "start": 3755.136,
+      "end": 3777.616,
+      "text": "And actually I'm lecturing together with Anna from pieces from the textbook, so it's actually used. And the Digital Humanism Initiative also has developed a textbook for high schools in German. It is now and will be translated. So we are trying to do these kinds of things."
+    },
+    {
+      "start": 3779.28,
+      "end": 3809.232,
+      "text": "The only thing you can do as a kind of movement is team up with other movements and publish stuff and try to influence things, and then we see how far it goes. In general, it's way too big, but also in the Cold War, at some point it changed. Kings and popes and emperors,"
+    },
+    {
+      "start": 3809.296,
+      "end": 3835.44,
+      "text": "were gone at some point in time, although this was kind of an eternal situation. So this is apparently the human deficit or something like that. So I agree, but the important point is to come to concrete actions on the ground and work from there."
+    },
+    {
+      "start": 3837.616,
+      "end": 3865.904,
+      "text": "You don't know what your influence will be, and sometimes you are lucky, and sometimes you are not so lucky. That is the way it is. But it doesn't change the duties you have as a professional or as a scientist or as a citizen. Let's see whether the dean has an answer. No, the dean is doing marketing. I totally agree."
+    },
+    {
+      "start": 3865.904,
+      "end": 3892.16,
+      "text": "First, we should change the whole world, but I agree with Hans, we have to start somewhere. And kind of to say information about that, that was the question or the kind of the request that we have to go to schools. We have our EduLab initiative at the Faculty of Informatics where they go into secondary schools."
+    },
+    {
+      "start": 3892.16,
+      "end": 3918.784,
+      "text": "higher and lower, but they go also to primary schools, and they really try to kind of address these different issues of, you know, the pros and the cons of digitalization in our world. And the second kind of advertisement is that there are schools now who kind of"
+    },
+    {
+      "start": 3918.784,
+      "end": 3948.304,
+      "text": "try to teach more than Word and Excel in the high school. And one of the schools is kind of teaming up with the EduLab team and with the UNESCO Chair on Digital Humanism, and they are introducing a new subject called AI and Digital Humanism in the higher secondary."
+    },
+    {
+      "start": 3948.304,
+      "end": 3976.928,
+      "text": "school and, you know, it's a first. I mean, you can say, what about the 30 or 50 kids which kind of, but at least it's a start and perhaps they spread the word and there's a snowball effect and, yeah, whatever. Yeah, also in my country, it came slowly into high schools and then it was basically, typically, a button push course for Word, Excel."
+    },
+    {
+      "start": 3976.928,
+      "end": 4003.152,
+      "text": "which is totally useless because any 10-year-old can do that already. So you want to have some real thinking about computational issues and also the social impact of it. Just one remark in general about this discussion and definition of computer science."
+    },
+    {
+      "start": 4003.152,
+      "end": 4028.928,
+      "text": "What I have learned from Christiane Floyd, she was the first female professor in computer science in the German-speaking part of the world at TU Berlin 1978. Informatics is a gestaltgebende Wissenschaft. It's a constructive science. And by constructing, you also..."
+    },
+    {
+      "start": 4028.928,
+      "end": 4057.424,
+      "text": "kind of change the environment where it is used. That is precisely the reason why hardcore theoretical physicists say it's not scientific. And therefore we are at a university so we can discuss this. We have arguments and contra-arguments and all is good. Maybe time for a final answer question. I have to ask you to pass the mic."
+    },
+    {
+      "start": 4061.68,
+      "end": 4088.928,
+      "text": "Okay, thank you for your talk. So I totally agree about building it into the curriculum and so on. But again, we already heard that here. I mean, I started my bachelor's in 2018. And back then, we already had these course ways of thinking in informatics. In the fifth semester, there is another course like sociological foundations of informatics. But the issue I want to bring to you is that I felt like that most of my colleagues were not interested in this stuff."
+    },
+    {
+      "start": 4088.928,
+      "end": 4115.424,
+      "text": "How do you deal with this issue that technical people generally just want to do technical stuff and not bother with all the social aspects attached to it? Because we can have the curriculum in so many forms. If the students don't like it and don't engage with it, how does this help? Yes, I know this. As a business informatics professor, I know this from personal experience."
+    },
+    {
+      "start": 4115.424,
+      "end": 4139.152,
+      "text": "So I gave – that was in the beginning of the e-commerce period around just a bit before 2000. And I gave an introduction to information systems and electronic commerce. And you could – it was quite a big course with 100, 150 people. And then you could see –"
+    },
+    {
+      "start": 4140.24,
+      "end": 4161.104,
+      "text": "The computer scientists sitting over there and they were utterly bored. And indeed, precisely as you're saying, you had also business informatics people that found it interesting. Yeah. You can also say from a professional point of view."
+    },
+    {
+      "start": 4161.808,
+      "end": 4191.136,
+      "text": "You have to have certain knowledge about, let's say, the social or the economic or the philosophical aspects of your discipline. Otherwise, you are not a fully grown professional or scientist. Because also in physics, personally, I find, let's say,"
+    },
+    {
+      "start": 4191.136,
+      "end": 4220.4,
+      "text": "General relativity, interesting, but I find electrodynamics for some reason totally boring, but still you have to do it. Yeah, okay. That's what becoming a physicist brings with it. You need to know about... In computer science, I'm personally totally not interested in operating systems, but if you want to be a complete..."
+    },
+    {
+      "start": 4221.328,
+      "end": 4250.992,
+      "text": "Computer scientists, yeah, you have to at least have some knowledge of it. So you can, educationally, you can think of ways to make it more interesting. I think that is possible. It's more, but then you have to, let's say, segment the different branches, because for computer scientists, it works differently than for information."
+    },
+    {
+      "start": 4250.992,
+      "end": 4271.392,
+      "text": "So it is doable, but you do not always have the resources to split the group up and do something that really caters for their interests. This is the way it is. All right, I think we can..."
+    },
+    {
+      "start": 4271.392,
+      "end": 4292.816,
+      "text": "Come to an end, I want to say three thanks. So first of all, thanks to you for the lively discussion. We, in fact, can continue this now on an informal basis. And thanks to IWM, we even have some food with us here to do so. And finally, I would like to thank Hans for his presentation. Thank you very much."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

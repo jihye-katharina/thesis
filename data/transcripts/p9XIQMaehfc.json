@@ -1,0 +1,636 @@
+{
+  "video_id": "p9XIQMaehfc",
+  "source": "whisper",
+  "language": "en",
+  "text": "So hello, everybody. Welcome to today's lectures. And thanks for being back after the summer break, being back to our lectures of digital humanism. As you see, we will not stop, but we will continue with our activities. You know, digital humanism is both, let's say, a human-driven or human-centered approach to digitalization. And at the same time, it is an international initiative following this approach. What we will do in the next year, we will continue with our lectures. We will continue with our publications. So we are just finishing our textbook, Introduction to Digital Humanism. It will be published in December and then it will be available open access. And we will also organize a conference on the 16th and 17th of November in Vienna with the title, Can Machines Save the World? Attention, it's a can and not a will machine save the world. So the program is already published. You can have a look at it already. Today we have a hot topic. It's machine learning and related to societal impact and privacy. And we have an excellent speaker. Welcome, Rainer Mühlhoff. He will be introduced later by our moderator, Klaus Stardacher, in more detail. Thanks for being with us and for having accepted our invitation to give this presentation today. The choreography is well known. You know it already. We have a talk for 30 minutes. Then we have 30 minutes question and answering, moderated by Klaus Staudacher. And at the end, we have, as always, a piece of music, this time proposed by Klaus Staudacher, who will also give a short introduction to the piece selected. Klaus Staudacher, he's a researcher at the Bayerische Institut für digitale Transformation, which is the Bavarian Institute for Digital Transformation, which is, let's say, a corporation of many universities in Bavaria, funded by the regional government. He has a background in philosophy. And I saw also this interest, you have a background in French and international law. Before working with the BDD, the British Institute for Digital Information, he worked at the University of Munich at the Institute of Practical Philosophy, interested practical philosophy. His research interests are in responsibility, moral responsibility in AI systems and in ethical questions which have to do with digital transformation. Klaus, the floor is yours. Thank you. Okay. So today, Professor Rainer Mühloff from the University of Osnabrück will talk about predictive privacy or the risk of secondary use of trained ML models. And let me briefly introduce Professor Rainer Mühloff to you. He's a full professor of ethics of artificial intelligence at the Institute of Cognitive Science and the Institute of Philosophy at the University of Osnabrück. Moreover, he is an associate researcher at the Weizenbaum Institute. He is leading the ethics and critical theories of artificial intelligence research group at the Institute of Cognitive Science at the University of Osnabrück. His team works on contemporary critical philosophy of the digital world. The projects of this team cover the ethics of AI, data protection and big data, digital technology and power, digital enlightenment, empowerment and participation. He has, Rainer Mühloff has studied many subjects. He has studied mathematics with the minor subjects theoretical physics and computer science. and he wrote his diploma thesis on higher spin fields on curved space times, but he has also a PhD in philosophy and his dissertation was about immersive power and the theory of affects of Spinoza and Foucault. Rainer Milhoff has published in German and English on many different topics, and it would take a lot of time to mention all of his contributions. So that's why I will now highlight only three publications that are closely related to the topic of today's lecture. That is in 2021, Predictive Privacy, Toward an Applied Ethics of Data Analytics, and this year, Predictive Privacy, Collective Data Protection in the Context of AI and Big Data. And together with Theresa Willem, social media advertising for clinical studies, ethical and data protection implications of online targeting. So, Professor Milov, it's a great pleasure to have you here and we are looking forward now to your lecture. Yes. Hi, everybody. I hope you can hear me. This is the. Natural first question when giving an online talk. I don't mind if some of you turn on your camera, then I see some faces when I'm speaking, but you don't have to, of course. Thank you, Klaus Stadacher, for inviting me. I still remember when we had a phone call half a year ago when you invited me. So it took us a while finding a date. I'm sorry for that. And I'm happy to finally be here in your virtual space. I'm not... completely familiar with the topics that you normally debate. So I hope it fits what I prepare now, or at least is interesting to you. So I'm doing ethics of AI, as you heard in the introduction, but I'm trying to do this ethics of AI mostly from a theory of power, philosophy of or analytics of power relations in society. So I'm taking more a systemic perspective on AI and debating the large-scale societal transformations in relation to that technology. And here in this presentation, I think it emerged in our phone call that you are specifically interested in this aspect on privacy and data protection. So I will largely focus on that here and give you a brief... um round trip through some of my findings or research that i'm currently doing um i hope the slides are there maybe i need to find a way of sorting it out here aha okay now i see it good um so yeah when when Maybe mainly I'm now debating, I always say AI or many of us always say AI and it's never clear what exactly do we mean by AI. When I say this, I usually mean applications of AI for prediction purposes. So in this presentation, yeah, I'm largely referring to what is usually called predictive analytics. that could be using AI in the stricter sense. It can also use some simpler algorithms such as linear regressions or something. And some points, I will say, are not specific to certain or particular AI algorithms being used. It's more a functional perspective on AI. So we rather look at what AI does. to society or when it's embedded somewhere and not how the algorithms work inside. That's also one of the methodological decisions here. And by predictive analysis, I think you more or less, I guess you all know what we mean by this, but here the most familiar examples are stuff or predictions you can do with data that you can collect on the internet, most famously maybe on social media platforms. It's been well established in science that you can predict, for instance, from Facebook likes or from social media likes, interesting information about individuals on your platform, such as their sexual identity or information about their health or predictions about their health or diseases, information they might not want. to give to you voluntarily. But in this case, you can predict them from their likes or you can use tracking data or tracking data is being used to do stuff like credit scoring or insurance risk assessments or even assessment of educational level and so on. I think there are many examples out there. I will not go into the examples. There's a lot of literature on it. Maybe the more abstract principle behind. is this, and this is maybe kind of what I have in mind, the scenario that I have in mind through the presentation now, that a predictive model is something we treat it now as a black box, but that doesn't matter. And you put some, typically you put some data in, data you have about individuals, let's call it auxiliary data, for instance, their browsing history, or for instance, their Facebook likes. and the predictive model that outputs an estimation or a guess of something you want to know about the individual, of some target information. Let's say it's sensitive information about them. So personal information that is more sensitive than what you put in. That is typically the case. And as I said, let's not ask how this is being done, but let's better ask who. can do this or who does do this in our contemporary AI-based economy. As it turns out, if you do stuff like that, you are typically a large data company, for instance, the social media platform, because then you're in the best position to do predictive analytics, because usually you then have data of all your users. The green dots are Like every square here represents a data point or data from users. And the green data is the auxiliary data that users typically leave behind when they use your service, such as likes or stuff they look at or information they share. And some of the users, they will also provide, for instance, information about their sexual identity in their profiles. You can voluntarily tick boxes on that information, or you can tell about other of your personal information, like your religious affiliations, or you can even disclose whether you have certain diseases, for instance, by sign up for certain groups, interest groups on your platform. So there will be some users disclosing more information than only the standard usage data, the green data. And maybe it's only 5% of your users or definitely a minority, that would be enough. Then you have a data set that can be used as training data to some modeling process that models or that learns to detect correlations between the green and the red data fields. So basically you try to train a model that learns to predict the red data from the green. Sorry, one second. Yes, and once you have done this, and what will be the next step you do? Of course, you apply the model to all the other users who did not disclose that information to you to at least have an estimation of that information that they did not choose to disclose to you. So in effect, because... some of your users disclose that sensitive information you you will try as the platform company to estimate that information about all of your users why do you do that yeah because it's information that sells that you can use to to make money um be it on your own platform or be it by selling some access to your model to other companies that are interested in this. And examples are wide ranging, and we all know them, at least qualitatively. This is being used a lot in credit scoring. This is being used in insurance risk assessment. For instance, here, the screenshots under insurance risk assessment, they are from these driving driver scoring, like a dongle in your car that scores how you drive. And that calculates individual insurance risks by predicting, for instance, your driving behavior or character traits about you. It is a huge market is, of course, applicant selection and human resource management. So basically automated hiring or AI supported hiring systems that are usually used, for instance, to shortlist job applicants or to automatically screen. job interviews, if it's a video interview, for instance, or an audio data available. Yeah, and of course, targeted advertising. I will talk about targeted advertising in five minutes. Another of my favorite examples is Spotify, as we will be listening to music. And by the way, I'm sorry for not being able to, that I wasn't able to present a piece of music. So I'm happy that Mr. Staudacher took care of that and we will be listening to the music in the end. On Spotify, I don't know if you are aware or how many people are aware, but Spotify makes a lot of money by selling mood predictions or personality predictions about their users or to be more precise, real-time personality or mood assessments. So they are putting a lot of effort to find out from what you're listening to right now in which kind of a situation or mood you are. And this is how they describe the service to advertising customers on their website. And this is what in our own research we found out Spotify can also derive from your data. So data about your real time feelings. For instance, are you feeling lonely, melancholic, insecure? And this is being used to target advertising in real time, for instance, to exploit particularly vulnerable moods or moments in your life or in your week or in your month or in your day for specific advertisements. Yeah, let's get to the next chapter. I have four chapters, by the way. Sorry, I forgot saying in the beginning. So this will be the second of four. What we see here, and I prepared it already on the last slide, obviously, this has to do something with privacy. Obviously, there is something going on with the privacy of the users being invaded. maybe in a new way, at least that's what I propose in my philosophical research, that there is a new way of intruding privacy as a consequence of predictive analytics. I call it the kind of privacy or the concept of privacy that you need or the understanding of privacy that you need to make this case. I call that predictive privacy. And the predictive privacy of an individual or of a group can be violated when personal information is predicted about them without their knowledge or against their will. So the basic idea is that we are now in a situation where many, if not the majority of privacy violations are not related to data about you being, for instance, stolen. or abused yeah data you gave to your physician and the physician passes the data on to to somebody who wasn't authorized to see it so that that there is really kind of an intrusion intrusion aspect to it no i would say that today most privacy violations actually occur through information that you never disclosed being predicted about you it could also be information that you don't even know yourself for instance predictions about your disease dispositions yeah the prediction that you have a disposition to depressions or prostate cancer if that can be derived from your buying habits or other data about you It might be prediction that you don't know about yourself or don't even want to know about yourself, but that can still be made. And I try to argue in this ethical or philosophical part of my work that this is an intrusion of privacy. And that requires privacy to be understood a little bit more broadly than it's classically understood. As you can see here, I would say what we understand by privacy in relation to data protection. has evolved over the history of data protection, but very rapidly over the last decades. It has evolved together with technology evolving and technology posing new threats or new attack vectors every couple of years or decades. And this is why I think it's fruitful to distinguish maybe three fundamental tech vectors but there might be more but it's just it's an open typology but at least these three I find worthwhile distinguishing from each other for instance when electronic or when the first large wave of digitalization of public services such as health services started in the 60s in the 1960s much talk was about the security against intrusion of these systems. For instance, the the secureness of these systems against hackers, hacker attacks or data leakage or even data loss, breaches of encryption and so on. So it's basically the idea that confidential information is being processed. at large scale in electronic data processing systems. And an intruder could at once steal a lot of information about single data subjects or even about many data subjects at one time. That is a typical question of data security. And I would say that attack vector can be called intrusion because typically the privacy attack proceeds by crossing a barrier. a barrier that was meant to keep unauthenticated people out of the data processing system or of access to the data processing system. And in the very late 80s and early 90s, a completely, yeah, I would say completely new threat emerged when re-identification attacks were discovered in the US and also in the health data. context when um when stunning publications were made that um that individual health records could be recovered from statistical databases that were purposefully published yeah the idea was that certain insurance companies could um publish anonymized versions of their patients data for research purposes so that basically you they remove names and streets and um um birth dates from the records and the the the remaining records were published or were made accessible for research purposes and they considered this an anonymized data set and it was possible to re-identify for instance politicians in that data set and that was an outcry and that triggered this whole research on re-identification attacks yeah re-identification attacks, the typical scenario is that data is not, it's not stolen data because the data, the anonymous data was purposefully published, but it turns out not to be anonymous, at least not as anonymous as people were thinking. So this is already a different type of attack. And I would say in this line, another 20 years later we now see maybe the the the hype of predictive privacy attacks yeah predictions could already be made 40 years ago but it was not the center um i would say this the center of importance in in in or it was not the most most pervasive kind of privacy attack and and today i would say it is um and here um it's not even purposefully published data that's being used, but, and this is an interesting point. It's data by many others that enables the attacker to predict something about you. I will come back to that point in a minute. I know it was a bit quick now. So let me see. Yeah, it is here. I would say that the, the attack vector or the predictive violation of privacy has three qualitative aspects to it. And to characterize it here, I have a new slide. The one qualitative aspect is that it comes from the perspective of the subjects with an escalation of sensitivity. For instance, if you are the the person whose privacy is violated through predictions, this is usually done after you provided some data that you felt is not so sensitive. For instance, you are using a social media platform and clicking some likes and sharing some content, but not disclosing, for instance, information about your alcohol usage and a predictive model can estimate from your usage data that you provide data on your dispositions to substance abuse. And then from your perspective, escalate the sensitivity. Yeah, you estimate the data you provide as less sensitive, but the model can escalate that sensitivity. The other structural aspect or qualitative aspect about predictive violations of privacy, and this is maybe the harder bit, it often needs a lot of explanation, is that it is the data of many others that's being used. It's because some Facebook users or some social media users disclosed that they are addicted to alcohol, that the platform could train a model that can predict alcohol addiction from social media usage data. So it's because of the privacy decisions of these, let's say, 10% of users that your privacy can be invaded here. So the decisions they took on disclosing their alcohol addiction has an impact on you. At least... If it is a couple of people making that decision, if it was only one other user deciding to disclose it, that will not be relevant. But if it is one million users, you already have a lot of training data for a model. And this is the weird or the real qualitative novelty of this privacy threat, because it shows that in constellations of predictive privacy, it's not everybody takes care of their own data. Because the data decisions you do or you take have implications for others. So your data contributes to violating other individuals' privacy. That is the characteristic of predictive violations of privacy. Yeah, I wanted to debate this example. I already made the announcement. Because after this intensity of serious topics, let's debate something harmless. Targeted advertising is usually taken as one of the most harmless examples of how your data on the internet is being used. Is it? No, it is not. I make the point that targeted advertisement is not at all harmless. And I would like to make the point using an example. And Klaus Dallacher already mentioned the paper that we brought out on that issue. So I'm directly lecturing basically what we wrote in that paper here, but in a short form. Let's take the example that, for instance, you are a you are clinical clinical researchers and you develop a new treatment for type two diabetes and you need to conduct a stage two or stage three clinical trial. So you basically need people with diabetes type two to try your medication and recruiting those people is. difficult and cost intensive yeah it's it's a business um of sometimes you see the advertisements on the metro uh looking for certain people with certain diseases to try a new medication so you could come up with the idea of trying it online by online advertising your new diabetes type 2 treatment to look for patients who want to volunteer in being a participant This is a real case here. It was from 2018 that this trial facts, it's an intimate diary, like a company organizing these kind of recruitment processes for clinical trials. So you ask the social media platform to run this ad for you. This slide, I will bring the slide later. Let's go here. No, let's go here. What typically you do when you want to run such an ad on a social media platform is you provide the ad and you provide some targeting criteria because the social media platform will not show the ad to everybody, but only to users that meet certain targeting criteria. That is the service. This is why social media advertising is so much more effective because it shows the advertisement only to people that you say, are potentially relevant for my advertisement. So you would come up with some initial criteria, for instance, a certain age range, maybe a certain demographic, maybe a certain geographic cohort. I don't know what is particularly relevant in case of type 2 diabetes. And then these two pieces of information are fed into the targeting algorithm, and the targeting algorithm selects users on the platform who see your advertisement. This is basically what most advertisers think they buy. What, of course, happens in reality or maybe an extension of this is that the platform also collects data on who engages with the advertising. That is the typical fact about or the defining fact about online advertisement, that online advertising is never a one-way communication. But online advertisements always measure how users, whether and how users interact with the advertisements. For instance, whether they share it, whether they look at it longer or shorter. Or in the case I showed you here, I don't know if you remember, there was even a sign up button on the advertisement. Yeah, there was the button you could press to sign up for the study. So that is a very explicit call to engagement. on that advertisement and all this data goes through the platform yeah the button the sign up button was on facebook if you click on it if you click on more information if you share the ad if you send it to a friend this all goes through the platform so it can all be recorded by the platform and it is being recorded by the platform and why does the platform record that information here because it's interesting information about their users and what they can do and what they do do is that they, first of all, reinsert that information as training data to the targeting algorithm. Because that means that from measuring how good the advertisement performs on the users of the first hours or days of the advertising campaign, based on that information as training data, they can refine the targeting procedure. So that they can much better target people who are more likely to click on the advertisement, on that particular advertisement. So that the targeting criteria you initially give to Facebook or to the social media platform, they are only initial criteria and that evolves. through the self-learning process of the targeting system, which gets much more refined and much more subtle in targeting than the criteria you initially provide. This is actually described in research papers who observed that the targeting got more and more effective over the first two to four days, that they could observe like a curve. an increasing curve, steeply increasing in the first hours and then reaching some saturation after a couple of days where the algorithm seems to finally reach full performance and much higher performance than it could provide initially. So the targeting algorithm learns from the user engagement with the ad. This amounts to nothing else in this case than Training a model that can predict information that more or less well correlates with whether the person is a type 2 diabetes patient, right? Because that ad specifically targets patients. And if you engage with the ad, you are highly likely a patient yourself or you know somebody. in which case you will more likely send it to somebody else, at least not click on sign up. So this is the model that can learn to predict whether an arbitrary Facebook user, future or present, future, past or present, it could even be Facebook users who quit Facebook, but from whom Facebook still retains some data. This is a model that can predict about arbitrary Facebook users, whether they have a certain likelihood of suffering from type two diabetes. And it definitely this can this model can be applied to anybody else, people who did not see the advertisement or people who sign up on Facebook only in five years. So this is basically a capacity, a predictive capacity. that the social media platform is able to obtain through the help of the clinical research body running this advertisement to predict highly sensitive medical information in this case about arbitrary users. And there is a large market for such predictions. For instance, think of such a model being of interest to an insurance company. For instance, life insurance companies or health insurance companies, of course, they are interested in risk scoring algorithms. They are not allowed to derive medical information about you without certain restrictions. coming from data protection regulation, but they could factor in that model into a bigger model that does not explicitly derive information about your health data, that does not explicitly derive health information about you. So there are even ways of circumventing these problems. So it is likely that such models, once they are there, are being reused for other purposes. And this brings me to my last chapter, the risk of secondary use of trained machine learning models. If I'm asked what I would say is the biggest data protection problem in relation to machine learning, I would say it is exactly this risk of abusing trained models for completely different purposes that were not on the table in the beginning. For instance, on the table in the beginning, it was that Facebook is ordered to target this ad to appropriate users. And nobody talks and no data protection regulation really prevents the trained model from being copied or transferred to other purposes and potentially being reused elsewhere. And why did I say that? No. regulation prevents this, to make this case it's important that we distinguish different processing steps that are involved here. The one step is training the model. You collect training data, in this case it's the feedback data to the advertisement, and you feed that data into a training procedure that retrains or trains a certain machine learning model. um this can be done for instance in a way that anonymizes the data at least in many cases um you can assume and it will be done lawfully for instance um the the engagement data with the ads on facebook it's collected it's within the um framework of of the general condition of using the conditions of using that system as a user um it is also often argued by legitimate interest legal basis according to the GDPR by the platforms. So the one step is training a model and let's assume the model is anonymous and highly aggregate data. Let's say the training is done so well that no membership attacks or other reverse engineering of individual training data from the model data can be done then you can say the model that's anonymous data and anonymous data is not in the scope of the GDPR and so the anonymous data that constitutes the model weights can travel elsewhere with nearly without restrictions to be applied for other purposes and these other purposes is then again a step that is potentially governed by the GDPR. When you apply the model on an individual case, for instance, from Klaus Staudacher, I get the usage data and I input it to the model and calculate whether he is likely a patient of type 2 diabetes. In this case, I'm deriving personal information about Klaus Staulacher. And this is, again, a data processing step that is governed by the GDPR. But the intermediate step, when you only have the model, and the model is anonymous data, and that data can be sold or reused or copied, this is not governed by... by the general data protection regulation because the scope is only personal information and not anonymous data. I would say that possessing such a model constitutes prediction power. That is the social philosophical term I try to mention here. It's plainly and simply the ability to make predictions about any individual it's important that it's about any like any individual about whom you have usage data in this case yeah it's a large class of individuals typically. and Typically, prediction power accumulates where data accumulates. It's not very likely that I have prediction power in this sense here. Yeah, I can throw dices. If you call this a prediction, then I have prediction power. But what I mean here is these data-based predictions. And this is typically something that is a version or a byproduct of platform power. So it accumulates with certain already very powerful actors. And yeah, it's important for prediction power that what constitutes prediction power is not that the model is being used on Klaus Staudacher, but what constitutes prediction power is that it could be used on anybody. The potentiality of making a prediction about nearly anybody or about at least a large cohort of individuals. So it's important that we analyze a certain risk that comes with the mere presence or the mere possession of a trained model and that is prior to the harm that is being done when the model is actually applied to a concrete individual. Contemporary data protection regulation with its defensive rights for the individuals has the problem that the harm is already done when individuals can trigger these rights. excuse me if i interrupt you now because we have a little bit of problem of time because we need some time for discussion um have you some how can you a little bit shorten i i'm almost done okay i'm almost done um this is um actually my final slide so um what i was going to say is that It is important to find a strategy that regulates the power accumulation and not only the application of the models. That was my presentation. Thank you for listening. And now I'm interested in your discussion. Thanks a lot for this very clear and instructive lecture. The discussion is open for questions now. Who has the first question? Klaus, I have a question. Thanks, first of all, for this very clear and insightful presentation. And it's really you're showing when the model is, let's say, and the model aggregating even anonymous data allowed a huge number of individuals so that you could apply it to other specific persons. Is there a way out? Because you cannot... prohibit model building you cannot let's say what would be a counter measure what would be an answer to this let's say data collection and then the abstraction of the data in the form of a of some let's say predictive model what is the answer you would propose yeah it's i mean yes it is a difficult question it's not at all clear um first of all Yeah, my answer is twofold. First of all, I would say what we need is that we are aware of this problem and many people aren't and many regulators aren't. And concerning a concrete intervention, what I'm working on, it's called purpose limitation for models. You say you cannot prevent people from training models. Yeah, that's maybe true. But I think we can impose. For instance, a regulation that suggests that models that are being trained should be bound to a certain purpose. Like purpose limitation in data protection, where you say data can only be processed when it sticks with the purpose that is being fixed from the outset. I would say we need a regulation that forces entities that build models. to determine the purpose beforehand, to register the purpose or the model and to be forced to stick with that purpose. But may I add, but it's very hard to define a priori purpose because very often purpose is a vague concept and the requirements are not so easy to be defined. Sorry for that. Second question following up to your answer. Yeah. Yeah, you can answer. Yeah, yes, sure. Especially in research context, it's not easy to define the purpose beforehand. But for instance, doing research is already a purpose that would prevent the research entity to sell the model, for instance, to an insurance company. And if... In the research, it turns out that the purpose that has been defined is too narrow. I think we need a way of renegotiating the allowed purpose with a certain body, with the oversight body that is responsible for agreeing with the purpose. I think that would be doable. Okay, the next question is from Manels Clocom. Hi. Hi, everyone. And thank you for the talk. From the audience, I know one of the co-hosts, Peter. So where to start? I really enjoyed your presentation. And I think apparently I'm not the only one who is proposing this. The title of my PhD, which I am so far. almost there with it. I'm calling it purpose-aware privacy preserving techniques for responsible predictions. And I am calling for a purpose behind whatever we do. And I think the answer to the question you got, and I'm in the same line with the speaker, the way I solve it, or I propose to solve and mention that there is a purpose, through the threat model. So the speaker was speaking about The fact that there is someone who has an intuition and they want to infer something, we call inference attack or predictions. This is since 1986, someone defined the threat model using the adversary, adversary knowledge, capabilities, objective, and how we can countermeasure this. So in research, and I think also in real world, I will link it to the real world. We can define or solve a problem using the threat model formulation. Within that threat model, you can say the purpose is, for example, to predict people who have diabetic type one or two, whatever. And the resources for the adversary is this and that from social media. How can we do such that we know we infer for the right people? So this is the thing. And for the speaker, because I think we are in line and. Are you aware of the synthetic data generation? Yes, I knew it. Okay, so I would like to know, and I'm just going to say very quickly, synthetic data is a data that looks like original data, but it is fake or artificial because it is simply generated by a machine. In simple words, if some of you know about deepfake, so you give a real image to the artificial intelligence. and then the machine will generate another image, but that image is not real. This is exactly synthetic data. So for the speaker, I want to know, what do you think about synthetic data? Do you have a position, especially from ethics? And do you know what kind of purposes would you allow to use synthetic data for? Thank you. Yeah, thanks for the comment and question. I'd like to know more about your PhD thesis. Maybe let me know. I know this synthetic data trend. I'm not sure. I don't have a very qualified position on what I think about this ethically. Because it's so weird. I want to add something. Do you know about data warehousing in certain countries of the global south? For instance, when the Indian government decides to put out the data of their whole population, for instance, health data for sale, real health data. And so we have apparently we have these various new data sources nowadays. The one is synthetic. The other is data for sale. click work data and i'm not sure um um i think to me this only strength strengthens the point that we should regulate the models and not the data anymore because if if for instance data on health information currently for instance when you want to build an ai model to improve medical diagnosis getting the training data from real patients is still the the bottleneck. And if data now becomes much better available through various of these sources, synthetic, for sale and so on, then it is easier for many entities to train such predictive models. And this is why I think that regulation of privacy sensitive or the point where we need to be responsible concerning privacy should move to the models. And the models should be regulated and not only the data. Yeah, regulating only the input stage of such data processing chains has always failed, I would say. I know it's not the most specific answer to your synthetic. That's actually what is also happening because we need to stop. There is a whole debate going on about the use of synthetic data. Is it good or bad or how my only worry like you, if it goes into harms. to the society. You cannot draw conclusions from the synthetic data. Yes. There's another question in the chat. I just want to know what if we concentrate on technical prevention like using blockchain. or similar technologies what's your point of view is that it's possible to enforce big techs or governments or even some public services to ethically implement these rules by technology actually it is uh hello before anything and thank you for amazing lecture uh i just uh want to know uh is there possibility i just want to know about your point of view about the possibility because If we talk about ethics and implementing ethics by some rules and regulations, it's an issue. But if we enforce them to use some technology based solutions like blockchain solution or something like that, it's not ethical. You know, it's a must. What's your point of view about this? Excuse me. Yeah, I personally don't believe in technological solutions. There's already so much solutionism out there in relation to fixing societal harms coming from AI and digitalization. And delegating... These are often very political questions in nature. For instance, is it okay to use predictions about your health to shortlist you for a job interview? Okay, in the case of health, it is discrimination. But let's say predictions about non-sensitive attributes. predictions about your work performance yeah let's imagine you are a company developing you are assessing employees you are collecting lots of data in your company and then you can build a model to predict work performance and you use that model to shortlist job applicants according to expected work performance is that okay i would say that is a highly political question we should renegotiate what are the lines of discrimination that are fair and that aren't fair or that are politically viable and not. And the proposals solving, so there is no clear engineering solution to that problem because it needs to be a debate. It needs to be wanted instead of solved. There needs to be some like collective formation of a will, of a political will connected to these issues. Thank you. I just want your point of view. Thank you. So we are nearly 6 p.m. So are there any further questions or should we finish with the music now? Okay, then. Okay. I was asked to choose a tune and it's always not easy, but I wanted to choose a tune which shows the real human genius. And I've chosen a tune played by Errol Garner. Errol Garner was what is called an ear player, a poor ear player. He couldn't read notes. And he has a quite special style of playing, rhythmically very interesting. And that's the reason why I have chosen this tune. The original composition is perhaps not so extremely interesting, but Aragona has made a very charming and interesting tune out of it. Thanks, Jose. I will play it. And before I do that, I will just announce the next lecture. So first of all, thanks to you, but foremost to Reina for the presentation and a very interesting discussion afterwards. The next lecture we're going to have is going to be on November 21st. And Anu Bradford will talk about Digital Empires, the Global Battle to Regulate Technology, which is also the title of her latest book. And I know Bradford is probably best known for her work, The Brussels Effect, which has had a strong impact on how Europe's impact and European regulations have impacted on a global scale. And George Metakidis will moderate. So thanks again to everyone. And I will start Errol Garner now. Thanks very much and see you next time. everybody. See you next time. Yes, goodbye.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 27.6,
+      "text": "So hello, everybody. Welcome to today's lectures. And thanks for being back after the summer break, being back to our lectures of digital humanism. As you see, we will not stop, but we will continue with our activities. You know, digital humanism is both, let's say, a human-driven or human-centered approach to digitalization. And at the same time, it is an international initiative following this approach."
+    },
+    {
+      "start": 27.6,
+      "end": 55.664,
+      "text": "What we will do in the next year, we will continue with our lectures. We will continue with our publications. So we are just finishing our textbook, Introduction to Digital Humanism. It will be published in December and then it will be available open access. And we will also organize a conference on the 16th and 17th of November in Vienna with the title, Can Machines Save the World? Attention, it's a can and not a will machine save the world."
+    },
+    {
+      "start": 55.952,
+      "end": 81.104,
+      "text": "So the program is already published. You can have a look at it already. Today we have a hot topic. It's machine learning and related to societal impact and privacy. And we have an excellent speaker. Welcome, Rainer Mühlhoff. He will be introduced later by our moderator, Klaus Stardacher, in more detail."
+    },
+    {
+      "start": 81.104,
+      "end": 107.952,
+      "text": "Thanks for being with us and for having accepted our invitation to give this presentation today. The choreography is well known. You know it already. We have a talk for 30 minutes. Then we have 30 minutes question and answering, moderated by Klaus Staudacher. And at the end, we have, as always, a piece of music, this time proposed by Klaus Staudacher, who will also give a short introduction to the piece selected."
+    },
+    {
+      "start": 107.952,
+      "end": 134.432,
+      "text": "Klaus Staudacher, he's a researcher at the Bayerische Institut für digitale Transformation, which is the Bavarian Institute for Digital Transformation, which is, let's say, a corporation of many universities in Bavaria, funded by the regional government. He has a background in philosophy. And I saw also this interest, you have a background in French and international law."
+    },
+    {
+      "start": 134.432,
+      "end": 162.976,
+      "text": "Before working with the BDD, the British Institute for Digital Information, he worked at the University of Munich at the Institute of Practical Philosophy, interested practical philosophy. His research interests are in responsibility, moral responsibility in AI systems and in ethical questions which have to do with digital transformation. Klaus, the floor is yours. Thank you. Okay."
+    },
+    {
+      "start": 162.976,
+      "end": 189.28,
+      "text": "So today, Professor Rainer Mühloff from the University of Osnabrück will talk about predictive privacy or the risk of secondary use of trained ML models. And let me briefly introduce Professor Rainer Mühloff to you. He's a full professor of ethics of artificial intelligence at the Institute of Cognitive Science and the Institute of Philosophy at the University of Osnabrück."
+    },
+    {
+      "start": 189.28,
+      "end": 216.56,
+      "text": "Moreover, he is an associate researcher at the Weizenbaum Institute. He is leading the ethics and critical theories of artificial intelligence research group at the Institute of Cognitive Science at the University of Osnabrück. His team works on contemporary critical philosophy of the digital world. The projects of this team cover the ethics of"
+    },
+    {
+      "start": 216.56,
+      "end": 241.648,
+      "text": "AI, data protection and big data, digital technology and power, digital enlightenment, empowerment and participation. He has, Rainer Mühloff has studied many subjects. He has studied mathematics with the minor subjects theoretical physics and computer science."
+    },
+    {
+      "start": 241.648,
+      "end": 268.24,
+      "text": "and he wrote his diploma thesis on higher spin fields on curved space times, but he has also a PhD in philosophy and his dissertation was about immersive power and the theory of affects of Spinoza and Foucault. Rainer Milhoff has published"
+    },
+    {
+      "start": 268.656,
+      "end": 296.832,
+      "text": "in German and English on many different topics, and it would take a lot of time to mention all of his contributions. So that's why I will now highlight only three publications that are closely related to the topic of today's lecture. That is in 2021, Predictive Privacy, Toward an Applied Ethics of Data Analytics, and this year, Predictive Privacy, Collective Data Protection in the Context of AI and Big Data."
+    },
+    {
+      "start": 296.832,
+      "end": 321.088,
+      "text": "And together with Theresa Willem, social media advertising for clinical studies, ethical and data protection implications of online targeting. So, Professor Milov, it's a great pleasure to have you here and we are looking forward now to your lecture. Yes. Hi, everybody. I hope you can hear me. This is the."
+    },
+    {
+      "start": 321.088,
+      "end": 350.96,
+      "text": "Natural first question when giving an online talk. I don't mind if some of you turn on your camera, then I see some faces when I'm speaking, but you don't have to, of course. Thank you, Klaus Stadacher, for inviting me. I still remember when we had a phone call half a year ago when you invited me. So it took us a while finding a date. I'm sorry for that. And I'm happy to finally be here in your virtual space. I'm not..."
+    },
+    {
+      "start": 350.96,
+      "end": 380.352,
+      "text": "completely familiar with the topics that you normally debate. So I hope it fits what I prepare now, or at least is interesting to you. So I'm doing ethics of AI, as you heard in the introduction, but I'm trying to do this ethics of AI mostly from a theory of power, philosophy of or analytics of power relations in society. So I'm taking more a systemic"
+    },
+    {
+      "start": 380.352,
+      "end": 407.84,
+      "text": "perspective on AI and debating the large-scale societal transformations in relation to that technology. And here in this presentation, I think it emerged in our phone call that you are specifically interested in this aspect on privacy and data protection. So I will largely focus on that here and give you a brief..."
+    },
+    {
+      "start": 407.84,
+      "end": 434.256,
+      "text": "um round trip through some of my findings or research that i'm currently doing um i hope the slides are there maybe i need to find a way of sorting it out here aha okay now i see it good um so yeah when when"
+    },
+    {
+      "start": 434.256,
+      "end": 460.656,
+      "text": "Maybe mainly I'm now debating, I always say AI or many of us always say AI and it's never clear what exactly do we mean by AI. When I say this, I usually mean applications of AI for prediction purposes. So in this presentation, yeah, I'm largely referring to what is usually called predictive analytics."
+    },
+    {
+      "start": 460.656,
+      "end": 484.896,
+      "text": "that could be using AI in the stricter sense. It can also use some simpler algorithms such as linear regressions or something. And some points, I will say, are not specific to certain or particular AI algorithms being used. It's more a functional perspective on AI. So we rather look at what AI does."
+    },
+    {
+      "start": 484.896,
+      "end": 513.152,
+      "text": "to society or when it's embedded somewhere and not how the algorithms work inside. That's also one of the methodological decisions here. And by predictive analysis, I think you more or less, I guess you all know what we mean by this, but here the most familiar examples are stuff or predictions you can do with data that you can collect on the internet, most famously maybe on"
+    },
+    {
+      "start": 513.152,
+      "end": 536.464,
+      "text": "social media platforms. It's been well established in science that you can predict, for instance, from Facebook likes or from social media likes, interesting information about individuals on your platform, such as their sexual identity or information about their health or predictions about their health or diseases, information they might not want."
+    },
+    {
+      "start": 536.464,
+      "end": 565.744,
+      "text": "to give to you voluntarily. But in this case, you can predict them from their likes or you can use tracking data or tracking data is being used to do stuff like credit scoring or insurance risk assessments or even assessment of educational level and so on. I think there are many examples out there. I will not go into the examples. There's a lot of literature on it. Maybe the more abstract principle behind."
+    },
+    {
+      "start": 566.064,
+      "end": 594.848,
+      "text": "is this, and this is maybe kind of what I have in mind, the scenario that I have in mind through the presentation now, that a predictive model is something we treat it now as a black box, but that doesn't matter. And you put some, typically you put some data in, data you have about individuals, let's call it auxiliary data, for instance, their browsing history, or for instance, their Facebook likes."
+    },
+    {
+      "start": 594.848,
+      "end": 620.944,
+      "text": "and the predictive model that outputs an estimation or a guess of something you want to know about the individual, of some target information. Let's say it's sensitive information about them. So personal information that is more sensitive than what you put in. That is typically the case. And as I said, let's not ask how this is being done, but let's better ask who."
+    },
+    {
+      "start": 620.944,
+      "end": 649.296,
+      "text": "can do this or who does do this in our contemporary AI-based economy. As it turns out, if you do stuff like that, you are typically a large data company, for instance, the social media platform, because then you're in the best position to do predictive analytics, because usually you then have data of all your users. The green dots are"
+    },
+    {
+      "start": 649.296,
+      "end": 676.672,
+      "text": "Like every square here represents a data point or data from users. And the green data is the auxiliary data that users typically leave behind when they use your service, such as likes or stuff they look at or information they share. And some of the users, they will also provide, for instance, information about their sexual identity in their profiles. You can voluntarily"
+    },
+    {
+      "start": 676.672,
+      "end": 706.48,
+      "text": "tick boxes on that information, or you can tell about other of your personal information, like your religious affiliations, or you can even disclose whether you have certain diseases, for instance, by sign up for certain groups, interest groups on your platform. So there will be some users disclosing more information than only the standard usage data, the green data. And maybe it's only 5% of your users"
+    },
+    {
+      "start": 706.736,
+      "end": 733.584,
+      "text": "or definitely a minority, that would be enough. Then you have a data set that can be used as training data to some modeling process that models or that learns to detect correlations between the green and the red data fields. So basically you try to train a model that learns to predict the red data from the green. Sorry, one second."
+    },
+    {
+      "start": 737.872,
+      "end": 764.032,
+      "text": "Yes, and once you have done this, and what will be the next step you do? Of course, you apply the model to all the other users who did not disclose that information to you to at least have an estimation of that information that they did not choose to disclose to you. So in effect, because..."
+    },
+    {
+      "start": 764.032,
+      "end": 791.824,
+      "text": "some of your users disclose that sensitive information you you will try as the platform company to estimate that information about all of your users why do you do that yeah because it's information that sells that you can use to to make money um be it on your own platform or be it by selling some access to your model to other"
+    },
+    {
+      "start": 791.824,
+      "end": 821.776,
+      "text": "companies that are interested in this. And examples are wide ranging, and we all know them, at least qualitatively. This is being used a lot in credit scoring. This is being used in insurance risk assessment. For instance, here, the screenshots under insurance risk assessment, they are from these driving driver scoring, like a dongle in your car that scores how you drive."
+    },
+    {
+      "start": 821.84,
+      "end": 851.568,
+      "text": "And that calculates individual insurance risks by predicting, for instance, your driving behavior or character traits about you. It is a huge market is, of course, applicant selection and human resource management. So basically automated hiring or AI supported hiring systems that are usually used, for instance, to shortlist job applicants or to automatically screen."
+    },
+    {
+      "start": 851.568,
+      "end": 879.232,
+      "text": "job interviews, if it's a video interview, for instance, or an audio data available. Yeah, and of course, targeted advertising. I will talk about targeted advertising in five minutes. Another of my favorite examples is Spotify, as we will be listening to music. And by the way, I'm sorry for not being able to, that I wasn't able to present a piece of music. So I'm happy that"
+    },
+    {
+      "start": 879.232,
+      "end": 907.696,
+      "text": "Mr. Staudacher took care of that and we will be listening to the music in the end. On Spotify, I don't know if you are aware or how many people are aware, but Spotify makes a lot of money by selling mood predictions or personality predictions about their users or to be more precise, real-time personality or mood assessments."
+    },
+    {
+      "start": 907.76,
+      "end": 936.704,
+      "text": "So they are putting a lot of effort to find out from what you're listening to right now in which kind of a situation or mood you are. And this is how they describe the service to advertising customers on their website. And this is what in our own research we found out Spotify can also derive from your data. So data about your real time feelings."
+    },
+    {
+      "start": 936.704,
+      "end": 959.568,
+      "text": "For instance, are you feeling lonely, melancholic, insecure? And this is being used to target advertising in real time, for instance, to exploit particularly vulnerable moods or moments in your life or in your week or in your month or in your day for specific advertisements."
+    },
+    {
+      "start": 969.872,
+      "end": 998.384,
+      "text": "Yeah, let's get to the next chapter. I have four chapters, by the way. Sorry, I forgot saying in the beginning. So this will be the second of four. What we see here, and I prepared it already on the last slide, obviously, this has to do something with privacy. Obviously, there is something going on with the privacy of the users being invaded."
+    },
+    {
+      "start": 998.384,
+      "end": 1028.192,
+      "text": "maybe in a new way, at least that's what I propose in my philosophical research, that there is a new way of intruding privacy as a consequence of predictive analytics. I call it the kind of privacy or the concept of privacy that you need or the understanding of privacy that you need to make this case. I call that predictive privacy."
+    },
+    {
+      "start": 1028.192,
+      "end": 1056.208,
+      "text": "And the predictive privacy of an individual or of a group can be violated when personal information is predicted about them without their knowledge or against their will. So the basic idea is that we are now in a situation where many, if not the majority of privacy violations are not related to data about you being, for instance, stolen."
+    },
+    {
+      "start": 1056.24,
+      "end": 1079.872,
+      "text": "or abused yeah data you gave to your physician and the physician passes the data on to to somebody who wasn't authorized to see it so that that there is really kind of an intrusion intrusion aspect to it no i would say that today most privacy violations actually occur through"
+    },
+    {
+      "start": 1079.872,
+      "end": 1104.336,
+      "text": "information that you never disclosed being predicted about you it could also be information that you don't even know yourself for instance predictions about your disease dispositions yeah the prediction that you have a disposition to depressions or prostate cancer if that can be derived from your buying habits or other data about you"
+    },
+    {
+      "start": 1104.336,
+      "end": 1134.048,
+      "text": "It might be prediction that you don't know about yourself or don't even want to know about yourself, but that can still be made. And I try to argue in this ethical or philosophical part of my work that this is an intrusion of privacy. And that requires privacy to be understood a little bit more broadly than it's classically understood. As you can see here, I would say what we understand by privacy in relation to data protection."
+    },
+    {
+      "start": 1134.048,
+      "end": 1161.52,
+      "text": "has evolved over the history of data protection, but very rapidly over the last decades. It has evolved together with technology evolving and technology posing new threats or new attack vectors every couple of years or decades. And this is why I think it's fruitful to distinguish maybe three"
+    },
+    {
+      "start": 1161.52,
+      "end": 1191.424,
+      "text": "fundamental tech vectors but there might be more but it's just it's an open typology but at least these three I find worthwhile distinguishing from each other for instance when electronic or when the first large wave of digitalization of public services such as health services started in the 60s in the 1960s much talk was about the security"
+    },
+    {
+      "start": 1191.424,
+      "end": 1210.0,
+      "text": "against intrusion of these systems. For instance, the the secureness of these systems against hackers, hacker attacks or data leakage or even data loss, breaches of encryption and so on. So it's basically the idea that confidential information is being processed."
+    },
+    {
+      "start": 1210.224,
+      "end": 1237.856,
+      "text": "at large scale in electronic data processing systems. And an intruder could at once steal a lot of information about single data subjects or even about many data subjects at one time. That is a typical question of data security. And I would say that attack vector can be called intrusion because typically the privacy attack proceeds by crossing a barrier."
+    },
+    {
+      "start": 1237.856,
+      "end": 1267.392,
+      "text": "a barrier that was meant to keep unauthenticated people out of the data processing system or of access to the data processing system. And in the very late 80s and early 90s, a completely, yeah, I would say completely new threat emerged when re-identification attacks were discovered in the US and also in the health data."
+    },
+    {
+      "start": 1267.392,
+      "end": 1295.568,
+      "text": "context when um when stunning publications were made that um that individual health records could be recovered from statistical databases that were purposefully published yeah the idea was that certain insurance companies could um publish anonymized versions of their patients data for research purposes so that basically you they remove names and streets and um"
+    },
+    {
+      "start": 1295.568,
+      "end": 1325.184,
+      "text": "um birth dates from the records and the the the remaining records were published or were made accessible for research purposes and they considered this an anonymized data set and it was possible to re-identify for instance politicians in that data set and that was an outcry and that triggered this whole research on re-identification attacks yeah"
+    },
+    {
+      "start": 1325.184,
+      "end": 1351.072,
+      "text": "re-identification attacks, the typical scenario is that data is not, it's not stolen data because the data, the anonymous data was purposefully published, but it turns out not to be anonymous, at least not as anonymous as people were thinking. So this is already a different type of attack. And I would say in this line,"
+    },
+    {
+      "start": 1351.072,
+      "end": 1380.288,
+      "text": "another 20 years later we now see maybe the the the hype of predictive privacy attacks yeah predictions could already be made 40 years ago but it was not the center um i would say this the center of importance in in in or it was not the most most pervasive kind of privacy attack and and today i would say it is um and here um"
+    },
+    {
+      "start": 1380.288,
+      "end": 1409.472,
+      "text": "it's not even purposefully published data that's being used, but, and this is an interesting point. It's data by many others that enables the attacker to predict something about you. I will come back to that point in a minute. I know it was a bit quick now. So let me see. Yeah, it is here. I would say that the,"
+    },
+    {
+      "start": 1409.472,
+      "end": 1436.848,
+      "text": "the attack vector or the predictive violation of privacy has three qualitative aspects to it. And to characterize it here, I have a new slide. The one qualitative aspect is that it comes from the perspective of the subjects with an escalation of sensitivity. For instance, if you are the"
+    },
+    {
+      "start": 1436.848,
+      "end": 1466.4,
+      "text": "the person whose privacy is violated through predictions, this is usually done after you provided some data that you felt is not so sensitive. For instance, you are using a social media platform and clicking some likes and sharing some content, but not disclosing, for instance, information about your alcohol"
+    },
+    {
+      "start": 1466.4,
+      "end": 1492.816,
+      "text": "usage and a predictive model can estimate from your usage data that you provide data on your dispositions to substance abuse. And then from your perspective, escalate the sensitivity. Yeah, you estimate the data you provide as less sensitive, but the model can escalate that sensitivity."
+    },
+    {
+      "start": 1492.944,
+      "end": 1520.016,
+      "text": "The other structural aspect or qualitative aspect about predictive violations of privacy, and this is maybe the harder bit, it often needs a lot of explanation, is that it is the data of many others that's being used. It's because some Facebook users or some social media users disclosed that they are addicted to alcohol, that the platform"
+    },
+    {
+      "start": 1520.016,
+      "end": 1547.504,
+      "text": "could train a model that can predict alcohol addiction from social media usage data. So it's because of the privacy decisions of these, let's say, 10% of users that your privacy can be invaded here. So the decisions they took on disclosing their alcohol addiction has an impact on you. At least..."
+    },
+    {
+      "start": 1547.504,
+      "end": 1575.312,
+      "text": "If it is a couple of people making that decision, if it was only one other user deciding to disclose it, that will not be relevant. But if it is one million users, you already have a lot of training data for a model. And this is the weird or the real qualitative novelty of this privacy threat, because it shows that in constellations of predictive privacy, it's not everybody takes care of their own data."
+    },
+    {
+      "start": 1575.312,
+      "end": 1592.592,
+      "text": "Because the data decisions you do or you take have implications for others. So your data contributes to violating other individuals' privacy. That is the characteristic of predictive violations of privacy."
+    },
+    {
+      "start": 1603.76,
+      "end": 1633.44,
+      "text": "Yeah, I wanted to debate this example. I already made the announcement. Because after this intensity of serious topics, let's debate something harmless. Targeted advertising is usually taken as one of the most harmless examples of how your data on the internet is being used. Is it?"
+    },
+    {
+      "start": 1633.44,
+      "end": 1661.04,
+      "text": "No, it is not. I make the point that targeted advertisement is not at all harmless. And I would like to make the point using an example. And Klaus Dallacher already mentioned the paper that we brought out on that issue. So I'm directly lecturing basically what we wrote in that paper here, but in a short form."
+    },
+    {
+      "start": 1661.04,
+      "end": 1690.336,
+      "text": "Let's take the example that, for instance, you are a you are clinical clinical researchers and you develop a new treatment for type two diabetes and you need to conduct a stage two or stage three clinical trial. So you basically need people with diabetes type two to try your medication and recruiting those people is."
+    },
+    {
+      "start": 1690.336,
+      "end": 1719.456,
+      "text": "difficult and cost intensive yeah it's it's a business um of sometimes you see the advertisements on the metro uh looking for certain people with certain diseases to try a new medication so you could come up with the idea of trying it online by online advertising your new diabetes type 2 treatment to look for patients who want to volunteer in being a participant"
+    },
+    {
+      "start": 1719.456,
+      "end": 1748.672,
+      "text": "This is a real case here. It was from 2018 that this trial facts, it's an intimate diary, like a company organizing these kind of recruitment processes for clinical trials. So you ask the social media platform to run this ad for you. This slide, I will bring the slide later. Let's go here. No, let's go here."
+    },
+    {
+      "start": 1748.672,
+      "end": 1778.624,
+      "text": "What typically you do when you want to run such an ad on a social media platform is you provide the ad and you provide some targeting criteria because the social media platform will not show the ad to everybody, but only to users that meet certain targeting criteria. That is the service. This is why social media advertising is so much more effective because it shows the advertisement only to people that you say,"
+    },
+    {
+      "start": 1778.624,
+      "end": 1808.56,
+      "text": "are potentially relevant for my advertisement. So you would come up with some initial criteria, for instance, a certain age range, maybe a certain demographic, maybe a certain geographic cohort. I don't know what is particularly relevant in case of type 2 diabetes. And then these two pieces of information are fed into the targeting algorithm, and the targeting algorithm selects users on the platform who see your advertisement."
+    },
+    {
+      "start": 1808.56,
+      "end": 1837.936,
+      "text": "This is basically what most advertisers think they buy. What, of course, happens in reality or maybe an extension of this is that the platform also collects data on who engages with the advertising. That is the typical fact about or the defining fact about online advertisement, that online advertising is never a one-way communication."
+    },
+    {
+      "start": 1837.936,
+      "end": 1867.456,
+      "text": "But online advertisements always measure how users, whether and how users interact with the advertisements. For instance, whether they share it, whether they look at it longer or shorter. Or in the case I showed you here, I don't know if you remember, there was even a sign up button on the advertisement. Yeah, there was the button you could press to sign up for the study. So that is a very explicit call to engagement."
+    },
+    {
+      "start": 1867.456,
+      "end": 1894.496,
+      "text": "on that advertisement and all this data goes through the platform yeah the button the sign up button was on facebook if you click on it if you click on more information if you share the ad if you send it to a friend this all goes through the platform so it can all be recorded by the platform and it is being recorded by the platform and why does the platform record that information here because it's interesting information about their users and what they can do and what they do do is"
+    },
+    {
+      "start": 1894.496,
+      "end": 1919.872,
+      "text": "that they, first of all, reinsert that information as training data to the targeting algorithm. Because that means that from measuring how good the advertisement performs on the users of the first hours or days of the advertising campaign, based on that information as training data, they can refine the targeting procedure."
+    },
+    {
+      "start": 1919.872,
+      "end": 1941.6,
+      "text": "So that they can much better target people who are more likely to click on the advertisement, on that particular advertisement. So that the targeting criteria you initially give to Facebook or to the social media platform, they are only initial criteria and that evolves."
+    },
+    {
+      "start": 1941.6,
+      "end": 1969.888,
+      "text": "through the self-learning process of the targeting system, which gets much more refined and much more subtle in targeting than the criteria you initially provide. This is actually described in research papers who observed that the targeting got more and more effective over the first two to four days, that they could observe like a curve."
+    },
+    {
+      "start": 1969.888,
+      "end": 1998.288,
+      "text": "an increasing curve, steeply increasing in the first hours and then reaching some saturation after a couple of days where the algorithm seems to finally reach full performance and much higher performance than it could provide initially. So the targeting algorithm learns from the user engagement with the ad. This amounts to nothing else in this case than"
+    },
+    {
+      "start": 1998.288,
+      "end": 2022.224,
+      "text": "Training a model that can predict information that more or less well correlates with whether the person is a type 2 diabetes patient, right? Because that ad specifically targets patients. And if you engage with the ad, you are highly likely a patient yourself or you know somebody."
+    },
+    {
+      "start": 2022.256,
+      "end": 2049.392,
+      "text": "in which case you will more likely send it to somebody else, at least not click on sign up. So this is the model that can learn to predict whether an arbitrary Facebook user, future or present, future, past or present, it could even be Facebook users who quit Facebook, but from whom Facebook still retains some data."
+    },
+    {
+      "start": 2049.904,
+      "end": 2076.64,
+      "text": "This is a model that can predict about arbitrary Facebook users, whether they have a certain likelihood of suffering from type two diabetes. And it definitely this can this model can be applied to anybody else, people who did not see the advertisement or people who sign up on Facebook only in five years. So this is basically a capacity, a predictive capacity."
+    },
+    {
+      "start": 2076.64,
+      "end": 2105.856,
+      "text": "that the social media platform is able to obtain through the help of the clinical research body running this advertisement to predict highly sensitive medical information in this case about arbitrary users. And there is a large market for such predictions. For instance, think of such a model being of interest to an insurance company."
+    },
+    {
+      "start": 2105.856,
+      "end": 2123.472,
+      "text": "For instance, life insurance companies or health insurance companies, of course, they are interested in risk scoring algorithms. They are not allowed to derive medical information about you without certain restrictions."
+    },
+    {
+      "start": 2123.472,
+      "end": 2149.904,
+      "text": "coming from data protection regulation, but they could factor in that model into a bigger model that does not explicitly derive information about your health data, that does not explicitly derive health information about you. So there are even ways of circumventing these problems. So it is likely that such models, once they are there, are being reused for other purposes."
+    },
+    {
+      "start": 2150.064,
+      "end": 2175.824,
+      "text": "And this brings me to my last chapter, the risk of secondary use of trained machine learning models. If I'm asked what I would say is the biggest data protection problem in relation to machine learning, I would say it is exactly this risk of abusing trained models for completely different purposes that were not on the table in the beginning."
+    },
+    {
+      "start": 2175.824,
+      "end": 2205.28,
+      "text": "For instance, on the table in the beginning, it was that Facebook is ordered to target this ad to appropriate users. And nobody talks and no data protection regulation really prevents the trained model from being copied or transferred to other purposes and potentially being reused elsewhere. And why did I say that? No."
+    },
+    {
+      "start": 2205.28,
+      "end": 2233.872,
+      "text": "regulation prevents this, to make this case it's important that we distinguish different processing steps that are involved here. The one step is training the model. You collect training data, in this case it's the feedback data to the advertisement, and you feed that data into a training procedure that retrains or trains a certain machine learning model."
+    },
+    {
+      "start": 2233.872,
+      "end": 2261.84,
+      "text": "um this can be done for instance in a way that anonymizes the data at least in many cases um you can assume and it will be done lawfully for instance um the the engagement data with the ads on facebook it's collected it's within the um framework of of the general condition of using the conditions of using that system as a user um it is also"
+    },
+    {
+      "start": 2261.84,
+      "end": 2284.016,
+      "text": "often argued by legitimate interest legal basis according to the GDPR by the platforms. So the one step is training a model and let's assume the model is anonymous and highly aggregate data. Let's say the training is done so well that no membership attacks"
+    },
+    {
+      "start": 2284.016,
+      "end": 2313.184,
+      "text": "or other reverse engineering of individual training data from the model data can be done then you can say the model that's anonymous data and anonymous data is not in the scope of the GDPR and so the anonymous data that constitutes the model weights can travel elsewhere with nearly without restrictions to be applied for other purposes and these other purposes is then again a step that is"
+    },
+    {
+      "start": 2313.184,
+      "end": 2334.192,
+      "text": "potentially governed by the GDPR. When you apply the model on an individual case, for instance, from Klaus Staudacher, I get the usage data and I input it to the model and calculate whether he is likely a patient of type 2 diabetes. In this case,"
+    },
+    {
+      "start": 2334.192,
+      "end": 2357.872,
+      "text": "I'm deriving personal information about Klaus Staulacher. And this is, again, a data processing step that is governed by the GDPR. But the intermediate step, when you only have the model, and the model is anonymous data, and that data can be sold or reused or copied, this is not governed by..."
+    },
+    {
+      "start": 2357.872,
+      "end": 2381.504,
+      "text": "by the general data protection regulation because the scope is only personal information and not anonymous data. I would say that possessing such a model constitutes prediction power. That is the social philosophical term I try to mention here."
+    },
+    {
+      "start": 2381.504,
+      "end": 2396.576,
+      "text": "It's plainly and simply the ability to make predictions about any individual it's important that it's about any like any individual about whom you have usage data in this case yeah it's a large class of individuals typically. and"
+    },
+    {
+      "start": 2396.576,
+      "end": 2425.872,
+      "text": "Typically, prediction power accumulates where data accumulates. It's not very likely that I have prediction power in this sense here. Yeah, I can throw dices. If you call this a prediction, then I have prediction power. But what I mean here is these data-based predictions. And this is typically something that is a version or a byproduct of platform power. So it accumulates with certain already very powerful actors."
+    },
+    {
+      "start": 2425.872,
+      "end": 2454.944,
+      "text": "And yeah, it's important for prediction power that what constitutes prediction power is not that the model is being used on Klaus Staudacher, but what constitutes prediction power is that it could be used on anybody. The potentiality of making a prediction about nearly anybody or about at least a large cohort of individuals. So it's important that we analyze a certain"
+    },
+    {
+      "start": 2454.944,
+      "end": 2483.584,
+      "text": "risk that comes with the mere presence or the mere possession of a trained model and that is prior to the harm that is being done when the model is actually applied to a concrete individual. Contemporary data protection regulation with its defensive rights for the individuals has the problem that the harm is already done when individuals can trigger these rights."
+    },
+    {
+      "start": 2483.584,
+      "end": 2511.904,
+      "text": "excuse me if i interrupt you now because we have a little bit of problem of time because we need some time for discussion um have you some how can you a little bit shorten i i'm almost done okay i'm almost done um this is um actually my final slide so um what i was going to say is that"
+    },
+    {
+      "start": 2511.904,
+      "end": 2541.136,
+      "text": "It is important to find a strategy that regulates the power accumulation and not only the application of the models. That was my presentation. Thank you for listening. And now I'm interested in your discussion. Thanks a lot for this very clear and instructive lecture. The discussion is open for questions now."
+    },
+    {
+      "start": 2544.88,
+      "end": 2573.952,
+      "text": "Who has the first question? Klaus, I have a question. Thanks, first of all, for this very clear and insightful presentation. And it's really you're showing when the model is, let's say, and the model aggregating even anonymous data allowed a huge number of individuals so that you could apply it to other specific persons. Is there a way out? Because you cannot..."
+    },
+    {
+      "start": 2573.952,
+      "end": 2603.488,
+      "text": "prohibit model building you cannot let's say what would be a counter measure what would be an answer to this let's say data collection and then the abstraction of the data in the form of a of some let's say predictive model what is the answer you would propose yeah it's i mean yes it is a difficult question it's not at all clear um first of all"
+    },
+    {
+      "start": 2603.488,
+      "end": 2631.584,
+      "text": "Yeah, my answer is twofold. First of all, I would say what we need is that we are aware of this problem and many people aren't and many regulators aren't. And concerning a concrete intervention, what I'm working on, it's called purpose limitation for models. You say you cannot prevent people from training models. Yeah, that's maybe true. But I think we can impose."
+    },
+    {
+      "start": 2631.584,
+      "end": 2658.224,
+      "text": "For instance, a regulation that suggests that models that are being trained should be bound to a certain purpose. Like purpose limitation in data protection, where you say data can only be processed when it sticks with the purpose that is being fixed from the outset. I would say we need a regulation that forces entities that build models."
+    },
+    {
+      "start": 2658.224,
+      "end": 2687.44,
+      "text": "to determine the purpose beforehand, to register the purpose or the model and to be forced to stick with that purpose. But may I add, but it's very hard to define a priori purpose because very often purpose is a vague concept and the requirements are not so easy to be defined. Sorry for that. Second question following up to your answer. Yeah."
+    },
+    {
+      "start": 2688.624,
+      "end": 2717.488,
+      "text": "Yeah, you can answer. Yeah, yes, sure. Especially in research context, it's not easy to define the purpose beforehand. But for instance, doing research is already a purpose that would prevent the research entity to sell the model, for instance, to an insurance company. And if..."
+    },
+    {
+      "start": 2717.488,
+      "end": 2746.128,
+      "text": "In the research, it turns out that the purpose that has been defined is too narrow. I think we need a way of renegotiating the allowed purpose with a certain body, with the oversight body that is responsible for agreeing with the purpose. I think that would be doable. Okay, the next question is from Manels Clocom."
+    },
+    {
+      "start": 2746.352,
+      "end": 2772.032,
+      "text": "Hi. Hi, everyone. And thank you for the talk. From the audience, I know one of the co-hosts, Peter. So where to start? I really enjoyed your presentation. And I think apparently I'm not the only one who is proposing this. The title of my PhD, which I am so far."
+    },
+    {
+      "start": 2772.032,
+      "end": 2799.936,
+      "text": "almost there with it. I'm calling it purpose-aware privacy preserving techniques for responsible predictions. And I am calling for a purpose behind whatever we do. And I think the answer to the question you got, and I'm in the same line with the speaker, the way I solve it, or I propose to solve and mention that there is a purpose, through the threat model. So the speaker was speaking about"
+    },
+    {
+      "start": 2799.936,
+      "end": 2827.6,
+      "text": "The fact that there is someone who has an intuition and they want to infer something, we call inference attack or predictions. This is since 1986, someone defined the threat model using the adversary, adversary knowledge, capabilities, objective, and how we can countermeasure this. So in research, and I think also in real world, I will link it to the real world."
+    },
+    {
+      "start": 2827.6,
+      "end": 2855.424,
+      "text": "We can define or solve a problem using the threat model formulation. Within that threat model, you can say the purpose is, for example, to predict people who have diabetic type one or two, whatever. And the resources for the adversary is this and that from social media. How can we do such that we know we infer for the right people? So this is the thing. And for the speaker, because I think we are in line and."
+    },
+    {
+      "start": 2855.424,
+      "end": 2883.232,
+      "text": "Are you aware of the synthetic data generation? Yes, I knew it. Okay, so I would like to know, and I'm just going to say very quickly, synthetic data is a data that looks like original data, but it is fake or artificial because it is simply generated by a machine. In simple words, if some of you know about deepfake, so you give a real image to the artificial intelligence."
+    },
+    {
+      "start": 2883.232,
+      "end": 2912.816,
+      "text": "and then the machine will generate another image, but that image is not real. This is exactly synthetic data. So for the speaker, I want to know, what do you think about synthetic data? Do you have a position, especially from ethics? And do you know what kind of purposes would you allow to use synthetic data for? Thank you. Yeah, thanks for the comment and question."
+    },
+    {
+      "start": 2912.816,
+      "end": 2934.672,
+      "text": "I'd like to know more about your PhD thesis. Maybe let me know. I know this synthetic data trend. I'm not sure. I don't have a very qualified position on what I think about this ethically."
+    },
+    {
+      "start": 2935.312,
+      "end": 2964.592,
+      "text": "Because it's so weird. I want to add something. Do you know about data warehousing in certain countries of the global south? For instance, when the Indian government decides to put out the data of their whole population, for instance, health data for sale, real health data. And so we have apparently we have these various new data sources nowadays. The one is synthetic. The other is data for sale."
+    },
+    {
+      "start": 2964.592,
+      "end": 2993.36,
+      "text": "click work data and i'm not sure um um i think to me this only strength strengthens the point that we should regulate the models and not the data anymore because if if for instance data on health information currently for instance when you want to build an ai model to improve medical diagnosis getting the training data from real patients is still the"
+    },
+    {
+      "start": 2993.36,
+      "end": 3020.256,
+      "text": "the bottleneck. And if data now becomes much better available through various of these sources, synthetic, for sale and so on, then it is easier for many entities to train such predictive models. And this is why I think that regulation of privacy sensitive or the point where we need to be responsible concerning privacy should move to the models."
+    },
+    {
+      "start": 3020.256,
+      "end": 3050.208,
+      "text": "And the models should be regulated and not only the data. Yeah, regulating only the input stage of such data processing chains has always failed, I would say. I know it's not the most specific answer to your synthetic. That's actually what is also happening because we need to stop. There is a whole debate going on about the use of synthetic data. Is it good or bad or how my only worry like you, if it goes into harms."
+    },
+    {
+      "start": 3050.208,
+      "end": 3069.232,
+      "text": "to the society. You cannot draw conclusions from the synthetic data. Yes. There's another question in the chat. I just want to know what if we concentrate on technical prevention like using blockchain."
+    },
+    {
+      "start": 3069.232,
+      "end": 3098.912,
+      "text": "or similar technologies what's your point of view is that it's possible to enforce big techs or governments or even some public services to ethically implement these rules by technology actually it is uh hello before anything and thank you for amazing lecture uh i just uh want to know uh is there possibility i just want to know about your point of view about the possibility because"
+    },
+    {
+      "start": 3098.912,
+      "end": 3127.472,
+      "text": "If we talk about ethics and implementing ethics by some rules and regulations, it's an issue. But if we enforce them to use some technology based solutions like blockchain solution or something like that, it's not ethical. You know, it's a must. What's your point of view about this? Excuse me."
+    },
+    {
+      "start": 3128.944,
+      "end": 3152.192,
+      "text": "Yeah, I personally don't believe in technological solutions. There's already so much solutionism out there in relation to fixing societal harms coming from AI and digitalization. And delegating..."
+    },
+    {
+      "start": 3152.192,
+      "end": 3176.48,
+      "text": "These are often very political questions in nature. For instance, is it okay to use predictions about your health to shortlist you for a job interview? Okay, in the case of health, it is discrimination. But let's say predictions about non-sensitive attributes."
+    },
+    {
+      "start": 3176.48,
+      "end": 3204.736,
+      "text": "predictions about your work performance yeah let's imagine you are a company developing you are assessing employees you are collecting lots of data in your company and then you can build a model to predict work performance and you use that model to shortlist job applicants according to expected work performance is that okay i would say that is a highly political question we should renegotiate what are the lines of discrimination"
+    },
+    {
+      "start": 3204.736,
+      "end": 3234.352,
+      "text": "that are fair and that aren't fair or that are politically viable and not. And the proposals solving, so there is no clear engineering solution to that problem because it needs to be a debate. It needs to be wanted instead of solved. There needs to be some like collective formation of a will, of a political will connected to these issues."
+    },
+    {
+      "start": 3234.384,
+      "end": 3263.488,
+      "text": "Thank you. I just want your point of view. Thank you. So we are nearly 6 p.m. So are there any further questions or should we finish with the music now? Okay, then. Okay."
+    },
+    {
+      "start": 3263.488,
+      "end": 3291.904,
+      "text": "I was asked to choose a tune and it's always not easy, but I wanted to choose a tune which shows the real human genius. And I've chosen a tune played by Errol Garner. Errol Garner was what is called an ear player, a poor ear player. He couldn't read notes."
+    },
+    {
+      "start": 3291.904,
+      "end": 3318.992,
+      "text": "And he has a quite special style of playing, rhythmically very interesting. And that's the reason why I have chosen this tune. The original composition is perhaps not so extremely interesting, but Aragona has made a very charming and interesting tune out of it."
+    },
+    {
+      "start": 3321.008,
+      "end": 3348.128,
+      "text": "Thanks, Jose. I will play it. And before I do that, I will just announce the next lecture. So first of all, thanks to you, but foremost to Reina for the presentation and a very interesting discussion afterwards. The next lecture we're going to have is going to be on November 21st. And Anu Bradford will talk about Digital Empires, the Global Battle to Regulate Technology, which is also the title of her latest book."
+    },
+    {
+      "start": 3348.128,
+      "end": 3377.488,
+      "text": "And I know Bradford is probably best known for her work, The Brussels Effect, which has had a strong impact on how Europe's impact and European regulations have impacted on a global scale. And George Metakidis will moderate. So thanks again to everyone. And I will start Errol Garner now. Thanks very much and see you next time."
+    },
+    {
+      "start": 3652.08,
+      "end": 3655.984,
+      "text": "everybody. See you next time. Yes, goodbye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

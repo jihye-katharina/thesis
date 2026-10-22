@@ -1,0 +1,571 @@
+{
+  "video_id": "Sew0jZ0BEW0",
+  "source": "whisper",
+  "language": "en",
+  "text": "The last talk today is about, again, about artificial intelligence. And we have Jim Larus from EPFL, and he has his slides. Hopefully. And he is keen on keeping the time. Hopefully. Okay? So, thank you. There we go. Okay, thank you very much for the invitation. It's a pleasure to be here. I recognize that I stand between you and dinner, so I'm going to talk about a fascinating subject, which is regulation. It's actually great. It's a very good placement in the program, given the previous two talks, because if you believe the previous two talks, then we have a problem here. We need to do something about the problem. Typically, the way in which problems of this scale and this complexity are resolved is by government regulation. Let me start with a question. Question. Should your government, and everybody I realize is from a different country and different background, should your government regulate artificial intelligence now? in the use of commercial products. Raise your hand if you believe that this is a good idea. Okay, I'd say most people, not all, but most. Okay, is your view universal? Should this be true of all countries, all governments, or is this a local view? You voted one way or the other. Do you think your view should be the view of all countries? Universal. Universal. Okay. All right. So I just want to throw this out at the beginning. You can think about these questions when I get to the end. So let me just... So is your view universal in the sense that it's universal across all countries, all cultures? Your view, whatever it was expressed on this slide, I don't remember how you voted, Moshe. Universal means across all countries, all people. Your view that AI should be regulated. Your being your specific view, everybody in the audience. Yes. Sorry. I thought it was an easy question. Sorry. Okay. Okay. Okay. We'll get there. So let me just be clear about what I'm talking about. I am not talking about what is sometimes called applied general intelligence, which is the notion that originally came up in a very early paper by Turing, which was, could we build a machine that would be as intelligent as a human? And he proposed... For those of you who haven't seen it, the Turing test where basically an observer had to be able to decide between a machine and a person. And if they couldn't make the decision, then the machine was proclaimed to be as intelligent as the person. This is not what we're talking about. This is not within the realm of technological possibility in the foreseeable future. What we're talking about is what's sometimes called applied AI. So specific human skills have been very successfully put into machines by techniques that are generally called machine learning or AI. So vision, hearing, speech, chess playing a long time ago, go within the past year, someday self-driving cars. All of these are... skills that before they were automated were seen as uniquely human. There's been a lot of progress in the last couple of years. Most of you realize that we would not be here talking about this except for some innovation over the past couple of decades which really came to fruition about 10 years ago that's in deep neural nets that made it possible to have very fast very large improvements in these techniques that were on the previous slide. So this is a benchmark for the image net, which is a standard comparison of image recognition systems. And it's been getting better for a fairly long period of time. This has been in use for a while. In 2012 was the first use of deep neural nets. You can see there was a dramatic improvement. Then all the competitors in the network jumped on it. And the improvement has been fairly steady and fairly dramatic. This red line, by the way, is human accuracy on this benchmark. So it's about 5% error. Machines these days are way below 5% error. It's not to say machines are as good at vision and object recognition as people, but on this particular benchmark, they are sort of more consistent. and more able to keep into account 1,000 different categories and correctly classify images. Yes? The error rate is 10% of that because the line appears to be 10%. I don't have the X scale on this, but no, the error rate for humans is just a bit over 5%. So these bars are not 10%. Yeah. I'll give you the whole thing and then we'll go with the axis. I apologize for not having the axis. Okay. So let's go back to this question that I started with. So why regulate AI? And there are a number of possible explanations, reasons, motivations for doing it. One is that AI is just this intrinsically dangerous technology. We regulate other dangerous technologies. You know, you can't go and make explosives. You can't store explosives unless you're licensed and capable of doing it properly. Another thing is that AI is different than other technologies. It's basically doing human-like skills. And so we should be able to regulate it because it has large implications on our humanity. The other is the points that Moshe brought up, that it has technical social consequences. that we can't predict. It could be very severe, and so we want to get some control over it. Another one came up. We could exacerbate social inequalities. We could build discrimination, biases into these systems and make them worse by applying them systematically. One that I won't really touch on is this notion of singularity of superintelligence, which is the fear that the machines are going to become more intelligent than people and be able to reproduce themselves by building more machines that are more intelligent until humans just become noise or difficulty to be gotten rid of by these machines which take over the world. That I don't think we're in any danger of. Finally, there's actually another one which came out of the German report that we heard on the previous speaker, which is a positive argument saying that regulation... will enhance public acceptance of these technologies. And it would be a good thing to regulate AI so that people would accept self-driving cars, for instance. Why not? The arguments go pretty much the other way. So the dangers are overestimated. New technology always looks incredibly dangerous when it first comes out. And in reality, people don't cause the problems that were expected, you know. Example is recombinant DNA technology. When I was going to the university, this was seen as an incredibly dangerous technology. Universities had to build laboratories that were at bioweapons level security. These days, high school students perform the same experiments. No problem there. We can manage the consequences of it. We have plenty of mechanisms already outstanding, so there's no reason to create new regulations. Another one is we lack sufficient understanding of AI and how it's going to be used. So it would be foolish to have regulations at this particular point. Another one is it's impossible to regulate. It's a technology. Everybody can build the technology. The knowledge is widespread. If you do regulation, people will evade it. There will be a big debate about what's AI. It just won't be effective to regulate it. We could prevent beneficial uses of AIs. We could prevent the deployment of self-driving cars and a million and a half people will die every year because of regulations that prevent self-driving cars. And then, of course, there's the commercial competitiveness that someone else is going to do it if we don't do it and we will lose the business and the sales. All these are arguments that have some validity that are made quite commonly. What I want to do, is get this clicker to work. I basically want to present this argument for regulation from three different perspectives based on documents from Europe, which I'll take as either an ethical or moralist view, the Anglo-Saxon, which will be the capitalist legalist point of view, the Chinese will be the entrepreneurial authoritarian point of view. And in the interest of exposition, I'm going to ignore all subtlety and divergence of opinion. So I know perfectly well that there are people in Europe who take these other two views. There are people in the United States who share the concerns of the Europeans. I'm going to ignore that. I'm just going to pick single data points from each one of these groups to make my point about the different points of opinion, different views. So from Europe, I'm going to start from two reports. This is the high-level expert group on artificial intelligence. It's a draft. It's not actually finished. It's kind of interesting. There are large parts of it where they basically say, we don't know how to decide this. We would like feedback on this draft report at this point. But it's a very well-written, thoughtful report. The other one is the Ethics Commission from Germany on automated driving, which we heard about from the previous speaker. So let me start with the European Commission. And I apologize to those of you who are in the back. You might want to move closer to a screen. So these are quotes from the various reports. I've highlighted points that I want to sort of bring out, but these are all directly from the reports rather than my paraphrases. Basically, the High-Level Expert Commission for Europe starts with the premise that AI's benefits outweigh its risks. that it is something that should be put into existence. It's not something that we should say it's too dangerous to use. On the other hand, a human-centric point of view is required for the use of AI, and the goal of it should be driven to increase human well-being. So the principle that is basically saying that AI should be put out there is that we can identify benefits for human beings. not benefits for corporations, not benefits for governments, benefits for human beings. It very much wants to tie all of the discussion into the ethical and legal framework to strengthen European values. I'm not quite sure why or how European values differ from other people's values, but that's quite clear in this report is that there is a notion that the European values are different. No. Well, no. Not really. You probably will identify with them, though. So the goal they set out is trustworthy AI. And they argue that some trust in the AI systems that you build is a prerequisite for people to actually use AI, to deploy AI. that it's not sufficient to just build AI systems and put them out there with nobody understanding them, nobody having any sense whether they work or don't work, or when they don't work, why. So they start with this statement, which I quote, that trustworthy AI will be our North Star, which is basically their guiding principle in a fairly meandering journey towards some actionable principles for Europe. So now, at this point, we shift from European values to universal values. So they basically say we need to look at fundamental rights, applicable regulations and core principles and values, and that will constitute our ethical purpose. So unlike the previous speaker, we will not discuss particular philosophies. Instead, we will ground this on rights that citizens in Europe already have and we will say that those rights should be preserved by artificial intelligence. Again, there's concern that the AI might be stifled, might be sort of held back. They specifically say that their goal is not to stifle AI innovation but instead to develop a unique brand of AI that is ethically based, which I guess could be the European product in the AI commercial market, then Europe could be a leader in cutting edge, secure, and ethical AI. So trying to make an argument that there is potential benefits in taking this approach to regulating AI. Ethics should be used to develop it. You take abstract ethical principles, develop concrete ethical values that can be operationalized. Obviously, there's some technical people on the committee in the context of AI. And what are these ethical principles? Well, respect for fundamental rights, principles, and values, and ensuring that the AI system preserves this set of rights and values. So I won't go through all of it. It's a fairly long discussion in the report. So the principle of beneficence do good. So this is one of the examples of the principles that they state as universal principles that the AI system should preserve. So a system can meet this goal by seeking to Seeking the achievement of a fair, inclusive and peaceful society by helping to increase citizens' mental autonomy with equal distribution of economic, social and political opportunity. These are great goals. I think everybody sort of would buy into these goals. I think it's very difficult sometimes to see the connection. between things like this and actual practical systems and that's one of the criticisms I would make of this approach is that it's a fairly high-level guide, but we'll get there. So after this discussion of these principles at this level, they then come up with requirements for trustworthy AI. It turns out these are not requirements for the AI Instead, these are requirements on the teams that build the AI system. So it's a very interesting report. Basically, they're not arguing so much for laws or regulations as arguing that this set of guidelines should be mandatory for all of the groups that actually are building and deploying AI systems, that everything they do should be evaluated against, I think, these 10 principles. and that you should always be keeping these principles in mind while making decisions. Those of you who have ever sort of built something in a commercial environment or written software in a commercial environment can imagine how difficult it is to translate from this level of abstract principle into specific technical requirements. But in the end, I think that... At the same time, they're absolutely right that all of these goals are worthwhile goals in terms of building the systems. The German report is similar in the sense that it is ethically based. It basically was a group of philosophers, ethical... was that a word? Computer scientists, people from the auto industry who tried to come up with some principles. And there's a statement of principles in it that's very clear, very understandable. I quote a few of them. That the primary purpose of a fully automated transportation system is to improve safety. So basically this is Moshe's argument that a million and a half people die every year. If you're going to automate the system, you should try to reduce the number of injuries and deaths. That is the benefit of automation. Technological unavoidable risks do not mitigate against the introduction of automated driving if the balance of risks is fundamentally positive. So there are practical people on this committee who are basically thinking about how do you actually build these systems under the assumption that they're not always going to work, that there are going to be hard problems like the trolley problem that are not going to have good solutions. Should prevent accidents wherever this is practically possible. I think we saw this in the previous one. This is a very different flavored report in the sense that you get the sense that The auto industry in Germany is very much involved in this discussion. They would like a set of principles that will lead to automated driving. I mean, it's obviously a competitive world that they live in and they need to participate in. So if you look at Europe, I think they're both thoughtful. well-intentioned, excellent reports. There's an ethical approach that AI should be, I shouldn't have said better, I should be as good as the most upright, moral, humane person, that these are the sort of aims that we should have for AI as well as for ourselves. I think that's quite reasonable. What is difficult for me in the first report is that it devolves all the responsibility of translating between these abstract high-level goals. and practical implementations to the business people. It's not a call for regulation as much as it's a call for consideration of these. There wasn't, in either report, there really wasn't much concern of what Moshe was interested in, the social impact of it. Okay, so that's Europe, very concisely. So for the U.S. and U.K., which I'm going to group together, because I think it's fair to do it. I'm going to use two short pieces from CACM which were a supposed debate about whether AI should be regulated or not. You'll see when I present them whether it really wasn't a very full debate in the sense that both points of view are very close together. And then there is a very interesting discussion about the legal system and regulating AI within the Anglo-Saxon legal system, which has some interesting points. So let me start by saying, you know, I'm sure everybody has conceptions about America, but, you know, this is a survey that was published by MIT Tech Review that a lot of Americans think that AI and robots should be carefully managed. It wasn't regulated. It was managed. And, you know, the numbers are pretty large. The interesting thing, though, is who should do it. The largest positive was for tech companies. I don't know what partnership on AI as scientific organizations, government reorganizations, U.S. federal government and state governments in the U.S. are not trusted to regulate AI. It's a little different than Europe, I would say. So the first point of view, this one was supposedly in favor of regulating AI. This is Orion Etzioni, who's a professor at the University of Washington and the head of the CEO of Paul Allen's Institute for AI in Seattle, Washington. So this is the one that's in favor of regulation of AI. So he says, you know, regulation is a blunt and slow-moving instrument. This is his second sentence. You know, whatever you believe, that's a strange place to start arguing for regulation. You know, it talks about misplaced regulation, stifling innovation, derailing the enormous potential benefits, knee-jerk response. These are all buzzwords that are used in the debates in the United States against regulation. These are the sort of standard arguments against regulation by big business, by economists on the other side. His proposal, leave AI research alone. Trust us. You know, this is what I do. Don't regulate that. But, you know, it's OK to regulate applications in areas like transportation, medicine, politics and entertainment. But I'm not going to tell you how. But, you know, don't tie our hands too far behind our back because research has to continue. And the U.S. is going to have to keep up with other countries that do AI. And I don't think he's thinking of Europe in this point. I think he's thinking west to China. And economically and security wise, we're going to suffer. So this is the argument for regulation in this point counterpoint debate. The guidelines he proposes are fairly mild. Don't weaponize AI. AI is subject to the full. gauntlet of laws that apply to its human operator. AI should clearly disclose that it's not human, shouldn't disclose confidential information, shouldn't increase any bias that already exists. I mean, these are sort of regulations that won't stop anything or anybody. Okay. The other side, the side that's actually against regulation, is even more against regulation amazingly. They come from George Mason University, which is a real sort of intellectual center of neoliberalism and economics. And this is very much an argument in this point of view is that, you know, you've got to do risk analysis for everything and you've got to basically make sure that you don't ever do a regulation where the balance comes out that the costs are greater than the benefits. You don't want to freeze the development of life-enhancing innovation. Really, what they want is what they call permissionless innovation. Basically, what has happened in the tech industry is that if you come up with a new innovation, you can build a product out of it, you can sell it, and you don't have to ask anybody for permission to do that. So this is the commercial market. How can the U.S. stay ahead? That's one of the fundamental questions. So there are a bunch of recommendations. I'm not going to go through them, but the recommendations are not for regulation. They're basically for removing what they perceive as barriers to the use and deployment of AI. So at least this side takes what I would call the anti-regulation position seriously and makes an argument for it, which you really have to share their premise. to believe the argument. Okay. Much more interesting is actually this article which I cite there by Chris Reid who is a professor in London of the law about sort of regulation of AI using the existing legal system. And when I say legal system, I mean very much the Anglo-Saxon legal system. I know enough about Europe to know that the legal tradition is quite different here. And probably the statements in this are not necessarily likely to carry over directly. So this came up, I think, in questions to the previous speakers. Shouldn't we just allow the legal system and the notion of liability to handle this new problem? And Chris Reid's answer is maybe. It's actually very interesting. Because in some ways, that's what the legal system was set up. And the Anglo-Saxon legal system has been this evolutionary system for hundreds of years, where sort of new things get invented by analogy or sort of by evolution. They get incorporated into the legal system to handle new risks as they come up. His point of view is, however, that AI is likely to be very different than previous innovations. Things that go wrong with AI are going to be very different. for things to go wrong with other more physical embodiments of things that the legal system has been able to handle in the past. And so that this might not work well with the current legal system. So, you know, but just under Anglo-Saxon law, there's something called liability law, where if someone is injured by something that you own or control or operate, you... may have a liability to compensate them for their injury. It doesn't have to be a physical injury. It can be lots of sort of economic injuries as well. The principle of liability is that innovation is permitted, but if you're responsible for someone's injury through an innovation, then you bear the consequences for certain types of harms. Against new laws, basically, The regulation on speculative risks, and he basically argues that AI has not been used enough to know exactly what the risks are. So there are speculative risks. So regulation of speculative risks seems unlikely to be successful. Lawmakers are pretty bad at figuring out what the risks are and regulating them in advance. And a regulatory regime for all possible uses of some technology. as widespread as AI, is impossibly broad. And he brings out a bunch of examples where, you know, AI in your thermostat in your house, should it be regulated the same way as the AI in your self-driving car? Probably not. The consequences are quite different. Fundamental rights, he pointed out that there are fundamental rights under the Anglo-Saxon system that are actually very much similar to the ones in the European law. Their infringement is not compensated by the liability system. It's prohibited. So you're not allowed to hold someone in slavery and then say, oh, you got me. I'm going to pay you sort of your back wages because that's seen as a fundamental right. Responsibility is a key part of liability, however. So if you're responsible, then you pay. And your degree of payment depends on your degree of responsibility. And this is where AI starts to become more interesting. So how do you assign responsibility in the case of AI? Who is it assigned to? Brings up autonomous vehicles again. You know, if there's an accident, how is the accident caused? Who's responsible for it? You know, was it negligent? Was it something that went wrong? These are very, very complicated systems. And it's very hard to explain what happened, even if you collect a great deal of information ahead of it. They're harder to answer. It's much harder for a human then to interpret it and make a judgment, which is the way the Anglo-Saxon system works. So his point is that the UK is likely to just ignore this. and impose strict liability on the owner of the vehicle or by transitivity on the insurer that you pay the insurance for. And so in this case, it makes it simpler, right? Is that if you have a self-driving car, you better hope that it was manufactured pretty well and you better take out insurance and your insurance company is likely to charge you a lot of money at the beginning to insure your car. Pointed out that another sort of really concerning area which we haven't talked about is the use of AI in medical devices because under the sort of current state of the law, the producer of the technology owes no duty of care to the patient because the commercial transaction is between the doctor and the technology that the doctor uses, not to the patient. So the doctor... is fully responsible for what happens with the AI. The doctor can then turn around and go to the provider of the AI and say it was wrong, but the patient can't go after it. So this is a difficult issue in the system. So he proposes that in the future, the law of negligence is probably not the right way to do it. He doesn't have a specific replacement for it. But one of the things I think is quite right about this article is that transparency about the use of AI is extremely important, that these systems should be obligated, and you have to do this under the law, to maintain the information about what happened so that later on you could go back and actually make a judgment as to what happened in the system, whether it was right or wrong, whether the engineering was done well or not. U.S. U.K. let me just say you know this very much fits into this famous quote that the life of law has not been logic it has been experience which is very much the Anglo-Saxon system is that the law evolves to deal with new problems and so this is a discussion about how to evolve it. The third area China so I don't know how many of you have actually read this this is the Next Generation Artificial Intelligence Development Plan from the Chinese government. I wouldn't say it's interesting. It reads like a plan from a large bureaucracy. I'll give you a couple of quotes which are actually quite interesting. And then this is a book which I'll talk about because it's actually much more informative. So the Next Generation AI plan was published two years ago. It is a very well-considered plan. If you look for it, they're clearly... had quite a bit of discussion and thought about how AI should be developed and encouraged in China. The points that they make in the introduction are AI has become a focus of international competition, an engine of economic development, and an opportunity for social construction. It's left unclear exactly what they mean by social construction, but I think in the context of the Chinese government, we can read it. There is one paragraph. talking about the issues that we've been talking about, which is that we should ensure the safe, reliable, and controllable development of AI. Nothing about the use, the development of AI. What's much more interesting is this book by Kai-Fu Lee. Kai-Fu was a researcher who actually comes from Taiwan, not from mainland China. He went to school in the United States. to China to set up Microsoft's China Research Lab, then moved to Google and set up Google's China Lab, and then left Google and has been a venture capitalist and a sort of player in the Chinese high-tech industry for quite a while. Quite an intelligent guy, quite an interesting guy. I've met him a few times as well. This book basically is making the argument that China is going to dominate AI and is going to use this to overtake the U.S. in an economic competition. It's an extremely nationalist point of view. On the other hand, he's also sort of wrote this in English to sort of warn the U.S. that this was happening. In this book, Europe does not play a role. So a couple of things. AI is here and China is going to use it. A lot of interesting perspectives in it. And I think he has a very good exposure because of his combination of Western and Eastern. China has practiced a technical utilitarianism using technical upgrades to maximize the broader social good while accepting there'll be downsides for certain individuals or industries. So we had this discussion earlier. China is aware of this and acknowledges it. People in China have a broader willingness to trade some degree of privacy for convenience. Maybe they have no choice. You know, the China mentality about car crashes is you can't let the perfect be the enemy of the good. And he quotes sort of very favorably that, you know, this contrast between Google, which has taken a very careful approach to self-driving cars, building self-driving cars, putting test drivers in it, sort of only doing it where they had the license to do it, and Tesla. which basically claimed it had a self-driving car, put the mechanism in there, and put it on the road. So Google accumulated 1.5 million miles of data. In six months, Tesla had 47 million miles of data. And since data is the raw material of artificial intelligence, the argument here is that you should definitely do it the second way. So Chinese protection perspective on AI and jobs, Moshe's point of view. He said, you know, China has been technically optimist because it's been very good for China in the last 30 years. Technology has made China into a rich country. Technology leads to more jobs and greater prosperity for all. This has been the Chinese experience. They do not remember the Industrial Revolution in Europe as being a very favorable period for China, but not for the same reasons as we do. The last 40 years, technological progress has been the rising tide that lifts all boats, and there's a pervasive sense that the government will take care of the displaced workers, that jobs have been created, that the government in China is very conscious of the large number of people that are still living on farms, moving into cities, and worries about creating jobs so that people have work. Not necessarily good jobs, but jobs. But, you know, Kaifu is not sort of... to worry about is not totally positive about this. He worries that AI will dramatically exacerbate inequalities on international and domestic levels. It will drive a wedge between the AI superpowers and the rest of the world. I believe in this case superpowers is the US and China. It's not quite clear exactly what the wedge is but it's perhaps there. His argument in terms of the jobs is very much that we need to sort of redo the economic system so that AI becomes a tool that's used by humans and that people maintain the part of the job that involves interaction with other people. What we were discussing in terms of judicial, the judges have to be there to deliver the sentence. The judges can use the AI to make the guidance. And that it's not enough to just sort of turn it all over to machines. There are parts that people do better than machines do. And he has this four-part categorization, which I will not go through, about which jobs are better done by machines, which ones are better by humans, which are better done by humans and machines together. Very strongly supported government endeavor for its own uses, for commercial reasons, for nationalist reasons. It's been very much wrapped. in a red flag in China AI. Positive view, different expectations of privacy, optimistic social impact, no real discussion of regulation. How do you reconcile these views? You know, we live in an interconnected world. All three of these groups trade with each other. They sell things to each other. They build products for each other. How do we bring them together? These views are very, much tied to what I would argue is culture, history. They're deeply rooted. It's not going to change quickly or easily. So if I had to make a prediction, and this is my best guess as to which scenario is likely to result, and you can argue with me if you want, commercial pressures are going to bring forth many imperfect innovations in the use of AI. There are going to be self-driving cars like Tesla that did not always self-drive correctly. Popular demand and industrial pressure is going to preclude strong regulation for AI in both the US and China. I'm not going to guess what's going to happen in Europe. I would think that it's probably going to be mixed. I very much doubt that the German auto industry, for instance, is going to sit this out until they figure out how to build ethical vehicles. The flaws are going to lead to regulation of the most serious issues. I would argue that this is really what we should focus in on is that, yes, there are going to be things that go wrong, but they should be exposed in a sort of very transparent manner. The data should be collected. The data should not be the proprietary data of the company that built the system or built the car. It should be made available to the regulators, to the public. And my argument, by analogy, is airplane safety. It's kind of a funny thing to argue now, but I actually think that these two crashes of the Boeings is a great example of how safety should be sort of pushed forward. You see them discussed in the newspapers. You see the governments all over the world involved. in trying to figure out what happened, what went wrong, what should be fixed so that it doesn't happen again, not only just in the planes themselves, but in the regulatory process that brought the planes to this point. This is the kind of level of scrutiny that actually makes for, let me just skip ahead, this kind of curve, which is a curve that is phenomenal. This is the... fatality rate per trillion passenger kilometers. So 1970, it was up over 3,000 fatalities per trillion passenger kilometers. This is down, I don't know, this is 100 or so. So a factor of 30 in 50 years. And this is possible because the airline, model of safety is actually a fairly effective model of safety. There is a great deal of openness and discussion of every single airplane incident, whether it's a fatal accident or a minor accident or a pilot error. They're investigated. It's published. People sort of see it. People learn from their mistakes and they move forward. So I would argue that if we could get to a situation that was similar to this in terms of AI, we would actually see similar progress. It's a difficult situation because it involves turning off certain parts of the American and the UK system. So airplane liability is capped at a fairly low level. So even if Boeing is sort of guilty of negligence in building that control system, they are not going to pay very much money to the passengers in either airplane. The reputational loss is their real penalty at this point. If it's criminal, if it's criminal, but if it's just, you know, an engineering problem, yes, it's criminal, but it's hard to prove criminal. Yeah. The Warsaw Treaty. Okay. So maybe this is the point. Thank you a lot. So we have four short questions, but short. But there are others first. So we start with you. Thank you. Maybe we should make a distinction between the more narrow technical impact and the regulation, and I think your airline safety is a good example. And the wider impact, namely jobs that Moshe was talking about, that is further away in the future, much more uncertainty, et cetera. And going back to what I call the... the more narrow, technical, you can go back in history and you always see the same thing happening. The law, the regulation lags behind the technology, and this is how it is because technology is always in advance. Law and regulation has to catch up at one point. Does it better? Does it worse? Depending on the system, vested economic interest, etc. But the broader societal impact is a big issue. And in the book of Kai-Fu Lee, he makes a big thing about growing inequality. And in fact, he speaks about utopian and dystopian and the real crisis of AI. And the real crisis for him is the growing inequality, the loss of jobs that is going to come. And I just put this up for discussion. I think your distinction is absolutely correct. None of the reports actually really address that because it's very difficult to see what the appropriate response to that is, as Moshe's talk brought out. But it is a good point. So I actually know quite a bit about how avionics software is developed. And with very few exceptions, one of the reasons that the high level of safety is achieved is that they don't use any computer science innovation that's less than 40 years old. With exactly one exception, they're not allowed to use any language more modern than C. They're not allowed to use interrupts. They can't use any modern operating system. You cannot use C++ or, in fact, you can't use dynamic memory management. So to me, this is an embarrassment for computer science. And if we want to follow that model, We're out of a job. That was not what I was arguing for, Ed. No, Ed, I was not arguing for that. I was also... I mean, that is certainly the way avionics software has been developed. And, you know, one of the things that's true is that I don't know of a crash where you can point to the avionics software as the cause. But there are lots of other parts of the airplane that are developed with sort of more modern technology that are less conservative. technology. And I think that the reason that we see a curve like that is very much because of the openness, that if a Boeing and Airbus were allowed to investigate the crashes, never publish the results, never have this kind of public discussion, we would still see crashes at the level that they were. you know, 30 years ago, 40 years ago. We would not see this kind of improvement. So my argument is not that we should emulate all parts of the software development. I'm aware of how avionics software is developed too, and I wouldn't want to do it that way. But the other part of the process, this open investigation, the fact that the details are published, the accident investigations are published. is incredibly important so that other people can learn from mistakes. So the discussion about liability misses what's going to happen when you enter your car. You're going to push a button on and then it will pop a screen and it will say, do you accept terms of services? And unless you push yes... You'll not be able to drive the car. You know, we think it's a joke. But if you look at liability, there are two worlds. There is a world of strict liability, which I have, for example, with my car. The manufacturer is strictly liable. And the world of the computing industry that has called itself an exception. And somehow, you know, the legal side and the politicians have gone away with it. And every product that you use, you start by waiving liability. Right. That is a good point. My personal view is they should abolish this waiver of liability for software, but that's a separate controversial issue. But yes, I think what you described is likely to be true, but I think that it's going to be a lot more difficult for the courts and the legislatures to accept that in the form of a car as opposed to Microsoft Word. So we'll see how it works. The last question. Yes. So when you gave us the list of requirements for AI systems, you know, given by the EU report, I think, they seem to me to be general requirements that any kind of system should satisfy. I mean, I didn't see anything that is AI specific in that list, which leaves, you know, all of these. They apply for most systems. So my question is, if you're then going to talk about regulating AI, what is the definition of AI that they are referring to? And what are the kinds of uses of AI that they are referring to? Because if you're talking about the use of AI, which is in a well-controlled environment within a company that doesn't affect humans that hasn't to do with decisions that are critical. I don't particularly care. But there are certain kinds of uses. So I'm just wondering if, you know, whenever we talk about regulation, what are we talking about and for what kinds of uses? So that's a good question and a good observation and a good question. I would have to go look at the report again to see what their definition of AI is. It's not something that was prominent and it's not something that I remember at this point. So I have to go back and look at that. I'm not sure that all of these items are requirements for all systems that we built. In particular, I don't think I've ever sort of worried about human autonomy or non-discrimination in systems before. But, you know, maybe I should have. So thank you a lot. You're welcome. So don't forget at 7, the dinner. And tomorrow we continue.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 29.36,
+      "text": "The last talk today is about, again, about artificial intelligence. And we have Jim Larus from EPFL, and he has his slides. Hopefully. And he is keen on keeping the time. Hopefully. Okay? So, thank you. There we go."
+    },
+    {
+      "start": 29.36,
+      "end": 56.24,
+      "text": "Okay, thank you very much for the invitation. It's a pleasure to be here. I recognize that I stand between you and dinner, so I'm going to talk about a fascinating subject, which is regulation. It's actually great. It's a very good placement in the program, given the previous two talks, because if you believe the previous two talks, then we have a problem here."
+    },
+    {
+      "start": 56.24,
+      "end": 86.176,
+      "text": "We need to do something about the problem. Typically, the way in which problems of this scale and this complexity are resolved is by government regulation. Let me start with a question. Question. Should your government, and everybody I realize is from a different country and different background, should your government regulate artificial intelligence now?"
+    },
+    {
+      "start": 86.176,
+      "end": 111.344,
+      "text": "in the use of commercial products. Raise your hand if you believe that this is a good idea. Okay, I'd say most people, not all, but most. Okay, is your view universal? Should this be true of all countries, all governments, or is this a local view?"
+    },
+    {
+      "start": 111.664,
+      "end": 139.344,
+      "text": "You voted one way or the other. Do you think your view should be the view of all countries? Universal. Universal. Okay. All right. So I just want to throw this out at the beginning. You can think about these questions when I get to the end. So let me just... So is your view universal in the sense that it's universal across all countries, all cultures?"
+    },
+    {
+      "start": 140.496,
+      "end": 168.976,
+      "text": "Your view, whatever it was expressed on this slide, I don't remember how you voted, Moshe. Universal means across all countries, all people. Your view that AI should be regulated. Your being your specific view, everybody in the audience. Yes. Sorry."
+    },
+    {
+      "start": 168.976,
+      "end": 195.936,
+      "text": "I thought it was an easy question. Sorry. Okay. Okay. Okay. We'll get there. So let me just be clear about what I'm talking about. I am not talking about what is sometimes called applied general intelligence, which is the notion that originally came up in a very early paper by Turing, which was, could we build a machine that would be as intelligent as a human? And he proposed..."
+    },
+    {
+      "start": 195.936,
+      "end": 224.352,
+      "text": "For those of you who haven't seen it, the Turing test where basically an observer had to be able to decide between a machine and a person. And if they couldn't make the decision, then the machine was proclaimed to be as intelligent as the person. This is not what we're talking about. This is not within the realm of technological possibility in the foreseeable future. What we're talking about is what's sometimes called applied AI."
+    },
+    {
+      "start": 224.352,
+      "end": 252.016,
+      "text": "So specific human skills have been very successfully put into machines by techniques that are generally called machine learning or AI. So vision, hearing, speech, chess playing a long time ago, go within the past year, someday self-driving cars. All of these are..."
+    },
+    {
+      "start": 252.016,
+      "end": 278.896,
+      "text": "skills that before they were automated were seen as uniquely human. There's been a lot of progress in the last couple of years. Most of you realize that we would not be here talking about this except for some innovation over the past couple of decades which really came to fruition about 10 years ago that's in deep neural nets that made it possible to have very fast"
+    },
+    {
+      "start": 278.896,
+      "end": 305.024,
+      "text": "very large improvements in these techniques that were on the previous slide. So this is a benchmark for the image net, which is a standard comparison of image recognition systems. And it's been getting better for a fairly long period of time. This has been in use for a while. In 2012 was the first use of deep neural nets. You can see there was a dramatic improvement. Then all the competitors in the network jumped on it."
+    },
+    {
+      "start": 305.024,
+      "end": 330.048,
+      "text": "And the improvement has been fairly steady and fairly dramatic. This red line, by the way, is human accuracy on this benchmark. So it's about 5% error. Machines these days are way below 5% error. It's not to say machines are as good at vision and object recognition as people, but on this particular benchmark, they are sort of more consistent."
+    },
+    {
+      "start": 330.048,
+      "end": 359.52,
+      "text": "and more able to keep into account 1,000 different categories and correctly classify images. Yes? The error rate is 10% of that because the line appears to be 10%. I don't have the X scale on this, but no, the error rate for humans is just a bit over 5%. So these bars are not 10%. Yeah. I'll give you the whole thing and then we'll go with the axis. I apologize for not having the axis. Okay."
+    },
+    {
+      "start": 359.52,
+      "end": 383.12,
+      "text": "So let's go back to this question that I started with. So why regulate AI? And there are a number of possible explanations, reasons, motivations for doing it. One is that AI is just this intrinsically dangerous technology. We regulate other dangerous technologies."
+    },
+    {
+      "start": 383.12,
+      "end": 412.672,
+      "text": "You know, you can't go and make explosives. You can't store explosives unless you're licensed and capable of doing it properly. Another thing is that AI is different than other technologies. It's basically doing human-like skills. And so we should be able to regulate it because it has large implications on our humanity. The other is the points that Moshe brought up, that it has technical social consequences."
+    },
+    {
+      "start": 412.672,
+      "end": 440.416,
+      "text": "that we can't predict. It could be very severe, and so we want to get some control over it. Another one came up. We could exacerbate social inequalities. We could build discrimination, biases into these systems and make them worse by applying them systematically. One that I won't really touch on is this notion of singularity of superintelligence, which is the fear that the machines are going to"
+    },
+    {
+      "start": 440.416,
+      "end": 467.808,
+      "text": "become more intelligent than people and be able to reproduce themselves by building more machines that are more intelligent until humans just become noise or difficulty to be gotten rid of by these machines which take over the world. That I don't think we're in any danger of. Finally, there's actually another one which came out of the German report that we heard on the previous speaker, which is a positive argument saying that regulation..."
+    },
+    {
+      "start": 467.808,
+      "end": 496.4,
+      "text": "will enhance public acceptance of these technologies. And it would be a good thing to regulate AI so that people would accept self-driving cars, for instance. Why not? The arguments go pretty much the other way. So the dangers are overestimated. New technology always looks incredibly dangerous when it first comes out. And in reality, people don't cause the problems that were expected, you know."
+    },
+    {
+      "start": 496.4,
+      "end": 525.28,
+      "text": "Example is recombinant DNA technology. When I was going to the university, this was seen as an incredibly dangerous technology. Universities had to build laboratories that were at bioweapons level security. These days, high school students perform the same experiments. No problem there. We can manage the consequences of it. We have plenty of mechanisms already outstanding, so there's no reason to create new regulations."
+    },
+    {
+      "start": 525.28,
+      "end": 552.304,
+      "text": "Another one is we lack sufficient understanding of AI and how it's going to be used. So it would be foolish to have regulations at this particular point. Another one is it's impossible to regulate. It's a technology. Everybody can build the technology. The knowledge is widespread. If you do regulation, people will evade it. There will be a big debate about what's AI. It just won't be effective to regulate it."
+    },
+    {
+      "start": 552.56,
+      "end": 581.936,
+      "text": "We could prevent beneficial uses of AIs. We could prevent the deployment of self-driving cars and a million and a half people will die every year because of regulations that prevent self-driving cars. And then, of course, there's the commercial competitiveness that someone else is going to do it if we don't do it and we will lose the business and the sales. All these are arguments that have some validity that are made quite commonly. What I want to do,"
+    },
+    {
+      "start": 581.936,
+      "end": 611.488,
+      "text": "is get this clicker to work. I basically want to present this argument for regulation from three different perspectives based on documents from Europe, which I'll take as either an ethical or moralist view, the Anglo-Saxon, which will be the capitalist legalist point of view, the Chinese will be the entrepreneurial authoritarian point of view. And in the interest of exposition,"
+    },
+    {
+      "start": 611.488,
+      "end": 635.952,
+      "text": "I'm going to ignore all subtlety and divergence of opinion. So I know perfectly well that there are people in Europe who take these other two views. There are people in the United States who share the concerns of the Europeans. I'm going to ignore that. I'm just going to pick single data points from each one of these groups to make my point about the different points of opinion, different views."
+    },
+    {
+      "start": 635.952,
+      "end": 665.808,
+      "text": "So from Europe, I'm going to start from two reports. This is the high-level expert group on artificial intelligence. It's a draft. It's not actually finished. It's kind of interesting. There are large parts of it where they basically say, we don't know how to decide this. We would like feedback on this draft report at this point. But it's a very well-written, thoughtful report. The other one is the Ethics Commission from Germany on automated driving, which we heard about from the previous speaker."
+    },
+    {
+      "start": 666.16,
+      "end": 695.472,
+      "text": "So let me start with the European Commission. And I apologize to those of you who are in the back. You might want to move closer to a screen. So these are quotes from the various reports. I've highlighted points that I want to sort of bring out, but these are all directly from the reports rather than my paraphrases. Basically, the High-Level Expert Commission for Europe starts with the premise that AI's benefits outweigh its risks."
+    },
+    {
+      "start": 695.472,
+      "end": 725.312,
+      "text": "that it is something that should be put into existence. It's not something that we should say it's too dangerous to use. On the other hand, a human-centric point of view is required for the use of AI, and the goal of it should be driven to increase human well-being. So the principle that is basically saying that AI should be put out there is that we can identify benefits for human beings."
+    },
+    {
+      "start": 725.312,
+      "end": 754.768,
+      "text": "not benefits for corporations, not benefits for governments, benefits for human beings. It very much wants to tie all of the discussion into the ethical and legal framework to strengthen European values. I'm not quite sure why or how European values differ from other people's values, but that's quite clear in this report is that there is a notion that the European values are different."
+    },
+    {
+      "start": 754.768,
+      "end": 784.496,
+      "text": "No. Well, no. Not really. You probably will identify with them, though. So the goal they set out is trustworthy AI. And they argue that some trust in the AI systems that you build is a prerequisite for people to actually use AI, to deploy AI."
+    },
+    {
+      "start": 784.496,
+      "end": 814.496,
+      "text": "that it's not sufficient to just build AI systems and put them out there with nobody understanding them, nobody having any sense whether they work or don't work, or when they don't work, why. So they start with this statement, which I quote, that trustworthy AI will be our North Star, which is basically their guiding principle in a fairly meandering journey towards some actionable principles for Europe."
+    },
+    {
+      "start": 814.496,
+      "end": 844.336,
+      "text": "So now, at this point, we shift from European values to universal values. So they basically say we need to look at fundamental rights, applicable regulations and core principles and values, and that will constitute our ethical purpose. So unlike the previous speaker, we will not discuss particular philosophies. Instead, we will ground this on rights that citizens in Europe"
+    },
+    {
+      "start": 844.336,
+      "end": 871.2,
+      "text": "already have and we will say that those rights should be preserved by artificial intelligence. Again, there's concern that the AI might be stifled, might be sort of held back. They specifically say that their goal is not to stifle AI innovation but instead to develop a unique"
+    },
+    {
+      "start": 871.2,
+      "end": 900.048,
+      "text": "brand of AI that is ethically based, which I guess could be the European product in the AI commercial market, then Europe could be a leader in cutting edge, secure, and ethical AI. So trying to make an argument that there is potential benefits in taking this approach to regulating AI."
+    },
+    {
+      "start": 900.496,
+      "end": 929.152,
+      "text": "Ethics should be used to develop it. You take abstract ethical principles, develop concrete ethical values that can be operationalized. Obviously, there's some technical people on the committee in the context of AI. And what are these ethical principles? Well, respect for fundamental rights, principles, and values, and ensuring that the AI system preserves this set of rights and values."
+    },
+    {
+      "start": 929.152,
+      "end": 958.224,
+      "text": "So I won't go through all of it. It's a fairly long discussion in the report. So the principle of beneficence do good. So this is one of the examples of the principles that they state as universal principles that the AI system should preserve. So a system can meet this goal by seeking to"
+    },
+    {
+      "start": 958.224,
+      "end": 979.728,
+      "text": "Seeking the achievement of a fair, inclusive and peaceful society by helping to increase citizens' mental autonomy with equal distribution of economic, social and political opportunity. These are great goals. I think everybody sort of would buy into these goals. I think it's very difficult sometimes to see the connection."
+    },
+    {
+      "start": 979.728,
+      "end": 1005.776,
+      "text": "between things like this and actual practical systems and that's one of the criticisms I would make of this approach is that it's a fairly high-level guide, but we'll get there. So after this discussion of these principles at this level, they then come up with requirements for trustworthy AI. It turns out these are not requirements for the AI"
+    },
+    {
+      "start": 1005.776,
+      "end": 1034.112,
+      "text": "Instead, these are requirements on the teams that build the AI system. So it's a very interesting report. Basically, they're not arguing so much for laws or regulations as arguing that this set of guidelines should be mandatory for all of the groups that actually are building and deploying AI systems, that everything they do should be evaluated against, I think, these 10 principles."
+    },
+    {
+      "start": 1034.112,
+      "end": 1058.208,
+      "text": "and that you should always be keeping these principles in mind while making decisions. Those of you who have ever sort of built something in a commercial environment or written software in a commercial environment can imagine how difficult it is to translate from this level of abstract principle into specific technical requirements. But in the end, I think that..."
+    },
+    {
+      "start": 1058.208,
+      "end": 1085.232,
+      "text": "At the same time, they're absolutely right that all of these goals are worthwhile goals in terms of building the systems. The German report is similar in the sense that it is ethically based. It basically was a group of philosophers, ethical..."
+    },
+    {
+      "start": 1085.232,
+      "end": 1114.176,
+      "text": "was that a word? Computer scientists, people from the auto industry who tried to come up with some principles. And there's a statement of principles in it that's very clear, very understandable. I quote a few of them. That the primary purpose of a fully automated transportation system is to improve safety. So basically this is Moshe's argument that a million and a half people die every year. If you're going to automate the system,"
+    },
+    {
+      "start": 1114.176,
+      "end": 1130.752,
+      "text": "you should try to reduce the number of injuries and deaths. That is the benefit of automation. Technological unavoidable risks do not mitigate against the introduction of automated driving if the balance of risks is fundamentally positive."
+    },
+    {
+      "start": 1130.752,
+      "end": 1157.936,
+      "text": "So there are practical people on this committee who are basically thinking about how do you actually build these systems under the assumption that they're not always going to work, that there are going to be hard problems like the trolley problem that are not going to have good solutions. Should prevent accidents wherever this is practically possible. I think we saw this in the previous one. This is a very different flavored report in the sense that you get the sense that"
+    },
+    {
+      "start": 1157.936,
+      "end": 1178.96,
+      "text": "The auto industry in Germany is very much involved in this discussion. They would like a set of principles that will lead to automated driving. I mean, it's obviously a competitive world that they live in and they need to participate in. So if you look at Europe, I think they're both thoughtful."
+    },
+    {
+      "start": 1178.96,
+      "end": 1208.624,
+      "text": "well-intentioned, excellent reports. There's an ethical approach that AI should be, I shouldn't have said better, I should be as good as the most upright, moral, humane person, that these are the sort of aims that we should have for AI as well as for ourselves. I think that's quite reasonable. What is difficult for me in the first report is that it devolves all the responsibility of translating between these abstract high-level goals."
+    },
+    {
+      "start": 1208.624,
+      "end": 1238.0,
+      "text": "and practical implementations to the business people. It's not a call for regulation as much as it's a call for consideration of these. There wasn't, in either report, there really wasn't much concern of what Moshe was interested in, the social impact of it. Okay, so that's Europe, very concisely. So for the U.S. and U.K., which I'm going to group together,"
+    },
+    {
+      "start": 1238.16,
+      "end": 1262.256,
+      "text": "because I think it's fair to do it. I'm going to use two short pieces from CACM which were a supposed debate about whether AI should be regulated or not. You'll see when I present them whether it really wasn't a very full debate in the sense that both points of view are very close together."
+    },
+    {
+      "start": 1262.256,
+      "end": 1291.728,
+      "text": "And then there is a very interesting discussion about the legal system and regulating AI within the Anglo-Saxon legal system, which has some interesting points. So let me start by saying, you know, I'm sure everybody has conceptions about America, but, you know, this is a survey that was published by MIT Tech Review that a lot of Americans think that AI and robots should be carefully managed."
+    },
+    {
+      "start": 1291.92,
+      "end": 1321.648,
+      "text": "It wasn't regulated. It was managed. And, you know, the numbers are pretty large. The interesting thing, though, is who should do it. The largest positive was for tech companies. I don't know what partnership on AI as scientific organizations, government reorganizations, U.S. federal government and state governments in the U.S. are not trusted to regulate AI. It's a little different than Europe, I would say."
+    },
+    {
+      "start": 1321.712,
+      "end": 1350.96,
+      "text": "So the first point of view, this one was supposedly in favor of regulating AI. This is Orion Etzioni, who's a professor at the University of Washington and the head of the CEO of Paul Allen's Institute for AI in Seattle, Washington. So this is the one that's in favor of regulation of AI. So he says, you know, regulation is a blunt and slow-moving instrument. This is his second sentence."
+    },
+    {
+      "start": 1350.992,
+      "end": 1380.944,
+      "text": "You know, whatever you believe, that's a strange place to start arguing for regulation. You know, it talks about misplaced regulation, stifling innovation, derailing the enormous potential benefits, knee-jerk response. These are all buzzwords that are used in the debates in the United States against regulation. These are the sort of standard arguments against regulation by big business, by economists on the other side."
+    },
+    {
+      "start": 1380.944,
+      "end": 1408.544,
+      "text": "His proposal, leave AI research alone. Trust us. You know, this is what I do. Don't regulate that. But, you know, it's OK to regulate applications in areas like transportation, medicine, politics and entertainment. But I'm not going to tell you how. But, you know, don't tie our hands too far behind our back because research has to continue."
+    },
+    {
+      "start": 1408.544,
+      "end": 1437.76,
+      "text": "And the U.S. is going to have to keep up with other countries that do AI. And I don't think he's thinking of Europe in this point. I think he's thinking west to China. And economically and security wise, we're going to suffer. So this is the argument for regulation in this point counterpoint debate. The guidelines he proposes are fairly mild. Don't weaponize AI. AI is subject to the full."
+    },
+    {
+      "start": 1437.76,
+      "end": 1464.864,
+      "text": "gauntlet of laws that apply to its human operator. AI should clearly disclose that it's not human, shouldn't disclose confidential information, shouldn't increase any bias that already exists. I mean, these are sort of regulations that won't stop anything or anybody. Okay. The other side, the side that's actually against regulation,"
+    },
+    {
+      "start": 1464.864,
+      "end": 1494.144,
+      "text": "is even more against regulation amazingly. They come from George Mason University, which is a real sort of intellectual center of neoliberalism and economics. And this is very much an argument in this point of view is that, you know, you've got to do risk analysis for everything and you've got to basically make sure that you don't ever do a regulation where the balance comes out that the costs are greater than the benefits."
+    },
+    {
+      "start": 1494.144,
+      "end": 1521.248,
+      "text": "You don't want to freeze the development of life-enhancing innovation. Really, what they want is what they call permissionless innovation. Basically, what has happened in the tech industry is that if you come up with a new innovation, you can build a product out of it, you can sell it, and you don't have to ask anybody for permission to do that. So this is the commercial market."
+    },
+    {
+      "start": 1521.248,
+      "end": 1550.48,
+      "text": "How can the U.S. stay ahead? That's one of the fundamental questions. So there are a bunch of recommendations. I'm not going to go through them, but the recommendations are not for regulation. They're basically for removing what they perceive as barriers to the use and deployment of AI. So at least this side takes what I would call the anti-regulation position seriously and makes an argument for it, which you really have to share their premise."
+    },
+    {
+      "start": 1550.48,
+      "end": 1580.272,
+      "text": "to believe the argument. Okay. Much more interesting is actually this article which I cite there by Chris Reid who is a professor in London of the law about sort of regulation of AI using the existing legal system. And when I say legal system, I mean very much the Anglo-Saxon legal system. I know enough about Europe to know that the legal tradition is quite different here."
+    },
+    {
+      "start": 1580.272,
+      "end": 1610.0,
+      "text": "And probably the statements in this are not necessarily likely to carry over directly. So this came up, I think, in questions to the previous speakers. Shouldn't we just allow the legal system and the notion of liability to handle this new problem? And Chris Reid's answer is maybe. It's actually very interesting."
+    },
+    {
+      "start": 1610.0,
+      "end": 1640.0,
+      "text": "Because in some ways, that's what the legal system was set up. And the Anglo-Saxon legal system has been this evolutionary system for hundreds of years, where sort of new things get invented by analogy or sort of by evolution. They get incorporated into the legal system to handle new risks as they come up. His point of view is, however, that AI is likely to be very different than previous innovations. Things that go wrong with AI are going to be very different."
+    },
+    {
+      "start": 1640.0,
+      "end": 1668.272,
+      "text": "for things to go wrong with other more physical embodiments of things that the legal system has been able to handle in the past. And so that this might not work well with the current legal system. So, you know, but just under Anglo-Saxon law, there's something called liability law, where if someone is injured by something that you own or control or operate, you..."
+    },
+    {
+      "start": 1668.272,
+      "end": 1697.776,
+      "text": "may have a liability to compensate them for their injury. It doesn't have to be a physical injury. It can be lots of sort of economic injuries as well. The principle of liability is that innovation is permitted, but if you're responsible for someone's injury through an innovation, then you bear the consequences for certain types of harms. Against new laws, basically,"
+    },
+    {
+      "start": 1697.776,
+      "end": 1726.24,
+      "text": "The regulation on speculative risks, and he basically argues that AI has not been used enough to know exactly what the risks are. So there are speculative risks. So regulation of speculative risks seems unlikely to be successful. Lawmakers are pretty bad at figuring out what the risks are and regulating them in advance. And a regulatory regime for all possible uses of some technology."
+    },
+    {
+      "start": 1726.24,
+      "end": 1755.888,
+      "text": "as widespread as AI, is impossibly broad. And he brings out a bunch of examples where, you know, AI in your thermostat in your house, should it be regulated the same way as the AI in your self-driving car? Probably not. The consequences are quite different. Fundamental rights, he pointed out that there are fundamental rights under the Anglo-Saxon system that are actually very much similar to the ones in the European law."
+    },
+    {
+      "start": 1755.888,
+      "end": 1782.8,
+      "text": "Their infringement is not compensated by the liability system. It's prohibited. So you're not allowed to hold someone in slavery and then say, oh, you got me. I'm going to pay you sort of your back wages because that's seen as a fundamental right. Responsibility is a key part of liability, however. So if you're responsible, then you pay."
+    },
+    {
+      "start": 1782.8,
+      "end": 1807.264,
+      "text": "And your degree of payment depends on your degree of responsibility. And this is where AI starts to become more interesting. So how do you assign responsibility in the case of AI? Who is it assigned to? Brings up autonomous vehicles again. You know, if there's an accident, how is the accident caused? Who's responsible for it?"
+    },
+    {
+      "start": 1807.264,
+      "end": 1836.208,
+      "text": "You know, was it negligent? Was it something that went wrong? These are very, very complicated systems. And it's very hard to explain what happened, even if you collect a great deal of information ahead of it. They're harder to answer. It's much harder for a human then to interpret it and make a judgment, which is the way the Anglo-Saxon system works. So his point is that the UK is likely to just ignore this."
+    },
+    {
+      "start": 1836.208,
+      "end": 1865.52,
+      "text": "and impose strict liability on the owner of the vehicle or by transitivity on the insurer that you pay the insurance for. And so in this case, it makes it simpler, right? Is that if you have a self-driving car, you better hope that it was manufactured pretty well and you better take out insurance and your insurance company is likely to charge you a lot of money at the beginning to insure your car."
+    },
+    {
+      "start": 1865.52,
+      "end": 1892.544,
+      "text": "Pointed out that another sort of really concerning area which we haven't talked about is the use of AI in medical devices because under the sort of current state of the law, the producer of the technology owes no duty of care to the patient because the commercial transaction is between the doctor and the technology that the doctor uses, not to the patient. So the doctor..."
+    },
+    {
+      "start": 1892.544,
+      "end": 1922.08,
+      "text": "is fully responsible for what happens with the AI. The doctor can then turn around and go to the provider of the AI and say it was wrong, but the patient can't go after it. So this is a difficult issue in the system. So he proposes that in the future, the law of negligence is probably not the right way to do it. He doesn't have a specific replacement for it."
+    },
+    {
+      "start": 1922.08,
+      "end": 1951.872,
+      "text": "But one of the things I think is quite right about this article is that transparency about the use of AI is extremely important, that these systems should be obligated, and you have to do this under the law, to maintain the information about what happened so that later on you could go back and actually make a judgment as to what happened in the system, whether it was right or wrong, whether the engineering was done well or not."
+    },
+    {
+      "start": 1951.872,
+      "end": 1981.312,
+      "text": "U.S. U.K. let me just say you know this very much fits into this famous quote that the life of law has not been logic it has been experience which is very much the Anglo-Saxon system is that the law evolves to deal with new problems and so this is a discussion about how to evolve it. The third area China so I don't know how many of you have actually read this this is the"
+    },
+    {
+      "start": 1981.312,
+      "end": 2010.32,
+      "text": "Next Generation Artificial Intelligence Development Plan from the Chinese government. I wouldn't say it's interesting. It reads like a plan from a large bureaucracy. I'll give you a couple of quotes which are actually quite interesting. And then this is a book which I'll talk about because it's actually much more informative. So the Next Generation AI plan was published two years ago. It is a very well-considered plan. If you look for it, they're clearly..."
+    },
+    {
+      "start": 2010.32,
+      "end": 2038.144,
+      "text": "had quite a bit of discussion and thought about how AI should be developed and encouraged in China. The points that they make in the introduction are AI has become a focus of international competition, an engine of economic development, and an opportunity for social construction. It's left unclear exactly what they mean by social construction, but I think in the context of the Chinese government, we can read it. There is one paragraph."
+    },
+    {
+      "start": 2038.144,
+      "end": 2068.016,
+      "text": "talking about the issues that we've been talking about, which is that we should ensure the safe, reliable, and controllable development of AI. Nothing about the use, the development of AI. What's much more interesting is this book by Kai-Fu Lee. Kai-Fu was a researcher who actually comes from Taiwan, not from mainland China. He went to school in the United States."
+    },
+    {
+      "start": 2068.016,
+      "end": 2097.024,
+      "text": "to China to set up Microsoft's China Research Lab, then moved to Google and set up Google's China Lab, and then left Google and has been a venture capitalist and a sort of player in the Chinese high-tech industry for quite a while. Quite an intelligent guy, quite an interesting guy. I've met him a few times as well. This book basically is making the argument that China is going to dominate AI and is going to use this to overtake"
+    },
+    {
+      "start": 2097.024,
+      "end": 2125.792,
+      "text": "the U.S. in an economic competition. It's an extremely nationalist point of view. On the other hand, he's also sort of wrote this in English to sort of warn the U.S. that this was happening. In this book, Europe does not play a role. So a couple of things. AI is here and China is going to use it. A lot of interesting perspectives in it. And I think he has a very good exposure because of his combination of Western and Eastern."
+    },
+    {
+      "start": 2125.792,
+      "end": 2154.256,
+      "text": "China has practiced a technical utilitarianism using technical upgrades to maximize the broader social good while accepting there'll be downsides for certain individuals or industries. So we had this discussion earlier. China is aware of this and acknowledges it. People in China have a broader willingness to trade some degree of privacy for convenience. Maybe they have no choice."
+    },
+    {
+      "start": 2154.256,
+      "end": 2180.976,
+      "text": "You know, the China mentality about car crashes is you can't let the perfect be the enemy of the good. And he quotes sort of very favorably that, you know, this contrast between Google, which has taken a very careful approach to self-driving cars, building self-driving cars, putting test drivers in it, sort of only doing it where they had the license to do it, and Tesla."
+    },
+    {
+      "start": 2180.976,
+      "end": 2210.736,
+      "text": "which basically claimed it had a self-driving car, put the mechanism in there, and put it on the road. So Google accumulated 1.5 million miles of data. In six months, Tesla had 47 million miles of data. And since data is the raw material of artificial intelligence, the argument here is that you should definitely do it the second way. So Chinese protection perspective on AI and jobs, Moshe's point of view."
+    },
+    {
+      "start": 2210.736,
+      "end": 2239.808,
+      "text": "He said, you know, China has been technically optimist because it's been very good for China in the last 30 years. Technology has made China into a rich country. Technology leads to more jobs and greater prosperity for all. This has been the Chinese experience. They do not remember the Industrial Revolution in Europe as being a very favorable period for China, but not for the same reasons as we do."
+    },
+    {
+      "start": 2239.808,
+      "end": 2269.168,
+      "text": "The last 40 years, technological progress has been the rising tide that lifts all boats, and there's a pervasive sense that the government will take care of the displaced workers, that jobs have been created, that the government in China is very conscious of the large number of people that are still living on farms, moving into cities, and worries about creating jobs so that people have work. Not necessarily good jobs, but jobs. But, you know, Kaifu is not sort of..."
+    },
+    {
+      "start": 2269.84,
+      "end": 2299.648,
+      "text": "to worry about is not totally positive about this. He worries that AI will dramatically exacerbate inequalities on international and domestic levels. It will drive a wedge between the AI superpowers and the rest of the world. I believe in this case superpowers is the US and China. It's not quite clear exactly what the wedge is but it's perhaps there. His argument"
+    },
+    {
+      "start": 2299.648,
+      "end": 2329.264,
+      "text": "in terms of the jobs is very much that we need to sort of redo the economic system so that AI becomes a tool that's used by humans and that people maintain the part of the job that involves interaction with other people. What we were discussing in terms of judicial, the judges have to be there to deliver the sentence. The judges can use the AI to make the guidance."
+    },
+    {
+      "start": 2329.264,
+      "end": 2359.136,
+      "text": "And that it's not enough to just sort of turn it all over to machines. There are parts that people do better than machines do. And he has this four-part categorization, which I will not go through, about which jobs are better done by machines, which ones are better by humans, which are better done by humans and machines together. Very strongly supported government endeavor for its own uses, for commercial reasons, for nationalist reasons. It's been very much wrapped."
+    },
+    {
+      "start": 2359.136,
+      "end": 2388.672,
+      "text": "in a red flag in China AI. Positive view, different expectations of privacy, optimistic social impact, no real discussion of regulation. How do you reconcile these views? You know, we live in an interconnected world. All three of these groups trade with each other. They sell things to each other. They build products for each other. How do we bring them together? These views are very,"
+    },
+    {
+      "start": 2388.672,
+      "end": 2415.488,
+      "text": "much tied to what I would argue is culture, history. They're deeply rooted. It's not going to change quickly or easily. So if I had to make a prediction, and this is my best guess as to which scenario is likely to result, and you can argue with me if you want, commercial pressures are going to bring forth many imperfect innovations in the use of AI."
+    },
+    {
+      "start": 2415.488,
+      "end": 2444.256,
+      "text": "There are going to be self-driving cars like Tesla that did not always self-drive correctly. Popular demand and industrial pressure is going to preclude strong regulation for AI in both the US and China. I'm not going to guess what's going to happen in Europe. I would think that it's probably going to be mixed. I very much doubt that the German auto industry, for instance, is going to sit this out until they figure out how to build"
+    },
+    {
+      "start": 2444.256,
+      "end": 2474.224,
+      "text": "ethical vehicles. The flaws are going to lead to regulation of the most serious issues. I would argue that this is really what we should focus in on is that, yes, there are going to be things that go wrong, but they should be exposed in a sort of very transparent manner. The data should be collected. The data should not be the proprietary data of the company that built the system or built the car."
+    },
+    {
+      "start": 2474.224,
+      "end": 2501.744,
+      "text": "It should be made available to the regulators, to the public. And my argument, by analogy, is airplane safety. It's kind of a funny thing to argue now, but I actually think that these two crashes of the Boeings is a great example of how safety should be sort of pushed forward. You see them discussed in the newspapers. You see the governments all over the world involved."
+    },
+    {
+      "start": 2501.744,
+      "end": 2528.144,
+      "text": "in trying to figure out what happened, what went wrong, what should be fixed so that it doesn't happen again, not only just in the planes themselves, but in the regulatory process that brought the planes to this point. This is the kind of level of scrutiny that actually makes for, let me just skip ahead, this kind of curve, which is a curve that is phenomenal. This is the..."
+    },
+    {
+      "start": 2528.144,
+      "end": 2557.584,
+      "text": "fatality rate per trillion passenger kilometers. So 1970, it was up over 3,000 fatalities per trillion passenger kilometers. This is down, I don't know, this is 100 or so. So a factor of 30 in 50 years. And this is possible because the airline,"
+    },
+    {
+      "start": 2557.584,
+      "end": 2586.16,
+      "text": "model of safety is actually a fairly effective model of safety. There is a great deal of openness and discussion of every single airplane incident, whether it's a fatal accident or a minor accident or a pilot error. They're investigated. It's published. People sort of see it. People learn from their mistakes and they move forward. So I would argue that if we could get to a situation that was similar to this in terms of AI,"
+    },
+    {
+      "start": 2586.16,
+      "end": 2614.208,
+      "text": "we would actually see similar progress. It's a difficult situation because it involves turning off certain parts of the American and the UK system. So airplane liability is capped at a fairly low level. So even if Boeing is sort of guilty of negligence in building that control system, they are not going to pay very much money to the passengers in either airplane."
+    },
+    {
+      "start": 2614.208,
+      "end": 2641.936,
+      "text": "The reputational loss is their real penalty at this point. If it's criminal, if it's criminal, but if it's just, you know, an engineering problem, yes, it's criminal, but it's hard to prove criminal. Yeah. The Warsaw Treaty. Okay. So maybe this is the point. Thank you a lot."
+    },
+    {
+      "start": 2644.144,
+      "end": 2668.528,
+      "text": "So we have four short questions, but short. But there are others first. So we start with you. Thank you. Maybe we should make a distinction between the more narrow technical impact and the regulation, and I think your airline safety is a good example."
+    },
+    {
+      "start": 2668.528,
+      "end": 2683.776,
+      "text": "And the wider impact, namely jobs that Moshe was talking about, that is further away in the future, much more uncertainty, et cetera. And going back to what I call the..."
+    },
+    {
+      "start": 2683.776,
+      "end": 2707.296,
+      "text": "the more narrow, technical, you can go back in history and you always see the same thing happening. The law, the regulation lags behind the technology, and this is how it is because technology is always in advance. Law and regulation has to catch up at one point. Does it better? Does it worse? Depending on the system, vested economic interest, etc."
+    },
+    {
+      "start": 2707.296,
+      "end": 2737.168,
+      "text": "But the broader societal impact is a big issue. And in the book of Kai-Fu Lee, he makes a big thing about growing inequality. And in fact, he speaks about utopian and dystopian and the real crisis of AI. And the real crisis for him is the growing inequality, the loss of jobs that is going to come. And I just put this up for discussion. I think your distinction is absolutely correct."
+    },
+    {
+      "start": 2737.168,
+      "end": 2765.808,
+      "text": "None of the reports actually really address that because it's very difficult to see what the appropriate response to that is, as Moshe's talk brought out. But it is a good point. So I actually know quite a bit about how avionics software is developed. And with very few exceptions, one of the reasons that the high level of safety is achieved"
+    },
+    {
+      "start": 2765.808,
+      "end": 2795.728,
+      "text": "is that they don't use any computer science innovation that's less than 40 years old. With exactly one exception, they're not allowed to use any language more modern than C. They're not allowed to use interrupts. They can't use any modern operating system. You cannot use C++ or, in fact, you can't use dynamic memory management. So to me, this is an embarrassment for computer science. And if we want to follow that model,"
+    },
+    {
+      "start": 2795.728,
+      "end": 2824.896,
+      "text": "We're out of a job. That was not what I was arguing for, Ed. No, Ed, I was not arguing for that. I was also... I mean, that is certainly the way avionics software has been developed. And, you know, one of the things that's true is that I don't know of a crash where you can point to the avionics software as the cause. But there are lots of other parts of the airplane that are developed with sort of more modern technology that are less conservative."
+    },
+    {
+      "start": 2824.896,
+      "end": 2848.064,
+      "text": "technology. And I think that the reason that we see a curve like that is very much because of the openness, that if a Boeing and Airbus were allowed to investigate the crashes, never publish the results, never have this kind of public discussion, we would still see crashes at the level that they were."
+    },
+    {
+      "start": 2848.064,
+      "end": 2874.64,
+      "text": "you know, 30 years ago, 40 years ago. We would not see this kind of improvement. So my argument is not that we should emulate all parts of the software development. I'm aware of how avionics software is developed too, and I wouldn't want to do it that way. But the other part of the process, this open investigation, the fact that the details are published, the accident investigations are published."
+    },
+    {
+      "start": 2874.64,
+      "end": 2897.84,
+      "text": "is incredibly important so that other people can learn from mistakes. So the discussion about liability misses what's going to happen when you enter your car. You're going to push a button on and then it will pop a screen and it will say, do you accept terms of services? And unless you push yes..."
+    },
+    {
+      "start": 2897.84,
+      "end": 2925.328,
+      "text": "You'll not be able to drive the car. You know, we think it's a joke. But if you look at liability, there are two worlds. There is a world of strict liability, which I have, for example, with my car. The manufacturer is strictly liable. And the world of the computing industry that has called itself an exception. And somehow, you know, the legal side and the politicians have gone away with it. And every product that you use, you start by waiving liability."
+    },
+    {
+      "start": 2925.328,
+      "end": 2953.52,
+      "text": "Right. That is a good point. My personal view is they should abolish this waiver of liability for software, but that's a separate controversial issue. But yes, I think what you described is likely to be true, but I think that it's going to be a lot more difficult for the courts and the legislatures to accept that in the form of a car as opposed to Microsoft Word."
+    },
+    {
+      "start": 2953.52,
+      "end": 2982.88,
+      "text": "So we'll see how it works. The last question. Yes. So when you gave us the list of requirements for AI systems, you know, given by the EU report, I think, they seem to me to be general requirements that any kind of system should satisfy. I mean, I didn't see anything that is AI specific in that list, which leaves, you know, all of these."
+    },
+    {
+      "start": 2982.88,
+      "end": 3011.296,
+      "text": "They apply for most systems. So my question is, if you're then going to talk about regulating AI, what is the definition of AI that they are referring to? And what are the kinds of uses of AI that they are referring to? Because if you're talking about the use of AI, which is in a well-controlled environment within a company that doesn't affect"
+    },
+    {
+      "start": 3011.296,
+      "end": 3040.032,
+      "text": "humans that hasn't to do with decisions that are critical. I don't particularly care. But there are certain kinds of uses. So I'm just wondering if, you know, whenever we talk about regulation, what are we talking about and for what kinds of uses? So that's a good question and a good observation and a good question. I would have to go look at the report again to see what"
+    },
+    {
+      "start": 3040.032,
+      "end": 3068.752,
+      "text": "their definition of AI is. It's not something that was prominent and it's not something that I remember at this point. So I have to go back and look at that. I'm not sure that all of these items are requirements for all systems that we built. In particular, I don't think I've ever sort of worried about human autonomy or non-discrimination in systems before. But, you know, maybe I should have."
+    },
+    {
+      "start": 3068.752,
+      "end": 3083.696,
+      "text": "So thank you a lot. You're welcome. So don't forget at 7, the dinner. And tomorrow we continue."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,676 @@
+{
+  "video_id": "eSRJEVmKxrE",
+  "source": "whisper",
+  "language": "en",
+  "text": "All right. So good evening, everybody. Welcome to our digital humanism lecture series. Today, we have a topic that is often associated with digital humanism, but where we had not so much lectures on that particular topic so far, namely how to achieve sustainability by the help of digital tools and AI in particular. introduce our speaker. So my task is to introduce the moderator and I'm very happy that Viola Schiaffonati took over for today. She's professor of logic and philosophy of science at Politecnico di Emiliano. She also acts as director of the National Laboratory on Informatics and Society and among many other things. She has been a member of the European Commission Expert Group on AI and Data in Education and Training, representing Informatics Europe there. Viola, thanks for moderating this evening and I hand now over to you. And also thanks, Simon, for being our guest tonight. Thank you very much. It's my pleasure to introduce Professor Simon Parsons, who is a professor of machine learning at the University of Lincoln in the United States. and Director of the Centre for Doctoral Training on AI for Sustainable Agriculture. Simon received his PhD from University of London and held positions at different UK universities. Simon's research interests have centred on the design and analysis of autonomous systems, in particular on with respect to how teams of autonomous systems can decide what to do in complex environments. So Simon now is passionate about the potential of AI to solve problems in agriculture, both increasing productivity and improving sustainability. And recently he worked on safety of agriculture robots to work with humans. on optimizing the food production supply chain to reduce food waste, on measuring the use of nitrogen by plants, on reducing the use of herbicides when spraying weeds, and the use of generative AI to help understand the biome of a co-roman. Thank you very much, Simon, for having accepted this invitation. And now the floor is yours. Okay, thank you very much. So let me share my screen and find a relevant window here. There we go. So hopefully that is now visible. Brilliant. And what I'll do is I'll do the thing where I now put this in presentation mode and I can't see anything. I apologize. When it was waving at me, that's not going to work. You'll have to shout. So thank you for the introduction. So I'm going to talk about AI for sustainable agriculture. And I'll start by giving a bit of background. So food is important to us. Right. So most of us plan to eat most days. Right. As illustrated by a picture here of my meal I enjoyed the last time I was in Vienna. or a meal, I should say, since I eat most days. Agriculture tends to be less at the forefront of what people think about, right? So if you're in a room and you say how many people in this room actually grow any of their own food, that number is usually maybe 10% of people in the room do that. So I do. This is a photograph of some of the food that I was growing a few summers ago. Typical kinds of things. Typical kinds of things that I grow. If you ask a similar question about who has recently been on a farm, again, that number tends to be fairly low. So we live in a world where we tend to be fairly disconnected from food supply. So for a lot of people, food is what you get if you go to a supermarket and buy it. Maybe you go to a market and buy it. Maybe if you go to a market, you actually talk to the person who grew the food. or produced it in the case of animals, but you're typically not involved in it. So there's this kind of disconnect. And this disconnect I think is particularly glaring maybe when you think that food is not only something that's really important to us, but it's something where we need to take quite... drastic action around agriculture right so the whole issues are a lot of issues around climate change right if we're going to do anything serious about that we could we can cut our consumption But what we need to do as well is do things like promote sequestration of carbon. We need to be offsetting emissions. And both of those tie heavily into the kinds of things one could do around agriculture. And I'll talk a little bit about some of those later. And we obviously need to be using natural resources more efficiently. So there's a whole piece there about reducing things other than just our direct consumption of energy. And then there are issues and increasingly, certainly in the UK, we worry about this around food security, right? So we don't actually in the UK grow a huge amount of our own food. We grow a significant proportion, but there's a big gap, which, you know, especially at this time of the year, if you go look at fresh produce, most of it is imported, right? So, you know, one of the kind of things we need to be able to do to address that food security issue is to make better use of our existing farmland. which often means farming more productively. And then the other piece we need to deal with is, you know, in the UK, as in most of Europe, right, most farms are basically family, right? So it's a group of people who own the land and own the farm, farming their own land. And the issue there is that, you know, farmers are getting older, right? So as a population, farmers are getting older. So you're getting a very narrow demographic. Most farmers look like me, white men in their 50s and older. So there's an issue there about trying to deal with the fact you've got an aging population. And that may mean bringing more people onto the land, getting more people involved in growing food. But I think it also means that you need to maybe try and do things to support. um that population and of course we have a you know um the last point you know a complex socio-political landscape is kind of a nod to well you know one of the things that really impacted food supplies in the last few years was you know what has been the war in ukraine that's had a multifaceted impact certainly on the impact on the sorry on the on the situation in the uk all right and then you know things like the uk voting for brexit has also had a big impact on the food supply in the UK, right? So those kinds of issues, you know, well above and beyond, not directly related to agriculture itself, help to complicate this picture, right? So there's a lot of work that needs doing. And so I work at the, as Viola said, I work at the Lincoln Institute for Agri-Food Technology at the University of Lincoln in the UK. And we're doing a lot of work. In fact, that's the, if you like, the purpose of the institute. is to do work to address some of these issues. So I'm actually speaking, this is this building, this building here is that's where our institute is based and if in case you're interested that little window there on the first floor at the end is where I'm currently sitting. Okay so you may not know Lincoln, so Lincoln is a city in the UK, it's about two hours north of London and I thought it's always kind of interesting to do this you know, compare where you are to where you're speaking, if you like. So, of course, you know, Lincoln is a much smaller city than Vienna. That has about 100,000 people. But interestingly, it was settled at much the same time. Both were originally, as I understand it, Roman legions put forts there and afterwards there was habitation. And just a point of information, Lincoln has a beautiful cathedral, which is slightly older and indeed slightly larger. than St. Stephen's in Vienna, which actually makes it one of the most enormous things in the city because it's quite a small city. You can't miss the cathedral. Okay, so what I want to do is talk through some use cases for AI in helping towards sustainable agriculture. And I have to stress that, you know, although some of the work that I will talk about here, especially some of the things I'll go into a bit more detail in, are things that I've been involved in since moving to the University of Lincoln. Much of it is the work of my colleagues. So what I'm really doing here is giving you a picture of the range of work that's happening in our institute rather than just talking about things that I've done. So the first of the use cases I'm going to talk about is what we might call crop, what we do call crop monitoring. Right. And that's about, you know, measuring what's going on with the crop. Okay. So what you see here is a picture of one of the vehicles, one of the robot vehicles that we have in the institute that is, you know, it's a large robot. It's in a field here where there are a bunch of trials for wheat being, wheat trials being carried out. So different species of wheat under different conditions are being grown. And the vehicle is kind of basically driving over an experimental patch. and then imaging it with various cameras, including hyperspectral imaging. And the idea generally behind monitoring is you want to be able to go and you want to be able to measure what's going on, and you want to be able to sort of track, if you like, what's happening in some sense, right? So these experiments were particularly around the use of nitrogen in crops, how that, whether you can, or the degree to which you can tell the impact of varying treatments over the course of the lifetime of the crop. as a way to be able to more accurately determine the impact of fertilizer on the crop and therefore allow you to reduce the fertilizer. That's one of the things that we're trying to do. A lot of the reason for monitoring is related to phenotyping. So phenotyping is around deciding, basically, in the sense that we use it, it's around determining what crops are the right ones to grow under certain circumstances. What are the properties of crops? The pictures you have on this slide are of an energy crop. So it's a grass called miscanthus. So that's something that gets grown basically as a biofuel. So you grow it. You want something that produces a lot of biomass very quickly. And you want to measure what's going on. So some of the work that we were involved in was measuring it. So these are some overhead drying photographs. We also have vehicles out. And again, this is not my work. We had vehicles out, you know, driving around, taking photographs and taking measurements, depth images all the way around the crop. So you can build 3D models of the crop, which then helps to tell you about what the biomass of the crop is. So that's that's kind of the measuring bit and the modeling bit. And then part of what was also going on was some work on decision making about what different varieties to grow and under what conditions. And so that kind of model that thinking that somebody who is. interested in um in growing this campus might be the decisions i might be making okay um so an example of that is you know this is not untypical um as people who've worked in any kind of application you've got to ask people who are essentially doing the same job ask them what they think about a particular situation you know it's it's um not uncommon that they disagree on each other right so so here is just a little schematic of some of the things so these are actual quotes that came from various you know growers who were interested in this campus around um what you know what are the reasons for what are the what are the factors influencing um your choice about which varieties to grow okay so you know you can see the top sort of top line here you know direct contradictions right so You know, one grower wants to focus on disease resistance rather than yield, and another grower wants to focus on yield rather than disease resistance, right? And they have reasons behind that, right? They're not just, you know, shooting their mouths off. They have a reason for thinking this. And so part of the work that my colleagues were involved in was about, you know, sort of capturing this information and then using techniques from, you know, the extensions of formal logics, I think it's called argumentation, which some of us on the call at least know quite a lot about. um to um to try to understand what's going on so there's a piece here around you know figuring out you know what those what those statements are how they relate to each other which ones support which other ones what the interactions are between them and then applying some you know mathematical models to be able to use well-founded models to be able to figure out you know overall from you know what's the consensus view of of all the people who are contributing to this particular bit of the debate okay So that's one piece of work going on around this campus. Here's something that's related but coming at it from a very different direction. So another piece that we're really interested in at our institute is what we call long-term autonomy. So the idea there is it's about being able to deploy robots in the field, as in literally the field, or in this case in the vineyard, and have them function well. over a long period of time. The idea is to get to a point where they don't need a lot of human intervention. So it might be a person to make sure that the robots are charged and to switch them on and point them in the right direction. But the idea is that they can get to a point where they can operate on their own. So part of that is building models so that the robot can figure out where it is. So building sort of 3D models. And one of the things about plants, obviously, is that they change over time. So there's work here around having the robot build a map, be able to localize within a map, but then also cope with the fact that the things that it senses when it's moving around in that map vary over time. And so here you've got variation between the left-hand side and the right-hand side, six months of growth within a vineyard. There's quite a big difference both. you know, how it appears to you and how it appears to, you know, like on the top, the top slice and then the bottom slice, how it appears to the robot. Okay. All right. And so one of the things that we're really keen on at the university is trying to spin out companies to exploit things around some of the, you know, intellectual property and some of the ideas that are developed as part of the thought. I'll give you some examples of ways that, and part of this is about just about getting it. getting these techniques out and actually, you know, out of just a university setting, get them out and get them deployed and get them, you know, really helping people in the world. Okay. And so, you know, one example of this is a company called FruitCast, which is founded by Chapo Raymond Kirk, who's the lad on the left in the picture. So he was a PhD student here, and his work was around computer vision and counting, you know, basically counting the number of strawberries in an image, right? That was where he started out. And, you know, for reasons, strawberries are an important crop, et cetera, et cetera. But the point is what his company is now doing is using that vision technology on a robot. You can send a robot out into a sort of polytome, the kind of environment that strawberries are grown in. It will count the fruit, but not just the fruit. It will count the ripe fruit. What it's good at doing at this point is counting the unripe fruit and figuring out this is how much ripe fruit you'll have next week. And it turns out that, you know, the reason for doing that is it turns out that that sort of predicting the yield in a little bit in the future is exactly what strawberry growers need in order to be able to do things like plan. how they're going to make sure that their crop gets picked, make sure you've got enough pickers to do the picking and also make sure that you can fulfill the contracts that you have in order to deliver the fruit because the way that it works in the UK at least is growers have contracts with you know supermarkets to deliver a certain amount of fruit and they need to know whether they're going to hit those targets right they need to know whether they're going to hit them they need to know whether they're going to exceed them in which case they've got to find a way of offloading fruit right because they want it to rot they want to find another route to sell it and they also need to know if they're going to undershoot because they've got to somehow go locate some fruit from somebody else in order to fulfill the contract so that kind of early warning of where they're going to be is super important and hence the company right okay So another use case is crop care, which is around, so monitoring is around, you know, checking on the state of growth for a number of different possible purposes, right? Crop care is about looking after the crops after they've been monitored, right? So it's things in particular, one of the things that we focused on, and this is a piece of work I've been involved in, is spraying, right? So dealing with, you've got a field of crops, and you need to put some treatment on them. So a very typical thing is to be growing crops, and there's stuff that's growing in the field that's getting in the way of the things you're trying to grow, which you want to get rid of. So the state of the art for that is, unfortunately, you take a tractor with a great big boom on the back, and you drive out into the field, and you spray the entire field with a selective herbicide, which kills everything except the crop. And the result of that is you spray a very large amount of herbicide on a field. And we'd like to not do that. What we'd like to do instead is we'd like to do what's called precision spraying, which is basically target individual plants. I think the future is going to be probably mechanical weeding. So actually having something like a tool that goes in and digs up a weed. But for the moment, we're in a world where spraying is going to be the thing that we do. So then what we've got to do is be able to target individual weeds. So in particular, we know we can do that kind of thing with machine learning. But one of the questions we've been answering is basically, how much technology do you need to be able to do this? And is it remotely affordable? So that's one of the things we did. You still need a significant number of GPUs if you can operate a sprayer working at the kind of capacity that... farmers are going to want to use and so we've been running some other experiments with you know basically basically how bad can the um can the vision system be and still operate effectively enough if you like rather than being you know super precise and one of the interesting things about this is is is then things like you know maybe what you need to do is you need to do the processing off board right you're actually trying to do it on the on the tractor with a whole pile of um you know expensive hardware that's very power hungry on a vehicle maybe what you want to do is you want to pipe the data off over some fast wireless network and process it off board. So we looked at doing that. This is actually what kind of output of that kind of detector is in an area that's growing lettuce, right? So spotting the lettuces and putting a red box around them and spotting the weeds and putting a blue box around them. And then there are questions around, you know, how do you evaluate whether this is... operating right so there's a whole you know if you're if you know about computer vision you know there are sort of standard metrics for evaluating how good an object detector is they're not necessarily appropriate for thinking about what you need to do in this case right because actually you don't care you care less about spotting every weed and more about spotting enough you spray enough that you you know target enough of them that your crop can still grow right and that's a very different thing so there's a there's a bunch of work around you know basically how good is good enough in order to be able to make something that works and something that could potentially be delivered out to growers okay all in the service of trying to reduce the overall amount of herbicide that's being sprayed um we found that you can reduce the herbicide quite a lot so you know this this particular example is showing you you're spraying about 20 percent of account for blanket coverage, and you're still, with this particular setup, you'll still hit the vast majority of the weeds that are cropping up. Another approach is to continue the idea of highlighting individual places where their technology is getting out into the marketplace. There's a company called Saga Robotics that we've done some work with, and they are basically commercially delivering a solution where you use ultraviolet lights, so UVC, um light so toxic to just about everything including um mildew that you want to treat in a in a strawberry buying context right so again you know there's here's a crop care example where it's actually at the point of being commercialized okay um another use case uh that we've looked at in in various supporting various ways is what we call selective harvesting which is which is about harvesting things like strawberries where You have to, you know, it's not like a field of wheat where it's all ready and you go out with a great big machine and scoop it all up with strawberries and lots of other crops, right? They mature at different times. You've got to go in and be selective. You've got to go in and pick particular items, all right? We study, we know a lot of stuff. We, the university, has done a lot of stuff around strawberries because they are, you know, a fairly important crop worldwide in terms of the total amount of money. spent on growing and distributing and consuming strawberries. And individually, they're quite valuable. So there's an interesting piece about you need to be really careful with them. The particular bit that we've done, we've done some work on actually doing picking, but that's not been a major focus. But the major focus we've been on is taking these vehicles and having them navigate and doing useful things. and doing that in a safe way. Okay, so this is a typical growing environment where you've got, certainly in the UK, you've got strawberries on these trays and sort of raised trays or tables so that when a human is picking them they don't need to bend over and have a painful back all the time so it can be fairly upright. And one of the problems that you have is that under the standard way of picking them when somebody's collected a whole bunch of strawberries they don't have to go and walk potentially quite a long way you get some idea of how long the tunnel is here from this picture and actually this is quite a short tunnel so they're often two or three times as long as this so the pickers you know got a whole lot of strawberries they don't have to carry them quite a long distance to offload them and then get some more empty trays and go off and do some more picking. So one of the things that my colleagues have been working on is systems to be able to have a robot autonomously go and the picker can say, right, I'm nearly done. Robot will find its way to them. They can load it up with the fruit they've picked and they take off some more supplies of empty trays and basically just keep picking. which allows them to be more productive, which they're happy about because they're paid, you know, by the strawberry. And also sort of speeds the whole, you know, increases the productivity of the system generally, right? The whole sort of picking system. And then other folk have been working on sort of scheduling this, right? So you can build a yield model, you know, potentially from that, from the stuff I was talking about with Fruitcast. And so to say, this is where the strawberries are going to be at, you know, this time next week on this farm. You've got a model also of, you know workers right how well they're picking what their sort of productivity is like and then you can start matching people to the right place on the farm where you know people have appropriate productivity for a particular area of the farm so they so basically they don't have to spend their time running around all right picking one area and then running to another area you try to put them in an area where they will keep working solidly for for a day right and then you could also based on on the same on the same information start scheduling robots to get to the pickers so that they don't have to be called. The robots don't even have to be called. They're kind of arriving at the point where the pickers are ready to offload the fruit. So you can start getting a fairly automated system here, but one that still has pickers doing the bit that they're really good at, which is very fast taking fruit off the plants. So there's also a piece in here. So again, this sort of conflict resolution explanation piece, right, where the system has the ability to have a discussion basically with a user about why a particular scheduling action has been taken. So all that to make the system more explainable and easier to use. So the piece of work, I won't say very much about, we've done a bunch of work around making sure that these robots operate safely, right? So you saw the environment and it's quite a constrained space. So that means in between the rows that the robots have to go down. So you've got to be quite careful, right? These things are big and heavy and could damage people. So what you're trying to do here is basically reduce the probability that robots are going to hit anybody. quite successfully. So yeah, so that's just showing you there's quite a complicated safety system you can put on the robot to achieve that. And then what you can do drawing on work from human-robot interaction is to have the robot navigate differently basically as it approaches somebody. Okay, so yeah, you have the robot. When it's moving but it's further away and it's faster as it gets closer. It's like, okay, I'll slow down It does things like if you can recognize So the idea here is that you've got again sort of projected on them on the growing environment You know different behaviors in different places basically, right? So on the left-hand side you've got within a row and it's going to work It's going to work differently from as in on the right where it's more out in the open okay and so the sort of zones of how it approaches people how it acts in different places vary so it's quite context specific um and then it will also it also has the ability i mean again it's just sort of standard machine vision you know to recognize what gestures a person's making so you have a um you have the ability basically to control it by you know making signals to it like you know approach me now now stop okay And it also allows you, you can also detect when you are behind somebody, right? So you notice the difference here between, up on the right-hand side here, between facing the robot and having your back to the robot. But one of the things... it's very important is you really don't, so robots don't make a lot of noise, right? They're very quiet. You really don't want one sneaking up behind you, right? That's a really freaky experience. So you have the robot basically, you know, not come very close. If it knows it's approaching you behind, it'll wait until you turn and see it and say, come on, before it moves closer to you. Okay, so there's, you know, the beginnings of a sort of two-way communication and your ability to control the robot as... somebody who's interacting with them okay and again so just harking back to the commercial the commercialization of this there's a company called dogtooth who build the robots that you see in this picture which do have um arms on that can pick and they're currently in commercial operations so they're they're not still not quite at the point where they can beat the person in terms of actually picking um but they're getting that And we've been working with them, providing the same autonomous navigation that we're using on the robots I showed you before, which improves the range of places and the cost of setup for moving these robots in. I should say that their model is not that if you're a strawberry farmer, you would buy a whole bunch of their robots. Their model is we will bring this in as a picking service and you will pay us to pick your strawberries. That's the kind of feeling about the right way that this will actually get into the right market. There's another company that's a spin-out from the university called Agaricus, which is around picking mushrooms. So another important crop, another crop where it's very human-intensive to do the work right now, and they have a robot which is currently going through trials. You might not think of it as a robot. It's basically a two-dimensional plane arm that sits over where the robot mushrooms are growing. You can pick them up, but they can harvest mushrooms. So you're going to employ them. You can use them rather than employing people to do the picking. All right. The last thing I want to mention in terms of use cases is the supply chain. And the reason for that is just that we're interested in the whole food system. So the usual saying around that is from farm to fork. And so there's the bit outside the farm gate to the fork that's also interesting. So the kind of things we've been involved in there is sort of multi-agent modeling of supply chains. And also tracing, it depends. You may or may not think of this as being AI, but think about tracing the provenance of food so that you can identify, for example, if you have to recall a product because something happened along the chain, you only want to recall the bit that was affected. And so by adequately capturing the provenance of each individual thing that is developed, each individual thing through the manufacturing chain, you can limit recalls and therefore waste a lot less food. That's where that work's going. There's obviously also thinking about distribution of food. There's obviously a fair amount of work one can do, which we're beginning to get a little bit into in terms of the effective use of transportation. So even using AI planning and optimisation to figure out what the good routes are for vehicles. This is a company that's local to us, which ships trucks, produce around the country. So if you can squeeze a little bit of optimization out of that, you can again cut down use of carbon, which obviously would be a good thing. So, yeah, so a couple of other things I just want to talk about briefly. There is, so one of the big things that we are involved in is, and a lot of the work that we do is generating software that's open source with the idea that other people can pick up and use things like our navigation stack. We actually are in the middle, coming in the latter stages now, of a large project called Agri-OpenCore, which is about taking that software and providing, packaging it and providing it in a way that it's easier for other people to use. And part of that has been working with other companies. So Dogtooth is one of them that I already mentioned, but a couple of other companies. So I know you do basically robot arms for doing packing. So particularly in the packing of tomatoes, that's kind of their niche at the moment. And then Muddy Machines are a company who's robots, relatively small robots, as you can see from the scale in that picture, the idea is that they will go out and they will harvest crops like asparagus, where you want to be cutting individual stems. And again, it's a job that's currently largely not automated and therefore quite labor intensive. So the idea of AgriOpenCore is to port these various components that we've been developing over a number of years, the University of Lincoln's been developing over a number of years. and make it easier for people to use it. And part of that is helping some of these partners to get that stack to work on their hardware. So there's that. And then the last thing I just want to flag up is we're always keen to work with people. And one of the roots of that, so I mentioned in the introduction, I'm the director of what the UK calls a Center for Doctoral Training, which is basically a large number of PhD studentships over a five-year period. So we've got 60 PhD studentships over a five-year period. We're in the middle of recruiting this. So that's five groups of 12. We've just about recruited the second group of those, but we've got another 36 studentships to go through lots of 12. Yes, I did the maths right. So those are studentships split between us, University of Aberdeen, Queen's, University Belfast, and University Strathclyde. So we will be looking for enthusiastic PhD students with backgrounds in computer science or anything around plant science or animal science, because we span that whole area of agriculture, indeed aquaculture as well. So if you know anybody... who might be interested in doing a PhD, or you're interested in doing a PhD, please spread the word and think about getting involved. And with that, I will conclude just by saying, I think, and the reason I'm incredibly passionate about sustainable agriculture and using AI for it is that I think it's a huge challenge that we collectively face. I think there's a good argument, though I won't go into it here, but it's an existential challenge. And I believe that AI can help all the way from farm to fork, right from putting the seeds in the ground to potentially cooking meals at the end of the day. So I haven't talked about any examples in food manufacturing, but there are plenty of those as well. I've given you a few use cases from some of the work. that's been done at Lincoln. Only had time to touch on a small amount of it, but there's masses more to do. So as I say, if you're interested, get in touch. We'd love to work with people. So I will leave that there. I will just bring up, this is a list of people I've worked with, highlighted ones, people I've worked with on things I've talked about here. And just to finish by saying thank you to all the folk who've supported my work at some point or another and similarly some of the work of my colleagues. I will. OK, thank you very much, Simon. Everything was so clear. So I don't know if there are already questions. Otherwise, while waiting, I will ask perhaps one question. OK, so while waiting for other questions, I will ask a question. So this is a very interesting perspective because, of course, there's a lot on AI and sustainability. and then you presented how ai can solve sustainability problems but my question is then of course you know that also ai is very uh energy demanding so you mentioned some parts of your presentation you mentioned some possible approaches uh so perhaps this is a fair question so how you can deal with this like energy consumption and then perhaps you solve some problems but then you open some other problems. And then perhaps if you can comment a little bit on sustainability in terms of social sustainability, because I see that, of course, these solutions can help companies, some workers, of course. But then, of course, it might be the case that perhaps some gap can increase because some companies or some countries are richer than others, can afford. research and development on these issues, other like small companies or even like poorer countries cannot afford this. So I see there are already two questions. Thank you. Okay, so I will try to answer those. I think what you're saying about, you're concerned about the not the use of AI to promote sustainability, but about the sustainability of AI itself, I think that's a very well-made point, right? I think that is something we have to worry about. I mean, what we're trying to do as part of the Centre for Doctoral Training is we're trying to get further and use that as an impetus to get further into basically understanding how we account for the potential you know, non-sustainable effects of the technology, right? So I think that's a little bit there in some of the work in the sense of, you know, worrying about, you know, if you've got to deploy this thing on a vehicle, you know, how do you do that? And so some of the attempts we're beginning to do that. But I think there's a bigger piece because, yeah, I mean, it's very easy. If you look at things from a technical point of view, you go, okay, I want to use the latest technology, right? Because that's going to be the best. And actually, yeah, but it uses, you know, an order of magnitude more power to indeed probably more than an order of magnitude more power. So I think there needs to be a piece in that, which is around in terms of the design of systems where you're saying, okay, basically what's the minimum AI I can get away with, right? The minimum level of machine learning, right? And actually, if you go back to, in fact, the kinds of models we were using in that read detection work. were relatively efficient models, right? Because you don't need that great amount of efficiency. So I think there's sort of two pieces. There's around, for me, there's around, you know, getting my head around it, right? Because I think it's something that, you know, for a while I wasn't doing. And that's been driven partly by wanting students to be able to make informed choices, right? So our PhD students. But I think there's definitely a piece around trying to make sure that you do that better. Right. And I think I think you can you can come up with. Yeah, you can come up with models that are efficient. You can come up with models that are that won't use that are sufficient, that are efficient. I think you have to think about doing it. You have to just be like, I'm not going to just download and use the latest, the latest, you know, fabulous, you know, transformer tool, because it's actually going to be far more than you need. Around the social sustainability. That's a really good point. I mean, I think there's obviously, so, you know, one of the things that concerns me generally about AI is the idea of it's going to displace people from work, right? I think one of the reasons I think, you know, within agriculture, that's less of an issue is because certainly talking from a UK perspective, we don't have the labor, right? So really, for now, at least, it's a case of, okay, we need this to fill in the gap where we don't have. don't have people who want to do the work for the price we're prepared to pay the wages we're prepared to pay them um but the piece the piece around the you know the degree to which any any technology but but as a bit of an extreme example in the sense because of that vast cost of generating some of the models that rich poor gap i i completely agree i don't have an answer to how we do that except we have to worry about it right and again again maybe there's a piece around trying to you know promoting as i think is beginning to be the case people promoting um the idea of efficiency alongside the idea of performance and sort of trying to evaluating that right and therefore sort of you know socially engineering if you like the ai community to think about that as an important aspect right because otherwise yeah there's a huge you know and i i worried for a long time about the degree to which we're basically passing over the future of our research to large corporations that I'm not convinced they have our best interests at heart. So, you know, is this the right thing to be doing? I don't know. I think there's definitely a piece around making sure that there are cheaper alternatives available and easy alternatives. And I think that goes back partly to the sort of commitment to open source that, you know, we do create things that are available for other people to use. But fundamentally, yeah, I mean, that... gap between rich and poor is always going to be a concern, right? I just think we have to remember it and do what we can to address it. I don't think it's not going to go away, right? Sorry, those were two very long-winded answers, but they're both things I care about a lot, so I'm sorry. Lots of things to say about them. So let me ask any other questions, comments. Stefan, please. I have a question. Thanks, Simon, for the talk. Once, a while ago, I was involved in a project proposal about multi-cropping, where you grow several crops at the same place, but also simultaneously, which is, of course, not... because it's very hard to harvest them in an automated way. But maybe with good robots, this might change in the future. So my question is just, is there anything on your radar? Is this something which is considered or is this still a very exotic trend? It depends what level you think about growing, basically what kinds of crops you think about growing together, right? So we have on our, so we're very lucky that the big old building that I showed you a picture of is basically on a farm. And so we're in a situation where we can do various sort of farming. The farm is managed as a farm, but we also do have things that we do that are kind of experimental around that. And one of those is, something called agroforestry which is basically growing trees in you know through the fields right and so you you're basically changing the conditions within the field by doing that um so that that's something that seems to be getting a bit of traction right but there what you're doing is i mean so there it's multi-cropping if the if the trees are growing things that are you know so you've got a field of wheat right and you've got trees in there that are growing some kind of nut for example that you're then harvesting separately right so it's in that case they're very different things right and clearly you can still take your combine how your big combine harvester and run it through the wheat and it's not going to be it's not going to be so much of an issue um i think i think things where you are yeah where both crops are things that you run through a combine harvester that's always going to be hard so you want to grow so one of the one of the crops we're looking at a lot um is linseed, right? Which I don't know whether people know what that is, but it basically like little, it's a plant, it's a relatively small plant, doesn't grow very high, lovely purple flowers, produces capsules that are full of little seeds, which you can, which people now grow. I mean, when I was a kid, you used to make oil out of them, you crushed them for oil, you can still do that. That was all you did. People now use them as a food source because they're actually quite a high protein food source. So those, unless you've got a, if you're growing those along with wheat, right? Unless your great big combine harvesting machine can do both, that's always going to be an issue. But I think there are crops, maybe more high value crops, where you're already having to distinguish between this. You're always having to say, this is the stem, we need to cut it here, either by hand or with a robot. Absolutely. If you've got crops, if you've got multiple crops like that, then I think there's the sort of kind of the technology is kind of on the cusp of doing that. And yes, it is something we're interested in. We haven't figured out how to get work on that funded yet. So, but we are definitely interested in it. And I think part of it is getting, it's one of those things where the, I think there are clear, there's, you know, I think agriculture knows there are clear benefits, but there are blockers, right? And we just not at a point yet on a sort of agri-tech side for me to show that we can overcome or we're close enough to overcoming those blockers. And part of that's just because there's a lot of stuff even with monocropping that you can still do and it's easier to get there and you can get there faster. So I think a lot of this is around what can you get out, basically out to a point where people start saying, yes, this broad field of, for example, robots making individual decisions about what crop to harvest, that's something that we can use. And once you get to that point, that's going to open up, it's going to open up investment to be able to do things where you've got, for example, things are a bit more out there, right? But I see in terms of what farmers are interested in. I think if you could give people the technology to be able to do this multi-cropping, people would do that. So they understand the advantage of things like agroforestry. People are beginning to adopt some of those things. So I think on the grower side, people are not persuadable, but they will look at the evidence and make decisions that this is something that works for them. It's more a technology barrier and how can we prove to people that the technology works well enough. Okay, thank you very much. Thank you. You're welcome. So we have now a question from Katja. Yeah, hi. I'm Katja from VRB in Vienna. So we are also running a couple of projects within the agriculture area. Awesome. In-field imaging. and doing AI-based data integration. But my question is targeting something else. So because we were in Italy, our partners is a big agriculture company in Italy. And we had there also some discussions in the Po area about the adoption of small farmers of AI in cooperation with University of Bologna. and the water supply in the poor area. And what I took from the discussions was that especially the smaller farmers, they have big problems with the adoption of AI. I mean, there are tools or it's more digitization. It's not all everything is AI. And I wonder if you are doing research into the direction of how to bring the AI tools down to the smallest farmer. The moment I have the feeling only the big companies are using that, but the small farmers do not have any benefit from it. Yeah, I think that's a that's a really valid concern, right? I mean, I think and I think part of it, I mean, I, you know, the smaller farmers everywhere, right? It's I mean, so it's it. I mean, I don't know what size you're talking about when you're talking about smaller farms, but farms in the UK, I think the average size is like 100 hectares, right? So we're not talking large farms, right? We're talking, like I said during the presentation piece, that I think most farms in Europe, generally in the UK the same, are family-led. I think part of that is simply about sort of models for how you deliver the technology. So I mentioned the idea of sort of, you know, technology as a service rather than technology as a product, right? Which is not necessarily what large, you know, John Deere, who make vast, you know, big agricultural vehicles, they want to sell you a tractor, right? And they will put AI on the tractor and tell you it's an AI-enabled tractor and make you want to buy it. So I think it's definitely something in that, you know, as a service piece, excuse me, as a service piece where you're selling, you know, but you also got to price it so that people can actually afford it. um there is there is some work some of my colleagues here work around you know the adoption of these technologies i'm afraid i i don't shamefully i actually share an office with so that i can't tell you exactly what we're doing on it uh if you want to know i'd be happy to to um to sort of you know make connections about it because i think i think it's that you know it's something we're definitely concerned about because partly it's around you know appropriate you know designing appropriate technology right we don't want to be designing great big tractors if that's not what people want, right? I mean, I think there's, yeah, so absolutely. And I think there's definitely a piece around trying to make, again, around trying to make the technology, you know, small enough and cheap enough that people can use it, right? So, you know, can I feel like reducing the quantum of the technology? And I think that's one of the things that robotics can offer is, you know, more small light vehicles, right? So that's good from a soil compaction point of view, but it also means that you don't have to spend them. 200,000 pounds in order, or 200,000 euros in order to buy it, right? We can sell you something that's, or we can manufacture things that are much smaller, you just buy less of them, right? Than somebody who's got a bigger space. But no, it's a really good point. And as I said, I'd be really happy to put you in touch with people if that's something you want to talk to people about. So we've done various things looking at the barriers, and I know that some of those are basically economic. Yeah, because I think in Austria especially, there are lots of smaller farms, yeah? because of the country itself and the mountains. Yeah, that's, I mean, that sounds a lot like, and I'm not surprised it's geography, right? Just sort of geographic determinism, right? So the west of the UK, which is much hillier. It's exactly like that. So the size, I think the average size of the West is like 50 hectares, right? So maybe even lots even smaller than that. It tends to be the East where we are that you've got much bigger fields, much bigger, big flat fields. So yeah, it's absolutely an issue. And I think it's an issue across, just about across everywhere. I spent a bit of time, I always had this impression that, I mean, in the United States, it's a very different environment, but... but I always had the impression that every farm there was thousands and thousands of hectares. Well, actually, that's true in some parts of the country, but other parts, it's still relatively small. So I think there are basically small farms everywhere, right? And getting the technology so that it can, if you really want to see this broadly applied, you have to be addressing that aspect. Okay, thanks. Thank you. So thank you very much. I don't know if there are other questions. Otherwise, so I think it's, okay, Klaus, please. Yeah, and quite another question. What do you think, how many pickers would become superfluous if the technology developed at Lincoln University were used worldwide? I mean, there are, of course, some monitoring jobs, but I think it would change this kind of job. of jobs um in an extreme way yeah well maybe um i mean i think as i said for for the you know the uk right now there are not enough people who want to do the work right so actually we have the reverse problem which is you know basically why can't we have more robots because we need we need to fill in the gap is it is it going to i mean i think they're always i mean the other pieces I think you're always going to be in a situation where you have humans and robots operating side by side, which is partly why we're particularly interested in that safety issue. Because I think, I mean, partly that's because it's going to be a long time, I think, before robots can do as good a job as people can. Partly that's in terms of speed. It's also in terms of things like, I mean, talking about strawberry picking now particularly, because that's the thing we spend a lot of time thinking about. Partly that's around... um you know just the way that the fruit grows and i have to say people are beginning to beginning to have conversations about how can we grow fruit so that robots can pick it more easily which to me is kind of like backwards but there you go right because you know strawberries growing clusters the ones in the back are always going to be difficult to pick um things like that so i think i think if you it's more to me right now it's more about absolutely more about bringing you know filling in the gaps where people can't be. I think there'll always be people, for example, maybe going in afterwards and picking the harder to get ones, right? You'd have to think, I mean, that would drive, I mean, there's a social piece there because then it's going to be harder for the pickers to do their job, right? And so that's going to make them unhappy if they're being paid in the same way they're currently being paid, right? You have to rethink how that goes, right? But I think, yeah, I mean, potentially it could do, but I mean, there's, you know, potentially it could have a big impact. I think it's going to be a long time before we see that impact. And I think there will always be people working alongside the robots, right? But I agree. I think as part of the, you know, thinking about this responsibly, right, and responsible innovation, I think we need to be thinking about, you know, monitoring that and looking at a point where you do start displacing people, right? I mean, yeah, right now I think there are lots of other jobs around. We think about we've been basically robotizing. um a bit of our own little strawberry farm and and you still need there's still going to be people you know packing right where we are right now right yeah you'll still need people working around um working around the strawberry tunnel so you might see a change of what's going on um but you're right i mean the long term i think it's definitely something you need to be thinking about that downstream impact of absolutely okay so I'm sorry, I can give you a number. I can't give you a number. No problem. So I wasn't completely avoiding it. I just don't have an answer. But anyway, Simon, thank you very much, because I mean, it's good you mentioned responsible innovation and the idea that we should stay prepared, even if you see that it's not like so urgent right now. And let me thank you once again for your talk. Thank you very much. And I guess now it's time for Peter Knies to present the music, to introduce some news and to present the music. And perhaps, Simon, you will explain your choice in a minute. Thank you so much again. Thank you. Thank you very much. Yeah, thanks also from my side. Thanks, Viola, for the handover. Yeah, while I set this up, maybe Simon, you just want to explain which track you picked and why you like it or why this was your choice. Yeah, so this is a track by, what I think of it as being by the great jazz organist Shirley Scott, a collaboration with Eddie Davis. So they released a number of records that were called The Cookbook. Right. Or various cookbooks, which obviously has a connection with food. And just this is a particularly, I think, a particularly great song that in this jazz sense really cooks. Perfect. Thanks. That is a great explanation and a great link. So thanks for choosing this track. And that leaves me with a quick announcement for the next event. which will be a panel on regulation as a hybrid event with participation of Mark Rothenberg, Hans Ackermann, George Metakidis, and possibly others, and moderated by Christiane Wendehorst. And that will happen already in two weeks on April 1st, 5 p.m. Careful, Europe will have switched to daylight savings time by then, so make sure to check the time offset if you're joining from another time zone. So hopefully we'll see you there for today. Thank you for joining. Thanks to Viola for moderating, Simon for the insightful talk. Here's high fry. Goodbye and have a nice rest of the day. Thank you so much, Simon. Thank you. Thanks also for the great music. Yeah, yeah. Great music. Thank you. Bye-bye. Have a good evening. Bye.",
+  "segments": [
+    {
+      "start": 0.24,
+      "end": 29.456,
+      "text": "All right. So good evening, everybody. Welcome to our digital humanism lecture series. Today, we have a topic that is often associated with digital humanism, but where we had not so much lectures on that particular topic so far, namely how to achieve sustainability by the help of digital tools and AI in particular."
+    },
+    {
+      "start": 29.456,
+      "end": 56.112,
+      "text": "introduce our speaker. So my task is to introduce the moderator and I'm very happy that Viola Schiaffonati took over for today. She's professor of logic and philosophy of science at Politecnico di Emiliano. She also acts as director of the National Laboratory on Informatics and Society and among many other things."
+    },
+    {
+      "start": 56.112,
+      "end": 85.408,
+      "text": "She has been a member of the European Commission Expert Group on AI and Data in Education and Training, representing Informatics Europe there. Viola, thanks for moderating this evening and I hand now over to you. And also thanks, Simon, for being our guest tonight. Thank you very much. It's my pleasure to introduce Professor Simon Parsons, who is a professor of machine learning at the University of Lincoln in the United States."
+    },
+    {
+      "start": 85.408,
+      "end": 111.088,
+      "text": "and Director of the Centre for Doctoral Training on AI for Sustainable Agriculture. Simon received his PhD from University of London and held positions at different UK universities. Simon's research interests have centred on the design and analysis of autonomous systems, in particular on"
+    },
+    {
+      "start": 111.088,
+      "end": 140.416,
+      "text": "with respect to how teams of autonomous systems can decide what to do in complex environments. So Simon now is passionate about the potential of AI to solve problems in agriculture, both increasing productivity and improving sustainability. And recently he worked on safety of agriculture robots to work with humans."
+    },
+    {
+      "start": 140.416,
+      "end": 164.752,
+      "text": "on optimizing the food production supply chain to reduce food waste, on measuring the use of nitrogen by plants, on reducing the use of herbicides when spraying weeds, and the use of generative AI to help understand the biome of a co-roman."
+    },
+    {
+      "start": 164.752,
+      "end": 194.032,
+      "text": "Thank you very much, Simon, for having accepted this invitation. And now the floor is yours. Okay, thank you very much. So let me share my screen and find a relevant window here. There we go. So hopefully that is now visible. Brilliant. And what I'll do is I'll do the thing where I now put this in presentation mode and I can't see anything."
+    },
+    {
+      "start": 194.032,
+      "end": 221.056,
+      "text": "I apologize. When it was waving at me, that's not going to work. You'll have to shout. So thank you for the introduction. So I'm going to talk about AI for sustainable agriculture. And I'll start by giving a bit of background. So food is important to us. Right. So most of us plan to eat most days. Right. As illustrated by a picture here of my meal I enjoyed the last time I was in Vienna."
+    },
+    {
+      "start": 221.056,
+      "end": 251.056,
+      "text": "or a meal, I should say, since I eat most days. Agriculture tends to be less at the forefront of what people think about, right? So if you're in a room and you say how many people in this room actually grow any of their own food, that number is usually maybe 10% of people in the room do that. So I do. This is a photograph of some of the food that I was growing a few summers ago. Typical kinds of things. Typical kinds of things that I grow."
+    },
+    {
+      "start": 251.056,
+      "end": 277.264,
+      "text": "If you ask a similar question about who has recently been on a farm, again, that number tends to be fairly low. So we live in a world where we tend to be fairly disconnected from food supply. So for a lot of people, food is what you get if you go to a supermarket and buy it. Maybe you go to a market and buy it. Maybe if you go to a market, you actually talk to the person who grew the food."
+    },
+    {
+      "start": 277.264,
+      "end": 298.016,
+      "text": "or produced it in the case of animals, but you're typically not involved in it. So there's this kind of disconnect. And this disconnect I think is particularly glaring maybe when you think that food is not only something that's really important to us, but it's something where we need to take quite..."
+    },
+    {
+      "start": 298.016,
+      "end": 308.832,
+      "text": "drastic action around agriculture right so the whole issues are a lot of issues around climate change right if we're going to do anything serious about that we could we can cut our consumption"
+    },
+    {
+      "start": 308.832,
+      "end": 334.192,
+      "text": "But what we need to do as well is do things like promote sequestration of carbon. We need to be offsetting emissions. And both of those tie heavily into the kinds of things one could do around agriculture. And I'll talk a little bit about some of those later. And we obviously need to be using natural resources more efficiently. So there's a whole piece there about reducing things other than just our direct consumption of energy."
+    },
+    {
+      "start": 334.192,
+      "end": 363.472,
+      "text": "And then there are issues and increasingly, certainly in the UK, we worry about this around food security, right? So we don't actually in the UK grow a huge amount of our own food. We grow a significant proportion, but there's a big gap, which, you know, especially at this time of the year, if you go look at fresh produce, most of it is imported, right? So, you know, one of the kind of things we need to be able to do to address that food security issue is to make better use of our existing farmland."
+    },
+    {
+      "start": 363.536,
+      "end": 389.632,
+      "text": "which often means farming more productively. And then the other piece we need to deal with is, you know, in the UK, as in most of Europe, right, most farms are basically family, right? So it's a group of people who own the land and own the farm, farming their own land. And the issue there is that, you know, farmers are getting older, right? So as a population, farmers are getting older."
+    },
+    {
+      "start": 389.632,
+      "end": 415.504,
+      "text": "So you're getting a very narrow demographic. Most farmers look like me, white men in their 50s and older. So there's an issue there about trying to deal with the fact you've got an aging population. And that may mean bringing more people onto the land, getting more people involved in growing food. But I think it also means that you need to maybe try and do things to support."
+    },
+    {
+      "start": 415.504,
+      "end": 442.08,
+      "text": "um that population and of course we have a you know um the last point you know a complex socio-political landscape is kind of a nod to well you know one of the things that really impacted food supplies in the last few years was you know what has been the war in ukraine that's had a multifaceted impact certainly on the impact on the sorry on the on the situation in the uk all right and then you know things like the uk voting for brexit has also had a big impact on"
+    },
+    {
+      "start": 442.08,
+      "end": 471.28,
+      "text": "the food supply in the UK, right? So those kinds of issues, you know, well above and beyond, not directly related to agriculture itself, help to complicate this picture, right? So there's a lot of work that needs doing. And so I work at the, as Viola said, I work at the Lincoln Institute for Agri-Food Technology at the University of Lincoln in the UK. And we're doing a lot of work. In fact, that's the, if you like, the purpose of the institute."
+    },
+    {
+      "start": 471.28,
+      "end": 500.928,
+      "text": "is to do work to address some of these issues. So I'm actually speaking, this is this building, this building here is that's where our institute is based and if in case you're interested that little window there on the first floor at the end is where I'm currently sitting. Okay so you may not know Lincoln, so Lincoln is a city in the UK, it's about two hours north of London and I thought it's always kind of interesting to do this"
+    },
+    {
+      "start": 500.928,
+      "end": 529.584,
+      "text": "you know, compare where you are to where you're speaking, if you like. So, of course, you know, Lincoln is a much smaller city than Vienna. That has about 100,000 people. But interestingly, it was settled at much the same time. Both were originally, as I understand it, Roman legions put forts there and afterwards there was habitation. And just a point of information, Lincoln has a beautiful cathedral, which is slightly older and indeed slightly larger."
+    },
+    {
+      "start": 529.584,
+      "end": 552.768,
+      "text": "than St. Stephen's in Vienna, which actually makes it one of the most enormous things in the city because it's quite a small city. You can't miss the cathedral. Okay, so what I want to do is talk through some use cases for AI in helping towards sustainable agriculture. And I have to stress that, you know, although some of the work"
+    },
+    {
+      "start": 552.768,
+      "end": 581.456,
+      "text": "that I will talk about here, especially some of the things I'll go into a bit more detail in, are things that I've been involved in since moving to the University of Lincoln. Much of it is the work of my colleagues. So what I'm really doing here is giving you a picture of the range of work that's happening in our institute rather than just talking about things that I've done. So the first of the use cases I'm going to talk about is what we might call crop, what we do call crop monitoring."
+    },
+    {
+      "start": 581.456,
+      "end": 609.712,
+      "text": "Right. And that's about, you know, measuring what's going on with the crop. Okay. So what you see here is a picture of one of the vehicles, one of the robot vehicles that we have in the institute that is, you know, it's a large robot. It's in a field here where there are a bunch of trials for wheat being, wheat trials being carried out. So different species of wheat under different conditions are being grown. And the vehicle is kind of basically driving over an experimental patch."
+    },
+    {
+      "start": 609.712,
+      "end": 639.056,
+      "text": "and then imaging it with various cameras, including hyperspectral imaging. And the idea generally behind monitoring is you want to be able to go and you want to be able to measure what's going on, and you want to be able to sort of track, if you like, what's happening in some sense, right? So these experiments were particularly around the use of nitrogen in crops, how that, whether you can, or the degree to which you can tell the impact of varying treatments over the course of the lifetime of the crop."
+    },
+    {
+      "start": 639.056,
+      "end": 668.72,
+      "text": "as a way to be able to more accurately determine the impact of fertilizer on the crop and therefore allow you to reduce the fertilizer. That's one of the things that we're trying to do. A lot of the reason for monitoring is related to phenotyping. So phenotyping is around deciding, basically, in the sense that we use it, it's around determining what crops are the right ones to grow under certain circumstances. What are the properties of crops?"
+    },
+    {
+      "start": 668.72,
+      "end": 698.24,
+      "text": "The pictures you have on this slide are of an energy crop. So it's a grass called miscanthus. So that's something that gets grown basically as a biofuel. So you grow it. You want something that produces a lot of biomass very quickly. And you want to measure what's going on. So some of the work that we were involved in was measuring it. So these are some overhead drying photographs. We also have vehicles out. And again, this is not my work."
+    },
+    {
+      "start": 698.24,
+      "end": 727.536,
+      "text": "We had vehicles out, you know, driving around, taking photographs and taking measurements, depth images all the way around the crop. So you can build 3D models of the crop, which then helps to tell you about what the biomass of the crop is. So that's that's kind of the measuring bit and the modeling bit. And then part of what was also going on was some work on decision making about what different varieties to grow and under what conditions. And so that kind of model that thinking that somebody who is."
+    },
+    {
+      "start": 727.536,
+      "end": 748.528,
+      "text": "interested in um in growing this campus might be the decisions i might be making okay um so an example of that is you know this is not untypical um as people who've worked in any kind of application you've got to ask people who are essentially doing the same job ask them what they think about a particular"
+    },
+    {
+      "start": 748.528,
+      "end": 778.224,
+      "text": "situation you know it's it's um not uncommon that they disagree on each other right so so here is just a little schematic of some of the things so these are actual quotes that came from various you know growers who were interested in this campus around um what you know what are the reasons for what are the what are the factors influencing um your choice about which varieties to grow okay so you know you can see the top sort of top line here you know direct contradictions right so"
+    },
+    {
+      "start": 778.224,
+      "end": 807.328,
+      "text": "You know, one grower wants to focus on disease resistance rather than yield, and another grower wants to focus on yield rather than disease resistance, right? And they have reasons behind that, right? They're not just, you know, shooting their mouths off. They have a reason for thinking this. And so part of the work that my colleagues were involved in was about, you know, sort of capturing this information and then using techniques from, you know, the extensions of formal logics, I think it's called argumentation, which some of us on the call at least know quite a lot about."
+    },
+    {
+      "start": 807.328,
+      "end": 835.152,
+      "text": "um to um to try to understand what's going on so there's a piece here around you know figuring out you know what those what those statements are how they relate to each other which ones support which other ones what the interactions are between them and then applying some you know mathematical models to be able to use well-founded models to be able to figure out you know overall from you know what's the consensus view of of all the people who are contributing to this particular bit of the debate okay"
+    },
+    {
+      "start": 836.304,
+      "end": 865.504,
+      "text": "So that's one piece of work going on around this campus. Here's something that's related but coming at it from a very different direction. So another piece that we're really interested in at our institute is what we call long-term autonomy. So the idea there is it's about being able to deploy robots in the field, as in literally the field, or in this case in the vineyard, and have them function well."
+    },
+    {
+      "start": 865.504,
+      "end": 892.16,
+      "text": "over a long period of time. The idea is to get to a point where they don't need a lot of human intervention. So it might be a person to make sure that the robots are charged and to switch them on and point them in the right direction. But the idea is that they can get to a point where they can operate on their own. So part of that is building models so that the robot can figure out where it is. So building sort of 3D models."
+    },
+    {
+      "start": 892.16,
+      "end": 919.776,
+      "text": "And one of the things about plants, obviously, is that they change over time. So there's work here around having the robot build a map, be able to localize within a map, but then also cope with the fact that the things that it senses when it's moving around in that map vary over time. And so here you've got variation between the left-hand side and the right-hand side, six months of growth within a vineyard. There's quite a big difference both."
+    },
+    {
+      "start": 919.776,
+      "end": 948.912,
+      "text": "you know, how it appears to you and how it appears to, you know, like on the top, the top slice and then the bottom slice, how it appears to the robot. Okay. All right. And so one of the things that we're really keen on at the university is trying to spin out companies to exploit things around some of the, you know, intellectual property and some of the ideas that are developed as part of the thought. I'll give you some examples of ways that, and part of this is about just about getting it."
+    },
+    {
+      "start": 948.912,
+      "end": 978.464,
+      "text": "getting these techniques out and actually, you know, out of just a university setting, get them out and get them deployed and get them, you know, really helping people in the world. Okay. And so, you know, one example of this is a company called FruitCast, which is founded by Chapo Raymond Kirk, who's the lad on the left in the picture. So he was a PhD student here, and his work was around computer vision and counting, you know,"
+    },
+    {
+      "start": 978.464,
+      "end": 1002.24,
+      "text": "basically counting the number of strawberries in an image, right? That was where he started out. And, you know, for reasons, strawberries are an important crop, et cetera, et cetera. But the point is what his company is now doing is using that vision technology on a robot. You can send a robot out into a sort of polytome, the kind of environment that strawberries are grown in."
+    },
+    {
+      "start": 1002.24,
+      "end": 1029.824,
+      "text": "It will count the fruit, but not just the fruit. It will count the ripe fruit. What it's good at doing at this point is counting the unripe fruit and figuring out this is how much ripe fruit you'll have next week. And it turns out that, you know, the reason for doing that is it turns out that that sort of predicting the yield in a little bit in the future is exactly what strawberry growers need in order to be able to do things like plan."
+    },
+    {
+      "start": 1029.824,
+      "end": 1048.512,
+      "text": "how they're going to make sure that their crop gets picked, make sure you've got enough pickers to do the picking and also make sure that you can fulfill the contracts that you have in order to deliver the fruit because the way that it works in the UK at least is growers have contracts with"
+    },
+    {
+      "start": 1048.512,
+      "end": 1076.544,
+      "text": "you know supermarkets to deliver a certain amount of fruit and they need to know whether they're going to hit those targets right they need to know whether they're going to hit them they need to know whether they're going to exceed them in which case they've got to find a way of offloading fruit right because they want it to rot they want to find another route to sell it and they also need to know if they're going to undershoot because they've got to somehow go locate some fruit from somebody else in order to fulfill the contract so that kind of early warning of where they're going to be is super important and hence the company right okay"
+    },
+    {
+      "start": 1076.544,
+      "end": 1105.872,
+      "text": "So another use case is crop care, which is around, so monitoring is around, you know, checking on the state of growth for a number of different possible purposes, right? Crop care is about looking after the crops after they've been monitored, right? So it's things in particular, one of the things that we focused on, and this is a piece of work I've been involved in, is spraying, right? So dealing with, you've got a field of crops,"
+    },
+    {
+      "start": 1105.872,
+      "end": 1135.28,
+      "text": "and you need to put some treatment on them. So a very typical thing is to be growing crops, and there's stuff that's growing in the field that's getting in the way of the things you're trying to grow, which you want to get rid of. So the state of the art for that is, unfortunately, you take a tractor with a great big boom on the back, and you drive out into the field, and you spray the entire field with a selective herbicide, which kills everything except the crop."
+    },
+    {
+      "start": 1135.28,
+      "end": 1161.888,
+      "text": "And the result of that is you spray a very large amount of herbicide on a field. And we'd like to not do that. What we'd like to do instead is we'd like to do what's called precision spraying, which is basically target individual plants. I think the future is going to be probably mechanical weeding. So actually having something like a tool that goes in and digs up a weed."
+    },
+    {
+      "start": 1161.888,
+      "end": 1189.056,
+      "text": "But for the moment, we're in a world where spraying is going to be the thing that we do. So then what we've got to do is be able to target individual weeds. So in particular, we know we can do that kind of thing with machine learning. But one of the questions we've been answering is basically, how much technology do you need to be able to do this? And is it remotely affordable? So that's one of the things we did. You still need a significant number of GPUs if you can operate a sprayer working at the kind of capacity that..."
+    },
+    {
+      "start": 1189.056,
+      "end": 1218.384,
+      "text": "farmers are going to want to use and so we've been running some other experiments with you know basically basically how bad can the um can the vision system be and still operate effectively enough if you like rather than being you know super precise and one of the interesting things about this is is is then things like you know maybe what you need to do is you need to do the processing off board right you're actually trying to do it on the on the tractor with a whole pile of um you know expensive hardware that's very power hungry on a vehicle maybe what you want to do is you want to pipe"
+    },
+    {
+      "start": 1218.384,
+      "end": 1242.624,
+      "text": "the data off over some fast wireless network and process it off board. So we looked at doing that. This is actually what kind of output of that kind of detector is in an area that's growing lettuce, right? So spotting the lettuces and putting a red box around them and spotting the weeds and putting a blue box around them. And then there are questions around, you know, how do you evaluate whether this is..."
+    },
+    {
+      "start": 1242.624,
+      "end": 1269.328,
+      "text": "operating right so there's a whole you know if you're if you know about computer vision you know there are sort of standard metrics for evaluating how good an object detector is they're not necessarily appropriate for thinking about what you need to do in this case right because actually you don't care you care less about spotting every weed and more about spotting enough you spray enough that you you know target enough of them that"
+    },
+    {
+      "start": 1269.328,
+      "end": 1295.648,
+      "text": "your crop can still grow right and that's a very different thing so there's a there's a bunch of work around you know basically how good is good enough in order to be able to make something that works and something that could potentially be delivered out to growers okay all in the service of trying to reduce the overall amount of herbicide that's being sprayed um we found that you can reduce the herbicide quite a lot so you know this this particular example is showing you you're spraying about 20 percent of"
+    },
+    {
+      "start": 1295.648,
+      "end": 1323.328,
+      "text": "account for blanket coverage, and you're still, with this particular setup, you'll still hit the vast majority of the weeds that are cropping up. Another approach is to continue the idea of highlighting individual places where their technology is getting out into the marketplace. There's a company called Saga Robotics that we've done some work with, and they are basically commercially delivering a solution where you use ultraviolet lights, so UVC,"
+    },
+    {
+      "start": 1323.328,
+      "end": 1352.256,
+      "text": "um light so toxic to just about everything including um mildew that you want to treat in a in a strawberry buying context right so again you know there's here's a crop care example where it's actually at the point of being commercialized okay um another use case uh that we've looked at in in various supporting various ways is what we call selective harvesting which is which is about harvesting things like strawberries where"
+    },
+    {
+      "start": 1352.256,
+      "end": 1380.16,
+      "text": "You have to, you know, it's not like a field of wheat where it's all ready and you go out with a great big machine and scoop it all up with strawberries and lots of other crops, right? They mature at different times. You've got to go in and be selective. You've got to go in and pick particular items, all right? We study, we know a lot of stuff. We, the university, has done a lot of stuff around strawberries because they are, you know, a fairly important crop worldwide in terms of the total amount of money."
+    },
+    {
+      "start": 1380.16,
+      "end": 1408.864,
+      "text": "spent on growing and distributing and consuming strawberries. And individually, they're quite valuable. So there's an interesting piece about you need to be really careful with them. The particular bit that we've done, we've done some work on actually doing picking, but that's not been a major focus. But the major focus we've been on is taking these vehicles and having them navigate and doing useful things."
+    },
+    {
+      "start": 1408.864,
+      "end": 1434.624,
+      "text": "and doing that in a safe way. Okay, so this is a typical growing environment where you've got, certainly in the UK, you've got strawberries on these trays and sort of raised trays or tables so that when a human is picking them they don't need to bend over and have a painful back all the time so it can be fairly upright. And one of the problems that you have is that"
+    },
+    {
+      "start": 1434.624,
+      "end": 1455.728,
+      "text": "under the standard way of picking them when somebody's collected a whole bunch of strawberries they don't have to go and walk potentially quite a long way you get some idea of how long the tunnel is here from this picture and actually this is quite a short tunnel so they're often two or three times as long as this so the pickers you know got a whole lot of strawberries they don't have to carry them quite a long distance to offload them"
+    },
+    {
+      "start": 1455.728,
+      "end": 1479.888,
+      "text": "and then get some more empty trays and go off and do some more picking. So one of the things that my colleagues have been working on is systems to be able to have a robot autonomously go and the picker can say, right, I'm nearly done. Robot will find its way to them. They can load it up with the fruit they've picked and they take off some more supplies of empty trays and basically just keep picking."
+    },
+    {
+      "start": 1479.888,
+      "end": 1509.824,
+      "text": "which allows them to be more productive, which they're happy about because they're paid, you know, by the strawberry. And also sort of speeds the whole, you know, increases the productivity of the system generally, right? The whole sort of picking system. And then other folk have been working on sort of scheduling this, right? So you can build a yield model, you know, potentially from that, from the stuff I was talking about with Fruitcast. And so to say, this is where the strawberries are going to be at, you know, this time next week on this farm. You've got a model also of,"
+    },
+    {
+      "start": 1509.824,
+      "end": 1537.312,
+      "text": "you know workers right how well they're picking what their sort of productivity is like and then you can start matching people to the right place on the farm where you know people have appropriate productivity for a particular area of the farm so they so basically they don't have to spend their time running around all right picking one area and then running to another area you try to put them in an area where they will keep working solidly for for a day right and then you could also based on on the same on the same information start scheduling"
+    },
+    {
+      "start": 1537.312,
+      "end": 1564.624,
+      "text": "robots to get to the pickers so that they don't have to be called. The robots don't even have to be called. They're kind of arriving at the point where the pickers are ready to offload the fruit. So you can start getting a fairly automated system here, but one that still has pickers doing the bit that they're really good at, which is very fast taking fruit off the plants."
+    },
+    {
+      "start": 1564.88,
+      "end": 1588.176,
+      "text": "So there's also a piece in here. So again, this sort of conflict resolution explanation piece, right, where the system has the ability to have a discussion basically with a user about why a particular scheduling action has been taken. So all that to make the system more explainable and easier to use."
+    },
+    {
+      "start": 1588.176,
+      "end": 1615.984,
+      "text": "So the piece of work, I won't say very much about, we've done a bunch of work around making sure that these robots operate safely, right? So you saw the environment and it's quite a constrained space. So that means in between the rows that the robots have to go down. So you've got to be quite careful, right? These things are big and heavy and could damage people. So what you're trying to do here is basically reduce the probability that robots are going to hit anybody."
+    },
+    {
+      "start": 1615.984,
+      "end": 1640.432,
+      "text": "quite successfully. So yeah, so that's just showing you there's quite a complicated safety system you can put on the robot to achieve that. And then what you can do drawing on work from human-robot interaction is to have the robot navigate differently basically as it approaches somebody. Okay, so yeah, you have the robot."
+    },
+    {
+      "start": 1640.496,
+      "end": 1666.928,
+      "text": "When it's moving but it's further away and it's faster as it gets closer. It's like, okay, I'll slow down It does things like if you can recognize So the idea here is that you've got again sort of projected on them on the growing environment You know different behaviors in different places basically, right? So on the left-hand side you've got within a row and it's going to work It's going to work differently from as in on the right where it's more out in the open"
+    },
+    {
+      "start": 1666.928,
+      "end": 1694.576,
+      "text": "okay and so the sort of zones of how it approaches people how it acts in different places vary so it's quite context specific um and then it will also it also has the ability i mean again it's just sort of standard machine vision you know to recognize what gestures a person's making so you have a um you have the ability basically to control it by you know making signals to it like you know approach me now now stop okay"
+    },
+    {
+      "start": 1694.576,
+      "end": 1709.248,
+      "text": "And it also allows you, you can also detect when you are behind somebody, right? So you notice the difference here between, up on the right-hand side here, between facing the robot and having your back to the robot. But one of the things..."
+    },
+    {
+      "start": 1709.248,
+      "end": 1737.84,
+      "text": "it's very important is you really don't, so robots don't make a lot of noise, right? They're very quiet. You really don't want one sneaking up behind you, right? That's a really freaky experience. So you have the robot basically, you know, not come very close. If it knows it's approaching you behind, it'll wait until you turn and see it and say, come on, before it moves closer to you. Okay, so there's, you know, the beginnings of a sort of two-way communication and your ability to control the robot as..."
+    },
+    {
+      "start": 1737.84,
+      "end": 1761.904,
+      "text": "somebody who's interacting with them okay and again so just harking back to the commercial the commercialization of this there's a company called dogtooth who build the robots that you see in this picture which do have um arms on that can pick and they're currently in commercial operations so they're they're not still not quite at the point where they can beat the person in terms of actually picking um but they're getting that"
+    },
+    {
+      "start": 1761.904,
+      "end": 1788.16,
+      "text": "And we've been working with them, providing the same autonomous navigation that we're using on the robots I showed you before, which improves the range of places and the cost of setup for moving these robots in. I should say that their model is not that if you're a strawberry farmer, you would buy a whole bunch of their robots. Their model is we will bring this in as a picking service and you will pay us to pick your strawberries."
+    },
+    {
+      "start": 1788.16,
+      "end": 1813.744,
+      "text": "That's the kind of feeling about the right way that this will actually get into the right market. There's another company that's a spin-out from the university called Agaricus, which is around picking mushrooms. So another important crop, another crop where it's very human-intensive to do the work right now, and they have a robot which is currently going through trials."
+    },
+    {
+      "start": 1813.744,
+      "end": 1842.96,
+      "text": "You might not think of it as a robot. It's basically a two-dimensional plane arm that sits over where the robot mushrooms are growing. You can pick them up, but they can harvest mushrooms. So you're going to employ them. You can use them rather than employing people to do the picking. All right. The last thing I want to mention in terms of use cases is the supply chain. And the reason for that is just that we're interested in the whole food system. So the usual saying around that is from farm to fork."
+    },
+    {
+      "start": 1842.96,
+      "end": 1856.64,
+      "text": "And so there's the bit outside the farm gate to the fork that's also interesting. So the kind of things we've been involved in there is sort of multi-agent modeling of supply chains. And also tracing, it depends."
+    },
+    {
+      "start": 1856.64,
+      "end": 1886.32,
+      "text": "You may or may not think of this as being AI, but think about tracing the provenance of food so that you can identify, for example, if you have to recall a product because something happened along the chain, you only want to recall the bit that was affected. And so by adequately capturing the provenance of each individual thing that is developed, each individual thing through the manufacturing chain, you can limit recalls and therefore waste a lot less food."
+    },
+    {
+      "start": 1886.32,
+      "end": 1912.336,
+      "text": "That's where that work's going. There's obviously also thinking about distribution of food. There's obviously a fair amount of work one can do, which we're beginning to get a little bit into in terms of the effective use of transportation. So even using AI planning and optimisation to figure out what the good routes are for vehicles. This is a company that's local to us, which ships trucks, produce around the country."
+    },
+    {
+      "start": 1912.336,
+      "end": 1939.776,
+      "text": "So if you can squeeze a little bit of optimization out of that, you can again cut down use of carbon, which obviously would be a good thing. So, yeah, so a couple of other things I just want to talk about briefly. There is, so one of the big things that we are involved in is, and a lot of the work that we do is generating"
+    },
+    {
+      "start": 1939.776,
+      "end": 1964.784,
+      "text": "software that's open source with the idea that other people can pick up and use things like our navigation stack. We actually are in the middle, coming in the latter stages now, of a large project called Agri-OpenCore, which is about taking that software and providing, packaging it and providing it in a way that it's"
+    },
+    {
+      "start": 1964.784,
+      "end": 1990.224,
+      "text": "easier for other people to use. And part of that has been working with other companies. So Dogtooth is one of them that I already mentioned, but a couple of other companies. So I know you do basically robot arms for doing packing. So particularly in the packing of tomatoes, that's kind of their niche at the moment. And then Muddy Machines are a company who's"
+    },
+    {
+      "start": 1990.224,
+      "end": 2016.832,
+      "text": "robots, relatively small robots, as you can see from the scale in that picture, the idea is that they will go out and they will harvest crops like asparagus, where you want to be cutting individual stems. And again, it's a job that's currently largely not automated and therefore quite labor intensive. So the idea of AgriOpenCore is to port these various components that we've been developing over a number of years, the University of Lincoln's been developing over a number of years."
+    },
+    {
+      "start": 2016.832,
+      "end": 2041.52,
+      "text": "and make it easier for people to use it. And part of that is helping some of these partners to get that stack to work on their hardware. So there's that. And then the last thing I just want to flag up is we're always keen to work with people. And one of the roots of that, so I mentioned in the introduction,"
+    },
+    {
+      "start": 2041.52,
+      "end": 2071.072,
+      "text": "I'm the director of what the UK calls a Center for Doctoral Training, which is basically a large number of PhD studentships over a five-year period. So we've got 60 PhD studentships over a five-year period. We're in the middle of recruiting this. So that's five groups of 12. We've just about recruited the second group of those, but we've got another 36 studentships to go through lots of 12. Yes, I did the maths right."
+    },
+    {
+      "start": 2071.072,
+      "end": 2099.792,
+      "text": "So those are studentships split between us, University of Aberdeen, Queen's, University Belfast, and University Strathclyde. So we will be looking for enthusiastic PhD students with backgrounds in computer science or anything around plant science or animal science, because we span that whole area of agriculture, indeed aquaculture as well. So if you know anybody..."
+    },
+    {
+      "start": 2099.792,
+      "end": 2127.792,
+      "text": "who might be interested in doing a PhD, or you're interested in doing a PhD, please spread the word and think about getting involved. And with that, I will conclude just by saying, I think, and the reason I'm incredibly passionate about sustainable agriculture and using AI for it is that I think it's a huge challenge that we collectively face."
+    },
+    {
+      "start": 2127.792,
+      "end": 2153.312,
+      "text": "I think there's a good argument, though I won't go into it here, but it's an existential challenge. And I believe that AI can help all the way from farm to fork, right from putting the seeds in the ground to potentially cooking meals at the end of the day. So I haven't talked about any examples in food manufacturing, but there are plenty of those as well. I've given you a few use cases from some of the work."
+    },
+    {
+      "start": 2153.312,
+      "end": 2182.64,
+      "text": "that's been done at Lincoln. Only had time to touch on a small amount of it, but there's masses more to do. So as I say, if you're interested, get in touch. We'd love to work with people. So I will leave that there. I will just bring up, this is a list of people I've worked with, highlighted ones, people I've worked with on things I've talked about here. And just to finish by saying thank you to all the folk who've supported my work at some point or another and similarly some of the work of my colleagues."
+    },
+    {
+      "start": 2183.312,
+      "end": 2211.696,
+      "text": "I will. OK, thank you very much, Simon. Everything was so clear. So I don't know if there are already questions. Otherwise, while waiting, I will ask perhaps one question. OK, so while waiting for other questions, I will ask a question. So this is a very interesting perspective because, of course, there's a lot on AI and sustainability."
+    },
+    {
+      "start": 2211.696,
+      "end": 2240.48,
+      "text": "and then you presented how ai can solve sustainability problems but my question is then of course you know that also ai is very uh energy demanding so you mentioned some parts of your presentation you mentioned some possible approaches uh so perhaps this is a fair question so how you can deal with this like energy consumption and then perhaps you solve some problems but then you open"
+    },
+    {
+      "start": 2240.48,
+      "end": 2269.536,
+      "text": "some other problems. And then perhaps if you can comment a little bit on sustainability in terms of social sustainability, because I see that, of course, these solutions can help companies, some workers, of course. But then, of course, it might be the case that perhaps some gap can increase because some companies or some countries are richer than others, can afford."
+    },
+    {
+      "start": 2269.536,
+      "end": 2295.008,
+      "text": "research and development on these issues, other like small companies or even like poorer countries cannot afford this. So I see there are already two questions. Thank you. Okay, so I will try to answer those. I think what you're saying about, you're concerned about the"
+    },
+    {
+      "start": 2295.008,
+      "end": 2323.264,
+      "text": "not the use of AI to promote sustainability, but about the sustainability of AI itself, I think that's a very well-made point, right? I think that is something we have to worry about. I mean, what we're trying to do as part of the Centre for Doctoral Training is we're trying to get further and use that as an impetus to get further into basically understanding how we account for the potential"
+    },
+    {
+      "start": 2323.264,
+      "end": 2347.184,
+      "text": "you know, non-sustainable effects of the technology, right? So I think that's a little bit there in some of the work in the sense of, you know, worrying about, you know, if you've got to deploy this thing on a vehicle, you know, how do you do that? And so some of the attempts we're beginning to do that. But I think there's a bigger piece because, yeah, I mean, it's very easy. If you look at things from a technical point of view, you go, okay, I want to use the latest technology, right? Because that's going to be the best."
+    },
+    {
+      "start": 2347.184,
+      "end": 2372.32,
+      "text": "And actually, yeah, but it uses, you know, an order of magnitude more power to indeed probably more than an order of magnitude more power. So I think there needs to be a piece in that, which is around in terms of the design of systems where you're saying, okay, basically what's the minimum AI I can get away with, right? The minimum level of machine learning, right? And actually, if you go back to, in fact, the kinds of models we were using in that read detection work."
+    },
+    {
+      "start": 2372.32,
+      "end": 2400.512,
+      "text": "were relatively efficient models, right? Because you don't need that great amount of efficiency. So I think there's sort of two pieces. There's around, for me, there's around, you know, getting my head around it, right? Because I think it's something that, you know, for a while I wasn't doing. And that's been driven partly by wanting students to be able to make informed choices, right? So our PhD students. But I think there's definitely a piece around trying to make sure that you do that better."
+    },
+    {
+      "start": 2400.512,
+      "end": 2426.832,
+      "text": "Right. And I think I think you can you can come up with. Yeah, you can come up with models that are efficient. You can come up with models that are that won't use that are sufficient, that are efficient. I think you have to think about doing it. You have to just be like, I'm not going to just download and use the latest, the latest, you know, fabulous, you know, transformer tool, because it's actually going to be far more than you need. Around the social sustainability."
+    },
+    {
+      "start": 2426.832,
+      "end": 2454.8,
+      "text": "That's a really good point. I mean, I think there's obviously, so, you know, one of the things that concerns me generally about AI is the idea of it's going to displace people from work, right? I think one of the reasons I think, you know, within agriculture, that's less of an issue is because certainly talking from a UK perspective, we don't have the labor, right? So really, for now, at least, it's a case of, okay, we need this to fill in the gap where we don't have."
+    },
+    {
+      "start": 2454.8,
+      "end": 2483.984,
+      "text": "don't have people who want to do the work for the price we're prepared to pay the wages we're prepared to pay them um but the piece the piece around the you know the degree to which any any technology but but as a bit of an extreme example in the sense because of that vast cost of generating some of the models that rich poor gap i i completely agree i don't have an answer to how we do that except we have to worry about it right and again again maybe there's a piece around trying to"
+    },
+    {
+      "start": 2483.984,
+      "end": 2511.568,
+      "text": "you know promoting as i think is beginning to be the case people promoting um the idea of efficiency alongside the idea of performance and sort of trying to evaluating that right and therefore sort of you know socially engineering if you like the ai community to think about that as an important aspect right because otherwise yeah there's a huge you know and i i worried for a long time about the degree to which we're basically"
+    },
+    {
+      "start": 2511.568,
+      "end": 2541.168,
+      "text": "passing over the future of our research to large corporations that I'm not convinced they have our best interests at heart. So, you know, is this the right thing to be doing? I don't know. I think there's definitely a piece around making sure that there are cheaper alternatives available and easy alternatives. And I think that goes back partly to the sort of commitment to open source that, you know, we do create things that are available for other people to use. But fundamentally, yeah, I mean, that..."
+    },
+    {
+      "start": 2541.168,
+      "end": 2566.096,
+      "text": "gap between rich and poor is always going to be a concern, right? I just think we have to remember it and do what we can to address it. I don't think it's not going to go away, right? Sorry, those were two very long-winded answers, but they're both things I care about a lot, so I'm sorry. Lots of things to say about them. So let me ask any other questions, comments."
+    },
+    {
+      "start": 2570.64,
+      "end": 2596.848,
+      "text": "Stefan, please. I have a question. Thanks, Simon, for the talk. Once, a while ago, I was involved in a project proposal about multi-cropping, where you grow several crops at the same place, but also simultaneously, which is, of course, not..."
+    },
+    {
+      "start": 2596.848,
+      "end": 2622.432,
+      "text": "because it's very hard to harvest them in an automated way. But maybe with good robots, this might change in the future. So my question is just, is there anything on your radar? Is this something which is considered or is this still a very exotic trend?"
+    },
+    {
+      "start": 2622.432,
+      "end": 2650.912,
+      "text": "It depends what level you think about growing, basically what kinds of crops you think about growing together, right? So we have on our, so we're very lucky that the big old building that I showed you a picture of is basically on a farm. And so we're in a situation where we can do various sort of farming. The farm is managed as a farm, but we also do have things that we do that are kind of experimental around that. And one of those is,"
+    },
+    {
+      "start": 2650.912,
+      "end": 2676.832,
+      "text": "something called agroforestry which is basically growing trees in you know through the fields right and so you you're basically changing the conditions within the field by doing that um so that that's something that seems to be getting a bit of traction right but there what you're doing is i mean so there it's multi-cropping if the if the trees are growing things that are you know so you've got a field of wheat right and you've got trees in there that are growing some kind of nut for example that you're then harvesting separately"
+    },
+    {
+      "start": 2676.832,
+      "end": 2698.768,
+      "text": "right so it's in that case they're very different things right and clearly you can still take your combine how your big combine harvester and run it through the wheat and it's not going to be it's not going to be so much of an issue um i think i think things where you are yeah where both crops are things that you run through a combine harvester that's always going to be hard so you want to grow so one of the one of the crops we're looking at a lot um"
+    },
+    {
+      "start": 2699.056,
+      "end": 2728.528,
+      "text": "is linseed, right? Which I don't know whether people know what that is, but it basically like little, it's a plant, it's a relatively small plant, doesn't grow very high, lovely purple flowers, produces capsules that are full of little seeds, which you can, which people now grow. I mean, when I was a kid, you used to make oil out of them, you crushed them for oil, you can still do that. That was all you did. People now use them as a food source because they're actually quite a high protein food source. So those, unless you've got a, if you're growing those along with wheat, right?"
+    },
+    {
+      "start": 2728.528,
+      "end": 2758.208,
+      "text": "Unless your great big combine harvesting machine can do both, that's always going to be an issue. But I think there are crops, maybe more high value crops, where you're already having to distinguish between this. You're always having to say, this is the stem, we need to cut it here, either by hand or with a robot. Absolutely. If you've got crops, if you've got multiple crops like that, then I think there's the sort of kind of the technology is kind of on the cusp of doing that. And yes, it is something we're interested in. We haven't figured out how to get work on that funded yet."
+    },
+    {
+      "start": 2758.208,
+      "end": 2787.952,
+      "text": "So, but we are definitely interested in it. And I think part of it is getting, it's one of those things where the, I think there are clear, there's, you know, I think agriculture knows there are clear benefits, but there are blockers, right? And we just not at a point yet on a sort of agri-tech side for me to show that we can overcome or we're close enough to overcoming those blockers. And part of that's just because there's a lot of stuff even with monocropping that you can still do and it's easier to get there and you can get there faster."
+    },
+    {
+      "start": 2787.952,
+      "end": 2817.456,
+      "text": "So I think a lot of this is around what can you get out, basically out to a point where people start saying, yes, this broad field of, for example, robots making individual decisions about what crop to harvest, that's something that we can use. And once you get to that point, that's going to open up, it's going to open up investment to be able to do things where you've got, for example, things are a bit more out there, right? But I see in terms of what farmers are interested in."
+    },
+    {
+      "start": 2817.456,
+      "end": 2844.304,
+      "text": "I think if you could give people the technology to be able to do this multi-cropping, people would do that. So they understand the advantage of things like agroforestry. People are beginning to adopt some of those things. So I think on the grower side, people are not persuadable, but they will look at the evidence and make decisions that this is something that works for them. It's more a technology barrier and how can we prove to people that the technology works well enough."
+    },
+    {
+      "start": 2845.52,
+      "end": 2865.264,
+      "text": "Okay, thank you very much. Thank you. You're welcome. So we have now a question from Katja. Yeah, hi. I'm Katja from VRB in Vienna. So we are also running a couple of projects within the agriculture area. Awesome. In-field imaging."
+    },
+    {
+      "start": 2865.616,
+      "end": 2895.216,
+      "text": "and doing AI-based data integration. But my question is targeting something else. So because we were in Italy, our partners is a big agriculture company in Italy. And we had there also some discussions in the Po area about the adoption of small farmers of AI in cooperation with University of Bologna."
+    },
+    {
+      "start": 2895.216,
+      "end": 2924.768,
+      "text": "and the water supply in the poor area. And what I took from the discussions was that especially the smaller farmers, they have big problems with the adoption of AI. I mean, there are tools or it's more digitization. It's not all everything is AI. And I wonder if you are doing research into the direction of how to bring"
+    },
+    {
+      "start": 2924.768,
+      "end": 2952.528,
+      "text": "the AI tools down to the smallest farmer. The moment I have the feeling only the big companies are using that, but the small farmers do not have any benefit from it. Yeah, I think that's a that's a really valid concern, right? I mean, I think and I think part of it, I mean, I, you know, the smaller farmers everywhere, right? It's I mean, so it's it."
+    },
+    {
+      "start": 2952.528,
+      "end": 2979.408,
+      "text": "I mean, I don't know what size you're talking about when you're talking about smaller farms, but farms in the UK, I think the average size is like 100 hectares, right? So we're not talking large farms, right? We're talking, like I said during the presentation piece, that I think most farms in Europe, generally in the UK the same, are family-led. I think part of that is simply about sort of models for how you deliver the technology. So I mentioned the idea of sort of, you know,"
+    },
+    {
+      "start": 2979.408,
+      "end": 3008.896,
+      "text": "technology as a service rather than technology as a product, right? Which is not necessarily what large, you know, John Deere, who make vast, you know, big agricultural vehicles, they want to sell you a tractor, right? And they will put AI on the tractor and tell you it's an AI-enabled tractor and make you want to buy it. So I think it's definitely something in that, you know, as a service piece, excuse me, as a service piece where you're selling, you know, but you also got to price it so that people can actually afford it."
+    },
+    {
+      "start": 3008.896,
+      "end": 3038.768,
+      "text": "um there is there is some work some of my colleagues here work around you know the adoption of these technologies i'm afraid i i don't shamefully i actually share an office with so that i can't tell you exactly what we're doing on it uh if you want to know i'd be happy to to um to sort of you know make connections about it because i think i think it's that you know it's something we're definitely concerned about because partly it's around you know appropriate you know designing appropriate technology right we don't want to be designing great big tractors"
+    },
+    {
+      "start": 3038.768,
+      "end": 3067.136,
+      "text": "if that's not what people want, right? I mean, I think there's, yeah, so absolutely. And I think there's definitely a piece around trying to make, again, around trying to make the technology, you know, small enough and cheap enough that people can use it, right? So, you know, can I feel like reducing the quantum of the technology? And I think that's one of the things that robotics can offer is, you know, more small light vehicles, right? So that's good from a soil compaction point of view, but it also means that you don't have to spend them."
+    },
+    {
+      "start": 3067.136,
+      "end": 3097.136,
+      "text": "200,000 pounds in order, or 200,000 euros in order to buy it, right? We can sell you something that's, or we can manufacture things that are much smaller, you just buy less of them, right? Than somebody who's got a bigger space. But no, it's a really good point. And as I said, I'd be really happy to put you in touch with people if that's something you want to talk to people about. So we've done various things looking at the barriers, and I know that some of those are basically economic. Yeah, because I think in Austria especially, there are lots of smaller farms, yeah?"
+    },
+    {
+      "start": 3097.136,
+      "end": 3112.016,
+      "text": "because of the country itself and the mountains. Yeah, that's, I mean, that sounds a lot like, and I'm not surprised it's geography, right? Just sort of geographic determinism, right? So the west of the UK, which is much hillier."
+    },
+    {
+      "start": 3112.016,
+      "end": 3135.104,
+      "text": "It's exactly like that. So the size, I think the average size of the West is like 50 hectares, right? So maybe even lots even smaller than that. It tends to be the East where we are that you've got much bigger fields, much bigger, big flat fields. So yeah, it's absolutely an issue. And I think it's an issue across, just about across everywhere. I spent a bit of time, I always had this impression that, I mean, in the United States, it's a very different environment, but..."
+    },
+    {
+      "start": 3135.104,
+      "end": 3164.848,
+      "text": "but I always had the impression that every farm there was thousands and thousands of hectares. Well, actually, that's true in some parts of the country, but other parts, it's still relatively small. So I think there are basically small farms everywhere, right? And getting the technology so that it can, if you really want to see this broadly applied, you have to be addressing that aspect. Okay, thanks. Thank you. So thank you very much. I don't know if there are other questions."
+    },
+    {
+      "start": 3164.848,
+      "end": 3193.472,
+      "text": "Otherwise, so I think it's, okay, Klaus, please. Yeah, and quite another question. What do you think, how many pickers would become superfluous if the technology developed at Lincoln University were used worldwide? I mean, there are, of course, some monitoring jobs, but I think it would change this kind of job."
+    },
+    {
+      "start": 3193.472,
+      "end": 3218.272,
+      "text": "of jobs um in an extreme way yeah well maybe um i mean i think as i said for for the you know the uk right now there are not enough people who want to do the work right so actually we have the reverse problem which is you know basically why can't we have more robots because we need we need to fill in the gap is it is it going to i mean i think they're always i mean the other pieces"
+    },
+    {
+      "start": 3218.272,
+      "end": 3246.192,
+      "text": "I think you're always going to be in a situation where you have humans and robots operating side by side, which is partly why we're particularly interested in that safety issue. Because I think, I mean, partly that's because it's going to be a long time, I think, before robots can do as good a job as people can. Partly that's in terms of speed. It's also in terms of things like, I mean, talking about strawberry picking now particularly, because that's the thing we spend a lot of time thinking about. Partly that's around..."
+    },
+    {
+      "start": 3246.192,
+      "end": 3270.992,
+      "text": "um you know just the way that the fruit grows and i have to say people are beginning to beginning to have conversations about how can we grow fruit so that robots can pick it more easily which to me is kind of like backwards but there you go right because you know strawberries growing clusters the ones in the back are always going to be difficult to pick um things like that so i think i think if you it's more to me right now it's more about absolutely more about bringing you know"
+    },
+    {
+      "start": 3270.992,
+      "end": 3299.424,
+      "text": "filling in the gaps where people can't be. I think there'll always be people, for example, maybe going in afterwards and picking the harder to get ones, right? You'd have to think, I mean, that would drive, I mean, there's a social piece there because then it's going to be harder for the pickers to do their job, right? And so that's going to make them unhappy if they're being paid in the same way they're currently being paid, right? You have to rethink how that goes, right? But I think, yeah, I mean, potentially it could do, but I mean, there's, you know, potentially it could have a big impact."
+    },
+    {
+      "start": 3299.424,
+      "end": 3328.432,
+      "text": "I think it's going to be a long time before we see that impact. And I think there will always be people working alongside the robots, right? But I agree. I think as part of the, you know, thinking about this responsibly, right, and responsible innovation, I think we need to be thinking about, you know, monitoring that and looking at a point where you do start displacing people, right? I mean, yeah, right now I think there are lots of other jobs around. We think about we've been basically robotizing."
+    },
+    {
+      "start": 3328.432,
+      "end": 3356.176,
+      "text": "um a bit of our own little strawberry farm and and you still need there's still going to be people you know packing right where we are right now right yeah you'll still need people working around um working around the strawberry tunnel so you might see a change of what's going on um but you're right i mean the long term i think it's definitely something you need to be thinking about that downstream impact of absolutely okay so"
+    },
+    {
+      "start": 3356.176,
+      "end": 3383.536,
+      "text": "I'm sorry, I can give you a number. I can't give you a number. No problem. So I wasn't completely avoiding it. I just don't have an answer. But anyway, Simon, thank you very much, because I mean, it's good you mentioned responsible innovation and the idea that we should stay prepared, even if you see that it's not like so urgent right now."
+    },
+    {
+      "start": 3383.536,
+      "end": 3406.8,
+      "text": "And let me thank you once again for your talk. Thank you very much. And I guess now it's time for Peter Knies to present the music, to introduce some news and to present the music. And perhaps, Simon, you will explain your choice in a minute. Thank you so much again. Thank you. Thank you very much."
+    },
+    {
+      "start": 3407.152,
+      "end": 3435.904,
+      "text": "Yeah, thanks also from my side. Thanks, Viola, for the handover. Yeah, while I set this up, maybe Simon, you just want to explain which track you picked and why you like it or why this was your choice. Yeah, so this is a track by, what I think of it as being by the great jazz organist Shirley Scott, a collaboration with Eddie Davis. So they released a number of records that were called The Cookbook."
+    },
+    {
+      "start": 3435.904,
+      "end": 3459.504,
+      "text": "Right. Or various cookbooks, which obviously has a connection with food. And just this is a particularly, I think, a particularly great song that in this jazz sense really cooks. Perfect. Thanks. That is a great explanation and a great link. So thanks for choosing this track. And that leaves me with a quick announcement for the next event."
+    },
+    {
+      "start": 3459.504,
+      "end": 3487.344,
+      "text": "which will be a panel on regulation as a hybrid event with participation of Mark Rothenberg, Hans Ackermann, George Metakidis, and possibly others, and moderated by Christiane Wendehorst. And that will happen already in two weeks on April 1st, 5 p.m. Careful, Europe will have switched to daylight savings time by then, so make sure to check the time offset if you're joining from another time zone. So hopefully we'll see you there for today."
+    },
+    {
+      "start": 3487.344,
+      "end": 3496.272,
+      "text": "Thank you for joining. Thanks to Viola for moderating, Simon for the insightful talk. Here's high fry. Goodbye and have a nice rest of the day."
+    },
+    {
+      "start": 3874.512,
+      "end": 3887.728,
+      "text": "Thank you so much, Simon. Thank you. Thanks also for the great music. Yeah, yeah. Great music. Thank you. Bye-bye. Have a good evening. Bye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

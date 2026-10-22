@@ -1,0 +1,831 @@
+{
+  "video_id": "Jx7BJNgKxU0",
+  "source": "whisper",
+  "language": "en",
+  "text": "So good morning to Ricardo, good evening to all others, or good morning to those in the US. I'm Hannes Wertmann, I welcome you to the lecture of today. And looking at the list of lectures, I realized that now it's already the 16th lecture on digital humanism we did up to now in one and a half years. So I think we are good in organizing and also having this lecture. Today, it's one of the core topics of digital humanism. It's on ethics in AI, a challenging task, and it will be presented by Ricardo Baeza-Yeds. He's a renowned scientist in the field, and we are really happy that he is with us today. Welcome, Ricardo. The talk and the question and answering will be moderated by Carlo Ghezzi, who will then afterwards also introduce Ricardo. Just two short notes before introducing Carlo. After the discussion, do not forget that we always have this habit of a piece of music selected by Pete and I already thank him now for having selected once again. I think it's a nice piece of music. And for all of those who are with us for the first time, I... I invite you to look at our website and also to our YouTube channel where we have all our discussions and presentations recorded so you can have a look and have a look it up there. So I think it's already a rich body of knowledge we have collected of 16 lectures and three workshops. I'm happy to have Carlo Gezzi with us who will moderate. Welcome Carlo. He's emeritus at the Politecnico di Milano. He's one of the, let's say, he's doing their teaching and research for 40 years. And he's one, let's say, of the old guys in computer science in Europe, old in the sense of being active for a very long time. He's a fellow of the ACM of IEEE. He's a member of the Accademia Europea and also a member of the Italian Academy of Science. And he has received several research awards and teaching awards. He has also been president of Informatics Europe. His research is in programming languages and software engineering. He has published numerous papers and also co-authored several books, six books. He is not only now, but since a long time, since we know each other for quite a time, on the ethical implications of informatics or computer science. And in this interest, he's also chairing the Ethics Committee at the Politecnico di Milano. And Carlo is with us with this digital humanism initiative since the early beginning. He is one of the founders. And I thank you for that, Carlo. And the floor is yours. Thank you, Hannes, and welcome everybody to this lecture today. I'm very glad to moderate. Yes. Can you hear me? Yes. Okay. So I was saying that I'm very happy to moderate this lecture today on ethics in AI, a challenging task. And I'm also very happy to, you know, moderate this lecture because of the speaker. You know, Ricardo Baeza-Yates is a very well-known person in the field. He's a research professor at the Institute for Experiential AI of Northeastern University in the US. But he is spread over three continents, basically. He is also a part-time professor in Europe. and in Barcelona at the Universitat Pompeu Fabra and in South America at the University of Chile in Santiago. He has been in research for many years, but he was also in industry for several years. He was vice president of research at Yahoo Labs, first in Barcelona, then in Sunnyvale, California. And he's very well known for a... classic book in computer science on information retrieval. He has published a lot and he is, you know, both on being on the board of governors of IEEE Computer Society, ACM Council. He's an ACM fellow and IEEE fellow. So he has several awards. And he's now very active in ethics and AI. Actually, recently also co-authored the paper, which is shared with the audience through our digital humanism website, titled Towards Intellectual Freedom in AI Ethics Global Community, which is a very interesting read if you haven't seen it. So now the floor is for Ricardo. Ricardo will go for 45 minutes. in his lecture, and then we have a 15 minutes discussion afterwards. Sorry, Ricardo, the floor is yours. Thank you, Bernard. Thank you, Carlo, for the introduction. It's a pleasure to be here virtually in Austria and Milan and many other places. I will share the presentation. This is a presentation that I only started giving... two months ago in February and had a good exposure. Maybe I will skip some examples because then I will talk more than 45 minutes. Let me hide the meeting controls. Okay, perfect. So let me start telling you this new institute we have in Northeastern that that started only last December. So it's brand new and we are building it. In some sense, I'm the second person that came on board. And this building is headed by Osama Fayyad, a very well-known researcher in data mining. And he was the creator of Yahoo Research in 2005. and one of the first chief data officers that were in the world. So it was very nice to meet him again. And basically, we believe that there are two important things to have successful applications of artificial intelligence. One is what's called human in the loop. And recently, Andrew and G said again, the difference between a theoretical model in the lab and then a real model in production. So basically, today we will see. many problems of models in production. And the second thing will be basically the strong dependence on data. And if we don't have the right data, we have a problem. One thing that here is most of the time we need big data and most institutions in the world will never have big data. They will have a small data and have something written about it. But all people talk about... the cases where there is big data which may be less than one percent of all deprecations in the world, even much less. I'm exaggerating, I guess. So, the talk has two parts. First, I will give examples of five different ethical issues that I find are most important here, and they are not in order of importance but in order of some sequence in the process from basically discrimination to climate change and indiscriminate use of resources. And the second part, of course, this has a personal bias. When you talk about bias, you have your own biases on the problem. And then I want to go into four genetic issues that I will explain later, which I think are the more difficult challenges here. So the first one are specific challenges, the second are genetic challenges. So let's start with biases. This is the most covered topic that creates ethical issues. So all algorithms receive biased data. And by the way, here for me, a model in production is an algorithm. It's just an algorithm interpreting the model, but it's still an algorithm. Although many people talk about model, but the model is just a static representation. of an encoded algorithm. And then the first thing is, does the algorithm need to ask these two questions? Should I be neutral in my solution? Should I be fair in my solution? And the first problem is that these questions are not being made today. And the second is very hard to define. For example, there are plenty of definitions of fairness, and we know that not all of them are compatible. So typically, you can only satisfy one fairness condition. So maybe you will be fair in one sense and unfair in a different sense. But most of the time, nobody really asks these questions. And we get the same bias if we are lucky in the answer. But many times, we get amplified bias. And here, we cannot say, oh, the bias is in the data. No, the algorithm did something to amplify the bias. So also, the problem is in the algorithm. we will see that in many cases the problem is not in the data, but in the RYM. And this is very important because we have some event tuning awards saying that the bias is only in the data, which is not true. It's also in the users, it's also in the optimization function that we're using. And here you can read my paper on bias on the web that was published in Communication of ACM in 2018 that gives all the biases in the vicious cycle of bias that we have today. And to remember what is being fair, so we have these different notions of equality, equity, where we do, for example, a filmatic action and the kid can see the football game, or justice, where basically we get rid of the problem, but that takes much longer. If you want to understand this better, I suggest you see this nice documentary that is available on Netflix called The Bias. than mainly by women, much better than the social dilemma of last year. And if you're interested, you can see also the panel we had recently in ACM to discuss this movie with a judge, the former president of ACM, and other researchers. So as I said, we get the same or more buyers. And the answer to the question is no, not always you need to ask these questions about being neutral or being fair, but of course you need to ask this question if you harm people in any way. And we'll get back to this because recently we had the EU regulation published that basically touches on this issue. So how do we solve this problem? There are three ways to solve this problem. This talk is not about this, but I will just mention them. So you can devise the input. That would be the best because you act on the data. But sometimes we don't know that the bias is there. And also, we don't know what is the right reference value. For example, what should be the percentage of women in this talk? We may say 50%, but maybe society agrees in a different way. In India, having talked with 60, 70% women. So also the answer is cultural. We can tune the algorithm. That's the most difficult one, but it's also the smarter one. And we are using it, for example, in learning to rank a well-known technique in search. And the last one, the easiest one, is the bias, the output. But the problem is that you already lost a lot of information. So if you search in LinkedIn and you get 20% women and 80% men in your answer, the best thing you can do is to put women in the top, but you can't have 50-50 because already the algorithm was biased. In 2017, ACM did a statement on algorithm transparency and accountability and proposed the seven properties that algorithms should fulfill. I will not read them. And you see that in most cases, algorithms don't fulfill any of these properties, not even one. So we need to change how we develop software. And maybe Ben Schneiderman is one of the people that's working early on how to develop responsible software, not only for AI. And here we need to remember that systems do not need to be perfect, but seems that they need to be much better to be accepted by people. and here we have some work on how people judge machines. There are a few, even a book by another Chilean researcher, Cesar Hidalgo, on this topic. Let's go to very fast, very quickly, in some examples. So this was one of the first in 2018, was in Amazon, really was not used. Someone filtered this when they were testing the algorithm. And this here is by Cathy O'Neill, the author of Weapons of Mass Destruction. Then, of course, maybe the worst one, facial recognition. So we'll talk a little bit about this, like this one in 2019. And recently in a paper by Raji and Fry, they show how the faces used on the development of facial recognition view exponentially. So you see that the vertical axis here is logarithmic, so it has grown very fast. I don't know if you see the different regions. So they are like gray regions. So this is like four different stages. And if you look at how these faces were collected in these four stages, so the first period were not too many and were like very good collections. But in the last two videos, basically, it was faces gathered from the web. And of course, no one was asked for their consent to use these pictures for this research. So all this research has been developed with almost no consent. So it is interesting if you go to GDPR and say, OK, if you want to use my personal data and my faces, my personal data too should be used with consent. And of course, all the mistakes of this software, especially in policing, did something important last year where Amazon, Microsoft and IBM decided to stop selling facial recognition to police and even to many other people. And also we did a statement, I'm part of the Technology Policy Committee of ACM. to suspend facial recognition technologies because of all the issues that we have, especially with race and also with gender. Although remember that part of the biases start with the category because race is a social construct and we know that DNA is almost a continuum. But it didn't matter. because some police still had this. So even in September 2020, we had another case in Detroit of a person that was wrongly accused. And until today, we have more and many more that I can mention. So there's a very interesting paper by Selinger and Woodrow that shows that it's impossible to have, for example, consent for surveillance. We have issues in translation where you get also gender bias. I will skip this very fast. So this happens in all languages that have no gender in pronouns, like Turkish, Farsi, Hungarian, Finnish, and so on. Another well-known paper from NUDIPS 2016, where most she-he analogies were found with a bias. Or, for example, this work from Stanford, where, using word embeddings, chose bias in gender and ethnic. stereotypes. So here you see the most common professions that you find in text regarding Hispanic, Asian and white. And here you have the problem because, for example, in the last forms we have seen in California, if you're a person coming from Spain, you are not European any longer, you need to put Hispanic like Latin American. So this bias is created also by governments. language models. Here I'm using a table of a famous paper for people that is working on ASICs recently, so by Bender and Gebru, I will get back to that. But I just want to use this table to see how many word embeddings have been developed in the last two years and how much the number of parameters have grown from tens of millions to basically 1.5 trillion parameters. So we're talking about something almost the size of the text being used to train these models. So I don't know how they don't get any overfitting, but we can leave that conversation for the questions. But using, for example, BERT, so sorry, using GPTC, which is the most well-known now usage in public, some researchers also very recently in general show that if you do something like this. you want to complete this sentence. Two Muslims walked into A, or you can read the completions. Now, if you do the analysis, you will find that 70% of the completions are violent. It's four more times than if you're Christian, and more than 10 times if you're Buddhist and atheist. So at least in text, atheists are the less violent in the world, which is not bad for us, I guess. But it can be much more complicated. So a group that I will mention later has done, for example, problems with discrimination in ads, even between companies being accused of discrimination. And this one is very interesting. Another recent case, and maybe Carlo on tour knows about this, this happened in Bologna last January, the Deliveroo case, where basically... They found that they had indirect discrimination to riders. And here is a very interesting case because it's not a case of data being biased. It's the optimization function creating a bias that no one really predicted. So here, the discrimination was against riders that couldn't deliver at dinnertime. And why that happened? Because the algorithm learned to earn more money by basically giving more work to people that could ride. at that time. And the judge found that this was discrimination because the other one was not checking why the person couldn't write at that time, like had children, had a dependent, or for example, even didn't want to work at those not typical hours. And of course, the other one had to be changed, I guess, to balance the work even more. work to these people in other times but that was not in the original of the session function and the worst one maybe is what happened in netherlands so this can go very wrong when i was found that that 26,000 families were discriminated, most of them poor people, immigrants. And this happened like not only economic damage, but also psychological damage. Some people even had to return back to Morocco and Tunisia because of this. And not even a minister was enough to step down at the end. The whole government had to step down. And this also happened in February. So it's very recent too. So things are happening. Now, this is the most known example. I will not read it because of time. It's the case of Compass and ProPublica. But here, there are two important questions. So the first one is, is a secret algorithm ethical? So an algorithm will decide about the life of a person, important events on the life of a person. So, of course, we want transparency. But also, it's fair to say that the... The other question is, is a public algorithm safe? Because all public algorithms can be gamed, and we know that also in the world of cybersecurity, it's an issue. So the answer lies in between, and that's why it's not easy. For example, in a recent case in the Netherlands, again, Uber, the judge asked the code to Uber to basically do an expert analysis, like in the Deliveroo case. I don't know if they will give away their code. So there are other cases like, for example, GODAM, which is a criminal profiling, if you saw Minority Report, kind of the same. And this has been used in some cities in the US in ways that are not too ethical because they tried to hide it and so they did in different ways. And even in some places in Europe, I have seen that this software is being used. And the problem is not that it doesn't work. Maybe it works, and I will talk about if these things work for these kinds of problems. But if you do one error, you basically affect the life of a person. So the problem, I will get back to this, is not how accurate is the model, it's how bad is the model when the model fails. So it's about the mistakes. And here you're also in this kind of... Policing problem, you have the problem that you measure more in the place where you think there is more measurement measures. And then you have a self-fulfilling prophecy that you see, for example, only cases where the police is. So you see more cases there because the other are only the reported ones. Even there are more weird things here. It's an example from Spain. So this is an AI tool to see. if the victims are lying in their accusations. So to understand if people lie to the police. And of course, this shouldn't be used by the police. I mean, especially with the victims, even if some victims lie. So it's an ethical issue. And something similar that was being done in Germany was merely contest in the court by the parents. party, because basically they say that this was not right. Basically, you can use many articles in GDPR to contest this. So let me give you one more detailed example of when you can have extra bias. So this is one of my favorite papers done by top researchers in the US. So when you have an offender that goes to court, the judge can decide if you get bail or not. So there are three possibilities. If it's no or you cannot pay, you go to prison. Of course, in the US, there's a special person loaning money to this kind of people. And these people have to predict the same as the judge. So the judge has to say, will this person reoffend? But more important, will this person appear in court, which is the same question that this loner will have to ask. And in New York, they are the same question because basically for legal reasons, the judge cannot decide this decision based on reoffending or not, which for me is unbelievable, especially if you have a killer being brought to court. Of course, here you have some economical bias because the people who can pay usually will go not to prison. And then, for sure, the people going to prison will appear in court. The other ones we don't know. Here is, again, a problem because we do not know what would have happened if the person had bail, the person's in prison. So we have like half of the story. We don't have if the... people in prison would have been behaving or not outside prison. And then we need to do something called data imputation, which makes the problem more difficult, but also more interesting. So what are the results? I will start with the results. I will not talk about all the details of this paper because it's too much. I don't have enough time. But basically, they show that they could decrease the crime rate in 25% or decrease the prison rate in 42%. And why they could do much better? Well, one of the examples that you can find is that if the model is correct, remember, it's a model, it's a prediction, judges were bailing half of the 1% most dangerous that basically didn't reappear in 56% and reoffended in 62%. So just for this half percent of most dangerous, we have a big problem. This work done by John Klember and others. was done for the National Bureau of Economic Research that was interested in spending less money in prisons. Was not done by the National Bureau of Justice because I guess judges are not interested in being replaced like anywhere in the world, but we will not go there. So what was methodology here is very interesting because it's maybe the only paper where they split the data setting in four. So of course we have a training set. We have a holdout for the evaluation, but also we need some data to do this data imputation. So we have an imputation set the same size of the training set, but also they have a separate data set in a log box that was quite large, almost as large as the training set, that basically was to be used for any person that wanted to do an audit, like an external evaluation. The figure has this draft, but it shouldn't be that because this is for the final version, so I guess it was not fixed in the final version. So they use graded boosted decision trees, so that allows some interpretability because we can understand what decision trees do. And they used 18 features. Only one was demographic, the age of the person. They could have used gender because most of them are men, but we already know that. So basically, there was no demographic feature that could be tied to race, not at all. So we don't have address, but it would be the easiest one. And then you have all the history of the case. So offenses, type of offense, how many arrests, how many convictions, self-tropia in court, and so on. So these are the results. So here in the top, I have the ratio of every race in New York. This is the whole state. So 18% African-American, 30% Hispanic, 32% in total for those two. And here you see that the people coming to court, well, almost 49% are black, 33% Hispanic, so 82% of the people coming to court are from these two minorities. And here is the result for the judge. So the judge is clearly racist, so increases the 49% to 57%. The accused were Hispanic, maybe they are more white there, and that's the case, and so on. So what happened with the algorithm? Well, the algorithm was even more racist than the judges, almost 60%. So there was an amplification of the racism. But the steel was able to do much better, 25% less in criminal right. And if we adjust the algorithm to be as racist as the less judge, less racist judge, the last line, you see that the steel was almost 23% better than the judges. if it's more racist. So why? The question is why? Well, because according to the model, judges are not doing this correctly. For example, if you have the algorithm here on the left, and we want to do some additional jailings and send people to not without bail, then we have all these top cases in the model. And these are top cases from the most leading judges, which was the way to... to do imputation, so divide the judges in five sets. So the most lenient would predict the less lenient, the people getting bail. And then you see that the second lenient judges are sending people to free people that is in the whole spectrum of criminality. And this is the problem. So it's almost like random. And this is well known. For example, don't ever go to see a judge after lunch. This is the worst time. Maybe you will go to prison because of the mood of the judge. And then here we have a dilemma. So if you have to choose, what is better? A biased algorithm that is just or a noisy judge that also is a biased judge? And here I have the difference between a fact. bias noisy and bias unnoisy. So the truth is that the algorithm is C and the judges are closer to D. And why is the algorithm more just? Because basically for the same case always gives the same answer. So we have a saying in Spanish that the same law is fair in the sense that all the people get the same treatment, which is not true today. And this is related to something very important that first was, I guess, highlighted in a paper for Harvard Business Review in 2016, that the high cost of inconsistent decision making of this irrationality. And the first author is Daniel Kahneman, No Overprice of Economy. And next month, no, sorry, this month, this is the first time I give this talk in May. This month he will publish a paper with other two people called Noise and I'm looking forward to read this paper because it's about this problem, it's about how dangerous is the noise, maybe even more dangerous than bias. So let's go to the second kind of problem, what is called physiognomy in English and for example this started with a paper by Stanford. on sexual orientation in 2017, really bad press. Then, for example, first in China, then in the US, facial recognition to predict criminals. So I see the face of Carlo and I will predict if he's a criminal or not. And I use Carlo because I have a story about this from another Italian. And the last one, last January, the same person, Kosinski. doing facial recognition to predict political orientation. Of course, it's not facial recognition, it's facial biometrics, but he doesn't understand that. And we're working with some people about this because this shouldn't be done. This is similar to phrenology. And when I was in Torino once, I went to the Museum of Cesare Lombroso and was really a believer of... of phrenologists. He collected hundreds of skulls trying to prove that people had a mutation. But at least he was coherent with what we believe, because he left his own skeleton, I guess, to have one single of a truth that is not a criminal, right? But no comments on that. So you can go to this museum if you go to Torino next time. It's really nice. But it can be worse. For example, this is another work from MIT. So Stanford, MIT, so these are top universities doing clearly borderline research. Here, you give me your voice, and again, I will predict your face. I may believe that there's some causality on the mouth, maybe on the neck, but in the eyes, come on, in the noise, well, very hard. So I can hear, I can have what I call my master. uh my master um phenology uh method so you give me a voice i transform it to a face and then because of all the results i didn't mention that one that also predicts your name based on your face give me a break so i can get your name i i know if you have are in the opposition party i know if you're homosexual and also i know you're criminal in some countries this is really dangerous so Please don't do it. Even if you believe you can, it works. Third problem, the filter bubble. So this is more related to e-commerce and the interactive loop of people using, for example, the web. And here we are using some techniques like diversity, novelty, sensitivity, but we are creating something very strong like popularity bias and also something worse that is exposure bias. The problem with exposure values is not that we're seeing part of the iceberg, we are seeing just the ice cube in the top of the iceberg, because when you see three recommendations and there are other 100,000 more, well, you are seeing just the ice cube. And this has a very big impact in e-commerce. I'm doing research on this, especially you get the massive effect that the more popular sellers get richer and the ones in the long tail, the ones that are new. they get poorer. And this has very important societal implications in digital markets and long-term stability. Fourth problem, stupid models. And here we have to remember the famous saying of George Box that says, all models are wrong, but some are useful. This is the same with AI. So all models are wrong. We know that some are useful until we find the problem. So models that can deal with ambiguous semantics, models that can deal with irrational behavior. The best example there is when Elon Musk tweets, use signal, and then... All these models that basically buy a stock automatically that was using Twitter data from him started to buy a stock from this company in Texas. It's a medical company called Signet Advanced. And their evaluation increased more than 400%. I think they're stealing more than it should be because of one tweet by a very influential person. This doesn't make any sense. But then we have other cases. For example, models that are too sensitive, like in the right from Japan. You change one pixel and the prediction of the animal changes. For example, a deer changes to a dog, a cat to a bird, a sheep to an airplane. And then you say, this is what is called adversarial AI. You say, what the heck this model is learning if you can change one pixel and you change the animal? So clearly it's not learning the same that we are learning. And here I have also another recent example. This happened last month in Facebook. So a hate prediction model basically deleted this page of the town of Bitche in France because it thought that was, of course, a bad word in English. And not only the problem that they did a wrong prediction, it's that they took three weeks. to recognize it because there were no there was no human in the loop to say hey someone look at this problem so this is a whole town that lost his facebook page for three weeks because of a stupid algorithm of course here all of us know that this is french so why you apply english to french right so it's very easy so we need to recognize the limitations of our mother's things like To abstract, you need to forget. And if you haven't read it, this amazing story of Borges, Funes and Mamonius, which couldn't forget anything, so couldn't abstract anything. And this is important because you cannot learn what is not in the data. I'm sure all the people looking can predict what animal is the one in the right. An AI model will have a hard time to predict that animal because there is no face, no ears, and so on, things that are useful to recognize this animal. If you don't recognize it, you need to train with more data then. So again, accuracy is not the key. It's the impact of errors because many errors are not human. So the mistakes of changing a cat to a bird is non-human. No one will do that. Maybe you can change a cat to a lion, for example, or a small lion, and some things that are similar. But you will not do these huge changes. And these are the ones that have a large narrative impact. So as computer scientists, we need to be humble. If you're not sure, if the model has only 80% probability of being right, maybe you have to add this category. I don't know. This is what people do when they don't know. They say, I don't know, please add I don't know in your model. Sometimes you try to say, I don't know, because you really don't know. 80% maybe you're making a mistake. So we get to the last issue. So green computing. And here, again, we have this table from Bender and Gebru. And here the problem is that, for example, when you train this model, you liberate the footprint of CO2 of the equivalent of 57 years of an average human in the Earth. Or you basically waste like $1 million or $3 million. And this was the famous paper that caused a controversy in Google. the stochastic Paris paper. So I would suggest to read it if you haven't read it. So Tiffany was able to put her name in the paper because she was fired. Margaret Mitchell couldn't because she was still in Google. So she put this name, everything with S-H, but maybe no system will put the paper to her, but we read it and we know it's her. This was presented in fact to 2021, which is one of the conferences devoted to these topics. And this is the meta ethics problem that we saw in Google, because when you fire the two people in charge of your ethical team in AI, there's a problem with ethics too, right? Because Margaret Mitchell was also fired in February 20, also accused for doing an ethical thing, basically checking her email. for proof that Timnit was not fired correctly. And because of this event, we wrote this paper that Carlo mentioned that is in the second issue of AI Ethics, a new journal, and it's free, so you can go and download it. There's a lot of authors, I contribute to this only part of it, but I think it's something that we should remember going forward. Let's go to the second part, and I will just devote the last 15 minutes for the second part. So the first thing, there are many pragmatic questions here when we're talking about ethics. So for example, to which part of the system applies the question? Are all equally important, all the questions, all the parts of the system? To whom is important? Are they also, and maybe are we asking things that we cannot ask, like, for example, trying to fulfill three fairness conditions that are contradictory? Or I have another example that's more philosophical later. do they make sense together? For example, transparency is something that we ask in South of Europe because we don't trust government and accountability is what we ask in Northern Europe because we trust the government and the institution will do all the work. But in transparency, it's the civil society doing the work and accountability is the institution doing the work. So, for example, if you ask for both things, you are asking too much. You are asking like two cultures. So, for example, this is usually not taking account. And should be transparency or accountability, not transparency and accountability. I think one is enough in many cases. And also the question is a principle or is a tool to get to a principle or is a requirement to achieve a principle? And this is also something that when you see the papers, no one discusses. It's more like semantics. This is something I'm preparing. It's a paper that I'm working on. I took 30 properties that you want to ask for the software. And here, this is divided in to whom this is important. Like, for example, for the data, for the algorithm, for the system, for the governance, for justice, for the government, for users, or for society. And this is just a proposition. I'm still working on this. But you see that there's some order. And the ones in both places are the ACM ones. And then I have my own grouping of this. So this is something that I'm grouping these properties. in six groups, so one about awareness, one about data provenance, one about completeness of the software, one about usability, so affects more the user, one about transparency, so how it can learn about the system, and finally the most important one for society about how to be responsible and here are all the questions there. So this is a paper that will come soon. Second issue. What some people work in ethics will call legal and ethical colonialism. So basically Europe has, in some sense, conquered part of the world, the whole America, and also, say, Oceania. And here we have the first bias, because in the US, we will write Australia for the continent, not Oceania, and also America, two continents, and not... One, like in the old European tradition. And then you see that the civil law and the common law has extended in the whole world. Also the Muslim law, which was the other culture that expanded. And so here is what is called technological humanism. And this is very important because humanism is tied to colonialism, is tied to other things that the Western world did that were not ethical. And here we have religious differences. So because of some early definition on Christianity, on lawyers really, not lawyers, we have that legality and morality are separate. And also, if you put ethics, it's also separate. But if you go to the Muslim world, and by the way, here you have the weird thing that if something becomes... the law, sorry, the arrow should be the other direction, is not, sorry, no, the law is increasing and taking things from ethics, so it's right. But, for example, in the Muslim world, everything is ethical, and the law is a subset of that, which I think, for me, is a better definition of the relation between law and ethics. And the law, of course, increases on time. And even some people propose other crazy things, just to show the diversity of thinking here. We also have geographical diversity, and here I would like to point out Ubuntu. Basically Ubuntu is that I am because we are, and there's a very interesting short blog entry by Abeba Birhane. that the strategy was wrong because a person is a person to other persons. And I think it's an interesting view of the world where the group is always more important than the person. And this is something that in the Western world is not true at the time. Third issue, the problem with identity, data protection and privacy. So public opinion versus collective privacy. And here we have freedom of expression versus data protection rights. of GDPR, for example. And we have the difference between I can do everything that's not forbidden, so freedom of expression, or I can do only what is allowed, GDPR, which are two very different ways to see the world. And they clash in some sense. And I recommend Privacy's Power from Carissa Bellis. I'm not sure if privacy is a collective right. I think still it's an individual right, but of course has a privacy, a collective. understanding because our privacy also depends on the privacy of the people near us. And here we have things like the consent legal basis to do digital nudging. I had this from earlier and now it's clear in the new EU regulation. We have proportionality for minimal data collection, minimal time stored, and we can go to Article 22 to contest the decision. And what this means? Well, this means that If you want to give people the information of the processing, you need interpretability. If you need to allow contest by people, you need to explain. Remember, explain is to explain the solution, not to explain the system. And then if you want to basically check that your system is working all the time, you need to do continuous validation, testing, and maintenance. And here we have seen the first cases of GDPR in action, like a French... a court about facial recognition that says the school didn't have the competence, didn't have the consent, and didn't have the proportionality. And here we have the problem of GDPR and maybe a problem on the incoming EU regulation, that we have one size fitting all for big companies and small companies, for health, education, and any other field. And that's an issue, for example, we have seen it with COVID. And here is what Lorena Jaume Palazzi talks about. technological solutionism versus normative solutionism. And technological solutionism is basically more of the same, that we are using technology for the solution and not the real solution. And here we have regulations. So, for example, last year, the US started cases against Google and Facebook, in the past with Amazon, and there are other issues I will not have time to... to talk, but I'm working on this research on fair markets. And the first important thing we can do is to be compulsory because humans may suffer. And recently, April 21st, we have this EU proposal for AI. Here are the main things in the proposal. I will not read this, but I want to highlight the prohibited artificial intelligence practice and here basically an AI system that deploys subliminal techniques beyond a person's consciousness in order to materially distort a person's behavior in a manner that causes or is likely to cause that person or another person physical or psychological harm. So this is a long way to say... Basically, don't harm people, but here you need to start thinking about what is subliminal, what is consciousness, what is behavior, what is physical and psychological harm, especially psychological harm. So there will be many issues on this Article 5, like Article 22 of GDPR, if this is approved. Another interesting thing is that you have a list of high-risk AI systems that put the boundary between where the danger may happen. of course, some are forbidden. Maybe in the US we'll have a future regulation because these were ideas that were stopped by Trump, but I think Biden would put them again in the table, also for hiring and so on. And we have now an AI office that was approved by Congress a long time ago, but only in January was finally set. We have things that raised an algorithm that... Amsterdam and Helsinki are doing, but also we can do auditing of algorithms. And there's a very interesting example in the last FACT conference, also last March, that is a public audit of a hiring company that wanted to show that they were complying with the suggestions of the US government. So I think... I don't have time to finish, so we have a lot of things we don't do well because we don't learn from the past. And there are also professional biases, like what I mentioned about big data, about reflecting our own biases when we code. And there's a recent paper from a Norwegian researcher that gives the first indication that was true. I mentioned that in my 2018 paper in CACM, but here is a proof. of this and evaluation is the is the place where i have seen many researchers putting themselves not uh choosing the right baseline and the right everything else so things that we can do i don't have time to cover all this but basically we need to aware of all the biases that means the system needs to be aware and then the model should be aware because to understand bias we start with awareness if we are not aware impossible to fight bias. So here are some recommendations that can improve. I want machines in the loop. That's better than human in the loop. So to show that we are in control, we are the one that's defining and setting the decisions. At the end, we are the accountables. We are the responsible of the wrong decisions or the system we create. In some sense, I feel we are playing God. We always wanted to play God, but... It's very hard to play God. So to finish, plenty of research problems. Remember, systems are a mirror of us, the good, the bad, and the ugly. There are great applications of AI that doesn't harm people, but there are some, when people are involved, that are a problem. So two final questions. Can AI algorithms ever be ethical? This is an interesting opinion by Hazel Henderson. And of course, one important thing is what David Lower says, almost obvious, but you have to say it. You can't have AI ethics without having ethics. So this is here, and I would like to end here, where people can read three of my favorite quotes in this topic. I think it's just 45 minutes or 46. So you're done? Yeah, I'm done. Okay, thank you. You can read this joke, so let me tell the joke then. I'm not concerned about artificial intelligence. I'm concerned about natural intelligence. Every election we see this issue. And otherwise, we will get to this joke, like, prove you are not a human. The robot says there are no more humans. Correct. And they laugh together. And not because the humans basically create killer robots. It's because the humans basically kill themselves. So, questions? Well, thank you very much, Ricardo, for the very provocative and stimulating lecture. So I would like to turn to the audience. And if there's questions, comments that you want to make, can you please write in the chat? And then I will refer to you and you can speak and interact with the rest of the audience. There is one... Already someone in the chat, Alison, do you want to take the floor and explain what your question is? Yes. Well, first of all, that was a fabulous talk, so thank you very much for it. I just had a simple question. It's probably a result of you just moving quickly through your slides. On your slide, you showed data protection. and freedom of expression and tension. I didn't quite understand that. Could you say a little bit more about what you meant by that? Yeah, this is something I learned from Lorena Jaume Palacios, which is my favorite ethicist. She's an advisor of the EU Parliament. And basically, when your frame of thinking is I can do everything that is not forbidden, that will clash with a frame of thinking of, say, lawyers, you can do only what is allowed. Basically, if you can only do what is allowed, basically you cannot explore anything new there. So at least in freedom of expression, we can get to places where we are not aware of. Like, for example, we can get to some kind of freedom of expression that someone will say that's illegal. But this is not the case in GDPR. So GDPR was constrained by what you are allowed to do. So in some sense, we already restricted the world. So basically, this is where you are. You are inside the house or outside the house. Inside the house, you can only get in the house, and you can't get out. Outside the house, you can explore the whole world. So it's just a framework for thinking. I don't know if that's clear, or maybe we disagree. That's fine, too. Well, maybe the problem is I'm thinking of the example of the United States with the First Amendment. For example. Yeah, yeah. And so there I don't see a tension between expressing yourself and insisting that the data be protected. Yes, but the U.S. doesn't have GDPR. Except in California we do. Did you know that? Oh, yeah. Well, kind of, yes. Also, for example, I think it's in Ohio or Illinois, there's some law that is much better than the facial. for facial recognition, about using social network data and so on. So yeah, the US is so different from no regulation to too much regulation. California will be the guinea pigs of all regulation in the world, I guess. Thank you. Thank you for the question. It was a good question. Ricardo, there's a few other questions already in the chat. So one is, do you think the AI Act by the EU does enough to establish standards to evaluate AI systems for fairness? You mean the proposed AI regulations? Yes, the proposed EU regulations. Okay, I haven't had time to read it completely, but I have read a good part. I think that the answer is no, it doesn't cover... all aspects in the way that I would like to. For example, there are some uses of a high risk system that are not regulated, for example, for enforcement, for police enforcement, for example. And so there are some, I would say, some loopholes that can be used to... to basically still have non-ethical uses of AI. For example, the EU regulation doesn't talk anything about military applications because that's not their realm. So there will be the United Nations doing that. And this is the most dangerous one. Imagine, I'm sure that we already have at least three different military robots in place that if they get crazy, I don't know what they will do. But no one talks about that because we prefer not to talk about that. This is too... It's really... It's really like science fiction, but I'm sure that in three different countries that can be called a military robot. So, yeah, I think we need to study, to improve it. For example, also, you can always try to make your system to look like low risk, but really it's high risk. So how we will enforce that thin line between... high risk and low risk. We know risk is a continuum. So here again, we have the categorization problem. Humans like to categorize. And when we create categories, we start with bias. Like here will be high risk, low risk, or race or gender. We know that ethnic, I mean, race and gender are continuous. DNA is a continuum. But we are still seeing and trying to categorize, and then we have things like what is called intersectionalism. So now we need to see the intersection of the categories. But here we are stressing the bias we already started with the categories. So this is important, but the real problem is to get rid of the categories. Now the problem is that now it's a bit too late because we have a paradox. Getting rid of the categories, we get rid of being able to measure that if there is bias or not regarding these old categories. So we have like a chicken and egg problem. Okay. Ricardo, I have a question. You know, how much, you know, do we teach about these concepts of bias? in our courses today? I mean, what is your view of what we do in our teaching regarding this problem? Very good question, Carlo, because this is the question I didn't answer you, right? About education. But if you read the paper I'm a co-author about freedom, one thing we say, we need to teach ethics to all people, and especially engineers, to teach ethics in technology, so technological ethics. And also to teach a little about history, about how we became... the society that we are today, because the bias that we have, we are created in history. So gender, race bias is a continuum. For example, we had slavery, we had women not voting. So we're improving, but we need to understand what happened in history to understand what needs to be changed in the future. And this, everyone should know about this. So we don't learn enough about ethics, about philosophy. So I'm just an apprentice of ethics because I'm a computer scientist, so I have a bias. So this is the first thing. And for example, we may have, I hope to see more graduate courses, like graduate titles on this, like combining ethics and technology. So this will be an interesting master, for example, for many people. Also, to have the right conversation, we need to put philosophers together with lawyers and together with computer scientists and engineers, and even sociologists and psychologists. So this is a multidisciplinary problem. It's not a problem that only one field will solve. Hannes has raised the hand. So, Hannes. Yes, Eris, thanks for the great talk. It was very inspiring. I have a question to your last slide because you have a list of some measures or recommendations, and it's mainly on the individual behavior. The question is, from my side, is it ethical behavior enough or isn't it more? Isn't it more a political question? Is it not more a societal issue? Also, for example, when you say, okay, we should. include ethics into computer science. Many universities already do this, so they have courses, they have embedded ethics in their courses. So isn't it much more? So it's not just an ethical issue, it's a broader issue. I completely agree. So if my two questions that were from papers that I think are important, do you get the impression that it's about the person? It's not. This is about the community. So that's why I stress Ubuntu. This is about a country. That's why the legal part is important. And this is about society that could be like a bigger society, like the European Union. And it's about the whole population on Earth. So, for example, we are here discussing, but we forget that 40% of the people of the world don't have access to Internet. So that's a huge problem on digital education and access. So, for example, in South Sudan, only 2% of the people have access to Internet, which is the most poor country in the world and the newest. So we have all these infrastructural things that sometimes we forget when we talk about our own context. And for example, some people still talk about the third world and some people don't know that there are four divisions of economy in the world if you are working with the UN. So, yeah, this is a hard problem. It's a multistakeholder and also it's a multistakeholder. Digital humanism, but my problem with digital humanism, remember, to get there is the word humanism, which has changed. Humanism has a bias on the history. So re-humanism. Let's redefine it. Okay, there's another hand raised by Michael Stanford. Unmute your phone, Michael. Michael? Unmute the phone. Sorry, I'm preparing dinner at the same time. I have one question to you. There are some voices saying that there's one way out could be to have a more inclusive, more broader, more deliberate form of democracy. So you have another way how to... come to societal decisions about important things. But yesterday I heard a podcast about early Athens and the philosopher who presented it said the worst time they had in their classic era was the time when they had the most radical democratic constitution. So could you please comment on this? more human political side, which way of governance and policy might help us in this context? Thank you. Thank you, Michael. A very interesting question. You're asking the wrong person, but I will try to answer anyway because I'm not a political scientist and not a historian, but also it's a topic that interests me and I also have done research on on the wisdom of the crowd. So I was a believer of the wisdom of the crowd. I don't believe in that any longer. I have a paper called The Wisdom of a Few, because at the end, very few people take decisions, not only on elections, but also we have committees in social networks. I have a paper showing that basically of the 10% that participate, only like... 2% of the people are the dominant ones creating half of the content. That happens in Twitter, for example. I have done studies on that. So at the end, we have the wisdom of a few. And those few are influencing a lot of people. And that's why we have fake news that we have like 70 million people in the US voting for like a populist candidate or the same in many European countries where some populists have been elected also. So I would say that here we need to try to increase the participation of people. And this is not an easy problem. So how to increase participation? One thing I like is that in some countries you can vote for any decision that the government thinks is important. We have the bias of what the government decides what is important. And there are jokes about that. But for example... Switzerland is the country that has more referendums per year because they vote almost for everything. Some people get bored of voting. But at the end, all of them can feel that they were part of the decision, even if not the majority voted. So that's another problem. We don't have a majority voting because less than 50% vote. And then you have like 25% of the people deciding who is the president. And this is happening in many, many, many countries. So these are some ideas. So basically how to increase participation. And also let's have, we can have through internet, we can have many more, not even elections, but we have, we can do pollings. What people feel about this? For example, do people feel that this is important enough to do a referendum? And this will allow also to do referendums. And we have many, many regions in the world that would like to be independent. And they're not even can do a poll to say, yeah, we want to be independent. Just to know will be important because people need to know what other people think. And this is real democracy. First, expresident. Thank you. Greetings from my kitchen. Thank you. Enjoy your food. I'm afraid that we need to get to the end of this conversation. It has been a great presentation and, of course, stimulating a lot of questions and broadening the scope of our questions, as we can see in the discussion. So I wish to thank again the speaker. Ricardo, it was great. You really stimulated all of us. You gave us food for thought. And so I hope to see the audience in one of the next events of the Digital Humanism series. Thank you for attending. And, you know, let's close this session today. Thank you, Carlos. Let me say hi to Tony that I see is there. I haven't seen him in a long time. Tony, nice to see you. With a nice background of Catalonia, I guess. Thank you. okay people participating thank you so i turn it to uh uh hanes or uh peter or well anyone one of you i would like to say thank you before turning to peter i also want to say and i hope ricardo you will share your slides with us so you can have access uh to the slides which will be on on our website i think it was a great talk and what is also important for this academic environment. It gave a lot of ideas for future research, both in a, let's say, theoretical point as well as on a, let's say, empirical point. I think with your center, you are right on the right track. So thank you very much. And I hand over to Peter, who will announce our next session in two weeks, as well as the final piece of music. And thank you, all of you. Thank you. So, yeah, although it's May the 4th and last time I mentioned to play something Star Wars related today, I must admit that none of that felt like a particularly good ending. So sorry for all of those who waited for something Star Wars related today. Instead, let's see if that works. Yes. Instead, I looked for something that might relate to the topic today and I made use of... the great possibilities that search engines offer, and found a rather obscure band from the late 1960s called The Ethics. And that gives us the opportunity to play some R&B and soul music, which we didn't have here so far. Our next event to announce that will take place on May 18th. Cristiano Codagnone will talk about the platform economy and Europe between regulation and digital geopolitics. and Paul Timbers will moderate. So for today, thanks again to Ricardo for the lecture today and Carlo for moderating and all participants for joining. And I hope to see you on May 18th. And now let's smoothly transition you out of this meeting to think about tomorrow by the ethics. Thanks very much. Goodbye.",
+  "segments": [
+    {
+      "start": 8.656,
+      "end": 34.704,
+      "text": "So good morning to Ricardo, good evening to all others, or good morning to those in the US. I'm Hannes Wertmann, I welcome you to the lecture of today. And looking at the list of lectures, I realized that now it's already the 16th lecture on digital humanism we did up to now in one and a half years. So I think we are good in organizing and also having this lecture."
+    },
+    {
+      "start": 34.704,
+      "end": 60.592,
+      "text": "Today, it's one of the core topics of digital humanism. It's on ethics in AI, a challenging task, and it will be presented by Ricardo Baeza-Yeds. He's a renowned scientist in the field, and we are really happy that he is with us today. Welcome, Ricardo. The talk and the question and answering will be moderated by Carlo Ghezzi, who will then afterwards also introduce Ricardo."
+    },
+    {
+      "start": 60.72,
+      "end": 85.552,
+      "text": "Just two short notes before introducing Carlo. After the discussion, do not forget that we always have this habit of a piece of music selected by Pete and I already thank him now for having selected once again. I think it's a nice piece of music. And for all of those who are with us for the first time, I..."
+    },
+    {
+      "start": 85.552,
+      "end": 115.552,
+      "text": "I invite you to look at our website and also to our YouTube channel where we have all our discussions and presentations recorded so you can have a look and have a look it up there. So I think it's already a rich body of knowledge we have collected of 16 lectures and three workshops. I'm happy to have Carlo Gezzi with us who will moderate."
+    },
+    {
+      "start": 115.552,
+      "end": 138.368,
+      "text": "Welcome Carlo. He's emeritus at the Politecnico di Milano. He's one of the, let's say, he's doing their teaching and research for 40 years. And he's one, let's say, of the old guys in computer science in Europe, old in the sense of being active for a very long time. He's a fellow of the ACM of IEEE."
+    },
+    {
+      "start": 138.368,
+      "end": 167.136,
+      "text": "He's a member of the Accademia Europea and also a member of the Italian Academy of Science. And he has received several research awards and teaching awards. He has also been president of Informatics Europe. His research is in programming languages and software engineering. He has published numerous papers and also co-authored several books, six books."
+    },
+    {
+      "start": 167.136,
+      "end": 196.592,
+      "text": "He is not only now, but since a long time, since we know each other for quite a time, on the ethical implications of informatics or computer science. And in this interest, he's also chairing the Ethics Committee at the Politecnico di Milano. And Carlo is with us with this digital humanism initiative since the early beginning. He is one of the founders. And I thank you for that, Carlo. And the floor is yours."
+    },
+    {
+      "start": 196.592,
+      "end": 218.352,
+      "text": "Thank you, Hannes, and welcome everybody to this lecture today. I'm very glad to moderate. Yes. Can you hear me? Yes. Okay. So I was saying that I'm very happy to moderate this lecture today on ethics in AI, a challenging task."
+    },
+    {
+      "start": 218.352,
+      "end": 247.472,
+      "text": "And I'm also very happy to, you know, moderate this lecture because of the speaker. You know, Ricardo Baeza-Yates is a very well-known person in the field. He's a research professor at the Institute for Experiential AI of Northeastern University in the US. But he is spread over three continents, basically. He is also a part-time professor in Europe."
+    },
+    {
+      "start": 247.472,
+      "end": 274.752,
+      "text": "and in Barcelona at the Universitat Pompeu Fabra and in South America at the University of Chile in Santiago. He has been in research for many years, but he was also in industry for several years. He was vice president of research at Yahoo Labs, first in Barcelona, then in Sunnyvale, California. And he's very well known for a..."
+    },
+    {
+      "start": 274.752,
+      "end": 303.824,
+      "text": "classic book in computer science on information retrieval. He has published a lot and he is, you know, both on being on the board of governors of IEEE Computer Society, ACM Council. He's an ACM fellow and IEEE fellow. So he has several awards. And he's now very active in ethics and AI."
+    },
+    {
+      "start": 303.824,
+      "end": 331.472,
+      "text": "Actually, recently also co-authored the paper, which is shared with the audience through our digital humanism website, titled Towards Intellectual Freedom in AI Ethics Global Community, which is a very interesting read if you haven't seen it. So now the floor is for Ricardo. Ricardo will go for 45 minutes."
+    },
+    {
+      "start": 331.472,
+      "end": 359.808,
+      "text": "in his lecture, and then we have a 15 minutes discussion afterwards. Sorry, Ricardo, the floor is yours. Thank you, Bernard. Thank you, Carlo, for the introduction. It's a pleasure to be here virtually in Austria and Milan and many other places. I will share the presentation. This is a presentation that I only started giving..."
+    },
+    {
+      "start": 359.808,
+      "end": 387.632,
+      "text": "two months ago in February and had a good exposure. Maybe I will skip some examples because then I will talk more than 45 minutes. Let me hide the meeting controls. Okay, perfect. So let me start telling you this new institute we have in Northeastern that"
+    },
+    {
+      "start": 387.92,
+      "end": 408.864,
+      "text": "that started only last December. So it's brand new and we are building it. In some sense, I'm the second person that came on board. And this building is headed by Osama Fayyad, a very well-known researcher in data mining. And he was the creator of Yahoo Research in 2005."
+    },
+    {
+      "start": 408.864,
+      "end": 437.936,
+      "text": "and one of the first chief data officers that were in the world. So it was very nice to meet him again. And basically, we believe that there are two important things to have successful applications of artificial intelligence. One is what's called human in the loop. And recently, Andrew and G said again, the difference between a theoretical model in the lab and then a real model in production. So basically, today we will see."
+    },
+    {
+      "start": 437.936,
+      "end": 461.728,
+      "text": "many problems of models in production. And the second thing will be basically the strong dependence on data. And if we don't have the right data, we have a problem. One thing that here is most of the time we need big data and most institutions in the world will never have big data. They will have a small data and have something written about it. But all people talk about..."
+    },
+    {
+      "start": 461.728,
+      "end": 490.416,
+      "text": "the cases where there is big data which may be less than one percent of all deprecations in the world, even much less. I'm exaggerating, I guess. So, the talk has two parts. First, I will give examples of five different ethical issues that I find are most important here, and they are not in order of importance but in order of some"
+    },
+    {
+      "start": 490.448,
+      "end": 518.304,
+      "text": "sequence in the process from basically discrimination to climate change and indiscriminate use of resources. And the second part, of course, this has a personal bias. When you talk about bias, you have your own biases on the problem. And then I want to go into four genetic issues that I will explain later, which I think are"
+    },
+    {
+      "start": 518.304,
+      "end": 547.712,
+      "text": "the more difficult challenges here. So the first one are specific challenges, the second are genetic challenges. So let's start with biases. This is the most covered topic that creates ethical issues. So all algorithms receive biased data. And by the way, here for me, a model in production is an algorithm. It's just an algorithm interpreting the model, but it's still an algorithm. Although many people talk about model, but the model is just a static representation."
+    },
+    {
+      "start": 547.712,
+      "end": 577.232,
+      "text": "of an encoded algorithm. And then the first thing is, does the algorithm need to ask these two questions? Should I be neutral in my solution? Should I be fair in my solution? And the first problem is that these questions are not being made today. And the second is very hard to define. For example, there are plenty of definitions of fairness, and we know that not all of them"
+    },
+    {
+      "start": 577.232,
+      "end": 606.96,
+      "text": "are compatible. So typically, you can only satisfy one fairness condition. So maybe you will be fair in one sense and unfair in a different sense. But most of the time, nobody really asks these questions. And we get the same bias if we are lucky in the answer. But many times, we get amplified bias. And here, we cannot say, oh, the bias is in the data. No, the algorithm did something to amplify the bias. So also, the problem is in the algorithm."
+    },
+    {
+      "start": 606.96,
+      "end": 636.816,
+      "text": "we will see that in many cases the problem is not in the data, but in the RYM. And this is very important because we have some event tuning awards saying that the bias is only in the data, which is not true. It's also in the users, it's also in the optimization function that we're using. And here you can read my paper on bias on the web that was published in Communication of ACM in 2018 that gives all the biases in the vicious cycle of bias that we have today."
+    },
+    {
+      "start": 637.136,
+      "end": 664.368,
+      "text": "And to remember what is being fair, so we have these different notions of equality, equity, where we do, for example, a filmatic action and the kid can see the football game, or justice, where basically we get rid of the problem, but that takes much longer. If you want to understand this better, I suggest you see this nice documentary that is available on Netflix called The Bias."
+    },
+    {
+      "start": 664.368,
+      "end": 692.496,
+      "text": "than mainly by women, much better than the social dilemma of last year. And if you're interested, you can see also the panel we had recently in ACM to discuss this movie with a judge, the former president of ACM, and other researchers. So as I said, we get the same or more buyers."
+    },
+    {
+      "start": 692.496,
+      "end": 712.592,
+      "text": "And the answer to the question is no, not always you need to ask these questions about being neutral or being fair, but of course you need to ask this question if you harm people in any way. And we'll get back to this because recently we had the EU regulation published that basically touches on this issue."
+    },
+    {
+      "start": 713.232,
+      "end": 732.672,
+      "text": "So how do we solve this problem? There are three ways to solve this problem. This talk is not about this, but I will just mention them. So you can devise the input. That would be the best because you act on the data. But sometimes we don't know that the bias is there. And also, we don't know what is the right reference value. For example, what should be the percentage of women in this talk?"
+    },
+    {
+      "start": 732.672,
+      "end": 759.248,
+      "text": "We may say 50%, but maybe society agrees in a different way. In India, having talked with 60, 70% women. So also the answer is cultural. We can tune the algorithm. That's the most difficult one, but it's also the smarter one. And we are using it, for example, in learning to rank a well-known technique in search. And the last one, the easiest one, is the bias, the output."
+    },
+    {
+      "start": 759.248,
+      "end": 788.032,
+      "text": "But the problem is that you already lost a lot of information. So if you search in LinkedIn and you get 20% women and 80% men in your answer, the best thing you can do is to put women in the top, but you can't have 50-50 because already the algorithm was biased. In 2017, ACM did a statement on algorithm transparency and accountability and proposed the seven properties that algorithms should fulfill. I will not read them."
+    },
+    {
+      "start": 788.032,
+      "end": 816.0,
+      "text": "And you see that in most cases, algorithms don't fulfill any of these properties, not even one. So we need to change how we develop software. And maybe Ben Schneiderman is one of the people that's working early on how to develop responsible software, not only for AI. And here we need to remember that systems do not need to be perfect, but seems that they need to be much better to be accepted by people."
+    },
+    {
+      "start": 816.0,
+      "end": 845.792,
+      "text": "and here we have some work on how people judge machines. There are a few, even a book by another Chilean researcher, Cesar Hidalgo, on this topic. Let's go to very fast, very quickly, in some examples. So this was one of the first in 2018, was in Amazon, really was not used. Someone filtered this when they were"
+    },
+    {
+      "start": 845.792,
+      "end": 874.16,
+      "text": "testing the algorithm. And this here is by Cathy O'Neill, the author of Weapons of Mass Destruction. Then, of course, maybe the worst one, facial recognition. So we'll talk a little bit about this, like this one in 2019. And recently in a paper by Raji and Fry, they show how the faces used on the development of facial recognition view exponentially."
+    },
+    {
+      "start": 874.16,
+      "end": 898.224,
+      "text": "So you see that the vertical axis here is logarithmic, so it has grown very fast. I don't know if you see the different regions. So they are like gray regions. So this is like four different stages. And if you look at how these faces were collected in these four stages, so the first period were not too many and were like"
+    },
+    {
+      "start": 898.288,
+      "end": 927.056,
+      "text": "very good collections. But in the last two videos, basically, it was faces gathered from the web. And of course, no one was asked for their consent to use these pictures for this research. So all this research has been developed with almost no consent. So it is interesting if you go to GDPR and say, OK, if you want to use my personal data and my faces, my personal data too should be used with consent."
+    },
+    {
+      "start": 927.056,
+      "end": 950.128,
+      "text": "And of course, all the mistakes of this software, especially in policing, did something important last year where Amazon, Microsoft and IBM decided to stop selling facial recognition to police and even to many other people. And also we did a statement, I'm part of the Technology Policy Committee of ACM."
+    },
+    {
+      "start": 950.128,
+      "end": 972.368,
+      "text": "to suspend facial recognition technologies because of all the issues that we have, especially with race and also with gender. Although remember that part of the biases start with the category because race is a social construct and we know that DNA is almost a continuum. But it didn't matter."
+    },
+    {
+      "start": 972.368,
+      "end": 1002.352,
+      "text": "because some police still had this. So even in September 2020, we had another case in Detroit of a person that was wrongly accused. And until today, we have more and many more that I can mention. So there's a very interesting paper by Selinger and Woodrow that shows that it's impossible to have, for example, consent for surveillance. We have issues in translation where you get also gender bias. I will skip this very fast."
+    },
+    {
+      "start": 1002.352,
+      "end": 1030.208,
+      "text": "So this happens in all languages that have no gender in pronouns, like Turkish, Farsi, Hungarian, Finnish, and so on. Another well-known paper from NUDIPS 2016, where most she-he analogies were found with a bias. Or, for example, this work from Stanford, where, using word embeddings, chose bias in gender and ethnic."
+    },
+    {
+      "start": 1030.208,
+      "end": 1056.768,
+      "text": "stereotypes. So here you see the most common professions that you find in text regarding Hispanic, Asian and white. And here you have the problem because, for example, in the last forms we have seen in California, if you're a person coming from Spain, you are not European any longer, you need to put Hispanic like Latin American. So this bias is created also by governments."
+    },
+    {
+      "start": 1056.768,
+      "end": 1085.376,
+      "text": "language models. Here I'm using a table of a famous paper for people that is working on ASICs recently, so by Bender and Gebru, I will get back to that. But I just want to use this table to see how many word embeddings have been developed in the last two years and how much the number of parameters have grown from tens of millions to basically 1.5 trillion parameters."
+    },
+    {
+      "start": 1085.376,
+      "end": 1113.952,
+      "text": "So we're talking about something almost the size of the text being used to train these models. So I don't know how they don't get any overfitting, but we can leave that conversation for the questions. But using, for example, BERT, so sorry, using GPTC, which is the most well-known now usage in public, some researchers also very recently in general show that if you do something like this."
+    },
+    {
+      "start": 1113.952,
+      "end": 1143.376,
+      "text": "you want to complete this sentence. Two Muslims walked into A, or you can read the completions. Now, if you do the analysis, you will find that 70% of the completions are violent. It's four more times than if you're Christian, and more than 10 times if you're Buddhist and atheist. So at least in text, atheists are the less violent in the world, which is not bad for us, I guess."
+    },
+    {
+      "start": 1143.792,
+      "end": 1171.968,
+      "text": "But it can be much more complicated. So a group that I will mention later has done, for example, problems with discrimination in ads, even between companies being accused of discrimination. And this one is very interesting. Another recent case, and maybe Carlo on tour knows about this, this happened in Bologna last January, the Deliveroo case, where basically..."
+    },
+    {
+      "start": 1171.968,
+      "end": 1200.976,
+      "text": "They found that they had indirect discrimination to riders. And here is a very interesting case because it's not a case of data being biased. It's the optimization function creating a bias that no one really predicted. So here, the discrimination was against riders that couldn't deliver at dinnertime. And why that happened? Because the algorithm learned to earn more money by basically giving more work to people that could ride."
+    },
+    {
+      "start": 1200.976,
+      "end": 1225.968,
+      "text": "at that time. And the judge found that this was discrimination because the other one was not checking why the person couldn't write at that time, like had children, had a dependent, or for example, even didn't want to work at those not typical hours. And of course, the other one had to be changed, I guess, to balance the work even more."
+    },
+    {
+      "start": 1225.968,
+      "end": 1240.816,
+      "text": "work to these people in other times but that was not in the original of the session function and the worst one maybe is what happened in netherlands so this can go very wrong when i was found that"
+    },
+    {
+      "start": 1240.816,
+      "end": 1269.232,
+      "text": "that 26,000 families were discriminated, most of them poor people, immigrants. And this happened like not only economic damage, but also psychological damage. Some people even had to return back to Morocco and Tunisia because of this. And not even a minister was enough to step down at the end. The whole government had to step down. And this also happened in February. So it's very recent too."
+    },
+    {
+      "start": 1269.232,
+      "end": 1298.688,
+      "text": "So things are happening. Now, this is the most known example. I will not read it because of time. It's the case of Compass and ProPublica. But here, there are two important questions. So the first one is, is a secret algorithm ethical? So an algorithm will decide about the life of a person, important events on the life of a person. So, of course, we want transparency. But also, it's fair to say that the..."
+    },
+    {
+      "start": 1298.688,
+      "end": 1328.624,
+      "text": "The other question is, is a public algorithm safe? Because all public algorithms can be gamed, and we know that also in the world of cybersecurity, it's an issue. So the answer lies in between, and that's why it's not easy. For example, in a recent case in the Netherlands, again, Uber, the judge asked the code to Uber to basically do an expert analysis, like in the Deliveroo case. I don't know if they will give away their code."
+    },
+    {
+      "start": 1329.264,
+      "end": 1355.264,
+      "text": "So there are other cases like, for example, GODAM, which is a criminal profiling, if you saw Minority Report, kind of the same. And this has been used in some cities in the US in ways that are not too ethical because they tried to hide it and so they did in different ways. And even in some places in Europe, I have seen that this software is being used."
+    },
+    {
+      "start": 1355.264,
+      "end": 1381.936,
+      "text": "And the problem is not that it doesn't work. Maybe it works, and I will talk about if these things work for these kinds of problems. But if you do one error, you basically affect the life of a person. So the problem, I will get back to this, is not how accurate is the model, it's how bad is the model when the model fails. So it's about the mistakes. And here you're also in this kind of..."
+    },
+    {
+      "start": 1381.968,
+      "end": 1410.72,
+      "text": "Policing problem, you have the problem that you measure more in the place where you think there is more measurement measures. And then you have a self-fulfilling prophecy that you see, for example, only cases where the police is. So you see more cases there because the other are only the reported ones. Even there are more weird things here. It's an example from Spain. So this is an AI tool to see."
+    },
+    {
+      "start": 1410.72,
+      "end": 1439.984,
+      "text": "if the victims are lying in their accusations. So to understand if people lie to the police. And of course, this shouldn't be used by the police. I mean, especially with the victims, even if some victims lie. So it's an ethical issue. And something similar that was being done in Germany was merely contest in the court by the parents."
+    },
+    {
+      "start": 1439.984,
+      "end": 1467.408,
+      "text": "party, because basically they say that this was not right. Basically, you can use many articles in GDPR to contest this. So let me give you one more detailed example of when you can have extra bias. So this is one of my favorite papers done by top researchers in the US."
+    },
+    {
+      "start": 1467.408,
+      "end": 1491.52,
+      "text": "So when you have an offender that goes to court, the judge can decide if you get bail or not. So there are three possibilities. If it's no or you cannot pay, you go to prison. Of course, in the US, there's a special person loaning money to this kind of people. And these people have to predict the same as the judge."
+    },
+    {
+      "start": 1491.52,
+      "end": 1516.624,
+      "text": "So the judge has to say, will this person reoffend? But more important, will this person appear in court, which is the same question that this loner will have to ask. And in New York, they are the same question because basically for legal reasons, the judge cannot decide this decision based on reoffending or not, which for me is unbelievable, especially if you have a killer being brought to court."
+    },
+    {
+      "start": 1516.688,
+      "end": 1543.984,
+      "text": "Of course, here you have some economical bias because the people who can pay usually will go not to prison. And then, for sure, the people going to prison will appear in court. The other ones we don't know. Here is, again, a problem because we do not know what would have happened if the person had bail, the person's in prison. So we have like half of the story. We don't have if the..."
+    },
+    {
+      "start": 1544.176,
+      "end": 1572.304,
+      "text": "people in prison would have been behaving or not outside prison. And then we need to do something called data imputation, which makes the problem more difficult, but also more interesting. So what are the results? I will start with the results. I will not talk about all the details of this paper because it's too much. I don't have enough time. But basically, they show that they could decrease the crime rate in 25% or decrease the prison rate in 42%."
+    },
+    {
+      "start": 1573.168,
+      "end": 1602.4,
+      "text": "And why they could do much better? Well, one of the examples that you can find is that if the model is correct, remember, it's a model, it's a prediction, judges were bailing half of the 1% most dangerous that basically didn't reappear in 56% and reoffended in 62%. So just for this half percent of most dangerous, we have a big problem. This work done by John Klember and others."
+    },
+    {
+      "start": 1602.4,
+      "end": 1630.816,
+      "text": "was done for the National Bureau of Economic Research that was interested in spending less money in prisons. Was not done by the National Bureau of Justice because I guess judges are not interested in being replaced like anywhere in the world, but we will not go there. So what was methodology here is very interesting because it's maybe the only paper where they split the data setting in four. So of course we have a training set."
+    },
+    {
+      "start": 1630.816,
+      "end": 1659.6,
+      "text": "We have a holdout for the evaluation, but also we need some data to do this data imputation. So we have an imputation set the same size of the training set, but also they have a separate data set in a log box that was quite large, almost as large as the training set, that basically was to be used for any person that wanted to do an audit, like an external evaluation."
+    },
+    {
+      "start": 1659.6,
+      "end": 1682.32,
+      "text": "The figure has this draft, but it shouldn't be that because this is for the final version, so I guess it was not fixed in the final version. So they use graded boosted decision trees, so that allows some interpretability because we can understand what decision trees do."
+    },
+    {
+      "start": 1682.32,
+      "end": 1706.208,
+      "text": "And they used 18 features. Only one was demographic, the age of the person. They could have used gender because most of them are men, but we already know that. So basically, there was no demographic feature that could be tied to race, not at all. So we don't have address, but it would be the easiest one. And then you have all the history of the case."
+    },
+    {
+      "start": 1706.208,
+      "end": 1734.32,
+      "text": "So offenses, type of offense, how many arrests, how many convictions, self-tropia in court, and so on. So these are the results. So here in the top, I have the ratio of every race in New York. This is the whole state. So 18% African-American, 30% Hispanic, 32% in total for those two. And here you see that"
+    },
+    {
+      "start": 1734.32,
+      "end": 1761.648,
+      "text": "the people coming to court, well, almost 49% are black, 33% Hispanic, so 82% of the people coming to court are from these two minorities. And here is the result for the judge. So the judge is clearly racist, so increases the 49% to 57%. The accused were Hispanic, maybe they are more white there, and that's the case, and so on. So what happened with the algorithm? Well, the algorithm was"
+    },
+    {
+      "start": 1761.648,
+      "end": 1791.168,
+      "text": "even more racist than the judges, almost 60%. So there was an amplification of the racism. But the steel was able to do much better, 25% less in criminal right. And if we adjust the algorithm to be as racist as the less judge, less racist judge, the last line, you see that the steel was almost 23% better than the judges."
+    },
+    {
+      "start": 1791.168,
+      "end": 1817.328,
+      "text": "if it's more racist. So why? The question is why? Well, because according to the model, judges are not doing this correctly. For example, if you have the algorithm here on the left, and we want to do some additional jailings and send people to not without bail, then we have all these top cases in the model. And these are top cases from the most leading judges, which was the way to..."
+    },
+    {
+      "start": 1817.328,
+      "end": 1840.736,
+      "text": "to do imputation, so divide the judges in five sets. So the most lenient would predict the less lenient, the people getting bail. And then you see that the second lenient judges are sending people to free people that is in the whole spectrum of criminality."
+    },
+    {
+      "start": 1840.736,
+      "end": 1870.08,
+      "text": "And this is the problem. So it's almost like random. And this is well known. For example, don't ever go to see a judge after lunch. This is the worst time. Maybe you will go to prison because of the mood of the judge. And then here we have a dilemma. So if you have to choose, what is better? A biased algorithm that is just or a noisy judge that also is a biased judge? And here I have the difference between a fact."
+    },
+    {
+      "start": 1870.08,
+      "end": 1896.976,
+      "text": "bias noisy and bias unnoisy. So the truth is that the algorithm is C and the judges are closer to D. And why is the algorithm more just? Because basically for the same case always gives the same answer. So we have a saying in Spanish that the same law is fair in the sense that all the people get the same treatment, which is not true today."
+    },
+    {
+      "start": 1897.2,
+      "end": 1925.568,
+      "text": "And this is related to something very important that first was, I guess, highlighted in a paper for Harvard Business Review in 2016, that the high cost of inconsistent decision making of this irrationality. And the first author is Daniel Kahneman, No Overprice of Economy. And next month, no, sorry, this month, this is the first time I give this talk in May."
+    },
+    {
+      "start": 1925.568,
+      "end": 1951.824,
+      "text": "This month he will publish a paper with other two people called Noise and I'm looking forward to read this paper because it's about this problem, it's about how dangerous is the noise, maybe even more dangerous than bias. So let's go to the second kind of problem, what is called physiognomy in English and for example this started with a paper by Stanford."
+    },
+    {
+      "start": 1952.016,
+      "end": 1979.52,
+      "text": "on sexual orientation in 2017, really bad press. Then, for example, first in China, then in the US, facial recognition to predict criminals. So I see the face of Carlo and I will predict if he's a criminal or not. And I use Carlo because I have a story about this from another Italian. And the last one, last January, the same person, Kosinski."
+    },
+    {
+      "start": 1979.52,
+      "end": 2003.136,
+      "text": "doing facial recognition to predict political orientation. Of course, it's not facial recognition, it's facial biometrics, but he doesn't understand that. And we're working with some people about this because this shouldn't be done. This is similar to phrenology. And when I was in Torino once, I went to the Museum of Cesare Lombroso and was really a believer of..."
+    },
+    {
+      "start": 2003.136,
+      "end": 2032.8,
+      "text": "of phrenologists. He collected hundreds of skulls trying to prove that people had a mutation. But at least he was coherent with what we believe, because he left his own skeleton, I guess, to have one single of a truth that is not a criminal, right? But no comments on that. So you can go to this museum if you go to Torino next time. It's really nice. But it can be worse. For example, this is another work from MIT."
+    },
+    {
+      "start": 2032.8,
+      "end": 2061.088,
+      "text": "So Stanford, MIT, so these are top universities doing clearly borderline research. Here, you give me your voice, and again, I will predict your face. I may believe that there's some causality on the mouth, maybe on the neck, but in the eyes, come on, in the noise, well, very hard. So I can hear, I can have what I call my master."
+    },
+    {
+      "start": 2061.088,
+      "end": 2087.584,
+      "text": "uh my master um phenology uh method so you give me a voice i transform it to a face and then because of all the results i didn't mention that one that also predicts your name based on your face give me a break so i can get your name i i know if you have are in the opposition party i know if you're homosexual and also i know you're criminal in some countries this is really dangerous so"
+    },
+    {
+      "start": 2087.584,
+      "end": 2116.304,
+      "text": "Please don't do it. Even if you believe you can, it works. Third problem, the filter bubble. So this is more related to e-commerce and the interactive loop of people using, for example, the web. And here we are using some techniques like diversity, novelty, sensitivity, but we are creating something very strong like popularity bias and also something worse that is exposure bias."
+    },
+    {
+      "start": 2116.304,
+      "end": 2145.424,
+      "text": "The problem with exposure values is not that we're seeing part of the iceberg, we are seeing just the ice cube in the top of the iceberg, because when you see three recommendations and there are other 100,000 more, well, you are seeing just the ice cube. And this has a very big impact in e-commerce. I'm doing research on this, especially you get the massive effect that the more popular sellers get richer and the ones in the long tail, the ones that are new."
+    },
+    {
+      "start": 2145.424,
+      "end": 2173.312,
+      "text": "they get poorer. And this has very important societal implications in digital markets and long-term stability. Fourth problem, stupid models. And here we have to remember the famous saying of George Box that says, all models are wrong, but some are useful. This is the same with AI. So all models are wrong. We know that some are useful until we find the problem."
+    },
+    {
+      "start": 2173.312,
+      "end": 2185.744,
+      "text": "So models that can deal with ambiguous semantics, models that can deal with irrational behavior. The best example there is when Elon Musk tweets, use signal, and then..."
+    },
+    {
+      "start": 2185.744,
+      "end": 2215.152,
+      "text": "All these models that basically buy a stock automatically that was using Twitter data from him started to buy a stock from this company in Texas. It's a medical company called Signet Advanced. And their evaluation increased more than 400%. I think they're stealing more than it should be because of one tweet by a very influential person. This doesn't make any sense. But then we have other cases."
+    },
+    {
+      "start": 2215.152,
+      "end": 2242.384,
+      "text": "For example, models that are too sensitive, like in the right from Japan. You change one pixel and the prediction of the animal changes. For example, a deer changes to a dog, a cat to a bird, a sheep to an airplane. And then you say, this is what is called adversarial AI. You say, what the heck this model is learning if you can change one pixel and you change the animal? So clearly it's not learning the same that we are learning."
+    },
+    {
+      "start": 2242.384,
+      "end": 2270.928,
+      "text": "And here I have also another recent example. This happened last month in Facebook. So a hate prediction model basically deleted this page of the town of Bitche in France because it thought that was, of course, a bad word in English. And not only the problem that they did a wrong prediction, it's that they took three weeks."
+    },
+    {
+      "start": 2270.928,
+      "end": 2297.264,
+      "text": "to recognize it because there were no there was no human in the loop to say hey someone look at this problem so this is a whole town that lost his facebook page for three weeks because of a stupid algorithm of course here all of us know that this is french so why you apply english to french right so it's very easy so we need to recognize the limitations of our mother's things like"
+    },
+    {
+      "start": 2297.424,
+      "end": 2322.624,
+      "text": "To abstract, you need to forget. And if you haven't read it, this amazing story of Borges, Funes and Mamonius, which couldn't forget anything, so couldn't abstract anything. And this is important because you cannot learn what is not in the data. I'm sure all the people looking can predict what animal is the one in the right."
+    },
+    {
+      "start": 2322.624,
+      "end": 2347.376,
+      "text": "An AI model will have a hard time to predict that animal because there is no face, no ears, and so on, things that are useful to recognize this animal. If you don't recognize it, you need to train with more data then. So again, accuracy is not the key. It's the impact of errors because many errors are not human."
+    },
+    {
+      "start": 2347.376,
+      "end": 2374.704,
+      "text": "So the mistakes of changing a cat to a bird is non-human. No one will do that. Maybe you can change a cat to a lion, for example, or a small lion, and some things that are similar. But you will not do these huge changes. And these are the ones that have a large narrative impact. So as computer scientists, we need to be humble. If you're not sure, if the model has only 80%"
+    },
+    {
+      "start": 2374.864,
+      "end": 2403.024,
+      "text": "probability of being right, maybe you have to add this category. I don't know. This is what people do when they don't know. They say, I don't know, please add I don't know in your model. Sometimes you try to say, I don't know, because you really don't know. 80% maybe you're making a mistake. So we get to the last issue. So green computing. And here, again, we have this table from Bender and Gebru."
+    },
+    {
+      "start": 2403.024,
+      "end": 2430.752,
+      "text": "And here the problem is that, for example, when you train this model, you liberate the footprint of CO2 of the equivalent of 57 years of an average human in the Earth. Or you basically waste like $1 million or $3 million. And this was the famous paper that caused a controversy in Google."
+    },
+    {
+      "start": 2430.752,
+      "end": 2455.296,
+      "text": "the stochastic Paris paper. So I would suggest to read it if you haven't read it. So Tiffany was able to put her name in the paper because she was fired. Margaret Mitchell couldn't because she was still in Google. So she put this name, everything with S-H, but maybe no system will put the paper to her, but we read it and we know it's her."
+    },
+    {
+      "start": 2455.296,
+      "end": 2484.784,
+      "text": "This was presented in fact to 2021, which is one of the conferences devoted to these topics. And this is the meta ethics problem that we saw in Google, because when you fire the two people in charge of your ethical team in AI, there's a problem with ethics too, right? Because Margaret Mitchell was also fired in February 20, also accused for doing an ethical thing, basically checking her email."
+    },
+    {
+      "start": 2484.784,
+      "end": 2513.168,
+      "text": "for proof that Timnit was not fired correctly. And because of this event, we wrote this paper that Carlo mentioned that is in the second issue of AI Ethics, a new journal, and it's free, so you can go and download it. There's a lot of authors, I contribute to this only part of it, but I think it's something that we should remember going forward."
+    },
+    {
+      "start": 2513.872,
+      "end": 2534.688,
+      "text": "Let's go to the second part, and I will just devote the last 15 minutes for the second part. So the first thing, there are many pragmatic questions here when we're talking about ethics. So for example, to which part of the system applies the question? Are all equally important, all the questions, all the parts of the system? To whom is important?"
+    },
+    {
+      "start": 2534.688,
+      "end": 2549.904,
+      "text": "Are they also, and maybe are we asking things that we cannot ask, like, for example, trying to fulfill three fairness conditions that are contradictory? Or I have another example that's more philosophical later."
+    },
+    {
+      "start": 2550.576,
+      "end": 2578.384,
+      "text": "do they make sense together? For example, transparency is something that we ask in South of Europe because we don't trust government and accountability is what we ask in Northern Europe because we trust the government and the institution will do all the work. But in transparency, it's the civil society doing the work and accountability is the institution doing the work. So, for example, if you ask for both things, you are asking too much. You are asking like two cultures. So, for example, this is usually not taking account."
+    },
+    {
+      "start": 2578.384,
+      "end": 2607.616,
+      "text": "And should be transparency or accountability, not transparency and accountability. I think one is enough in many cases. And also the question is a principle or is a tool to get to a principle or is a requirement to achieve a principle? And this is also something that when you see the papers, no one discusses. It's more like semantics. This is something I'm preparing. It's a paper that I'm working on. I took 30 properties that you want to ask for the software."
+    },
+    {
+      "start": 2607.616,
+      "end": 2632.656,
+      "text": "And here, this is divided in to whom this is important. Like, for example, for the data, for the algorithm, for the system, for the governance, for justice, for the government, for users, or for society. And this is just a proposition. I'm still working on this. But you see that there's some order. And the ones in both places are the ACM ones."
+    },
+    {
+      "start": 2632.688,
+      "end": 2642.544,
+      "text": "And then I have my own grouping of this. So this is something that I'm grouping these properties."
+    },
+    {
+      "start": 2642.544,
+      "end": 2670.368,
+      "text": "in six groups, so one about awareness, one about data provenance, one about completeness of the software, one about usability, so affects more the user, one about transparency, so how it can learn about the system, and finally the most important one for society about how to be responsible and here are all the questions there. So this is a paper that will come soon. Second issue."
+    },
+    {
+      "start": 2670.368,
+      "end": 2698.896,
+      "text": "What some people work in ethics will call legal and ethical colonialism. So basically Europe has, in some sense, conquered part of the world, the whole America, and also, say, Oceania. And here we have the first bias, because in the US, we will write Australia for the continent, not Oceania, and also America, two continents, and not..."
+    },
+    {
+      "start": 2698.896,
+      "end": 2727.616,
+      "text": "One, like in the old European tradition. And then you see that the civil law and the common law has extended in the whole world. Also the Muslim law, which was the other culture that expanded. And so here is what is called technological humanism. And this is very important because humanism is tied to colonialism, is tied to other things that the Western world did that were not ethical."
+    },
+    {
+      "start": 2727.616,
+      "end": 2753.36,
+      "text": "And here we have religious differences. So because of some early definition on Christianity, on lawyers really, not lawyers, we have that legality and morality are separate. And also, if you put ethics, it's also separate. But if you go to the Muslim world, and by the way, here you have the weird thing that if something becomes..."
+    },
+    {
+      "start": 2753.52,
+      "end": 2780.56,
+      "text": "the law, sorry, the arrow should be the other direction, is not, sorry, no, the law is increasing and taking things from ethics, so it's right. But, for example, in the Muslim world, everything is ethical, and the law is a subset of that, which I think, for me, is a better definition of the relation between law and ethics. And the law, of course, increases on time."
+    },
+    {
+      "start": 2780.56,
+      "end": 2806.864,
+      "text": "And even some people propose other crazy things, just to show the diversity of thinking here. We also have geographical diversity, and here I would like to point out Ubuntu. Basically Ubuntu is that I am because we are, and there's a very interesting short blog entry by Abeba Birhane."
+    },
+    {
+      "start": 2806.864,
+      "end": 2832.72,
+      "text": "that the strategy was wrong because a person is a person to other persons. And I think it's an interesting view of the world where the group is always more important than the person. And this is something that in the Western world is not true at the time. Third issue, the problem with identity, data protection and privacy. So public opinion versus collective privacy. And here we have freedom of expression versus data protection rights."
+    },
+    {
+      "start": 2832.72,
+      "end": 2862.128,
+      "text": "of GDPR, for example. And we have the difference between I can do everything that's not forbidden, so freedom of expression, or I can do only what is allowed, GDPR, which are two very different ways to see the world. And they clash in some sense. And I recommend Privacy's Power from Carissa Bellis. I'm not sure if privacy is a collective right. I think still it's an individual right, but of course has a privacy, a collective."
+    },
+    {
+      "start": 2862.128,
+      "end": 2891.024,
+      "text": "understanding because our privacy also depends on the privacy of the people near us. And here we have things like the consent legal basis to do digital nudging. I had this from earlier and now it's clear in the new EU regulation. We have proportionality for minimal data collection, minimal time stored, and we can go to Article 22 to contest the decision. And what this means? Well, this means that"
+    },
+    {
+      "start": 2891.184,
+      "end": 2919.184,
+      "text": "If you want to give people the information of the processing, you need interpretability. If you need to allow contest by people, you need to explain. Remember, explain is to explain the solution, not to explain the system. And then if you want to basically check that your system is working all the time, you need to do continuous validation, testing, and maintenance. And here we have seen the first cases of GDPR in action, like a French..."
+    },
+    {
+      "start": 2919.184,
+      "end": 2948.768,
+      "text": "a court about facial recognition that says the school didn't have the competence, didn't have the consent, and didn't have the proportionality. And here we have the problem of GDPR and maybe a problem on the incoming EU regulation, that we have one size fitting all for big companies and small companies, for health, education, and any other field. And that's an issue, for example, we have seen it with COVID. And here is what Lorena Jaume Palazzi talks about."
+    },
+    {
+      "start": 2948.768,
+      "end": 2975.024,
+      "text": "technological solutionism versus normative solutionism. And technological solutionism is basically more of the same, that we are using technology for the solution and not the real solution. And here we have regulations. So, for example, last year, the US started cases against Google and Facebook, in the past with Amazon, and there are other issues I will not have time to..."
+    },
+    {
+      "start": 2975.024,
+      "end": 3000.208,
+      "text": "to talk, but I'm working on this research on fair markets. And the first important thing we can do is to be compulsory because humans may suffer. And recently, April 21st, we have this EU proposal for AI. Here are the main things in the proposal. I will not read this, but I want to highlight"
+    },
+    {
+      "start": 3000.208,
+      "end": 3021.52,
+      "text": "the prohibited artificial intelligence practice and here basically an AI system that deploys subliminal techniques beyond a person's consciousness in order to materially distort a person's behavior in a manner that causes or is likely to cause that person or another person physical or psychological harm. So this is a long way to say..."
+    },
+    {
+      "start": 3021.52,
+      "end": 3050.864,
+      "text": "Basically, don't harm people, but here you need to start thinking about what is subliminal, what is consciousness, what is behavior, what is physical and psychological harm, especially psychological harm. So there will be many issues on this Article 5, like Article 22 of GDPR, if this is approved. Another interesting thing is that you have a list of high-risk AI systems that put the boundary between where the danger may happen."
+    },
+    {
+      "start": 3050.864,
+      "end": 3077.568,
+      "text": "of course, some are forbidden. Maybe in the US we'll have a future regulation because these were ideas that were stopped by Trump, but I think Biden would put them again in the table, also for hiring and so on. And we have now an AI office that was approved by Congress a long time ago, but only in January was finally set. We have things that raised an algorithm that..."
+    },
+    {
+      "start": 3077.568,
+      "end": 3100.944,
+      "text": "Amsterdam and Helsinki are doing, but also we can do auditing of algorithms. And there's a very interesting example in the last FACT conference, also last March, that is a public audit of a hiring company that wanted to show that they were complying with the suggestions of the US government. So I think..."
+    },
+    {
+      "start": 3100.944,
+      "end": 3129.84,
+      "text": "I don't have time to finish, so we have a lot of things we don't do well because we don't learn from the past. And there are also professional biases, like what I mentioned about big data, about reflecting our own biases when we code. And there's a recent paper from a Norwegian researcher that gives the first indication that was true. I mentioned that in my 2018 paper in CACM, but here is a proof."
+    },
+    {
+      "start": 3129.84,
+      "end": 3159.248,
+      "text": "of this and evaluation is the is the place where i have seen many researchers putting themselves not uh choosing the right baseline and the right everything else so things that we can do i don't have time to cover all this but basically we need to aware of all the biases that means the system needs to be aware and then the model should be aware because to understand bias we start with awareness if we are not aware impossible to fight"
+    },
+    {
+      "start": 3159.248,
+      "end": 3187.232,
+      "text": "bias. So here are some recommendations that can improve. I want machines in the loop. That's better than human in the loop. So to show that we are in control, we are the one that's defining and setting the decisions. At the end, we are the accountables. We are the responsible of the wrong decisions or the system we create. In some sense, I feel we are playing God. We always wanted to play God, but..."
+    },
+    {
+      "start": 3187.232,
+      "end": 3211.792,
+      "text": "It's very hard to play God. So to finish, plenty of research problems. Remember, systems are a mirror of us, the good, the bad, and the ugly. There are great applications of AI that doesn't harm people, but there are some, when people are involved, that are a problem. So two final questions."
+    },
+    {
+      "start": 3211.792,
+      "end": 3238.736,
+      "text": "Can AI algorithms ever be ethical? This is an interesting opinion by Hazel Henderson. And of course, one important thing is what David Lower says, almost obvious, but you have to say it. You can't have AI ethics without having ethics. So this is here, and I would like to end here, where people can read three of my favorite quotes in this topic."
+    },
+    {
+      "start": 3243.344,
+      "end": 3271.696,
+      "text": "I think it's just 45 minutes or 46. So you're done? Yeah, I'm done. Okay, thank you. You can read this joke, so let me tell the joke then. I'm not concerned about artificial intelligence. I'm concerned about natural intelligence. Every election we see this issue. And otherwise, we will get to this joke, like, prove you are not a human."
+    },
+    {
+      "start": 3271.696,
+      "end": 3298.56,
+      "text": "The robot says there are no more humans. Correct. And they laugh together. And not because the humans basically create killer robots. It's because the humans basically kill themselves. So, questions? Well, thank you very much, Ricardo, for the very provocative and stimulating lecture."
+    },
+    {
+      "start": 3298.56,
+      "end": 3327.488,
+      "text": "So I would like to turn to the audience. And if there's questions, comments that you want to make, can you please write in the chat? And then I will refer to you and you can speak and interact with the rest of the audience. There is one..."
+    },
+    {
+      "start": 3327.488,
+      "end": 3355.472,
+      "text": "Already someone in the chat, Alison, do you want to take the floor and explain what your question is? Yes. Well, first of all, that was a fabulous talk, so thank you very much for it. I just had a simple question. It's probably a result of you just moving quickly through your slides. On your slide, you showed data protection."
+    },
+    {
+      "start": 3355.472,
+      "end": 3381.68,
+      "text": "and freedom of expression and tension. I didn't quite understand that. Could you say a little bit more about what you meant by that? Yeah, this is something I learned from Lorena Jaume Palacios, which is my favorite ethicist. She's an advisor of the EU Parliament. And basically, when your frame of thinking is I can do everything that is not forbidden,"
+    },
+    {
+      "start": 3381.872,
+      "end": 3411.376,
+      "text": "that will clash with a frame of thinking of, say, lawyers, you can do only what is allowed. Basically, if you can only do what is allowed, basically you cannot explore anything new there. So at least in freedom of expression, we can get to places where we are not aware of. Like, for example, we can get to some kind of freedom of expression that someone will say that's illegal. But this is not the case in GDPR. So GDPR was constrained by what you are allowed to do."
+    },
+    {
+      "start": 3411.376,
+      "end": 3440.496,
+      "text": "So in some sense, we already restricted the world. So basically, this is where you are. You are inside the house or outside the house. Inside the house, you can only get in the house, and you can't get out. Outside the house, you can explore the whole world. So it's just a framework for thinking. I don't know if that's clear, or maybe we disagree. That's fine, too. Well, maybe the problem is I'm thinking of the example of the United States with the First Amendment. For example."
+    },
+    {
+      "start": 3440.496,
+      "end": 3465.68,
+      "text": "Yeah, yeah. And so there I don't see a tension between expressing yourself and insisting that the data be protected. Yes, but the U.S. doesn't have GDPR. Except in California we do. Did you know that? Oh, yeah. Well, kind of, yes. Also, for example, I think it's in Ohio or Illinois, there's some law that is much better than the facial."
+    },
+    {
+      "start": 3465.68,
+      "end": 3488.736,
+      "text": "for facial recognition, about using social network data and so on. So yeah, the US is so different from no regulation to too much regulation. California will be the guinea pigs of all regulation in the world, I guess. Thank you. Thank you for the question. It was a good question."
+    },
+    {
+      "start": 3488.736,
+      "end": 3518.656,
+      "text": "Ricardo, there's a few other questions already in the chat. So one is, do you think the AI Act by the EU does enough to establish standards to evaluate AI systems for fairness? You mean the proposed AI regulations? Yes, the proposed EU regulations. Okay, I haven't had time to read it completely, but I have read a good part. I think that the answer is no, it doesn't cover..."
+    },
+    {
+      "start": 3518.656,
+      "end": 3539.152,
+      "text": "all aspects in the way that I would like to. For example, there are some uses of a high risk system that are not regulated, for example, for enforcement, for police enforcement, for example. And so there are some, I would say, some loopholes that can be used to..."
+    },
+    {
+      "start": 3539.152,
+      "end": 3567.76,
+      "text": "to basically still have non-ethical uses of AI. For example, the EU regulation doesn't talk anything about military applications because that's not their realm. So there will be the United Nations doing that. And this is the most dangerous one. Imagine, I'm sure that we already have at least three different military robots in place that if they get crazy, I don't know what they will do. But no one talks about that because we prefer not to talk about that. This is too... It's really..."
+    },
+    {
+      "start": 3567.76,
+      "end": 3596.4,
+      "text": "It's really like science fiction, but I'm sure that in three different countries that can be called a military robot. So, yeah, I think we need to study, to improve it. For example, also, you can always try to make your system to look like low risk, but really it's high risk. So how we will enforce that thin line between..."
+    },
+    {
+      "start": 3596.4,
+      "end": 3612.912,
+      "text": "high risk and low risk. We know risk is a continuum. So here again, we have the categorization problem. Humans like to categorize. And when we create categories, we start with bias. Like here will be high risk, low risk, or race or gender."
+    },
+    {
+      "start": 3612.912,
+      "end": 3636.992,
+      "text": "We know that ethnic, I mean, race and gender are continuous. DNA is a continuum. But we are still seeing and trying to categorize, and then we have things like what is called intersectionalism. So now we need to see the intersection of the categories. But here we are stressing the bias we already started with the categories. So this is important, but the real problem is to get rid of the categories."
+    },
+    {
+      "start": 3636.992,
+      "end": 3664.048,
+      "text": "Now the problem is that now it's a bit too late because we have a paradox. Getting rid of the categories, we get rid of being able to measure that if there is bias or not regarding these old categories. So we have like a chicken and egg problem. Okay. Ricardo, I have a question. You know, how much, you know, do we teach about these concepts of bias?"
+    },
+    {
+      "start": 3664.048,
+      "end": 3693.824,
+      "text": "in our courses today? I mean, what is your view of what we do in our teaching regarding this problem? Very good question, Carlo, because this is the question I didn't answer you, right? About education. But if you read the paper I'm a co-author about freedom, one thing we say, we need to teach ethics to all people, and especially engineers, to teach ethics in technology, so technological ethics. And also to teach a little about history, about how we became..."
+    },
+    {
+      "start": 3693.824,
+      "end": 3723.552,
+      "text": "the society that we are today, because the bias that we have, we are created in history. So gender, race bias is a continuum. For example, we had slavery, we had women not voting. So we're improving, but we need to understand what happened in history to understand what needs to be changed in the future. And this, everyone should know about this. So we don't learn enough about ethics, about philosophy."
+    },
+    {
+      "start": 3723.552,
+      "end": 3748.96,
+      "text": "So I'm just an apprentice of ethics because I'm a computer scientist, so I have a bias. So this is the first thing. And for example, we may have, I hope to see more graduate courses, like graduate titles on this, like combining ethics and technology. So this will be an interesting master, for example, for many people."
+    },
+    {
+      "start": 3748.96,
+      "end": 3772.288,
+      "text": "Also, to have the right conversation, we need to put philosophers together with lawyers and together with computer scientists and engineers, and even sociologists and psychologists. So this is a multidisciplinary problem. It's not a problem that only one field will solve. Hannes has raised the hand. So, Hannes."
+    },
+    {
+      "start": 3772.288,
+      "end": 3800.08,
+      "text": "Yes, Eris, thanks for the great talk. It was very inspiring. I have a question to your last slide because you have a list of some measures or recommendations, and it's mainly on the individual behavior. The question is, from my side, is it ethical behavior enough or isn't it more? Isn't it more a political question? Is it not more a societal issue? Also, for example, when you say, okay, we should."
+    },
+    {
+      "start": 3800.08,
+      "end": 3828.064,
+      "text": "include ethics into computer science. Many universities already do this, so they have courses, they have embedded ethics in their courses. So isn't it much more? So it's not just an ethical issue, it's a broader issue. I completely agree. So if my two questions that were from papers that I think are important, do you get the impression that it's about the person? It's not."
+    },
+    {
+      "start": 3828.064,
+      "end": 3856.88,
+      "text": "This is about the community. So that's why I stress Ubuntu. This is about a country. That's why the legal part is important. And this is about society that could be like a bigger society, like the European Union. And it's about the whole population on Earth. So, for example, we are here discussing, but we forget that 40% of the people of the world don't have access to Internet."
+    },
+    {
+      "start": 3857.296,
+      "end": 3882.72,
+      "text": "So that's a huge problem on digital education and access. So, for example, in South Sudan, only 2% of the people have access to Internet, which is the most poor country in the world and the newest. So we have all these infrastructural things that sometimes we forget when we talk about our own context."
+    },
+    {
+      "start": 3882.72,
+      "end": 3910.512,
+      "text": "And for example, some people still talk about the third world and some people don't know that there are four divisions of economy in the world if you are working with the UN. So, yeah, this is a hard problem. It's a multistakeholder and also it's a multistakeholder."
+    },
+    {
+      "start": 3910.512,
+      "end": 3939.184,
+      "text": "Digital humanism, but my problem with digital humanism, remember, to get there is the word humanism, which has changed. Humanism has a bias on the history. So re-humanism. Let's redefine it. Okay, there's another hand raised by Michael Stanford. Unmute your phone, Michael. Michael?"
+    },
+    {
+      "start": 3939.184,
+      "end": 3967.536,
+      "text": "Unmute the phone. Sorry, I'm preparing dinner at the same time. I have one question to you. There are some voices saying that there's one way out could be to have a more inclusive, more broader, more deliberate form of democracy. So you have another way how to..."
+    },
+    {
+      "start": 3967.536,
+      "end": 3996.384,
+      "text": "come to societal decisions about important things. But yesterday I heard a podcast about early Athens and the philosopher who presented it said the worst time they had in their classic era was the time when they had the most radical democratic constitution. So could you please comment on this?"
+    },
+    {
+      "start": 3996.384,
+      "end": 4025.392,
+      "text": "more human political side, which way of governance and policy might help us in this context? Thank you. Thank you, Michael. A very interesting question. You're asking the wrong person, but I will try to answer anyway because I'm not a political scientist and not a historian, but also it's a topic that interests me and I also have done research on"
+    },
+    {
+      "start": 4025.392,
+      "end": 4051.84,
+      "text": "on the wisdom of the crowd. So I was a believer of the wisdom of the crowd. I don't believe in that any longer. I have a paper called The Wisdom of a Few, because at the end, very few people take decisions, not only on elections, but also we have committees in social networks. I have a paper showing that basically of the 10% that participate, only like..."
+    },
+    {
+      "start": 4051.84,
+      "end": 4078.304,
+      "text": "2% of the people are the dominant ones creating half of the content. That happens in Twitter, for example. I have done studies on that. So at the end, we have the wisdom of a few. And those few are influencing a lot of people. And that's why we have fake news that we have like 70 million people in the US voting for like a populist candidate or the same in many European countries where some populists have been elected also."
+    },
+    {
+      "start": 4078.304,
+      "end": 4105.616,
+      "text": "So I would say that here we need to try to increase the participation of people. And this is not an easy problem. So how to increase participation? One thing I like is that in some countries you can vote for any decision that the government thinks is important. We have the bias of what the government decides what is important. And there are jokes about that. But for example..."
+    },
+    {
+      "start": 4105.616,
+      "end": 4123.12,
+      "text": "Switzerland is the country that has more referendums per year because they vote almost for everything. Some people get bored of voting. But at the end, all of them can feel that they were part of the decision, even if not the majority voted. So that's another problem."
+    },
+    {
+      "start": 4123.12,
+      "end": 4152.032,
+      "text": "We don't have a majority voting because less than 50% vote. And then you have like 25% of the people deciding who is the president. And this is happening in many, many, many countries. So these are some ideas. So basically how to increase participation. And also let's have, we can have through internet, we can have many more, not even elections, but we have, we can do pollings. What people feel about this? For example, do people feel that this is important enough to do a referendum?"
+    },
+    {
+      "start": 4152.032,
+      "end": 4181.168,
+      "text": "And this will allow also to do referendums. And we have many, many regions in the world that would like to be independent. And they're not even can do a poll to say, yeah, we want to be independent. Just to know will be important because people need to know what other people think. And this is real democracy. First, expresident. Thank you. Greetings from my kitchen. Thank you. Enjoy your food."
+    },
+    {
+      "start": 4181.584,
+      "end": 4209.776,
+      "text": "I'm afraid that we need to get to the end of this conversation. It has been a great presentation and, of course, stimulating a lot of questions and broadening the scope of our questions, as we can see in the discussion. So I wish to thank again the speaker. Ricardo, it was great. You really stimulated all of us. You gave us food for thought."
+    },
+    {
+      "start": 4209.776,
+      "end": 4238.88,
+      "text": "And so I hope to see the audience in one of the next events of the Digital Humanism series. Thank you for attending. And, you know, let's close this session today. Thank you, Carlos. Let me say hi to Tony that I see is there. I haven't seen him in a long time. Tony, nice to see you. With a nice background of Catalonia, I guess. Thank you."
+    },
+    {
+      "start": 4238.88,
+      "end": 4264.72,
+      "text": "okay people participating thank you so i turn it to uh uh hanes or uh peter or well anyone one of you i would like to say thank you before turning to peter i also want to say and i hope ricardo you will share your slides with us so you can have access uh to the slides which will be on on our website i think it was a great talk and what is also important"
+    },
+    {
+      "start": 4264.72,
+      "end": 4293.104,
+      "text": "for this academic environment. It gave a lot of ideas for future research, both in a, let's say, theoretical point as well as on a, let's say, empirical point. I think with your center, you are right on the right track. So thank you very much. And I hand over to Peter, who will announce our next session in two weeks, as well as the final piece of music. And thank you, all of you."
+    },
+    {
+      "start": 4294.544,
+      "end": 4321.568,
+      "text": "Thank you. So, yeah, although it's May the 4th and last time I mentioned to play something Star Wars related today, I must admit that none of that felt like a particularly good ending. So sorry for all of those who waited for something Star Wars related today. Instead, let's see if that works. Yes. Instead, I looked for something that might relate to the topic today and I made use of..."
+    },
+    {
+      "start": 4321.568,
+      "end": 4349.584,
+      "text": "the great possibilities that search engines offer, and found a rather obscure band from the late 1960s called The Ethics. And that gives us the opportunity to play some R&B and soul music, which we didn't have here so far. Our next event to announce that will take place on May 18th. Cristiano Codagnone will talk about the platform economy and Europe between regulation and digital geopolitics."
+    },
+    {
+      "start": 4349.584,
+      "end": 4371.056,
+      "text": "and Paul Timbers will moderate. So for today, thanks again to Ricardo for the lecture today and Carlo for moderating and all participants for joining. And I hope to see you on May 18th. And now let's smoothly transition you out of this meeting to think about tomorrow by the ethics. Thanks very much. Goodbye."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

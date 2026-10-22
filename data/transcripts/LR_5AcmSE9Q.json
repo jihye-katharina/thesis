@@ -1,0 +1,676 @@
+{
+  "video_id": "LR_5AcmSE9Q",
+  "source": "whisper",
+  "language": "en",
+  "text": "Welcome everybody to our lecture today in our digital humanism lecture series. I will only super briefly. introduce our moderator, who will then introduce the speaker. I'm very glad that George Metakidis agreed to moderate today's lecture. Most of you know him, so George, if you don't mind, I will be very brief. He's a logician by training. He has been at MIT, Cornell, and Rochester University, then went back to Greece as chair of logic at the University of Patras. But I think most prominently he has been in the European Union in several positions. In particular, he was the director of the ESPRI program. And without further ado, I hand over to you, George. Thank you, Stefan. And hello, everybody, and welcome to this lecture. and whose title is International Data Transfer from a European Perspective. And there's a subtitle that says Legal and Technical Aspects of EU Digital Sovereignty. And EU Digital Sovereignty has been a hot topic, but it's getting hotter and hotter as the Atlantic is getting deeper and wider. There are many dimensions to this topic, and we're very lucky to have with us today Christoph Choll, who, as he describes himself, is a human rights activist, engineer, and lawyer. And I looked at his CV, and he has the training for all three of these, which is remarkable and most suitable for addressing this complex issue. He is a member of many organizations that I saw he has listed in his first slide, so I will not go through them. Let me just tell you that he is talking to us, and this is symbolically significant, from Max Schrem's office. Max Schrem is the one who was very instrumental in... bringing down the first two kind of dreams of European data sovereignty. The first one had started when I was still in Brussels for my sims, and that was the, what was it called, the safe harbor. And it turned out after Max's efforts that the harbor was a cove of pirates, data pirates, and it was not safe at all. And then this was quickly replaced by the Privacy Shield. And again, with the initiative taken by Max Rems and his organization, of which Christoph is a member, which is called NOIB. And NOIB stands for None of Your Business. It turned out that the Privacy Shield looked... More like Swiss cheese rather than a real shield. So that went down the drain. And I will not steal Christoph's thunder, but there's a third replacement now, which I predict will go down the drain as well. In fact, I'm convinced of that. Let me just add two things, and then I'll give the floor to Christoph. One is, for those of you not familiar with... eurospeak and sort of the bureaucratic classifications, the difference between a directive and an act is that an act is a regulation and it has the direct legal effect. It's effective immediately, while a directive has first to be transcribed into national legislation. So with this exciting remark, Christoph, the floor is yours. Yeah, thank you very much, George. Thank you, everybody, for inviting me to the lecture. I love contributing to the Digital Humanism Initiative. I myself, coming from my background, trained as a human rights lawyer, particularly due to my background as an ICT engineer. path found together. But in my heart, I'm a full human rights lawyer. So not just on data protection, but on all human rights and all inseparable and universal human rights. It is not a coincidence that I'm sitting in Max Schrem's office when I was working still as a young human rights lawyer at the Ludwig Boltzmann Institute of Human Rights. At the same time that Max Schlem started to sue Facebook back then as a law student still. First of all, we met at Vienna University. He was part of my team. I was postdoc at this time, responsible for an FP7 project work package. And he was a student assistant in the same project. And while he was viewing Facebook, I started to write the Austrian mass complaint against data retention directive. Some of you might remember that the European Court of Justice in 2014 decided to rule out to bring down the so-called data retention directive, the mass surveillance program of Europe in the follow up of 9-11 and others. And I was the first complainant and author of this Austrian mass complaint, which then together with two other Austrian cases, with one other Austrian case and the Digital Rights Ireland case, was decided on European Court of Justice there. That led to in 2017, while in my full time job, I was already meanwhile. self-employed and having founded research institutes the digital human rights center at the same time max was building on making the thing he did scalable, right? So inviting more people to participate to also, if it was clear to do more against like big opponents, then it was clear he cannot do that alone. So in 2017, we founded Neub at the kind of first half year, it was really just the two of us. And then the third member and board member was Petra Leupold from the Austrian Consumers Organization, VKI, an extremely good lawyer in litigation, in also collective redress and so on. And we found the board of Neub, and meanwhile it was growing also in numbers. Today is a very nice day because today my team from Research Institute, about 15 colleagues, meets the whole team of NOIP, which is about the same, like almost 20 people. And afterwards, I'm going to party with both the teams. So I'm already in good mood for this lecture. So I thank you very much, George, for the introduction there right away into the. into the topic. I will skip, not to tell too much about, just very briefly, Research Institute is a, we do consulting and research. It's about 60%, 65% research, Horizon Europe mainly. And the rest we do consulting like, for example, data protection impact assessment on ID Austria, on the Austrian EID transposition and stuff like that, right? Or the Austrian Red Cross or Amnesty International are our customers. So we have a reputation to lose. We can only work with those who actually mean to try to be really compliant with data protection. I want to go right away inside what I want to tell you today and have a build up for discussion then in the rest, in the second half of our lecture today. is really to see the European approach, not only theoretical and what these terms mean on paper. I want to have also a look today at things that are still new, even though already in force. So I want to have a brief outlook on the AI Act as well and elements from there, particularly also the so-called fundamental rights impact assessment out of Article 27 AI Act. But first. Let's get some base and go back to the idea of where this development in data protection, this Schrems 1, Schrems 2 decision, as George initiated with the safe harbor that wasn't that safe, maybe, where this is coming from and why do we still talk about the very same arguments there? We have European fundamental rights. As an export article, we talk in many fields already also of the so-called Brussels effect. And so we have both directions. We want to really discuss this in the end of to what extent this is an inhibitor or rather a catalyst for innovation. and to what extent EU regulation is under pressure there, because it is actually a try to claim sovereignty in a political sense in a globalized digital world. It's not only sovereignty in a very... technical sense of having actually technical control of data information. It is also an approach where we try to sell, to be sovereign in the values that European Union as a political union, particularly with fundamental rights, is setting there. So if we look about all this legislation, we have just of the last couple of years 17 legal acts. Some of them are directives that need, as George already mentioned, some transposition in national law. Some others are regulations or acts that do not need any position. We are talking here, starting with GDPR, General Data Protection Regulation, as the strongest and most famous instrument of them since 2018. We talk about information security, NIST 2, DORA and so on, AI regulation with AI Act, also product liability. We talk about possibilities of data governance and so on. We talk also about regulation of the Digital Markets, Digital Services Act. And they have in common Two approaches. One is the so-called risk-based approach, right? So that we steer of how much effort has to be put, how much effort for safeguarding or compensating for mitigating these risks is depending on the amount of risk and the kind of risk that we face. And on the other hand, and this is, I think, the most important one, is the so-called human rights. based approach. Because these risks, I mean, risks you can see from different kind of perspectives, right? If you talk about merely information security approach or aspect, you may maybe talk about risk from the perspective of an organization, of a company, right? When we talk about a risk-based and human rights-based approach, that means as particularly GDPR stipulates in the very beginning, when it's unfolding its scope, it says it's about the protection. Of the rights and freedoms of natural persons. And these are, of course, particularly the human rights, the fundamental rights. Also, of course, other rights, also the so-called fundamental freedoms of the European Union. Of course, they are also in scope. But this is important to say it's a human centered approach to. these kind of regulations there. So we have particularly in the field of security, cybersecurity, also a new approach considering a larger view. Not only, I mean, it came also from the field of so-called critical infrastructures, but we go much beyond that. And we ask also there in cybersecurity laws like NIST 2 or the Critical Entity Resilience Directive or the Digital Operational Resilience Act for the financial sector, the Network and Information Security Regulation. We ask, and the law is aiming for, what's the impact on society? What's the societal function of these services? What's their meaning of a functioning society? And on that, based on that risks, we have to act, we have to build reserves, we have to build resilience. So if we just see cybersecurity, if we talk about digital sovereignty and cyber sovereignty, this is a part of there. We have at the moment NIST 2, Network Information Security Directive. We have for the physical side of that, the third directive, DORA, as I said, for the financial sector, which is interesting. Many have called it already NIST. three so that's the level where we all should get which is very interesting because this financial regulation of cyber resilience has to assess or has a duty to assess also for EU Commission, the so-called concentration risks. So there are build up for all the financial sectors, which are the critical vendors, the so-called supply chain management there. These ICT third parties have to be not only documented very well, but they have to be assessed on where we see critical masses where we see if one vendor, if one supplier breaks down, what's happening to all the system, which is remarkable. That's the first time, even not horizontal on all parts, but at least for the financial sector, this is already into force. This is already being done as we are talking. We have a Cyber Resilience Act giving more power, giving more normative power. I will come to that also to ENISA, to European Organization for Net and Information Security. This will be also interesting because we see that in the so-called Internet of Things with Cyber Resilience Act, we will have new product security certifications. We will have CE. certifications that are mandatory. Some of them have to be still enacted, some of these certification themes, but they mean mainly about product security, right? This is about coming from machine security and protecting humans. Cyber Solidarity Act, also interesting, I won't go into any details as the CSA giving a lot of power to ENISA. What we have to see is that cybersecurity or information security on one hand And on the other hand, data protection are siblings. They are inseparable. They have a lot of cross-cutting, especially every personal related data is in the scope of information security already by law because they have to be protected by law. So information security have to grab them. We know the classical security goals that we share. confidentiality, integrity, availability, so-called CIA triad. And we have, on the other hand, data protection, which is more asking or more emphasizing for the legality, for the legal basis of why data is processed. Also, the fairness principle, that means also transparency requirements and so on, and particularly the purpose limitation principle. And a much stricter person... purpose limitation principle than just the so-called need-to-know principle that we know from typical information security. So this is linked and the things can learn and data protection as a typical instrument coming from legal regulation, whereas the other side information security coming particularly rather from industry norms like ISO 27001 and so they found here together and more and more you see that the things are intertwined, that the data protection management system is actually following the structure, the high-level structure of ISO and going down even a similar control set like ISO 27001. So we see the things are intertwined. And we see, which I stipulated, and that is important, that's a slide that Max Schrems used when he explained the 2015 Schrems 1 decision regarding safe harbor principle, that we have when it's up to protecting our fundamental rights in Europe. I'm talking not only about European Union, because these things are coming actually from the European Convention of Human Rights, which has right now still 46 member states, right? All countries except Belarus and Russia, and which in Austria, it's even part of the constitution, like in Netherlands, as far as I know. And so this proportionality principle, particularly now in the form of the EU Fundamental Rights Charter says, for every fundamental right, not just data protection or the right to privacy. It says we need a legitimate aim. We need a suitability of the measure that we aim for legitimately. We need... this measure for aiming to that legit goal to be actually necessary in a democratic society. I mean, it's not a less nervous way. And we need this to be a reasonable measure, considering the competing interests, balancing these interests, the so-called proportionality in the narrow sense. And this is a field almost all fundamental rights or human rights guarantees are actually open to this kind of balancing. There are few human rights that are granted absolutely. These few, for good reason, for example, the prohibition of torture and inhuman and degrading treatment, Article 3, the European Convention of Human Rights, is absolute. There is no interference. Also the prohibition of slavery, but all others. are available for a balancing of interest according to the proportionality principle. Also, when it's up to the so-called security, when it's up to fighting crime, fighting, combating terrorism and everything. But, and that's important, this black part here, the essence of a fundamental right, is that part that according to Article 51 EU Fundamental Rights Charter is not to be touched because that's the core of a guarantee, of a fundamental rights guarantee, which would be violated and would not leave anything of that guarantee, right? And that's the interesting part now because if we are here, In that part, if we are here in that part, things can not be proportionate and therefore not be in line with the very basics of EU funding treaties. Right. So one has to be aware that the EU fundamental rights charter is since the Treaty of Lisbon, since the 1st of December 2009, is a part of the so-called EU treaties, is part of the primary law. And every act, every directive has to be measured. On that basis there, and the European Court of Justice can null decisions, can null other legal instruments on that measurement, as he did with data retention directive, as he did with the so-called adequacy decisions of EU Commission. So that's important to understand. That's also just a remark, because in all that, not to forget, we have a lot of technical standards who might not even have normative power, but still, like, they are valid, right? What's the power of a request for command? We all know that from technical side. So there are different reasons. And the question sometimes is, Who has oversight there? And what happens if lawmakers just include them, maybe harmless standards, and the lawmaker refers to it and all of a sudden it might be even on the level of a law. So that's something to bear in mind also, because if we see that we have not a human rights, not a limited scope on some physical. Right. And data protection does not cover at all. We know that since long. We saw that in, interestingly, Germany in, as I remember, in 2007 ruled on the so-called IT fundamental right there, which it dereaved on Article 1 and 2 of the German Constitution against a so-called federal Trojan horse, against spyware, the national legalized spyware. for the problem that we are still discussing that is very recent, the question of messenger services surveillance when we have end-to-end encryption. On that, the court in Germany, the Constitutional Court in Karlsruhe, invented a new IT fundamental right, as they said. And also remarkable that United Nations In 2012, the UN Human Rights Council enacted a resolution that said all classical human rights, as we know it also from the United Declaration of Human Rights from the United Nations, they are also applying online, they are also applying in the digital world. So this is a development that we have. And now we see ahead and we see the new EU legislative framework and we see that GDPR since 2018 brings a duty to a data protection impact assessment, having to regard that rights and freedoms and risks and having to mitigate them in the development of technology at the very first stage of development. Right. So and the same is now with AI Act. Article 27 AI Act for high risk AI is also providing for the duty of conducting that impact assessment. It says even fundamental rights impact assessment. It's broader. It's considering more. Having that in mind, we see that is really an important line of defense in what happened now. Back then, when we said historically, say, Harvard and U.S. Privacy Shield, and now we talk about the so-called transatlantic privacy framework, the TFP, TPF. The problem was that is a mere self-certification. Back then, that's already history, right? When Marx was David against Goliath in New York Times headline. That is really historical slides there for that, right? As he explained that, what happened there. If you maybe remember for some, it's still maybe closer in mind. For some, it's maybe even new. These are the things that Edward Snowden told us. And these things, they are still valid. Maybe the programs have changed. Some are now not any more secret, but now they are under the FISA, so-called Foreign Intelligence Services Act, now are legalized. For a while, they were legalized in the so-called Patriot Act, but it's still the same programs. It's still the same kinds of data retention that we have rejected in Europe, that the European Court of Justice has rejected. I can tell you when we were back in July 2013, we were in Luxembourg for the oral trial there for negotiating data retention directive in July 2013. That was one month after Edward Snowden had leaked all this information. Without that leaks, I'm sure we would not have won the case a year later. I'm sure. Because we were at this time, many who said that were like conspiracy theorists, right? So that was a game changer. And interestingly, that was also the core of the assessment of the European Court of Justice in the Schlems 1 case, in the Safe Harbor case. Because the core of that decision back then was to say... It was a smart move of the court. They took the assessment of the EU Commission towards the Snowden Leagues. The EU Commission brought quite early then in 2013 the first assessment of that. The Court of Justice in the preliminary ruling decision that Max was back then in his own case, alone without any help, without an association and so on, just on his own, for that and arguing that, like it was a sideshow actually of the Facebook case. The real case was, and also still ongoing in more cases, was about the question of do they actually respect European data protection law or not? But the sideshow was actually now is the main prominent actor is this abolishment of these safe harbor principles of the safe harbor adequacy decision there. Because they said, it doesn't matter what we have in the certification scheme. Safe harbor said, you can certify yourself at the U.S. Ministry of Trade. You have a commission there. You see, these are the criteria. If they certify you, they say, hey, you're safe. But it doesn't matter what you write in there. It's not worth the paper where you get your certificate. If the three letters agency are coming and asking data of you, because if NSA or FBI, whatever is coming, asking, claiming data on base of the Foreign Intelligence Services Act, as it's called now, back then other legal bases, even partly court decisions there. If they claim that, it doesn't matter what is on any certificate. It doesn't matter what is on any contract. The two private parties negotiated amongst each other. Right? So, and that is important to understand because the European Court of Justice said this is... Yes, please, George. Just to say, I'm watching the time. I have this... I have to shortcut. About five, six minutes. Yeah, yeah. The Court of Justice back then said, the Court of Justice said this is... Do we have that here? It violates the essence of Article 7 of the Charter of Fundamental Rights of the European Union. This is the right to privacy, also Article 8, the right to data protection, and Article 47, the right to a fair trial and the right to an effective remedy. which is inside granted there. So not just a little violation. This is the only decision so far where it's violating the essence of this right. And the very same, just I provided for all our audience, for all our participants, much more information on the slides than I would be able to go through in that. Just that you know that you will see many details that I just scratch or maybe not even that are background. The same happened again in 2020. European Court of Justice made the same again every five years because the solution that they brought afterwards was not really making a big difference. The so-called U.S. privacy shield was a little cosmetics, but still the same problem. Now came Biden's executive order. Biden's executive order is an executive order. I skip here the strategic litigation for you to read as we poked also what does that ruling mean then, the so-called Schrems II ruling, and giving some idea of particularly use of Google Analytics and other things, and not just in Austria, so all over Europe. You will find this jurisprudence with the links together from European Data Protection Supervisor as well. And what we could achieve also on the side with Neub was in the language that these mega concerns are talking, that they get really fined in a way that it is hurting, particularly when the threat is that this kind of fine will be repeated. The 1.2 billion record fine against Meta in Ireland was a big piece of work, and Ireland itself wouldn't do that in the first place. push that over the European Data Protection Board there. And the same thing is going to happen again now. So this executive order of Biden is just an executive order. It is not out ruling actually the FISA, the legal acts there, the legal level. And what we see already now. just recently since the inauguration of the Trump administration, is that the so-called Privacy and Civil Liberty Oversight Board, the PCLOB, was already kind of almost shut down. All the Democratic members got removed, their email accounts got shut down, and theoretically now they do not even have the resources to fully be deployed there. I provided you a link where you can see a bit more. And it might be even already enough that the EU Commission will revoke by themselves the adequacy decision soon. But if not, NOIP is on it and there is already proceedings pending that the European Court of Justice will do that soon again. So that was my main part for today. I wanted just also to mention I provided some slides there on the discussion. This is something that we actually mainly should discuss, just that you know that what I want to provide or what I want to bring into mind for this discussion is also that we have not only data protection, we have now with AI Act, the second strong instrument. We also can talk about the Digital Services Act, also. addressing some parts AI, addressing this field of tension. between on one side freedom of information, freedom of opinion, and on the other hand, not only a political culture, not only basic values and personality rights, but sometimes also data protection directly. They can be here. So just that you see what we have there. We have opinions already from the European Data Protection Board on AI. We have an AI act that is now in force already. So we have also here this risk-based approach. We have here the unacceptable risk and the prohibited AI like social scoring or predictive policing. And then we have a part where we have high-risk AI. And in this field of the high-risk AI, this is where we talk about fundamental right impact assessment. This is where we talk like real breaks where I see. And this is important for me in this discussion of sovereignty, that this is not just about this actual sovereignty. We should talk about that. We have to discuss about that. But it is also a sovereignty of values and of how we can keep them up. And that's going to be particularly important. I will go, my slides, just as you see, give you some. overview of also that and just one last remark for now that's just in German but we will start put it piece by piece in English. We have created jointly with other project partners a wiki, it's called ATLOS, for all these 17 new regulations in order to not lose oversight and also not to get lost. A wiki that provides also how they are intertwined, it gets use cases and so on for the 17 new acts and regulations and directives in the field of digital regulatory. Okay, so thank you. Very much. I'm looking forward to a discussion. I think human rights based approach means that we build on the achievement, the main achievement of the 20th century, which is international human rights, which is a new way. We can also talk about enlightenment for zero, right? This is where we are now. And this is where I'm looking forward to discuss with you. Thank you very much. Thank you. Christoph, thank you very much. And thank you also for providing the full set of slides so that all of us will have a chance to go through them. Let's now open the discussion. I already see a hand raised, and that's Hannes. Okay, thanks, thanks, Christoph, for this talk and for the overview. I have a very practical question. Under the current legal regime and given the Trump administration, does the U.S. administration have legally access to our data stored on whatever cloud service provider from the U.S.? Even if this is Microsoft stored in Vienna, if it's Amazon stored in Sweden, as far as I have understood, they could, Musk, Elon Musk could have access to this data. This is a very practical question. Thank you, Hannes. That is a good question. One has to differentiate and distinct between two different legal aspects or levels there for this question of access. One is if data is processed directly on the soil of United States, like in data center within United States there. This is where we have the provisions that I have already quoted before. This is the so-called Foreign Intelligence Services Act, this FISA Act, giving them access, allowing them to cooperate, force, whatever, and then access this kind of data that is processed in U.S. The other question, and that is maybe I think where you wanted to point on also, is the so-called Cloud Act. This is nothing. Coming just from Trump administration, Cloud Act was actually enacted during the Obama administration. And Cloud Act means to circumvent classical international law and so-called legal assistance that usually... internationally is enacted in that state. So if data that is interesting for any kind of investigations from the United States or other foreign authorities there, they would usually have to address, usually over the way of the Ministry of Justice, and then they send a request note to say, can we have access to the data? It has to be reciproc, usually. And then if it's not violating the so-called haute republique of one state, then they would give access or not give access, right? So in order to circumvent, because that takes time, that is complicated, that often is really a deal breaker, they said cloud act. We are allowed to force our vendors by the means of giving them pressure, giving them fining their mother companies, if we want to access their daughter companies abroad. And this is what happened. And the problem is now that the companies that have American, US American based mother companies there, and they are their owners, right? They are in the conflict of should I violate now? EU law when they are sitting here? Or should I violate US law when there is an attempt to try to access data like this? Thank you. And let me point out that 70% of the cloud service in Europe is run by Amazon, Google and Microsoft. 70%. And all that data is not covered by the Fourth Amendment. The Fourth Amendment in the U.S. covers only U.S. citizens. Giuseppe, please skip both questions and answers quick so we can get more opportunities for audience to ask. Thank you very much. You mentioned the two approaches to regulation, which is the risk-based approach and the human rights-based approach. In particular, the AI Act is a risk-based approach. I was wondering whether you can comment on this, because I personally feel that it is a weak or fragile approach, because you cannot always start to list all the possible applications which might be risky, right? So having established which are the fundamental rights, then whenever a new application is developed, then you can decide whether it breaks some rights. And so it's more long, less short-sighted than the regulation which is based on listing or categorizing applications. What do you think about that? Thank you. Thank you very much. Well, I think AI Act is both. It has a risk-based approach and a human rights-based approach, which came... by the notion of the EU Parliament. This came in the so-called Trilog proceeding in the very end. The EU Parliament negotiated this that we have now as Article 27 AI Act. And I mean, one has to, this is important. I go meanwhile back here to this slide that the sector of what we are talking here is only this high risk sector, right? So we are not talking about particularly so-called general purpose AI, like language models mainly, but other general purpose AI, they are not in that field of the high risk AI. They have only some transparency duties. And so really this fundamental rights impact assessment. In combination with the risk management duties of Article 9, mainly Article 9 to 15 AI Act, they are applying for this high risk field. And you do not have so many fields there. And you have also a shared responsibility on the different roles you have. all players with some you have the provider as well as the the establishment as well as the the vendor of this ai model have to contribute to that right so i think this will be actually just even too small part of where we do apply this really strict human rights risk-based approach, where we have also these strong duties there. And also, for example, the right to explanation, according to Article 86, GDPR for automated decision-making, AI is also only applying for the high-risk AI. So that scope is very narrow. And whenever industries is crying about that this is too much over-regulation, and everything, I think actually is not. These things are coming from machine safety, right? So that's the first thought of it. Okay, thank you. I saw a comment in the chat by Kyle Essenmacher, who had written to us beforehand asking a question as to what regulation applies to... Citizens that are not EU citizens, if their data, health data in this case, are stored in EU servers. And the only information I have been able to confirm is that GDPR applies to that data if they're stored in EU servers. And that's another asymmetry between... Thank you. That's a good question. That's actually an important part of also the claim of particularly GDPR, also other approaches. It's a so-called marketplace principle that is enshrined there. The marketplace principle says it's the scope, the personal scope for GDPR is not only... if in that case the controller or the processor of personal related data is established on EU soil, but also if they are abroad, but targeting the EU single market. Right. So EU single market is valuable. And the basic principle is and also we have also international examples where other legislations are doing that. They say if you want to play on our market, even if it's online, you follow our rules. Of course, another question is there in which cases is it how easy to actually. enforced it right so if you because if you have a player who is not established as all who doesn't have any assets there that might be another problem but legally it's a binding it's done okay one more question and then it's time for music one more question sorry i have a second question but this is more a political one christophe because you are also an activist This is a very nice framework we have built in Europe, which is working. We are not sure whether it will work with the US if they are changing their behavior. But this framework is under heavy threat. OK, we know now with the development in the US, we have seen where the big IT companies, the platform companies are aligning with Trump and they're already pushing Europe. to, let's say, to release some of these hard regulations. And even within Europe, we see a tendency of deregulation, let's say, of going, maybe this is too much bureaucracy and this is hindering innovation. So this is, let's say, a fundamental question for a human rights activist, not only in the level of ICT, but also, I think, for digital humanism. First of all, I would know, what is your, let's say, impression of this, or how do you judge this development, and what would be a proper answer? Just to make sure, just to start with Christoph, there are two convergent lines here. One is coming, and that's lobbying and political pressure from the US. And the other is the Draghi report drive for simplifying. And it would be very dangerous if there's a confluence of the two. One minute answer. I think the pressure is huge. You're absolutely right. This pressure, I see it. And I think in most cases we can talk about some. minor amendments and trying to simplify at some stages, but I don't think we have much room there. Not in GDPR, not in AI Act. I think it's dangerous. Also, particularly not in DSA or DMA. That's a road we should never go. And the answer as a human rights activist on why we should not do that is to bear in mind these are not just acts. coming out of some funny feelings of some EU Commission members or parliamentarians. This is actually a duty, a so-called duty of protect and fulfill human rights and fundamental rights guarantees by the legislator. So they are not just simply free to do it, because this one is something where really the whole society and democratic society... is endangered at some levels. That is particularly true for AI Act and particularly true for DSA, DMA, but also for the new initiatives now of, as we see, finally to build up some European infrastructure. We saw the letter, we see the open letter from DigiHume. We had with Austrian Computer Society has in summer 2013, we had a similar open letter in Austrian newspaper and now finally 12 years. years later, it seems to have effect. But let's see if we are not yet too late. We have to fight for the things. Yes, nothing is gained without fighting. Thank you, Christoph, for providing a framework in these times which are very difficult for the whole EU regulatory framework. And you provided a framework within which to think about these issues and act. And we can join forces from Digital Humanism and your organization, I think, on many of these issues. With this, thank you. And over to Stefan. Thank you for inviting me. Thank you for having me. Have a good time. See you. Bye. Thank you, Christoph. Thank you very much, George. Thank you both. It was a very, very interesting and important lecture. I would say before closing today's lecture and handing over to Peter, let me just make a few announcements. There is already the link in the chat to the slides Christoph provided. It is much appreciated. We will also put it on the web page soon so that you can go through this and digest all this material with the necessary time. In the final slides provided by Peter, we have our announcement for the conference in May. For those of you who cannot make it to Vienna, the plenary sessions will be recorded and most probably will be shared afterwards. Look out for that are concerning the next lectures. So we have not 100 percent fixed them, but there is now a longer break also because of the conference end of May. But there will be lectures on June 17 and or June 24. Things still have to be fixed. But so stay tuned. End of June, we will we will have at least one lecture for sure. one more lecture and final remark from my side uh we also will have another conference end of november a scientific conference with a call for papers where people can submit their papers where we will have uh we have a program committee selecting papers and the authors are then invited to present their work and we will have keynote talks um so have a look at the web page i will also put it on in the chat now and with that i i hand over to peter and thank you all again for joining see you soon have a nice evening peter well thank you stefan i've just shared the screen um so you already see the song that we've played today um how do we end up with this one well occasionally we give a chat about the chance to come up with a track And this time Google Gemini had the honors and Gemini was prompted with today's title and abstract and responded. That sounds like a fascinating and timely lecture. So it was very correct. For the outro music, considering the themes of legal frameworks, technical aspects, human rights, and the push for European digital sovereignty, you'd want something that feels both thoughtful and perhaps a little forward-looking. Here are a few ideas playing on different nuances. Uplifting and hopeful, suggesting progress and future possibilities. Europa by Santana. The title is a direct nod to Europe and the instrumental piece is a beautiful, sorry quality that evokes a sense of aspiration and connection. So I'll end the answer here. I'll spare you the rest of the conversation in which I asked for a track with topical lyrics and Gemini started hallucinating non-existing tracks. It also apologized when I called it out on it. That is not that important. But of course, there's a very obvious connection here with the title. And so that's going to be our track. As Stefan mentioned, in two weeks, we'll have the big conference in Vienna. I hope to meet many of you there. Also, our textbook, Digitalization and Us, will be available in English very soon. Also, that will be a reminder on the slides you'll see. And for all future events, such as the research conference that Stefan mentioned. We'll keep you updated. And please subscribe to our social media channels or email newsletters for this. So all I can do is thank Christoph and George. Thanks for this very interesting lecture and discussion. And I say goodbye with Santana and Europa.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 9.952,
+      "text": "Welcome everybody to our lecture today in our digital humanism lecture series. I will only super briefly."
+    },
+    {
+      "start": 9.952,
+      "end": 34.72,
+      "text": "introduce our moderator, who will then introduce the speaker. I'm very glad that George Metakidis agreed to moderate today's lecture. Most of you know him, so George, if you don't mind, I will be very brief. He's a logician by training. He has been at MIT, Cornell, and Rochester University, then went back to Greece as chair of logic at the University of Patras."
+    },
+    {
+      "start": 34.72,
+      "end": 58.528,
+      "text": "But I think most prominently he has been in the European Union in several positions. In particular, he was the director of the ESPRI program. And without further ado, I hand over to you, George. Thank you, Stefan. And hello, everybody, and welcome to this lecture."
+    },
+    {
+      "start": 58.528,
+      "end": 86.016,
+      "text": "and whose title is International Data Transfer from a European Perspective. And there's a subtitle that says Legal and Technical Aspects of EU Digital Sovereignty. And EU Digital Sovereignty has been a hot topic, but it's getting hotter and hotter as the Atlantic is getting deeper and wider."
+    },
+    {
+      "start": 86.016,
+      "end": 113.84,
+      "text": "There are many dimensions to this topic, and we're very lucky to have with us today Christoph Choll, who, as he describes himself, is a human rights activist, engineer, and lawyer. And I looked at his CV, and he has the training for all three of these, which is remarkable and most suitable for addressing this complex issue."
+    },
+    {
+      "start": 113.84,
+      "end": 142.72,
+      "text": "He is a member of many organizations that I saw he has listed in his first slide, so I will not go through them. Let me just tell you that he is talking to us, and this is symbolically significant, from Max Schrem's office. Max Schrem is the one who was very instrumental in..."
+    },
+    {
+      "start": 142.72,
+      "end": 172.416,
+      "text": "bringing down the first two kind of dreams of European data sovereignty. The first one had started when I was still in Brussels for my sims, and that was the, what was it called, the safe harbor. And it turned out after Max's efforts that the harbor was a cove of pirates, data pirates, and it was not safe at all."
+    },
+    {
+      "start": 172.416,
+      "end": 198.688,
+      "text": "And then this was quickly replaced by the Privacy Shield. And again, with the initiative taken by Max Rems and his organization, of which Christoph is a member, which is called NOIB. And NOIB stands for None of Your Business. It turned out that the Privacy Shield looked..."
+    },
+    {
+      "start": 198.688,
+      "end": 228.528,
+      "text": "More like Swiss cheese rather than a real shield. So that went down the drain. And I will not steal Christoph's thunder, but there's a third replacement now, which I predict will go down the drain as well. In fact, I'm convinced of that. Let me just add two things, and then I'll give the floor to Christoph. One is, for those of you not familiar with..."
+    },
+    {
+      "start": 228.528,
+      "end": 257.072,
+      "text": "eurospeak and sort of the bureaucratic classifications, the difference between a directive and an act is that an act is a regulation and it has the direct legal effect. It's effective immediately, while a directive has first to be transcribed into national legislation."
+    },
+    {
+      "start": 257.072,
+      "end": 286.256,
+      "text": "So with this exciting remark, Christoph, the floor is yours. Yeah, thank you very much, George. Thank you, everybody, for inviting me to the lecture. I love contributing to the Digital Humanism Initiative. I myself, coming from my background, trained as a human rights lawyer, particularly due to my background as an ICT engineer."
+    },
+    {
+      "start": 286.256,
+      "end": 315.152,
+      "text": "path found together. But in my heart, I'm a full human rights lawyer. So not just on data protection, but on all human rights and all inseparable and universal human rights. It is not a coincidence that I'm sitting in Max Schrem's office when I was working still as a young human rights lawyer at the Ludwig Boltzmann Institute of Human Rights."
+    },
+    {
+      "start": 315.152,
+      "end": 336.704,
+      "text": "At the same time that Max Schlem started to sue Facebook back then as a law student still. First of all, we met at Vienna University. He was part of my team. I was postdoc at this time, responsible for an FP7 project work package. And he was a student assistant in the same project."
+    },
+    {
+      "start": 336.704,
+      "end": 361.408,
+      "text": "And while he was viewing Facebook, I started to write the Austrian mass complaint against data retention directive. Some of you might remember that the European Court of Justice in 2014 decided to rule out to bring down the so-called data retention directive, the mass surveillance program of Europe in the follow up of 9-11 and others."
+    },
+    {
+      "start": 361.408,
+      "end": 384.656,
+      "text": "And I was the first complainant and author of this Austrian mass complaint, which then together with two other Austrian cases, with one other Austrian case and the Digital Rights Ireland case, was decided on European Court of Justice there. That led to in 2017, while in my full time job, I was already meanwhile."
+    },
+    {
+      "start": 384.656,
+      "end": 394.128,
+      "text": "self-employed and having founded research institutes the digital human rights center at the same time max was"
+    },
+    {
+      "start": 394.128,
+      "end": 418.656,
+      "text": "building on making the thing he did scalable, right? So inviting more people to participate to also, if it was clear to do more against like big opponents, then it was clear he cannot do that alone. So in 2017, we founded Neub at the kind of first half year, it was really just the two of us."
+    },
+    {
+      "start": 418.656,
+      "end": 439.04,
+      "text": "And then the third member and board member was Petra Leupold from the Austrian Consumers Organization, VKI, an extremely good lawyer in litigation, in also collective redress and so on. And we found the board of Neub, and meanwhile it was growing also in numbers."
+    },
+    {
+      "start": 439.04,
+      "end": 463.088,
+      "text": "Today is a very nice day because today my team from Research Institute, about 15 colleagues, meets the whole team of NOIP, which is about the same, like almost 20 people. And afterwards, I'm going to party with both the teams. So I'm already in good mood for this lecture. So I thank you very much, George, for the introduction there right away into the."
+    },
+    {
+      "start": 463.088,
+      "end": 478.544,
+      "text": "into the topic. I will skip, not to tell too much about, just very briefly, Research Institute is a, we do consulting and research. It's about 60%, 65% research, Horizon Europe mainly."
+    },
+    {
+      "start": 478.544,
+      "end": 496.624,
+      "text": "And the rest we do consulting like, for example, data protection impact assessment on ID Austria, on the Austrian EID transposition and stuff like that, right? Or the Austrian Red Cross or Amnesty International are our customers."
+    },
+    {
+      "start": 496.624,
+      "end": 519.728,
+      "text": "So we have a reputation to lose. We can only work with those who actually mean to try to be really compliant with data protection. I want to go right away inside what I want to tell you today and have a build up for discussion then in the rest, in the second half of our lecture today."
+    },
+    {
+      "start": 519.728,
+      "end": 547.712,
+      "text": "is really to see the European approach, not only theoretical and what these terms mean on paper. I want to have also a look today at things that are still new, even though already in force. So I want to have a brief outlook on the AI Act as well and elements from there, particularly also the so-called fundamental rights impact assessment out of Article 27 AI Act. But first."
+    },
+    {
+      "start": 547.712,
+      "end": 575.392,
+      "text": "Let's get some base and go back to the idea of where this development in data protection, this Schrems 1, Schrems 2 decision, as George initiated with the safe harbor that wasn't that safe, maybe, where this is coming from and why do we still talk about the very same arguments there? We have European fundamental rights."
+    },
+    {
+      "start": 575.392,
+      "end": 597.296,
+      "text": "As an export article, we talk in many fields already also of the so-called Brussels effect. And so we have both directions. We want to really discuss this in the end of to what extent this is an inhibitor or rather a catalyst for innovation."
+    },
+    {
+      "start": 597.296,
+      "end": 616.608,
+      "text": "and to what extent EU regulation is under pressure there, because it is actually a try to claim sovereignty in a political sense in a globalized digital world. It's not only sovereignty in a very..."
+    },
+    {
+      "start": 616.608,
+      "end": 644.416,
+      "text": "technical sense of having actually technical control of data information. It is also an approach where we try to sell, to be sovereign in the values that European Union as a political union, particularly with fundamental rights, is setting there. So if we look about all this legislation, we have just of the last couple of years 17"
+    },
+    {
+      "start": 644.416,
+      "end": 661.92,
+      "text": "legal acts. Some of them are directives that need, as George already mentioned, some transposition in national law. Some others are regulations or acts that do not need any position. We are talking here, starting with GDPR, General Data Protection Regulation, as the"
+    },
+    {
+      "start": 661.92,
+      "end": 690.144,
+      "text": "strongest and most famous instrument of them since 2018. We talk about information security, NIST 2, DORA and so on, AI regulation with AI Act, also product liability. We talk about possibilities of data governance and so on. We talk also about regulation of the Digital Markets, Digital Services Act. And they have in common"
+    },
+    {
+      "start": 690.144,
+      "end": 719.52,
+      "text": "Two approaches. One is the so-called risk-based approach, right? So that we steer of how much effort has to be put, how much effort for safeguarding or compensating for mitigating these risks is depending on the amount of risk and the kind of risk that we face. And on the other hand, and this is, I think, the most important one, is the so-called human rights."
+    },
+    {
+      "start": 719.52,
+      "end": 741.12,
+      "text": "based approach. Because these risks, I mean, risks you can see from different kind of perspectives, right? If you talk about merely information security approach or aspect, you may maybe talk about risk from the perspective of an organization, of a company, right? When we talk about a risk-based and human rights-based approach, that means as"
+    },
+    {
+      "start": 741.12,
+      "end": 751.264,
+      "text": "particularly GDPR stipulates in the very beginning, when it's unfolding its scope, it says it's about the protection."
+    },
+    {
+      "start": 751.264,
+      "end": 773.728,
+      "text": "Of the rights and freedoms of natural persons. And these are, of course, particularly the human rights, the fundamental rights. Also, of course, other rights, also the so-called fundamental freedoms of the European Union. Of course, they are also in scope. But this is important to say it's a human centered approach to."
+    },
+    {
+      "start": 773.728,
+      "end": 786.784,
+      "text": "these kind of regulations there. So we have particularly in the field of security, cybersecurity, also a new approach considering a larger view."
+    },
+    {
+      "start": 786.784,
+      "end": 814.064,
+      "text": "Not only, I mean, it came also from the field of so-called critical infrastructures, but we go much beyond that. And we ask also there in cybersecurity laws like NIST 2 or the Critical Entity Resilience Directive or the Digital Operational Resilience Act for the financial sector, the Network and Information Security Regulation."
+    },
+    {
+      "start": 814.064,
+      "end": 836.336,
+      "text": "We ask, and the law is aiming for, what's the impact on society? What's the societal function of these services? What's their meaning of a functioning society? And on that, based on that risks, we have to act, we have to build reserves, we have to build resilience."
+    },
+    {
+      "start": 837.936,
+      "end": 867.536,
+      "text": "So if we just see cybersecurity, if we talk about digital sovereignty and cyber sovereignty, this is a part of there. We have at the moment NIST 2, Network Information Security Directive. We have for the physical side of that, the third directive, DORA, as I said, for the financial sector, which is interesting. Many have called it already NIST."
+    },
+    {
+      "start": 867.536,
+      "end": 872.944,
+      "text": "three so that's the level where we all should get which is very interesting because this"
+    },
+    {
+      "start": 872.944,
+      "end": 901.472,
+      "text": "financial regulation of cyber resilience has to assess or has a duty to assess also for EU Commission, the so-called concentration risks. So there are build up for all the financial sectors, which are the critical vendors, the so-called supply chain management there. These ICT third parties have to be not only documented very well, but they have to be assessed on where we see"
+    },
+    {
+      "start": 901.472,
+      "end": 922.448,
+      "text": "critical masses where we see if one vendor, if one supplier breaks down, what's happening to all the system, which is remarkable. That's the first time, even not horizontal on all parts, but at least for the financial sector, this is already into force. This is already being done as we are talking."
+    },
+    {
+      "start": 922.448,
+      "end": 950.448,
+      "text": "We have a Cyber Resilience Act giving more power, giving more normative power. I will come to that also to ENISA, to European Organization for Net and Information Security. This will be also interesting because we see that in the so-called Internet of Things with Cyber Resilience Act, we will have new product security certifications. We will have CE."
+    },
+    {
+      "start": 950.448,
+      "end": 980.272,
+      "text": "certifications that are mandatory. Some of them have to be still enacted, some of these certification themes, but they mean mainly about product security, right? This is about coming from machine security and protecting humans. Cyber Solidarity Act, also interesting, I won't go into any details as the CSA giving a lot of power to ENISA. What we have to see is that"
+    },
+    {
+      "start": 980.272,
+      "end": 984.272,
+      "text": "cybersecurity or information security on one hand"
+    },
+    {
+      "start": 984.272,
+      "end": 1010.864,
+      "text": "And on the other hand, data protection are siblings. They are inseparable. They have a lot of cross-cutting, especially every personal related data is in the scope of information security already by law because they have to be protected by law. So information security have to grab them. We know the classical security goals that we share."
+    },
+    {
+      "start": 1010.864,
+      "end": 1040.144,
+      "text": "confidentiality, integrity, availability, so-called CIA triad. And we have, on the other hand, data protection, which is more asking or more emphasizing for the legality, for the legal basis of why data is processed. Also, the fairness principle, that means also transparency requirements and so on, and particularly the purpose limitation principle. And a much stricter person..."
+    },
+    {
+      "start": 1040.144,
+      "end": 1069.36,
+      "text": "purpose limitation principle than just the so-called need-to-know principle that we know from typical information security. So this is linked and the things can learn and data protection as a typical instrument coming from legal regulation, whereas the other side information security coming particularly rather from industry norms like ISO 27001 and so they found here together and more and more you see"
+    },
+    {
+      "start": 1069.36,
+      "end": 1086.832,
+      "text": "that the things are intertwined, that the data protection management system is actually following the structure, the high-level structure of ISO and going down even a similar control set like ISO 27001. So we see the things are intertwined."
+    },
+    {
+      "start": 1086.832,
+      "end": 1105.472,
+      "text": "And we see, which I stipulated, and that is important, that's a slide that Max Schrems used when he explained the 2015 Schrems 1 decision regarding safe harbor principle, that we have when it's up to protecting our fundamental rights in Europe."
+    },
+    {
+      "start": 1105.472,
+      "end": 1135.12,
+      "text": "I'm talking not only about European Union, because these things are coming actually from the European Convention of Human Rights, which has right now still 46 member states, right? All countries except Belarus and Russia, and which in Austria, it's even part of the constitution, like in Netherlands, as far as I know. And so this proportionality principle, particularly now in the form of the EU Fundamental Rights Charter says,"
+    },
+    {
+      "start": 1135.12,
+      "end": 1152.672,
+      "text": "for every fundamental right, not just data protection or the right to privacy. It says we need a legitimate aim. We need a suitability of the measure that we aim for legitimately. We need..."
+    },
+    {
+      "start": 1152.672,
+      "end": 1179.296,
+      "text": "this measure for aiming to that legit goal to be actually necessary in a democratic society. I mean, it's not a less nervous way. And we need this to be a reasonable measure, considering the competing interests, balancing these interests, the so-called proportionality in the narrow sense. And this is a field almost all"
+    },
+    {
+      "start": 1179.296,
+      "end": 1204.576,
+      "text": "fundamental rights or human rights guarantees are actually open to this kind of balancing. There are few human rights that are granted absolutely. These few, for good reason, for example, the prohibition of torture and inhuman and degrading treatment, Article 3, the European Convention of Human Rights, is absolute. There is no interference. Also the prohibition of slavery, but all others."
+    },
+    {
+      "start": 1204.576,
+      "end": 1233.552,
+      "text": "are available for a balancing of interest according to the proportionality principle. Also, when it's up to the so-called security, when it's up to fighting crime, fighting, combating terrorism and everything. But, and that's important, this black part here, the essence of a fundamental right, is that part that according to Article 51 EU Fundamental Rights Charter is"
+    },
+    {
+      "start": 1233.552,
+      "end": 1252.176,
+      "text": "not to be touched because that's the core of a guarantee, of a fundamental rights guarantee, which would be violated and would not leave anything of that guarantee, right? And that's the interesting part now because if we are here,"
+    },
+    {
+      "start": 1252.176,
+      "end": 1267.392,
+      "text": "In that part, if we are here in that part, things can not be proportionate and therefore not be in line with the very basics of EU funding treaties."
+    },
+    {
+      "start": 1267.392,
+      "end": 1286.368,
+      "text": "Right. So one has to be aware that the EU fundamental rights charter is since the Treaty of Lisbon, since the 1st of December 2009, is a part of the so-called EU treaties, is part of the primary law. And every act, every directive has to be measured."
+    },
+    {
+      "start": 1286.368,
+      "end": 1305.44,
+      "text": "On that basis there, and the European Court of Justice can null decisions, can null other legal instruments on that measurement, as he did with data retention directive, as he did with the so-called adequacy decisions of EU Commission. So that's important to understand."
+    },
+    {
+      "start": 1305.44,
+      "end": 1324.496,
+      "text": "That's also just a remark, because in all that, not to forget, we have a lot of technical standards who might not even have normative power, but still, like, they are valid, right? What's the power of a request for command? We all know that from technical side. So there are different reasons. And the question sometimes is,"
+    },
+    {
+      "start": 1324.496,
+      "end": 1348.384,
+      "text": "Who has oversight there? And what happens if lawmakers just include them, maybe harmless standards, and the lawmaker refers to it and all of a sudden it might be even on the level of a law. So that's something to bear in mind also, because if we see that we have not a human rights, not a limited scope on some physical."
+    },
+    {
+      "start": 1348.384,
+      "end": 1377.68,
+      "text": "Right. And data protection does not cover at all. We know that since long. We saw that in, interestingly, Germany in, as I remember, in 2007 ruled on the so-called IT fundamental right there, which it dereaved on Article 1 and 2 of the German Constitution against a so-called federal Trojan horse, against spyware, the national legalized spyware."
+    },
+    {
+      "start": 1377.68,
+      "end": 1404.128,
+      "text": "for the problem that we are still discussing that is very recent, the question of messenger services surveillance when we have end-to-end encryption. On that, the court in Germany, the Constitutional Court in Karlsruhe, invented a new IT fundamental right, as they said. And also remarkable that United Nations"
+    },
+    {
+      "start": 1404.128,
+      "end": 1424.896,
+      "text": "In 2012, the UN Human Rights Council enacted a resolution that said all classical human rights, as we know it also from the United Declaration of Human Rights from the United Nations, they are also applying online, they are also applying in the digital world."
+    },
+    {
+      "start": 1424.896,
+      "end": 1449.664,
+      "text": "So this is a development that we have. And now we see ahead and we see the new EU legislative framework and we see that GDPR since 2018 brings a duty to a data protection impact assessment, having to regard that rights and freedoms and risks and having to mitigate them in the development of technology at the very first stage of development."
+    },
+    {
+      "start": 1449.664,
+      "end": 1475.648,
+      "text": "Right. So and the same is now with AI Act. Article 27 AI Act for high risk AI is also providing for the duty of conducting that impact assessment. It says even fundamental rights impact assessment. It's broader. It's considering more. Having that in mind, we see that is really an important line of defense in what happened now."
+    },
+    {
+      "start": 1475.648,
+      "end": 1500.912,
+      "text": "Back then, when we said historically, say, Harvard and U.S. Privacy Shield, and now we talk about the so-called transatlantic privacy framework, the TFP, TPF. The problem was that is a mere self-certification. Back then, that's already history, right? When Marx was David against Goliath in New York Times headline."
+    },
+    {
+      "start": 1500.912,
+      "end": 1517.024,
+      "text": "That is really historical slides there for that, right? As he explained that, what happened there. If you maybe remember for some, it's still maybe closer in mind. For some, it's maybe even new."
+    },
+    {
+      "start": 1517.024,
+      "end": 1545.616,
+      "text": "These are the things that Edward Snowden told us. And these things, they are still valid. Maybe the programs have changed. Some are now not any more secret, but now they are under the FISA, so-called Foreign Intelligence Services Act, now are legalized. For a while, they were legalized in the so-called Patriot Act, but it's still the same programs. It's still the same kinds of data retention that we have rejected in Europe, that the European Court of Justice has rejected."
+    },
+    {
+      "start": 1545.616,
+      "end": 1569.504,
+      "text": "I can tell you when we were back in July 2013, we were in Luxembourg for the oral trial there for negotiating data retention directive in July 2013. That was one month after Edward Snowden had leaked all this information. Without that leaks, I'm sure we would not have won the case a year later. I'm sure."
+    },
+    {
+      "start": 1569.504,
+      "end": 1590.96,
+      "text": "Because we were at this time, many who said that were like conspiracy theorists, right? So that was a game changer. And interestingly, that was also the core of the assessment of the European Court of Justice in the Schlems 1 case, in the Safe Harbor case. Because the core of that decision back then was to say..."
+    },
+    {
+      "start": 1590.96,
+      "end": 1620.432,
+      "text": "It was a smart move of the court. They took the assessment of the EU Commission towards the Snowden Leagues. The EU Commission brought quite early then in 2013 the first assessment of that. The Court of Justice in the preliminary ruling decision that Max was back then in his own case, alone without any help, without an association and so on, just on his own,"
+    },
+    {
+      "start": 1620.432,
+      "end": 1644.816,
+      "text": "for that and arguing that, like it was a sideshow actually of the Facebook case. The real case was, and also still ongoing in more cases, was about the question of do they actually respect European data protection law or not? But the sideshow was actually now is the main prominent actor is this abolishment of"
+    },
+    {
+      "start": 1644.816,
+      "end": 1674.464,
+      "text": "these safe harbor principles of the safe harbor adequacy decision there. Because they said, it doesn't matter what we have in the certification scheme. Safe harbor said, you can certify yourself at the U.S. Ministry of Trade. You have a commission there. You see, these are the criteria. If they certify you, they say, hey, you're safe. But it doesn't matter what you write in there. It's not worth the paper where you get your certificate."
+    },
+    {
+      "start": 1674.464,
+      "end": 1703.936,
+      "text": "If the three letters agency are coming and asking data of you, because if NSA or FBI, whatever is coming, asking, claiming data on base of the Foreign Intelligence Services Act, as it's called now, back then other legal bases, even partly court decisions there. If they claim that, it doesn't matter what is on any certificate. It doesn't matter what is on any contract. The two private parties negotiated amongst each other."
+    },
+    {
+      "start": 1703.936,
+      "end": 1730.688,
+      "text": "Right? So, and that is important to understand because the European Court of Justice said this is... Yes, please, George. Just to say, I'm watching the time. I have this... I have to shortcut. About five, six minutes. Yeah, yeah. The Court of Justice back then said, the Court of Justice said this is..."
+    },
+    {
+      "start": 1730.688,
+      "end": 1756.816,
+      "text": "Do we have that here? It violates the essence of Article 7 of the Charter of Fundamental Rights of the European Union. This is the right to privacy, also Article 8, the right to data protection, and Article 47, the right to a fair trial and the right to an effective remedy."
+    },
+    {
+      "start": 1756.816,
+      "end": 1785.456,
+      "text": "which is inside granted there. So not just a little violation. This is the only decision so far where it's violating the essence of this right. And the very same, just I provided for all our audience, for all our participants, much more information on the slides than I would be able to go through in that. Just that you know that you will see many details that I just scratch or maybe not even that are background."
+    },
+    {
+      "start": 1785.456,
+      "end": 1811.264,
+      "text": "The same happened again in 2020. European Court of Justice made the same again every five years because the solution that they brought afterwards was not really making a big difference. The so-called U.S. privacy shield was a little cosmetics, but still the same problem. Now came Biden's executive order. Biden's executive order is an executive order."
+    },
+    {
+      "start": 1811.264,
+      "end": 1841.264,
+      "text": "I skip here the strategic litigation for you to read as we poked also what does that ruling mean then, the so-called Schrems II ruling, and giving some idea of particularly use of Google Analytics and other things, and not just in Austria, so all over Europe. You will find this jurisprudence with the links together from European Data Protection Supervisor as well."
+    },
+    {
+      "start": 1841.264,
+      "end": 1868.592,
+      "text": "And what we could achieve also on the side with Neub was in the language that these mega concerns are talking, that they get really fined in a way that it is hurting, particularly when the threat is that this kind of fine will be repeated. The 1.2 billion record fine against Meta in Ireland was a big piece of work, and Ireland itself wouldn't do that in the first place."
+    },
+    {
+      "start": 1868.592,
+      "end": 1891.136,
+      "text": "push that over the European Data Protection Board there. And the same thing is going to happen again now. So this executive order of Biden is just an executive order. It is not out ruling actually the FISA, the legal acts there, the legal level. And what we see already now."
+    },
+    {
+      "start": 1891.136,
+      "end": 1920.432,
+      "text": "just recently since the inauguration of the Trump administration, is that the so-called Privacy and Civil Liberty Oversight Board, the PCLOB, was already kind of almost shut down. All the Democratic members got removed, their email accounts got shut down, and theoretically now they do not even have the resources to fully be deployed there. I provided you a link where you can see a bit more."
+    },
+    {
+      "start": 1920.432,
+      "end": 1938.208,
+      "text": "And it might be even already enough that the EU Commission will revoke by themselves the adequacy decision soon. But if not, NOIP is on it and there is already proceedings pending that the European Court of Justice will do that soon again."
+    },
+    {
+      "start": 1938.208,
+      "end": 1967.536,
+      "text": "So that was my main part for today. I wanted just also to mention I provided some slides there on the discussion. This is something that we actually mainly should discuss, just that you know that what I want to provide or what I want to bring into mind for this discussion is also that we have not only data protection, we have now with AI Act, the second strong instrument. We also can talk about the Digital Services Act, also."
+    },
+    {
+      "start": 1967.536,
+      "end": 1973.712,
+      "text": "addressing some parts AI, addressing this field of tension."
+    },
+    {
+      "start": 1973.712,
+      "end": 2000.08,
+      "text": "between on one side freedom of information, freedom of opinion, and on the other hand, not only a political culture, not only basic values and personality rights, but sometimes also data protection directly. They can be here. So just that you see what we have there. We have opinions already from the European Data Protection Board on AI."
+    },
+    {
+      "start": 2000.08,
+      "end": 2027.504,
+      "text": "We have an AI act that is now in force already. So we have also here this risk-based approach. We have here the unacceptable risk and the prohibited AI like social scoring or predictive policing. And then we have a part where we have high-risk AI. And in this field of the high-risk AI, this is where we talk about fundamental right impact assessment. This is where we talk like real breaks where I see."
+    },
+    {
+      "start": 2027.504,
+      "end": 2053.68,
+      "text": "And this is important for me in this discussion of sovereignty, that this is not just about this actual sovereignty. We should talk about that. We have to discuss about that. But it is also a sovereignty of values and of how we can keep them up. And that's going to be particularly important. I will go, my slides, just as you see, give you some."
+    },
+    {
+      "start": 2053.68,
+      "end": 2063.6,
+      "text": "overview of also that and just one last remark for now that's just in German but we will start put it piece by piece in English."
+    },
+    {
+      "start": 2063.6,
+      "end": 2092.256,
+      "text": "We have created jointly with other project partners a wiki, it's called ATLOS, for all these 17 new regulations in order to not lose oversight and also not to get lost. A wiki that provides also how they are intertwined, it gets use cases and so on for the 17 new acts and regulations and directives in the field of digital regulatory. Okay, so thank you."
+    },
+    {
+      "start": 2092.256,
+      "end": 2121.536,
+      "text": "Very much. I'm looking forward to a discussion. I think human rights based approach means that we build on the achievement, the main achievement of the 20th century, which is international human rights, which is a new way. We can also talk about enlightenment for zero, right? This is where we are now. And this is where I'm looking forward to discuss with you. Thank you very much. Thank you."
+    },
+    {
+      "start": 2121.536,
+      "end": 2148.128,
+      "text": "Christoph, thank you very much. And thank you also for providing the full set of slides so that all of us will have a chance to go through them. Let's now open the discussion. I already see a hand raised, and that's Hannes. Okay, thanks, thanks, Christoph, for this talk and for the overview. I have a very practical question."
+    },
+    {
+      "start": 2148.128,
+      "end": 2174.768,
+      "text": "Under the current legal regime and given the Trump administration, does the U.S. administration have legally access to our data stored on whatever cloud service provider from the U.S.? Even if this is Microsoft stored in Vienna, if it's Amazon stored in Sweden, as far as I have understood, they could, Musk, Elon Musk could have access to this data."
+    },
+    {
+      "start": 2174.928,
+      "end": 2203.712,
+      "text": "This is a very practical question. Thank you, Hannes. That is a good question. One has to differentiate and distinct between two different legal aspects or levels there for this question of access. One is if data is processed directly on the soil of United States, like in data center within United States there."
+    },
+    {
+      "start": 2203.712,
+      "end": 2233.472,
+      "text": "This is where we have the provisions that I have already quoted before. This is the so-called Foreign Intelligence Services Act, this FISA Act, giving them access, allowing them to cooperate, force, whatever, and then access this kind of data that is processed in U.S. The other question, and that is maybe I think where you wanted to point on also, is the so-called Cloud Act. This is nothing."
+    },
+    {
+      "start": 2233.472,
+      "end": 2251.376,
+      "text": "Coming just from Trump administration, Cloud Act was actually enacted during the Obama administration. And Cloud Act means to circumvent classical international law and so-called legal assistance that usually..."
+    },
+    {
+      "start": 2251.376,
+      "end": 2280.656,
+      "text": "internationally is enacted in that state. So if data that is interesting for any kind of investigations from the United States or other foreign authorities there, they would usually have to address, usually over the way of the Ministry of Justice, and then they send a request note to say, can we have access to the data? It has to be reciproc, usually."
+    },
+    {
+      "start": 2280.656,
+      "end": 2298.16,
+      "text": "And then if it's not violating the so-called haute republique of one state, then they would give access or not give access, right? So in order to circumvent, because that takes time, that is complicated, that often is really a deal breaker, they said cloud act."
+    },
+    {
+      "start": 2298.16,
+      "end": 2326.272,
+      "text": "We are allowed to force our vendors by the means of giving them pressure, giving them fining their mother companies, if we want to access their daughter companies abroad. And this is what happened. And the problem is now that the companies that have American, US American based mother companies there, and they are their owners, right? They are in the conflict of should I violate now?"
+    },
+    {
+      "start": 2326.272,
+      "end": 2353.248,
+      "text": "EU law when they are sitting here? Or should I violate US law when there is an attempt to try to access data like this? Thank you. And let me point out that 70% of the cloud service in Europe is run by Amazon, Google and Microsoft. 70%. And all that data"
+    },
+    {
+      "start": 2353.248,
+      "end": 2376.064,
+      "text": "is not covered by the Fourth Amendment. The Fourth Amendment in the U.S. covers only U.S. citizens. Giuseppe, please skip both questions and answers quick so we can get more opportunities for audience to ask. Thank you very much."
+    },
+    {
+      "start": 2376.064,
+      "end": 2404.304,
+      "text": "You mentioned the two approaches to regulation, which is the risk-based approach and the human rights-based approach. In particular, the AI Act is a risk-based approach. I was wondering whether you can comment on this, because I personally feel that it is a weak or fragile approach, because you cannot always start to list all the possible applications which might be risky, right?"
+    },
+    {
+      "start": 2404.304,
+      "end": 2426.576,
+      "text": "So having established which are the fundamental rights, then whenever a new application is developed, then you can decide whether it breaks some rights. And so it's more long, less short-sighted than the regulation which is based on listing or categorizing applications. What do you think about that? Thank you."
+    },
+    {
+      "start": 2426.64,
+      "end": 2436.688,
+      "text": "Thank you very much. Well, I think AI Act is both. It has a risk-based approach and a human rights-based approach, which came..."
+    },
+    {
+      "start": 2436.688,
+      "end": 2465.968,
+      "text": "by the notion of the EU Parliament. This came in the so-called Trilog proceeding in the very end. The EU Parliament negotiated this that we have now as Article 27 AI Act. And I mean, one has to, this is important. I go meanwhile back here to this slide that the sector of what we are talking here is only this high risk sector, right? So we are not talking about"
+    },
+    {
+      "start": 2465.968,
+      "end": 2484.496,
+      "text": "particularly so-called general purpose AI, like language models mainly, but other general purpose AI, they are not in that field of the high risk AI. They have only some transparency duties. And so really this fundamental rights impact assessment."
+    },
+    {
+      "start": 2484.496,
+      "end": 2506.896,
+      "text": "In combination with the risk management duties of Article 9, mainly Article 9 to 15 AI Act, they are applying for this high risk field. And you do not have so many fields there. And you have also a shared responsibility on the different roles you have."
+    },
+    {
+      "start": 2506.896,
+      "end": 2527.088,
+      "text": "all players with some you have the provider as well as the the establishment as well as the the vendor of this ai model have to contribute to that right so i think this will be actually just even too small"
+    },
+    {
+      "start": 2527.088,
+      "end": 2556.368,
+      "text": "part of where we do apply this really strict human rights risk-based approach, where we have also these strong duties there. And also, for example, the right to explanation, according to Article 86, GDPR for automated decision-making, AI is also only applying for the high-risk AI. So that scope is very narrow. And whenever industries is crying about that this is too much over-regulation,"
+    },
+    {
+      "start": 2556.368,
+      "end": 2584.032,
+      "text": "and everything, I think actually is not. These things are coming from machine safety, right? So that's the first thought of it. Okay, thank you. I saw a comment in the chat by Kyle Essenmacher, who had written to us beforehand asking a question as to what regulation applies to..."
+    },
+    {
+      "start": 2584.032,
+      "end": 2607.6,
+      "text": "Citizens that are not EU citizens, if their data, health data in this case, are stored in EU servers. And the only information I have been able to confirm is that GDPR applies to that data if they're stored in EU servers. And that's another asymmetry between..."
+    },
+    {
+      "start": 2607.6,
+      "end": 2631.792,
+      "text": "Thank you. That's a good question. That's actually an important part of also the claim of particularly GDPR, also other approaches. It's a so-called marketplace principle that is enshrined there. The marketplace principle says it's the scope, the personal scope for GDPR is not only..."
+    },
+    {
+      "start": 2631.792,
+      "end": 2647.216,
+      "text": "if in that case the controller or the processor of personal related data is established on EU soil, but also if they are abroad, but targeting the EU single market."
+    },
+    {
+      "start": 2647.216,
+      "end": 2668.832,
+      "text": "Right. So EU single market is valuable. And the basic principle is and also we have also international examples where other legislations are doing that. They say if you want to play on our market, even if it's online, you follow our rules. Of course, another question is there in which cases is it how easy to actually."
+    },
+    {
+      "start": 2668.832,
+      "end": 2698.208,
+      "text": "enforced it right so if you because if you have a player who is not established as all who doesn't have any assets there that might be another problem but legally it's a binding it's done okay one more question and then it's time for music one more question sorry i have a second question but this is more a political one christophe because you are also an activist"
+    },
+    {
+      "start": 2698.208,
+      "end": 2722.88,
+      "text": "This is a very nice framework we have built in Europe, which is working. We are not sure whether it will work with the US if they are changing their behavior. But this framework is under heavy threat. OK, we know now with the development in the US, we have seen where the big IT companies, the platform companies are aligning with Trump and they're already pushing Europe."
+    },
+    {
+      "start": 2722.88,
+      "end": 2751.168,
+      "text": "to, let's say, to release some of these hard regulations. And even within Europe, we see a tendency of deregulation, let's say, of going, maybe this is too much bureaucracy and this is hindering innovation. So this is, let's say, a fundamental question for a human rights activist, not only in the level of ICT, but also, I think, for digital humanism. First of all, I would know, what is your, let's say,"
+    },
+    {
+      "start": 2751.168,
+      "end": 2771.04,
+      "text": "impression of this, or how do you judge this development, and what would be a proper answer? Just to make sure, just to start with Christoph, there are two convergent lines here. One is coming, and that's lobbying and political pressure from the US."
+    },
+    {
+      "start": 2771.04,
+      "end": 2793.168,
+      "text": "And the other is the Draghi report drive for simplifying. And it would be very dangerous if there's a confluence of the two. One minute answer. I think the pressure is huge. You're absolutely right. This pressure, I see it. And I think in most cases we can talk about some."
+    },
+    {
+      "start": 2793.168,
+      "end": 2818.592,
+      "text": "minor amendments and trying to simplify at some stages, but I don't think we have much room there. Not in GDPR, not in AI Act. I think it's dangerous. Also, particularly not in DSA or DMA. That's a road we should never go. And the answer as a human rights activist on why we should not do that is to bear in mind these are not just acts."
+    },
+    {
+      "start": 2818.592,
+      "end": 2847.168,
+      "text": "coming out of some funny feelings of some EU Commission members or parliamentarians. This is actually a duty, a so-called duty of protect and fulfill human rights and fundamental rights guarantees by the legislator. So they are not just simply free to do it, because this one is something where really the whole society and democratic society..."
+    },
+    {
+      "start": 2847.168,
+      "end": 2876.464,
+      "text": "is endangered at some levels. That is particularly true for AI Act and particularly true for DSA, DMA, but also for the new initiatives now of, as we see, finally to build up some European infrastructure. We saw the letter, we see the open letter from DigiHume. We had with Austrian Computer Society has in summer 2013, we had a similar open letter in Austrian newspaper and now finally 12 years."
+    },
+    {
+      "start": 2876.464,
+      "end": 2904.128,
+      "text": "years later, it seems to have effect. But let's see if we are not yet too late. We have to fight for the things. Yes, nothing is gained without fighting. Thank you, Christoph, for providing a framework in these times which are very difficult for the whole EU regulatory framework. And you provided a framework within which to think about these issues and act."
+    },
+    {
+      "start": 2904.128,
+      "end": 2933.264,
+      "text": "And we can join forces from Digital Humanism and your organization, I think, on many of these issues. With this, thank you. And over to Stefan. Thank you for inviting me. Thank you for having me. Have a good time. See you. Bye. Thank you, Christoph. Thank you very much, George. Thank you both. It was a very, very interesting and important lecture."
+    },
+    {
+      "start": 2933.264,
+      "end": 2960.112,
+      "text": "I would say before closing today's lecture and handing over to Peter, let me just make a few announcements. There is already the link in the chat to the slides Christoph provided. It is much appreciated. We will also put it on the web page soon so that you can go through this and digest all this material with the necessary time."
+    },
+    {
+      "start": 2960.208,
+      "end": 2982.96,
+      "text": "In the final slides provided by Peter, we have our announcement for the conference in May. For those of you who cannot make it to Vienna, the plenary sessions will be recorded and most probably will be shared afterwards."
+    },
+    {
+      "start": 2983.024,
+      "end": 3010.56,
+      "text": "Look out for that are concerning the next lectures. So we have not 100 percent fixed them, but there is now a longer break also because of the conference end of May. But there will be lectures on June 17 and or June 24. Things still have to be fixed. But so stay tuned. End of June, we will we will have at least one lecture for sure."
+    },
+    {
+      "start": 3010.56,
+      "end": 3039.12,
+      "text": "one more lecture and final remark from my side uh we also will have another conference end of november a scientific conference with a call for papers where people can submit their papers where we will have uh we have a program committee selecting papers and the authors are then invited to present their work and we will have keynote talks um so have a look at the web page i will also put it"
+    },
+    {
+      "start": 3039.12,
+      "end": 3066.08,
+      "text": "on in the chat now and with that i i hand over to peter and thank you all again for joining see you soon have a nice evening peter well thank you stefan i've just shared the screen um so you already see the song that we've played today um how do we end up with this one well occasionally we give a chat about the chance to come up with a track"
+    },
+    {
+      "start": 3066.08,
+      "end": 3093.104,
+      "text": "And this time Google Gemini had the honors and Gemini was prompted with today's title and abstract and responded. That sounds like a fascinating and timely lecture. So it was very correct. For the outro music, considering the themes of legal frameworks, technical aspects, human rights, and the push for European digital sovereignty, you'd want something that feels both thoughtful and perhaps a little forward-looking. Here are a few ideas playing on different nuances."
+    },
+    {
+      "start": 3093.104,
+      "end": 3114.88,
+      "text": "Uplifting and hopeful, suggesting progress and future possibilities. Europa by Santana. The title is a direct nod to Europe and the instrumental piece is a beautiful, sorry quality that evokes a sense of aspiration and connection. So I'll end the answer here. I'll spare you the rest of the conversation in which I asked for a track with topical lyrics and Gemini started hallucinating non-existing tracks."
+    },
+    {
+      "start": 3114.88,
+      "end": 3144.32,
+      "text": "It also apologized when I called it out on it. That is not that important. But of course, there's a very obvious connection here with the title. And so that's going to be our track. As Stefan mentioned, in two weeks, we'll have the big conference in Vienna. I hope to meet many of you there. Also, our textbook, Digitalization and Us, will be available in English very soon. Also, that will be a reminder on the slides you'll see. And for all future events, such as the research conference that Stefan mentioned."
+    },
+    {
+      "start": 3144.32,
+      "end": 3163.312,
+      "text": "We'll keep you updated. And please subscribe to our social media channels or email newsletters for this. So all I can do is thank Christoph and George. Thanks for this very interesting lecture and discussion. And I say goodbye with Santana and Europa."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "video_id": "2C3fVa9gwWk",
+  "source": "whisper",
+  "language": "en",
+  "text": "Last but not least before lunch is Hans Ackermann from the Free University in the Netherlands. And also I see from the Network Institute. Is this okay? Can you hear me? No? In view of the previous talks, I want to start with a set of disclaimers. There is no area that I will address in this talk in which I'm an expert. The internet. I'm not truly a computer scientist, so I do confuse the internet and the web. And in all the talks I give, on average, half of the people do not know that there is a difference. And the other half, including myself, does not care for all practical purposes. Global commons, commons is a technical term, in disciplines I'm not familiar with. I just read. It's a term I invented for this occasion, but it's a kind of new term, so I don't know what it precisely means. That's what I'm trying to find out. It only tries to convey an idea. So computer scientists, there are many here. This is some kind of historical development in the field that the name itself says it already. Computer science is about technical systems. Then after some decades, and people who are in human-computer interaction know that, the idea that it's not just technical systems became more prominent, and you've got the term of socio-technical systems. And what I try to convey is that we have gone a step further, and that actually if you talk about the web or social media, clearly there are technical elements. And they form a specific landscape, like a natural landscape. You can have mountains or grass or deserts. And that is determined by the technology in the digital world. But the dominant thing is the social and sociality elements. So I do not do the web as an amateur. I just talk about... it as a total amateur. And Tim Berners-Lee will also figure in this talk a few times. I organized a symposium 10 years ago at VU Amsterdam on the web and social development. I chaired the symposium and Tim Berners-Lee was one of the key speakers. This is a quote from that time when he was establishing the World Wide Web Foundation. This is a pretty constant idea that he is promoting since then. Our success will be measured by whether people in developed and developing economies alike can distinguish reliable information from propaganda or commercial chef, whether the next generation will build systems that support democracy and accountable debate, and I hope that you will join this global effort to advance the web to empower people. And actually, this symposium was about developing countries, and that you can see from the picture here, which is from the Sahel Desert in Mali, where we did a bus trip. Recently, last year, Tim Berners-Lee got the ACM Turing Award in 2016, which is basically seen as the Nobel Prize for computing, for informatics. And then one of the obligations you have as a winner, you have to give a lecture. So we succeeded in maneuvering him to... give the lecture as a keynote speech at the Web Science Conference, of which I was general chair last year. And one of the points that he has been making several times, and was one of the reasons for his Worldwide Web Foundation, is that if you think about the web as a global system, then you have to put global between scare quotes, Because still today, about half of the planet does not have access to the web. And Berners-Lee's idea is that it's a very important empowering mechanism, so do something about it. That also gives an interesting twist. Okay, this is where I work. And actually, the next speaker, if I'm correct, is Mirjam. She is working as an anthropologist in this. She has a very interesting story how the digital world impacts people and is used by people that not so long ago didn't hear about the web, simply didn't know. So we were in these areas and had radio interviews and colleagues from... The World Wide Web Foundation, W3C, were interviewed in French, and they started to talk about the web and Berners-Lee, and the first question of the radio interviewer was, first tell me what the web is, because my listeners will never have heard of it. Now on to the topic of commons. Communications of the ACM is the flagship of the ACM, Academic and Professional Organization of Computer Scientists and Engineers. And Moshe Vardy, and it's nice that he is here, wrote it, and it has a very beautifully provocative title, How the Hippies Destroyed the Internet. And actually, this column is a kind of trigger for the day we organize here. Because he expresses deep concern about where the internet is going. And he is using, in this article, internet as a catch-all term. I do the same, actually. And he says, and you can see it here, that there is a notion of unfettered freedom. and that he associates with hippies. And this unfettered freedom has gone totally wrong. That's basically the point. Then, I think because of the very beautiful, provocative title, I assume that ACM received at least two million letters, out of which they selected three or four. that were all heavily disagreeing with Moshe. Moshe said in response, my July 2018 column seems to have touched a nerve with some readers, must be two million. Hannes organized a meeting, a public kind of moderated interview type meeting. And what was interesting is he sent out the first announcement on Tuesday, if I'm correct. And then on Thursday evening, there were 150 people in the room. And then here, people are heavily disagreeing. And this is a quote of the second. Moshe Fadi's column was wrong about both the cause and the solution to what he sees as a serious problem with the Internet. And I think if you are wrong about the cause, that's a kind of scientific thing. So you are wrong as a scientist. And the solution, that's a kind of engineering thing. So you are wrong as a scientist and as an engineer. So you are wrong about basically everything you can be. That's related to this idea of techno-sociality. I tend to think of web more as a social network than as a technical thing. And that can be liberating, but it can also be, like any social network, very much enclosing. And then I do think that we have some role in resolving the question, what kind of web do we really want? And if you want to have an example of enclosure... This is the digital 1984 novel by Dave Eggers called The Circle, which is a kind of scenario simulation of what might happen, also politically. Mosher explicitly, and that's why I'm going into it, explicitly refers to a very well-known article in Science by Tim Harden, sorry, Gerrit Harden. Called the tragedy of the commons. And. The idea of commons is that. You have common property of resources. And there are. This is the way also Hardin phrases it. There is a tension. So you have grasslands. You have cattle. The grasslands are. collectively owned. That's what was called the commons. And they still exist today also, for example, in Africa and many places. So it's a very commonly known thing. The question is, people use these resources and extract. You eat the grass. There's a tension between your individual behavior and profits. the collective interests, because if you let your cows eat the grass or let your sheep eat the grass, then another person cannot do it anymore. And there is a second thing, and that was actually a main point by Harden. It's a short-term depletion of resources versus long-term sustainability of the resource in general. And what he says, actually, the reception of his article is basically that it's a kind of definitive argument against commons arrangements. So the idea that you cannot have commons, it's only either the state or markets and private property comes from that article. And that's because commons are simply impossible. So if you want to have decent arrangements, it's... one or the other. And the reception is that the one focusing on the need for private property, which is also what you do in your article, and market clearing and price mechanism. What is interesting as a side note is that what he actually does in his article in Science 1968 is emphasize this problem. So the reception of his article is really different from what he himself thought of it. He says that for him the overpopulation was a big problem. And there he says that is not solved by private property or price mechanism. That's only solved by heavy state intervention. Mutual coercion. There's a phrase in his article or heading, the freedom to breed is intolerable. And in fact, he turned out to be in favor of China's one child per family policy. But the article has been taken as a definitive argument against Commons. Now, this is a long time ago, and what is less known is that there is a whole empirical literature on commons that also extends these days to Internet and web and other forms of digital. Eleanor Ostrom, a political scientist at Indiana University, basically spent her life, I think she died, three or four years ago, something like that. She has been analyzing lots and lots of local commons that exist and are failures and are successes. And she has been analyzing what are the factors in the governance arrangements that make them work. And she came up, this is a book in 1990, with a list of design principles. For example, define clear boundaries, who is entitled to be involved in the use of the resources. Make sure that there is a deliberation. that make sure that there are conflict resolution mechanisms, make sure that there is a graded system of sanction, make sure that there is a kind of monitoring system. This one is interesting because one of the conclusions from that very empirical literature is that it's not just local self-governance. but it is embedded in other systems, which might be the state or might be market-oriented. For example, in Africa, in different countries, you have different laws about who owns trees, for example, and that does make a difference. Be that as it may, I think this literature... is also of significance to, let's say, the digital social space. And there's a whole literature that is more recent than the original commons literature. So there's literature about digital information, knowledge commons. Benkler especially makes an interesting point. You have such a thing as what he calls open access commons, and then the point is not the ownership, but the point is open use. So you have use rights, which is different from property rights, and then things work differently. There are also attempts to apply this to emerging technologies. where it's not about resources, but about risks that you create for others, and I think that might be of relevance to us. And it's a whole discussion on what global is. So it's easy to say, okay, the pastures in England that were local village kind of things, and now internet and web is global, and that does make a difference, but what does that precisely mean? This is very much open, much more recent, more contested. Ellen Ostrom actually got the Nobel Prize for Economics in 2009 for her work. And I list here a number of themes that come over and over again in this literature that I have read, but just as an amateur. And it's not a central government or a pure market, but what will happen and what is needed is a variety of institutional forms and what she calls polycentric, more or less decentral forms of governance. Other authors talk about the need for... Pretty consonant with that. The need for adaptive governance, and we have that here. All kinds of things are happening. Things are changing. You see it with, let's say, natural resource commons with climate change very much. Situation is different. So what needs to be done is different. So you need some form of evolving adaptive governance. Other points that are made is, and especially for global commons, and most of it is related to natural resources, but it's difficult to do proper governance because we have very limited insights into how these systems really precisely work. So with the small local commons, and that's a point by Eleanor Ostrom, Often, people themselves have a very good view on how it works. That's why, let's say, indigenous knowledge is very important for proper governance. But for the global systems, we do not have that knowledge. So it's important to invest in science in order to understand how the system works, how it works for the users, and how it works for affected people. outside people. And the point that you see often made is integrate scientific analysis with broadly based deliberation. So it's not pure analysis, but it must be integrated with democratic deliberation on what to do. And another theme that comes up all the time is the notion of complexity. This is an example from anthropology, from the Subax in Bali. There are other books with a beautiful title, Priests and Programmers. And the point is that running the rice fields in a certain area in Bali is a very elaborate religion-based system run by priests. And what actually happens is that this is a non-linear dynamic system of water management and they manage it through the religious rituals such that you have the best results because there are differences of interest between people who are higher up in the stream and who are downstream. That must be carefully managed. And this whole book tells how it works. So they did even simulations. That's why these priests are actually programmers and designers of this governance. And similar notions you find in diffusion of innovations. So there's a lot of tendency also in the literature that Bill mentioned to look at the invention. So Kuhn. and that is inspired by Kuhn, you look at the invention. But most of the innovation is after the invention and what happens next. And this is actually focused on such idea for open source software. A very nice book. But the notion that these are non-linear complex systems is basically everywhere. And from there, you have this idea of adaptive, decentral governance. So to sum up, science takes place more and more in the agra of society. And that actually, well, I'm happy to have you here, but I read this stuff 20 years ago already. I think what is happening here is precisely these kinds of things. What is needed is reasoned public debate and deliberation and scientists, as they are at least a bit knowledgeable, have a role in this. What I also think is it's not pure analysis in a positivist sense, but we need solutions, and they might be imperfect, but still better than now. So some form of design thinking is important. The point is that for engineers, and there are many here, design thinking is not a problem, but only relates to the technical side. The Network Institute I founded is an interdisciplinary research institute, including social science and humanities. What I see, when you talk with colleagues, that the notion of design... is pretty alien to many social scientists and humanities researchers. And the reason is that many of them have this positivistic attitude that the researcher or the scientist is an observer of things, and you do not design things, because that's not descriptive, that is prescriptive, and that is something you should not do as a scientist. That's my experience. So there it's difficult. And I think we have to resolve this. Now I want to mention. The situation ICT people are in. Is not unique I would say. It has happened before. And actually I am. Not a computer scientist, I know pretty well what information systems and knowledge systems are, but really, I am a nuclear physicist. I wrote my master degree report, and it was a three-page article, so I still secretly think that I hold the world record of brevity of master thesis. And I wrote my thesis in it. How many pages? That was about 100, because I crammed together five different journal articles. And the title was something like A Drunkard's Walk in the Land of Nuclear Decay. And it was studying what happens. OK. you know probably about the hydrogen bomb or the neutron bomb. Then when they explode, they send out five fast neutrons, and I was considering what happens next with radiation effects. Actually, I have articles written in the beautifully titled Radiation Effects Journal. Then at that time, there's a long history that all kinds of, very important physicists, well, felt some societal responsibility. And, well, you know, probably Einstein wrote a letter. Einstein was a pacifist, but wrote a letter to the U.S. president on the atom bomb. Oppenheimer led the project. Actually, he... There was a lot of protest and anxiety on the physicists that engineered the nuclear bomb. And they wanted him to warn the president not to use it. And he refused to do that. But when it happened, he was totally shocked. And later on, he even got into problems with the McCarthyism, anti-communist activities. During the Cold War, there were, and this was a minority, but still vocal. You had the Bulletin of the Atomic Scientists. You had movements like the Book Wash Movement. The Bulletin of the Atomic Scientists published articles also about policy issues. So they have been influential in shaping the Nuclear Non-Proliferation Treaty, the NPT, which is a very strange treaty because it says the countries that already have nuclear weapons, just keep them and we prevent the other countries to acquire them. So this is, if you talk about temporary solutions, then this is a temporary solution. There are all kinds of objections, but still it has worked to some degree. I think GDPR, the European Privacy New Law, is very much the same. It attempts to address an issue, but all kinds of... strange side effect, so it will be a good example that it needs to involve. And this was phrased, I got into lectures, my professor of general relativity also gave a course on the societal responsibility of the physicist. I would like to mention here, it was not an ethics course. It's the societal thing that was the emphasis. So this is a long summary, but that's on the web. This is a simpler summary. This was the Turing Award lecture in Amsterdam. I have a short movie. It's on the ACM website in full, but that's one hour and a half. You can deliberately make systems whereby people will collaboratively, constructively work together to build a democratic world. And this is the most simple summary. understanding what to believe we call science, deciding what to do we call democracy. But I do think now that the two become linked so that we have a duty to think about both. Thank you. Thank you. This was a wonderful lecture. I think one of the main reasons for this development is that there is a monetarization of every human activity, and there is also a drive of big companies for effortless rent income. And all this advertisement that we get over the Internet, is very near to effortless rent income. And the main example is copyright law. Copyright now finishes 70 years after the death of the author. And the reason for that was because Walt Disney ran danger to lose the right to the Mickey Mouse. But now you see there are scientific articles in libraries. written before the advent of digitization. Of course, you are not allowed now to digitize this and to put it on the Internet. If you want to get such an article online, you have to pay $35 to Elsevier or to Springer Nature or other things. And this is, again, an income stream for effortless rent income. And I think that if we just stop to monetize every human activity and that we put more, yeah, if we use the commons more and the commons should really be owned by those who work it, then many of these developments would not happen. Any reaction to that? Yeah, I do think that there are various, I think you point that out in your column or in your response. There are certain business models behind it for companies that have all kinds of outside effects that are negative. And then the question is whether you should allow these business models in an unfettered way. Let's say the resistance can come from the state, that's basically what is happening with the GDPR, but it can also come from the people who are involved. I think it's not just one global network, but there are many different areas. open source software or Wikipedia that are basically common type of arrangements that keep out certain business models. But this is a difficult design problem. Thank you very much for this highly interesting talk. I'm very grateful especially for your hint about the parallelism between the atom bomb and digital change. Let's call it that way. And maybe we can draw on that a bit further in the sense of you are certainly aware of the work of Günter Anders, which is a largely forgotten local philosopher here in Vienna, the first husband of Hannah Arendt, who was also arguing in this direction in his work, the Atomare Drohung, I think it's called. He was even proposing a Hippocratian oath for physicists based on the experience with the nuclear bomb. as the digital change somehow replicates indeed the same thing, but in a distributed way. So a nuclear bomb is still a centralized entity. The Internet is very distributed. We could really go on that, and maybe this could be also a good starting point for this Vienna Manifesto tomorrow. I'm passing this to Hannes Werten. I think starting from this experience, With the nuclear bomb and drawing conclusions for today could be a very convincing way to go ahead with some sort of concise formulation of what we have in mind. A side remark on this. One thing is what kind of policy you want to have. But, for example, in the Cold War, the Pupush movement, their main goal was... Simply keep open the communication channels between Soviet physicists and Western physicists. Because that was in itself... And I think we have the same problem with information bubbles in the Internet. So just the attempt to keep communication channels open is in itself valuable. I was also very touched by your analogy with the atomic bomb. But my conclusion is slightly different because, unfortunately, humanity learns fastest from catastrophes. And with the Internet, we have seen various scandals, but nothing that really brought us to the brink of collapse. What we do have is a lot of talk about ethics and a general agreement that ethics somehow has to be incorporated. Only if you look a bit more closely, there is little agreement what kind of ethics. You have experimental ethics, you have empirical ethics, you have all kinds of cultural differences. So my question to you is really, do you see a way of broadening the... the talk we have now about ethics to bring in the notions of commons, social justice, societal responsibility, trustworthiness. In other words, how to transcend the, in my view, rather narrow discussion of ethics that we have right now. Yeah, I agree very much. And I think I indicated that. The societal responsibility is not exactly the same as ethics, because ethics, typically, at least in the West, is taken as some kind of individual thing. Are my actions right? Which is important, but we are dealing here, I think, with the societal effects of our technologies. in all kinds of unexpected and in cases harmful ways. And I think the more important question is, are we able to influence what we are going to do about it in some way? In that sense, Aristotle in his ethics talks about different types of knowledge. And the academic type of knowledge is called... And he also talks about a different kind of knowledge called phronesis, which is how do we run the state? How do we run a household? And that's the way he made his money from. So we need some kind of more phronesis-oriented. What are we going to do? That's why I talk about design. I think that's also a scientific endeavor, and that's why I refer to your AGRA, because you cannot do that alone, but you have to do that with people that are affected. And I think we should... I do not know what the answers are. I am an amateur, but I do think that we should spend more effort on this, including ACM and other organizations. Yeah, thanks for this inspiring talk in which you in fact also call for activism in science. And I think there is something to be really discussed there because we cannot just sit aside. And that's what we do too much also in the Netherlands. Don't tell me about that. We should work together, but anyway. It's good to be in Vienna to discover that. But I think there's one question. You started with a slide. I have one question. You started with your slide on the digital divide in the world. And then you start talking about commons. Whose commons are you talking about? I think the digital divide is very serious in our world. And it's a huge problem that we need to... tackle somehow, but also here I think technological thinking is a lot based on Western or American society. Can you give a short reflection on this? This is the reason that I made a point. A lot of our discussions are focused on the West, the global North, and you leave out the global South. And I think... The Turing lecture by Tim Berners-Lee had the theme of from utopia to dystopia, and then ends back again with a question mark. So that's... His idea is, and the idea of his web foundation as a kind of lobby or advocacy organization is, spread access to the web as far as possible. But then the snag is that you spread the current web as it is with all its evils. That's implied. In the same way that I think that Einstein will have had second thoughts afterwards when he sent the letter to the US president. So here are some dilemmas. And this is going to happen. You know that better than I do. So this is not an easy thing. So I very much appreciated your parallel with the situation of physicists in the 40s and the 50s about their social responsibility because I think that we as computer scientists and informatics engineers are much in the same situation. And I support the proposal that was made about an hypocritean hope for computer scientists, because I think that more and more we are like doctors. We are rooted in science, but what we do, the result of our actions, affect the life of people. So as doctors, no biology, but then they have the duty to protect the human life. Therefore, we are rooted in mathematics or science, but we have to... a duty to protect not only the digital life, but also the way the digital life influences the real life. May I just say thank you for your talk. But, you know, sometimes I feel that the way you or other people have construed ethics is too narrow-minded. in the sense that for example you talked about justice someone talked about justice but distributed justice in a certain way is already ethics what we owe to others as their right so as an economist you may talk about the problems of internet stealing jobs or whatever AI stealing jobs or robotics stealing jobs but then the problem arises which is an ethical problem do we have to do Something about that and on what basis. Or maybe we don't have to do anything. Of course, there are also people who think that there is no such thing as distributive justice. So I think that we have to learn from many other fields. where ethics starts from a plurality of normative theories, then you have problems because you have tensions arising between different principles, and then you have to make white public choices, and ethics can orient public discussion and deliberation about lots of the things that we have been discussing. It's not only individually oriented. So the duties, we can make coalitions, and the duties become collective duties, or whatever other things, but I don't want to make a long story too short. I personally think you are right, and that it would be better to have a broader view on ethics, including the societal or the sociological or the political element. I just refer to it because what I notice, if you start to discuss these kinds of things with colleagues, even in my own department, the tendency is to have such a view on ethics. And you also see it simply in the course materials. We do have ethics courses for research ethics, and then it's focused on these kinds of issues, which are, in my view, too limited. So it's not my personal view, but I think it's a kind of empirical fact that it is understood like that. I think this is going to be the last obstacle in the way of lunch. Okay. Ten seconds. Just a remark to your remark. I think the situation with the hippocampus is even worse with the computer scientists because a doctor, even if he fails, it affects just one patient. If somebody in the desert of Arizona looks for a taxi cab, doesn't get it, programs something like called Uber, and two years later every other taxi driver in Vienna is jobless and thousands of families are starving, and I know that because our son is a taxi driver, or has been at least, this affects, due to the distributed nature, even much more than just Dr. Beffer. A Hippocratic note for computer scientists would be highly, highly necessary, I believe. Lunch. In my duties to not just one person, but all of you, I'm declaring it lunchtime. So let's thank Hans again.",
+  "segments": [
+    {
+      "start": 0.0,
+      "end": 21.296,
+      "text": "Last but not least before lunch is Hans Ackermann from the Free University in the Netherlands. And also I see from the Network Institute. Is this okay? Can you hear me? No?"
+    },
+    {
+      "start": 35.76,
+      "end": 64.368,
+      "text": "In view of the previous talks, I want to start with a set of disclaimers. There is no area that I will address in this talk in which I'm an expert. The internet. I'm not truly a computer scientist, so I do confuse the internet and the web."
+    },
+    {
+      "start": 64.976,
+      "end": 92.88,
+      "text": "And in all the talks I give, on average, half of the people do not know that there is a difference. And the other half, including myself, does not care for all practical purposes. Global commons, commons is a technical term, in disciplines I'm not familiar with. I just read."
+    },
+    {
+      "start": 98.48,
+      "end": 128.304,
+      "text": "It's a term I invented for this occasion, but it's a kind of new term, so I don't know what it precisely means. That's what I'm trying to find out. It only tries to convey an idea. So computer scientists, there are many here. This is some kind of historical development in the field that the name itself says it already. Computer science is about technical systems."
+    },
+    {
+      "start": 129.168,
+      "end": 156.96,
+      "text": "Then after some decades, and people who are in human-computer interaction know that, the idea that it's not just technical systems became more prominent, and you've got the term of socio-technical systems. And what I try to convey is that we have gone a step further, and that actually if you talk about the web or social media, clearly there are technical elements."
+    },
+    {
+      "start": 156.96,
+      "end": 186.576,
+      "text": "And they form a specific landscape, like a natural landscape. You can have mountains or grass or deserts. And that is determined by the technology in the digital world. But the dominant thing is the social and sociality elements. So I do not do the web as an amateur. I just talk about..."
+    },
+    {
+      "start": 186.576,
+      "end": 216.368,
+      "text": "it as a total amateur. And Tim Berners-Lee will also figure in this talk a few times. I organized a symposium 10 years ago at VU Amsterdam on the web and social development. I chaired the symposium and Tim Berners-Lee was one of the"
+    },
+    {
+      "start": 216.464,
+      "end": 240.624,
+      "text": "key speakers. This is a quote from that time when he was establishing the World Wide Web Foundation. This is a pretty constant idea that he is promoting since then. Our success will be measured by whether people in developed and developing economies alike can distinguish reliable information from propaganda or commercial chef, whether the next generation"
+    },
+    {
+      "start": 240.624,
+      "end": 268.048,
+      "text": "will build systems that support democracy and accountable debate, and I hope that you will join this global effort to advance the web to empower people. And actually, this symposium was about developing countries, and that you can see from the picture here, which is from the Sahel Desert in Mali, where we did a bus trip. Recently, last year,"
+    },
+    {
+      "start": 269.232,
+      "end": 294.24,
+      "text": "Tim Berners-Lee got the ACM Turing Award in 2016, which is basically seen as the Nobel Prize for computing, for informatics. And then one of the obligations you have as a winner, you have to give a lecture. So we succeeded in maneuvering him to..."
+    },
+    {
+      "start": 294.24,
+      "end": 323.216,
+      "text": "give the lecture as a keynote speech at the Web Science Conference, of which I was general chair last year. And one of the points that he has been making several times, and was one of the reasons for his Worldwide Web Foundation, is that if you think about the web as a global system, then you have to put global between scare quotes,"
+    },
+    {
+      "start": 323.6,
+      "end": 353.296,
+      "text": "Because still today, about half of the planet does not have access to the web. And Berners-Lee's idea is that it's a very important empowering mechanism, so do something about it. That also gives an interesting twist. Okay, this is where I work. And actually, the next speaker, if I'm correct, is Mirjam."
+    },
+    {
+      "start": 353.296,
+      "end": 381.552,
+      "text": "She is working as an anthropologist in this. She has a very interesting story how the digital world impacts people and is used by people that not so long ago didn't hear about the web, simply didn't know. So we were in these areas and had radio interviews and colleagues from..."
+    },
+    {
+      "start": 382.256,
+      "end": 406.576,
+      "text": "The World Wide Web Foundation, W3C, were interviewed in French, and they started to talk about the web and Berners-Lee, and the first question of the radio interviewer was, first tell me what the web is, because my listeners will never have heard of it. Now on to the topic of commons."
+    },
+    {
+      "start": 411.024,
+      "end": 435.408,
+      "text": "Communications of the ACM is the flagship of the ACM, Academic and Professional Organization of Computer Scientists and Engineers. And Moshe Vardy, and it's nice that he is here, wrote it, and it has a very beautifully provocative title, How the Hippies Destroyed the Internet."
+    },
+    {
+      "start": 439.568,
+      "end": 469.424,
+      "text": "And actually, this column is a kind of trigger for the day we organize here. Because he expresses deep concern about where the internet is going. And he is using, in this article, internet as a catch-all term. I do the same, actually. And he says, and you can see it here, that there is a notion of unfettered freedom."
+    },
+    {
+      "start": 469.712,
+      "end": 498.608,
+      "text": "and that he associates with hippies. And this unfettered freedom has gone totally wrong. That's basically the point. Then, I think because of the very beautiful, provocative title, I assume that ACM received at least two million letters, out of which they selected three or four."
+    },
+    {
+      "start": 498.672,
+      "end": 527.792,
+      "text": "that were all heavily disagreeing with Moshe. Moshe said in response, my July 2018 column seems to have touched a nerve with some readers, must be two million. Hannes organized a meeting, a public kind of moderated interview type meeting."
+    },
+    {
+      "start": 527.792,
+      "end": 557.568,
+      "text": "And what was interesting is he sent out the first announcement on Tuesday, if I'm correct. And then on Thursday evening, there were 150 people in the room. And then here, people are heavily disagreeing. And this is a quote of the second. Moshe Fadi's column was wrong about both the cause and the solution to what he sees as a serious problem with the Internet."
+    },
+    {
+      "start": 557.568,
+      "end": 586.736,
+      "text": "And I think if you are wrong about the cause, that's a kind of scientific thing. So you are wrong as a scientist. And the solution, that's a kind of engineering thing. So you are wrong as a scientist and as an engineer. So you are wrong about basically everything you can be. That's related to this idea of techno-sociality."
+    },
+    {
+      "start": 587.184,
+      "end": 612.96,
+      "text": "I tend to think of web more as a social network than as a technical thing. And that can be liberating, but it can also be, like any social network, very much enclosing. And then I do think that we have some role in resolving the question, what kind of web do we really want? And if you want to have an example of enclosure..."
+    },
+    {
+      "start": 612.96,
+      "end": 642.832,
+      "text": "This is the digital 1984 novel by Dave Eggers called The Circle, which is a kind of scenario simulation of what might happen, also politically. Mosher explicitly, and that's why I'm going into it, explicitly refers to a very well-known article in Science by Tim Harden, sorry, Gerrit Harden."
+    },
+    {
+      "start": 643.472,
+      "end": 672.864,
+      "text": "Called the tragedy of the commons. And. The idea of commons is that. You have common property of resources. And there are. This is the way also Hardin phrases it. There is a tension. So you have grasslands. You have cattle. The grasslands are."
+    },
+    {
+      "start": 672.864,
+      "end": 701.76,
+      "text": "collectively owned. That's what was called the commons. And they still exist today also, for example, in Africa and many places. So it's a very commonly known thing. The question is, people use these resources and extract. You eat the grass. There's a tension between your individual behavior and profits."
+    },
+    {
+      "start": 701.76,
+      "end": 726.48,
+      "text": "the collective interests, because if you let your cows eat the grass or let your sheep eat the grass, then another person cannot do it anymore. And there is a second thing, and that was actually a main point by Harden. It's a short-term depletion of resources versus long-term sustainability of the resource in general."
+    },
+    {
+      "start": 727.376,
+      "end": 757.04,
+      "text": "And what he says, actually, the reception of his article is basically that it's a kind of definitive argument against commons arrangements. So the idea that you cannot have commons, it's only either the state or markets and private property comes from that article. And that's because commons are simply impossible. So if you want to have decent arrangements, it's..."
+    },
+    {
+      "start": 757.04,
+      "end": 785.456,
+      "text": "one or the other. And the reception is that the one focusing on the need for private property, which is also what you do in your article, and market clearing and price mechanism. What is interesting as a side note is that what he actually does in his article in Science 1968 is emphasize this problem."
+    },
+    {
+      "start": 786.352,
+      "end": 813.104,
+      "text": "So the reception of his article is really different from what he himself thought of it. He says that for him the overpopulation was a big problem. And there he says that is not solved by private property or price mechanism. That's only solved by heavy state intervention. Mutual coercion."
+    },
+    {
+      "start": 814.128,
+      "end": 843.152,
+      "text": "There's a phrase in his article or heading, the freedom to breed is intolerable. And in fact, he turned out to be in favor of China's one child per family policy. But the article has been taken as a definitive argument against Commons."
+    },
+    {
+      "start": 843.6,
+      "end": 872.88,
+      "text": "Now, this is a long time ago, and what is less known is that there is a whole empirical literature on commons that also extends these days to Internet and web and other forms of digital. Eleanor Ostrom, a political scientist at Indiana University, basically spent her life, I think she died,"
+    },
+    {
+      "start": 872.88,
+      "end": 901.504,
+      "text": "three or four years ago, something like that. She has been analyzing lots and lots of local commons that exist and are failures and are successes. And she has been analyzing what are the factors in the governance arrangements that make them work."
+    },
+    {
+      "start": 901.504,
+      "end": 926.4,
+      "text": "And she came up, this is a book in 1990, with a list of design principles. For example, define clear boundaries, who is entitled to be involved in the use of the resources. Make sure that there is a deliberation."
+    },
+    {
+      "start": 926.4,
+      "end": 955.488,
+      "text": "that make sure that there are conflict resolution mechanisms, make sure that there is a graded system of sanction, make sure that there is a kind of monitoring system. This one is interesting because one of the conclusions from that very empirical literature is that it's not just local self-governance."
+    },
+    {
+      "start": 955.488,
+      "end": 982.928,
+      "text": "but it is embedded in other systems, which might be the state or might be market-oriented. For example, in Africa, in different countries, you have different laws about who owns trees, for example, and that does make a difference. Be that as it may, I think this literature..."
+    },
+    {
+      "start": 982.928,
+      "end": 1008.4,
+      "text": "is also of significance to, let's say, the digital social space. And there's a whole literature that is more recent than the original commons literature. So there's literature about digital information, knowledge commons."
+    },
+    {
+      "start": 1008.4,
+      "end": 1035.632,
+      "text": "Benkler especially makes an interesting point. You have such a thing as what he calls open access commons, and then the point is not the ownership, but the point is open use. So you have use rights, which is different from property rights, and then things work differently. There are also attempts to apply this to emerging technologies."
+    },
+    {
+      "start": 1035.632,
+      "end": 1064.88,
+      "text": "where it's not about resources, but about risks that you create for others, and I think that might be of relevance to us. And it's a whole discussion on what global is. So it's easy to say, okay, the pastures in England that were local village kind of things, and now internet and web is global, and that does make a difference, but what does that precisely mean?"
+    },
+    {
+      "start": 1065.584,
+      "end": 1095.408,
+      "text": "This is very much open, much more recent, more contested. Ellen Ostrom actually got the Nobel Prize for Economics in 2009 for her work. And I list here a number of themes that come over and over again in this literature that I have read, but just as an amateur."
+    },
+    {
+      "start": 1095.632,
+      "end": 1124.256,
+      "text": "And it's not a central government or a pure market, but what will happen and what is needed is a variety of institutional forms and what she calls polycentric, more or less decentral forms of governance. Other authors talk about the need for..."
+    },
+    {
+      "start": 1124.256,
+      "end": 1152.912,
+      "text": "Pretty consonant with that. The need for adaptive governance, and we have that here. All kinds of things are happening. Things are changing. You see it with, let's say, natural resource commons with climate change very much. Situation is different. So what needs to be done is different. So you need some form of evolving adaptive governance."
+    },
+    {
+      "start": 1153.424,
+      "end": 1183.296,
+      "text": "Other points that are made is, and especially for global commons, and most of it is related to natural resources, but it's difficult to do proper governance because we have very limited insights into how these systems really precisely work. So with the small local commons, and that's a point by Eleanor Ostrom,"
+    },
+    {
+      "start": 1183.296,
+      "end": 1212.336,
+      "text": "Often, people themselves have a very good view on how it works. That's why, let's say, indigenous knowledge is very important for proper governance. But for the global systems, we do not have that knowledge. So it's important to invest in science in order to understand how the system works, how it works for the users, and how it works for affected people."
+    },
+    {
+      "start": 1212.336,
+      "end": 1241.936,
+      "text": "outside people. And the point that you see often made is integrate scientific analysis with broadly based deliberation. So it's not pure analysis, but it must be integrated with democratic deliberation on what to do. And another theme that comes up all the time is the notion of complexity."
+    },
+    {
+      "start": 1244.752,
+      "end": 1273.792,
+      "text": "This is an example from anthropology, from the Subax in Bali. There are other books with a beautiful title, Priests and Programmers. And the point is that running the rice fields in a certain area in Bali is a very elaborate religion-based system run by priests."
+    },
+    {
+      "start": 1273.792,
+      "end": 1300.752,
+      "text": "And what actually happens is that this is a non-linear dynamic system of water management and they manage it through the religious rituals such that you have the best results because there are differences of interest between people who are higher up in the stream and who are downstream."
+    },
+    {
+      "start": 1300.752,
+      "end": 1328.736,
+      "text": "That must be carefully managed. And this whole book tells how it works. So they did even simulations. That's why these priests are actually programmers and designers of this governance. And similar notions you find in diffusion of innovations. So there's a lot of tendency also in the literature that Bill mentioned to look at the invention. So Kuhn."
+    },
+    {
+      "start": 1328.736,
+      "end": 1354.256,
+      "text": "and that is inspired by Kuhn, you look at the invention. But most of the innovation is after the invention and what happens next. And this is actually focused on such idea for open source software. A very nice book."
+    },
+    {
+      "start": 1354.256,
+      "end": 1383.776,
+      "text": "But the notion that these are non-linear complex systems is basically everywhere. And from there, you have this idea of adaptive, decentral governance. So to sum up, science takes place more and more in the agra of society. And that actually, well,"
+    },
+    {
+      "start": 1383.776,
+      "end": 1411.824,
+      "text": "I'm happy to have you here, but I read this stuff 20 years ago already. I think what is happening here is precisely these kinds of things. What is needed is reasoned public debate and deliberation and scientists, as they are"
+    },
+    {
+      "start": 1411.824,
+      "end": 1441.072,
+      "text": "at least a bit knowledgeable, have a role in this. What I also think is it's not pure analysis in a positivist sense, but we need solutions, and they might be imperfect, but still better than now. So some form of design thinking is important."
+    },
+    {
+      "start": 1441.072,
+      "end": 1468.576,
+      "text": "The point is that for engineers, and there are many here, design thinking is not a problem, but only relates to the technical side. The Network Institute I founded is an interdisciplinary research institute, including social science and humanities. What I see, when you talk with colleagues, that the notion of design..."
+    },
+    {
+      "start": 1468.576,
+      "end": 1498.256,
+      "text": "is pretty alien to many social scientists and humanities researchers. And the reason is that many of them have this positivistic attitude that the researcher or the scientist is an observer of things, and you do not design things, because that's not descriptive, that is prescriptive, and that is something you should not do as a scientist."
+    },
+    {
+      "start": 1498.544,
+      "end": 1528.512,
+      "text": "That's my experience. So there it's difficult. And I think we have to resolve this. Now I want to mention. The situation ICT people are in. Is not unique I would say. It has happened before. And actually I am."
+    },
+    {
+      "start": 1528.512,
+      "end": 1556.4,
+      "text": "Not a computer scientist, I know pretty well what information systems and knowledge systems are, but really, I am a nuclear physicist. I wrote my master degree report, and it was a three-page article, so I still secretly think that I hold the world record of brevity of master thesis."
+    },
+    {
+      "start": 1556.4,
+      "end": 1584.8,
+      "text": "And I wrote my thesis in it. How many pages? That was about 100, because I crammed together five different journal articles. And the title was something like A Drunkard's Walk in the Land of Nuclear Decay. And it was studying what happens. OK."
+    },
+    {
+      "start": 1584.8,
+      "end": 1614.8,
+      "text": "you know probably about the hydrogen bomb or the neutron bomb. Then when they explode, they send out five fast neutrons, and I was considering what happens next with radiation effects. Actually, I have articles written in the beautifully titled Radiation Effects Journal. Then at that time, there's a long history that all kinds of,"
+    },
+    {
+      "start": 1614.8,
+      "end": 1641.376,
+      "text": "very important physicists, well, felt some societal responsibility. And, well, you know, probably Einstein wrote a letter. Einstein was a pacifist, but wrote a letter to the U.S. president on the atom bomb. Oppenheimer led the project. Actually, he..."
+    },
+    {
+      "start": 1641.376,
+      "end": 1662.096,
+      "text": "There was a lot of protest and anxiety on the physicists that engineered the nuclear bomb. And they wanted him to warn the president not to use it. And he refused to do that. But when it happened, he was totally shocked."
+    },
+    {
+      "start": 1664.144,
+      "end": 1690.032,
+      "text": "And later on, he even got into problems with the McCarthyism, anti-communist activities. During the Cold War, there were, and this was a minority, but still vocal. You had the Bulletin of the Atomic Scientists. You had movements like the Book Wash Movement."
+    },
+    {
+      "start": 1690.704,
+      "end": 1720.208,
+      "text": "The Bulletin of the Atomic Scientists published articles also about policy issues. So they have been influential in shaping the Nuclear Non-Proliferation Treaty, the NPT, which is a very strange treaty because it says the countries that already have nuclear weapons, just keep them and we prevent the other countries to acquire them."
+    },
+    {
+      "start": 1720.24,
+      "end": 1747.648,
+      "text": "So this is, if you talk about temporary solutions, then this is a temporary solution. There are all kinds of objections, but still it has worked to some degree. I think GDPR, the European Privacy New Law, is very much the same. It attempts to address an issue, but all kinds of..."
+    },
+    {
+      "start": 1747.648,
+      "end": 1773.424,
+      "text": "strange side effect, so it will be a good example that it needs to involve. And this was phrased, I got into lectures, my professor of general relativity also gave a course on the societal responsibility of the physicist. I would like to mention here, it was not an ethics course. It's the societal thing that was the emphasis."
+    },
+    {
+      "start": 1776.528,
+      "end": 1805.888,
+      "text": "So this is a long summary, but that's on the web. This is a simpler summary. This was the Turing Award lecture in Amsterdam. I have a short movie. It's on the ACM website in full, but that's one hour and a half. You can deliberately make systems whereby people will collaboratively, constructively work together to build a democratic world. And this is the most simple summary."
+    },
+    {
+      "start": 1805.888,
+      "end": 1834.864,
+      "text": "understanding what to believe we call science, deciding what to do we call democracy. But I do think now that the two become linked so that we have a duty to think about both. Thank you."
+    },
+    {
+      "start": 1835.6,
+      "end": 1864.416,
+      "text": "Thank you. This was a wonderful lecture. I think one of the main reasons for this development is that there is a monetarization of every human activity, and there is also a drive of big companies for effortless rent income. And all this advertisement that we get over the Internet,"
+    },
+    {
+      "start": 1864.416,
+      "end": 1893.072,
+      "text": "is very near to effortless rent income. And the main example is copyright law. Copyright now finishes 70 years after the death of the author. And the reason for that was because Walt Disney ran danger to lose the right to the Mickey Mouse. But now you see there are scientific articles in libraries."
+    },
+    {
+      "start": 1893.072,
+      "end": 1922.096,
+      "text": "written before the advent of digitization. Of course, you are not allowed now to digitize this and to put it on the Internet. If you want to get such an article online, you have to pay $35 to Elsevier or to Springer Nature or other things. And this is, again, an income stream for effortless rent income."
+    },
+    {
+      "start": 1922.096,
+      "end": 1947.504,
+      "text": "And I think that if we just stop to monetize every human activity and that we put more, yeah, if we use the commons more and the commons should really be owned by those who work it, then many of these developments would not happen."
+    },
+    {
+      "start": 1952.336,
+      "end": 1981.168,
+      "text": "Any reaction to that? Yeah, I do think that there are various, I think you point that out in your column or in your response. There are certain business models behind it for companies that have all kinds of outside effects that are negative. And then the question is whether you should allow these business models in an unfettered way."
+    },
+    {
+      "start": 1981.168,
+      "end": 2003.28,
+      "text": "Let's say the resistance can come from the state, that's basically what is happening with the GDPR, but it can also come from the people who are involved. I think it's not just one global network, but there are many different areas."
+    },
+    {
+      "start": 2003.824,
+      "end": 2031.024,
+      "text": "open source software or Wikipedia that are basically common type of arrangements that keep out certain business models. But this is a difficult design problem. Thank you very much for this highly interesting talk. I'm very grateful especially for your hint about the parallelism between the atom bomb and digital change. Let's call it that way."
+    },
+    {
+      "start": 2031.024,
+      "end": 2058.512,
+      "text": "And maybe we can draw on that a bit further in the sense of you are certainly aware of the work of Günter Anders, which is a largely forgotten local philosopher here in Vienna, the first husband of Hannah Arendt, who was also arguing in this direction in his work, the Atomare Drohung, I think it's called. He was even proposing a Hippocratian oath for physicists based on the experience with the nuclear bomb."
+    },
+    {
+      "start": 2058.512,
+      "end": 2086.192,
+      "text": "as the digital change somehow replicates indeed the same thing, but in a distributed way. So a nuclear bomb is still a centralized entity. The Internet is very distributed. We could really go on that, and maybe this could be also a good starting point for this Vienna Manifesto tomorrow. I'm passing this to Hannes Werten. I think starting from this experience,"
+    },
+    {
+      "start": 2086.192,
+      "end": 2112.88,
+      "text": "With the nuclear bomb and drawing conclusions for today could be a very convincing way to go ahead with some sort of concise formulation of what we have in mind. A side remark on this. One thing is what kind of policy you want to have. But, for example, in the Cold War, the Pupush movement, their main goal was..."
+    },
+    {
+      "start": 2113.2,
+      "end": 2138.544,
+      "text": "Simply keep open the communication channels between Soviet physicists and Western physicists. Because that was in itself... And I think we have the same problem with information bubbles in the Internet. So just the attempt to keep communication channels open is in itself valuable."
+    },
+    {
+      "start": 2141.104,
+      "end": 2168.432,
+      "text": "I was also very touched by your analogy with the atomic bomb. But my conclusion is slightly different because, unfortunately, humanity learns fastest from catastrophes. And with the Internet, we have seen various scandals, but nothing that really brought us to the brink of collapse."
+    },
+    {
+      "start": 2168.624,
+      "end": 2196.672,
+      "text": "What we do have is a lot of talk about ethics and a general agreement that ethics somehow has to be incorporated. Only if you look a bit more closely, there is little agreement what kind of ethics. You have experimental ethics, you have empirical ethics, you have all kinds of cultural differences. So my question to you is really, do you see a way of broadening the..."
+    },
+    {
+      "start": 2196.672,
+      "end": 2225.936,
+      "text": "the talk we have now about ethics to bring in the notions of commons, social justice, societal responsibility, trustworthiness. In other words, how to transcend the, in my view, rather narrow discussion of ethics that we have right now. Yeah, I agree very much. And I think I indicated that."
+    },
+    {
+      "start": 2225.936,
+      "end": 2254.864,
+      "text": "The societal responsibility is not exactly the same as ethics, because ethics, typically, at least in the West, is taken as some kind of individual thing. Are my actions right? Which is important, but we are dealing here, I think, with the societal effects of our technologies."
+    },
+    {
+      "start": 2255.504,
+      "end": 2285.264,
+      "text": "in all kinds of unexpected and in cases harmful ways. And I think the more important question is, are we able to influence what we are going to do about it in some way? In that sense, Aristotle in his ethics talks about different types of knowledge. And the academic type of knowledge is called..."
+    },
+    {
+      "start": 2285.264,
+      "end": 2311.92,
+      "text": "And he also talks about a different kind of knowledge called phronesis, which is how do we run the state? How do we run a household? And that's the way he made his money from. So we need some kind of more phronesis-oriented. What are we going to do? That's why I talk about design."
+    },
+    {
+      "start": 2311.92,
+      "end": 2337.328,
+      "text": "I think that's also a scientific endeavor, and that's why I refer to your AGRA, because you cannot do that alone, but you have to do that with people that are affected. And I think we should... I do not know what the answers are. I am an amateur, but I do think that we should spend more effort on this, including ACM and other organizations."
+    },
+    {
+      "start": 2338.608,
+      "end": 2360.304,
+      "text": "Yeah, thanks for this inspiring talk in which you in fact also call for activism in science. And I think there is something to be really discussed there because we cannot just sit aside. And that's what we do too much also in the Netherlands. Don't tell me about that. We should work together, but anyway."
+    },
+    {
+      "start": 2360.304,
+      "end": 2386.016,
+      "text": "It's good to be in Vienna to discover that. But I think there's one question. You started with a slide. I have one question. You started with your slide on the digital divide in the world. And then you start talking about commons. Whose commons are you talking about? I think the digital divide is very serious in our world. And it's a huge problem that we need to..."
+    },
+    {
+      "start": 2386.016,
+      "end": 2412.48,
+      "text": "tackle somehow, but also here I think technological thinking is a lot based on Western or American society. Can you give a short reflection on this? This is the reason that I made a point. A lot of our discussions are focused on the West, the global North, and you leave out the global South. And I think..."
+    },
+    {
+      "start": 2412.48,
+      "end": 2440.896,
+      "text": "The Turing lecture by Tim Berners-Lee had the theme of from utopia to dystopia, and then ends back again with a question mark. So that's... His idea is, and the idea of his web foundation as a kind of lobby or advocacy organization is,"
+    },
+    {
+      "start": 2440.896,
+      "end": 2467.056,
+      "text": "spread access to the web as far as possible. But then the snag is that you spread the current web as it is with all its evils. That's implied. In the same way that I think that Einstein will have had second thoughts afterwards when he sent the letter to the US president. So here are some dilemmas."
+    },
+    {
+      "start": 2468.944,
+      "end": 2497.84,
+      "text": "And this is going to happen. You know that better than I do. So this is not an easy thing. So I very much appreciated your parallel with the situation of physicists in the 40s and the 50s about their social responsibility because I think that we as computer scientists and informatics engineers are much in the same situation."
+    },
+    {
+      "start": 2497.84,
+      "end": 2526.368,
+      "text": "And I support the proposal that was made about an hypocritean hope for computer scientists, because I think that more and more we are like doctors. We are rooted in science, but what we do, the result of our actions, affect the life of people. So as doctors, no biology, but then they have the duty to protect the human life. Therefore, we are rooted in mathematics or science, but we have to..."
+    },
+    {
+      "start": 2526.368,
+      "end": 2556.256,
+      "text": "a duty to protect not only the digital life, but also the way the digital life influences the real life. May I just say thank you for your talk. But, you know, sometimes I feel that the way you or other people have construed ethics is too narrow-minded."
+    },
+    {
+      "start": 2556.256,
+      "end": 2585.984,
+      "text": "in the sense that for example you talked about justice someone talked about justice but distributed justice in a certain way is already ethics what we owe to others as their right so as an economist you may talk about the problems of internet stealing jobs or whatever AI stealing jobs or robotics stealing jobs but then the problem arises which is an ethical problem do we have to do"
+    },
+    {
+      "start": 2585.984,
+      "end": 2600.976,
+      "text": "Something about that and on what basis. Or maybe we don't have to do anything. Of course, there are also people who think that there is no such thing as distributive justice. So I think that we have to learn from many other fields."
+    },
+    {
+      "start": 2600.976,
+      "end": 2624.8,
+      "text": "where ethics starts from a plurality of normative theories, then you have problems because you have tensions arising between different principles, and then you have to make white public choices, and ethics can orient public discussion and deliberation about lots of the things that we have been discussing. It's not only individually oriented."
+    },
+    {
+      "start": 2624.8,
+      "end": 2649.184,
+      "text": "So the duties, we can make coalitions, and the duties become collective duties, or whatever other things, but I don't want to make a long story too short. I personally think you are right, and that it would be better to have a broader view on ethics, including the societal or the sociological or the political element."
+    },
+    {
+      "start": 2649.184,
+      "end": 2679.024,
+      "text": "I just refer to it because what I notice, if you start to discuss these kinds of things with colleagues, even in my own department, the tendency is to have such a view on ethics. And you also see it simply in the course materials. We do have ethics courses for research ethics, and then it's focused on these kinds of issues, which are, in my view, too limited."
+    },
+    {
+      "start": 2680.656,
+      "end": 2707.296,
+      "text": "So it's not my personal view, but I think it's a kind of empirical fact that it is understood like that. I think this is going to be the last obstacle in the way of lunch. Okay. Ten seconds. Just a remark to your remark. I think the situation with the hippocampus is even worse with the computer scientists because a doctor, even if he fails, it affects just one patient."
+    },
+    {
+      "start": 2707.296,
+      "end": 2734.576,
+      "text": "If somebody in the desert of Arizona looks for a taxi cab, doesn't get it, programs something like called Uber, and two years later every other taxi driver in Vienna is jobless and thousands of families are starving, and I know that because our son is a taxi driver, or has been at least, this affects, due to the distributed nature, even much more than just Dr. Beffer. A Hippocratic note for computer scientists would be highly, highly necessary, I believe. Lunch."
+    },
+    {
+      "start": 2735.856,
+      "end": 2746.608,
+      "text": "In my duties to not just one person, but all of you, I'm declaring it lunchtime. So let's thank Hans again."
+    }
+  ],
+  "provenance": {
+    "tool": "aqueduct",
+    "endpoint": "https://aqueduct.ai.datalab.tuwien.ac.at/",
+    "model": "whisper-large",
+    "audio_fmt": "mp3",
+    "audio_kbps": 32,
+    "chunk_minutes": 10
+  }
+}
