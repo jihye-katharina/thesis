@@ -4,7 +4,6 @@ from copy import deepcopy
 from dataclasses import dataclass
 import math
 import re
-from typing import Callable
 
 
 @dataclass(frozen=True)
@@ -101,16 +100,16 @@ class Transcript:
         )
 
 
-def make_units(transcript: Transcript,
-               constraints: list[tuple[Callable[[str], int], int]]) -> list[Unit]:
-    """Split segments independently, returning one flat chronological unit list.
+def make_units(transcript: Transcript) -> list[Unit]:
+    """Split segment text into whole sentence-like units, without token splitting.
 
     IDs count u0, u1, ... across the whole transcript. Each unit keeps segment_id
     and Python character offsets into that segment's ORIGINAL text. Timestamps
     remain on Segment; to_evidence resolves them for playback. Neither Transcript
     nor Segment is mutated. Units stay in original order across time segments;
-    semantic chunk boundaries are determined later from their embeddings.
-    Each constraint counts tokens without special tokens and supplies a capacity.
+    semantic chunk boundaries are determined later from their embeddings. Input
+    sentences are assumed to fit the chosen models; model capacity checks remain
+    at inference time. This function neither counts tokens nor truncates text.
     """
     if not isinstance(transcript, Transcript):
         raise TypeError("make_units expects a Transcript containing the lecture's segments")
@@ -127,39 +126,7 @@ def make_units(transcript: Transcript,
                 left += 1
             while right > left and segment.text[right - 1].isspace():
                 right -= 1
-            while left < right:
-                remaining = segment.text[left:right]
-                if all(count(remaining) <= limit for count, limit in constraints):
-                    cut = right
-                else:
-                    # Find a fitting prefix, then prefer a nearby word boundary.
-                    lo, hi = left, right
-                    while lo < hi:
-                        mid = (lo + hi + 1) // 2
-                        if all(count(segment.text[left:mid]) <= limit
-                               for count, limit in constraints):
-                            lo = mid
-                        else:
-                            hi = mid - 1
-                    cut = lo
-                    word_break = segment.text.rfind(" ", left + 1, cut)
-                    if word_break > left:
-                        cut = word_break
-                    if cut <= left:
-                        raise ValueError("Token budget cannot fit a source character.")
-                    # Token counts can be non-monotone at subword boundaries.
-                    while cut > left and any(count(segment.text[left:cut]) > limit
-                                             for count, limit in constraints):
-                        cut -= 1
-                    if cut <= left:
-                        raise ValueError("Token budget cannot fit a source character.")
-                piece_end = cut
-                while piece_end > left and segment.text[piece_end - 1].isspace():
-                    piece_end -= 1
-                if piece_end > left:
-                    units.append(Unit(f"u{len(units)}", segment.id, left, piece_end,
-                                      segment.text[left:piece_end]))
-                left = cut
-                while left < right and segment.text[left].isspace():
-                    left += 1
+            if left < right:
+                units.append(Unit(f"u{len(units)}", segment.id, left, right,
+                                  segment.text[left:right]))
     return units

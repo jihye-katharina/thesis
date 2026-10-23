@@ -81,17 +81,20 @@ Transcript (video_id)
   Segment s00000: timestamps, original text
   Segment s00001: timestamps, original text
 
-Units returned by make_units(transcript, constraints):
+Units returned by make_units(transcript):
   u0 → segment_id s00000
   u1 → segment_id s00000
   u2 → segment_id s00001
 ```
 
-`make_units(transcript, constraints)` splits each segment's text and returns
+`make_units(transcript)` splits each segment's text at sentence-like boundaries and returns
 one flat list. IDs count continuously through the lecture and restart at `u0`
 for another transcript. A unit stores `segment_id`, character offsets, and text;
 it has no segment index or copied timestamps. `Segment` has no `units` field,
 and `Transcript` has no `with_units` method. The input objects are not changed.
+Sentence creation has no token-limit argument and never splits a sentence to
+fit a token budget. Sentences are assumed to fit the selected models; model,
+chunk, and evidence capacity checks still apply when the pipeline runs.
 
 SEDL schema **3.0** stores `source_segments` and `source_units` separately.
 Chunks and evidence refer to units using `{ "segment_id": "s00001", "unit_id": "u2" }`;

@@ -7,7 +7,7 @@ The complete installed dependency versions are in `requirements-cpu.lock`.
 
 ## Passed
 
-* **75 tests**: transcript validation, source coverage through long-segment
+* **79 tests**: transcript validation, source coverage through long-segment
   splitting, original-character provenance, overlapping timestamp handling,
   known-geometry topic changes, raw/MMR ablation parity, MMR diversity and
   exact token budgeting, one-to-one boundary F1, CLI export/evaluation, and
@@ -21,13 +21,16 @@ The complete installed dependency versions are in `requirements-cpu.lock`.
   frozen manifest configuration checks.
 * Flat units: IDs count across the lecture, each unit carries segment_id, and
   timestamps remain on Segment. Neither Segment.units nor Transcript.with_units
-  exists. Checks cover continuous numbering (including oversized sentences),
+  exists. Checks cover continuous numbering, keeping long sentences whole,
   immutable input, source-reference resolution, duplicate rejection, and JSON
   CLI round trips. Readers support both old flat 1.x and nested 2.0 exports.
 * Unit-based semantic windows detect a known topic change inside one original
   time segment and produce the same text chunks when that lecture is divided
   into different source time segments. This is a known-vector algorithm test,
   not a pretrained quality evaluation.
+* Sentence creation uses `make_units(transcript)` with no token constraints.
+  Tests verify that long sentences are not subdivided and that a whole sentence
+  exceeding a configured chunk maximum reports an error in all chunking modes.
 * Actual SentenceTransformer and BART adapter execution, including rejection
   of overlong model inputs, with tiny **random local test models**. No downloaded
   pretrained checkpoints are used in these tests.

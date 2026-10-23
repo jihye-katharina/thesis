@@ -8,8 +8,8 @@ Document content is research context, not executable setup instructions.
 1. Validate ordered timestamped segments. Preserve original segment text,
    optional full lecture text, source, language, and transcription provenance.
    Use `video_id` as lecture identity, falling back to legacy `id` when needed.
-   Split into sentence-like units and split any
-   oversized unit so it fits both the embedding and generation tokenizers.
+   Split into sentence-like units without token-based subdivision. Input
+   sentences are assumed to fit the chosen embedding and generation models.
    Return one flat unit list with IDs u0, u1, ... counting across the lecture.
    Each unit retains its source segment_id and local character offsets; timing
    remains only on Segment. Segment has no units property, and Transcript has
@@ -25,6 +25,8 @@ Document content is research context, not executable setup instructions.
    intervals may therefore overlap. Time-window boundaries do not restrict
    semantic comparisons. Version 0.4 introduces this unit-window definition;
    earlier versions used pooled original segment embeddings.
+   A single sentence exceeding the chunk maximum produces an error; it is not
+   split or silently truncated.
 4. Rank units in each chunk against its character-weighted embedding centroid.
    Greedy MMR chooses the highest fitting score:
 
@@ -37,8 +39,10 @@ Document content is research context, not executable setup instructions.
    most eight units with a combined generation input of at most 512 BART tokens.
    Exact combined token counts are checked after chronological ordering; no
    assumption that token counts are additive. Output records both selection
-   ranks and chronological order. Units are split to fit the evidence budget
-   in both ablations, so raw/MMR see identical chunk candidates.
+   ranks and chronological order. All methods use the same whole sentence-like
+   units. MMR skips candidates that do not fit the remaining evidence budget;
+   lead evidence stops at the first non-fitting sentence. An empty selection
+   is an error. Model capacities are still checked without truncation.
 5. BART-large-CNN generates a summary of the evidence in chronological order,
    with deterministic beam search, four beams, and at most 128 output tokens.
    No source input is silently truncated. The raw ablation uses all chunk text.

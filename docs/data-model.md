@@ -8,7 +8,7 @@
 
 Default segment IDs remain `s00000`, `s00001`, etc., unless supplied by the input.
 Units are numbered `u0`, `u1`, ... continuously across all segments. The next
-lecture starts at `u0` again. Oversized sentence pieces continue the same counter.
+lecture starts at `u0` again. Each sentence-like span receives the next ID.
 
 `Segment` has no `units` property. `Transcript` has no `with_units` method.
 Units are returned as a separate flat list. The `segment_id` on a unit still
@@ -17,15 +17,10 @@ inside the segment or duplicating timestamps on each unit.
 
 ## Python usage
 
-After parsing the input JSON as a `Transcript`, define the model input limits:
+After parsing the input JSON as a `Transcript`:
 
 ```python
-constraints = [
-    (embedder.count_tokens, embedder.input_limit),
-    (summarizer.count_tokens, 512),
-]
-
-units = make_units(transcript, constraints)
+units = make_units(transcript)
 unit = units[0]
 
 segments_by_id = {segment.id: segment for segment in transcript.segments}
@@ -41,6 +36,14 @@ each segment. It never mutates the transcript. `units = []` is created once
 before the segment loop, so `len(units)` gives continuous IDs. Character
 offsets remain relative to the original segment, with an inclusive start and
 exclusive end. Units have no `segment_index`, `start`, or `end` fields.
+
+There is no `constraints` argument or token-based subdivision in `make_units`.
+Whole sentences are assumed to fit the selected models. Chunk and evidence
+budgets still govern how sentences are combined. An oversized individual
+sentence causes a capacity error at the relevant pipeline/model stage, rather
+than automatic splitting or silent truncation. Capacities depend on the selected
+model and tokenizer; a sentence below 512 tokens may exceed a smaller encoder's
+configured window.
 
 This splitter assumes sentence boundaries are preserved by the transcript
 producer's time windows. It does not reconstruct a sentence cut between two
@@ -87,8 +90,8 @@ Audit and judge exporters resolve text/timing from these source lists.
 
 ## Migration
 
-- Replace `make_units(segment, constraints)` or `transcript.with_units(...)`
-  with `make_units(transcript, constraints)`.
+- Replace calls with token constraints or `transcript.with_units(...)`
+  with `make_units(transcript)`.
 - Read units from the returned list or exported `source_units`, rather than
   from `segment.units` / `source_segments[].units`.
 - For new outputs, create fresh boundary annotation templates with

@@ -51,7 +51,7 @@ def test_sadc_percentile_strict_comparison_and_within_segment_cuts():
 @pytest.mark.parametrize("chunking", ["fixed", "semantic", "sadc"])
 def test_hard_limits_and_shared_unitization_for_all_evidence_controls(chunking):
     source = Transcript.from_dict({"segments": [{"start": 0, "end": 60,
-                                                "text": "word " * 150 + "."}]})
+                                                "text": "One word. " * 50}]})
     config = Config(chunking=chunking, min_chunk_tokens=1, max_chunk_tokens=20,
                     evidence_tokens=7, max_evidence_units=2)
     results = [run(source, HashEmbedder(), ExtractiveDemo(), replace(config, evidence=e))
@@ -69,7 +69,7 @@ def test_hard_limits_and_shared_unitization_for_all_evidence_controls(chunking):
 def test_lead_is_a_prefix_and_mmr_changes_choice_under_same_caps():
     source = lecture()
     counter = ExtractiveDemo().count_tokens
-    units = make_units(source, [(counter, 100)])[:3]
+    units = make_units(source)[:3]
     vectors = np.array([[1., 0.], [1., 0.], [0., 1.]])
     lead = select_lead(units, counter, 6, 2)
     mmr = select_mmr(units, vectors, counter, 6, 2, 0.5)

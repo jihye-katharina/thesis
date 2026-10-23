@@ -42,8 +42,8 @@ def test_semantic_boundary_and_raw_ablation():
 
 @pytest.mark.parametrize("chunking", ["semantic", "fixed", "sadc"])
 @pytest.mark.parametrize("evidence", ["mmr", "raw", "lead"])
-def test_long_segments_bounded_without_losing_source(chunking, evidence):
-    original = " ".join(f"token{i}" for i in range(205)) + "."
+def test_long_segments_pack_whole_sentences_without_losing_source(chunking, evidence):
+    original = " ".join(f"Sentence{i} has words." for i in range(70))
     source = transcript([original, "Another subject. And another sentence."])
     generator = ExtractiveDemo()
     config = Config(chunking=chunking, evidence=evidence, min_chunk_tokens=5,
@@ -69,7 +69,7 @@ def test_long_segments_bounded_without_losing_source(chunking, evidence):
 
 def test_mmr_reduces_duplicate_evidence_and_retains_selection_order():
     source = transcript(["First statement. Duplicate statement. Complementary evidence."])
-    units = make_units(source, [(ExtractiveDemo().count_tokens, 50)])
+    units = make_units(source)
     vectors = np.array([[1, 0], [1, 0], [0, 1]], dtype=float)
     chosen = select_mmr(units, vectors, ExtractiveDemo().count_tokens, 50, 2, 0.5)
     assert [index for index, _ in chosen] == [0, 2]
@@ -79,7 +79,7 @@ def test_mmr_reduces_duplicate_evidence_and_retains_selection_order():
 def test_mmr_budget_rechecks_joined_text_and_skips_nonfitting_units():
     source = transcript(["A long sentence has many words. Short. Small."])
     generator = ExtractiveDemo()
-    units = make_units(source, [(generator.count_tokens, 50)])
+    units = make_units(source)
     chosen = select_mmr(units, np.eye(3), generator.count_tokens, 4, 3, 0.7)
     assert [i for i, _ in chosen] == [1, 2]
 

@@ -38,7 +38,7 @@ def output(evidence="mmr"):
 
 def test_make_units_returns_a_flat_lecture_list_with_segment_references():
     source = lecture()
-    units = make_units(source, [(ExtractiveDemo().count_tokens, 20)])
+    units = make_units(source)
     assert [u.id for u in units] == ["u0", "u1", "u2", "u3", "u4", "u5"]
     assert [u.text for u in units] == ["Alpha one.", "Alpha two.", "Alpha three.",
                                      "Beta one.", "Beta two.", "Beta three."]
@@ -48,16 +48,16 @@ def test_make_units_returns_a_flat_lecture_list_with_segment_references():
         assert segments[unit.segment_id].text[unit.char_start:unit.char_end] == unit.text
         assert not any(hasattr(unit, field) for field in ("segment_index", "start", "end"))
     with pytest.raises(TypeError, match="expects a Transcript"):
-        make_units(source.segments[0], [(len, 20)])
+        make_units(source.segments[0])
 
 
 def test_unit_numbering_continues_across_segments_and_restarts_for_another_lecture():
     source = lecture()
-    units = make_units(source, [(ExtractiveDemo().count_tokens, 2)])
+    units = make_units(source)
     assert [u.id for u in units] == [f"u{i}" for i in range(len(units))]
     first_beta = next(u for u in units if u.segment_id == "source:beta")
     assert first_beta.id != "u0"
-    assert make_units(source, [(ExtractiveDemo().count_tokens, 2)])[0].id == "u0"
+    assert make_units(source)[0].id == "u0"
     assert not hasattr(source, "with_units")
     assert not hasattr(source.segments[0], "units")
 
@@ -65,8 +65,8 @@ def test_unit_numbering_continues_across_segments_and_restarts_for_another_lectu
 def test_making_units_is_repeatable_and_does_not_mutate_the_transcript():
     source = lecture()
     snapshot = asdict(source)
-    first_units = make_units(source, [(ExtractiveDemo().count_tokens, 2)])
-    assert make_units(source, [(ExtractiveDemo().count_tokens, 2)]) == first_units
+    first_units = make_units(source)
+    assert make_units(source) == first_units
     config = Config(chunking="fixed", min_chunk_tokens=1, max_chunk_tokens=9)
     original = run(source, KnownVectors(), ExtractiveDemo(), config)
     repeated = run(source, KnownVectors(), ExtractiveDemo(), config)
@@ -257,3 +257,25 @@ def test_nested_v2_exports_with_repeated_local_ids_remain_readable(tmp_path):
     assert evaluate_boundaries(old, annotation, tolerance_units=0)["boundary_f1"]["f1"] == 1
     export_audit(old, tmp_path / "old-nested-audit.csv")
     assert old == snapshot
+
+
+def test_make_units_keeps_a_long_sentence_whole_without_counting_tokens():
+    long_sentence = " ".join(f"word{i}" for i in range(510)) + "."
+    source = Transcript.from_dict({"segments": [
+        {"start": 28.384, "end": 58.016, "text": "  " + long_sentence + "  Next sentence.  "}]})
+    units = make_units(source)
+    assert [u.text for u in units] == [long_sentence, "Next sentence."]
+    assert [u.id for u in units] == ["u0", "u1"]
+    assert units[0].char_start == 2
+    assert units[0].to_evidence(source.segments[0])["jump_time"] == 28.384
+    for unit in units:
+        assert source.segments[0].text[unit.char_start:unit.char_end] == unit.text
+
+
+@pytest.mark.parametrize("chunking", ["semantic", "fixed", "sadc"])
+def test_oversized_whole_sentence_reports_chunk_limit_instead_of_splitting(chunking):
+    source = Transcript.from_dict({"segments": [
+        {"start": 0, "end": 30, "text": "word " * 100 + "."}]})
+    with pytest.raises(ValueError, match="Sentence units are kept whole"):
+        run(source, HashEmbedder(), ExtractiveDemo(),
+            Config(chunking=chunking, min_chunk_tokens=1, max_chunk_tokens=30))

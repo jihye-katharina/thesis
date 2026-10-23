@@ -81,7 +81,7 @@ def unit_boundary_scores(vectors, window):
 def sadc_boundary_scores(vectors, percentile):
     """SAHR Section 3.1 adaptation: adjacent UNIT similarity, document percentile.
 
-    Units may be token-split sentences; the common encoder need not be BGE-M3.
+    Units follow the sentence-splitting heuristic; the common encoder need not be BGE-M3.
     This is a controlled adaptation, not an exact reproduction of the paper.
     """
     if len(vectors) < 2:
@@ -97,6 +97,10 @@ def chunk_units(locations, scores, config, count_tokens, sadc_threshold=None):
     current = []
     start_reason = {"reason": "lecture_start", "score": None}
     for unit_index, (segment, unit) in enumerate(locations):
+        if count_tokens(unit.text) > config.max_chunk_tokens:
+            raise ValueError(f"Sentence unit {unit.id} exceeds max_chunk_tokens="
+                             f"{config.max_chunk_tokens}; increase the chunk budget. "
+                             "Sentence units are kept whole.")
         score = scores.get(unit_index)
         current_units = [locations[j][1] for j in current]
         forced = bool(current and count_tokens(joined(current_units + [unit])) > config.max_chunk_tokens)
@@ -157,7 +161,8 @@ def select_lead(units, count_tokens, budget, limit):
     """Chronological evidence control with MMR's same token and unit caps.
 
     Stop at the first non-fitting unit rather than cherry-picking shorter later
-    units. Units themselves fit the evidence budget due to shared unitization.
+    units. If the first whole sentence cannot fit, report an error instead of
+    splitting it or silently starting at a later sentence.
     """
     selected = []
     for i in range(min(len(units), limit)):
@@ -185,12 +190,9 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
         config: Config = Config()) -> dict:
     started = perf_counter()
     config.validate(summarizer)
-    # Atomic units fit BOTH encoder windows and MMR's evidence budget. The same
-    # settings produce identical units for mmr/raw, keeping the ablation comparable.
-    units = make_units(transcript, [
-        (embedder.count_tokens, embedder.input_limit),
-        (summarizer.count_tokens, min(config.max_chunk_tokens, config.evidence_tokens)),
-    ])
+    # Keep whole sentence-like units. Token limits apply to model inputs and
+    # packed chunks/evidence, not to how make_units divides the source text.
+    units = make_units(transcript)
     segments_by_id = {segment.id: segment for segment in transcript.segments}
     locations = [(segments_by_id[unit.segment_id], unit) for unit in units]
     unitization_finished = perf_counter()
@@ -277,7 +279,7 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
                            "segment; timestamp_precision is source_segment, not sentence alignment. "
                            "Chunk-level evidence does not prove individual summary claims.",
         "strategy": {
-            "unitization": "sentence_like_with_token_limit_splitting",
+            "unitization": "sentence_like_without_token_splitting",
             "unit_embedding_passes": 1,
             "mmr_reuses_unit_embeddings": config.evidence == "mmr",
             "evidence_scope": "summary_chunk",
