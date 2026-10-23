@@ -1,4 +1,9 @@
-"""Semantic/fixed segmentation, MMR evidence selection, and SEDL assembly."""
+"""Sentence-window chunking, MMR evidence, and source-timestamped SEDL export.
+
+The default strategy embeds the flat chronological unit list once, finds topic
+boundaries using neighbouring unit windows, and reuses those vectors for MMR.
+Original time segments provide source references and playback intervals.
+"""
 
 from collections import Counter
 from copy import deepcopy
@@ -232,7 +237,9 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
         if not summary.strip():
             raise ValueError(f"Summarizer produced an empty summary for chunk {i}")
         references = [unit_ref(parent.id, unit.id) for parent, unit in zip(parents, chunk)]
-        evidence = [{**references[j], **details} for j, details in selection]
+        # Export source timing for EACH selected passage, even when its chunk
+        # spans several time segments. Never invent finer sentence timestamps.
+        evidence = [{**chunk[j].to_evidence(parents[j]), **details} for j, details in selection]
         entries.append({
             "id": f"chunk-{i:04d}", "start": min(s.start for s in parents),
             "end": max(s.end for s in parents),
@@ -266,9 +273,17 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
         "models": {"embedding": embedder.name, "embedding_revision": embedder.revision,
                    "summarizer": summarizer.name, "summarizer_revision": summarizer.revision},
         "provenance_note": "Units form one chronological list with lecture-wide IDs and source segment_id. "
-                           "Evidence references resolve within this transcript to source segment intervals, "
-                           "not sentence alignments. "
+                           "Each evidence passage includes start/end and jump_time from its original "
+                           "segment; timestamp_precision is source_segment, not sentence alignment. "
                            "Chunk-level evidence does not prove individual summary claims.",
+        "strategy": {
+            "unitization": "sentence_like_with_token_limit_splitting",
+            "unit_embedding_passes": 1,
+            "mmr_reuses_unit_embeddings": config.evidence == "mmr",
+            "evidence_scope": "summary_chunk",
+            "timestamp_precision": "source_segment",
+            "jump_time_basis": "original_segment_start_seconds",
+        },
         "source_segments": source,
         "source_units": unit_records,
         "source_full_text": transcript.text,

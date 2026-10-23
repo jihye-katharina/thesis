@@ -17,6 +17,24 @@ class Unit:
     char_end: int
     text: str
 
+    def to_evidence(self, segment: "Segment") -> dict:
+        """Export this passage with its ORIGINAL segment's playback interval.
+
+        jump_time is the segment start in seconds, not an estimated sentence
+        onset. Offsets identify the exact text within that coarse time interval.
+        """
+        if self.segment_id != segment.id:
+            raise ValueError("Evidence unit does not belong to the supplied source segment")
+        if (not 0 <= self.char_start < self.char_end <= len(segment.text) or
+                segment.text[self.char_start:self.char_end] != self.text):
+            raise ValueError("Evidence text/offsets do not match the original source segment")
+        return {
+            "segment_id": self.segment_id, "unit_id": self.id,
+            "text": self.text, "char_start": self.char_start, "char_end": self.char_end,
+            "start": segment.start, "end": segment.end, "jump_time": segment.start,
+            "timestamp_precision": "source_segment",
+        }
+
 
 @dataclass(frozen=True)
 class Segment:
@@ -89,7 +107,9 @@ def make_units(transcript: Transcript,
 
     IDs count u0, u1, ... across the whole transcript. Each unit keeps segment_id
     and Python character offsets into that segment's ORIGINAL text. Timestamps
-    remain on Segment. Neither Transcript nor Segment is mutated.
+    remain on Segment; to_evidence resolves them for playback. Neither Transcript
+    nor Segment is mutated. Units stay in original order across time segments;
+    semantic chunk boundaries are determined later from their embeddings.
     Each constraint counts tokens without special tokens and supplies a capacity.
     """
     if not isinstance(transcript, Transcript):

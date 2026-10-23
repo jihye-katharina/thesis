@@ -6,9 +6,10 @@ from pathlib import Path
 from time import perf_counter
 
 from .backends import BartSummarizer, ExtractiveDemo, HashEmbedder, SentenceTransformerEmbedder
-from .data import Transcript
+from .data import Segment, Transcript, Unit
 from .evaluation import boundary_annotation_template, evaluate_boundaries, judge_records
 from .pipeline import Config, run
+from .references import evidence_unit_ref, index_source_units, reference_key
 
 
 def read_json(path):
@@ -22,10 +23,34 @@ def write_json(path, result):
                     encoding="utf-8")
 
 
+def evidence_links(sedl):
+    """Resolve selected passages into source-time records for a video player.
+
+    Reading the source hierarchy also supports older reference-only exports.
+    This does not implement a player or verify summary-sentence entailment.
+    """
+    lookup = index_source_units(sedl)
+    entries = []
+    for entry in sedl["entries"]:
+        evidence = []
+        for selected in entry["evidence"]:
+            source, record = lookup[reference_key(evidence_unit_ref(selected))]
+            segment = Segment(source["id"], source["start"], source["end"], source["text"])
+            unit = Unit(record["id"], segment.id, record["char_start"], record["char_end"], record["text"])
+            evidence.append(unit.to_evidence(segment))
+        entries.append({"chunk_id": entry["id"], "summary": entry["summary"], "evidence": evidence})
+    return {"transcript_id": sedl["transcript_id"], "timestamp_precision": "source_segment",
+            "note": "Use jump_time to seek to the containing segment. Individual sentence "
+                    "onsets are unknown. Evidence is linked to the summary chunk.",
+            "entries": entries}
+
+
 def parser():
-    root = argparse.ArgumentParser(description="Explainable lecture summarisation (SEDL)")
+    root = argparse.ArgumentParser(description="Sentence-window lecture summarisation with timestamped evidence (SEDL)")
     commands = root.add_subparsers(dest="command", required=True)
-    summarize = commands.add_parser("summarize")
+    summarize = commands.add_parser("summarize", help="Sentence embeddings → semantic chunks → evidence → summaries",
+                                     description="By default, compare sentence-like unit windows across the lecture, "
+                                                 "select MMR evidence per chunk, and preserve source-segment jump times.")
     summarize.add_argument("input", help="JSON transcript: segments[{start, end, text}]")
     summarize.add_argument("-o", "--output", required=True)
     experiment = commands.add_parser("experiment", help="Run five controlled conditions")
@@ -46,7 +71,11 @@ def parser():
         default = getattr(defaults, field.name)
         kwargs = {"default": default, "type": int if default is None else type(default)}
         if field.name == "boundary_window":
-            kwargs["help"] = "Number of units on each side of a semantic boundary"
+            kwargs["help"] = "Number of sentence-like units on each side; comparisons cross original time segments"
+        if field.name == "chunking":
+            kwargs["help"] = "semantic: unit windows; sadc: adjacent-unit percentile; fixed: token-budget packing"
+        if field.name == "evidence":
+            kwargs["help"] = "mmr: relevant/diverse units; lead: earliest units; raw: whole chunk"
         if field.name in {"chunking", "evidence"}:
             kwargs["choices"] = (["semantic", "fixed", "sadc"] if field.name == "chunking"
                                  else ["mmr", "raw", "lead"])
@@ -57,8 +86,9 @@ def parser():
     evaluate.add_argument("--tolerance-seconds", type=float, default=5.0)
     evaluate.add_argument("--tolerance-units", type=int, default=1)
     evaluate.add_argument("-o", "--output", required=True)
-    for name in ("export-boundaries", "export-audit"):
-        command = commands.add_parser(name)
+    for name in ("export-boundaries", "export-audit", "export-evidence"):
+        command = commands.add_parser(name, help="Export selected passages with source timestamps for playback"
+                                      if name == "export-evidence" else None)
         command.add_argument("sedl")
         command.add_argument("-o", "--output", required=True)
     audit = commands.add_parser("score-audit")
@@ -131,6 +161,8 @@ def main(argv=None):
                                                        args.tolerance_seconds, args.tolerance_units))
         elif args.command == "export-boundaries":
             write_json(args.output, boundary_annotation_template(read_json(args.sedl)))
+        elif args.command == "export-evidence":
+            write_json(args.output, evidence_links(read_json(args.sedl)))
         elif args.command == "export-audit":
             from .audit import export_audit
 
