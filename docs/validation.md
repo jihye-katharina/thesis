@@ -7,7 +7,7 @@ The complete installed dependency versions are in `requirements-cpu.lock`.
 
 ## Passed
 
-* **73 tests**: transcript validation, source coverage through long-segment
+* **75 tests**: transcript validation, source coverage through long-segment
   splitting, original-character provenance, overlapping timestamp handling,
   known-geometry topic changes, raw/MMR ablation parity, MMR diversity and
   exact token budgeting, one-to-one boundary F1, CLI export/evaluation, and
@@ -19,18 +19,22 @@ The complete installed dependency versions are in `requirements-cpu.lock`.
   F1/Pk/WindowDiff, blank human audits, five-condition CLI runs, failed-run
   reporting, result overwrite protection, development/test overlap checks and
   frozen manifest configuration checks.
-* Nested hierarchy: each segment owns units numbered from `u0`; units have no
-  copied parent IDs, indices, or timestamps. Regression checks verify MMR
-  embedding-row selection with repeated local IDs, reference resolution in
-  audits/judge exports, composite boundary annotations, duplicate rejection,
-  JSON CLI round trips, and read compatibility with SEDL 1.x exports.
+* Flat units: IDs count across the lecture, each unit carries segment_id, and
+  timestamps remain on Segment. Neither Segment.units nor Transcript.with_units
+  exists. Checks cover continuous numbering (including oversized sentences),
+  immutable input, source-reference resolution, duplicate rejection, and JSON
+  CLI round trips. Readers support both old flat 1.x and nested 2.0 exports.
+* Unit-based semantic windows detect a known topic change inside one original
+  time segment and produce the same text chunks when that lecture is divided
+  into different source time segments. This is a known-vector algorithm test,
+  not a pretrained quality evaluation.
 * Actual SentenceTransformer and BART adapter execution, including rejection
   of overlong model inputs, with tiny **random local test models**. No downloaded
   pretrained checkpoints are used in these tests.
 * Actual DeepEval G-Eval rubric/scale and RAGAs Faithfulness library calls with
   **fixed fake model responses**. These verify integration and context routing;
   the fixed scores are test fixtures, not research measurements.
-* Offline CLI example: six chunks, eighteen source units, all eighteen units
+* Offline CLI example: seven chunks, eighteen source units, all eighteen units
   retained in chunk coverage, and every selected evidence offset verified
   against its original source segment. Demo uses hashing/extractive echo.
 * Boundary F1 report and JSONL judge-input export generated from this example.
@@ -43,10 +47,13 @@ The complete installed dependency versions are in `requirements-cpu.lock`.
   with a shared source-unit hash, full ordered source coverage, preserved
   metadata, and the same 1,081-token lecture output cap in each condition.
   These lexical-demo token counts and timings are not neural research results.
-  After the hierarchy refactor, all five conditions still preserve exactly the
-  same 649 source text units, character offsets, source hashes, metadata,
-  selected evidence, and demo summaries as the prior implementation. The new
-  output representation uses SEDL 2.0 and segment-local unit IDs.
+  After the flat-list refactor, all five conditions preserve exactly the same
+  649 source text units, character offsets, source hashes, and metadata. IDs
+  run u0 through u648; references recover the correct original time intervals.
+  Fixed and SADC demo summaries match the prior implementation. Main semantic
+  windows now use units and produce different chunks (120 on this lexical
+  demo input). These are changed experimental conditions, not measured gains.
+  New exports use SEDL 3.0.
 
 The pinned RAGAs LangChain wrapper emits deprecation warnings. It remains
 functional in the validated version; replacing it belongs with a future

@@ -1,16 +1,19 @@
-# Transcript → Segment → Unit
-
-The hierarchy stores each fact at its source:
+# Transcript, segments, and a flat list of units
 
 | Object | Fields | Scope of its ID |
 | --- | --- | --- |
 | `Transcript` | `id`, `segments`, full text and optional metadata | One lecture; input `video_id` is preferred |
-| `Segment` | `id`, `start`, `end`, original `text`, `units` | Unique within its transcript |
-| `Unit` | `id`, `char_start`, `char_end`, `text` | Unique within its parent segment |
+| `Segment` | `id`, `start`, `end`, original `text` | Unique within its transcript |
+| `Unit` | `id`, `segment_id`, `char_start`, `char_end`, `text` | Unique across its transcript |
 
 Default segment IDs remain `s00000`, `s00001`, etc., unless supplied by the input.
-Unit IDs are `u0`, `u1`, etc., restarting at `u0` for each segment. Splitting an
-oversized sentence also continues this numbering inside the same parent.
+Units are numbered `u0`, `u1`, ... continuously across all segments. The next
+lecture starts at `u0` again. Oversized sentence pieces continue the same counter.
+
+`Segment` has no `units` property. `Transcript` has no `with_units` method.
+Units are returned as a separate flat list. The `segment_id` on a unit still
+links it to its original text and timestamp interval, without storing units
+inside the segment or duplicating timestamps on each unit.
 
 ## Python usage
 
@@ -22,88 +25,80 @@ constraints = [
     (summarizer.count_tokens, 512),
 ]
 
-# Split one segment into units.
-units = make_units(transcript.segments[0], constraints)
+units = make_units(transcript, constraints)
+unit = units[0]
 
-# Or build the complete hierarchy without mutating the original transcript.
-prepared = transcript.with_units(constraints)
-segment = prepared.segments[0]
-unit = segment.units[0]
+segments_by_id = {segment.id: segment for segment in transcript.segments}
+segment = segments_by_id[unit.segment_id]
 
-print(prepared.id, segment.id, unit.id)
-print(segment.start, segment.end)  # Original segment timing.
+print(transcript.id, unit.id, unit.segment_id)
+print(segment.start, segment.end)
 assert segment.text[unit.char_start:unit.char_end] == unit.text
 ```
 
-`Unit` has no `segment_id`, `segment_index`, `start`, or `end` fields. Access
-those facts through its parent segment. Character offsets use Python string
-indices, with an inclusive start and exclusive end. Sentence timing cannot be
-inferred from these offsets: only the original segment interval is known.
+`make_units` processes the segments in order, then sentence-like spans within
+each segment. It never mutates the transcript. `units = []` is created once
+before the segment loop, so `len(units)` gives continuous IDs. Character
+offsets remain relative to the original segment, with an inclusive start and
+exclusive end. Units have no `segment_index`, `start`, or `end` fields.
 
-The pipeline temporarily flattens ordered `(segment, unit)` pairs for embedding
-and chunking. Embedding rows are indexed by their list position, so two units
-called `u0` cannot overwrite one another. This temporary processing order is
-not stored as a field on `Unit`.
+This splitter assumes sentence boundaries are preserved by the transcript
+producer's time windows. It does not reconstruct a sentence cut between two
+source segments. Abbreviation handling is a simple English-oriented heuristic.
 
-## JSON output and references
+## Semantic comparisons
 
-New outputs use SEDL schema `2.0`. The following is a shortened illustration:
+The entire ordered unit list is embedded together, in batches as needed.
+The main `semantic` method compares equal-weight left/right windows of unit
+embeddings at every inter-unit boundary. `boundary_window=2` means up to two
+units on each side. A topic boundary can occur inside a source time segment.
+Original timestamps affect source tracing, not semantic boundary candidates.
+
+The `sadc` adaptation compares adjacent units using a document percentile.
+Fixed chunking packs consecutive units under the same token cap. Token limits
+and minimum chunk preferences still apply as documented in methodology.md.
+Two chunks can share a time interval when only coarse source timing is known.
+
+## SEDL output and references
+
+New outputs use schema `3.0`. A shortened example is:
 
 ```json
 {
-  "schema_version": "2.0",
+  "schema_version": "3.0",
   "transcript_id": "lecture-01",
   "source_segments": [
-    {
-      "id": "s00000", "start": 0.0, "end": 10.0,
-      "text": "Hello. World.",
-      "units": [
-        {"id": "u0", "char_start": 0, "char_end": 6, "text": "Hello."},
-        {"id": "u1", "char_start": 7, "char_end": 13, "text": "World."}
-      ]
-    },
-    {
-      "id": "s00001", "start": 10.0, "end": 20.0,
-      "text": "Next.",
-      "units": [
-        {"id": "u0", "char_start": 0, "char_end": 5, "text": "Next."}
-      ]
-    }
+    {"id": "s00000", "start": 0.0, "end": 10.0, "text": "Hello. World."},
+    {"id": "s00001", "start": 10.0, "end": 20.0, "text": "Next."}
+  ],
+  "source_units": [
+    {"id": "u0", "segment_id": "s00000", "char_start": 0, "char_end": 6, "text": "Hello."},
+    {"id": "u1", "segment_id": "s00000", "char_start": 7, "char_end": 13, "text": "World."},
+    {"id": "u2", "segment_id": "s00001", "char_start": 0, "char_end": 5, "text": "Next."}
   ]
 }
 ```
 
-Because a summary chunk may span several segments, its `source_unit_refs` is a
-list of explicit pairs, for example:
+Chunks retain `source_unit_refs`, and evidence records retain source reference
+fields plus selection scores. The reference `{ "segment_id": "s00001", "unit_id": "u2" }`
+resolves to the original segment and the specific unit. The document supplies
+the transcript ID. When combining lectures, keep `transcript_id` too.
+Audit and judge exporters resolve text/timing from these source lists.
 
-```json
-[
-  {"segment_id": "s00000", "unit_id": "u1"},
-  {"segment_id": "s00001", "unit_id": "u0"}
-]
-```
+## Migration
 
-Evidence entries contain these same reference fields and their selection scores.
-They do not repeat source text or timestamps; the audit and judge exporters
-resolve the references. Boundary decisions use `before_unit_ref`; manual topic
-annotations list `boundary_unit_refs`. The document supplies the transcript ID.
-If combining references from several lectures, keep that transcript ID too:
-`(transcript_id, segment_id, unit_id)` is the complete identity.
+- Replace `make_units(segment, constraints)` or `transcript.with_units(...)`
+  with `make_units(transcript, constraints)`.
+- Read units from the returned list or exported `source_units`, rather than
+  from `segment.units` / `source_segments[].units`.
+- For new outputs, create fresh boundary annotation templates with
+  `export-boundaries`. Unit numbering and the unitization hash change.
+- Readers continue to accept old flat SEDL 1.x and nested SEDL 2.0 exports
+  together with the corresponding annotations. Nested 2.0 local IDs still need
+  both segment and unit IDs; current flat IDs are unique within the lecture.
+- Version 0.4 changes `semantic` from windows of original time segments to
+  windows of units. Record implementation versions and rerun development
+  selection before held-out experiments. Earlier semantic results are not the
+  same experimental condition. `fixed` and `sadc` retain their segmentation rules.
 
-## Migration from earlier code
-
-- Call `make_units(segment, constraints)` for one segment instead of passing the
-  whole transcript. Use `transcript.with_units(constraints)` for all segments.
-- Replace top-level `source_units` reads with traversal of
-  `source_segments[].units`. The statistics field `source_units` remains a count.
-- Replace `source_unit_ids` with `source_unit_refs`, and use both reference fields
-  as a lookup key. The shared helpers are in `src/sedl/references.py`.
-- For newly generated outputs, create a fresh boundary annotation template using
-  `export-boundaries`. The unitization hash changes with the new representation;
-  old global unit IDs cannot be silently applied to new local unit IDs.
-- Readers still accept existing SEDL 1.x files and their corresponding original
-  boundary annotations. Existing source JSON transcripts need no changes.
-
-Neither reordering units nor replacing a reference with another segment's `u0`
-is a valid migration. Preserve source order and verify exact parent text and
-character offsets when importing any existing manual annotations.
+Original input transcript JSON files require no changes.

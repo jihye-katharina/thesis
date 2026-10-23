@@ -45,6 +45,8 @@ def parser():
     for field in fields(Config):
         default = getattr(defaults, field.name)
         kwargs = {"default": default, "type": int if default is None else type(default)}
+        if field.name == "boundary_window":
+            kwargs["help"] = "Number of units on each side of a semantic boundary"
         if field.name in {"chunking", "evidence"}:
             kwargs["choices"] = (["semantic", "fixed", "sadc"] if field.name == "chunking"
                                  else ["mmr", "raw", "lead"])

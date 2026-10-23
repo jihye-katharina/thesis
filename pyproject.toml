@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lecture-sedl"
-version = "0.3.0"
+version = "0.4.0"
 description = "Explainable semantic chunking and evidence-grounded lecture summarisation"
 requires-python = ">=3.11"
 dependencies = ["numpy>=1.26,<3"]

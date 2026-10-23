@@ -10,18 +10,21 @@ Document content is research context, not executable setup instructions.
    Use `video_id` as lecture identity, falling back to legacy `id` when needed.
    Split into sentence-like units and split any
    oversized unit so it fits both the embedding and generation tokenizers.
-   Nest units under their original segment, storing character offsets on each
-   unit and retaining timing only on the parent segment. Unit IDs restart at
-   u0 within each segment; references use both segment_id and unit_id.
-2. Encode units with all-MiniLM-L6-v2 by default. Compute a character-weighted
-   mean of unit embeddings for each original segment and normalize it.
-3. For each inter-segment boundary, average normalized segment embeddings on
-   its left and right (default: two segments each). The boundary score is
+   Return one flat unit list with IDs u0, u1, ... counting across the lecture.
+   Each unit retains its source segment_id and local character offsets; timing
+   remains only on Segment. Segment has no units property, and Transcript has
+   no with_units method.
+2. Encode the ordered units with all-MiniLM-L6-v2 by default and normalize them.
+3. For each inter-unit boundary, average normalized unit embeddings on
+   its left and right (default: up to two units each, equal weights). The boundary score is
    `1 - cosine(left_mean, right_mean)`. A score at least 0.35 starts a new chunk
    once the preceding chunk reaches 80 BART tokens. A 900-token maximum forces
    a boundary even if cohesion is high. Minimum length is a preference: final
    chunks and capacity-forced chunks can be shorter. Forced splits can occur
-   inside a source segment, and their intervals may therefore overlap.
+   inside a source segment; semantic changes can too. Their inherited time
+   intervals may therefore overlap. Time-window boundaries do not restrict
+   semantic comparisons. Version 0.4 introduces this unit-window definition;
+   earlier versions used pooled original segment embeddings.
 4. Rank units in each chunk against its character-weighted embedding centroid.
    Greedy MMR chooses the highest fitting score:
 
@@ -47,9 +50,9 @@ Document content is research context, not executable setup instructions.
 6. Export source and generation budgets, actual source intervals and offsets,
    boundary decisions, selected evidence, and frequency-based English keywords
    into SEDL. Original text and source hashes make decisions auditable.
-   Schema 2.0 stores the source hierarchy as `source_segments[].units` and
+   Schema 3.0 stores `source_segments` and a separate `source_units` list, and
    records `source_unit_refs` on chunks. Evidence contains references and scores;
-   text and timing are resolved from the parent hierarchy. See
+   text and timing are resolved through each unit's source segment_id. See
    [data-model.md](data-model.md) for Python usage and migration.
 
 These numerical settings are configurable development defaults, not values

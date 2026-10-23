@@ -1,3 +1,3 @@
 """Traceable lecture summarisation. See docs/methodology.md for assumptions."""
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"

@@ -72,30 +72,31 @@ The current models and sentence/keyword heuristics
 target English. Korean transcripts require an appropriate embedding model and
 summarisation checkpoint, plus separate validation.
 
-## Transcript, segment, and unit hierarchy
+## Transcript, segments, and a flat unit list
 
-Version 0.3 stores units under their parent segment:
+Version 0.4 keeps the original transcript separate from its derived units:
 
 ```text
 Transcript (video_id)
   Segment s00000: timestamps, original text
-    Unit u0: character offsets, text
-    Unit u1: character offsets, text
   Segment s00001: timestamps, original text
-    Unit u0: character offsets, text
+
+Units returned by make_units(transcript, constraints):
+  u0 → segment_id s00000
+  u1 → segment_id s00000
+  u2 → segment_id s00001
 ```
 
-`make_units(segment, constraints)` splits one segment. To prepare a whole
-lecture, use `prepared = transcript.with_units(constraints)`, then access
-`prepared.segments[0].units`. This returns a new transcript without changing the
-input. Unit IDs restart at `u0` within every segment. A unit stores no parent ID,
-segment index, or copied timestamps. Character offsets remain local to the
-parent segment's original text.
+`make_units(transcript, constraints)` splits each segment's text and returns
+one flat list. IDs count continuously through the lecture and restart at `u0`
+for another transcript. A unit stores `segment_id`, character offsets, and text;
+it has no segment index or copied timestamps. `Segment` has no `units` field,
+and `Transcript` has no `with_units` method. The input objects are not changed.
 
-SEDL schema **2.0** follows the same nesting in `source_segments[].units`.
-Chunks and evidence refer to units using `{ "segment_id": "s00001", "unit_id": "u0" }`;
-the enclosing document supplies `transcript_id`. Never look up a unit by `u0`
-alone across the lecture. See the [data model and migration notes](docs/data-model.md).
+SEDL schema **3.0** stores `source_segments` and `source_units` separately.
+Chunks and evidence refer to units using `{ "segment_id": "s00001", "unit_id": "u2" }`;
+the enclosing document supplies `transcript_id`. See the
+[data model and migration notes](docs/data-model.md).
 
 ## Run
 
@@ -123,7 +124,7 @@ mode and the demo backends; do not include them in thesis performance claims.
 
 Each SEDL entry contains the source interval, summary, evidence references,
 MMR scores/ranks, boundary reasons/scores, and keywords. Evidence text and
-character offsets are resolved from the units nested under `source_segments`.
+character offsets are resolved from `source_units` using their segment IDs.
 All source units are retained for auditing. Evidence times come from their
 parent segments: sentence timestamps
 are not fabricated. A chunk-to-evidence link does not prove that each generated
@@ -138,7 +139,7 @@ lecture-level output allowance:
 | --- | --- | --- |
 | `fixed_raw` | Consecutive units under a token limit | Whole chunk |
 | `sadc_raw` | SAHR-inspired adjacent-similarity percentile | Whole chunk |
-| `semantic_raw` | Original local left/right segment windows | Whole chunk |
+| `semantic_raw` | Local left/right unit windows across the lecture | Whole chunk |
 | `<chosen>_lead` | Segmenter chosen on development data | Earliest units under evidence limits |
 | `<chosen>_mmr` | Same chosen segmenter | MMR-selected units under the same limits |
 

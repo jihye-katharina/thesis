@@ -26,7 +26,7 @@ review rows, but does not implement its learned attribution mechanism.
 ## Research questions and comparisons
 
 1. How do fixed-budget packing, adjacent-similarity percentile segmentation,
-   and local-window segmentation compare on expert topic boundaries and
+   and local unit-window segmentation compare on expert topic boundaries and
    lecture-summary coherence under the same output allowance?
 2. For one segmenter chosen on development lectures, how does MMR evidence
    selection compare with raw input and chronological lead evidence in summary
@@ -56,8 +56,9 @@ the manifest does not enforce CLI checkpoint arguments against earlier runs.
 ## Controls and measurements
 
 - Same tokenizers, encoder, summarizer, unitization parameters, and maximum
-  chunk budget. SADC operates on adjacent units, while the existing semantic
-  method compares windows of original transcript segments; report this difference.
+  chunk budget. SADC operates on adjacent units, while the main semantic method
+  compares left/right windows of units. Original time segments retain source
+  timing without restricting topic-boundary locations.
 - Same **lecture-level maximum output allowance** across segmenters. The default
   real-data manifest ratio is 10% of source BART tokens, configurable on development
   data. Allowances are distributed across every chunk without dropping source

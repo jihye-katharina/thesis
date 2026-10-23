@@ -41,18 +41,18 @@ def boundary_f1(predicted, reference, tolerance_seconds=5.0):
 
 def boundary_annotation_template(sedl):
     # Parent context is retained without exposing model-predicted boundaries.
-    segments = [{**segment, "units": []} for segment in sedl["source_segments"]]
-    by_id = {segment["id"]: segment for segment in segments}
-    for _, segment, unit in iter_source_units(sedl):
-        by_id[segment["id"]]["units"].append({key: unit[key] for key in
-                                              ("id", "char_start", "char_end", "text")})
+    segments = [{key: segment[key] for key in ("id", "start", "end", "text")}
+                for segment in sedl["source_segments"]]
+    units = [{"id": unit["id"], "segment_id": segment["id"], "char_start": unit["char_start"],
+              "char_end": unit["char_end"], "text": unit["text"]}
+             for _, segment, unit in iter_source_units(sedl)]
     return {"transcript_id": sedl["transcript_id"],
             "unitization_sha256": sedl["unitization_sha256"],
             "annotation_status": "draft", "boundary_unit_refs": [],
             "instructions": "Read the ordered units without model boundary predictions. "
                             "List {segment_id, unit_id} for the first unit after each topic change, "
                             "excluding lecture start. Mark annotation_status complete after review.",
-            "source_segments": segments}
+            "source_segments": segments, "source_units": units}
 
 
 def segmentation_errors(predicted, reference, unit_count):

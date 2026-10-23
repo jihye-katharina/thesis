@@ -1,8 +1,9 @@
-"""Resolve segment-local unit references within one SEDL transcript.
+"""Resolve source unit references within one SEDL transcript.
 
 The containing SEDL supplies transcript_id. A reference is the pair
-{segment_id, unit_id}; never use a local unit_id alone as a lecture-wide key.
-Readers also support earlier SEDL 1.x exports with flat, global unit IDs.
+{segment_id, unit_id}. Current IDs are unique within the lecture; segment_id
+retains the original time lookup. Readers also support flat 1.x and nested 2.0
+exports, whose local unit IDs require both reference fields.
 """
 
 
@@ -20,7 +21,7 @@ def reference_key(reference):
 
 def iter_source_units(sedl):
     """Yield (reference, parent segment, unit) in original text order."""
-    if "source_units" in sedl:  # Read-only support for pre-2.0 exports.
+    if "source_units" in sedl:  # Current 3.0 and legacy 1.x flat exports.
         segments = {s["id"]: s for s in sedl["source_segments"]}
         for unit in sedl["source_units"]:
             segment = segments[unit["segment_id"]]
@@ -33,10 +34,14 @@ def iter_source_units(sedl):
 
 def index_source_units(sedl):
     result = {}
+    seen_ids = set()
     for reference, segment, unit in iter_source_units(sedl):
         key = reference_key(reference)
         if key in result:
             raise ValueError(f"Duplicate unit reference: {reference}")
+        if "source_units" in sedl and unit["id"] in seen_ids:
+            raise ValueError(f"Duplicate lecture-wide unit ID: {unit['id']}")
+        seen_ids.add(unit["id"])
         result[key] = (segment, unit)
     return result
 
@@ -49,6 +54,6 @@ def entry_unit_refs(sedl, entry):
 
 
 def evidence_unit_ref(evidence):
-    # 1.x evidence records used id, whereas 2.0 records contain references only.
+    # 1.x evidence records used id; later records contain references only.
     identifier = evidence["unit_id"] if "unit_id" in evidence else evidence["id"]
     return unit_ref(evidence["segment_id"], identifier)
