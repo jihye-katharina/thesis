@@ -1,0 +1,11 @@
+{
+  "split": "development",
+  "transcripts": ["lecture.json"],
+  "evidence_chunker": "semantic",
+  "summary_ratio": 0.1,
+  "base_config": {
+    "min_chunk_tokens": 20,
+    "boundary_window": 1,
+    "summary_budget_tokens": 128
+  }
+}

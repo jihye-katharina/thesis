@@ -14,7 +14,8 @@ import numpy as np
 from . import __version__
 from .backends import Embedder, Summarizer, normalize
 from .budgets import allocate_summary_budget
-from .data import Transcript, Unit, make_units
+from .data import Transcript, Unit
+from .references import unit_ref
 
 
 @dataclass(frozen=True)
@@ -58,23 +59,28 @@ def joined(units: list[Unit]) -> str:
     return "\n".join(unit.text for unit in units)
 
 
-def segment_boundary_scores(units, vectors, n_segments, window):
+def segment_boundary_scores(segments, vectors, window):
     """Cosine distance between local left/right windows of segment embeddings.
 
     Within a segment, use character-weighted sentence/unit means. Each segment
     has equal weight in the temporal window, irrespective of sentence count.
     """
     means = []
-    for i in range(n_segments):
-        indices = [j for j, unit in enumerate(units) if unit.segment_index == i]
-        weights = [len(units[j].text) for j in indices]
-        means.append(np.average(vectors[indices], axis=0, weights=weights))
+    starts = []
+    offset = 0
+    for segment in segments:
+        starts.append(offset)
+        stop = offset + len(segment.units)
+        weights = [len(unit.text) for unit in segment.units]
+        means.append(np.average(vectors[offset:stop], axis=0, weights=weights))
+        offset = stop
     means = normalize(np.asarray(means))
     scores = {}
-    for i in range(1, n_segments):
+    for i in range(1, len(segments)):
         left = normalize(means[max(0, i - window):i].mean(axis=0))
-        right = normalize(means[i:min(n_segments, i + window)].mean(axis=0))
-        scores[i] = float(np.clip(1 - np.dot(left, right), 0, 2))
+        right = normalize(means[i:min(len(segments), i + window)].mean(axis=0))
+        # Store the position of the first unit after the segment boundary.
+        scores[starts[i]] = float(np.clip(1 - np.dot(left, right), 0, 2))
     return scores
 
 
@@ -91,14 +97,16 @@ def sadc_boundary_scores(vectors, percentile):
     return {i + 1: float(1 - similarity) for i, similarity in enumerate(similarities)}, threshold
 
 
-def chunk_units(units, scores, config, count_tokens, sadc_threshold=None):
+def chunk_units(locations, scores, config, count_tokens, sadc_threshold=None):
+    """Group ordered (parent segment, unit) locations by temporary list indices."""
     chunks = []
     current = []
     start_reason = {"reason": "lecture_start", "score": None}
-    for unit_index, unit in enumerate(units):
-        score = scores.get(unit_index if config.chunking == "sadc" else unit.segment_index)
-        new_segment = bool(current and unit.segment_index != current[-1].segment_index)
-        forced = bool(current and count_tokens(joined(current + [unit])) > config.max_chunk_tokens)
+    for unit_index, (segment, unit) in enumerate(locations):
+        score = scores.get(unit_index)
+        new_segment = bool(current and segment.id != locations[current[-1]][0].id)
+        current_units = [locations[j][1] for j in current]
+        forced = bool(current and count_tokens(joined(current_units + [unit])) > config.max_chunk_tokens)
         if config.chunking == "sadc":
             # Strict comparison matches sim_i < percentile(sim, p). The paper
             # has no minimum-length rule, so min_chunk_tokens is not applied.
@@ -107,18 +115,17 @@ def chunk_units(units, scores, config, count_tokens, sadc_threshold=None):
         else:
             semantic = (config.chunking == "semantic" and new_segment and
                         score is not None and score >= config.boundary_threshold and
-                        count_tokens(joined(current)) >= config.min_chunk_tokens)
+                        count_tokens(joined(current_units)) >= config.min_chunk_tokens)
         if forced or semantic:
             reason = {"reason": "token_limit" if forced else "semantic_change",
                       "score": score if new_segment or config.chunking == "sadc" else None,
-                      "at_segment_id": unit.segment_id,
                       "at_char": unit.char_start,
-                      "before_unit_id": unit.id,
+                      "before_unit_ref": unit_ref(segment.id, unit.id),
                       "before_unit_index": unit_index}
             chunks.append((current, start_reason, reason))
             current = []
             start_reason = reason
-        current.append(unit)
+        current.append(unit_index)
     if current:
         chunks.append((current, start_reason, {"reason": "lecture_end", "score": None}))
     return chunks
@@ -187,10 +194,13 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
     config.validate(summarizer)
     # Atomic units fit BOTH encoder windows and MMR's evidence budget. The same
     # settings produce identical units for mmr/raw, keeping the ablation comparable.
-    units = make_units(transcript, [
+    prepared = transcript.with_units([
         (embedder.count_tokens, embedder.input_limit),
         (summarizer.count_tokens, min(config.max_chunk_tokens, config.evidence_tokens)),
     ])
+    # Flatten only for vector operations; parentage remains in prepared.segments.
+    locations = [(segment, unit) for segment in prepared.segments for unit in segment.units]
+    units = [unit for _, unit in locations]
     unitization_finished = perf_counter()
     vectors = np.asarray(embedder.encode([unit.text for unit in units]), dtype=float)
     if (vectors.ndim != 2 or vectors.shape[0] != len(units) or
@@ -200,26 +210,23 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
     embedding_finished = perf_counter()
     if config.chunking == "sadc":
         scores, sadc_threshold = sadc_boundary_scores(vectors, config.sadc_percentile)
-        candidate_units = {i: units[i] for i in scores}
     else:
-        scores = segment_boundary_scores(units, vectors, len(transcript.segments), config.boundary_window)
+        scores = segment_boundary_scores(prepared.segments, vectors, config.boundary_window)
         sadc_threshold = None
-        first_by_segment = {}
-        for unit in units:
-            first_by_segment.setdefault(unit.segment_index, unit)
-        candidate_units = {i: first_by_segment[i] for i in scores}
-    chunks = chunk_units(units, scores, config, summarizer.count_tokens, sadc_threshold)
-    source_sizes = [summarizer.count_tokens(joined(chunk)) for chunk, _, _ in chunks]
+    chunks = chunk_units(locations, scores, config, summarizer.count_tokens, sadc_threshold)
+    source_sizes = [summarizer.count_tokens(joined([units[j] for j in indices]))
+                    for indices, _, _ in chunks]
     allocations = (allocate_summary_budget(source_sizes, config.summary_budget_tokens,
                                             summarizer.max_new_tokens)
                    if config.summary_budget_tokens is not None else [None] * len(chunks))
     segmentation_finished = perf_counter()
-    by_id = {unit.id: i for i, unit in enumerate(units)}
     entries = []
     selection_seconds = generation_seconds = 0.0
-    for i, (chunk, start_boundary, end_boundary) in enumerate(chunks):
+    for i, (indices, start_boundary, end_boundary) in enumerate(chunks):
         selection_started = perf_counter()
-        chunk_vectors = vectors[[by_id[unit.id] for unit in chunk]]
+        chunk = [units[j] for j in indices]
+        parents = [locations[j][0] for j in indices]
+        chunk_vectors = vectors[indices]
         if config.evidence == "mmr":
             selection = select_mmr(chunk, chunk_vectors, summarizer.count_tokens,
                                    config.evidence_tokens, config.max_evidence_units, config.mmr_lambda)
@@ -237,12 +244,13 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
         generation_seconds += perf_counter() - generation_started
         if not summary.strip():
             raise ValueError(f"Summarizer produced an empty summary for chunk {i}")
-        evidence = [{**asdict(chunk[j]), **details} for j, details in selection]
+        references = [unit_ref(parent.id, unit.id) for parent, unit in zip(parents, chunk)]
+        evidence = [{**references[j], **details} for j, details in selection]
         entries.append({
-            "id": f"chunk-{i:04d}", "start": min(u.start for u in chunk),
-            "end": max(u.end for u in chunk),
-            "source_unit_ids": [u.id for u in chunk],
-            "source_segment_ids": list(dict.fromkeys(u.segment_id for u in chunk)),
+            "id": f"chunk-{i:04d}", "start": min(s.start for s in parents),
+            "end": max(s.end for s in parents),
+            "source_unit_refs": references,
+            "source_segment_ids": list(dict.fromkeys(s.id for s in parents)),
             "source_tokens": summarizer.count_tokens(joined(chunk)),
             "generation_input_tokens": summarizer.count_tokens(evidence_text),
             "summary_tokens": summarizer.count_tokens(summary),
@@ -251,35 +259,38 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
             "keywords": keywords(evidence_text),
             "boundary": {"start": start_boundary, "end": end_boundary},
         })
-    source = [asdict(s) for s in transcript.segments]
+    # Source identity excludes derived units, even if the input is already prepared.
+    source = [{"id": s.id, "start": s.start, "end": s.end, "text": s.text}
+              for s in transcript.segments]
     digest = hashlib.sha256(json.dumps({"text": transcript.text, "segments": source},
                                        ensure_ascii=False, sort_keys=True,
                                        allow_nan=False).encode()).hexdigest()
     demo = embedder.name.startswith("demo/") or summarizer.name.startswith("demo/")
-    unit_records = [asdict(unit) for unit in units]
-    unitization_hash = hashlib.sha256(json.dumps(unit_records, sort_keys=True,
+    nested_source = [asdict(segment) for segment in prepared.segments]
+    unitization_hash = hashlib.sha256(json.dumps(nested_source, sort_keys=True,
                                                  ensure_ascii=False, allow_nan=False).encode()).hexdigest()
     total_summary_tokens = sum(entry["summary_tokens"] for entry in entries)
     if config.summary_budget_tokens is not None and total_summary_tokens > config.summary_budget_tokens:
         raise ValueError("Decoded summaries exceeded the lecture output token budget")
     return {
-        "schema_version": "1.1", "implementation_version": __version__,
+        "schema_version": "2.0", "implementation_version": __version__,
         "transcript_id": transcript.id, "source_sha256": digest,
         "unitization_sha256": unitization_hash,
         "mode": "offline_demo" if demo else "neural",
         "config": asdict(config),
         "models": {"embedding": embedder.name, "embedding_revision": embedder.revision,
                    "summarizer": summarizer.name, "summarizer_revision": summarizer.revision},
-        "provenance_note": "Evidence times are source segment intervals, not sentence alignments. "
+        "provenance_note": "Units are nested in their source segments and use segment-local IDs. "
+                           "Evidence references resolve within this transcript to source segment intervals, "
+                           "not sentence alignments. "
                            "Chunk-level evidence does not prove individual summary claims.",
-        "source_segments": source,
+        "source_segments": nested_source,
         "source_full_text": transcript.text,
         "source_metadata": {
             "source": transcript.source,
             "language": transcript.language,
             "provenance": deepcopy(transcript.provenance),
         },
-        "source_units": unit_records,
         "segmentation": {
             "method": config.chunking,
             "score_type": "cosine_distance",
@@ -287,11 +298,10 @@ def run(transcript: Transcript, embedder: Embedder, summarizer: Summarizer,
             "sadc_percentile": config.sadc_percentile if config.chunking == "sadc" else None,
             "paper_reproduction": False,
         },
-        "boundary_candidates": [{"before_segment_id": candidate_units[i].segment_id,
-                                 "before_unit_id": candidate_units[i].id,
-                                 "before_unit_index": by_id[candidate_units[i].id],
-                                 "char_start": candidate_units[i].char_start,
-                                 "time": candidate_units[i].start, "score": score}
+        "boundary_candidates": [{"before_unit_ref": unit_ref(locations[i][0].id, locations[i][1].id),
+                                 "before_unit_index": i,
+                                 "char_start": locations[i][1].char_start,
+                                 "time": locations[i][0].start, "score": score}
                                 for i, score in scores.items()],
         "statistics": {
             "chunks": len(chunks), "source_units": len(units),

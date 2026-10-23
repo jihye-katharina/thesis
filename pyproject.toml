@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lecture-sedl"
+version = "0.3.0"
+description = "Explainable semantic chunking and evidence-grounded lecture summarisation"
+requires-python = ">=3.11"
+dependencies = ["numpy>=1.26,<3"]
+
+[project.optional-dependencies]
+neural = ["sentence-transformers==5.1.1", "transformers==4.57.1", "torch==2.9.0"]
+dev = ["pytest>=8,<9"]
+judges = ["deepeval==3.7.0", "ragas==0.3.9", "langchain-openai>=0.3,<0.4"]
+
+[project.scripts]
+sedl = "sedl.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
